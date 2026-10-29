@@ -1,0 +1,13 @@
+# Local cache of downloaded filings and rates
+data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Secrets
+.env
+.streamlit/secrets.toml

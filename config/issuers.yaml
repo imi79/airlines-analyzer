@@ -1,0 +1,110 @@
+# The ten v1 candidates. `lei` is filled in from the filings.xbrl.org entity
+# search in M0 and kept only after the name and country are checked.
+# `search` is the name fragment used to find the entity.
+
+issuers:
+  - id: afkl
+    name: Air France-KLM
+    type: airline
+    segment: network
+    search: air france
+    country: FR
+    format: ESEF
+    fiscal_year_end: "12-31"
+    currency: EUR
+    lei: null
+
+  - id: lha
+    name: Deutsche Lufthansa
+    type: airline
+    segment: network
+    search: lufthansa
+    country: DE
+    format: ESEF
+    fiscal_year_end: "12-31"
+    currency: EUR
+    lei: null
+
+  - id: iag
+    name: International Airlines Group
+    type: airline
+    segment: network
+    search: international consolidated airlines
+    country: ES
+    format: ESEF
+    fiscal_year_end: "12-31"
+    currency: EUR
+    lei: null
+
+  - id: finnair
+    name: Finnair
+    type: airline
+    segment: network
+    search: finnair
+    country: FI
+    format: ESEF
+    fiscal_year_end: "12-31"
+    currency: EUR
+    lei: null
+
+  - id: ryanair
+    name: Ryanair Holdings
+    type: airline
+    segment: low_cost
+    search: ryanair
+    country: IE
+    format: ESEF
+    fiscal_year_end: "03-31"
+    currency: EUR
+    lei: null
+
+  - id: easyjet
+    name: easyJet
+    type: airline
+    segment: low_cost
+    search: easyjet
+    country: GB
+    format: UKSEF
+    fiscal_year_end: "09-30"
+    currency: GBP
+    lei: null
+
+  - id: adp
+    name: Groupe ADP
+    type: airport
+    search: aeroports de paris
+    country: FR
+    format: ESEF
+    fiscal_year_end: "12-31"
+    currency: EUR
+    lei: null
+
+  - id: fraport
+    name: Fraport
+    type: airport
+    search: fraport
+    country: DE
+    format: ESEF
+    fiscal_year_end: "12-31"
+    currency: EUR
+    lei: null
+
+  - id: aena
+    name: Aena
+    type: airport
+    search: aena
+    country: ES
+    format: ESEF
+    fiscal_year_end: "12-31"
+    currency: EUR
+    lei: null
+
+  - id: vie
+    name: Flughafen Wien
+    type: airport
+    search: flughafen wien
+    country: AT
+    format: ESEF
+    fiscal_year_end: "12-31"
+    currency: EUR
+    lei: null

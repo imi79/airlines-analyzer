@@ -1,0 +1,225 @@
+# Core lines checked in the M0 coverage matrix.
+#
+# Each line lists the standard IFRS taxonomy concepts that count as "found".
+# `keywords` drive the extension search: a company-specific concept counts as a
+# candidate when its name contains every word of at least one keyword group.
+# `period` is "duration" (flows: P&L, cash flow) or "instant" (balance sheet).
+
+lines:
+  revenue:
+    label: Revenue
+    period: duration
+    concepts:
+      - ifrs-full:Revenue
+      - ifrs-full:RevenueFromContractsWithCustomers
+    keywords: [[revenue], [turnover]]
+
+  operating_profit:
+    label: Operating profit
+    period: duration
+    concepts:
+      - ifrs-full:ProfitLossFromOperatingActivities
+    keywords: [[operating, result], [operating, profit], [operating, income], [ebit]]
+
+  dda:
+    label: Depreciation, amortisation and impairment
+    period: duration
+    concepts:
+      - ifrs-full:DepreciationAmortisationAndImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss
+      - ifrs-full:DepreciationAndAmortisationExpense
+      - ifrs-full:AdjustmentsForDepreciationAmortisationAndImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss
+      - ifrs-full:AdjustmentsForDepreciationAndAmortisationExpense
+    keywords: [[depreciation], [amortisation], [amortization]]
+
+  finance_costs:
+    label: Finance costs / interest expense
+    period: duration
+    concepts:
+      - ifrs-full:FinanceCosts
+      - ifrs-full:InterestExpense
+      - ifrs-full:InterestExpenseOnBorrowings
+    keywords: [[finance, cost], [financial, expense], [interest, expense], [cost, debt]]
+
+  fuel_cost:
+    label: Fuel cost
+    period: duration
+    concepts: []  # no standard IFRS concept exists; extension or text only
+    keywords: [[fuel]]
+
+  profit:
+    label: Profit for the year
+    period: duration
+    concepts:
+      - ifrs-full:ProfitLoss
+    keywords: []
+
+  cash:
+    label: Cash and cash equivalents
+    period: instant
+    concepts:
+      - ifrs-full:CashAndCashEquivalents
+    keywords: [[cash, equivalent]]
+
+  other_current_financial_assets:
+    label: Other current financial assets (liquid investments)
+    period: instant
+    concepts:
+      - ifrs-full:OtherCurrentFinancialAssets
+      - ifrs-full:CurrentInvestments
+      - ifrs-full:ShorttermDepositsNotClassifiedAsCashEquivalents
+      - ifrs-full:CurrentFinancialAssetsAtFairValueThroughProfitOrLoss
+      - ifrs-full:CurrentFinancialAssetsAtAmortisedCost
+    keywords: [[current, financial, asset], [short, term, deposit], [money, market], [marketable, securit]]
+
+  borrowings_current:
+    label: Borrowings, current
+    period: instant
+    concepts:
+      - ifrs-full:CurrentBorrowingsAndCurrentPortionOfNoncurrentBorrowings
+      - ifrs-full:CurrentPortionOfNoncurrentBorrowings
+      - ifrs-full:ShorttermBorrowings
+      - ifrs-full:CurrentPortionOfLongtermBorrowings
+    keywords: [[current, borrowing], [current, debt], [current, financial, debt], [short, term, debt]]
+
+  borrowings_noncurrent:
+    label: Borrowings, non-current
+    period: instant
+    concepts:
+      - ifrs-full:NoncurrentPortionOfNoncurrentBorrowings
+      - ifrs-full:LongtermBorrowings
+    keywords: [[noncurrent, borrowing], [noncurrent, debt], [non, current, debt], [long, term, debt]]
+
+  borrowings_total:
+    label: Borrowings, total
+    period: instant
+    concepts:
+      - ifrs-full:Borrowings
+    keywords: [[borrowings], [financial, debt]]
+
+  lease_liabilities_current:
+    label: Lease liabilities, current
+    period: instant
+    concepts:
+      - ifrs-full:CurrentLeaseLiabilities
+    keywords: [[current, lease]]
+
+  lease_liabilities_noncurrent:
+    label: Lease liabilities, non-current
+    period: instant
+    concepts:
+      - ifrs-full:NoncurrentLeaseLiabilities
+    keywords: [[noncurrent, lease], [non, current, lease]]
+
+  lease_liabilities_total:
+    label: Lease liabilities, total
+    period: instant
+    concepts:
+      - ifrs-full:LeaseLiabilities
+    keywords: [[lease, liabilit], [lease, debt]]
+
+  contract_liabilities:
+    label: Contract liabilities (advance ticket sales)
+    period: instant
+    concepts:
+      - ifrs-full:ContractLiabilities
+      - ifrs-full:CurrentContractLiabilities
+    keywords: [[advance, ticket], [unearned, transport], [unearned, revenue], [contract, liabilit], [deferred, revenue]]
+
+  equity:
+    label: Total equity
+    period: instant
+    concepts:
+      - ifrs-full:Equity
+    keywords: []
+
+  total_assets:
+    label: Total assets
+    period: instant
+    concepts:
+      - ifrs-full:Assets
+    keywords: []
+
+  cfo:
+    label: Cash from operations
+    period: duration
+    concepts:
+      - ifrs-full:CashFlowsFromUsedInOperatingActivities
+    keywords: [[operating, activit]]
+
+  capex_ppe:
+    label: Purchases of PP&E
+    period: duration
+    concepts:
+      - ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities
+      - ifrs-full:PurchaseOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets
+    keywords: [[purchase, property], [acquisition, property], [capital, expenditure], [capex], [purchase, aircraft]]
+
+  capex_intangibles:
+    label: Purchases of intangibles
+    period: duration
+    concepts:
+      - ifrs-full:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities
+    keywords: [[purchase, intangible], [acquisition, intangible]]
+
+  interest_paid:
+    label: Interest paid
+    period: duration
+    concepts:
+      - ifrs-full:InterestPaidClassifiedAsOperatingActivities
+      - ifrs-full:InterestPaidClassifiedAsFinancingActivities
+    keywords: [[interest, paid]]
+
+  tax_paid:
+    label: Income tax paid
+    period: duration
+    concepts:
+      - ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities
+      - ifrs-full:IncomeTaxesPaidRefund
+    keywords: [[tax, paid]]
+
+# Notes are tagged as whole text blocks (mandatory from FY2022).
+text_blocks:
+  note_borrowings:
+    label: Note — borrowings
+    concepts:
+      - ifrs-full:DisclosureOfBorrowingsExplanatory
+  note_leases:
+    label: Note — leases
+    concepts:
+      - ifrs-full:DisclosureOfLeasesExplanatory
+  note_segments:
+    label: Note — segments
+    concepts:
+      - ifrs-full:DisclosureOfEntitysReportableSegmentsExplanatory
+      - ifrs-full:DisclosureOfOperatingSegmentsExplanatory
+  note_financial_risk:
+    label: Note — financial risk / hedging
+    concepts:
+      - ifrs-full:DisclosureOfFinancialRiskManagementExplanatory
+      - ifrs-full:DisclosureOfNatureAndExtentOfRisksArisingFromFinancialInstrumentsExplanatory
+      - ifrs-full:DisclosureOfHedgeAccountingExplanatory
+
+# An issuer-year is usable when every requirement below is met. Each requirement
+# lists alternatives; one alternative is met when all its lines are found or extension.
+critical:
+  revenue: [[revenue]]
+  operating_profit: [[operating_profit]]
+  dda: [[dda]]
+  cash: [[cash]]
+  borrowings: [[borrowings_current, borrowings_noncurrent], [borrowings_total]]
+  lease_liabilities: [[lease_liabilities_current, lease_liabilities_noncurrent], [lease_liabilities_total]]
+  cfo: [[cfo]]
+  capex: [[capex_ppe]]
+
+# Words searched in the airline annual report text (traffic and liquidity items).
+report_text_terms:
+  ask: ["available seat kilometres", "available seat kilometers", "ASK"]
+  rpk: ["revenue passenger kilometres", "revenue passenger kilometers", "RPK"]
+  passengers: ["passengers carried", "passengers"]
+  load_factor: ["load factor"]
+  fleet: ["fleet"]
+  undrawn: ["undrawn", "unused credit", "revolving credit facility", "RCF"]
+  fuel_hedge: ["hedged", "hedging"]
+
+first_fiscal_year: 2021
+min_years_for_go: 3

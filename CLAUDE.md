@@ -14,6 +14,11 @@ Turns a European airline's or airport's annual ESEF/UKSEF filing into a two-page
 - Secrets only from the environment. Ask before adding a dependency that isn't in the stack table.
 - Record every non-obvious choice as a short note in `docs/decisions/`.
 
+## Talking to Imane
+
+- Imane has a finance and credit background and very little technical knowledge. Explain in plain language, use finance analogies, avoid jargon, and define any technical term that can't be avoided.
+- Say what is being built and why before building it; report results as findings, not as code.
+
 ## Commits
 
 - Never add Claude as a contributor: no `Co-Authored-By: Claude` trailer, no `Claude-Session` trailer, no "Generated with Claude Code" line in commit messages.
