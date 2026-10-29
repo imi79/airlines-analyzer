@@ -65,6 +65,8 @@ def discover(client: Client, issuers: list[dict], first_fy: int) -> list[dict]:
                 f = filing["attributes"]
                 if not f.get("period_end") or fiscal_year(f["period_end"]) < first_fy:
                     continue
+                if f["period_end"][5:10] != issuer["fiscal_year_end"]:
+                    continue  # interim report
                 rows.append(
                     {
                         "issuer": issuer["id"],
@@ -127,12 +129,14 @@ def load_filing(client: Client, row: dict) -> list[xbrl.Fact]:
 # --- coverage matrix ---------------------------------------------------------------------------
 
 
-def build_matrix(client: Client, rows: list[dict], spec: dict) -> tuple[pd.DataFrame, pd.DataFrame]:
+def build_matrix(
+    client: Client, rows: list[dict], spec: dict, issuers: list[dict]
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    by_id = {i["id"]: i for i in issuers}
     lines, blocks = spec["lines"], spec["text_blocks"]
     wide, long = [], []
-    for row in (r for r in rows if r["chosen"] == "yes"):
+    for row, fy, fy_end, source in fiscal_years_to_check(rows, spec["first_fiscal_year"]):
         facts = load_filing(client, row)
-        fy_end = date.fromisoformat(row["period_end"])
         statuses = {}
         for line_id, line_spec in lines.items():
             result = xbrl.classify_line(line_id, line_spec, facts, fy_end)
@@ -140,7 +144,8 @@ def build_matrix(client: Client, rows: list[dict], spec: dict) -> tuple[pd.DataF
             long.append(
                 {
                     "issuer": row["issuer"],
-                    "fiscal_year": row["fiscal_year"],
+                    "fiscal_year": fy,
+                    "source": source or "own filing",
                     "line": line_id,
                     "status": result.status,
                     "concept": result.concept or "",
@@ -151,12 +156,14 @@ def build_matrix(client: Client, rows: list[dict], spec: dict) -> tuple[pd.DataF
                 }
             )
         for block_id, block_spec in blocks.items():
-            concept = xbrl.has_text_block(block_spec["concepts"], facts)
-            statuses[block_id] = "found" if concept else "missing"
+            # Notes describe the filing's own year only, so comparatives have none.
+            concept = xbrl.has_text_block(block_spec["concepts"], facts) if not source else None
+            statuses[block_id] = "n/a" if source else "found" if concept else "missing"
             long.append(
                 {
                     "issuer": row["issuer"],
-                    "fiscal_year": row["fiscal_year"],
+                    "fiscal_year": fy,
+                    "source": source or "own filing",
                     "line": block_id,
                     "status": statuses[block_id],
                     "concept": concept or "",
@@ -166,13 +173,17 @@ def build_matrix(client: Client, rows: list[dict], spec: dict) -> tuple[pd.DataF
                     "extension_candidates": "",
                 }
             )
+        # Confirmed by reading the debt note: leases sit inside the borrowings line.
+        in_borrowings = by_id[row["issuer"]].get("leases_in_borrowings")
+        statuses["leases_in_borrowings"] = "found" if in_borrowings else "no"
         failed = xbrl.critical_met(statuses, spec["critical"])
         extension_concepts = sorted({f.concept for f in facts if not f.standard})
         wide.append(
             {
                 "issuer": row["issuer"],
-                "fiscal_year": row["fiscal_year"],
-                "period_end": row["period_end"],
+                "fiscal_year": fy,
+                "period_end": fy_end.isoformat(),
+                "source": source or "own filing",
                 "usable": "yes" if not failed else "no",
                 "critical_gaps": " ".join(failed),
                 "facts": len(facts),
@@ -183,12 +194,30 @@ def build_matrix(client: Client, rows: list[dict], spec: dict) -> tuple[pd.DataF
     return pd.DataFrame(wide), pd.DataFrame(long)
 
 
+def fiscal_years_to_check(rows: list[dict], first_fy: int) -> list[tuple[dict, int, date, str]]:
+    """Each chosen filing for its own year, plus a missing year read from the next year's
+    comparative figures. The source is empty for a filing's own year."""
+    chosen = [r for r in rows if r["chosen"] == "yes"]
+    jobs = []
+    for row in chosen:
+        jobs.append((row, row["fiscal_year"], date.fromisoformat(row["period_end"]), ""))
+    filed = {(r["issuer"], r["fiscal_year"]): r for r in chosen}
+    for (issuer, fy), row in filed.items():
+        prior = fy - 1
+        if prior >= first_fy and (issuer, prior) not in filed:
+            end = date.fromisoformat(row["period_end"])
+            prior_end = end.replace(year=end.year - 1, day=28 if end.month == 2 else end.day)
+            jobs.append((row, prior, prior_end, f"comparative in FY{fy} filing"))
+    return sorted(jobs, key=lambda job: (job[0]["issuer"], job[1]))
+
+
 def go_no_go(wide: pd.DataFrame, issuers: list[dict], min_years: int) -> pd.DataFrame:
     rows = []
     for issuer in issuers:
         sub = wide[wide["issuer"] == issuer["id"]] if not wide.empty else wide
         usable = sorted(sub[sub["usable"] == "yes"]["fiscal_year"].tolist()) if len(sub) else []
-        years = sorted(sub["fiscal_year"].tolist()) if len(sub) else []
+        own = sub[sub["source"] == "own filing"] if len(sub) else sub
+        years = sorted(own["fiscal_year"].tolist()) if len(own) else []
         rows.append(
             {
                 "issuer": issuer["id"],
@@ -231,9 +260,11 @@ def report_text(client: Client, rows: list[dict], issuers: list[dict], spec: dic
 
 # --- ECB ---------------------------------------------------------------------------------------
 
+# Units of foreign currency per 1 EUR. A = average of the month, E = end of month.
 ECB_SERIES = {
-    "monthly_average": "M.GBP.EUR.SP00.A",
-    "monthly_end_of_period": "M.GBP.EUR.SP00.E",
+    f"{currency} {kind}": f"M.{currency}.EUR.SP00.{code}"
+    for currency in ("GBP", "NOK", "USD", "DKK")
+    for kind, code in (("monthly average", "A"), ("end of month", "E"))
 }
 
 
@@ -282,7 +313,7 @@ def write_summary(
         "",
     ]
     if not wide.empty:
-        columns = ["issuer", "fiscal_year", "usable", "critical_gaps", *spec["lines"]]
+        columns = ["issuer", "fiscal_year", "source", "usable", "critical_gaps", *spec["lines"]]
         columns += list(spec["text_blocks"])
         legend = {"found": "✓", "extension": "ext", "missing": "–"}
         table = wide[columns].replace(legend)
@@ -320,7 +351,7 @@ def main() -> None:
         row["fiscal_year"] = int(row["fiscal_year"])
 
     if args.step in ("matrix", "all"):
-        wide, long = build_matrix(client, rows, spec)
+        wide, long = build_matrix(client, rows, spec, issuers)
         decisions = go_no_go(wide, issuers, spec["min_years_for_go"])
         wide.to_csv(OUT / "coverage_matrix.csv", index=False)
         long.to_csv(OUT / "coverage_detail.csv", index=False)

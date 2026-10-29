@@ -104,3 +104,30 @@ def test_report_terms_acronyms_are_whole_words():
     text = "Capacity (ASK) rose. We ask for more. Load factor was high."
     assert xbrl.find_terms(text, ["ASK"])[0] == 1
     assert xbrl.find_terms(text, ["load factor"])[0] == 1
+
+
+def test_line_found_from_parts_reported_separately():
+    document = {
+        "documentInfo": {"namespaces": NAMESPACES},
+        "facts": {
+            "d": fact("ifrs-full:DepreciationExpense", FY, "70"),
+            "a": fact("ifrs-full:AmortisationExpense", FY, "5"),
+        },
+    }
+    spec = {
+        "period": "duration",
+        "concepts": [["ifrs-full:DepreciationExpense", "ifrs-full:AmortisationExpense"]],
+    }
+    result = xbrl.classify_line("dda", spec, xbrl.load_facts(document), date(2023, 12, 31))
+    assert result.status == "found"
+    assert result.concept == "ifrs-full:DepreciationExpense + ifrs-full:AmortisationExpense"
+
+
+def test_accents_are_ignored_in_keyword_search():
+    document = {
+        "documentInfo": {"namespaces": NAMESPACES},
+        "facts": {"x": fact("abc:RésultatOpérationnelCourant", FY, "10")},
+    }
+    spec = {"period": "duration", "concepts": [], "keywords": [["resultat", "operationnel"]]}
+    result = xbrl.classify_line("op", spec, xbrl.load_facts(document), date(2023, 12, 31))
+    assert result.candidates == ["abc:RésultatOpérationnelCourant"]

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import re
+import unicodedata
 from collections import Counter
 from dataclasses import dataclass, field
 from datetime import date, datetime, timedelta
@@ -123,8 +124,14 @@ def _in_period(fact: Fact, period_type: str, fy_end: date) -> bool:
     return DURATION_DAYS[0] <= length <= DURATION_DAYS[1]
 
 
+def _plain(text: str) -> str:
+    """Lower case without accents, so "RésultatOpérationnel" matches "resultat"."""
+    decomposed = unicodedata.normalize("NFKD", text)
+    return "".join(c for c in decomposed if not unicodedata.combining(c)).lower()
+
+
 def _matches_keywords(local_name: str, keyword_groups: list[list[str]]) -> bool:
-    name = local_name.lower()
+    name = _plain(local_name)
     return any(all(word.lower() in name for word in group) for group in keyword_groups)
 
 
@@ -134,10 +141,22 @@ def classify_line(line_id: str, spec: dict, facts: list[Fact], fy_end: date) -> 
     candidates = [f for f in facts if not f.breakdown and _in_period(f, period_type, fy_end)]
 
     for concept in spec.get("concepts", []):
-        hits = [f for f in candidates if f.concept == concept]
-        if hits:
-            fact = hits[0]
-            return LineResult(line_id, "found", fact.concept, fact.value, fact.decimals, fact.unit)
+        parts = concept if isinstance(concept, list) else [concept]
+        hits = [next((f for f in candidates if f.concept == part), None) for part in parts]
+        if all(hits):
+            if len(hits) == 1:
+                fact = hits[0]
+                return LineResult(
+                    line_id, "found", fact.concept, fact.value, fact.decimals, fact.unit
+                )
+            return LineResult(
+                line_id,
+                "found",
+                " + ".join(parts),
+                " + ".join(str(f.value) for f in hits),
+                hits[0].decimals,
+                hits[0].unit,
+            )
 
     keyword_groups = spec.get("keywords") or []
     extensions = sorted(

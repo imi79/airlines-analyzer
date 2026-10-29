@@ -4,6 +4,10 @@
 # `keywords` drive the extension search: a company-specific concept counts as a
 # candidate when its name contains every word of at least one keyword group.
 # `period` is "duration" (flows: P&L, cash flow) or "instant" (balance sheet).
+# A concept entry can be a list: the line is then found when all those parts are
+# tagged (for example depreciation and amortisation reported separately).
+# Keywords include French, Spanish and German words because some issuers name
+# their own concepts in the language of the report.
 
 lines:
   revenue:
@@ -12,14 +16,16 @@ lines:
     concepts:
       - ifrs-full:Revenue
       - ifrs-full:RevenueFromContractsWithCustomers
-    keywords: [[revenue], [turnover]]
+      - ifrs-full:RevenueAndOperatingIncome  # includes other operating income (Icelandair)
+    keywords: [[revenue], [turnover], [chiffre, affaire], [importe, neto, cifra], [umsatz]]
 
   operating_profit:
     label: Operating profit
     period: duration
     concepts:
       - ifrs-full:ProfitLossFromOperatingActivities
-    keywords: [[operating, result], [operating, profit], [operating, income], [ebit]]
+    keywords: [[operating, result], [operating, profit], [operating, income], [ebit],
+               [resultat, operationnel], [resultado, explotacion], [betriebsergebnis]]
 
   dda:
     label: Depreciation, amortisation and impairment
@@ -29,7 +35,9 @@ lines:
       - ifrs-full:DepreciationAndAmortisationExpense
       - ifrs-full:AdjustmentsForDepreciationAmortisationAndImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss
       - ifrs-full:AdjustmentsForDepreciationAndAmortisationExpense
-    keywords: [[depreciation], [amortisation], [amortization]]
+      - [ifrs-full:DepreciationExpense, ifrs-full:AmortisationExpense]
+    keywords: [[depreciation], [amortisation], [amortization], [amortissement], [amortizacion],
+               [abschreibung]]
 
   finance_costs:
     label: Finance costs / interest expense
@@ -58,6 +66,7 @@ lines:
     period: instant
     concepts:
       - ifrs-full:CashAndCashEquivalents
+      - ifrs-full:Cash  # cash without equivalents (Copenhagen Airports)
     keywords: [[cash, equivalent]]
 
   other_current_financial_assets:
@@ -79,7 +88,8 @@ lines:
       - ifrs-full:CurrentPortionOfNoncurrentBorrowings
       - ifrs-full:ShorttermBorrowings
       - ifrs-full:CurrentPortionOfLongtermBorrowings
-    keywords: [[current, borrowing], [current, debt], [current, financial, debt], [short, term, debt]]
+    keywords: [[current, borrowing], [current, debt], [current, financial, debt], [short, term, debt],
+               [emprunt, courant], [deuda, corriente], [finanzverbindlichkeit, kurzfristig]]
 
   borrowings_noncurrent:
     label: Borrowings, non-current
@@ -87,35 +97,44 @@ lines:
     concepts:
       - ifrs-full:NoncurrentPortionOfNoncurrentBorrowings
       - ifrs-full:LongtermBorrowings
-    keywords: [[noncurrent, borrowing], [noncurrent, debt], [non, current, debt], [long, term, debt]]
+    keywords: [[noncurrent, borrowing], [noncurrent, debt], [non, current, debt], [long, term, debt],
+               [emprunt, non, courant], [deuda, no, corriente], [finanzverbindlichkeit, langfristig]]
 
   borrowings_total:
     label: Borrowings, total
     period: instant
     concepts:
       - ifrs-full:Borrowings
-    keywords: [[borrowings], [financial, debt]]
+    keywords: [[borrowings], [financial, debt], [dette, financ], [deuda, financ]]
 
   lease_liabilities_current:
     label: Lease liabilities, current
     period: instant
     concepts:
       - ifrs-full:CurrentLeaseLiabilities
-    keywords: [[current, lease]]
+    keywords: [[current, lease], [location, courant], [arrendamiento, corriente]]
 
   lease_liabilities_noncurrent:
     label: Lease liabilities, non-current
     period: instant
     concepts:
       - ifrs-full:NoncurrentLeaseLiabilities
-    keywords: [[noncurrent, lease], [non, current, lease]]
+    keywords: [[noncurrent, lease], [non, current, lease], [location, non, courant],
+               [arrendamiento, no, corriente]]
 
   lease_liabilities_total:
     label: Lease liabilities, total
     period: instant
     concepts:
       - ifrs-full:LeaseLiabilities
-    keywords: [[lease, liabilit], [lease, debt]]
+    keywords: [[lease, liabilit], [lease, debt], [dette, location], [pasivo, arrendamiento],
+               [leasingverbindlichkeit]]
+
+  debt_including_leases:
+    label: Borrowings and lease liabilities on one line
+    period: instant
+    concepts: []  # no standard IFRS concept; some issuers tag a combined extension
+    keywords: [[borrowing, lease], [finanz, leasingverbindlichkeit]]
 
   contract_liabilities:
     label: Contract liabilities (advance ticket sales)
@@ -144,7 +163,10 @@ lines:
     period: duration
     concepts:
       - ifrs-full:CashFlowsFromUsedInOperatingActivities
-    keywords: [[operating, activit]]
+      - [ifrs-full:CashFlowsFromUsedInOperatingActivitiesContinuingOperations,
+         ifrs-full:CashFlowsFromUsedInOperatingActivitiesDiscontinuedOperations]
+    keywords: [[cash, operating, activit], [flux, activit, operationnel], [flux, exploitation],
+               [flujo, explotacion], [cashflow, betrieb]]
 
   capex_ppe:
     label: Purchases of PP&E
@@ -152,14 +174,17 @@ lines:
     concepts:
       - ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities
       - ifrs-full:PurchaseOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets
-    keywords: [[purchase, property], [acquisition, property], [capital, expenditure], [capex], [purchase, aircraft]]
+    keywords: [[purchase, property], [acquisition, property], [capital, expenditure], [capex],
+               [purchase, aircraft], [purchase, tangible], [invest, corporel], [adquisicion, inmovilizado],
+               [inversion, inmovilizado], [auszahlung, sachanlage], [investition, sachanlage]]
 
   capex_intangibles:
     label: Purchases of intangibles
     period: duration
     concepts:
       - ifrs-full:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities
-    keywords: [[purchase, intangible], [acquisition, intangible]]
+    keywords: [[purchase, intangible], [acquisition, intangible], [invest, incorporel],
+               [auszahlung, immateriell]]
 
   interest_paid:
     label: Interest paid
@@ -167,7 +192,7 @@ lines:
     concepts:
       - ifrs-full:InterestPaidClassifiedAsOperatingActivities
       - ifrs-full:InterestPaidClassifiedAsFinancingActivities
-    keywords: [[interest, paid]]
+    keywords: [[interest, paid], [interet, paye], [interes, pagado], [zinsen, gezahlt]]
 
   tax_paid:
     label: Income tax paid
@@ -175,7 +200,7 @@ lines:
     concepts:
       - ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities
       - ifrs-full:IncomeTaxesPaidRefund
-    keywords: [[tax, paid]]
+    keywords: [[tax, paid], [impot, paye], [impuesto, pagado], [steuer, gezahlt]]
 
 # Notes are tagged as whole text blocks (mandatory from FY2022).
 text_blocks:
@@ -206,20 +231,29 @@ critical:
   operating_profit: [[operating_profit]]
   dda: [[dda]]
   cash: [[cash]]
-  borrowings: [[borrowings_current, borrowings_noncurrent], [borrowings_total]]
-  lease_liabilities: [[lease_liabilities_current, lease_liabilities_noncurrent], [lease_liabilities_total]]
+  # Total debt = borrowings + lease liabilities. `leases_in_borrowings` is set from
+  # config/issuers.yaml when the debt note shows leases inside the borrowings line.
+  borrowings: [[borrowings_current, borrowings_noncurrent], [borrowings_total],
+               [debt_including_leases]]
+  lease_liabilities: [[lease_liabilities_current, lease_liabilities_noncurrent],
+                      [lease_liabilities_total], [debt_including_leases],
+                      [leases_in_borrowings]]
   cfo: [[cfo]]
   capex: [[capex_ppe]]
 
 # Words searched in the airline annual report text (traffic and liquidity items).
+# French terms cover Air France-KLM, whose filing is in French.
 report_text_terms:
-  ask: ["available seat kilometres", "available seat kilometers", "ASK"]
-  rpk: ["revenue passenger kilometres", "revenue passenger kilometers", "RPK"]
-  passengers: ["passengers carried", "passengers"]
-  load_factor: ["load factor"]
-  fleet: ["fleet"]
-  undrawn: ["undrawn", "unused credit", "revolving credit facility", "RCF"]
-  fuel_hedge: ["hedged", "hedging"]
+  ask: ["available seat kilometres", "available seat kilometers", "ASK",
+        "sièges-kilomètres offerts", "SKO"]
+  rpk: ["revenue passenger kilometres", "revenue passenger kilometers", "RPK",
+        "passagers-kilomètres transportés", "PKT"]
+  passengers: ["passengers carried", "passengers", "passagers transportés"]
+  load_factor: ["load factor", "coefficient d'occupation", "coefficient de remplissage"]
+  fleet: ["fleet", "flotte"]
+  undrawn: ["undrawn", "unused credit", "revolving credit facility", "RCF", "non tirée",
+            "crédit renouvelable"]
+  fuel_hedge: ["hedged", "hedging", "couverture carburant", "couverture du carburant"]
 
 first_fiscal_year: 2021
 min_years_for_go: 3
