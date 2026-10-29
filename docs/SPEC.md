@@ -58,24 +58,25 @@ Imane is the v1 user and the demo owner; interviewers are the audience; credit a
 
 ## Issuer coverage
 
-V1 targets ten candidates, six airlines and four airports; an issuer stays in only if milestone M0 confirms at least three years of filings with the core statements tagged.
+V1 covers nine issuers, six airlines and three airports, each confirmed in milestone M0 with at least three years of filings with the core statements tagged.
 
 | Issuer | Type | Listing and format | Fiscal year end | Currency |
 | --- | --- | --- | --- | --- |
 | Air France-KLM | Network airline | Euronext Paris, ESEF | 31 Dec | EUR |
-| Deutsche Lufthansa | Network airline | Frankfurt, ESEF | 31 Dec | EUR |
 | International Airlines Group | Network airline group | Madrid, ESEF | 31 Dec | EUR |
 | Finnair | Network airline | Helsinki, ESEF | 31 Dec | EUR |
-| Ryanair Holdings | Low-cost airline | Euronext Dublin, ESEF | 31 Mar | EUR |
 | easyJet | Low-cost airline | London, UKSEF | 30 Sep | GBP |
+| Norwegian Air Shuttle | Low-cost airline | Oslo, ESEF | 31 Dec | NOK |
+| Wizz Air Holdings | Low-cost airline | London, UKSEF | 31 Mar | EUR |
 | Groupe ADP | Airport | Euronext Paris, ESEF | 31 Dec | EUR |
-| Fraport | Airport | Frankfurt, ESEF | 31 Dec | EUR |
 | Aena | Airport | Madrid, ESEF | 31 Dec | EUR |
 | Flughafen Wien | Airport | Vienna, ESEF | 31 Dec | EUR |
 
+**Changed after M0** ([decision 0001](decisions/0001-issuer-go-no-go.md)). Deutsche Lufthansa, Ryanair and Fraport were in the original ten candidates but are not on filings.xbrl.org, which holds no German or Irish filings. Norwegian and Wizz Air replace Ryanair as the low-cost peers. Icelandair passed M0 and is kept in reserve.
+
 **History.** All available fiscal years from FY2021, with the last three shown by default. Pre-2021 years predate the ESEF mandate and are out of scope.
 
-**Fiscal years.** Issuers are compared on their fiscal year as reported, labelled with calendar months, for example "FY2025 (Apr 2024 to Mar 2025)" for Ryanair. Peer views flag any issuer whose year end differs from the group's by more than three months.
+**Fiscal years.** Issuers are compared on their fiscal year as reported, labelled with calendar months, for example "FY2025 (Apr 2024 to Mar 2025)" for Wizz Air. Peer views flag any issuer whose year end differs from the group's by more than three months.
 
 **Currency.** Ratios need no conversion. Absolute amounts are shown in reporting currency on the tearsheet; peer size charts convert to EUR at the ECB average rate for income and cash flow items and the period-end rate for balance sheet items.
 

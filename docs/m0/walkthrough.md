@@ -41,10 +41,11 @@ coverage and cash flow are all ✓ or ext.
 **Spot check.** IAG 2024 revenue (€32.1bn), easyJet FY2024 revenue (£9.3bn), Air France-KLM 2024
 revenue (€31.5bn) and Aena 2024 revenue (€5.76bn) all match the published figures.
 
-## Your decision
+## Decision taken
 
-Which line-up for v1? The options are in `docs/decisions/0001-issuer-go-no-go.md`. The
-recommended one swaps Ryanair for Norwegian and Wizz Air, which gives 9 companies.
+V1 covers 9 companies. Ryanair is replaced by Norwegian and Wizz Air as the low-cost peers
+for easyJet. Lufthansa and Fraport are dropped, and Icelandair is kept in reserve. See
+`docs/decisions/0001-issuer-go-no-go.md`.
 
 ## Where to look
 

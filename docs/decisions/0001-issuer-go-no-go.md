@@ -1,6 +1,13 @@
 # 0001 · Issuer go / no-go (M0)
 
-Date: 2026-10-29 · Status: **proposed, waiting for Imane's choice of replacements**
+Date: 2026-10-29 · Status: **accepted (option 1 chosen by Imane)**
+
+## Decision
+
+V1 covers **nine issuers**: Air France-KLM, IAG, Finnair, easyJet, Norwegian Air Shuttle,
+Wizz Air (airlines), and Groupe ADP, Aena, Flughafen Wien (airports). Lufthansa, Fraport and
+Ryanair are dropped. Icelandair is kept in reserve. Copenhagen Airports is dropped. The status
+of each issuer is recorded in `config/issuers.yaml`.
 
 ## Rule
 
@@ -38,7 +45,7 @@ The spec's bar is eight issuers, so **the original list misses it by one**.
 
 ## Options for Imane
 
-1. **Swap in reserves (recommended).** Norwegian and Wizz Air replace Ryanair as the low-cost
+1. **Swap in reserves (recommended, chosen).** Norwegian and Wizz Air replace Ryanair as the low-cost
    pair with easyJet, which gives 9 issuers (6 airlines, 3 airports) and passes the bar.
    Icelandair can be added as a seventh airline. No airport replacement passed.
 2. **Keep Lufthansa, Fraport and Ryanair by loading their filings from another source.**

@@ -1,7 +1,8 @@
-# The ten v1 candidates. `lei` comes from the filings.xbrl.org entity search in M0,
+# The v1 issuers and the candidates checked in M0. `lei` comes from the filings.xbrl.org entity search in M0,
 # checked against the entity name. `search` is the name fragment used to find it.
 # `leases_in_borrowings` is set only after reading the debt note, with the evidence.
-# `reserve: true` marks replacement candidates checked in M0, not yet in v1.
+# `status`: v1 (in scope), reserve (passed M0, not in v1) or dropped (failed M0).
+# The v1 line-up was chosen in docs/decisions/0001-issuer-go-no-go.md.
 
 issuers:
   - id: afkl
@@ -14,6 +15,7 @@ issuers:
     fiscal_year_end: "12-31"
     currency: EUR
     lei: 969500AQW31GYO8JZD66
+    status: v1
 
   - id: lha
     name: Deutsche Lufthansa
@@ -25,6 +27,8 @@ issuers:
     fiscal_year_end: "12-31"
     currency: EUR
     lei: 529900PH63HYJ86ASW55
+    status: dropped
+    status_reason: no filings on filings.xbrl.org (no German filings in the database)
 
   - id: iag
     name: International Airlines Group
@@ -36,6 +40,7 @@ issuers:
     fiscal_year_end: "12-31"
     currency: EUR
     lei: 959800TZHQRUSH1ESL13
+    status: v1
     leases_in_borrowings: true
     leases_evidence: >-
       FY2024 borrowings note: "Interest-bearing long-term borrowings" of 17,345
@@ -51,6 +56,7 @@ issuers:
     fiscal_year_end: "12-31"
     currency: EUR
     lei: 213800SB6EOB8SSK9W63
+    status: v1
 
   - id: ryanair
     name: Ryanair Holdings
@@ -62,6 +68,8 @@ issuers:
     fiscal_year_end: "03-31"
     currency: EUR
     lei: null
+    status: dropped
+    status_reason: not on filings.xbrl.org (no Irish filings in the database)
 
   - id: easyjet
     name: easyJet
@@ -73,6 +81,7 @@ issuers:
     fiscal_year_end: "09-30"
     currency: GBP
     lei: 2138001S47XKWIB7TH90
+    status: v1
 
   - id: adp
     name: Groupe ADP
@@ -83,6 +92,7 @@ issuers:
     fiscal_year_end: "12-31"
     currency: EUR
     lei: 969500PJMBSFHYC37989
+    status: v1
     leases_in_borrowings: true
     leases_evidence: >-
       FY2024 financial instruments note: "Dettes de location" of 168 (non-current
@@ -97,6 +107,8 @@ issuers:
     fiscal_year_end: "12-31"
     currency: EUR
     lei: null
+    status: dropped
+    status_reason: not on filings.xbrl.org (no German filings in the database)
 
   - id: aena
     name: Aena
@@ -107,6 +119,7 @@ issuers:
     fiscal_year_end: "12-31"
     currency: EUR
     lei: 959800R7QMXKF0NFMT29
+    status: v1
     leases_in_borrowings: true
     leases_evidence: >-
       FY2024 leases note: lease liabilities are recorded under "Deuda financiera";
@@ -121,8 +134,9 @@ issuers:
     fiscal_year_end: "12-31"
     currency: EUR
     lei: 549300FQ2ILBH7DJ6I45
+    status: v1
 
-  # Reserve candidates (found on filings.xbrl.org during M0)
+  # Candidates added in M0 (found on filings.xbrl.org)
   - id: norwegian
     name: Norwegian Air Shuttle
     type: airline
@@ -133,7 +147,7 @@ issuers:
     fiscal_year_end: "12-31"
     currency: NOK
     lei: 549300IEUH2FEM2Y6B51
-    reserve: true
+    status: v1
 
   - id: wizz
     name: Wizz Air Holdings
@@ -145,11 +159,11 @@ issuers:
     fiscal_year_end: "03-31"
     currency: EUR
     lei: 213800COXGZCORLJZA85
+    status: v1
     leases_in_borrowings: true
     leases_evidence: >-
       FY2025 borrowings note: "Lease liability under IFRS 16" of 605.7 (current) and
       3,065.4 (non-current) sit inside total borrowings.
-    reserve: true
 
   - id: icelandair
     name: Icelandair Group
@@ -161,7 +175,7 @@ issuers:
     fiscal_year_end: "12-31"
     currency: USD
     lei: 549300UMI5MBLZSXGL15
-    reserve: true
+    status: reserve
 
   - id: cph
     name: Copenhagen Airports
@@ -172,4 +186,5 @@ issuers:
     fiscal_year_end: "12-31"
     currency: DKK
     lei: 549300Z01GJGM7D3HQ74
-    reserve: true
+    status: dropped
+    status_reason: lease liabilities not identified; report text garbled
