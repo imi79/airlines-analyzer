@@ -14,10 +14,20 @@ Turns a European airline's or airport's annual ESEF/UKSEF filing into a two-page
 - Secrets only from the environment. Ask before adding a dependency that isn't in the stack table.
 - Record every non-obvious choice as a short note in `docs/decisions/`.
 
+## AI inside the app
+
+- The app never depends on one AI vendor. All model calls go through `src/tearsheet/llm/`, and the provider (Anthropic, DeepSeek, or any OpenAI-compatible gateway), model names and API key variable are set in `config/models.yaml`. No provider-specific code outside that layer.
+- The verifier and grounding checks are provider-neutral and run on every model output, whichever provider produced it.
+
 ## Talking to Imane
 
 - Imane has a finance and credit background and very little technical knowledge. Explain in plain language, use finance analogies, avoid jargon, and define any technical term that can't be avoided.
 - Say what is being built and why before building it; report results as findings, not as code.
+
+## Branches
+
+- `main` holds stable work only: tests green, milestone checklist up to date.
+- Develop on short-lived branches named after the work (for example `m1-load-figures`), then merge into `main` when stable. Never put "claude" in a branch name.
 
 ## Commits
 

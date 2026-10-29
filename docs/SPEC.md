@@ -11,7 +11,7 @@ Decisions taken for v1:
 - **Purpose:** portfolio first, with an architecture that can carry daily use and a commercial version later.
 - **Coverage:** European listed airlines and airports, using free structured filings (ESEF and UKSEF).
 - **Interface:** a web app with PDF and Excel export.
-- **Division of labour:** code computes every number; Claude extracts what the filings don't tag and drafts the commentary; a verifier checks every figure Claude touches.
+- **Division of labour:** code computes every number; an AI model extracts what the filings don't tag and drafts the commentary; a verifier checks every figure the model touches. The model and its provider (Anthropic, DeepSeek or any compatible gateway) are a configuration choice ([decision 0005](decisions/0005-ai-provider-choice.md)).
 - **Working name:** Airline Credit Tearsheet.
 
 ## Why this tool, and where it stands apart
@@ -88,7 +88,7 @@ One free source carries v1: the annual filing itself, read twice, once as tagged
 | --- | --- | --- |
 | [filings.xbrl.org API](https://filings.xbrl.org/about.html) | ESEF and UKSEF annual reports: report package, xBRL-JSON facts, link to the iXBRL viewer | Free JSON:API, no key |
 | [xbrl-filings-api](https://pypi.org/project/xbrl-filings-api) | Python client for the same API, with pandas output | pip; optional, the API can be called directly |
-| Report text inside the iXBRL file | Traffic and fleet figures, undrawn credit facilities, fuel hedging | Same filing, read by Claude with a grounding check |
+| Report text inside the iXBRL file | Traffic and fleet figures, undrawn credit facilities, fuel hedging | Same filing, read by the AI model with a grounding check |
 | ECB reference rates | EUR exchange rates for peer size charts | Free; endpoint confirmed in M0 |
 | Manual inputs (YAML in the repo) | Peer groups, ratings if shown, per-issuer overrides | Maintained by Imane, each entry with a source and a date |
 
@@ -156,7 +156,7 @@ Seven stages run in sequence around one facts store, and every number in the sys
 
 &#91;embedded content: pipeline · 7 stages around one facts store\]
 
-Stages 1 to 3 are plain code. Stages 4 and 5 use Claude, and nothing they produce reaches the store or the page without a check in code.
+Stages 1 to 3 are plain code. Stages 4 and 5 use the AI model, and nothing they produce reaches the store or the page without a check in code.
 
 **Data model.** Three tables in a local DuckDB file:
 
@@ -170,7 +170,7 @@ Stages 1 to 3 are plain code. Stages 4 and 5 use Claude, and nothing they produc
 | Filing access | httpx against the filings.xbrl.org API | Free JSON, no key |
 | Storage | DuckDB file, raw xBRL-JSON cached on disk | SQL without a server, offline reruns |
 | Data handling | pandas, Pydantic models, YAML config | Familiar to analysts, typed boundaries |
-| LLM | Anthropic Python SDK: `claude-sonnet-5-5` drafts, `claude-haiku-5-5` extracts, both configurable | Structured output through tool use |
+| LLM | Provider-neutral layer: Anthropic, DeepSeek or any OpenAI-compatible gateway, chosen in `config/models.yaml` (one model for drafting, one for extraction) | No lock-in to one AI vendor; structured output through tool use |
 | Web app | Streamlit | Fastest path to a shareable demo |
 | Charts | Altair, with vl-convert for static images | One library for app and PDF, no browser needed |
 | PDF | Jinja2 HTML template and WeasyPrint | Print-quality A4 from HTML and CSS |
@@ -190,7 +190,8 @@ airline-credit-tearsheet/
     normalize/     concept_map.yaml, overrides/<issuer>.yaml, mapper
     store/         DuckDB schema and access
     metrics/       catalog.yaml, formulas, peers
-    extract/       section locator, Claude extraction, grounding check
+    llm/           provider-neutral AI client (Anthropic, OpenAI-compatible)
+    extract/       section locator, AI extraction, grounding check
     narrative/     prompts/, fact sheet builder, drafting, verifier
     render/        PDF template, Excel writer, charts
     app/           Streamlit pages
@@ -201,19 +202,19 @@ airline-credit-tearsheet/
 
 ## AI layer and figure verification
 
-Claude never writes a number into the tearsheet: it either extracts a figure with a quote that code then checks, or references figures by id in prose that code fills in.
+The AI model never writes a number into the tearsheet: it either extracts a figure with a quote that code then checks, or references figures by id in prose that code fills in.
 
 **Job 1: extracting what the filing doesn't tag.**
 
-1. A section locator searches the report text for the relevant passages (for example "available seat kilometres", "load factor", "undrawn") and sends only those to Claude, which keeps cost low.
-2. Claude returns structured output through tool use: metric id, value, unit, period, verbatim quote, location in the document.
+1. A section locator searches the report text for the relevant passages (for example "available seat kilometres", "load factor", "undrawn") and sends only those to the model, which keeps cost low.
+2. The model returns structured output through tool use: metric id, value, unit, period, verbatim quote, location in the document.
 3. Code checks that the quote appears verbatim in the document (whitespace normalised), that the value appears in the quote after unit normalisation, and that the period matches the fiscal year.
 4. A value that passes is marked verified. One that fails is marked unverified and stays off the tearsheet until the analyst approves or corrects it in the app; every correction is stored as an override with author, date and reason.
 
 **Job 2: drafting the commentary.**
 
-1. A fact sheet builder hands Claude a JSON payload: metric ids and values, prior-year values, peer medians, and precomputed changes with their direction (up, down or flat, against a threshold per metric).
-2. Claude writes each section with placeholders such as `{{net_leverage@FY2025}}` and returns, for each sentence, the fact ids it relies on and the direction it claims.
+1. A fact sheet builder hands the model a JSON payload: metric ids and values, prior-year values, peer medians, and precomputed changes with their direction (up, down or flat, against a threshold per metric).
+2. The model writes each section with placeholders such as `{{net_leverage@FY2025}}` and returns, for each sentence, the fact ids it relies on and the direction it claims.
 3. A renderer replaces placeholders with formatted values (2.4x, 18.3%, EUR 1.2bn), so formatting is consistent everywhere.
 
 The verifier rejects a draft when it finds a number written outside a placeholder (fiscal year labels and names such as "IFRS 16" are allowed), an unknown placeholder, or a claimed direction that contradicts the computed change. Rejection triggers up to two retries with the error list fed back; after that the draft goes to the app flagged for manual editing.
@@ -297,7 +298,7 @@ Builds: `catalog.yaml`, formula functions, peer groups, medians and ranks.
 
 ### M3 · Extraction with grounding (M)
 
-Builds: section locator, Claude extraction through tool use, grounding checks, review statuses.
+Builds: provider-neutral AI client, section locator, AI extraction through tool use, grounding checks, review statuses.
 
 - [ ] No wrong value marked verified on the labelled set
 - [ ] At least 80% of labelled values verified automatically
