@@ -1,0 +1,29 @@
+# Wizz Air: company-specific concepts, tried before the common map.
+lines:
+  contract_liabilities:
+    rules:
+      - concepts: [ifrs-full:CurrentDeferredIncomeOtherThanCurrentContractLiabilities]
+        reason: >-
+          Wizz Air tags unearned ticket revenue as current deferred income (FY2023 on).
+        checked: FY2025 filing (1,013.3)
+      - concepts: [ifrs-full:DeferredIncomeClassifiedAsCurrent]
+        reason: Same line as tagged in the FY2022 filing.
+        checked: FY2022 filing (333.8)
+  capex:
+    rules:
+      - concepts: [ext:PurchaseOfTangibleAndIntangibleAssetsClassifiedAsInvestingActivities]
+        add_if_tagged: [ext:PurchaseOfAircraftMaintenanceAssetsClassifiedAsInvestingActivities]
+        reason: >-
+          Capex is tagged as purchases of tangible and intangible assets, plus capitalised
+          aircraft maintenance, both company concepts.
+        checked: FY2025 filing (258.8 + 23.9)
+  interest_paid:
+    rules:
+      - concepts: [ext:InterestPaidLoansIFRSLeaseLiabilitiesClassifiedAsFinancingActivities]
+        add_if_tagged: [ext:InterestPaidLoansJOLCOClassifiedAsFinancingActivities,
+                        ext:InterestPaidLoansJOLCOAndFTLClassifiedAsFinancingActivities,
+                        ext:InterestPaidUnsecuredDebtClassifiedAsFinancingActivities,
+                        ext:InterestPaidSecuredDebtClassifiedAsFinancingActivities,
+                        ext:InterestPaidOtherClassifiedAsFinancingActivities]
+        reason: Interest paid is split by type of debt, with the set of lines varying by year.
+        checked: FY2025 filing (156.5 + 50.6 + 5.0 + 9.5 + 1.9)

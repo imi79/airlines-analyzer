@@ -23,9 +23,13 @@ Further choices made while building:
   so. The value exactly as tagged is kept next to the canonical value.
 - **Company-specific labels** are matched on their name within the company's own taxonomy, not
   on the short prefix, because the prefix changes between years (`AFKLM:` in 2021, `afklm:` later).
-- **ADP capex** uses "FluxDinvestissementCorporelsIncorporels" (tangible and intangible
-  capex). The other candidate, "InvestissementsCorporelsIncorporelsEtDePlacement", includes
-  financial investments.
+- **Capex is cash paid**, which includes the change in amounts owed to fixed-asset suppliers.
+  That's the standard IFRS cash-flow basis, and it's what Air France-KLM's capex line shows
+  (3,195 + 322 + 195 + 16 = 3,728 in FY2024). For ADP this means "Investissements corporels,
+  incorporels et de placement" (where "de placement" is investment property, not financial
+  investments) less the change in supplier payables: 1,089 + 80 = 1,169 in FY2024, which
+  equals ADP's own cash total. This corrects the M0 reading. ADP's FY2021-FY2022 line doesn't
+  show which basis it uses, so it is flagged for checking.
 - **Two extra tables** sit beside the spec's `facts` table: `filings` (one row per filing used, with
   hash, origin and links) and `raw_facts` (every number tagged in those filings), so any loaded
   figure can be traced back to the exact tag it came from.

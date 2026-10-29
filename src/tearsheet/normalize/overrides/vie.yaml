@@ -1,0 +1,28 @@
+# Flughafen Wien: company-specific concepts (German names), tried before the common map.
+lines:
+  debt_including_leases:
+    rules:
+      - concepts: [ext:FinanzUndLeasingverbindlichkeitenKurzfristig,
+                   ext:FinanzUndLeasingverbindlichkeitenLangfristig]
+        reason: >-
+          The balance sheet shows financial and lease liabilities on one line each for current
+          ("kurzfristig") and non-current ("langfristig").
+        checked: FY2024 balance sheet (0.08m + 55.5m)
+  interest_paid:
+    rules:
+      - concepts: [ifrs-full:InterestPaidClassifiedAsOperatingActivities]
+        sign: -1
+        from_filing_year: 2023
+        reason: >-
+          From the FY2023 filing on, interest paid is tagged as a negative amount; the FY2021
+          and FY2022 filings tag it as positive.
+        checked: FY2022 filing (+13.3m for 2022) vs FY2023 filing (-13.3m for 2022)
+  tax_paid:
+    rules:
+      - concepts: [ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities]
+        sign: -1
+        from_filing_year: 2023
+        reason: >-
+          From the FY2023 filing on, tax paid is tagged as a negative amount. In the FY2021 and
+          FY2022 filings a negative amount is a refund (FY2021: refund of 8.3m).
+        checked: FY2022 filing (+8.3m paid for 2022) vs FY2023 filing (-8.3m for 2022)

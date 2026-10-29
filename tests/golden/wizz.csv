@@ -1,0 +1,105 @@
+fiscal_year,line,value,concepts,rule,comparative,restated
+2021,revenue,739000000,ifrs-full:Revenue,common,True,False
+2021,fuel_cost,347500000,ifrs-full:FuelExpense,common,True,False
+2021,dda,345300000,ifrs-full:DepreciationAndAmortisationExpense,common,True,False
+2021,operating_profit,-528100000,ifrs-full:ProfitLossFromOperatingActivities,common,True,False
+2021,finance_costs,78400000,ifrs-full:FinanceCosts,common,True,False
+2021,profit,-576000000,ifrs-full:ProfitLoss,common,True,False
+2021,cash,1100700000,ifrs-full:CashAndCashEquivalents,common,True,False
+2021,short_term_deposits,346800000,ifrs-full:ShorttermDepositsNotClassifiedAsCashEquivalents,common,True,False
+2021,contract_liabilities,68000000,ifrs-full:DeferredIncomeClassifiedAsCurrent,override:wizz,True,False
+2021,borrowings_current,722100000,ifrs-full:ShorttermBorrowings,common,True,False
+2021,borrowings_noncurrent,2388700000,ifrs-full:LongtermBorrowings,common,True,False
+2021,equity,903700000,ifrs-full:Equity,common,True,False
+2021,total_assets,4722600000,ifrs-full:Assets,common,True,False
+2021,cfo,-224600000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,True,False
+2021,capex,250100000,wizzair:PurchaseOfTangibleAndIntangibleAssetsClassifiedAsInvestingActivities + wizzair:PurchaseOfAircraftMaintenanceAssetsClassifiedAsInvestingActivities,override:wizz,True,False
+2021,interest_paid,73700000,wizzair:InterestPaidLoansIFRSLeaseLiabilitiesClassifiedAsFinancingActivities + wizzair:InterestPaidLoansJOLCOClassifiedAsFinancingActivities + wizzair:InterestPaidUnsecuredDebtClassifiedAsFinancingActivities + wizzair:InterestPaidOtherClassifiedAsFinancingActivities,override:wizz,True,False
+2021,tax_paid,3600000,ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities,common,True,False
+2022,revenue,1663400000,ifrs-full:Revenue,common,True,False
+2022,fuel_cost,649000000,ifrs-full:FuelExpense,common,True,False
+2022,dda,446300000,ifrs-full:DepreciationAndAmortisationExpense,common,True,False
+2022,operating_profit,-465300000,ifrs-full:ProfitLossFromOperatingActivities,common,True,False
+2022,finance_costs,89500000,ifrs-full:FinanceCosts,common,True,False
+2022,profit,-642500000,ifrs-full:ProfitLoss,common,True,False
+2022,cash,766600000,ifrs-full:CashAndCashEquivalents,common,True,False
+2022,short_term_deposits,450000000,ifrs-full:ShorttermDepositsNotClassifiedAsCashEquivalents,common,True,False
+2022,contract_liabilities,333800000,ifrs-full:CurrentDeferredIncomeOtherThanCurrentContractLiabilities,override:wizz,True,False
+2022,borrowings_current,413100000,ifrs-full:ShorttermBorrowings,common,True,False
+2022,borrowings_noncurrent,3525300000,ifrs-full:LongtermBorrowings,common,True,False
+2022,equity,263900000,ifrs-full:Equity,common,True,False
+2022,total_assets,5356100000,ifrs-full:Assets,common,True,False
+2022,cfo,281200000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,True,True
+2022,capex,136800000,wizzair:PurchaseOfTangibleAndIntangibleAssetsClassifiedAsInvestingActivities + wizzair:PurchaseOfAircraftMaintenanceAssetsClassifiedAsInvestingActivities,override:wizz,True,False
+2022,interest_paid,84300000,wizzair:InterestPaidLoansIFRSLeaseLiabilitiesClassifiedAsFinancingActivities + wizzair:InterestPaidLoansJOLCOClassifiedAsFinancingActivities + wizzair:InterestPaidUnsecuredDebtClassifiedAsFinancingActivities + wizzair:InterestPaidSecuredDebtClassifiedAsFinancingActivities + wizzair:InterestPaidOtherClassifiedAsFinancingActivities,override:wizz,True,False
+2022,tax_paid,4900000,ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities,common,True,False
+2023,revenue,3895700000,ifrs-full:Revenue,common,False,False
+2023,fuel_cost,1954400000,ifrs-full:FuelExpense,common,False,False
+2023,dda,601100000,ifrs-full:DepreciationAndAmortisationExpense,common,False,False
+2023,operating_profit,-466800000,ifrs-full:ProfitLossFromOperatingActivities,common,False,False
+2023,finance_costs,135300000,ifrs-full:FinanceCosts,common,False,False
+2023,profit,-535100000,ifrs-full:ProfitLoss,common,False,False
+2023,cash,1408600000,ifrs-full:CashAndCashEquivalents,common,False,False
+2023,short_term_deposits,0,ifrs-full:ShorttermDepositsNotClassifiedAsCashEquivalents,common,False,False
+2023,contract_liabilities,770300000,ifrs-full:CurrentDeferredIncomeOtherThanCurrentContractLiabilities,override:wizz,False,False
+2023,borrowings_current,1275000000,ifrs-full:ShorttermBorrowings,common,False,False
+2023,borrowings_noncurrent,4000500000,ifrs-full:LongtermBorrowings,common,False,False
+2023,equity,-357900000,ifrs-full:Equity,common,False,False
+2023,total_assets,7034400000,ifrs-full:Assets,common,False,False
+2023,cfo,421900000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,False,False
+2023,capex,164400000,wizzair:PurchaseOfTangibleAndIntangibleAssetsClassifiedAsInvestingActivities + wizzair:PurchaseOfAircraftMaintenanceAssetsClassifiedAsInvestingActivities,override:wizz,False,False
+2023,interest_paid,127200000,wizzair:InterestPaidLoansIFRSLeaseLiabilitiesClassifiedAsFinancingActivities + wizzair:InterestPaidLoansJOLCOClassifiedAsFinancingActivities + wizzair:InterestPaidUnsecuredDebtClassifiedAsFinancingActivities + wizzair:InterestPaidSecuredDebtClassifiedAsFinancingActivities + wizzair:InterestPaidOtherClassifiedAsFinancingActivities,override:wizz,False,False
+2023,tax_paid,7000000,ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities,common,False,False
+2024,revenue,5073100000,ifrs-full:Revenue,common,True,False
+2024,fuel_cost,1855700000,ifrs-full:FuelExpense,common,True,False
+2024,dda,755300000,ifrs-full:DepreciationAndAmortisationExpense,common,True,False
+2024,operating_profit,437900000,ifrs-full:ProfitLossFromOperatingActivities,common,True,False
+2024,finance_costs,196700000,ifrs-full:FinanceCosts,common,True,False
+2024,profit,365900000,ifrs-full:ProfitLoss,common,True,False
+2024,cash,728400000,ifrs-full:CashAndCashEquivalents,common,True,False
+2024,short_term_deposits,751100000,ifrs-full:ShorttermDepositsNotClassifiedAsCashEquivalents,common,True,False
+2024,contract_liabilities,797400000,ifrs-full:CurrentDeferredIncomeOtherThanCurrentContractLiabilities,override:wizz,True,False
+2024,borrowings_current,1084300000,ifrs-full:ShorttermBorrowings,common,True,False
+2024,borrowings_noncurrent,5159700000,ifrs-full:LongtermBorrowings,common,True,False
+2024,equity,145700000,ifrs-full:Equity,common,True,False
+2024,total_assets,8694900000,ifrs-full:Assets,common,True,False
+2024,cfo,664500000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,True,False
+2024,capex,338200000,wizzair:PurchaseOfTangibleAndIntangibleAssetsClassifiedAsInvestingActivities + wizzair:PurchaseOfAircraftMaintenanceAssetsClassifiedAsInvestingActivities,override:wizz,True,False
+2024,interest_paid,170200000,wizzair:InterestPaidLoansIFRSLeaseLiabilitiesClassifiedAsFinancingActivities + wizzair:InterestPaidLoansJOLCOAndFTLClassifiedAsFinancingActivities + wizzair:InterestPaidUnsecuredDebtClassifiedAsFinancingActivities + wizzair:InterestPaidSecuredDebtClassifiedAsFinancingActivities + wizzair:InterestPaidOtherClassifiedAsFinancingActivities,override:wizz,True,False
+2024,tax_paid,17400000,ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities,common,True,False
+2025,revenue,5267600000,ifrs-full:Revenue,common,True,False
+2025,fuel_cost,1797600000,ifrs-full:FuelExpense,common,True,False
+2025,dda,966800000,ifrs-full:DepreciationAndAmortisationExpense,common,True,False
+2025,operating_profit,167500000,ifrs-full:ProfitLossFromOperatingActivities,common,True,False
+2025,finance_costs,249500000,ifrs-full:FinanceCosts,common,True,False
+2025,profit,213900000,ifrs-full:ProfitLoss,common,True,False
+2025,cash,597500000,ifrs-full:CashAndCashEquivalents,common,True,False
+2025,short_term_deposits,1060200000,ifrs-full:ShorttermDepositsNotClassifiedAsCashEquivalents,common,True,False
+2025,contract_liabilities,1013300000,ifrs-full:CurrentDeferredIncomeOtherThanCurrentContractLiabilities,override:wizz,True,False
+2025,borrowings_current,1517900000,ifrs-full:ShorttermBorrowings,common,True,False
+2025,borrowings_noncurrent,5070600000,ifrs-full:LongtermBorrowings,common,True,False
+2025,equity,317100000,ifrs-full:Equity,common,True,False
+2025,total_assets,9635400000,ifrs-full:Assets,common,True,False
+2025,cfo,1065600000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,True,False
+2025,capex,282700000,wizzair:PurchaseOfTangibleAndIntangibleAssetsClassifiedAsInvestingActivities + wizzair:PurchaseOfAircraftMaintenanceAssetsClassifiedAsInvestingActivities,override:wizz,True,False
+2025,lease_payments,720000000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,True,False
+2025,interest_paid,223500000,wizzair:InterestPaidLoansIFRSLeaseLiabilitiesClassifiedAsFinancingActivities + wizzair:InterestPaidUnsecuredDebtClassifiedAsFinancingActivities + wizzair:InterestPaidSecuredDebtClassifiedAsFinancingActivities + wizzair:InterestPaidOtherClassifiedAsFinancingActivities,override:wizz,True,False
+2025,tax_paid,39100000,ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities,common,True,False
+2026,revenue,5691400000,ifrs-full:Revenue,common,False,False
+2026,fuel_cost,1764000000,ifrs-full:FuelExpense,common,False,False
+2026,dda,1178600000,ifrs-full:DepreciationAndAmortisationExpense,common,False,False
+2026,operating_profit,139700000,ifrs-full:ProfitLossFromOperatingActivities,common,False,False
+2026,finance_costs,267800000,ifrs-full:FinanceCosts,common,False,False
+2026,profit,1300000,ifrs-full:ProfitLoss,common,False,False
+2026,cash,1085900000,ifrs-full:CashAndCashEquivalents,common,False,False
+2026,short_term_deposits,778400000,ifrs-full:ShorttermDepositsNotClassifiedAsCashEquivalents,common,False,False
+2026,contract_liabilities,1180100000,ifrs-full:CurrentDeferredIncomeOtherThanCurrentContractLiabilities,override:wizz,False,False
+2026,borrowings_current,815900000,ifrs-full:ShorttermBorrowings,common,False,False
+2026,borrowings_noncurrent,6138500000,ifrs-full:LongtermBorrowings,common,False,False
+2026,equity,928400000,ifrs-full:Equity,common,False,False
+2026,total_assets,11269900000,ifrs-full:Assets,common,False,False
+2026,cfo,1179600000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,False,False
+2026,capex,408100000,wizzair:PurchaseOfTangibleAndIntangibleAssetsClassifiedAsInvestingActivities + wizzair:PurchaseOfAircraftMaintenanceAssetsClassifiedAsInvestingActivities,override:wizz,False,False
+2026,lease_payments,791400000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,False,False
+2026,interest_paid,244500000,wizzair:InterestPaidLoansIFRSLeaseLiabilitiesClassifiedAsFinancingActivities + wizzair:InterestPaidUnsecuredDebtClassifiedAsFinancingActivities + wizzair:InterestPaidSecuredDebtClassifiedAsFinancingActivities + wizzair:InterestPaidOtherClassifiedAsFinancingActivities,override:wizz,False,False
+2026,tax_paid,19600000,ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities,common,False,False

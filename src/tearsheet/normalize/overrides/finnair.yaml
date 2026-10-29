@@ -1,0 +1,13 @@
+# Finnair: company-specific concepts, tried before the common map.
+lines:
+  contract_liabilities:
+    rules:
+      - concepts: [ext:CurrentDeferredIncomeIncludingCurrentContractLiabilitiesAndCurrentAdvances]
+        reason: Advance ticket sales sit in "deferred income and advances received", a company concept.
+        checked: FY2024 filing (658.9)
+  capex:
+    rules:
+      - concepts: [ext:PurchaseOfAircraftClassifiedAsInvestingActivities,
+                   ext:PurchaseOfOtherPropertyPlantAndEquipmentAndIntangibleAssetsClassifiedAsInvestingActivities]
+        reason: Capex is split into aircraft and other PP&E and intangibles, both company concepts.
+        checked: FY2024 filing (222.8 + 10.8)

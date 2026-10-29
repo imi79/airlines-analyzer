@@ -1,0 +1,32 @@
+# Air France-KLM: company-specific concepts (French names), tried before the common map.
+lines:
+  dda:
+    rules:
+      - concepts: [ext:AmortissementsDepreciationsEtProvisions]
+        reason: >-
+          The income statement has one line, "Amortissements, dépréciations et provisions",
+          with no pure D&A line. Used as reported (decision 0004, choice 1a).
+        footnote: >-
+          Air France-KLM D&A includes provisions, as in the company's own EBITDA definition.
+        checked: FY2024 income statement and segment note (line 2,643 in both)
+  finance_costs:
+    rules:
+      - concepts: [ext:CoutDeLendettementFinancierBrut]
+        reason: >-
+          FY2021-FY2022 filings tag gross cost of financial debt ("Coût de l'endettement
+          financier brut") as a company concept. Later filings use ifrs-full:InterestExpense.
+        checked: FY2022 filing (569)
+  contract_liabilities:
+    rules:
+      - concepts: [ext:TitresTransportEmisNonUtilises]
+        reason: Advance ticket sales are tagged as "Titres de transport émis non utilisés".
+        checked: FY2024 balance sheet (4,097)
+  capex:
+    rules:
+      - concepts: [ext:InvestissementsCorporelsIncorporels]
+        reason: >-
+          Capex is one cash flow line, "Investissements corporels et incorporels" (aircraft,
+          other tangible and intangible assets).
+        checked: >-
+          FY2024 cash flow note: aircraft 3,195 + other tangible 322 + intangible 195 + change in
+          payables on fixed assets 16 = 3,728 (cash paid)

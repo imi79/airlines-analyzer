@@ -1,0 +1,17 @@
+# International Airlines Group: company-specific concepts, tried before the common map.
+lines:
+  contract_liabilities:
+    rules:
+      - concepts: [ext:DeferredRevenueOnTicketSalesClassifiedAsCurrent]
+        reason: >-
+          FY2021-FY2022 filings tag current deferred revenue on ticket sales as a company
+          concept. Later filings use the IFRS concept for current deferred income.
+        checked: FY2022 filing (7,318)
+  fuel_cost:
+    rules:
+      - concepts: [ext:FuelOilCostsAndEmissionsCharges]
+        reason: >-
+          FY2021-FY2022 filings tag "Fuel, oil costs and emissions charges" as a company
+          concept. Later filings use ifrs-full:FuelExpense for the same line.
+        note: Includes emissions charges, as in IAG's income statement.
+        checked: FY2022 filing (6,120)

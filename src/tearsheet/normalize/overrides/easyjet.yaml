@@ -1,0 +1,9 @@
+# easyJet: company-specific concepts, tried before the common map.
+lines:
+  contract_liabilities:
+    rules:
+      - concepts: [ext:CurrentUnearnedRevenue]
+        reason: >-
+          FY2022-FY2023 filings tag current unearned revenue (advance ticket sales) as a
+          company concept.
+        checked: FY2023 filing (1,498)

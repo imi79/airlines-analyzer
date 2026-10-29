@@ -1,0 +1,271 @@
+# Canonical statement lines and the standard IFRS concepts that feed them.
+#
+# For each line, `rules` are tried in order and the first one fully tagged for the year wins.
+# A rule with several concepts adds them up (a line reported in parts).
+# Company-specific concepts are mapped in overrides/<issuer>.yaml, which is tried first.
+#
+# Sign convention: costs and cash outflows are positive amounts. `sign: -1` flips a concept
+# tagged the other way. `expect: positive` raises a warning when a loaded value is negative,
+# which catches sign mistakes.
+#
+# `statement` and the order below are the order of the check sheet.
+
+lines:
+  # --- Income statement ------------------------------------------------------------------
+  revenue:
+    label: Revenue
+    statement: income
+    period: duration
+    expect: positive
+    rules:
+      - concepts: [ifrs-full:Revenue]
+      - concepts: [ifrs-full:RevenueFromContractsWithCustomers]
+
+  fuel_cost:
+    label: Fuel cost
+    statement: income
+    period: duration
+    expect: positive
+    applies_to: [airline]
+    rules:
+      - concepts: [ifrs-full:FuelExpense]
+    missing_reason: Fuel cost not tagged separately; to be extracted from the notes (M3).
+
+  dda:
+    label: Depreciation, amortisation and impairment
+    statement: income
+    period: duration
+    expect: positive
+    rules:
+      - concepts: [ifrs-full:DepreciationAmortisationAndImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss]
+      - concepts: [ifrs-full:DepreciationAndAmortisationExpense]
+      - concepts: [ifrs-full:DepreciationExpense, ifrs-full:AmortisationExpense]
+      - concepts: [ifrs-full:AdjustmentsForDepreciationAmortisationAndImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss]
+        note: Taken from the cash flow statement (adjustment for D&A and impairment).
+      - concepts: [ifrs-full:AdjustmentsForDepreciationAndAmortisationExpense]
+        note: Taken from the cash flow statement (adjustment for D&A).
+
+  operating_profit:
+    label: Operating profit
+    statement: income
+    period: duration
+    rules:
+      - concepts: [ifrs-full:ProfitLossFromOperatingActivities]
+
+  finance_costs:
+    label: Finance costs
+    statement: income
+    period: duration
+    expect: positive
+    rules:
+      - concepts: [ifrs-full:FinanceCosts]
+      - concepts: [ifrs-full:InterestExpense]
+
+  profit:
+    label: Profit for the year
+    statement: income
+    period: duration
+    rules:
+      - concepts: [ifrs-full:ProfitLoss]
+
+  # --- Balance sheet ---------------------------------------------------------------------
+  cash:
+    label: Cash and cash equivalents
+    statement: balance
+    period: instant
+    expect: positive
+    rules:
+      - concepts: [ifrs-full:CashAndCashEquivalents]
+      - concepts: [ifrs-full:Cash]
+        note: Cash only; the balance sheet shows no cash equivalents line.
+
+  # Cash-like investments: each candidate is loaded on its own line, so the M2 net debt
+  # definition can choose per issuer which ones count.
+  short_term_deposits:
+    label: Short-term deposits (not cash equivalents)
+    statement: balance
+    period: instant
+    expect: positive
+    optional: true
+    rules:
+      - concepts: [ifrs-full:ShorttermDepositsNotClassifiedAsCashEquivalents]
+
+  current_investments:
+    label: Current investments
+    statement: balance
+    period: instant
+    expect: positive
+    optional: true
+    rules:
+      - concepts: [ifrs-full:CurrentInvestments]
+      - concepts: [ifrs-full:CurrentFinancialAssetsAtFairValueThroughProfitOrLoss]
+      - concepts: [ifrs-full:CurrentFinancialAssetsAtAmortisedCost]
+
+  other_current_financial_assets:
+    label: Other current financial assets
+    statement: balance
+    period: instant
+    expect: positive
+    optional: true
+    rules:
+      - concepts: [ifrs-full:OtherCurrentFinancialAssets]
+
+  contract_liabilities:
+    label: Contract liabilities (advance ticket sales)
+    statement: balance
+    period: instant
+    expect: positive
+    applies_to: [airline]
+    rules:
+      - concepts: [ifrs-full:CurrentContractLiabilities]
+      - concepts: [ifrs-full:ContractLiabilities]
+      - concepts: [ifrs-full:CurrentDeferredIncomeIncludingCurrentContractLiabilities]
+        note: Deferred income including contract liabilities.
+
+  borrowings_current:
+    label: Borrowings, current
+    statement: balance
+    period: instant
+    expect: positive
+    group: debt
+    rules:
+      - concepts: [ifrs-full:CurrentBorrowingsAndCurrentPortionOfNoncurrentBorrowings]
+      - concepts: [ifrs-full:ShorttermBorrowings]
+      - concepts: [ifrs-full:CurrentPortionOfLongtermBorrowings]
+      - concepts: [ifrs-full:CurrentPortionOfNoncurrentBorrowings]
+
+  borrowings_noncurrent:
+    label: Borrowings, non-current
+    statement: balance
+    period: instant
+    expect: positive
+    group: debt
+    rules:
+      - concepts: [ifrs-full:NoncurrentPortionOfNoncurrentBorrowings]
+      - concepts: [ifrs-full:LongtermBorrowings]
+
+  borrowings_total:
+    label: Borrowings, total
+    statement: balance
+    period: instant
+    expect: positive
+    group: debt
+    optional: true
+    rules:
+      - concepts: [ifrs-full:Borrowings]
+
+  lease_liabilities_current:
+    label: Lease liabilities, current
+    statement: balance
+    period: instant
+    expect: positive
+    group: debt
+    rules:
+      - concepts: [ifrs-full:CurrentLeaseLiabilities]
+
+  lease_liabilities_noncurrent:
+    label: Lease liabilities, non-current
+    statement: balance
+    period: instant
+    expect: positive
+    group: debt
+    rules:
+      - concepts: [ifrs-full:NoncurrentLeaseLiabilities]
+
+  lease_liabilities_total:
+    label: Lease liabilities, total
+    statement: balance
+    period: instant
+    expect: positive
+    group: debt
+    optional: true
+    rules:
+      - concepts: [ifrs-full:LeaseLiabilities]
+
+  debt_including_leases:
+    label: Borrowings and lease liabilities on one line
+    statement: balance
+    period: instant
+    expect: positive
+    group: debt
+    optional: true
+    rules: []  # company concepts only
+
+  equity:
+    label: Total equity
+    statement: balance
+    period: instant
+    rules:
+      - concepts: [ifrs-full:Equity]
+
+  total_assets:
+    label: Total assets
+    statement: balance
+    period: instant
+    expect: positive
+    rules:
+      - concepts: [ifrs-full:Assets]
+      - concepts: [ifrs-full:NoncurrentAssets, ifrs-full:CurrentAssets]
+        note: Non-current plus current assets (the balance sheet shows net assets, not a total).
+
+  # --- Cash flow statement ---------------------------------------------------------------
+  cfo:
+    label: Cash from operations
+    statement: cash_flow
+    period: duration
+    rules:
+      - concepts: [ifrs-full:CashFlowsFromUsedInOperatingActivities]
+      - concepts: [ifrs-full:CashFlowsFromUsedInOperatingActivitiesContinuingOperations,
+                   ifrs-full:CashFlowsFromUsedInOperatingActivitiesDiscontinuedOperations]
+
+  capex:
+    label: Capex (purchases of PP&E and intangibles)
+    statement: cash_flow
+    period: duration
+    expect: positive
+    rules:
+      - concepts: [ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,
+                   ifrs-full:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities]
+      - concepts: [ifrs-full:PurchaseOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets]
+      - concepts: [ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities]
+        note: PP&E only; no purchases of intangibles tagged.
+
+  lease_payments:
+    label: Lease payments (principal)
+    statement: cash_flow
+    period: duration
+    expect: positive
+    optional: true
+    rules:
+      - concepts: [ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities]
+
+  interest_paid:
+    label: Interest paid
+    statement: cash_flow
+    period: duration
+    expect: positive
+    rules:
+      - concepts: [ifrs-full:InterestPaidClassifiedAsOperatingActivities]
+      - concepts: [ifrs-full:InterestPaidClassifiedAsFinancingActivities]
+      - concepts: [ifrs-full:FinanceCostsPaidClassifiedAsOperatingActivities]
+        note: Tagged as finance costs paid.
+
+  tax_paid:
+    label: Income tax paid
+    statement: cash_flow
+    period: duration
+    expect: positive  # a refund year is negative: the warning is then expected
+    rules:
+      - concepts: [ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities]
+      - concepts: [ifrs-full:IncomeTaxesPaidClassifiedAsOperatingActivities]
+      - concepts: [ifrs-full:IncomeTaxesPaidRefund]
+
+# Debt lines that are legitimately absent when another debt line covers them. The mapper
+# reports the gap with this reason instead of "missing".
+debt_coverage:
+  leases_in_borrowings: >-
+    Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt
+    note; see config/issuers.yaml).
+  debt_including_leases: >-
+    Borrowings and lease liabilities are reported on one combined line (see
+    "Borrowings and lease liabilities on one line").

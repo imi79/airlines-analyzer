@@ -1,0 +1,35 @@
+# Groupe ADP: company-specific concepts (French names), tried before the common map.
+lines:
+  dda:
+    rules:
+      - concepts: [ext:DotationsAuxAmortissementsEtDepreciationDactifsCorporelsEtIncorporelsNettesDesReprises]
+        sign: -1
+        reason: >-
+          FY2024 filing tags D&A of tangible and intangible assets as a company concept, as a
+          negative amount (flipped to the positive cost convention).
+        checked: FY2024 filing (-791, and -792 for FY2023)
+  capex:
+    rules:
+      - concepts: [ext:InvestissementsCorporelsIncorporelsEtDePlacement]
+        subtract: [ext:VariationDesDettesEtAvancesSurAcquisitionsDimmobilisations]
+        reason: >-
+          Cash paid for capex, as for the other issuers: "Investissements corporels, incorporels
+          et de placement" (tangible and intangible assets and investment property) less the
+          change in amounts owed to fixed-asset suppliers, which ADP tags as a negative amount
+          when it adds to cash paid.
+        checked: >-
+          FY2024 cash flow note 12.2.2: 1,089 and (80), total 1,169, equal to ADP's own
+          FluxDinvestissementCorporelsIncorporels; FY2023: 1,009 and +137, so 872 paid
+      - concepts: [ext:PurchaseOfIntangibleAssetsPropertyPlantAndEquipmentClassifiedAsInvestingActivities]
+        reason: The capex line as tagged in the FY2021-FY2022 filings.
+        note: >-
+          FY2021-FY2022: whether this line includes the change in amounts owed to fixed-asset
+          suppliers is not shown in the filing. To check against the published cash flow
+          statement.
+        checked: FY2022 filing (695)
+  interest_paid:
+    rules:
+      - concepts: [ext:InteretsPayesExcluantLesInteretsPayesSurLesLeases]
+        reason: FY2024 filing tags interest paid as a company concept.
+        note: Excludes interest paid on leases (small for ADP).
+        checked: FY2024 filing (298, and 291 for FY2023)

@@ -1,0 +1,96 @@
+fiscal_year,line,value,concepts,rule,comparative,restated
+2021,revenue,1458000000,ifrs-full:Revenue,common,True,False
+2021,fuel_cost,371000000,ifrs-full:FuelExpense,common,True,False
+2021,dda,480000000,ifrs-full:DepreciationExpense + ifrs-full:AmortisationExpense,common,True,False
+2021,operating_profit,-910000000,ifrs-full:ProfitLossFromOperatingActivities,common,True,False
+2021,finance_costs,209000000,ifrs-full:InterestExpense,common,True,False
+2021,profit,-858000000,ifrs-full:ProfitLoss,common,True,False
+2021,cash,3536000000,ifrs-full:CashAndCashEquivalents,common,True,False
+2021,contract_liabilities,844000000,easyjetplc:CurrentUnearnedRevenue,override:easyjet,True,False
+2021,borrowings_current,300000000,ifrs-full:ShorttermBorrowings,common,True,False
+2021,borrowings_noncurrent,3067000000,ifrs-full:LongtermBorrowings,common,True,False
+2021,lease_liabilities_current,189000000,ifrs-full:CurrentLeaseLiabilities,common,True,False
+2021,lease_liabilities_noncurrent,890000000,ifrs-full:NoncurrentLeaseLiabilities,common,True,False
+2021,equity,2639000000,ifrs-full:Equity,common,True,False
+2021,total_assets,9773000000,ifrs-full:NoncurrentAssets + ifrs-full:CurrentAssets,common,True,False
+2021,cfo,-1035000000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,True,False
+2021,capex,149000000,ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities + ifrs-full:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,common,True,False
+2021,lease_payments,261000000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,True,False
+2021,interest_paid,127000000,ifrs-full:InterestPaidClassifiedAsOperatingActivities,common,True,False
+2021,tax_paid,-1000000,ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities,common,True,False
+2022,revenue,5769000000,ifrs-full:Revenue,common,True,False
+2022,fuel_cost,1279000000,ifrs-full:FuelExpense,common,True,False
+2022,dda,564000000,ifrs-full:DepreciationExpense + ifrs-full:AmortisationExpense,common,True,False
+2022,operating_profit,-27000000,ifrs-full:ProfitLossFromOperatingActivities,common,True,False
+2022,finance_costs,143000000,ifrs-full:InterestExpense,common,True,False
+2022,profit,-169000000,ifrs-full:ProfitLoss,common,True,False
+2022,cash,3514000000,ifrs-full:CashAndCashEquivalents,common,True,False
+2022,contract_liabilities,1042000000,easyjetplc:CurrentUnearnedRevenue,override:easyjet,True,False
+2022,borrowings_current,437000000,ifrs-full:ShorttermBorrowings,common,True,False
+2022,borrowings_noncurrent,2760000000,ifrs-full:LongtermBorrowings,common,True,False
+2022,lease_liabilities_current,247000000,ifrs-full:CurrentLeaseLiabilities,common,True,False
+2022,lease_liabilities_noncurrent,866000000,ifrs-full:NoncurrentLeaseLiabilities,common,True,False
+2022,equity,2533000000,ifrs-full:Equity,common,True,False
+2022,total_assets,10454000000,ifrs-full:NoncurrentAssets + ifrs-full:CurrentAssets,common,True,False
+2022,cfo,776000000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,True,False
+2022,capex,530000000,ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities + ifrs-full:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,common,True,False
+2022,lease_payments,206000000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,True,False
+2022,interest_paid,130000000,ifrs-full:InterestPaidClassifiedAsOperatingActivities,common,True,False
+2022,tax_paid,4000000,ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities,common,True,False
+2023,revenue,8171000000,ifrs-full:Revenue,common,True,False
+2023,fuel_cost,2033000000,ifrs-full:FuelExpense,common,True,False
+2023,dda,673000000,ifrs-full:DepreciationExpense + ifrs-full:AmortisationExpense,common,True,False
+2023,operating_profit,453000000,ifrs-full:ProfitLossFromOperatingActivities,common,True,False
+2023,finance_costs,180000000,ifrs-full:InterestExpense,common,True,False
+2023,profit,324000000,ifrs-full:ProfitLoss,common,True,False
+2023,cash,2925000000,ifrs-full:CashAndCashEquivalents,common,True,False
+2023,contract_liabilities,1498000000,easyjetplc:CurrentUnearnedRevenue,override:easyjet,True,False
+2023,borrowings_current,433000000,ifrs-full:ShorttermBorrowings,common,True,False
+2023,borrowings_noncurrent,1462000000,ifrs-full:LongtermBorrowings,common,True,False
+2023,lease_liabilities_current,217000000,ifrs-full:CurrentLeaseLiabilities,common,True,False
+2023,lease_liabilities_noncurrent,772000000,ifrs-full:NoncurrentLeaseLiabilities,common,True,False
+2023,equity,2787000000,ifrs-full:Equity,common,True,False
+2023,total_assets,9841000000,ifrs-full:NoncurrentAssets + ifrs-full:CurrentAssets,common,True,False
+2023,cfo,1551000000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,True,False
+2023,capex,754000000,ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities + ifrs-full:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,common,True,False
+2023,lease_payments,218000000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,True,False
+2023,interest_paid,162000000,ifrs-full:InterestPaidClassifiedAsOperatingActivities,common,True,False
+2023,tax_paid,12000000,ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities,common,True,False
+2024,revenue,9309000000,ifrs-full:Revenue,common,True,False
+2024,fuel_cost,2223000000,ifrs-full:FuelExpense,common,True,False
+2024,dda,770000000,ifrs-full:DepreciationExpense + ifrs-full:AmortisationExpense,common,True,False
+2024,operating_profit,589000000,ifrs-full:ProfitLossFromOperatingActivities,common,True,False
+2024,finance_costs,132000000,ifrs-full:InterestExpense,common,True,False
+2024,profit,452000000,ifrs-full:ProfitLoss,common,True,False
+2024,cash,1343000000,ifrs-full:CashAndCashEquivalents,common,True,False
+2024,contract_liabilities,1737000000,ifrs-full:CurrentContractLiabilities,common,True,False
+2024,borrowings_current,416000000,ifrs-full:ShorttermBorrowings,common,True,False
+2024,borrowings_noncurrent,1690000000,ifrs-full:LongtermBorrowings,common,True,False
+2024,lease_liabilities_current,227000000,ifrs-full:CurrentLeaseLiabilities,common,True,False
+2024,lease_liabilities_noncurrent,947000000,ifrs-full:NoncurrentLeaseLiabilities,common,True,False
+2024,equity,2973000000,ifrs-full:Equity,common,True,False
+2024,total_assets,11035000000,ifrs-full:NoncurrentAssets + ifrs-full:CurrentAssets,common,True,False
+2024,cfo,1465000000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,True,False
+2024,capex,929000000,ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities + ifrs-full:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,common,True,False
+2024,lease_payments,222000000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,True,False
+2024,interest_paid,101000000,ifrs-full:InterestPaidClassifiedAsOperatingActivities,common,True,False
+2024,tax_paid,8000000,ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities,common,True,False
+2025,revenue,10106000000,ifrs-full:Revenue,common,False,False
+2025,fuel_cost,2253000000,ifrs-full:FuelExpense,common,False,False
+2025,dda,743000000,ifrs-full:DepreciationExpense + ifrs-full:AmortisationExpense,common,False,False
+2025,operating_profit,696000000,ifrs-full:ProfitLossFromOperatingActivities,common,False,False
+2025,finance_costs,156000000,ifrs-full:InterestExpense,common,False,False
+2025,profit,494000000,ifrs-full:ProfitLoss,common,False,False
+2025,cash,1504000000,ifrs-full:CashAndCashEquivalents,common,False,False
+2025,contract_liabilities,1945000000,ifrs-full:CurrentContractLiabilities,common,False,False
+2025,borrowings_current,6000000,ifrs-full:ShorttermBorrowings,common,False,False
+2025,borrowings_noncurrent,1875000000,ifrs-full:LongtermBorrowings,common,False,False
+2025,lease_liabilities_current,251000000,ifrs-full:CurrentLeaseLiabilities,common,False,False
+2025,lease_liabilities_noncurrent,794000000,ifrs-full:NoncurrentLeaseLiabilities,common,False,False
+2025,equity,3498000000,ifrs-full:Equity,common,False,False
+2025,total_assets,11507000000,ifrs-full:NoncurrentAssets + ifrs-full:CurrentAssets,common,False,False
+2025,cfo,1625000000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,False,False
+2025,capex,1001000000,ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities + ifrs-full:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,common,False,False
+2025,lease_payments,226000000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,False,False
+2025,interest_paid,140000000,ifrs-full:InterestPaidClassifiedAsOperatingActivities,common,False,False
+2025,tax_paid,12000000,ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities,common,False,False

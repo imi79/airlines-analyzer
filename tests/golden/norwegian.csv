@@ -1,0 +1,99 @@
+fiscal_year,line,value,concepts,rule,comparative,restated
+2021,revenue,5067800000,ifrs-full:Revenue,common,True,False
+2021,fuel_cost,1413800000,ifrs-full:FuelExpense,common,True,False
+2021,dda,1133500000,NOR:AdjustmentsForDepreciationAndAmortisationExpenseAndImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLossOtherThanNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,override:norwegian,True,False
+2021,operating_profit,-2786000000,ifrs-full:ProfitLossFromOperatingActivities,common,True,False
+2021,finance_costs,682300000,ifrs-full:InterestExpense,common,True,False
+2021,profit,1870500000,ifrs-full:ProfitLoss,common,True,False
+2021,cash,7694800000,ifrs-full:CashAndCashEquivalents,common,True,False
+2021,contract_liabilities,1324200000,NOR:CurrentAirTrafficSettlementLiabilities,override:norwegian,True,False
+2021,borrowings_current,183100000,ifrs-full:ShorttermBorrowings,common,True,False
+2021,borrowings_noncurrent,3981600000,ifrs-full:LongtermBorrowings,common,True,False
+2021,lease_liabilities_current,777900000,ifrs-full:CurrentLeaseLiabilities,common,True,False
+2021,lease_liabilities_noncurrent,4434800000,ifrs-full:NoncurrentLeaseLiabilities,common,True,False
+2021,equity,3269600000,ifrs-full:Equity,common,True,False
+2021,total_assets,18825400000,ifrs-full:Assets,common,True,False
+2021,cfo,139100000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,True,False
+2021,capex,14800000,ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities + ifrs-full:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,common,True,False
+2021,lease_payments,52000000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,True,False
+2021,interest_paid,240100000,NOR:InterestPaidOnLeaseLiabilitiesClassifiedAsFinancingActivities + NOR:InterestPaidOnBorrowingsClassifiedAsFinancingActivities,override:norwegian,True,False
+2021,tax_paid,0,ifrs-full:IncomeTaxesPaidClassifiedAsOperatingActivities,common,True,False
+2022,revenue,18869300000,ifrs-full:Revenue,common,True,False
+2022,fuel_cost,7371400000,ifrs-full:FuelExpense,common,True,False
+2022,dda,2511700000,NOR:AdjustmentsForDepreciationAndAmortisationExpenseAndImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLossOtherThanNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,override:norwegian,True,True
+2022,operating_profit,1502300000,ifrs-full:ProfitLossFromOperatingActivities,common,True,False
+2022,finance_costs,650000000,ifrs-full:InterestExpense,common,True,False
+2022,profit,1005500000,ifrs-full:ProfitLoss,common,True,False
+2022,cash,7759000000,ifrs-full:CashAndCashEquivalents,common,True,False
+2022,contract_liabilities,2548500000,NOR:CurrentAirTrafficSettlementLiabilities,override:norwegian,True,False
+2022,borrowings_current,198500000,ifrs-full:ShorttermBorrowings,common,True,False
+2022,borrowings_noncurrent,4050000000,ifrs-full:LongtermBorrowings,common,True,False
+2022,lease_liabilities_current,1190600000,ifrs-full:CurrentLeaseLiabilities,common,True,False
+2022,lease_liabilities_noncurrent,4646200000,ifrs-full:NoncurrentLeaseLiabilities,common,True,False
+2022,equity,4203400000,ifrs-full:Equity,common,True,False
+2022,total_assets,22669600000,ifrs-full:Assets,common,True,False
+2022,cfo,2425700000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,True,False
+2022,capex,48600000,ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities + ifrs-full:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,common,True,False
+2022,lease_payments,891400000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,True,False
+2022,interest_paid,363600000,NOR:InterestPaidOnLeaseLiabilitiesClassifiedAsFinancingActivities + NOR:InterestPaidOnBorrowingsClassifiedAsFinancingActivities,override:norwegian,True,False
+2022,tax_paid,37000000,ifrs-full:IncomeTaxesPaidClassifiedAsOperatingActivities,common,True,False
+2023,revenue,25539300000,ifrs-full:Revenue,common,True,False
+2023,fuel_cost,7714700000,ifrs-full:FuelExpense,common,True,False
+2023,dda,3533800000,NOR:AdjustmentsForDepreciationAndAmortisationExpenseAndImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLossOtherThanNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,override:norwegian,True,False
+2023,operating_profit,2232100000,ifrs-full:ProfitLossFromOperatingActivities,common,True,False
+2023,finance_costs,848000000,ifrs-full:InterestExpense,common,True,False
+2023,profit,1736900000,ifrs-full:ProfitLoss,common,True,False
+2023,cash,9477900000,ifrs-full:CashAndCashEquivalents,common,True,False
+2023,current_investments,0,ifrs-full:CurrentInvestments,common,True,False
+2023,contract_liabilities,3202500000,NOR:CurrentAirTrafficSettlementLiabilities,override:norwegian,True,False
+2023,borrowings_current,121900000,ifrs-full:ShorttermBorrowings,common,True,False
+2023,borrowings_noncurrent,3623300000,ifrs-full:LongtermBorrowings,common,True,False
+2023,lease_liabilities_current,1591400000,ifrs-full:CurrentLeaseLiabilities,common,True,False
+2023,lease_liabilities_noncurrent,8688800000,ifrs-full:NoncurrentLeaseLiabilities,common,True,False
+2023,equity,5772600000,ifrs-full:Equity,common,True,False
+2023,total_assets,30550000000,ifrs-full:Assets,common,True,False
+2023,cfo,5257500000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,True,False
+2023,capex,542400000,ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities + ifrs-full:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,common,True,False
+2023,lease_payments,1460200000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,True,False
+2023,interest_paid,616500000,NOR:InterestPaidOnLeaseLiabilitiesClassifiedAsFinancingActivities + NOR:InterestPaidOnBorrowingsClassifiedAsFinancingActivities,override:norwegian,True,False
+2023,tax_paid,1700000,ifrs-full:IncomeTaxesPaidClassifiedAsOperatingActivities,common,True,False
+2024,revenue,35317000000,ifrs-full:Revenue,common,True,False
+2024,fuel_cost,9377000000,ifrs-full:FuelExpense,common,True,False
+2024,dda,4807000000,nasasa:AdjustmentsForDepreciationAndAmortisationExpenseAndImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLossOtherThanNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,override:norwegian,True,False
+2024,operating_profit,1873000000,ifrs-full:ProfitLossFromOperatingActivities,common,True,False
+2024,finance_costs,1135000000,ifrs-full:InterestExpense,common,True,False
+2024,profit,1355000000,ifrs-full:ProfitLoss,common,True,False
+2024,cash,9868000000,ifrs-full:CashAndCashEquivalents,common,True,False
+2024,current_investments,1012000000,ifrs-full:CurrentInvestments,common,True,False
+2024,contract_liabilities,4143000000,nasasa:CurrentAirTrafficSettlementLiabilities,override:norwegian,True,False
+2024,borrowings_current,1805000000,ifrs-full:ShorttermBorrowings,common,True,False
+2024,borrowings_noncurrent,2948000000,ifrs-full:LongtermBorrowings,common,True,False
+2024,lease_liabilities_current,2024000000,ifrs-full:CurrentLeaseLiabilities,common,True,False
+2024,lease_liabilities_noncurrent,9301000000,ifrs-full:NoncurrentLeaseLiabilities,common,True,False
+2024,equity,7241000000,ifrs-full:Equity,common,True,False
+2024,total_assets,37600000000,ifrs-full:Assets,common,True,False
+2024,cfo,6946000000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,True,False
+2024,capex,1247000000,ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities + ifrs-full:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,common,True,False
+2024,lease_payments,1840000000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,True,False
+2024,interest_paid,890000000,nasasa:InterestPaidOnLeaseLiabilitiesClassifiedAsFinancingActivities + nasasa:InterestPaidOnBorrowingsClassifiedAsFinancingActivities,override:norwegian,True,False
+2024,tax_paid,72000000,ifrs-full:IncomeTaxesPaidClassifiedAsOperatingActivities,common,True,False
+2025,revenue,37646000000,ifrs-full:Revenue,common,False,False
+2025,fuel_cost,9573000000,ifrs-full:FuelExpense,common,False,False
+2025,dda,4231000000,nasasa:AdjustmentsForDepreciationAndAmortisationExpenseAndImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLossOtherThanNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,override:norwegian,False,False
+2025,operating_profit,3732000000,ifrs-full:ProfitLossFromOperatingActivities,common,False,False
+2025,finance_costs,1271000000,ifrs-full:InterestExpense,common,False,False
+2025,profit,2708000000,ifrs-full:ProfitLoss,common,False,False
+2025,cash,7434000000,ifrs-full:CashAndCashEquivalents,common,False,False
+2025,current_investments,2625000000,ifrs-full:CurrentInvestments,common,False,False
+2025,contract_liabilities,4396000000,nasasa:CurrentAirTrafficSettlementLiabilities,override:norwegian,False,False
+2025,borrowings_current,2065000000,ifrs-full:ShorttermBorrowings,common,False,False
+2025,borrowings_noncurrent,3782000000,ifrs-full:LongtermBorrowings,common,False,False
+2025,lease_liabilities_current,1774000000,ifrs-full:CurrentLeaseLiabilities,common,False,False
+2025,lease_liabilities_noncurrent,11930000000,ifrs-full:NoncurrentLeaseLiabilities,common,False,False
+2025,equity,7668000000,ifrs-full:Equity,common,False,False
+2025,total_assets,42031000000,ifrs-full:Assets,common,False,False
+2025,cfo,7840000000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,False,False
+2025,capex,4986000000,ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities + ifrs-full:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,common,False,False
+2025,lease_payments,1780000000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,False,False
+2025,interest_paid,1001000000,nasasa:InterestPaidOnLeaseLiabilitiesClassifiedAsFinancingActivities + nasasa:InterestPaidOnBorrowingsClassifiedAsFinancingActivities,override:norwegian,False,False
+2025,tax_paid,35000000,ifrs-full:IncomeTaxesPaidClassifiedAsOperatingActivities,common,False,False

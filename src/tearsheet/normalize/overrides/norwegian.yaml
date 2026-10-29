@@ -1,0 +1,23 @@
+# Norwegian Air Shuttle: company-specific concepts, tried before the common map.
+lines:
+  dda:
+    rules:
+      - concepts: [ext:AdjustmentsForDepreciationAndAmortisationExpenseAndImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLossOtherThanNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale]
+        reason: >-
+          The income statement combines D&A with rental expense. The cash flow adjustment for
+          D&A and impairment is the clean figure.
+        note: Taken from the cash flow statement (adjustment for D&A and impairment).
+        checked: FY2024 filing (4,806.8 vs 5,034.0 D&A and rental)
+  contract_liabilities:
+    rules:
+      - concepts: [ext:CurrentAirTrafficSettlementLiabilities]
+        reason: Advance ticket sales are "air traffic settlement liabilities", a company concept.
+        checked: FY2025 filing (4,396)
+  interest_paid:
+    rules:
+      - concepts: [ext:InterestPaidOnLeaseLiabilitiesClassifiedAsFinancingActivities]
+        add_if_tagged: [ext:InterestPaidOnBorrowingsClassifiedAsFinancingActivities,
+                        ext:InterestPaidOtherThanLeaseLiabilitiesClassifiedAsFinancingActivities]
+        reason: Interest paid is split into lease and other interest, both company concepts.
+        note: Excludes interest paid on perpetual bonds (classified in equity).
+        checked: FY2025 filing (844 + 157)
