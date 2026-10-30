@@ -21,4 +21,4 @@ Results: `docs/m1/`. Walkthrough: `docs/m1/walkthrough.md`. **Status: in progres
       Check sheet ready (Air France-KLM and ADP, FY2023-FY2024); waiting for Imane.
 - [x] A rerun from cache works offline and changes nothing (two runs, identical files)
 - [ ] FY2025 for Air France-KLM and ADP loaded from the company packages (decision 0004, 4b).
-      Waiting for the two packages and approval of the XBRL reader (Arelle).
+      The import route is built and checked (decision 0006); waiting for the two packages.

@@ -4,6 +4,7 @@ version = "0.0.1"
 description = "Two-page credit tearsheets for European airlines and airports from ESEF/UKSEF filings"
 requires-python = ">=3.12"
 dependencies = [
+    "arelle-release>=2.47.3",
     "duckdb>=1.1",
     "httpx>=0.27",
     "pandas>=2.2",

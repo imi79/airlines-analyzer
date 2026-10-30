@@ -8,6 +8,7 @@ facts can be traced to the exact file the company published.
 from __future__ import annotations
 
 from datetime import date
+from pathlib import Path
 
 import yaml
 
@@ -17,10 +18,14 @@ from tearsheet.ingest.filings import Filing
 REGISTER = MANUAL_FILINGS / "manual.yaml"
 
 
-def manual_filings(issuer: Issuer) -> list[Filing]:
-    if not REGISTER.exists():
+def manual_filings(
+    issuer: Issuer, register: Path | None = None, folder: Path | None = None
+) -> list[Filing]:
+    register = register or REGISTER
+    folder = folder or MANUAL_FILINGS
+    if not register.exists():
         return []
-    entries = yaml.safe_load(REGISTER.read_text()).get("filings") or []
+    entries = yaml.safe_load(register.read_text()).get("filings") or []
     filings = []
     for entry in entries:
         if entry["issuer"] != issuer.id:
@@ -40,7 +45,7 @@ def manual_filings(issuer: Issuer) -> list[Filing]:
                 package_url=entry.get("source_url"),
                 error_count=entry.get("error_count"),
                 date_added=str(entry["downloaded_on"]),
-                local_json=str(MANUAL_FILINGS / entry["xbrl_json"]),
+                local_json=str(folder / entry["xbrl_json"]),
             )
         )
     return filings

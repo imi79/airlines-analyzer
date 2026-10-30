@@ -168,6 +168,7 @@ Stages 1 to 3 are plain code. Stages 4 and 5 use the AI model, and nothing they 
 | --- | --- | --- |
 | Language and tooling | Python 3.12, uv, ruff | Quick setup, one lockfile |
 | Filing access | httpx against the filings.xbrl.org API | Free JSON, no key |
+| Hand-loaded packages | Arelle (`arelle-release`) converts ESEF zips the database lacks | Same xBRL-JSON output as the database ([decision 0006](decisions/0006-arelle-for-hand-loaded-packages.md)) |
 | Storage | DuckDB file, raw xBRL-JSON cached on disk | SQL without a server, offline reruns |
 | Data handling | pandas, Pydantic models, YAML config | Familiar to analysts, typed boundaries |
 | LLM | Provider-neutral layer: Anthropic, DeepSeek or any OpenAI-compatible gateway, chosen in `config/models.yaml` (one model for drafting, one for extraction) | No lock-in to one AI vendor; structured output through tool use |

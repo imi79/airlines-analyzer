@@ -57,6 +57,14 @@ and FY2024 laid out like the published statements, in millions.
 Costs are shown as positive amounts, while the accounts may show them in brackets. Only the
 amount needs to match.
 
+## The 2025 reports for Air France-KLM and ADP
+
+The import route for reports you download yourself is ready. Each zip is converted with Arelle,
+the same free tool the filings database uses. Its fingerprint, origin and download date are
+recorded, and it's checked to belong to the right company and year. Tested on ADP's 2024
+report: exactly the same 343 figures as the database. Once you send the two 2025 zips, they go
+through the same mapping as everything else.
+
 ## To watch in M2
 
 - **Interest coverage** should use interest expense, not total finance costs. ADP's finance
