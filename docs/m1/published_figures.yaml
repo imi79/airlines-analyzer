@@ -1,0 +1,43 @@
+# Figures read from the published consolidated statements Imane supplied (PDF, EUR millions),
+# for the M1 spot check. Costs and outflows are entered as positive amounts, like the database.
+# Each entry: line -> [FY2023, FY2024, page, label in the statements].
+afkl:
+  source: Air France-KLM consolidated financial statements as of December 31, 2024 (PDF)
+  lines:
+    revenue: [30019, 31459, 3, "Revenues from ordinary activities"]
+    dda: [2496, 2643, 3, "Amortization, depreciation and provisions"]
+    operating_profit: [1677, 1466, 3, "Income from operating activities"]
+    finance_costs: [600, 631, 3, "Interests expenses"]
+    profit: [990, 489, 3, "Net income for the period"]
+    cash: [6194, 4829, 5, "Cash and cash equivalents"]
+    other_current_financial_assets: [1292, 1190, 5, "Other current financial assets"]
+    total_assets: [34490, 36155, 5, "Total assets"]
+    equity: [500, 799, 6, "Equity"]
+    borrowings_noncurrent: [7538, 7254, 6, "Non-current financial liabilities"]
+    lease_liabilities_noncurrent: [3581, 4714, 6, "Non-current lease debt"]
+    borrowings_current: [1664, 1692, 6, "Current financial liabilities"]
+    lease_liabilities_current: [848, 982, 6, "Current lease debt"]
+    contract_liabilities: [3858, 4097, 6, "Deferred revenue on ticket sales"]
+    cfo: [3606, 3496, 9, "Cash-flow from operating activities"]
+    capex: [3551, 3728, 9, "Purchase of property plant and equipment and intangible assets"]
+    lease_payments: [833, 891, 9, "Payments on lease debts"]
+    interest_paid: [704, 664, 9, "Interest paid"]
+    tax_paid: [114, 20, 9, "Income tax (paid) / reimbursed"]
+adp:
+  source: Groupe ADP consolidated financial statements as of 31 December 2024 (PDF)
+  lines:
+    revenue: [5495, 6158, 4, "Revenue"]
+    dda: [792, 791, 4, "Depreciation, amortisation and impairment of PP&E and intangible assets"]
+    operating_profit: [1243, 994, 4, "Operating income"]
+    finance_costs: [1115, 595, 4, "Financial expenses"]
+    profit: [784, 516, 4, "Net income"]
+    other_current_financial_assets: [238, 234, 5, "Other current financial assets"]
+    cash: [2343, 1958, 5, "Cash and cash equivalents"]
+    total_assets: [19660, 20179, 5, "Total assets"]
+    equity: [5297, 5512, 5, "Total equity"]
+    borrowings_noncurrent: [8521, 8887, 5, "Non-current borrowings and debt"]
+    borrowings_current: [1866, 1785, 5, "Current borrowings and debt"]
+    tax_paid: [171, 283, 6, "Tax expenses (cash flow)"]
+    cfo: [1587, 1524, 6, "Cash flows from operating activities"]
+    capex: [872, 1169, 6, "Purchase of PP&E, intangibles and investment property (1,009 / 1,089) less change in payables on non-current assets (+137 / (80))"]
+    interest_paid: [291, 298, 6, "Interest paid"]

@@ -65,7 +65,18 @@ recorded, and it's checked to belong to the right company and year. Tested on AD
 report: exactly the same 343 figures as the database. Once you send the two 2025 zips, they go
 through the same mapping as everything else.
 
+## Spot check result
+
+All **68 figures match** the published statements you supplied: 19 lines for Air France-KLM
+and 15 for ADP, in FY2023 and FY2024. Every published figure is listed with its page in
+`docs/m1/published_figures.yaml`, and the comparison is in `docs/m1/spot_check.md`. ADP's own
+text confirms the capex basis: "€1,169 million ... (including fixed asset suppliers)".
+
 ## To watch in M2
+
+- **ADP's operating income includes its share of associates' results** (-292m in 2024,
+  +75m in 2023). Operating income + D&A would then understate ADP's EBITDA (1,785m vs its
+  recurring EBITDA of 2,068m in 2024). The EBITDA definition needs a rule for this.
 
 - **Interest coverage** should use interest expense, not total finance costs. ADP's finance
   costs (1,115m in 2023, 595m in 2024) include more than interest.
