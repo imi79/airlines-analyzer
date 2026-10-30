@@ -1,0 +1,73 @@
+# Figures entered by hand from published statements (decision 0007).
+#
+# Used only where no electronic (ESEF) filing is available: Air France-KLM and ADP FY2025.
+# Amounts are in millions of the reporting currency, as printed. Costs and cash outflows are
+# entered as positive amounts, like every other figure in the database.
+# Each line: [entered year, prior year shown in the same document, printed page, label].
+# The prior-year column is a control: it is compared with the figure the database already holds
+# for that year, which catches a typing error and shows any restatement.
+# `reviewed_by` stays empty until Imane has reviewed the entries. Until then the figures are
+# stored as "unverified" and stay off the tearsheet (spec: AI layer and figure verification).
+
+documents:
+  - issuer: afkl
+    fiscal_year: 2025
+    period_end: 2025-12-31
+    document: Air France-KLM consolidated financial statements as of December 31, 2025 (PDF)
+    file: 2025.12-air-france-klm-consolidated-financial-statements-and-notes.pdf
+    sha256: aaba4d2512928f6cf9efde24af67b05619459f1d0f891b42bbb084473d7d550f
+    supplied_by: Imane
+    entered_by: AI assistant, from the PDF
+    entered_on: 2026-10-30
+    reviewed_by: null
+    scale: 1000000
+    lines:
+      revenue: [33007, 31459, 3, "Revenues from ordinary activities"]
+      dda: [3054, 2643, 3, "Amortization, depreciation and provisions"]
+      operating_profit: [2002, 1466, 3, "Income from operating activities"]
+      finance_costs: [627, 631, 3, "Interests expenses"]
+      profit: [1754, 489, 3, "Net income for the period"]
+      other_current_financial_assets: [1360, 1190, 5, "Other current financial assets"]
+      cash: [4714, 4829, 5, "Cash and cash equivalents"]
+      total_assets: [39445, 36155, 5, "Total assets"]
+      equity: [2364, 799, 6, "Equity"]
+      borrowings_noncurrent: [7265, 7254, 6, "Non-current financial liabilities"]
+      lease_liabilities_noncurrent: [5487, 4714, 6, "Non-current lease debt"]
+      borrowings_current: [1803, 1692, 6, "Current financial liabilities"]
+      lease_liabilities_current: [958, 982, 6, "Current lease debt"]
+      contract_liabilities: [4264, 4097, 6, "Deferred revenue on ticket sales"]
+      cfo: [5055, 3496, 8, "Cash-flow from operating activities"]
+      capex: [4449, 3728, 8, "Purchase of property plant and equipment and intangible assets"]
+      lease_payments: [960, 891, 8, "Payments on lease debts"]
+      interest_paid: [670, 664, 8, "Interest paid"]
+      tax_paid: [136, 20, 8, "Income tax (paid) / reimbursed"]
+    footnotes:
+      dda: Air France-KLM D&A includes provisions, as in the company's own EBITDA definition.
+
+  - issuer: adp
+    fiscal_year: 2025
+    period_end: 2025-12-31
+    document: Groupe ADP consolidated financial statements as of 31 December 2025 (PDF)
+    file: groupe-adp---consolidated-financial-statements-as-of-31-dec-2025.pdf
+    sha256: 54853840da660e7bfcb89b58f985aca183c4c03ad3e9540744d4e23cbbdb439e
+    supplied_by: Imane
+    entered_by: AI assistant, from the PDF
+    entered_on: 2026-10-30
+    reviewed_by: null
+    scale: 1000000
+    lines:
+      revenue: [6704, 6158, 4, "Revenue"]
+      dda: [1003, 791, 4, "Depreciation, amortisation and impairment of PP&E and intangible assets, net of reversals"]
+      operating_profit: [1160, 994, 4, "Operating income"]
+      finance_costs: [663, 595, 4, "Financial expenses"]
+      profit: [426, 516, 4, "Net income"]
+      other_current_financial_assets: [151, 234, 5, "Other current financial assets"]
+      cash: [1892, 1958, 5, "Cash and cash equivalents"]
+      total_assets: [20267, 20179, 5, "Total assets"]
+      equity: [5407, 5512, 5, "Total equity"]
+      borrowings_noncurrent: [8728, 8887, 5, "Non-current borrowings and debt"]
+      borrowings_current: [1859, 1785, 5, "Current borrowings and debt"]
+      cfo: [1638, 1524, 6, "Cash flows from operating activities"]
+      capex: [1218, 1169, 6, "Purchase of PP&E, intangibles and investment property (1,265 / 1,089) less change in payables on asset acquisitions (+47 / (80))"]
+      interest_paid: [295, 298, 6, "Interest paid"]
+      tax_paid: [370, 283, 6, "Tax expenses (cash flow)"]

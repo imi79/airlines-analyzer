@@ -15,6 +15,8 @@ Date: 2026-10-29 · Status: accepted (choices 1a, 2a and 4b by Imane)
    package published by the company, because filings.xbrl.org doesn't have them. Both
    companies' websites turn away automated downloads, so Imane downloads each package in a
    browser and hands it over. The package's hash and origin are recorded like any other filing.
+   *Update:* the packages weren't found, so FY2025 was entered from the published statements
+   instead (decision 0007).
 
 Further choices made while building:
 

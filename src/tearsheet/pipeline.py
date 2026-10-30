@@ -9,6 +9,7 @@ from tearsheet.config import DB_PATH, Issuer, load_issuers
 from tearsheet.ingest.client import Client
 from tearsheet.ingest.filings import Filing, choose, list_filings
 from tearsheet.ingest.manual import manual_filings
+from tearsheet.ingest.manual_figures import Control, manual_figures
 from tearsheet.normalize.mapper import Gap, MappedFact, consolidate, load_mapping, map_report
 from tearsheet.store import db
 
@@ -19,6 +20,7 @@ class IssuerLoad:
     filings: list[Filing]
     facts: list[MappedFact]
     gaps: list[Gap]
+    controls: list[Control]
 
 
 def load_issuer(client: Client, issuer: Issuer) -> tuple[IssuerLoad, dict]:
@@ -30,8 +32,10 @@ def load_issuer(client: Client, issuer: Issuer) -> tuple[IssuerLoad, dict]:
         report = filing.report(client)
         reports[filing.filing_id] = report
         mapped.extend(map_report(issuer, filing, report, mapping))
+    hand_filings, hand_facts, controls = manual_figures(issuer)
+    filings, mapped = filings + hand_filings, mapped + hand_facts
     facts, gaps = consolidate(issuer, mapped, filings, mapping)
-    return IssuerLoad(issuer, filings, facts, gaps), reports
+    return IssuerLoad(issuer, filings, facts, gaps, controls), reports
 
 
 def load_all(client: Client, db_path: Path = DB_PATH) -> list[IssuerLoad]:
@@ -41,7 +45,8 @@ def load_all(client: Client, db_path: Path = DB_PATH) -> list[IssuerLoad]:
         result, reports = load_issuer(client, issuer)
         db.write_filings(con, result.filings)
         for filing in result.filings:
-            db.write_raw_facts(con, filing.filing_id, reports[filing.filing_id].facts)
+            if filing.filing_id in reports:  # entered-by-hand documents have no tagged facts
+                db.write_raw_facts(con, filing.filing_id, reports[filing.filing_id].facts)
         hashes = {f.filing_id: f.sha256 for f in result.filings}
         db.write_facts(con, result.facts, hashes)
         db.write_gaps(con, result.gaps)

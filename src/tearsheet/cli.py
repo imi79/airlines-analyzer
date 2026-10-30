@@ -58,7 +58,9 @@ def main() -> None:
         reports.export_csv()
         totals = reports.coverage_report()
         path = reports.check_sheet(CHECK_ISSUERS, CHECK_YEARS)
+        matched, checked = reports.manual_entries_report()
         print(f"coverage: {totals}; check sheet: {path}")
+        print(f"figures entered by hand: prior-year control {matched}/{checked} match")
 
 
 if __name__ == "__main__":

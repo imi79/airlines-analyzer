@@ -83,6 +83,8 @@ class MappedFact:
     primary: bool = True
     restated: bool = False  # another filing gives a different value for the same year
     warnings: tuple[str, ...] = ()
+    source_type: str = "tagged"  # tagged | manual (entered by hand from a published document)
+    status: str = "verified"  # manual entries stay unverified until reviewed
 
 
 @dataclass(frozen=True)

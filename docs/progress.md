@@ -13,13 +13,15 @@ Walkthrough: `docs/m0/walkthrough.md`. **Status: done.**
 ## M1 · Ingestion and normalisation
 
 Branch: `m1-load-figures`. Run: `uv run tearsheet all` (add `--offline` to use the cache only).
-Results: `docs/m1/`. Walkthrough: `docs/m1/walkthrough.md`. **Status: in progress.**
+Results: `docs/m1/`. Walkthrough: `docs/m1/walkthrough.md`. **Status: done** (one review left,
+see the last item).
 
-- [x] Core statement lines loaded for every v1 issuer and year: 770 figures, every gap
-      explained (6 not tagged, with reasons)
+- [x] Core statement lines loaded for every v1 issuer and year: 804 figures to FY2025, every
+      gap explained (7 not tagged, with reasons)
 - [x] Two issuers × two years spot-checked against the published statements: 100% match.
       Air France-KLM and ADP, FY2023-FY2024: 68 of 68 figures match the statements Imane
       supplied (`docs/m1/spot_check.md`)
 - [x] A rerun from cache works offline and changes nothing (two runs, identical files)
-- [ ] FY2025 for Air France-KLM and ADP loaded from the company packages (decision 0004, 4b).
-      The import route is built and checked (decision 0006); waiting for the two packages.
+- [x] FY2025 for Air France-KLM and ADP loaded: entered from the published statements, with
+      34 of 34 prior-year controls matching (decision 0007, `docs/m1/fy2025_entries.md`).
+      **Imane to review the 34 entries**; they stay "unverified" until then.

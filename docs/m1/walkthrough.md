@@ -26,10 +26,10 @@ one common chart of accounts of about 25 lines, with an audit trail behind it.
 
 ## What we found
 
-- **770 figures loaded** across 9 companies and FY2021 to FY2025 (FY2026 for Wizz Air, whose
-  year ends in March).
-- **Every gap is explained.** 296 are covered by another line (for example "leases included in
-  borrowings, see the note"). **6 are truly missing**: Air France-KLM's fuel cost (4 years) and
+- **804 figures loaded** across 9 companies and FY2021 to FY2025 (FY2026 for Wizz Air, whose
+  year ends in March). 34 of them (Air France-KLM and ADP FY2025) were entered by hand.
+- **Every gap is explained.** 309 are covered by another line (for example "leases included in
+  borrowings, see the note"). **7 are truly missing**: Air France-KLM's fuel cost (5 years) and
   Finnair's tax paid (FY2021-FY2022) aren't tagged; fuel will come from the notes in M3.
 - **17 real restatements**, for example:
   - Aena FY2021: operating profit restated from -152m to -706m, revenue from 2,319m to 2,428m
@@ -57,13 +57,18 @@ and FY2024 laid out like the published statements, in millions.
 Costs are shown as positive amounts, while the accounts may show them in brackets. Only the
 amount needs to match.
 
-## The 2025 reports for Air France-KLM and ADP
+## The 2025 figures for Air France-KLM and ADP
 
-The import route for reports you download yourself is ready. Each zip is converted with Arelle,
-the same free tool the filings database uses. Its fingerprint, origin and download date are
-recorded, and it's checked to belong to the right company and year. Tested on ADP's 2024
-report: exactly the same 343 figures as the database. Once you send the two 2025 zips, they go
-through the same mapping as everything else.
+There's no electronic 2025 filing for these two, so their figures were entered from the PDFs you
+supplied: 19 lines for Air France-KLM and 15 for ADP, each with its page number
+(`config/manual_figures.yaml`).
+
+- **Control.** Each PDF also shows 2024, and all 34 of those figures match what the database
+  already held. That means no typing errors in the copying method, and no restatement of 2024.
+- **Your review.** The entries are marked "unverified" until you've checked them against the
+  PDFs. Unverified figures never reach the tearsheet. The list is in `docs/m1/fy2025_entries.md`.
+- **If the electronic files turn up,** the import route built for them (Arelle, decision 0006)
+  replaces these entries. It was tested on ADP's 2024 file: exactly the same 343 figures.
 
 ## Spot check result
 

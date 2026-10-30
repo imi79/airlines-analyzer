@@ -29,6 +29,14 @@ adp,2024,lease_liabilities_noncurrent,Lease liabilities are included in borrowin
 adp,2024,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 adp,2024,lease_payments,Not reported by this issuer.,False
 adp,2024,short_term_deposits,Not reported by this issuer.,False
+adp,2025,borrowings_total,Reported as current and non-current parts only.,False
+adp,2025,current_investments,Not reported by this issuer.,False
+adp,2025,debt_including_leases,Not reported by this issuer.,False
+adp,2025,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
+adp,2025,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
+adp,2025,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
+adp,2025,lease_payments,Not reported by this issuer.,False
+adp,2025,short_term_deposits,Not reported by this issuer.,False
 aena,2021,borrowings_total,Reported as current and non-current parts only.,False
 aena,2021,current_investments,Not reported by this issuer.,False
 aena,2021,debt_including_leases,Not reported by this issuer.,False
@@ -91,6 +99,12 @@ afkl,2024,debt_including_leases,Not reported by this issuer.,False
 afkl,2024,fuel_cost,Fuel cost not tagged separately; to be extracted from the notes (M3).,True
 afkl,2024,lease_liabilities_total,Reported as current and non-current parts only.,False
 afkl,2024,short_term_deposits,Not reported by this issuer.,False
+afkl,2025,borrowings_total,Reported as current and non-current parts only.,False
+afkl,2025,current_investments,Not reported by this issuer.,False
+afkl,2025,debt_including_leases,Not reported by this issuer.,False
+afkl,2025,fuel_cost,Fuel cost not tagged separately; to be extracted from the notes (M3).,True
+afkl,2025,lease_liabilities_total,Reported as current and non-current parts only.,False
+afkl,2025,short_term_deposits,Not reported by this issuer.,False
 easyjet,2021,borrowings_total,Reported as current and non-current parts only.,False
 easyjet,2021,current_investments,Not reported by this issuer.,False
 easyjet,2021,debt_including_leases,Not reported by this issuer.,False
