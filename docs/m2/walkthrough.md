@@ -49,15 +49,29 @@ the ratio tab of a credit model, built once and reused for all nine companies.
   EBITDA of 2,068. This confirms choice 3a.
 - **2021 (Covid) shows "n.m."** for leverage at most airlines, because EBITDA was negative.
 
-## Your two tasks
+## Gate 1: passed (62 of 62)
 
-1. **Gate 1: the reconciliation** (`docs/m2/reconciliation.xlsx`). Build your own model of Air
-   France-KLM and ADP for FY2024 and FY2025 from the statements, using the "Definitions" sheet.
-   Type your results in the yellow cells. The sheet checks each one: leverage within 0.05x,
-   margins and ratios within 0.1 point. Please build the model before looking at the tool's
-   figures.
-2. **Review 8 new hand-entered figures** in `docs/m1/fy2025_entries.md` (status "unverified"):
+At your request, the AI built the check model (decision 0009):
+
+- **Inputs:** read by machine from the text of your 2025 PDFs, each with its page and printed
+  line (`docs/m2/hand_model_inputs.csv`).
+- **Calculation:** every ratio is an Excel formula you can click on, recalculated by LibreOffice
+  (`docs/m2/hand_model.xlsx`).
+
+All 62 comparisons agree exactly (`docs/m2/gate1.md`). Fed deliberately wrong figures, the check
+reports ✗, so the pass is real.
+
+**One limit.** This checks the data and the arithmetic, not the definitions, which both sides
+share. Your own model would also test those; `docs/m2/reconciliation.xlsx` is still there if you
+want to do it.
+
+## One task left
+
+**Accept 8 new hand-entered figures** in `docs/m1/fy2025_entries.md` (status "unverified"):
    - Air France-KLM: interest expense 2025 (627, page 3), and marketable securities + bonds from
      note 32 (2023: 1,097 + 966; 2024: 1,046 + 1,057; 2025: 988 + 1,156)
    - ADP: share of associates 2025 (−165, page 4), and restricted bank balances from note 9.4.2
      (2023: 118; 2024: 138; 2025: 125)
+
+All 8 are confirmed by the machine reading of your PDFs. Reply "accept" and they become verified,
+and the * marks disappear from the reports.

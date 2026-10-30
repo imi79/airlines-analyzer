@@ -28,12 +28,14 @@ Results: `docs/m1/`. Walkthrough: `docs/m1/walkthrough.md`. **Status: done.**
 ## M2 · Metrics engine and peers
 
 Branch: `m2-metrics`. Run: `uv run tearsheet all`. Results: `docs/m2/`.
-Walkthrough: `docs/m2/walkthrough.md`. **Status: waiting for gate 1** (Imane's reconciliation).
+Walkthrough: `docs/m2/walkthrough.md`. **Status: done; gate 1 passed** (one review left, see
+the last item).
 
 - [x] Every catalog metric computed, or missing with a stated reason: 701 values; every n.m.
       or missing value carries its reason; traffic metrics wait for M3
-- [x] Unit tests green: one test per metric plus the special cases (91 checks in total)
-- [ ] Reconciliation with Imane's hand model within tolerance (gate 1): Air France-KLM and
-      ADP, FY2024-FY2025, in `docs/m2/reconciliation.xlsx`
-- [ ] Imane reviews the 8 new figures entered by hand (`docs/m1/fy2025_entries.md`, status
-      "unverified")
+- [x] Unit tests green: one test per metric plus the special cases (94 checks in total)
+- [x] Reconciliation within tolerance (gate 1): 62 of 62, Air France-KLM and ADP, FY2024-FY2025,
+      against a second-source model built by the AI at Imane's request: inputs read from the
+      PDFs, formulas recalculated by LibreOffice (decision 0009, `docs/m2/gate1.md`)
+- [ ] Imane accepts the 8 new figures entered by hand (`docs/m1/fy2025_entries.md`, status
+      "unverified"). All 8 are confirmed by the machine reading of the PDFs (decision 0009).
