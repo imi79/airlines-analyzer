@@ -33,3 +33,13 @@ lines:
         reason: FY2024 filing tags interest paid as a company concept.
         note: Excludes interest paid on leases (small for ADP).
         checked: FY2024 filing (298, and 291 for FY2023)
+  share_of_associates:
+    rules:
+      - concepts: [ext:QuotePartDeResultatDesEntreprisesMisesEnEquivalence]
+        reason: >-
+          ADP shows its share of associates' results inside operating income, tagged as a
+          company concept ("Quote-part de résultat des entreprises mises en équivalence").
+        checked: FY2024 income statement ((292), and 75 for FY2023)
+      - concepts: [ext:ShareOfProfitLossOfAssociatesAndJointVenturesInOperatingActivityAccountedForUsingEquityMethod]
+        reason: Same line as tagged in the FY2021-FY2022 filings.
+        checked: FY2021 filing

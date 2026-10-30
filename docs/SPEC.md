@@ -348,10 +348,10 @@ The v1 architecture already separates sources, metrics and narrative, so later v
 
 Seven decisions are still open; the first three should be settled before M2.
 
-- [ ] Peer groups: one airline group, or network carriers and low-cost carriers compared separately?
-- [ ] Liquid investments: which current financial assets count as cash-like, issuer by issuer?
-- [ ] Ratings: show hand-entered agency ratings with source and date, or leave them out of v1?
-- [ ] Repository owner: Imane's GitHub account, so the portfolio is clearly hers?
+- [x] Peer groups: network, low-cost and airports compared separately, plus an all-airlines view ([decision 0008](decisions/0008-m2-metric-choices.md)).
+- [x] Liquid investments: each company's own net debt definition, recorded per issuer with evidence (decision 0008).
+- [x] Ratings: left out of v1 (decision 0008).
+- [x] Repository owner: Imane's GitHub account (`imi79/airlines-analyzer`).
 - [ ] License: MIT for visibility, or source-available to keep the commercial option open?
 - [ ] Commentary language: English only, or an English and French toggle?
 - [ ] Live mode on the public link: closed, or open with each visitor's own key?

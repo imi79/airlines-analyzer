@@ -4,10 +4,15 @@
 # Amounts are in millions of the reporting currency, as printed. Costs and cash outflows are
 # entered as positive amounts, like every other figure in the database.
 # Each line: [entered year, prior year shown in the same document, printed page, label].
+# A value written as a list is the sum of the items listed (for example two lines of a note).
 # The prior-year column is a control: it is compared with the figure the database already holds
-# for that year, which catches a typing error and shows any restatement.
+# for that year, which catches a typing error and shows any restatement. For lines listed under
+# `prior_year_as_fact` there is no tagged figure to compare with, so the prior-year column is
+# loaded as that year's figure instead (M2: items of the company's own net debt definition).
 # `reviewed_by` stays empty until Imane has reviewed the entries. Until then the figures are
 # stored as "unverified" and stay off the tearsheet (spec: AI layer and figure verification).
+# Lines added to a document after its review are listed under `pending_review` and stay
+# unverified until reviewed in turn.
 
 documents:
   - issuer: afkl
@@ -26,6 +31,7 @@ documents:
       dda: [3054, 2643, 3, "Amortization, depreciation and provisions"]
       operating_profit: [2002, 1466, 3, "Income from operating activities"]
       finance_costs: [627, 631, 3, "Interests expenses"]
+      interest_expense: [627, 631, 3, "Interests expenses"]
       profit: [1754, 489, 3, "Net income for the period"]
       other_current_financial_assets: [1360, 1190, 5, "Other current financial assets"]
       cash: [4714, 4829, 5, "Cash and cash equivalents"]
@@ -41,6 +47,9 @@ documents:
       lease_payments: [960, 891, 8, "Payments on lease debts"]
       interest_paid: [670, 664, 8, "Interest paid"]
       tax_paid: [136, 20, 8, "Income tax (paid) / reimbursed"]
+      other_cash_like: [[988, 1156], [1046, 1057], 77, "Net debt note 32: marketable securities > 3 months + bonds"]
+    prior_year_as_fact: [other_cash_like]
+    pending_review: [interest_expense, other_cash_like]
     footnotes:
       dda: Air France-KLM D&A includes provisions, as in the company's own EBITDA definition.
 
@@ -59,6 +68,7 @@ documents:
       revenue: [6704, 6158, 4, "Revenue"]
       dda: [1003, 791, 4, "Depreciation, amortisation and impairment of PP&E and intangible assets, net of reversals"]
       operating_profit: [1160, 994, 4, "Operating income"]
+      share_of_associates: [-165, -292, 4, "Profit (loss) from equity-accounted companies"]
       finance_costs: [663, 595, 4, "Financial expenses"]
       profit: [426, 516, 4, "Net income"]
       other_current_financial_assets: [151, 234, 5, "Other current financial assets"]
@@ -71,3 +81,37 @@ documents:
       capex: [1218, 1169, 6, "Purchase of PP&E, intangibles and investment property (1,265 / 1,089) less change in payables on asset acquisitions (+47 / (80))"]
       interest_paid: [295, 298, 6, "Interest paid"]
       tax_paid: [370, 283, 6, "Tax expenses (cash flow)"]
+      other_cash_like: [125, 138, 56, "Net debt note 9.4.2: restricted bank balances"]
+    prior_year_as_fact: [other_cash_like]
+    pending_review: [share_of_associates, other_cash_like]
+
+  # FY2024 statements: only the net debt items that aren't tagged, to cover FY2023.
+  - issuer: afkl
+    fiscal_year: 2024
+    period_end: 2024-12-31
+    document: Air France-KLM consolidated financial statements as of December 31, 2024 (PDF)
+    file: 2024.12-consolidated-financial-statements-and-notes-afkl-as-of-december-31-2024.pdf
+    sha256: 70d64d938f3a44055fb3d9bc18e7a561d397eda4061c64df1a9a15bf2d7cb545
+    supplied_by: Imane
+    entered_by: AI assistant, from the PDF
+    entered_on: 2026-10-30
+    reviewed_by: null
+    scale: 1000000
+    lines:
+      other_cash_like: [[1046, 1057], [1097, 966], 70, "Net debt note 32: marketable securities > 3 months + bonds"]
+    prior_year_as_fact: [other_cash_like]
+
+  - issuer: adp
+    fiscal_year: 2024
+    period_end: 2024-12-31
+    document: Groupe ADP consolidated financial statements as of 31 December 2024 (PDF)
+    file: groupe-adp-consolidated-financial-statements-as-of-31-december-2024.pdf
+    sha256: 0d53c1996b5b410934512afa02d2313c2aa52283954fc3652f20466c7add1098
+    supplied_by: Imane
+    entered_by: AI assistant, from the PDF
+    entered_on: 2026-10-30
+    reviewed_by: null
+    scale: 1000000
+    lines:
+      other_cash_like: [138, 118, 60, "Net debt note 9.4.2: restricted bank balances"]
+    prior_year_as_fact: [other_cash_like]

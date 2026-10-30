@@ -30,3 +30,10 @@ lines:
         checked: >-
           FY2024 cash flow note: aircraft 3,195 + other tangible 322 + intangible 195 + change in
           payables on fixed assets 16 = 3,728 (cash paid)
+  interest_expense:
+    rules:
+      - concepts: [ext:CoutDeLendettementFinancierBrut]
+        reason: >-
+          FY2021-FY2022 filings tag interest expense as gross cost of financial debt ("Coût de
+          l'endettement financier brut"). Later filings use ifrs-full:InterestExpense.
+        checked: FY2022 filing (569)

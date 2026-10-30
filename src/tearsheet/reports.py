@@ -58,9 +58,10 @@ def coverage_report(db_path: Path = DB_PATH, out: Path = OUT) -> dict[str, int]:
     con = _connect(db_path)
     facts = con.execute(
         "SELECT issuer, fiscal_year, concept, restated, note, footnote, warnings, source_ref, "
-        "source_type FROM facts WHERE is_primary"
+        "source_type FROM facts WHERE is_primary AND source_type <> 'computed'"
     ).df()
     gaps = con.execute("SELECT * FROM gaps").df()
+    gaps = gaps[gaps.concept.isin(list(lines))]
     filings = con.execute("SELECT * FROM filings ORDER BY issuer, fiscal_year").df()
     con.close()
 
@@ -310,30 +311,44 @@ def manual_entries_report(db_path: Path = DB_PATH, out: Path = OUT) -> tuple[int
         _, facts, controls = manual_figures(issuer)
         if not facts:
             continue
-        status = entered[entered.issuer == issuer.id].status.iloc[0]
         md += [
-            f"## {issuer.name}: FY{facts[0].fiscal_year} (status: {status})",
+            f"## {issuer.name}",
             "",
-            f"| Line | FY{facts[0].fiscal_year} | Page | FY{controls[0].fiscal_year} printed "
-            "| FY{} in database | Control |".format(controls[0].fiscal_year),
-            "| --- | --- | --- | --- | --- | --- |",
+            "| Line | Year | Entered | Page | Status | Prior year printed | Prior year in "
+            "database | Control |",
+            "| --- | --- | --- | --- | --- | --- | --- | --- |",
         ]
-        by_line = {c.line: c for c in controls}
-        for fact in facts:
-            c = by_line[fact.line]
-            held = tagged.get((issuer.id, c.fiscal_year, c.line))
-            checked += 1
-            if held is None:
-                result = "no figure to compare"
-            elif abs(held - c.printed) <= Decimal(500_000):
-                result = "✓"
-                matched += 1
+        by_line = {(c.fiscal_year, c.line): c for c in controls}
+        status = {
+            (r.fiscal_year, r.concept, json.loads(r.source_ref)["filing_id"]): r.status
+            for r in entered.itertuples()
+        }
+        for fact in sorted(facts, key=lambda f: (f.line, f.fiscal_year)):
+            c = by_line.get((fact.fiscal_year - 1, fact.line))
+            if fact.comparative:
+                printed = held_text = "–"
+                result = "prior-year column, loaded as the figure (nothing tagged to compare)"
+            elif c is None:
+                printed = held_text = "–"
+                result = "no tagged figure to compare (net debt note item)"
             else:
-                result = f"✗ differs by {_millions(c.printed - held):,.0f}"
+                held = tagged.get((issuer.id, c.fiscal_year, c.line))
+                checked += 1
+                printed = f"{_millions(c.printed):,.0f}"
+                held_text = "–" if held is None else f"{_millions(held):,.0f}"
+                if held is None:
+                    result = "no figure to compare"
+                elif abs(held - c.printed) <= Decimal(500_000):
+                    result = "✓"
+                    matched += 1
+                else:
+                    result = f"✗ differs by {_millions(c.printed - held):,.0f}"
+            page = fact.fact_ids[0].removeprefix("page ")
             md.append(
-                f"| {lines[fact.line]['label']} | {_millions(fact.value):,.0f} | {c.page} "
-                f"| {_millions(c.printed):,.0f} | "
-                f"{'–' if held is None else f'{_millions(held):,.0f}'} | {result} |"
+                f"| {lines[fact.line]['label']} | FY{fact.fiscal_year} "
+                f"| {_millions(fact.value):,.0f} | {page} "
+                f"| {status[(fact.fiscal_year, fact.line, fact.filing_id)]} "
+                f"| {printed} | {held_text} | {result} |"
             )
         md.append("")
     md[7:7] = [f"**Control: {matched} of {checked} prior-year figures match the database.**", ""]

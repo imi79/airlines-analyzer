@@ -12,7 +12,7 @@ import pytest
 from tearsheet.config import load_issuers
 from tearsheet.ingest.filings import Filing
 from tearsheet.normalize.mapper import consolidate, load_mapping, map_report
-from tests.fixtures.build import FIXTURES, GOLDEN, golden_rows
+from tests.fixtures.build import FIXTURES, GOLDEN, golden_rows, metric_rows
 
 ISSUERS = {issuer.id: issuer for issuer in load_issuers()}
 
@@ -50,3 +50,19 @@ def test_no_core_line_missing_without_a_stated_reason(issuer_id):
     mapped = [m for f in filings for m in map_report(issuer, f, f.report(None), mapping)]
     _, gaps = consolidate(issuer, mapped, filings, mapping)
     assert all(g.reason for g in gaps)
+
+
+@pytest.mark.parametrize("issuer_id", sorted(ISSUERS))
+def test_metrics_match_golden_file(issuer_id):
+    """Every metric value, n.m. and missing reason, from the recorded fixtures and the figures
+    entered by hand. A diff means a formula, setting or mapping change: review it first."""
+    issuer = ISSUERS[issuer_id]
+    mapping = load_mapping(issuer_id)
+    filings = recorded_filings(issuer_id)
+    mapped = [m for f in filings for m in map_report(issuer, f, f.report(None), mapping)]
+    actual = [
+        {k: str(v) for k, v in row.items()} for row in metric_rows(issuer, mapped, filings, mapping)
+    ]
+    with (GOLDEN / "metrics" / f"{issuer_id}.csv").open() as f:
+        expected = list(csv.DictReader(f))
+    assert actual == expected

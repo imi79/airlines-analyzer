@@ -66,34 +66,52 @@ def manual_figures(
         )
         scale = Decimal(str(doc["scale"]))
         decimals = -(len(str(doc["scale"])) - 1)
-        status = "verified" if doc.get("reviewed_by") else "unverified"
+        pending = set(doc.get("pending_review") or [])
+        as_fact = set(doc.get("prior_year_as_fact") or [])
         footnotes = doc.get("footnotes") or {}
         prior_end = end.replace(year=end.year - 1)
         for line, (value, prior, page, label) in doc["lines"].items():
-            amount = Decimal(str(value)) * scale
-            facts.append(
-                MappedFact(
-                    issuer=issuer.id,
-                    fiscal_year=int(doc["fiscal_year"]),
-                    period_end=end,
-                    line=line,
-                    value=amount,
-                    value_tagged=amount,
-                    decimals=decimals,
-                    currency=issuer.currency,
-                    filing_id=filing_id,
-                    comparative=False,
-                    concepts=(label,),
-                    fact_ids=(f"page {page}",),
-                    rule_source="manual",
-                    sign=1,
-                    note=f"Entered by hand from the published statements, page {page}.",
-                    footnote=footnotes.get(line),
-                    source_type="manual",
-                    status=status,
+            reviewed = doc.get("reviewed_by") and line not in pending
+            years = [(int(doc["fiscal_year"]), end, value, False)]
+            if line in as_fact:
+                years.append((prior_end.year, prior_end, prior, True))
+            else:
+                controls.append(
+                    Control(issuer.id, prior_end.year, line, _amount(prior, scale), page)
                 )
-            )
-            controls.append(
-                Control(issuer.id, prior_end.year, line, Decimal(str(prior)) * scale, page)
-            )
+            for fiscal_year, period_end, raw, comparative in years:
+                amount = _amount(raw, scale)
+                facts.append(
+                    MappedFact(
+                        issuer=issuer.id,
+                        fiscal_year=fiscal_year,
+                        period_end=period_end,
+                        line=line,
+                        value=amount,
+                        value_tagged=amount,
+                        decimals=decimals,
+                        currency=issuer.currency,
+                        filing_id=filing_id,
+                        comparative=comparative,
+                        concepts=(label,),
+                        fact_ids=(f"page {page}",),
+                        rule_source="manual",
+                        sign=1,
+                        note=f"Entered by hand from the published statements, page {page}"
+                        + (f" ({_parts(raw)})." if isinstance(raw, list) else "."),
+                        footnote=footnotes.get(line),
+                        source_type="manual",
+                        status="verified" if reviewed else "unverified",
+                    )
+                )
     return filings, facts, controls
+
+
+def _amount(raw, scale: Decimal) -> Decimal:
+    """A printed amount, or the sum of a list of printed amounts, in full units."""
+    parts = raw if isinstance(raw, list) else [raw]
+    return sum((Decimal(str(p)) for p in parts), Decimal(0)) * scale
+
+
+def _parts(raw: list) -> str:
+    return " + ".join(f"{p:,}" for p in raw)

@@ -1,0 +1,101 @@
+# Per-issuer settings for the metrics (decision 0008), each with the evidence behind it.
+#
+# cash_like: the balance-sheet lines deducted from total debt to get net debt, following each
+#   company's own net debt definition (choice 2a). `cash` is always first. A line marked
+#   `unavailable_before` has no figure before that fiscal year (not tagged, and no document
+#   supplied); net debt is then shown as missing for those years rather than understated.
+#   Any other line that isn't reported in a year counts as zero.
+# associates_in_operating_profit: the company's operating profit includes its share of
+#   associates' results, which is taken out of EBITDA (choice 3a).
+
+issuers:
+  afkl:
+    cash_like:
+      - line: cash
+      - line: other_cash_like
+        unavailable_before: 2023
+    cash_like_evidence: >-
+      Net debt note 32: net cash = cash and cash equivalents + marketable securities > 3 months
+      + bonds (6,932 at 31 Dec 2024). The last two are entered from the note (2023-2025).
+    associates_in_operating_profit: false
+
+  iag:
+    cash_like:
+      - line: cash
+      - line: short_term_deposits
+    cash_like_evidence: >-
+      IAG deducts "cash, cash equivalents and other current interest-bearing deposits" from
+      interest-bearing borrowings (financial instruments note; 9,828 at 31 Dec 2024).
+    associates_in_operating_profit: false
+
+  finnair:
+    cash_like:
+      - line: cash
+      - line: other_current_financial_assets
+    cash_like_evidence: >-
+      Finnair's interest-bearing assets "include interest-bearing deposits as well as
+      investments in commercial paper and certificates, bonds and money market funds"; its
+      cash funds are cash plus other current financial assets (884 at 31 Dec 2024).
+    associates_in_operating_profit: false
+
+  easyjet:
+    cash_like:
+      - line: cash
+      - line: current_investments
+    cash_like_evidence: >-
+      easyJet's net cash includes "cash, cash equivalents and other investments of £3.5 billion"
+      (going concern statement, FY2025). Other investments are money market deposits.
+    associates_in_operating_profit: false
+
+  norwegian:
+    cash_like:
+      - line: cash
+      - line: current_investments
+    cash_like_evidence: >-
+      Norwegian's current investments are "financial investments in money market funds" (fair
+      value note, FY2025).
+    associates_in_operating_profit: false
+
+  wizz:
+    cash_like:
+      - line: cash
+      - line: short_term_deposits
+      - line: restricted_cash
+    cash_like_evidence: >-
+      Wizz Air's total cash includes "cash and cash equivalents of €597.5 million, €1,060.2
+      million in short-term cash deposits and €78.3 million in restricted cash" (FY2025).
+    associates_in_operating_profit: false
+
+  adp:
+    cash_like:
+      - line: cash
+      - line: other_cash_like
+        unavailable_before: 2023
+    cash_like_evidence: >-
+      Net debt note 9.4.2: gross debt less derivative assets, "cash and cash equivalents and
+      restricted bank balances" (TAV Airports project accounts: 118, 138, 125 for 2023-2025),
+      entered from the note.
+    associates_in_operating_profit: true
+    associates_evidence: >-
+      The income statement shows "Profit (loss) from equity-accounted companies" (-292 in 2024)
+      above "Operating income from ordinary activities", and operating income + net financial
+      expense = income before tax (994 - 152 = 842).
+
+  aena:
+    cash_like:
+      - line: cash
+    cash_like_evidence: >-
+      Aena's covenants use "Deuda Financiera Neta" (net financial debt); no cash-like
+      investment line besides cash and cash equivalents is shown. Cash only.
+    associates_in_operating_profit: false
+
+  vie:
+    cash_like:
+      - line: cash
+      - line: other_current_financial_assets
+    cash_like_evidence: >-
+      Flughafen Wien's net debt ("Nettoverschuldung") is financial liabilities less cash, long-
+      and short-term investments and short-term securities. Current investments and securities
+      are included; long-term investments are not tagged separately (all other non-current
+      financial assets together are at most 20m, so the effect is small).
+    associates_in_operating_profit: false

@@ -61,6 +61,25 @@ lines:
       - concepts: [ifrs-full:FinanceCosts]
       - concepts: [ifrs-full:InterestExpense]
 
+  share_of_associates:
+    label: Share of profit (loss) of associates
+    statement: income
+    period: duration
+    optional: true
+    rules:
+      - concepts: [ifrs-full:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod]
+
+  interest_expense:
+    label: Interest expense
+    statement: income
+    period: duration
+    expect: positive
+    optional: true
+    rules:
+      - concepts: [ifrs-full:InterestExpense]
+      - concepts: [ifrs-full:AdjustmentsForInterestExpense]
+        note: Taken from the cash flow statement (adjustment for interest expense).
+
   profit:
     label: Profit for the year
     statement: income
@@ -109,6 +128,24 @@ lines:
     optional: true
     rules:
       - concepts: [ifrs-full:OtherCurrentFinancialAssets]
+
+  restricted_cash:
+    label: Restricted cash
+    statement: balance
+    period: instant
+    expect: positive
+    optional: true
+    rules:
+      - concepts: [ifrs-full:CurrentRestrictedCashAndCashEquivalents]
+        add_if_tagged: [ifrs-full:NoncurrentRestrictedCashAndCashEquivalents]
+
+  other_cash_like:
+    label: Other cash-like items (company's net debt definition)
+    statement: balance
+    period: instant
+    expect: positive
+    optional: true
+    rules: []  # entered from the company's net debt note (config/manual_figures.yaml)
 
   contract_liabilities:
     label: Contract liabilities (advance ticket sales)

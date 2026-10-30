@@ -52,11 +52,11 @@ CREATE TABLE facts (
     issuer       VARCHAR NOT NULL,
     fiscal_year  INTEGER NOT NULL,
     period_end   DATE NOT NULL,
-    concept      VARCHAR NOT NULL,    -- canonical line id (normalize/concept_map.yaml)
-    value        DECIMAL(38, 6) NOT NULL,  -- canonical sign: costs and outflows positive
-    value_tagged DECIMAL(38, 6) NOT NULL,  -- as tagged (sum of parts if several)
+    concept      VARCHAR NOT NULL,    -- canonical line id, or metric id for computed metrics
+    value        DECIMAL(38, 12) NOT NULL, -- canonical sign: costs and outflows positive
+    value_tagged DECIMAL(38, 12) NOT NULL, -- as tagged (sum of parts if several)
     decimals     INTEGER,
-    currency     VARCHAR NOT NULL,
+    currency     VARCHAR NOT NULL,    -- reporting currency; "x" or "pct" for ratios
     source_type  VARCHAR NOT NULL,    -- tagged | computed | extracted | manual
     source_ref   VARCHAR NOT NULL,    -- JSON: filing, hash, concepts, fact ids, rule
     status       VARCHAR NOT NULL,    -- verified | unverified | overridden
@@ -176,6 +176,51 @@ def write_facts(con, facts: list[MappedFact], hashes: dict[str, str | None]) -> 
             for f in facts
         ],
     )
+
+
+def write_metrics(con, results, currency: str, units: dict[str, str]) -> None:
+    """Computed metrics go to `facts` (values) and `gaps` (missing, n.m. or awaiting M3)."""
+    rows, gaps = [], []
+    for r in results:
+        if r.value is None:
+            gaps.append((r.issuer, r.fiscal_year, r.metric, r.reason, r.kind == "missing"))
+            continue
+        ref = json.dumps(
+            {
+                "formula": r.metric,
+                "inputs": [
+                    {"name": i.name, "value": str(i.value), "source": i.source} for i in r.inputs
+                ],
+            },
+            ensure_ascii=False,
+        )
+        unit_currency = currency if units[r.metric] == "amount" else units[r.metric]
+        rows.append(
+            (
+                r.issuer,
+                r.fiscal_year,
+                r.period_end,
+                r.metric,
+                r.value,
+                r.value,
+                None,
+                unit_currency,
+                "computed",
+                ref,
+                r.status,
+                True,
+                False,
+                False,
+                "",
+                r.note,
+                None,
+                None,
+            )
+        )
+    con.executemany(
+        "INSERT INTO facts VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", rows
+    )
+    con.executemany("INSERT INTO gaps VALUES (?, ?, ?, ?, ?)", gaps)
 
 
 def write_gaps(con, gaps: list[Gap]) -> None:

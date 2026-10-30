@@ -1,0 +1,28 @@
+# Peer groups (decision 0008, choice 1a). Ratios are compared without currency conversion.
+groups:
+  network:
+    label: Network airlines
+    members: [afkl, iag, finnair]
+  low_cost:
+    label: Low-cost airlines
+    members: [easyjet, norwegian, wizz]
+  airports:
+    label: Airports
+    members: [adp, aena, vie]
+  all_airlines:
+    label: All airlines
+    members: [afkl, iag, finnair, easyjet, norwegian, wizz]
+
+# Metrics shown in peer views, in this order. Amounts are left out: they are in different
+# currencies, and size comparisons in EUR come with the charts (M5).
+metrics:
+  - ebitda_margin
+  - net_leverage
+  - gross_leverage
+  - interest_coverage
+  - ffo_to_debt
+  - fcf_to_debt
+  - capex_intensity
+  - cash_liquidity_to_revenue
+  - advance_ticket_cover
+  - fuel_share_of_costs

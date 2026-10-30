@@ -1,0 +1,222 @@
+# Metrics catalog: one definition per metric, applied identically to every issuer.
+#
+# unit: amount (reporting currency), x (multiple), pct (stored as a fraction, shown as %).
+# higher_is_better: colours peer views and decides the rank (true, false, or null = not ranked).
+# definition: one line, reused as the tearsheet footnote.
+# needs: M3 for metrics that need figures extracted from the report text (shown as missing
+#   until then, never as zero).
+# The formulas are in metrics/formulas.py under the same id. These definitions differ from
+# company-reported and rating-agency-adjusted figures: no pension or hybrid adjustments in v1.
+
+metrics:
+  # --- Credit metrics -----------------------------------------------------------------------
+  ebitda:
+    label: EBITDA
+    unit: amount
+    higher_is_better: true
+    definition: >-
+      Operating profit + depreciation, amortisation and impairment, excluding the share of
+      associates' results where the company reports it inside operating profit.
+  ebitda_margin:
+    label: EBITDA margin
+    unit: pct
+    higher_is_better: true
+    definition: EBITDA ÷ revenue.
+  total_debt:
+    label: Total debt
+    unit: amount
+    higher_is_better: null
+    definition: Borrowings + lease liabilities, current and non-current.
+  cash_like:
+    label: Cash and cash-like investments
+    unit: amount
+    higher_is_better: true
+    definition: >-
+      Cash and cash equivalents + the short-term investments the company itself deducts in
+      its net debt (listed per company).
+  net_debt:
+    label: Net debt
+    unit: amount
+    higher_is_better: null
+    definition: Total debt − cash and cash-like investments. Negative means net cash.
+  net_leverage:
+    label: Net leverage
+    unit: x
+    higher_is_better: false
+    definition: Net debt ÷ EBITDA. Not meaningful (n.m.) when EBITDA is zero or negative.
+  gross_leverage:
+    label: Gross leverage
+    unit: x
+    higher_is_better: false
+    definition: Total debt ÷ EBITDA. n.m. when EBITDA is zero or negative.
+  interest_coverage:
+    label: Interest coverage
+    unit: x
+    higher_is_better: true
+    definition: >-
+      EBITDA ÷ interest expense (lease interest included); interest paid where interest
+      expense isn't tagged. n.m. when EBITDA or interest is zero or negative.
+  ffo:
+    label: FFO
+    unit: amount
+    higher_is_better: true
+    definition: EBITDA − interest paid − income tax paid.
+  ffo_to_debt:
+    label: FFO to debt
+    unit: pct
+    higher_is_better: true
+    definition: FFO ÷ total debt.
+  fcf:
+    label: Free cash flow
+    unit: amount
+    higher_is_better: true
+    definition: Cash from operations − purchases of PP&E and intangibles (cash paid).
+  fcf_to_debt:
+    label: FCF to debt
+    unit: pct
+    higher_is_better: true
+    definition: Free cash flow ÷ total debt.
+  capex_intensity:
+    label: Capex intensity
+    unit: pct
+    higher_is_better: null
+    definition: Purchases of PP&E and intangibles ÷ revenue.
+  cash_liquidity:
+    label: Cash liquidity (partial)
+    unit: amount
+    higher_is_better: true
+    definition: >-
+      Cash and cash-like investments. Partial liquidity: undrawn committed facilities are
+      added in M3.
+  cash_liquidity_to_revenue:
+    label: Cash liquidity to revenue (partial)
+    unit: pct
+    higher_is_better: true
+    definition: Cash liquidity ÷ revenue (undrawn facilities added in M3).
+  liquidity:
+    label: Liquidity
+    unit: amount
+    higher_is_better: true
+    needs: M3
+    definition: Cash + cash-like investments + undrawn committed facilities.
+  liquidity_to_revenue:
+    label: Liquidity to revenue
+    unit: pct
+    higher_is_better: true
+    needs: M3
+    definition: Liquidity ÷ revenue.
+  advance_ticket_cover:
+    label: Advance ticket cover
+    unit: pct
+    higher_is_better: false
+    applies_to: [airline]
+    definition: >-
+      Advance ticket sales ÷ cash and cash-like investments (how much of the cash is customers'
+      prepayments).
+
+  # --- Airline operating metrics ----------------------------------------------------------
+  fuel_share_of_costs:
+    label: Fuel share of costs
+    unit: pct
+    higher_is_better: null
+    applies_to: [airline]
+    definition: Fuel cost ÷ (revenue − operating profit).
+  passengers:
+    label: Passengers
+    unit: count
+    higher_is_better: true
+    needs: M3
+    definition: Passengers carried (airlines) or handled (airports), scope defined per company.
+  ask:
+    label: ASK
+    unit: count
+    higher_is_better: true
+    applies_to: [airline]
+    needs: M3
+    definition: Available seat kilometres.
+  rpk:
+    label: RPK
+    unit: count
+    higher_is_better: true
+    applies_to: [airline]
+    needs: M3
+    definition: Revenue passenger kilometres.
+  load_factor:
+    label: Load factor
+    unit: pct
+    higher_is_better: true
+    applies_to: [airline]
+    needs: M3
+    definition: RPK ÷ ASK.
+  passenger_yield:
+    label: Passenger yield
+    unit: amount
+    higher_is_better: true
+    applies_to: [airline]
+    needs: M3
+    definition: Passenger revenue ÷ RPK.
+  rask:
+    label: RASK
+    unit: amount
+    higher_is_better: true
+    applies_to: [airline]
+    needs: M3
+    definition: Revenue ÷ ASK.
+  cask:
+    label: CASK
+    unit: amount
+    higher_is_better: false
+    applies_to: [airline]
+    needs: M3
+    definition: (Revenue − operating profit) ÷ ASK.
+  cask_ex_fuel:
+    label: CASK ex-fuel
+    unit: amount
+    higher_is_better: false
+    applies_to: [airline]
+    needs: M3
+    definition: (Revenue − operating profit − fuel cost) ÷ ASK.
+  fleet:
+    label: Fleet
+    unit: count
+    higher_is_better: null
+    applies_to: [airline]
+    needs: M3
+    definition: Aircraft in operation and average age.
+  fuel_hedge_ratio:
+    label: Fuel hedge ratio
+    unit: pct
+    higher_is_better: null
+    applies_to: [airline]
+    needs: M3
+    definition: Share of the next twelve months' fuel needs hedged.
+
+  # --- Airport operating metrics ----------------------------------------------------------
+  traffic_growth:
+    label: Traffic growth
+    unit: pct
+    higher_is_better: true
+    applies_to: [airport]
+    needs: M3
+    definition: Passengers ÷ prior-year passengers − 1.
+  revenue_per_passenger:
+    label: Revenue per passenger
+    unit: amount
+    higher_is_better: true
+    applies_to: [airport]
+    needs: M3
+    definition: Revenue ÷ passengers.
+  aero_revenue_per_passenger:
+    label: Aeronautical revenue per passenger
+    unit: amount
+    higher_is_better: true
+    applies_to: [airport]
+    needs: M3
+    definition: Aeronautical segment revenue ÷ passengers.
+  non_aero_share:
+    label: Non-aeronautical share
+    unit: pct
+    higher_is_better: true
+    applies_to: [airport]
+    needs: M3
+    definition: Non-aeronautical revenue ÷ revenue.

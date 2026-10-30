@@ -19,13 +19,16 @@ from tearsheet.config import load_issuers
 from tearsheet.ingest.client import Client
 from tearsheet.ingest.filings import choose, list_filings
 from tearsheet.ingest.manual import manual_filings
+from tearsheet.ingest.manual_figures import manual_figures
 from tearsheet.ingest.xbrl_json import canonical_concept, parse_report
+from tearsheet.metrics.engine import compute
 from tearsheet.normalize.mapper import consolidate, load_mapping, map_report
 
 HERE = Path(__file__).parent
 FIXTURES = HERE / "filings"
 GOLDEN = HERE.parent / "golden"
 GOLDEN_COLUMNS = ["fiscal_year", "line", "value", "concepts", "rule", "comparative", "restated"]
+METRIC_COLUMNS = ["fiscal_year", "metric", "kind", "value", "reason"]
 
 
 def _mapped_concepts(mapping) -> set[str]:
@@ -70,6 +73,22 @@ def golden_rows(facts) -> list[dict]:
     ]
 
 
+def metric_rows(issuer, mapped, filings, mapping) -> list[dict]:
+    """Metrics from the tagged facts plus the figures entered by hand (config/manual_figures)."""
+    hand_filings, hand_facts, _ = manual_figures(issuer)
+    facts, _ = consolidate(issuer, mapped + hand_facts, filings + hand_filings, mapping)
+    return [
+        {
+            "fiscal_year": r.fiscal_year,
+            "metric": r.metric,
+            "kind": r.kind,
+            "value": "" if r.value is None else f"{r.value:.6f}",
+            "reason": r.reason or "",
+        }
+        for r in compute(issuer, facts)
+    ]
+
+
 def main() -> None:
     client = Client(offline=True)
     GOLDEN.mkdir(parents=True, exist_ok=True)
@@ -102,7 +121,16 @@ def main() -> None:
             writer = csv.DictWriter(out, GOLDEN_COLUMNS)
             writer.writeheader()
             writer.writerows(golden_rows(facts))
-        print(f"{issuer.id}: {len(filings)} filings, {len(golden_rows(facts))} golden lines")
+        (GOLDEN / "metrics").mkdir(exist_ok=True)
+        rows = metric_rows(issuer, mapped, filings, mapping)
+        with (GOLDEN / "metrics" / f"{issuer.id}.csv").open("w", newline="") as out:
+            writer = csv.DictWriter(out, METRIC_COLUMNS)
+            writer.writeheader()
+            writer.writerows(rows)
+        print(
+            f"{issuer.id}: {len(filings)} filings, {len(golden_rows(facts))} golden lines, "
+            f"{len(rows)} metric results"
+        )
 
 
 if __name__ == "__main__":

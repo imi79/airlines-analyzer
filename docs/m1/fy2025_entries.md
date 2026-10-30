@@ -5,49 +5,59 @@ entered from the published statements Imane supplied (`config/manual_figures.yam
 Each document's prior-year column is compared with the figure the database already
 holds for that year: a difference means a typing error or a restatement.
 
-**Control: 34 of 34 prior-year figures match the database.**
+**Control: 36 of 36 prior-year figures match the database.**
 
-## Air France-KLM: FY2025 (status: verified)
+## Air France-KLM
 
-| Line | FY2025 | Page | FY2024 printed | FY2024 in database | Control |
-| --- | --- | --- | --- | --- | --- |
-| Revenue | 33,007 | 3 | 31,459 | 31,459 | ✓ |
-| Depreciation, amortisation and impairment | 3,054 | 3 | 2,643 | 2,643 | ✓ |
-| Operating profit | 2,002 | 3 | 1,466 | 1,466 | ✓ |
-| Finance costs | 627 | 3 | 631 | 631 | ✓ |
-| Profit for the year | 1,754 | 3 | 489 | 489 | ✓ |
-| Other current financial assets | 1,360 | 5 | 1,190 | 1,190 | ✓ |
-| Cash and cash equivalents | 4,714 | 5 | 4,829 | 4,829 | ✓ |
-| Total assets | 39,445 | 5 | 36,155 | 36,155 | ✓ |
-| Total equity | 2,364 | 6 | 799 | 799 | ✓ |
-| Borrowings, non-current | 7,265 | 6 | 7,254 | 7,254 | ✓ |
-| Lease liabilities, non-current | 5,487 | 6 | 4,714 | 4,714 | ✓ |
-| Borrowings, current | 1,803 | 6 | 1,692 | 1,692 | ✓ |
-| Lease liabilities, current | 958 | 6 | 982 | 982 | ✓ |
-| Contract liabilities (advance ticket sales) | 4,264 | 6 | 4,097 | 4,097 | ✓ |
-| Cash from operations | 5,055 | 8 | 3,496 | 3,496 | ✓ |
-| Capex (purchases of PP&E and intangibles) | 4,449 | 8 | 3,728 | 3,728 | ✓ |
-| Lease payments (principal) | 960 | 8 | 891 | 891 | ✓ |
-| Interest paid | 670 | 8 | 664 | 664 | ✓ |
-| Income tax paid | 136 | 8 | 20 | 20 | ✓ |
+| Line | Year | Entered | Page | Status | Prior year printed | Prior year in database | Control |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Borrowings, current | FY2025 | 1,803 | 6 | verified | 1,692 | 1,692 | ✓ |
+| Borrowings, non-current | FY2025 | 7,265 | 6 | verified | 7,254 | 7,254 | ✓ |
+| Capex (purchases of PP&E and intangibles) | FY2025 | 4,449 | 8 | verified | 3,728 | 3,728 | ✓ |
+| Cash and cash equivalents | FY2025 | 4,714 | 5 | verified | 4,829 | 4,829 | ✓ |
+| Cash from operations | FY2025 | 5,055 | 8 | verified | 3,496 | 3,496 | ✓ |
+| Contract liabilities (advance ticket sales) | FY2025 | 4,264 | 6 | verified | 4,097 | 4,097 | ✓ |
+| Depreciation, amortisation and impairment | FY2025 | 3,054 | 3 | verified | 2,643 | 2,643 | ✓ |
+| Total equity | FY2025 | 2,364 | 6 | verified | 799 | 799 | ✓ |
+| Finance costs | FY2025 | 627 | 3 | verified | 631 | 631 | ✓ |
+| Interest expense | FY2025 | 627 | 3 | unverified | 631 | 631 | ✓ |
+| Interest paid | FY2025 | 670 | 8 | verified | 664 | 664 | ✓ |
+| Lease liabilities, current | FY2025 | 958 | 6 | verified | 982 | 982 | ✓ |
+| Lease liabilities, non-current | FY2025 | 5,487 | 6 | verified | 4,714 | 4,714 | ✓ |
+| Lease payments (principal) | FY2025 | 960 | 8 | verified | 891 | 891 | ✓ |
+| Operating profit | FY2025 | 2,002 | 3 | verified | 1,466 | 1,466 | ✓ |
+| Other cash-like items (company's net debt definition) | FY2023 | 2,063 | 70 | unverified | – | – | prior-year column, loaded as the figure (nothing tagged to compare) |
+| Other cash-like items (company's net debt definition) | FY2024 | 2,103 | 77 | unverified | – | – | prior-year column, loaded as the figure (nothing tagged to compare) |
+| Other cash-like items (company's net debt definition) | FY2024 | 2,103 | 70 | unverified | – | – | no tagged figure to compare (net debt note item) |
+| Other cash-like items (company's net debt definition) | FY2025 | 2,144 | 77 | unverified | – | – | no tagged figure to compare (net debt note item) |
+| Other current financial assets | FY2025 | 1,360 | 5 | verified | 1,190 | 1,190 | ✓ |
+| Profit for the year | FY2025 | 1,754 | 3 | verified | 489 | 489 | ✓ |
+| Revenue | FY2025 | 33,007 | 3 | verified | 31,459 | 31,459 | ✓ |
+| Income tax paid | FY2025 | 136 | 8 | verified | 20 | 20 | ✓ |
+| Total assets | FY2025 | 39,445 | 5 | verified | 36,155 | 36,155 | ✓ |
 
-## Groupe ADP: FY2025 (status: verified)
+## Groupe ADP
 
-| Line | FY2025 | Page | FY2024 printed | FY2024 in database | Control |
-| --- | --- | --- | --- | --- | --- |
-| Revenue | 6,704 | 4 | 6,158 | 6,158 | ✓ |
-| Depreciation, amortisation and impairment | 1,003 | 4 | 791 | 791 | ✓ |
-| Operating profit | 1,160 | 4 | 994 | 994 | ✓ |
-| Finance costs | 663 | 4 | 595 | 595 | ✓ |
-| Profit for the year | 426 | 4 | 516 | 516 | ✓ |
-| Other current financial assets | 151 | 5 | 234 | 234 | ✓ |
-| Cash and cash equivalents | 1,892 | 5 | 1,958 | 1,958 | ✓ |
-| Total assets | 20,267 | 5 | 20,179 | 20,179 | ✓ |
-| Total equity | 5,407 | 5 | 5,512 | 5,512 | ✓ |
-| Borrowings, non-current | 8,728 | 5 | 8,887 | 8,887 | ✓ |
-| Borrowings, current | 1,859 | 5 | 1,785 | 1,785 | ✓ |
-| Cash from operations | 1,638 | 6 | 1,524 | 1,524 | ✓ |
-| Capex (purchases of PP&E and intangibles) | 1,218 | 6 | 1,169 | 1,169 | ✓ |
-| Interest paid | 295 | 6 | 298 | 298 | ✓ |
-| Income tax paid | 370 | 6 | 283 | 283 | ✓ |
+| Line | Year | Entered | Page | Status | Prior year printed | Prior year in database | Control |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Borrowings, current | FY2025 | 1,859 | 5 | verified | 1,785 | 1,785 | ✓ |
+| Borrowings, non-current | FY2025 | 8,728 | 5 | verified | 8,887 | 8,887 | ✓ |
+| Capex (purchases of PP&E and intangibles) | FY2025 | 1,218 | 6 | verified | 1,169 | 1,169 | ✓ |
+| Cash and cash equivalents | FY2025 | 1,892 | 5 | verified | 1,958 | 1,958 | ✓ |
+| Cash from operations | FY2025 | 1,638 | 6 | verified | 1,524 | 1,524 | ✓ |
+| Depreciation, amortisation and impairment | FY2025 | 1,003 | 4 | verified | 791 | 791 | ✓ |
+| Total equity | FY2025 | 5,407 | 5 | verified | 5,512 | 5,512 | ✓ |
+| Finance costs | FY2025 | 663 | 4 | verified | 595 | 595 | ✓ |
+| Interest paid | FY2025 | 295 | 6 | verified | 298 | 298 | ✓ |
+| Operating profit | FY2025 | 1,160 | 4 | verified | 994 | 994 | ✓ |
+| Other cash-like items (company's net debt definition) | FY2023 | 118 | 60 | unverified | – | – | prior-year column, loaded as the figure (nothing tagged to compare) |
+| Other cash-like items (company's net debt definition) | FY2024 | 138 | 56 | unverified | – | – | prior-year column, loaded as the figure (nothing tagged to compare) |
+| Other cash-like items (company's net debt definition) | FY2024 | 138 | 60 | unverified | – | – | no tagged figure to compare (net debt note item) |
+| Other cash-like items (company's net debt definition) | FY2025 | 125 | 56 | unverified | – | – | no tagged figure to compare (net debt note item) |
+| Other current financial assets | FY2025 | 151 | 5 | verified | 234 | 234 | ✓ |
+| Profit for the year | FY2025 | 426 | 4 | verified | 516 | 516 | ✓ |
+| Revenue | FY2025 | 6,704 | 4 | verified | 6,158 | 6,158 | ✓ |
+| Share of profit (loss) of associates | FY2025 | -165 | 4 | unverified | -292 | -292 | ✓ |
+| Income tax paid | FY2025 | 370 | 6 | verified | 283 | 283 | ✓ |
+| Total assets | FY2025 | 20,267 | 5 | verified | 20,179 | 20,179 | ✓ |
 

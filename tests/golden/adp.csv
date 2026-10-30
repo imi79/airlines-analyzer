@@ -3,6 +3,7 @@ fiscal_year,line,value,concepts,rule,comparative,restated
 2021,dda,719000000,ifrs-full:DepreciationAndAmortisationExpense,common,True,False
 2021,operating_profit,-20000000,ifrs-full:ProfitLossFromOperatingActivities,common,True,False
 2021,finance_costs,611000000,ifrs-full:FinanceCosts,common,True,False
+2021,share_of_associates,-61000000,adp:ShareOfProfitLossOfAssociatesAndJointVenturesInOperatingActivityAccountedForUsingEquityMethod,override:adp,True,False
 2021,profit,-248000000,ifrs-full:ProfitLoss,common,True,False
 2021,cash,2379000000,ifrs-full:CashAndCashEquivalents,common,True,False
 2021,other_current_financial_assets,193000000,ifrs-full:OtherCurrentFinancialAssets,common,True,False
@@ -19,6 +20,7 @@ fiscal_year,line,value,concepts,rule,comparative,restated
 2022,dda,782000000,ifrs-full:DepreciationAndAmortisationExpense,common,False,False
 2022,operating_profit,988000000,ifrs-full:ProfitLossFromOperatingActivities,common,False,False
 2022,finance_costs,841000000,ifrs-full:FinanceCosts,common,False,False
+2022,share_of_associates,14000000,adp:ShareOfProfitLossOfAssociatesAndJointVenturesInOperatingActivityAccountedForUsingEquityMethod,override:adp,False,False
 2022,profit,591000000,ifrs-full:ProfitLoss,common,False,False
 2022,cash,2631000000,ifrs-full:CashAndCashEquivalents,common,False,False
 2022,other_current_financial_assets,237000000,ifrs-full:OtherCurrentFinancialAssets,common,False,False
@@ -35,6 +37,7 @@ fiscal_year,line,value,concepts,rule,comparative,restated
 2023,dda,792000000,adp:DotationsAuxAmortissementsEtDepreciationDactifsCorporelsEtIncorporelsNettesDesReprises,override:adp,True,False
 2023,operating_profit,1243000000,ifrs-full:ProfitLossFromOperatingActivities,common,True,False
 2023,finance_costs,1115000000,ifrs-full:FinanceCosts,common,True,False
+2023,share_of_associates,75000000,adp:QuotePartDeResultatDesEntreprisesMisesEnEquivalence,override:adp,True,False
 2023,profit,784000000,ifrs-full:ProfitLoss,common,True,False
 2023,cash,2343000000,ifrs-full:CashAndCashEquivalents,common,True,False
 2023,other_current_financial_assets,238000000,ifrs-full:OtherCurrentFinancialAssets,common,True,False
@@ -50,6 +53,7 @@ fiscal_year,line,value,concepts,rule,comparative,restated
 2024,dda,791000000,adp:DotationsAuxAmortissementsEtDepreciationDactifsCorporelsEtIncorporelsNettesDesReprises,override:adp,False,False
 2024,operating_profit,994000000,ifrs-full:ProfitLossFromOperatingActivities,common,False,False
 2024,finance_costs,595000000,ifrs-full:FinanceCosts,common,False,False
+2024,share_of_associates,-292000000,adp:QuotePartDeResultatDesEntreprisesMisesEnEquivalence,override:adp,False,False
 2024,profit,516000000,ifrs-full:ProfitLoss,common,False,False
 2024,cash,1958000000,ifrs-full:CashAndCashEquivalents,common,False,False
 2024,other_current_financial_assets,234000000,ifrs-full:OtherCurrentFinancialAssets,common,False,False

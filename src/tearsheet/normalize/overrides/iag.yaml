@@ -15,3 +15,10 @@ lines:
           concept. Later filings use ifrs-full:FuelExpense for the same line.
         note: Includes emissions charges, as in IAG's income statement.
         checked: FY2022 filing (6,120)
+  short_term_deposits:
+    rules:
+      - concepts: [ext:InterestBearingDepositsMaturingAfterMoreThanThreeMonths]
+        reason: >-
+          IAG's other current interest-bearing deposits (maturing after more than three
+          months), which IAG deducts in its net debt with cash and cash equivalents.
+        checked: FY2024 filing (1,639; cash plus deposits 9,828)

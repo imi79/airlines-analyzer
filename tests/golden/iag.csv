@@ -6,6 +6,7 @@ fiscal_year,line,value,concepts,rule,comparative,restated
 2021,finance_costs,830000000,ifrs-full:FinanceCosts,common,True,False
 2021,profit,-2933000000,ifrs-full:ProfitLoss,common,True,False
 2021,cash,7892000000,ifrs-full:CashAndCashEquivalents,common,True,False
+2021,short_term_deposits,51000000,iag:InterestBearingDepositsMaturingAfterMoreThanThreeMonths,override:iag,True,False
 2021,contract_liabilities,6161000000,iag:DeferredRevenueOnTicketSalesClassifiedAsCurrent,override:iag,True,False
 2021,borrowings_current,2526000000,ifrs-full:ShorttermBorrowings,common,True,False
 2021,borrowings_noncurrent,17084000000,ifrs-full:LongtermBorrowings,common,True,False
@@ -23,6 +24,7 @@ fiscal_year,line,value,concepts,rule,comparative,restated
 2022,finance_costs,1017000000,ifrs-full:FinanceCosts,common,True,False
 2022,profit,431000000,ifrs-full:ProfitLoss,common,True,False
 2022,cash,9196000000,ifrs-full:CashAndCashEquivalents,common,True,False
+2022,short_term_deposits,403000000,iag:InterestBearingDepositsMaturingAfterMoreThanThreeMonths,override:iag,True,False
 2022,contract_liabilities,7318000000,iag:DeferredRevenueOnTicketSalesClassifiedAsCurrent,override:iag,False,False
 2022,borrowings_current,2843000000,ifrs-full:ShorttermBorrowings,common,True,False
 2022,borrowings_noncurrent,17141000000,ifrs-full:LongtermBorrowings,common,True,False
@@ -40,6 +42,7 @@ fiscal_year,line,value,concepts,rule,comparative,restated
 2023,finance_costs,1113000000,ifrs-full:FinanceCosts,common,True,False
 2023,profit,2655000000,ifrs-full:ProfitLoss,common,True,False
 2023,cash,5441000000,ifrs-full:CashAndCashEquivalents,common,True,False
+2023,short_term_deposits,1396000000,iag:InterestBearingDepositsMaturingAfterMoreThanThreeMonths,override:iag,True,False
 2023,contract_liabilities,7766000000,ifrs-full:CurrentDeferredIncomeIncludingCurrentContractLiabilities,common,True,False
 2023,borrowings_current,2977000000,ifrs-full:ShorttermBorrowings,common,True,True
 2023,borrowings_noncurrent,13105000000,ifrs-full:LongtermBorrowings,common,True,True
@@ -57,6 +60,7 @@ fiscal_year,line,value,concepts,rule,comparative,restated
 2024,finance_costs,917000000,ifrs-full:FinanceCosts,common,True,False
 2024,profit,2732000000,ifrs-full:ProfitLoss,common,True,False
 2024,cash,8189000000,ifrs-full:CashAndCashEquivalents,common,True,False
+2024,short_term_deposits,1639000000,iag:InterestBearingDepositsMaturingAfterMoreThanThreeMonths,override:iag,True,False
 2024,contract_liabilities,8333000000,ifrs-full:CurrentDeferredIncomeIncludingCurrentContractLiabilities,common,True,False
 2024,borrowings_current,3475000000,ifrs-full:ShorttermBorrowings,common,True,False
 2024,borrowings_noncurrent,13870000000,ifrs-full:LongtermBorrowings,common,True,False
@@ -74,6 +78,7 @@ fiscal_year,line,value,concepts,rule,comparative,restated
 2025,finance_costs,861000000,ifrs-full:FinanceCosts,common,False,False
 2025,profit,3342000000,ifrs-full:ProfitLoss,common,False,False
 2025,cash,7421000000,ifrs-full:CashAndCashEquivalents,common,False,False
+2025,short_term_deposits,898000000,iag:InterestBearingDepositsMaturingAfterMoreThanThreeMonths,override:iag,False,False
 2025,contract_liabilities,8032000000,ifrs-full:CurrentDeferredIncomeIncludingCurrentContractLiabilities,common,False,False
 2025,borrowings_current,3046000000,ifrs-full:ShorttermBorrowings,common,False,False
 2025,borrowings_noncurrent,11221000000,ifrs-full:LongtermBorrowings,common,False,False

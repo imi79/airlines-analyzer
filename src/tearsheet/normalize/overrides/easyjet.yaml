@@ -7,3 +7,13 @@ lines:
           FY2022-FY2023 filings tag current unearned revenue (advance ticket sales) as a
           company concept.
         checked: FY2023 filing (1,498)
+  current_investments:
+    rules:
+      - concepts: [ext:OtherInvestments]
+        reason: >-
+          Money market deposits, tagged as "other investments" from FY2024. easyJet counts
+          them in its net cash ("cash, cash equivalents and other investments of £3.5 billion").
+        checked: FY2025 filing (2,024)
+      - concepts: [ext:MoneyMarketDeposits]
+        reason: Same line as tagged in the FY2022-FY2023 filings.
+        checked: FY2022 filing (126)

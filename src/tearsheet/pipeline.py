@@ -10,6 +10,7 @@ from tearsheet.ingest.client import Client
 from tearsheet.ingest.filings import Filing, choose, list_filings
 from tearsheet.ingest.manual import manual_filings
 from tearsheet.ingest.manual_figures import Control, manual_figures
+from tearsheet.metrics.engine import Result, compute, load_catalog
 from tearsheet.normalize.mapper import Gap, MappedFact, consolidate, load_mapping, map_report
 from tearsheet.store import db
 
@@ -21,6 +22,7 @@ class IssuerLoad:
     facts: list[MappedFact]
     gaps: list[Gap]
     controls: list[Control]
+    metrics: list[Result]
 
 
 def load_issuer(client: Client, issuer: Issuer) -> tuple[IssuerLoad, dict]:
@@ -35,11 +37,13 @@ def load_issuer(client: Client, issuer: Issuer) -> tuple[IssuerLoad, dict]:
     hand_filings, hand_facts, controls = manual_figures(issuer)
     filings, mapped = filings + hand_filings, mapped + hand_facts
     facts, gaps = consolidate(issuer, mapped, filings, mapping)
-    return IssuerLoad(issuer, filings, facts, gaps, controls), reports
+    metrics = compute(issuer, facts)
+    return IssuerLoad(issuer, filings, facts, gaps, controls, metrics), reports
 
 
 def load_all(client: Client, db_path: Path = DB_PATH) -> list[IssuerLoad]:
     con = db.create(db_path)
+    units = {k: v["unit"] for k, v in load_catalog().items()}
     results = []
     for issuer in load_issuers():
         result, reports = load_issuer(client, issuer)
@@ -50,6 +54,7 @@ def load_all(client: Client, db_path: Path = DB_PATH) -> list[IssuerLoad]:
         hashes = {f.filing_id: f.sha256 for f in result.filings}
         db.write_facts(con, result.facts, hashes)
         db.write_gaps(con, result.gaps)
+        db.write_metrics(con, result.metrics, result.issuer.currency, units)
         results.append(result)
     con.close()
     return results

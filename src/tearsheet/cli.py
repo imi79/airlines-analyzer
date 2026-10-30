@@ -1,7 +1,7 @@
 """Command line: `uv run tearsheet <command>`.
 
     load         download (or read from cache) every v1 filing and rebuild the facts database
-    report       write the CSV exports, coverage report and check sheet to docs/m1/
+    report       write the reports: docs/m1 (figures) and docs/m2 (metrics, peers, reconciliation)
     all          load, then report
     add-package  convert and register an ESEF package (.zip) downloaded by hand:
                  add-package <zip> --issuer afkl --origin "Air France-KLM website" [--url ...]
@@ -18,6 +18,7 @@ from pathlib import Path
 from tearsheet import reports
 from tearsheet.config import load_issuers
 from tearsheet.ingest.client import Client
+from tearsheet.metrics import reports as metric_reports
 from tearsheet.pipeline import load_all
 
 CHECK_ISSUERS = ["afkl", "adp"]  # decision 0004: the M1 spot check
@@ -59,6 +60,7 @@ def main() -> None:
         totals = reports.coverage_report()
         path = reports.check_sheet(CHECK_ISSUERS, CHECK_YEARS)
         matched, checked = reports.manual_entries_report()
+        metric_reports.write_all()
         print(f"coverage: {totals}; check sheet: {path}")
         print(f"figures entered by hand: prior-year control {matched}/{checked} match")
 
