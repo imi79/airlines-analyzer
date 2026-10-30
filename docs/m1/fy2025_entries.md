@@ -7,7 +7,7 @@ holds for that year: a difference means a typing error or a restatement.
 
 **Control: 34 of 34 prior-year figures match the database.**
 
-## Air France-KLM: FY2025 (status: unverified)
+## Air France-KLM: FY2025 (status: verified)
 
 | Line | FY2025 | Page | FY2024 printed | FY2024 in database | Control |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@ holds for that year: a difference means a typing error or a restatement.
 | Interest paid | 670 | 8 | 664 | 664 | ✓ |
 | Income tax paid | 136 | 8 | 20 | 20 | ✓ |
 
-## Groupe ADP: FY2025 (status: unverified)
+## Groupe ADP: FY2025 (status: verified)
 
 | Line | FY2025 | Page | FY2024 printed | FY2024 in database | Control |
 | --- | --- | --- | --- | --- | --- |

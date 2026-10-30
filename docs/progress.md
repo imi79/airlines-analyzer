@@ -13,8 +13,7 @@ Walkthrough: `docs/m0/walkthrough.md`. **Status: done.**
 ## M1 · Ingestion and normalisation
 
 Branch: `m1-load-figures`. Run: `uv run tearsheet all` (add `--offline` to use the cache only).
-Results: `docs/m1/`. Walkthrough: `docs/m1/walkthrough.md`. **Status: done** (one review left,
-see the last item).
+Results: `docs/m1/`. Walkthrough: `docs/m1/walkthrough.md`. **Status: done.**
 
 - [x] Core statement lines loaded for every v1 issuer and year: 804 figures to FY2025, every
       gap explained (7 not tagged, with reasons)
@@ -24,4 +23,4 @@ see the last item).
 - [x] A rerun from cache works offline and changes nothing (two runs, identical files)
 - [x] FY2025 for Air France-KLM and ADP loaded: entered from the published statements, with
       34 of 34 prior-year controls matching (decision 0007, `docs/m1/fy2025_entries.md`).
-      **Imane to review the 34 entries**; they stay "unverified" until then.
+      Reviewed by Imane on 2026-10-30; stored as verified.
