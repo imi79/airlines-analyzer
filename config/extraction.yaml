@@ -40,3 +40,19 @@ issuers:
   vie:
     passengers: Vienna Airport only (not the group total including Malta and Košice).
     aero_revenue: Revenue of the Airport segment (Segment Airport, Vienna).
+
+# How each airline defines its printed load factor. The cross-check "RPK ÷ ASK = the printed
+# load factor" only applies where the company computes it that way (the default, rpk_ask).
+# Where the company prints seats sold ÷ seats offered, the check is skipped and the figure says
+# so; ASK and RPK still go through every other check.
+load_factor_basis:
+  easyjet:
+    basis: seats
+    evidence: >-
+      FY2025 annual report: load factor 89.8% with 93.4 million passengers and 104.0 million
+      seats flown (93.4 ÷ 104.0 = 89.8%), while RPK ÷ ASK = 122,021 ÷ 134,451 = 90.8%.
+  wizz:
+    basis: seats
+    evidence: >-
+      FY2026 annual report, alternative performance measures: "Load factor (%): the number of
+      seats sold (PAX) divided by the number of seats available on the aircraft (capacity)."

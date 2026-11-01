@@ -10,7 +10,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from datetime import date
 
-from tearsheet.config import Issuer
+from tearsheet.config import FIRST_FISCAL_YEAR, Issuer
 from tearsheet.extract.consolidate import (
     Candidate,
     apply_reviews,
@@ -21,7 +21,12 @@ from tearsheet.extract.consolidate import (
     with_model,
 )
 from tearsheet.extract.documents import Document, from_report, supplied_documents
-from tearsheet.extract.extractor import DocumentRun, extract_document, load_scopes
+from tearsheet.extract.extractor import (
+    DocumentRun,
+    extract_document,
+    load_factor_basis,
+    load_scopes,
+)
 from tearsheet.extract.fx import Converter
 from tearsheet.extract.locator import items_for
 from tearsheet.ingest.client import Client
@@ -84,9 +89,11 @@ def extract_issuer(
         out.runs.append(extract_document(llm, issuer, doc, revenue, items, scopes))
     figures = [f for run in out.runs for f in run.figures]
     years = {f.fiscal_year for f in figures} | {d.fiscal_year for d in docs}
-    ends = {y: period_end(issuer, y) for y in years}
+    # Figures for years before the v1 range (the FY2020 comparatives in the FY2021 report)
+    # serve the cross-checks only; they are not stored as facts.
+    ends = {y: period_end(issuer, y) for y in years if y >= FIRST_FISCAL_YEAR}
     out.candidates = build_candidates(figures, issuer, items, ends, revenue, convert)
-    cross_check(out.candidates, items)
+    cross_check(out.candidates, items, load_factor_basis(issuer.id))
     out.unmatched_reviews = apply_reviews(
         issuer, out.candidates, load_reviews() if reviews is None else reviews
     )

@@ -144,7 +144,10 @@ def check_figure(
         c.failures.append("table header not found word for word in the report")
         header = ""
 
-    # 2. The quote is about this figure.
+    # 2. The quote is about this figure. A bare number ("107,0") cannot say whose figure it is,
+    # even with a header: the row label must be in the quote.
+    if not re.search(r"[A-Za-zÀ-ÿ]{3,}", raw.quote):
+        c.failures.append("the quote is only numbers, without the row label")
     terms = [t for lang_terms in item["terms"].values() for t in lang_terms]
     if not contains_any(raw.quote + " " + header, terms):
         c.failures.append(f"quote does not mention {item['label'].lower()}")
@@ -195,6 +198,16 @@ def check_figure(
         else:
             c.failures.append(reason)
 
+    # 4b. A forward figure (hedge ratio) covers twelve months, not part of the year.
+    if item["period"] == "forward":
+        rest = _sentence_rest(doc, raw.quote)  # a quote cut short must not hide the period
+        part = _part_of_year(raw.quote + " " + rest + " " + header)
+        if part:
+            c.failures.append(
+                f"the quote gives the figure for part of a year ('{part}'), not the next "
+                "twelve months"
+            )
+
     # 5. Plausible range.
     reason = _check_range(c, item, revenue, reporting_currency)
     if reason:
@@ -213,6 +226,12 @@ def _locate_value(quote: str, printed: str, number: Decimal, language: str | Non
     for token in number_tokens(quote, language):
         if token.value == number:
             return token
+    # The printed text exactly as given, spaces included ('3 0, 2 2 7. 3'), between non-digits.
+    for m in re.finditer(re.escape(printed.strip()), quote):
+        before = quote[m.start() - 1] if m.start() > 0 else " "
+        after = quote[m.end()] if m.end() < len(quote) else " "
+        if not (before.isdigit() or after.isdigit()) and before not in ".," and printed.strip():
+            return Token(m.group(0), number, m.start(), m.end())
     target = re.sub(r"\s+", "", printed)
     flat, index = [], []
     for i, ch in enumerate(quote):
@@ -311,8 +330,11 @@ def _table_year(quote: str, token: Token, header: str, language: str | None) -> 
         return None
     first_digit = re.search(r"\d", quote)
     label_end = first_digit.start() if first_digit else 0
-    numbers = [t for t in number_tokens(quote, language) if t.start >= label_end]
-    # drop numbers that are part of the row label, such as footnote markers before the values
+    numbers = [
+        t
+        for t in number_tokens(quote, language)
+        if t.start >= label_end and not _unit_marker(quote, t)
+    ]
     positions = [t.start for t in numbers]
     if token.start not in positions:
         return None
@@ -320,6 +342,14 @@ def _table_year(quote: str, token: Token, header: str, language: str | None) -> 
     if len(numbers) < len(years):
         return None
     return years[k] if k < len(years) else None
+
+
+UNIT_MARK = re.compile(r"[‘’'`´(]\s*$")
+
+
+def _unit_marker(quote: str, token: Token) -> bool:
+    """A "‘000" or "(000)" after a row label says the row counts in thousands: not a value."""
+    return token.text.strip() == "000" and bool(UNIT_MARK.search(quote[: token.start]))
 
 
 def _check_year(raw: RawFigure, token: Token, header: str, period: str, doc: Document) -> str:
@@ -331,9 +361,18 @@ def _check_year(raw: RawFigure, token: Token, header: str, period: str, doc: Doc
     if year is None and header:
         year = _table_year(quote, token, header, doc.language)
         source = "the table header"
+        if period == "forward":
+            # A hedge table's columns are the years the fuel is used: at the end of FY2022,
+            # the position for the next twelve months is the 2023 column.
+            allowed = {claimed + 1}
     if year is not None:
         if year in allowed:
             return ""
+        if period == "forward" and source == "the table header":
+            return (
+                f"the value is in the {year} column; the hedge held at the end of FY{claimed} "
+                f"for the next twelve months is the {claimed + 1} column"
+            )
         return f"{source} ties the value to {year}, not FY{claimed}"
     # No year in the quote: only the report's own year can be assumed, and only if the quote
     # holds no other figure of the same size that could be the comparative.
@@ -367,6 +406,41 @@ def _check_year(raw: RawFigure, token: Token, header: str, period: str, doc: Doc
     if spans:
         return "note: the year in brackets is the comparative; the value is the report's own year"
     return "note: the quote names no year; taken as the report's own year"
+
+
+PART_OF_YEAR = re.compile(
+    r"(?i)(?<![a-zà-ÿ])(first|second|1st|2nd)\s+(six\s+months|half|quarter)|"
+    r"(?<![a-z0-9])(H1|H2|Q[1-4])(?![a-z0-9])|"
+    r"(premier|second|1er|2e)\s+(semestre|trimestre)|"
+    r"(primer|segundo)\s+(semestre|trimestre)|(erste|zweite)[ns]?\s+(halbjahr|quartal)|"
+    r"(?<![a-z])\d+\s+months(?![a-z])"
+)
+
+
+def _sentence_rest(doc: Document, quote: str, limit: int = 200) -> str:
+    """The report's own text right after the quote, to the end of its sentence."""
+    tail = [ch for ch in quote[-80:] if not ch.isspace()]
+    if not tail:
+        return ""
+    pattern = re.compile(r"\s*".join(re.escape(ch) for ch in tail))
+    for page in doc.pages:
+        m = pattern.search(page)
+        if m:
+            after = page[m.end() : m.end() + limit]
+            stop = re.search(r"[.;](\s|$)", after)
+            return after[: stop.start()] if stop else after
+    return ""
+
+
+def _part_of_year(text: str) -> str | None:
+    """Words that limit a figure to part of a year ('first six months', 'H1 FY26', '5 months').
+    '12 months' and 'twelve months' are a full year and are not caught."""
+    for m in PART_OF_YEAR.finditer(text):
+        months = re.match(r"(\d+)\s+months", m.group(0), re.IGNORECASE)
+        if months and int(months.group(1)) >= 12:
+            continue
+        return m.group(0)
+    return None
 
 
 def _check_range(c: Checked, item: dict, revenue: Decimal | None, currency: str) -> str:

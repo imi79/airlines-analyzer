@@ -148,7 +148,11 @@ def _range_after_conversion(c: Candidate, item: dict, revenue: Decimal | None) -
         c.failures.append(f"value is {share:.0%} of revenue, outside the plausible range")
 
 
-def cross_check(candidates: list[Candidate], items: dict[str, dict]) -> None:
+def cross_check(
+    candidates: list[Candidate], items: dict[str, dict], load_factor_basis: str = "rpk_ask"
+) -> None:
+    """`load_factor_basis` 'seats' means the company prints seats sold ÷ seats offered, so the
+    RPK ÷ ASK check does not apply (config/extraction.yaml)."""
     by_key: dict[tuple[int, str], list[Candidate]] = {}
     for c in candidates:
         by_key.setdefault((c.fiscal_year, c.item), []).append(c)
@@ -188,6 +192,14 @@ def cross_check(candidates: list[Candidate], items: dict[str, dict]) -> None:
     # RPK ÷ ASK against the printed load factor.
     for (year, item_id), lf in list(primary.items()):
         if item_id != "load_factor" or lf.status != "verified":
+            continue
+        if load_factor_basis == "seats":
+            for key in ((year, "ask"), (year, "rpk")):
+                if key in primary:
+                    primary[key].notes.append(
+                        "RPK ÷ ASK not checked against the printed load factor: the company "
+                        "computes it as seats sold ÷ seats offered"
+                    )
             continue
         ask, rpk = primary.get((year, "ask")), primary.get((year, "rpk"))
         if not (ask and rpk and ask.status == rpk.status == "verified"):

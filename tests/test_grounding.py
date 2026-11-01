@@ -93,6 +93,155 @@ def test_table_row_with_header_is_verified():
     assert c.value == Decimal("134451000000")
 
 
+IAG = (
+    "Total Group operations\n2025\n2024\n2023\n20221\n2021\n"
+    "Passengers carried\n‘000\n121,560\n122,047\n115,559\n94,726\n38,864",
+)
+
+
+@pytest.mark.parametrize("year, printed", [(2025, "121,560"), (2024, "122,047")])
+def test_thousands_marker_after_the_row_label_is_not_a_column(year, printed):
+    # IAG FY2025: the "‘000" after the label says thousands; it is not the first column.
+    raw = figure(
+        item="passengers",
+        fiscal_year=year,
+        printed_value=printed,
+        scale="thousand",
+        quote="Passengers carried\n‘000\n121,560\n122,047\n115,559\n94,726\n38,864",
+        table_header="Total Group operations\n2025\n2024\n2023\n20221\n2021",
+    )
+    c = run(raw, doc(IAG), currency="EUR")
+    assert c.verified, c.failures
+
+
+def test_thousands_marker_does_not_hide_a_wrong_column():
+    raw = figure(
+        item="passengers",
+        fiscal_year=2025,
+        printed_value="122,047",
+        scale="thousand",
+        quote="Passengers carried\n‘000\n121,560\n122,047\n115,559\n94,726\n38,864",
+        table_header="Total Group operations\n2025\n2024\n2023\n20221\n2021",
+    )
+    c = run(raw, doc(IAG), currency="EUR")
+    assert not c.verified
+    assert any("2024" in f for f in c.failures)
+
+
+def test_number_split_by_spaces_is_found_between_its_neighbours():
+    # Finnair FY2025: the text layer prints RPK as "3 0, 2 2 7. 3" between two other cells.
+    quote = "Tota l 2,445.8 2,419.0 39,306.6 38,259.3 3 0, 2 2 7. 3 29,000.2 76.9 1.1"
+    raw = figure(
+        item="rpk",
+        printed_value="3 0, 2 2 7. 3",
+        scale="million",
+        quote=quote,
+        table_header="Passenger revenue ASK RPK PLF",
+    )
+    c = run(raw, doc((quote,), issuer="finnair"), currency="EUR")
+    assert c.value == Decimal("30227300000")
+    assert not any("not printed in the quote" in f for f in c.failures)
+    assert not c.verified  # the header names no year, so the year cannot be confirmed
+
+
+FINNAIR_HEDGE = (
+    "At the end of the financial year, Finnair had hedged 8 per cent of its forecasted fuel "
+    "purchases for the first six months of 2022 and 3 per cent of the purchases for the second "
+    "half of the year.",
+    "At the end of 2022, the Group has hedged around 15 percent of its planned fuel consumption "
+    "in 2023 at an average price of USD 891 per metric ton.",
+)
+
+
+def test_half_year_hedge_is_not_a_twelve_month_ratio():
+    raw = figure(
+        item="fuel_hedge_ratio",
+        fiscal_year=2021,
+        printed_value="8",
+        quote=FINNAIR_HEDGE[0],
+    )
+    c = run(raw, doc(FINNAIR_HEDGE, year=2021, issuer="finnair"), currency="EUR")
+    assert not c.verified
+    assert any("part of a year" in f for f in c.failures)
+
+
+def test_quote_cut_short_does_not_hide_a_half_year():
+    # Finnair FY2022: the AI's quote stops at "for the first"; the report goes on "six months".
+    page = (
+        "At the end of the financial year, Finnair had hedged 41 per cent of its forecasted fuel "
+        "purchases for the first six months of 2023 and 25 per cent for the second half.",
+    )
+    raw = figure(
+        item="fuel_hedge_ratio",
+        fiscal_year=2022,
+        printed_value="41",
+        quote="At the end of the financial year, Finnair had hedged 41 per cent of its forecasted "
+        "fuel purchases for the first",
+    )
+    c = run(raw, doc(page, year=2022, issuer="finnair"), currency="EUR")
+    assert not c.verified
+    assert any("six months" in f for f in c.failures)
+
+
+AFKL_HEDGE = (
+    "(en millions de dollars US) 2022 2023 2024 Dépense brute avant couverture 8 486 8 060 "
+    "7 654 Pourcentage de couverture 73 % 51 % 4 %",
+)
+
+
+@pytest.mark.parametrize("printed, verified", [("73", False), ("51", True)])
+def test_hedge_table_needs_the_next_year_column(printed, verified):
+    # Air France-KLM FY2022: 73 % is 2022 (the year just ended), 51 % is 2023 (the next year).
+    raw = figure(
+        item="fuel_hedge_ratio",
+        fiscal_year=2022,
+        printed_value=printed,
+        quote="Pourcentage de couverture 73 % 51 % 4 %",
+        table_header="(en millions de dollars US) 2022 2023 2024",
+    )
+    c = run(raw, doc(AFKL_HEDGE, language="fr", year=2022, issuer="afkl"), currency="EUR")
+    assert c.verified is verified, c.failures
+
+
+def test_bare_number_quote_is_rejected_even_with_a_header():
+    # Groupe ADP 2025 PDF: "107,0" sits in a list of airports; the quote must name the row.
+    page = (
+        "Passagers en millions PAX (1) Évolution en % par rapport au 31/12/2024 107,0 +3,4 % "
+        "Ankara Esenboga - TAV Airports 14,0 +8,3%",
+    )
+    raw = figure(
+        item="passengers",
+        printed_value="107,0",
+        scale="million",
+        quote="107,0",
+        table_header="Passagers en millions PAX (1)",
+    )
+    c = run(raw, doc(page, language="fr", issuer="adp"), currency="EUR")
+    assert "the quote is only numbers, without the row label" in c.failures
+
+
+def test_hedge_for_the_next_year_is_verified():
+    raw = figure(
+        item="fuel_hedge_ratio", fiscal_year=2022, printed_value="15", quote=FINNAIR_HEDGE[1]
+    )
+    c = run(raw, doc(FINNAIR_HEDGE, year=2022, issuer="norwegian"), currency="NOK")
+    assert c.verified, c.failures
+    assert c.value == Decimal("0.15")
+
+
+def test_hedge_from_a_table_for_one_half_year_is_rejected():
+    raw = figure(
+        item="fuel_hedge_ratio",
+        fiscal_year=2026,
+        printed_value="84",
+        quote="Hedge coverage for the period 84 % 71 % 17 %",
+        table_header="Period covered F27 H1 F27 H2 F28 5 months 6 months 7 months",
+    )
+    page = (raw.table_header + " " + raw.quote,)
+    c = run(raw, doc(page, year=2026, issuer="wizz"), currency="EUR")
+    assert not c.verified
+
+
 def test_french_sentence_is_verified():
     raw = figure(
         item="passengers",
@@ -134,15 +283,18 @@ def test_split_words_and_numbers_are_matched():
     assert not c.verified
 
 
-def test_forward_hedge_ratio_names_next_year():
+def test_forward_hedge_ratio_for_the_next_half_year_only_is_rejected():
+    # "80% hedged for H1 FY26" covers six months, not the next twelve (decision 0013).
     raw = figure(
         item="fuel_hedge_ratio",
         printed_value="80",
         quote="are\n80% hedged for H1 FY26.",
     )
     c = run(raw, doc(EASYJET))
-    assert c.verified, c.failures
     assert c.value == Decimal("0.8")
+    assert c.failures == [
+        "the quote gives the figure for part of a year ('H1'), not the next twelve months"
+    ]
 
 
 def test_foreign_currency_amount_is_kept_in_its_currency():

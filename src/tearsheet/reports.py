@@ -58,7 +58,7 @@ def coverage_report(db_path: Path = DB_PATH, out: Path = OUT) -> dict[str, int]:
     con = _connect(db_path)
     facts = con.execute(
         "SELECT issuer, fiscal_year, concept, restated, note, footnote, warnings, source_ref, "
-        "source_type FROM facts WHERE is_primary AND source_type <> 'computed'"
+        "source_type FROM facts WHERE is_primary AND source_type NOT IN ('computed', 'extracted')"
     ).df()
     gaps = con.execute("SELECT * FROM gaps").df()
     gaps = gaps[gaps.concept.isin(list(lines))]
@@ -160,7 +160,9 @@ def check_sheet(
     """Excel sheet laid out like the published statements, for a tick-by-tick check."""
     lines = _lines()
     con = _connect(db_path)
-    facts = con.execute("SELECT * FROM facts WHERE is_primary").df()
+    facts = con.execute(
+        "SELECT * FROM facts WHERE is_primary AND source_type <> 'extracted'"
+    ).df()  # figures read from the report text are checked in docs/m3
     gaps = con.execute("SELECT * FROM gaps").df()
     filings = con.execute("SELECT * FROM filings").df()
     con.close()

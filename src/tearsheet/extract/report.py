@@ -72,7 +72,8 @@ def extraction_report(db_path: Path = DB_PATH, out: Path = OUT) -> dict[str, int
         "| --- | --- | --- | --- | --- | --- |",
     ]
     body: list[str] = []
-    totals = {"figures": 0, "verified": 0, "unverified": 0, "reports": 0, "not_read": 0}
+    totals = {"figures": 0, "verified": 0, "unverified": 0, "reports": 0, "not_read": 0,
+              "listed": 0}  # fmt: skip
     for issuer in load_issuers():
         items = items_for(issuer.type, all_items)
         f = facts[facts.issuer == issuer.id]
@@ -124,7 +125,9 @@ def extraction_report(db_path: Path = DB_PATH, out: Path = OUT) -> dict[str, int
             body.append(f"| {item['label']} | " + " | ".join(cells) + " |")
         body.append("")
 
-        pending = f[f.status == "unverified"].sort_values(["fiscal_year", "concept"])
+        pending = f[f.status == "unverified"].sort_values(
+            ["fiscal_year", "concept"], ascending=[False, True]
+        )
         if len(pending):
             body += ["**Waiting for your review** (unverified, kept off the tearsheet)", ""]
             for row in pending.itertuples():
@@ -139,6 +142,7 @@ def extraction_report(db_path: Path = DB_PATH, out: Path = OUT) -> dict[str, int
                     f"(printed {ref.get('printed')}) from {row.filing_id}, {where}. "
                     f"Quote: “{quote[:300]}”. Why unverified: {reasons}."
                 )
+                totals["listed"] += 1
             body.append("")
         if own_missing:
             missing_text = ", ".join(f"{all_items[i]['label']} FY{y}" for y, i in own_missing)
@@ -194,8 +198,14 @@ def _calls_section(calls: pd.DataFrame) -> list[str]:
     return lines
 
 
-def score_report(db_path: Path = DB_PATH, out: Path = OUT, key_path: Path = KEY):
-    """Write answer_key_score.md. Returns the summary, or None without an answer key."""
+def score_report(
+    db_path: Path = DB_PATH,
+    out: Path = OUT,
+    key_path: Path = KEY,
+    flagged: tuple[int, int] | None = None,
+):
+    """Write answer_key_score.md. Returns the summary, or None without an answer key.
+    `flagged`: (unverified figures listed for review, unverified figures in the database)."""
     if not key_path.exists():
         return None
     key = load_key(key_path)
@@ -216,6 +226,16 @@ def score_report(db_path: Path = DB_PATH, out: Path = OUT, key_path: Path = KEY)
         f"{s.counts['verified_wrong']} of {s.total}.",
         f"- {tick[s.enough_verified]} **At least 80% verified automatically**: "
         f"{s.counts['verified_correct']} of {s.total} ({s.share_verified:.0%}).",
+        *(
+            [
+                f"- {tick[flagged[0] == flagged[1]]} **Every unverified value visibly flagged**: "
+                f"{flagged[0]} of {flagged[1]} unverified figures are listed with their reason in "
+                "`docs/m3/extractions.md` and marked \\*; every ratio that uses one is marked "
+                "\\* in `docs/m2/metrics.md` and `docs/m2/peers.md`."
+            ]
+            if flagged
+            else []
+        ),
         "",
         "| Outcome | Count |",
         "| --- | --- |",
@@ -246,4 +266,5 @@ def score_report(db_path: Path = DB_PATH, out: Path = OUT, key_path: Path = KEY)
 
 
 def write_all() -> tuple[dict[str, int], object]:
-    return extraction_report(), score_report()
+    totals = extraction_report()
+    return totals, score_report(flagged=(totals["listed"], totals["unverified"]))

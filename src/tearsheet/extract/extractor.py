@@ -66,6 +66,12 @@ def load_scopes(path: Path = SCOPES) -> dict[str, dict[str, str]]:
     return yaml.safe_load(path.read_text())["issuers"]
 
 
+def load_factor_basis(issuer_id: str, path: Path = SCOPES) -> str:
+    """'rpk_ask' (RPK ÷ ASK, the default) or 'seats' (seats sold ÷ seats offered)."""
+    entry = (yaml.safe_load(path.read_text()).get("load_factor_basis") or {}).get(issuer_id)
+    return entry["basis"] if entry else "rpk_ask"
+
+
 def fiscal_label(issuer: Issuer, year: int) -> str:
     month = int(issuer.fiscal_year_end[:2])
     if month == 12:
