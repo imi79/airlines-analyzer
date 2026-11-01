@@ -1,0 +1,213 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Norwegian standalone passengers; no group total reported.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "passengers",
+    "location": "page 6",
+    "printed_value": "17.8",
+    "quote": "Norwegian had 17.8 million passengers in 2022, up from 6.2 million passenger in 2021.",
+    "scale": "million",
+    "scope": "Norwegian alone (no group total given)"
+   },
+   {
+    "comment": "Prior-year comparative for Norwegian standalone.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "passengers",
+    "location": "page 6",
+    "printed_value": "6.2",
+    "quote": "Norwegian had 17.8 million passengers in 2022, up from 6.2 million passenger in 2021.",
+    "scale": "million",
+    "scope": "Norwegian alone (no group total given)"
+   },
+   {
+    "comment": "ASK in millions from key figures table.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "ask",
+    "location": "page 133",
+    "printed_value": "27,382",
+    "quote": "ASK (million) 27,382 9,437 18,168 100,031 99,220 72,341 57,910 49,028 46,479 34,318",
+    "scale": "million",
+    "scope": "Group",
+    "table_header": "ASK (million) 27,382 9,437 18,168 100,031 99,220 72,341 57,910 49,028 46,479 34,318"
+   },
+   {
+    "comment": "Prior-year ASK in millions.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "ask",
+    "location": "page 133",
+    "printed_value": "9,437",
+    "quote": "ASK (million) 27,382 9,437 18,168 100,031 99,220 72,341 57,910 49,028 46,479 34,318",
+    "scale": "million",
+    "scope": "Group",
+    "table_header": "ASK (million) 27,382 9,437 18,168 100,031 99,220 72,341 57,910 49,028 46,479 34,318"
+   },
+   {
+    "comment": "RPK in millions from key figures table.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "rpk",
+    "location": "page 133",
+    "printed_value": "22,757",
+    "quote": "RPK (million) 22,757 6,869 13,680 86,616 85,124 63,320 50,798 42,284 37,615 26,881",
+    "scale": "million",
+    "scope": "Group",
+    "table_header": "RPK (million) 22,757 6,869 13,680 86,616 85,124 63,320 50,798 42,284 37,615 26,881"
+   },
+   {
+    "comment": "Prior-year RPK in millions.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "rpk",
+    "location": "page 133",
+    "printed_value": "6,869",
+    "quote": "RPK (million) 22,757 6,869 13,680 86,616 85,124 63,320 50,798 42,284 37,615 26,881",
+    "scale": "million",
+    "scope": "Group",
+    "table_header": "RPK (million) 22,757 6,869 13,680 86,616 85,124 63,320 50,798 42,284 37,615 26,881"
+   },
+   {
+    "comment": "Load factor as printed.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "load_factor",
+    "location": "page 133",
+    "printed_value": "83.1%",
+    "quote": "Load factor 83.1% 72.8% 75.2% 86.6% 85.8% 87.5% 87.7% 86.2% 80.9% 78.3%",
+    "scale": "one",
+    "scope": "Group",
+    "table_header": "Load factor 83.1% 72.8% 75.2% 86.6% 85.8% 87.5% 87.7% 86.2% 80.9% 78.3%"
+   },
+   {
+    "comment": "Prior-year load factor as printed.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "load_factor",
+    "location": "page 133",
+    "printed_value": "72.8%",
+    "quote": "Load factor 83.1% 72.8% 75.2% 86.6% 85.8% 87.5% 87.7% 86.2% 80.9% 78.3%",
+    "scale": "one",
+    "scope": "Group",
+    "table_header": "Load factor 83.1% 72.8% 75.2% 86.6% 85.8% 87.5% 87.7% 86.2% 80.9% 78.3%"
+   },
+   {
+    "comment": "Scheduled passenger revenue, excluding ancillary.",
+    "currency": "NOK",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 54",
+    "printed_value": "15,197.7",
+    "quote": "Passenger revenue 15,197.7 3,911.8",
+    "scale": "million",
+    "scope": "Group",
+    "table_header": "NOK million Note 2022 2021"
+   },
+   {
+    "comment": "Prior-year scheduled passenger revenue.",
+    "currency": "NOK",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 54",
+    "printed_value": "3,911.8",
+    "quote": "Passenger revenue 15,197.7 3,911.8",
+    "scale": "million",
+    "scope": "Group",
+    "table_header": "NOK million Note 2022 2021"
+   },
+   {
+    "comment": "Aircraft at year end.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 133",
+    "printed_value": "70",
+    "quote": "Number of aircraft (at year end) 70 51 131 156 164 144 116 99 95 85",
+    "scale": "one",
+    "scope": "Group fleet in operation at year end",
+    "table_header": "Number of aircraft (at year end) 70 51 131 156 164 144 116 99 95 85"
+   },
+   {
+    "comment": "Prior-year aircraft at year end.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 133",
+    "printed_value": "51",
+    "quote": "Number of aircraft (at year end) 70 51 131 156 164 144 116 99 95 85",
+    "scale": "one",
+    "scope": "Group fleet in operation at year end",
+    "table_header": "Number of aircraft (at year end) 70 51 131 156 164 144 116 99 95 85"
+   },
+   {
+    "comment": "Average fleet age 9 years 1 month; printed as 9 years.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "fleet_age",
+    "location": "page 37",
+    "printed_value": "9",
+    "quote": "The average age of the aircraft ﬂeet was 9 years and 1 month at year-end 2022.",
+    "scale": "one",
+    "scope": "Group fleet"
+   },
+   {
+    "comment": "No average fleet age is given for year-end 2021.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "fleet_age"
+   },
+   {
+    "comment": "Share of 2023 planned fuel consumption hedged at year-end 2022.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "fuel_hedge_ratio",
+    "location": "page 67",
+    "printed_value": "15",
+    "quote": "At the end of 2022, the Group has hedged around 15 percent of its planned fuel consumption in 2023 at an average price of USD 891 per metric ton.",
+    "scale": "one",
+    "scope": "Group"
+   },
+   {
+    "comment": "No hedge ratio for year-end 2021 is stated in the passages.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "comment": "No committed undrawn credit facilities are disclosed in the passages.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "No committed undrawn credit facilities are disclosed in the passages.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "undrawn_facilities"
+   }
+  ]
+ },
+ "label": "norwegian FY2022 549300IEUH2FEM2Y6B51-2022-12-31-ESEF-NO-0",
+ "recorded_at": "2026-11-01T23:07:01+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v1",
+  "provider": "deepseek",
+  "system_sha256": "dd61dfa8bc5d0e076c746aaea74c07edd95275ae8052eef86252d530e64f8ebd",
+  "tool_sha256": "cd03841cb7853d9fe2928c968aa2456590e781a35cc160fb0d7c7646f17071ff",
+  "user_sha256": "83260682e144163e59a4db37977510e19872a506b4fd35cbdf7b13d9edc33071"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 10066,
+  "output_tokens": 2103
+ }
+}

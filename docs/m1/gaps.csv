@@ -1,5 +1,4 @@
 issuer,fiscal_year,concept,reason,counts_as_missing
-adp,2021,aero_revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 adp,2021,borrowings_total,Reported as current and non-current parts only.,False
 adp,2021,cash_like,Other cash-like items (company's net debt definition) not available for FY2021,True
 adp,2021,cash_liquidity,Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021,True
@@ -10,18 +9,14 @@ adp,2021,interest_expense,Not reported by this issuer.,False
 adp,2021,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 adp,2021,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 adp,2021,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
-adp,2021,liquidity,Needs figures extracted from the report text (M3).,False
-adp,2021,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
+adp,2021,liquidity,Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021,True
+adp,2021,liquidity_to_revenue,Liquidity: Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021,True
 adp,2021,net_debt,Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021,True
 adp,2021,net_leverage,Net debt: Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021,True
-adp,2021,non_aero_share,Needs figures extracted from the report text (M3).,False
 adp,2021,other_cash_like,Not reported by this issuer.,False
-adp,2021,passengers,Needs figures extracted from the report text (M3).,False
 adp,2021,restricted_cash,Not reported by this issuer.,False
-adp,2021,revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 adp,2021,short_term_deposits,Not reported by this issuer.,False
-adp,2021,traffic_growth,Needs figures extracted from the report text (M3).,False
-adp,2022,aero_revenue_per_passenger,Needs figures extracted from the report text (M3).,False
+adp,2021,traffic_growth,Passengers not available for FY2020,True
 adp,2022,borrowings_total,Reported as current and non-current parts only.,False
 adp,2022,cash_like,Other cash-like items (company's net debt definition) not available for FY2022,True
 adp,2022,cash_liquidity,Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022,True
@@ -32,18 +27,14 @@ adp,2022,interest_expense,Not reported by this issuer.,False
 adp,2022,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 adp,2022,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 adp,2022,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
-adp,2022,liquidity,Needs figures extracted from the report text (M3).,False
-adp,2022,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
+adp,2022,liquidity,Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022,True
+adp,2022,liquidity_to_revenue,Liquidity: Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022,True
 adp,2022,net_debt,Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022,True
 adp,2022,net_leverage,Net debt: Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022,True
-adp,2022,non_aero_share,Needs figures extracted from the report text (M3).,False
 adp,2022,other_cash_like,Not reported by this issuer.,False
-adp,2022,passengers,Needs figures extracted from the report text (M3).,False
 adp,2022,restricted_cash,Not reported by this issuer.,False
-adp,2022,revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 adp,2022,short_term_deposits,Not reported by this issuer.,False
-adp,2022,traffic_growth,Needs figures extracted from the report text (M3).,False
-adp,2023,aero_revenue_per_passenger,Needs figures extracted from the report text (M3).,False
+adp,2023,aero_revenue_per_passenger,Passengers not available for FY2023,True
 adp,2023,borrowings_total,Reported as current and non-current parts only.,False
 adp,2023,current_investments,Not reported by this issuer.,False
 adp,2023,debt_including_leases,Not reported by this issuer.,False
@@ -52,15 +43,13 @@ adp,2023,lease_liabilities_current,Lease liabilities are included in borrowings 
 adp,2023,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 adp,2023,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 adp,2023,lease_payments,Not reported by this issuer.,False
-adp,2023,liquidity,Needs figures extracted from the report text (M3).,False
-adp,2023,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-adp,2023,non_aero_share,Needs figures extracted from the report text (M3).,False
-adp,2023,passengers,Needs figures extracted from the report text (M3).,False
+adp,2023,liquidity,Undrawn committed credit facilities not available for FY2023,True
+adp,2023,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2023,True
+adp,2023,passengers,Passengers not available for FY2023,True
 adp,2023,restricted_cash,Not reported by this issuer.,False
-adp,2023,revenue_per_passenger,Needs figures extracted from the report text (M3).,False
+adp,2023,revenue_per_passenger,Passengers not available for FY2023,True
 adp,2023,short_term_deposits,Not reported by this issuer.,False
-adp,2023,traffic_growth,Needs figures extracted from the report text (M3).,False
-adp,2024,aero_revenue_per_passenger,Needs figures extracted from the report text (M3).,False
+adp,2023,traffic_growth,Passengers not available for FY2023,True
 adp,2024,borrowings_total,Reported as current and non-current parts only.,False
 adp,2024,current_investments,Not reported by this issuer.,False
 adp,2024,debt_including_leases,Not reported by this issuer.,False
@@ -69,15 +58,11 @@ adp,2024,lease_liabilities_current,Lease liabilities are included in borrowings 
 adp,2024,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 adp,2024,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 adp,2024,lease_payments,Not reported by this issuer.,False
-adp,2024,liquidity,Needs figures extracted from the report text (M3).,False
-adp,2024,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-adp,2024,non_aero_share,Needs figures extracted from the report text (M3).,False
-adp,2024,passengers,Needs figures extracted from the report text (M3).,False
+adp,2024,liquidity,Undrawn committed credit facilities not available for FY2024,True
+adp,2024,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2024,True
 adp,2024,restricted_cash,Not reported by this issuer.,False
-adp,2024,revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 adp,2024,short_term_deposits,Not reported by this issuer.,False
-adp,2024,traffic_growth,Needs figures extracted from the report text (M3).,False
-adp,2025,aero_revenue_per_passenger,Needs figures extracted from the report text (M3).,False
+adp,2024,traffic_growth,Passengers not available for FY2023,True
 adp,2025,borrowings_total,Reported as current and non-current parts only.,False
 adp,2025,current_investments,Not reported by this issuer.,False
 adp,2025,debt_including_leases,Not reported by this issuer.,False
@@ -86,652 +71,424 @@ adp,2025,lease_liabilities_current,Lease liabilities are included in borrowings 
 adp,2025,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 adp,2025,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 adp,2025,lease_payments,Not reported by this issuer.,False
-adp,2025,liquidity,Needs figures extracted from the report text (M3).,False
-adp,2025,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-adp,2025,non_aero_share,Needs figures extracted from the report text (M3).,False
-adp,2025,passengers,Needs figures extracted from the report text (M3).,False
+adp,2025,liquidity,Undrawn committed credit facilities not available for FY2025,True
+adp,2025,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2025,True
 adp,2025,restricted_cash,Not reported by this issuer.,False
-adp,2025,revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 adp,2025,short_term_deposits,Not reported by this issuer.,False
-adp,2025,traffic_growth,Needs figures extracted from the report text (M3).,False
-aena,2021,aero_revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 aena,2021,borrowings_total,Reported as current and non-current parts only.,False
 aena,2021,current_investments,Not reported by this issuer.,False
 aena,2021,debt_including_leases,Not reported by this issuer.,False
 aena,2021,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2021,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2021,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
-aena,2021,liquidity,Needs figures extracted from the report text (M3).,False
-aena,2021,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-aena,2021,non_aero_share,Needs figures extracted from the report text (M3).,False
 aena,2021,other_cash_like,Not reported by this issuer.,False
 aena,2021,other_current_financial_assets,Not reported by this issuer.,False
-aena,2021,passengers,Needs figures extracted from the report text (M3).,False
 aena,2021,restricted_cash,Not reported by this issuer.,False
-aena,2021,revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 aena,2021,short_term_deposits,Not reported by this issuer.,False
-aena,2021,traffic_growth,Needs figures extracted from the report text (M3).,False
-aena,2022,aero_revenue_per_passenger,Needs figures extracted from the report text (M3).,False
+aena,2021,traffic_growth,Passengers not available for FY2020,True
 aena,2022,borrowings_total,Reported as current and non-current parts only.,False
 aena,2022,current_investments,Not reported by this issuer.,False
 aena,2022,debt_including_leases,Not reported by this issuer.,False
 aena,2022,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2022,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2022,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
-aena,2022,liquidity,Needs figures extracted from the report text (M3).,False
-aena,2022,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-aena,2022,non_aero_share,Needs figures extracted from the report text (M3).,False
 aena,2022,other_cash_like,Not reported by this issuer.,False
 aena,2022,other_current_financial_assets,Not reported by this issuer.,False
-aena,2022,passengers,Needs figures extracted from the report text (M3).,False
 aena,2022,restricted_cash,Not reported by this issuer.,False
-aena,2022,revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 aena,2022,short_term_deposits,Not reported by this issuer.,False
-aena,2022,traffic_growth,Needs figures extracted from the report text (M3).,False
-aena,2023,aero_revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 aena,2023,borrowings_total,Reported as current and non-current parts only.,False
 aena,2023,current_investments,Not reported by this issuer.,False
 aena,2023,debt_including_leases,Not reported by this issuer.,False
 aena,2023,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2023,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2023,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
-aena,2023,liquidity,Needs figures extracted from the report text (M3).,False
-aena,2023,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-aena,2023,non_aero_share,Needs figures extracted from the report text (M3).,False
 aena,2023,other_cash_like,Not reported by this issuer.,False
 aena,2023,other_current_financial_assets,Not reported by this issuer.,False
-aena,2023,passengers,Needs figures extracted from the report text (M3).,False
 aena,2023,restricted_cash,Not reported by this issuer.,False
-aena,2023,revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 aena,2023,short_term_deposits,Not reported by this issuer.,False
-aena,2023,traffic_growth,Needs figures extracted from the report text (M3).,False
-aena,2024,aero_revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 aena,2024,borrowings_total,Reported as current and non-current parts only.,False
 aena,2024,current_investments,Not reported by this issuer.,False
 aena,2024,debt_including_leases,Not reported by this issuer.,False
 aena,2024,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2024,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2024,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
-aena,2024,liquidity,Needs figures extracted from the report text (M3).,False
-aena,2024,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-aena,2024,non_aero_share,Needs figures extracted from the report text (M3).,False
 aena,2024,other_cash_like,Not reported by this issuer.,False
-aena,2024,passengers,Needs figures extracted from the report text (M3).,False
 aena,2024,restricted_cash,Not reported by this issuer.,False
-aena,2024,revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 aena,2024,short_term_deposits,Not reported by this issuer.,False
-aena,2024,traffic_growth,Needs figures extracted from the report text (M3).,False
-aena,2025,aero_revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 aena,2025,borrowings_total,Reported as current and non-current parts only.,False
 aena,2025,current_investments,Not reported by this issuer.,False
 aena,2025,debt_including_leases,Not reported by this issuer.,False
 aena,2025,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2025,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2025,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
-aena,2025,liquidity,Needs figures extracted from the report text (M3).,False
-aena,2025,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-aena,2025,non_aero_share,Needs figures extracted from the report text (M3).,False
 aena,2025,other_cash_like,Not reported by this issuer.,False
-aena,2025,passengers,Needs figures extracted from the report text (M3).,False
 aena,2025,restricted_cash,Not reported by this issuer.,False
-aena,2025,revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 aena,2025,short_term_deposits,Not reported by this issuer.,False
-aena,2025,traffic_growth,Needs figures extracted from the report text (M3).,False
 afkl,2021,advance_ticket_cover,Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021,True
-afkl,2021,ask,Needs figures extracted from the report text (M3).,False
+afkl,2021,ask,ASK not available for FY2021,True
 afkl,2021,borrowings_total,Reported as current and non-current parts only.,False
 afkl,2021,cash_like,Other cash-like items (company's net debt definition) not available for FY2021,True
 afkl,2021,cash_liquidity,Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021,True
 afkl,2021,cash_liquidity_to_revenue,Cash liquidity (partial): Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021,True
-afkl,2021,cask,Needs figures extracted from the report text (M3).,False
-afkl,2021,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
+afkl,2021,cask,ASK not available for FY2021,True
+afkl,2021,cask_ex_fuel,Fuel cost not available for FY2021,True
 afkl,2021,current_investments,Not reported by this issuer.,False
 afkl,2021,debt_including_leases,Not reported by this issuer.,False
-afkl,2021,fleet,Needs figures extracted from the report text (M3).,False
 afkl,2021,fuel_cost,Fuel cost not tagged separately; to be extracted from the notes (M3).,True
-afkl,2021,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+afkl,2021,fuel_hedge_ratio,Fuel hedge ratio not available for FY2021,True
 afkl,2021,fuel_share_of_costs,Fuel cost not available for FY2021,True
 afkl,2021,gross_leverage,n.m.: EBITDA is negative (-161),False
 afkl,2021,interest_coverage,n.m.: EBITDA is negative (-161),False
 afkl,2021,lease_liabilities_total,Reported as current and non-current parts only.,False
-afkl,2021,liquidity,Needs figures extracted from the report text (M3).,False
-afkl,2021,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-afkl,2021,load_factor,Needs figures extracted from the report text (M3).,False
+afkl,2021,liquidity,Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021,True
+afkl,2021,liquidity_to_revenue,Liquidity: Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021,True
+afkl,2021,load_factor,RPK not available for FY2021,True
 afkl,2021,net_debt,Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021,True
 afkl,2021,net_leverage,Net debt: Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021,True
 afkl,2021,other_cash_like,Not reported by this issuer.,False
-afkl,2021,passenger_yield,Needs figures extracted from the report text (M3).,False
-afkl,2021,passengers,Needs figures extracted from the report text (M3).,False
-afkl,2021,rask,Needs figures extracted from the report text (M3).,False
+afkl,2021,passenger_yield,Passenger revenue not available for FY2021,True
+afkl,2021,passengers,Passengers not available for FY2021,True
+afkl,2021,rask,ASK not available for FY2021,True
 afkl,2021,restricted_cash,Not reported by this issuer.,False
-afkl,2021,rpk,Needs figures extracted from the report text (M3).,False
+afkl,2021,rpk,RPK not available for FY2021,True
 afkl,2021,short_term_deposits,Not reported by this issuer.,False
 afkl,2022,advance_ticket_cover,Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022,True
-afkl,2022,ask,Needs figures extracted from the report text (M3).,False
+afkl,2022,ask,ASK not available for FY2022,True
 afkl,2022,borrowings_total,Reported as current and non-current parts only.,False
 afkl,2022,cash_like,Other cash-like items (company's net debt definition) not available for FY2022,True
 afkl,2022,cash_liquidity,Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022,True
 afkl,2022,cash_liquidity_to_revenue,Cash liquidity (partial): Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022,True
-afkl,2022,cask,Needs figures extracted from the report text (M3).,False
-afkl,2022,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
+afkl,2022,cask,ASK not available for FY2022,True
+afkl,2022,cask_ex_fuel,Fuel cost not available for FY2022,True
 afkl,2022,current_investments,Not reported by this issuer.,False
 afkl,2022,debt_including_leases,Not reported by this issuer.,False
-afkl,2022,fleet,Needs figures extracted from the report text (M3).,False
 afkl,2022,fuel_cost,Fuel cost not tagged separately; to be extracted from the notes (M3).,True
-afkl,2022,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
 afkl,2022,fuel_share_of_costs,Fuel cost not available for FY2022,True
 afkl,2022,lease_liabilities_total,Reported as current and non-current parts only.,False
-afkl,2022,liquidity,Needs figures extracted from the report text (M3).,False
-afkl,2022,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-afkl,2022,load_factor,Needs figures extracted from the report text (M3).,False
+afkl,2022,liquidity,Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022,True
+afkl,2022,liquidity_to_revenue,Liquidity: Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022,True
+afkl,2022,load_factor,RPK not available for FY2022,True
 afkl,2022,net_debt,Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022,True
 afkl,2022,net_leverage,Net debt: Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022,True
 afkl,2022,other_cash_like,Not reported by this issuer.,False
-afkl,2022,passenger_yield,Needs figures extracted from the report text (M3).,False
-afkl,2022,passengers,Needs figures extracted from the report text (M3).,False
-afkl,2022,rask,Needs figures extracted from the report text (M3).,False
+afkl,2022,passenger_yield,Passenger revenue not available for FY2022,True
+afkl,2022,passengers,Passengers not available for FY2022,True
+afkl,2022,rask,ASK not available for FY2022,True
 afkl,2022,restricted_cash,Not reported by this issuer.,False
-afkl,2022,rpk,Needs figures extracted from the report text (M3).,False
+afkl,2022,rpk,RPK not available for FY2022,True
 afkl,2022,short_term_deposits,Not reported by this issuer.,False
-afkl,2023,ask,Needs figures extracted from the report text (M3).,False
+afkl,2023,ask,ASK not available for FY2023,True
 afkl,2023,borrowings_total,Reported as current and non-current parts only.,False
-afkl,2023,cask,Needs figures extracted from the report text (M3).,False
-afkl,2023,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
+afkl,2023,cask,ASK not available for FY2023,True
+afkl,2023,cask_ex_fuel,Fuel cost not available for FY2023,True
 afkl,2023,current_investments,Not reported by this issuer.,False
 afkl,2023,debt_including_leases,Not reported by this issuer.,False
-afkl,2023,fleet,Needs figures extracted from the report text (M3).,False
 afkl,2023,fuel_cost,Fuel cost not tagged separately; to be extracted from the notes (M3).,True
-afkl,2023,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+afkl,2023,fuel_hedge_ratio,Fuel hedge ratio not available for FY2023,True
 afkl,2023,fuel_share_of_costs,Fuel cost not available for FY2023,True
 afkl,2023,lease_liabilities_total,Reported as current and non-current parts only.,False
-afkl,2023,liquidity,Needs figures extracted from the report text (M3).,False
-afkl,2023,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-afkl,2023,load_factor,Needs figures extracted from the report text (M3).,False
-afkl,2023,passenger_yield,Needs figures extracted from the report text (M3).,False
-afkl,2023,passengers,Needs figures extracted from the report text (M3).,False
-afkl,2023,rask,Needs figures extracted from the report text (M3).,False
+afkl,2023,liquidity,Undrawn committed credit facilities not available for FY2023,True
+afkl,2023,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2023,True
+afkl,2023,load_factor,RPK not available for FY2023,True
+afkl,2023,passenger_yield,Passenger revenue not available for FY2023,True
+afkl,2023,rask,ASK not available for FY2023,True
 afkl,2023,restricted_cash,Not reported by this issuer.,False
-afkl,2023,rpk,Needs figures extracted from the report text (M3).,False
+afkl,2023,rpk,RPK not available for FY2023,True
 afkl,2023,short_term_deposits,Not reported by this issuer.,False
-afkl,2024,ask,Needs figures extracted from the report text (M3).,False
+afkl,2024,ask,ASK not available for FY2024,True
 afkl,2024,borrowings_total,Reported as current and non-current parts only.,False
-afkl,2024,cask,Needs figures extracted from the report text (M3).,False
-afkl,2024,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
+afkl,2024,cask,ASK not available for FY2024,True
+afkl,2024,cask_ex_fuel,Fuel cost not available for FY2024,True
 afkl,2024,current_investments,Not reported by this issuer.,False
 afkl,2024,debt_including_leases,Not reported by this issuer.,False
-afkl,2024,fleet,Needs figures extracted from the report text (M3).,False
 afkl,2024,fuel_cost,Fuel cost not tagged separately; to be extracted from the notes (M3).,True
-afkl,2024,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+afkl,2024,fuel_hedge_ratio,Fuel hedge ratio not available for FY2024,True
 afkl,2024,fuel_share_of_costs,Fuel cost not available for FY2024,True
 afkl,2024,lease_liabilities_total,Reported as current and non-current parts only.,False
-afkl,2024,liquidity,Needs figures extracted from the report text (M3).,False
-afkl,2024,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-afkl,2024,load_factor,Needs figures extracted from the report text (M3).,False
-afkl,2024,passenger_yield,Needs figures extracted from the report text (M3).,False
-afkl,2024,passengers,Needs figures extracted from the report text (M3).,False
-afkl,2024,rask,Needs figures extracted from the report text (M3).,False
+afkl,2024,load_factor,RPK not available for FY2024,True
+afkl,2024,passenger_yield,Passenger revenue not available for FY2024,True
+afkl,2024,rask,ASK not available for FY2024,True
 afkl,2024,restricted_cash,Not reported by this issuer.,False
-afkl,2024,rpk,Needs figures extracted from the report text (M3).,False
+afkl,2024,rpk,RPK not available for FY2024,True
 afkl,2024,short_term_deposits,Not reported by this issuer.,False
-afkl,2025,ask,Needs figures extracted from the report text (M3).,False
+afkl,2025,ask,ASK not available for FY2025,True
 afkl,2025,borrowings_total,Reported as current and non-current parts only.,False
-afkl,2025,cask,Needs figures extracted from the report text (M3).,False
-afkl,2025,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
+afkl,2025,cask,ASK not available for FY2025,True
+afkl,2025,cask_ex_fuel,Fuel cost not available for FY2025,True
 afkl,2025,current_investments,Not reported by this issuer.,False
 afkl,2025,debt_including_leases,Not reported by this issuer.,False
-afkl,2025,fleet,Needs figures extracted from the report text (M3).,False
+afkl,2025,fleet,Fleet (aircraft in operation) not available for FY2025,True
+afkl,2025,fleet_age,Fleet average age not available for FY2025,True
 afkl,2025,fuel_cost,Fuel cost not tagged separately; to be extracted from the notes (M3).,True
-afkl,2025,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+afkl,2025,fuel_hedge_ratio,Fuel hedge ratio not available for FY2025,True
 afkl,2025,fuel_share_of_costs,Fuel cost not available for FY2025,True
 afkl,2025,lease_liabilities_total,Reported as current and non-current parts only.,False
-afkl,2025,liquidity,Needs figures extracted from the report text (M3).,False
-afkl,2025,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-afkl,2025,load_factor,Needs figures extracted from the report text (M3).,False
-afkl,2025,passenger_yield,Needs figures extracted from the report text (M3).,False
-afkl,2025,passengers,Needs figures extracted from the report text (M3).,False
-afkl,2025,rask,Needs figures extracted from the report text (M3).,False
+afkl,2025,load_factor,RPK not available for FY2025,True
+afkl,2025,passenger_yield,Passenger revenue not available for FY2025,True
+afkl,2025,passengers,Passengers not available for FY2025,True
+afkl,2025,rask,ASK not available for FY2025,True
 afkl,2025,restricted_cash,Not reported by this issuer.,False
-afkl,2025,rpk,Needs figures extracted from the report text (M3).,False
+afkl,2025,rpk,RPK not available for FY2025,True
 afkl,2025,share_of_associates,Not reported by this issuer.,False
 afkl,2025,short_term_deposits,Not reported by this issuer.,False
-easyjet,2021,ask,Needs figures extracted from the report text (M3).,False
 easyjet,2021,borrowings_total,Reported as current and non-current parts only.,False
-easyjet,2021,cask,Needs figures extracted from the report text (M3).,False
-easyjet,2021,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 easyjet,2021,debt_including_leases,Not reported by this issuer.,False
-easyjet,2021,fleet,Needs figures extracted from the report text (M3).,False
-easyjet,2021,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+easyjet,2021,fleet_age,Fleet average age not available for FY2021,True
+easyjet,2021,fuel_hedge_ratio,Fuel hedge ratio not available for FY2021,True
 easyjet,2021,gross_leverage,n.m.: EBITDA is negative (-430),False
 easyjet,2021,interest_coverage,n.m.: EBITDA is negative (-430),False
 easyjet,2021,lease_liabilities_total,Reported as current and non-current parts only.,False
-easyjet,2021,liquidity,Needs figures extracted from the report text (M3).,False
-easyjet,2021,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-easyjet,2021,load_factor,Needs figures extracted from the report text (M3).,False
+easyjet,2021,liquidity,Undrawn committed credit facilities not available for FY2021,True
+easyjet,2021,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2021,True
 easyjet,2021,net_leverage,n.m.: EBITDA is negative (-430),False
 easyjet,2021,other_cash_like,Not reported by this issuer.,False
 easyjet,2021,other_current_financial_assets,Not reported by this issuer.,False
-easyjet,2021,passenger_yield,Needs figures extracted from the report text (M3).,False
-easyjet,2021,passengers,Needs figures extracted from the report text (M3).,False
-easyjet,2021,rask,Needs figures extracted from the report text (M3).,False
-easyjet,2021,rpk,Needs figures extracted from the report text (M3).,False
 easyjet,2021,share_of_associates,Not reported by this issuer.,False
 easyjet,2021,short_term_deposits,Not reported by this issuer.,False
-easyjet,2022,ask,Needs figures extracted from the report text (M3).,False
 easyjet,2022,borrowings_total,Reported as current and non-current parts only.,False
-easyjet,2022,cask,Needs figures extracted from the report text (M3).,False
-easyjet,2022,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 easyjet,2022,debt_including_leases,Not reported by this issuer.,False
-easyjet,2022,fleet,Needs figures extracted from the report text (M3).,False
-easyjet,2022,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+easyjet,2022,fleet_age,Fleet average age not available for FY2022,True
+easyjet,2022,fuel_hedge_ratio,Fuel hedge ratio not available for FY2022,True
 easyjet,2022,lease_liabilities_total,Reported as current and non-current parts only.,False
-easyjet,2022,liquidity,Needs figures extracted from the report text (M3).,False
-easyjet,2022,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-easyjet,2022,load_factor,Needs figures extracted from the report text (M3).,False
 easyjet,2022,other_cash_like,Not reported by this issuer.,False
 easyjet,2022,other_current_financial_assets,Not reported by this issuer.,False
-easyjet,2022,passenger_yield,Needs figures extracted from the report text (M3).,False
-easyjet,2022,passengers,Needs figures extracted from the report text (M3).,False
-easyjet,2022,rask,Needs figures extracted from the report text (M3).,False
-easyjet,2022,rpk,Needs figures extracted from the report text (M3).,False
 easyjet,2022,share_of_associates,Not reported by this issuer.,False
 easyjet,2022,short_term_deposits,Not reported by this issuer.,False
-easyjet,2023,ask,Needs figures extracted from the report text (M3).,False
 easyjet,2023,borrowings_total,Reported as current and non-current parts only.,False
-easyjet,2023,cask,Needs figures extracted from the report text (M3).,False
-easyjet,2023,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 easyjet,2023,debt_including_leases,Not reported by this issuer.,False
-easyjet,2023,fleet,Needs figures extracted from the report text (M3).,False
-easyjet,2023,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+easyjet,2023,fuel_hedge_ratio,Fuel hedge ratio not available for FY2023,True
 easyjet,2023,lease_liabilities_total,Reported as current and non-current parts only.,False
-easyjet,2023,liquidity,Needs figures extracted from the report text (M3).,False
-easyjet,2023,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-easyjet,2023,load_factor,Needs figures extracted from the report text (M3).,False
 easyjet,2023,other_cash_like,Not reported by this issuer.,False
 easyjet,2023,other_current_financial_assets,Not reported by this issuer.,False
-easyjet,2023,passenger_yield,Needs figures extracted from the report text (M3).,False
-easyjet,2023,passengers,Needs figures extracted from the report text (M3).,False
-easyjet,2023,rask,Needs figures extracted from the report text (M3).,False
-easyjet,2023,rpk,Needs figures extracted from the report text (M3).,False
 easyjet,2023,share_of_associates,Not reported by this issuer.,False
 easyjet,2023,short_term_deposits,Not reported by this issuer.,False
-easyjet,2024,ask,Needs figures extracted from the report text (M3).,False
 easyjet,2024,borrowings_total,Reported as current and non-current parts only.,False
-easyjet,2024,cask,Needs figures extracted from the report text (M3).,False
-easyjet,2024,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 easyjet,2024,debt_including_leases,Not reported by this issuer.,False
-easyjet,2024,fleet,Needs figures extracted from the report text (M3).,False
-easyjet,2024,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+easyjet,2024,fuel_hedge_ratio,Fuel hedge ratio not available for FY2024,True
 easyjet,2024,lease_liabilities_total,Reported as current and non-current parts only.,False
-easyjet,2024,liquidity,Needs figures extracted from the report text (M3).,False
-easyjet,2024,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-easyjet,2024,load_factor,Needs figures extracted from the report text (M3).,False
 easyjet,2024,other_cash_like,Not reported by this issuer.,False
 easyjet,2024,other_current_financial_assets,Not reported by this issuer.,False
-easyjet,2024,passenger_yield,Needs figures extracted from the report text (M3).,False
-easyjet,2024,passengers,Needs figures extracted from the report text (M3).,False
-easyjet,2024,rask,Needs figures extracted from the report text (M3).,False
 easyjet,2024,restricted_cash,Not reported by this issuer.,False
-easyjet,2024,rpk,Needs figures extracted from the report text (M3).,False
 easyjet,2024,share_of_associates,Not reported by this issuer.,False
 easyjet,2024,short_term_deposits,Not reported by this issuer.,False
-easyjet,2025,ask,Needs figures extracted from the report text (M3).,False
 easyjet,2025,borrowings_total,Reported as current and non-current parts only.,False
-easyjet,2025,cask,Needs figures extracted from the report text (M3).,False
-easyjet,2025,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 easyjet,2025,debt_including_leases,Not reported by this issuer.,False
-easyjet,2025,fleet,Needs figures extracted from the report text (M3).,False
-easyjet,2025,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+easyjet,2025,fuel_hedge_ratio,Fuel hedge ratio not available for FY2025,True
 easyjet,2025,lease_liabilities_total,Reported as current and non-current parts only.,False
-easyjet,2025,liquidity,Needs figures extracted from the report text (M3).,False
-easyjet,2025,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-easyjet,2025,load_factor,Needs figures extracted from the report text (M3).,False
 easyjet,2025,other_cash_like,Not reported by this issuer.,False
 easyjet,2025,other_current_financial_assets,Not reported by this issuer.,False
-easyjet,2025,passenger_yield,Needs figures extracted from the report text (M3).,False
-easyjet,2025,passengers,Needs figures extracted from the report text (M3).,False
-easyjet,2025,rask,Needs figures extracted from the report text (M3).,False
 easyjet,2025,restricted_cash,Not reported by this issuer.,False
-easyjet,2025,rpk,Needs figures extracted from the report text (M3).,False
 easyjet,2025,share_of_associates,Not reported by this issuer.,False
 easyjet,2025,short_term_deposits,Not reported by this issuer.,False
-finnair,2021,ask,Needs figures extracted from the report text (M3).,False
 finnair,2021,borrowings_total,Reported as current and non-current parts only.,False
-finnair,2021,cask,Needs figures extracted from the report text (M3).,False
-finnair,2021,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 finnair,2021,current_investments,Not reported by this issuer.,False
 finnair,2021,debt_including_leases,Not reported by this issuer.,False
 finnair,2021,ffo,Income tax paid not available for FY2021,True
 finnair,2021,ffo_to_debt,FFO: Income tax paid not available for FY2021,True
-finnair,2021,fleet,Needs figures extracted from the report text (M3).,False
-finnair,2021,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
 finnair,2021,gross_leverage,n.m.: EBITDA is negative (-135),False
 finnair,2021,interest_coverage,n.m.: EBITDA is negative (-135),False
 finnair,2021,interest_expense,Not reported by this issuer.,False
 finnair,2021,lease_liabilities_total,Reported as current and non-current parts only.,False
-finnair,2021,liquidity,Needs figures extracted from the report text (M3).,False
-finnair,2021,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-finnair,2021,load_factor,Needs figures extracted from the report text (M3).,False
+finnair,2021,liquidity,Undrawn committed credit facilities not available for FY2021,True
+finnair,2021,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2021,True
 finnair,2021,net_leverage,n.m.: EBITDA is negative (-135),False
 finnair,2021,other_cash_like,Not reported by this issuer.,False
-finnair,2021,passenger_yield,Needs figures extracted from the report text (M3).,False
-finnair,2021,passengers,Needs figures extracted from the report text (M3).,False
-finnair,2021,rask,Needs figures extracted from the report text (M3).,False
 finnair,2021,restricted_cash,Not reported by this issuer.,False
-finnair,2021,rpk,Needs figures extracted from the report text (M3).,False
 finnair,2021,share_of_associates,Not reported by this issuer.,False
 finnair,2021,short_term_deposits,Not reported by this issuer.,False
 finnair,2021,tax_paid,Not tagged in the filing.,True
-finnair,2022,ask,Needs figures extracted from the report text (M3).,False
 finnair,2022,borrowings_total,Reported as current and non-current parts only.,False
-finnair,2022,cask,Needs figures extracted from the report text (M3).,False
-finnair,2022,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 finnair,2022,current_investments,Not reported by this issuer.,False
 finnair,2022,debt_including_leases,Not reported by this issuer.,False
 finnair,2022,ffo,Income tax paid not available for FY2022,True
 finnair,2022,ffo_to_debt,FFO: Income tax paid not available for FY2022,True
-finnair,2022,fleet,Needs figures extracted from the report text (M3).,False
-finnair,2022,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
 finnair,2022,interest_expense,Not reported by this issuer.,False
 finnair,2022,lease_liabilities_total,Reported as current and non-current parts only.,False
-finnair,2022,liquidity,Needs figures extracted from the report text (M3).,False
-finnair,2022,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-finnair,2022,load_factor,Needs figures extracted from the report text (M3).,False
+finnair,2022,liquidity,Undrawn committed credit facilities not available for FY2022,True
+finnair,2022,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2022,True
 finnair,2022,other_cash_like,Not reported by this issuer.,False
-finnair,2022,passenger_yield,Needs figures extracted from the report text (M3).,False
-finnair,2022,passengers,Needs figures extracted from the report text (M3).,False
-finnair,2022,rask,Needs figures extracted from the report text (M3).,False
 finnair,2022,restricted_cash,Not reported by this issuer.,False
-finnair,2022,rpk,Needs figures extracted from the report text (M3).,False
 finnair,2022,share_of_associates,Not reported by this issuer.,False
 finnair,2022,short_term_deposits,Not reported by this issuer.,False
 finnair,2022,tax_paid,Not tagged in the filing.,True
-finnair,2023,ask,Needs figures extracted from the report text (M3).,False
 finnair,2023,borrowings_total,Reported as current and non-current parts only.,False
-finnair,2023,cask,Needs figures extracted from the report text (M3).,False
-finnair,2023,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 finnair,2023,current_investments,Not reported by this issuer.,False
 finnair,2023,debt_including_leases,Not reported by this issuer.,False
-finnair,2023,fleet,Needs figures extracted from the report text (M3).,False
-finnair,2023,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+finnair,2023,fuel_hedge_ratio,Fuel hedge ratio not available for FY2023,True
 finnair,2023,interest_expense,Not reported by this issuer.,False
 finnair,2023,lease_liabilities_total,Reported as current and non-current parts only.,False
-finnair,2023,liquidity,Needs figures extracted from the report text (M3).,False
-finnair,2023,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-finnair,2023,load_factor,Needs figures extracted from the report text (M3).,False
+finnair,2023,liquidity,Undrawn committed credit facilities not available for FY2023,True
+finnair,2023,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2023,True
 finnair,2023,other_cash_like,Not reported by this issuer.,False
-finnair,2023,passenger_yield,Needs figures extracted from the report text (M3).,False
-finnair,2023,passengers,Needs figures extracted from the report text (M3).,False
-finnair,2023,rask,Needs figures extracted from the report text (M3).,False
 finnair,2023,restricted_cash,Not reported by this issuer.,False
-finnair,2023,rpk,Needs figures extracted from the report text (M3).,False
 finnair,2023,share_of_associates,Not reported by this issuer.,False
 finnair,2023,short_term_deposits,Not reported by this issuer.,False
-finnair,2024,ask,Needs figures extracted from the report text (M3).,False
 finnair,2024,borrowings_total,Reported as current and non-current parts only.,False
-finnair,2024,cask,Needs figures extracted from the report text (M3).,False
-finnair,2024,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 finnair,2024,current_investments,Not reported by this issuer.,False
 finnair,2024,debt_including_leases,Not reported by this issuer.,False
-finnair,2024,fleet,Needs figures extracted from the report text (M3).,False
-finnair,2024,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
 finnair,2024,interest_expense,Not reported by this issuer.,False
 finnair,2024,lease_liabilities_total,Reported as current and non-current parts only.,False
-finnair,2024,liquidity,Needs figures extracted from the report text (M3).,False
-finnair,2024,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-finnair,2024,load_factor,Needs figures extracted from the report text (M3).,False
 finnair,2024,other_cash_like,Not reported by this issuer.,False
-finnair,2024,passenger_yield,Needs figures extracted from the report text (M3).,False
-finnair,2024,passengers,Needs figures extracted from the report text (M3).,False
-finnair,2024,rask,Needs figures extracted from the report text (M3).,False
 finnair,2024,restricted_cash,Not reported by this issuer.,False
-finnair,2024,rpk,Needs figures extracted from the report text (M3).,False
 finnair,2024,share_of_associates,Not reported by this issuer.,False
 finnair,2024,short_term_deposits,Not reported by this issuer.,False
-finnair,2025,ask,Needs figures extracted from the report text (M3).,False
 finnair,2025,borrowings_total,Reported as current and non-current parts only.,False
-finnair,2025,cask,Needs figures extracted from the report text (M3).,False
-finnair,2025,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 finnair,2025,current_investments,Not reported by this issuer.,False
 finnair,2025,debt_including_leases,Not reported by this issuer.,False
-finnair,2025,fleet,Needs figures extracted from the report text (M3).,False
-finnair,2025,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+finnair,2025,fleet,Fleet (aircraft in operation) not available for FY2025,True
+finnair,2025,fleet_age,Fleet average age not available for FY2025,True
+finnair,2025,fuel_hedge_ratio,Fuel hedge ratio not available for FY2025,True
 finnair,2025,interest_expense,Not reported by this issuer.,False
 finnair,2025,lease_liabilities_total,Reported as current and non-current parts only.,False
-finnair,2025,liquidity,Needs figures extracted from the report text (M3).,False
-finnair,2025,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-finnair,2025,load_factor,Needs figures extracted from the report text (M3).,False
 finnair,2025,other_cash_like,Not reported by this issuer.,False
-finnair,2025,passenger_yield,Needs figures extracted from the report text (M3).,False
-finnair,2025,passengers,Needs figures extracted from the report text (M3).,False
-finnair,2025,rask,Needs figures extracted from the report text (M3).,False
 finnair,2025,restricted_cash,Not reported by this issuer.,False
-finnair,2025,rpk,Needs figures extracted from the report text (M3).,False
 finnair,2025,share_of_associates,Not reported by this issuer.,False
 finnair,2025,short_term_deposits,Not reported by this issuer.,False
-iag,2021,ask,Needs figures extracted from the report text (M3).,False
 iag,2021,borrowings_total,Reported as current and non-current parts only.,False
-iag,2021,cask,Needs figures extracted from the report text (M3).,False
-iag,2021,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 iag,2021,current_investments,Not reported by this issuer.,False
 iag,2021,debt_including_leases,Not reported by this issuer.,False
-iag,2021,fleet,Needs figures extracted from the report text (M3).,False
-iag,2021,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+iag,2021,fleet,Fleet (aircraft in operation) not available for FY2021,True
+iag,2021,fuel_hedge_ratio,Fuel hedge ratio not available for FY2021,True
 iag,2021,gross_leverage,n.m.: EBITDA is negative (-833),False
 iag,2021,interest_coverage,n.m.: EBITDA is negative (-833),False
 iag,2021,interest_expense,Not reported by this issuer.,False
 iag,2021,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 iag,2021,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 iag,2021,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
-iag,2021,liquidity,Needs figures extracted from the report text (M3).,False
-iag,2021,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-iag,2021,load_factor,Needs figures extracted from the report text (M3).,False
+iag,2021,load_factor,RPK not available for FY2021,True
 iag,2021,net_leverage,n.m.: EBITDA is negative (-833),False
 iag,2021,other_cash_like,Not reported by this issuer.,False
 iag,2021,other_current_financial_assets,Not reported by this issuer.,False
-iag,2021,passenger_yield,Needs figures extracted from the report text (M3).,False
-iag,2021,passengers,Needs figures extracted from the report text (M3).,False
-iag,2021,rask,Needs figures extracted from the report text (M3).,False
+iag,2021,passenger_yield,RPK not available for FY2021,True
+iag,2021,passengers,Passengers not available for FY2021,True
 iag,2021,restricted_cash,Not reported by this issuer.,False
-iag,2021,rpk,Needs figures extracted from the report text (M3).,False
+iag,2021,rpk,RPK not available for FY2021,True
 iag,2021,share_of_associates,Not reported by this issuer.,False
-iag,2022,ask,Needs figures extracted from the report text (M3).,False
 iag,2022,borrowings_total,Reported as current and non-current parts only.,False
-iag,2022,cask,Needs figures extracted from the report text (M3).,False
-iag,2022,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 iag,2022,current_investments,Not reported by this issuer.,False
 iag,2022,debt_including_leases,Not reported by this issuer.,False
-iag,2022,fleet,Needs figures extracted from the report text (M3).,False
-iag,2022,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+iag,2022,fleet,Fleet (aircraft in operation) not available for FY2022,True
+iag,2022,fuel_hedge_ratio,Fuel hedge ratio not available for FY2022,True
 iag,2022,interest_expense,Not reported by this issuer.,False
 iag,2022,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 iag,2022,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 iag,2022,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
-iag,2022,liquidity,Needs figures extracted from the report text (M3).,False
-iag,2022,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-iag,2022,load_factor,Needs figures extracted from the report text (M3).,False
+iag,2022,load_factor,RPK not available for FY2022,True
 iag,2022,other_cash_like,Not reported by this issuer.,False
 iag,2022,other_current_financial_assets,Not reported by this issuer.,False
-iag,2022,passenger_yield,Needs figures extracted from the report text (M3).,False
-iag,2022,passengers,Needs figures extracted from the report text (M3).,False
-iag,2022,rask,Needs figures extracted from the report text (M3).,False
+iag,2022,passenger_yield,RPK not available for FY2022,True
+iag,2022,passengers,Passengers not available for FY2022,True
 iag,2022,restricted_cash,Not reported by this issuer.,False
-iag,2022,rpk,Needs figures extracted from the report text (M3).,False
+iag,2022,rpk,RPK not available for FY2022,True
 iag,2022,share_of_associates,Not reported by this issuer.,False
-iag,2023,ask,Needs figures extracted from the report text (M3).,False
 iag,2023,borrowings_total,Reported as current and non-current parts only.,False
-iag,2023,cask,Needs figures extracted from the report text (M3).,False
-iag,2023,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 iag,2023,current_investments,Not reported by this issuer.,False
 iag,2023,debt_including_leases,Not reported by this issuer.,False
-iag,2023,fleet,Needs figures extracted from the report text (M3).,False
-iag,2023,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+iag,2023,fuel_hedge_ratio,Fuel hedge ratio not available for FY2023,True
 iag,2023,interest_expense,Not reported by this issuer.,False
 iag,2023,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 iag,2023,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 iag,2023,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
-iag,2023,liquidity,Needs figures extracted from the report text (M3).,False
-iag,2023,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-iag,2023,load_factor,Needs figures extracted from the report text (M3).,False
+iag,2023,load_factor,RPK not available for FY2023,True
 iag,2023,other_cash_like,Not reported by this issuer.,False
 iag,2023,other_current_financial_assets,Not reported by this issuer.,False
-iag,2023,passenger_yield,Needs figures extracted from the report text (M3).,False
-iag,2023,passengers,Needs figures extracted from the report text (M3).,False
-iag,2023,rask,Needs figures extracted from the report text (M3).,False
+iag,2023,passenger_yield,RPK not available for FY2023,True
+iag,2023,passengers,Passengers not available for FY2023,True
 iag,2023,restricted_cash,Not reported by this issuer.,False
-iag,2023,rpk,Needs figures extracted from the report text (M3).,False
+iag,2023,rpk,RPK not available for FY2023,True
 iag,2023,share_of_associates,Not reported by this issuer.,False
-iag,2024,ask,Needs figures extracted from the report text (M3).,False
 iag,2024,borrowings_total,Reported as current and non-current parts only.,False
-iag,2024,cask,Needs figures extracted from the report text (M3).,False
-iag,2024,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 iag,2024,current_investments,Not reported by this issuer.,False
 iag,2024,debt_including_leases,Not reported by this issuer.,False
-iag,2024,fleet,Needs figures extracted from the report text (M3).,False
-iag,2024,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+iag,2024,fuel_hedge_ratio,Fuel hedge ratio not available for FY2024,True
 iag,2024,interest_expense,Not reported by this issuer.,False
 iag,2024,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 iag,2024,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 iag,2024,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
-iag,2024,liquidity,Needs figures extracted from the report text (M3).,False
-iag,2024,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-iag,2024,load_factor,Needs figures extracted from the report text (M3).,False
 iag,2024,other_cash_like,Not reported by this issuer.,False
 iag,2024,other_current_financial_assets,Not reported by this issuer.,False
-iag,2024,passenger_yield,Needs figures extracted from the report text (M3).,False
-iag,2024,passengers,Needs figures extracted from the report text (M3).,False
-iag,2024,rask,Needs figures extracted from the report text (M3).,False
 iag,2024,restricted_cash,Not reported by this issuer.,False
-iag,2024,rpk,Needs figures extracted from the report text (M3).,False
 iag,2024,share_of_associates,Not reported by this issuer.,False
-iag,2025,ask,Needs figures extracted from the report text (M3).,False
 iag,2025,borrowings_total,Reported as current and non-current parts only.,False
-iag,2025,cask,Needs figures extracted from the report text (M3).,False
-iag,2025,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 iag,2025,current_investments,Not reported by this issuer.,False
 iag,2025,debt_including_leases,Not reported by this issuer.,False
-iag,2025,fleet,Needs figures extracted from the report text (M3).,False
-iag,2025,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+iag,2025,fuel_hedge_ratio,Fuel hedge ratio not available for FY2025,True
 iag,2025,interest_expense,Not reported by this issuer.,False
 iag,2025,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 iag,2025,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 iag,2025,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
-iag,2025,liquidity,Needs figures extracted from the report text (M3).,False
-iag,2025,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-iag,2025,load_factor,Needs figures extracted from the report text (M3).,False
 iag,2025,other_cash_like,Not reported by this issuer.,False
 iag,2025,other_current_financial_assets,Not reported by this issuer.,False
-iag,2025,passenger_yield,Needs figures extracted from the report text (M3).,False
-iag,2025,passengers,Needs figures extracted from the report text (M3).,False
-iag,2025,rask,Needs figures extracted from the report text (M3).,False
 iag,2025,restricted_cash,Not reported by this issuer.,False
-iag,2025,rpk,Needs figures extracted from the report text (M3).,False
 iag,2025,share_of_associates,Not reported by this issuer.,False
-norwegian,2021,ask,Needs figures extracted from the report text (M3).,False
 norwegian,2021,borrowings_total,Reported as current and non-current parts only.,False
-norwegian,2021,cask,Needs figures extracted from the report text (M3).,False
-norwegian,2021,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 norwegian,2021,current_investments,Not reported by this issuer.,False
 norwegian,2021,debt_including_leases,Not reported by this issuer.,False
-norwegian,2021,fleet,Needs figures extracted from the report text (M3).,False
-norwegian,2021,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+norwegian,2021,fleet_age,Fleet average age not available for FY2021,True
+norwegian,2021,fuel_hedge_ratio,Fuel hedge ratio not available for FY2021,True
 norwegian,2021,gross_leverage,"n.m.: EBITDA is negative (-1,652)",False
 norwegian,2021,interest_coverage,"n.m.: EBITDA is negative (-1,652)",False
 norwegian,2021,lease_liabilities_total,Reported as current and non-current parts only.,False
-norwegian,2021,liquidity,Needs figures extracted from the report text (M3).,False
-norwegian,2021,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-norwegian,2021,load_factor,Needs figures extracted from the report text (M3).,False
+norwegian,2021,liquidity,Undrawn committed credit facilities not available for FY2021,True
+norwegian,2021,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2021,True
 norwegian,2021,net_leverage,"n.m.: EBITDA is negative (-1,652)",False
 norwegian,2021,other_cash_like,Not reported by this issuer.,False
 norwegian,2021,other_current_financial_assets,Not reported by this issuer.,False
-norwegian,2021,passenger_yield,Needs figures extracted from the report text (M3).,False
-norwegian,2021,passengers,Needs figures extracted from the report text (M3).,False
-norwegian,2021,rask,Needs figures extracted from the report text (M3).,False
 norwegian,2021,restricted_cash,Not reported by this issuer.,False
-norwegian,2021,rpk,Needs figures extracted from the report text (M3).,False
 norwegian,2021,share_of_associates,Not reported by this issuer.,False
 norwegian,2021,short_term_deposits,Not reported by this issuer.,False
-norwegian,2022,ask,Needs figures extracted from the report text (M3).,False
 norwegian,2022,borrowings_total,Reported as current and non-current parts only.,False
-norwegian,2022,cask,Needs figures extracted from the report text (M3).,False
-norwegian,2022,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 norwegian,2022,current_investments,Not reported by this issuer.,False
 norwegian,2022,debt_including_leases,Not reported by this issuer.,False
-norwegian,2022,fleet,Needs figures extracted from the report text (M3).,False
-norwegian,2022,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
 norwegian,2022,lease_liabilities_total,Reported as current and non-current parts only.,False
-norwegian,2022,liquidity,Needs figures extracted from the report text (M3).,False
-norwegian,2022,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-norwegian,2022,load_factor,Needs figures extracted from the report text (M3).,False
+norwegian,2022,liquidity,Undrawn committed credit facilities not available for FY2022,True
+norwegian,2022,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2022,True
 norwegian,2022,other_cash_like,Not reported by this issuer.,False
 norwegian,2022,other_current_financial_assets,Not reported by this issuer.,False
-norwegian,2022,passenger_yield,Needs figures extracted from the report text (M3).,False
-norwegian,2022,passengers,Needs figures extracted from the report text (M3).,False
-norwegian,2022,rask,Needs figures extracted from the report text (M3).,False
 norwegian,2022,restricted_cash,Not reported by this issuer.,False
-norwegian,2022,rpk,Needs figures extracted from the report text (M3).,False
 norwegian,2022,share_of_associates,Not reported by this issuer.,False
 norwegian,2022,short_term_deposits,Not reported by this issuer.,False
-norwegian,2023,ask,Needs figures extracted from the report text (M3).,False
 norwegian,2023,borrowings_total,Reported as current and non-current parts only.,False
-norwegian,2023,cask,Needs figures extracted from the report text (M3).,False
-norwegian,2023,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 norwegian,2023,debt_including_leases,Not reported by this issuer.,False
-norwegian,2023,fleet,Needs figures extracted from the report text (M3).,False
-norwegian,2023,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+norwegian,2023,fleet_age,Fleet average age not available for FY2023,True
 norwegian,2023,lease_liabilities_total,Reported as current and non-current parts only.,False
-norwegian,2023,liquidity,Needs figures extracted from the report text (M3).,False
-norwegian,2023,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-norwegian,2023,load_factor,Needs figures extracted from the report text (M3).,False
+norwegian,2023,liquidity,Undrawn committed credit facilities not available for FY2023,True
+norwegian,2023,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2023,True
 norwegian,2023,other_cash_like,Not reported by this issuer.,False
 norwegian,2023,other_current_financial_assets,Not reported by this issuer.,False
-norwegian,2023,passenger_yield,Needs figures extracted from the report text (M3).,False
-norwegian,2023,passengers,Needs figures extracted from the report text (M3).,False
-norwegian,2023,rask,Needs figures extracted from the report text (M3).,False
 norwegian,2023,restricted_cash,Not reported by this issuer.,False
-norwegian,2023,rpk,Needs figures extracted from the report text (M3).,False
 norwegian,2023,share_of_associates,Not reported by this issuer.,False
 norwegian,2023,short_term_deposits,Not reported by this issuer.,False
-norwegian,2024,ask,Needs figures extracted from the report text (M3).,False
 norwegian,2024,borrowings_total,Reported as current and non-current parts only.,False
-norwegian,2024,cask,Needs figures extracted from the report text (M3).,False
-norwegian,2024,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 norwegian,2024,debt_including_leases,Not reported by this issuer.,False
-norwegian,2024,fleet,Needs figures extracted from the report text (M3).,False
-norwegian,2024,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+norwegian,2024,fleet_age,Fleet average age not available for FY2024,True
+norwegian,2024,fuel_hedge_ratio,Fuel hedge ratio not available for FY2024,True
 norwegian,2024,lease_liabilities_total,Reported as current and non-current parts only.,False
-norwegian,2024,liquidity,Needs figures extracted from the report text (M3).,False
-norwegian,2024,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-norwegian,2024,load_factor,Needs figures extracted from the report text (M3).,False
+norwegian,2024,liquidity,Undrawn committed credit facilities not available for FY2024,True
+norwegian,2024,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2024,True
 norwegian,2024,other_cash_like,Not reported by this issuer.,False
 norwegian,2024,other_current_financial_assets,Not reported by this issuer.,False
-norwegian,2024,passenger_yield,Needs figures extracted from the report text (M3).,False
-norwegian,2024,passengers,Needs figures extracted from the report text (M3).,False
-norwegian,2024,rask,Needs figures extracted from the report text (M3).,False
 norwegian,2024,restricted_cash,Not reported by this issuer.,False
-norwegian,2024,rpk,Needs figures extracted from the report text (M3).,False
 norwegian,2024,share_of_associates,Not reported by this issuer.,False
 norwegian,2024,short_term_deposits,Not reported by this issuer.,False
-norwegian,2025,ask,Needs figures extracted from the report text (M3).,False
+norwegian,2025,ask,ASK not available for FY2025,True
 norwegian,2025,borrowings_total,Reported as current and non-current parts only.,False
-norwegian,2025,cask,Needs figures extracted from the report text (M3).,False
-norwegian,2025,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
+norwegian,2025,cask,ASK not available for FY2025,True
+norwegian,2025,cask_ex_fuel,ASK not available for FY2025,True
 norwegian,2025,debt_including_leases,Not reported by this issuer.,False
-norwegian,2025,fleet,Needs figures extracted from the report text (M3).,False
-norwegian,2025,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+norwegian,2025,fuel_hedge_ratio,Fuel hedge ratio not available for FY2025,True
 norwegian,2025,lease_liabilities_total,Reported as current and non-current parts only.,False
-norwegian,2025,liquidity,Needs figures extracted from the report text (M3).,False
-norwegian,2025,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-norwegian,2025,load_factor,Needs figures extracted from the report text (M3).,False
+norwegian,2025,liquidity,Undrawn committed credit facilities not available for FY2025,True
+norwegian,2025,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2025,True
+norwegian,2025,load_factor,RPK not available for FY2025,True
 norwegian,2025,other_cash_like,Not reported by this issuer.,False
 norwegian,2025,other_current_financial_assets,Not reported by this issuer.,False
-norwegian,2025,passenger_yield,Needs figures extracted from the report text (M3).,False
-norwegian,2025,passengers,Needs figures extracted from the report text (M3).,False
-norwegian,2025,rask,Needs figures extracted from the report text (M3).,False
+norwegian,2025,passenger_yield,RPK not available for FY2025,True
+norwegian,2025,rask,ASK not available for FY2025,True
 norwegian,2025,restricted_cash,Not reported by this issuer.,False
-norwegian,2025,rpk,Needs figures extracted from the report text (M3).,False
+norwegian,2025,rpk,RPK not available for FY2025,True
 norwegian,2025,share_of_associates,Not reported by this issuer.,False
 norwegian,2025,short_term_deposits,Not reported by this issuer.,False
-vie,2021,aero_revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 vie,2021,borrowings_current,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2021,borrowings_noncurrent,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2021,borrowings_total,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
@@ -740,16 +497,12 @@ vie,2021,interest_expense,Not reported by this issuer.,False
 vie,2021,lease_liabilities_current,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2021,lease_liabilities_noncurrent,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2021,lease_liabilities_total,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
-vie,2021,liquidity,Needs figures extracted from the report text (M3).,False
-vie,2021,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-vie,2021,non_aero_share,Needs figures extracted from the report text (M3).,False
+vie,2021,liquidity,Undrawn committed credit facilities not available for FY2021,True
+vie,2021,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2021,True
 vie,2021,other_cash_like,Not reported by this issuer.,False
-vie,2021,passengers,Needs figures extracted from the report text (M3).,False
 vie,2021,restricted_cash,Not reported by this issuer.,False
-vie,2021,revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 vie,2021,short_term_deposits,Not reported by this issuer.,False
-vie,2021,traffic_growth,Needs figures extracted from the report text (M3).,False
-vie,2022,aero_revenue_per_passenger,Needs figures extracted from the report text (M3).,False
+vie,2021,traffic_growth,Passengers not available for FY2020,True
 vie,2022,borrowings_current,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2022,borrowings_noncurrent,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2022,borrowings_total,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
@@ -758,16 +511,11 @@ vie,2022,interest_expense,Not reported by this issuer.,False
 vie,2022,lease_liabilities_current,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2022,lease_liabilities_noncurrent,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2022,lease_liabilities_total,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
-vie,2022,liquidity,Needs figures extracted from the report text (M3).,False
-vie,2022,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-vie,2022,non_aero_share,Needs figures extracted from the report text (M3).,False
+vie,2022,liquidity,Undrawn committed credit facilities not available for FY2022,True
+vie,2022,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2022,True
 vie,2022,other_cash_like,Not reported by this issuer.,False
-vie,2022,passengers,Needs figures extracted from the report text (M3).,False
 vie,2022,restricted_cash,Not reported by this issuer.,False
-vie,2022,revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 vie,2022,short_term_deposits,Not reported by this issuer.,False
-vie,2022,traffic_growth,Needs figures extracted from the report text (M3).,False
-vie,2023,aero_revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 vie,2023,borrowings_current,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2023,borrowings_noncurrent,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2023,borrowings_total,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
@@ -776,16 +524,11 @@ vie,2023,interest_expense,Not reported by this issuer.,False
 vie,2023,lease_liabilities_current,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2023,lease_liabilities_noncurrent,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2023,lease_liabilities_total,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
-vie,2023,liquidity,Needs figures extracted from the report text (M3).,False
-vie,2023,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-vie,2023,non_aero_share,Needs figures extracted from the report text (M3).,False
+vie,2023,liquidity,Undrawn committed credit facilities not available for FY2023,True
+vie,2023,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2023,True
 vie,2023,other_cash_like,Not reported by this issuer.,False
-vie,2023,passengers,Needs figures extracted from the report text (M3).,False
 vie,2023,restricted_cash,Not reported by this issuer.,False
-vie,2023,revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 vie,2023,short_term_deposits,Not reported by this issuer.,False
-vie,2023,traffic_growth,Needs figures extracted from the report text (M3).,False
-vie,2024,aero_revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 vie,2024,borrowings_current,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2024,borrowings_noncurrent,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2024,borrowings_total,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
@@ -794,16 +537,11 @@ vie,2024,interest_expense,Not reported by this issuer.,False
 vie,2024,lease_liabilities_current,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2024,lease_liabilities_noncurrent,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2024,lease_liabilities_total,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
-vie,2024,liquidity,Needs figures extracted from the report text (M3).,False
-vie,2024,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-vie,2024,non_aero_share,Needs figures extracted from the report text (M3).,False
+vie,2024,liquidity,Undrawn committed credit facilities not available for FY2024,True
+vie,2024,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2024,True
 vie,2024,other_cash_like,Not reported by this issuer.,False
-vie,2024,passengers,Needs figures extracted from the report text (M3).,False
 vie,2024,restricted_cash,Not reported by this issuer.,False
-vie,2024,revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 vie,2024,short_term_deposits,Not reported by this issuer.,False
-vie,2024,traffic_growth,Needs figures extracted from the report text (M3).,False
-vie,2025,aero_revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 vie,2025,borrowings_current,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2025,borrowings_noncurrent,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2025,borrowings_total,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
@@ -812,23 +550,15 @@ vie,2025,interest_expense,Not reported by this issuer.,False
 vie,2025,lease_liabilities_current,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2025,lease_liabilities_noncurrent,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2025,lease_liabilities_total,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
-vie,2025,liquidity,Needs figures extracted from the report text (M3).,False
-vie,2025,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-vie,2025,non_aero_share,Needs figures extracted from the report text (M3).,False
+vie,2025,liquidity,Undrawn committed credit facilities not available for FY2025,True
+vie,2025,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2025,True
 vie,2025,other_cash_like,Not reported by this issuer.,False
-vie,2025,passengers,Needs figures extracted from the report text (M3).,False
 vie,2025,restricted_cash,Not reported by this issuer.,False
-vie,2025,revenue_per_passenger,Needs figures extracted from the report text (M3).,False
 vie,2025,short_term_deposits,Not reported by this issuer.,False
-vie,2025,traffic_growth,Needs figures extracted from the report text (M3).,False
-wizz,2021,ask,Needs figures extracted from the report text (M3).,False
 wizz,2021,borrowings_total,Reported as current and non-current parts only.,False
-wizz,2021,cask,Needs figures extracted from the report text (M3).,False
-wizz,2021,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 wizz,2021,current_investments,Not reported by this issuer.,False
 wizz,2021,debt_including_leases,Not reported by this issuer.,False
-wizz,2021,fleet,Needs figures extracted from the report text (M3).,False
-wizz,2021,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+wizz,2021,fuel_hedge_ratio,Fuel hedge ratio not available for FY2021,True
 wizz,2021,gross_leverage,n.m.: EBITDA is negative (-183),False
 wizz,2021,interest_coverage,n.m.: EBITDA is negative (-183),False
 wizz,2021,interest_expense,Not reported by this issuer.,False
@@ -836,25 +566,16 @@ wizz,2021,lease_liabilities_current,Lease liabilities are included in borrowings
 wizz,2021,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 wizz,2021,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 wizz,2021,lease_payments,Not reported by this issuer.,False
-wizz,2021,liquidity,Needs figures extracted from the report text (M3).,False
-wizz,2021,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-wizz,2021,load_factor,Needs figures extracted from the report text (M3).,False
+wizz,2021,liquidity,Undrawn committed credit facilities not available for FY2021,True
+wizz,2021,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2021,True
 wizz,2021,net_leverage,n.m.: EBITDA is negative (-183),False
 wizz,2021,other_cash_like,Not reported by this issuer.,False
 wizz,2021,other_current_financial_assets,Not reported by this issuer.,False
-wizz,2021,passenger_yield,Needs figures extracted from the report text (M3).,False
-wizz,2021,passengers,Needs figures extracted from the report text (M3).,False
-wizz,2021,rask,Needs figures extracted from the report text (M3).,False
-wizz,2021,rpk,Needs figures extracted from the report text (M3).,False
 wizz,2021,share_of_associates,Not reported by this issuer.,False
-wizz,2022,ask,Needs figures extracted from the report text (M3).,False
 wizz,2022,borrowings_total,Reported as current and non-current parts only.,False
-wizz,2022,cask,Needs figures extracted from the report text (M3).,False
-wizz,2022,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 wizz,2022,current_investments,Not reported by this issuer.,False
 wizz,2022,debt_including_leases,Not reported by this issuer.,False
-wizz,2022,fleet,Needs figures extracted from the report text (M3).,False
-wizz,2022,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+wizz,2022,fuel_hedge_ratio,Fuel hedge ratio not available for FY2022,True
 wizz,2022,gross_leverage,n.m.: EBITDA is negative (-19.0),False
 wizz,2022,interest_coverage,n.m.: EBITDA is negative (-19.0),False
 wizz,2022,interest_expense,Not reported by this issuer.,False
@@ -862,101 +583,59 @@ wizz,2022,lease_liabilities_current,Lease liabilities are included in borrowings
 wizz,2022,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 wizz,2022,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 wizz,2022,lease_payments,Not reported by this issuer.,False
-wizz,2022,liquidity,Needs figures extracted from the report text (M3).,False
-wizz,2022,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-wizz,2022,load_factor,Needs figures extracted from the report text (M3).,False
+wizz,2022,liquidity,Undrawn committed credit facilities not available for FY2022,True
+wizz,2022,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2022,True
 wizz,2022,net_leverage,n.m.: EBITDA is negative (-19.0),False
 wizz,2022,other_cash_like,Not reported by this issuer.,False
 wizz,2022,other_current_financial_assets,Not reported by this issuer.,False
-wizz,2022,passenger_yield,Needs figures extracted from the report text (M3).,False
-wizz,2022,passengers,Needs figures extracted from the report text (M3).,False
-wizz,2022,rask,Needs figures extracted from the report text (M3).,False
-wizz,2022,rpk,Needs figures extracted from the report text (M3).,False
 wizz,2022,share_of_associates,Not reported by this issuer.,False
-wizz,2023,ask,Needs figures extracted from the report text (M3).,False
 wizz,2023,borrowings_total,Reported as current and non-current parts only.,False
-wizz,2023,cask,Needs figures extracted from the report text (M3).,False
-wizz,2023,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 wizz,2023,current_investments,Not reported by this issuer.,False
 wizz,2023,debt_including_leases,Not reported by this issuer.,False
-wizz,2023,fleet,Needs figures extracted from the report text (M3).,False
-wizz,2023,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
 wizz,2023,interest_expense,Not reported by this issuer.,False
 wizz,2023,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 wizz,2023,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 wizz,2023,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 wizz,2023,lease_payments,Not reported by this issuer.,False
-wizz,2023,liquidity,Needs figures extracted from the report text (M3).,False
-wizz,2023,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-wizz,2023,load_factor,Needs figures extracted from the report text (M3).,False
+wizz,2023,liquidity,Undrawn committed credit facilities not available for FY2023,True
+wizz,2023,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2023,True
 wizz,2023,other_cash_like,Not reported by this issuer.,False
 wizz,2023,other_current_financial_assets,Not reported by this issuer.,False
-wizz,2023,passenger_yield,Needs figures extracted from the report text (M3).,False
-wizz,2023,passengers,Needs figures extracted from the report text (M3).,False
-wizz,2023,rask,Needs figures extracted from the report text (M3).,False
-wizz,2023,rpk,Needs figures extracted from the report text (M3).,False
 wizz,2023,share_of_associates,Not reported by this issuer.,False
-wizz,2024,ask,Needs figures extracted from the report text (M3).,False
 wizz,2024,borrowings_total,Reported as current and non-current parts only.,False
-wizz,2024,cask,Needs figures extracted from the report text (M3).,False
-wizz,2024,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 wizz,2024,current_investments,Not reported by this issuer.,False
 wizz,2024,debt_including_leases,Not reported by this issuer.,False
-wizz,2024,fleet,Needs figures extracted from the report text (M3).,False
-wizz,2024,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+wizz,2024,fuel_hedge_ratio,Fuel hedge ratio not available for FY2024,True
 wizz,2024,interest_expense,Not reported by this issuer.,False
 wizz,2024,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 wizz,2024,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 wizz,2024,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 wizz,2024,lease_payments,Not reported by this issuer.,False
-wizz,2024,liquidity,Needs figures extracted from the report text (M3).,False
-wizz,2024,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-wizz,2024,load_factor,Needs figures extracted from the report text (M3).,False
+wizz,2024,liquidity,Undrawn committed credit facilities not available for FY2024,True
+wizz,2024,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2024,True
 wizz,2024,other_cash_like,Not reported by this issuer.,False
 wizz,2024,other_current_financial_assets,Not reported by this issuer.,False
-wizz,2024,passenger_yield,Needs figures extracted from the report text (M3).,False
-wizz,2024,passengers,Needs figures extracted from the report text (M3).,False
-wizz,2024,rask,Needs figures extracted from the report text (M3).,False
-wizz,2024,rpk,Needs figures extracted from the report text (M3).,False
-wizz,2025,ask,Needs figures extracted from the report text (M3).,False
 wizz,2025,borrowings_total,Reported as current and non-current parts only.,False
-wizz,2025,cask,Needs figures extracted from the report text (M3).,False
-wizz,2025,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 wizz,2025,current_investments,Not reported by this issuer.,False
 wizz,2025,debt_including_leases,Not reported by this issuer.,False
-wizz,2025,fleet,Needs figures extracted from the report text (M3).,False
-wizz,2025,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+wizz,2025,fuel_hedge_ratio,Fuel hedge ratio not available for FY2025,True
 wizz,2025,interest_expense,Not reported by this issuer.,False
 wizz,2025,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 wizz,2025,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 wizz,2025,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
-wizz,2025,liquidity,Needs figures extracted from the report text (M3).,False
-wizz,2025,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-wizz,2025,load_factor,Needs figures extracted from the report text (M3).,False
+wizz,2025,liquidity,Undrawn committed credit facilities not available for FY2025,True
+wizz,2025,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2025,True
 wizz,2025,other_cash_like,Not reported by this issuer.,False
 wizz,2025,other_current_financial_assets,Not reported by this issuer.,False
-wizz,2025,passenger_yield,Needs figures extracted from the report text (M3).,False
-wizz,2025,passengers,Needs figures extracted from the report text (M3).,False
-wizz,2025,rask,Needs figures extracted from the report text (M3).,False
-wizz,2025,rpk,Needs figures extracted from the report text (M3).,False
-wizz,2026,ask,Needs figures extracted from the report text (M3).,False
 wizz,2026,borrowings_total,Reported as current and non-current parts only.,False
-wizz,2026,cask,Needs figures extracted from the report text (M3).,False
-wizz,2026,cask_ex_fuel,Needs figures extracted from the report text (M3).,False
 wizz,2026,current_investments,Not reported by this issuer.,False
 wizz,2026,debt_including_leases,Not reported by this issuer.,False
-wizz,2026,fleet,Needs figures extracted from the report text (M3).,False
-wizz,2026,fuel_hedge_ratio,Needs figures extracted from the report text (M3).,False
+wizz,2026,fuel_hedge_ratio,Fuel hedge ratio not available for FY2026,True
 wizz,2026,interest_expense,Not reported by this issuer.,False
 wizz,2026,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 wizz,2026,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 wizz,2026,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
-wizz,2026,liquidity,Needs figures extracted from the report text (M3).,False
-wizz,2026,liquidity_to_revenue,Needs figures extracted from the report text (M3).,False
-wizz,2026,load_factor,Needs figures extracted from the report text (M3).,False
+wizz,2026,liquidity,Undrawn committed credit facilities not available for FY2026,True
+wizz,2026,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2026,True
 wizz,2026,other_cash_like,Not reported by this issuer.,False
 wizz,2026,other_current_financial_assets,Not reported by this issuer.,False
-wizz,2026,passenger_yield,Needs figures extracted from the report text (M3).,False
-wizz,2026,passengers,Needs figures extracted from the report text (M3).,False
-wizz,2026,rask,Needs figures extracted from the report text (M3).,False
-wizz,2026,rpk,Needs figures extracted from the report text (M3).,False

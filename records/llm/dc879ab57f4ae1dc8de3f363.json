@@ -1,0 +1,189 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Total passengers carried in 2022.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "passengers",
+    "location": "page 10",
+    "printed_value": "9,095,800",
+    "quote": "The number of passengers increased by 218.9 per cent to 9,095,800 passengers.",
+    "scale": "one",
+    "scope": "Finnair passengers carried (total)"
+   },
+   {
+    "comment": "Only the 2022 passenger count is printed; the prior-year figure is not given in the passages.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "comment": "Total ASK in million km for 2022.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "ask",
+    "location": "page 11",
+    "printed_value": "31,298.4",
+    "quote": "Total 1,710.7 100.0 420.8 31,298.4 12,094.2 21,156.8 5,178.2 67.6 24.8",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "2022\nEUR mill. Share %\n2021\nEUR mill.\n2022\nMill. km\n2021\nMill. km\n2022\nMill. km\n2021\nMill. km % Change %-p"
+   },
+   {
+    "comment": "Total ASK in million km for 2021.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "ask",
+    "location": "page 11",
+    "printed_value": "12,094.2",
+    "quote": "Total 1,710.7 100.0 420.8 31,298.4 12,094.2 21,156.8 5,178.2 67.6 24.8",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "2022\nEUR mill. Share %\n2021\nEUR mill.\n2022\nMill. km\n2021\nMill. km\n2022\nMill. km\n2021\nMill. km % Change %-p"
+   },
+   {
+    "comment": "Total RPK in million km for 2022.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "rpk",
+    "location": "page 11",
+    "printed_value": "21,156.8",
+    "quote": "Total 1,710.7 100.0 420.8 31,298.4 12,094.2 21,156.8 5,178.2 67.6 24.8",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "2022\nEUR mill. Share %\n2021\nEUR mill.\n2022\nMill. km\n2021\nMill. km\n2022\nMill. km\n2021\nMill. km % Change %-p"
+   },
+   {
+    "comment": "Total RPK in million km for 2021.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "rpk",
+    "location": "page 11",
+    "printed_value": "5,178.2",
+    "quote": "Total 1,710.7 100.0 420.8 31,298.4 12,094.2 21,156.8 5,178.2 67.6 24.8",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "2022\nEUR mill. Share %\n2021\nEUR mill.\n2022\nMill. km\n2021\nMill. km\n2022\nMill. km\n2021\nMill. km % Change %-p"
+   },
+   {
+    "comment": "Passenger load factor 67.6% for 2022.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "load_factor",
+    "location": "page 11",
+    "printed_value": "67.6",
+    "quote": "Total 1,710.7 100.0 420.8 31,298.4 12,094.2 21,156.8 5,178.2 67.6 24.8",
+    "scale": "one",
+    "scope": "Group total",
+    "table_header": "2022\nEUR mill. Share %\n2021\nEUR mill.\n2022\nMill. km\n2021\nMill. km\n2022\nMill. km\n2021\nMill. km % Change %-p"
+   },
+   {
+    "comment": "Only the 2022 PLF (67.6%) and the change (+24.8 pp) are printed; the 2021 PLF itself is not stated.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "load_factor"
+   },
+   {
+    "comment": "Passenger revenue for 2022, excluding ancillary revenue.",
+    "currency": "EUR",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 10",
+    "printed_value": "1,710.7",
+    "quote": "Passenger revenue 1,710.7 420.8 306.5",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "EUR million 2022 2021 Change %"
+   },
+   {
+    "comment": "Passenger revenue for 2021, excluding ancillary revenue.",
+    "currency": "EUR",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 10",
+    "printed_value": "420.8",
+    "quote": "Passenger revenue 1,710.7 420.8 306.5",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "EUR million 2022 2021 Change %"
+   },
+   {
+    "comment": "Aircraft operated by Finnair at year end; the 24 Norra aircraft are reported separately.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 18",
+    "printed_value": "56",
+    "quote": "At the end of December, Finnair itself operated 56 aircraft, of which 25 were wide-body and 31 narrow-body aircraft.",
+    "scale": "one",
+    "scope": "Fleet operated by Finnair"
+   },
+   {
+    "comment": "No prior-year fleet total is printed; only the change from 31.12.2021 per aircraft type is given.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "fleet_count"
+   },
+   {
+    "comment": "Average age of the fleet operated by Finnair at year end 2022.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "fleet_age",
+    "location": "page 18",
+    "printed_value": "11.6",
+    "quote": "The average age of the fleet operated by Finnair was 11.6 years.",
+    "scale": "one",
+    "scope": "Fleet operated by Finnair"
+   },
+   {
+    "comment": "No prior-year average fleet age is printed in the passages.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "fleet_age"
+   },
+   {
+    "comment": "Share of forecasted fuel purchases hedged for the first part of the 12-month hedging period at year end 2022.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "fuel_hedge_ratio",
+    "location": "page 80",
+    "printed_value": "41",
+    "quote": "At the end of the financial year, Finnair had hedged 41 per cent of its forecasted fuel purchases for the first",
+    "scale": "one",
+    "scope": "Group"
+   },
+   {
+    "comment": "No prior-year hedge ratio is printed; only 2021 notional amounts and hedged prices are given.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "comment": "No total of undrawn committed facilities is printed; only the unused 200-million-euro commercial paper programme and the undrawn capital loan portion are mentioned.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "undrawn_facilities"
+   }
+  ]
+ },
+ "label": "finnair FY2022 213800SB6EOB8SSK9W63-2022-12-31-ESEF-FI-0",
+ "recorded_at": "2026-11-01T23:04:30+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v1",
+  "provider": "deepseek",
+  "system_sha256": "dd61dfa8bc5d0e076c746aaea74c07edd95275ae8052eef86252d530e64f8ebd",
+  "tool_sha256": "cd03841cb7853d9fe2928c968aa2456590e781a35cc160fb0d7c7646f17071ff",
+  "user_sha256": "1e62c0cc58889bb9557f1aba433a03f9b77d8410f9e001d1bfa8b0b48084360e"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 11762,
+  "output_tokens": 1873
+ }
+}

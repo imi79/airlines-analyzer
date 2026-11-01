@@ -1,0 +1,81 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Total passengers at Vienna Airport (table row 'Passagiere Gesamt').",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "passengers",
+    "location": "Entwicklung der größten Airlines am Flughafen Wien",
+    "printed_value": "23.682.133",
+    "quote": "Passagiere Gesamt\n23.682.133\n127,6%\n10.405.523\n31.662.189\n100,0%\n100,0%\n100,0%",
+    "scale": "one",
+    "scope": "Vienna Airport, total passengers"
+   },
+   {
+    "comment": "Prior-year total passengers at Vienna Airport.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "passengers",
+    "location": "Entwicklung der größten Airlines am Flughafen Wien",
+    "printed_value": "10.405.523",
+    "quote": "Passagiere Gesamt\n23.682.133\n127,6%\n10.405.523\n31.662.189\n100,0%\n100,0%\n100,0%",
+    "scale": "one",
+    "scope": "Vienna Airport, total passengers"
+   },
+   {
+    "comment": "No committed undrawn credit facilities are disclosed in the passages.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "No committed undrawn credit facilities are disclosed in the passages.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "Aviation revenue of the Airport segment in € Mio.",
+    "currency": "EUR",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "Umsatz im Segment Airport",
+    "printed_value": "309,0",
+    "quote": "davon Aviation\n309,0\n154,4",
+    "scale": "million",
+    "scope": "Airport segment (Vienna), aviation revenue"
+   },
+   {
+    "comment": "Prior-year aviation revenue of the Airport segment in € Mio.",
+    "currency": "EUR",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "Umsatz im Segment Airport",
+    "printed_value": "154,4",
+    "quote": "davon Aviation\n309,0\n154,4",
+    "scale": "million",
+    "scope": "Airport segment (Vienna), aviation revenue"
+   }
+  ]
+ },
+ "label": "vie FY2022 549300FQ2ILBH7DJ6I45-2022-12-31-ESEF-AT-1",
+ "recorded_at": "2026-11-01T23:06:33+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v1",
+  "provider": "deepseek",
+  "system_sha256": "dd61dfa8bc5d0e076c746aaea74c07edd95275ae8052eef86252d530e64f8ebd",
+  "tool_sha256": "46095d918e936e7cea4245594fac8ea92ac3fe2b99165d30708ddbc178f9f7f8",
+  "user_sha256": "93d05be5914a0defe37a861f3eb2862580b0c32d70a61e428cb796a4df8a2674"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 7855,
+  "output_tokens": 583
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Passengers at the Spanish network airports in 2022.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "passengers",
+    "location": "page 51",
+    "printed_value": "243,7",
+    "quote": "En concreto, en este ejercicio, se ha registrado un volumen de pasajeros de 243,7 millones, frente a los 119,7 millones de 2021, pero aún por debajo de los 274,2 millones pasajeros del 2019.",
+    "scale": "million",
+    "scope": "Aena network airports in Spain"
+   },
+   {
+    "comment": "Passengers at the Spanish network airports in 2021.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "passengers",
+    "location": "page 51",
+    "printed_value": "119,7",
+    "quote": "En concreto, en este ejercicio, se ha registrado un volumen de pasajeros de 243,7 millones, frente a los 119,7 millones de 2021, pero aún por debajo de los 274,2 millones pasajeros del 2019.",
+    "scale": "million",
+    "scope": "Aena network airports in Spain"
+   },
+   {
+    "comment": "Total undrawn committed facilities at 31 December 2022.",
+    "currency": "EUR",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "page 62",
+    "printed_value": "2.105",
+    "quote": "Total\n2.105",
+    "scale": "million",
+    "scope": "Aena S.M.E., S.A. undrawn balances",
+    "table_header": "Entidad\nImporte\n(Millones de euros)\nVencimiento"
+   },
+   {
+    "comment": "Aeronautical services revenue for 2022.",
+    "currency": "EUR",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 75",
+    "printed_value": "2.367.379",
+    "quote": "Servicios aeronáuticos\n2.367.379\n1.283.395",
+    "scale": "thousand",
+    "scope": "Aeronautical segment revenue (Spanish airport network, excluding International, AIRM and adjustments)",
+    "table_header": "2022\n2021 (*)"
+   },
+   {
+    "comment": "Aeronautical services revenue for 2021.",
+    "currency": "EUR",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 75",
+    "printed_value": "1.283.395",
+    "quote": "Servicios aeronáuticos\n2.367.379\n1.283.395",
+    "scale": "thousand",
+    "scope": "Aeronautical segment revenue (Spanish airport network, excluding International, AIRM and adjustments)",
+    "table_header": "2022\n2021 (*)"
+   }
+  ]
+ },
+ "label": "aena FY2022 959800R7QMXKF0NFMT29-2022-12-31-ESEF-ES-0",
+ "recorded_at": "2026-11-01T23:06:04+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v1",
+  "provider": "deepseek",
+  "system_sha256": "dd61dfa8bc5d0e076c746aaea74c07edd95275ae8052eef86252d530e64f8ebd",
+  "tool_sha256": "46095d918e936e7cea4245594fac8ea92ac3fe2b99165d30708ddbc178f9f7f8",
+  "user_sha256": "071fd680641ee5570d05589c314fa2128ac3d097c9ea12f47a54b55b96838993"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 6836,
+  "output_tokens": 679
+ }
+}

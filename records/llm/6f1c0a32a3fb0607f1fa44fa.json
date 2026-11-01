@@ -1,0 +1,157 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Only network (Réseaux) passengers of 64,968 thousand and Transavia figures are given; no group total for Air France, KLM and Transavia together is printed.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "comment": "Only a rounded '45 millions' group figure is mentioned in narrative, not a precise printed figure for the requested scope.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "comment": "Only network capacity (245,457 million SKO) and total group SKO of 282,826 thousand used for unit cost are given, not a group ASK figure.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "ask"
+   },
+   {
+    "comment": "No group ASK figure is printed; only network capacity and total SKO of 196,116 thousand for unit cost.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "ask"
+   },
+   {
+    "comment": "Only network traffic (205,733 million PKT) is printed, not a group total including Transavia.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "rpk"
+   },
+   {
+    "comment": "No group RPK figure is printed in the passages.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "rpk"
+   },
+   {
+    "comment": "Only the network load factor of 83.8% is printed, not a group-wide load factor.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "load_factor"
+   },
+   {
+    "comment": "No group load factor for 2021 is printed in the passages.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "load_factor"
+   },
+   {
+    "comment": "Only network regular passenger revenue (18,794 M€) and Transavia revenue are printed, not a group passenger revenue total.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "passenger_revenue"
+   },
+   {
+    "comment": "No group passenger revenue figure for 2021 is printed in the passages.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "passenger_revenue"
+   },
+   {
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 56",
+    "printed_value": "505",
+    "quote": "Au 31 décembre 2022, la flotte du Groupe Air France-KLM comprend 522 avions (dont 505 avions en exploitation) contre respectivement 537 et 505 avions en exploitation au 31 décembre 2021.",
+    "scale": "one",
+    "scope": "Group fleet in operation at year end"
+   },
+   {
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 56",
+    "printed_value": "505",
+    "quote": "Au 31 décembre 2022, la flotte du Groupe Air France-KLM comprend 522 avions (dont 505 avions en exploitation) contre respectivement 537 et 505 avions en exploitation au 31 décembre 2021.",
+    "scale": "one",
+    "scope": "Group fleet in operation at year end"
+   },
+   {
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "fleet_age",
+    "location": "page 56",
+    "printed_value": "12,1",
+    "quote": "Au 31 décembre 2022, l'âge moyen de la flotte en exploitation est de 12,1 ans, dont 12,2 ans pour la flotte long-courrier, 13,2 ans pour la flotte moyen-courrier, 19,8 ans pour la flotte cargo et 8,9 ans pour la flotte régionale, contre 12,2 ans au 31 décembre 2021, dont 12,2 ans pour la flotte long-courrier, 13,4 ans pour la flotte moyen-courrier, 18,8 ans pour la flotte cargo et 8,9 ans pour la flotte régionale.",
+    "scale": "one",
+    "scope": "Group fleet in operation"
+   },
+   {
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "fleet_age",
+    "location": "page 56",
+    "printed_value": "12,2",
+    "quote": "Au 31 décembre 2022, l'âge moyen de la flotte en exploitation est de 12,1 ans, dont 12,2 ans pour la flotte long-courrier, 13,2 ans pour la flotte moyen-courrier, 19,8 ans pour la flotte cargo et 8,9 ans pour la flotte régionale, contre 12,2 ans au 31 décembre 2021, dont 12,2 ans pour la flotte long-courrier, 13,4 ans pour la flotte moyen-courrier, 18,8 ans pour la flotte cargo et 8,9 ans pour la flotte régionale.",
+    "scale": "one",
+    "scope": "Group fleet in operation"
+   },
+   {
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "fuel_hedge_ratio",
+    "location": "page 185",
+    "printed_value": "73",
+    "quote": "Pourcentage de couverture 73 % 51 % 4 %",
+    "scale": "one",
+    "scope": "Group fuel hedging, 2022 exposure",
+    "table_header": "(en millions de dollars US) 2022 2023 2024"
+   },
+   {
+    "comment": "The hedging table covers 2022-2024 only; no 2021 hedge ratio is printed.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "currency": "EUR",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "page 389",
+    "printed_value": "2,6",
+    "quote": "Avec deux autres lignes de crédit disponibles chez KLM, le montant total disponible au 31 décembre 2022 s’élève donc à 2,6 milliards d’euros.",
+    "scale": "billion",
+    "scope": "Group undrawn committed credit lines"
+   },
+   {
+    "comment": "No undrawn committed facilities total for 31 December 2021 is printed in the passages.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "undrawn_facilities"
+   }
+  ]
+ },
+ "label": "afkl FY2022 969500AQW31GYO8JZD66-2022-12-31-ESEF-FR-0",
+ "recorded_at": "2026-11-01T23:03:14+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v1",
+  "provider": "deepseek",
+  "system_sha256": "dd61dfa8bc5d0e076c746aaea74c07edd95275ae8052eef86252d530e64f8ebd",
+  "tool_sha256": "cd03841cb7853d9fe2928c968aa2456590e781a35cc160fb0d7c7646f17071ff",
+  "user_sha256": "668238775072fe425106072f9249b2bc52bb3b8d9e11f961d6bbfdcb1343c75a"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14543,
+  "output_tokens": 1466
+ }
+}

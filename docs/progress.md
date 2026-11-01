@@ -39,3 +39,20 @@ Walkthrough: `docs/m2/walkthrough.md`. **Status: done; gate 1 passed.**
 - [x] Imane accepts the 8 new figures entered by hand (`docs/m1/fy2025_entries.md`): accepted
       on 2026-11-01 and now stored as verified. All 8 were also confirmed by the machine reading
       of the PDFs (decision 0009). No figure changed; only the review status did.
+
+## M3 · Extraction with grounding
+
+Branch: `m3-extraction-grounding`. Run: `uv run tearsheet all --offline` (replays the recorded AI
+answers; `uv run tearsheet extract` asks the AI for reports not yet read). Results: `docs/m3/`.
+Walkthrough: `docs/m3/walkthrough.md`. **Status: in progress; waiting for Imane on the 80% target.**
+
+- [x] No wrong value marked verified on the labelled set: 0 of 25 (answer key built by code at
+      Imane's request, decision 0012; `docs/m3/answer_key_score.md`)
+- [ ] At least 80% of labelled values verified automatically: **19 of 25 (76%)**, one figure
+      short. The six misses all stay unverified, none wrong on the tearsheet. Options in the
+      walkthrough (questions 1 and 2)
+- [x] Every unverified value visibly flagged: 75 of 75 listed with quote and reason in
+      `docs/m3/extractions.md`, marked \*, and every ratio using one marked \* in `docs/m2/`
+- Run on all nine companies: 41 reports, 230 figures, 155 verified; DeepSeek, prompt
+  `extract-v1`, about 445,000 tokens in and 54,000 out. Check changes after the first run in
+  decision 0013 (hedge ratios for part of a year no longer pass)

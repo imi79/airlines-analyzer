@@ -1,0 +1,202 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Total passengers carried in 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "passengers",
+    "location": "page 9",
+    "printed_value": "11,654,500",
+    "quote": "The number of passengers increased by 6.1 per cent to 11,654,500 passengers.",
+    "scale": "one",
+    "scope": "Finnair passengers carried (total)"
+   },
+   {
+    "comment": "Only the 2024 passenger total is printed; no 2023 passenger count is given in the passages.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "comment": "Total ASK in Mill. km for 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "ask",
+    "location": "page 9",
+    "printed_value": "38,259.3",
+    "quote": "Total 2,419.0 2,411.6 38,259.3 36,154.5 29,000.2 27,626.4 75.8 - 0.6",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "Passenger revenue ASK RPK PLF"
+   },
+   {
+    "comment": "Total ASK in Mill. km for 2023.",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "ask",
+    "location": "page 9",
+    "printed_value": "36,154.5",
+    "quote": "Total 2,419.0 2,411.6 38,259.3 36,154.5 29,000.2 27,626.4 75.8 - 0.6",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "Passenger revenue ASK RPK PLF"
+   },
+   {
+    "comment": "Total RPK in Mill. km for 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "rpk",
+    "location": "page 9",
+    "printed_value": "29,000.2",
+    "quote": "Total 2,419.0 2,411.6 38,259.3 36,154.5 29,000.2 27,626.4 75.8 - 0.6",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "Passenger revenue ASK RPK PLF"
+   },
+   {
+    "comment": "Total RPK in Mill. km for 2023.",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "rpk",
+    "location": "page 9",
+    "printed_value": "27,626.4",
+    "quote": "Total 2,419.0 2,411.6 38,259.3 36,154.5 29,000.2 27,626.4 75.8 - 0.6",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "Passenger revenue ASK RPK PLF"
+   },
+   {
+    "comment": "Passenger load factor for 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "load_factor",
+    "location": "page 9",
+    "printed_value": "75.8",
+    "quote": "Traffic, measured in Revenue Passenger Kilometres (RPK), increased by 5.0 per cent, but the passenger load factor (PLF) decreased by 0.6 percentage points to 75.8 per cent.",
+    "scale": "one",
+    "scope": "Group total"
+   },
+   {
+    "comment": "Only the 2024 load factor (75.8%) is printed; the 2023 level is not stated in the passages.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "load_factor"
+   },
+   {
+    "comment": "Passenger revenue for 2024, reported separately from ancillary revenue.",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 8",
+    "printed_value": "2,419.0",
+    "quote": "Passenger revenue 2,419.0 2,411.6 0.3",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "EUR million 2024 2023 Change %"
+   },
+   {
+    "comment": "Passenger revenue for 2023, reported separately from ancillary revenue.",
+    "currency": "EUR",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 8",
+    "printed_value": "2,411.6",
+    "quote": "Passenger revenue 2,419.0 2,411.6 0.3",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "EUR million 2024 2023 Change %"
+   },
+   {
+    "comment": "Total aircraft in Finnair-operated fleet at 31 Dec 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 18",
+    "printed_value": "56",
+    "quote": "Total 56 1 34 22 13.2 1",
+    "scale": "one",
+    "scope": "Finnair fleet operated at year end (own fleet and fleet operated by others for Finnair)",
+    "table_header": "31 Dec 2024 Seats #"
+   },
+   {
+    "comment": "Only the 2024 fleet total (56) is printed; the 2023 year-end total is not given.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "fleet_count"
+   },
+   {
+    "comment": "Average fleet age at 31 Dec 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "fleet_age",
+    "location": "page 18",
+    "printed_value": "13.2",
+    "quote": "Total 56 1 34 22 13.2 1",
+    "scale": "one",
+    "scope": "Finnair fleet operated at year end",
+    "table_header": "31 Dec 2024 Seats #"
+   },
+   {
+    "comment": "No 2023 year-end average fleet age is printed in the passages.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "fleet_age"
+   },
+   {
+    "comment": "Share of forecasted fuel purchases hedged for the first period of the next year at year end 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "fuel_hedge_ratio",
+    "location": "page 178",
+    "printed_value": "77",
+    "quote": "At the end of the financial year, Finnair had hedged 77 per cent of its forecasted fuel purchases for the first",
+    "scale": "one",
+    "scope": "Group"
+   },
+   {
+    "comment": "No 2023 year-end fuel hedge ratio is printed in the passages.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "comment": "Undrawn committed revolving credit facility at 31 Dec 2024; no total of all committed facilities is printed.",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "page 180",
+    "printed_value": "200",
+    "quote": "Revolving credit facility of 200 million euro was undrawn on 31 December 2024.",
+    "scale": "million",
+    "scope": "Group"
+   },
+   {
+    "comment": "No undrawn committed facility amount is printed for year-end 2023.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "undrawn_facilities"
+   }
+  ]
+ },
+ "label": "finnair FY2024 213800SB6EOB8SSK9W63-2024-12-31-ESEF-FI-0",
+ "recorded_at": "2026-11-01T23:04:46+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v1",
+  "provider": "deepseek",
+  "system_sha256": "dd61dfa8bc5d0e076c746aaea74c07edd95275ae8052eef86252d530e64f8ebd",
+  "tool_sha256": "cd03841cb7853d9fe2928c968aa2456590e781a35cc160fb0d7c7646f17071ff",
+  "user_sha256": "a190ac67a378effa044028eff0cdc320dff760b027a531ec977b0a0ffcbb8796"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 13333,
+  "output_tokens": 1759
+ }
+}

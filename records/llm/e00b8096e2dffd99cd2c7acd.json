@@ -1,0 +1,78 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Passengers handled at Paris Aéroport (CDG+ORY) in 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "passengers",
+    "location": "page 559",
+    "printed_value": "103,4",
+    "quote": "En 2024, le Groupe ADP a accueilli 364 millions de passagers dans l’ensemble de son réseau d’aéroports, dont 103,4 millions de passagers à Paris Aéroport.",
+    "scale": "million",
+    "scope": "Paris Aéroport (CDG+ORY)"
+   },
+   {
+    "comment": "No Paris Aéroport passenger total for 2023 is printed; only the 2024 figure and a 3.7% change are given.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "comment": "The liquidity risk section mentions confirmed unused credit lines but prints no amount or total.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "The liquidity risk section mentions confirmed unused credit lines but prints no amount or total.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "Revenue of the Aviation segment (Paris platforms) in 2024.",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 531",
+    "printed_value": "2 054",
+    "quote": "Chiffre d’affaires\n2 054\n1 910\n+144 M€",
+    "scale": "million",
+    "scope": "Activités aéronautiques – Plateformes parisiennes",
+    "table_header": "(en millions d’euros)\n2024\n2023\nVariation\n2024/2023"
+   },
+   {
+    "comment": "Revenue of the Aviation segment (Paris platforms) in 2023.",
+    "currency": "EUR",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 531",
+    "printed_value": "1 910",
+    "quote": "Chiffre d’affaires\n2 054\n1 910\n+144 M€",
+    "scale": "million",
+    "scope": "Activités aéronautiques – Plateformes parisiennes",
+    "table_header": "(en millions d’euros)\n2024\n2023\nVariation\n2024/2023"
+   }
+  ]
+ },
+ "label": "adp FY2024 969500PJMBSFHYC37989-2024-12-31-ESEF-FR-0",
+ "recorded_at": "2026-11-01T23:05:49+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v1",
+  "provider": "deepseek",
+  "system_sha256": "dd61dfa8bc5d0e076c746aaea74c07edd95275ae8052eef86252d530e64f8ebd",
+  "tool_sha256": "46095d918e936e7cea4245594fac8ea92ac3fe2b99165d30708ddbc178f9f7f8",
+  "user_sha256": "87ee709be4029142ae4fd4582955454a7876ee11b59fbe61dd9b1a02872a497d"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 5867,
+  "output_tokens": 601
+ }
+}

@@ -1,6 +1,8 @@
 # M3 plan: reading what the filings don't tag, and proving every figure
 
-Status: **proposed, waiting for Imane's approval** (2026-11-01). No M3 code is written until then.
+Status: **approved by Imane** (2026-11-01). Her answers to the questions at the end: 1. DeepSeek, key
+set as a secret of the cloud environment; 2. she supplied the two 2025 PDFs; 3. the answer key is
+built by code (decision 0012); 4. the work is on the branch `m3-extraction-grounding`.
 
 ## What M3 is for
 

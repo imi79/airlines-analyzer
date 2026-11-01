@@ -1,0 +1,85 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Passengers handled at Vienna Airport (32.6 million).",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "passengers",
+    "location": "Verkehrsentwicklung des Flughafen Wien 2025",
+    "printed_value": "32,6",
+    "quote": "Gesamtpassagiere (in Mio.)\n32,6\n2,6%\n31,7",
+    "scale": "million",
+    "scope": "Vienna Airport only",
+    "table_header": "Verkehrskennzahlen\n2025\nVeränderung\n2024"
+   },
+   {
+    "comment": "Prior-year passengers handled at Vienna Airport (31.7 million).",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "passengers",
+    "location": "Verkehrsentwicklung des Flughafen Wien 2025",
+    "printed_value": "31,7",
+    "quote": "Gesamtpassagiere (in Mio.)\n32,6\n2,6%\n31,7",
+    "scale": "million",
+    "scope": "Vienna Airport only",
+    "table_header": "Verkehrskennzahlen\n2025\nVeränderung\n2024"
+   },
+   {
+    "comment": "The passages contain no information on committed undrawn credit facilities.",
+    "fiscal_year": 2025,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "The passages contain no information on committed undrawn credit facilities.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "Aviation revenue of the Airport segment.",
+    "currency": "EUR",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "Umsatz im Segment Airport",
+    "printed_value": "523,3",
+    "quote": "davon Aviation\n523,3\n6,0%\n493,5",
+    "scale": "million",
+    "scope": "Airport segment (Vienna), aviation revenue",
+    "table_header": "in € Mio.\n2025\nVeränderung\n2024"
+   },
+   {
+    "comment": "Prior-year aviation revenue of the Airport segment.",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "Umsatz im Segment Airport",
+    "printed_value": "493,5",
+    "quote": "davon Aviation\n523,3\n6,0%\n493,5",
+    "scale": "million",
+    "scope": "Airport segment (Vienna), aviation revenue",
+    "table_header": "in € Mio.\n2025\nVeränderung\n2024"
+   }
+  ]
+ },
+ "label": "vie FY2025 549300FQ2ILBH7DJ6I45-2025-12-31-ESEF-AT-0",
+ "recorded_at": "2026-11-01T23:06:43+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v1",
+  "provider": "deepseek",
+  "system_sha256": "dd61dfa8bc5d0e076c746aaea74c07edd95275ae8052eef86252d530e64f8ebd",
+  "tool_sha256": "46095d918e936e7cea4245594fac8ea92ac3fe2b99165d30708ddbc178f9f7f8",
+  "user_sha256": "ae07a003d1123d6426b48ca4e70c8d34bd5d3f14a1d9d841c2e70188eebcb3f9"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 8722,
+  "output_tokens": 629
+ }
+}

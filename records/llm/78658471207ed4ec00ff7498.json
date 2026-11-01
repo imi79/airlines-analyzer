@@ -1,0 +1,79 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Passengers at Paris Aéroport (CDG+ORY) in 2025, in millions.",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "passengers",
+    "location": "page 13",
+    "printed_value": "107,0",
+    "quote": "107,0",
+    "scale": "million",
+    "scope": "Paris Aéroport (CDG+ORY)",
+    "table_header": "Passagers en\nmillions PAX (1)"
+   },
+   {
+    "comment": "Only the 2025 figure (107.0 million) and a +3.4% change are printed; no 2024 passenger figure for Paris Aéroport is given.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "comment": "The liquidity risk section mentions confirmed unused credit lines but prints no amount or total.",
+    "fiscal_year": 2025,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "The liquidity risk section mentions confirmed unused credit lines but prints no amount or total.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "Aviation segment revenue before inter-sector eliminations, in millions of euros.",
+    "currency": "EUR",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 23",
+    "printed_value": "2 192",
+    "quote": "2 192",
+    "scale": "million",
+    "scope": "Activités aéronautiques segment",
+    "table_header": "2025"
+   },
+   {
+    "comment": "Aviation segment revenue before inter-sector eliminations, in millions of euros.",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 24",
+    "printed_value": "2 053",
+    "quote": "2 053",
+    "scale": "million",
+    "scope": "Activités aéronautiques segment",
+    "table_header": "2024"
+   }
+  ]
+ },
+ "label": "adp FY2025 adp-2025-comptes-consolides-fr",
+ "recorded_at": "2026-11-01T23:05:52+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v1",
+  "provider": "deepseek",
+  "system_sha256": "dd61dfa8bc5d0e076c746aaea74c07edd95275ae8052eef86252d530e64f8ebd",
+  "tool_sha256": "46095d918e936e7cea4245594fac8ea92ac3fe2b99165d30708ddbc178f9f7f8",
+  "user_sha256": "aba0afc9fa2b7a73202db048437cc2ac70b9d1fa0fb4e28586eceff7381f1aae"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 5576,
+  "output_tokens": 498
+ }
+}

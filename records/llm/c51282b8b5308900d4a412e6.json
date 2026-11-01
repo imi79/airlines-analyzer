@@ -1,0 +1,192 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Total passengers carried by Finnair in 2025.",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "passengers",
+    "location": "page 9",
+    "printed_value": "11,884,200",
+    "quote": "The number of passengers increased by 2.0% to 11,884,200 passengers",
+    "scale": "one",
+    "scope": "Finnair passengers carried (total)"
+   },
+   {
+    "comment": "Only the 2025 passenger total is printed; no 2024 passenger count is given in the passages.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "comment": "Total ASK in Mill. km for 2025.",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "ask",
+    "location": "page 9",
+    "printed_value": "39,306.6",
+    "quote": "Tota l 2,445.8 2,419.0 39,306.6 38,259.3 3 0, 2 2 7. 3 29,000.2 76.9 1.1",
+    "scale": "million",
+    "scope": "Finnair Group total",
+    "table_header": "Passenger revenue ASK RPK PLF"
+   },
+   {
+    "comment": "Total ASK in Mill. km for 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "ask",
+    "location": "page 9",
+    "printed_value": "38,259.3",
+    "quote": "Tota l 2,445.8 2,419.0 39,306.6 38,259.3 3 0, 2 2 7. 3 29,000.2 76.9 1.1",
+    "scale": "million",
+    "scope": "Finnair Group total",
+    "table_header": "Passenger revenue ASK RPK PLF"
+   },
+   {
+    "comment": "Total RPK in Mill. km for 2025 as printed (30,227.3).",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "rpk",
+    "location": "page 9",
+    "printed_value": "3 0, 2 2 7. 3",
+    "quote": "Tota l 2,445.8 2,419.0 39,306.6 38,259.3 3 0, 2 2 7. 3 29,000.2 76.9 1.1",
+    "scale": "million",
+    "scope": "Finnair Group total",
+    "table_header": "Passenger revenue ASK RPK PLF"
+   },
+   {
+    "comment": "Total RPK in Mill. km for 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "rpk",
+    "location": "page 9",
+    "printed_value": "29,000.2",
+    "quote": "Tota l 2,445.8 2,419.0 39,306.6 38,259.3 3 0, 2 2 7. 3 29,000.2 76.9 1.1",
+    "scale": "million",
+    "scope": "Finnair Group total",
+    "table_header": "Passenger revenue ASK RPK PLF"
+   },
+   {
+    "comment": "Passenger load factor 76.9% for 2025.",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "load_factor",
+    "location": "page 9",
+    "printed_value": "76.9",
+    "quote": "Tota l 2,445.8 2,419.0 39,306.6 38,259.3 3 0, 2 2 7. 3 29,000.2 76.9 1.1",
+    "scale": "one",
+    "scope": "Finnair Group total",
+    "table_header": "Passenger revenue ASK RPK PLF"
+   },
+   {
+    "comment": "Only the 2025 PLF (76.9%) and the 1.1 percentage point increase are printed; the 2024 PLF is not stated.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "load_factor"
+   },
+   {
+    "comment": "Passenger revenue for 2025, excluding ancillary revenue.",
+    "currency": "EUR",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 8",
+    "printed_value": "2,445.8",
+    "quote": "Passenger revenue 2,445.8 2,419.0 1.1",
+    "scale": "million",
+    "scope": "Finnair Group, passenger revenue",
+    "table_header": "EUR million 2025 2024 Change %"
+   },
+   {
+    "comment": "Passenger revenue for 2024, excluding ancillary revenue.",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 8",
+    "printed_value": "2,419.0",
+    "quote": "Passenger revenue 2,445.8 2,419.0 1.1",
+    "scale": "million",
+    "scope": "Finnair Group, passenger revenue",
+    "table_header": "EUR million 2025 2024 Change %"
+   },
+   {
+    "comment": "Total fleet operated by Finnair at 31 Dec 2025; Norra's 24 aircraft are reported separately.",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 18",
+    "printed_value": "55",
+    "quote": "Tota l 55 1 38 17 14.3 1",
+    "scale": "one",
+    "scope": "Fleet operated by Finnair (AOC)",
+    "table_header": "31 Dec 2025 Seats # Change from 31 Dec 2024 Own** Leased Average age 31 Dec 2025 Ordered"
+   },
+   {
+    "comment": "Only the change from 31 Dec 2024 (-1) is printed, not the 2024 fleet total.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "fleet_count"
+   },
+   {
+    "comment": "Average age of the fleet operated by Finnair at 31 Dec 2025.",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "fleet_age",
+    "location": "page 18",
+    "printed_value": "14.3",
+    "quote": "Tota l 55 1 38 17 14.3 1",
+    "scale": "one",
+    "scope": "Fleet operated by Finnair (AOC)",
+    "table_header": "31 Dec 2025 Seats # Change from 31 Dec 2024 Own** Leased Average age 31 Dec 2025 Ordered"
+   },
+   {
+    "comment": "No average fleet age for 31 Dec 2024 is printed.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "fleet_age"
+   },
+   {
+    "comment": "The report gives hedged fuel tonnes and prices by quarter and a policy range (70-95%, target 82.5%), but no stated share of next twelve months' fuel needs hedged at year end.",
+    "fiscal_year": 2025,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "comment": "Secured revolving credit facility undrawn at year end; no total of all committed facilities is printed.",
+    "currency": "EUR",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "page 174",
+    "printed_value": "200",
+    "quote": "Revolving credit facility of 200 million euros was undrawn on 31 December 2025.",
+    "scale": "million",
+    "scope": "Finnair Group committed facilities"
+   },
+   {
+    "comment": "No undrawn committed facility amount is printed for 31 December 2024.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "undrawn_facilities"
+   }
+  ]
+ },
+ "label": "finnair FY2025 213800SB6EOB8SSK9W63-2025-12-31-ESEF-FI-0",
+ "recorded_at": "2026-11-01T23:04:54+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v1",
+  "provider": "deepseek",
+  "system_sha256": "dd61dfa8bc5d0e076c746aaea74c07edd95275ae8052eef86252d530e64f8ebd",
+  "tool_sha256": "cd03841cb7853d9fe2928c968aa2456590e781a35cc160fb0d7c7646f17071ff",
+  "user_sha256": "a818c7952cf90405eeccd10639e581c42f6fba7d81b790c448877d62d202e934"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 12932,
+  "output_tokens": 1834
+ }
+}

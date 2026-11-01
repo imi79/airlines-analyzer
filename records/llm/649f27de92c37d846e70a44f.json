@@ -1,0 +1,175 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "No group total passengers carried figure appears in the passages.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "comment": "No group total passengers carried figure appears in the passages.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "ask",
+    "location": "page 12",
+    "printed_value": "263,592",
+    "quote": "ASKs (millions) 263,592 263,592 121,965",
+    "scale": "million",
+    "scope": "IAG group total",
+    "table_header": "€ million Note\n2022\nReported\nccy\nadjustment\n2022\nccy 2021"
+   },
+   {
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "ask",
+    "location": "page 12",
+    "printed_value": "121,965",
+    "quote": "ASKs (millions) 263,592 263,592 121,965",
+    "scale": "million",
+    "scope": "IAG group total",
+    "table_header": "€ million Note\n2022\nReported\nccy\nadjustment\n2022\nccy 2021"
+   },
+   {
+    "comment": "Only passenger-km of 213,376 million for emissions intensity is given, not group RPK.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "rpk"
+   },
+   {
+    "comment": "No group RPK figure is given in the passages.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "rpk"
+   },
+   {
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "load_factor",
+    "location": "page 12",
+    "printed_value": "81.8",
+    "quote": "Total network (22.0%) 116.1% 81.8 (2.8)pts 17.3pts",
+    "scale": "one",
+    "scope": "IAG group total network",
+    "table_header": "Year to\nDecember 31,\n2022\nASKs\nhigher/\n(lower)\nv2019\nASKs\nhigher/\n(lower)\nv2021\nPassenger\nload\nfactor\n(per cent)\nHigher/\n(lower)\nv2019\nHigher/\n(lower)\nv2021"
+   },
+   {
+    "comment": "Only the change versus 2021 (17.3pts) is printed, not the 2021 load factor itself.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "load_factor"
+   },
+   {
+    "currency": "EUR",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 12",
+    "printed_value": "19,458",
+    "quote": "Passenger revenue 19,458 5,835",
+    "scale": "million",
+    "scope": "IAG group total",
+    "table_header": "Year to December 31\n€ million Note 2022 2021"
+   },
+   {
+    "currency": "EUR",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 12",
+    "printed_value": "5,835",
+    "quote": "Passenger revenue 19,458 5,835",
+    "scale": "million",
+    "scope": "IAG group total",
+    "table_header": "Year to December 31\n€ million Note 2022 2021"
+   },
+   {
+    "comment": "No group fleet in service aircraft count is given in the passages.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "fleet_count"
+   },
+   {
+    "comment": "No group fleet in service aircraft count is given in the passages.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "fleet_count"
+   },
+   {
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "fleet_age",
+    "location": "page 12",
+    "printed_value": "11.9",
+    "quote": "Fleet age years 6% 5% 11.9 11.2 10.6 11.4 11.3",
+    "scale": "one",
+    "scope": "IAG group fleet",
+    "table_header": "Key emission reduction metric GRI standard Unit vly v2019 2022 2021 2020 2019 2018"
+   },
+   {
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "fleet_age",
+    "location": "page 12",
+    "printed_value": "11.2",
+    "quote": "Fleet age years 6% 5% 11.9 11.2 10.6 11.4 11.3",
+    "scale": "one",
+    "scope": "IAG group fleet",
+    "table_header": "Key emission reduction metric GRI standard Unit vly v2019 2022 2021 2020 2019 2018"
+   },
+   {
+    "comment": "No fuel hedge ratio for the next twelve months is stated in the passages.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "comment": "No fuel hedge ratio for the next twelve months is stated in the passages.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "comment": "Total of general facilities only; committed aircraft facilities of €1,116 million are listed separately.",
+    "currency": "EUR",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "page 12",
+    "printed_value": "3,231",
+    "quote": "3,231",
+    "scale": "million",
+    "scope": "IAG group general undrawn committed facilities",
+    "table_header": "2022\nMillion Currency € equivalent"
+   },
+   {
+    "comment": "The 2021 undrawn facilities table is truncated and no total is printed.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "undrawn_facilities"
+   }
+  ]
+ },
+ "label": "iag FY2022 959800TZHQRUSH1ESL13-2022-12-31-ESEF-ES-0",
+ "recorded_at": "2026-11-01T23:03:45+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v1",
+  "provider": "deepseek",
+  "system_sha256": "dd61dfa8bc5d0e076c746aaea74c07edd95275ae8052eef86252d530e64f8ebd",
+  "tool_sha256": "cd03841cb7853d9fe2928c968aa2456590e781a35cc160fb0d7c7646f17071ff",
+  "user_sha256": "8aebe61745ee9143fe6be2a87ffd1f6fad32447389d161b48e59ff3989ce9d99"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 15398,
+  "output_tokens": 1383
+ }
+}

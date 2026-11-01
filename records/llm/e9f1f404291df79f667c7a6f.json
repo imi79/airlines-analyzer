@@ -1,0 +1,90 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Spanish airport network passengers in 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "passengers",
+    "location": "page 46",
+    "printed_value": "309,3",
+    "quote": "La red de aeropuertos españoles gestionados por el Grupo ha alcanzado un récord anual, con más de 309,3 millones de pasajeros frente a los 283,2 millones de 2023, lo que supone un incremento interanual del 9,2%.",
+    "scale": "million",
+    "scope": "Aena network airports in Spain"
+   },
+   {
+    "comment": "Spanish airport network passengers in 2023.",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "passengers",
+    "location": "page 46",
+    "printed_value": "283,2",
+    "quote": "La red de aeropuertos españoles gestionados por el Grupo ha alcanzado un récord anual, con más de 309,3 millones de pasajeros frente a los 283,2 millones de 2023, lo que supone un incremento interanual del 9,2%.",
+    "scale": "million",
+    "scope": "Aena network airports in Spain"
+   },
+   {
+    "comment": "Total undrawn financing of the parent company at 31 December 2024.",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "page 115",
+    "printed_value": "2.760",
+    "quote": "Total\n2.760",
+    "scale": "million",
+    "scope": "Aena S.M.E., S.A. available (undrawn) financing",
+    "table_header": "Entidad\nImporte\n(Millones de euros)\nVencimiento"
+   },
+   {
+    "comment": "No total of undrawn committed facilities is printed for 31 December 2023; only the 2024 table and narrative figures for individual lines are given.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "Aeronautical services revenue for 2024 in thousands of euros.",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 63",
+    "printed_value": "3.147.517",
+    "quote": "Servicios aeronáuticos\n3.147.517\n2.768.254",
+    "scale": "thousand",
+    "scope": "Aeronautical segment (Spanish airport network), excluding International, AIRM and adjustments",
+    "table_header": "2024\n2023"
+   },
+   {
+    "comment": "Aeronautical services revenue for 2023 in thousands of euros.",
+    "currency": "EUR",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 63",
+    "printed_value": "2.768.254",
+    "quote": "Servicios aeronáuticos\n3.147.517\n2.768.254",
+    "scale": "thousand",
+    "scope": "Aeronautical segment (Spanish airport network), excluding International, AIRM and adjustments",
+    "table_header": "2024\n2023"
+   }
+  ]
+ },
+ "label": "aena FY2024 959800R7QMXKF0NFMT29-2024-12-31-ESEF-ES-0",
+ "recorded_at": "2026-11-01T23:06:13+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v1",
+  "provider": "deepseek",
+  "system_sha256": "dd61dfa8bc5d0e076c746aaea74c07edd95275ae8052eef86252d530e64f8ebd",
+  "tool_sha256": "46095d918e936e7cea4245594fac8ea92ac3fe2b99165d30708ddbc178f9f7f8",
+  "user_sha256": "def32db6d9a74d928e704b380e2a3db7361cfc3ddf25b5bf32eb5f5f7013a112"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 7509,
+  "output_tokens": 758
+ }
+}

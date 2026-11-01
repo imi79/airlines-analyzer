@@ -1,0 +1,90 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Passengers handled at Spanish airports in 2025.",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "passengers",
+    "location": "page 268",
+    "printed_value": "321.587.316",
+    "quote": "Pasajeros\n309.371.619\n321.587.316",
+    "scale": "one",
+    "scope": "Aena network airports in Spain"
+   },
+   {
+    "comment": "Passengers handled at Spanish airports in 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "passengers",
+    "location": "page 268",
+    "printed_value": "309.371.619",
+    "quote": "Pasajeros\n309.371.619\n321.587.316",
+    "scale": "one",
+    "scope": "Aena network airports in Spain"
+   },
+   {
+    "comment": "Total undrawn financing of the parent company at 31 December 2025.",
+    "currency": "EUR",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "page 125",
+    "printed_value": "2.245",
+    "quote": "Total\n2.245",
+    "scale": "million",
+    "scope": "Aena S.M.E., S.A. (parent company) undrawn financing",
+    "table_header": "Entidad\nImporte (Millones de euros)\nVencimiento"
+   },
+   {
+    "comment": "No total of undrawn committed facilities at 31 December 2024 is printed; only individual amounts (760 million euros and 2,000 million euros) are given.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "Aeronautical services revenue in 2025.",
+    "currency": "EUR",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 73",
+    "printed_value": "3.297.034",
+    "quote": "Servicios aeronáuticos\n3.297.034\n3.147.517",
+    "scale": "thousand",
+    "scope": "Aeronautical segment (Spanish airport network)",
+    "table_header": "2025\n2024"
+   },
+   {
+    "comment": "Aeronautical services revenue in 2024.",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 73",
+    "printed_value": "3.147.517",
+    "quote": "Servicios aeronáuticos\n3.297.034\n3.147.517",
+    "scale": "thousand",
+    "scope": "Aeronautical segment (Spanish airport network)",
+    "table_header": "2025\n2024"
+   }
+  ]
+ },
+ "label": "aena FY2025 959800R7QMXKF0NFMT29-2025-12-31-ESEF-ES-0",
+ "recorded_at": "2026-11-01T23:06:18+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v1",
+  "provider": "deepseek",
+  "system_sha256": "dd61dfa8bc5d0e076c746aaea74c07edd95275ae8052eef86252d530e64f8ebd",
+  "tool_sha256": "46095d918e936e7cea4245594fac8ea92ac3fe2b99165d30708ddbc178f9f7f8",
+  "user_sha256": "9d50476fa306ba92a6420db916e8f02d486119b590b3e664e9eeac4aece1d16d"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 7437,
+  "output_tokens": 647
+ }
+}

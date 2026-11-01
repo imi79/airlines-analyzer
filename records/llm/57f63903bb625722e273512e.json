@@ -1,0 +1,191 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Total passengers carried in 2023.",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "passengers",
+    "location": "page 9",
+    "printed_value": "10,983,300",
+    "quote": "The number of passengers increased by 20.8 per cent to 10,983,300.",
+    "scale": "one",
+    "scope": "Finnair passengers carried (total)"
+   },
+   {
+    "comment": "Only the 2023 passenger count is printed; the 2022 figure is not given (only a 20.8 per cent increase).",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "comment": "Total ASK in million km for 2023.",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "ask",
+    "location": "page 10",
+    "printed_value": "36,154.5",
+    "quote": "Total 2,411.6 1,710.7 36,154.5 31,298.4 27,626.4 21,156.8 76.4 8.8",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "Passenger revenue ASK RPK PLF"
+   },
+   {
+    "comment": "Total ASK in million km for 2022.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "ask",
+    "location": "page 10",
+    "printed_value": "31,298.4",
+    "quote": "Total 2,411.6 1,710.7 36,154.5 31,298.4 27,626.4 21,156.8 76.4 8.8",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "Passenger revenue ASK RPK PLF"
+   },
+   {
+    "comment": "Total RPK in million km for 2023.",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "rpk",
+    "location": "page 10",
+    "printed_value": "27,626.4",
+    "quote": "Total 2,411.6 1,710.7 36,154.5 31,298.4 27,626.4 21,156.8 76.4 8.8",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "Passenger revenue ASK RPK PLF"
+   },
+   {
+    "comment": "Total RPK in million km for 2022.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "rpk",
+    "location": "page 10",
+    "printed_value": "21,156.8",
+    "quote": "Total 2,411.6 1,710.7 36,154.5 31,298.4 27,626.4 21,156.8 76.4 8.8",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "Passenger revenue ASK RPK PLF"
+   },
+   {
+    "comment": "Total PLF of 76.4 per cent for 2023.",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "load_factor",
+    "location": "page 10",
+    "printed_value": "76.4",
+    "quote": "Total 2,411.6 1,710.7 36,154.5 31,298.4 27,626.4 21,156.8 76.4 8.8",
+    "scale": "one",
+    "scope": "Group total",
+    "table_header": "Passenger revenue ASK RPK PLF"
+   },
+   {
+    "comment": "The 2022 total PLF is not printed; the table shows only the 2023 PLF and the percentage-point change (8.8).",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "load_factor"
+   },
+   {
+    "comment": "Passenger revenue excluding ancillary revenue.",
+    "currency": "EUR",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 9",
+    "printed_value": "2,411.6",
+    "quote": "Passenger revenue 2,411.6 1,710.7 41.0",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "EUR million 2023 2022 Change %"
+   },
+   {
+    "comment": "Passenger revenue excluding ancillary revenue.",
+    "currency": "EUR",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 9",
+    "printed_value": "1,710.7",
+    "quote": "Passenger revenue 2,411.6 1,710.7 41.0",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "EUR million 2023 2022 Change %"
+   },
+   {
+    "comment": "Total aircraft operated by Finnair at 31 Dec 2023; Norra's 24 aircraft are reported separately.",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 17",
+    "printed_value": "55",
+    "quote": "Total 55 -1 31 24 12.5 2",
+    "scale": "one",
+    "scope": "Fleet operated by Finnair (AOC)",
+    "table_header": "31 Dec 2023 Seats # Change from 31 Dec 2022 Own** Leased Average age 31 Dec 2023 Ordered"
+   },
+   {
+    "comment": "Only the change from 31 Dec 2022 (-1) is printed, not the 2022 fleet total.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "fleet_count"
+   },
+   {
+    "comment": "Average age of Finnair-operated fleet at year end 2023.",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "fleet_age",
+    "location": "page 17",
+    "printed_value": "12.5",
+    "quote": "The average age of the fleet operated by Finnair was 12.5 years.",
+    "scale": "one",
+    "scope": "Fleet operated by Finnair (AOC)"
+   },
+   {
+    "comment": "No average fleet age is printed for 2022.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "fleet_age"
+   },
+   {
+    "comment": "The report gives hedged fuel tonnes and prices by quarter but no stated share of expected fuel needs hedged at year end.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "comment": "No hedged share of expected fuel needs is stated for 2022.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "comment": "Only a 200-million-euro unused commercial paper programme is mentioned, not committed credit facilities.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "No undrawn committed facilities are reported for 2022.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "undrawn_facilities"
+   }
+  ]
+ },
+ "label": "finnair FY2023 213800SB6EOB8SSK9W63-2023-12-31-ESEF-FI-0",
+ "recorded_at": "2026-11-01T23:04:38+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v1",
+  "provider": "deepseek",
+  "system_sha256": "dd61dfa8bc5d0e076c746aaea74c07edd95275ae8052eef86252d530e64f8ebd",
+  "tool_sha256": "cd03841cb7853d9fe2928c968aa2456590e781a35cc160fb0d7c7646f17071ff",
+  "user_sha256": "4cbf5083b9e987bbe30527a6e67b50de3358bbd5ad4fb4b48a5c1354ef616117"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 12101,
+  "output_tokens": 1655
+ }
+}

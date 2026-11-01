@@ -1,0 +1,25 @@
+# Imane's reviews of figures read from the report text (M3, decision 0010).
+#
+# Figures the checks left unverified are listed in docs/m3/extractions.md under "Waiting for
+# your review", each with a key such as `easyjet 2025 fleet_count`, the quote and the reason.
+# They stay off the tearsheet until reviewed here. Two actions:
+#
+#   approve  the value read is right: it becomes verified, with your name and reason.
+#   correct  the value read is wrong: give the right value (full units; percentages as a
+#            fraction, 0.45 for 45%; amounts in the reporting currency). It is stored as an
+#            override, with your name, the date and the reason.
+#
+# Example (remove the # to use it):
+#
+#   - issuer: easyjet
+#     fiscal_year: 2025
+#     item: fleet_count
+#     action: approve          # or: correct
+#     # value: 356             # only with action: correct
+#     by: Imane
+#     on: 2026-11-02
+#     reason: Checked on page 165 of the annual report.
+#
+# Then run `uv run tearsheet all --offline` to apply the reviews and rebuild the reports.
+
+reviews: []
