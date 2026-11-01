@@ -20,16 +20,16 @@ holds for that year: a difference means a typing error or a restatement.
 | Depreciation, amortisation and impairment | FY2025 | 3,054 | 3 | verified | 2,643 | 2,643 | ✓ |
 | Total equity | FY2025 | 2,364 | 6 | verified | 799 | 799 | ✓ |
 | Finance costs | FY2025 | 627 | 3 | verified | 631 | 631 | ✓ |
-| Interest expense | FY2025 | 627 | 3 | unverified | 631 | 631 | ✓ |
+| Interest expense | FY2025 | 627 | 3 | verified | 631 | 631 | ✓ |
 | Interest paid | FY2025 | 670 | 8 | verified | 664 | 664 | ✓ |
 | Lease liabilities, current | FY2025 | 958 | 6 | verified | 982 | 982 | ✓ |
 | Lease liabilities, non-current | FY2025 | 5,487 | 6 | verified | 4,714 | 4,714 | ✓ |
 | Lease payments (principal) | FY2025 | 960 | 8 | verified | 891 | 891 | ✓ |
 | Operating profit | FY2025 | 2,002 | 3 | verified | 1,466 | 1,466 | ✓ |
-| Other cash-like items (company's net debt definition) | FY2023 | 2,063 | 70 | unverified | – | – | prior-year column, loaded as the figure (nothing tagged to compare) |
-| Other cash-like items (company's net debt definition) | FY2024 | 2,103 | 77 | unverified | – | – | prior-year column, loaded as the figure (nothing tagged to compare) |
-| Other cash-like items (company's net debt definition) | FY2024 | 2,103 | 70 | unverified | – | – | no tagged figure to compare (net debt note item) |
-| Other cash-like items (company's net debt definition) | FY2025 | 2,144 | 77 | unverified | – | – | no tagged figure to compare (net debt note item) |
+| Other cash-like items (company's net debt definition) | FY2023 | 2,063 | 70 | verified | – | – | prior-year column, loaded as the figure (nothing tagged to compare) |
+| Other cash-like items (company's net debt definition) | FY2024 | 2,103 | 77 | verified | – | – | prior-year column, loaded as the figure (nothing tagged to compare) |
+| Other cash-like items (company's net debt definition) | FY2024 | 2,103 | 70 | verified | – | – | no tagged figure to compare (net debt note item) |
+| Other cash-like items (company's net debt definition) | FY2025 | 2,144 | 77 | verified | – | – | no tagged figure to compare (net debt note item) |
 | Other current financial assets | FY2025 | 1,360 | 5 | verified | 1,190 | 1,190 | ✓ |
 | Profit for the year | FY2025 | 1,754 | 3 | verified | 489 | 489 | ✓ |
 | Revenue | FY2025 | 33,007 | 3 | verified | 31,459 | 31,459 | ✓ |
@@ -50,14 +50,14 @@ holds for that year: a difference means a typing error or a restatement.
 | Finance costs | FY2025 | 663 | 4 | verified | 595 | 595 | ✓ |
 | Interest paid | FY2025 | 295 | 6 | verified | 298 | 298 | ✓ |
 | Operating profit | FY2025 | 1,160 | 4 | verified | 994 | 994 | ✓ |
-| Other cash-like items (company's net debt definition) | FY2023 | 118 | 60 | unverified | – | – | prior-year column, loaded as the figure (nothing tagged to compare) |
-| Other cash-like items (company's net debt definition) | FY2024 | 138 | 56 | unverified | – | – | prior-year column, loaded as the figure (nothing tagged to compare) |
-| Other cash-like items (company's net debt definition) | FY2024 | 138 | 60 | unverified | – | – | no tagged figure to compare (net debt note item) |
-| Other cash-like items (company's net debt definition) | FY2025 | 125 | 56 | unverified | – | – | no tagged figure to compare (net debt note item) |
+| Other cash-like items (company's net debt definition) | FY2023 | 118 | 60 | verified | – | – | prior-year column, loaded as the figure (nothing tagged to compare) |
+| Other cash-like items (company's net debt definition) | FY2024 | 138 | 56 | verified | – | – | prior-year column, loaded as the figure (nothing tagged to compare) |
+| Other cash-like items (company's net debt definition) | FY2024 | 138 | 60 | verified | – | – | no tagged figure to compare (net debt note item) |
+| Other cash-like items (company's net debt definition) | FY2025 | 125 | 56 | verified | – | – | no tagged figure to compare (net debt note item) |
 | Other current financial assets | FY2025 | 151 | 5 | verified | 234 | 234 | ✓ |
 | Profit for the year | FY2025 | 426 | 4 | verified | 516 | 516 | ✓ |
 | Revenue | FY2025 | 6,704 | 4 | verified | 6,158 | 6,158 | ✓ |
-| Share of profit (loss) of associates | FY2025 | -165 | 4 | unverified | -292 | -292 | ✓ |
+| Share of profit (loss) of associates | FY2025 | -165 | 4 | verified | -292 | -292 | ✓ |
 | Income tax paid | FY2025 | 370 | 6 | verified | 283 | 283 | ✓ |
 | Total assets | FY2025 | 20,267 | 5 | verified | 20,179 | 20,179 | ✓ |
 

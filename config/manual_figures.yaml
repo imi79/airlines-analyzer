@@ -49,7 +49,7 @@ documents:
       tax_paid: [136, 20, 8, "Income tax (paid) / reimbursed"]
       other_cash_like: [[988, 1156], [1046, 1057], 77, "Net debt note 32: marketable securities > 3 months + bonds"]
     prior_year_as_fact: [other_cash_like]
-    pending_review: [interest_expense, other_cash_like]
+    # interest_expense and other_cash_like added in M2, reviewed by Imane on 2026-11-01.
     footnotes:
       dda: Air France-KLM D&A includes provisions, as in the company's own EBITDA definition.
 
@@ -83,7 +83,7 @@ documents:
       tax_paid: [370, 283, 6, "Tax expenses (cash flow)"]
       other_cash_like: [125, 138, 56, "Net debt note 9.4.2: restricted bank balances"]
     prior_year_as_fact: [other_cash_like]
-    pending_review: [share_of_associates, other_cash_like]
+    # share_of_associates and other_cash_like added in M2, reviewed by Imane on 2026-11-01.
 
   # FY2024 statements: only the net debt items that aren't tagged, to cover FY2023.
   - issuer: afkl
@@ -95,7 +95,7 @@ documents:
     supplied_by: Imane
     entered_by: AI assistant, from the PDF
     entered_on: 2026-10-30
-    reviewed_by: null
+    reviewed_by: Imane (2026-11-01)
     scale: 1000000
     lines:
       other_cash_like: [[1046, 1057], [1097, 966], 70, "Net debt note 32: marketable securities > 3 months + bonds"]
@@ -110,7 +110,7 @@ documents:
     supplied_by: Imane
     entered_by: AI assistant, from the PDF
     entered_on: 2026-10-30
-    reviewed_by: null
+    reviewed_by: Imane (2026-11-01)
     scale: 1000000
     lines:
       other_cash_like: [138, 118, 60, "Net debt note 9.4.2: restricted bank balances"]

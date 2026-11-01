@@ -20,9 +20,9 @@ adp,2022,2022-12-31,gross_leverage,5.692482915718,verified,"Total debt 9,996 ÷ 
 adp,2022,2022-12-31,interest_coverage,6.806201550388,verified,"EBITDA 1,756 ÷ interest paid (interest expense not tagged) 258 = 6.81x",x
 adp,2022,2022-12-31,total_debt,9996000000.000002,verified,"Borrowings, non-current 8,763 + borrowings, current 1,233 = 9,996 (lease liabilities included in borrowings)",EUR
 adp,2023,2023-12-31,capex_intensity,0.158689717925,verified,"Capex 872 ÷ revenue 5,495 = 15.9%",pct
-adp,2023,2023-12-31,cash_like,2460999999.9999995,unverified,"Cash and cash equivalents 2,343 + other cash-like items (company's net debt definition) 118 = 2,461",EUR
-adp,2023,2023-12-31,cash_liquidity,2460999999.9999995,unverified,"Cash and cash-like 2,461 (undrawn facilities added in M3)",EUR
-adp,2023,2023-12-31,cash_liquidity_to_revenue,0.447861692448,unverified,"Cash liquidity 2,461 ÷ revenue 5,495 = 44.8%",pct
+adp,2023,2023-12-31,cash_like,2460999999.9999995,verified,"Cash and cash equivalents 2,343 + other cash-like items (company's net debt definition) 118 = 2,461",EUR
+adp,2023,2023-12-31,cash_liquidity,2460999999.9999995,verified,"Cash and cash-like 2,461 (undrawn facilities added in M3)",EUR
+adp,2023,2023-12-31,cash_liquidity_to_revenue,0.447861692448,verified,"Cash liquidity 2,461 ÷ revenue 5,495 = 44.8%",pct
 adp,2023,2023-12-31,ebitda,1960000000.0,verified,"Operating profit 1,243 − share of associates (75.0) + D&A 792 = 1,960",EUR
 adp,2023,2023-12-31,ebitda_margin,0.356687898089,verified,"EBITDA 1,960 ÷ revenue 5,495 = 35.7%",pct
 adp,2023,2023-12-31,fcf,715000000.0,verified,"Cash from operations 1,587 − capex 872 = 715",EUR
@@ -31,13 +31,13 @@ adp,2023,2023-12-31,ffo,1498000000.0,verified,"EBITDA 1,960 − interest paid 29
 adp,2023,2023-12-31,ffo_to_debt,0.144218734957,verified,"FFO 1,498 ÷ total debt 10,387 = 14.4%",pct
 adp,2023,2023-12-31,gross_leverage,5.299489795918,verified,"Total debt 10,387 ÷ EBITDA 1,960 = 5.30x",x
 adp,2023,2023-12-31,interest_coverage,6.735395189003,verified,"EBITDA 1,960 ÷ interest paid (interest expense not tagged) 291 = 6.74x",x
-adp,2023,2023-12-31,net_debt,7926000000.000001,unverified,"Total debt 10,387 − cash and cash-like 2,461 = 7,926",EUR
-adp,2023,2023-12-31,net_leverage,4.04387755102,unverified,"Net debt 7,926 ÷ EBITDA 1,960 = 4.04x",x
+adp,2023,2023-12-31,net_debt,7926000000.000001,verified,"Total debt 10,387 − cash and cash-like 2,461 = 7,926",EUR
+adp,2023,2023-12-31,net_leverage,4.04387755102,verified,"Net debt 7,926 ÷ EBITDA 1,960 = 4.04x",x
 adp,2023,2023-12-31,total_debt,10387000000.0,verified,"Borrowings, non-current 8,521 + borrowings, current 1,866 = 10,387 (lease liabilities included in borrowings)",EUR
 adp,2024,2024-12-31,capex_intensity,0.189834361806,verified,"Capex 1,169 ÷ revenue 6,158 = 19.0%",pct
-adp,2024,2024-12-31,cash_like,2096000000.0,unverified,"Cash and cash equivalents 1,958 + other cash-like items (company's net debt definition) 138 = 2,096",EUR
-adp,2024,2024-12-31,cash_liquidity,2096000000.0,unverified,"Cash and cash-like 2,096 (undrawn facilities added in M3)",EUR
-adp,2024,2024-12-31,cash_liquidity_to_revenue,0.340370250081,unverified,"Cash liquidity 2,096 ÷ revenue 6,158 = 34.0%",pct
+adp,2024,2024-12-31,cash_like,2096000000.0,verified,"Cash and cash equivalents 1,958 + other cash-like items (company's net debt definition) 138 = 2,096",EUR
+adp,2024,2024-12-31,cash_liquidity,2096000000.0,verified,"Cash and cash-like 2,096 (undrawn facilities added in M3)",EUR
+adp,2024,2024-12-31,cash_liquidity_to_revenue,0.340370250081,verified,"Cash liquidity 2,096 ÷ revenue 6,158 = 34.0%",pct
 adp,2024,2024-12-31,ebitda,2077000000.0,verified,"Operating profit 994 − share of associates (-292) + D&A 791 = 2,077",EUR
 adp,2024,2024-12-31,ebitda_margin,0.337284832738,verified,"EBITDA 2,077 ÷ revenue 6,158 = 33.7%",pct
 adp,2024,2024-12-31,fcf,355000000.0,verified,"Cash from operations 1,524 − capex 1,169 = 355",EUR
@@ -46,23 +46,23 @@ adp,2024,2024-12-31,ffo,1496000000.0,verified,"EBITDA 2,077 − interest paid 29
 adp,2024,2024-12-31,ffo_to_debt,0.140179910045,verified,"FFO 1,496 ÷ total debt 10,672 = 14.0%",pct
 adp,2024,2024-12-31,gross_leverage,5.138180067405,verified,"Total debt 10,672 ÷ EBITDA 2,077 = 5.14x",x
 adp,2024,2024-12-31,interest_coverage,6.969798657718,verified,"EBITDA 2,077 ÷ interest paid (interest expense not tagged) 298 = 6.97x",x
-adp,2024,2024-12-31,net_debt,8576000000.0,unverified,"Total debt 10,672 − cash and cash-like 2,096 = 8,576",EUR
-adp,2024,2024-12-31,net_leverage,4.129032258065,unverified,"Net debt 8,576 ÷ EBITDA 2,077 = 4.13x",x
+adp,2024,2024-12-31,net_debt,8576000000.0,verified,"Total debt 10,672 − cash and cash-like 2,096 = 8,576",EUR
+adp,2024,2024-12-31,net_leverage,4.129032258065,verified,"Net debt 8,576 ÷ EBITDA 2,077 = 4.13x",x
 adp,2024,2024-12-31,total_debt,10672000000.0,verified,"Borrowings, non-current 8,887 + borrowings, current 1,785 = 10,672 (lease liabilities included in borrowings)",EUR
 adp,2025,2025-12-31,capex_intensity,0.181682577566,verified,"Capex 1,218 ÷ revenue 6,704 = 18.2%",pct
-adp,2025,2025-12-31,cash_like,2017000000.0,unverified,"Cash and cash equivalents 1,892 + other cash-like items (company's net debt definition) 125 = 2,017",EUR
-adp,2025,2025-12-31,cash_liquidity,2017000000.0,unverified,"Cash and cash-like 2,017 (undrawn facilities added in M3)",EUR
-adp,2025,2025-12-31,cash_liquidity_to_revenue,0.300865155131,unverified,"Cash liquidity 2,017 ÷ revenue 6,704 = 30.1%",pct
-adp,2025,2025-12-31,ebitda,2328000000.0,unverified,"Operating profit 1,160 − share of associates (-165) + D&A 1,003 = 2,328",EUR
-adp,2025,2025-12-31,ebitda_margin,0.347255369928,unverified,"EBITDA 2,328 ÷ revenue 6,704 = 34.7%",pct
+adp,2025,2025-12-31,cash_like,2017000000.0,verified,"Cash and cash equivalents 1,892 + other cash-like items (company's net debt definition) 125 = 2,017",EUR
+adp,2025,2025-12-31,cash_liquidity,2017000000.0,verified,"Cash and cash-like 2,017 (undrawn facilities added in M3)",EUR
+adp,2025,2025-12-31,cash_liquidity_to_revenue,0.300865155131,verified,"Cash liquidity 2,017 ÷ revenue 6,704 = 30.1%",pct
+adp,2025,2025-12-31,ebitda,2328000000.0,verified,"Operating profit 1,160 − share of associates (-165) + D&A 1,003 = 2,328",EUR
+adp,2025,2025-12-31,ebitda_margin,0.347255369928,verified,"EBITDA 2,328 ÷ revenue 6,704 = 34.7%",pct
 adp,2025,2025-12-31,fcf,420000000.0,verified,"Cash from operations 1,638 − capex 1,218 = 420",EUR
 adp,2025,2025-12-31,fcf_to_debt,0.039671294984,verified,"Free cash flow 420 ÷ total debt 10,587 = 4.0%",pct
-adp,2025,2025-12-31,ffo,1663000000.0,unverified,"EBITDA 2,328 − interest paid 295 − tax paid 370 = 1,663",EUR
-adp,2025,2025-12-31,ffo_to_debt,0.157079437045,unverified,"FFO 1,663 ÷ total debt 10,587 = 15.7%",pct
-adp,2025,2025-12-31,gross_leverage,4.547680412371,unverified,"Total debt 10,587 ÷ EBITDA 2,328 = 4.55x",x
-adp,2025,2025-12-31,interest_coverage,7.891525423729,unverified,"EBITDA 2,328 ÷ interest paid (interest expense not tagged) 295 = 7.89x",x
-adp,2025,2025-12-31,net_debt,8569999999.999999,unverified,"Total debt 10,587 − cash and cash-like 2,017 = 8,570",EUR
-adp,2025,2025-12-31,net_leverage,3.681271477663,unverified,"Net debt 8,570 ÷ EBITDA 2,328 = 3.68x",x
+adp,2025,2025-12-31,ffo,1663000000.0,verified,"EBITDA 2,328 − interest paid 295 − tax paid 370 = 1,663",EUR
+adp,2025,2025-12-31,ffo_to_debt,0.157079437045,verified,"FFO 1,663 ÷ total debt 10,587 = 15.7%",pct
+adp,2025,2025-12-31,gross_leverage,4.547680412371,verified,"Total debt 10,587 ÷ EBITDA 2,328 = 4.55x",x
+adp,2025,2025-12-31,interest_coverage,7.891525423729,verified,"EBITDA 2,328 ÷ interest paid (interest expense not tagged) 295 = 7.89x",x
+adp,2025,2025-12-31,net_debt,8569999999.999999,verified,"Total debt 10,587 − cash and cash-like 2,017 = 8,570",EUR
+adp,2025,2025-12-31,net_leverage,3.681271477663,verified,"Net debt 8,570 ÷ EBITDA 2,328 = 3.68x",x
 adp,2025,2025-12-31,total_debt,10587000000.0,verified,"Borrowings, non-current 8,728 + borrowings, current 1,859 = 10,587 (lease liabilities included in borrowings)",EUR
 aena,2021,2021-12-31,capex_intensity,0.276391164979,verified,"Capex 671 ÷ revenue 2,428 = 27.6%",pct
 aena,2021,2021-12-31,cash_like,1466797000.0,verified,"Cash and cash equivalents 1,467 = 1,467",EUR
@@ -157,11 +157,11 @@ afkl,2022,2022-12-31,ffo_to_debt,0.203264195852,verified,"FFO 2,989 ÷ total deb
 afkl,2022,2022-12-31,gross_leverage,4.066648230088,verified,"Total debt 14,705 ÷ EBITDA 3,616 = 4.07x",x
 afkl,2022,2022-12-31,interest_coverage,6.355008787346,verified,"EBITDA 3,616 ÷ interest expense 569 = 6.36x",x
 afkl,2022,2022-12-31,total_debt,14705000000.0,verified,"Borrowings, non-current 9,657 + borrowings, current 896 + lease liabilities, non-current 3,318 + lease liabilities, current 834 = 14,705",EUR
-afkl,2023,2023-12-31,advance_ticket_cover,0.467239917646,unverified,"Advance ticket sales 3,858 ÷ cash and cash-like 8,257 = 46.7%",pct
+afkl,2023,2023-12-31,advance_ticket_cover,0.467239917646,verified,"Advance ticket sales 3,858 ÷ cash and cash-like 8,257 = 46.7%",pct
 afkl,2023,2023-12-31,capex_intensity,0.118291748559,verified,"Capex 3,551 ÷ revenue 30,019 = 11.8%",pct
-afkl,2023,2023-12-31,cash_like,8257000000.0,unverified,"Cash and cash equivalents 6,194 + other cash-like items (company's net debt definition) 2,063 = 8,257",EUR
-afkl,2023,2023-12-31,cash_liquidity,8257000000.0,unverified,"Cash and cash-like 8,257 (undrawn facilities added in M3)",EUR
-afkl,2023,2023-12-31,cash_liquidity_to_revenue,0.275059129218,unverified,"Cash liquidity 8,257 ÷ revenue 30,019 = 27.5%",pct
+afkl,2023,2023-12-31,cash_like,8257000000.0,verified,"Cash and cash equivalents 6,194 + other cash-like items (company's net debt definition) 2,063 = 8,257",EUR
+afkl,2023,2023-12-31,cash_liquidity,8257000000.0,verified,"Cash and cash-like 8,257 (undrawn facilities added in M3)",EUR
+afkl,2023,2023-12-31,cash_liquidity_to_revenue,0.275059129218,verified,"Cash liquidity 8,257 ÷ revenue 30,019 = 27.5%",pct
 afkl,2023,2023-12-31,ebitda,4172999999.9999995,verified,"Operating profit 1,677 + D&A 2,496 = 4,173",EUR
 afkl,2023,2023-12-31,ebitda_margin,0.139011959093,verified,"EBITDA 4,173 ÷ revenue 30,019 = 13.9%",pct
 afkl,2023,2023-12-31,fcf,55000000.0,verified,"Cash from operations 3,606 − capex 3,551 = 55.0",EUR
@@ -170,14 +170,14 @@ afkl,2023,2023-12-31,ffo,3355000000.0000005,verified,"EBITDA 4,173 − interest 
 afkl,2023,2023-12-31,ffo_to_debt,0.246130144524,verified,"FFO 3,355 ÷ total debt 13,631 = 24.6%",pct
 afkl,2023,2023-12-31,gross_leverage,3.266474958064,verified,"Total debt 13,631 ÷ EBITDA 4,173 = 3.27x",x
 afkl,2023,2023-12-31,interest_coverage,6.955,verified,"EBITDA 4,173 ÷ interest expense 600 = 6.96x",x
-afkl,2023,2023-12-31,net_debt,5374000000.000001,unverified,"Total debt 13,631 − cash and cash-like 8,257 = 5,374",EUR
-afkl,2023,2023-12-31,net_leverage,1.287802540139,unverified,"Net debt 5,374 ÷ EBITDA 4,173 = 1.29x",x
+afkl,2023,2023-12-31,net_debt,5374000000.000001,verified,"Total debt 13,631 − cash and cash-like 8,257 = 5,374",EUR
+afkl,2023,2023-12-31,net_leverage,1.287802540139,verified,"Net debt 5,374 ÷ EBITDA 4,173 = 1.29x",x
 afkl,2023,2023-12-31,total_debt,13631000000.0,verified,"Borrowings, non-current 7,538 + borrowings, current 1,664 + lease liabilities, non-current 3,581 + lease liabilities, current 848 = 13,631",EUR
-afkl,2024,2024-12-31,advance_ticket_cover,0.5910271206,unverified,"Advance ticket sales 4,097 ÷ cash and cash-like 6,932 = 59.1%",pct
+afkl,2024,2024-12-31,advance_ticket_cover,0.5910271206,verified,"Advance ticket sales 4,097 ÷ cash and cash-like 6,932 = 59.1%",pct
 afkl,2024,2024-12-31,capex_intensity,0.118503448934,verified,"Capex 3,728 ÷ revenue 31,459 = 11.9%",pct
-afkl,2024,2024-12-31,cash_like,6932000000.0,unverified,"Cash and cash equivalents 4,829 + other cash-like items (company's net debt definition) 2,103 = 6,932",EUR
-afkl,2024,2024-12-31,cash_liquidity,6932000000.0,unverified,"Cash and cash-like 6,932 (undrawn facilities added in M3)",EUR
-afkl,2024,2024-12-31,cash_liquidity_to_revenue,0.220350297212,unverified,"Cash liquidity 6,932 ÷ revenue 31,459 = 22.0%",pct
+afkl,2024,2024-12-31,cash_like,6932000000.0,verified,"Cash and cash equivalents 4,829 + other cash-like items (company's net debt definition) 2,103 = 6,932",EUR
+afkl,2024,2024-12-31,cash_liquidity,6932000000.0,verified,"Cash and cash-like 6,932 (undrawn facilities added in M3)",EUR
+afkl,2024,2024-12-31,cash_liquidity_to_revenue,0.220350297212,verified,"Cash liquidity 6,932 ÷ revenue 31,459 = 22.0%",pct
 afkl,2024,2024-12-31,ebitda,4108999999.9999995,verified,"Operating profit 1,466 + D&A 2,643 = 4,109",EUR
 afkl,2024,2024-12-31,ebitda_margin,0.130614450555,verified,"EBITDA 4,109 ÷ revenue 31,459 = 13.1%",pct
 afkl,2024,2024-12-31,fcf,-232000000.0,verified,"Cash from operations 3,496 − capex 3,728 = -232",EUR
@@ -186,14 +186,14 @@ afkl,2024,2024-12-31,ffo,3424999999.9999995,verified,"EBITDA 4,109 − interest 
 afkl,2024,2024-12-31,ffo_to_debt,0.233916131676,verified,"FFO 3,425 ÷ total debt 14,642 = 23.4%",pct
 afkl,2024,2024-12-31,gross_leverage,3.563397420297,verified,"Total debt 14,642 ÷ EBITDA 4,109 = 3.56x",x
 afkl,2024,2024-12-31,interest_coverage,6.511885895404,verified,"EBITDA 4,109 ÷ interest expense 631 = 6.51x",x
-afkl,2024,2024-12-31,net_debt,7710000000.000001,unverified,"Total debt 14,642 − cash and cash-like 6,932 = 7,710",EUR
-afkl,2024,2024-12-31,net_leverage,1.876368946216,unverified,"Net debt 7,710 ÷ EBITDA 4,109 = 1.88x",x
+afkl,2024,2024-12-31,net_debt,7710000000.000001,verified,"Total debt 14,642 − cash and cash-like 6,932 = 7,710",EUR
+afkl,2024,2024-12-31,net_leverage,1.876368946216,verified,"Net debt 7,710 ÷ EBITDA 4,109 = 1.88x",x
 afkl,2024,2024-12-31,total_debt,14642000000.0,verified,"Borrowings, non-current 7,254 + borrowings, current 1,692 + lease liabilities, non-current 4,714 + lease liabilities, current 982 = 14,642",EUR
-afkl,2025,2025-12-31,advance_ticket_cover,0.621755613882,unverified,"Advance ticket sales 4,264 ÷ cash and cash-like 6,858 = 62.2%",pct
+afkl,2025,2025-12-31,advance_ticket_cover,0.621755613882,verified,"Advance ticket sales 4,264 ÷ cash and cash-like 6,858 = 62.2%",pct
 afkl,2025,2025-12-31,capex_intensity,0.134789590087,verified,"Capex 4,449 ÷ revenue 33,007 = 13.5%",pct
-afkl,2025,2025-12-31,cash_like,6857999999.999999,unverified,"Cash and cash equivalents 4,714 + other cash-like items (company's net debt definition) 2,144 = 6,858",EUR
-afkl,2025,2025-12-31,cash_liquidity,6857999999.999999,unverified,"Cash and cash-like 6,858 (undrawn facilities added in M3)",EUR
-afkl,2025,2025-12-31,cash_liquidity_to_revenue,0.207774108522,unverified,"Cash liquidity 6,858 ÷ revenue 33,007 = 20.8%",pct
+afkl,2025,2025-12-31,cash_like,6857999999.999999,verified,"Cash and cash equivalents 4,714 + other cash-like items (company's net debt definition) 2,144 = 6,858",EUR
+afkl,2025,2025-12-31,cash_liquidity,6857999999.999999,verified,"Cash and cash-like 6,858 (undrawn facilities added in M3)",EUR
+afkl,2025,2025-12-31,cash_liquidity_to_revenue,0.207774108522,verified,"Cash liquidity 6,858 ÷ revenue 33,007 = 20.8%",pct
 afkl,2025,2025-12-31,ebitda,5056000000.0,verified,"Operating profit 2,002 + D&A 3,054 = 5,056",EUR
 afkl,2025,2025-12-31,ebitda_margin,0.153179628564,verified,"EBITDA 5,056 ÷ revenue 33,007 = 15.3%",pct
 afkl,2025,2025-12-31,fcf,606000000.0,verified,"Cash from operations 5,055 − capex 4,449 = 606",EUR
@@ -201,9 +201,9 @@ afkl,2025,2025-12-31,fcf_to_debt,0.03906401083,verified,"Free cash flow 606 ÷ t
 afkl,2025,2025-12-31,ffo,4250000000.0,verified,"EBITDA 5,056 − interest paid 670 − tax paid 136 = 4,250",EUR
 afkl,2025,2025-12-31,ffo_to_debt,0.27396377232,verified,"FFO 4,250 ÷ total debt 15,513 = 27.4%",pct
 afkl,2025,2025-12-31,gross_leverage,3.068235759494,verified,"Total debt 15,513 ÷ EBITDA 5,056 = 3.07x",x
-afkl,2025,2025-12-31,interest_coverage,8.06379585327,unverified,"EBITDA 5,056 ÷ interest expense 627 = 8.06x",x
-afkl,2025,2025-12-31,net_debt,8655000000.0,unverified,"Total debt 15,513 − cash and cash-like 6,858 = 8,655",EUR
-afkl,2025,2025-12-31,net_leverage,1.711827531646,unverified,"Net debt 8,655 ÷ EBITDA 5,056 = 1.71x",x
+afkl,2025,2025-12-31,interest_coverage,8.06379585327,verified,"EBITDA 5,056 ÷ interest expense 627 = 8.06x",x
+afkl,2025,2025-12-31,net_debt,8655000000.0,verified,"Total debt 15,513 − cash and cash-like 6,858 = 8,655",EUR
+afkl,2025,2025-12-31,net_leverage,1.711827531646,verified,"Net debt 8,655 ÷ EBITDA 5,056 = 1.71x",x
 afkl,2025,2025-12-31,total_debt,15513000000.0,verified,"Borrowings, non-current 7,265 + borrowings, current 1,803 + lease liabilities, non-current 5,487 + lease liabilities, current 958 = 15,513",EUR
 easyjet,2021,2021-09-30,advance_ticket_cover,0.238687782805,verified,"Advance ticket sales 844 ÷ cash and cash-like 3,536 = 23.9%",pct
 easyjet,2021,2021-09-30,capex_intensity,0.10219478738,verified,"Capex 149 ÷ revenue 1,458 = 10.2%",pct
