@@ -1,7 +1,8 @@
 """Command line: `uv run tearsheet <command>`.
 
     load         download (or read from cache) every v1 filing and rebuild the facts database
-    report       write the reports: docs/m1 (figures) and docs/m2 (metrics, peers, reconciliation)
+    report       write the reports: docs/m1 (figures), docs/m2 (metrics, peers, reconciliation)
+                 and docs/m3 (figures read from the report text, answer key score)
     all          load, then report
     extract      ask the AI to read operating figures from each report not read before
                  (costs tokens; answers are recorded, so `load` replays them for free).
@@ -21,6 +22,7 @@ from pathlib import Path
 
 from tearsheet import reports
 from tearsheet.config import load_issuers
+from tearsheet.extract import report as extraction_reports
 from tearsheet.ingest.client import Client
 from tearsheet.metrics import reports as metric_reports
 from tearsheet.pipeline import load_all
@@ -82,6 +84,17 @@ def main() -> None:
         metric_reports.write_all()
         print(f"coverage: {totals}; check sheet: {path}")
         print(f"figures entered by hand: prior-year control {matched}/{checked} match")
+        read, scored = extraction_reports.write_all()
+        print(
+            f"read from report text: {read['verified']} verified, {read['unverified']} "
+            f"unverified, from {read['reports']} reports (docs/m3/extractions.md)"
+        )
+        if scored is not None:
+            print(
+                f"answer key: {scored.counts['verified_correct']}/{scored.total} verified and "
+                f"correct ({scored.share_verified:.0%}), {scored.counts['verified_wrong']} "
+                "verified but wrong (docs/m3/answer_key_score.md)"
+            )
 
 
 def _extraction_summary(extraction) -> str:
