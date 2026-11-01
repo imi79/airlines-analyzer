@@ -65,7 +65,10 @@ reports ✗, so the pass is real.
 share. Your own model would also test those; `docs/m2/reconciliation.xlsx` is still there if you
 want to do it.
 
-## One task left
+## One task left (done)
+
+**Update 2026-11-01:** Imane accepted the 8 figures. They are now verified and the * marks are
+gone from the reports; no value changed.
 
 **Accept 8 new hand-entered figures** in `docs/m1/fy2025_entries.md` (status "unverified"):
    - Air France-KLM: interest expense 2025 (627, page 3), and marketable securities + bonds from
