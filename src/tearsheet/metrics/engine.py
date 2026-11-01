@@ -99,5 +99,6 @@ def _run(issuer: Issuer, year: int, period_end: date, metric_id: str, ctx: Conte
     except NotMeaningful as nm:
         value, note, kind, reason = None, None, "not_meaningful", f"n.m.: {nm}"
     inputs = tuple(ctx.used)
-    status = "verified" if all(i.status == "verified" for i in inputs) else "unverified"
+    ok = ("verified", "overridden")  # an override carries Imane's name, date and reason
+    status = "verified" if all(i.status in ok for i in inputs) else "unverified"
     return Result(issuer.id, year, period_end, metric_id, value, kind, reason, note, inputs, status)

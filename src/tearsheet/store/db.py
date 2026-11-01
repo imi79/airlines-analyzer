@@ -136,6 +136,8 @@ def write_raw_facts(con, filing_id: str, facts: list[Fact]) -> None:
 
 
 def source_ref(fact: MappedFact, sha256: str | None) -> str:
+    if fact.ref is not None:  # extracted: document, location, quote, model, checks
+        return json.dumps(fact.ref, ensure_ascii=False, default=str)
     return json.dumps(
         {
             "filing_id": fact.filing_id,

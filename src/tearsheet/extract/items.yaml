@@ -1,0 +1,152 @@
+# Figures the AI reads from the report text (M3).
+#
+# unit: count (passengers, seat-km, aircraft), years, pct (stored as a fraction), amount
+#   (money; the currency must be shown in the quote).
+# period: flow (over the fiscal year), instant (at year end), forward (at year end, about the
+#   next twelve months, e.g. a fuel hedge ratio).
+# terms: words that signal the figure, by report language. They steer the section locator,
+#   and the quote must contain one of them (any language) for the figure to be verified.
+# range: plausible values in full units (for amounts: as a share of revenue, `range_of_revenue`).
+#   A value outside it stays unverified with the reason.
+# max_change: largest plausible year-on-year ratio (e.g. 4 = up to 4x or down to a quarter).
+
+items:
+  passengers:
+    label: Passengers
+    unit: count
+    period: flow
+    applies_to: [airline, airport]
+    definition: >-
+      Airlines: passengers carried in the fiscal year. Airports: passengers handled (arriving,
+      departing and transit), for the scope given below.
+    range: [1000000, 500000000]
+    max_change: 4
+    terms:
+      en: [passengers carried, passengers, passenger numbers, PAX]
+      fr: [passagers transportés, millions de passagers, passagers, PAX]
+      es: [pasajeros, tráfico de pasajeros]
+      de: [Passagiere, Fluggäste, Passagieraufkommen, Passagierzahl]
+
+  ask:
+    label: ASK (available seat kilometres)
+    unit: count
+    period: flow
+    applies_to: [airline]
+    definition: Available seat kilometres (capacity) for the fiscal year.
+    range: [1000000000, 500000000000]
+    max_change: 4
+    terms:
+      en: [available seat kilometres, available seat kilometers, available seat km, ASK]
+      fr: [sièges-kilomètres offerts, sièges kilomètres offerts, siège-kilomètre offert, SKO, ASK]
+
+  rpk:
+    label: RPK (revenue passenger kilometres)
+    unit: count
+    period: flow
+    applies_to: [airline]
+    definition: Revenue passenger kilometres (traffic) for the fiscal year.
+    range: [1000000000, 500000000000]
+    max_change: 5
+    terms:
+      en: [revenue passenger kilometres, revenue passenger kilometers, revenue passenger km, RPK]
+      fr: [passagers-kilomètres transportés, passagers kilomètres transportés, PKT, RPK]
+
+  load_factor:
+    label: Load factor (as reported)
+    unit: pct
+    period: flow
+    applies_to: [airline]
+    definition: >-
+      Passenger load factor as printed by the company (used only to cross-check RPK ÷ ASK).
+    range: [0.3, 1.0]
+    terms:
+      en: [load factor, seat load factor]
+      fr: [coefficient d'occupation, coefficient de remplissage, taux de remplissage]
+
+  passenger_revenue:
+    label: Passenger revenue
+    unit: amount
+    period: flow
+    applies_to: [airline]
+    definition: >-
+      Revenue from passenger tickets for the fiscal year (scheduled passenger revenue, with
+      ancillary revenue only if the company reports them together).
+    range_of_revenue: [0.3, 1.0]
+    max_change: 4
+    terms:
+      en: [passenger revenue, passenger ticket revenue, passenger revenues, ticket revenue]
+      fr: [chiffre d'affaires passage, recettes passage, activité passage, revenus passage]
+
+  fleet_count:
+    label: Fleet (aircraft in operation)
+    unit: count
+    period: instant
+    applies_to: [airline]
+    definition: >-
+      Number of aircraft in the fleet at the fiscal year end (in operation, owned and leased).
+    range: [20, 1500]
+    max_change: 2
+    terms:
+      en: [fleet, aircraft in operation, operating aircraft, aircraft]
+      fr: [flotte, avions en exploitation, appareils, avions]
+
+  fleet_age:
+    label: Fleet average age
+    unit: years
+    period: instant
+    applies_to: [airline]
+    definition: Average age of the fleet at the fiscal year end, in years.
+    range: [0.5, 30]
+    max_change: 2
+    terms:
+      en: [average age, average fleet age, fleet age]
+      fr: [âge moyen]
+
+  fuel_hedge_ratio:
+    label: Fuel hedge ratio (next twelve months)
+    unit: pct
+    period: forward
+    applies_to: [airline]
+    definition: >-
+      Share of the next twelve months' (or next fiscal year's) expected fuel needs that is
+      hedged, as stated at the fiscal year end.
+    range: [0.0, 1.0]
+    terms:
+      en: [hedged, hedge ratio, hedging, hedge]
+      fr: [couverture, couvert, couverts, couvertes]
+
+  undrawn_facilities:
+    label: Undrawn committed credit facilities
+    unit: amount
+    period: instant
+    applies_to: [airline, airport]
+    definition: >-
+      Committed credit facilities available but not drawn at the fiscal year end (revolving
+      credit facilities and other committed lines). If the report gives a total, give the total;
+      otherwise give each facility as a separate line marked as a component.
+    range_of_revenue: [0.0, 1.5]
+    terms:
+      en: [undrawn, revolving credit facility, RCF, committed facilities, credit facility,
+           unused, available facilities]
+      fr: [non tirée, non tirées, non utilisée, non utilisées, crédit renouvelable,
+           ligne de crédit, lignes de crédit, facilité de crédit, revolving credit facility, RCF]
+      es: [no dispuesto, no dispuestas, línea de crédito, líneas de crédito, crédito sindicado,
+           disponible, póliza de crédito, RCF]
+      de: [nicht ausgenützt, nicht ausgenutzt, nicht in Anspruch genommen, Kreditlinien,
+           Kreditrahmen, Betriebsmittellinie, Linien]
+
+  aero_revenue:
+    label: Aeronautical revenue
+    unit: amount
+    period: flow
+    applies_to: [airport]
+    definition: >-
+      Revenue of the aeronautical (aviation) segment for the fiscal year, for the scope given
+      below: airport charges, security and other aviation revenue.
+    range_of_revenue: [0.1, 0.9]
+    max_change: 4
+    terms:
+      fr: [activités aéronautiques, redevances aéronautiques, aéronautique]
+      es: [aeronáutico, aeronáuticos, aeronáutica, actividad aeroportuaria]
+      de: [Aviation, Segment Airport, Flughafenentgelte, Airport]
+      en: [aviation, aeronautical]

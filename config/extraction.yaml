@@ -1,0 +1,42 @@
+# Scope of each extracted figure, per issuer (M3, decision 0011).
+#
+# Companies report passengers and fleet on different perimeters (group or main brand; group
+# network or main hub). The scope below is given to the AI with the request, shown in the
+# audit trail, and used as the tearsheet footnote. For airports, passengers follow the scope
+# of the aeronautical segment, so that aeronautical revenue per passenger compares like with
+# like.
+
+issuers:
+  afkl:
+    passengers: Air France-KLM group total (Air France, KLM and Transavia together).
+    ask: Group total (all passenger airlines of the group).
+    rpk: Group total (all passenger airlines of the group).
+    fleet_count: Group fleet in operation at year end, all fleets together.
+  iag:
+    passengers: IAG group total (all airlines).
+    fleet_count: Group fleet in service at year end.
+  finnair:
+    passengers: Finnair passengers carried (total).
+    fleet_count: Finnair fleet operated at year end (own fleet and fleet operated by others
+      for Finnair, as reported in the fleet total).
+  easyjet:
+    passengers: easyJet passengers carried (group).
+    fleet_count: Total fleet at year end (owned and leased).
+  norwegian:
+    passengers: Group total as reported (Norwegian and, from 2024, Widerøe), or Norwegian
+      alone when no group total is given; say which in `scope`.
+    fleet_count: Group fleet in operation at year end.
+  wizz:
+    passengers: Wizz Air passengers carried (group).
+    fleet_count: Fleet at year end (total aircraft).
+  adp:
+    passengers: Paris Aéroport (Paris-Charles de Gaulle + Paris-Orly) only, not the group
+      network (which includes TAV Airports and equity-accounted airports).
+    aero_revenue: Revenue of the "Activités aéronautiques" (Aviation) segment, which covers
+      Paris airports.
+  aena:
+    passengers: Aena network airports in Spain only (not London Luton or Brazil).
+    aero_revenue: Revenue of the Aeronautical segment (Spanish airport network).
+  vie:
+    passengers: Vienna Airport only (not the group total including Malta and Košice).
+    aero_revenue: Revenue of the Airport segment (Segment Airport, Vienna).

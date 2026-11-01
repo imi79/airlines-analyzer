@@ -1,0 +1,53 @@
+# Which AI model the app uses, and where it lives (decision 0005).
+#
+# The AI does two jobs, nothing else:
+#   extraction (M3): reads operating figures (passengers, ASK, RPK, fleet, hedging, undrawn
+#                    credit lines, airport segment revenue) from the annual report text, each
+#                    with the exact sentence it came from. Code then checks every figure.
+#   drafting   (M4): writes the commentary with placeholders; code fills in every number.
+#
+# To change provider: point `use:` at another entry, or edit the entry in use.
+# Any service that speaks the OpenAI chat format works with kind: openai_compatible
+# (DeepSeek, OpenRouter, Mistral, Groq, Together, Azure OpenAI, a local model...).
+#
+# The API KEY is never written here. `api_key_env` is only the NAME of the environment
+# variable that holds it; the key itself goes in the cloud environment's settings.
+
+use: deepseek
+
+providers:
+  deepseek:
+    kind: openai_compatible
+    base_url: https://api.deepseek.com # <- the API address, from the provider's documentation
+    api_key_env: LLM_API_KEY # <- name of the environment variable that holds the key
+    models:
+      extraction: deepseek-chat # <- model names, from the provider's model list
+      drafting: deepseek-chat
+    # Optional, for the cost log: price in USD per million tokens, from the provider's
+    # pricing page. Left empty, the log shows tokens only.
+    price_per_million_tokens:
+      input: null
+      output: null
+
+  # Example of another OpenAI-compatible gateway; switch with `use: openrouter`.
+  openrouter:
+    kind: openai_compatible
+    base_url: https://openrouter.ai/api/v1
+    api_key_env: LLM_API_KEY
+    models:
+      extraction: deepseek/deepseek-chat
+      drafting: deepseek/deepseek-chat
+    price_per_million_tokens:
+      input: null
+      output: null
+
+  anthropic:
+    kind: anthropic
+    base_url: https://api.anthropic.com
+    api_key_env: LLM_API_KEY
+    models:
+      extraction: claude-haiku-5-5
+      drafting: claude-sonnet-5-5
+    price_per_million_tokens:
+      input: null
+      output: null
