@@ -1,10 +1,12 @@
 # Metrics catalog: one definition per metric, applied identically to every issuer.
 #
-# unit: amount (reporting currency), x (multiple), pct (stored as a fraction, shown as %).
+# unit: amount (reporting currency), x (multiple), pct (stored as a fraction, shown as %),
+#   count (passengers, seat-km, aircraft), years, per_km (reporting currency per seat-km or
+#   passenger-km, shown in cents), per_passenger (reporting currency per passenger).
 # higher_is_better: colours peer views and decides the rank (true, false, or null = not ranked).
 # definition: one line, reused as the tearsheet footnote.
-# needs: M3 for metrics that need figures extracted from the report text (shown as missing
-#   until then, never as zero).
+# Metrics using figures read from the report text (M3) are verified only if those figures
+# passed the grounding checks or were reviewed by Imane.
 # The formulas are in metrics/formulas.py under the same id. These definitions differ from
 # company-reported and rating-agency-adjusted figures: no pension or hybrid adjustments in v1.
 
@@ -86,24 +88,21 @@ metrics:
     unit: amount
     higher_is_better: true
     definition: >-
-      Cash and cash-like investments. Partial liquidity: undrawn committed facilities are
-      added in M3.
+      Cash and cash-like investments, without undrawn facilities (see Liquidity).
   cash_liquidity_to_revenue:
     label: Cash liquidity to revenue (partial)
     unit: pct
     higher_is_better: true
-    definition: Cash liquidity ÷ revenue (undrawn facilities added in M3).
+    definition: Cash liquidity ÷ revenue, without undrawn facilities.
   liquidity:
     label: Liquidity
     unit: amount
     higher_is_better: true
-    needs: M3
     definition: Cash + cash-like investments + undrawn committed facilities.
   liquidity_to_revenue:
     label: Liquidity to revenue
     unit: pct
     higher_is_better: true
-    needs: M3
     definition: Liquidity ÷ revenue.
   advance_ticket_cover:
     label: Advance ticket cover
@@ -125,70 +124,66 @@ metrics:
     label: Passengers
     unit: count
     higher_is_better: true
-    needs: M3
     definition: Passengers carried (airlines) or handled (airports), scope defined per company.
   ask:
     label: ASK
     unit: count
     higher_is_better: true
     applies_to: [airline]
-    needs: M3
     definition: Available seat kilometres.
   rpk:
     label: RPK
     unit: count
     higher_is_better: true
     applies_to: [airline]
-    needs: M3
     definition: Revenue passenger kilometres.
   load_factor:
     label: Load factor
     unit: pct
     higher_is_better: true
     applies_to: [airline]
-    needs: M3
     definition: RPK ÷ ASK.
   passenger_yield:
     label: Passenger yield
-    unit: amount
+    unit: per_km
     higher_is_better: true
     applies_to: [airline]
-    needs: M3
     definition: Passenger revenue ÷ RPK.
   rask:
     label: RASK
-    unit: amount
+    unit: per_km
     higher_is_better: true
     applies_to: [airline]
-    needs: M3
     definition: Revenue ÷ ASK.
   cask:
     label: CASK
-    unit: amount
+    unit: per_km
     higher_is_better: false
     applies_to: [airline]
-    needs: M3
     definition: (Revenue − operating profit) ÷ ASK.
   cask_ex_fuel:
     label: CASK ex-fuel
-    unit: amount
+    unit: per_km
     higher_is_better: false
     applies_to: [airline]
-    needs: M3
     definition: (Revenue − operating profit − fuel cost) ÷ ASK.
   fleet:
     label: Fleet
     unit: count
     higher_is_better: null
     applies_to: [airline]
-    needs: M3
-    definition: Aircraft in operation and average age.
+    definition: Aircraft in the fleet at year end.
+  fleet_age:
+    label: Fleet average age
+    unit: years
+    higher_is_better: false
+    applies_to: [airline]
+    definition: Average age of the fleet at year end.
   fuel_hedge_ratio:
     label: Fuel hedge ratio
     unit: pct
     higher_is_better: null
     applies_to: [airline]
-    needs: M3
     definition: Share of the next twelve months' fuel needs hedged.
 
   # --- Airport operating metrics ----------------------------------------------------------
@@ -197,26 +192,24 @@ metrics:
     unit: pct
     higher_is_better: true
     applies_to: [airport]
-    needs: M3
     definition: Passengers ÷ prior-year passengers − 1.
   revenue_per_passenger:
     label: Revenue per passenger
-    unit: amount
+    unit: per_passenger
     higher_is_better: true
     applies_to: [airport]
-    needs: M3
-    definition: Revenue ÷ passengers.
+    definition: >-
+      Revenue ÷ passengers (n.m. where group revenue covers airports outside the passenger
+      scope).
   aero_revenue_per_passenger:
     label: Aeronautical revenue per passenger
-    unit: amount
+    unit: per_passenger
     higher_is_better: true
     applies_to: [airport]
-    needs: M3
     definition: Aeronautical segment revenue ÷ passengers.
   non_aero_share:
     label: Non-aeronautical share
     unit: pct
     higher_is_better: true
     applies_to: [airport]
-    needs: M3
-    definition: Non-aeronautical revenue ÷ revenue.
+    definition: (Revenue − aeronautical segment revenue) ÷ revenue.

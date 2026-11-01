@@ -130,8 +130,8 @@ def _to_reporting_currency(c, issuer, year, period_end, convert) -> None:
         return
     try:
         c.value, note = convert(c.value, currency, issuer.currency, period_end[year])
-    except KeyError as exc:
-        c.failures.append(f"reported in {currency}; {exc.args[0]}")
+    except (KeyError, FileNotFoundError) as exc:
+        c.failures.append(f"reported in {currency}; no exchange rate ({exc.args[0]})")
         return
     c.decimals = None
     c.notes.append(note)

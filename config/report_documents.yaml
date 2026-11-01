@@ -1,0 +1,24 @@
+# Report documents supplied by Imane where the filings database has no electronic report for
+# the year (decision 0007). The AI reads them like the filings' own reports (M3); each file is
+# kept in documents/ and checked against its fingerprint before use.
+
+documents:
+  - id: adp-2025-comptes-consolides-fr
+    issuer: adp
+    fiscal_year: 2025
+    language: fr
+    document: Groupe ADP, comptes consolidés au 31 décembre 2025 (PDF)
+    file: groupe-adp-comptes-consolides-au-31-decembre-2025.pdf
+    sha256: 9b149d18efd2c62175579e41e92f5d2edcf8d529f5cc86b3fcf96da14ef522cc
+    supplied_by: Imane
+    supplied_on: 2026-11-01
+
+  - id: afkl-2025-consolidated-statements-en
+    issuer: afkl
+    fiscal_year: 2025
+    language: en
+    document: Air France-KLM consolidated financial statements as of December 31, 2025 (PDF)
+    file: 2025.12-air-france-klm-consolidated-financial-statements-and-notes.pdf
+    sha256: aaba4d2512928f6cf9efde24af67b05619459f1d0f891b42bbb084473d7d550f
+    supplied_by: Imane
+    supplied_on: 2026-11-01

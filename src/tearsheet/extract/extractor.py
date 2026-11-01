@@ -19,11 +19,12 @@ from tearsheet.config import CONFIG, Issuer
 from tearsheet.extract.documents import Document
 from tearsheet.extract.grounding import Checked, DocumentIndex, RawFigure, check_figure
 from tearsheet.extract.locator import items_for, locate, render
-from tearsheet.llm import LLM, LLMError, ToolResult, ToolSpec
+from tearsheet.llm import LLM, LLMError, NotRecorded, ToolResult, ToolSpec
 
 PROMPTS = Path(__file__).with_name("prompts")
 PROMPT_VERSION = "extract-v1"  # bump with every change to the prompt, the form or the request
 SCOPES = CONFIG / "extraction.yaml"
+NOT_RUN = "not extracted yet: no recorded AI answer (run `tearsheet extract`)"
 MONTHS = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split()
 
 
@@ -132,6 +133,9 @@ def extract_document(
             PROMPT_VERSION,
             label=f"{issuer.id} FY{doc.fiscal_year} {doc.doc_id}",
         )
+    except NotRecorded:
+        run.error = NOT_RUN
+        return run
     except LLMError as exc:
         run.error = str(exc)
         return run

@@ -107,6 +107,29 @@ class LLM:
         path.write_text(json.dumps(record, indent=1, ensure_ascii=False, sort_keys=True) + "\n")
         return self._result(record, digest, cached=False)
 
+    def check(self, job: str = "extraction") -> str:
+        """Send a tiny request to confirm the address, key and model work. Not recorded."""
+        s = self.settings
+        key = os.environ.get(s.api_key_env)
+        if not key:
+            raise MissingKey(f"the environment variable {s.api_key_env} is not set")
+        tool = ToolSpec(
+            "confirm",
+            "Confirm you can fill in a form.",
+            {"type": "object", "properties": {"ok": {"type": "boolean"}}, "required": ["ok"]},
+        )
+        build, parse = ADAPTERS[s.kind]
+        url, headers, body = build(
+            s.base_url, key, s.model(job), "Fill in the form.", "Set ok to true.", tool
+        )
+        data = self._post(url, headers, body)
+        arguments, usage = parse(data, tool)
+        served = data.get("model", s.model(job))
+        return (
+            f"{s.name} ({s.base_url}), model {served}: form filled {arguments}, "
+            f"{usage.input_tokens + usage.output_tokens} tokens"
+        )
+
     def _result(self, record: dict, digest: str, cached: bool) -> ToolResult:
         usage = Usage(**record["usage"])
         req = record["request"]

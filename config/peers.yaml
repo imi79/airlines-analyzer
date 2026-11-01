@@ -24,5 +24,13 @@ metrics:
   - fcf_to_debt
   - capex_intensity
   - cash_liquidity_to_revenue
+  - liquidity_to_revenue
   - advance_ticket_cover
   - fuel_share_of_costs
+  # Operating metrics read from the report text (M3). Unit revenues and costs (RASK, CASK,
+  # yield, revenue per passenger) are left out until the peer page converts currencies
+  # (decision 0011).
+  - load_factor
+  - fuel_hedge_ratio
+  - traffic_growth
+  - non_aero_share

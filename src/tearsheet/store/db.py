@@ -77,6 +77,43 @@ CREATE TABLE gaps (
     reason            VARCHAR NOT NULL,
     counts_as_missing BOOLEAN NOT NULL
 );
+
+-- Every line of every form the AI filled in (M3), with the outcome of the checks.
+CREATE TABLE extraction_log (
+    issuer        VARCHAR NOT NULL,
+    document      VARCHAR NOT NULL,
+    document_year INTEGER NOT NULL,
+    fiscal_year   INTEGER,
+    item          VARCHAR,
+    outcome       VARCHAR NOT NULL,  -- verified unverified not_found invalid not_run error
+    value         DECIMAL(38, 12),   -- full units, reporting currency (after conversion)
+    printed       VARCHAR,
+    scale         VARCHAR,
+    currency      VARCHAR,
+    quote         VARCHAR,
+    table_header  VARCHAR,
+    location      VARCHAR,           -- found by code in the report
+    scope         VARCHAR,
+    reasons       VARCHAR,           -- JSON list: checks failed, or why not found
+    notes         VARCHAR            -- JSON list
+);
+
+-- Every AI request (M3), for the run manifest: model, prompt version, tokens, cost.
+CREATE TABLE llm_calls (
+    issuer         VARCHAR NOT NULL,
+    document       VARCHAR NOT NULL,
+    job            VARCHAR NOT NULL,
+    provider       VARCHAR,
+    model          VARCHAR,
+    prompt_version VARCHAR,
+    request_hash   VARCHAR,
+    input_tokens   INTEGER,
+    output_tokens  INTEGER,
+    cost_usd       DECIMAL(18, 6),
+    from_record    BOOLEAN,
+    passage_chars  INTEGER,
+    error          VARCHAR
+);
 """
 
 
@@ -230,3 +267,89 @@ def write_gaps(con, gaps: list[Gap]) -> None:
         "INSERT INTO gaps VALUES (?, ?, ?, ?, ?)",
         [(g.issuer, g.fiscal_year, g.line, g.reason, g.counts_as_missing) for g in gaps],
     )
+
+
+def write_extraction(con, extraction) -> None:
+    """The extraction log and the AI calls for one issuer (an IssuerExtraction)."""
+    issuer = extraction.issuer.id
+    rows, calls = [], []
+    final = {
+        (c.doc.doc_id, c.fiscal_year, c.item): c for c in extraction.candidates
+    }  # after cross-checks and reviews
+    for run in extraction.runs:
+        doc = run.doc
+        r = run.result
+        calls.append(
+            (
+                issuer,
+                doc.doc_id,
+                "extraction",
+                r.provider if r else None,
+                r.model if r else None,
+                r.prompt_version if r else None,
+                r.request_hash if r else None,
+                r.usage.input_tokens if r else None,
+                r.usage.output_tokens if r else None,
+                r.cost_usd if r else None,
+                r.cached if r else None,
+                run.passage_chars,
+                run.error,
+            )
+        )
+        if run.error:
+            outcome = "not_run" if run.error.startswith("not extracted yet") else "error"
+            rows.append(_short_row(issuer, doc.doc_id, doc.fiscal_year, outcome, run.error))
+        for msg in run.invalid:
+            rows.append(_short_row(issuer, doc.doc_id, doc.fiscal_year, "invalid", msg))
+        for raw in run.not_found:
+            rows.append(
+                _short_row(
+                    issuer,
+                    doc.doc_id,
+                    doc.fiscal_year,
+                    "not_found",
+                    raw.comment or "",
+                    raw.fiscal_year,
+                    raw.item,
+                    raw.scope,
+                )  # fmt: skip
+            )
+        for f in run.figures:
+            c = final.get((doc.doc_id, f.fiscal_year, f.item))
+            status = c.status if c else ("verified" if f.verified else "unverified")
+            reasons = list(c.failures) if c else list(f.failures)
+            notes = list(c.notes) if c else list(f.notes)
+            value = c.value if c and len(c.figures) == 1 else f.value
+            rows.append(
+                (
+                    issuer,
+                    doc.doc_id,
+                    doc.fiscal_year,
+                    f.fiscal_year,
+                    f.item,
+                    "verified" if status in ("verified", "overridden") else "unverified",
+                    value,
+                    f.raw.printed_value,
+                    f.raw.scale,
+                    f.currency,
+                    f.raw.quote,
+                    f.raw.table_header,
+                    f.location,
+                    f.raw.scope,
+                    json.dumps(reasons, ensure_ascii=False),
+                    json.dumps(notes, ensure_ascii=False),
+                )
+            )
+    for doc_id, year, reason in extraction.skipped:
+        rows.append(_short_row(issuer, doc_id, year, "not_run", reason))
+    if rows:
+        con.executemany(f"INSERT INTO extraction_log VALUES ({', '.join('?' * 16)})", rows)
+    if calls:
+        con.executemany(f"INSERT INTO llm_calls VALUES ({', '.join('?' * 13)})", calls)
+
+
+def _short_row(issuer, doc_id, doc_year, outcome, reason, year=None, item=None, scope=None):
+    """An extraction log row without a value: not run, error, invalid line or not found."""
+    no_value = (None,) * 7  # value, printed, scale, currency, quote, header, location
+    reasons = json.dumps([reason], ensure_ascii=False)
+    return (issuer, doc_id, doc_year, year, item, outcome, *no_value, scope, reasons, None)

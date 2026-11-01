@@ -5,6 +5,11 @@ The example airline (FY2024):
     borrowings 300 non-current + 100 current   leases 150 non-current + 50 current
     cash 200   short-term deposits 50   advance ticket sales 125
     interest expense 20   interest paid 18   tax paid 10   cash from operations 160   capex 90
+  read from the report text (M3):
+    ASK 20,000   RPK 16,000   passenger revenue 800   passengers 500   fleet 50 aircraft
+    average age 9.5 years   fuel hedged 60%   undrawn committed facilities 150
+
+The example airport (FY2024): revenue 1,000, aeronautical revenue 600, passengers 40 (FY2023: 32).
 """
 
 from datetime import date
@@ -58,6 +63,14 @@ FIGURES = {
     "tax_paid": 10,
     "cfo": 160,
     "capex": 90,
+    "ask": 20000,
+    "rpk": 16000,
+    "passenger_revenue": 800,
+    "passengers": 500,
+    "fleet_count": 50,
+    "fleet_age": Decimal("9.5"),
+    "fuel_hedge_ratio": Decimal("0.6"),
+    "undrawn_facilities": 150,
 }
 
 
@@ -112,6 +125,19 @@ def value(results, metric):
         ("cash_liquidity_to_revenue", Decimal("0.25")),  # 250 / 1,000
         ("advance_ticket_cover", Decimal("0.5")),  # 125 / 250
         ("fuel_share_of_costs", Decimal("0.3")),  # 270 / (1,000 - 100)
+        ("liquidity", Decimal(400)),  # 250 + 150
+        ("liquidity_to_revenue", Decimal("0.4")),  # 400 / 1,000
+        ("passengers", Decimal(500)),
+        ("ask", Decimal(20000)),
+        ("rpk", Decimal(16000)),
+        ("load_factor", Decimal("0.8")),  # 16,000 / 20,000
+        ("passenger_yield", Decimal("0.05")),  # 800 / 16,000
+        ("rask", Decimal("0.05")),  # 1,000 / 20,000
+        ("cask", Decimal("0.045")),  # (1,000 - 100) / 20,000
+        ("cask_ex_fuel", Decimal("0.0315")),  # (1,000 - 100 - 270) / 20,000
+        ("fleet", Decimal(50)),
+        ("fleet_age", Decimal("9.5")),
+        ("fuel_hedge_ratio", Decimal("0.6")),
     ],
 )
 def test_metric_on_the_example_airline(metric, expected):
@@ -179,10 +205,73 @@ def test_missing_input_gives_a_reason_never_zero():
     assert "Income tax paid not available" in results["ffo"].reason
 
 
-def test_metrics_needing_report_text_wait_for_m3():
-    results = run()
-    assert results["ask"].kind == "needs_m3"
-    assert results["liquidity"].kind == "needs_m3"
+AIRPORT_FIGURES = {"aero_revenue": 600, "passengers": 40}
+AIRPORT_DROP = ("contract_liabilities", "fuel_cost", "ask", "rpk", "passenger_revenue")
+
+
+def airport(prior=32, settings=None):
+    figures = {**FIGURES, **AIRPORT_FIGURES}
+    facts = [fact(k, v) for k, v in figures.items() if k not in AIRPORT_DROP]
+    if prior is not None:
+        facts.append(fact("passengers", prior, year=2023))
+    results = compute(AIRPORT, facts, settings={**SETTINGS, **(settings or {})})
+    return {r.metric: r for r in results if r.fiscal_year == 2024}
+
+
+@pytest.mark.parametrize(
+    "metric, expected",
+    [
+        ("traffic_growth", Decimal("0.25")),  # 40 / 32 - 1
+        ("revenue_per_passenger", Decimal(25)),  # 1,000 / 40
+        ("aero_revenue_per_passenger", Decimal(15)),  # 600 / 40
+        ("non_aero_share", Decimal("0.4")),  # (1,000 - 600) / 1,000
+    ],
+)
+def test_metric_on_the_example_airport(metric, expected):
+    result = airport()[metric]
+    assert result.kind == "value", result.reason
+    assert result.value == expected
+    assert result.note
+
+
+def test_traffic_growth_needs_the_prior_year():
+    result = airport(prior=None)["traffic_growth"]
+    assert result.kind == "missing"
+    assert "Passengers not available for FY2023" in result.reason
+
+
+def test_revenue_per_passenger_can_be_set_not_meaningful():
+    reason = "group revenue includes airports outside the passenger scope"
+    result = airport(settings={"revenue_per_passenger_not_meaningful": reason})
+    assert result["revenue_per_passenger"].kind == "not_meaningful"
+    assert reason in result["revenue_per_passenger"].reason
+
+
+def test_liquidity_without_undrawn_facilities_is_missing_not_cash_only():
+    results = run(drop=("undrawn_facilities",))
+    assert results["liquidity"].kind == "missing"
+    assert "Undrawn committed credit facilities not available" in results["liquidity"].reason
+    assert results["cash_liquidity"].value == Decimal(250)  # the partial figure stays
+
+
+def test_operating_notes_show_the_working():
+    results = run({k: v * 1_000_000 for k, v in FIGURES.items() if k in ("revenue", "ask")})
+    assert results["rask"].note == "Revenue 1,000 ÷ ASK 20.0bn = 5.00 cents"
+
+
+def test_unverified_extracted_figure_makes_the_ratio_unverified():
+    facts = [fact(k, v) for k, v in FIGURES.items() if k != "ask"]
+    facts.append(fact("ask", 20000, status="unverified"))
+    results = {r.metric: r for r in compute(AIRLINE, facts, settings=SETTINGS)}
+    assert results["rask"].status == "unverified"
+    assert results["fleet"].status == "verified"
+
+
+def test_overridden_figure_counts_as_reviewed():
+    facts = [fact(k, v) for k, v in FIGURES.items() if k != "ask"]
+    facts.append(fact("ask", 20000, status="overridden"))
+    results = {r.metric: r for r in compute(AIRLINE, facts, settings=SETTINGS)}
+    assert results["rask"].status == "verified"
 
 
 def test_airline_only_metrics_are_skipped_for_airports():

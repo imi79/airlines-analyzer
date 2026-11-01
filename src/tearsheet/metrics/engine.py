@@ -14,6 +14,7 @@ from tearsheet.metrics.formulas import FORMULAS, Context, Input, Missing, NotMea
 from tearsheet.normalize.mapper import CONCEPT_MAP, MappedFact
 
 CATALOG = Path(__file__).with_name("catalog.yaml")
+ITEMS = Path(__file__).parents[1] / "extract" / "items.yaml"  # figures read from report text
 SETTINGS = CONFIG / "metric_settings.yaml"
 NEEDS_M3 = "Needs figures extracted from the report text (M3)."
 
@@ -44,7 +45,12 @@ def load_settings(issuer: Issuer, path: Path = SETTINGS) -> dict:
 
 def labels(catalog: dict[str, dict]) -> dict[str, str]:
     lines = yaml.safe_load(CONCEPT_MAP.read_text())["lines"]
-    return {k: v["label"] for k, v in lines.items()} | {k: v["label"] for k, v in catalog.items()}
+    extracted = yaml.safe_load(ITEMS.read_text())["items"]
+    return (
+        {k: v["label"] for k, v in lines.items()}
+        | {k: v["label"] for k, v in extracted.items()}
+        | {k: v["label"] for k, v in catalog.items()}
+    )
 
 
 def compute(
@@ -65,7 +71,7 @@ def compute(
     for year in sorted(by_year):
         lines = by_year[year]
         period_end = max(f.period_end for f in lines.values())
-        ctx = Context(issuer.type, year, lines, names, settings)
+        ctx = Context(issuer.type, year, lines, names, settings, prior=by_year.get(year - 1, {}))
         for metric_id, spec in catalog.items():
             if spec.get("applies_to") and issuer.type not in spec["applies_to"]:
                 continue

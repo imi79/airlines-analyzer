@@ -37,9 +37,12 @@ RECONCILE_METRICS = [
     "advance_ticket_cover",
 ]
 TOLERANCE = {"x": Decimal("0.05"), "pct": Decimal("0.001")}  # 0.05x and 0.1 point
-UNREVIEWED = "uses figures entered by hand that are awaiting review"
+UNREVIEWED = "uses figures not yet verified (entered by hand, or read from the report text)"
 STAR = " *"
-STAR_NOTE = "\* Uses figures entered by hand that are awaiting Imane's review."
+STAR_NOTE = (
+    "\\* Uses a figure not yet verified: entered by hand and awaiting Imane's review, or read "
+    "from the report text by the AI without passing every check (see `docs/m3/extractions.md`)."
+)
 
 
 def fmt(value, unit: str, currency: str = "") -> str:
@@ -50,6 +53,18 @@ def fmt(value, unit: str, currency: str = "") -> str:
         return f"{v:.2f}x"
     if unit == "pct":
         return f"{v * 100:.1f}%"
+    if unit == "count":
+        if abs(v) >= 1_000_000_000:
+            return f"{v / 1_000_000_000:,.1f}bn"
+        if abs(v) >= 1_000_000:
+            return f"{v / 1_000_000:,.1f}m"
+        return f"{v:,.0f}"
+    if unit == "years":
+        return f"{v:.1f} yrs"
+    if unit == "per_km":
+        return f"{currency} {v * 100:.2f}c".strip()
+    if unit == "per_passenger":
+        return f"{currency} {v:.2f}".strip()
     millions = v / Decimal(1_000_000)
     text = f"{millions:,.1f}" if abs(millions) < 100 else f"{millions:,.0f}"
     return f"{currency} {text}m".strip()
@@ -109,7 +124,7 @@ def metrics_report(db_path: Path = DB_PATH, out: Path = OUT) -> None:
         STAR_NOTE,
         "",
     ]
-    shown = [k for k, v in catalog.items() if v.get("needs") != "M3"]
+    shown = list(catalog)
     for issuer in load_issuers():
         years = ends[ends.issuer == issuer.id].sort_values("fiscal_year")
         labels = [fiscal_label(int(r.fiscal_year), r.period_end.date()) for r in years.itertuples()]

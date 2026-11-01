@@ -42,6 +42,7 @@ class Context:
     settings: dict
     results: dict = field(default_factory=dict)  # metric id -> Result, filled as computed
     used: list[Input] = field(default_factory=list)
+    prior: dict = field(default_factory=dict)  # line id -> MappedFact for the year before
 
     def has(self, line: str) -> bool:
         return line in self.lines
@@ -50,6 +51,13 @@ class Context:
         fact = self.lines.get(line)
         if fact is None:
             raise Missing(f"{self.labels[line]} not available for FY{self.fiscal_year}")
+        self.used.append(Input(line, self.labels[line], fact.value, fact.filing_id, fact.status))
+        return fact.value
+
+    def prior_line(self, line: str) -> Decimal:
+        fact = self.prior.get(line)
+        if fact is None:
+            raise Missing(f"{self.labels[line]} not available for FY{self.fiscal_year - 1}")
         self.used.append(Input(line, self.labels[line], fact.value, fact.filing_id, fact.status))
         return fact.value
 
@@ -71,6 +79,19 @@ def ratio(top: Decimal, bottom: Decimal) -> Decimal:
     if bottom <= 0:
         raise NotMeaningful("denominator is zero or negative")
     return top / bottom
+
+
+def big(value: Decimal) -> str:
+    """Counts for a note: 134.5bn, 93.4m, 356."""
+    if abs(value) >= 1_000_000_000:
+        return f"{value / 1_000_000_000:,.1f}bn"
+    if abs(value) >= 1_000_000:
+        return f"{value / 1_000_000:,.1f}m"
+    return f"{value:,.0f}"
+
+
+def cents(value: Decimal) -> str:
+    return f"{value * 100:.2f} cents"
 
 
 def x(value: Decimal) -> str:
@@ -227,7 +248,7 @@ def capex_intensity(c: Context) -> tuple[Decimal, str]:
 
 def cash_liquidity(c: Context) -> tuple[Decimal, str]:
     value = c.metric("cash_like")
-    return value, f"Cash and cash-like {m(value)} (undrawn facilities added in M3)"
+    return value, f"Cash and cash-like {m(value)} (without undrawn facilities)"
 
 
 def cash_liquidity_to_revenue(c: Context) -> tuple[Decimal, str]:
@@ -252,6 +273,125 @@ def fuel_share_of_costs(c: Context) -> tuple[Decimal, str]:
     )
 
 
+def liquidity(c: Context) -> tuple[Decimal, str]:
+    cash, undrawn = c.metric("cash_like"), c.line("undrawn_facilities")
+    value = cash + undrawn
+    return value, (
+        f"Cash and cash-like {m(cash)} + undrawn committed facilities {m(undrawn)} = {m(value)}"
+    )
+
+
+def liquidity_to_revenue(c: Context) -> tuple[Decimal, str]:
+    liq, rev = c.metric("liquidity"), c.line("revenue")
+    value = ratio(liq, rev)
+    return value, f"Liquidity {m(liq)} ÷ revenue {m(rev)} = {pct(value)}"
+
+
+# --- Operating metrics (figures read from the report text, M3) ------------------------------
+
+
+def _figure(c: Context, line: str, unit: str = "count") -> tuple[Decimal, str]:
+    value = c.line(line)
+    shown = big(value) if unit == "count" else f"{value:.1f} years"
+    return value, f"{c.labels[line]} {shown}, read from the report"
+
+
+def passengers(c: Context) -> tuple[Decimal, str]:
+    return _figure(c, "passengers")
+
+
+def ask(c: Context) -> tuple[Decimal, str]:
+    return _figure(c, "ask")
+
+
+def rpk(c: Context) -> tuple[Decimal, str]:
+    return _figure(c, "rpk")
+
+
+def fleet(c: Context) -> tuple[Decimal, str]:
+    return _figure(c, "fleet_count")
+
+
+def fleet_age(c: Context) -> tuple[Decimal, str]:
+    return _figure(c, "fleet_age", "years")
+
+
+def fuel_hedge_ratio(c: Context) -> tuple[Decimal, str]:
+    value = c.line("fuel_hedge_ratio")
+    return value, f"Fuel hedged for the next twelve months {pct(value)}, read from the report"
+
+
+def load_factor(c: Context) -> tuple[Decimal, str]:
+    traffic, capacity = c.line("rpk"), c.line("ask")
+    value = ratio(traffic, capacity)
+    return value, f"RPK {big(traffic)} ÷ ASK {big(capacity)} = {pct(value)}"
+
+
+def passenger_yield(c: Context) -> tuple[Decimal, str]:
+    revenue, traffic = c.line("passenger_revenue"), c.line("rpk")
+    value = ratio(revenue, traffic)
+    return value, f"Passenger revenue {m(revenue)} ÷ RPK {big(traffic)} = {cents(value)}"
+
+
+def rask(c: Context) -> tuple[Decimal, str]:
+    rev, capacity = c.line("revenue"), c.line("ask")
+    value = ratio(rev, capacity)
+    return value, f"Revenue {m(rev)} ÷ ASK {big(capacity)} = {cents(value)}"
+
+
+def cask(c: Context) -> tuple[Decimal, str]:
+    rev, op, capacity = c.line("revenue"), c.line("operating_profit"), c.line("ask")
+    value = ratio(rev - op, capacity)
+    return value, (
+        f"Operating costs {m(rev - op)} (revenue {m(rev)} − operating profit {m(op)}) ÷ ASK "
+        f"{big(capacity)} = {cents(value)}"
+    )
+
+
+def cask_ex_fuel(c: Context) -> tuple[Decimal, str]:
+    rev, op, fuel = c.line("revenue"), c.line("operating_profit"), c.line("fuel_cost")
+    capacity = c.line("ask")
+    costs = rev - op - fuel
+    value = ratio(costs, capacity)
+    return value, (
+        f"Operating costs excluding fuel {m(costs)} (revenue {m(rev)} − operating profit "
+        f"{m(op)} − fuel {m(fuel)}) ÷ ASK {big(capacity)} = {cents(value)}"
+    )
+
+
+def traffic_growth(c: Context) -> tuple[Decimal, str]:
+    now, before = c.line("passengers"), c.prior_line("passengers")
+    if before <= 0:
+        raise NotMeaningful("no passengers the year before")
+    value = now / before - 1
+    return value, (
+        f"Passengers {big(now)} ÷ prior-year passengers {big(before)} − 1 = {pct(value)}"
+    )
+
+
+def revenue_per_passenger(c: Context) -> tuple[Decimal, str]:
+    reason = c.settings.get("revenue_per_passenger_not_meaningful")
+    if reason:
+        raise NotMeaningful(reason.strip())
+    rev, pax = c.line("revenue"), c.line("passengers")
+    value = ratio(rev, pax)
+    return value, f"Revenue {m(rev)} ÷ passengers {big(pax)} = {value:.2f}"
+
+
+def aero_revenue_per_passenger(c: Context) -> tuple[Decimal, str]:
+    aero, pax = c.line("aero_revenue"), c.line("passengers")
+    value = ratio(aero, pax)
+    return value, f"Aeronautical revenue {m(aero)} ÷ passengers {big(pax)} = {value:.2f}"
+
+
+def non_aero_share(c: Context) -> tuple[Decimal, str]:
+    rev, aero = c.line("revenue"), c.line("aero_revenue")
+    value = ratio(rev - aero, rev)
+    return value, (
+        f"(Revenue {m(rev)} − aeronautical revenue {m(aero)}) ÷ revenue {m(rev)} = {pct(value)}"
+    )
+
+
 FORMULAS: dict[str, Callable[[Context], tuple[Decimal, str]]] = {
     "ebitda": ebitda,
     "ebitda_margin": ebitda_margin,
@@ -270,4 +410,21 @@ FORMULAS: dict[str, Callable[[Context], tuple[Decimal, str]]] = {
     "cash_liquidity_to_revenue": cash_liquidity_to_revenue,
     "advance_ticket_cover": advance_ticket_cover,
     "fuel_share_of_costs": fuel_share_of_costs,
+    "liquidity": liquidity,
+    "liquidity_to_revenue": liquidity_to_revenue,
+    "passengers": passengers,
+    "ask": ask,
+    "rpk": rpk,
+    "load_factor": load_factor,
+    "passenger_yield": passenger_yield,
+    "rask": rask,
+    "cask": cask,
+    "cask_ex_fuel": cask_ex_fuel,
+    "fleet": fleet,
+    "fleet_age": fleet_age,
+    "fuel_hedge_ratio": fuel_hedge_ratio,
+    "traffic_growth": traffic_growth,
+    "revenue_per_passenger": revenue_per_passenger,
+    "aero_revenue_per_passenger": aero_revenue_per_passenger,
+    "non_aero_share": non_aero_share,
 }
