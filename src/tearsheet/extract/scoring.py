@@ -54,7 +54,7 @@ class KeyLine:
     document: str
     location: str
     snippet: str
-    group: str = "first"  # "first", "holdout" or "blind" (decision 0014)
+    group: str = "first"  # "first", "holdout", "blind" (decision 0014) or "fourth" (M4)
 
 
 @dataclass(frozen=True)

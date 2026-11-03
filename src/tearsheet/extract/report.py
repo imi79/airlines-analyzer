@@ -211,17 +211,17 @@ def score_report(
     key = load_key(key_path)
     scored = score(key, extracted_from_db(db_path))
     s = summarise(scored)
-    groups = ("first", "holdout", "blind")
+    groups = ("first", "holdout", "blind", "fourth")
     sets = {g: summarise([x for x in scored if x.key.group == g]) for g in groups}
-    held, blind = sets["holdout"], sets["blind"]
+    held, blind, fourth = sets["holdout"], sets["blind"], sets["fourth"]
     # The newest blind set is the clean measure: it was written before the last change.
-    latest = blind if blind.total else held
+    latest = fourth if fourth.total else blind if blind.total else held
     enough = s.enough_verified and (latest.total == 0 or latest.enough_verified)
     items = load_items()
     names = {i.id: i for i in load_issuers()}
     tick = {True: "[x]", False: "[ ]"}
     share = f"{s.counts['verified_correct']} of {s.total} ({s.share_verified:.0%}) on all lines"
-    for name, x in (("held-out", held), ("blind", blind)):
+    for name, x in (("held-out", held), ("blind", blind), ("fourth (FY2022)", fourth)):
         if x.total:
             share += (
                 f"; {x.counts['verified_correct']} of {x.total} ({x.share_verified:.0%}) "
@@ -236,8 +236,9 @@ def score_report(
         "review. Values match when they agree within the rounding of the printed figures. "
         "*First* lines were written before the first run; *held-out* lines before the second "
         "run; *blind* lines after the second run and before the check fixes that followed it, "
-        "so the final code is judged on lines it was never tuned on (decision 0014). The 80% "
-        "box needs all lines and the blind lines alone.",
+        "so the final code is judged on lines it was never tuned on (decision 0014); *fourth* "
+        "lines from the FY2022 reports, before prompt extract-v4 (M4 carry-over, decision "
+        "0015). The 80% box needs all lines and the newest set alone.",
         "",
         f"- {tick[s.no_wrong_verified]} **No wrong value marked verified**: "
         f"{s.counts['verified_wrong']} of {s.total}.",
@@ -253,14 +254,15 @@ def score_report(
             else []
         ),
         "",
-        "| Outcome | All lines | First | Held-out | Blind |",
-        "| --- | --- | --- | --- | --- |",
+        "| Outcome | All lines | First | Held-out | Blind | Fourth |",
+        "| --- | --- | --- | --- | --- | --- |",
         *(
             f"| {OUTCOME_LABELS[o]} | {n} | {sets['first'].counts[o]} | {held.counts[o]} | "
-            f"{blind.counts[o]} |"
+            f"{blind.counts[o]} | {fourth.counts[o]} |"
             for o, n in s.counts.items()
         ),
-        f"| **Total** | {s.total} | {sets['first'].total} | {held.total} | {blind.total} |",
+        f"| **Total** | {s.total} | {sets['first'].total} | {held.total} | {blind.total} | "
+        f"{fourth.total} |",
         "",
         "| Set | Company | Year | Figure | Answer key | Tool | Outcome | Where the key read it |",
         "| --- | --- | --- | --- | --- | --- | --- | --- |",

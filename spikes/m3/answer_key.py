@@ -63,7 +63,8 @@ class Anchor:
     language: str = "en"  # number format: en "1,234.5"; fr "1 234,5"
     currency: str | None = None  # amounts: currency printed, if not the reporting currency
     group: str = "first"  # "first": before the first run; "holdout": before the second;
-    # "blind": after the second run, before the check fixes that followed it
+    # "blind": after the second run, before the check fixes that followed it; "fourth": from
+    # the FY2022 reports, before prompt extract-v4 (M4 carry-over)
     repeats: int = 1  # times the anchor matches (a page printed twice), all with the same number
 
 
@@ -320,6 +321,86 @@ BLIND: list[Anchor] = [
            r"(?P<v>\d+) % \d+ %", group="blind"),
 ]  # fmt: skip
 
+# Fourth set (M4 carry-over, decision 0015): written from the FY2022 reports before prompt
+# extract-v4 and the check changes that come with it, so that they are judged on lines neither
+# was tuned on. Same rule. Air France-KLM's FY2022 report already gave held-out lines. Left
+# out, with the reason:
+# - IAG FY2022 passengers (no group total printed as text), RPK (not printed) and hedge
+#   (policy only).
+# - Finnair FY2022 hedge (per half-year: 41% and 21% of 2023) and undrawn facilities (only the
+#   state hybrid loan, available if cash or equity falls below set limits: not general-purpose).
+# - easyJet FY2022 hedge (per half-year).
+# - Norwegian FY2022 undrawn facilities (none given). Its hedge is the ratio for 2023 (15%), not
+#   the "approximately 20 per cent of the projected fuel consumption" with no period stated.
+# - Wizz Air FY2022 undrawn facilities (none given).
+FOURTH: list[Anchor] = [
+    Anchor("iag", 2022, "ask", "report FY2022",
+           r"Airline non-fuel costs [\d,]+ \(\d+\) [\d,]+ [\d,]+ ASKs \(millions\) "
+           r"(?P<v>\d{3},\d{3}) \d{3},\d{3}", "million", group="fourth", repeats=2),
+    Anchor("iag", 2022, "fleet_count", "report FY2022",
+           r"Number of fleet in-service 2022 2021 .{0,90}?% (?P<v>\d{3}) \d{3} [\d.]+ ?%",
+           group="fourth"),
+    Anchor("iag", 2022, "undrawn_facilities", "report FY2022",  # general-purpose (0015)
+           r"deposits of €9,599 million, €(?P<v>\d,\d{3}) million of committed a ?nd undrawn "
+           r"general", "million", group="fourth", repeats=3),  # going concern, liquidity, note
+    Anchor("finnair", 2022, "passengers", "report FY2022",
+           r"Finnair transported (?P<v>\d+\.\d) million passengers \(2\.9\)", "million",
+           group="fourth"),
+    Anchor("finnair", 2022, "ask", "report FY2022",
+           r"T ota l 1 ,7 10 \.7 1 0 0\.0 420 \.8 (?P<v>[\d ,.]+?) 12, 09 4\.2", "million",
+           group="fourth"),
+    Anchor("finnair", 2022, "rpk", "report FY2022",
+           r"12, 09 4\.2 (?P<v>[\d ,.]+?) 5 ,1 7 8 \. 2", "million", group="fourth"),
+    Anchor("finnair", 2022, "fleet_count", "report FY2022",  # Finnair's 56 + Norra's 24
+           loose("Modern and efficient fleet of") + r"\s*(?P<v>\d+)\s*" + loose("aircraft"),
+           group="fourth"),
+    Anchor("easyjet", 2022, "passengers", "report FY2022",
+           r"The total number of passengers carried increased by 242% to (?P<v>\d+\.\d) million "
+           r"\(2021: 20\.4 million\)", "million", group="fourth", repeats=2),
+    Anchor("easyjet", 2022, "ask", "report FY2022",
+           r"Available Seat Kilometres \(ASK\) \(millions\) (?P<v>\d{2},\d{3}) 33,348", "million",
+           group="fourth"),
+    Anchor("easyjet", 2022, "rpk", "report FY2022",
+           r"Revenue Passenger Kilometres \(RPK\) \(millions\) (?P<v>\d{2},\d{3}) 23,594",
+           "million", group="fourth"),
+    Anchor("easyjet", 2022, "fleet_count", "report FY2022",
+           r"total fleet as at 30 September 2022 comprised (?P<v>\d+) aircraft \(excluding",
+           group="fourth"),
+    Anchor("easyjet", 2022, "undrawn_facilities", "report FY2022",
+           loose("This amounted to £") + r"\s*(?P<v>\d\s?\.\s?\d)\s*"
+           + loose("billion at 30 September 2022"), "billion", group="fourth"),
+    Anchor("norwegian", 2022, "passengers", "report FY2022",
+           loose("Norwegian had") + r"\s*(?P<v>\d+\s?\.\s?\d)\s*"
+           + loose("million passengers in 2022"), "million", group="fourth", repeats=2),
+    Anchor("norwegian", 2022, "ask", "report FY2022",
+           loose("seat kilometres (ASK), was") + r"\s*(?P<v>\d+\s?\.\s?\d)\s*"
+           + loose("billion in 2022"), "billion", group="fourth"),
+    Anchor("norwegian", 2022, "rpk", "report FY2022",
+           loose("measured by RPK, amounted to") + r"\s*(?P<v>\d+\s?\.\s?\d)\s*" + loose("billion"),
+           "billion", group="fourth"),
+    Anchor("norwegian", 2022, "fleet_count", "report FY2022",
+           loose("bringing the total") + r"\s*(?:ﬂ|f\s*l)\s*e\s*e\s*t\s*t\s*o\s*(?P<v>\d+)\s*"
+           + loose("aircraft at year-end"), group="fourth"),
+    Anchor("norwegian", 2022, "fuel_hedge_ratio", "report FY2022",
+           loose("the Group has hedged around") + r"\s*(?P<v>\d+)\s*"
+           + loose("per cent of its planned fuel consumption in 2023"), group="fourth"),
+    Anchor("wizz", 2022, "passengers", "report FY2022",
+           r"(?P<v>\d+\s?\.\s?\d)\s*" + loose("million passengers in the financial year F22"),
+           "million", group="fourth"),
+    Anchor("wizz", 2022, "ask", "report FY2022",
+           loose("Total ASKs (’000 km)") + r"\s*(?P<v>[\d ,]+?)\s+" + loose("25,551,625"),
+           "thousand", group="fourth"),
+    Anchor("wizz", 2022, "rpk", "report FY2022",
+           loose("RPKs (revenue passenger kilometres) (’000 km)") + r"\s*(?P<v>[\d ,]+?)\s+"
+           + loose("16,691,569"), "thousand", group="fourth"),
+    Anchor("wizz", 2022, "fleet_count", "report FY2022",
+           loose("Its fleet consists of") + r"\s*(?P<v>[\d ]+?)\s*" + loose("aircraft"),
+           group="fourth"),
+    Anchor("wizz", 2022, "fuel_hedge_ratio", "report FY2022",  # F23, a full twelve months
+           loose("Period covered F23 12 months") + r".{0,200}?"
+           + loose("Hedge coverage for the period") + r"\s*(?P<v>\d+)\s*%", group="fourth"),
+]  # fmt: skip
+
 # --- Text ------------------------------------------------------------------------------------
 
 
@@ -428,7 +509,7 @@ def ecb_rate(source: str, target: str, period_end: date) -> Decimal:
 
 
 def build(anchors: list[Anchor] | None = None, out: Path = OUT) -> list[dict]:
-    anchors = ANCHORS + HOLDOUT + BLIND if anchors is None else anchors
+    anchors = ANCHORS + HOLDOUT + BLIND + FOURTH if anchors is None else anchors
     from tearsheet.config import load_issuers
 
     currency = {i.id: i.currency for i in load_issuers()}
