@@ -1,0 +1,86 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "caption": "Le tableau ci-après présente la situation du trafic des\nprincipaux aéroports opérés par le Groupe ADP ou au\ntravers des sociétés mises en équivalence en 2024.",
+    "comment": "Passengers at Paris Aéroport (CDG+ORY) in 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "passengers",
+    "location": "page 559",
+    "printed_value": "103,4",
+    "quote": "Paris Aéroport (CDG+ORY)\n103,4\n3,7 %",
+    "scale": "million",
+    "scope": "Paris Aéroport (CDG+ORY)",
+    "table_header": "Aéroports\nTrafic décembre\n2024 @100% en\nmillions PAX (1)\nÉvolution en %\npar rapport au\n31/12/2023"
+   },
+   {
+    "comment": "Only the 2024 figure and the evolution vs 31/12/2023 are printed; no 2023 passenger number for Paris Aéroport.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "passengers",
+    "location": "page 559",
+    "scope": "Paris Aéroport (CDG+ORY)"
+   },
+   {
+    "comment": "The liquidity risk section mentions confirmed unused credit lines but prints no amount.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "undrawn_facilities",
+    "location": "page 613"
+   },
+   {
+    "comment": "The liquidity risk section mentions confirmed unused credit lines but prints no amount.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "undrawn_facilities",
+    "location": "page 613"
+   },
+   {
+    "caption": "(en millions d’euros)",
+    "comment": "Revenue of the Aviation segment (Paris platforms) in 2024.",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 531",
+    "printed_value": "2 054",
+    "quote": "Chiffre d’affaires\n2 054\n1 910\n+144 M€",
+    "scale": "million",
+    "scope": "Activités aéronautiques – Plateformes parisiennes",
+    "table_header": "2024\n2023\nVariation 2024/2023"
+   },
+   {
+    "caption": "(en millions d’euros)",
+    "comment": "Revenue of the Aviation segment (Paris platforms) in 2023.",
+    "currency": "EUR",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 531",
+    "printed_value": "1 910",
+    "quote": "Chiffre d’affaires\n2 054\n1 910\n+144 M€",
+    "scale": "million",
+    "scope": "Activités aéronautiques – Plateformes parisiennes",
+    "table_header": "2024\n2023\nVariation 2024/2023"
+   }
+  ]
+ },
+ "label": "adp FY2024 969500PJMBSFHYC37989-2024-12-31-ESEF-FR-0",
+ "recorded_at": "2026-11-03T17:34:56+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v2",
+  "provider": "deepseek",
+  "system_sha256": "1a3a6d6904a6eb66e272728594f694e0c9cffe8ad5cd374bde3067cb949fdfb0",
+  "tool_sha256": "debd41b3d3dad40c9cbcd2779b1324d9b17762b294b86235fd74b44ca9e9dd96",
+  "user_sha256": "87ee709be4029142ae4fd4582955454a7876ee11b59fbe61dd9b1a02872a497d"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 6173,
+  "output_tokens": 709
+ }
+}

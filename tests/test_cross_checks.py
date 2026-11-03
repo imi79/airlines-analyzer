@@ -76,3 +76,22 @@ def test_implausible_jump_is_rejected():
     cross_check([before, after], ITEMS)
     assert before.status == after.status == "unverified"
     assert "implausible jump" in after.failures[0]
+
+
+def test_fleet_printed_in_parts_is_added_up():
+    # Finnair FY2025: 55 aircraft on Finnair's certificate + 24 flown by Norra for Finnair.
+    from datetime import date
+
+    from tearsheet.config import load_issuers
+    from tearsheet.extract.consolidate import build_candidates
+
+    finnair = next(i for i in load_issuers() if i.id == "finnair")
+    parts = []
+    for printed in ("55", "24"):
+        raw = RawFigure(
+            item="fleet_count", fiscal_year=2025, found=True, printed_value=printed,
+            component=True,
+        )  # fmt: skip
+        parts.append(Checked(raw, doc(2025), Decimal(printed), 0))
+    (c,) = build_candidates(parts, finnair, ITEMS, {2025: date(2025, 12, 31)}, {}, None)
+    assert c.value == Decimal(79) and c.status == "verified"

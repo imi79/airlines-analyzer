@@ -1,0 +1,85 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "caption": "Verkehrskennzahlen",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "passengers",
+    "location": "Verkehrsentwicklung des Flughafen Wien 2025",
+    "printed_value": "32,6",
+    "quote": "Gesamtpassagiere (in Mio.)\n32,6\n2,6%\n31,7",
+    "scale": "million",
+    "scope": "Vienna Airport",
+    "table_header": "2025\nVeränderung\n2024"
+   },
+   {
+    "caption": "Verkehrskennzahlen",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "passengers",
+    "location": "Verkehrsentwicklung des Flughafen Wien 2025",
+    "printed_value": "31,7",
+    "quote": "Gesamtpassagiere (in Mio.)\n32,6\n2,6%\n31,7",
+    "scale": "million",
+    "scope": "Vienna Airport",
+    "table_header": "2025\nVeränderung\n2024"
+   },
+   {
+    "comment": "No committed undrawn credit facilities are disclosed in the passages.",
+    "fiscal_year": 2025,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "No committed undrawn credit facilities are disclosed in the passages.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "caption": "Umsatz im Segment Airport\nin € Mio.",
+    "currency": "EUR",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "Konzernanhang für das Geschäftsjahr 2025",
+    "printed_value": "523,3",
+    "quote": "davon Aviation\n523,3\n6,0%\n493,5",
+    "scale": "million",
+    "scope": "Segment Airport (Vienna)",
+    "table_header": "2025\nVeränderung\n2024"
+   },
+   {
+    "caption": "Umsatz im Segment Airport\nin € Mio.",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "Konzernanhang für das Geschäftsjahr 2025",
+    "printed_value": "493,5",
+    "quote": "davon Aviation\n523,3\n6,0%\n493,5",
+    "scale": "million",
+    "scope": "Segment Airport (Vienna)",
+    "table_header": "2025\nVeränderung\n2024"
+   }
+  ]
+ },
+ "label": "vie FY2025 549300FQ2ILBH7DJ6I45-2025-12-31-ESEF-AT-0",
+ "recorded_at": "2026-11-03T17:35:54+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v2",
+  "provider": "deepseek",
+  "system_sha256": "1a3a6d6904a6eb66e272728594f694e0c9cffe8ad5cd374bde3067cb949fdfb0",
+  "tool_sha256": "debd41b3d3dad40c9cbcd2779b1324d9b17762b294b86235fd74b44ca9e9dd96",
+  "user_sha256": "ae07a003d1123d6426b48ca4e70c8d34bd5d3f14a1d9d841c2e70188eebcb3f9"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 9028,
+  "output_tokens": 602
+ }
+}

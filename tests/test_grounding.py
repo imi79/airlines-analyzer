@@ -220,6 +220,50 @@ def test_bare_number_quote_is_rejected_even_with_a_header():
     assert "the quote is only numbers, without the row label" in c.failures
 
 
+AENA_PAGES = (
+    "Segmento Aeropuertos (Miles de euros) 2024 2023 Servicios aeronáuticos 3.147.517 2.768.254",
+    "Otra tabla",
+    "Otra tabla más",
+)
+
+
+def aena_row(caption):
+    return figure(
+        item="aero_revenue",
+        fiscal_year=2024,
+        printed_value="3.147.517",
+        scale="thousand",
+        currency="EUR",
+        quote="Servicios aeronáuticos 3.147.517 2.768.254",
+        table_header="2024 2023",
+        caption=caption,
+    )
+
+
+def test_caption_on_the_same_page_gives_scale_and_currency():
+    index = doc(AENA_PAGES, language="es", year=2024, issuer="aena")
+    without = run(aena_row(None), index, currency="EUR")
+    assert not without.verified  # no scale or currency in the row or the header
+    c = run(aena_row("Segmento Aeropuertos (Miles de euros)"), index, currency="EUR")
+    assert c.verified, c.failures
+    assert c.value == Decimal("3147517000")
+
+
+def test_caption_from_another_page_is_not_used():
+    pages = ("(Miles de euros)", "x", "x", "2024 2023 Servicios aeronáuticos 3.147.517 2.768.254")
+    index = doc(pages, language="es", year=2024, issuer="aena")
+    c = run(aena_row("(Miles de euros)"), index, currency="EUR")
+    assert "caption is not on the quote's page or the page before" in c.failures
+    assert not c.verified
+
+
+def test_made_up_caption_is_rejected():
+    index = doc(AENA_PAGES, language="es", year=2024, issuer="aena")
+    c = run(aena_row("(Miles de euros, Aeronáutico)"), index, currency="EUR")
+    assert "caption not found word for word in the report" in c.failures
+    assert not c.verified
+
+
 def test_hedge_for_the_next_year_is_verified():
     raw = figure(
         item="fuel_hedge_ratio", fiscal_year=2022, printed_value="15", quote=FINNAIR_HEDGE[1]

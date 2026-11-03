@@ -1,0 +1,159 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Only network (Réseaux) passengers of 35,855 thousand are printed; no group total including Transavia is given.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "comment": "No group total passengers figure for 2020 is printed in the passages.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "comment": "Only network capacity (176,019 million SKO) is printed; no group total ASK including Transavia is given.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "ask"
+   },
+   {
+    "comment": "No group total ASK for 2020 is printed in the passages.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "ask"
+   },
+   {
+    "comment": "Only network traffic (101,092 million PKT) is printed; no group total RPK including Transavia is given.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "rpk"
+   },
+   {
+    "comment": "No group total RPK for 2020 is printed in the passages.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "rpk"
+   },
+   {
+    "comment": "Only the network load factor (57.4%) is printed; no group total load factor is given.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "load_factor"
+   },
+   {
+    "comment": "No group total load factor for 2020 is printed in the passages.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "load_factor"
+   },
+   {
+    "comment": "Only network regular passenger revenue (8,353 M€) is printed; no group passenger revenue total is given.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "passenger_revenue"
+   },
+   {
+    "comment": "No group passenger revenue figure for 2020 is printed in the passages.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "passenger_revenue"
+   },
+   {
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "fleet_count",
+    "location": "1.4 La flotte",
+    "printed_value": "505",
+    "quote": "La flotte du groupe Air France – KLM, au 31 décembre\n2021, comprend 536 avions dont 505 avions en exploitation contre\nrespectivement 546 et 513 avions au 31 décembre 2020.",
+    "scale": "one",
+    "scope": "Group fleet in operation at year end"
+   },
+   {
+    "fiscal_year": 2020,
+    "found": true,
+    "item": "fleet_count",
+    "location": "1.4 La flotte",
+    "printed_value": "513",
+    "quote": "La flotte du groupe Air France – KLM, au 31 décembre\n2021, comprend 536 avions dont 505 avions en exploitation contre\nrespectivement 546 et 513 avions au 31 décembre 2020.",
+    "scale": "one",
+    "scope": "Group fleet in operation at year end"
+   },
+   {
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "fleet_age",
+    "location": "1.4 La flotte",
+    "printed_value": "12,2",
+    "quote": "Au 31 décembre 2021, l’âge moyen de la flotte en exploitation\nest de 12,2 ans, dont 12,2 ans pour la flotte long-courrier,",
+    "scale": "one",
+    "scope": "Group fleet in operation"
+   },
+   {
+    "fiscal_year": 2020,
+    "found": true,
+    "item": "fleet_age",
+    "location": "1.4 La flotte",
+    "printed_value": "12,1",
+    "quote": "et 8,9 ans pour la flotte régionale, contre 12,1 ans au\n31 décembre 2020, dont 12,0 ans pour la flotte long-courrier,",
+    "scale": "one",
+    "scope": "Group fleet in operation"
+   },
+   {
+    "caption": "(en millions de dollars US)",
+    "comment": "Hedge ratio for 2022 as stated at 14 February 2022; 82% relates to 2021.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "fuel_hedge_ratio",
+    "location": "3.1.5.2 Risques relatifs au prix du carburant",
+    "printed_value": "51",
+    "quote": "Pourcentage de couverture\n82 %\n51 %\n3 %",
+    "scale": "one",
+    "scope": "Group fuel exposure, 2022 (next fiscal year)",
+    "table_header": "2021\n2022\n2023"
+   },
+   {
+    "comment": "No hedge ratio as stated at the end of 2020 is printed in the passages.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "currency": "EUR",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "5.2.2 (analyse de la situation financière)",
+    "printed_value": "2,46",
+    "quote": "De plus, le Groupe dispose de lignes de crédit non utilisées pour un montant cumulé de 2,46 milliards d’euros.",
+    "scale": "billion",
+    "scope": "Group undrawn credit lines"
+   },
+   {
+    "comment": "No total undrawn committed facilities at 31 December 2020 is printed in the passages.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "undrawn_facilities"
+   }
+  ]
+ },
+ "label": "afkl FY2021 969500AQW31GYO8JZD66-2021-12-31-ESEF-FR-1",
+ "recorded_at": "2026-11-03T17:32:00+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v2",
+  "provider": "deepseek",
+  "system_sha256": "1a3a6d6904a6eb66e272728594f694e0c9cffe8ad5cd374bde3067cb949fdfb0",
+  "tool_sha256": "61c55522fbd4da1f68f903713a6ffaf85f3654cbac96ba3e9a6bc11333896ad7",
+  "user_sha256": "b7e2b670da42850224d41ecab13ae970cbb574c3c5a3049a6f0117b75277cf72"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 17003,
+  "output_tokens": 1284
+ }
+}

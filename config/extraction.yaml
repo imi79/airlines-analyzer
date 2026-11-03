@@ -17,8 +17,9 @@ issuers:
     fleet_count: Group fleet in service at year end.
   finnair:
     passengers: Finnair passengers carried (total).
-    fleet_count: Finnair fleet operated at year end (own fleet and fleet operated by others
-      for Finnair, as reported in the fleet total).
+    fleet_count: All aircraft flown for Finnair at year end, Finnair's own fleet and the fleet
+      other airlines (Norra) operate for Finnair together; if printed as separate fleets,
+      record each as a component.
   easyjet:
     passengers: easyJet passengers carried (group).
     fleet_count: Total fleet at year end (owned and leased).

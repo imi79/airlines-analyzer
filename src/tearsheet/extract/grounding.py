@@ -52,6 +52,7 @@ class RawFigure(BaseModel):
     currency: str | None = None
     quote: str | None = None
     table_header: str | None = None
+    caption: str | None = None  # title or unit line of the table (extract-v2)
     location: str | None = None
     scope: str | None = None
     component: bool = False
@@ -97,19 +98,24 @@ class DocumentIndex:
             self.offsets.append(pos)
             pos += len(p)
 
-    def find(self, text: str) -> str | None:
-        """Location of the text in the report, or None if it is not there word for word."""
+    def pages_of(self, text: str) -> list[int]:
+        """Every page (0-based) holding the text word for word; a text running over a page
+        break counts on the page where it starts."""
         needle = squash(text)
         if not needle:
-            return None
-        for i, page in enumerate(self.flat_pages):
-            if needle in page:
-                return self.doc.location(i)
-        at = self.flat.find(needle)  # a quote running over a page break
+            return []
+        hits = [i for i, page in enumerate(self.flat_pages) if needle in page]
+        if hits:
+            return hits
+        at = self.flat.find(needle)
         if at < 0:
-            return None
-        page = max(i for i, o in enumerate(self.offsets) if o <= at)
-        return self.doc.location(page)
+            return []
+        return [max(i for i, o in enumerate(self.offsets) if o <= at)]
+
+    def find(self, text: str) -> str | None:
+        """Location of the text in the report, or None if it is not there word for word."""
+        pages = self.pages_of(text)
+        return self.doc.location(pages[0]) if pages else None
 
 
 def check_figure(
@@ -143,13 +149,27 @@ def check_figure(
     if header and index.find(header) is None:
         c.failures.append("table header not found word for word in the report")
         header = ""
+    # The caption (a table's title or unit line, "in thousands of euros") counts only if it
+    # is printed on the quote's page or the page before, so it cannot be borrowed from
+    # another table elsewhere in the report.
+    caption = raw.caption or ""
+    if caption:
+        quote_pages = index.pages_of(raw.quote)
+        caption_pages = index.pages_of(caption)
+        if not caption_pages:
+            c.failures.append("caption not found word for word in the report")
+            caption = ""
+        elif not any(0 <= q - p <= 1 for q in quote_pages for p in caption_pages):
+            c.failures.append("caption is not on the quote's page or the page before")
+            caption = ""
+    context = (header + " " + caption).strip()
 
     # 2. The quote is about this figure. A bare number ("107,0") cannot say whose figure it is,
     # even with a header: the row label must be in the quote.
     if not re.search(r"[A-Za-zÀ-ÿ]{3,}", raw.quote):
         c.failures.append("the quote is only numbers, without the row label")
     terms = [t for lang_terms in item["terms"].values() for t in lang_terms]
-    if not contains_any(raw.quote + " " + header, terms):
+    if not contains_any(raw.quote + " " + context, terms):
         c.failures.append(f"quote does not mention {item['label'].lower()}")
 
     # 3. The value, scale and unit are printed in the quote.
@@ -165,7 +185,7 @@ def check_figure(
     unit = item["unit"]
     if unit == "pct":
         after = raw.quote[token.end : token.end + 12]
-        if not (contains_any(after, PERCENT_WORDS) or contains_any(header, PERCENT_WORDS)):
+        if not (contains_any(after, PERCENT_WORDS) or contains_any(context, PERCENT_WORDS)):
             c.failures.append("no % sign or 'per cent' next to the value")
         value = number / 100
         decimals = None
@@ -177,7 +197,7 @@ def check_figure(
             if near:
                 c.failures.append(f"the quote says {sorted(near)[0]} but the form says units")
         elif scale not in near and not (
-            scale_named(header, scale) or (not near and scale_named(raw.quote, scale))
+            scale_named(context, scale) or (not near and scale_named(raw.quote, scale))
         ):
             c.failures.append(f"the quote does not show the scale ({scale})")
         value = number * SCALE_FACTORS[scale]
@@ -185,7 +205,7 @@ def check_figure(
     if unit == "amount":
         currency = (raw.currency or reporting_currency).upper()
         words = CURRENCY_WORDS.get(currency, [currency.lower()])
-        if not contains_any(raw.quote + " " + header, words):
+        if not contains_any(raw.quote + " " + context, words):
             c.failures.append(f"the quote does not show the currency ({currency})")
         c.currency = currency
     c.value, c.decimals = value, decimals
@@ -201,7 +221,7 @@ def check_figure(
     # 4b. A forward figure (hedge ratio) covers twelve months, not part of the year.
     if item["period"] == "forward":
         rest = _sentence_rest(doc, raw.quote)  # a quote cut short must not hide the period
-        part = _part_of_year(raw.quote + " " + rest + " " + header)
+        part = _part_of_year(raw.quote + " " + rest + " " + context)
         if part:
             c.failures.append(
                 f"the quote gives the figure for part of a year ('{part}'), not the next "

@@ -1,0 +1,229 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Total passengers carried in 2022.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "passengers",
+    "location": "page 10",
+    "printed_value": "9,095,800",
+    "quote": "The number of passengers increased by 218.9 per cent to 9,095,800 passengers.",
+    "scale": "one",
+    "scope": "Finnair passengers carried (total)"
+   },
+   {
+    "comment": "Only the 2022 figure and the growth rate are printed; the 2021 passenger count is not stated.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "passengers",
+    "location": "page 10",
+    "scope": "Finnair passengers carried (total)"
+   },
+   {
+    "caption": "Passenger revenue and traffic data by area, 2022",
+    "comment": "Total ASK in million km for 2022.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "ask",
+    "location": "page 11",
+    "printed_value": "31,298.4",
+    "quote": "Total 1,710.7 100.0 420.8 31,298.4 12,094.2 21,156.8 5,178.2 67.6 24.8",
+    "scale": "million",
+    "scope": "Finnair Group total",
+    "table_header": "2022\nEUR mill. Share %\n2021\nEUR mill.\n2022\nMill. km\n2021\nMill. km\n2022\nMill. km\n2021\nMill. km % Change %-p"
+   },
+   {
+    "caption": "Passenger revenue and traffic data by area, 2022",
+    "comment": "Total ASK in million km for 2021.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "ask",
+    "location": "page 11",
+    "printed_value": "12,094.2",
+    "quote": "Total 1,710.7 100.0 420.8 31,298.4 12,094.2 21,156.8 5,178.2 67.6 24.8",
+    "scale": "million",
+    "scope": "Finnair Group total",
+    "table_header": "2022\nEUR mill. Share %\n2021\nEUR mill.\n2022\nMill. km\n2021\nMill. km\n2022\nMill. km\n2021\nMill. km % Change %-p"
+   },
+   {
+    "caption": "Passenger revenue and traffic data by area, 2022",
+    "comment": "Total RPK in million km for 2022.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "rpk",
+    "location": "page 11",
+    "printed_value": "21,156.8",
+    "quote": "Total 1,710.7 100.0 420.8 31,298.4 12,094.2 21,156.8 5,178.2 67.6 24.8",
+    "scale": "million",
+    "scope": "Finnair Group total",
+    "table_header": "2022\nEUR mill. Share %\n2021\nEUR mill.\n2022\nMill. km\n2021\nMill. km\n2022\nMill. km\n2021\nMill. km % Change %-p"
+   },
+   {
+    "caption": "Passenger revenue and traffic data by area, 2022",
+    "comment": "Total RPK in million km for 2021.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "rpk",
+    "location": "page 11",
+    "printed_value": "5,178.2",
+    "quote": "Total 1,710.7 100.0 420.8 31,298.4 12,094.2 21,156.8 5,178.2 67.6 24.8",
+    "scale": "million",
+    "scope": "Finnair Group total",
+    "table_header": "2022\nEUR mill. Share %\n2021\nEUR mill.\n2022\nMill. km\n2021\nMill. km\n2022\nMill. km\n2021\nMill. km % Change %-p"
+   },
+   {
+    "caption": "Passenger revenue and traffic data by area, 2022",
+    "comment": "Passenger load factor 67.6 per cent for 2022.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "load_factor",
+    "location": "page 11",
+    "printed_value": "67.6",
+    "quote": "Total 1,710.7 100.0 420.8 31,298.4 12,094.2 21,156.8 5,178.2 67.6 24.8",
+    "scale": "one",
+    "scope": "Finnair Group total",
+    "table_header": "2022\nEUR mill. Share %\n2021\nEUR mill.\n2022\nMill. km\n2021\nMill. km\n2022\nMill. km\n2021\nMill. km % Change %-p"
+   },
+   {
+    "comment": "Only the 2022 PLF (67.6%) and the 24.8 percentage point change are printed; the 2021 PLF is not stated.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "load_factor",
+    "location": "page 11",
+    "scope": "Finnair Group total"
+   },
+   {
+    "caption": "Revenue by product",
+    "comment": "Passenger revenue for 2022.",
+    "currency": "EUR",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 10",
+    "printed_value": "1,710.7",
+    "quote": "Passenger revenue 1,710.7 420.8 306.5",
+    "scale": "million",
+    "scope": "Finnair Group",
+    "table_header": "EUR million 2022 2021 Change %"
+   },
+   {
+    "caption": "Revenue by product",
+    "comment": "Passenger revenue for 2021.",
+    "currency": "EUR",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 10",
+    "printed_value": "420.8",
+    "quote": "Passenger revenue 1,710.7 420.8 306.5",
+    "scale": "million",
+    "scope": "Finnair Group",
+    "table_header": "EUR million 2022 2021 Change %"
+   },
+   {
+    "comment": "Aircraft operated by Finnair itself at 31.12.2022.",
+    "component": true,
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 18",
+    "printed_value": "56",
+    "quote": "At the end of December, Finnair itself operated 56 aircraft, of which 25 were wide-body and 31 narrow-body aircraft.",
+    "scale": "one",
+    "scope": "Fleet operated by Finnair"
+   },
+   {
+    "comment": "Aircraft operated by Norra for Finnair at year end.",
+    "component": true,
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 18",
+    "printed_value": "24",
+    "quote": "Nordic Regional Airlines (Norra) operates a fleet of 24 aircraft for Finnair on a contract flying basis.",
+    "scale": "one",
+    "scope": "Fleet operated by Norra for Finnair"
+   },
+   {
+    "comment": "Only the 2022 fleet counts are printed; the 2021 year-end fleet total is not stated.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "fleet_count",
+    "location": "page 18",
+    "scope": "All aircraft flown for Finnair at year end"
+   },
+   {
+    "comment": "Average age of Finnair's own operated fleet; no combined figure with Norra's fleet is given.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "fleet_age",
+    "location": "page 18",
+    "printed_value": "11.6",
+    "quote": "The average age of the fleet operated by Finnair was 11.6 years.",
+    "scale": "one",
+    "scope": "Fleet operated by Finnair"
+   },
+   {
+    "comment": "Only the 2022 average fleet age is printed.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "fleet_age",
+    "location": "page 18",
+    "scope": "Fleet operated by Finnair"
+   },
+   {
+    "comment": "Hedge ratio at 31.12.2022 for the first part of the 12-month hedging period.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "fuel_hedge_ratio",
+    "location": "page 80",
+    "printed_value": "41",
+    "quote": "At the end of the financial year, Finnair had hedged 41 per cent of its forecasted fuel purchases for the first",
+    "scale": "one",
+    "scope": "Next 12 months' forecasted fuel purchases"
+   },
+   {
+    "comment": "No hedge ratio as at 31.12.2021 is stated; only the 2021 notional amounts are printed.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "fuel_hedge_ratio",
+    "location": "page 80",
+    "scope": "Next 12 months' forecasted fuel purchases"
+   },
+   {
+    "comment": "Only the unused 200-million-euro commercial paper programme is mentioned; no committed undrawn facility total is printed.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "undrawn_facilities",
+    "location": "page 17",
+    "scope": "Committed credit facilities available but not drawn"
+   },
+   {
+    "comment": "No undrawn committed facilities are disclosed for 2021.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "undrawn_facilities",
+    "location": "page 17",
+    "scope": "Committed credit facilities available but not drawn"
+   }
+  ]
+ },
+ "label": "finnair FY2022 213800SB6EOB8SSK9W63-2022-12-31-ESEF-FI-0",
+ "recorded_at": "2026-11-03T17:33:32+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v2",
+  "provider": "deepseek",
+  "system_sha256": "1a3a6d6904a6eb66e272728594f694e0c9cffe8ad5cd374bde3067cb949fdfb0",
+  "tool_sha256": "61c55522fbd4da1f68f903713a6ffaf85f3654cbac96ba3e9a6bc11333896ad7",
+  "user_sha256": "c1535ca146fd2522d4998008451ab816820eb76007ee22714752ac17458e7fcf"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 12085,
+  "output_tokens": 2273
+ }
+}

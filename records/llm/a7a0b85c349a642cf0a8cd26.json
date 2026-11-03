@@ -1,0 +1,89 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "caption": "Entwicklung der größten Airlines am Flughafen Wien",
+    "comment": "Total passengers at Vienna Airport (arriving, departing and transit) as printed in the airlines table.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "passengers",
+    "location": "page 15",
+    "printed_value": "23.682.133",
+    "quote": "Passagiere Gesamt\n23.682.133\n127,6%\n10.405.523\n31.662.189\n100,0%\n100,0%\n100,0%",
+    "scale": "one",
+    "scope": "Vienna Airport, total passengers",
+    "table_header": "2022\nVeränderung zu 2021\n2021\n2019\nAnteil 2022\nAnteil 2021\nAnteil 2019"
+   },
+   {
+    "caption": "Entwicklung der größten Airlines am Flughafen Wien",
+    "comment": "Prior-year total passengers at Vienna Airport.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "passengers",
+    "location": "page 15",
+    "printed_value": "10.405.523",
+    "quote": "Passagiere Gesamt\n23.682.133\n127,6%\n10.405.523\n31.662.189\n100,0%\n100,0%\n100,0%",
+    "scale": "one",
+    "scope": "Vienna Airport, total passengers",
+    "table_header": "2022\nVeränderung zu 2021\n2021\n2019\nAnteil 2022\nAnteil 2021\nAnteil 2019"
+   },
+   {
+    "comment": "No committed undrawn credit facilities are disclosed in the passages.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "No committed undrawn credit facilities are disclosed in the passages.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "caption": "Umsatz im Segment Airport",
+    "comment": "External revenue of the Airport segment; the aviation portion is shown separately as 309,0.",
+    "currency": "EUR",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 101",
+    "printed_value": "321,0",
+    "quote": "Umsatz Segment Airport (extern)\n321,0\n89,3%\n169,5",
+    "scale": "million",
+    "scope": "Segment Airport (Vienna), external revenue",
+    "table_header": "2022\nVeränderung\n2021"
+   },
+   {
+    "caption": "Umsatz im Segment Airport",
+    "comment": "Prior-year external revenue of the Airport segment.",
+    "currency": "EUR",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 101",
+    "printed_value": "169,5",
+    "quote": "Umsatz Segment Airport (extern)\n321,0\n89,3%\n169,5",
+    "scale": "million",
+    "scope": "Segment Airport (Vienna), external revenue",
+    "table_header": "2022\nVeränderung\n2021"
+   }
+  ]
+ },
+ "label": "vie FY2022 549300FQ2ILBH7DJ6I45-2022-12-31-ESEF-AT-1",
+ "recorded_at": "2026-11-03T17:35:44+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v2",
+  "provider": "deepseek",
+  "system_sha256": "1a3a6d6904a6eb66e272728594f694e0c9cffe8ad5cd374bde3067cb949fdfb0",
+  "tool_sha256": "debd41b3d3dad40c9cbcd2779b1324d9b17762b294b86235fd74b44ca9e9dd96",
+  "user_sha256": "93d05be5914a0defe37a861f3eb2862580b0c32d70a61e428cb796a4df8a2674"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 8161,
+  "output_tokens": 749
+ }
+}

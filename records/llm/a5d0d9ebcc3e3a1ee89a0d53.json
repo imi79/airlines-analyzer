@@ -1,0 +1,87 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Passengers at the Spanish network airports in 2022.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "passengers",
+    "location": "page 51",
+    "printed_value": "243,7",
+    "quote": "En concreto, en este ejercicio, se ha registrado un volumen de pasajeros de 243,7 millones, frente a los 119,7 millones de 2021, pero aún por debajo de los 274,2 millones pasajeros del 2019.",
+    "scale": "million",
+    "scope": "Aena network airports in Spain"
+   },
+   {
+    "comment": "Prior-year passengers at the Spanish network airports.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "passengers",
+    "location": "page 51",
+    "printed_value": "119,7",
+    "quote": "En concreto, en este ejercicio, se ha registrado un volumen de pasajeros de 243,7 millones, frente a los 119,7 millones de 2021, pero aún por debajo de los 274,2 millones pasajeros del 2019.",
+    "scale": "million",
+    "scope": "Aena network airports in Spain"
+   },
+   {
+    "caption": "Los vencimientos de los anteriores saldos no dispuestos se detallan a continuación:",
+    "comment": "Total undrawn balances of committed facilities at 31 December 2022.",
+    "currency": "EUR",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "page 62",
+    "printed_value": "2.105",
+    "quote": "Total\n2.105",
+    "scale": "million",
+    "scope": "Aena S.M.E., S.A. undrawn committed facilities",
+    "table_header": "Entidad\nImporte\n(Millones de euros)\nVencimiento"
+   },
+   {
+    "caption": "El desglose de los ingresos ordinarios del Subtotal incluido en la Información financiera por segmentos (sin tener en cuenta Internacional, AIRM y los Ajustes), por tipología de servicios prestados es como sigue:",
+    "comment": "Aeronautical services revenue in 2022.",
+    "currency": "EUR",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 75",
+    "printed_value": "2.367.379",
+    "quote": "Servicios aeronáuticos\n2.367.379\n1.283.395",
+    "scale": "thousand",
+    "scope": "Aeronautical segment revenue, Spanish airport network (excluding International, AIRM and adjustments)",
+    "table_header": "2022\n2021 (*)"
+   },
+   {
+    "caption": "El desglose de los ingresos ordinarios del Subtotal incluido en la Información financiera por segmentos (sin tener en cuenta Internacional, AIRM y los Ajustes), por tipología de servicios prestados es como sigue:",
+    "comment": "Aeronautical services revenue in 2021.",
+    "currency": "EUR",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 75",
+    "printed_value": "1.283.395",
+    "quote": "Servicios aeronáuticos\n2.367.379\n1.283.395",
+    "scale": "thousand",
+    "scope": "Aeronautical segment revenue, Spanish airport network (excluding International, AIRM and adjustments)",
+    "table_header": "2022\n2021 (*)"
+   }
+  ]
+ },
+ "label": "aena FY2022 959800R7QMXKF0NFMT29-2022-12-31-ESEF-ES-0",
+ "recorded_at": "2026-11-03T17:35:16+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v2",
+  "provider": "deepseek",
+  "system_sha256": "1a3a6d6904a6eb66e272728594f694e0c9cffe8ad5cd374bde3067cb949fdfb0",
+  "tool_sha256": "debd41b3d3dad40c9cbcd2779b1324d9b17762b294b86235fd74b44ca9e9dd96",
+  "user_sha256": "071fd680641ee5570d05589c314fa2128ac3d097c9ea12f47a54b55b96838993"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 7142,
+  "output_tokens": 810
+ }
+}

@@ -1,0 +1,178 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "No group passenger number is printed in the passages; only capacity, load factor and revenue figures are given.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "comment": "No group passenger number is printed in the passages.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "ask",
+    "location": "page 91",
+    "printed_value": "343,253",
+    "quote": "ASKs (millions)\n343,253",
+    "scale": "million",
+    "scope": "IAG group total"
+   },
+   {
+    "comment": "Only the 2024 ASK figure of 343,253 million is printed; the 2023 column value is not shown in the passages.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "ask"
+   },
+   {
+    "comment": "RPK is not printed; only ASKs and load factor are given.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "rpk"
+   },
+   {
+    "comment": "RPK is not printed in the passages.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "rpk"
+   },
+   {
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "load_factor",
+    "location": "page 117",
+    "printed_value": "86.5",
+    "quote": "Total network\n100.0%\n6.2%\n86.5\n1.2 pts",
+    "scale": "one",
+    "scope": "IAG group total network",
+    "table_header": "Year to\n31 December 2024\nProportion\nof total\nASKs 2024\nASKs\nhigher/\n(lower)\nv2023\nPassenger\nload factor\n(%)\nHigher/\n(lower)\nv2023"
+   },
+   {
+    "comment": "Only the 2024 load factor (86.5%) and the change of 1.2 pts versus 2023 are printed, not the 2023 figure itself.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "load_factor"
+   },
+   {
+    "caption": "Consolidated income statement",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 11",
+    "printed_value": "28,274",
+    "quote": "Passenger revenue\n28,274\n25,810",
+    "scale": "million",
+    "scope": "IAG group total",
+    "table_header": "Year to 31 December\n€ million\nNote\n2024\n2023"
+   },
+   {
+    "caption": "Consolidated income statement",
+    "currency": "EUR",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 11",
+    "printed_value": "25,810",
+    "quote": "Passenger revenue\n28,274\n25,810",
+    "scale": "million",
+    "scope": "IAG group total",
+    "table_header": "Year to 31 December\n€ million\nNote\n2024\n2023"
+   },
+   {
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 249",
+    "printed_value": "601",
+    "quote": "5 At of 31 December 2024, the Group operates 601 aircraft",
+    "scale": "one",
+    "scope": "Group fleet in service at year end"
+   },
+   {
+    "comment": "Only the 2024 fleet of 601 aircraft is printed; the 2023 in-service fleet table is cut off before its total.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "fleet_count"
+   },
+   {
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "fleet_age",
+    "location": "page 211",
+    "printed_value": "12.4",
+    "quote": "Average fleet age\nn/a\nyears\n12.4\n12.0\n3%",
+    "scale": "one",
+    "scope": "IAG fleet",
+    "table_header": "Metric\nGRI standard\nUnit\n2024\n2023\nvly"
+   },
+   {
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "fleet_age",
+    "location": "page 211",
+    "printed_value": "12.0",
+    "quote": "Average fleet age\nn/a\nyears\n12.4\n12.0\n3%",
+    "scale": "one",
+    "scope": "IAG fleet",
+    "table_header": "Metric\nGRI standard\nUnit\n2024\n2023\nvly"
+   },
+   {
+    "comment": "Only the hedging policy (up to 60% of anticipated requirements in the first 12 months) is printed, not the actual hedged share at year end.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "comment": "No actual hedged share of next-year fuel needs is printed for the end of 2023.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "page 126",
+    "printed_value": "3,400",
+    "quote": "The Group also has certain other committed and undrawn general and overdraft facilities, amounting to € 120 million, bringing total committed and undrawn general and overdraft facilities at 31 December 2024 to € 3,400 million (2023: €4,412 million).",
+    "scale": "million",
+    "scope": "Group committed and undrawn general and overdraft facilities"
+   },
+   {
+    "currency": "EUR",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "page 126",
+    "printed_value": "4,412",
+    "quote": "The Group also has certain other committed and undrawn general and overdraft facilities, amounting to € 120 million, bringing total committed and undrawn general and overdraft facilities at 31 December 2024 to € 3,400 million (2023: €4,412 million).",
+    "scale": "million",
+    "scope": "Group committed and undrawn general and overdraft facilities"
+   }
+  ]
+ },
+ "label": "iag FY2024 959800TZHQRUSH1ESL13-2024-12-31-ESEF-ES-0",
+ "recorded_at": "2026-11-03T17:32:57+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v2",
+  "provider": "deepseek",
+  "system_sha256": "1a3a6d6904a6eb66e272728594f694e0c9cffe8ad5cd374bde3067cb949fdfb0",
+  "tool_sha256": "61c55522fbd4da1f68f903713a6ffaf85f3654cbac96ba3e9a6bc11333896ad7",
+  "user_sha256": "d96c97b710461294492271e776ec83eec83a60a3832c3ee8a5c936428d36c100"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 13850,
+  "output_tokens": 1441
+ }
+}
