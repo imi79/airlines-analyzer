@@ -89,8 +89,9 @@ for the misses seen in M3 ("This amounted to £1.8 billion", "up from 70 aircraf
 - **I stopped there on purpose**: fixing these now would tune on the only clean set left. A
   further round would start with a fifth set (FY2021 reports) and target the long tables.
 
-**Your call:** close the 80% goal on the safety result as in M3, or plan that further round
-(after the web app, for example).
+**Your decision (2026-11-03): goal closed on the safety result**, as for M3. No wrong figure
+is verified; everything the checks don't verify waits for your review and stays off the
+tearsheet. The goal is no longer tracked (decision 0017).
 
 ## How to rerun
 

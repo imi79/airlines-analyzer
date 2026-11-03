@@ -66,8 +66,7 @@ measure of the final code.
 Branch: `m4-drafting-verifier`. Plan: `docs/m4/plan.md`. Run: `uv run tearsheet all --offline`
 (replays the recorded drafts; `uv run tearsheet draft` asks the AI for drafts not yet
 recorded). Results: `docs/m4/`. Walkthrough: `docs/m4/walkthrough.md`. Decisions 0016, 0017.
-**Status: in progress; gate 2 passed; waiting for Imane's scores, example notes and her
-decision on the extraction goal.**
+**Status: in progress; gate 2 passed; waiting for Imane's scores and example notes.**
 
 - [x] Adversarial suite 100% rejected: 43 of 43 faulty sentences, each for its rule; 13
       correct but risky sentences and a full correct draft pass (`tests/test_adversarial.py`)
@@ -77,6 +76,7 @@ decision on the extraction goal.**
       `draft-v3`, about 1.55 million tokens in all (decision 0016)
 - [ ] Commentary score of 4 or more: score sheet ready (`docs/m4/score_sheet.xlsx`)
 - Example notes drafted for Imane to rewrite (`docs/m4/example_notes.md`)
-- Tracked, not a gate (decision 0015): extraction 80% verified on a fresh blind set. **Not
-  met**: 13 of 22 (59%) on the fourth set (FY2022 reports), written before prompt
-  `extract-v4` and four check fixes; 0 of 93 wrong values verified (decision 0017)
+- Tracked, not a gate (decision 0015): extraction 80% verified on a fresh blind set. Not met:
+  13 of 22 (59%) on the fourth set (FY2022 reports), written before prompt `extract-v4` and
+  four check fixes; 0 of 93 wrong values verified. **Closed by Imane on 2026-11-03 on the
+  safety result** (decision 0017)

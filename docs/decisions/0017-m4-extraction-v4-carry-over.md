@@ -1,6 +1,7 @@
 # 0017 · M4: the M3 carry-over, extraction v4 on a fourth blind set
 
-Date: 2026-11-03 · Status: done; for Imane's review (tracked goal, not a gate: decision 0015)
+Date: 2026-11-03 · Status: accepted; goal closed by Imane on the safety result ("close the 80%
+goal on the safety result")
 
 **Keeping the test fair.** A fourth answer-key set was written first, from the FY2022 reports
 of IAG, Finnair, easyJet, Norwegian and Wizz Air (22 lines, same rule as before: a figure
@@ -53,6 +54,14 @@ hedge (15% of 2023 fuel), already discussed in decision 0013.
   tied to its fact sheet's fingerprint): gate 2 still passes, 17 of 18 drafts.
 
 **Not done, on purpose.** Fixing the fourth set's misses now would tune on the only clean set
-left. The next round, if Imane wants one, should start with a fifth set (FY2021 reports) and
-target long tables: read the row against a summary table's own year header, or prefer the
+left. If the goal is ever reopened, a new round should start with a fifth set (FY2021 reports)
+and target long tables: read the row against a summary table's own year header, or prefer the
 report's sentence when both exist.
+
+**Closed on the safety result.** Imane closes the 80% goal as she did for M3 (decision 0015):
+no wrong value is verified on any of the 93 answer-key lines, and every unverified figure
+stays off the tearsheet and is listed for her review (53 today). The share verified
+automatically (59% on the fourth set, 75% on all lines) is a matter of convenience, not of
+correctness: what the checks don't verify waits for her, it is never published unchecked. The
+goal is no longer tracked; extraction stays as it is (prompt extract-v4, the checks of this
+note).
