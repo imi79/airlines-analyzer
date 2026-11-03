@@ -63,16 +63,18 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | passengers@FY2024 | Passengers, FY2024 | 31.7m | up, better vs prior year |
 | passengers@FY2023 | Passengers, FY2023 | 29.5m |  |
 | passengers.change@FY2024 | change in Passengers, FY2023 to FY2024 | 7.3% | up, better vs prior year; printed without a sign: say the direction in words |
-| traffic_growth@FY2024 | Traffic growth, FY2024 | 7.3% | company below peer median, worse |
+| traffic_growth@FY2024 | Traffic growth, FY2024 | 7.3% | down, worse vs prior year; company below peer median, worse |
+| traffic_growth@FY2023 | Traffic growth, FY2023 | 24.7% |  |
+| traffic_growth.change@FY2024 | change in Traffic growth, FY2023 to FY2024 | 17.4 points | down, worse vs prior year; printed without a sign: say the direction in words |
 | revenue_per_passenger@FY2024 | Revenue per passenger, FY2024 | EUR 33.21 | up, better vs prior year |
 | revenue_per_passenger@FY2023 | Revenue per passenger, FY2023 | EUR 31.54 |  |
 | revenue_per_passenger.change@FY2024 | change in Revenue per passenger, FY2023 to FY2024 | 5.3% | up, better vs prior year; printed without a sign: say the direction in words |
-| aero_revenue_per_passenger@FY2024 | Aeronautical revenue per passenger, FY2024 | EUR 15.98 | up, better vs prior year |
+| aero_revenue_per_passenger@FY2024 | Aeronautical revenue per passenger, FY2024 | EUR 15.57 | up, better vs prior year |
 | aero_revenue_per_passenger@FY2023 | Aeronautical revenue per passenger, FY2023 | EUR 14.47 |  |
-| aero_revenue_per_passenger.change@FY2024 | change in Aeronautical revenue per passenger, FY2023 to FY2024 | 10.4% | up, better vs prior year; printed without a sign: say the direction in words |
-| non_aero_share@FY2024 | Non-aeronautical share, FY2024 | 51.9% | down, worse vs prior year |
+| aero_revenue_per_passenger.change@FY2024 | change in Aeronautical revenue per passenger, FY2023 to FY2024 | 7.6% | up, better vs prior year; printed without a sign: say the direction in words |
+| non_aero_share@FY2024 | Non-aeronautical share, FY2024 | 53.1% | down, worse vs prior year |
 | non_aero_share@FY2023 | Non-aeronautical share, FY2023 | 54.1% |  |
-| non_aero_share.change@FY2024 | change in Non-aeronautical share, FY2023 to FY2024 | 2.2 points | down, worse vs prior year; printed without a sign: say the direction in words |
+| non_aero_share.change@FY2024 | change in Non-aeronautical share, FY2023 to FY2024 | 1.0 point | down, worse vs prior year; printed without a sign: say the direction in words |
 
 ## Liquidity and funding
 
@@ -125,7 +127,6 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - liquidity@FY2023: Undrawn committed credit facilities not available for FY2023
 - liquidity_to_revenue@FY2024: Liquidity: Undrawn committed credit facilities not available for FY2024
 - liquidity_to_revenue@FY2023: Liquidity: Undrawn committed credit facilities not available for FY2023
-- traffic_growth@FY2023: not verified yet: waiting for Imane's review
 - non_aero_share.peer_median@2024: the peer median would use a figure not verified yet (adp)
 - non_aero_share.peer_rank@2024: the peer median would use a figure not verified yet (adp)
 - contract_liabilities@FY2024: no figure for this year

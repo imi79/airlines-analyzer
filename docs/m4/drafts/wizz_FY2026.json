@@ -25,6 +25,92 @@
    "request_hash": "6fb7a674ec51496907f56e07e046dc0d69fb083924971eacb93dfd7479baf9b8",
    "model": "deepseek-flash",
    "draft": {
+    "snapshot": [
+     {
+      "text": "Wizz Air, the low-cost carrier, grew revenue by {{revenue.change@FY2026}} to {{revenue@FY2026}} in FY2026, but operating profit fell by {{operating_profit.change@FY2026}} to {{operating_profit@FY2026}} as unit costs ex-fuel rose.",
+      "facts": [
+       {
+        "id": "revenue.change@FY2026",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "revenue@FY2026",
+        "claims": []
+       },
+       {
+        "id": "operating_profit.change@FY2026",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "operating_profit@FY2026",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Net leverage fell by {{net_leverage.change@FY2026}} to {{net_leverage@FY2026}} and gross leverage by {{gross_leverage.change@FY2026}} to {{gross_leverage@FY2026}}, helped by EBITDA up {{ebitda.change@FY2026}} to {{ebitda@FY2026}}.",
+      "facts": [
+       {
+        "id": "net_leverage.change@FY2026",
+        "claims": [
+         "down",
+         "better"
+        ]
+       },
+       {
+        "id": "net_leverage@FY2026",
+        "claims": []
+       },
+       {
+        "id": "gross_leverage.change@FY2026",
+        "claims": [
+         "down",
+         "better"
+        ]
+       },
+       {
+        "id": "gross_leverage@FY2026",
+        "claims": []
+       },
+       {
+        "id": "ebitda.change@FY2026",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "ebitda@FY2026",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "The main point to watch is the gap to peers: leverage remains well above the peer median of {{net_leverage.peer_median@2025}} and FFO to debt of {{ffo_to_debt@FY2026}} sits below the peer median of {{ffo_to_debt.peer_median@2025}}.",
+      "facts": [
+       {
+        "id": "net_leverage.peer_median@2025",
+        "claims": []
+       },
+       {
+        "id": "ffo_to_debt@FY2026",
+        "claims": [
+         "below_peers"
+        ]
+       },
+       {
+        "id": "ffo_to_debt.peer_median@2025",
+        "claims": []
+       }
+      ]
+     }
+    ],
     "credit_metrics": [
      {
       "text": "EBITDA rose by {{ebitda.change@FY2026}} to {{ebitda@FY2026}} on revenue up {{revenue.change@FY2026}} to {{revenue@FY2026}}, lifting the EBITDA margin by {{ebitda_margin.change@FY2026}} to {{ebitda_margin@FY2026}}.",
@@ -160,78 +246,6 @@
       ]
      }
     ],
-    "liquidity_funding": [
-     {
-      "text": "Cash and cash-like investments rose by {{cash_like.change@FY2026}} to {{cash_like@FY2026}}, taking cash liquidity to revenue up by {{cash_liquidity_to_revenue.change@FY2026}} to {{cash_liquidity_to_revenue@FY2026}}.",
-      "facts": [
-       {
-        "id": "cash_like.change@FY2026",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "cash_like@FY2026",
-        "claims": []
-       },
-       {
-        "id": "cash_liquidity_to_revenue.change@FY2026",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "cash_liquidity_to_revenue@FY2026",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Cash liquidity of {{cash_liquidity@FY2026}} is in line with the peer median of {{cash_liquidity_to_revenue.peer_median@2025}} on a revenue basis, ranking {{cash_liquidity_to_revenue.peer_rank@2025}}.",
-      "facts": [
-       {
-        "id": "cash_liquidity@FY2026",
-        "claims": []
-       },
-       {
-        "id": "cash_liquidity_to_revenue.peer_median@2025",
-        "claims": []
-       },
-       {
-        "id": "cash_liquidity_to_revenue.peer_rank@2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Customer prepayments rose: advance ticket cover increased by {{advance_ticket_cover.change@FY2026}} to {{advance_ticket_cover@FY2026}} and contract liabilities by {{contract_liabilities.change@FY2026}} to {{contract_liabilities@FY2026}}, so a larger share of liquidity is refundable cash.",
-      "facts": [
-       {
-        "id": "advance_ticket_cover.change@FY2026",
-        "claims": [
-         "up",
-         "worse"
-        ]
-       },
-       {
-        "id": "advance_ticket_cover@FY2026",
-        "claims": []
-       },
-       {
-        "id": "contract_liabilities.change@FY2026",
-        "claims": [
-         "up"
-        ]
-       },
-       {
-        "id": "contract_liabilities@FY2026",
-        "claims": []
-       }
-      ]
-     }
-    ],
     "operating_performance": [
      {
       "text": "Passengers rose by {{passengers.change@FY2026}} to {{passengers@FY2026}} on capacity up {{ask.change@FY2026}} to {{ask@FY2026}} available seat kilometres, with RPK up {{rpk.change@FY2026}} to {{rpk@FY2026}} billion.",
@@ -362,6 +376,78 @@
       ]
      }
     ],
+    "liquidity_funding": [
+     {
+      "text": "Cash and cash-like investments rose by {{cash_like.change@FY2026}} to {{cash_like@FY2026}}, taking cash liquidity to revenue up by {{cash_liquidity_to_revenue.change@FY2026}} to {{cash_liquidity_to_revenue@FY2026}}.",
+      "facts": [
+       {
+        "id": "cash_like.change@FY2026",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "cash_like@FY2026",
+        "claims": []
+       },
+       {
+        "id": "cash_liquidity_to_revenue.change@FY2026",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2026",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Cash liquidity of {{cash_liquidity@FY2026}} is in line with the peer median of {{cash_liquidity_to_revenue.peer_median@2025}} on a revenue basis, ranking {{cash_liquidity_to_revenue.peer_rank@2025}}.",
+      "facts": [
+       {
+        "id": "cash_liquidity@FY2026",
+        "claims": []
+       },
+       {
+        "id": "cash_liquidity_to_revenue.peer_median@2025",
+        "claims": []
+       },
+       {
+        "id": "cash_liquidity_to_revenue.peer_rank@2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Customer prepayments rose: advance ticket cover increased by {{advance_ticket_cover.change@FY2026}} to {{advance_ticket_cover@FY2026}} and contract liabilities by {{contract_liabilities.change@FY2026}} to {{contract_liabilities@FY2026}}, so a larger share of liquidity is refundable cash.",
+      "facts": [
+       {
+        "id": "advance_ticket_cover.change@FY2026",
+        "claims": [
+         "up",
+         "worse"
+        ]
+       },
+       {
+        "id": "advance_ticket_cover@FY2026",
+        "claims": []
+       },
+       {
+        "id": "contract_liabilities.change@FY2026",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "contract_liabilities@FY2026",
+        "claims": []
+       }
+      ]
+     }
+    ],
     "peer_positioning": [
      {
       "text": "Wizz Air has the highest EBITDA margin in the low-cost peer group ({{ebitda_margin.peer_rank@2025}}), at {{ebitda_margin@FY2026}} against a median of {{ebitda_margin.peer_median@2025}}.",
@@ -463,92 +549,6 @@
         "claims": [
          "worst_in_group"
         ]
-       }
-      ]
-     }
-    ],
-    "snapshot": [
-     {
-      "text": "Wizz Air, the low-cost carrier, grew revenue by {{revenue.change@FY2026}} to {{revenue@FY2026}} in FY2026, but operating profit fell by {{operating_profit.change@FY2026}} to {{operating_profit@FY2026}} as unit costs ex-fuel rose.",
-      "facts": [
-       {
-        "id": "revenue.change@FY2026",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "revenue@FY2026",
-        "claims": []
-       },
-       {
-        "id": "operating_profit.change@FY2026",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "operating_profit@FY2026",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Net leverage fell by {{net_leverage.change@FY2026}} to {{net_leverage@FY2026}} and gross leverage by {{gross_leverage.change@FY2026}} to {{gross_leverage@FY2026}}, helped by EBITDA up {{ebitda.change@FY2026}} to {{ebitda@FY2026}}.",
-      "facts": [
-       {
-        "id": "net_leverage.change@FY2026",
-        "claims": [
-         "down",
-         "better"
-        ]
-       },
-       {
-        "id": "net_leverage@FY2026",
-        "claims": []
-       },
-       {
-        "id": "gross_leverage.change@FY2026",
-        "claims": [
-         "down",
-         "better"
-        ]
-       },
-       {
-        "id": "gross_leverage@FY2026",
-        "claims": []
-       },
-       {
-        "id": "ebitda.change@FY2026",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "ebitda@FY2026",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "The main point to watch is the gap to peers: leverage remains well above the peer median of {{net_leverage.peer_median@2025}} and FFO to debt of {{ffo_to_debt@FY2026}} sits below the peer median of {{ffo_to_debt.peer_median@2025}}.",
-      "facts": [
-       {
-        "id": "net_leverage.peer_median@2025",
-        "claims": []
-       },
-       {
-        "id": "ffo_to_debt@FY2026",
-        "claims": [
-         "below_peers"
-        ]
-       },
-       {
-        "id": "ffo_to_debt.peer_median@2025",
-        "claims": []
        }
       ]
      }
@@ -688,6 +688,105 @@
    "request_hash": "c5770a1a72b7944e2a36d7f07189b8ce5e818c9f0c027b07cd4faa7653839961",
    "model": "deepseek-flash",
    "draft": {
+    "snapshot": [
+     {
+      "text": "Wizz Air, the low-cost carrier, grew revenue by {{revenue.change@FY2026}} to {{revenue@FY2026}} in FY2026, but operating profit fell by {{operating_profit.change@FY2026}} to {{operating_profit@FY2026}} as CASK ex-fuel increased by {{cask_ex_fuel.change@FY2026}}.",
+      "facts": [
+       {
+        "id": "revenue.change@FY2026",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "revenue@FY2026",
+        "claims": []
+       },
+       {
+        "id": "operating_profit.change@FY2026",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "operating_profit@FY2026",
+        "claims": []
+       },
+       {
+        "id": "cask_ex_fuel.change@FY2026",
+        "claims": [
+         "up",
+         "worse"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Net leverage fell by {{net_leverage.change@FY2026}} to {{net_leverage@FY2026}} and gross leverage by {{gross_leverage.change@FY2026}} to {{gross_leverage@FY2026}}, helped by EBITDA up {{ebitda.change@FY2026}} to {{ebitda@FY2026}}.",
+      "facts": [
+       {
+        "id": "net_leverage.change@FY2026",
+        "claims": [
+         "down",
+         "better"
+        ]
+       },
+       {
+        "id": "net_leverage@FY2026",
+        "claims": []
+       },
+       {
+        "id": "gross_leverage.change@FY2026",
+        "claims": [
+         "down",
+         "better"
+        ]
+       },
+       {
+        "id": "gross_leverage@FY2026",
+        "claims": []
+       },
+       {
+        "id": "ebitda.change@FY2026",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "ebitda@FY2026",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "The main point to watch is the gap to peers: net leverage of {{net_leverage@FY2026}} is above the peer median of {{net_leverage.peer_median@2025}}, and FFO to debt of {{ffo_to_debt@FY2026}} sits below the peer median of {{ffo_to_debt.peer_median@2025}}.",
+      "facts": [
+       {
+        "id": "net_leverage@FY2026",
+        "claims": [
+         "above_peers"
+        ]
+       },
+       {
+        "id": "net_leverage.peer_median@2025",
+        "claims": []
+       },
+       {
+        "id": "ffo_to_debt@FY2026",
+        "claims": [
+         "below_peers"
+        ]
+       },
+       {
+        "id": "ffo_to_debt.peer_median@2025",
+        "claims": []
+       }
+      ]
+     }
+    ],
     "credit_metrics": [
      {
       "text": "EBITDA rose by {{ebitda.change@FY2026}} to {{ebitda@FY2026}} on revenue up {{revenue.change@FY2026}} to {{revenue@FY2026}}, lifting the EBITDA margin by {{ebitda_margin.change@FY2026}} to {{ebitda_margin@FY2026}}.",
@@ -830,80 +929,6 @@
       ]
      }
     ],
-    "liquidity_funding": [
-     {
-      "text": "Cash and cash-like investments rose by {{cash_like.change@FY2026}} to {{cash_like@FY2026}}, taking cash liquidity to revenue up by {{cash_liquidity_to_revenue.change@FY2026}} to {{cash_liquidity_to_revenue@FY2026}}.",
-      "facts": [
-       {
-        "id": "cash_like.change@FY2026",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "cash_like@FY2026",
-        "claims": []
-       },
-       {
-        "id": "cash_liquidity_to_revenue.change@FY2026",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "cash_liquidity_to_revenue@FY2026",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Cash liquidity to revenue of {{cash_liquidity_to_revenue@FY2026}} is in line with the peer median of {{cash_liquidity_to_revenue.peer_median@2025}}, ranking {{cash_liquidity_to_revenue.peer_rank@2025}}.",
-      "facts": [
-       {
-        "id": "cash_liquidity_to_revenue@FY2026",
-        "claims": [
-         "in_line_with_peers"
-        ]
-       },
-       {
-        "id": "cash_liquidity_to_revenue.peer_median@2025",
-        "claims": []
-       },
-       {
-        "id": "cash_liquidity_to_revenue.peer_rank@2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Customer prepayments rose: advance ticket cover increased by {{advance_ticket_cover.change@FY2026}} to {{advance_ticket_cover@FY2026}} and contract liabilities by {{contract_liabilities.change@FY2026}} to {{contract_liabilities@FY2026}}, so a larger share of liquidity is refundable cash.",
-      "facts": [
-       {
-        "id": "advance_ticket_cover.change@FY2026",
-        "claims": [
-         "up",
-         "worse"
-        ]
-       },
-       {
-        "id": "advance_ticket_cover@FY2026",
-        "claims": []
-       },
-       {
-        "id": "contract_liabilities.change@FY2026",
-        "claims": [
-         "up"
-        ]
-       },
-       {
-        "id": "contract_liabilities@FY2026",
-        "claims": []
-       }
-      ]
-     }
-    ],
     "operating_performance": [
      {
       "text": "Passengers rose by {{passengers.change@FY2026}} to {{passengers@FY2026}} on capacity up {{ask.change@FY2026}} to {{ask@FY2026}} available seat kilometres, with RPK up {{rpk.change@FY2026}} to {{rpk@FY2026}} revenue passenger kilometres.",
@@ -1034,100 +1059,75 @@
       ]
      }
     ],
-    "snapshot": [
+    "liquidity_funding": [
      {
-      "text": "Wizz Air, the low-cost carrier, grew revenue by {{revenue.change@FY2026}} to {{revenue@FY2026}} in FY2026, but operating profit fell by {{operating_profit.change@FY2026}} to {{operating_profit@FY2026}} as CASK ex-fuel increased by {{cask_ex_fuel.change@FY2026}}.",
+      "text": "Cash and cash-like investments rose by {{cash_like.change@FY2026}} to {{cash_like@FY2026}}, taking cash liquidity to revenue up by {{cash_liquidity_to_revenue.change@FY2026}} to {{cash_liquidity_to_revenue@FY2026}}.",
       "facts": [
        {
-        "id": "revenue.change@FY2026",
+        "id": "cash_like.change@FY2026",
         "claims": [
          "up",
          "better"
         ]
        },
        {
-        "id": "revenue@FY2026",
+        "id": "cash_like@FY2026",
         "claims": []
        },
        {
-        "id": "operating_profit.change@FY2026",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "operating_profit@FY2026",
-        "claims": []
-       },
-       {
-        "id": "cask_ex_fuel.change@FY2026",
-        "claims": [
-         "up",
-         "worse"
-        ]
-       }
-      ]
-     },
-     {
-      "text": "Net leverage fell by {{net_leverage.change@FY2026}} to {{net_leverage@FY2026}} and gross leverage by {{gross_leverage.change@FY2026}} to {{gross_leverage@FY2026}}, helped by EBITDA up {{ebitda.change@FY2026}} to {{ebitda@FY2026}}.",
-      "facts": [
-       {
-        "id": "net_leverage.change@FY2026",
-        "claims": [
-         "down",
-         "better"
-        ]
-       },
-       {
-        "id": "net_leverage@FY2026",
-        "claims": []
-       },
-       {
-        "id": "gross_leverage.change@FY2026",
-        "claims": [
-         "down",
-         "better"
-        ]
-       },
-       {
-        "id": "gross_leverage@FY2026",
-        "claims": []
-       },
-       {
-        "id": "ebitda.change@FY2026",
+        "id": "cash_liquidity_to_revenue.change@FY2026",
         "claims": [
          "up",
          "better"
         ]
        },
        {
-        "id": "ebitda@FY2026",
+        "id": "cash_liquidity_to_revenue@FY2026",
         "claims": []
        }
       ]
      },
      {
-      "text": "The main point to watch is the gap to peers: net leverage of {{net_leverage@FY2026}} is above the peer median of {{net_leverage.peer_median@2025}}, and FFO to debt of {{ffo_to_debt@FY2026}} sits below the peer median of {{ffo_to_debt.peer_median@2025}}.",
+      "text": "Cash liquidity to revenue of {{cash_liquidity_to_revenue@FY2026}} is in line with the peer median of {{cash_liquidity_to_revenue.peer_median@2025}}, ranking {{cash_liquidity_to_revenue.peer_rank@2025}}.",
       "facts": [
        {
-        "id": "net_leverage@FY2026",
+        "id": "cash_liquidity_to_revenue@FY2026",
         "claims": [
-         "above_peers"
+         "in_line_with_peers"
         ]
        },
        {
-        "id": "net_leverage.peer_median@2025",
+        "id": "cash_liquidity_to_revenue.peer_median@2025",
         "claims": []
        },
        {
-        "id": "ffo_to_debt@FY2026",
+        "id": "cash_liquidity_to_revenue.peer_rank@2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Customer prepayments rose: advance ticket cover increased by {{advance_ticket_cover.change@FY2026}} to {{advance_ticket_cover@FY2026}} and contract liabilities by {{contract_liabilities.change@FY2026}} to {{contract_liabilities@FY2026}}, so a larger share of liquidity is refundable cash.",
+      "facts": [
+       {
+        "id": "advance_ticket_cover.change@FY2026",
         "claims": [
-         "below_peers"
+         "up",
+         "worse"
         ]
        },
        {
-        "id": "ffo_to_debt.peer_median@2025",
+        "id": "advance_ticket_cover@FY2026",
+        "claims": []
+       },
+       {
+        "id": "contract_liabilities.change@FY2026",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "contract_liabilities@FY2026",
         "claims": []
        }
       ]

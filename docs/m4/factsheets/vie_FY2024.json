@@ -44,9 +44,9 @@
    "period": "FY2023 to FY2024",
    "rank": null,
    "rank_of": null,
-   "rendered": "10.4%",
+   "rendered": "7.6%",
    "unit": "relative",
-   "value": "0.1042863552933412963565517335",
+   "value": "0.07573098368985438286016426513",
    "vs_peers": null
   },
   "aero_revenue_per_passenger@FY2023": {
@@ -78,9 +78,9 @@
    "period": "FY2024",
    "rank": null,
    "rank_of": null,
-   "rendered": "EUR 15.98",
+   "rendered": "EUR 15.57",
    "unit": "per_passenger",
-   "value": "15.981072555205",
+   "value": "15.567823343849",
    "vs_peers": null
   },
   "capex_intensity.change@FY2024": {
@@ -1047,9 +1047,9 @@
    "period": "FY2023 to FY2024",
    "rank": null,
    "rank_of": null,
-   "rendered": "2.2 points",
+   "rendered": "1.0 point",
    "unit": "points",
-   "value": "0.022415427721",
+   "value": "0.009971681056",
    "vs_peers": null
   },
   "non_aero_share@FY2023": {
@@ -1081,9 +1081,9 @@
    "period": "FY2024",
    "rank": null,
    "rank_of": null,
-   "rendered": "51.9%",
+   "rendered": "53.1%",
    "unit": "pct",
-   "value": "0.518778468633",
+   "value": "0.531222215298",
    "vs_peers": null
   },
   "operating_profit.change@FY2024": {
@@ -1392,6 +1392,23 @@
    "value": "55612000.000000000000",
    "vs_peers": null
   },
+  "traffic_growth.change@FY2024": {
+   "assessment": "worse",
+   "direction": "down",
+   "id": "traffic_growth.change@FY2024",
+   "kind": "change",
+   "label": "change in Traffic growth, FY2023 to FY2024",
+   "metric": "traffic_growth",
+   "note": "printed without a sign: say the direction in words",
+   "peer_assessment": null,
+   "period": "FY2023 to FY2024",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "17.4 points",
+   "unit": "points",
+   "value": "0.173697346212",
+   "vs_peers": null
+  },
   "traffic_growth.peer_median@2024": {
    "assessment": null,
    "direction": null,
@@ -1406,7 +1423,7 @@
    "rank_of": null,
    "rendered": "8.3%",
    "unit": "pct",
-   "value": "0.082891347389",
+   "value": "0.0827649014145",
    "vs_peers": "below"
   },
   "traffic_growth.peer_rank@2024": {
@@ -1426,9 +1443,26 @@
    "value": "2",
    "vs_peers": null
   },
-  "traffic_growth@FY2024": {
+  "traffic_growth@FY2023": {
    "assessment": null,
    "direction": null,
+   "id": "traffic_growth@FY2023",
+   "kind": "value",
+   "label": "Traffic growth, FY2023",
+   "metric": "traffic_growth",
+   "note": "",
+   "peer_assessment": null,
+   "period": "FY2023",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "24.7%",
+   "unit": "pct",
+   "value": "0.247066132092",
+   "vs_peers": null
+  },
+  "traffic_growth@FY2024": {
+   "assessment": "worse",
+   "direction": "down",
    "id": "traffic_growth@FY2024",
    "kind": "value",
    "label": "Traffic growth, FY2024",
@@ -1499,8 +1533,6 @@
   "net_debt.change@FY2024": "a percentage change is not meaningful (a year is negative or zero); the direction is still up, on net_debt@FY2024",
   "non_aero_share.peer_median@2024": "the peer median would use a figure not verified yet (adp)",
   "non_aero_share.peer_rank@2024": "the peer median would use a figure not verified yet (adp)",
-  "traffic_growth.change@FY2024": "needs both years verified",
-  "traffic_growth@FY2023": "not verified yet: waiting for Imane's review",
   "undrawn_facilities.change@FY2024": "needs both years verified",
   "undrawn_facilities@FY2023": "no figure for this year",
   "undrawn_facilities@FY2024": "no figure for this year"

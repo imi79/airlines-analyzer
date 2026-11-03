@@ -25,6 +25,97 @@
    "request_hash": "b7f057f1e7c4d70ae866705ef7082af31def06a74b037e207133327bb79e96f5",
    "model": "deepseek-flash",
    "draft": {
+    "snapshot": [
+     {
+      "text": "Finnair, the Finnish network carrier, ended FY2024 with a weaker credit profile as EBITDA fell by {{ebitda.change@FY2024}} to {{ebitda@FY2024}} on revenue up {{revenue.change@FY2024}} to {{revenue@FY2024}}.",
+      "facts": [
+       {
+        "id": "ebitda.change@FY2024",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "ebitda@FY2024",
+        "claims": []
+       },
+       {
+        "id": "revenue.change@FY2024",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "revenue@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Net leverage rose by {{net_leverage.change@FY2024}} to {{net_leverage@FY2024}} and gross leverage by {{gross_leverage.change@FY2024}} to {{gross_leverage@FY2024}}, both above the peer median.",
+      "facts": [
+       {
+        "id": "net_leverage.change@FY2024",
+        "claims": [
+         "up",
+         "worse"
+        ]
+       },
+       {
+        "id": "net_leverage@FY2024",
+        "claims": [
+         "above_peers",
+         "worse_than_peers"
+        ]
+       },
+       {
+        "id": "gross_leverage.change@FY2024",
+        "claims": [
+         "up",
+         "worse"
+        ]
+       },
+       {
+        "id": "gross_leverage@FY2024",
+        "claims": [
+         "above_peers",
+         "worse_than_peers"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "The main point to watch is liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}} as cash and cash-like investments declined by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}.",
+      "facts": [
+       {
+        "id": "cash_liquidity_to_revenue.change@FY2024",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2024",
+        "claims": [
+         "in_line_with_peers"
+        ]
+       },
+       {
+        "id": "cash_like.change@FY2024",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_like@FY2024",
+        "claims": []
+       }
+      ]
+     }
+    ],
     "credit_metrics": [
      {
       "text": "EBITDA declined by {{ebitda.change@FY2024}} to {{ebitda@FY2024}}, taking the EBITDA margin down by {{ebitda_margin.change@FY2024}} to {{ebitda_margin@FY2024}}.",
@@ -175,6 +266,79 @@
       ]
      }
     ],
+    "operating_performance": [
+     {
+      "text": "Passengers rose by {{passengers.change@FY2024}} to {{passengers@FY2024}}, while the fleet was stable at {{fleet@FY2024}} aircraft.",
+      "facts": [
+       {
+        "id": "passengers.change@FY2024",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "passengers@FY2024",
+        "claims": []
+       },
+       {
+        "id": "fleet@FY2024",
+        "claims": [
+         "flat"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Revenue grew by {{revenue.change@FY2024}} to {{revenue@FY2024}}, but operating profit fell by {{operating_profit.change@FY2024}} to {{operating_profit@FY2024}}.",
+      "facts": [
+       {
+        "id": "revenue.change@FY2024",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "revenue@FY2024",
+        "claims": []
+       },
+       {
+        "id": "operating_profit.change@FY2024",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "operating_profit@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Fuel made up {{fuel_share_of_costs@FY2024}} of costs, down {{fuel_share_of_costs.change@FY2024}} and above the peer median of {{fuel_share_of_costs.peer_median@2024}}, so the cost base remains sensitive to jet fuel prices.",
+      "facts": [
+       {
+        "id": "fuel_share_of_costs@FY2024",
+        "claims": [
+         "down",
+         "above_peers"
+        ]
+       },
+       {
+        "id": "fuel_share_of_costs.change@FY2024",
+        "claims": [
+         "down"
+        ]
+       },
+       {
+        "id": "fuel_share_of_costs.peer_median@2024",
+        "claims": []
+       }
+      ]
+     }
+    ],
     "liquidity_funding": [
      {
       "text": "Cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, and total liquidity stood at {{liquidity@FY2024}}, including {{undrawn_facilities@FY2024}} of undrawn committed facilities.",
@@ -247,79 +411,6 @@
         "claims": [
          "in_line_with_peers"
         ]
-       }
-      ]
-     }
-    ],
-    "operating_performance": [
-     {
-      "text": "Passengers rose by {{passengers.change@FY2024}} to {{passengers@FY2024}}, while the fleet was stable at {{fleet@FY2024}} aircraft.",
-      "facts": [
-       {
-        "id": "passengers.change@FY2024",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "passengers@FY2024",
-        "claims": []
-       },
-       {
-        "id": "fleet@FY2024",
-        "claims": [
-         "flat"
-        ]
-       }
-      ]
-     },
-     {
-      "text": "Revenue grew by {{revenue.change@FY2024}} to {{revenue@FY2024}}, but operating profit fell by {{operating_profit.change@FY2024}} to {{operating_profit@FY2024}}.",
-      "facts": [
-       {
-        "id": "revenue.change@FY2024",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "revenue@FY2024",
-        "claims": []
-       },
-       {
-        "id": "operating_profit.change@FY2024",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "operating_profit@FY2024",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Fuel made up {{fuel_share_of_costs@FY2024}} of costs, down {{fuel_share_of_costs.change@FY2024}} and above the peer median of {{fuel_share_of_costs.peer_median@2024}}, so the cost base remains sensitive to jet fuel prices.",
-      "facts": [
-       {
-        "id": "fuel_share_of_costs@FY2024",
-        "claims": [
-         "down",
-         "above_peers"
-        ]
-       },
-       {
-        "id": "fuel_share_of_costs.change@FY2024",
-        "claims": [
-         "down"
-        ]
-       },
-       {
-        "id": "fuel_share_of_costs.peer_median@2024",
-        "claims": []
        }
       ]
      }
@@ -415,97 +506,6 @@
        },
        {
         "id": "ebitda_margin.peer_rank@2024",
-        "claims": []
-       }
-      ]
-     }
-    ],
-    "snapshot": [
-     {
-      "text": "Finnair, the Finnish network carrier, ended FY2024 with a weaker credit profile as EBITDA fell by {{ebitda.change@FY2024}} to {{ebitda@FY2024}} on revenue up {{revenue.change@FY2024}} to {{revenue@FY2024}}.",
-      "facts": [
-       {
-        "id": "ebitda.change@FY2024",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "ebitda@FY2024",
-        "claims": []
-       },
-       {
-        "id": "revenue.change@FY2024",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "revenue@FY2024",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Net leverage rose by {{net_leverage.change@FY2024}} to {{net_leverage@FY2024}} and gross leverage by {{gross_leverage.change@FY2024}} to {{gross_leverage@FY2024}}, both above the peer median.",
-      "facts": [
-       {
-        "id": "net_leverage.change@FY2024",
-        "claims": [
-         "up",
-         "worse"
-        ]
-       },
-       {
-        "id": "net_leverage@FY2024",
-        "claims": [
-         "above_peers",
-         "worse_than_peers"
-        ]
-       },
-       {
-        "id": "gross_leverage.change@FY2024",
-        "claims": [
-         "up",
-         "worse"
-        ]
-       },
-       {
-        "id": "gross_leverage@FY2024",
-        "claims": [
-         "above_peers",
-         "worse_than_peers"
-        ]
-       }
-      ]
-     },
-     {
-      "text": "The main point to watch is liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}} as cash and cash-like investments declined by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}.",
-      "facts": [
-       {
-        "id": "cash_liquidity_to_revenue.change@FY2024",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "cash_liquidity_to_revenue@FY2024",
-        "claims": [
-         "in_line_with_peers"
-        ]
-       },
-       {
-        "id": "cash_like.change@FY2024",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "cash_like@FY2024",
         "claims": []
        }
       ]

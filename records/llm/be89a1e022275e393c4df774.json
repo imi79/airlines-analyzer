@@ -1,0 +1,149 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "No passenger traffic figures are given in the passages.",
+    "fiscal_year": 2025,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "comment": "No passenger traffic figures are given in the passages.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "comment": "No ASK figures are given in the passages.",
+    "fiscal_year": 2025,
+    "found": false,
+    "item": "ask"
+   },
+   {
+    "comment": "No ASK figures are given in the passages.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "ask"
+   },
+   {
+    "comment": "No RPK figures are given in the passages.",
+    "fiscal_year": 2025,
+    "found": false,
+    "item": "rpk"
+   },
+   {
+    "comment": "No RPK figures are given in the passages.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "rpk"
+   },
+   {
+    "comment": "No load factor is given in the passages.",
+    "fiscal_year": 2025,
+    "found": false,
+    "item": "load_factor"
+   },
+   {
+    "comment": "No load factor is given in the passages.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "load_factor"
+   },
+   {
+    "comment": "No passenger revenue line is given in the passages.",
+    "fiscal_year": 2025,
+    "found": false,
+    "item": "passenger_revenue"
+   },
+   {
+    "comment": "No passenger revenue line is given in the passages.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "passenger_revenue"
+   },
+   {
+    "comment": "No fleet count is given in the passages.",
+    "fiscal_year": 2025,
+    "found": false,
+    "item": "fleet_count"
+   },
+   {
+    "comment": "No fleet count is given in the passages.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "fleet_count"
+   },
+   {
+    "comment": "No average fleet age is given in the passages.",
+    "fiscal_year": 2025,
+    "found": false,
+    "item": "fleet_age"
+   },
+   {
+    "comment": "No average fleet age is given in the passages.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "fleet_age"
+   },
+   {
+    "comment": "No fuel hedge ratio is given in the passages.",
+    "fiscal_year": 2025,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "comment": "No fuel hedge ratio is given in the passages.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "component": true,
+    "currency": "EUR",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "page 15",
+    "printed_value": "1,405",
+    "quote": "As of December 31, 2025 these credit lines (undrawn) amount respectively to €1,405 million and €1,000 million with a maturity in 2029 (see Note 31.6 “Credit lines” and 4.1 “Significant events occurring during the period”).",
+    "scale": "million",
+    "scope": "Air France-KLM and Air France ESG KPI-Linked Revolving Credit Facility"
+   },
+   {
+    "component": true,
+    "currency": "EUR",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "page 15",
+    "printed_value": "1,000",
+    "quote": "As of December 31, 2025 these credit lines (undrawn) amount respectively to €1,405 million and €1,000 million with a maturity in 2029 (see Note 31.6 “Credit lines” and 4.1 “Significant events occurring during the period”).",
+    "scale": "million",
+    "scope": "KLM ESG KPI-Linked Revolving Credit Facility"
+   },
+   {
+    "comment": "Undrawn facility amounts are only stated as of December 31, 2025, not for 2024.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "undrawn_facilities"
+   }
+  ]
+ },
+ "label": "afkl FY2025 afkl-2025-consolidated-statements-en",
+ "recorded_at": "2026-11-03T20:28:34+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v4",
+  "provider": "deepseek",
+  "system_sha256": "2d59768d9db1f230b27fd62982ec1ae26368ae0405a253e12728325751a19839",
+  "tool_sha256": "61c55522fbd4da1f68f903713a6ffaf85f3654cbac96ba3e9a6bc11333896ad7",
+  "user_sha256": "0e42f3c662a4e59d13fa52c9e557eecc56c8ca5d56401990306fe2a2a7bbdcec"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 7288,
+  "output_tokens": 960
+ }
+}

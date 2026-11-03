@@ -1,4 +1,5 @@
 issuer,fiscal_year,period_end,concept,value,status,note,currency
+adp,2021,2021-12-31,aero_revenue_per_passenger,24.534606205251,unverified,"Aeronautical revenue 1,028 ÷ passengers 41.9m = 24.53",per_passenger
 adp,2021,2021-12-31,capex_intensity,0.189773136478,verified,"Capex 527 ÷ revenue 2,777 = 19.0%",pct
 adp,2021,2021-12-31,ebitda,760000000.0,verified,Operating profit -20.0 − share of associates (-61.0) + D&A 719 = 760,EUR
 adp,2021,2021-12-31,ebitda_margin,0.273676629456,verified,"EBITDA 760 ÷ revenue 2,777 = 27.4%",pct
@@ -8,6 +9,7 @@ adp,2021,2021-12-31,ffo,531000000.0,verified,EBITDA 760 − interest paid 285 �
 adp,2021,2021-12-31,ffo_to_debt,0.051488412683,verified,"FFO 531 ÷ total debt 10,313 = 5.1%",pct
 adp,2021,2021-12-31,gross_leverage,13.569736842105,verified,"Total debt 10,313 ÷ EBITDA 760 = 13.57x",x
 adp,2021,2021-12-31,interest_coverage,2.666666666667,verified,EBITDA 760 ÷ interest paid (interest expense not tagged) 285 = 2.67x,x
+adp,2021,2021-12-31,non_aero_share,0.629816348578,verified,"(Revenue 2,777 − aeronautical revenue 1,028) ÷ revenue 2,777 = 63.0%",pct
 adp,2021,2021-12-31,passengers,41900000.0,unverified,"Passengers 41.9m, read from the report",count
 adp,2021,2021-12-31,revenue_per_passenger,66.276849642005,unverified,"Revenue 2,777 ÷ passengers 41.9m = 66.28",per_passenger
 adp,2021,2021-12-31,total_debt,10313000000.0,verified,"Borrowings, non-current 9,144 + borrowings, current 1,169 = 10,313 (lease liabilities included in borrowings)",EUR
@@ -42,7 +44,7 @@ adp,2023,2023-12-31,net_debt,7926000000.000001,verified,"Total debt 10,387 − c
 adp,2023,2023-12-31,net_leverage,4.04387755102,verified,"Net debt 7,926 ÷ EBITDA 1,960 = 4.04x",x
 adp,2023,2023-12-31,non_aero_share,0.652411282985,unverified,"(Revenue 5,495 − aeronautical revenue 1,910) ÷ revenue 5,495 = 65.2%",pct
 adp,2023,2023-12-31,total_debt,10387000000.0,verified,"Borrowings, non-current 8,521 + borrowings, current 1,866 = 10,387 (lease liabilities included in borrowings)",EUR
-adp,2024,2024-12-31,aero_revenue_per_passenger,19.862682525868,unverified,"Aeronautical revenue 2,054 ÷ passengers 103.4m = 19.86",per_passenger
+adp,2024,2024-12-31,aero_revenue_per_passenger,19.864603481625,unverified,"Aeronautical revenue 2,054 ÷ passengers 103.4m = 19.86",per_passenger
 adp,2024,2024-12-31,capex_intensity,0.189834361806,verified,"Capex 1,169 ÷ revenue 6,158 = 19.0%",pct
 adp,2024,2024-12-31,cash_like,2096000000.0,verified,"Cash and cash equivalents 1,958 + other cash-like items (company's net debt definition) 138 = 2,096",EUR
 adp,2024,2024-12-31,cash_liquidity,2096000000.0,verified,"Cash and cash-like 2,096 (without undrawn facilities)",EUR
@@ -58,8 +60,8 @@ adp,2024,2024-12-31,interest_coverage,6.969798657718,verified,"EBITDA 2,077 ÷ i
 adp,2024,2024-12-31,net_debt,8576000000.0,verified,"Total debt 10,672 − cash and cash-like 2,096 = 8,576",EUR
 adp,2024,2024-12-31,net_leverage,4.129032258065,verified,"Net debt 8,576 ÷ EBITDA 2,077 = 4.13x",x
 adp,2024,2024-12-31,non_aero_share,0.666450146151,unverified,"(Revenue 6,158 − aeronautical revenue 2,054) ÷ revenue 6,158 = 66.6%",pct
-adp,2024,2024-12-31,passengers,103410000.0,verified,"Passengers 103.4m, read from the report",count
-adp,2024,2024-12-31,revenue_per_passenger,59.549366598975,verified,"Revenue 6,158 ÷ passengers 103.4m = 59.55",per_passenger
+adp,2024,2024-12-31,passengers,103400000.0,verified,"Passengers 103.4m, read from the report",count
+adp,2024,2024-12-31,revenue_per_passenger,59.555125725338,verified,"Revenue 6,158 ÷ passengers 103.4m = 59.56",per_passenger
 adp,2024,2024-12-31,total_debt,10672000000.0,verified,"Borrowings, non-current 8,887 + borrowings, current 1,785 = 10,672 (lease liabilities included in borrowings)",EUR
 adp,2025,2025-12-31,aero_revenue_per_passenger,20.485981308411,unverified,"Aeronautical revenue 2,192 ÷ passengers 107.0m = 20.49",per_passenger
 adp,2025,2025-12-31,capex_intensity,0.181682577566,verified,"Capex 1,218 ÷ revenue 6,704 = 18.2%",pct
@@ -80,7 +82,7 @@ adp,2025,2025-12-31,non_aero_share,0.673031026253,unverified,"(Revenue 6,704 −
 adp,2025,2025-12-31,passengers,107000000.0,verified,"Passengers 107.0m, read from the report",count
 adp,2025,2025-12-31,revenue_per_passenger,62.654205607477,verified,"Revenue 6,704 ÷ passengers 107.0m = 62.65",per_passenger
 adp,2025,2025-12-31,total_debt,10587000000.0,verified,"Borrowings, non-current 8,728 + borrowings, current 1,859 = 10,587 (lease liabilities included in borrowings)",EUR
-adp,2025,2025-12-31,traffic_growth,0.034716178319,verified,Passengers 107.0m ÷ prior-year passengers 103.4m − 1 = 3.5%,pct
+adp,2025,2025-12-31,traffic_growth,0.034816247582,verified,Passengers 107.0m ÷ prior-year passengers 103.4m − 1 = 3.5%,pct
 aena,2021,2021-12-31,aero_revenue_per_passenger,10.273866666667,unverified,"Aeronautical revenue 1,233 ÷ passengers 120.0m = 10.27",per_passenger
 aena,2021,2021-12-31,capex_intensity,0.276391164979,verified,"Capex 671 ÷ revenue 2,428 = 27.6%",pct
 aena,2021,2021-12-31,cash_like,1466797000.0,verified,"Cash and cash equivalents 1,467 = 1,467",EUR
@@ -146,7 +148,7 @@ aena,2023,2023-12-31,passengers,283200000.0,verified,"Passengers 283.2m, read fr
 aena,2023,2023-12-31,revenue_per_passenger,17.795981638418,verified,"Revenue 5,040 ÷ passengers 283.2m = 17.80",per_passenger
 aena,2023,2023-12-31,total_debt,8585560000.0,verified,"Borrowings, non-current 6,814 + borrowings, current 1,772 = 8,586 (lease liabilities included in borrowings)",EUR
 aena,2023,2023-12-31,traffic_growth,0.16208453016,verified,Passengers 283.2m ÷ prior-year passengers 243.7m − 1 = 16.2%,pct
-aena,2024,2024-12-31,aero_revenue_per_passenger,10.173903508583,verified,"Aeronautical revenue 3,148 ÷ passengers 309.4m = 10.17",per_passenger
+aena,2024,2024-12-31,aero_revenue_per_passenger,10.176259295183,verified,"Aeronautical revenue 3,148 ÷ passengers 309.3m = 10.18",per_passenger
 aena,2024,2024-12-31,capex_intensity,0.142794582002,verified,"Capex 823 ÷ revenue 5,764 = 14.3%",pct
 aena,2024,2024-12-31,cash_like,1821283000.0,verified,"Cash and cash equivalents 1,821 = 1,821",EUR
 aena,2024,2024-12-31,cash_liquidity,1821283000.0,verified,"Cash and cash-like 1,821 (without undrawn facilities)",EUR
@@ -159,16 +161,14 @@ aena,2024,2024-12-31,ffo,2854695999.9999995,verified,"EBITDA 3,510 − interest 
 aena,2024,2024-12-31,ffo_to_debt,0.390045897783,verified,"FFO 2,855 ÷ total debt 7,319 = 39.0%",pct
 aena,2024,2024-12-31,gross_leverage,2.08495150886,verified,"Total debt 7,319 ÷ EBITDA 3,510 = 2.08x",x
 aena,2024,2024-12-31,interest_coverage,12.33500244217,verified,"EBITDA 3,510 ÷ interest expense 285 = 12.34x",x
-aena,2024,2024-12-31,liquidity,4581283000.0,verified,"Cash and cash-like 1,821 + undrawn committed facilities 2,760 = 4,581",EUR
-aena,2024,2024-12-31,liquidity_to_revenue,0.794874357403,verified,"Liquidity 4,581 ÷ revenue 5,764 = 79.5%",pct
 aena,2024,2024-12-31,net_debt,5497589000.000001,verified,"Total debt 7,319 − cash and cash-like 1,821 = 5,498",EUR
 aena,2024,2024-12-31,net_leverage,1.566116538265,verified,"Net debt 5,498 ÷ EBITDA 3,510 = 1.57x",x
 aena,2024,2024-12-31,non_aero_share,0.453890852673,verified,"(Revenue 5,764 − aeronautical revenue 3,148) ÷ revenue 5,764 = 45.4%",pct
-aena,2024,2024-12-31,passengers,309371619.0,verified,"Passengers 309.4m, read from the report",count
-aena,2024,2024-12-31,revenue_per_passenger,18.629798746988,verified,"Revenue 5,764 ÷ passengers 309.4m = 18.63",per_passenger
+aena,2024,2024-12-31,passengers,309300000.0,verified,"Passengers 309.3m, read from the report",count
+aena,2024,2024-12-31,revenue_per_passenger,18.634112512124,verified,"Revenue 5,764 ÷ passengers 309.3m = 18.63",per_passenger
 aena,2024,2024-12-31,total_debt,7318872000.0,verified,"Borrowings, non-current 5,978 + borrowings, current 1,341 = 7,319 (lease liabilities included in borrowings)",EUR
-aena,2024,2024-12-31,traffic_growth,0.092413908898,verified,Passengers 309.4m ÷ prior-year passengers 283.2m − 1 = 9.2%,pct
-aena,2025,2025-12-31,aero_revenue_per_passenger,10.252375749795,verified,"Aeronautical revenue 3,297 ÷ passengers 321.6m = 10.25",per_passenger
+aena,2024,2024-12-31,traffic_growth,0.092161016949,verified,Passengers 309.3m ÷ prior-year passengers 283.2m − 1 = 9.2%,pct
+aena,2025,2025-12-31,aero_revenue_per_passenger,10.252375749795,unverified,"Aeronautical revenue 3,297 ÷ passengers 321.6m = 10.25",per_passenger
 aena,2025,2025-12-31,capex_intensity,0.168719041364,verified,"Capex 1,059 ÷ revenue 6,278 = 16.9%",pct
 aena,2025,2025-12-31,cash_like,2047669000.0,verified,"Cash and cash equivalents 2,048 = 2,048",EUR
 aena,2025,2025-12-31,cash_liquidity,2047669000.0,verified,"Cash and cash-like 2,048 (without undrawn facilities)",EUR
@@ -186,10 +186,10 @@ aena,2025,2025-12-31,liquidity_to_revenue,0.683727076135,verified,"Liquidity 4,2
 aena,2025,2025-12-31,net_debt,5509027000.0,verified,"Total debt 7,557 − cash and cash-like 2,048 = 5,509",EUR
 aena,2025,2025-12-31,net_leverage,1.455476994646,verified,"Net debt 5,509 ÷ EBITDA 3,785 = 1.46x",x
 aena,2025,2025-12-31,non_aero_share,0.474855523047,verified,"(Revenue 6,278 − aeronautical revenue 3,297) ÷ revenue 6,278 = 47.5%",pct
-aena,2025,2025-12-31,passengers,321587316.0,verified,"Passengers 321.6m, read from the report",count
-aena,2025,2025-12-31,revenue_per_passenger,19.522962155634,verified,"Revenue 6,278 ÷ passengers 321.6m = 19.52",per_passenger
+aena,2025,2025-12-31,passengers,321587316.0,unverified,"Passengers 321.6m, read from the report",count
+aena,2025,2025-12-31,revenue_per_passenger,19.522962155634,unverified,"Revenue 6,278 ÷ passengers 321.6m = 19.52",per_passenger
 aena,2025,2025-12-31,total_debt,7556696000.0,verified,"Borrowings, non-current 6,693 + borrowings, current 864 = 7,557 (lease liabilities included in borrowings)",EUR
-aena,2025,2025-12-31,traffic_growth,0.039485512729,verified,Passengers 321.6m ÷ prior-year passengers 309.4m − 1 = 3.9%,pct
+aena,2025,2025-12-31,traffic_growth,0.039726207565,unverified,Passengers 321.6m ÷ prior-year passengers 309.3m − 1 = 4.0%,pct
 afkl,2021,2021-12-31,capex_intensity,0.153824659448,verified,"Capex 2,202 ÷ revenue 14,315 = 15.4%",pct
 afkl,2021,2021-12-31,ebitda,-161000000.0,verified,"Operating profit -2,532 + D&A 2,371 = -161",EUR
 afkl,2021,2021-12-31,ebitda_margin,-0.011246943765,verified,"EBITDA -161 ÷ revenue 14,315 = -1.1%",pct
@@ -210,7 +210,6 @@ afkl,2022,2022-12-31,ffo,2988999999.9999995,verified,"EBITDA 3,616 − interest 
 afkl,2022,2022-12-31,ffo_to_debt,0.203264195852,verified,"FFO 2,989 ÷ total debt 14,705 = 20.3%",pct
 afkl,2022,2022-12-31,fleet,505.0,verified,"Fleet (aircraft in operation) 505, read from the report",count
 afkl,2022,2022-12-31,fleet_age,12.1,verified,"Fleet average age 12.1 years, read from the report",years
-afkl,2022,2022-12-31,fuel_hedge_ratio,0.51,verified,"Fuel hedged for the next twelve months 51.0%, read from the report",pct
 afkl,2022,2022-12-31,gross_leverage,4.066648230088,verified,"Total debt 14,705 ÷ EBITDA 3,616 = 4.07x",x
 afkl,2022,2022-12-31,interest_coverage,6.355008787346,verified,"EBITDA 3,616 ÷ interest expense 569 = 6.36x",x
 afkl,2022,2022-12-31,total_debt,14705000000.0,verified,"Borrowings, non-current 9,657 + borrowings, current 896 + lease liabilities, non-current 3,318 + lease liabilities, current 834 = 14,705",EUR
@@ -373,8 +372,8 @@ easyjet,2024,2024-09-30,fleet_age,10.2,verified,"Fleet average age 10.2 years, r
 easyjet,2024,2024-09-30,fuel_share_of_costs,0.254931192661,verified,"Fuel 2,223 ÷ operating costs 8,720 (revenue 9,309 − operating profit 589) = 25.5%",pct
 easyjet,2024,2024-09-30,gross_leverage,2.413539367182,verified,"Total debt 3,280 ÷ EBITDA 1,359 = 2.41x",x
 easyjet,2024,2024-09-30,interest_coverage,10.295454545455,verified,"EBITDA 1,359 ÷ interest expense 132 = 10.30x",x
-easyjet,2024,2024-09-30,liquidity,5065300196.49875,unverified,"Cash and cash-like 3,461 + undrawn committed facilities 1,604 = 5,065",GBP
-easyjet,2024,2024-09-30,liquidity_to_revenue,0.544129358309,unverified,"Liquidity 5,065 ÷ revenue 9,309 = 54.4%",pct
+easyjet,2024,2024-09-30,liquidity,3759474455.1625576,unverified,"Cash and cash-like 3,461 + undrawn committed facilities 298 = 3,759",GBP
+easyjet,2024,2024-09-30,liquidity_to_revenue,0.403853738872,unverified,"Liquidity 3,759 ÷ revenue 9,309 = 40.4%",pct
 easyjet,2024,2024-09-30,load_factor,0.90828823697,verified,RPK 111.6bn ÷ ASK 122.9bn = 90.8%,pct
 easyjet,2024,2024-09-30,net_debt,-181000000.0,verified,"Total debt 3,280 − cash and cash-like 3,461 = -181",GBP
 easyjet,2024,2024-09-30,net_leverage,-0.133186166299,verified,"Net debt -181 ÷ EBITDA 1,359 = -0.13x",x
@@ -698,10 +697,13 @@ norwegian,2021,2021-12-31,rask,0.53701388153,verified,"Revenue 5,068 ÷ ASK 9.4b
 norwegian,2021,2021-12-31,rpk,6869000000.0,verified,"RPK 6.9bn, read from the report",count
 norwegian,2021,2021-12-31,total_debt,9377400000.0,verified,"Borrowings, non-current 3,982 + borrowings, current 183 + lease liabilities, non-current 4,435 + lease liabilities, current 778 = 9,377",NOK
 norwegian,2022,2022-12-31,advance_ticket_cover,0.328457275422,verified,"Advance ticket sales 2,548 ÷ cash and cash-like 7,759 = 32.8%",pct
+norwegian,2022,2022-12-31,ask,27382000000.0,unverified,"ASK 27.4bn, read from the report",count
 norwegian,2022,2022-12-31,capex_intensity,0.002575612238,verified,"Capex 48.6 ÷ revenue 18,869 = 0.3%",pct
 norwegian,2022,2022-12-31,cash_like,7759000000.0,verified,"Cash and cash equivalents 7,759 + current investments not reported (0) = 7,759",NOK
 norwegian,2022,2022-12-31,cash_liquidity,7759000000.0,verified,"Cash and cash-like 7,759 (without undrawn facilities)",NOK
 norwegian,2022,2022-12-31,cash_liquidity_to_revenue,0.411197023737,verified,"Cash liquidity 7,759 ÷ revenue 18,869 = 41.1%",pct
+norwegian,2022,2022-12-31,cask,0.634248776569,unverified,"Operating costs 17,367 (revenue 18,869 − operating profit 1,502) ÷ ASK 27.4bn = 63.42 cents",per_km
+norwegian,2022,2022-12-31,cask_ex_fuel,0.3650427288,unverified,"Operating costs excluding fuel 9,996 (revenue 18,869 − operating profit 1,502 − fuel 7,371) ÷ ASK 27.4bn = 36.50 cents",per_km
 norwegian,2022,2022-12-31,ebitda,4014000000.0,verified,"Operating profit 1,502 + D&A 2,512 = 4,014",NOK
 norwegian,2022,2022-12-31,ebitda_margin,0.212726492239,verified,"EBITDA 4,014 ÷ revenue 18,869 = 21.3%",pct
 norwegian,2022,2022-12-31,fcf,2377100000.0,verified,"Cash from operations 2,426 − capex 48.6 = 2,377",NOK
@@ -710,14 +712,16 @@ norwegian,2022,2022-12-31,ffo,3613400000.0000005,verified,"EBITDA 4,014 − inte
 norwegian,2022,2022-12-31,ffo_to_debt,0.358283838855,verified,"FFO 3,613 ÷ total debt 10,085 = 35.8%",pct
 norwegian,2022,2022-12-31,fleet,70.0,verified,"Fleet (aircraft in operation) 70, read from the report",count
 norwegian,2022,2022-12-31,fleet_age,9.0,verified,"Fleet average age 9.0 years, read from the report",years
-norwegian,2022,2022-12-31,fuel_hedge_ratio,0.15,unverified,"Fuel hedged for the next twelve months 15.0%, read from the report",pct
+norwegian,2022,2022-12-31,fuel_hedge_ratio,0.15,verified,"Fuel hedged for the next twelve months 15.0%, read from the report",pct
 norwegian,2022,2022-12-31,fuel_share_of_costs,0.424448667012,verified,"Fuel 7,371 ÷ operating costs 17,367 (revenue 18,869 − operating profit 1,502) = 42.4%",pct
 norwegian,2022,2022-12-31,gross_leverage,2.512531141006,verified,"Total debt 10,085 ÷ EBITDA 4,014 = 2.51x",x
 norwegian,2022,2022-12-31,interest_coverage,6.175384615385,verified,"EBITDA 4,014 ÷ interest expense 650 = 6.18x",x
+norwegian,2022,2022-12-31,load_factor,0.831093419034,unverified,RPK 22.8bn ÷ ASK 27.4bn = 83.1%,pct
 norwegian,2022,2022-12-31,net_debt,2326300000.0,verified,"Total debt 10,085 − cash and cash-like 7,759 = 2,326",NOK
 norwegian,2022,2022-12-31,net_leverage,0.579546586946,verified,"Net debt 2,326 ÷ EBITDA 4,014 = 0.58x",x
 norwegian,2022,2022-12-31,passenger_yield,0.667825284528,unverified,"Passenger revenue 15,198 ÷ RPK 22.8bn = 66.78 cents",per_km
-norwegian,2022,2022-12-31,passengers,17800000.0,verified,"Passengers 17.8m, read from the report",count
+norwegian,2022,2022-12-31,passengers,17800000.0,unverified,"Passengers 17.8m, read from the report",count
+norwegian,2022,2022-12-31,rask,0.6891132861,unverified,"Revenue 18,869 ÷ ASK 27.4bn = 68.91 cents",per_km
 norwegian,2022,2022-12-31,rpk,22757000000.0,unverified,"RPK 22.8bn, read from the report",count
 norwegian,2022,2022-12-31,total_debt,10085300000.0,verified,"Borrowings, non-current 4,050 + borrowings, current 198 + lease liabilities, non-current 4,646 + lease liabilities, current 1,191 = 10,085",NOK
 norwegian,2023,2023-12-31,advance_ticket_cover,0.337891305036,verified,"Advance ticket sales 3,202 ÷ cash and cash-like 9,478 = 33.8%",pct
@@ -734,7 +738,7 @@ norwegian,2023,2023-12-31,fcf,4715100000.0,verified,"Cash from operations 5,258 
 norwegian,2023,2023-12-31,fcf_to_debt,0.336182925264,verified,"Free cash flow 4,715 ÷ total debt 14,025 = 33.6%",pct
 norwegian,2023,2023-12-31,ffo,5147700000.0,verified,"EBITDA 5,766 − interest paid 616 − tax paid 1.7 = 5,148",NOK
 norwegian,2023,2023-12-31,ffo_to_debt,0.367026965363,verified,"FFO 5,148 ÷ total debt 14,025 = 36.7%",pct
-norwegian,2023,2023-12-31,fleet,87.0,unverified,"Fleet (aircraft in operation) 87, read from the report",count
+norwegian,2023,2023-12-31,fleet,87.0,verified,"Fleet (aircraft in operation) 87, read from the report",count
 norwegian,2023,2023-12-31,fuel_hedge_ratio,0.5,verified,"Fuel hedged for the next twelve months 50.0%, read from the report",pct
 norwegian,2023,2023-12-31,fuel_share_of_costs,0.331000720807,verified,"Fuel 7,715 ÷ operating costs 23,307 (revenue 25,539 − operating profit 2,232) = 33.1%",pct
 norwegian,2023,2023-12-31,gross_leverage,2.432473681472,verified,"Total debt 14,025 ÷ EBITDA 5,766 = 2.43x",x
@@ -786,6 +790,7 @@ norwegian,2025,2025-12-31,net_debt,9491999999.999998,verified,"Total debt 19,551
 norwegian,2025,2025-12-31,net_leverage,1.192013060404,verified,"Net debt 9,492 ÷ EBITDA 7,963 = 1.19x",x
 norwegian,2025,2025-12-31,passengers,27300000.0,verified,"Passengers 27.3m, read from the report",count
 norwegian,2025,2025-12-31,total_debt,19551000000.0,verified,"Borrowings, non-current 3,782 + borrowings, current 2,065 + lease liabilities, non-current 11,930 + lease liabilities, current 1,774 = 19,551",NOK
+vie,2021,2021-12-31,aero_revenue_per_passenger,16.298076923077,verified,Aeronautical revenue 170 ÷ passengers 10.4m = 16.30,per_passenger
 vie,2021,2021-12-31,capex_intensity,0.1490418374,verified,Capex 60.7 ÷ revenue 407 = 14.9%,pct
 vie,2021,2021-12-31,cash_like,150755800.0,verified,Cash and cash equivalents 124 + other current financial assets 27.1 = 151,EUR
 vie,2021,2021-12-31,cash_liquidity,150755800.0,verified,Cash and cash-like 151 (without undrawn facilities),EUR
@@ -800,10 +805,11 @@ vie,2021,2021-12-31,gross_leverage,2.154618469985,verified,Total debt 332 ÷ EBI
 vie,2021,2021-12-31,interest_coverage,10.056539109318,verified,EBITDA 154 ÷ interest paid (interest expense not tagged) 15.3 = 10.06x,x
 vie,2021,2021-12-31,net_debt,181167699.99999997,verified,Total debt 332 − cash and cash-like 151 = 181,EUR
 vie,2021,2021-12-31,net_leverage,1.176015776481,verified,Net debt 181 ÷ EBITDA 154 = 1.18x,x
+vie,2021,2021-12-31,non_aero_share,0.58355711508,verified,(Revenue 407 − aeronautical revenue 170) ÷ revenue 407 = 58.4%,pct
 vie,2021,2021-12-31,passengers,10400000.0,verified,"Passengers 10.4m, read from the report",count
 vie,2021,2021-12-31,revenue_per_passenger,39.136403846154,verified,Revenue 407 ÷ passengers 10.4m = 39.14,per_passenger
 vie,2021,2021-12-31,total_debt,331923500.0,verified,Borrowings and lease liabilities (one line) 332,EUR
-vie,2022,2022-12-31,aero_revenue_per_passenger,13.554522305909,unverified,Aeronautical revenue 321 ÷ passengers 23.7m = 13.55,per_passenger
+vie,2022,2022-12-31,aero_revenue_per_passenger,13.049491783531,unverified,Aeronautical revenue 309 ÷ passengers 23.7m = 13.05,per_passenger
 vie,2022,2022-12-31,capex_intensity,0.087382853777,verified,Capex 60.5 ÷ revenue 693 = 8.7%,pct
 vie,2022,2022-12-31,cash_like,130713400.0,verified,Cash and cash equivalents 105 + other current financial assets 25.5 = 131,EUR
 vie,2022,2022-12-31,cash_liquidity,130713400.0,verified,Cash and cash-like 131 (without undrawn facilities),EUR
@@ -818,11 +824,11 @@ vie,2022,2022-12-31,gross_leverage,0.938379805884,verified,Total debt 280 ÷ EBI
 vie,2022,2022-12-31,interest_coverage,22.345104033207,verified,EBITDA 298 ÷ interest paid (interest expense not tagged) 13.3 = 22.35x,x
 vie,2022,2022-12-31,net_debt,149142800.0,verified,Total debt 280 − cash and cash-like 131 = 149,EUR
 vie,2022,2022-12-31,net_leverage,0.500087515349,verified,Net debt 149 ÷ EBITDA 298 = 0.50x,x
-vie,2022,2022-12-31,non_aero_share,0.536611983994,verified,(Revenue 693 − aeronautical revenue 321) ÷ revenue 693 = 53.7%,pct
-vie,2022,2022-12-31,passengers,23682133.0,unverified,"Passengers 23.7m, read from the report",count
-vie,2022,2022-12-31,revenue_per_passenger,29.250912491708,unverified,Revenue 693 ÷ passengers 23.7m = 29.25,per_passenger
+vie,2022,2022-12-31,non_aero_share,0.55387744614,unverified,(Revenue 693 − aeronautical revenue 309) ÷ revenue 693 = 55.4%,pct
+vie,2022,2022-12-31,passengers,23682133.0,verified,"Passengers 23.7m, read from the report",count
+vie,2022,2022-12-31,revenue_per_passenger,29.250912491708,verified,Revenue 693 ÷ passengers 23.7m = 29.25,per_passenger
 vie,2022,2022-12-31,total_debt,279856200.0,verified,Borrowings and lease liabilities (one line) 280,EUR
-vie,2022,2022-12-31,traffic_growth,1.277128173077,unverified,Passengers 23.7m ÷ prior-year passengers 10.4m − 1 = 127.7%,pct
+vie,2022,2022-12-31,traffic_growth,1.277128173077,verified,Passengers 23.7m ÷ prior-year passengers 10.4m − 1 = 127.7%,pct
 vie,2023,2023-12-31,aero_revenue_per_passenger,14.471855491649,verified,Aeronautical revenue 427 ÷ passengers 29.5m = 14.47,per_passenger
 vie,2023,2023-12-31,capex_intensity,0.104996177331,verified,Capex 97.8 ÷ revenue 932 = 10.5%,pct
 vie,2023,2023-12-31,cash_like,73986800.0,verified,Cash and cash equivalents 31.9 + other current financial assets 42.1 = 74.0,EUR
@@ -842,8 +848,8 @@ vie,2023,2023-12-31,non_aero_share,0.541193896354,verified,(Revenue 932 − aero
 vie,2023,2023-12-31,passengers,29533186.0,verified,"Passengers 29.5m, read from the report",count
 vie,2023,2023-12-31,revenue_per_passenger,31.54242146445,verified,Revenue 932 ÷ passengers 29.5m = 31.54,per_passenger
 vie,2023,2023-12-31,total_debt,55345200.0,verified,Borrowings and lease liabilities (one line) 55.3,EUR
-vie,2023,2023-12-31,traffic_growth,0.247066132092,unverified,Passengers 29.5m ÷ prior-year passengers 23.7m − 1 = 24.7%,pct
-vie,2024,2024-12-31,aero_revenue_per_passenger,15.981072555205,verified,Aeronautical revenue 507 ÷ passengers 31.7m = 15.98,per_passenger
+vie,2023,2023-12-31,traffic_growth,0.247066132092,verified,Passengers 29.5m ÷ prior-year passengers 23.7m − 1 = 24.7%,pct
+vie,2024,2024-12-31,aero_revenue_per_passenger,15.567823343849,verified,Aeronautical revenue 494 ÷ passengers 31.7m = 15.57,per_passenger
 vie,2024,2024-12-31,capex_intensity,0.161305913268,verified,"Capex 170 ÷ revenue 1,053 = 16.1%",pct
 vie,2024,2024-12-31,cash_like,72810800.0,verified,Cash and cash equivalents 22.1 + other current financial assets 50.7 = 72.8,EUR
 vie,2024,2024-12-31,cash_liquidity,72810800.0,verified,Cash and cash-like 72.8 (without undrawn facilities),EUR
@@ -858,7 +864,7 @@ vie,2024,2024-12-31,gross_leverage,0.125840072772,verified,Total debt 55.6 ÷ EB
 vie,2024,2024-12-31,interest_coverage,201.86643522748,verified,EBITDA 442 ÷ interest paid (interest expense not tagged) 2.2 = 201.87x,x
 vie,2024,2024-12-31,net_debt,-17198800.0,verified,Total debt 55.6 − cash and cash-like 72.8 = -17.2,EUR
 vie,2024,2024-12-31,net_leverage,-0.038917827872,verified,Net debt -17.2 ÷ EBITDA 442 = -0.04x,x
-vie,2024,2024-12-31,non_aero_share,0.518778468633,verified,"(Revenue 1,053 − aeronautical revenue 507) ÷ revenue 1,053 = 51.9%",pct
+vie,2024,2024-12-31,non_aero_share,0.531222215298,verified,"(Revenue 1,053 − aeronautical revenue 494) ÷ revenue 1,053 = 53.1%",pct
 vie,2024,2024-12-31,passengers,31700000.0,verified,"Passengers 31.7m, read from the report",count
 vie,2024,2024-12-31,revenue_per_passenger,33.209388012618,verified,"Revenue 1,053 ÷ passengers 31.7m = 33.21",per_passenger
 vie,2024,2024-12-31,total_debt,55612000.0,verified,Borrowings and lease liabilities (one line) 55.6,EUR
@@ -947,7 +953,7 @@ wizz,2023,2023-03-31,ffo,100000.0,verified,EBITDA 134 − interest paid 127 − 
 wizz,2023,2023-03-31,ffo_to_debt,0.000018955549,verified,"FFO 0.1 ÷ total debt 5,276 = 0.0%",pct
 wizz,2023,2023-03-31,fleet,179.0,verified,"Fleet (aircraft in operation) 179, read from the report",count
 wizz,2023,2023-03-31,fleet_age,4.6,verified,"Fleet average age 4.6 years, read from the report",years
-wizz,2023,2023-03-31,fuel_hedge_ratio,0.56,unverified,"Fuel hedged for the next twelve months 56.0%, read from the report",pct
+wizz,2023,2023-03-31,fuel_hedge_ratio,0.56,verified,"Fuel hedged for the next twelve months 56.0%, read from the report",pct
 wizz,2023,2023-03-31,fuel_share_of_costs,0.448,verified,"Fuel 1,954 ÷ operating costs 4,362 (revenue 3,896 − operating profit -467) = 44.8%",pct
 wizz,2023,2023-03-31,gross_leverage,39.281459419211,verified,"Total debt 5,276 ÷ EBITDA 134 = 39.28x",x
 wizz,2023,2023-03-31,interest_coverage,1.055817610063,verified,EBITDA 134 ÷ interest paid (interest expense not tagged) 127 = 1.06x,x

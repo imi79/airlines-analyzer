@@ -63,18 +63,18 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | passengers@FY2025 | Passengers, FY2025 | 32.6m | up, better vs prior year |
 | passengers@FY2024 | Passengers, FY2024 | 31.7m |  |
 | passengers.change@FY2025 | change in Passengers, FY2024 to FY2025 | 2.8% | up, better vs prior year; printed without a sign: say the direction in words |
-| traffic_growth@FY2025 | Traffic growth, FY2025 | 2.8% | down, worse vs prior year; company below peer median, worse |
+| traffic_growth@FY2025 | Traffic growth, FY2025 | 2.8% | down, worse vs prior year |
 | traffic_growth@FY2024 | Traffic growth, FY2024 | 7.3% |  |
 | traffic_growth.change@FY2025 | change in Traffic growth, FY2024 to FY2025 | 4.5 points | down, worse vs prior year; printed without a sign: say the direction in words |
 | revenue_per_passenger@FY2025 | Revenue per passenger, FY2025 | EUR 34.63 | up, better vs prior year |
 | revenue_per_passenger@FY2024 | Revenue per passenger, FY2024 | EUR 33.21 |  |
 | revenue_per_passenger.change@FY2025 | change in Revenue per passenger, FY2024 to FY2025 | 4.3% | up, better vs prior year; printed without a sign: say the direction in words |
-| aero_revenue_per_passenger@FY2025 | Aeronautical revenue per passenger, FY2025 | EUR 16.05 | flat vs prior year |
-| aero_revenue_per_passenger@FY2024 | Aeronautical revenue per passenger, FY2024 | EUR 15.98 |  |
-| aero_revenue_per_passenger.change@FY2025 | change in Aeronautical revenue per passenger, FY2024 to FY2025 | 0.4% | flat vs prior year; printed without a sign: say the direction in words |
+| aero_revenue_per_passenger@FY2025 | Aeronautical revenue per passenger, FY2025 | EUR 16.05 | up, better vs prior year |
+| aero_revenue_per_passenger@FY2024 | Aeronautical revenue per passenger, FY2024 | EUR 15.57 |  |
+| aero_revenue_per_passenger.change@FY2025 | change in Aeronautical revenue per passenger, FY2024 to FY2025 | 3.1% | up, better vs prior year; printed without a sign: say the direction in words |
 | non_aero_share@FY2025 | Non-aeronautical share, FY2025 | 53.6% | up, better vs prior year |
-| non_aero_share@FY2024 | Non-aeronautical share, FY2024 | 51.9% |  |
-| non_aero_share.change@FY2025 | change in Non-aeronautical share, FY2024 to FY2025 | 1.7 points | up, better vs prior year; printed without a sign: say the direction in words |
+| non_aero_share@FY2024 | Non-aeronautical share, FY2024 | 53.1% |  |
+| non_aero_share.change@FY2025 | change in Non-aeronautical share, FY2024 to FY2025 | 0.5 points | up, better vs prior year; printed without a sign: say the direction in words |
 
 ## Liquidity and funding
 
@@ -106,8 +106,6 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | capex_intensity.peer_median@2025 | Capex intensity, median of airports, peer year 2025 (3 companies) | 18.2% | company above peer median |
 | cash_liquidity_to_revenue.peer_median@2025 | Cash liquidity to revenue (partial), median of airports, peer year 2025 (3 companies) | 30.1% | company below peer median, worse |
 | cash_liquidity_to_revenue.peer_rank@2025 | Cash liquidity to revenue (partial), rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| traffic_growth.peer_median@2025 | Traffic growth, median of airports, peer year 2025 (3 companies) | 3.5% | company below peer median, worse |
-| traffic_growth.peer_rank@2025 | Traffic growth, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
 
 ## Other figures
 
@@ -127,6 +125,8 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - liquidity@FY2024: Undrawn committed credit facilities not available for FY2024
 - liquidity_to_revenue@FY2025: Liquidity: Undrawn committed credit facilities not available for FY2025
 - liquidity_to_revenue@FY2024: Liquidity: Undrawn committed credit facilities not available for FY2024
+- traffic_growth.peer_median@2025: the peer median would use a figure not verified yet (aena)
+- traffic_growth.peer_rank@2025: the peer median would use a figure not verified yet (aena)
 - non_aero_share.peer_median@2025: the peer median would use a figure not verified yet (adp)
 - non_aero_share.peer_rank@2025: the peer median would use a figure not verified yet (adp)
 - contract_liabilities@FY2025: no figure for this year

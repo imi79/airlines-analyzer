@@ -207,7 +207,7 @@ def write_draft(outcome: Outcome, narrative: dict, out: Path) -> None:
                 "sections": a.sections,
                 "request_hash": a.result.request_hash if a.result else None,
                 "model": a.result.model if a.result else None,
-                "draft": a.draft.to_dict() if a.draft else None,
+                "draft": _in_order(a.draft.to_dict(), narrative) if a.draft else None,
                 "errors": [str(e) for e in a.report.errors] if a.report else [],
                 "error": a.error,
             }
@@ -217,6 +217,13 @@ def write_draft(outcome: Outcome, narrative: dict, out: Path) -> None:
     (folder / f"{sheet.key}.json").write_text(
         json.dumps(record, indent=1, ensure_ascii=False) + "\n"
     )
+
+
+def _in_order(sections: dict, narrative: dict) -> dict:
+    """Sections in tearsheet order: a live answer and its replay give the same file."""
+    order = list(narrative["sections"])
+    return dict(sorted(sections.items(), key=lambda kv: order.index(kv[0]) if kv[0] in order
+                       else len(order)))  # fmt: skip
 
 
 def gate2(outcomes: list[Outcome]) -> tuple[int, set[str], bool]:

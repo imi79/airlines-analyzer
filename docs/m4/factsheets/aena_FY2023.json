@@ -1460,6 +1460,40 @@
    "value": "0.868748803173",
    "vs_peers": null
   },
+  "traffic_growth.peer_median@2023": {
+   "assessment": null,
+   "direction": null,
+   "id": "traffic_growth.peer_median@2023",
+   "kind": "peer_median",
+   "label": "Traffic growth, median of airports, peer year 2023 (2 companies)",
+   "metric": "traffic_growth",
+   "note": "",
+   "peer_assessment": "worse",
+   "period": "peer year 2023",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "20.5%",
+   "unit": "pct",
+   "value": "0.204575331126",
+   "vs_peers": "below"
+  },
+  "traffic_growth.peer_rank@2023": {
+   "assessment": null,
+   "direction": null,
+   "id": "traffic_growth.peer_rank@2023",
+   "kind": "peer_rank",
+   "label": "Traffic growth, rank in airports, peer year 2023 (1st = strongest, i.e. the highest)",
+   "metric": "traffic_growth",
+   "note": "weakest",
+   "peer_assessment": null,
+   "period": "peer year 2023",
+   "rank": 2,
+   "rank_of": 2,
+   "rendered": "2nd of 2",
+   "unit": "rank",
+   "value": "2",
+   "vs_peers": null
+  },
   "traffic_growth@FY2022": {
    "assessment": null,
    "direction": null,
@@ -1485,14 +1519,14 @@
    "label": "Traffic growth, FY2023",
    "metric": "traffic_growth",
    "note": "",
-   "peer_assessment": null,
+   "peer_assessment": "worse",
    "period": "FY2023",
    "rank": null,
    "rank_of": null,
    "rendered": "16.2%",
    "unit": "pct",
    "value": "0.162084530160",
-   "vs_peers": null
+   "vs_peers": "below"
   },
   "undrawn_facilities.change@FY2023": {
    "assessment": "better",
@@ -1597,8 +1631,6 @@
   "non_aero_share.change@FY2023": "needs both years verified",
   "non_aero_share.peer_median@2023": "the peer median would use a figure not verified yet (adp)",
   "non_aero_share.peer_rank@2023": "the peer median would use a figure not verified yet (adp)",
-  "non_aero_share@FY2022": "not verified yet: waiting for Imane's review",
-  "traffic_growth.peer_median@2023": "the peer median would use a figure not verified yet (vie)",
-  "traffic_growth.peer_rank@2023": "the peer median would use a figure not verified yet (vie)"
+  "non_aero_share@FY2022": "not verified yet: waiting for Imane's review"
  }
 }

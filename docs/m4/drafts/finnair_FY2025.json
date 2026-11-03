@@ -25,6 +25,94 @@
    "request_hash": "32c4747f61ecd3e1725f6ea22df3b5a5e9914a748a6205b1f65f73962e572bf9",
    "model": "deepseek-flash",
    "draft": {
+    "snapshot": [
+     {
+      "text": "Finnair, the Finnish network carrier, ended FY2025 with net leverage down to {{net_leverage@FY2025}} from {{net_leverage@FY2024}}, in line with the peer median, while revenue was broadly unchanged at {{revenue@FY2025}}.",
+      "facts": [
+       {
+        "id": "net_leverage@FY2025",
+        "claims": [
+         "down",
+         "better",
+         "in_line_with_peers"
+        ]
+       },
+       {
+        "id": "net_leverage@FY2024",
+        "claims": []
+       },
+       {
+        "id": "revenue@FY2025",
+        "claims": [
+         "flat"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "The EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, below the peer median, as EBITDA fell by {{ebitda.change@FY2025}} to {{ebitda@FY2025}}.",
+      "facts": [
+       {
+        "id": "ebitda_margin.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "ebitda_margin@FY2025",
+        "claims": [
+         "below_peers"
+        ]
+       },
+       {
+        "id": "ebitda.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "ebitda@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "The main point to watch is cash generation: FFO to debt fell by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}} and free cash flow declined by {{fcf.change@FY2025}} to {{fcf@FY2025}}, although liquidity to revenue rose to {{liquidity_to_revenue@FY2025}}.",
+      "facts": [
+       {
+        "id": "ffo_to_debt.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "ffo_to_debt@FY2025",
+        "claims": []
+       },
+       {
+        "id": "fcf.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "fcf@FY2025",
+        "claims": []
+       },
+       {
+        "id": "liquidity_to_revenue@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       }
+      ]
+     }
+    ],
     "credit_metrics": [
      {
       "text": "EBITDA fell by {{ebitda.change@FY2025}} to {{ebitda@FY2025}} on revenue of {{revenue@FY2025}}, broadly unchanged year on year, and operating profit declined by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}}.",
@@ -180,6 +268,73 @@
       ]
      }
     ],
+    "operating_performance": [
+     {
+      "text": "Passengers were broadly unchanged at {{passengers@FY2025}}, up {{passengers.change@FY2025}}, on a fleet that was stable at {{fleet@FY2025}} aircraft with an average age of {{fleet_age@FY2025}}.",
+      "facts": [
+       {
+        "id": "passengers@FY2025",
+        "claims": [
+         "flat"
+        ]
+       },
+       {
+        "id": "passengers.change@FY2025",
+        "claims": [
+         "flat"
+        ]
+       },
+       {
+        "id": "fleet@FY2025",
+        "claims": [
+         "flat"
+        ]
+       },
+       {
+        "id": "fleet_age@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Revenue was broadly unchanged at {{revenue@FY2025}}, a change of {{revenue.change@FY2025}}, so the earnings decline came from the cost side rather than from volumes.",
+      "facts": [
+       {
+        "id": "revenue@FY2025",
+        "claims": [
+         "flat"
+        ]
+       },
+       {
+        "id": "revenue.change@FY2025",
+        "claims": [
+         "flat"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "The fuel share of costs fell by {{fuel_share_of_costs.change@FY2025}} to {{fuel_share_of_costs@FY2025}}, above the peer median of {{fuel_share_of_costs.peer_median@2025}}, leaving margins exposed to jet fuel prices.",
+      "facts": [
+       {
+        "id": "fuel_share_of_costs.change@FY2025",
+        "claims": [
+         "down"
+        ]
+       },
+       {
+        "id": "fuel_share_of_costs@FY2025",
+        "claims": [
+         "above_peers"
+        ]
+       },
+       {
+        "id": "fuel_share_of_costs.peer_median@2025",
+        "claims": []
+       }
+      ]
+     }
+    ],
     "liquidity_funding": [
      {
       "text": "Liquidity rose by {{liquidity.change@FY2025}} to {{liquidity@FY2025}}, of which {{undrawn_facilities@FY2025}} in undrawn committed facilities, stable year on year.",
@@ -254,73 +409,6 @@
        },
        {
         "id": "contract_liabilities@FY2025",
-        "claims": []
-       }
-      ]
-     }
-    ],
-    "operating_performance": [
-     {
-      "text": "Passengers were broadly unchanged at {{passengers@FY2025}}, up {{passengers.change@FY2025}}, on a fleet that was stable at {{fleet@FY2025}} aircraft with an average age of {{fleet_age@FY2025}}.",
-      "facts": [
-       {
-        "id": "passengers@FY2025",
-        "claims": [
-         "flat"
-        ]
-       },
-       {
-        "id": "passengers.change@FY2025",
-        "claims": [
-         "flat"
-        ]
-       },
-       {
-        "id": "fleet@FY2025",
-        "claims": [
-         "flat"
-        ]
-       },
-       {
-        "id": "fleet_age@FY2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Revenue was broadly unchanged at {{revenue@FY2025}}, a change of {{revenue.change@FY2025}}, so the earnings decline came from the cost side rather than from volumes.",
-      "facts": [
-       {
-        "id": "revenue@FY2025",
-        "claims": [
-         "flat"
-        ]
-       },
-       {
-        "id": "revenue.change@FY2025",
-        "claims": [
-         "flat"
-        ]
-       }
-      ]
-     },
-     {
-      "text": "The fuel share of costs fell by {{fuel_share_of_costs.change@FY2025}} to {{fuel_share_of_costs@FY2025}}, above the peer median of {{fuel_share_of_costs.peer_median@2025}}, leaving margins exposed to jet fuel prices.",
-      "facts": [
-       {
-        "id": "fuel_share_of_costs.change@FY2025",
-        "claims": [
-         "down"
-        ]
-       },
-       {
-        "id": "fuel_share_of_costs@FY2025",
-        "claims": [
-         "above_peers"
-        ]
-       },
-       {
-        "id": "fuel_share_of_costs.peer_median@2025",
         "claims": []
        }
       ]
@@ -424,94 +512,6 @@
        {
         "id": "cash_liquidity_to_revenue.peer_median@2025",
         "claims": []
-       }
-      ]
-     }
-    ],
-    "snapshot": [
-     {
-      "text": "Finnair, the Finnish network carrier, ended FY2025 with net leverage down to {{net_leverage@FY2025}} from {{net_leverage@FY2024}}, in line with the peer median, while revenue was broadly unchanged at {{revenue@FY2025}}.",
-      "facts": [
-       {
-        "id": "net_leverage@FY2025",
-        "claims": [
-         "down",
-         "better",
-         "in_line_with_peers"
-        ]
-       },
-       {
-        "id": "net_leverage@FY2024",
-        "claims": []
-       },
-       {
-        "id": "revenue@FY2025",
-        "claims": [
-         "flat"
-        ]
-       }
-      ]
-     },
-     {
-      "text": "The EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, below the peer median, as EBITDA fell by {{ebitda.change@FY2025}} to {{ebitda@FY2025}}.",
-      "facts": [
-       {
-        "id": "ebitda_margin.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "ebitda_margin@FY2025",
-        "claims": [
-         "below_peers"
-        ]
-       },
-       {
-        "id": "ebitda.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "ebitda@FY2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "The main point to watch is cash generation: FFO to debt fell by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}} and free cash flow declined by {{fcf.change@FY2025}} to {{fcf@FY2025}}, although liquidity to revenue rose to {{liquidity_to_revenue@FY2025}}.",
-      "facts": [
-       {
-        "id": "ffo_to_debt.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "ffo_to_debt@FY2025",
-        "claims": []
-       },
-       {
-        "id": "fcf.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "fcf@FY2025",
-        "claims": []
-       },
-       {
-        "id": "liquidity_to_revenue@FY2025",
-        "claims": [
-         "up",
-         "better"
-        ]
        }
       ]
      }

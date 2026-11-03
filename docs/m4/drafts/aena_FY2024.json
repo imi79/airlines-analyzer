@@ -2,7 +2,7 @@
  "issuer": "aena",
  "fiscal_year": 2024,
  "prompt_version": "draft-v3",
- "input_hash": "1555da187909337d8ddee4ca6bfbe45ca539ece23e16bda5eacb1247f4250c23",
+ "input_hash": "8f7fb9ffbcb4489aca925349da3e357cf930797659a109b4107c8ad72f047266",
  "status": {
   "snapshot": "passed",
   "credit_metrics": "passed",
@@ -22,12 +22,88 @@
     "peer_positioning",
     "watch_items"
    ],
-   "request_hash": "d77fd182c9c241fac5239fada6dd9e0cbf565945f99b52c6a0e25845fc78b7c3",
+   "request_hash": "c66b4016908582a8b4dfbb0c984e8de50886edf9e8baa9380eedaee88b1b6f7e",
    "model": "deepseek-flash",
    "draft": {
+    "snapshot": [
+     {
+      "text": "Aena, the Spanish airport operator, ended FY2024 with a stronger credit profile as revenue rose by {{revenue.change@FY2024}} to {{revenue@FY2024}} and EBITDA reached {{ebitda@FY2024}}.",
+      "facts": [
+       {
+        "id": "revenue.change@FY2024",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "revenue@FY2024",
+        "claims": []
+       },
+       {
+        "id": "ebitda@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Net leverage fell by {{net_leverage.change@FY2024}} to {{net_leverage@FY2024}}, with the EBITDA margin widening by {{ebitda_margin.change@FY2024}} to {{ebitda_margin@FY2024}}.",
+      "facts": [
+       {
+        "id": "net_leverage.change@FY2024",
+        "claims": [
+         "down",
+         "better"
+        ]
+       },
+       {
+        "id": "net_leverage@FY2024",
+        "claims": []
+       },
+       {
+        "id": "ebitda_margin.change@FY2024",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "ebitda_margin@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "The main point to watch is liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}} as cash and cash-like investments declined by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}.",
+      "facts": [
+       {
+        "id": "cash_liquidity_to_revenue.change@FY2024",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2024",
+        "claims": []
+       },
+       {
+        "id": "cash_like.change@FY2024",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_like@FY2024",
+        "claims": []
+       }
+      ]
+     }
+    ],
     "credit_metrics": [
      {
-      "text": "EBITDA increased by {{ebitda.change@FY2024}} to {{ebitda@FY2024}} on revenue up {{revenue.change@FY2024}} at {{revenue@FY2024}}, and operating profit rose by {{operating_profit.change@FY2024}} to {{operating_profit@FY2024}}.",
+      "text": "EBITDA increased by {{ebitda.change@FY2024}} to {{ebitda@FY2024}} on revenue up {{revenue.change@FY2024}} at {{revenue@FY2024}}, lifting the EBITDA margin to {{ebitda_margin@FY2024}}.",
       "facts": [
        {
         "id": "ebitda.change@FY2024",
@@ -52,14 +128,7 @@
         "claims": []
        },
        {
-        "id": "operating_profit.change@FY2024",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "operating_profit@FY2024",
+        "id": "ebitda_margin@FY2024",
         "claims": []
        }
       ]
@@ -128,7 +197,7 @@
       ]
      },
      {
-      "text": "Free cash flow rose by {{fcf.change@FY2024}} to {{fcf@FY2024}} as capex intensity eased by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}, lifting FCF to debt to {{fcf_to_debt@FY2024}}.",
+      "text": "Free cash flow rose by {{fcf.change@FY2024}} to {{fcf@FY2024}}, with FCF to debt up by {{fcf_to_debt.change@FY2024}} to {{fcf_to_debt@FY2024}} as capex intensity eased by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}.",
       "facts": [
        {
         "id": "fcf.change@FY2024",
@@ -142,6 +211,17 @@
         "claims": []
        },
        {
+        "id": "fcf_to_debt.change@FY2024",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "fcf_to_debt@FY2024",
+        "claims": []
+       },
+       {
         "id": "capex_intensity.change@FY2024",
         "claims": [
          "down"
@@ -150,18 +230,11 @@
        {
         "id": "capex_intensity@FY2024",
         "claims": []
-       },
-       {
-        "id": "fcf_to_debt@FY2024",
-        "claims": [
-         "up",
-         "better"
-        ]
        }
       ]
      },
      {
-      "text": "Interest coverage narrowed by {{interest_coverage.change@FY2024}} to {{interest_coverage@FY2024}}, still in line with the peer median.",
+      "text": "Interest coverage weakened by {{interest_coverage.change@FY2024}} to {{interest_coverage@FY2024}}, still a comfortable level against the debt service.",
       "facts": [
        {
         "id": "interest_coverage.change@FY2024",
@@ -172,80 +245,6 @@
        },
        {
         "id": "interest_coverage@FY2024",
-        "claims": [
-         "in_line_with_peers"
-        ]
-       }
-      ]
-     }
-    ],
-    "liquidity_funding": [
-     {
-      "text": "Liquidity fell by {{liquidity.change@FY2024}} to {{liquidity@FY2024}}, of which {{undrawn_facilities@FY2024}} in undrawn committed facilities.",
-      "facts": [
-       {
-        "id": "liquidity.change@FY2024",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "liquidity@FY2024",
-        "claims": []
-       },
-       {
-        "id": "undrawn_facilities@FY2024",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Undrawn committed facilities increased by {{undrawn_facilities.change@FY2024}}, partly offsetting cash and cash-like investments that fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}.",
-      "facts": [
-       {
-        "id": "undrawn_facilities.change@FY2024",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "cash_like.change@FY2024",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "cash_like@FY2024",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Liquidity to revenue declined by {{liquidity_to_revenue.change@FY2024}} to {{liquidity_to_revenue@FY2024}}, and cash liquidity to revenue by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}.",
-      "facts": [
-       {
-        "id": "liquidity_to_revenue.change@FY2024",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "liquidity_to_revenue@FY2024",
-        "claims": []
-       },
-       {
-        "id": "cash_liquidity_to_revenue.change@FY2024",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "cash_liquidity_to_revenue@FY2024",
         "claims": []
        }
       ]
@@ -253,7 +252,7 @@
     ],
     "operating_performance": [
      {
-      "text": "Passengers rose by {{passengers.change@FY2024}} to {{passengers@FY2024}}, although traffic growth slowed by {{traffic_growth.change@FY2024}} to {{traffic_growth@FY2024}}, still above the peer median of {{traffic_growth.peer_median@2024}}.",
+      "text": "Passengers rose by {{passengers.change@FY2024}} to {{passengers@FY2024}}, although traffic growth slowed by {{traffic_growth.change@FY2024}} to {{traffic_growth@FY2024}} from the rebound of the prior year.",
       "facts": [
        {
         "id": "passengers.change@FY2024",
@@ -275,19 +274,12 @@
        },
        {
         "id": "traffic_growth@FY2024",
-        "claims": [
-         "above_peers",
-         "better_than_peers"
-        ]
-       },
-       {
-        "id": "traffic_growth.peer_median@2024",
         "claims": []
        }
       ]
      },
      {
-      "text": "Revenue per passenger increased by {{revenue_per_passenger.change@FY2024}} to {{revenue_per_passenger@FY2024}}, with aeronautical revenue per passenger up {{aero_revenue_per_passenger.change@FY2024}} to {{aero_revenue_per_passenger@FY2024}}.",
+      "text": "Revenue per passenger increased by {{revenue_per_passenger.change@FY2024}} to {{revenue_per_passenger@FY2024}}, with aeronautical revenue per passenger up {{aero_revenue_per_passenger.change@FY2024}} at {{aero_revenue_per_passenger@FY2024}}.",
       "facts": [
        {
         "id": "revenue_per_passenger.change@FY2024",
@@ -314,7 +306,7 @@
       ]
      },
      {
-      "text": "The non-aeronautical share of revenue was broadly unchanged at {{non_aero_share@FY2024}}, a change of {{non_aero_share.change@FY2024}}.",
+      "text": "Non-aeronautical activities made up {{non_aero_share@FY2024}} of revenue, broadly unchanged on the prior year ({{non_aero_share.change@FY2024}}).",
       "facts": [
        {
         "id": "non_aero_share@FY2024",
@@ -327,6 +319,65 @@
         "claims": [
          "flat"
         ]
+       }
+      ]
+     }
+    ],
+    "liquidity_funding": [
+     {
+      "text": "Cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, and cash liquidity to revenue declined by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}.",
+      "facts": [
+       {
+        "id": "cash_like.change@FY2024",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_like@FY2024",
+        "claims": []
+       },
+       {
+        "id": "cash_liquidity_to_revenue.change@FY2024",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "The cash buffer is thinner than a year earlier, when cash liquidity stood at {{cash_liquidity@FY2023}} and liquidity at {{liquidity@FY2023}}, including {{undrawn_facilities@FY2023}} of undrawn committed facilities.",
+      "facts": [
+       {
+        "id": "cash_liquidity@FY2023",
+        "claims": []
+       },
+       {
+        "id": "liquidity@FY2023",
+        "claims": []
+       },
+       {
+        "id": "undrawn_facilities@FY2023",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Cash liquidity to revenue is in line with the airport peer median of {{cash_liquidity_to_revenue.peer_median@2024}}, ranking {{cash_liquidity_to_revenue.peer_rank@2024}}.",
+      "facts": [
+       {
+        "id": "cash_liquidity_to_revenue.peer_median@2024",
+        "claims": []
+       },
+       {
+        "id": "cash_liquidity_to_revenue.peer_rank@2024",
+        "claims": []
        }
       ]
      }
@@ -344,8 +395,7 @@
        {
         "id": "ebitda_margin@FY2024",
         "claims": [
-         "above_peers",
-         "better_than_peers"
+         "above_peers"
         ]
        },
        {
@@ -355,7 +405,7 @@
       ]
      },
      {
-      "text": "Leverage sits at the group median, with net leverage of {{net_leverage@FY2024}} ({{net_leverage.peer_rank@2024}}) and gross leverage of {{gross_leverage@FY2024}} ({{gross_leverage.peer_rank@2024}}).",
+      "text": "Net leverage of {{net_leverage@FY2024}} and gross leverage of {{gross_leverage@FY2024}} are in line with the peer medians of {{net_leverage.peer_median@2024}} and {{gross_leverage.peer_median@2024}} respectively, ranking {{net_leverage.peer_rank@2024}} on net leverage.",
       "facts": [
        {
         "id": "net_leverage@FY2024",
@@ -364,23 +414,27 @@
         ]
        },
        {
-        "id": "net_leverage.peer_rank@2024",
-        "claims": []
-       },
-       {
         "id": "gross_leverage@FY2024",
         "claims": [
          "in_line_with_peers"
         ]
        },
        {
-        "id": "gross_leverage.peer_rank@2024",
+        "id": "net_leverage.peer_median@2024",
+        "claims": []
+       },
+       {
+        "id": "gross_leverage.peer_median@2024",
+        "claims": []
+       },
+       {
+        "id": "net_leverage.peer_rank@2024",
         "claims": []
        }
       ]
      },
      {
-      "text": "Cash flow metrics are in line with the median, with FFO to debt of {{ffo_to_debt@FY2024}} and FCF to debt of {{fcf_to_debt@FY2024}}, both ranking {{ffo_to_debt.peer_rank@2024}}.",
+      "text": "FFO to debt of {{ffo_to_debt@FY2024}} and FCF to debt of {{fcf_to_debt@FY2024}} sit at the peer medians of {{ffo_to_debt.peer_median@2024}} and {{fcf_to_debt.peer_median@2024}}, while capex intensity of {{capex_intensity@FY2024}} is below the peer median of {{capex_intensity.peer_median@2024}}.",
       "facts": [
        {
         "id": "ffo_to_debt@FY2024",
@@ -395,14 +449,13 @@
         ]
        },
        {
-        "id": "ffo_to_debt.peer_rank@2024",
+        "id": "ffo_to_debt.peer_median@2024",
         "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Capex intensity of {{capex_intensity@FY2024}} is below the peer median of {{capex_intensity.peer_median@2024}}, and traffic growth ranks {{traffic_growth.peer_rank@2024}} at {{traffic_growth@FY2024}}.",
-      "facts": [
+       },
+       {
+        "id": "fcf_to_debt.peer_median@2024",
+        "claims": []
+       },
        {
         "id": "capex_intensity@FY2024",
         "claims": [
@@ -412,84 +465,26 @@
        {
         "id": "capex_intensity.peer_median@2024",
         "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Traffic growth of {{traffic_growth@FY2024}} is above the peer median of {{traffic_growth.peer_median@2024}}, the strongest of the group ({{traffic_growth.peer_rank@2024}}).",
+      "facts": [
+       {
+        "id": "traffic_growth@FY2024",
+        "claims": [
+         "above_peers"
+        ]
+       },
+       {
+        "id": "traffic_growth.peer_median@2024",
+        "claims": []
        },
        {
         "id": "traffic_growth.peer_rank@2024",
         "claims": [
          "best_in_group"
-        ]
-       },
-       {
-        "id": "traffic_growth@FY2024",
-        "claims": []
-       }
-      ]
-     }
-    ],
-    "snapshot": [
-     {
-      "text": "Aena, the Spanish airport operator, had a stronger FY2024 as revenue rose by {{revenue.change@FY2024}} to {{revenue@FY2024}} and net leverage fell to {{net_leverage@FY2024}} from {{net_leverage@FY2023}}.",
-      "facts": [
-       {
-        "id": "revenue.change@FY2024",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "revenue@FY2024",
-        "claims": []
-       },
-       {
-        "id": "net_leverage@FY2024",
-        "claims": [
-         "down",
-         "better"
-        ]
-       },
-       {
-        "id": "net_leverage@FY2023",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "The EBITDA margin widened by {{ebitda_margin.change@FY2024}} to {{ebitda_margin@FY2024}}, the highest of the airport peers ({{ebitda_margin.peer_rank@2024}}).",
-      "facts": [
-       {
-        "id": "ebitda_margin.change@FY2024",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "ebitda_margin@FY2024",
-        "claims": []
-       },
-       {
-        "id": "ebitda_margin.peer_rank@2024",
-        "claims": [
-         "best_in_group"
-        ]
-       }
-      ]
-     },
-     {
-      "text": "The point to watch is liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, in line with the peer median.",
-      "facts": [
-       {
-        "id": "cash_liquidity_to_revenue.change@FY2024",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "cash_liquidity_to_revenue@FY2024",
-        "claims": [
-         "in_line_with_peers"
         ]
        }
       ]
@@ -497,7 +492,7 @@
     ],
     "watch_items": [
      {
-      "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, in line with the peer median of {{cash_liquidity_to_revenue.peer_median@2024}} but a thinner buffer than a year earlier.",
+      "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, in line with the peer median but with a smaller cash cushion than a year earlier.",
       "facts": [
        {
         "id": "cash_liquidity_to_revenue.change@FY2024",
@@ -511,10 +506,6 @@
         "claims": [
          "in_line_with_peers"
         ]
-       },
-       {
-        "id": "cash_liquidity_to_revenue.peer_median@2024",
-        "claims": []
        }
       ]
      },
@@ -561,7 +552,7 @@
       ]
      },
      {
-      "text": "Investment: capex intensity of {{capex_intensity@FY2024}} is below the peer median of {{capex_intensity.peer_median@2024}}, leaving room for capital spending to absorb more cash as the investment plan proceeds.",
+      "text": "Investment: capex intensity of {{capex_intensity@FY2024}} is below the peer median of {{capex_intensity.peer_median@2024}}, leaving room for capital spending to rise from this level.",
       "facts": [
        {
         "id": "capex_intensity@FY2024",
@@ -578,21 +569,89 @@
     ]
    },
    "errors": [
-    "[rule 4] watch_items, sentence 3: 'growth' needs a 'up' claim on a figure in the same clause"
+    "[rule 4] liquidity_funding, sentence 3: 'in line' needs a 'flat' or 'in_line_with_peers' claim on a figure in the same clause",
+    "[rule 4] watch_items, sentence 3: 'growth' needs a 'up' claim on a figure in the same clause",
+    "[rule 4] watch_items, sentence 4: 'rise' needs a 'up' claim on a figure in the same clause"
    ],
    "error": null
   },
   {
    "try": 2,
    "sections": [
+    "liquidity_funding",
     "watch_items"
    ],
-   "request_hash": "5b176b0a9089afbf5e0889e5f49a4fdcc52d338d4f574869f56e354dd2e5c4c2",
+   "request_hash": "29fb3c8d8e9bfc67b5e7df562fca88d8e0c51cd74b5ea3ebc1f04b61746f1a58",
    "model": "deepseek-flash",
    "draft": {
+    "liquidity_funding": [
+     {
+      "text": "Cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, and cash liquidity to revenue declined by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}.",
+      "facts": [
+       {
+        "id": "cash_like.change@FY2024",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_like@FY2024",
+        "claims": []
+       },
+       {
+        "id": "cash_liquidity_to_revenue.change@FY2024",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "The cash buffer is thinner than a year earlier, when cash liquidity stood at {{cash_liquidity@FY2023}} and liquidity at {{liquidity@FY2023}}, including {{undrawn_facilities@FY2023}} of undrawn committed facilities.",
+      "facts": [
+       {
+        "id": "cash_liquidity@FY2023",
+        "claims": []
+       },
+       {
+        "id": "liquidity@FY2023",
+        "claims": []
+       },
+       {
+        "id": "undrawn_facilities@FY2023",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Cash liquidity to revenue of {{cash_liquidity_to_revenue@FY2024}} is in line with the airport peer median of {{cash_liquidity_to_revenue.peer_median@2024}}, ranking {{cash_liquidity_to_revenue.peer_rank@2024}}.",
+      "facts": [
+       {
+        "id": "cash_liquidity_to_revenue@FY2024",
+        "claims": [
+         "in_line_with_peers"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue.peer_median@2024",
+        "claims": []
+       },
+       {
+        "id": "cash_liquidity_to_revenue.peer_rank@2024",
+        "claims": []
+       }
+      ]
+     }
+    ],
     "watch_items": [
      {
-      "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, in line with the peer median of {{cash_liquidity_to_revenue.peer_median@2024}} but a thinner buffer than a year earlier.",
+      "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, in line with the peer median but with a smaller cash cushion than a year earlier.",
       "facts": [
        {
         "id": "cash_liquidity_to_revenue.change@FY2024",
@@ -606,10 +665,6 @@
         "claims": [
          "in_line_with_peers"
         ]
-       },
-       {
-        "id": "cash_liquidity_to_revenue.peer_median@2024",
-        "claims": []
        }
       ]
      },
@@ -656,7 +711,98 @@
       ]
      },
      {
-      "text": "Investment: capex intensity of {{capex_intensity@FY2024}} is below the peer median of {{capex_intensity.peer_median@2024}}, leaving room for capital spending to absorb more cash as the investment plan proceeds.",
+      "text": "Investment: capex intensity of {{capex_intensity@FY2024}} is below the peer median of {{capex_intensity.peer_median@2024}}, so capital spending has room to increase from this level.",
+      "facts": [
+       {
+        "id": "capex_intensity@FY2024",
+        "claims": [
+         "below_peers"
+        ]
+       },
+       {
+        "id": "capex_intensity.peer_median@2024",
+        "claims": []
+       }
+      ]
+     }
+    ]
+   },
+   "errors": [
+    "[rule 4] watch_items, sentence 4: 'increase' needs a 'up' claim on a figure in the same clause"
+   ],
+   "error": null
+  },
+  {
+   "try": 3,
+   "sections": [
+    "watch_items"
+   ],
+   "request_hash": "6f7d541337264684fb9945db75382d3a73ed1b675ed6832eea2dd69cbf2f2fa9",
+   "model": "deepseek-flash",
+   "draft": {
+    "watch_items": [
+     {
+      "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, in line with the peer median but with a smaller cash cushion than a year earlier.",
+      "facts": [
+       {
+        "id": "cash_liquidity_to_revenue.change@FY2024",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2024",
+        "claims": [
+         "in_line_with_peers"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Coverage: interest coverage eased by {{interest_coverage.change@FY2024}} to {{interest_coverage@FY2024}}, in line with the peer median of {{interest_coverage.peer_median@2024}}.",
+      "facts": [
+       {
+        "id": "interest_coverage.change@FY2024",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "interest_coverage@FY2024",
+        "claims": [
+         "in_line_with_peers"
+        ]
+       },
+       {
+        "id": "interest_coverage.peer_median@2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Traffic: traffic growth slowed by {{traffic_growth.change@FY2024}} to {{traffic_growth@FY2024}}, so revenue per passenger of {{revenue_per_passenger@FY2024}} carries more of the earnings burden.",
+      "facts": [
+       {
+        "id": "traffic_growth.change@FY2024",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "traffic_growth@FY2024",
+        "claims": []
+       },
+       {
+        "id": "revenue_per_passenger@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Investment: capex intensity of {{capex_intensity@FY2024}} is below the peer median of {{capex_intensity.peer_median@2024}}, leaving headroom for capital spending at this level.",
       "facts": [
        {
         "id": "capex_intensity@FY2024",

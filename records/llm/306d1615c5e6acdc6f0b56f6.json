@@ -1,0 +1,170 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "No group passenger number is printed in the passages; only load factors and capacity percentages are given.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "comment": "No group passenger number is printed in the passages.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "comment": "Only percentage changes in ASKs versus 2019 and 2020 are printed, not the ASK figure itself.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "ask"
+   },
+   {
+    "comment": "Only percentage changes in ASKs versus 2019 and 2020 are printed, not the ASK figure itself.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "ask"
+   },
+   {
+    "comment": "No RPK figure is printed; only passenger-km of 77,280 million used for emissions intensity.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "rpk"
+   },
+   {
+    "comment": "No RPK figure is printed in the passages.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "rpk"
+   },
+   {
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "load_factor",
+    "location": "page 106",
+    "printed_value": "64.5",
+    "quote": "The IAG passenger load factor was down 20.1 points from 2019 to 64.5 per cent, also impacted by travel restrictions, which changed frequently, together with low demand and a higher than normal level of passengers not checking in for flights that were still operating (’no-shows’).",
+    "scale": "one",
+    "scope": "IAG group"
+   },
+   {
+    "fiscal_year": 2020,
+    "found": true,
+    "item": "load_factor",
+    "location": "page 106",
+    "printed_value": "63.8",
+    "quote": "The passenger load factor for 2021 was up marginally on the 63.8 per cent seen in 2020.",
+    "scale": "one",
+    "scope": "IAG group"
+   },
+   {
+    "caption": "€ million",
+    "currency": "EUR",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 2",
+    "printed_value": "5,835",
+    "quote": "Passenger revenue 5,835 5,512",
+    "scale": "million",
+    "scope": "IAG group",
+    "table_header": "2021 2020"
+   },
+   {
+    "caption": "€ million",
+    "currency": "EUR",
+    "fiscal_year": 2020,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 2",
+    "printed_value": "5,512",
+    "quote": "Passenger revenue 5,835 5,512",
+    "scale": "million",
+    "scope": "IAG group",
+    "table_header": "2021 2020"
+   },
+   {
+    "comment": "No group fleet count at year end is printed in the passages.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "fleet_count"
+   },
+   {
+    "comment": "No group fleet count at year end is printed in the passages.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "fleet_count"
+   },
+   {
+    "caption": "Metric Unit",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "fleet_age",
+    "location": "page 156",
+    "printed_value": "11.2",
+    "quote": "Fleet age years +8% -2% 11.2 10.6 11.4 11.3 11.4",
+    "scale": "one",
+    "scope": "IAG fleet",
+    "table_header": "vly v2019 2021 2020 2019 2018 2017"
+   },
+   {
+    "caption": "Metric Unit",
+    "fiscal_year": 2020,
+    "found": true,
+    "item": "fleet_age",
+    "location": "page 156",
+    "printed_value": "10.6",
+    "quote": "Fleet age years +8% -2% 11.2 10.6 11.4 11.3 11.4",
+    "scale": "one",
+    "scope": "IAG fleet",
+    "table_header": "vly v2019 2021 2020 2019 2018 2017"
+   },
+   {
+    "comment": "No hedge ratio for the next twelve months' fuel needs is printed in the passages.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "comment": "No hedge ratio for the next twelve months' fuel needs is printed in the passages.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "currency": "EUR",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "page 116",
+    "printed_value": "2,917",
+    "quote": "The Group also has certain other committed and undrawn general facilities, bringing total committed and undrawn general facilities at December 31, 2021 to €2,917 million.",
+    "scale": "million",
+    "scope": "IAG group general facilities"
+   },
+   {
+    "comment": "Only the $786 million undrawn aircraft-secured RCF of British Airways is printed for 2020, not a general-purpose total.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "undrawn_facilities"
+   }
+  ]
+ },
+ "label": "iag FY2021 959800TZHQRUSH1ESL13-2021-12-31-ESEF-ES-0",
+ "recorded_at": "2026-11-03T20:28:43+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v4",
+  "provider": "deepseek",
+  "system_sha256": "2d59768d9db1f230b27fd62982ec1ae26368ae0405a253e12728325751a19839",
+  "tool_sha256": "61c55522fbd4da1f68f903713a6ffaf85f3654cbac96ba3e9a6bc11333896ad7",
+  "user_sha256": "24944a8b22c210a67887cdcd6b5715bdec85ddb272942f28a30e11d786171f58"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 13531,
+  "output_tokens": 1264
+ }
+}

@@ -64,9 +64,9 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | passengers@FY2025 | Passengers, FY2025 | 107.0m | up, better vs prior year |
 | passengers@FY2024 | Passengers, FY2024 | 103.4m |  |
 | passengers.change@FY2025 | change in Passengers, FY2024 to FY2025 | 3.5% | up, better vs prior year; printed without a sign: say the direction in words |
-| traffic_growth@FY2025 | Traffic growth, FY2025 | 3.5% | company in line with peer median |
+| traffic_growth@FY2025 | Traffic growth, FY2025 | 3.5% |  |
 | revenue_per_passenger@FY2025 | Revenue per passenger, FY2025 | EUR 62.65 | up, better vs prior year |
-| revenue_per_passenger@FY2024 | Revenue per passenger, FY2024 | EUR 59.55 |  |
+| revenue_per_passenger@FY2024 | Revenue per passenger, FY2024 | EUR 59.56 |  |
 | revenue_per_passenger.change@FY2025 | change in Revenue per passenger, FY2024 to FY2025 | 5.2% | up, better vs prior year; printed without a sign: say the direction in words |
 
 ## Liquidity and funding
@@ -99,8 +99,6 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | capex_intensity.peer_median@2025 | Capex intensity, median of airports, peer year 2025 (3 companies) | 18.2% | company in line with peer median |
 | cash_liquidity_to_revenue.peer_median@2025 | Cash liquidity to revenue (partial), median of airports, peer year 2025 (3 companies) | 30.1% | company in line with peer median |
 | cash_liquidity_to_revenue.peer_rank@2025 | Cash liquidity to revenue (partial), rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| traffic_growth.peer_median@2025 | Traffic growth, median of airports, peer year 2025 (3 companies) | 3.5% | company in line with peer median |
-| traffic_growth.peer_rank@2025 | Traffic growth, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
 
 ## Other figures
 
@@ -120,6 +118,8 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - liquidity_to_revenue@FY2025: Liquidity: Undrawn committed credit facilities not available for FY2025
 - liquidity_to_revenue@FY2024: Liquidity: Undrawn committed credit facilities not available for FY2024
 - traffic_growth@FY2024: Passengers not available for FY2023
+- traffic_growth.peer_median@2025: the peer median would use a figure not verified yet (aena)
+- traffic_growth.peer_rank@2025: the peer median would use a figure not verified yet (aena)
 - aero_revenue_per_passenger@FY2025: not verified yet: waiting for Imane's review
 - aero_revenue_per_passenger@FY2024: not verified yet: waiting for Imane's review
 - non_aero_share@FY2025: not verified yet: waiting for Imane's review

@@ -34,11 +34,11 @@ out.
 | Adversarial suite 100% rejected | 43 of 43 bad sentences rejected, each for the right reason; 13 correct but risky sentences and a full correct draft pass | ✓ |
 | Gate 2: ten drafts in a row, all nine companies, no unreferenced number | Drafts 1 to 10 all pass; 17 of 18 overall | ✓ |
 | Commentary score of 4 or more | Waiting for your scores (`docs/m4/score_sheet.xlsx`) | to do |
-| Extraction 80% on a fresh blind set (tracked, not a gate) | Not started | next |
+| Extraction 80% on a fresh blind set (tracked, not a gate) | 13 of 22 (59%) on the new FY2022 set; still no wrong figure verified | not met |
 
 - **No number ever got past the checker.** In all three runs (54 drafts), no final draft has
   a figure written by the AI.
-- **First tries are rarely clean**: 3 of 18 pass at once; the retries fix the rest. The usual
+- **First tries are rarely clean**: 5 of 18 pass at once; the retries fix the rest. The usual
   first-try faults are a direction word about something not in the sentence ("as costs
   rose"), and "up" or "down" on a move the thresholds call flat.
 - **The checker caught real errors**, not only style: it refused "the highest in the group" for
@@ -46,9 +46,10 @@ out.
   better), and "worse" where the figure improved over the year but trails peers.
 - **One draft needs editing**: IAG FY2024 calls undrawn facilities "a weaker buffer" without
   backing it. That is how it should work: flagged, not published.
-- **It took three versions of the instructions** (decision 0016) and about 1.3 million
-  tokens, against 300,000 planned: retries resend the whole fact sheet, and two full runs were
-  needed. Every answer is recorded, so a rerun costs nothing.
+- **It took three versions of the instructions** (decision 0016) and about 1.55 million
+  tokens, against 300,000 planned: retries resend the whole fact sheet, two full runs were
+  needed, and ten drafts were redone after extraction v4 changed their figures. Every answer
+  is recorded, so a rerun costs nothing.
 
 **A reading tip.** Each draft page (`docs/m4/drafts/`) shows the text as printed, then each
 try with the checker's errors, then the text with blanks as the AI wrote it. The summary with
@@ -67,7 +68,29 @@ show whether this matters in practice.
 2. **Rewrite the two example notes** in your own words (`docs/m4/example_notes.md`, plain text
    is fine). They teach the AI your style; I will put them back into the form.
 
-Then the M3 carry-over (extraction v4 on a fresh FY2022 blind set) closes M4.
+## The M3 carry-over: extraction v4 (decision 0017)
+
+The goal was 80% of figures verified automatically on lines never used for tuning. To keep it
+fair, I first read 22 figures from the FY2022 reports by code (no AI) and committed them, then
+made the planned changes: clearer instructions on copying table rows, and four check fixes
+for the misses seen in M3 ("This amounted to £1.8 billion", "up from 70 aircraft at year-end
+2022", a hedge table with a 12-month and a 6-month column, a number printed twice in a row).
+
+- **Result: 13 of 22 (59%), unchanged.** The fixes work on the cases they were written for
+  (the earlier blind set rises from 18 to 20 of 23), but the new set fails for other reasons:
+  long multi-year summary tables with no year in the row (Norwegian, Finnair), a fleet in two
+  parts beside similar numbers, two figures the AI missed (IAG's fleet, Wizz Air's hedge),
+  and one figure held back because the next report restates it.
+- **Safety holds: 0 wrong figures verified on all 93 lines.** Every miss stays visibly
+  unverified and waits for your review, as before.
+- **Across all 41 reports:** 230 figures read, 177 verified; the review queue is now 53
+  figures (`docs/m3/extractions.md`). Some drafts changed with their figures (for example
+  Aena's passengers are now verified), so ten drafts were redone; gate 2 still passes.
+- **I stopped there on purpose**: fixing these now would tune on the only clean set left. A
+  further round would start with a fifth set (FY2021 reports) and target the long tables.
+
+**Your call:** close the 80% goal on the safety result as in M3, or plan that further round
+(after the web app, for example).
 
 ## How to rerun
 

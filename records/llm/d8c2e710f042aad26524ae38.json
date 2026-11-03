@@ -1,0 +1,89 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "caption": "Verkehrsentwicklung des Flughafen Wien 2021",
+    "comment": "Table gives 10.4 million; narrative states 10,405,523 passengers handled at Vienna Airport.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "passengers",
+    "location": "VERKEHRSENTWICKLUNG, page 11",
+    "printed_value": "10,4",
+    "quote": "Gesamtpassagiere (in Mio.)\n10,4\n33,2%\n7,8\n31,7",
+    "scale": "million",
+    "scope": "Vienna Airport only",
+    "table_header": "2021\nVeränderung zu 2020\n2020\n2019"
+   },
+   {
+    "caption": "Verkehrsentwicklung des Flughafen Wien 2021",
+    "comment": "Prior-year figure for Vienna Airport as printed.",
+    "fiscal_year": 2020,
+    "found": true,
+    "item": "passengers",
+    "location": "VERKEHRSENTWICKLUNG, page 11",
+    "printed_value": "7,8",
+    "quote": "Gesamtpassagiere (in Mio.)\n10,4\n33,2%\n7,8\n31,7",
+    "scale": "million",
+    "scope": "Vienna Airport only",
+    "table_header": "2021\nVeränderung zu 2020\n2020\n2019"
+   },
+   {
+    "comment": "No committed general-purpose undrawn credit facilities are disclosed in the passages.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "No committed general-purpose undrawn credit facilities are disclosed in the passages.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "caption": "Externe Umsätze nach Segmenten\nBeträge in € Mio.",
+    "comment": "External Airport segment revenue; total segment revenue including internal is T€ 169,547.0.",
+    "currency": "EUR",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "UMSATZENTWICKLUNG 2021, page 19",
+    "printed_value": "169,5",
+    "quote": "Airport\n169,5\n27,4%\n133,0",
+    "scale": "million",
+    "scope": "Airport segment external revenue",
+    "table_header": "2021\nVeränderung\n20201"
+   },
+   {
+    "caption": "Externe Umsätze nach Segmenten\nBeträge in € Mio.",
+    "comment": "Prior-year external Airport segment revenue as printed (2020 adjusted).",
+    "currency": "EUR",
+    "fiscal_year": 2020,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "UMSATZENTWICKLUNG 2021, page 19",
+    "printed_value": "133,0",
+    "quote": "Airport\n169,5\n27,4%\n133,0",
+    "scale": "million",
+    "scope": "Airport segment external revenue",
+    "table_header": "2021\nVeränderung\n20201"
+   }
+  ]
+ },
+ "label": "vie FY2021 549300FQ2ILBH7DJ6I45-2021-12-31-ESEF-AT-0",
+ "recorded_at": "2026-11-03T20:31:21+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v4",
+  "provider": "deepseek",
+  "system_sha256": "2d59768d9db1f230b27fd62982ec1ae26368ae0405a253e12728325751a19839",
+  "tool_sha256": "debd41b3d3dad40c9cbcd2779b1324d9b17762b294b86235fd74b44ca9e9dd96",
+  "user_sha256": "8e46d3a3a38e424d50cfd89a1dddb92aab5f853d7ad0510d455315702d20d0d0"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 10806,
+  "output_tokens": 738
+ }
+}

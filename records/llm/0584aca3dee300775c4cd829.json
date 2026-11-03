@@ -1,0 +1,80 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Passengers at Paris Aéroport (CDG+ORY) in 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "passengers",
+    "location": "page 559",
+    "printed_value": "103,4",
+    "quote": "En 2024, le Groupe ADP a accueilli 364 millions de passagers dans l’ensemble de son réseau d’aéroports, dont 103,4 millions de passagers à Paris Aéroport.",
+    "scale": "million",
+    "scope": "Paris Aéroport (CDG + ORY)"
+   },
+   {
+    "comment": "Only the 2024 Paris Aéroport figure (103.4 million) is printed; no 2023 Paris Aéroport passenger total is given in the passages.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "comment": "The passages mention confirmed unused credit lines but give no amount or total for them.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "The passages mention confirmed unused credit lines but give no amount or total for them.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "caption": "(en millions d’euros)",
+    "comment": "Aviation segment revenue for Paris platforms in 2024.",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 531",
+    "printed_value": "2 054",
+    "quote": "Chiffre d’affaires\n2 054\n1 910\n+144 M€",
+    "scale": "million",
+    "scope": "Activités aéronautiques – Plateformes parisiennes",
+    "table_header": "2024\n2023\nVariation 2024/2023"
+   },
+   {
+    "caption": "(en millions d’euros)",
+    "comment": "Aviation segment revenue for Paris platforms in 2023.",
+    "currency": "EUR",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 531",
+    "printed_value": "1 910",
+    "quote": "Chiffre d’affaires\n2 054\n1 910\n+144 M€",
+    "scale": "million",
+    "scope": "Activités aéronautiques – Plateformes parisiennes",
+    "table_header": "2024\n2023\nVariation 2024/2023"
+   }
+  ]
+ },
+ "label": "adp FY2024 969500PJMBSFHYC37989-2024-12-31-ESEF-FR-0",
+ "recorded_at": "2026-11-03T20:30:42+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v4",
+  "provider": "deepseek",
+  "system_sha256": "2d59768d9db1f230b27fd62982ec1ae26368ae0405a253e12728325751a19839",
+  "tool_sha256": "debd41b3d3dad40c9cbcd2779b1324d9b17762b294b86235fd74b44ca9e9dd96",
+  "user_sha256": "4f6f570dac6498c11b567cbb030a5e023fc8ccb1489f07b462ade1f2ed5b0b9e"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 6236,
+  "output_tokens": 607
+ }
+}

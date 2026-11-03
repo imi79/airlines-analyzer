@@ -46,7 +46,7 @@
    "rank_of": null,
    "rendered": "4.1%",
    "unit": "relative",
-   "value": "0.04081831856138279639501247894",
+   "value": "0.04105932201161533538615506414",
    "vs_peers": null
   },
   "aero_revenue_per_passenger@FY2023": {
@@ -78,9 +78,9 @@
    "period": "FY2024",
    "rank": null,
    "rank_of": null,
-   "rendered": "EUR 10.17",
+   "rendered": "EUR 10.18",
    "unit": "per_passenger",
-   "value": "10.173903508583",
+   "value": "10.176259295183",
    "vs_peers": null
   },
   "capex_intensity.change@FY2024": {
@@ -916,23 +916,6 @@
    "value": "12.335002442170",
    "vs_peers": "in_line"
   },
-  "liquidity.change@FY2024": {
-   "assessment": "worse",
-   "direction": "down",
-   "id": "liquidity.change@FY2024",
-   "kind": "change",
-   "label": "change in Liquidity, FY2023 to FY2024",
-   "metric": "liquidity",
-   "note": "printed without a sign: say the direction in words",
-   "peer_assessment": null,
-   "period": "FY2023 to FY2024",
-   "rank": null,
-   "rank_of": null,
-   "rendered": "6.8%",
-   "unit": "relative",
-   "value": "0.06848992248062015503875968992",
-   "vs_peers": null
-  },
   "liquidity@FY2023": {
    "assessment": null,
    "direction": null,
@@ -950,40 +933,6 @@
    "value": "4918125000.000000000000",
    "vs_peers": null
   },
-  "liquidity@FY2024": {
-   "assessment": "worse",
-   "direction": "down",
-   "id": "liquidity@FY2024",
-   "kind": "value",
-   "label": "Liquidity, FY2024",
-   "metric": "liquidity",
-   "note": "",
-   "peer_assessment": null,
-   "period": "FY2024",
-   "rank": null,
-   "rank_of": null,
-   "rendered": "EUR 4.6bn",
-   "unit": "amount",
-   "value": "4581283000.000000000000",
-   "vs_peers": null
-  },
-  "liquidity_to_revenue.change@FY2024": {
-   "assessment": "worse",
-   "direction": "down",
-   "id": "liquidity_to_revenue.change@FY2024",
-   "kind": "change",
-   "label": "change in Liquidity to revenue, FY2023 to FY2024",
-   "metric": "liquidity_to_revenue",
-   "note": "printed without a sign: say the direction in words",
-   "peer_assessment": null,
-   "period": "FY2023 to FY2024",
-   "rank": null,
-   "rank_of": null,
-   "rendered": "18.1 points",
-   "unit": "points",
-   "value": "0.180978559625",
-   "vs_peers": null
-  },
   "liquidity_to_revenue@FY2023": {
    "assessment": null,
    "direction": null,
@@ -999,23 +948,6 @@
    "rendered": "97.6%",
    "unit": "pct",
    "value": "0.975852917028",
-   "vs_peers": null
-  },
-  "liquidity_to_revenue@FY2024": {
-   "assessment": "worse",
-   "direction": "down",
-   "id": "liquidity_to_revenue@FY2024",
-   "kind": "value",
-   "label": "Liquidity to revenue, FY2024",
-   "metric": "liquidity_to_revenue",
-   "note": "",
-   "peer_assessment": null,
-   "period": "FY2024",
-   "rank": null,
-   "rank_of": null,
-   "rendered": "79.5%",
-   "unit": "pct",
-   "value": "0.794874357403",
    "vs_peers": null
   },
   "net_debt.change@FY2024": {
@@ -1270,7 +1202,7 @@
    "rank_of": null,
    "rendered": "9.2%",
    "unit": "relative",
-   "value": "0.09241390889830508474576271186",
+   "value": "0.09216101694915254237288135593",
    "vs_peers": null
   },
   "passengers@FY2023": {
@@ -1302,9 +1234,9 @@
    "period": "FY2024",
    "rank": null,
    "rank_of": null,
-   "rendered": "309.4m",
+   "rendered": "309.3m",
    "unit": "count",
-   "value": "309371619.000000000000",
+   "value": "309300000.000000000000",
    "vs_peers": null
   },
   "profit.change@FY2024": {
@@ -1423,7 +1355,7 @@
    "rank_of": null,
    "rendered": "4.7%",
    "unit": "relative",
-   "value": "0.04685423515890542355163883952",
+   "value": "0.04709663623706159760496535595",
    "vs_peers": null
   },
   "revenue_per_passenger@FY2023": {
@@ -1457,7 +1389,7 @@
    "rank_of": null,
    "rendered": "EUR 18.63",
    "unit": "per_passenger",
-   "value": "18.629798746988",
+   "value": "18.634112512124",
    "vs_peers": null
   },
   "total_debt.change@FY2024": {
@@ -1525,7 +1457,7 @@
    "rank_of": null,
    "rendered": "7.0 points",
    "unit": "points",
-   "value": "0.069670621262",
+   "value": "0.069923513211",
    "vs_peers": null
   },
   "traffic_growth.peer_median@2024": {
@@ -1542,7 +1474,7 @@
    "rank_of": null,
    "rendered": "8.3%",
    "unit": "pct",
-   "value": "0.082891347389",
+   "value": "0.0827649014145",
    "vs_peers": "above"
   },
   "traffic_growth.peer_rank@2024": {
@@ -1593,25 +1525,8 @@
    "rank_of": null,
    "rendered": "9.2%",
    "unit": "pct",
-   "value": "0.092413908898",
+   "value": "0.092161016949",
    "vs_peers": "above"
-  },
-  "undrawn_facilities.change@FY2024": {
-   "assessment": "better",
-   "direction": "up",
-   "id": "undrawn_facilities.change@FY2024",
-   "kind": "change",
-   "label": "change in Undrawn committed credit facilities, FY2023 to FY2024",
-   "metric": "undrawn_facilities",
-   "note": "printed without a sign: say the direction in words",
-   "peer_assessment": null,
-   "period": "FY2023 to FY2024",
-   "rank": null,
-   "rank_of": null,
-   "rendered": "8.0%",
-   "unit": "relative",
-   "value": "0.08023483365949119373776908023",
-   "vs_peers": null
   },
   "undrawn_facilities@FY2023": {
    "assessment": null,
@@ -1628,23 +1543,6 @@
    "rendered": "EUR 2.6bn",
    "unit": "amount",
    "value": "2555000000.000000000000",
-   "vs_peers": null
-  },
-  "undrawn_facilities@FY2024": {
-   "assessment": "better",
-   "direction": "up",
-   "id": "undrawn_facilities@FY2024",
-   "kind": "value",
-   "label": "Undrawn committed credit facilities, FY2024",
-   "metric": "undrawn_facilities",
-   "note": "",
-   "peer_assessment": null,
-   "period": "FY2024",
-   "rank": null,
-   "rank_of": null,
-   "rendered": "EUR 2.8bn",
-   "unit": "amount",
-   "value": "2760000000.000000000000",
    "vs_peers": null
   }
  },
@@ -1692,9 +1590,15 @@
   "contract_liabilities.change@FY2024": "needs both years verified",
   "contract_liabilities@FY2023": "no figure for this year",
   "contract_liabilities@FY2024": "no figure for this year",
-  "liquidity_to_revenue.peer_median@2024": "fewer than two companies in the peer group have a value",
-  "liquidity_to_revenue.peer_rank@2024": "fewer than two companies in the peer group have a value",
+  "liquidity.change@FY2024": "needs both years verified",
+  "liquidity@FY2024": "Undrawn committed credit facilities not available for FY2024",
+  "liquidity_to_revenue.change@FY2024": "needs both years verified",
+  "liquidity_to_revenue.peer_median@2024": "the company's own figure is not available",
+  "liquidity_to_revenue.peer_rank@2024": "the company's own figure is not available",
+  "liquidity_to_revenue@FY2024": "Liquidity: Undrawn committed credit facilities not available for FY2024",
   "non_aero_share.peer_median@2024": "the peer median would use a figure not verified yet (adp)",
-  "non_aero_share.peer_rank@2024": "the peer median would use a figure not verified yet (adp)"
+  "non_aero_share.peer_rank@2024": "the peer median would use a figure not verified yet (adp)",
+  "undrawn_facilities.change@FY2024": "needs both years verified",
+  "undrawn_facilities@FY2024": "no figure for this year"
  }
 }

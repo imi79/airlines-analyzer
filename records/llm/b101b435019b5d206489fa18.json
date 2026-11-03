@@ -1,0 +1,195 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "passengers",
+    "location": "page 6",
+    "printed_value": "26.4",
+    "quote": "The Norwegian Group had 26.4 million passengers in 2024, up 28 percent from 2023.",
+    "scale": "million",
+    "scope": "Group total (Norwegian and Widerøe)"
+   },
+   {
+    "comment": "Only Norwegian-alone 2023 passengers (20.6 million) and Widerøe 3.4 million are printed; no group total for 2023 is given.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "passengers",
+    "location": "page 6",
+    "scope": "Group total"
+   },
+   {
+    "comment": "Only segment figures are printed (Norwegian 36,531 million km, Widerøe 2,083 million km); no group ASK total is given.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "ask",
+    "location": "page 16",
+    "scope": "Group total"
+   },
+   {
+    "comment": "No group ASK total is printed for 2023; only Norwegian segment figures are given.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "ask",
+    "location": "page 16",
+    "scope": "Group total"
+   },
+   {
+    "comment": "Only segment figures are printed (Norwegian 31,039 million km, Widerøe 1,505 million km); no group RPK total is given.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "rpk",
+    "location": "page 16",
+    "scope": "Group total"
+   },
+   {
+    "comment": "No group RPK total is printed for 2023; only Norwegian segment figures are given.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "rpk",
+    "location": "page 16",
+    "scope": "Group total"
+   },
+   {
+    "caption": "Key operational figures",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "load_factor",
+    "location": "page 202",
+    "printed_value": "84.3",
+    "quote": "Load factor 84.3% 84.7% 83.1% 72.8% 75.2% 86.6% 85.8% 87.5% 87.7% 86.2% 80.9%",
+    "scale": "one",
+    "scope": "Group total",
+    "table_header": "2014 2015 2017 2019 20212016 2018 2020 2022 2023 2024"
+   },
+   {
+    "caption": "Key operational figures",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "load_factor",
+    "location": "page 202",
+    "printed_value": "84.7",
+    "quote": "Load factor 84.3% 84.7% 83.1% 72.8% 75.2% 86.6% 85.8% 87.5% 87.7% 86.2% 80.9%",
+    "scale": "one",
+    "scope": "Group total",
+    "table_header": "2014 2015 2017 2019 20212016 2018 2020 2022 2023 2024"
+   },
+   {
+    "caption": "Consolidated income statement 1.1. - 31.12.",
+    "currency": "NOK",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 127",
+    "printed_value": "29,621.2",
+    "quote": "Passenger revenue 29,621.2 20,616.6",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "NOK million Note 2024 2023"
+   },
+   {
+    "caption": "Consolidated income statement 1.1. - 31.12.",
+    "currency": "NOK",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 127",
+    "printed_value": "20,616.6",
+    "quote": "Passenger revenue 29,621.2 20,616.6",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "NOK million Note 2024 2023"
+   },
+   {
+    "caption": "Key operational figures",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 202",
+    "printed_value": "135",
+    "quote": "Number of aircraft (at year end) 135 87 70 51 131 156 164 144 116 99 95",
+    "scale": "one",
+    "scope": "Group fleet in operation at year end",
+    "table_header": "2014 2015 2017 2019 20212016 2018 2020 2022 2023 2024"
+   },
+   {
+    "caption": "Key operational figures",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 202",
+    "printed_value": "87",
+    "quote": "Number of aircraft (at year end) 135 87 70 51 131 156 164 144 116 99 95",
+    "scale": "one",
+    "scope": "Group fleet in operation at year end",
+    "table_header": "2014 2015 2017 2019 20212016 2018 2020 2022 2023 2024"
+   },
+   {
+    "comment": "No average fleet age is printed in the passages.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "fleet_age",
+    "location": "page 202",
+    "scope": "Group fleet"
+   },
+   {
+    "comment": "No average fleet age is printed in the passages.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "fleet_age",
+    "location": "page 202",
+    "scope": "Group fleet"
+   },
+   {
+    "comment": "Only the hedged volume (443,500 metric tons of jet fuel at 31 December 2024) is printed, not a share of expected fuel needs.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "fuel_hedge_ratio",
+    "location": "page 161",
+    "scope": "Group"
+   },
+   {
+    "comment": "Only the hedged volume (461,200 metric tons of jet fuel at 31 December 2023) is printed, not a share of expected fuel needs.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "fuel_hedge_ratio",
+    "location": "page 161",
+    "scope": "Group"
+   },
+   {
+    "comment": "No undrawn committed general-purpose credit facilities are described in the passages.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "undrawn_facilities",
+    "location": "page 170",
+    "scope": "Group"
+   },
+   {
+    "comment": "No undrawn committed general-purpose credit facilities are described in the passages.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "undrawn_facilities",
+    "location": "page 170",
+    "scope": "Group"
+   }
+  ]
+ },
+ "label": "norwegian FY2024 549300IEUH2FEM2Y6B51-2024-12-31-ESEF-NO-0",
+ "recorded_at": "2026-11-03T20:32:04+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v4",
+  "provider": "deepseek",
+  "system_sha256": "2d59768d9db1f230b27fd62982ec1ae26368ae0405a253e12728325751a19839",
+  "tool_sha256": "61c55522fbd4da1f68f903713a6ffaf85f3654cbac96ba3e9a6bc11333896ad7",
+  "user_sha256": "29d10cdf5d8de1afcfce560036b8e0121e60216cee6d66705b5384a785c1a86f"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 10852,
+  "output_tokens": 1641
+ }
+}

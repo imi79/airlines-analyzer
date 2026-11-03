@@ -78,5 +78,9 @@ before; a draft counts if it passes the verifier after retries with no number ou
   France-KLM FY2024) all pass; 17 of 18 overall. The one left, IAG FY2024, has a watch item
   calling undrawn facilities "a weaker buffer" without the claim; it is flagged for editing.
   No final draft of any run has a number outside a blank.
-- **Tokens:** 1.3 million in all, against about 300,000 planned. Retries resend the full fact
-  sheet, and two full runs were needed. All answers are recorded: replaying costs nothing.
+- **After extraction v4** (decision 0017) the fact sheets of ten drafts changed, so those were
+  redrafted with the same prompt: still 17 of 18, gate 2 still passed (drafts 1 to 10), now 5
+  at the first try.
+- **Tokens:** about 1.55 million in all (1.3 million for the three versions, 240,000 for the
+  redraft), against about 300,000 planned. Retries resend the full fact sheet, and two full
+  runs were needed. All answers are recorded: replaying costs nothing.

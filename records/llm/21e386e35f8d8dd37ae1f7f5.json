@@ -1,0 +1,89 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "caption": "Entwicklung der größten Airlines am Flughafen Wien",
+    "comment": "Total passengers at Vienna Airport as printed in the airlines table.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "passengers",
+    "location": "page 15",
+    "printed_value": "23.682.133",
+    "quote": "Passagiere Gesamt\n23.682.133\n127,6%\n10.405.523\n31.662.189\n100,0%\n100,0%\n100,0%",
+    "scale": "one",
+    "scope": "Vienna Airport (Flughafen Wien), total passengers",
+    "table_header": "2022\nVeränderung zu 2021\n2021\n2019\nAnteil 2022\nAnteil 2021\nAnteil 2019"
+   },
+   {
+    "caption": "Entwicklung der größten Airlines am Flughafen Wien",
+    "comment": "Prior-year total passengers at Vienna Airport as printed.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "passengers",
+    "location": "page 15",
+    "printed_value": "10.405.523",
+    "quote": "Passagiere Gesamt\n23.682.133\n127,6%\n10.405.523\n31.662.189\n100,0%\n100,0%\n100,0%",
+    "scale": "one",
+    "scope": "Vienna Airport (Flughafen Wien), total passengers",
+    "table_header": "2022\nVeränderung zu 2021\n2021\n2019\nAnteil 2022\nAnteil 2021\nAnteil 2019"
+   },
+   {
+    "comment": "No committed general-purpose undrawn credit facilities are disclosed in the passages.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "No committed general-purpose undrawn credit facilities are disclosed in the passages.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "caption": "Aufteilung der Umsatzerlöse nach Aviation und Non-Aviation",
+    "comment": "Aviation revenue of the Airport segment in 2022.",
+    "currency": "EUR",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 100",
+    "printed_value": "309.039,8",
+    "quote": "Aviation\n309.039,8\n116.064,4\n0,0\n58.327,6\n0,0\n483.431,7",
+    "scale": "thousand",
+    "scope": "Airport segment (Vienna), aviation revenue",
+    "table_header": "2022 in T€\nAirport\nHandling & Sicherheits-dienstleis-tungen\nRetail &Properties\nMalta\nSonstige Segmente\nKonzern"
+   },
+   {
+    "caption": "Aufteilung der Umsatzerlöse nach Aviation und Non-Aviation",
+    "comment": "Aviation revenue of the Airport segment in 2021.",
+    "currency": "EUR",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 100",
+    "printed_value": "154.372,0",
+    "quote": "Aviation\n154.372,0\n86.919,1\n0,0\n27.804,9\n0,0\n269.096,0",
+    "scale": "thousand",
+    "scope": "Airport segment (Vienna), aviation revenue",
+    "table_header": "2021 in T€\nAirport\nHandling & Sicherheits-dienstleis-tungen\nRetail &Properties\nMalta\nSonstige Segmente\nKonzern"
+   }
+  ]
+ },
+ "label": "vie FY2022 549300FQ2ILBH7DJ6I45-2022-12-31-ESEF-AT-1",
+ "recorded_at": "2026-11-03T20:31:25+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v4",
+  "provider": "deepseek",
+  "system_sha256": "2d59768d9db1f230b27fd62982ec1ae26368ae0405a253e12728325751a19839",
+  "tool_sha256": "debd41b3d3dad40c9cbcd2779b1324d9b17762b294b86235fd74b44ca9e9dd96",
+  "user_sha256": "89adb13ab6cdaa359be1e878947baaa02ba29d05cd7204bd5781d6b0eec54f4d"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 8224,
+  "output_tokens": 863
+ }
+}

@@ -73,7 +73,7 @@ Company type: airline. Reporting currency: EUR. Peer group: Low-cost airlines (e
 | rpk@FY2025 | RPK, FY2025 | 111.1bn | flat vs prior year |
 | rpk@FY2024 | RPK, FY2024 | 110.0bn |  |
 | rpk.change@FY2025 | change in RPK, FY2024 to FY2025 | 1.1% | flat vs prior year; printed without a sign: say the direction in words |
-| load_factor@FY2025 | Load factor, FY2025 | 91.2% | up, better vs prior year; company above peer median, better |
+| load_factor@FY2025 | Load factor, FY2025 | 91.2% | up, better vs prior year |
 | load_factor@FY2024 | Load factor, FY2024 | 90.3% |  |
 | load_factor.change@FY2025 | change in Load factor, FY2024 to FY2025 | 0.9 points | up, better vs prior year; printed without a sign: say the direction in words |
 | passenger_yield@FY2025 | Passenger yield, FY2025 | 2.62 euro cents |  |
@@ -132,8 +132,6 @@ Company type: airline. Reporting currency: EUR. Peer group: Low-cost airlines (e
 | advance_ticket_cover.peer_median@2024 | Advance ticket cover, median of low-cost airlines, peer year 2024 (3 companies) | 50.2% | company above peer median, worse |
 | advance_ticket_cover.peer_rank@2024 | Advance ticket cover, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
 | fuel_share_of_costs.peer_median@2024 | Fuel share of costs, median of low-cost airlines, peer year 2024 (3 companies) | 28.0% | company above peer median |
-| load_factor.peer_median@2024 | Load factor, median of low-cost airlines, peer year 2024 (2 companies) | 90.3% | company above peer median, better |
-| load_factor.peer_rank@2024 | Load factor, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 1st of 2 | best in the group |
 
 ## Other figures
 
@@ -153,6 +151,8 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - liquidity_to_revenue@FY2025: Liquidity: Undrawn committed credit facilities not available for FY2025
 - liquidity_to_revenue@FY2024: Liquidity: Undrawn committed credit facilities not available for FY2024
 - fuel_share_of_costs.peer_rank@2024: not ranked: neither higher nor lower is better
+- load_factor.peer_median@2024: the peer median would use a figure not verified yet (norwegian)
+- load_factor.peer_rank@2024: the peer median would use a figure not verified yet (norwegian)
 - passenger_yield@FY2024: not verified yet: waiting for Imane's review
 - fuel_hedge_ratio@FY2025: Fuel hedge ratio not available for FY2025
 - fuel_hedge_ratio@FY2024: Fuel hedge ratio not available for FY2024

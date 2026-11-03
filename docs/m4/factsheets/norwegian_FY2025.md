@@ -131,7 +131,7 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - rpk@FY2025: RPK not available for FY2025
 - rpk@FY2024: RPK not available for FY2024
 - load_factor@FY2025: RPK not available for FY2025
-- load_factor@FY2024: RPK not available for FY2024
+- load_factor@FY2024: not verified yet: waiting for Imane's review
 - passenger_yield@FY2025: RPK not available for FY2025
 - passenger_yield@FY2024: RPK not available for FY2024
 - rask@FY2025: ASK not available for FY2025

@@ -1,0 +1,161 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "passengers",
+    "location": "page 6",
+    "printed_value": "27.3",
+    "quote": "The Norwegian Group had 27.3 million passengers in 2025, an increase of 3 percent from 26.4 million passengers in 2024.",
+    "scale": "million",
+    "scope": "Group total (Norwegian and Widerøe)"
+   },
+   {
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "passengers",
+    "location": "page 6",
+    "printed_value": "26.4",
+    "quote": "The Norwegian Group had 27.3 million passengers in 2025, an increase of 3 percent from 26.4 million passengers in 2024.",
+    "scale": "million",
+    "scope": "Group total (Norwegian and Widerøe)"
+   },
+   {
+    "comment": "Only segment figures are printed (Norwegian 37,640 million km and Widerøe 2,147 million km); no group total ASK is given.",
+    "fiscal_year": 2025,
+    "found": false,
+    "item": "ask"
+   },
+   {
+    "comment": "Only segment figures are printed; no group total ASK is given for 2024.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "ask"
+   },
+   {
+    "comment": "Only segment figures are printed (Norwegian 32,305 million km and Widerøe 1,570 million km); no group total RPK is given.",
+    "fiscal_year": 2025,
+    "found": false,
+    "item": "rpk"
+   },
+   {
+    "comment": "Only segment figures are printed; no group total RPK is given for 2024.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "rpk"
+   },
+   {
+    "comment": "Only segment load factors are printed (Norwegian 85.8 percent, Widerøe 73.2 percent); no group load factor is given.",
+    "fiscal_year": 2025,
+    "found": false,
+    "item": "load_factor"
+   },
+   {
+    "comment": "Only segment load factors are printed (Norwegian 85.0 percent, Widerøe 72.3 percent); no group load factor is given.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "load_factor"
+   },
+   {
+    "caption": "NOK million",
+    "currency": "NOK",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 121",
+    "printed_value": "31,742",
+    "quote": "Passenger revenue\n31,742\n29,619",
+    "scale": "million",
+    "scope": "Group",
+    "table_header": "2025\n2024"
+   },
+   {
+    "caption": "NOK million",
+    "currency": "NOK",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 121",
+    "printed_value": "29,619",
+    "quote": "Passenger revenue\n31,742\n29,619",
+    "scale": "million",
+    "scope": "Group",
+    "table_header": "2025\n2024"
+   },
+   {
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 6",
+    "printed_value": "146",
+    "quote": "The Norwegian Group’s fleet comprised of 146\naircraft at year-end, of which 95 aircraft constituted the Norwegian\nfleet and 51 were Widerøe aircraft.",
+    "scale": "one",
+    "scope": "Group fleet in operation at year end"
+   },
+   {
+    "comment": "No group fleet total is printed for year-end 2024; only Norwegian's 86 aircraft and the 51 Widerøe aircraft are mentioned separately.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "fleet_count"
+   },
+   {
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "fleet_age",
+    "location": "page 49",
+    "printed_value": "8.5",
+    "quote": "Norwegian has a modern jet\nfleet with an average aircraft age of 8.5 years at year-end 2025.",
+    "scale": "one",
+    "scope": "Norwegian jet fleet"
+   },
+   {
+    "comment": "No average fleet age is printed for year-end 2024.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "fleet_age"
+   },
+   {
+    "comment": "Only a partial-period figure is printed: approximately 45 percent of estimated jet fuel consumption for the remainder of 2026, not the full next fiscal year.",
+    "fiscal_year": 2025,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "comment": "No hedge ratio for 2025 as a whole is printed at year-end 2024.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "comment": "No committed general-purpose undrawn credit facilities are described in the passages.",
+    "fiscal_year": 2025,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "No committed general-purpose undrawn credit facilities are described in the passages.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "undrawn_facilities"
+   }
+  ]
+ },
+ "label": "norwegian FY2025 549300IEUH2FEM2Y6B51-2025-12-31-ESEF-NO-0",
+ "recorded_at": "2026-11-03T20:32:09+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v4",
+  "provider": "deepseek",
+  "system_sha256": "2d59768d9db1f230b27fd62982ec1ae26368ae0405a253e12728325751a19839",
+  "tool_sha256": "61c55522fbd4da1f68f903713a6ffaf85f3654cbac96ba3e9a6bc11333896ad7",
+  "user_sha256": "a7896fc5c865a7160773262f043f8b05b4265e876fa5ca0f58086c0ef3adb3cc"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 9697,
+  "output_tokens": 1201
+ }
+}

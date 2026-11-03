@@ -595,3 +595,101 @@ def test_parse_number(printed, language, expected):
 def test_parse_number_refuses_text():
     assert parse_number("about 93", "en") is None
     assert parse_number("93.4 million", "en") is None
+
+
+# --- M4 carry-over: the four miss types of decision 0014 --------------------------------------
+
+UNDRAWN_BEFORE = (
+    "In addition, easyJet also maintains committed access to capital through its undrawn "
+    "credit facilities. This amounted to £1.8 billion at 30 September 2023 and contributed to "
+    "easyJet's total liquidity.",
+)
+
+
+def test_figure_named_in_the_sentence_before():
+    raw = figure(
+        item="undrawn_facilities",
+        fiscal_year=2023,
+        printed_value="1.8",
+        scale="billion",
+        currency="GBP",
+        quote="This amounted to £1.8 billion at 30 September 2023",
+    )
+    c = run(raw, doc(UNDRAWN_BEFORE, year=2023))
+    assert c.verified, c.failures
+    assert any("sentence just before" in n for n in c.notes)
+
+
+def test_sentence_before_counts_only_after_a_pointing_word():
+    raw = figure(
+        item="undrawn_facilities",
+        fiscal_year=2023,
+        printed_value="1.8",
+        scale="billion",
+        currency="GBP",
+        quote="amounted to £1.8 billion at 30 September 2023",
+    )
+    assert "quote does not mention" in " ".join(run(raw, doc(UNDRAWN_BEFORE, year=2023)).failures)
+
+
+COMPARATIVE = ("Norwegian operated 87 aircraft at year-end, up from 70 aircraft at year-end 2022.",)
+
+
+@pytest.mark.parametrize(
+    ("year", "printed", "verified"),
+    [(2023, "87", True), (2022, "70", True), (2022, "87", False), (2023, "70", False)],
+)
+def test_comparative_without_brackets(year, printed, verified):
+    raw = figure(
+        item="fleet_count",
+        fiscal_year=year,
+        printed_value=printed,
+        quote="Norwegian operated 87 aircraft at year-end, up from 70 aircraft at year-end 2022",
+    )
+    c = run(raw, doc(COMPARATIVE, year=2023, issuer="norwegian"), currency="NOK")
+    assert c.verified is verified, c.failures
+
+
+WIZZ_HEDGE = (
+    "Fuel hedge coverage Period covered F24 F25 12 months 6 months Exposure in metric tonnes "
+    "('000) 1,743.0 916.4 Hedge coverage for the period 56 % 14 % Blended capped rate $1,013",
+)
+
+
+@pytest.mark.parametrize(("printed", "verified"), [("56", True), ("14", False)])
+def test_hedge_table_reads_the_value_column_period(printed, verified):
+    raw = figure(
+        item="fuel_hedge_ratio",
+        fiscal_year=2023,
+        printed_value=printed,
+        quote="Hedge coverage for the period 56 % 14 %",
+        table_header="Period covered F24 F25 12 months 6 months",
+    )
+    c = run(raw, doc(WIZZ_HEDGE, year=2023, issuer="wizz"), currency="EUR")
+    assert c.verified is verified, c.failures
+
+
+IAG_ROW = ("Airline non-fuel costs 14,005 (515) 13,490 ASKs (millions) 323,111 323,111 263,592",)
+
+
+def test_value_printed_twice_at_the_start_of_the_row():
+    raw = figure(
+        item="ask",
+        fiscal_year=2023,
+        printed_value="323,111",
+        scale="million",
+        quote="ASKs (millions) 323,111 323,111 263,592",
+    )
+    c = run(raw, doc(IAG_ROW, year=2023, issuer="iag"), currency="EUR")
+    assert c.verified, c.failures
+
+
+def test_repeat_rule_does_not_cover_the_last_column():
+    raw = figure(
+        item="ask",
+        fiscal_year=2023,
+        printed_value="263,592",
+        scale="million",
+        quote="ASKs (millions) 323,111 323,111 263,592",
+    )
+    assert not run(raw, doc(IAG_ROW, year=2023, issuer="iag"), currency="EUR").verified

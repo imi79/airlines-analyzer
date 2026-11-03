@@ -170,7 +170,14 @@ def check_figure(
         c.failures.append("the quote is only numbers, without the row label")
     terms = [t for lang_terms in item["terms"].values() for t in lang_terms]
     if not contains_any(raw.quote + " " + context, terms):
-        c.failures.append(f"quote does not mention {item['label'].lower()}")
+        before = _sentence_before(doc, raw.quote) if ANAPHORA.match(raw.quote.strip()) else ""
+        if before and contains_any(before, terms):
+            c.notes.append(
+                f"the quote starts '{raw.quote.split()[0]}': the figure is named in the "
+                "sentence just before it in the report"
+            )
+        else:
+            c.failures.append(f"quote does not mention {item['label'].lower()}")
 
     # 3. The value, scale and unit are printed in the quote.
     number = parse_number(raw.printed_value, doc.language)
@@ -220,8 +227,14 @@ def check_figure(
 
     # 4b. A forward figure (hedge ratio) covers twelve months, not part of the year.
     if item["period"] == "forward":
-        rest = _sentence_rest(doc, raw.quote)  # a quote cut short must not hide the period
-        part = _part_of_year(raw.quote + " " + rest + " " + context)
+        column = _column_period(raw.quote, token, context, doc.language)
+        if column is not None:  # a table with a period per column: read the value's own
+            part = None if _full_year(column) else column.group(0)
+            if part is None:
+                c.notes.append(f"the value is in the '{column.group(0)}' column")
+        else:
+            rest = _sentence_rest(doc, raw.quote)  # a quote cut short must not hide the period
+            part = _part_of_year(raw.quote + " " + rest + " " + context)
         if part:
             c.failures.append(
                 f"the quote gives the figure for part of a year ('{part}'), not the next "
@@ -323,6 +336,8 @@ def attached_year(quote: str, token: Token) -> int | None:
     ends = [quote.find(sep, token.end) for sep in (";", ". ")]
     ends = [e for e in ends if e >= 0]
     clause_end = min(ends) if ends else len(quote)
+    comparatives = comparative_spans(quote)
+    own = next((c for c in comparatives if c[0] <= token.start < c[1]), None)
     candidates = []
     for m in marks:
         if not (clause_start <= m.start < clause_end):
@@ -330,6 +345,9 @@ def attached_year(quote: str, token: Token) -> int | None:
         other = _paren_span(quote, m.start)
         if other and not (span and other == span):
             continue  # a year inside other brackets belongs to the figures in those brackets
+        in_comparative = next((c for c in comparatives if c[0] <= m.start < c[1]), None)
+        if in_comparative != own:
+            continue  # "up from 70 aircraft at year-end 2022": 2022 belongs to the 70
         candidates.append(m)
     if not candidates:
         return None
@@ -411,6 +429,9 @@ def _check_year(raw: RawFigure, token: Token, header: str, period: str, doc: Doc
         span = _paren_span(quote, m.start)
         if span and span not in spans:
             spans.append(span)
+    for a, b in comparative_spans(quote):  # "up from 70 aircraft at year-end 2022"
+        if any(a <= m.start < b for m in year_marks(quote)) and not a <= token.start < b:
+            spans.append((a, b - 1))
     outside = quote
     for a, b in sorted(spans, reverse=True):
         outside = outside[:a] + " " * (min(b, len(outside) - 1) - a + 1) + outside[b + 1 :]
@@ -420,6 +441,11 @@ def _check_year(raw: RawFigure, token: Token, header: str, period: str, doc: Doc
     words = (rf"(?<![a-zà-ÿ]){re.escape(w)}(?![a-zà-ÿ])" for w in COMPARATIVE_WORDS)
     if any(re.search(w, lowered) for w in words):
         return "the quote compares years but names none, so the year cannot be confirmed"
+    if _leading_repeat(quote, token, doc.language):
+        return (
+            "note: the value opens the row twice (as reported and before exceptional items); "
+            "taken as the report's own year"
+        )
     rivals = [
         t
         for t in number_tokens(quote, doc.language)
@@ -430,7 +456,10 @@ def _check_year(raw: RawFigure, token: Token, header: str, period: str, doc: Doc
     if rivals:
         return "the quote holds several similar figures and names no year to tell them apart"
     if spans:
-        return "note: the year in brackets is the comparative; the value is the report's own year"
+        return (
+            "note: the year in brackets (or after 'up from', 'compared with') is the "
+            "comparative; the value is the report's own year"
+        )
     return "note: the quote names no year; taken as the report's own year"
 
 
@@ -441,6 +470,87 @@ PART_OF_YEAR = re.compile(
     r"(primer|segundo)\s+(semestre|trimestre)|(erste|zweite)[ns]?\s+(halbjahr|quartal)|"
     r"(?<![a-z])\d+\s+months(?![a-z])"
 )
+
+
+COMPARATIVE_MARK = re.compile(
+    r"(?i)(?<![a-zà-ÿ])(up from|down from|increas\w* from|decreas\w* from|ris\w* from|"
+    r"fall\w* from|grew from|fell from|compared (?:with|to)|versus|vs\.?|against|contre|"
+    r"par rapport à|frente a|gegenüber|im vergleich zu)(?![a-zà-ÿ])"
+)
+ANAPHORA = re.compile(
+    r"(?i)(this|these|that|those|it|they|which|such|ce|cela|cette|ceux|celles?|este|esta|"
+    r"esto|dies|diese)(?![a-zà-ÿ])"
+)
+PERIOD = re.compile(
+    r"(?i)(?<![a-z0-9])(?:(\d+)\s*months|twelve\s+months|six\s+months|H[12]|Q[1-4])(?![a-z0-9])"
+)
+
+
+def comparative_spans(quote: str) -> list[tuple[int, int]]:
+    """From a comparative phrase ('up from', 'compared with') to the end of its clause: the
+    figures and years there are the comparison, not the value's own."""
+    out = []
+    for m in COMPARATIVE_MARK.finditer(quote):
+        ends = [e for e in (quote.find(";", m.end()), quote.find(". ", m.end())) if e >= 0]
+        out.append((m.start(), min(ends) if ends else len(quote)))
+    return out
+
+
+def _leading_repeat(quote: str, token: Token, language: str | None) -> bool:
+    """The row's first two values are the same number and the value is the first: a table
+    printing the year as reported and before exceptional items, before the prior year."""
+    first_digit = re.search(r"\d", quote)
+    label = quote[: first_digit.start()] if first_digit else ""
+    if not re.search(r"[A-Za-zÀ-ÿ]{3,}", label):
+        return False
+    values = [t for t in number_tokens(quote, language) if not _unit_marker(quote, t)]
+    return (
+        len(values) >= 2
+        and values[0].start == token.start
+        and values[0].value == values[1].value
+        and squash(values[0].text) == squash(values[1].text)
+    )
+
+
+def _full_year(m: re.Match) -> bool:
+    text = m.group(0).lower()
+    return text.startswith("twelve") or (m.group(1) is not None and int(m.group(1)) >= 12)
+
+
+def _column_period(quote: str, token: Token, context: str, language: str | None):
+    """In a hedge table with one period per column ('12 months 6 months', then '56 % 14 %'),
+    the period of the value's column; None if the periods and values don't pair up."""
+    head = quote[: token.start]
+    periods = list(PERIOD.finditer(context + " " + head))
+    if len(periods) < 2:
+        return None
+    last_period = PERIOD.search(quote) and max(m.end() for m in PERIOD.finditer(quote))
+    start = last_period if last_period and last_period <= token.start else 0
+    values = [
+        t
+        for t in number_tokens(quote, language)
+        if t.start >= start
+        and contains_any(quote[t.end : t.end + 4], PERCENT_WORDS)
+        and not PERIOD.match(quote[t.start :])
+    ]
+    if len(values) != len(periods) or token.start not in [t.start for t in values]:
+        return None
+    return periods[[t.start for t in values].index(token.start)]
+
+
+def _sentence_before(doc: Document, quote: str, limit: int = 300) -> str:
+    """The report's sentence just before the quote, on the same page."""
+    head = [ch for ch in quote[:80] if not ch.isspace()]
+    if not head:
+        return ""
+    pattern = re.compile(r"\s*".join(re.escape(ch) for ch in head))
+    for page in doc.pages:
+        m = pattern.search(page)
+        if m:
+            before = page[max(0, m.start() - limit) : m.start()]
+            pieces = [p for p in re.split(r"[.;!?](?:\s|$)", before) if p.strip()]
+            return pieces[-1] if pieces else ""
+    return ""
 
 
 def _sentence_rest(doc: Document, quote: str, limit: int = 200) -> str:

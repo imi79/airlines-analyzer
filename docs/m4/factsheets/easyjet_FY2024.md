@@ -73,7 +73,7 @@ Company type: airline. Reporting currency: GBP. Peer group: Low-cost airlines (e
 | rpk@FY2024 | RPK, FY2024 | 111.6bn | up, better vs prior year |
 | rpk@FY2023 | RPK, FY2023 | 103.0bn |  |
 | rpk.change@FY2024 | change in RPK, FY2023 to FY2024 | 8.4% | up, better vs prior year; printed without a sign: say the direction in words |
-| load_factor@FY2024 | Load factor, FY2024 | 89.3% | flat vs prior year; company below peer median, worse |
+| load_factor@FY2024 | Load factor, FY2024 | 89.3% | flat vs prior year |
 | load_factor@FY2023 | Load factor, FY2023 | 89.3% |  |
 | load_factor.change@FY2024 | change in Load factor, FY2023 to FY2024 | 0.0 points | flat vs prior year; printed without a sign: say the direction in words |
 | passenger_yield@FY2024 | Passenger yield, FY2024 | 5.12 pence | flat vs prior year |
@@ -136,8 +136,6 @@ Company type: airline. Reporting currency: GBP. Peer group: Low-cost airlines (e
 | advance_ticket_cover.peer_median@2024 | Advance ticket cover, median of low-cost airlines, peer year 2024 (3 companies) | 50.2% | company in line with peer median |
 | advance_ticket_cover.peer_rank@2024 | Advance ticket cover, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
 | fuel_share_of_costs.peer_median@2024 | Fuel share of costs, median of low-cost airlines, peer year 2024 (3 companies) | 28.0% | company below peer median |
-| load_factor.peer_median@2024 | Load factor, median of low-cost airlines, peer year 2024 (2 companies) | 90.3% | company below peer median, worse |
-| load_factor.peer_rank@2024 | Load factor, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 2 | weakest |
 
 ## Other figures
 
@@ -156,6 +154,8 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - liquidity@FY2024: not verified yet: waiting for Imane's review
 - liquidity_to_revenue@FY2024: not verified yet: waiting for Imane's review
 - fuel_share_of_costs.peer_rank@2024: not ranked: neither higher nor lower is better
+- load_factor.peer_median@2024: the peer median would use a figure not verified yet (norwegian)
+- load_factor.peer_rank@2024: the peer median would use a figure not verified yet (norwegian)
 - fuel_hedge_ratio@FY2024: Fuel hedge ratio not available for FY2024
 - fuel_hedge_ratio@FY2023: Fuel hedge ratio not available for FY2023
 - undrawn_facilities@FY2024: not verified yet: waiting for Imane's review

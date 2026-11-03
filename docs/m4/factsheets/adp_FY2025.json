@@ -1066,7 +1066,7 @@
    "rank_of": null,
    "rendered": "3.5%",
    "unit": "relative",
-   "value": "0.03471617831931147858040808432",
+   "value": "0.03481624758220502901353965184",
    "vs_peers": null
   },
   "passengers@FY2024": {
@@ -1083,7 +1083,7 @@
    "rank_of": null,
    "rendered": "103.4m",
    "unit": "count",
-   "value": "103410000.000000000000",
+   "value": "103400000.000000000000",
    "vs_peers": null
   },
   "passengers@FY2025": {
@@ -1219,7 +1219,7 @@
    "rank_of": null,
    "rendered": "5.2%",
    "unit": "relative",
-   "value": "0.05213890904014153496917539125",
+   "value": "0.05203716463351335555179658696",
    "vs_peers": null
   },
   "revenue_per_passenger@FY2024": {
@@ -1234,9 +1234,9 @@
    "period": "FY2024",
    "rank": null,
    "rank_of": null,
-   "rendered": "EUR 59.55",
+   "rendered": "EUR 59.56",
    "unit": "per_passenger",
-   "value": "59.549366598975",
+   "value": "59.555125725338",
    "vs_peers": null
   },
   "revenue_per_passenger@FY2025": {
@@ -1307,40 +1307,6 @@
    "value": "10587000000.000000000000",
    "vs_peers": null
   },
-  "traffic_growth.peer_median@2025": {
-   "assessment": null,
-   "direction": null,
-   "id": "traffic_growth.peer_median@2025",
-   "kind": "peer_median",
-   "label": "Traffic growth, median of airports, peer year 2025 (3 companies)",
-   "metric": "traffic_growth",
-   "note": "",
-   "peer_assessment": "in_line",
-   "period": "peer year 2025",
-   "rank": null,
-   "rank_of": null,
-   "rendered": "3.5%",
-   "unit": "pct",
-   "value": "0.034716178319",
-   "vs_peers": "in_line"
-  },
-  "traffic_growth.peer_rank@2025": {
-   "assessment": null,
-   "direction": null,
-   "id": "traffic_growth.peer_rank@2025",
-   "kind": "peer_rank",
-   "label": "Traffic growth, rank in airports, peer year 2025 (1st = strongest, i.e. the highest)",
-   "metric": "traffic_growth",
-   "note": "",
-   "peer_assessment": null,
-   "period": "peer year 2025",
-   "rank": 2,
-   "rank_of": 3,
-   "rendered": "2nd of 3",
-   "unit": "rank",
-   "value": "2",
-   "vs_peers": null
-  },
   "traffic_growth@FY2025": {
    "assessment": null,
    "direction": null,
@@ -1349,14 +1315,14 @@
    "label": "Traffic growth, FY2025",
    "metric": "traffic_growth",
    "note": "",
-   "peer_assessment": "in_line",
+   "peer_assessment": null,
    "period": "FY2025",
    "rank": null,
    "rank_of": null,
    "rendered": "3.5%",
    "unit": "pct",
-   "value": "0.034716178319",
-   "vs_peers": "in_line"
+   "value": "0.034816247582",
+   "vs_peers": null
   }
  },
  "labels": {
@@ -1420,6 +1386,8 @@
   "non_aero_share@FY2024": "not verified yet: waiting for Imane's review",
   "non_aero_share@FY2025": "not verified yet: waiting for Imane's review",
   "traffic_growth.change@FY2025": "needs both years verified",
+  "traffic_growth.peer_median@2025": "the peer median would use a figure not verified yet (aena)",
+  "traffic_growth.peer_rank@2025": "the peer median would use a figure not verified yet (aena)",
   "traffic_growth@FY2024": "Passengers not available for FY2023",
   "undrawn_facilities.change@FY2025": "needs both years verified",
   "undrawn_facilities@FY2024": "no figure for this year",

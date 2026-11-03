@@ -1,0 +1,89 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "caption": "Verkehrskennzahlen",
+    "comment": "Vienna Airport total passengers 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "passengers",
+    "location": "Verkehrsentwicklung des Flughafen Wien 2024",
+    "printed_value": "31,7",
+    "quote": "Gesamtpassagiere (in Mio.)\n31,7\n7,4%\n29,5\n31,7",
+    "scale": "million",
+    "scope": "Vienna Airport only",
+    "table_header": "2024\nVeränderung\nzu 2023\n2023\n2019"
+   },
+   {
+    "caption": "Verkehrskennzahlen",
+    "comment": "Vienna Airport total passengers 2023.",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "passengers",
+    "location": "Verkehrsentwicklung des Flughafen Wien 2024",
+    "printed_value": "29,5",
+    "quote": "Gesamtpassagiere (in Mio.)\n31,7\n7,4%\n29,5\n31,7",
+    "scale": "million",
+    "scope": "Vienna Airport only",
+    "table_header": "2024\nVeränderung\nzu 2023\n2023\n2019"
+   },
+   {
+    "caption": "Umsatz im Segment Airport\nin € Mio.",
+    "comment": "Aviation revenue of the Airport segment 2024.",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "Umsatz im Segment Airport",
+    "printed_value": "493,5",
+    "quote": "davon Aviation\n493,5\n15,5%\n427,4",
+    "scale": "million",
+    "scope": "Airport segment (Vienna), aviation revenue",
+    "table_header": "2024\nVeränderung\n2023"
+   },
+   {
+    "caption": "Umsatz im Segment Airport\nin € Mio.",
+    "comment": "Aviation revenue of the Airport segment 2023.",
+    "currency": "EUR",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "Umsatz im Segment Airport",
+    "printed_value": "427,4",
+    "quote": "davon Aviation\n493,5\n15,5%\n427,4",
+    "scale": "million",
+    "scope": "Airport segment (Vienna), aviation revenue",
+    "table_header": "2024\nVeränderung\n2023"
+   },
+   {
+    "comment": "The passages contain no information on committed general-purpose credit facilities available but undrawn at year end.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "The passages contain no information on committed general-purpose credit facilities available but undrawn at year end.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "undrawn_facilities"
+   }
+  ]
+ },
+ "label": "vie FY2024 549300FQ2ILBH7DJ6I45-2024-12-31-ESEF-AT-0",
+ "recorded_at": "2026-11-03T20:31:32+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v4",
+  "provider": "deepseek",
+  "system_sha256": "2d59768d9db1f230b27fd62982ec1ae26368ae0405a253e12728325751a19839",
+  "tool_sha256": "debd41b3d3dad40c9cbcd2779b1324d9b17762b294b86235fd74b44ca9e9dd96",
+  "user_sha256": "2c3fe28dde5def82d6886b11a018eb6145e886e711a9a84b664df2b3ec09f086"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 7277,
+  "output_tokens": 693
+ }
+}

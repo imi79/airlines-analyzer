@@ -1,0 +1,125 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Passengers at the Spanish network airports in 2022.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "passengers",
+    "location": "page 51",
+    "printed_value": "243,7",
+    "quote": "En concreto, en este ejercicio, se ha registrado un volumen de pasajeros de 243,7 millones, frente a los 119,7 millones de 2021, pero aún por debajo de los 274,2 millones pasajeros del 2019.",
+    "scale": "million",
+    "scope": "Aena network airports in Spain"
+   },
+   {
+    "comment": "Passengers at the Spanish network airports in 2021.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "passengers",
+    "location": "page 51",
+    "printed_value": "119,7",
+    "quote": "En concreto, en este ejercicio, se ha registrado un volumen de pasajeros de 243,7 millones, frente a los 119,7 millones de 2021, pero aún por debajo de los 274,2 millones pasajeros del 2019.",
+    "scale": "million",
+    "scope": "Aena network airports in Spain"
+   },
+   {
+    "comment": "Undrawn general-purpose loans; the syndicated ESG-linked credit lines are recorded separately.",
+    "component": true,
+    "currency": "EUR",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "page 247",
+    "printed_value": "654,5",
+    "quote": "Adicionalmente, la Sociedad dispone de 654,5 millones de euros de financiación disponible (no dispuesta) correspondientes a préstamos (468,9 millones de euros a 31 de diciembre de 2021) y con 1.450,0 millones de euros disponibles en líneas de crédito sindicadas sostenibles (ESG-linked RCF) (800,0 millones de euros a 31 de diciembre de 2021).",
+    "scale": "million",
+    "scope": "Aena S.M.E., S.A. (parent company)"
+   },
+   {
+    "comment": "Undrawn syndicated ESG-linked revolving credit lines.",
+    "component": true,
+    "currency": "EUR",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "page 247",
+    "printed_value": "1.450,0",
+    "quote": "Adicionalmente, la Sociedad dispone de 654,5 millones de euros de financiación disponible (no dispuesta) correspondientes a préstamos (468,9 millones de euros a 31 de diciembre de 2021) y con 1.450,0 millones de euros disponibles en líneas de crédito sindicadas sostenibles (ESG-linked RCF) (800,0 millones de euros a 31 de diciembre de 2021).",
+    "scale": "million",
+    "scope": "Aena S.M.E., S.A. (parent company)"
+   },
+   {
+    "comment": "Undrawn general-purpose loans at 31 December 2021; the syndicated credit lines are recorded separately.",
+    "component": true,
+    "currency": "EUR",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "page 247",
+    "printed_value": "468,9",
+    "quote": "Adicionalmente, la Sociedad dispone de 654,5 millones de euros de financiación disponible (no dispuesta) correspondientes a préstamos (468,9 millones de euros a 31 de diciembre de 2021) y con 1.450,0 millones de euros disponibles en líneas de crédito sindicadas sostenibles (ESG-linked RCF) (800,0 millones de euros a 31 de diciembre de 2021).",
+    "scale": "million",
+    "scope": "Aena S.M.E., S.A. (parent company)"
+   },
+   {
+    "comment": "Undrawn syndicated ESG-linked revolving credit lines at 31 December 2021.",
+    "component": true,
+    "currency": "EUR",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "page 247",
+    "printed_value": "800,0",
+    "quote": "Adicionalmente, la Sociedad dispone de 654,5 millones de euros de financiación disponible (no dispuesta) correspondientes a préstamos (468,9 millones de euros a 31 de diciembre de 2021) y con 1.450,0 millones de euros disponibles en líneas de crédito sindicadas sostenibles (ESG-linked RCF) (800,0 millones de euros a 31 de diciembre de 2021).",
+    "scale": "million",
+    "scope": "Aena S.M.E., S.A. (parent company)"
+   },
+   {
+    "caption": "5.2 Desglose de los ingresos ordinarios",
+    "comment": "Aeronautical services revenue for 2022.",
+    "currency": "EUR",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 75",
+    "printed_value": "2.367.379",
+    "quote": "Servicios aeronáuticos\n2.367.379\n1.283.395",
+    "scale": "thousand",
+    "scope": "Aeronautical segment (Spanish airport network), excluding International, AIRM and adjustments",
+    "table_header": "2022\n2021 (*)"
+   },
+   {
+    "caption": "5.2 Desglose de los ingresos ordinarios",
+    "comment": "Aeronautical services revenue for 2021.",
+    "currency": "EUR",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 75",
+    "printed_value": "1.283.395",
+    "quote": "Servicios aeronáuticos\n2.367.379\n1.283.395",
+    "scale": "thousand",
+    "scope": "Aeronautical segment (Spanish airport network), excluding International, AIRM and adjustments",
+    "table_header": "2022\n2021 (*)"
+   }
+  ]
+ },
+ "label": "aena FY2022 959800R7QMXKF0NFMT29-2022-12-31-ESEF-ES-0",
+ "recorded_at": "2026-11-03T20:30:59+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v4",
+  "provider": "deepseek",
+  "system_sha256": "2d59768d9db1f230b27fd62982ec1ae26368ae0405a253e12728325751a19839",
+  "tool_sha256": "debd41b3d3dad40c9cbcd2779b1324d9b17762b294b86235fd74b44ca9e9dd96",
+  "user_sha256": "fdf6e5b70f620ec76eecb06651c89a9b3b9e6cca20f49a6507dd556b44386c2e"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 7205,
+  "output_tokens": 1383
+ }
+}

@@ -69,10 +69,12 @@ Company type: airline. Reporting currency: NOK. Peer group: Low-cost airlines (e
 | passengers.change@FY2024 | change in Passengers, FY2023 to FY2024 | 28.2% | up, better vs prior year; printed without a sign: say the direction in words |
 | ask@FY2023 | ASK, FY2023 | 32.3bn |  |
 | rpk@FY2023 | RPK, FY2023 | 27.4bn |  |
+| load_factor@FY2023 | Load factor, FY2023 | 84.8% |  |
 | passenger_yield@FY2023 | Passenger yield, FY2023 | 75.24 øre |  |
 | rask@FY2023 | RASK, FY2023 | 79.07 øre |  |
 | cask@FY2023 | CASK, FY2023 | 72.16 øre |  |
 | cask_ex_fuel@FY2023 | CASK ex-fuel, FY2023 | 48.27 øre |  |
+| fleet@FY2023 | Fleet, FY2023 | 87 |  |
 | fuel_hedge_ratio@FY2023 | Fuel hedge ratio, FY2023 | 50.0% |  |
 
 ## Liquidity and funding
@@ -135,14 +137,12 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - fuel_share_of_costs.peer_rank@2024: not ranked: neither higher nor lower is better
 - ask@FY2024: ASK not available for FY2024
 - rpk@FY2024: RPK not available for FY2024
-- load_factor@FY2024: RPK not available for FY2024
-- load_factor@FY2023: not verified yet: waiting for Imane's review
+- load_factor@FY2024: not verified yet: waiting for Imane's review
 - passenger_yield@FY2024: RPK not available for FY2024
 - rask@FY2024: ASK not available for FY2024
 - cask@FY2024: ASK not available for FY2024
 - cask_ex_fuel@FY2024: ASK not available for FY2024
 - fleet@FY2024: not verified yet: waiting for Imane's review
-- fleet@FY2023: not verified yet: waiting for Imane's review
 - fleet_age@FY2024: Fleet average age not available for FY2024
 - fleet_age@FY2023: Fleet average age not available for FY2023
 - fuel_hedge_ratio@FY2024: Fuel hedge ratio not available for FY2024

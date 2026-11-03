@@ -1,0 +1,80 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Passengers at Paris Aéroport (CDG+ORY) in 2025, printed as 107 million in the text and 107,0 million in the table.",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "passengers",
+    "location": "page 13",
+    "printed_value": "107,0",
+    "quote": "En 2025, le Groupe ADP a accueilli 379 millions de passagers dans l’ensemble de son réseau d’aéroports, dont 107 millions de passagers à Paris Aéroport.",
+    "scale": "million",
+    "scope": "Paris Aéroport (CDG+ORY)"
+   },
+   {
+    "comment": "Only the 2025 Paris Aéroport passenger figure is printed; the prior-year figure is not given (only a +3.4% change).",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "comment": "The liquidity risk section mentions confirmed unused credit lines but gives no amount or total.",
+    "fiscal_year": 2025,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "No committed general-purpose undrawn facility amounts are printed for 2024.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "caption": "(en millions d'euros)",
+    "comment": "Aviation segment revenue before inter-segment eliminations for 2025, from the segment revenue table.",
+    "currency": "EUR",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 23",
+    "printed_value": "2 192",
+    "quote": "2 192\n1 933\n305\n2 146\n128\n6 704",
+    "scale": "million",
+    "scope": "Activités aéronautiques (Aviation) segment",
+    "table_header": "2025"
+   },
+   {
+    "caption": "(en millions d'euros)",
+    "comment": "Aviation segment revenue before inter-segment eliminations for 2024, from the segment revenue table.",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 24",
+    "printed_value": "2 053",
+    "quote": "2 053\n1 716\n290\n1 966\n133\n6 158",
+    "scale": "million",
+    "scope": "Activités aéronautiques (Aviation) segment",
+    "table_header": "2024"
+   }
+  ]
+ },
+ "label": "adp FY2025 adp-2025-comptes-consolides-fr",
+ "recorded_at": "2026-11-03T20:30:46+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v4",
+  "provider": "deepseek",
+  "system_sha256": "2d59768d9db1f230b27fd62982ec1ae26368ae0405a253e12728325751a19839",
+  "tool_sha256": "debd41b3d3dad40c9cbcd2779b1324d9b17762b294b86235fd74b44ca9e9dd96",
+  "user_sha256": "5095ffce13cc7380c66db5dea726cbf98102caa4d5502c58869d7fa5da401af0"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 5945,
+  "output_tokens": 603
+ }
+}

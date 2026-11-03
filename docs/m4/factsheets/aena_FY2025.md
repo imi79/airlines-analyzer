@@ -15,9 +15,7 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | cash_liquidity_to_revenue@FY2025 | Cash liquidity to revenue (partial), FY2025 | 32.6% | up, better vs prior year; company above peer median, better |
 | cash_liquidity_to_revenue@FY2024 | Cash liquidity to revenue (partial), FY2024 | 31.6% |  |
 | cash_liquidity_to_revenue.change@FY2025 | change in Cash liquidity to revenue (partial), FY2024 to FY2025 | 1.0 point | up, better vs prior year; printed without a sign: say the direction in words |
-| liquidity_to_revenue@FY2025 | Liquidity to revenue, FY2025 | 68.4% | down, worse vs prior year |
-| liquidity_to_revenue@FY2024 | Liquidity to revenue, FY2024 | 79.5% |  |
-| liquidity_to_revenue.change@FY2025 | change in Liquidity to revenue, FY2024 to FY2025 | 11.1 points | down, worse vs prior year; printed without a sign: say the direction in words |
+| liquidity_to_revenue@FY2025 | Liquidity to revenue, FY2025 | 68.4% |  |
 | revenue@FY2025 | Revenue, FY2025 | EUR 6.3bn | up, better vs prior year |
 | revenue@FY2024 | Revenue, FY2024 | EUR 5.8bn |  |
 | revenue.change@FY2025 | change in Revenue, FY2024 to FY2025 | 8.9% | up, better vs prior year; printed without a sign: say the direction in words |
@@ -64,18 +62,10 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 
 | id | what it is | prints as | computed by code |
 | --- | --- | --- | --- |
-| passengers@FY2025 | Passengers, FY2025 | 321.6m | up, better vs prior year |
-| passengers@FY2024 | Passengers, FY2024 | 309.4m |  |
-| passengers.change@FY2025 | change in Passengers, FY2024 to FY2025 | 3.9% | up, better vs prior year; printed without a sign: say the direction in words |
-| traffic_growth@FY2025 | Traffic growth, FY2025 | 3.9% | down, worse vs prior year; company in line with peer median |
+| passengers@FY2024 | Passengers, FY2024 | 309.3m |  |
 | traffic_growth@FY2024 | Traffic growth, FY2024 | 9.2% |  |
-| traffic_growth.change@FY2025 | change in Traffic growth, FY2024 to FY2025 | 5.3 points | down, worse vs prior year; printed without a sign: say the direction in words |
-| revenue_per_passenger@FY2025 | Revenue per passenger, FY2025 | EUR 19.52 | up, better vs prior year |
 | revenue_per_passenger@FY2024 | Revenue per passenger, FY2024 | EUR 18.63 |  |
-| revenue_per_passenger.change@FY2025 | change in Revenue per passenger, FY2024 to FY2025 | 4.8% | up, better vs prior year; printed without a sign: say the direction in words |
-| aero_revenue_per_passenger@FY2025 | Aeronautical revenue per passenger, FY2025 | EUR 10.25 | flat vs prior year |
-| aero_revenue_per_passenger@FY2024 | Aeronautical revenue per passenger, FY2024 | EUR 10.17 |  |
-| aero_revenue_per_passenger.change@FY2025 | change in Aeronautical revenue per passenger, FY2024 to FY2025 | 0.8% | flat vs prior year; printed without a sign: say the direction in words |
+| aero_revenue_per_passenger@FY2024 | Aeronautical revenue per passenger, FY2024 | EUR 10.18 |  |
 | non_aero_share@FY2025 | Non-aeronautical share, FY2025 | 47.5% | up, better vs prior year |
 | non_aero_share@FY2024 | Non-aeronautical share, FY2024 | 45.4% |  |
 | non_aero_share.change@FY2025 | change in Non-aeronautical share, FY2024 to FY2025 | 2.1 points | up, better vs prior year; printed without a sign: say the direction in words |
@@ -90,12 +80,8 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | cash_liquidity@FY2025 | Cash liquidity (partial), FY2025 | EUR 2.0bn | up, better vs prior year |
 | cash_liquidity@FY2024 | Cash liquidity (partial), FY2024 | EUR 1.8bn |  |
 | cash_liquidity.change@FY2025 | change in Cash liquidity (partial), FY2024 to FY2025 | 12.4% | up, better vs prior year; printed without a sign: say the direction in words |
-| liquidity@FY2025 | Liquidity, FY2025 | EUR 4.3bn | down, worse vs prior year |
-| liquidity@FY2024 | Liquidity, FY2024 | EUR 4.6bn |  |
-| liquidity.change@FY2025 | change in Liquidity, FY2024 to FY2025 | 6.3% | down, worse vs prior year; printed without a sign: say the direction in words |
-| undrawn_facilities@FY2025 | Undrawn committed credit facilities, FY2025 | EUR 2.2bn | down, worse vs prior year |
-| undrawn_facilities@FY2024 | Undrawn committed credit facilities, FY2024 | EUR 2.8bn |  |
-| undrawn_facilities.change@FY2025 | change in Undrawn committed credit facilities, FY2024 to FY2025 | 18.7% | down, worse vs prior year; printed without a sign: say the direction in words |
+| liquidity@FY2025 | Liquidity, FY2025 | EUR 4.3bn |  |
+| undrawn_facilities@FY2025 | Undrawn committed credit facilities, FY2025 | EUR 2.2bn |  |
 
 ## Peer positioning
 
@@ -116,8 +102,6 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | capex_intensity.peer_median@2025 | Capex intensity, median of airports, peer year 2025 (3 companies) | 18.2% | company below peer median |
 | cash_liquidity_to_revenue.peer_median@2025 | Cash liquidity to revenue (partial), median of airports, peer year 2025 (3 companies) | 30.1% | company above peer median, better |
 | cash_liquidity_to_revenue.peer_rank@2025 | Cash liquidity to revenue (partial), rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
-| traffic_growth.peer_median@2025 | Traffic growth, median of airports, peer year 2025 (3 companies) | 3.5% | company in line with peer median |
-| traffic_growth.peer_rank@2025 | Traffic growth, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
 
 ## Other figures
 
@@ -132,9 +116,16 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
 
 - capex_intensity.peer_rank@2025: not ranked: neither higher nor lower is better
+- liquidity@FY2024: Undrawn committed credit facilities not available for FY2024
+- liquidity_to_revenue@FY2024: Liquidity: Undrawn committed credit facilities not available for FY2024
 - liquidity_to_revenue.peer_median@2025: fewer than two companies in the peer group have a value
 - liquidity_to_revenue.peer_rank@2025: fewer than two companies in the peer group have a value
+- passengers@FY2025: not verified yet: waiting for Imane's review
+- traffic_growth@FY2025: not verified yet: waiting for Imane's review
+- revenue_per_passenger@FY2025: not verified yet: waiting for Imane's review
+- aero_revenue_per_passenger@FY2025: not verified yet: waiting for Imane's review
 - non_aero_share.peer_median@2025: the peer median would use a figure not verified yet (adp)
 - non_aero_share.peer_rank@2025: the peer median would use a figure not verified yet (adp)
 - contract_liabilities@FY2025: no figure for this year
 - contract_liabilities@FY2024: no figure for this year
+- undrawn_facilities@FY2024: no figure for this year

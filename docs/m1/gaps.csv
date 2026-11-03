@@ -1,5 +1,4 @@
 issuer,fiscal_year,concept,reason,counts_as_missing
-adp,2021,aero_revenue_per_passenger,Aeronautical revenue not available for FY2021,True
 adp,2021,borrowings_total,Reported as current and non-current parts only.,False
 adp,2021,cash_like,Other cash-like items (company's net debt definition) not available for FY2021,True
 adp,2021,cash_liquidity,Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021,True
@@ -14,7 +13,6 @@ adp,2021,liquidity,Cash and cash-like investments: Other cash-like items (compan
 adp,2021,liquidity_to_revenue,Liquidity: Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021,True
 adp,2021,net_debt,Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021,True
 adp,2021,net_leverage,Net debt: Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021,True
-adp,2021,non_aero_share,Aeronautical revenue not available for FY2021,True
 adp,2021,other_cash_like,Not reported by this issuer.,False
 adp,2021,restricted_cash,Not reported by this issuer.,False
 adp,2021,short_term_deposits,Not reported by this issuer.,False
@@ -114,6 +112,8 @@ aena,2024,debt_including_leases,Not reported by this issuer.,False
 aena,2024,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2024,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2024,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
+aena,2024,liquidity,Undrawn committed credit facilities not available for FY2024,True
+aena,2024,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2024,True
 aena,2024,other_cash_like,Not reported by this issuer.,False
 aena,2024,restricted_cash,Not reported by this issuer.,False
 aena,2024,short_term_deposits,Not reported by this issuer.,False
@@ -164,6 +164,7 @@ afkl,2022,cask_ex_fuel,Fuel cost not available for FY2022,True
 afkl,2022,current_investments,Not reported by this issuer.,False
 afkl,2022,debt_including_leases,Not reported by this issuer.,False
 afkl,2022,fuel_cost,Fuel cost not tagged separately; to be extracted from the notes (M3).,True
+afkl,2022,fuel_hedge_ratio,Fuel hedge ratio not available for FY2022,True
 afkl,2022,fuel_share_of_costs,Fuel cost not available for FY2022,True
 afkl,2022,lease_liabilities_total,Reported as current and non-current parts only.,False
 afkl,2022,liquidity,Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022,True
@@ -435,19 +436,14 @@ norwegian,2021,other_current_financial_assets,Not reported by this issuer.,False
 norwegian,2021,restricted_cash,Not reported by this issuer.,False
 norwegian,2021,share_of_associates,Not reported by this issuer.,False
 norwegian,2021,short_term_deposits,Not reported by this issuer.,False
-norwegian,2022,ask,ASK not available for FY2022,True
 norwegian,2022,borrowings_total,Reported as current and non-current parts only.,False
-norwegian,2022,cask,ASK not available for FY2022,True
-norwegian,2022,cask_ex_fuel,ASK not available for FY2022,True
 norwegian,2022,current_investments,Not reported by this issuer.,False
 norwegian,2022,debt_including_leases,Not reported by this issuer.,False
 norwegian,2022,lease_liabilities_total,Reported as current and non-current parts only.,False
 norwegian,2022,liquidity,Undrawn committed credit facilities not available for FY2022,True
 norwegian,2022,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2022,True
-norwegian,2022,load_factor,ASK not available for FY2022,True
 norwegian,2022,other_cash_like,Not reported by this issuer.,False
 norwegian,2022,other_current_financial_assets,Not reported by this issuer.,False
-norwegian,2022,rask,ASK not available for FY2022,True
 norwegian,2022,restricted_cash,Not reported by this issuer.,False
 norwegian,2022,share_of_associates,Not reported by this issuer.,False
 norwegian,2022,short_term_deposits,Not reported by this issuer.,False
@@ -499,7 +495,6 @@ norwegian,2025,restricted_cash,Not reported by this issuer.,False
 norwegian,2025,rpk,RPK not available for FY2025,True
 norwegian,2025,share_of_associates,Not reported by this issuer.,False
 norwegian,2025,short_term_deposits,Not reported by this issuer.,False
-vie,2021,aero_revenue_per_passenger,Aeronautical revenue not available for FY2021,True
 vie,2021,borrowings_current,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2021,borrowings_noncurrent,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2021,borrowings_total,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
@@ -510,7 +505,6 @@ vie,2021,lease_liabilities_noncurrent,"Borrowings and lease liabilities are repo
 vie,2021,lease_liabilities_total,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2021,liquidity,Undrawn committed credit facilities not available for FY2021,True
 vie,2021,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2021,True
-vie,2021,non_aero_share,Aeronautical revenue not available for FY2021,True
 vie,2021,other_cash_like,Not reported by this issuer.,False
 vie,2021,restricted_cash,Not reported by this issuer.,False
 vie,2021,short_term_deposits,Not reported by this issuer.,False

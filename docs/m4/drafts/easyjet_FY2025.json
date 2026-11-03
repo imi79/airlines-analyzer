@@ -25,6 +25,70 @@
    "request_hash": "1a61e12dc1233a91c331bc102742a945a432dcd4f1378bb41d80e95e873808fc",
    "model": "deepseek-flash",
    "draft": {
+    "snapshot": [
+     {
+      "text": "easyJet, a low-cost airline operating a European short-haul network, ended FY2025 with revenue up {{revenue.change@FY2025}} to {{revenue@FY2025}} and a net cash position, as net leverage fell by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}}.",
+      "facts": [
+       {
+        "id": "revenue.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "revenue@FY2025",
+        "claims": []
+       },
+       {
+        "id": "net_leverage.change@FY2025",
+        "claims": [
+         "down",
+         "better"
+        ]
+       },
+       {
+        "id": "net_leverage@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "The EBITDA margin was broadly unchanged at {{ebitda_margin@FY2025}}, {{ebitda_margin.change@FY2025}} versus the prior year, as unit revenue held flat while unit cost eased.",
+      "facts": [
+       {
+        "id": "ebitda_margin@FY2025",
+        "claims": [
+         "flat"
+        ]
+       },
+       {
+        "id": "ebitda_margin.change@FY2025",
+        "claims": [
+         "flat"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "The main point to watch is liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, even though it remains above the peer median.",
+      "facts": [
+       {
+        "id": "cash_liquidity_to_revenue.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2025",
+        "claims": [
+         "above_peers"
+        ]
+       }
+      ]
+     }
+    ],
     "credit_metrics": [
      {
       "text": "EBITDA rose by {{ebitda.change@FY2025}} to {{ebitda@FY2025}} and operating profit by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}}, so the margin held at {{ebitda_margin@FY2025}}.",
@@ -148,73 +212,6 @@
         "claims": [
          "flat"
         ]
-       }
-      ]
-     }
-    ],
-    "liquidity_funding": [
-     {
-      "text": "Cash and cash-like investments were stable at {{cash_like@FY2025}}, and total liquidity stood at {{liquidity@FY2025}}, including {{undrawn_facilities@FY2025}} of undrawn committed facilities.",
-      "facts": [
-       {
-        "id": "cash_like@FY2025",
-        "claims": [
-         "flat"
-        ]
-       },
-       {
-        "id": "liquidity@FY2025",
-        "claims": []
-       },
-       {
-        "id": "undrawn_facilities@FY2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Liquidity to revenue was {{liquidity_to_revenue@FY2025}}, and cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}.",
-      "facts": [
-       {
-        "id": "liquidity_to_revenue@FY2025",
-        "claims": []
-       },
-       {
-        "id": "cash_liquidity_to_revenue.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "cash_liquidity_to_revenue@FY2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Customer prepayments rose: advance ticket cover increased by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}, with contract liabilities up {{contract_liabilities.change@FY2025}} to {{contract_liabilities@FY2025}}.",
-      "facts": [
-       {
-        "id": "advance_ticket_cover.change@FY2025",
-        "claims": [
-         "up",
-         "worse"
-        ]
-       },
-       {
-        "id": "advance_ticket_cover@FY2025",
-        "claims": []
-       },
-       {
-        "id": "contract_liabilities.change@FY2025",
-        "claims": [
-         "up"
-        ]
-       },
-       {
-        "id": "contract_liabilities@FY2025",
-        "claims": []
        }
       ]
      }
@@ -348,6 +345,73 @@
       ]
      }
     ],
+    "liquidity_funding": [
+     {
+      "text": "Cash and cash-like investments were stable at {{cash_like@FY2025}}, and total liquidity stood at {{liquidity@FY2025}}, including {{undrawn_facilities@FY2025}} of undrawn committed facilities.",
+      "facts": [
+       {
+        "id": "cash_like@FY2025",
+        "claims": [
+         "flat"
+        ]
+       },
+       {
+        "id": "liquidity@FY2025",
+        "claims": []
+       },
+       {
+        "id": "undrawn_facilities@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Liquidity to revenue was {{liquidity_to_revenue@FY2025}}, and cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}.",
+      "facts": [
+       {
+        "id": "liquidity_to_revenue@FY2025",
+        "claims": []
+       },
+       {
+        "id": "cash_liquidity_to_revenue.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Customer prepayments rose: advance ticket cover increased by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}, with contract liabilities up {{contract_liabilities.change@FY2025}} to {{contract_liabilities@FY2025}}.",
+      "facts": [
+       {
+        "id": "advance_ticket_cover.change@FY2025",
+        "claims": [
+         "up",
+         "worse"
+        ]
+       },
+       {
+        "id": "advance_ticket_cover@FY2025",
+        "claims": []
+       },
+       {
+        "id": "contract_liabilities.change@FY2025",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "contract_liabilities@FY2025",
+        "claims": []
+       }
+      ]
+     }
+    ],
     "peer_positioning": [
      {
       "text": "easyJet has the lowest net leverage in the low-cost peer group ({{net_leverage.peer_rank@2025}}), at {{net_leverage@FY2025}} against a median of {{net_leverage.peer_median@2025}}, and the lowest gross leverage ({{gross_leverage.peer_rank@2025}}) at {{gross_leverage@FY2025}}.",
@@ -468,70 +532,6 @@
        {
         "id": "capex_intensity.peer_median@2025",
         "claims": []
-       }
-      ]
-     }
-    ],
-    "snapshot": [
-     {
-      "text": "easyJet, a low-cost airline operating a European short-haul network, ended FY2025 with revenue up {{revenue.change@FY2025}} to {{revenue@FY2025}} and a net cash position, as net leverage fell by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}}.",
-      "facts": [
-       {
-        "id": "revenue.change@FY2025",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "revenue@FY2025",
-        "claims": []
-       },
-       {
-        "id": "net_leverage.change@FY2025",
-        "claims": [
-         "down",
-         "better"
-        ]
-       },
-       {
-        "id": "net_leverage@FY2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "The EBITDA margin was broadly unchanged at {{ebitda_margin@FY2025}}, {{ebitda_margin.change@FY2025}} versus the prior year, as unit revenue held flat while unit cost eased.",
-      "facts": [
-       {
-        "id": "ebitda_margin@FY2025",
-        "claims": [
-         "flat"
-        ]
-       },
-       {
-        "id": "ebitda_margin.change@FY2025",
-        "claims": [
-         "flat"
-        ]
-       }
-      ]
-     },
-     {
-      "text": "The main point to watch is liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, even though it remains above the peer median.",
-      "facts": [
-       {
-        "id": "cash_liquidity_to_revenue.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "cash_liquidity_to_revenue@FY2025",
-        "claims": [
-         "above_peers"
-        ]
        }
       ]
      }

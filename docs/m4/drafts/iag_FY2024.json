@@ -25,6 +25,77 @@
    "request_hash": "fb0238108ed8573cd7cd027d4285601118f72014f3bd21435d505999802daf84",
    "model": "deepseek-flash",
    "draft": {
+    "snapshot": [
+     {
+      "text": "International Airlines Group, the owner of British Airways, Iberia and Aer Lingus, ended FY2024 with a stronger credit profile as revenue rose by {{revenue.change@FY2024}} to {{revenue@FY2024}}.",
+      "facts": [
+       {
+        "id": "revenue.change@FY2024",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "revenue@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Net leverage fell by {{net_leverage.change@FY2024}} to {{net_leverage@FY2024}}, with the EBITDA margin up {{ebitda_margin.change@FY2024}} to {{ebitda_margin@FY2024}}.",
+      "facts": [
+       {
+        "id": "net_leverage.change@FY2024",
+        "claims": [
+         "down",
+         "better"
+        ]
+       },
+       {
+        "id": "net_leverage@FY2024",
+        "claims": []
+       },
+       {
+        "id": "ebitda_margin.change@FY2024",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "ebitda_margin@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "The main point to watch is the funding mix: undrawn committed facilities fell by {{undrawn_facilities.change@FY2024}} to {{undrawn_facilities@FY2024}} while total debt rose by {{total_debt.change@FY2024}} to {{total_debt@FY2024}}.",
+      "facts": [
+       {
+        "id": "undrawn_facilities.change@FY2024",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "undrawn_facilities@FY2024",
+        "claims": []
+       },
+       {
+        "id": "total_debt.change@FY2024",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "total_debt@FY2024",
+        "claims": []
+       }
+      ]
+     }
+    ],
     "credit_metrics": [
      {
       "text": "EBITDA increased by {{ebitda.change@FY2024}} to {{ebitda@FY2024}} and operating profit by {{operating_profit.change@FY2024}} to {{operating_profit@FY2024}}.",
@@ -173,97 +244,6 @@
       ]
      }
     ],
-    "liquidity_funding": [
-     {
-      "text": "Liquidity rose by {{liquidity.change@FY2024}} to {{liquidity@FY2024}}, of which {{undrawn_facilities@FY2024}} in undrawn committed facilities.",
-      "facts": [
-       {
-        "id": "liquidity.change@FY2024",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "liquidity@FY2024",
-        "claims": []
-       },
-       {
-        "id": "undrawn_facilities@FY2024",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Cash and cash-like investments increased by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, taking cash liquidity to revenue up {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}.",
-      "facts": [
-       {
-        "id": "cash_like.change@FY2024",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "cash_like@FY2024",
-        "claims": []
-       },
-       {
-        "id": "cash_liquidity_to_revenue.change@FY2024",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "cash_liquidity_to_revenue@FY2024",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Undrawn committed facilities fell by {{undrawn_facilities.change@FY2024}} to {{undrawn_facilities@FY2024}}, so the buffer relies more on cash than on committed lines.",
-      "facts": [
-       {
-        "id": "undrawn_facilities.change@FY2024",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "undrawn_facilities@FY2024",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Advance ticket cover fell by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, while contract liabilities rose by {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}}.",
-      "facts": [
-       {
-        "id": "advance_ticket_cover.change@FY2024",
-        "claims": [
-         "down",
-         "better"
-        ]
-       },
-       {
-        "id": "advance_ticket_cover@FY2024",
-        "claims": []
-       },
-       {
-        "id": "contract_liabilities.change@FY2024",
-        "claims": [
-         "up"
-        ]
-       },
-       {
-        "id": "contract_liabilities@FY2024",
-        "claims": []
-       }
-      ]
-     }
-    ],
     "operating_performance": [
      {
       "text": "Capacity grew by {{ask.change@FY2024}} to {{ask@FY2024}} available seat kilometres, carrying {{passengers@FY2024}} passengers.",
@@ -359,6 +339,97 @@
        },
        {
         "id": "fleet_age@FY2024",
+        "claims": []
+       }
+      ]
+     }
+    ],
+    "liquidity_funding": [
+     {
+      "text": "Liquidity rose by {{liquidity.change@FY2024}} to {{liquidity@FY2024}}, of which {{undrawn_facilities@FY2024}} in undrawn committed facilities.",
+      "facts": [
+       {
+        "id": "liquidity.change@FY2024",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "liquidity@FY2024",
+        "claims": []
+       },
+       {
+        "id": "undrawn_facilities@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Cash and cash-like investments increased by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, taking cash liquidity to revenue up {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}.",
+      "facts": [
+       {
+        "id": "cash_like.change@FY2024",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "cash_like@FY2024",
+        "claims": []
+       },
+       {
+        "id": "cash_liquidity_to_revenue.change@FY2024",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Undrawn committed facilities fell by {{undrawn_facilities.change@FY2024}} to {{undrawn_facilities@FY2024}}, so the buffer relies more on cash than on committed lines.",
+      "facts": [
+       {
+        "id": "undrawn_facilities.change@FY2024",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "undrawn_facilities@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Advance ticket cover fell by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, while contract liabilities rose by {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}}.",
+      "facts": [
+       {
+        "id": "advance_ticket_cover.change@FY2024",
+        "claims": [
+         "down",
+         "better"
+        ]
+       },
+       {
+        "id": "advance_ticket_cover@FY2024",
+        "claims": []
+       },
+       {
+        "id": "contract_liabilities.change@FY2024",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "contract_liabilities@FY2024",
         "claims": []
        }
       ]
@@ -471,77 +542,6 @@
        },
        {
         "id": "cash_liquidity_to_revenue.peer_median@2024",
-        "claims": []
-       }
-      ]
-     }
-    ],
-    "snapshot": [
-     {
-      "text": "International Airlines Group, the owner of British Airways, Iberia and Aer Lingus, ended FY2024 with a stronger credit profile as revenue rose by {{revenue.change@FY2024}} to {{revenue@FY2024}}.",
-      "facts": [
-       {
-        "id": "revenue.change@FY2024",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "revenue@FY2024",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Net leverage fell by {{net_leverage.change@FY2024}} to {{net_leverage@FY2024}}, with the EBITDA margin up {{ebitda_margin.change@FY2024}} to {{ebitda_margin@FY2024}}.",
-      "facts": [
-       {
-        "id": "net_leverage.change@FY2024",
-        "claims": [
-         "down",
-         "better"
-        ]
-       },
-       {
-        "id": "net_leverage@FY2024",
-        "claims": []
-       },
-       {
-        "id": "ebitda_margin.change@FY2024",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "ebitda_margin@FY2024",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "The main point to watch is the funding mix: undrawn committed facilities fell by {{undrawn_facilities.change@FY2024}} to {{undrawn_facilities@FY2024}} while total debt rose by {{total_debt.change@FY2024}} to {{total_debt@FY2024}}.",
-      "facts": [
-       {
-        "id": "undrawn_facilities.change@FY2024",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "undrawn_facilities@FY2024",
-        "claims": []
-       },
-       {
-        "id": "total_debt.change@FY2024",
-        "claims": [
-         "up"
-        ]
-       },
-       {
-        "id": "total_debt@FY2024",
         "claims": []
        }
       ]

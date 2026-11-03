@@ -1,0 +1,225 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Total passengers carried in 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "passengers",
+    "location": "page 9",
+    "printed_value": "11,654,500",
+    "quote": "The number of passengers increased by 6.1 per cent to 11,654,500 passengers.",
+    "scale": "one",
+    "scope": "Finnair passengers carried (total)"
+   },
+   {
+    "comment": "Only the 2024 passenger count is printed; no 2023 figure is given in the passages.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "caption": "Passenger revenue and traffic data by area",
+    "comment": "Total ASK in million km for 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "ask",
+    "location": "page 9",
+    "printed_value": "38,259.3",
+    "quote": "Total 2,419.0 2,411.6 38,259.3 36,154.5 29,000.2 27,626.4 75.8 - 0.6",
+    "scale": "million",
+    "scope": "Finnair Group total",
+    "table_header": "2024\nMEUR\n2023\nMEUR\n2024\nMill. km\n2023\nMill. km\n2024\nMill. km\n2023\nMill. km % Change %-p"
+   },
+   {
+    "caption": "Passenger revenue and traffic data by area",
+    "comment": "Total ASK in million km for 2023.",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "ask",
+    "location": "page 9",
+    "printed_value": "36,154.5",
+    "quote": "Total 2,419.0 2,411.6 38,259.3 36,154.5 29,000.2 27,626.4 75.8 - 0.6",
+    "scale": "million",
+    "scope": "Finnair Group total",
+    "table_header": "2024\nMEUR\n2023\nMEUR\n2024\nMill. km\n2023\nMill. km\n2024\nMill. km\n2023\nMill. km % Change %-p"
+   },
+   {
+    "caption": "Passenger revenue and traffic data by area",
+    "comment": "Total RPK in million km for 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "rpk",
+    "location": "page 9",
+    "printed_value": "29,000.2",
+    "quote": "Total 2,419.0 2,411.6 38,259.3 36,154.5 29,000.2 27,626.4 75.8 - 0.6",
+    "scale": "million",
+    "scope": "Finnair Group total",
+    "table_header": "2024\nMEUR\n2023\nMEUR\n2024\nMill. km\n2023\nMill. km\n2024\nMill. km\n2023\nMill. km % Change %-p"
+   },
+   {
+    "caption": "Passenger revenue and traffic data by area",
+    "comment": "Total RPK in million km for 2023.",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "rpk",
+    "location": "page 9",
+    "printed_value": "27,626.4",
+    "quote": "Total 2,419.0 2,411.6 38,259.3 36,154.5 29,000.2 27,626.4 75.8 - 0.6",
+    "scale": "million",
+    "scope": "Finnair Group total",
+    "table_header": "2024\nMEUR\n2023\nMEUR\n2024\nMill. km\n2023\nMill. km\n2024\nMill. km\n2023\nMill. km % Change %-p"
+   },
+   {
+    "comment": "Passenger load factor for 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "load_factor",
+    "location": "page 9",
+    "printed_value": "75.8",
+    "quote": "Traffic, measured in Revenue Passenger Kilometres (RPK), increased by 5.0 per cent, but the passenger load factor (PLF) decreased by 0.6 percentage points to 75.8 per cent.",
+    "scale": "one",
+    "scope": "Finnair Group total"
+   },
+   {
+    "comment": "Only the 2024 PLF (75.8%) and the change are printed; the 2023 PLF is not stated.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "load_factor"
+   },
+   {
+    "caption": "Revenue by product",
+    "comment": "Passenger revenue for 2024, ancillary revenue reported separately.",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 8",
+    "printed_value": "2,419.0",
+    "quote": "Passenger revenue 2,419.0 2,411.6 0.3",
+    "scale": "million",
+    "scope": "Finnair Group, passenger revenue",
+    "table_header": "EUR million 2024 2023 Change %"
+   },
+   {
+    "caption": "Revenue by product",
+    "comment": "Passenger revenue for 2023, ancillary revenue reported separately.",
+    "currency": "EUR",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 8",
+    "printed_value": "2,411.6",
+    "quote": "Passenger revenue 2,419.0 2,411.6 0.3",
+    "scale": "million",
+    "scope": "Finnair Group, passenger revenue",
+    "table_header": "EUR million 2024 2023 Change %"
+   },
+   {
+    "caption": "Fleet operated by Finnair",
+    "comment": "Finnair-operated fleet at 31 Dec 2024.",
+    "component": true,
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 18",
+    "printed_value": "56",
+    "quote": "Total 56 1 34 22 13.2 1",
+    "scale": "one",
+    "scope": "Finnair's own fleet (AOC)",
+    "table_header": "31 Dec 2024 Seats #\nChange\nfrom\n31 Dec\n2023 Own\n2\nLeased\nAverage\nage\n31 Dec\n2024 Ordered"
+   },
+   {
+    "caption": "Fleet operated by Norra",
+    "comment": "Norra-operated fleet at 31 Dec 2024.",
+    "component": true,
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 18",
+    "printed_value": "24",
+    "quote": "Total 24 0 15 9 16.0",
+    "scale": "one",
+    "scope": "Fleet operated by Norra for Finnair",
+    "table_header": "31 Dec 2024 Seats #\nChange\nfrom\n31 Dec\n2023 Own Leased\nAverage\nage\n31 Dec\n2024 Ordered"
+   },
+   {
+    "comment": "Only the change from 31 Dec 2023 is printed, not the 2023 fleet totals.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "fleet_count"
+   },
+   {
+    "caption": "Fleet operated by Finnair",
+    "comment": "Average age of Finnair-operated fleet at 31 Dec 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "fleet_age",
+    "location": "page 18",
+    "printed_value": "13.2",
+    "quote": "Total 56 1 34 22 13.2 1",
+    "scale": "one",
+    "scope": "Finnair's own fleet (AOC)",
+    "table_header": "31 Dec 2024 Seats #\nChange\nfrom\n31 Dec\n2023 Own\n2\nLeased\nAverage\nage\n31 Dec\n2024 Ordered"
+   },
+   {
+    "comment": "No average fleet age for 31 Dec 2023 is printed.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "fleet_age"
+   },
+   {
+    "comment": "Hedged share of forecasted fuel purchases for the first 12 months of 2025 at year-end 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "fuel_hedge_ratio",
+    "location": "page 178",
+    "printed_value": "77",
+    "quote": "At the end of the financial year, Finnair had hedged 77 per cent of its forecasted fuel purchases for the first",
+    "scale": "one",
+    "scope": "Finnair Group, next 12 months"
+   },
+   {
+    "comment": "No hedge ratio as at year-end 2023 is printed.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "comment": "Secured revolving credit facility for general corporate purposes, undrawn at year-end 2024.",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "page 180",
+    "printed_value": "200",
+    "quote": "Revolving credit facility of 200 million euro was undrawn on 31 December 2024.",
+    "scale": "million",
+    "scope": "Finnair Group, general-purpose revolving credit facility"
+   },
+   {
+    "comment": "No undrawn committed general-purpose facility amount as at 31 Dec 2023 is printed.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "undrawn_facilities"
+   }
+  ]
+ },
+ "label": "finnair FY2024 213800SB6EOB8SSK9W63-2024-12-31-ESEF-FI-0",
+ "recorded_at": "2026-11-03T20:29:48+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v4",
+  "provider": "deepseek",
+  "system_sha256": "2d59768d9db1f230b27fd62982ec1ae26368ae0405a253e12728325751a19839",
+  "tool_sha256": "61c55522fbd4da1f68f903713a6ffaf85f3654cbac96ba3e9a6bc11333896ad7",
+  "user_sha256": "7834957fc5f1b368a513d65d69d43430d3b622fd23e5bb4092ef61a862fb55e9"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 13719,
+  "output_tokens": 2213
+ }
+}

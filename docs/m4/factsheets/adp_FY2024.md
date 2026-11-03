@@ -62,7 +62,7 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | id | what it is | prints as | computed by code |
 | --- | --- | --- | --- |
 | passengers@FY2024 | Passengers, FY2024 | 103.4m |  |
-| revenue_per_passenger@FY2024 | Revenue per passenger, FY2024 | EUR 59.55 |  |
+| revenue_per_passenger@FY2024 | Revenue per passenger, FY2024 | EUR 59.56 |  |
 
 ## Liquidity and funding
 

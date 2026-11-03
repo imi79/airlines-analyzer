@@ -67,7 +67,7 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | passengers@FY2023 | Passengers, FY2023 | 283.2m | up, better vs prior year |
 | passengers@FY2022 | Passengers, FY2022 | 243.7m |  |
 | passengers.change@FY2023 | change in Passengers, FY2022 to FY2023 | 16.2% | up, better vs prior year; printed without a sign: say the direction in words |
-| traffic_growth@FY2023 | Traffic growth, FY2023 | 16.2% | down, worse vs prior year |
+| traffic_growth@FY2023 | Traffic growth, FY2023 | 16.2% | down, worse vs prior year; company below peer median, worse |
 | traffic_growth@FY2022 | Traffic growth, FY2022 | 103.1% |  |
 | traffic_growth.change@FY2023 | change in Traffic growth, FY2022 to FY2023 | 86.9 points | down, worse vs prior year; printed without a sign: say the direction in words |
 | revenue_per_passenger@FY2023 | Revenue per passenger, FY2023 | EUR 17.80 | up, better vs prior year |
@@ -112,6 +112,8 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | capex_intensity.peer_median@2023 | Capex intensity, median of airports, peer year 2023 (3 companies) | 15.9% | company above peer median |
 | cash_liquidity_to_revenue.peer_median@2023 | Cash liquidity to revenue (partial), median of airports, peer year 2023 (3 companies) | 44.8% | company above peer median, better |
 | cash_liquidity_to_revenue.peer_rank@2023 | Cash liquidity to revenue (partial), rank in airports, peer year 2023 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
+| traffic_growth.peer_median@2023 | Traffic growth, median of airports, peer year 2023 (2 companies) | 20.5% | company below peer median, worse |
+| traffic_growth.peer_rank@2023 | Traffic growth, rank in airports, peer year 2023 (1st = strongest, i.e. the highest) | 2nd of 2 | weakest |
 
 ## Other figures
 
@@ -128,8 +130,6 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - capex_intensity.peer_rank@2023: not ranked: neither higher nor lower is better
 - liquidity_to_revenue.peer_median@2023: fewer than two companies in the peer group have a value
 - liquidity_to_revenue.peer_rank@2023: fewer than two companies in the peer group have a value
-- traffic_growth.peer_median@2023: the peer median would use a figure not verified yet (vie)
-- traffic_growth.peer_rank@2023: the peer median would use a figure not verified yet (vie)
 - aero_revenue_per_passenger@FY2022: not verified yet: waiting for Imane's review
 - non_aero_share@FY2022: not verified yet: waiting for Imane's review
 - non_aero_share.peer_median@2023: the peer median would use a figure not verified yet (adp)
