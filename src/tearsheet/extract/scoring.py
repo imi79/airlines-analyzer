@@ -11,7 +11,8 @@ Each key line ends in one of five outcomes:
   unverified_wrong    a wrong value, caught by the checks (kept off the tearsheet)
   missing             the tool has no value for it
 
-Checklist: no `verified_wrong`, and at least 80% `verified_correct`.
+Checklist: no `verified_wrong` on any line, and at least 80% `verified_correct` both on all
+lines and on the held-out lines alone (written before the second run, decision 0014).
 
 The score uses the status the checks gave, before any review by Imane: it measures what the
 checks do on their own. A key line whose figure has been reviewed is shown as such.
@@ -53,6 +54,7 @@ class KeyLine:
     document: str
     location: str
     snippet: str
+    group: str = "first"  # "first" or "holdout" (decision 0014)
 
 
 @dataclass(frozen=True)
@@ -85,6 +87,7 @@ def load_key(path: Path = KEY) -> list[KeyLine]:
                 document=row["document"],
                 location=row["location"],
                 snippet=row["snippet"],
+                group=row.get("set") or "first",
             )
             for row in csv.DictReader(fh)
         ]

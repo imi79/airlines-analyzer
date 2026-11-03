@@ -62,6 +62,13 @@ class Anchor:
     scale: str = "one"  # what the printed number counts in
     language: str = "en"  # number format: en "1,234.5"; fr "1 234,5"
     currency: str | None = None  # amounts: currency printed, if not the reporting currency
+    group: str = "first"  # "first": built before the first run; "holdout": before the second
+
+
+def loose(text: str) -> str:
+    """Regex for printed words in a report whose text layer splits words at random
+    ('eas yJet ha s'): any spacing between the characters."""
+    return r"\s*".join(re.escape(ch) for ch in text if not ch.isspace())
 
 
 # --- Anchors ----------------------------------------------------------------------------------
@@ -149,6 +156,85 @@ ANCHORS: list[Anchor] = [
            "thousand"),
     Anchor("wizz", 2026, "fleet_count", "report FY2026",
            r"Its fleet consists of (?P<v>\d+) aircraft"),
+]  # fmt: skip
+
+# Held-out lines (decision 0014), written before the second run (prompt extract-v2) and scored
+# apart, so that the improvement round is not judged only on the lines that guided it. Same
+# rule: every one of the six figures printed as one number on the scope wanted, in each
+# airline's report for the year before (Air France-KLM: FY2022, its other report with
+# operating figures). Left out, with the reason:
+# - Air France-KLM FY2022 passengers ("plus de 83 millions": a lower bound) and group ASK (the
+#   row "Capacités produites exprimées en SKO 282 826" prints no unit); no group RPK.
+# - IAG FY2024 RPK (not printed in this version of the report) and hedge (policy only).
+# - Finnair FY2024 fleet (only as pie-chart labels) and hedge (per half-year).
+# - easyJet FY2024 hedge (per half-year). Wizz Air FY2025 hedge (10 months, then 8 months).
+# - Norwegian FY2024 ASK and RPK (per airline only) and undrawn facilities (none given).
+HOLDOUT: list[Anchor] = [
+    Anchor("afkl", 2022, "fleet_count", "report FY2022",
+           r"la flotte du Groupe Air France-KLM comprend \d+ avions \(dont (?P<v>\d+) avions en "
+           r"exploitation\)", language="fr", group="holdout"),
+    Anchor("afkl", 2022, "fuel_hedge_ratio", "report FY2022",  # the 2023 column (next year)
+           r"\(en millions de dollars US\) 2022 2023 2024 Dépense brute avant couverture .{0,40}?"
+           r"Pourcentage de couverture \d+ % (?P<v>\d+) % \d+ %", language="fr", group="holdout"),
+    Anchor("afkl", 2022, "undrawn_facilities", "report FY2022",
+           r"et (?P<v>\d,\d) milliards d'euros de lignes de crédit non tirées \(voir Notes",
+           "billion", "fr", group="holdout"),
+    Anchor("iag", 2024, "passengers", "report FY2024",
+           r"countries (?P<v>\d+) million passengers [\d,]+ employees", "million", group="holdout"),
+    Anchor("iag", 2024, "ask", "report FY2024",
+           r"ASKs \(millions\) (?P<v>\d{3},\d{3}) – \d{3},\d{3} \d{3},\d{3}", "million",
+           group="holdout"),
+    Anchor("iag", 2024, "fleet_count", "report FY2024",
+           r"Number of fleet in-service 2024 2023 .{0,90}?% (?P<v>\d{3}) \d{3} [\d.]+ %",
+           group="holdout"),
+    Anchor("iag", 2024, "undrawn_facilities", "report FY2024",
+           r"In total, the Gr ?oup had € (?P<v>\d,\d{3}) million of committed and undrawn",
+           "million", group="holdout"),
+    Anchor("finnair", 2024, "passengers", "report FY2024",
+           r"Finnair transported (?P<v>\d+\.\d) million passengers \(11\.0\)", "million",
+           group="holdout"),
+    Anchor("finnair", 2024, "ask", "report FY2024",
+           r"T ota l 2, 419 \. 0 2 , 4 1 1\.6 (?P<v>[\d ,.]+?) 36, 154\.5", "million",
+           group="holdout"),
+    Anchor("finnair", 2024, "rpk", "report FY2024",
+           r"36, 154\.5 (?P<v>[\d ,.]+?) 27 ,62 6\. 4", "million", group="holdout"),
+    Anchor("finnair", 2024, "undrawn_facilities", "report FY2024",
+           r"Revolving credit facility of (?P<v>\d+) million euro was undrawn on 31 December 2024",
+           "million", group="holdout"),
+    Anchor("easyjet", 2024, "passengers", "report FY2024",
+           loose("in the financial year increased by 8% to") + r"\s*(?P<v>[\d ]+\.\s?\d)\s*"
+           + loose("million (2023:"), "million", group="holdout"),
+    Anchor("easyjet", 2024, "ask", "report FY2024",
+           loose("(ASK) (millions)") + r"\s*(?P<v>[\d ]+,[\d ]+?)\s+113,33 4", "million",
+           group="holdout"),
+    Anchor("easyjet", 2024, "rpk", "report FY2024",
+           loose("(RPK) (millions)") + r"\s*(?P<v>[\d ]+,[\d ]+?)\s+10 2 ,984", "million",
+           group="holdout"),
+    Anchor("easyjet", 2024, "fleet_count", "report FY2024",
+           loose("giving a total fleet of") + r"\s*(?P<v>[\d ]+?)\s*" + loose("at 30 September"),
+           group="holdout"),
+    Anchor("easyjet", 2024, "undrawn_facilities", "report FY2024",
+           loose("This amounted to £") + r"\s*(?P<v>\d\s?\.\s?\d)\s*" + loose("billion at 30"),
+           "billion", group="holdout"),
+    Anchor("norwegian", 2024, "passengers", "report FY2024",
+           loose("The Norwegian Group had") + r"\s*(?P<v>\d+\.\s?\d)\s*"
+           + loose("million passengers in 2024 , up 28"), "million", group="holdout"),
+    Anchor("norwegian", 2024, "fleet_count", "report FY2024",
+           loose("The fleet for the Norwegian Group comprised of") + r"\s*(?P<v>\d+)\s*"
+           + loose("aircraft at year-end"), group="holdout"),
+    Anchor("norwegian", 2024, "fuel_hedge_ratio", "report FY2024",
+           loose("the Group has hedged around") + r"\s*(?P<v>\d+)\s*"
+           + loose("per cent of its planned fuel consumption in 2025"), group="holdout"),
+    Anchor("wizz", 2025, "passengers", "report FY2025",
+           r"carried a record (?P<v>\d+\.\d) million passengers \( F24", "million",
+           group="holdout"),
+    Anchor("wizz", 2025, "ask", "report FY2025",
+           r"Total ASKs \(’000 km\) (?P<v>\d{3},\d{3},\d{3}) \d", "thousand", group="holdout"),
+    Anchor("wizz", 2025, "rpk", "report FY2025",
+           r"RPKs \(revenue passenger kilometres\) \(’000 km\) (?P<v>\d{3},\d{3},\d{3}) \d",
+           "thousand", group="holdout"),
+    Anchor("wizz", 2025, "fleet_count", "report FY2025",
+           r"Its fleet consists of (?P<v>\d+) aircraft", group="holdout"),
 ]  # fmt: skip
 
 
@@ -259,7 +345,8 @@ def ecb_rate(source: str, target: str, period_end: date) -> Decimal:
 # --- Build -----------------------------------------------------------------------------------
 
 
-def build(anchors: list[Anchor] = ANCHORS, out: Path = OUT) -> list[dict]:
+def build(anchors: list[Anchor] | None = None, out: Path = OUT) -> list[dict]:
+    anchors = ANCHORS + HOLDOUT if anchors is None else anchors
     from tearsheet.config import load_issuers
 
     currency = {i.id: i.currency for i in load_issuers()}
@@ -300,10 +387,11 @@ def build(anchors: list[Anchor] = ANCHORS, out: Path = OUT) -> list[dict]:
             "document": doc_id,
             "location": f"page {page}",
             "snippet": snippet,
+            "set": a.group,
         }
     out.parent.mkdir(parents=True, exist_ok=True)
     fields = ["issuer", "fiscal_year", "item", "unit", "value", "tolerance", "printed",
-              "document", "location", "snippet"]  # fmt: skip
+              "document", "location", "snippet", "set"]  # fmt: skip
     with out.open("w", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=fields)
         w.writeheader()

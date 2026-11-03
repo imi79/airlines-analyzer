@@ -90,10 +90,11 @@ def main() -> None:
             f"unverified, from {read['reports']} reports (docs/m3/extractions.md)"
         )
         if scored is not None:
+            a, h = scored["all"], scored["holdout"]
             print(
-                f"answer key: {scored.counts['verified_correct']}/{scored.total} verified and "
-                f"correct ({scored.share_verified:.0%}), {scored.counts['verified_wrong']} "
-                "verified but wrong (docs/m3/answer_key_score.md)"
+                f"answer key: {a.counts['verified_correct']}/{a.total} verified and correct "
+                f"({a.share_verified:.0%}; held-out {h.counts['verified_correct']}/{h.total}), "
+                f"{a.counts['verified_wrong']} verified but wrong (docs/m3/answer_key_score.md)"
             )
 
 
