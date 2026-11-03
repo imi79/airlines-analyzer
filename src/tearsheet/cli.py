@@ -7,6 +7,9 @@
     extract      ask the AI to read operating figures from each report not read before
                  (costs tokens; answers are recorded, so `load` replays them for free).
                  --issuer afkl,easyjet limits the AI calls to those companies
+    draft        ask the AI to draft the commentary of each company's latest two years (M4),
+                 check every sentence and write docs/m4 (costs tokens; answers are recorded,
+                 so `all` and `report` replay them for free). --issuer limits the AI calls
     llm-check    send one tiny request to confirm config/models.yaml and the API key work
     add-package  convert and register an ESEF package (.zip) downloaded by hand:
                  add-package <zip> --issuer afkl --origin "Air France-KLM website" [--url ...]
@@ -34,7 +37,8 @@ CHECK_YEARS = [2023, 2024]
 def main() -> None:
     parser = argparse.ArgumentParser(prog="tearsheet", description=__doc__.splitlines()[0])
     parser.add_argument(
-        "command", choices=["load", "report", "all", "extract", "llm-check", "add-package"]
+        "command",
+        choices=["load", "report", "all", "extract", "draft", "llm-check", "add-package"],
     )
     parser.add_argument("package", nargs="?", type=Path, help="add-package: the .zip file")
     parser.add_argument("--offline", action="store_true", help="use the local cache only")
@@ -97,6 +101,21 @@ def main() -> None:
                 f"blind {b.counts['verified_correct']}/{b.total}), "
                 f"{a.counts['verified_wrong']} verified but wrong (docs/m3/answer_key_score.md)"
             )
+    if args.command in ("report", "all", "extract", "draft"):
+        from tearsheet.llm import LLM
+        from tearsheet.narrative import run as drafting
+
+        live = args.command == "draft"
+        only = set(args.issuer.split(",")) if live and args.issuer else None
+        outcomes = drafting.run(LLM(offline=not live), only=only)
+        done = [o for o in outcomes if o.drafted]
+        length, companies, ok = drafting.gate2(outcomes)
+        print(
+            f"drafts: {len(done)}/{len(outcomes)} drafted, {sum(o.passed for o in done)} passed "
+            f"the verifier, {sum(o.first_try_passed for o in done)} at the first try; gate 2: "
+            f"run of {length} over {len(companies)} companies, "
+            f"{'passed' if ok else 'not passed'} (docs/m4/drafts.md)"
+        )
 
 
 def _extraction_summary(extraction) -> str:

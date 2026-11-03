@@ -1,0 +1,163 @@
+# Fact sheet: easyJet, FY2025 (Oct 2024 to Sep 2025)
+
+Company type: airline. Reporting currency: GBP. Peer group: Low-cost airlines (easyjet, norwegian, wizz), peer year 2025.
+
+## Snapshot
+
+| id | what it is | prints as | computed by code |
+| --- | --- | --- | --- |
+| ebitda_margin@FY2025 | EBITDA margin, FY2025 | 14.2% | flat vs prior year; company below peer median, worse |
+| ebitda_margin@FY2024 | EBITDA margin, FY2024 | 14.6% |  |
+| ebitda_margin.change@FY2025 | change in EBITDA margin, FY2024 to FY2025 | 0.4 points | flat vs prior year; printed without a sign: say the direction in words |
+| net_leverage@FY2025 | Net leverage, FY2025 | -0.42x | down, better vs prior year; company below peer median, better |
+| net_leverage@FY2024 | Net leverage, FY2024 | -0.13x |  |
+| net_leverage.change@FY2025 | change in Net leverage, FY2024 to FY2025 | 0.29x | down, better vs prior year; printed without a sign: say the direction in words |
+| cash_liquidity_to_revenue@FY2025 | Cash liquidity to revenue (partial), FY2025 | 34.9% | down, worse vs prior year; company above peer median, better |
+| cash_liquidity_to_revenue@FY2024 | Cash liquidity to revenue (partial), FY2024 | 37.2% |  |
+| cash_liquidity_to_revenue.change@FY2025 | change in Cash liquidity to revenue (partial), FY2024 to FY2025 | 2.3 points | down, worse vs prior year; printed without a sign: say the direction in words |
+| liquidity_to_revenue@FY2025 | Liquidity to revenue, FY2025 | 47.4% |  |
+| revenue@FY2025 | Revenue, FY2025 | GBP 10.1bn | up, better vs prior year |
+| revenue@FY2024 | Revenue, FY2024 | GBP 9.3bn |  |
+| revenue.change@FY2025 | change in Revenue, FY2024 to FY2025 | 8.6% | up, better vs prior year; printed without a sign: say the direction in words |
+
+## Credit metrics
+
+| id | what it is | prints as | computed by code |
+| --- | --- | --- | --- |
+| ebitda@FY2025 | EBITDA, FY2025 | GBP 1.4bn | up, better vs prior year |
+| ebitda@FY2024 | EBITDA, FY2024 | GBP 1.4bn |  |
+| ebitda.change@FY2025 | change in EBITDA, FY2024 to FY2025 | 5.9% | up, better vs prior year; printed without a sign: say the direction in words |
+| total_debt@FY2025 | Total debt, FY2025 | GBP 2.9bn | down vs prior year |
+| total_debt@FY2024 | Total debt, FY2024 | GBP 3.3bn |  |
+| total_debt.change@FY2025 | change in Total debt, FY2024 to FY2025 | 10.8% | down vs prior year; printed without a sign: say the direction in words |
+| net_debt@FY2025 | Net debt, FY2025 | GBP -602m | down vs prior year |
+| net_debt@FY2024 | Net debt, FY2024 | GBP -181m |  |
+| gross_leverage@FY2025 | Gross leverage, FY2025 | 2.03x | down, better vs prior year; company below peer median, better |
+| gross_leverage@FY2024 | Gross leverage, FY2024 | 2.41x |  |
+| gross_leverage.change@FY2025 | change in Gross leverage, FY2024 to FY2025 | 0.38x | down, better vs prior year; printed without a sign: say the direction in words |
+| interest_coverage@FY2025 | Interest coverage, FY2025 | 9.22x | down, worse vs prior year; company above peer median, better |
+| interest_coverage@FY2024 | Interest coverage, FY2024 | 10.30x |  |
+| interest_coverage.change@FY2025 | change in Interest coverage, FY2024 to FY2025 | 1.08x | down, worse vs prior year; printed without a sign: say the direction in words |
+| ffo@FY2025 | FFO, FY2025 | GBP 1.3bn | up, better vs prior year |
+| ffo@FY2024 | FFO, FY2024 | GBP 1.3bn |  |
+| ffo.change@FY2025 | change in FFO, FY2024 to FY2025 | 3.0% | up, better vs prior year; printed without a sign: say the direction in words |
+| ffo_to_debt@FY2025 | FFO to debt, FY2025 | 44.0% | up, better vs prior year; company above peer median, better |
+| ffo_to_debt@FY2024 | FFO to debt, FY2024 | 38.1% |  |
+| ffo_to_debt.change@FY2025 | change in FFO to debt, FY2024 to FY2025 | 5.9 points | up, better vs prior year; printed without a sign: say the direction in words |
+| fcf@FY2025 | Free cash flow, FY2025 | GBP 624m | up, better vs prior year |
+| fcf@FY2024 | Free cash flow, FY2024 | GBP 536m |  |
+| fcf.change@FY2025 | change in Free cash flow, FY2024 to FY2025 | 16.4% | up, better vs prior year; printed without a sign: say the direction in words |
+| fcf_to_debt@FY2025 | FCF to debt, FY2025 | 21.3% | up, better vs prior year; company above peer median, better |
+| fcf_to_debt@FY2024 | FCF to debt, FY2024 | 16.3% |  |
+| fcf_to_debt.change@FY2025 | change in FCF to debt, FY2024 to FY2025 | 5.0 points | up, better vs prior year; printed without a sign: say the direction in words |
+| capex_intensity@FY2025 | Capex intensity, FY2025 | 9.9% | flat vs prior year; company in line with peer median |
+| capex_intensity@FY2024 | Capex intensity, FY2024 | 10.0% |  |
+| capex_intensity.change@FY2025 | change in Capex intensity, FY2024 to FY2025 | 0.1 points | flat vs prior year; printed without a sign: say the direction in words |
+| operating_profit@FY2025 | Operating profit, FY2025 | GBP 696m | up, better vs prior year |
+| operating_profit@FY2024 | Operating profit, FY2024 | GBP 589m |  |
+| operating_profit.change@FY2025 | change in Operating profit, FY2024 to FY2025 | 18.2% | up, better vs prior year; printed without a sign: say the direction in words |
+
+## Operating performance
+
+| id | what it is | prints as | computed by code |
+| --- | --- | --- | --- |
+| fuel_share_of_costs@FY2025 | Fuel share of costs, FY2025 | 23.9% | down vs prior year; company below peer median |
+| fuel_share_of_costs@FY2024 | Fuel share of costs, FY2024 | 25.5% |  |
+| fuel_share_of_costs.change@FY2025 | change in Fuel share of costs, FY2024 to FY2025 | 1.6 points | down vs prior year; printed without a sign: say the direction in words |
+| passengers@FY2025 | Passengers, FY2025 | 93.4m | up, better vs prior year |
+| passengers@FY2024 | Passengers, FY2024 | 89.7m |  |
+| passengers.change@FY2025 | change in Passengers, FY2024 to FY2025 | 4.1% | up, better vs prior year; printed without a sign: say the direction in words |
+| ask@FY2025 | ASK, FY2025 | 134.5bn | up, better vs prior year |
+| ask@FY2024 | ASK, FY2024 | 122.9bn |  |
+| ask.change@FY2025 | change in ASK, FY2024 to FY2025 | 9.4% | up, better vs prior year; printed without a sign: say the direction in words |
+| rpk@FY2025 | RPK, FY2025 | 122.0bn | up, better vs prior year |
+| rpk@FY2024 | RPK, FY2024 | 111.6bn |  |
+| rpk.change@FY2025 | change in RPK, FY2024 to FY2025 | 9.3% | up, better vs prior year; printed without a sign: say the direction in words |
+| load_factor@FY2025 | Load factor, FY2025 | 90.8% | up, better vs prior year; company in line with peer median |
+| load_factor@FY2024 | Load factor, FY2024 | 89.3% |  |
+| load_factor.change@FY2025 | change in Load factor, FY2024 to FY2025 | 1.5 points | up, better vs prior year; printed without a sign: say the direction in words |
+| passenger_yield@FY2025 | Passenger yield, FY2025 | 4.98 pence | down, worse vs prior year |
+| passenger_yield@FY2024 | Passenger yield, FY2024 | 5.12 pence |  |
+| passenger_yield.change@FY2025 | change in Passenger yield, FY2024 to FY2025 | 2.8% | down, worse vs prior year; printed without a sign: say the direction in words |
+| rask@FY2025 | RASK, FY2025 | 7.52 pence | flat vs prior year |
+| rask@FY2024 | RASK, FY2024 | 7.58 pence |  |
+| rask.change@FY2025 | change in RASK, FY2024 to FY2025 | 0.8% | flat vs prior year; printed without a sign: say the direction in words |
+| cask@FY2025 | CASK, FY2025 | 7.00 pence | down, better vs prior year |
+| cask@FY2024 | CASK, FY2024 | 7.10 pence |  |
+| cask.change@FY2025 | change in CASK, FY2024 to FY2025 | 1.4% | down, better vs prior year; printed without a sign: say the direction in words |
+| cask_ex_fuel@FY2025 | CASK ex-fuel, FY2025 | 5.32 pence | flat vs prior year |
+| cask_ex_fuel@FY2024 | CASK ex-fuel, FY2024 | 5.29 pence |  |
+| cask_ex_fuel.change@FY2025 | change in CASK ex-fuel, FY2024 to FY2025 | 0.7% | flat vs prior year; printed without a sign: say the direction in words |
+| fleet@FY2025 | Fleet, FY2025 | 356 | up vs prior year |
+| fleet@FY2024 | Fleet, FY2024 | 347 |  |
+| fleet.change@FY2025 | change in Fleet, FY2024 to FY2025 | 2.6% | up vs prior year; printed without a sign: say the direction in words |
+| fleet_age@FY2025 | Fleet average age, FY2025 | 10.9 years | up, worse vs prior year |
+| fleet_age@FY2024 | Fleet average age, FY2024 | 10.2 years |  |
+| fleet_age.change@FY2025 | change in Fleet average age, FY2024 to FY2025 | 6.9% | up, worse vs prior year; printed without a sign: say the direction in words |
+
+## Liquidity and funding
+
+| id | what it is | prints as | computed by code |
+| --- | --- | --- | --- |
+| cash_like@FY2025 | Cash and cash-like investments, FY2025 | GBP 3.5bn | flat vs prior year |
+| cash_like@FY2024 | Cash and cash-like investments, FY2024 | GBP 3.5bn |  |
+| cash_like.change@FY2025 | change in Cash and cash-like investments, FY2024 to FY2025 | 1.9% | flat vs prior year; printed without a sign: say the direction in words |
+| cash_liquidity@FY2025 | Cash liquidity (partial), FY2025 | GBP 3.5bn | flat vs prior year |
+| cash_liquidity@FY2024 | Cash liquidity (partial), FY2024 | GBP 3.5bn |  |
+| cash_liquidity.change@FY2025 | change in Cash liquidity (partial), FY2024 to FY2025 | 1.9% | flat vs prior year; printed without a sign: say the direction in words |
+| liquidity@FY2025 | Liquidity, FY2025 | GBP 4.8bn |  |
+| advance_ticket_cover@FY2025 | Advance ticket cover, FY2025 | 55.1% | up, worse vs prior year; company in line with peer median |
+| advance_ticket_cover@FY2024 | Advance ticket cover, FY2024 | 50.2% |  |
+| advance_ticket_cover.change@FY2025 | change in Advance ticket cover, FY2024 to FY2025 | 4.9 points | up, worse vs prior year; printed without a sign: say the direction in words |
+| contract_liabilities@FY2025 | Contract liabilities (advance ticket sales), FY2025 | GBP 1.9bn | up vs prior year |
+| contract_liabilities@FY2024 | Contract liabilities (advance ticket sales), FY2024 | GBP 1.7bn |  |
+| contract_liabilities.change@FY2025 | change in Contract liabilities (advance ticket sales), FY2024 to FY2025 | 12.0% | up vs prior year; printed without a sign: say the direction in words |
+| undrawn_facilities@FY2025 | Undrawn committed credit facilities, FY2025 | GBP 1.3bn |  |
+
+## Peer positioning
+
+| id | what it is | prints as | computed by code |
+| --- | --- | --- | --- |
+| ebitda_margin.peer_median@2025 | EBITDA margin, median of low-cost airlines, peer year 2025 (3 companies) | 21.2% | company below peer median, worse |
+| ebitda_margin.peer_rank@2025 | EBITDA margin, rank in low-cost airlines, peer year 2025 (1st = strongest) | 3rd of 3 | weakest |
+| net_leverage.peer_median@2025 | Net leverage, median of low-cost airlines, peer year 2025 (3 companies) | 1.19x | company below peer median, better |
+| net_leverage.peer_rank@2025 | Net leverage, rank in low-cost airlines, peer year 2025 (1st = strongest) | 1st of 3 | best in the group |
+| gross_leverage.peer_median@2025 | Gross leverage, median of low-cost airlines, peer year 2025 (3 companies) | 2.46x | company below peer median, better |
+| gross_leverage.peer_rank@2025 | Gross leverage, rank in low-cost airlines, peer year 2025 (1st = strongest) | 1st of 3 | best in the group |
+| interest_coverage.peer_median@2025 | Interest coverage, median of low-cost airlines, peer year 2025 (3 companies) | 6.27x | company above peer median, better |
+| interest_coverage.peer_rank@2025 | Interest coverage, rank in low-cost airlines, peer year 2025 (1st = strongest) | 1st of 3 | best in the group |
+| ffo_to_debt.peer_median@2025 | FFO to debt, median of low-cost airlines, peer year 2025 (3 companies) | 35.4% | company above peer median, better |
+| ffo_to_debt.peer_rank@2025 | FFO to debt, rank in low-cost airlines, peer year 2025 (1st = strongest) | 1st of 3 | best in the group |
+| fcf_to_debt.peer_median@2025 | FCF to debt, median of low-cost airlines, peer year 2025 (3 companies) | 14.6% | company above peer median, better |
+| fcf_to_debt.peer_rank@2025 | FCF to debt, rank in low-cost airlines, peer year 2025 (1st = strongest) | 1st of 3 | best in the group |
+| capex_intensity.peer_median@2025 | Capex intensity, median of low-cost airlines, peer year 2025 (3 companies) | 9.9% | company in line with peer median |
+| cash_liquidity_to_revenue.peer_median@2025 | Cash liquidity to revenue (partial), median of low-cost airlines, peer year 2025 (3 companies) | 34.3% | company above peer median, better |
+| cash_liquidity_to_revenue.peer_rank@2025 | Cash liquidity to revenue (partial), rank in low-cost airlines, peer year 2025 (1st = strongest) | 1st of 3 | best in the group |
+| advance_ticket_cover.peer_median@2025 | Advance ticket cover, median of low-cost airlines, peer year 2025 (3 companies) | 55.1% | company in line with peer median |
+| advance_ticket_cover.peer_rank@2025 | Advance ticket cover, rank in low-cost airlines, peer year 2025 (1st = strongest) | 2nd of 3 |  |
+| fuel_share_of_costs.peer_median@2025 | Fuel share of costs, median of low-cost airlines, peer year 2025 (3 companies) | 28.2% | company below peer median |
+| load_factor.peer_median@2025 | Load factor, median of low-cost airlines, peer year 2025 (2 companies) | 90.7% | company in line with peer median |
+| load_factor.peer_rank@2025 | Load factor, rank in low-cost airlines, peer year 2025 (1st = strongest) | 1st of 2 | best in the group |
+
+## Other figures
+
+| id | what it is | prints as | computed by code |
+| --- | --- | --- | --- |
+| profit@FY2025 | Profit for the year, FY2025 | GBP 494m | up, better vs prior year |
+| profit@FY2024 | Profit for the year, FY2024 | GBP 452m |  |
+| profit.change@FY2025 | change in Profit for the year, FY2024 to FY2025 | 9.3% | up, better vs prior year; printed without a sign: say the direction in words |
+
+## Not available: do not discuss
+
+These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
+
+- net_debt.change@FY2025: a percentage change is not meaningful (a year is negative or zero); the direction is still down, on net_debt@FY2025
+- capex_intensity.peer_rank@2025: not ranked: neither higher nor lower is better
+- liquidity@FY2024: not verified yet: waiting for Imane's review
+- liquidity_to_revenue@FY2024: not verified yet: waiting for Imane's review
+- liquidity_to_revenue.peer_median@2025: fewer than two companies in the peer group have a value
+- liquidity_to_revenue.peer_rank@2025: fewer than two companies in the peer group have a value
+- fuel_share_of_costs.peer_rank@2025: not ranked: neither higher nor lower is better
+- fuel_hedge_ratio@FY2025: Fuel hedge ratio not available for FY2025
+- fuel_hedge_ratio@FY2024: Fuel hedge ratio not available for FY2024
+- undrawn_facilities@FY2024: not verified yet: waiting for Imane's review

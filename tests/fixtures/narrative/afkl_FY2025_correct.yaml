@@ -1,0 +1,110 @@
+# A correct draft for Air France-KLM FY2025, written by hand on the fact sheet
+# (tests/fixtures/narrative/afkl_FY2025.json). It must pass the verifier: the adversarial suite
+# swaps one of its sentences for a faulty one, so each rejection has exactly one cause.
+snapshot:
+  - text: >-
+      Air France-KLM strengthened its credit metrics in FY2025, with net leverage down to
+      {{net_leverage@FY2025}} from {{net_leverage@FY2024}}.
+    facts:
+      - {id: net_leverage@FY2025, claims: [down, better]}
+      - {id: net_leverage@FY2024}
+  - text: >-
+      EBITDA rose by {{ebitda.change@FY2025}} to {{ebitda@FY2025}}, lifting the margin to
+      {{ebitda_margin@FY2025}}.
+    facts:
+      - {id: ebitda.change@FY2025, claims: [up]}
+      - {id: ebitda@FY2025}
+      - {id: ebitda_margin@FY2025}
+  - text: >-
+      Free cash flow turned positive at {{fcf@FY2025}}, but FCF to debt of
+      {{fcf_to_debt@FY2025}} remains the weakest of the network peers
+      ({{fcf_to_debt.peer_rank@2025}}).
+    facts:
+      - {id: fcf@FY2025, claims: [up]}
+      - {id: fcf_to_debt@FY2025}
+      - {id: fcf_to_debt.peer_rank@2025, claims: [worst_in_group]}
+credit_metrics:
+  - text: >-
+      Revenue grew by {{revenue.change@FY2025}} to {{revenue@FY2025}}, and operating profit
+      increased by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}}.
+    facts:
+      - {id: revenue.change@FY2025, claims: [up]}
+      - {id: revenue@FY2025}
+      - {id: operating_profit.change@FY2025, claims: [up]}
+      - {id: operating_profit@FY2025}
+  - text: >-
+      Gross leverage fell to {{gross_leverage@FY2025}} and net leverage to
+      {{net_leverage@FY2025}}, even though net debt rose by {{net_debt.change@FY2025}} to
+      {{net_debt@FY2025}}.
+    facts:
+      - {id: gross_leverage@FY2025, claims: [down]}
+      - {id: net_leverage@FY2025, claims: [down]}
+      - {id: net_debt.change@FY2025, claims: [up]}
+      - {id: net_debt@FY2025}
+  - text: >-
+      Interest coverage improved to {{interest_coverage@FY2025}} and FFO to debt to
+      {{ffo_to_debt@FY2025}}.
+    facts:
+      - {id: interest_coverage@FY2025, claims: [better]}
+      - {id: ffo_to_debt@FY2025, claims: [better]}
+  - text: Capex intensity increased to {{capex_intensity@FY2025}}.
+    facts:
+      - {id: capex_intensity@FY2025, claims: [up]}
+operating_performance:
+  - text: >-
+      Operating profit grew faster than revenue, rising by
+      {{operating_profit.change@FY2025}} against {{revenue.change@FY2025}}.
+    facts:
+      - {id: operating_profit.change@FY2025, claims: [up]}
+      - {id: revenue.change@FY2025, claims: [up]}
+  - text: >-
+      In FY2024 the group carried {{passengers@FY2024}} passengers with a fleet of
+      {{fleet@FY2024}} aircraft.
+    facts:
+      - {id: passengers@FY2024}
+      - {id: fleet@FY2024}
+liquidity_funding:
+  - text: Cash and cash-like investments were stable at {{cash_like@FY2025}}.
+    facts:
+      - {id: cash_like@FY2025, claims: [flat]}
+  - text: >-
+      Cash liquidity to revenue slipped by {{cash_liquidity_to_revenue.change@FY2025}} to
+      {{cash_liquidity_to_revenue@FY2025}}.
+    facts:
+      - {id: cash_liquidity_to_revenue.change@FY2025, claims: [down]}
+      - {id: cash_liquidity_to_revenue@FY2025}
+  - text: >-
+      Customer prepayments of {{contract_liabilities@FY2025}} represent
+      {{advance_ticket_cover@FY2025}} of cash.
+    facts:
+      - {id: contract_liabilities@FY2025}
+      - {id: advance_ticket_cover@FY2025}
+peer_positioning:
+  - text: >-
+      Net leverage of {{net_leverage@FY2025}} is in line with the network median of
+      {{net_leverage.peer_median@2025}}.
+    facts:
+      - {id: net_leverage@FY2025, claims: [in_line_with_peers]}
+      - {id: net_leverage.peer_median@2025}
+  - text: >-
+      Advance ticket cover is the lowest of the group ({{advance_ticket_cover.peer_rank@2025}}),
+      a strength for liquidity.
+    facts:
+      - {id: advance_ticket_cover.peer_rank@2025, claims: [best_in_group]}
+  - text: >-
+      Cash liquidity to revenue ranks {{cash_liquidity_to_revenue.peer_rank@2025}}, below the
+      median of {{cash_liquidity_to_revenue.peer_median@2025}}.
+    facts:
+      - {id: cash_liquidity_to_revenue.peer_rank@2025}
+      - {id: cash_liquidity_to_revenue.peer_median@2025, claims: [below_peers]}
+watch_items:
+  - text: >-
+      Liquidity: cash liquidity to revenue of {{cash_liquidity_to_revenue@FY2025}} is the
+      weakest of the network peers ({{cash_liquidity_to_revenue.peer_rank@2025}}).
+    facts:
+      - {id: cash_liquidity_to_revenue@FY2025}
+      - {id: cash_liquidity_to_revenue.peer_rank@2025, claims: [worst_in_group]}
+  - text: 'Debt: total debt rose by {{total_debt.change@FY2025}} to {{total_debt@FY2025}}.'
+    facts:
+      - {id: total_debt.change@FY2025, claims: [up]}
+      - {id: total_debt@FY2025}

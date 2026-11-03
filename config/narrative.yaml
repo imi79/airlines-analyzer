@@ -1,0 +1,114 @@
+# Commentary drafting (M4): what the AI drafts, and what it may talk about.
+#
+# The AI never writes a number. It writes sentences with labelled blanks such as
+# {{net_leverage@FY2025}}, and code fills each blank from the fact sheet (decision 0016).
+
+# The six drafted sections, in tearsheet order. The analyst view is never drafted.
+# sentences: [minimum, maximum]. `uses` lists the figures the section is about (a guide for the
+# AI; the verifier accepts any figure from the fact sheet in any section).
+sections:
+  snapshot:
+    title: Snapshot
+    sentences: [3, 3]
+    purpose: >-
+      Three sentences: who the company is and the year's credit story in one line, the main
+      credit metric movement, and the main point to watch.
+    uses: [ebitda_margin, net_leverage, revenue, liquidity_to_revenue, cash_liquidity_to_revenue]
+  credit_metrics:
+    title: Credit metrics
+    sentences: [2, 5]
+    purpose: Earnings, leverage, coverage and cash flow against debt, with the year-on-year move.
+    uses:
+      - revenue
+      - operating_profit
+      - ebitda
+      - ebitda_margin
+      - total_debt
+      - net_debt
+      - net_leverage
+      - gross_leverage
+      - interest_coverage
+      - ffo
+      - ffo_to_debt
+      - fcf
+      - fcf_to_debt
+      - capex_intensity
+  operating_performance:
+    title: Operating performance
+    sentences: [2, 5]
+    purpose: >-
+      Traffic, capacity, unit revenue and unit cost, fuel and fleet for airlines; passengers,
+      revenue per passenger and the aeronautical mix for airports.
+    uses:
+      - passengers
+      - ask
+      - rpk
+      - load_factor
+      - passenger_yield
+      - rask
+      - cask
+      - cask_ex_fuel
+      - fuel_share_of_costs
+      - fleet
+      - fleet_age
+      - fuel_hedge_ratio
+      - traffic_growth
+      - revenue_per_passenger
+      - aero_revenue_per_passenger
+      - non_aero_share
+  liquidity_funding:
+    title: Liquidity and funding
+    sentences: [2, 4]
+    purpose: Cash, undrawn committed facilities, liquidity against revenue, customer prepayments.
+    uses:
+      - cash_like
+      - undrawn_facilities
+      - liquidity
+      - liquidity_to_revenue
+      - cash_liquidity
+      - cash_liquidity_to_revenue
+      - advance_ticket_cover
+      - contract_liabilities
+  peer_positioning:
+    title: Peer positioning
+    sentences: [2, 4]
+    purpose: Where the company sits against its peer group's median and rank.
+    uses: [peer_median, peer_rank]
+  watch_items:
+    title: Watch items
+    sentences: [2, 4]
+    purpose: >-
+      Points a credit analyst should monitor, each tied to a figure: a weakening metric, a
+      figure below peers, a funding or liquidity point.
+    uses: []
+
+# Statement lines offered to the AI besides the catalog metrics, with their direction flag
+# (true: higher is better; null: neither).
+statement_lines:
+  revenue: true
+  operating_profit: true
+  profit: true
+  contract_liabilities: null
+  undrawn_facilities: true
+
+# Peer group used for medians and ranks: the company's own group (not "all airlines").
+peer_groups: [network, low_cost, airports]
+
+# Names and labels that contain digits and are allowed in the prose (verifier rule 1).
+# Regular expressions, matched as whole words. Fiscal-year labels (FY2025) and years
+# (2015 to 2035) are always allowed.
+allowed_names:
+  - 'IFRS ?\d{1,2}'
+  - 'IAS ?\d{1,2}'
+  - 'COVID-19'
+  - 'CO2'
+  - 'A3[1-5]\d(?:neo|ceo|XLR|LR|-\d{3,4})?'
+  - 'A220(?:-[13]00)?'
+  - 'A380'
+  - 'Boeing 7[3-8]7(?: MAX(?: \d{1,2})?)?(?:-\d{1,2})?'
+  - '7[3-8]7(?: MAX(?: \d{1,2})?)?(?:-\d{1,2})?'
+  - 'E1[79]5|E190(?:-E2)?|E195(?:-E2)?'
+  - 'ATR ?[47]2(?:-600)?'
+  - 'Q400'
+  - 'Terminal ?\d'
+  - 'T\d'

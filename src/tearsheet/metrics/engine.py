@@ -37,6 +37,11 @@ def load_catalog(path: Path = CATALOG) -> dict[str, dict]:
     return yaml.safe_load(path.read_text())["metrics"]
 
 
+def load_flat_thresholds(path: Path = CATALOG) -> dict[str, dict]:
+    """Per unit: {"absolute": ...} or {"relative": ...}, below which a change is "flat"."""
+    return yaml.safe_load(path.read_text())["flat_thresholds"]
+
+
 def load_settings(issuer: Issuer, path: Path = SETTINGS) -> dict:
     settings = dict(yaml.safe_load(path.read_text())["issuers"][issuer.id])
     settings["leases_in_borrowings"] = issuer.leases_in_borrowings

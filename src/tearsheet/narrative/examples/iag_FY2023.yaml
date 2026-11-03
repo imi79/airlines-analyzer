@@ -1,0 +1,146 @@
+# Example note 1 of 2: International Airlines Group, FY2023 (decision 0016).
+# Drafted from the fact sheet (docs/m4/factsheets/iag_FY2023.md) for Imane to rewrite in her own
+# words. Shown to the AI as a model of the house style; it must pass the verifier itself
+# (tests/test_examples.py). FY2023 is not one of the drafted years, so the AI cannot copy it.
+issuer: iag
+fiscal_year: 2023
+sections:
+  snapshot:
+    - text: >-
+        International Airlines Group ended FY2023 with a stronger credit profile, as the
+        earnings recovery brought net leverage down to {{net_leverage@FY2023}} from
+        {{net_leverage@FY2022}}.
+      facts:
+        - {id: net_leverage@FY2023, claims: [down, better]}
+        - {id: net_leverage@FY2022}
+    - text: >-
+        The EBITDA margin rose by {{ebitda_margin.change@FY2023}} to {{ebitda_margin@FY2023}},
+        the best in the network peer group ({{ebitda_margin.peer_rank@2023}}).
+      facts:
+        - {id: ebitda_margin.change@FY2023, claims: [up]}
+        - {id: ebitda_margin@FY2023}
+        - {id: ebitda_margin.peer_rank@2023, claims: [best_in_group]}
+    - text: >-
+        Liquidity is the point to watch: cash and cash-like investments fell by
+        {{cash_like.change@FY2023}} as total debt was reduced by {{total_debt.change@FY2023}},
+        taking liquidity to revenue down to {{liquidity_to_revenue@FY2023}}.
+      facts:
+        - {id: cash_like.change@FY2023, claims: [down]}
+        - {id: total_debt.change@FY2023, claims: [down]}
+        - {id: liquidity_to_revenue@FY2023, claims: [down]}
+  credit_metrics:
+    - text: >-
+        EBITDA increased by {{ebitda.change@FY2023}} to {{ebitda@FY2023}}, on revenue up
+        {{revenue.change@FY2023}} at {{revenue@FY2023}}.
+      facts:
+        - {id: ebitda.change@FY2023, claims: [up]}
+        - {id: ebitda@FY2023}
+        - {id: revenue.change@FY2023, claims: [up]}
+        - {id: revenue@FY2023}
+    - text: >-
+        Gross leverage fell to {{gross_leverage@FY2023}} from {{gross_leverage@FY2022}}, and
+        net debt was reduced by {{net_debt.change@FY2023}} to {{net_debt@FY2023}}.
+      facts:
+        - {id: gross_leverage@FY2023, claims: [down]}
+        - {id: gross_leverage@FY2022}
+        - {id: net_debt.change@FY2023, claims: [down]}
+        - {id: net_debt@FY2023}
+    - text: >-
+        Cash generation strengthened: FFO to debt rose to {{ffo_to_debt@FY2023}} and FCF to
+        debt to {{fcf_to_debt@FY2023}}.
+      facts:
+        - {id: ffo_to_debt@FY2023, claims: [up, better]}
+        - {id: fcf_to_debt@FY2023, claims: [up, better]}
+    - text: >-
+        Interest coverage improved to {{interest_coverage@FY2023}}, while capex intensity
+        eased to {{capex_intensity@FY2023}}.
+      facts:
+        - {id: interest_coverage@FY2023, claims: [better]}
+        - {id: capex_intensity@FY2023, claims: [down]}
+  operating_performance:
+    - text: Capacity grew by {{ask.change@FY2023}} to {{ask@FY2023}} available seat kilometres.
+      facts:
+        - {id: ask.change@FY2023, claims: [up]}
+        - {id: ask@FY2023}
+    - text: >-
+        Unit revenue outpaced unit cost: RASK rose by {{rask.change@FY2023}} to
+        {{rask@FY2023}}, while CASK fell by {{cask.change@FY2023}} to {{cask@FY2023}}.
+      facts:
+        - {id: rask.change@FY2023, claims: [up]}
+        - {id: rask@FY2023}
+        - {id: cask.change@FY2023, claims: [down]}
+        - {id: cask@FY2023}
+    - text: >-
+        CASK ex-fuel declined by {{cask_ex_fuel.change@FY2023}}, and the fuel share of costs
+        edged up to {{fuel_share_of_costs@FY2023}}.
+      facts:
+        - {id: cask_ex_fuel.change@FY2023, claims: [down]}
+        - {id: fuel_share_of_costs@FY2023, claims: [up]}
+    - text: >-
+        The fleet stood at {{fleet@FY2023}} aircraft, with an average age of
+        {{fleet_age@FY2023}}.
+      facts:
+        - {id: fleet@FY2023}
+        - {id: fleet_age@FY2023}
+  liquidity_funding:
+    - text: >-
+        Liquidity fell by {{liquidity.change@FY2023}} to {{liquidity@FY2023}}, of which
+        {{undrawn_facilities@FY2023}} in undrawn committed facilities.
+      facts:
+        - {id: liquidity.change@FY2023, claims: [down]}
+        - {id: liquidity@FY2023}
+        - {id: undrawn_facilities@FY2023}
+    - text: >-
+        Undrawn facilities increased by {{undrawn_facilities.change@FY2023}}, partly
+        offsetting lower cash and cash-like investments of {{cash_like@FY2023}}.
+      facts:
+        - {id: undrawn_facilities.change@FY2023, claims: [up]}
+        - {id: cash_like@FY2023, claims: [down]}
+    - text: >-
+        Advance ticket cover rose to {{advance_ticket_cover@FY2023}}, the highest in the peer
+        group ({{advance_ticket_cover.peer_rank@2023}}), so a larger part of the cash is
+        customers' prepayments.
+      facts:
+        - {id: advance_ticket_cover@FY2023, claims: [up, worse]}
+        - {id: advance_ticket_cover.peer_rank@2023, claims: [worst_in_group]}
+  peer_positioning:
+    - text: >-
+        IAG leads the network airlines on EBITDA margin ({{ebitda_margin.peer_rank@2023}}),
+        FFO to debt ({{ffo_to_debt.peer_rank@2023}}) and FCF to debt
+        ({{fcf_to_debt.peer_rank@2023}}).
+      facts:
+        - {id: ebitda_margin.peer_rank@2023, claims: [best_in_group]}
+        - {id: ffo_to_debt.peer_rank@2023, claims: [best_in_group]}
+        - {id: fcf_to_debt.peer_rank@2023, claims: [best_in_group]}
+    - text: >-
+        Its gross leverage of {{gross_leverage@FY2023}} is below the peer median of
+        {{gross_leverage.peer_median@2023}}, while net leverage is in line with the median at
+        {{net_leverage@FY2023}}.
+      facts:
+        - {id: gross_leverage@FY2023, claims: [below_peers]}
+        - {id: gross_leverage.peer_median@2023}
+        - {id: net_leverage@FY2023, claims: [in_line_with_peers]}
+    - text: >-
+        Cash liquidity to revenue is the weakest of the group
+        ({{cash_liquidity_to_revenue.peer_rank@2023}}).
+      facts:
+        - {id: cash_liquidity_to_revenue.peer_rank@2023, claims: [worst_in_group]}
+  watch_items:
+    - text: >-
+        Liquidity: liquidity to revenue fell by {{liquidity_to_revenue.change@FY2023}} to
+        {{liquidity_to_revenue@FY2023}} as cash was used to repay debt.
+      facts:
+        - {id: liquidity_to_revenue.change@FY2023, claims: [down]}
+        - {id: liquidity_to_revenue@FY2023}
+    - text: >-
+        Customer prepayments: advance ticket cover of {{advance_ticket_cover@FY2023}} is above
+        the peer median of {{advance_ticket_cover.peer_median@2023}}, a sensitivity if
+        bookings slow.
+      facts:
+        - {id: advance_ticket_cover@FY2023, claims: [above_peers]}
+        - {id: advance_ticket_cover.peer_median@2023}
+    - text: >-
+        Fuel: fuel makes up {{fuel_share_of_costs@FY2023}} of costs, so margins remain exposed
+        to jet fuel prices.
+      facts:
+        - {id: fuel_share_of_costs@FY2023}

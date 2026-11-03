@@ -10,6 +10,20 @@
 # The formulas are in metrics/formulas.py under the same id. These definitions differ from
 # company-reported and rating-agency-adjusted figures: no pension or hybrid adjustments in v1.
 
+# Direction of a year-on-year change (M4, approved with the M4 plan, question 3): a change
+# smaller than this is called "flat" (stable). `absolute` is in the metric's own unit (0.005 =
+# half a percentage point); `relative` is a share of the prior-year value (0.02 = 2%). A metric
+# can set its own `flat_threshold` to override its unit's. Fleet age (years) is counted with
+# amounts and traffic (decision 0016).
+flat_thresholds:
+  x: {absolute: 0.1}
+  pct: {absolute: 0.005}
+  amount: {relative: 0.02}
+  count: {relative: 0.02}
+  years: {relative: 0.02}
+  per_km: {relative: 0.01}
+  per_passenger: {relative: 0.01}
+
 metrics:
   # --- Credit metrics -----------------------------------------------------------------------
   ebitda:

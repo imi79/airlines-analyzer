@@ -142,6 +142,7 @@ class LLM:
             usage=usage,
             cached=cached,
             cost_usd=usage.cost(self.settings.price),
+            extra={"recorded_at": record.get("recorded_at")},
         )
 
     def _post(self, url: str, headers: dict, body: dict) -> dict:

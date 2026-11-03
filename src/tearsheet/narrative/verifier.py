@@ -1,0 +1,318 @@
+"""The verifier: code reads every sentence the AI drafted before anything reaches the page.
+
+A sentence is rejected if it breaks any of the five rules of the M4 plan:
+
+1. a number written outside a blank (digits, %, currency signs, "bn", or words such as
+   "doubled", "a third", "record"); fiscal-year labels, years and names such as "IFRS 16" or
+   "A321neo" are allowed;
+2. a blank whose id is not in the fact sheet, or points to a figure that is not available;
+3. a claimed direction that contradicts the one computed by code;
+4. a direction word in the prose ("rose", "improved", "lowest") not backed by a matching
+   claim on a figure of the same clause, so the form and the sentence cannot disagree;
+5. ids listed in the form that the sentence doesn't use, or the reverse.
+
+Plus the form itself ("form"): every section present, with the number of sentences the
+tearsheet allows (the snapshot has exactly three).
+"""
+
+from __future__ import annotations
+
+import re
+from dataclasses import dataclass, field
+from pathlib import Path
+
+import yaml
+
+from tearsheet.narrative.factsheet import FactSheet, load_narrative
+from tearsheet.narrative.render import PLACEHOLDER
+
+VOCABULARY = Path(__file__).with_name("vocabulary.yaml")
+CLAIMS = (
+    "up",
+    "down",
+    "flat",
+    "better",
+    "worse",
+    "above_peers",
+    "below_peers",
+    "in_line_with_peers",
+    "better_than_peers",
+    "worse_than_peers",
+    "best_in_group",
+    "worst_in_group",
+)
+YEAR = r"(?:201[5-9]|202\d|203[0-5])"
+CLAUSE_BREAK = re.compile(  # brackets don't split: "(rank)" belongs to its clause
+    r"[,;:\u2013\u2014]|\b(?:while|whereas|but|although|though|and|yet)\b", re.I
+)
+
+
+@dataclass(frozen=True)
+class Ref:
+    id: str
+    claims: tuple[str, ...] = ()
+
+
+@dataclass(frozen=True)
+class Sentence:
+    text: str
+    facts: tuple[Ref, ...] = ()
+
+
+@dataclass
+class Draft:
+    sections: dict[str, list[Sentence]]
+
+    def to_dict(self) -> dict:
+        return {
+            name: [
+                {"text": s.text, "facts": [{"id": r.id, "claims": list(r.claims)} for r in s.facts]}
+                for s in sentences
+            ]
+            for name, sentences in self.sections.items()
+        }
+
+    @classmethod
+    def from_dict(cls, data: dict) -> Draft:
+        draft, errors = parse_sections(data)
+        if errors:
+            raise ValueError("; ".join(e.message for e in errors))
+        return draft
+
+
+@dataclass(frozen=True)
+class Error:
+    section: str
+    sentence: int | None  # 1-based; None for the section as a whole
+    rule: str  # "1" to "5", or "form"
+    message: str
+
+    def __str__(self) -> str:
+        where = self.section + (f", sentence {self.sentence}" if self.sentence else "")
+        return f"[rule {self.rule}] {where}: {self.message}"
+
+
+@dataclass
+class Report:
+    errors: list[Error] = field(default_factory=list)
+
+    @property
+    def ok(self) -> bool:
+        return not self.errors
+
+    def sections_failed(self) -> list[str]:
+        return list(dict.fromkeys(e.section for e in self.errors))
+
+    def for_section(self, section: str) -> list[Error]:
+        return [e for e in self.errors if e.section == section]
+
+
+# --- Reading the form ----------------------------------------------------------------------
+
+
+def parse_sections(data: dict) -> tuple[Draft, list[Error]]:
+    """The filled form -> Draft. Lines that break the form's shape become "form" errors."""
+    sections, errors = {}, []
+    for name, sentences in (data or {}).items():
+        out = []
+        if not isinstance(sentences, list):
+            errors.append(Error(name, None, "form", "expected a list of sentences"))
+            sections[name] = out
+            continue
+        for n, raw in enumerate(sentences, start=1):
+            if not isinstance(raw, dict) or not isinstance(raw.get("text"), str):
+                errors.append(Error(name, n, "form", "each sentence needs a text"))
+                continue
+            refs = []
+            for ref in raw.get("facts") or []:
+                if not isinstance(ref, dict) or not isinstance(ref.get("id"), str):
+                    errors.append(Error(name, n, "form", f"malformed fact entry: {ref!r}"))
+                    continue
+                claims = ref.get("claims") or []
+                if isinstance(claims, str):
+                    claims = [claims]
+                refs.append(Ref(ref["id"].strip(), tuple(str(c) for c in claims)))
+            out.append(Sentence(raw["text"].strip(), tuple(refs)))
+        sections[name] = out
+    return Draft(sections), errors
+
+
+# --- The verifier ----------------------------------------------------------------------------
+
+
+class Verifier:
+    def __init__(self, narrative: dict | None = None, vocabulary: dict | None = None):
+        self.narrative = narrative or load_narrative()
+        voc = vocabulary or yaml.safe_load(VOCABULARY.read_text())
+        names = "|".join(f"(?:{p})" for p in self.narrative["allowed_names"])
+        self.allowed = re.compile(rf"\bFY{YEAR}\b|\b{YEAR}\b|(?<![\w.]){names}(?![\w])", re.I)
+        self.number_words = re.compile(
+            r"\b(?:" + "|".join(f"(?:{w})" for w in voc["number_words"]) + r")\b", re.I
+        )
+        self.allowed_phrases = re.compile(
+            r"\b(?:" + "|".join(voc["allowed_phrases"]) + r")\b", re.I
+        )
+        self.symbols = re.compile(voc["symbols"])
+        self.ignored = re.compile(r"\b(?:" + "|".join(voc["ignored_phrases"]) + r")\b", re.I)
+        self.directions = {
+            name: (re.compile(rf"\b(?:{d['words']})\b", re.I), tuple(d["claims"]))
+            for name, d in voc["directions"].items()
+        }
+
+    def check(self, sheet: FactSheet, draft: Draft, sections: list[str] | None = None) -> Report:
+        """Check the draft's `sections` (all sections of config/narrative.yaml by default)."""
+        expected = self.narrative["sections"]
+        wanted = sections or list(expected)
+        report = Report()
+        for name in draft.sections:
+            if name not in expected:
+                report.errors.append(Error(name, None, "form", "not a drafted section"))
+        for name in wanted:
+            sentences = draft.sections.get(name)
+            if sentences is None:
+                report.errors.append(Error(name, None, "form", "section missing"))
+                continue
+            low, high = expected[name]["sentences"]
+            if not low <= len(sentences) <= high:
+                span = f"exactly {low}" if low == high else f"{low} to {high}"
+                report.errors.append(
+                    Error(name, None, "form", f"{len(sentences)} sentences; needs {span}")
+                )
+            for n, sentence in enumerate(sentences, start=1):
+                for rule, message in self.check_sentence(sheet, sentence):
+                    report.errors.append(Error(name, n, rule, message))
+        return report
+
+    def check_sentence(self, sheet: FactSheet, s: Sentence) -> list[tuple[str, str]]:
+        errors: list[tuple[str, str]] = []
+        used = [m.group(1) for m in PLACEHOLDER.finditer(s.text)]
+        prose = PLACEHOLDER.sub(" ", s.text)
+        # Rule 2: blanks (and listed ids) must be items of the fact sheet
+        if "{" in prose or "}" in prose:
+            errors.append(("2", "a blank is malformed: write it as {{id}}"))
+        for fid in dict.fromkeys(used + [r.id for r in s.facts]):
+            if fid in sheet.items:
+                continue
+            if fid in sheet.unavailable:
+                errors.append(("2", f"{fid} is not available ({sheet.unavailable[fid]})"))
+            else:
+                errors.append(("2", f"{fid} is not in the fact sheet"))
+        # Rule 1: no number outside a blank
+        errors += [("1", m) for m in self.numbers(prose)]
+        # Rule 5: the form and the sentence list the same ids
+        listed = [r.id for r in s.facts]
+        for fid in dict.fromkeys(used):
+            if fid not in listed:
+                errors.append(("5", f"{fid} is in the text but not listed in the form"))
+        for fid in dict.fromkeys(listed):
+            if fid not in used:
+                errors.append(("5", f"{fid} is listed in the form but not used in the text"))
+        # Rule 3: each claim against the computed direction
+        for ref in s.facts:
+            for claim in ref.claims:
+                message = self.claim_error(sheet, ref.id, claim)
+                if message:
+                    errors.append(("3", message))
+        # Rule 4: direction words in the prose need a matching claim
+        errors += [("4", m) for m in self.direction_words(sheet, s)]
+        return errors
+
+    # --- rule 1
+    def numbers(self, prose: str) -> list[str]:
+        out = []
+        text = self.allowed.sub(" ", prose)
+        for token in re.findall(r"\S*\d\S*", text):
+            out.append(f"number written outside a blank: '{token.strip('.,;:')}'")
+        for sym in self.symbols.findall(text):
+            out.append(f"symbol written outside a blank: '{sym}'")
+        words = self.allowed_phrases.sub(" ", text)
+        for word in self.number_words.findall(words):
+            out.append(f"word that states a number: '{word}'")
+        return out
+
+    # --- rule 3
+    @staticmethod
+    def claim_error(sheet: FactSheet, fid: str, claim: str) -> str | None:
+        if claim not in CLAIMS:
+            return f"unknown claim '{claim}' on {fid}"
+        item = sheet.items.get(fid)
+        if item is None:
+            return None  # reported under rule 2
+        if claim in ("up", "down", "flat"):
+            if item.direction is None:
+                return (
+                    f"'{claim}' claimed on {fid}, which has no computed direction "
+                    "(use the current-year figure or its .change)"
+                )
+            if item.direction != claim:
+                return f"'{claim}' claimed on {fid}, but it moved {item.direction}"
+        elif claim in ("better", "worse"):
+            if item.assessment is None:
+                return f"'{claim}' claimed on {fid}, which has no computed direction"
+            if item.assessment != claim:
+                what = {"neutral": "neither better nor worse"}.get(item.assessment, "")
+                return f"'{claim}' claimed on {fid}, but it is {what or item.assessment}"
+        elif claim in ("above_peers", "below_peers", "in_line_with_peers"):
+            side = claim.removesuffix("_peers").removesuffix("_with")
+            if item.vs_peers is None:
+                return f"'{claim}' claimed on {fid}, which has no peer comparison"
+            if item.vs_peers != side:
+                return f"'{claim}' claimed on {fid}, but it is {item.vs_peers.replace('_', ' ')}"
+        elif claim in ("better_than_peers", "worse_than_peers"):
+            side = claim.removesuffix("_than_peers")
+            if item.peer_assessment is None:
+                return f"'{claim}' claimed on {fid}, which has no peer comparison"
+            if item.peer_assessment != side:
+                return (
+                    f"'{claim}' claimed on {fid}, but against peers it is "
+                    f"{item.peer_assessment.replace('_', ' ')}"
+                )
+        else:  # best_in_group, worst_in_group
+            if item.kind != "peer_rank":
+                return f"'{claim}' needs the rank id (.peer_rank), not {fid}"
+            target = 1 if claim == "best_in_group" else item.rank_of
+            if item.rank != target:
+                return f"'{claim}' claimed on {fid}, but the rank is {item.rendered}"
+        return None
+
+    # --- rule 4
+    def direction_words(self, sheet: FactSheet, s: Sentence) -> list[str]:
+        claims = {r.id: set(r.claims) for r in s.facts}
+        text = PLACEHOLDER.sub(lambda m: f" ⟦{m.group(1)}⟧ ", s.text)
+        text = self.ignored.sub(" ", text)
+        out = []
+        for clause in _clauses(text):
+            ids = re.findall(r"⟦([^⟧]*)⟧", clause)
+            scope = ids or list(claims)
+            words_text = re.sub(r"⟦[^⟧]*⟧", " ", clause)
+            for name, (pattern, backing) in self.directions.items():
+                for word in pattern.findall(words_text):
+                    ok = [
+                        fid
+                        for fid in scope
+                        if claims.get(fid, set()) & set(backing)
+                        and (name != "extreme" or _extreme_ok(sheet, fid, word, claims[fid]))
+                    ]
+                    if not ok:
+                        need = " or ".join(f"'{c}'" for c in backing)
+                        out.append(f"'{word}' needs a {need} claim on a figure in the same clause")
+        return out
+
+
+def _clauses(text: str) -> list[str]:
+    return [c for c in CLAUSE_BREAK.split(text) if c and c.strip()]
+
+
+def _extreme_ok(sheet: FactSheet, fid: str, word: str, claims: set[str]) -> bool:
+    """'lowest' means best only where lower is better (leverage), worst where higher is."""
+    item = sheet.items.get(fid)
+    if item is None:
+        return False
+    better = sheet.higher_is_better.get(item.metric)
+    low = word.lower() in ("lowest", "smallest")
+    if better is None:
+        return False
+    best_means_low = not better
+    if "best_in_group" in claims and low == best_means_low:
+        return True
+    return "worst_in_group" in claims and low != best_means_low

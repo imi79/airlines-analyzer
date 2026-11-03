@@ -1,0 +1,130 @@
+# Example note 2 of 2: Aena, FY2023 (decision 0016). Drafted from the fact sheet
+# (docs/m4/factsheets/aena_FY2023.md) for Imane to rewrite in her own words; it must pass the
+# verifier itself (tests/test_examples.py).
+issuer: aena
+fiscal_year: 2023
+sections:
+  snapshot:
+    - text: >-
+        Aena, the Spanish airport operator, had a stronger FY2023 as traffic recovered:
+        passengers rose by {{passengers.change@FY2023}} to {{passengers@FY2023}}.
+      facts:
+        - {id: passengers.change@FY2023, claims: [up, better]}
+        - {id: passengers@FY2023}
+    - text: >-
+        The EBITDA margin widened by {{ebitda_margin.change@FY2023}} to
+        {{ebitda_margin@FY2023}}, the highest of the airport peers
+        ({{ebitda_margin.peer_rank@2023}}).
+      facts:
+        - {id: ebitda_margin.change@FY2023, claims: [up]}
+        - {id: ebitda_margin@FY2023}
+        - {id: ebitda_margin.peer_rank@2023, claims: [best_in_group]}
+    - text: >-
+        Net leverage fell to {{net_leverage@FY2023}} even as capex intensity rose to
+        {{capex_intensity@FY2023}}, the main point to watch as the investment plan unfolds.
+      facts:
+        - {id: net_leverage@FY2023, claims: [down]}
+        - {id: capex_intensity@FY2023, claims: [up]}
+  credit_metrics:
+    - text: >-
+        EBITDA increased by {{ebitda.change@FY2023}} to {{ebitda@FY2023}} on revenue of
+        {{revenue@FY2023}}, up {{revenue.change@FY2023}}.
+      facts:
+        - {id: ebitda.change@FY2023, claims: [up]}
+        - {id: ebitda@FY2023}
+        - {id: revenue@FY2023}
+        - {id: revenue.change@FY2023, claims: [up]}
+    - text: >-
+        Net debt was stable at {{net_debt@FY2023}}, so the earnings recovery brought net
+        leverage down by {{net_leverage.change@FY2023}} and gross leverage to
+        {{gross_leverage@FY2023}}.
+      facts:
+        - {id: net_debt@FY2023, claims: [flat]}
+        - {id: net_leverage.change@FY2023, claims: [down, better]}
+        - {id: gross_leverage@FY2023, claims: [down]}
+    - text: >-
+        FFO to debt improved to {{ffo_to_debt@FY2023}}, but free cash flow declined by
+        {{fcf.change@FY2023}} to {{fcf@FY2023}} on heavier capital spending.
+      facts:
+        - {id: ffo_to_debt@FY2023, claims: [better]}
+        - {id: fcf.change@FY2023, claims: [down]}
+        - {id: fcf@FY2023}
+    - text: >-
+        Interest coverage weakened to {{interest_coverage@FY2023}} from a very high
+        {{interest_coverage@FY2022}}, still in line with the peer median.
+      facts:
+        - {id: interest_coverage@FY2023, claims: [worse, in_line_with_peers]}
+        - {id: interest_coverage@FY2022}
+  operating_performance:
+    - text: >-
+        Passengers at the Spanish network rose by {{passengers.change@FY2023}} to
+        {{passengers@FY2023}}, although traffic growth slowed from the rebound of the year
+        before, to {{traffic_growth@FY2023}}.
+      facts:
+        - {id: passengers.change@FY2023, claims: [up]}
+        - {id: passengers@FY2023}
+        - {id: traffic_growth@FY2023}
+    - text: >-
+        Revenue per passenger increased by {{revenue_per_passenger.change@FY2023}} to
+        {{revenue_per_passenger@FY2023}}, with aeronautical revenue per passenger at
+        {{aero_revenue_per_passenger@FY2023}}.
+      facts:
+        - {id: revenue_per_passenger.change@FY2023, claims: [up]}
+        - {id: revenue_per_passenger@FY2023}
+        - {id: aero_revenue_per_passenger@FY2023}
+    - text: Non-aeronautical activities made up {{non_aero_share@FY2023}} of revenue.
+      facts:
+        - {id: non_aero_share@FY2023}
+  liquidity_funding:
+    - text: >-
+        Liquidity increased by {{liquidity.change@FY2023}} to {{liquidity@FY2023}}, including
+        {{undrawn_facilities@FY2023}} of undrawn committed facilities.
+      facts:
+        - {id: liquidity.change@FY2023, claims: [up]}
+        - {id: liquidity@FY2023}
+        - {id: undrawn_facilities@FY2023}
+    - text: >-
+        Cash and cash-like investments rose to {{cash_like@FY2023}}, and liquidity to revenue
+        reached {{liquidity_to_revenue@FY2023}}, a comfortable buffer against near-term
+        maturities.
+      facts:
+        - {id: cash_like@FY2023, claims: [up]}
+        - {id: liquidity_to_revenue@FY2023}
+  peer_positioning:
+    - text: >-
+        Aena has the highest EBITDA margin among the airport peers
+        ({{ebitda_margin.peer_rank@2023}}), at {{ebitda_margin@FY2023}} against a median of
+        {{ebitda_margin.peer_median@2023}}.
+      facts:
+        - {id: ebitda_margin.peer_rank@2023, claims: [best_in_group]}
+        - {id: ebitda_margin@FY2023}
+        - {id: ebitda_margin.peer_median@2023}
+    - text: >-
+        Leverage sits at the group median, with net leverage of {{net_leverage@FY2023}}
+        ranking {{net_leverage.peer_rank@2023}}.
+      facts:
+        - {id: net_leverage@FY2023}
+        - {id: net_leverage.peer_rank@2023}
+    - text: >-
+        Cash liquidity to revenue is the strongest of the group
+        ({{cash_liquidity_to_revenue.peer_rank@2023}}).
+      facts:
+        - {id: cash_liquidity_to_revenue.peer_rank@2023, claims: [best_in_group]}
+  watch_items:
+    - text: >-
+        Investment: capex intensity rose by {{capex_intensity.change@FY2023}} to
+        {{capex_intensity@FY2023}}, above the peer median of
+        {{capex_intensity.peer_median@2023}}.
+      facts:
+        - {id: capex_intensity.change@FY2023, claims: [up]}
+        - {id: capex_intensity@FY2023}
+        - {id: capex_intensity.peer_median@2023, claims: [above_peers]}
+    - text: >-
+        Free cash flow: FCF to debt fell to {{fcf_to_debt@FY2023}} as capital spending
+        absorbed more of the cash generated.
+      facts:
+        - {id: fcf_to_debt@FY2023, claims: [down]}
+    - text: >-
+        Regulation: airport charges are set by the regulator, so revenue per passenger depends
+        on the next tariff decision.
+      facts: []

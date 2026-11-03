@@ -1,0 +1,70 @@
+# Words the verifier reads in the AI's prose (decision 0016). Regular expressions, matched as
+# whole words, case-insensitive.
+
+# Rule 1: words that state or imply a number. Rejected anywhere outside a blank.
+number_words:
+  - 'zero|nil'
+  - 'one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve'
+  - 'thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen'
+  - 'twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety'
+  - 'hundreds?|thousands?|millions?|billions?|trillions?|dozens?'
+  - 'half|halves|halved|halving|halve'
+  - 'double[sd]?|doubling|twice|triple[sd]?|tripling|treble[sd]?|quadrupled?'
+  - '\w+fold'
+  - 'quarters?|thirds?|fifths?|tenths?'
+  - 'first|second|fourth|fifth|sixth|seventh|eighth|ninth|tenth'
+  - 'percent|per\s+cent|percentage\s+points?|basis\s+points?|bps|bp|pp|ppts?'
+  - 'bn|mn|mln|k'
+  - 'record|all-time|highest-ever|lowest-ever|unprecedented'
+
+# Number words allowed inside these phrases (the phrase is not a number).
+allowed_phrases:
+  - 'one-off'
+  - 'one-offs'
+  - 'no one'
+
+# Symbols rejected outside a blank.
+symbols: '[%€£$¥‰]'
+
+# Rule 4: direction words, and the claims that back them. A word must be backed by one of the
+# listed claims on a figure in the same clause (or, if the clause has no blank, the sentence).
+directions:
+  up:
+    words: 'ros[ea]|rises?|rising|risen|increas(?:e|ed|es|ing)|gr[eo]w(?:s|n|ing|th)?|climb(?:s|ed|ing)?|expand(?:s|ed|ing)?|widen(?:s|ed|ing)?|gain(?:s|ed)?|jump(?:s|ed)?|up'
+    claims: [up]
+  down:
+    words: 'f[ae]ll|falls|falling|fallen|declin(?:e|ed|es|ing)|decreas(?:e|ed|es|ing)|drop(?:s|ped|ping)?|reduc(?:e|ed|es|ing|tion)|narrow(?:s|ed|ing)?|contract(?:ed|ing)|shr[ai]nk(?:s|ing)?|shrunk|eas(?:ed|ing)|slipp?(?:ed|ing|s)?|down'
+    claims: [down]
+  higher:
+    words: 'higher|above|exceed(?:s|ed|ing)?|ahead'
+    claims: [up, above_peers]
+  lower:
+    words: 'lower|below|behind|trail(?:s|ed|ing)?'
+    claims: [down, below_peers]
+  flat:
+    words: 'stable|unchanged|flat|steady|broadly\s+the\s+same|in\s+line'
+    claims: [flat, in_line_with_peers]
+  better:
+    words: 'improv(?:e|ed|es|ing|ement)|strengthen(?:s|ed|ing)?|stronger|better|healthier'
+    claims: [better, better_than_peers, best_in_group]
+  worse:
+    words: 'deteriorat(?:e|ed|es|ing|ion)|weaken(?:s|ed|ing)?|weaker|worse|worsen(?:s|ed|ing)?|softer|eroded|erosion'
+    claims: [worse, worse_than_peers, worst_in_group]
+  best:
+    words: 'best|strongest|leading|leads'
+    claims: [best_in_group]
+  worst:
+    words: 'worst|weakest|bottom|laggard'
+    claims: [worst_in_group]
+  extreme:  # lowest / highest: also checked against the metric's "higher is better" flag
+    words: 'lowest|highest|smallest|largest'
+    claims: [best_in_group, worst_in_group]
+
+# Phrases ignored when reading direction words (they are names, not movements).
+ignored_phrases:
+  - 'low-cost'
+  - '(?:make|makes|made|making) up'
+  - 'set up'
+  - 'top-line'
+  - 'traffic growth'
+  - 'credit lines?'

@@ -116,6 +116,50 @@ CREATE TABLE llm_calls (
 );
 """
 
+DRAFT_TABLES = """
+-- The drafted commentary (M4): one row per sentence, as the AI wrote it (with blanks) and as
+-- printed (blanks filled by code), with the verifier's verdict.
+CREATE TABLE drafts (
+    issuer          VARCHAR NOT NULL,
+    fiscal_year     INTEGER NOT NULL,
+    section         VARCHAR NOT NULL,
+    sentence        INTEGER NOT NULL,
+    text_blanks     VARCHAR NOT NULL,  -- with {{id}} blanks
+    text_rendered   VARCHAR NOT NULL,
+    facts           VARCHAR NOT NULL,  -- JSON: ids used and the claims made on each
+    status          VARCHAR NOT NULL,  -- passed | needs_manual_editing (the whole section)
+    model           VARCHAR,
+    prompt_version  VARCHAR,
+    input_hash      VARCHAR NOT NULL,  -- fingerprint of the fact sheet
+    verifier_report VARCHAR NOT NULL,  -- JSON list of the section's remaining errors
+    attempts        INTEGER NOT NULL
+);
+
+-- One manifest per drafted tearsheet (M4): filings, model, prompt version, tokens, cost.
+CREATE TABLE runs (
+    issuer          VARCHAR NOT NULL,
+    fiscal_year     INTEGER NOT NULL,
+    filing_hashes   VARCHAR NOT NULL,  -- JSON: filing id -> sha256, for the years used
+    provider        VARCHAR,
+    model           VARCHAR,
+    prompt_version  VARCHAR,
+    input_hash      VARCHAR NOT NULL,
+    calls           INTEGER NOT NULL,
+    input_tokens    INTEGER NOT NULL,
+    output_tokens   INTEGER NOT NULL,
+    cost_usd        DECIMAL(18, 6),
+    first_try_ok    BOOLEAN,
+    passed          BOOLEAN,
+    recorded_at     VARCHAR            -- when the last AI answer was recorded
+);
+"""
+SCHEMA += DRAFT_TABLES
+
+
+def ensure_draft_tables(con) -> None:
+    """The M4 tables, in a database built before they existed."""
+    con.execute(DRAFT_TABLES.replace("CREATE TABLE", "CREATE TABLE IF NOT EXISTS"))
+
 
 def create(path: Path) -> duckdb.DuckDBPyConnection:
     path.parent.mkdir(parents=True, exist_ok=True)

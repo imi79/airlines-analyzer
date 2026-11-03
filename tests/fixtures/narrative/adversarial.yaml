@@ -1,0 +1,231 @@
+# The adversarial suite (M4 checklist): deliberately bad sentences, written by hand, each with
+# one fault. Each replaces one sentence of the correct Air France-KLM FY2025 draft
+# (afkl_FY2025_correct.yaml); the verifier must reject every one, for the rule named.
+# `replace`: [section, sentence number]; default [credit_metrics, 4].
+# Then `correct`: sentences that look risky but are right; every one must pass.
+
+faulty:
+  # --- Rule 1: a number outside a blank -----------------------------------------------------
+  - name: digits with a multiple
+    rule: "1"
+    text: Net leverage stood at 1.71x at the year end.
+    facts: []
+  - name: a prior-year figure typed in as a percentage
+    rule: "1"
+    text: The EBITDA margin of {{ebitda_margin@FY2025}} compares with 13.1% in FY2024.
+    facts: [{id: ebitda_margin@FY2025}]
+  - name: an amount with a currency sign
+    rule: "1"
+    text: Net debt reached €8.7bn at the year end.
+    facts: []
+  - name: a unit word without digits
+    rule: "1"
+    text: Total debt of {{total_debt@FY2025}} includes leases worth several bn.
+    facts: [{id: total_debt@FY2025}]
+  - name: doubled
+    rule: "1"
+    text: Profit for the year doubled to {{profit@FY2025}}.
+    facts: [{id: profit@FY2025, claims: [up]}]
+  - name: a fraction in words
+    rule: "1"
+    text: Leases account for about a third of total debt of {{total_debt@FY2025}}.
+    facts: [{id: total_debt@FY2025}]
+  - name: halved
+    rule: "1"
+    text: Net leverage has almost halved over recent years, to {{net_leverage@FY2025}}.
+    facts: [{id: net_leverage@FY2025}]
+  - name: a rank written in words
+    rule: "1"
+    text: Air France-KLM ranks second of three network airlines on net leverage.
+    facts: []
+  - name: a record
+    rule: "1"
+    text: Revenue reached a record {{revenue@FY2025}}.
+    facts: [{id: revenue@FY2025}]
+  - name: basis points in words
+    rule: "1"
+    text: >-
+      The EBITDA margin rose by {{ebitda_margin.change@FY2025}}, or more than two hundred
+      basis points.
+    facts: [{id: ebitda_margin.change@FY2025, claims: [up]}]
+  - name: a short year label that hides digits
+    rule: "1"
+    text: In FY25 net leverage was {{net_leverage@FY2025}}.
+    facts: [{id: net_leverage@FY2025}]
+  - name: a percent written as a word
+    rule: "1"
+    text: Revenue of {{revenue@FY2025}} was some five percent above budget.
+    facts: [{id: revenue@FY2025}]
+
+  # --- Rule 2: a blank the fact sheet doesn't have, or not available -------------------------
+  - name: a figure that is missing (no group ASK, so no RASK)
+    rule: "2"
+    text: RASK reached {{rask@FY2025}}.
+    facts: [{id: rask@FY2025}]
+  - name: a figure not verified yet (liquidity waits for Imane's review)
+    rule: "2"
+    text: Liquidity reached {{liquidity@FY2025}}.
+    facts: [{id: liquidity@FY2025}]
+  - name: an invented id
+    rule: "2"
+    text: Adjusted net leverage was {{net_leverage_adjusted@FY2025}}.
+    facts: [{id: net_leverage_adjusted@FY2025}]
+  - name: a year the fact sheet doesn't cover
+    rule: "2"
+    text: Net leverage is expected at {{net_leverage@FY2026}}.
+    facts: [{id: net_leverage@FY2026}]
+  - name: a peer median that is not available
+    rule: "2"
+    text: Liquidity to revenue compares with a peer median of {{liquidity_to_revenue.peer_median@2025}}.
+    facts: [{id: liquidity_to_revenue.peer_median@2025}]
+  - name: a rank for a metric that is not ranked
+    rule: "2"
+    text: Capex intensity ranks {{capex_intensity.peer_rank@2025}} in the group.
+    facts: [{id: capex_intensity.peer_rank@2025}]
+  - name: a malformed blank
+    rule: "2"
+    text: Net leverage was {net_leverage@FY2025} at the year end.
+    facts: []
+
+  # --- Rule 3: a claimed direction that contradicts the computed one -------------------------
+  - name: improved on a worsening metric
+    rule: "3"
+    text: Cash liquidity to revenue improved to {{cash_liquidity_to_revenue@FY2025}}.
+    facts: [{id: cash_liquidity_to_revenue@FY2025, claims: [better]}]
+  - name: rose on a falling metric
+    rule: "3"
+    text: Net leverage rose to {{net_leverage@FY2025}}.
+    facts: [{id: net_leverage@FY2025, claims: [up]}]
+  - name: rose on a flat metric
+    rule: "3"
+    text: Cash and cash-like investments rose to {{cash_like@FY2025}}.
+    facts: [{id: cash_like@FY2025, claims: [up]}]
+  - name: above the peers when below
+    rule: "3"
+    text: FCF to debt of {{fcf_to_debt@FY2025}} is above the peer median.
+    facts: [{id: fcf_to_debt@FY2025, claims: [above_peers]}]
+  - name: a peer rank claimed first when it is third
+    rule: "3"
+    text: FCF to debt is the strongest of the group ({{fcf_to_debt.peer_rank@2025}}).
+    facts: [{id: fcf_to_debt.peer_rank@2025, claims: [best_in_group]}]
+  - name: better on a metric that is neither better nor worse
+    rule: "3"
+    text: Total debt improved to {{total_debt@FY2025}}.
+    facts: [{id: total_debt@FY2025, claims: [better]}]
+  - name: a direction on the prior-year figure
+    rule: "3"
+    text: Net leverage fell from {{net_leverage@FY2024}}.
+    facts: [{id: net_leverage@FY2024, claims: [down]}]
+  - name: a superlative without the rank id
+    rule: "3"
+    text: Advance ticket cover of {{advance_ticket_cover@FY2025}} is the lowest in the group.
+    facts: [{id: advance_ticket_cover@FY2025, claims: [best_in_group]}]
+
+  # --- Rule 4: the prose says something the form doesn't ------------------------------------
+  - name: the verb contradicts the form
+    rule: "4"
+    text: Net leverage rose to {{net_leverage@FY2025}}.
+    facts: [{id: net_leverage@FY2025, claims: [down]}]
+  - name: a direction word with no claim
+    rule: "4"
+    text: EBITDA increased to {{ebitda@FY2025}}.
+    facts: [{id: ebitda@FY2025}]
+  - name: verbs swapped between two clauses
+    rule: "4"
+    text: >-
+      Gross leverage rose to {{gross_leverage@FY2025}}, while interest coverage fell to
+      {{interest_coverage@FY2025}}.
+    facts:
+      - {id: gross_leverage@FY2025, claims: [down]}
+      - {id: interest_coverage@FY2025, claims: [up]}
+  - name: highest where the third rank is the lowest
+    rule: "4"
+    text: FCF to debt is the highest in the group ({{fcf_to_debt.peer_rank@2025}}).
+    facts: [{id: fcf_to_debt.peer_rank@2025, claims: [worst_in_group]}]
+  - name: weakened against a correct better claim
+    rule: "4"
+    text: Interest coverage weakened to {{interest_coverage@FY2025}}.
+    facts: [{id: interest_coverage@FY2025, claims: [better]}]
+  - name: a direction about something not in the fact sheet
+    rule: "4"
+    text: Lower fuel prices supported the EBITDA margin of {{ebitda_margin@FY2025}}.
+    facts: [{id: ebitda_margin@FY2025}]
+  - name: stable when it moved
+    rule: "4"
+    text: Revenue was stable at {{revenue@FY2025}}.
+    facts: [{id: revenue@FY2025, claims: [up]}]
+
+  # --- Rule 5: the form and the sentence disagree --------------------------------------------
+  - name: an id used but not listed
+    rule: "5"
+    text: Net leverage was {{net_leverage@FY2025}} at the year end.
+    facts: []
+  - name: an id listed but not used
+    rule: "5"
+    text: Net leverage was {{net_leverage@FY2025}} at the year end.
+    facts: [{id: net_leverage@FY2025}, {id: revenue@FY2025}]
+
+  # --- The form itself -----------------------------------------------------------------------
+  - name: a fourth sentence in the snapshot
+    rule: form
+    add: snapshot
+    text: Net leverage was {{net_leverage@FY2025}}.
+    facts: [{id: net_leverage@FY2025}]
+  - name: an analyst view drafted by the AI
+    rule: form
+    add: analyst_view
+    text: We see the credit as improving.
+    facts: []
+
+correct:
+  - text: >-
+      Under IFRS 16, leases count as debt, and total debt stood at {{total_debt@FY2025}} at
+      the end of FY2025.
+    facts: [{id: total_debt@FY2025}]
+  - text: Deliveries of A350 and A220 aircraft continue into 2027, funded partly by leases.
+    facts: []
+  - text: >-
+      FCF to debt is the lowest in the group ({{fcf_to_debt.peer_rank@2025}}), at
+      {{fcf_to_debt@FY2025}}.
+    facts:
+      - {id: fcf_to_debt.peer_rank@2025, claims: [worst_in_group]}
+      - {id: fcf_to_debt@FY2025}
+  - text: >-
+      Net leverage fell by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}}, while
+      the EBITDA margin widened by {{ebitda_margin.change@FY2025}}.
+    facts:
+      - {id: net_leverage.change@FY2025, claims: [down, better]}
+      - {id: net_leverage@FY2025}
+      - {id: ebitda_margin.change@FY2025, claims: [up]}
+  - text: >-
+      Capex intensity of {{capex_intensity@FY2025}} is higher than the peer median of
+      {{capex_intensity.peer_median@2025}}.
+    facts:
+      - {id: capex_intensity@FY2025, claims: [above_peers]}
+      - {id: capex_intensity.peer_median@2025}
+  - text: >-
+      FCF to debt of {{fcf_to_debt@FY2025}} sits below the network median of
+      {{fcf_to_debt.peer_median@2025}}, weaker than peers.
+    facts:
+      - {id: fcf_to_debt@FY2025, claims: [below_peers, worse_than_peers]}
+      - {id: fcf_to_debt.peer_median@2025, claims: [below_peers]}
+  - text: The low-cost subsidiary Transavia is part of the group.
+    facts: []
+  - text: >-
+      Profit for the year, which includes one-off items, reached
+      {{profit@FY2025}}.
+    facts: [{id: profit@FY2025}]
+  - text: >-
+      Advance ticket cover of {{advance_ticket_cover@FY2025}} is the strongest in the group
+      ({{advance_ticket_cover.peer_rank@2025}}), better than peers.
+    facts:
+      - {id: advance_ticket_cover@FY2025, claims: [better_than_peers]}
+      - {id: advance_ticket_cover.peer_rank@2025, claims: [best_in_group]}
+  - text: >-
+      Customer prepayments of {{contract_liabilities@FY2025}} rose by
+      {{contract_liabilities.change@FY2025}}, so advance ticket cover rose to
+      {{advance_ticket_cover@FY2025}}, a weaker position.
+    facts:
+      - {id: contract_liabilities@FY2025}
+      - {id: contract_liabilities.change@FY2025, claims: [up]}
+      - {id: advance_ticket_cover@FY2025, claims: [up, worse]}
