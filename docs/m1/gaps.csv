@@ -164,7 +164,6 @@ afkl,2022,cask_ex_fuel,Fuel cost not available for FY2022,True
 afkl,2022,current_investments,Not reported by this issuer.,False
 afkl,2022,debt_including_leases,Not reported by this issuer.,False
 afkl,2022,fuel_cost,Fuel cost not tagged separately; to be extracted from the notes (M3).,True
-afkl,2022,fuel_hedge_ratio,Fuel hedge ratio not available for FY2022,True
 afkl,2022,fuel_share_of_costs,Fuel cost not available for FY2022,True
 afkl,2022,lease_liabilities_total,Reported as current and non-current parts only.,False
 afkl,2022,liquidity,Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022,True
@@ -436,14 +435,19 @@ norwegian,2021,other_current_financial_assets,Not reported by this issuer.,False
 norwegian,2021,restricted_cash,Not reported by this issuer.,False
 norwegian,2021,share_of_associates,Not reported by this issuer.,False
 norwegian,2021,short_term_deposits,Not reported by this issuer.,False
+norwegian,2022,ask,ASK not available for FY2022,True
 norwegian,2022,borrowings_total,Reported as current and non-current parts only.,False
+norwegian,2022,cask,ASK not available for FY2022,True
+norwegian,2022,cask_ex_fuel,ASK not available for FY2022,True
 norwegian,2022,current_investments,Not reported by this issuer.,False
 norwegian,2022,debt_including_leases,Not reported by this issuer.,False
 norwegian,2022,lease_liabilities_total,Reported as current and non-current parts only.,False
 norwegian,2022,liquidity,Undrawn committed credit facilities not available for FY2022,True
 norwegian,2022,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2022,True
+norwegian,2022,load_factor,ASK not available for FY2022,True
 norwegian,2022,other_cash_like,Not reported by this issuer.,False
 norwegian,2022,other_current_financial_assets,Not reported by this issuer.,False
+norwegian,2022,rask,ASK not available for FY2022,True
 norwegian,2022,restricted_cash,Not reported by this issuer.,False
 norwegian,2022,share_of_associates,Not reported by this issuer.,False
 norwegian,2022,short_term_deposits,Not reported by this issuer.,False
@@ -579,7 +583,6 @@ wizz,2021,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities no
 wizz,2021,net_leverage,n.m.: EBITDA is negative (-183),False
 wizz,2021,other_cash_like,Not reported by this issuer.,False
 wizz,2021,other_current_financial_assets,Not reported by this issuer.,False
-wizz,2021,passenger_yield,Passenger revenue not available for FY2021,True
 wizz,2021,share_of_associates,Not reported by this issuer.,False
 wizz,2022,borrowings_total,Reported as current and non-current parts only.,False
 wizz,2022,current_investments,Not reported by this issuer.,False
@@ -611,13 +614,9 @@ wizz,2023,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities no
 wizz,2023,other_cash_like,Not reported by this issuer.,False
 wizz,2023,other_current_financial_assets,Not reported by this issuer.,False
 wizz,2023,share_of_associates,Not reported by this issuer.,False
-wizz,2024,ask,ASK not available for FY2024,True
 wizz,2024,borrowings_total,Reported as current and non-current parts only.,False
-wizz,2024,cask,ASK not available for FY2024,True
-wizz,2024,cask_ex_fuel,ASK not available for FY2024,True
 wizz,2024,current_investments,Not reported by this issuer.,False
 wizz,2024,debt_including_leases,Not reported by this issuer.,False
-wizz,2024,fleet,Fleet (aircraft in operation) not available for FY2024,True
 wizz,2024,fuel_hedge_ratio,Fuel hedge ratio not available for FY2024,True
 wizz,2024,interest_expense,Not reported by this issuer.,False
 wizz,2024,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
@@ -626,13 +625,8 @@ wizz,2024,lease_liabilities_total,Lease liabilities are included in borrowings o
 wizz,2024,lease_payments,Not reported by this issuer.,False
 wizz,2024,liquidity,Undrawn committed credit facilities not available for FY2024,True
 wizz,2024,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2024,True
-wizz,2024,load_factor,RPK not available for FY2024,True
 wizz,2024,other_cash_like,Not reported by this issuer.,False
 wizz,2024,other_current_financial_assets,Not reported by this issuer.,False
-wizz,2024,passenger_yield,Passenger revenue not available for FY2024,True
-wizz,2024,passengers,Passengers not available for FY2024,True
-wizz,2024,rask,ASK not available for FY2024,True
-wizz,2024,rpk,RPK not available for FY2024,True
 wizz,2025,borrowings_total,Reported as current and non-current parts only.,False
 wizz,2025,current_investments,Not reported by this issuer.,False
 wizz,2025,debt_including_leases,Not reported by this issuer.,False

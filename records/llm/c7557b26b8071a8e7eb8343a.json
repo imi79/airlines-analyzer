@@ -1,0 +1,94 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Spanish airport network passengers, excluding Luton and Brazil.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "passengers",
+    "location": "page 46",
+    "printed_value": "309,3",
+    "quote": "La red de aeropuertos españoles gestionados por el Grupo ha alcanzado un récord anual, con más de 309,3 millones de pasajeros frente a los 283,2 millones de 2023, lo que supone un incremento interanual del 9,2%.",
+    "scale": "million",
+    "scope": "Aena network airports in Spain"
+   },
+   {
+    "comment": "Prior-year figure for the Spanish airport network.",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "passengers",
+    "location": "page 46",
+    "printed_value": "283,2",
+    "quote": "La red de aeropuertos españoles gestionados por el Grupo ha alcanzado un récord anual, con más de 309,3 millones de pasajeros frente a los 283,2 millones de 2023, lo que supone un incremento interanual del 9,2%.",
+    "scale": "million",
+    "scope": "Aena network airports in Spain"
+   },
+   {
+    "caption": "El resumen de la financiación disponible (no utilizada) es como sigue:",
+    "comment": "Total of undrawn financing available (two entity lines plus syndicated credit line).",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "page 115",
+    "printed_value": "2.760",
+    "quote": "Total\n2.760",
+    "scale": "million",
+    "scope": "Aena S.M.E., S.A. general-purpose undrawn facilities",
+    "table_header": "Entidad\nImporte\n(Millones de euros)\nVencimiento"
+   },
+   {
+    "comment": "No total of undrawn general-purpose facilities is printed for 2023; only the 2024 table is given.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "undrawn_facilities",
+    "location": "page 115"
+   },
+   {
+    "caption": "(Importes en miles de euros salvo otra indicación)",
+    "comment": "Aeronautical services revenue from the revenue breakdown table.",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 63",
+    "printed_value": "3.147.517",
+    "quote": "Servicios aeronáuticos\n3.147.517\n2.768.254",
+    "scale": "thousand",
+    "scope": "Aeronautical services revenue (Spanish airport network, excluding International, AIRM and adjustments)",
+    "table_header": "2024\n2023"
+   },
+   {
+    "caption": "(Importes en miles de euros salvo otra indicación)",
+    "comment": "Prior-year aeronautical services revenue.",
+    "currency": "EUR",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 63",
+    "printed_value": "2.768.254",
+    "quote": "Servicios aeronáuticos\n3.147.517\n2.768.254",
+    "scale": "thousand",
+    "scope": "Aeronautical services revenue (Spanish airport network, excluding International, AIRM and adjustments)",
+    "table_header": "2024\n2023"
+   }
+  ]
+ },
+ "label": "aena FY2024 959800R7QMXKF0NFMT29-2024-12-31-ESEF-ES-0",
+ "recorded_at": "2026-11-03T18:28:54+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v3",
+  "provider": "deepseek",
+  "system_sha256": "b5c3e004cd098413f2c4a347fcb48fb659760f047752a812f25224e418ea9e0e",
+  "tool_sha256": "debd41b3d3dad40c9cbcd2779b1324d9b17762b294b86235fd74b44ca9e9dd96",
+  "user_sha256": "b2c49e78f5713df116d2505dfb7c0d48765422e42331042cbb3ff2811de4bb88"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 7872,
+  "output_tokens": 805
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Passengers at Paris Aéroport (CDG+ORY) in 2022, all departing, arriving or transit passengers.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "passengers",
+    "location": "page 354",
+    "printed_value": "86,7",
+    "quote": "France Paris Aéroport (CDG+ORY) 86,7 + 106,7 % 80,2 %",
+    "scale": "million",
+    "scope": "Paris Aéroport (CDG+ORY)",
+    "table_header": "Aéroports Trafic 2022 @100 % en millions PAX 1 Évolution en % par rapport au 31/12/2021 Niveau en % par rapport au 31/12/2019"
+   },
+   {
+    "comment": "Only the 2022 figure and percentage changes are printed; no 2021 passenger count for Paris Aéroport.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "passengers",
+    "location": "page 354"
+   },
+   {
+    "comment": "The liquidity risk section mentions confirmed unused credit lines but gives no amount or total.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "undrawn_facilities",
+    "location": "page 406"
+   },
+   {
+    "comment": "No amount of undrawn committed general-purpose facilities is printed for 2021.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "undrawn_facilities",
+    "location": "page 406"
+   },
+   {
+    "caption": "(en millions d’euros)",
+    "comment": "Revenue of the Aviation segment (Paris airports) in 2022.",
+    "currency": "EUR",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 64",
+    "printed_value": "1 675",
+    "quote": "Chiffre d’affaires 1 675 1 028 + 647 M€",
+    "scale": "million",
+    "scope": "Activités aéronautiques – plateformes franciliennes",
+    "table_header": "(en millions d’euros) 2022 2021 2022/2021"
+   },
+   {
+    "caption": "(en millions d’euros)",
+    "comment": "Revenue of the Aviation segment (Paris airports) in 2021.",
+    "currency": "EUR",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 64",
+    "printed_value": "1 028",
+    "quote": "Chiffre d’affaires 1 675 1 028 + 647 M€",
+    "scale": "million",
+    "scope": "Activités aéronautiques – plateformes franciliennes",
+    "table_header": "(en millions d’euros) 2022 2021 2022/2021"
+   }
+  ]
+ },
+ "label": "adp FY2022 969500PJMBSFHYC37989-2022-12-31-ESEF-FR-0",
+ "recorded_at": "2026-11-03T18:28:19+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v3",
+  "provider": "deepseek",
+  "system_sha256": "b5c3e004cd098413f2c4a347fcb48fb659760f047752a812f25224e418ea9e0e",
+  "tool_sha256": "debd41b3d3dad40c9cbcd2779b1324d9b17762b294b86235fd74b44ca9e9dd96",
+  "user_sha256": "93551c8183da11d1ac29fc8d4982976e11b23496c3e2cb3b18a6622352751ce5"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 16035,
+  "output_tokens": 672
+ }
+}

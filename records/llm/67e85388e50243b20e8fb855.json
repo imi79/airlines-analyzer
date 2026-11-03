@@ -1,0 +1,83 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Paris Aéroport handled 107 million passengers in 2025.",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "passengers",
+    "location": "page 13",
+    "printed_value": "107",
+    "quote": "En 2025, le Groupe ADP a accueilli 379 millions de passagers dans l’ensemble de son réseau d’aéroports, dont 107 millions de passagers à Paris Aéroport.",
+    "scale": "million",
+    "scope": "Paris Aéroport (CDG+ORY)"
+   },
+   {
+    "comment": "Only the 2025 Paris Aéroport figure (107.0 million) and its +3.4% change are printed; no 2024 passenger count is given.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "passengers",
+    "location": "page 13"
+   },
+   {
+    "caption": "(en millions d'euros)",
+    "comment": "Aviation segment revenue of EUR 2,192 million in 2025 (total row of the segment table).",
+    "currency": "EUR",
+    "fiscal_year": 2025,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 23",
+    "printed_value": "2 192",
+    "quote": "2 192\n1 933\n305\n2 146\n128\n6 704",
+    "scale": "million",
+    "scope": "Activités aéronautiques (Aviation) segment",
+    "table_header": "2025"
+   },
+   {
+    "caption": "(en millions d'euros)",
+    "comment": "Aviation segment revenue of EUR 2,053 million in 2024 (total row of the segment table).",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 24",
+    "printed_value": "2 053",
+    "quote": "2 053\n1 716\n290\n1 966\n133\n6 158",
+    "scale": "million",
+    "scope": "Activités aéronautiques (Aviation) segment",
+    "table_header": "2024"
+   },
+   {
+    "comment": "The liquidity risk section mentions confirmed unused credit lines but gives no amount or total.",
+    "fiscal_year": 2025,
+    "found": false,
+    "item": "undrawn_facilities",
+    "location": "page 64"
+   },
+   {
+    "comment": "No amount of undrawn committed general-purpose facilities is printed for 2024.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "undrawn_facilities",
+    "location": "page 64"
+   }
+  ]
+ },
+ "label": "adp FY2025 adp-2025-comptes-consolides-fr",
+ "recorded_at": "2026-11-03T18:28:27+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v3",
+  "provider": "deepseek",
+  "system_sha256": "b5c3e004cd098413f2c4a347fcb48fb659760f047752a812f25224e418ea9e0e",
+  "tool_sha256": "debd41b3d3dad40c9cbcd2779b1324d9b17762b294b86235fd74b44ca9e9dd96",
+  "user_sha256": "5095ffce13cc7380c66db5dea726cbf98102caa4d5502c58869d7fa5da401af0"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 5939,
+  "output_tokens": 613
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "caption": "Verkehrskennzahlen",
+    "comment": "Total passengers handled at Vienna Airport in 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "passengers",
+    "location": "Verkehrsentwicklung des Flughafen Wien 2024",
+    "printed_value": "31,7",
+    "quote": "Gesamtpassagiere (in Mio.)\n31,7\n7,4%\n29,5\n31,7",
+    "scale": "million",
+    "scope": "Vienna Airport only",
+    "table_header": "2024\nVeränderung\nzu 2023\n2023\n2019"
+   },
+   {
+    "caption": "Verkehrskennzahlen",
+    "comment": "Prior-year total passengers at Vienna Airport.",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "passengers",
+    "location": "Verkehrsentwicklung des Flughafen Wien 2024",
+    "printed_value": "29,5",
+    "quote": "Gesamtpassagiere (in Mio.)\n31,7\n7,4%\n29,5\n31,7",
+    "scale": "million",
+    "scope": "Vienna Airport only",
+    "table_header": "2024\nVeränderung\nzu 2023\n2023\n2019"
+   },
+   {
+    "comment": "No committed general-purpose undrawn credit facilities are disclosed in the passages.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "No committed general-purpose undrawn credit facilities are disclosed in the passages.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "caption": "Umsatz im Segment Airport\nin € Mio.",
+    "comment": "External Airport segment revenue; aviation portion was 493.5 million.",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "Umsatz im Segment Airport",
+    "printed_value": "506,6",
+    "quote": "Umsatz Segment Airport (extern)\n506,6\n15,1%\n440,1",
+    "scale": "million",
+    "scope": "Airport segment (Vienna)",
+    "table_header": "2024\nVeränderung\n2023"
+   },
+   {
+    "caption": "Umsatz im Segment Airport\nin € Mio.",
+    "comment": "Prior-year external Airport segment revenue; aviation portion was 427.4 million.",
+    "currency": "EUR",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "Umsatz im Segment Airport",
+    "printed_value": "440,1",
+    "quote": "Umsatz Segment Airport (extern)\n506,6\n15,1%\n440,1",
+    "scale": "million",
+    "scope": "Airport segment (Vienna)",
+    "table_header": "2024\nVeränderung\n2023"
+   }
+  ]
+ },
+ "label": "vie FY2024 549300FQ2ILBH7DJ6I45-2024-12-31-ESEF-AT-0",
+ "recorded_at": "2026-11-03T18:29:23+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v3",
+  "provider": "deepseek",
+  "system_sha256": "b5c3e004cd098413f2c4a347fcb48fb659760f047752a812f25224e418ea9e0e",
+  "tool_sha256": "debd41b3d3dad40c9cbcd2779b1324d9b17762b294b86235fd74b44ca9e9dd96",
+  "user_sha256": "2c3fe28dde5def82d6886b11a018eb6145e886e711a9a84b664df2b3ec09f086"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 7271,
+  "output_tokens": 694
+ }
+}

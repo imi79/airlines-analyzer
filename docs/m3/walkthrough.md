@@ -25,37 +25,32 @@ against the original report before the figure goes into the model.
    `config/extraction_reviews.yaml` (the file explains how); a correction is kept with your
    name, date and reason.
 
-## The runs
+## Status: M3 closed on the safety result (decision 0015)
 
-- **Two runs of 41 reports**, one request per report each: all nine companies, FY2021 to
-  FY2025 (Wizz Air to FY2026). About 460,000 tokens sent and 56,000 received per run.
-  DeepSeek serves our `deepseek-chat` setting with its model `deepseek-flash`. No price is
-  entered in `config/models.yaml`, so the cost isn't computed: add DeepSeek's price per
-  million tokens there and the report shows it.
-- Every answer of both runs is recorded (`records/llm/`): rerunning costs nothing and gives
-  the same result. The reports now use the second run (prompt `extract-v2`).
-- **222 figures read, 164 verified (74%), 58 waiting for your review.** Full list:
-  `docs/m3/extractions.md`; every line the AI wrote: `docs/m3/extractions.csv`.
+You chose general-purpose credit lines only and to close M3 on the safety result. The final run
+(prompt `extract-v3`, which adds only that definition) gives:
 
-## The M3 checklist, against the answer key
-
-At your request the answer key is built by code, without AI (decision 0012), from the reports,
-each line with the page and the text around it (`docs/m3/answer_key.csv`). It now has three
-sets, each committed before the step it judges (decision 0014):
-
-| Set | Lines | Written | Judges |
-| --- | --- | --- | --- |
-| First | 25 | before the first run | the first run |
-| Held-out | 23 | before the second run (prompt v2) | the new prompt, untouched |
-| Blind | 23 | after the second run, before the last code fixes | **the final code (the clean measure)** |
-
-| Test | First | Held-out | Blind | All 71 | |
+| Test | First 25 | Held-out 23 | Blind 23 | All 71 | |
 | --- | --- | --- | --- | --- | --- |
-| No wrong value marked verified | 0 | 0 | **1** | 1 | ✗ (see question 1) |
-| At least 80% verified automatically | 20 (80%) | 16 (70%) | **15 (65%)** | 51 (72%) | ✗ |
-| Every unverified value visibly flagged | | | | 58 of 58 | ✓ |
+| No wrong value marked verified | 0 | 0 | 0 | **0** | ✓ |
+| At least 80% verified automatically | 20 (80%) | 18 (78%) | **18 (78%)** | 56 (79%) | waived, goal for M4 |
+| Every unverified value visibly flagged | | | | 50 of 50 | ✓ |
 
-Full table: `docs/m3/answer_key_score.md`.
+- **228 figures read, 178 verified (78%), 50 waiting for your review** in
+  `docs/m3/extractions.md`; every line the AI wrote is in `docs/m3/extractions.csv`.
+- **The model varies from run to run.** With almost the same instructions, v2 and v3 differ by
+  about three answer-key figures: the "label without its number" quotes fell from 16 to 5. So
+  78% and 80% are, in practice, the same result; M4 will measure on a fresh blind set.
+- **Three runs**, about 500,000 tokens each; all answers are recorded (`records/llm/`), so a
+  rerun costs nothing. DeepSeek serves our `deepseek-chat` setting with `deepseek-flash`. Add
+  DeepSeek's price per million tokens in `config/models.yaml` to see the cost.
+- **IAG liquidity** now counts general-purpose lines only: same as IAG's own figure at end 2025
+  (€10,948m), lower at end 2023 and 2024, where IAG also counts aircraft-specific lines.
+- **Air France-KLM end 2024** was not settled by the definition (both figures are
+  general-purpose): the key keeps the printed €2.5bn, and the AI's €2,405m waits for your
+  review.
+
+The history below explains how we got here.
 
 ## The improvement round (decision 0014)
 
@@ -140,23 +135,12 @@ figures, so the 76% is a little flattered; the hedge fixes only take figures awa
 40.6%, IAG 33.0%, Air France-KLM 28.1%\*. Low-cost 2024: easyJet 90.8% (RPK ÷ ASK), Wizz Air
 91.3%, Norwegian 84.3%\*.
 
-## Questions for you
+## Next steps for you
 
-1. **Undrawn facilities: general-purpose only, or everything committed?** IAG prints both
-   (end 2023: €4,412m general-purpose, €4,787m with aircraft-specific lines). My
-   recommendation, as a credit convention: **general-purpose only**, since aircraft-specific
-   lines can only fund those deliveries. Then the definition and the key's two IAG lines
-   change, no figure is verified wrongly on any set, and the blind score becomes 16 of 23
-   (70%). The same choice settles Air France-KLM end 2024 (€2.5bn vs €1,405m + €1,000m).
-2. **The 80% target.** Two options:
-   (a) **close M3 on the safety result** (recommended): no wrong figure gets through once
-   question 1 is settled, every unverified figure is listed for you, and the 80% becomes a
-   tracked goal in M4 instead of a gate. The review queue (58 figures) covers the gap;
-   (b) **one more round**: prompt v3 to undo the label-only regression (one more run, about
-   500,000 tokens), plus the four check fixes above, judged on a fourth blind set from the
-   FY2022 reports. My honest estimate: likely 75-85% on the blind set, with no guarantee.
-3. **Spot-check the answer key**: five lines of `docs/m3/answer_key.csv` (about ten
+1. **Spot-check the answer key**: five lines of `docs/m3/answer_key.csv` (about ten
    minutes): search the report for the text in the `snippet` column.
+2. **Review queue**: 50 figures in `docs/m3/extractions.md`, newest years first. Approve or
+   correct them in `config/extraction_reviews.yaml` (the file explains how).
 
 ## How to rerun
 

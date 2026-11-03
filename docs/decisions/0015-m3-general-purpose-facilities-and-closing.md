@@ -24,7 +24,15 @@ general-purpose: "2,5 milliards d'euros de lignes de crédit non tirées" and th
 credit facilities of €1,405m and €1,000m (€2,405m). The key keeps the total as printed
 (€2.5bn); the AI's €2,405m stays unverified and in the review queue.
 
-**M3 closed on the safety result.** The 80% target is not met (blind set, see decision 0014 and
+**The v3 run** (41 reports, about 516,000 tokens). Answer key: **0 of 71 wrong values
+verified**; verified and correct: blind 18 of 23 (78%), held-out 18 of 23 (78%), all 56 of 71
+(79%). Unverified figures: 50 of 50 listed. Of the blind set's three extra figures, one comes
+from the definition (IAG end 2023) and two from the AI answering differently with an almost
+identical prompt: row labels quoted without their numbers fell from 16 answers (v2) to 5 (v3).
+Run-to-run variation of the model is therefore about two or three key lines; the 78% sits
+within it, just below the target.
+
+**M3 closed on the safety result.** The 80% target is not met: 78% on the blind set (decision 0014,
 `docs/m3/answer_key_score.md`). Imane closes M3 because no wrong figure is verified and every
 unverified figure is listed for review; the 80% becomes a tracked goal in M4, measured on a
 fresh blind set, not a gate. Known causes to work on, all recorded in decision 0014: the v2

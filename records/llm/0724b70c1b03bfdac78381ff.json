@@ -1,0 +1,205 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Total passengers carried in 2021.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "passengers",
+    "location": "page 10",
+    "printed_value": "2,852,300",
+    "quote": "The number of passengers decreased by 18.2 per cent to 2,852,300 passengers.",
+    "scale": "one",
+    "scope": "Finnair passengers carried (total)"
+   },
+   {
+    "comment": "Only a rounded figure of 3.5 million passengers is printed for 2020, not an exact number.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "caption": "Passenger revenue and traffic data by area, 2021",
+    "comment": "ASK in million km for 2021.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "ask",
+    "location": "page 11",
+    "printed_value": "12,094.2",
+    "quote": "Total 420.8 100.0 -20.3 12,094.2 -6.5 5,178.2 -36.5 42.8 -20.2",
+    "scale": "million",
+    "scope": "Finnair Group",
+    "table_header": "Passenger revenue ASK RPK PLF"
+   },
+   {
+    "comment": "ASK in million km for 2020.",
+    "fiscal_year": 2020,
+    "found": true,
+    "item": "ask",
+    "location": "page 41",
+    "printed_value": "12,937",
+    "quote": "Available seat kilometres (ASK), million 12,094 12,937",
+    "scale": "million",
+    "scope": "Finnair Group"
+   },
+   {
+    "caption": "Passenger revenue and traffic data by area, 2021",
+    "comment": "RPK in million km for 2021.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "rpk",
+    "location": "page 11",
+    "printed_value": "5,178.2",
+    "quote": "Total 420.8 100.0 -20.3 12,094.2 -6.5 5,178.2 -36.5 42.8 -20.2",
+    "scale": "million",
+    "scope": "Finnair Group",
+    "table_header": "Passenger revenue ASK RPK PLF"
+   },
+   {
+    "comment": "No RPK figure for 2020 is printed; only the 2021 RPK and its change are given.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "rpk"
+   },
+   {
+    "caption": "Passenger revenue and traffic data by area, 2021",
+    "comment": "Passenger load factor of 42.8% for 2021.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "load_factor",
+    "location": "page 11",
+    "printed_value": "42.8",
+    "quote": "Total 420.8 100.0 -20.3 12,094.2 -6.5 5,178.2 -36.5 42.8 -20.2",
+    "scale": "one",
+    "scope": "Finnair Group",
+    "table_header": "Passenger revenue ASK RPK PLF"
+   },
+   {
+    "comment": "Only the change of -20.2 percentage points is printed, not the 2020 load factor itself.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "load_factor"
+   },
+   {
+    "caption": "Revenue by product",
+    "comment": "Passenger revenue for 2021, ancillary revenue reported separately.",
+    "currency": "EUR",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 10",
+    "printed_value": "420.8",
+    "quote": "Passenger revenue 420.8 528.1 -20.3",
+    "scale": "million",
+    "scope": "Finnair Group",
+    "table_header": "EUR million 2021 2020 Change %"
+   },
+   {
+    "caption": "Revenue by product",
+    "comment": "Passenger revenue for 2020, ancillary revenue reported separately.",
+    "currency": "EUR",
+    "fiscal_year": 2020,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 10",
+    "printed_value": "528.1",
+    "quote": "Passenger revenue 420.8 528.1 -20.3",
+    "scale": "million",
+    "scope": "Finnair Group",
+    "table_header": "EUR million 2021 2020 Change %"
+   },
+   {
+    "caption": "Fleet operated by Finnair*",
+    "comment": "Finnair's own fleet at 31.12.2021.",
+    "component": true,
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 17",
+    "printed_value": "60",
+    "quote": "Total 60 1 26 34 11.4 2",
+    "scale": "one",
+    "scope": "Fleet operated by Finnair (AOC)",
+    "table_header": "31.12.2021 Seats # Change from 31.12.2020 Own** Leased Average age 31.12.2021 Ordered"
+   },
+   {
+    "caption": "Fleet operated by Norra*",
+    "comment": "Norra's fleet operated for Finnair at 31.12.2021.",
+    "component": true,
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 17",
+    "printed_value": "24",
+    "quote": "Total 24 0 15 9 13.0",
+    "scale": "one",
+    "scope": "Fleet operated by Norra for Finnair",
+    "table_header": "31.12.2021 Seats # Change from 31.12.2020 Own Leased Average age 31.12.2021 Ordered"
+   },
+   {
+    "comment": "Only the change from 31.12.2020 is printed, not the 2020 fleet count.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "fleet_count"
+   },
+   {
+    "comment": "Average age of Finnair's own fleet; Norra's fleet average age was 13.0 years.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "fleet_age",
+    "location": "page 17",
+    "printed_value": "11.4",
+    "quote": "At the end of 2021, the average age of the fleet operated by Finnair was 11.4 years.",
+    "scale": "one",
+    "scope": "Fleet operated by Finnair"
+   },
+   {
+    "comment": "No fleet average age for 2020 is printed.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "fleet_age"
+   },
+   {
+    "comment": "Only partial-year hedges are printed: 8% of forecasted purchases for H1 2022 and 3% for H2 2022.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "comment": "No hedge ratio for the next twelve months at end of 2020 is printed.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "comment": "The 175 million euro revolving credit facility was retired in October 2021 and the 200 million euro commercial paper programme is not a committed facility.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "No undrawn committed general-purpose facility amount at end of 2020 is printed.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "undrawn_facilities"
+   }
+  ]
+ },
+ "label": "finnair FY2021 213800SB6EOB8SSK9W63-2021-12-31-ESEF-FI-0",
+ "recorded_at": "2026-11-03T18:26:52+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v3",
+  "provider": "deepseek",
+  "system_sha256": "b5c3e004cd098413f2c4a347fcb48fb659760f047752a812f25224e418ea9e0e",
+  "tool_sha256": "61c55522fbd4da1f68f903713a6ffaf85f3654cbac96ba3e9a6bc11333896ad7",
+  "user_sha256": "9b2ff31c0a3ee087145943b70c8630b5d0b708c7c621b5154615abc4c8a14c97"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 12251,
+  "output_tokens": 1763
+ }
+}

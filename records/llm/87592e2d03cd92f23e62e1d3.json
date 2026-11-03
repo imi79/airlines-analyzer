@@ -1,0 +1,80 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Passenger traffic of Aéroports de Paris (Paris-CDG and Paris-Orly) for 2021.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "passengers",
+    "location": "page 375",
+    "printed_value": "41,9",
+    "quote": "Au 31 décembre 2021, le trafic passager d’Aéroports de Paris est en hausse de 26,8 % par rapport à la même période en 2020, à 41,9 millions de passagers, soit 38,8 % du niveau du trafic de 2019.",
+    "scale": "million",
+    "scope": "Paris Aéroport (Paris-CDG + Paris-Orly)"
+   },
+   {
+    "comment": "Only the 2021 figure (41.9 million) and the growth rate versus 2020 are printed; no absolute 2020 Paris Aéroport passenger figure is given.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "comment": "The passages only mention undrawn confirmed credit lines in general terms without any amount or facility detail.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "The passages only mention undrawn confirmed credit lines in general terms without any amount or facility detail.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "caption": "(en millions d’euros)",
+    "comment": "Revenue of the Aviation segment (Paris platforms) for 2021.",
+    "currency": "EUR",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 261",
+    "printed_value": "1 028",
+    "quote": "Chiffre d’affaires",
+    "scale": "million",
+    "scope": "Activités aéronautiques – Plateformes franciliennes",
+    "table_header": "2021"
+   },
+   {
+    "caption": "(en millions d’euros)",
+    "comment": "Revenue of the Aviation segment (Paris platforms) for 2020.",
+    "currency": "EUR",
+    "fiscal_year": 2020,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 261",
+    "printed_value": "860",
+    "quote": "Chiffre d’affaires",
+    "scale": "million",
+    "scope": "Activités aéronautiques – Plateformes franciliennes",
+    "table_header": "2021"
+   }
+  ]
+ },
+ "label": "adp FY2021 969500PJMBSFHYC37989-2021-12-31-ESEF-FR-0",
+ "recorded_at": "2026-11-03T18:28:13+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v3",
+  "provider": "deepseek",
+  "system_sha256": "b5c3e004cd098413f2c4a347fcb48fb659760f047752a812f25224e418ea9e0e",
+  "tool_sha256": "debd41b3d3dad40c9cbcd2779b1324d9b17762b294b86235fd74b44ca9e9dd96",
+  "user_sha256": "eb3f345d217ae3283ed446a232ac7e81296c73039d1d94ce4dee389e4374d2f2"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 6497,
+  "output_tokens": 596
+ }
+}

@@ -1,0 +1,185 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "No group total passengers carried figure is printed in the passages; only capacity, load factor and ASK data are given.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "comment": "No group total passengers carried figure is printed in the passages.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "caption": "d Airline non-fuel costs per ASK",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "ask",
+    "location": "page 89",
+    "printed_value": "323,111",
+    "quote": "ASKs (millions)\n323,111 323,111 263,592",
+    "scale": "million",
+    "scope": "IAG group total",
+    "table_header": "€ million Note\n2023\nReported\nccy\nadjustment 2023 ccy 2022"
+   },
+   {
+    "caption": "d Airline non-fuel costs per ASK",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "ask",
+    "location": "page 89",
+    "printed_value": "263,592",
+    "quote": "ASKs (millions)\n323,111 323,111 263,592",
+    "scale": "million",
+    "scope": "IAG group total",
+    "table_header": "€ million Note\n2023\nReported\nccy\nadjustment 2023 ccy 2022"
+   },
+   {
+    "comment": "RPK is not printed; only a passenger-km figure of 273,607 million excluding no-show passengers is given in a carbon intensity footnote.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "rpk"
+   },
+   {
+    "comment": "No RPK figure is printed in the passages.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "rpk"
+   },
+   {
+    "caption": "Capacity operated by region",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "load_factor",
+    "location": "page 121",
+    "printed_value": "85.3",
+    "quote": "Total network\n22.6 % (4.3) % 85.3 3.5pts 0.7pts",
+    "scale": "one",
+    "scope": "IAG group total network",
+    "table_header": "Year to 31\nDecember 2023\nASKs\nhigher/\n(lower)\nv2022\nASKs\nhigher/\n(lower)\nv2019\nPassenger\nload factor\n(%)\nHigher/\n(lower)\nv2022\nHigher/\n(lower)\nv2019"
+   },
+   {
+    "comment": "Only the 2023 load factor (85.3%) and the 3.5 point increase versus 2022 are printed, not the 2022 percentage itself.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "load_factor"
+   },
+   {
+    "currency": "EUR",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 7",
+    "printed_value": "25,810",
+    "quote": "Passenger revenue\n25,810\n19,458",
+    "scale": "million",
+    "scope": "IAG group total",
+    "table_header": "Year to 31 December\n€ million\nNote\n2023\n2022"
+   },
+   {
+    "currency": "EUR",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 7",
+    "printed_value": "19,458",
+    "quote": "Passenger revenue\n25,810\n19,458",
+    "scale": "million",
+    "scope": "IAG group total",
+    "table_header": "Year to 31 December\n€ million\nNote\n2023\n2022"
+   },
+   {
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 319",
+    "printed_value": "582",
+    "quote": "As of December 31, 2023, the Group operates 582 aircraft within its fleet and does not monitor or report all revenue and expenditure on an individual aircraft basis.",
+    "scale": "one",
+    "scope": "Group fleet in service at year end"
+   },
+   {
+    "comment": "Only the 31 December 2023 fleet of 582 aircraft is printed; no 2022 year-end fleet count appears in the passages.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "fleet_count"
+   },
+   {
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "fleet_age",
+    "location": "page 165",
+    "printed_value": "12.0",
+    "quote": "Average fleet age years >1% 6% 12.0 11.9 11.2 10.6 11.4",
+    "scale": "one",
+    "scope": "IAG fleet",
+    "table_header": "Other metric GRI standard Unit vly v2019 2023 2022 2021 2020 2019"
+   },
+   {
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "fleet_age",
+    "location": "page 165",
+    "printed_value": "11.9",
+    "quote": "Average fleet age years >1% 6% 12.0 11.9 11.2 10.6 11.4",
+    "scale": "one",
+    "scope": "IAG fleet",
+    "table_header": "Other metric GRI standard Unit vly v2019 2023 2022 2021 2020 2019"
+   },
+   {
+    "comment": "Only the hedging policy (up to 60% of anticipated requirements in the first 12 months) is printed, not the actual hedged share at year end.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "comment": "No actual hedged share of next-year fuel needs at the 2022 year end is printed.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "currency": "EUR",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "page 132",
+    "printed_value": "4,412",
+    "quote": "The Group also has certain other committed and undrawn general and overdraft facilities, bringing total committed and undrawn general and overdraft facilities at 31 December 2023 to €4,412 million (2022: €3,284 million).",
+    "scale": "million",
+    "scope": "Group committed and undrawn general and overdraft facilities"
+   },
+   {
+    "currency": "EUR",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "page 132",
+    "printed_value": "3,284",
+    "quote": "The Group also has certain other committed and undrawn general and overdraft facilities, bringing total committed and undrawn general and overdraft facilities at 31 December 2023 to €4,412 million (2022: €3,284 million).",
+    "scale": "million",
+    "scope": "Group committed and undrawn general and overdraft facilities"
+   }
+  ]
+ },
+ "label": "iag FY2023 959800TZHQRUSH1ESL13-2023-12-31-ESEF-ES-0",
+ "recorded_at": "2026-11-03T18:26:21+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v3",
+  "provider": "deepseek",
+  "system_sha256": "b5c3e004cd098413f2c4a347fcb48fb659760f047752a812f25224e418ea9e0e",
+  "tool_sha256": "61c55522fbd4da1f68f903713a6ffaf85f3654cbac96ba3e9a6bc11333896ad7",
+  "user_sha256": "c2c397900713da86a6aad5a1432a0dbc746d166127f4d29f60925cbe468bf87e"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14946,
+  "output_tokens": 1625
+ }
+}

@@ -1,0 +1,85 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Total passengers at Vienna Airport in 2022; prior year 10,405,523.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "passengers",
+    "location": "Entwicklung der größten Airlines am Flughafen Wien",
+    "printed_value": "23.682.133",
+    "quote": "Passagiere Gesamt\n23.682.133\n127,6%\n10.405.523\n31.662.189\n100,0%\n100,0%\n100,0%",
+    "scale": "one",
+    "scope": "Vienna Airport (Flughafen Wien), total passengers"
+   },
+   {
+    "comment": "Prior-year total passengers at Vienna Airport as printed in the same row.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "passengers",
+    "location": "Entwicklung der größten Airlines am Flughafen Wien",
+    "printed_value": "10.405.523",
+    "quote": "Passagiere Gesamt\n23.682.133\n127,6%\n10.405.523\n31.662.189\n100,0%\n100,0%\n100,0%",
+    "scale": "one",
+    "scope": "Vienna Airport (Flughafen Wien), total passengers"
+   },
+   {
+    "caption": "in € Mio.",
+    "comment": "External Airport segment revenue; the segment's aviation portion is 309,0.",
+    "currency": "EUR",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "Umsatz im Segment Airport",
+    "printed_value": "321,0",
+    "quote": "Umsatz Segment Airport (extern)\n321,0\n89,3%\n169,5",
+    "scale": "million",
+    "scope": "Segment Airport (Vienna), external revenue",
+    "table_header": "2022\nVeränderung\n2021"
+   },
+   {
+    "caption": "in € Mio.",
+    "comment": "Prior-year external Airport segment revenue as printed.",
+    "currency": "EUR",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "Umsatz im Segment Airport",
+    "printed_value": "169,5",
+    "quote": "Umsatz Segment Airport (extern)\n321,0\n89,3%\n169,5",
+    "scale": "million",
+    "scope": "Segment Airport (Vienna), external revenue",
+    "table_header": "2022\nVeränderung\n2021"
+   },
+   {
+    "comment": "No committed general-purpose undrawn credit facilities are disclosed in the passages.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "No committed general-purpose undrawn credit facilities are disclosed in the passages.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "undrawn_facilities"
+   }
+  ]
+ },
+ "label": "vie FY2022 549300FQ2ILBH7DJ6I45-2022-12-31-ESEF-AT-1",
+ "recorded_at": "2026-11-03T18:29:16+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v3",
+  "provider": "deepseek",
+  "system_sha256": "b5c3e004cd098413f2c4a347fcb48fb659760f047752a812f25224e418ea9e0e",
+  "tool_sha256": "debd41b3d3dad40c9cbcd2779b1324d9b17762b294b86235fd74b44ca9e9dd96",
+  "user_sha256": "89adb13ab6cdaa359be1e878947baaa02ba29d05cd7204bd5781d6b0eec54f4d"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 8218,
+  "output_tokens": 671
+ }
+}

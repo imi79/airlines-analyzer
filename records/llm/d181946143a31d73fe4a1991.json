@@ -1,0 +1,84 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Total Paris-Charles de Gaulle and Paris-Orly passengers for 2024.",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "passengers",
+    "location": "page 642",
+    "printed_value": "103,41",
+    "quote": "TOTAL\n103,41\n3,7 %\n95,8 %",
+    "scale": "million",
+    "scope": "Paris Aéroport (CDG + ORY)",
+    "table_header": "Aéroports\nTrafic 2024\nen millions PAX\nÉvolution en %\npar rapport au 31/12/2023\nNiveau en %\npar rapport au 31/12/2019"
+   },
+   {
+    "comment": "Only the 2024 total (103.41 million) and the 2024/2023 growth rate are printed; no 2023 passenger total for Paris Aéroport is given.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "passengers",
+    "quote": ""
+   },
+   {
+    "comment": "The passages mention confirmed unused credit lines only in general terms without any amount or facility detail.",
+    "fiscal_year": 2024,
+    "found": false,
+    "item": "undrawn_facilities",
+    "quote": ""
+   },
+   {
+    "comment": "No undrawn committed general-purpose facility amounts are printed in the passages.",
+    "fiscal_year": 2023,
+    "found": false,
+    "item": "undrawn_facilities",
+    "quote": ""
+   },
+   {
+    "caption": "(en millions d’euros)",
+    "comment": "Aviation segment revenue for Paris platforms in 2024.",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 531",
+    "printed_value": "2 054",
+    "quote": "Chiffre d’affaires\n2 054\n1 910\n+144 M€",
+    "scale": "million",
+    "scope": "Activités aéronautiques – Plateformes parisiennes",
+    "table_header": "2024\n2023\nVariation 2024/2023"
+   },
+   {
+    "caption": "(en millions d’euros)",
+    "comment": "Aviation segment revenue for Paris platforms in 2023.",
+    "currency": "EUR",
+    "fiscal_year": 2023,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 531",
+    "printed_value": "1 910",
+    "quote": "Chiffre d’affaires\n2 054\n1 910\n+144 M€",
+    "scale": "million",
+    "scope": "Activités aéronautiques – Plateformes parisiennes",
+    "table_header": "2024\n2023\nVariation 2024/2023"
+   }
+  ]
+ },
+ "label": "adp FY2024 969500PJMBSFHYC37989-2024-12-31-ESEF-FR-0",
+ "recorded_at": "2026-11-03T18:28:24+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v3",
+  "provider": "deepseek",
+  "system_sha256": "b5c3e004cd098413f2c4a347fcb48fb659760f047752a812f25224e418ea9e0e",
+  "tool_sha256": "debd41b3d3dad40c9cbcd2779b1324d9b17762b294b86235fd74b44ca9e9dd96",
+  "user_sha256": "4f6f570dac6498c11b567cbb030a5e023fc8ccb1489f07b462ade1f2ed5b0b9e"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 6230,
+  "output_tokens": 648
+ }
+}

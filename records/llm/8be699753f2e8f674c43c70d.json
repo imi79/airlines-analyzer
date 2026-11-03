@@ -1,0 +1,93 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Passengers in the Spanish network shown as 120.0 million for 2021.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "passengers",
+    "location": "page 2",
+    "printed_value": "120,0",
+    "quote": "2021\n120,0\nmillones de\npasajeros",
+    "scale": "million",
+    "scope": "Aena network airports in Spain"
+   },
+   {
+    "comment": "Passengers in the Spanish network shown as 76.1 million for 2020.",
+    "fiscal_year": 2020,
+    "found": true,
+    "item": "passengers",
+    "location": "page 2",
+    "printed_value": "76,1",
+    "quote": "2020\n76,1\nmillones de\npasajeros",
+    "scale": "million",
+    "scope": "Aena network airports in Spain"
+   },
+   {
+    "caption": "Los vencimientos de los anteriores saldos no dispuestos se detallan a continuación:",
+    "comment": "Total undrawn facilities of the parent company at 31 December 2021, in millions of euros.",
+    "currency": "EUR",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "undrawn_facilities",
+    "location": "page 2",
+    "printed_value": "1.269",
+    "quote": "Total\n1.269",
+    "scale": "million",
+    "scope": "Aena S.M.E., S.A. undrawn committed facilities (BEI, ICO, syndicated credit line)",
+    "table_header": "Entidad\nImporte\n(Millones de euros)\nVencimiento"
+   },
+   {
+    "comment": "Only the 2020 amounts of the BEI/ICO (124.4 million euros) and syndicated line (800 million euros) are printed separately, with no total for 2020.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "caption": "El desglose de los ingresos ordinarios del Subtotal incluido en la Información financiera por segmentos (sin tener en cuenta Internacional, AIRM y los Ajustes), por tipología de servicios prestados es como sigue:",
+    "comment": "Aeronautical revenue (prestaciones patrimoniales) for 2021 in thousands of euros.",
+    "currency": "EUR",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 2",
+    "printed_value": "1.232.864",
+    "quote": "Aeronáuticos - Prestaciones Patrimoniales\n1.232.864\n899.269",
+    "scale": "thousand",
+    "scope": "Aeronautical segment revenue, Spanish airport network",
+    "table_header": "2021\n2020"
+   },
+   {
+    "caption": "El desglose de los ingresos ordinarios del Subtotal incluido en la Información financiera por segmentos (sin tener en cuenta Internacional, AIRM y los Ajustes), por tipología de servicios prestados es como sigue:",
+    "comment": "Aeronautical revenue (prestaciones patrimoniales) for 2020 in thousands of euros.",
+    "currency": "EUR",
+    "fiscal_year": 2020,
+    "found": true,
+    "item": "aero_revenue",
+    "location": "page 2",
+    "printed_value": "899.269",
+    "quote": "Aeronáuticos - Prestaciones Patrimoniales\n1.232.864\n899.269",
+    "scale": "thousand",
+    "scope": "Aeronautical segment revenue, Spanish airport network",
+    "table_header": "2021\n2020"
+   }
+  ]
+ },
+ "label": "aena FY2021 959800R7QMXKF0NFMT29-2021-12-31-ESEF-ES-0",
+ "recorded_at": "2026-11-03T18:28:37+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v3",
+  "provider": "deepseek",
+  "system_sha256": "b5c3e004cd098413f2c4a347fcb48fb659760f047752a812f25224e418ea9e0e",
+  "tool_sha256": "debd41b3d3dad40c9cbcd2779b1324d9b17762b294b86235fd74b44ca9e9dd96",
+  "user_sha256": "0c1900f7f973987496df97235794341afa1b57d4a368bc96218f12c2b1e75eb2"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 7684,
+  "output_tokens": 833
+ }
+}

@@ -1,0 +1,215 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "comment": "Total passengers carried in 2022.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "passengers",
+    "location": "page 10",
+    "printed_value": "9,095,800",
+    "quote": "The number of passengers increased by 218.9 per cent to 9,095,800 passengers.",
+    "scale": "one",
+    "scope": "Finnair passengers carried (total)"
+   },
+   {
+    "comment": "Only the 2022 figure and the growth rate are printed; no 2021 passenger count is given.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "passengers"
+   },
+   {
+    "caption": "Passenger revenue and traffic data by area, 2022",
+    "comment": "ASK in million km for 2022.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "ask",
+    "location": "page 11",
+    "printed_value": "31,298.4",
+    "quote": "Total 1,710.7 100.0 420.8 31,298.4 12,094.2 21,156.8 5,178.2 67.6 24.8",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "2022\nEUR mill. Share %\n2021\nEUR mill.\n2022\nMill. km\n2021\nMill. km\n2022\nMill. km\n2021\nMill. km % Change %-p"
+   },
+   {
+    "caption": "Passenger revenue and traffic data by area, 2022",
+    "comment": "ASK in million km for 2021.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "ask",
+    "location": "page 11",
+    "printed_value": "12,094.2",
+    "quote": "Total 1,710.7 100.0 420.8 31,298.4 12,094.2 21,156.8 5,178.2 67.6 24.8",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "2022\nEUR mill. Share %\n2021\nEUR mill.\n2022\nMill. km\n2021\nMill. km\n2022\nMill. km\n2021\nMill. km % Change %-p"
+   },
+   {
+    "caption": "Passenger revenue and traffic data by area, 2022",
+    "comment": "RPK in million km for 2022.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "rpk",
+    "location": "page 11",
+    "printed_value": "21,156.8",
+    "quote": "Total 1,710.7 100.0 420.8 31,298.4 12,094.2 21,156.8 5,178.2 67.6 24.8",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "2022\nEUR mill. Share %\n2021\nEUR mill.\n2022\nMill. km\n2021\nMill. km\n2022\nMill. km\n2021\nMill. km % Change %-p"
+   },
+   {
+    "caption": "Passenger revenue and traffic data by area, 2022",
+    "comment": "RPK in million km for 2021.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "rpk",
+    "location": "page 11",
+    "printed_value": "5,178.2",
+    "quote": "Total 1,710.7 100.0 420.8 31,298.4 12,094.2 21,156.8 5,178.2 67.6 24.8",
+    "scale": "million",
+    "scope": "Group total",
+    "table_header": "2022\nEUR mill. Share %\n2021\nEUR mill.\n2022\nMill. km\n2021\nMill. km\n2022\nMill. km\n2021\nMill. km % Change %-p"
+   },
+   {
+    "caption": "Passenger revenue and traffic data by area, 2022",
+    "comment": "Passenger load factor 67.6% in 2022.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "load_factor",
+    "location": "page 11",
+    "printed_value": "67.6",
+    "quote": "Total 1,710.7 100.0 420.8 31,298.4 12,094.2 21,156.8 5,178.2 67.6 24.8",
+    "scale": "one",
+    "scope": "Group total",
+    "table_header": "2022\nEUR mill. Share %\n2021\nEUR mill.\n2022\nMill. km\n2021\nMill. km\n2022\nMill. km\n2021\nMill. km % Change %-p"
+   },
+   {
+    "comment": "Only the 2022 PLF (67.6%) and the 24.8 percentage point change are printed; the 2021 PLF is not stated.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "load_factor"
+   },
+   {
+    "caption": "Revenue by product",
+    "comment": "Passenger revenue excludes ancillary revenue, which is reported separately.",
+    "currency": "EUR",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 10",
+    "printed_value": "1,710.7",
+    "quote": "Passenger revenue 1,710.7 420.8 306.5",
+    "scale": "million",
+    "scope": "Group",
+    "table_header": "EUR million 2022 2021 Change %"
+   },
+   {
+    "caption": "Revenue by product",
+    "comment": "Passenger revenue excludes ancillary revenue, which is reported separately.",
+    "currency": "EUR",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 10",
+    "printed_value": "420.8",
+    "quote": "Passenger revenue 1,710.7 420.8 306.5",
+    "scale": "million",
+    "scope": "Group",
+    "table_header": "EUR million 2022 2021 Change %"
+   },
+   {
+    "comment": "Aircraft operated by Finnair itself at 31.12.2022.",
+    "component": true,
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 18",
+    "printed_value": "56",
+    "quote": "At the end of December, Finnair itself operated 56 aircraft, of which 25 were wide-body and 31 narrow-body aircraft.",
+    "scale": "one",
+    "scope": "Fleet operated by Finnair"
+   },
+   {
+    "comment": "Aircraft operated by Norra for Finnair at year end.",
+    "component": true,
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 18",
+    "printed_value": "24",
+    "quote": "Nordic Regional Airlines (Norra) operates a fleet of 24 aircraft for Finnair on a contract flying basis.",
+    "scale": "one",
+    "scope": "Fleet operated by Norra for Finnair"
+   },
+   {
+    "comment": "Only the 2022 fleet counts are printed; no 2021 year-end fleet total is given.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "fleet_count"
+   },
+   {
+    "comment": "Average age of Finnair's own operated fleet; Norra fleet age not given.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "fleet_age",
+    "location": "page 18",
+    "printed_value": "11.6",
+    "quote": "The average age of the fleet operated by Finnair was 11.6 years.",
+    "scale": "one",
+    "scope": "Fleet operated by Finnair"
+   },
+   {
+    "comment": "No 2021 fleet age is printed.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "fleet_age"
+   },
+   {
+    "comment": "Hedged share of forecasted fuel purchases for the next 12 months at end of 2022.",
+    "fiscal_year": 2022,
+    "found": true,
+    "item": "fuel_hedge_ratio",
+    "location": "page 80",
+    "printed_value": "41",
+    "quote": "At the end of the financial year, Finnair had hedged 41 per cent of its forecasted fuel purchases for the first",
+    "scale": "one",
+    "scope": "Group"
+   },
+   {
+    "comment": "No hedge ratio as at end of 2021 is printed.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "comment": "Only an unused 200-million-euro commercial paper programme is mentioned; no committed general-purpose credit facility amounts are printed.",
+    "fiscal_year": 2022,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "No undrawn committed general-purpose facilities are printed for 2021.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "undrawn_facilities"
+   }
+  ]
+ },
+ "label": "finnair FY2022 213800SB6EOB8SSK9W63-2022-12-31-ESEF-FI-0",
+ "recorded_at": "2026-11-03T18:27:01+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v3",
+  "provider": "deepseek",
+  "system_sha256": "b5c3e004cd098413f2c4a347fcb48fb659760f047752a812f25224e418ea9e0e",
+  "tool_sha256": "61c55522fbd4da1f68f903713a6ffaf85f3654cbac96ba3e9a6bc11333896ad7",
+  "user_sha256": "9b6562801244db6116066e61e12837aa4f40dd3358ddfa479eed9a939db394e0"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 12142,
+  "output_tokens": 2092
+ }
+}

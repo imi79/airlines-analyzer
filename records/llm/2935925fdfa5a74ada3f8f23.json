@@ -1,0 +1,212 @@
+{
+ "answer": {
+  "figures": [
+   {
+    "caption": "NOK million",
+    "comment": "Table row gives passengers in millions; text says around 6.2 million passengers flew with Norwegian in 2021.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "passengers",
+    "location": "page 83",
+    "printed_value": "6.2",
+    "quote": "Passengers (million)\n6.2\n6.87",
+    "scale": "million",
+    "scope": "Norwegian alone (Group)",
+    "table_header": "2021\n2020"
+   },
+   {
+    "caption": "NOK million",
+    "comment": "Prior-year figure from the same row.",
+    "fiscal_year": 2020,
+    "found": true,
+    "item": "passengers",
+    "location": "page 83",
+    "printed_value": "6.87",
+    "quote": "Passengers (million)\n6.2\n6.87",
+    "scale": "million",
+    "scope": "Norwegian alone (Group)",
+    "table_header": "2021\n2020"
+   },
+   {
+    "caption": "NOK million",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "ask",
+    "location": "page 83",
+    "printed_value": "9,437",
+    "quote": "ASK (million)\n9,437\n18,168",
+    "scale": "million",
+    "scope": "Group",
+    "table_header": "2021\n2020"
+   },
+   {
+    "caption": "NOK million",
+    "fiscal_year": 2020,
+    "found": true,
+    "item": "ask",
+    "location": "page 83",
+    "printed_value": "18,168",
+    "quote": "ASK (million)\n9,437\n18,168",
+    "scale": "million",
+    "scope": "Group",
+    "table_header": "2021\n2020"
+   },
+   {
+    "caption": "NOK million",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "rpk",
+    "location": "page 83",
+    "printed_value": "6,869",
+    "quote": "RPK (million)\n6,869\n13,680",
+    "scale": "million",
+    "scope": "Group",
+    "table_header": "2021\n2020"
+   },
+   {
+    "caption": "NOK million",
+    "fiscal_year": 2020,
+    "found": true,
+    "item": "rpk",
+    "location": "page 83",
+    "printed_value": "13,680",
+    "quote": "RPK (million)\n6,869\n13,680",
+    "scale": "million",
+    "scope": "Group",
+    "table_header": "2021\n2020"
+   },
+   {
+    "caption": "NOK million",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "load_factor",
+    "location": "page 83",
+    "printed_value": "72.8",
+    "quote": "Load factor\n72.8%\n75.2%",
+    "scale": "one",
+    "scope": "Group",
+    "table_header": "2021\n2020"
+   },
+   {
+    "caption": "NOK million",
+    "fiscal_year": 2020,
+    "found": true,
+    "item": "load_factor",
+    "location": "page 83",
+    "printed_value": "75.2",
+    "quote": "Load factor\n72.8%\n75.2%",
+    "scale": "one",
+    "scope": "Group",
+    "table_header": "2021\n2020"
+   },
+   {
+    "caption": "NOK million",
+    "currency": "NOK",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 17",
+    "printed_value": "3,911.8",
+    "quote": "Passenger revenue\n3,911.8\n6,455.3",
+    "scale": "million",
+    "scope": "Group",
+    "table_header": "2021\n2020"
+   },
+   {
+    "caption": "NOK million",
+    "currency": "NOK",
+    "fiscal_year": 2020,
+    "found": true,
+    "item": "passenger_revenue",
+    "location": "page 17",
+    "printed_value": "6,455.3",
+    "quote": "Passenger revenue\n3,911.8\n6,455.3",
+    "scale": "million",
+    "scope": "Group",
+    "table_header": "2021\n2020"
+   },
+   {
+    "caption": "NOK million",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 83",
+    "printed_value": "51",
+    "quote": "Number of operational aircraft (at year-end)\n51\n131",
+    "scale": "one",
+    "scope": "Group fleet in operation at year end",
+    "table_header": "2021\n2020"
+   },
+   {
+    "caption": "NOK million",
+    "fiscal_year": 2020,
+    "found": true,
+    "item": "fleet_count",
+    "location": "page 83",
+    "printed_value": "131",
+    "quote": "Number of operational aircraft (at year-end)\n51\n131",
+    "scale": "one",
+    "scope": "Group fleet in operation at year end",
+    "table_header": "2021\n2020"
+   },
+   {
+    "comment": "Printed as seven years and six months; no prior-year fleet age is given.",
+    "fiscal_year": 2021,
+    "found": true,
+    "item": "fleet_age",
+    "location": "page 92",
+    "printed_value": "7",
+    "quote": "The average age of the aircraft fleet was seven years and six months at year end 2021.",
+    "scale": "one",
+    "scope": "Group fleet"
+   },
+   {
+    "comment": "The report gives no average fleet age for 2020.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "fleet_age"
+   },
+   {
+    "comment": "At the end of 2021 the Group had no jet fuel forward contracts, so no hedge ratio is stated.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "comment": "No fuel hedge ratio for the end of 2020 is stated in the passages.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "fuel_hedge_ratio"
+   },
+   {
+    "comment": "The passages describe liquidity risk monitoring but give no committed general-purpose undrawn facility amounts.",
+    "fiscal_year": 2021,
+    "found": false,
+    "item": "undrawn_facilities"
+   },
+   {
+    "comment": "No committed general-purpose undrawn facility amounts are given for 2020.",
+    "fiscal_year": 2020,
+    "found": false,
+    "item": "undrawn_facilities"
+   }
+  ]
+ },
+ "label": "norwegian FY2021 549300IEUH2FEM2Y6B51-2021-12-31-ESEF-NO-0",
+ "recorded_at": "2026-11-03T18:29:37+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "extract-v3",
+  "provider": "deepseek",
+  "system_sha256": "b5c3e004cd098413f2c4a347fcb48fb659760f047752a812f25224e418ea9e0e",
+  "tool_sha256": "61c55522fbd4da1f68f903713a6ffaf85f3654cbac96ba3e9a6bc11333896ad7",
+  "user_sha256": "b8a8f16a5e4b8d01c3a6a45a95fc029ae3c5b5dfd91992006534d24265730881"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 10700,
+  "output_tokens": 1481
+ }
+}
