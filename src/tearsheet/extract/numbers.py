@@ -108,11 +108,15 @@ YEAR = re.compile(
 )
 
 
+PRIVATE_USE = re.compile("[\ue000-\uf8ff]")
+
+
 def squash(text: str) -> str:
     """Text without any whitespace, lower case, with typographic quotes unified: the form in
     which quotes are compared (some reports split words, e.g. 'tr affic')."""
     text = text.replace("’", "'").replace("‘", "'").replace("`", "'")
     text = text.replace("–", "-").replace("—", "-").replace("−", "-")
+    text = PRIVATE_USE.sub("", text)  # icon glyphs from the report's fonts are not text
     return re.sub(r"\s+", "", text).lower()
 
 

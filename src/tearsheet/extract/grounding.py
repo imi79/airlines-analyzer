@@ -233,7 +233,7 @@ def check_figure(
     if reason:
         c.failures.append(reason)
     if raw.component:
-        c.notes.append("one facility among several (summed with the others)")
+        c.notes.append("one part among several (summed with the others)")
     return c
 
 
@@ -342,12 +342,18 @@ def attached_year(quote: str, token: Token) -> int | None:
 
 def _table_year(quote: str, token: Token, header: str, language: str | None) -> int | None:
     """In a table row, the year of the value's column, from the header's years in order."""
+    every = [m.year for m in year_marks(header)]
     years = []
-    for m in year_marks(header):
-        if m.year not in years:
-            years.append(m.year)
+    for y in every:
+        if y not in years:
+            years.append(y)
     if not years:
         return None
+    # A table with several measures repeats the years over each ("2025 2024 | 2025 2024"):
+    # then every column has its own year.
+    repeated = len(every) > len(years) and len(every) % len(years) == 0
+    if repeated and every == years * (len(every) // len(years)):
+        years = every
     first_digit = re.search(r"\d", quote)
     label_end = first_digit.start() if first_digit else 0
     numbers = [

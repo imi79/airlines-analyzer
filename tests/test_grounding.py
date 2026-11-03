@@ -264,6 +264,55 @@ def test_made_up_caption_is_rejected():
     assert not c.verified
 
 
+FINNAIR_TRAFFIC = (
+    "Passenger revenue ASK RPK PLF 2025 MEUR 2024 MEUR 2025 Mill. km 2024 Mill. km 2025 Mill. "
+    "km 2024 Mill. km % Change %-p Tota l 2,445.8 2,419.0 39,306.6 38,259.3 30,227.3 29,000.2 "
+    "76.9 1.1",
+)
+FINNAIR_HEADER = (
+    "2025\nMEUR\n2024\nMEUR\n2025\nMill. km\n2024\nMill. km\n2025\nMill. km\n2024\nMill. km"
+)
+
+
+@pytest.mark.parametrize(
+    "item, year, printed, verified",
+    [
+        ("ask", 2025, "39,306.6", True),
+        ("rpk", 2025, "30,227.3", True),
+        ("ask", 2025, "38,259.3", False),
+    ],
+)
+def test_header_repeating_the_years_over_each_measure(item, year, printed, verified):
+    # Finnair FY2025: revenue, ASK and RPK each have a 2025 and a 2024 column.
+    raw = figure(
+        item=item,
+        fiscal_year=year,
+        printed_value=printed,
+        scale="million",
+        quote="Tota l 2,445.8 2,419.0 39,306.6 38,259.3 30,227.3 29,000.2 76.9 1.1",
+        table_header=FINNAIR_HEADER,
+        caption="Passenger revenue ASK RPK PLF",  # the column names sit in a line of their own
+    )
+    c = run(raw, doc(FINNAIR_TRAFFIC, issuer="finnair"), currency="EUR")
+    assert c.verified is verified, c.failures
+
+
+def test_icon_glyph_in_the_report_does_not_break_the_quote():
+    # Finnair FY2025 fleet table: an icon character sits between two cells in the report.
+    page = ("Fleet operated by Finnair 31 Dec 2025 To t a l 55 \ue61f1 38 17 14 . 3 1",)
+    raw = figure(
+        item="fleet_count",
+        printed_value="55",
+        quote="Tota l 55 1 38 17 14.3 1",
+        table_header="31 Dec 2025",
+        caption="Fleet operated by Finnair",
+        component=True,
+    )
+    c = run(raw, doc(page, issuer="finnair"), currency="EUR")
+    assert c.location == "page 1"
+    assert c.verified, c.failures
+
+
 def test_hedge_for_the_next_year_is_verified():
     raw = figure(
         item="fuel_hedge_ratio", fiscal_year=2022, printed_value="15", quote=FINNAIR_HEDGE[1]
