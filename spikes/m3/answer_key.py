@@ -62,7 +62,9 @@ class Anchor:
     scale: str = "one"  # what the printed number counts in
     language: str = "en"  # number format: en "1,234.5"; fr "1 234,5"
     currency: str | None = None  # amounts: currency printed, if not the reporting currency
-    group: str = "first"  # "first": built before the first run; "holdout": before the second
+    group: str = "first"  # "first": before the first run; "holdout": before the second;
+    # "blind": after the second run, before the check fixes that followed it
+    repeats: int = 1  # times the anchor matches (a page printed twice), all with the same number
 
 
 def loose(text: str) -> str:
@@ -238,6 +240,86 @@ HOLDOUT: list[Anchor] = [
 ]  # fmt: skip
 
 
+# Blind lines (decision 0014), written after the second run and before the code fixes that
+# followed it, from the FY2023 reports (Air France-KLM has none). They measure prompt v2 with
+# the fixed checks on lines neither has been tuned on. Same rule. Left out, with the reason:
+# - IAG FY2023 RPK (not printed in this version of the report) and hedge (policy only).
+# - Finnair FY2023 hedge (per half-year) and undrawn facilities (only an unused commercial
+#   paper programme, which is not a committed facility).
+# - easyJet FY2023 hedge (per half-year). Wizz Air FY2023 undrawn facilities (none given).
+BLIND: list[Anchor] = [
+    Anchor("iag", 2023, "passengers", "report FY2023",
+           r"network\) (?P<v>\d+\.\d) million passengers [\d.]+ billion cargo", "million",
+           group="blind", repeats=2),  # the same page is printed twice in the report
+    Anchor("iag", 2023, "ask", "report FY2023",
+           r"ASKs \(millions\) (?P<v>\d{3},\d{3}) \d{3},\d{3} \d{3},\d{3} Airline", "million",
+           group="blind"),
+    Anchor("iag", 2023, "fleet_count", "report FY2023",
+           r"Number of fleet in-service 2023 2022 .{0,90}?% (?P<v>\d{3}) \d{3} [\d.]+ %",
+           group="blind"),
+    Anchor("iag", 2023, "undrawn_facilities", "report FY2023",
+           r"In total, the Group had €(?P<v>\d,\d{3}) million of committed and undrawn",
+           "million", group="blind"),
+    Anchor("finnair", 2023, "passengers", "report FY2023",
+           r"Finnair transported (?P<v>\d+\.\d) million passengers \(9\.1\)", "million",
+           group="blind"),
+    Anchor("finnair", 2023, "ask", "report FY2023",
+           r"T ota l 2 , 4 11\.6 1 ,710 \.7 (?P<v>[\d ,.]+?) 3 1 , 2 9 8 \.4", "million",
+           group="blind"),
+    Anchor("finnair", 2023, "rpk", "report FY2023",
+           r"3 1 , 2 9 8 \.4 (?P<v>[\d ,.]+?) 21, 15 6\.8", "million", group="blind"),
+    Anchor("finnair", 2023, "fleet_count", "report FY2023",  # Finnair's own fleet
+           loose("Finnair itself operated") + r"\s*(?P<v>\d+)\s*" + loose("aircraft, of which"),
+           group="blind"),
+    Anchor("finnair", 2023, "fleet_count", "report FY2023",  # + the fleet Norra flies for it
+           loose("operates a fleet of") + r"\s*(?P<v>[\d ]+?)\s*" + loose("aircraft for Finnair"),
+           group="blind"),
+    Anchor("easyjet", 2023, "passengers", "report FY2023",
+           loose("in the financial year increased by 19% to") + r"\s*(?P<v>\d+\s?\.\s?\d)\s*"
+           + loose("million (2022:"), "million", group="blind"),
+    Anchor("easyjet", 2023, "ask", "report FY2023",
+           loose("(ASK) (millions)") + r"\s*(?P<v>[\d ]+,[\d ]+?)\s+9 ?7, ?2 ?8 ?7", "million",
+           group="blind"),
+    Anchor("easyjet", 2023, "rpk", "report FY2023",
+           loose("(RPK) (millions)") + r"\s*(?P<v>[\d ]+,[\d ]+?)\s+84,87 4", "million",
+           group="blind"),
+    Anchor("easyjet", 2023, "fleet_count", "report FY2023",
+           loose("giving a total fleet of") + r"\s*(?P<v>[\d ]+?)\s*"
+           + loose("at 30 September 2023"), group="blind"),
+    Anchor("easyjet", 2023, "undrawn_facilities", "report FY2023",
+           loose("This amounted to £") + r"\s*(?P<v>\d\s?\.\s?\d)\s*"
+           + loose("billion at 30 September 2023"), "billion", group="blind"),
+    Anchor("norwegian", 2023, "passengers", "report FY2023",
+           loose("Norwegian had") + r"\s*(?P<v>[\d ]+\.\s?\d)\s*"
+           + loose("million passengers in 2023 , up 16 per cent from"), "million",
+           group="blind"),
+    Anchor("norwegian", 2023, "ask", "report FY2023",
+           loose("seat kilometres (ASK), was") + r"\s*(?P<v>\d+\s?\.\s?\d)\s*"
+           + loose("billion in 2023"), "billion", group="blind"),
+    Anchor("norwegian", 2023, "rpk", "report FY2023",
+           loose("measured by RPK, amounted to") + r"\s*(?P<v>\d+\s?\.\s?\d)\s*" + loose("billion"),
+           "billion", group="blind"),
+    Anchor("norwegian", 2023, "fleet_count", "report FY2023",
+           loose("The Norwegian ﬂeet comprised") + r"\s*(?P<v>\d+)\s*"  # "ﬂ" as printed
+           + loose("aircraft at year-end"), group="blind"),
+    Anchor("norwegian", 2023, "fuel_hedge_ratio", "report FY2023",
+           loose("the Group has hedged around") + r"\s*(?P<v>\d+)\s*"
+           + loose("per cent of its planned fuel consumption in 2024"), group="blind"),
+    Anchor("wizz", 2023, "passengers", "report FY2023",
+           r"Wizz Air carried (?P<v>\d+\.\d) million passengers during F23", "million",
+           group="blind"),
+    Anchor("wizz", 2023, "ask", "report FY2023",
+           r"Total ASKs \(’000 km\)\*\*\* (?P<v>\d{2},\d{3},\d{3}) \d", "thousand", group="blind"),
+    Anchor("wizz", 2023, "rpk", "report FY2023",
+           r"RPKs \(revenue passenger kilometres\) \(’000 km\) (?P<v>\d{2},\d{3},\d{3}) \d",
+           "thousand", group="blind"),
+    Anchor("wizz", 2023, "fleet_count", "report FY2023",
+           r"Its fleet consists of (?P<v>\d+) aircraft", group="blind"),
+    Anchor("wizz", 2023, "fuel_hedge_ratio", "report FY2023",  # F24, a full twelve months
+           r"Period covered F24 F25 12 months 6 months .{0,200}?Hedge coverage for the period "
+           r"(?P<v>\d+) % \d+ %", group="blind"),
+]  # fmt: skip
+
 # --- Text ------------------------------------------------------------------------------------
 
 
@@ -286,12 +368,12 @@ def full_value(printed: str, a: Anchor) -> tuple[Decimal, Decimal]:
     return value * factor, half * factor
 
 
-def find(pages: list[str], pattern: str) -> tuple[re.Match, int]:
-    """The single match of the anchor, and its page (1-based)."""
+def find(pages: list[str], pattern: str, repeats: int = 1) -> tuple[re.Match, int]:
+    """The single match of the anchor (or `repeats` identical ones), and its page (1-based)."""
     regex = re.compile(pattern)
     hits = [(m, i + 1) for i, p in enumerate(pages) for m in regex.finditer(p)]
-    if len(hits) != 1:
-        raise LookupError(f"anchor matches {len(hits)} times, not once: {pattern}")
+    if len(hits) != repeats or len({m.group("v") for m, _ in hits}) != 1:
+        raise LookupError(f"anchor matches {len(hits)} times, not {repeats}: {pattern}")
     return hits[0]
 
 
@@ -346,7 +428,7 @@ def ecb_rate(source: str, target: str, period_end: date) -> Decimal:
 
 
 def build(anchors: list[Anchor] | None = None, out: Path = OUT) -> list[dict]:
-    anchors = ANCHORS + HOLDOUT if anchors is None else anchors
+    anchors = ANCHORS + HOLDOUT + BLIND if anchors is None else anchors
     from tearsheet.config import load_issuers
 
     currency = {i.id: i.currency for i in load_issuers()}
@@ -357,7 +439,7 @@ def build(anchors: list[Anchor] | None = None, out: Path = OUT) -> list[dict]:
         doc_id, path, kind, end = docs[(a.issuer, a.document)]
         if doc_id not in texts:
             texts[doc_id] = pdf_pages(path) if kind == "pdf" else html_pages(path.read_text())
-        m, page = find(texts[doc_id], a.pattern)
+        m, page = find(texts[doc_id], a.pattern, a.repeats)
         value, tolerance = full_value(m.group("v"), a)
         if a.currency and a.currency != currency[a.issuer]:
             rate = ecb_rate(a.currency, currency[a.issuer], end)

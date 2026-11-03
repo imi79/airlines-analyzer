@@ -12,7 +12,7 @@ Each key line ends in one of five outcomes:
   missing             the tool has no value for it
 
 Checklist: no `verified_wrong` on any line, and at least 80% `verified_correct` both on all
-lines and on the held-out lines alone (written before the second run, decision 0014).
+lines and on the newest blind lines alone (written before the last change, decision 0014).
 
 The score uses the status the checks gave, before any review by Imane: it measures what the
 checks do on their own. A key line whose figure has been reviewed is shown as such.
@@ -54,7 +54,7 @@ class KeyLine:
     document: str
     location: str
     snippet: str
-    group: str = "first"  # "first" or "holdout" (decision 0014)
+    group: str = "first"  # "first", "holdout" or "blind" (decision 0014)
 
 
 @dataclass(frozen=True)
