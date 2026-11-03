@@ -44,15 +44,20 @@ Walkthrough: `docs/m2/walkthrough.md`. **Status: done; gate 1 passed.**
 
 Branch: `m3-extraction-grounding`. Run: `uv run tearsheet all --offline` (replays the recorded AI
 answers; `uv run tearsheet extract` asks the AI for reports not yet read). Results: `docs/m3/`.
-Walkthrough: `docs/m3/walkthrough.md`. **Status: in progress; waiting for Imane on the 80% target.**
+Walkthrough: `docs/m3/walkthrough.md`. **Status: in progress; waiting for Imane (definition of
+undrawn facilities; how to treat the 80% target).**
 
-- [x] No wrong value marked verified on the labelled set: 0 of 25 (answer key built by code at
-      Imane's request, decision 0012; `docs/m3/answer_key_score.md`)
-- [ ] At least 80% of labelled values verified automatically: **19 of 25 (76%)**, one figure
-      short. The six misses all stay unverified, none wrong on the tearsheet. Options in the
-      walkthrough (questions 1 and 2)
-- [x] Every unverified value visibly flagged: 75 of 75 listed with quote and reason in
+Answer key built by code at Imane's request (decision 0012), in three sets each written before
+the step it judges (decision 0014): first 25, held-out 23, blind 23. The blind set is the clean
+measure of the final code.
+
+- [ ] No wrong value marked verified on the labelled set: 1 of 71, on the blind set (IAG
+      undrawn facilities end 2023, a definition question: general-purpose €4,412m kept by the
+      tool, €4,787m "in total" in the key). 0 if Imane chooses general-purpose facilities
+- [ ] At least 80% of labelled values verified automatically: blind 15 of 23 (65%), all 51 of
+      71 (72%). The improvement round (prompt v2 and two check fixes) did not move the score
+- [x] Every unverified value visibly flagged: 58 of 58 listed with quote and reason in
       `docs/m3/extractions.md`, marked \*, and every ratio using one marked \* in `docs/m2/`
-- Run on all nine companies: 41 reports, 230 figures, 155 verified; DeepSeek, prompt
-  `extract-v1`, about 445,000 tokens in and 54,000 out. Check changes after the first run in
-  decision 0013 (hedge ratios for part of a year no longer pass)
+- Two runs on all nine companies (prompts `extract-v1`, `extract-v2`), 41 reports each, about
+  460,000 tokens in and 56,000 out per run; 222 figures, 164 verified. Check changes in
+  decisions 0013 and 0014
