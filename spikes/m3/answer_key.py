@@ -101,9 +101,9 @@ ANCHORS: list[Anchor] = [
            r"Revenue passenger km \(RPK\) million (?P<v>\d{3},\d{3}) \d{3},\d{3}", "million"),
     Anchor("iag", 2025, "fleet_count", "report FY2025",
            r"Number of aircraft in service 2025 2024 .{0,120}?Total (?P<v>\d{3}) \d{3}"),
-    Anchor("iag", 2025, "undrawn_facilities", "report FY2025",
-           r"In total, the Group had € (?P<v>\d,\d{3}) million of committed and undrawn",
-           "million"),
+    Anchor("iag", 2025, "undrawn_facilities", "report FY2025",  # general-purpose (decision 0015)
+           r"bringing total committed and undrawn general and overdraft facilities at 31 December "
+           r"2025 to € (?P<v>\d,\d{3}) million", "million"),
     # Finnair FY2025. The report's text layer splits words and numbers ("3 0 , 2 2 7. 3"),
     # so the table anchors use the neighbouring cells of the "Total" row. The hedge is printed
     # by half-year (79% for H1 2026, 51 per cent for H2): no key line. Fleet: the scope is all
@@ -189,9 +189,9 @@ HOLDOUT: list[Anchor] = [
     Anchor("iag", 2024, "fleet_count", "report FY2024",
            r"Number of fleet in-service 2024 2023 .{0,90}?% (?P<v>\d{3}) \d{3} [\d.]+ %",
            group="holdout"),
-    Anchor("iag", 2024, "undrawn_facilities", "report FY2024",
-           r"In total, the Gr ?oup had € (?P<v>\d,\d{3}) million of committed and undrawn",
-           "million", group="holdout"),
+    Anchor("iag", 2024, "undrawn_facilities", "report FY2024",  # general-purpose (0015)
+           r"bringing total committed and undrawn general and overdraft facilities at 31 December "
+           r"2024 to € (?P<v>\d,\d{3}) million", "million", group="holdout"),
     Anchor("finnair", 2024, "passengers", "report FY2024",
            r"Finnair transported (?P<v>\d+\.\d) million passengers \(11\.0\)", "million",
            group="holdout"),
@@ -257,9 +257,9 @@ BLIND: list[Anchor] = [
     Anchor("iag", 2023, "fleet_count", "report FY2023",
            r"Number of fleet in-service 2023 2022 .{0,90}?% (?P<v>\d{3}) \d{3} [\d.]+ %",
            group="blind"),
-    Anchor("iag", 2023, "undrawn_facilities", "report FY2023",
-           r"In total, the Group had €(?P<v>\d,\d{3}) million of committed and undrawn",
-           "million", group="blind"),
+    Anchor("iag", 2023, "undrawn_facilities", "report FY2023",  # general-purpose (0015)
+           r"bringing total committed and undrawn general and overdraft facilities at 31 December "
+           r"2023 to €(?P<v>\d,\d{3}) million", "million", group="blind"),
     Anchor("finnair", 2023, "passengers", "report FY2023",
            r"Finnair transported (?P<v>\d+\.\d) million passengers \(9\.1\)", "million",
            group="blind"),

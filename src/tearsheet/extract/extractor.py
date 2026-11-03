@@ -22,7 +22,7 @@ from tearsheet.extract.locator import items_for, locate, render
 from tearsheet.llm import LLM, LLMError, NotRecorded, ToolResult, ToolSpec
 
 PROMPTS = Path(__file__).with_name("prompts")
-PROMPT_VERSION = "extract-v2"  # bump with every change to the prompt, the form or the request
+PROMPT_VERSION = "extract-v3"  # bump with every change to the prompt, the form or the request
 SCOPES = CONFIG / "extraction.yaml"
 NOT_RUN = "not extracted yet: no recorded AI answer (run `tearsheet extract`)"
 MONTHS = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split()

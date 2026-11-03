@@ -121,8 +121,10 @@ items:
     period: instant
     applies_to: [airline, airport]
     definition: >-
-      Committed credit facilities available but not drawn at the fiscal year end (revolving
-      credit facilities and other committed lines). If the report gives a total, give the total;
+      Committed general-purpose credit facilities available but not drawn at the fiscal year
+      end (revolving credit facilities and other committed general or overdraft lines). Leave
+      out facilities that can only finance specific aircraft or other specific assets (decision
+      0015). If the report gives a total of the general-purpose facilities, give that total;
       otherwise give each facility as a separate line marked as a component.
     range_of_revenue: [0.0, 1.5]
     terms:
