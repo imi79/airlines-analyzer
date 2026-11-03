@@ -1,0 +1,110 @@
+{
+ "answer": {
+  "sections": {
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "advance_ticket_cover@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover.peer_median@2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "advance_ticket_cover.peer_rank@2024"
+      }
+     ],
+     "text": "Customer prepayments: advance ticket cover of {{advance_ticket_cover@FY2024}} is above the peer median of {{advance_ticket_cover.peer_median@2024}} but ranks {{advance_ticket_cover.peer_rank@2024}}, the weakest of the group."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "undrawn_facilities.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "undrawn_facilities@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "liquidity@FY2024"
+      }
+     ],
+     "text": "Committed lines: undrawn facilities fell by {{undrawn_facilities.change@FY2024}} to {{undrawn_facilities@FY2024}}, a weaker buffer even as liquidity rose to {{liquidity@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "cask_ex_fuel.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cask_ex_fuel@FY2024"
+      }
+     ],
+     "text": "Unit cost: CASK ex-fuel rose by {{cask_ex_fuel.change@FY2024}} to {{cask_ex_fuel@FY2024}}, so the margin gain rests on unit revenue rather than on cost."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "total_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "total_debt@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "fleet_age.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fleet_age@FY2024"
+      }
+     ],
+     "text": "Debt and fleet: total debt rose by {{total_debt.change@FY2024}} to {{total_debt@FY2024}} and the average fleet age by {{fleet_age.change@FY2024}} to {{fleet_age@FY2024}}, which keeps refinancing and replacement needs in view."
+    }
+   ]
+  }
+ },
+ "label": "iag_FY2024 attempt 3",
+ "recorded_at": "2026-11-03T19:52:34+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v3",
+  "provider": "deepseek",
+  "system_sha256": "edfb1150e7955bcbc1a8535f7decb6b46321d9b5f02d695c1c774bc7c5b96fe4",
+  "tool_sha256": "bf89949808c3cfaf136bca2c04e2c1fbe93c3b5950310e089cc25b70884f3a9e",
+  "user_sha256": "1549d3d42d9d77e2a13e18d2b5fe0bda709df29f24abad2923fd803a7c5edb1a"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 11237,
+  "output_tokens": 564
+ }
+}

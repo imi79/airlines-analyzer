@@ -119,25 +119,25 @@ Company type: airline. Reporting currency: GBP. Peer group: Low-cost airlines (e
 | id | what it is | prints as | computed by code |
 | --- | --- | --- | --- |
 | ebitda_margin.peer_median@2025 | EBITDA margin, median of low-cost airlines, peer year 2025 (3 companies) | 21.2% | company below peer median, worse |
-| ebitda_margin.peer_rank@2025 | EBITDA margin, rank in low-cost airlines, peer year 2025 (1st = strongest) | 3rd of 3 | weakest |
+| ebitda_margin.peer_rank@2025 | EBITDA margin, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
 | net_leverage.peer_median@2025 | Net leverage, median of low-cost airlines, peer year 2025 (3 companies) | 1.19x | company below peer median, better |
-| net_leverage.peer_rank@2025 | Net leverage, rank in low-cost airlines, peer year 2025 (1st = strongest) | 1st of 3 | best in the group |
+| net_leverage.peer_rank@2025 | Net leverage, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 1st of 3 | best in the group |
 | gross_leverage.peer_median@2025 | Gross leverage, median of low-cost airlines, peer year 2025 (3 companies) | 2.46x | company below peer median, better |
-| gross_leverage.peer_rank@2025 | Gross leverage, rank in low-cost airlines, peer year 2025 (1st = strongest) | 1st of 3 | best in the group |
+| gross_leverage.peer_rank@2025 | Gross leverage, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 1st of 3 | best in the group |
 | interest_coverage.peer_median@2025 | Interest coverage, median of low-cost airlines, peer year 2025 (3 companies) | 6.27x | company above peer median, better |
-| interest_coverage.peer_rank@2025 | Interest coverage, rank in low-cost airlines, peer year 2025 (1st = strongest) | 1st of 3 | best in the group |
+| interest_coverage.peer_rank@2025 | Interest coverage, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
 | ffo_to_debt.peer_median@2025 | FFO to debt, median of low-cost airlines, peer year 2025 (3 companies) | 35.4% | company above peer median, better |
-| ffo_to_debt.peer_rank@2025 | FFO to debt, rank in low-cost airlines, peer year 2025 (1st = strongest) | 1st of 3 | best in the group |
+| ffo_to_debt.peer_rank@2025 | FFO to debt, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
 | fcf_to_debt.peer_median@2025 | FCF to debt, median of low-cost airlines, peer year 2025 (3 companies) | 14.6% | company above peer median, better |
-| fcf_to_debt.peer_rank@2025 | FCF to debt, rank in low-cost airlines, peer year 2025 (1st = strongest) | 1st of 3 | best in the group |
+| fcf_to_debt.peer_rank@2025 | FCF to debt, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
 | capex_intensity.peer_median@2025 | Capex intensity, median of low-cost airlines, peer year 2025 (3 companies) | 9.9% | company in line with peer median |
 | cash_liquidity_to_revenue.peer_median@2025 | Cash liquidity to revenue (partial), median of low-cost airlines, peer year 2025 (3 companies) | 34.3% | company above peer median, better |
-| cash_liquidity_to_revenue.peer_rank@2025 | Cash liquidity to revenue (partial), rank in low-cost airlines, peer year 2025 (1st = strongest) | 1st of 3 | best in the group |
+| cash_liquidity_to_revenue.peer_rank@2025 | Cash liquidity to revenue (partial), rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
 | advance_ticket_cover.peer_median@2025 | Advance ticket cover, median of low-cost airlines, peer year 2025 (3 companies) | 55.1% | company in line with peer median |
-| advance_ticket_cover.peer_rank@2025 | Advance ticket cover, rank in low-cost airlines, peer year 2025 (1st = strongest) | 2nd of 3 |  |
+| advance_ticket_cover.peer_rank@2025 | Advance ticket cover, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
 | fuel_share_of_costs.peer_median@2025 | Fuel share of costs, median of low-cost airlines, peer year 2025 (3 companies) | 28.2% | company below peer median |
 | load_factor.peer_median@2025 | Load factor, median of low-cost airlines, peer year 2025 (2 companies) | 90.7% | company in line with peer median |
-| load_factor.peer_rank@2025 | Load factor, rank in low-cost airlines, peer year 2025 (1st = strongest) | 1st of 2 | best in the group |
+| load_factor.peer_rank@2025 | Load factor, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 2 | best in the group |
 
 ## Other figures
 

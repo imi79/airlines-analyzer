@@ -22,7 +22,7 @@ from tearsheet.narrative.verifier import CLAIMS, Draft, Error, Report, Verifier,
 HERE = Path(__file__).parent
 PROMPTS = HERE / "prompts"
 EXAMPLES = HERE / "examples"
-PROMPT_VERSION = "draft-v1"  # bump with every change to the prompt, examples, form or request
+PROMPT_VERSION = "draft-v3"  # bump with every change to the prompt, examples, form or request
 MAX_RETRIES = 2  # spec: up to two retries with the error list fed back
 NOT_RUN = "not drafted yet: no recorded AI answer (run `tearsheet draft`)"
 
@@ -124,7 +124,8 @@ def retry_message(
         user_message(sheet, sections, narrative),
         "# Your previous draft of these sections was rejected",
         "",
-        "Rewrite only the sections below and fix every error. The verifier's errors:",
+        "Rewrite only the sections below, each in full, and fix every error. The verifier's "
+        "errors:",
         "",
     ]
     lines += [f"- {e}" for e in errors]
@@ -237,7 +238,9 @@ def draft_commentary(
         attempt.draft, attempt.report = draft, report
         failed = [s for s in ask if report.for_section(s)]
         for s in ask:
-            outcome.sections[s] = draft.sections.get(s, [])
+            if s in draft.sections or s not in outcome.sections:
+                outcome.sections[s] = draft.sections.get(s, [])
+            # else: the AI left the section out of a retry; keep its previous version
             outcome.status[s] = "needs_manual_editing" if s in failed else "passed"
             outcome.errors[s] = report.for_section(s)
         if not failed:

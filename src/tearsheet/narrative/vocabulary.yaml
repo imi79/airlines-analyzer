@@ -39,7 +39,7 @@ directions:
     words: 'higher|above|exceed(?:s|ed|ing)?|ahead'
     claims: [up, above_peers]
   lower:
-    words: 'lower|below|behind|trail(?:s|ed|ing)?'
+    words: 'lower|below|behind|trail(?:s|ed|ing)?|lag(?:s|ged|ging)?'
     claims: [down, below_peers]
   flat:
     words: 'stable|unchanged|flat|steady|broadly\s+the\s+same|in\s+line'
@@ -54,7 +54,7 @@ directions:
     words: 'best|strongest|leading|leads'
     claims: [best_in_group]
   worst:
-    words: 'worst|weakest|bottom|laggard'
+    words: 'worst|weakest|bottom|laggard|last(?=\s+(?:in|of|among|place)\b)|(?:ranks?|ranked|ranking|comes?|came)\s+last'
     claims: [worst_in_group]
   extreme:  # lowest / highest: also checked against the metric's "higher is better" flag
     words: 'lowest|highest|smallest|largest'

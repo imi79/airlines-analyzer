@@ -19,6 +19,7 @@ import duckdb
 
 from tearsheet.config import DB_PATH, ROOT, Issuer, load_issuers
 from tearsheet.llm import LLM
+from tearsheet.narrative import score_sheet
 from tearsheet.narrative.drafting import (
     MAX_RETRIES,
     PROMPT_VERSION,
@@ -86,6 +87,7 @@ def run(
     recorded = LLM(offline=True)
     for sheet in sheets.drafted + sheets.examples:
         write_factsheet(sheet, narrative, out)
+    write_examples(sheets.examples, narrative, out)
     outcomes = []
     for sheet in sheets.drafted:
         use = llm if not only or sheet.issuer in only else recorded
@@ -94,6 +96,8 @@ def run(
         write_draft(outcome, narrative, out)
     write_summary(outcomes, out)
     write_db(outcomes, db_path)
+    if out == OUT and sum(o.drafted for o in outcomes) >= score_sheet.DRAFTS:
+        score_sheet.write(outcomes)
     return outcomes
 
 
@@ -105,6 +109,29 @@ def write_factsheet(sheet: FactSheet, narrative: dict, out: Path) -> None:
     folder.mkdir(parents=True, exist_ok=True)
     (folder / f"{sheet.key}.json").write_text(sheet.to_json())
     (folder / f"{sheet.key}.md").write_text(as_text(sheet, narrative))
+
+
+def write_examples(sheets: list[FactSheet], narrative: dict, out: Path) -> None:
+    """The two example notes as printed, for Imane to rewrite in her own words."""
+    md = [
+        "# The two example notes, as printed",
+        "",
+        "These teach the AI the house style (decision 0016). I drafted them from the fact "
+        "sheets; please rewrite them in your own words, as you would write a sell-side credit "
+        "note. Plain text is fine: edit the sentences below, keep each figure where it is, and "
+        "I will turn your text back into blanks. Files: `src/tearsheet/narrative/examples/`.",
+        "",
+    ]
+    for sheet, example in zip(sheets, load_examples(), strict=True):
+        md += [f"## {sheet.name}, {sheet.period_label}", ""]
+        rendered = sheet.rendered()
+        for name, sentences in example["sections"].items():
+            md += [f"**{narrative['sections'][name]['title']}**", ""]
+            bullet = "- " if name == "watch_items" else ""
+            md += [bullet + rendered_text(" ".join(x["text"].split()), rendered)
+                   for x in sentences]  # fmt: skip
+            md.append("")
+    (out / "example_notes.md").write_text("\n".join(md))
 
 
 def _tokens(outcome: Outcome) -> tuple[int, int]:

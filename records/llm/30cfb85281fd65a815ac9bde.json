@@ -1,0 +1,132 @@
+{
+ "answer": {
+  "sections": {
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_to_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity@FY2025"
+      }
+     ],
+     "text": "Cash generation: free cash flow fell by {{fcf.change@FY2025}} to {{fcf@FY2025}} and FCF to debt by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}}, as capex intensity rose to {{capex_intensity@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "liquidity.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "liquidity@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "liquidity_to_revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "liquidity_to_revenue@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "undrawn_facilities@FY2025"
+      }
+     ],
+     "text": "Liquidity: total liquidity fell by {{liquidity.change@FY2025}} to {{liquidity@FY2025}} and liquidity to revenue by {{liquidity_to_revenue.change@FY2025}} to {{liquidity_to_revenue@FY2025}}, with undrawn facilities down to {{undrawn_facilities@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda_margin.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "aero_revenue_per_passenger@FY2025"
+      }
+     ],
+     "text": "Margins: the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, and aeronautical revenue per passenger was flat at {{aero_revenue_per_passenger@FY2025}}, so revenue growth rests more on commercial income."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "traffic_growth.change@FY2025"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "traffic_growth@FY2025"
+      }
+     ],
+     "text": "Traffic: traffic growth slowed by {{traffic_growth.change@FY2025}} to {{traffic_growth@FY2025}}, in line with the peer median, which limits the operating leverage behind the earnings base."
+    }
+   ]
+  }
+ },
+ "label": "aena_FY2025 attempt 3",
+ "recorded_at": "2026-11-03T19:44:16+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v2",
+  "provider": "deepseek",
+  "system_sha256": "0c60f5972513fef4272a3d9d29579a36ab0c97e9ab31e32a42f8bd7022b436a7",
+  "tool_sha256": "bf89949808c3cfaf136bca2c04e2c1fbe93c3b5950310e089cc25b70884f3a9e",
+  "user_sha256": "9d5d629dceef1e4a9079432a0ffa0557f91f4874d6e031eeb6a66a08a353daa8"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 10685,
+  "output_tokens": 670
+ }
+}

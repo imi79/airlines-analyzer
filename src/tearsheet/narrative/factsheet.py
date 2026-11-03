@@ -380,7 +380,10 @@ def _peer_items(sheet, spec, metric, cur, index, ends, members) -> None:
         id=rank_id,
         metric=metric,
         kind="peer_rank",
-        label=f"{spec.label}, rank in {group} (1st = strongest)",
+        label=(
+            f"{spec.label}, rank in {group} (1st = strongest, i.e. the "
+            f"{'highest' if spec.higher_is_better else 'lowest'})"
+        ),
         unit="rank",
         value=Decimal(rank),
         rendered=render.rank_text(rank, len(values)),

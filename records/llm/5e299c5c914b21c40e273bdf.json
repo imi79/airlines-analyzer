@@ -1,0 +1,172 @@
+{
+ "answer": {
+  "sections": {
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "passengers.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "passengers@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ask.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ask@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "rpk.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "rpk@FY2025"
+      }
+     ],
+     "text": "Passengers rose by {{passengers.change@FY2025}} to {{passengers@FY2025}} on capacity up {{ask.change@FY2025}} to {{ask@FY2025}} available seat kilometres, with revenue passenger kilometres up {{rpk.change@FY2025}} to {{rpk@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "load_factor.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "load_factor@FY2025"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "load_factor.peer_rank@2025"
+      }
+     ],
+     "text": "The load factor improved by {{load_factor.change@FY2025}} to {{load_factor@FY2025}}, the highest of the low-cost peers ({{load_factor.peer_rank@2025}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "rask.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "rask@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "passenger_yield.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "passenger_yield@FY2025"
+      }
+     ],
+     "text": "Unit revenue was flat, with RASK down {{rask.change@FY2025}} to {{rask@FY2025}}, as passenger yield fell by {{passenger_yield.change@FY2025}} to {{passenger_yield@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "cask.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cask@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "cask_ex_fuel@FY2025"
+      }
+     ],
+     "text": "Unit cost improved: CASK fell by {{cask.change@FY2025}} to {{cask@FY2025}}, while CASK ex-fuel was stable at {{cask_ex_fuel@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "fleet.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fleet@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "fleet_age@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "below_peers"
+       ],
+       "id": "fuel_share_of_costs@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "fuel_share_of_costs.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fuel_share_of_costs.peer_median@2025"
+      }
+     ],
+     "text": "The fleet grew by {{fleet.change@FY2025}} to {{fleet@FY2025}} aircraft, with an average age of {{fleet_age@FY2025}}, and fuel made up {{fuel_share_of_costs@FY2025}} of costs, down {{fuel_share_of_costs.change@FY2025}} and below the peer median of {{fuel_share_of_costs.peer_median@2025}}."
+    }
+   ]
+  }
+ },
+ "label": "easyjet_FY2025 attempt 2",
+ "recorded_at": "2026-11-03T19:43:37+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v2",
+  "provider": "deepseek",
+  "system_sha256": "0c60f5972513fef4272a3d9d29579a36ab0c97e9ab31e32a42f8bd7022b436a7",
+  "tool_sha256": "d5bf2b80f4ba38f057b6f554ddd6cd3d8c55977a14c6334b970fe794a9a1a8af",
+  "user_sha256": "af7d919fa1db4cceb70d451d1a04ab47aefa048cb44f84914403377d5da421a2"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 11452,
+  "output_tokens": 835
+ }
+}

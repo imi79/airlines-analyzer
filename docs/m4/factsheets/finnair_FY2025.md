@@ -103,22 +103,22 @@ Company type: airline. Reporting currency: EUR. Peer group: Network airlines (af
 | id | what it is | prints as | computed by code |
 | --- | --- | --- | --- |
 | ebitda_margin.peer_median@2025 | EBITDA margin, median of network airlines, peer year 2025 (3 companies) | 15.3% | company below peer median, worse |
-| ebitda_margin.peer_rank@2025 | EBITDA margin, rank in network airlines, peer year 2025 (1st = strongest) | 3rd of 3 | weakest |
+| ebitda_margin.peer_rank@2025 | EBITDA margin, rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
 | net_leverage.peer_median@2025 | Net leverage, median of network airlines, peer year 2025 (3 companies) | 1.71x | company in line with peer median |
-| net_leverage.peer_rank@2025 | Net leverage, rank in network airlines, peer year 2025 (1st = strongest) | 3rd of 3 | weakest |
+| net_leverage.peer_rank@2025 | Net leverage, rank in network airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
 | gross_leverage.peer_median@2025 | Gross leverage, median of network airlines, peer year 2025 (3 companies) | 3.07x | company above peer median, worse |
-| gross_leverage.peer_rank@2025 | Gross leverage, rank in network airlines, peer year 2025 (1st = strongest) | 3rd of 3 | weakest |
+| gross_leverage.peer_rank@2025 | Gross leverage, rank in network airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
 | interest_coverage.peer_median@2025 | Interest coverage, median of network airlines, peer year 2025 (3 companies) | 8.06x | company below peer median, worse |
-| interest_coverage.peer_rank@2025 | Interest coverage, rank in network airlines, peer year 2025 (1st = strongest) | 3rd of 3 | weakest |
+| interest_coverage.peer_rank@2025 | Interest coverage, rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
 | ffo_to_debt.peer_median@2025 | FFO to debt, median of network airlines, peer year 2025 (3 companies) | 27.4% | company below peer median, worse |
-| ffo_to_debt.peer_rank@2025 | FFO to debt, rank in network airlines, peer year 2025 (1st = strongest) | 3rd of 3 | weakest |
+| ffo_to_debt.peer_rank@2025 | FFO to debt, rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
 | fcf_to_debt.peer_median@2025 | FCF to debt, median of network airlines, peer year 2025 (3 companies) | 10.8% | company in line with peer median |
-| fcf_to_debt.peer_rank@2025 | FCF to debt, rank in network airlines, peer year 2025 (1st = strongest) | 2nd of 3 |  |
+| fcf_to_debt.peer_rank@2025 | FCF to debt, rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
 | capex_intensity.peer_median@2025 | Capex intensity, median of network airlines, peer year 2025 (3 companies) | 10.4% | company below peer median |
 | cash_liquidity_to_revenue.peer_median@2025 | Cash liquidity to revenue (partial), median of network airlines, peer year 2025 (3 companies) | 25.0% | company above peer median, better |
-| cash_liquidity_to_revenue.peer_rank@2025 | Cash liquidity to revenue (partial), rank in network airlines, peer year 2025 (1st = strongest) | 1st of 3 | best in the group |
+| cash_liquidity_to_revenue.peer_rank@2025 | Cash liquidity to revenue (partial), rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
 | advance_ticket_cover.peer_median@2025 | Advance ticket cover, median of network airlines, peer year 2025 (3 companies) | 67.4% | company in line with peer median |
-| advance_ticket_cover.peer_rank@2025 | Advance ticket cover, rank in network airlines, peer year 2025 (1st = strongest) | 2nd of 3 |  |
+| advance_ticket_cover.peer_rank@2025 | Advance ticket cover, rank in network airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
 | fuel_share_of_costs.peer_median@2025 | Fuel share of costs, median of network airlines, peer year 2025 (2 companies) | 27.0% | company above peer median |
 
 ## Other figures

@@ -1,0 +1,181 @@
+{
+ "answer": {
+  "sections": {
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "passengers.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "passengers@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2024"
+      }
+     ],
+     "text": "Passengers rose by {{passengers.change@FY2024}} to {{passengers@FY2024}}, while revenue grew by {{revenue.change@FY2024}} to {{revenue@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "fleet@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fleet_age@FY2023"
+      }
+     ],
+     "text": "The fleet was flat at {{fleet@FY2024}} aircraft, with an average age of {{fleet_age@FY2023}} in the prior year."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "above_peers"
+       ],
+       "id": "fuel_share_of_costs@FY2024"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "fuel_share_of_costs.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fuel_share_of_costs.peer_median@2024"
+      }
+     ],
+     "text": "Fuel made up {{fuel_share_of_costs@FY2024}} of costs, down by {{fuel_share_of_costs.change@FY2024}} but above the peer median of {{fuel_share_of_costs.peer_median@2024}}."
+    }
+   ],
+   "snapshot": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2024"
+      }
+     ],
+     "text": "Finnair, the Finnish network carrier, ended FY2024 with a weaker credit profile as EBITDA fell by {{ebitda.change@FY2024}} to {{ebitda@FY2024}} while revenue grew by {{revenue.change@FY2024}} to {{revenue@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "net_leverage.change@FY2024"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "net_leverage@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage.peer_median@2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda_margin.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2024"
+      }
+     ],
+     "text": "Net leverage rose by {{net_leverage.change@FY2024}} to {{net_leverage@FY2024}}, above the peer median of {{net_leverage.peer_median@2024}}, as the EBITDA margin narrowed by {{ebitda_margin.change@FY2024}} to {{ebitda_margin@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2024"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover@FY2024"
+      }
+     ],
+     "text": "The main point to watch is liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, in line with the peer median, while advance ticket cover rose by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}."
+    }
+   ]
+  }
+ },
+ "label": "finnair_FY2024 attempt 2",
+ "recorded_at": "2026-11-03T19:46:15+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v2",
+  "provider": "deepseek",
+  "system_sha256": "0c60f5972513fef4272a3d9d29579a36ab0c97e9ab31e32a42f8bd7022b436a7",
+  "tool_sha256": "c1c1f3b05f1ba33608d9c34341041c0711b5320142d72c6a119d1728b7dc9df1",
+  "user_sha256": "fba889ffec0270a42a5b1829307646ec602f7c7fd46464f531655cb5a4f7c4c1"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 11142,
+  "output_tokens": 940
+ }
+}

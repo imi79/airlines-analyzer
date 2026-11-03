@@ -63,10 +63,19 @@ measure of the final code.
 
 ## M4 · Drafting and verifier
 
-Branch: `m4-drafting-verifier`. Plan: `docs/m4/plan.md`. **Status: plan approved by Imane on
-2026-11-03; building starts in a fresh session.**
+Branch: `m4-drafting-verifier`. Plan: `docs/m4/plan.md`. Run: `uv run tearsheet all --offline`
+(replays the recorded drafts; `uv run tearsheet draft` asks the AI for drafts not yet
+recorded). Results: `docs/m4/`. Walkthrough: `docs/m4/walkthrough.md`. Decision 0016.
+**Status: in progress; gate 2 passed, waiting for Imane's scores and example notes; the M3
+carry-over is next.**
 
-- [ ] Adversarial suite 100% rejected
-- [ ] Ten consecutive drafts across issuers with zero unreferenced numbers (gate 2)
-- [ ] Commentary score of 4 or more
-- Tracked, not a gate (decision 0015): extraction 80% verified on a fresh blind set
+- [x] Adversarial suite 100% rejected: 43 of 43 faulty sentences, each for its rule; 13
+      correct but risky sentences and a full correct draft pass (`tests/test_adversarial.py`)
+- [x] Ten consecutive drafts across issuers with zero unreferenced numbers (gate 2): drafts 1
+      to 10 pass the verifier after retries (all nine companies); 17 of 18 overall, 3 at the
+      first try; no number outside a blank in any final draft (`docs/m4/drafts.md`). Prompt
+      `draft-v3`, about 1.3 million tokens over three versions (decision 0016)
+- [ ] Commentary score of 4 or more: score sheet ready (`docs/m4/score_sheet.xlsx`)
+- Example notes drafted for Imane to rewrite (`docs/m4/example_notes.md`)
+- Tracked, not a gate (decision 0015): extraction 80% verified on a fresh blind set (not
+  started)

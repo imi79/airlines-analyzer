@@ -142,6 +142,32 @@ faulty:
     rule: "4"
     text: FCF to debt is the highest in the group ({{fcf_to_debt.peer_rank@2025}}).
     facts: [{id: fcf_to_debt.peer_rank@2025, claims: [worst_in_group]}]
+  - name: highest for a first rank where lower is better (seen in the first live run)
+    rule: "4"
+    text: >-
+      Advance ticket cover ranks {{advance_ticket_cover.peer_rank@2025}}, the highest in the
+      group.
+    facts: [{id: advance_ticket_cover.peer_rank@2025, claims: [best_in_group]}]
+  - name: a peer word resting on another metric's claim
+    rule: "4"
+    text: >-
+      FCF to debt rose to {{fcf_to_debt@FY2025}}, and capex intensity is below the median of
+      {{capex_intensity.peer_median@2025}}.
+    facts:
+      - {id: fcf_to_debt@FY2025, claims: [up, below_peers]}
+      - {id: capex_intensity.peer_median@2025}
+  - name: a false movement hidden in a conditional clause with a blank
+    rule: "4"
+    text: Net leverage rose to {{net_leverage@FY2025}} if leases are included.
+    facts: [{id: net_leverage@FY2025, claims: [down]}]
+  - name: last place claimed when the rank is 2nd
+    rule: "3"
+    text: Net leverage ranks last in the group ({{net_leverage.peer_rank@2025}}).
+    facts: [{id: net_leverage.peer_rank@2025, claims: [worst_in_group]}]
+  - name: last place written without its claim
+    rule: "4"
+    text: FCF to debt comes last among the peers ({{fcf_to_debt.peer_rank@2025}}).
+    facts: [{id: fcf_to_debt.peer_rank@2025}]
   - name: weakened against a correct better claim
     rule: "4"
     text: Interest coverage weakened to {{interest_coverage@FY2025}}.
@@ -229,3 +255,19 @@ correct:
       - {id: contract_liabilities@FY2025}
       - {id: contract_liabilities.change@FY2025, claims: [up]}
       - {id: advance_ticket_cover@FY2025, claims: [up, worse]}
+  - text: >-
+      Free cash flow turned positive at {{fcf@FY2025}}, taking FCF to debt up by
+      {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}}, still below the peer median of
+      {{fcf_to_debt.peer_median@2025}}.
+    facts:
+      - {id: fcf@FY2025, claims: [up, better]}
+      - {id: fcf_to_debt.change@FY2025, claims: [up, better]}
+      - {id: fcf_to_debt@FY2025, claims: [below_peers]}
+      - {id: fcf_to_debt.peer_median@2025}
+  - text: >-
+      Net leverage of {{net_leverage@FY2025}} leaves headroom, but it would rise quickly if
+      EBITDA fell back.
+    facts: [{id: net_leverage@FY2025}]
+  - text: >-
+      The fleet stood at {{fleet@FY2024}} aircraft at the last reported count, in FY2024.
+    facts: [{id: fleet@FY2024}]

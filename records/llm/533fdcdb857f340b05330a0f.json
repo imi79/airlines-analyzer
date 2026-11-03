@@ -1,0 +1,198 @@
+{
+ "answer": {
+  "sections": {
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "passengers.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "passengers@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "fleet.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fleet@FY2024"
+      }
+     ],
+     "text": "Passengers rose by {{passengers.change@FY2024}} to {{passengers@FY2024}}, while the fleet grew by {{fleet.change@FY2024}} to {{fleet@FY2024}} aircraft."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "fleet_age@FY2024"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "fleet_age.change@FY2024"
+      }
+     ],
+     "text": "The fleet average age was steady at {{fleet_age@FY2024}}, a change of {{fleet_age.change@FY2024}} on the prior year."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "passengers@FY2024"
+      }
+     ],
+     "text": "Revenue rose by {{revenue.change@FY2024}} to {{revenue@FY2024}} on {{passengers@FY2024}} passengers, so unit revenue per passenger remains the measure to watch as capacity expands."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_to_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "fcf_to_debt.peer_rank@2024"
+      }
+     ],
+     "text": "Cash generation: free cash flow of {{fcf@FY2024}} turned negative and FCF to debt fell by {{fcf_to_debt.change@FY2024}} to {{fcf_to_debt@FY2024}}, the weakest of the peers ({{fcf_to_debt.peer_rank@2024}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_debt@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "net_leverage.change@FY2024"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "net_leverage@FY2024"
+      }
+     ],
+     "text": "Leverage: net debt rose by {{net_debt.change@FY2024}} to {{net_debt@FY2024}}, taking net leverage up by {{net_leverage.change@FY2024}} to {{net_leverage@FY2024}}, in line with the peer median."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue.peer_median@2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "cash_liquidity_to_revenue.peer_rank@2024"
+      }
+     ],
+     "text": "Liquidity: cash liquidity to revenue of {{cash_liquidity_to_revenue@FY2024}} is below the peer median of {{cash_liquidity_to_revenue.peer_median@2024}}, the weakest of the group ({{cash_liquidity_to_revenue.peer_rank@2024}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "interest_coverage.change@FY2024"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "interest_coverage@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "interest_coverage.peer_median@2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "total_debt.change@FY2024"
+      }
+     ],
+     "text": "Coverage: interest coverage fell by {{interest_coverage.change@FY2024}} to {{interest_coverage@FY2024}}, below the peer median of {{interest_coverage.peer_median@2024}}, as total debt rose by {{total_debt.change@FY2024}}."
+    }
+   ]
+  }
+ },
+ "label": "afkl_FY2024 attempt 3",
+ "recorded_at": "2026-11-03T19:41:03+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v1",
+  "provider": "deepseek",
+  "system_sha256": "3349b803951bf158a8de6739e9fbede565f2d52d886a12125d427a88a41eb0f5",
+  "tool_sha256": "6adf3654168ad92a5d74865ea0c312a605f7549fbc07fb3bf6ebfc92ea543025",
+  "user_sha256": "ea25737dff83cbd219de5ee123dd1be99b095f19010f3229633fc051afc7b8aa"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 10967,
+  "output_tokens": 1023
+ }
+}

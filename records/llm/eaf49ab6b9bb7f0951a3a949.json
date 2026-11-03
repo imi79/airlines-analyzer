@@ -1,0 +1,128 @@
+{
+ "answer": {
+  "sections": {
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_to_debt.change@FY2024"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "fcf_to_debt@FY2024"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "capex_intensity@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity.peer_median@2024"
+      }
+     ],
+     "text": "Cash generation: FCF to debt fell by {{fcf_to_debt.change@FY2024}} to {{fcf_to_debt@FY2024}}, only in line with the peer median, as capex intensity of {{capex_intensity@FY2024}} sits above the median of {{capex_intensity.peer_median@2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "cask_ex_fuel.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cask_ex_fuel@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "rask.change@FY2024"
+      }
+     ],
+     "text": "Unit costs: CASK ex-fuel rose by {{cask_ex_fuel.change@FY2024}} to {{cask_ex_fuel@FY2024}}, outpacing the RASK increase of {{rask.change@FY2024}}, which leaves the margin exposed if unit revenue stalls."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "ebitda_margin@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@2024"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "load_factor@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "load_factor.peer_median@2024"
+      }
+     ],
+     "text": "Profitability: the EBITDA margin of {{ebitda_margin@FY2024}} ranks {{ebitda_margin.peer_rank@2024}} against a peer median of {{ebitda_margin.peer_median@2024}}, and the load factor of {{load_factor@FY2024}} is below the median of {{load_factor.peer_median@2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "contract_liabilities.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      }
+     ],
+     "text": "Customer prepayments: contract liabilities of {{contract_liabilities@FY2024}} rose by {{contract_liabilities.change@FY2024}}, so a slowdown in bookings would reduce the cash buffer that supports liquidity of {{cash_like@FY2024}}."
+    }
+   ]
+  }
+ },
+ "label": "easyjet_FY2024 attempt 3",
+ "recorded_at": "2026-11-03T19:46:35+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v2",
+  "provider": "deepseek",
+  "system_sha256": "0c60f5972513fef4272a3d9d29579a36ab0c97e9ab31e32a42f8bd7022b436a7",
+  "tool_sha256": "bf89949808c3cfaf136bca2c04e2c1fbe93c3b5950310e089cc25b70884f3a9e",
+  "user_sha256": "95c23470eb49da102c50014b872ccaf037a2a42980ed382075211e8fcbe8fb0d"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 11407,
+  "output_tokens": 695
+ }
+}

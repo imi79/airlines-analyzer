@@ -110,22 +110,22 @@ Company type: airline. Reporting currency: EUR. Peer group: Network airlines (af
 | id | what it is | prints as | computed by code |
 | --- | --- | --- | --- |
 | ebitda_margin.peer_median@2023 | EBITDA margin, median of network airlines, peer year 2023 (3 companies) | 18.0% | company above peer median, better |
-| ebitda_margin.peer_rank@2023 | EBITDA margin, rank in network airlines, peer year 2023 (1st = strongest) | 1st of 3 | best in the group |
+| ebitda_margin.peer_rank@2023 | EBITDA margin, rank in network airlines, peer year 2023 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
 | net_leverage.peer_median@2023 | Net leverage, median of network airlines, peer year 2023 (3 companies) | 1.66x | company in line with peer median |
-| net_leverage.peer_rank@2023 | Net leverage, rank in network airlines, peer year 2023 (1st = strongest) | 2nd of 3 |  |
+| net_leverage.peer_rank@2023 | Net leverage, rank in network airlines, peer year 2023 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
 | gross_leverage.peer_median@2023 | Gross leverage, median of network airlines, peer year 2023 (3 companies) | 3.27x | company below peer median, better |
-| gross_leverage.peer_rank@2023 | Gross leverage, rank in network airlines, peer year 2023 (1st = strongest) | 1st of 3 | best in the group |
+| gross_leverage.peer_rank@2023 | Gross leverage, rank in network airlines, peer year 2023 (1st = strongest, i.e. the lowest) | 1st of 3 | best in the group |
 | interest_coverage.peer_median@2023 | Interest coverage, median of network airlines, peer year 2023 (3 companies) | 5.54x | company in line with peer median |
-| interest_coverage.peer_rank@2023 | Interest coverage, rank in network airlines, peer year 2023 (1st = strongest) | 2nd of 3 |  |
+| interest_coverage.peer_rank@2023 | Interest coverage, rank in network airlines, peer year 2023 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
 | ffo_to_debt.peer_median@2023 | FFO to debt, median of network airlines, peer year 2023 (3 companies) | 24.6% | company above peer median, better |
-| ffo_to_debt.peer_rank@2023 | FFO to debt, rank in network airlines, peer year 2023 (1st = strongest) | 1st of 3 | best in the group |
+| ffo_to_debt.peer_rank@2023 | FFO to debt, rank in network airlines, peer year 2023 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
 | fcf_to_debt.peer_median@2023 | FCF to debt, median of network airlines, peer year 2023 (3 companies) | 3.4% | company above peer median, better |
-| fcf_to_debt.peer_rank@2023 | FCF to debt, rank in network airlines, peer year 2023 (1st = strongest) | 1st of 3 | best in the group |
+| fcf_to_debt.peer_rank@2023 | FCF to debt, rank in network airlines, peer year 2023 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
 | capex_intensity.peer_median@2023 | Capex intensity, median of network airlines, peer year 2023 (3 companies) | 11.8% | company below peer median |
 | cash_liquidity_to_revenue.peer_median@2023 | Cash liquidity to revenue (partial), median of network airlines, peer year 2023 (3 companies) | 27.5% | company below peer median, worse |
-| cash_liquidity_to_revenue.peer_rank@2023 | Cash liquidity to revenue (partial), rank in network airlines, peer year 2023 (1st = strongest) | 3rd of 3 | weakest |
+| cash_liquidity_to_revenue.peer_rank@2023 | Cash liquidity to revenue (partial), rank in network airlines, peer year 2023 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
 | advance_ticket_cover.peer_median@2023 | Advance ticket cover, median of network airlines, peer year 2023 (3 companies) | 55.0% | company above peer median, worse |
-| advance_ticket_cover.peer_rank@2023 | Advance ticket cover, rank in network airlines, peer year 2023 (1st = strongest) | 3rd of 3 | weakest |
+| advance_ticket_cover.peer_rank@2023 | Advance ticket cover, rank in network airlines, peer year 2023 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
 | fuel_share_of_costs.peer_median@2023 | Fuel share of costs, median of network airlines, peer year 2023 (2 companies) | 30.6% | company below peer median |
 
 ## Other figures

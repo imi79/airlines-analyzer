@@ -85,22 +85,22 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | id | what it is | prints as | computed by code |
 | --- | --- | --- | --- |
 | ebitda_margin.peer_median@2025 | EBITDA margin, median of airports, peer year 2025 (3 companies) | 36.5% | company below peer median, worse |
-| ebitda_margin.peer_rank@2025 | EBITDA margin, rank in airports, peer year 2025 (1st = strongest) | 3rd of 3 | weakest |
+| ebitda_margin.peer_rank@2025 | EBITDA margin, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
 | net_leverage.peer_median@2025 | Net leverage, median of airports, peer year 2025 (3 companies) | 1.46x | company above peer median, worse |
-| net_leverage.peer_rank@2025 | Net leverage, rank in airports, peer year 2025 (1st = strongest) | 3rd of 3 | weakest |
+| net_leverage.peer_rank@2025 | Net leverage, rank in airports, peer year 2025 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
 | gross_leverage.peer_median@2025 | Gross leverage, median of airports, peer year 2025 (3 companies) | 2.00x | company above peer median, worse |
-| gross_leverage.peer_rank@2025 | Gross leverage, rank in airports, peer year 2025 (1st = strongest) | 3rd of 3 | weakest |
+| gross_leverage.peer_rank@2025 | Gross leverage, rank in airports, peer year 2025 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
 | interest_coverage.peer_median@2025 | Interest coverage, median of airports, peer year 2025 (3 companies) | 14.72x | company below peer median, worse |
-| interest_coverage.peer_rank@2025 | Interest coverage, rank in airports, peer year 2025 (1st = strongest) | 3rd of 3 | weakest |
+| interest_coverage.peer_rank@2025 | Interest coverage, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
 | ffo_to_debt.peer_median@2025 | FFO to debt, median of airports, peer year 2025 (3 companies) | 39.6% | company below peer median, worse |
-| ffo_to_debt.peer_rank@2025 | FFO to debt, rank in airports, peer year 2025 (1st = strongest) | 3rd of 3 | weakest |
+| ffo_to_debt.peer_rank@2025 | FFO to debt, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
 | fcf_to_debt.peer_median@2025 | FCF to debt, median of airports, peer year 2025 (3 companies) | 22.9% | company below peer median, worse |
-| fcf_to_debt.peer_rank@2025 | FCF to debt, rank in airports, peer year 2025 (1st = strongest) | 3rd of 3 | weakest |
+| fcf_to_debt.peer_rank@2025 | FCF to debt, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
 | capex_intensity.peer_median@2025 | Capex intensity, median of airports, peer year 2025 (3 companies) | 18.2% | company in line with peer median |
 | cash_liquidity_to_revenue.peer_median@2025 | Cash liquidity to revenue (partial), median of airports, peer year 2025 (3 companies) | 30.1% | company in line with peer median |
-| cash_liquidity_to_revenue.peer_rank@2025 | Cash liquidity to revenue (partial), rank in airports, peer year 2025 (1st = strongest) | 2nd of 3 |  |
+| cash_liquidity_to_revenue.peer_rank@2025 | Cash liquidity to revenue (partial), rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
 | traffic_growth.peer_median@2025 | Traffic growth, median of airports, peer year 2025 (3 companies) | 3.5% | company in line with peer median |
-| traffic_growth.peer_rank@2025 | Traffic growth, rank in airports, peer year 2025 (1st = strongest) | 2nd of 3 |  |
+| traffic_growth.peer_rank@2025 | Traffic growth, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
 
 ## Other figures
 

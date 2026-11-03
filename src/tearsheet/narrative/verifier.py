@@ -8,7 +8,9 @@ A sentence is rejected if it breaks any of the five rules of the M4 plan:
 2. a blank whose id is not in the fact sheet, or points to a figure that is not available;
 3. a claimed direction that contradicts the one computed by code;
 4. a direction word in the prose ("rose", "improved", "lowest") not backed by a matching
-   claim on a figure of the same clause, so the form and the sentence cannot disagree;
+   claim on a figure of the same clause, so the form and the sentence cannot disagree (a
+   clause with no blank that states a scenario, "if bookings slow", is not a statement about
+   a reported figure and is not read);
 5. ids listed in the form that the sentence doesn't use, or the reverse.
 
 Plus the form itself ("form"): every section present, with the number of sentences the
@@ -42,6 +44,7 @@ CLAIMS = (
     "worst_in_group",
 )
 YEAR = r"(?:201[5-9]|202\d|203[0-5])"
+HYPOTHETICAL = re.compile(r"\b(?:if|unless|would|could|might|should)\b", re.I)
 CLAUSE_BREAK = re.compile(  # brackets don't split: "(rank)" belongs to its clause
     r"[,;:\u2013\u2014]|\b(?:while|whereas|but|although|though|and|yet)\b", re.I
 )
@@ -277,26 +280,51 @@ class Verifier:
 
     # --- rule 4
     def direction_words(self, sheet: FactSheet, s: Sentence) -> list[str]:
+        """Each direction word must be backed by a matching claim on a figure of its clause.
+        A clause's figures include the sentence's other figures for the same metric: in
+        "FCF to debt rose to {{a}}, below the median of {{b}}", "below" may rest on {{a}}."""
         claims = {r.id: set(r.claims) for r in s.facts}
-        text = PLACEHOLDER.sub(lambda m: f" ⟦{m.group(1)}⟧ ", s.text)
+        text = PLACEHOLDER.sub(lambda m: f" \u27e6{m.group(1)}\u27e7 ", s.text)
         text = self.ignored.sub(" ", text)
         out = []
         for clause in _clauses(text):
-            ids = re.findall(r"⟦([^⟧]*)⟧", clause)
-            scope = ids or list(claims)
-            words_text = re.sub(r"⟦[^⟧]*⟧", " ", clause)
+            ids = re.findall(r"\u27e6([^\u27e7]*)\u27e7", clause)
+            if not ids and HYPOTHETICAL.search(clause):
+                continue  # "if bookings slow": a scenario, not a statement about a figure
+            metrics = {_metric(sheet, fid) for fid in ids}
+            scope = [f for f in claims if f in ids or _metric(sheet, f) in metrics] or list(claims)
+            words_text = re.sub(r"\u27e6[^\u27e7]*\u27e7", " ", clause)
             for name, (pattern, backing) in self.directions.items():
                 for word in pattern.findall(words_text):
-                    ok = [
-                        fid
-                        for fid in scope
-                        if claims.get(fid, set()) & set(backing)
-                        and (name != "extreme" or _extreme_ok(sheet, fid, word, claims[fid]))
-                    ]
-                    if not ok:
+                    backed = [f for f in scope if claims.get(f, set()) & set(backing)]
+                    if name == "extreme":
+                        fits = [f for f in backed if _extreme_ok(sheet, f, word, claims[f])]
+                        if backed and not fits:
+                            out.append(_extreme_message(sheet, backed[0], word))
+                            continue
+                        backed = fits
+                    if not backed:
                         need = " or ".join(f"'{c}'" for c in backing)
                         out.append(f"'{word}' needs a {need} claim on a figure in the same clause")
         return out
+
+
+def _metric(sheet: FactSheet, fid: str) -> str:
+    item = sheet.items.get(fid)
+    return item.metric if item else fid.split("@")[0].split(".")[0]
+
+
+def _extreme_message(sheet: FactSheet, fid: str, word: str) -> str:
+    item = sheet.items.get(fid)
+    better = sheet.higher_is_better.get(item.metric) if item else None
+    if item is None or better is None:
+        return f"'{word}' cannot be checked on {fid}"
+    rule = "higher is better" if better else "lower is better"
+    side = "highest" if better else "lowest"
+    return (
+        f"'{word}' does not fit {fid} ({item.rendered}): for {sheet.labels.get(item.metric)} "
+        f"{rule}, so 1st is the {side}"
+    )
 
 
 def _clauses(text: str) -> list[str]:

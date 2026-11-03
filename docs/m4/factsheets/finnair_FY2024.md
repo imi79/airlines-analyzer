@@ -97,22 +97,22 @@ Company type: airline. Reporting currency: EUR. Peer group: Network airlines (af
 | id | what it is | prints as | computed by code |
 | --- | --- | --- | --- |
 | ebitda_margin.peer_median@2024 | EBITDA margin, median of network airlines, peer year 2024 (3 companies) | 14.6% | company in line with peer median |
-| ebitda_margin.peer_rank@2024 | EBITDA margin, rank in network airlines, peer year 2024 (1st = strongest) | 2nd of 3 |  |
+| ebitda_margin.peer_rank@2024 | EBITDA margin, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
 | net_leverage.peer_median@2024 | Net leverage, median of network airlines, peer year 2024 (3 companies) | 1.88x | company above peer median, worse |
-| net_leverage.peer_rank@2024 | Net leverage, rank in network airlines, peer year 2024 (1st = strongest) | 3rd of 3 | weakest |
+| net_leverage.peer_rank@2024 | Net leverage, rank in network airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
 | gross_leverage.peer_median@2024 | Gross leverage, median of network airlines, peer year 2024 (3 companies) | 3.56x | company above peer median, worse |
-| gross_leverage.peer_rank@2024 | Gross leverage, rank in network airlines, peer year 2024 (1st = strongest) | 3rd of 3 | weakest |
+| gross_leverage.peer_rank@2024 | Gross leverage, rank in network airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
 | interest_coverage.peer_median@2024 | Interest coverage, median of network airlines, peer year 2024 (3 companies) | 8.70x | company above peer median, better |
-| interest_coverage.peer_rank@2024 | Interest coverage, rank in network airlines, peer year 2024 (1st = strongest) | 1st of 3 | best in the group |
+| interest_coverage.peer_rank@2024 | Interest coverage, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
 | ffo_to_debt.peer_median@2024 | FFO to debt, median of network airlines, peer year 2024 (3 companies) | 23.4% | company below peer median, worse |
-| ffo_to_debt.peer_rank@2024 | FFO to debt, rank in network airlines, peer year 2024 (1st = strongest) | 3rd of 3 | weakest |
+| ffo_to_debt.peer_rank@2024 | FFO to debt, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
 | fcf_to_debt.peer_median@2024 | FCF to debt, median of network airlines, peer year 2024 (3 companies) | 20.3% | company in line with peer median |
-| fcf_to_debt.peer_rank@2024 | FCF to debt, rank in network airlines, peer year 2024 (1st = strongest) | 2nd of 3 |  |
+| fcf_to_debt.peer_rank@2024 | FCF to debt, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
 | capex_intensity.peer_median@2024 | Capex intensity, median of network airlines, peer year 2024 (3 companies) | 8.8% | company below peer median |
 | cash_liquidity_to_revenue.peer_median@2024 | Cash liquidity to revenue (partial), median of network airlines, peer year 2024 (3 companies) | 29.0% | company in line with peer median |
-| cash_liquidity_to_revenue.peer_rank@2024 | Cash liquidity to revenue (partial), rank in network airlines, peer year 2024 (1st = strongest) | 2nd of 3 |  |
+| cash_liquidity_to_revenue.peer_rank@2024 | Cash liquidity to revenue (partial), rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
 | advance_ticket_cover.peer_median@2024 | Advance ticket cover, median of network airlines, peer year 2024 (3 companies) | 74.5% | company in line with peer median |
-| advance_ticket_cover.peer_rank@2024 | Advance ticket cover, rank in network airlines, peer year 2024 (1st = strongest) | 2nd of 3 |  |
+| advance_ticket_cover.peer_rank@2024 | Advance ticket cover, rank in network airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
 | fuel_share_of_costs.peer_median@2024 | Fuel share of costs, median of network airlines, peer year 2024 (2 companies) | 28.9% | company above peer median |
 
 ## Other figures

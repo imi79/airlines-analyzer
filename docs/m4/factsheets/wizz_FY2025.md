@@ -115,25 +115,25 @@ Company type: airline. Reporting currency: EUR. Peer group: Low-cost airlines (e
 | id | what it is | prints as | computed by code |
 | --- | --- | --- | --- |
 | ebitda_margin.peer_median@2024 | EBITDA margin, median of low-cost airlines, peer year 2024 (3 companies) | 18.9% | company above peer median, better |
-| ebitda_margin.peer_rank@2024 | EBITDA margin, rank in low-cost airlines, peer year 2024 (1st = strongest) | 1st of 3 | best in the group |
+| ebitda_margin.peer_rank@2024 | EBITDA margin, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
 | net_leverage.peer_median@2024 | Net leverage, median of low-cost airlines, peer year 2024 (3 companies) | 0.78x | company above peer median, worse |
-| net_leverage.peer_rank@2024 | Net leverage, rank in low-cost airlines, peer year 2024 (1st = strongest) | 3rd of 3 | weakest |
+| net_leverage.peer_rank@2024 | Net leverage, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
 | gross_leverage.peer_median@2024 | Gross leverage, median of low-cost airlines, peer year 2024 (3 companies) | 2.41x | company above peer median, worse |
-| gross_leverage.peer_rank@2024 | Gross leverage, rank in low-cost airlines, peer year 2024 (1st = strongest) | 3rd of 3 | weakest |
+| gross_leverage.peer_rank@2024 | Gross leverage, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
 | interest_coverage.peer_median@2024 | Interest coverage, median of low-cost airlines, peer year 2024 (3 companies) | 5.89x | company below peer median, worse |
-| interest_coverage.peer_rank@2024 | Interest coverage, rank in low-cost airlines, peer year 2024 (1st = strongest) | 3rd of 3 | weakest |
+| interest_coverage.peer_rank@2024 | Interest coverage, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
 | ffo_to_debt.peer_median@2024 | FFO to debt, median of low-cost airlines, peer year 2024 (3 companies) | 35.6% | company below peer median, worse |
-| ffo_to_debt.peer_rank@2024 | FFO to debt, rank in low-cost airlines, peer year 2024 (1st = strongest) | 3rd of 3 | weakest |
+| ffo_to_debt.peer_rank@2024 | FFO to debt, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
 | fcf_to_debt.peer_median@2024 | FCF to debt, median of low-cost airlines, peer year 2024 (3 companies) | 16.3% | company below peer median, worse |
-| fcf_to_debt.peer_rank@2024 | FCF to debt, rank in low-cost airlines, peer year 2024 (1st = strongest) | 3rd of 3 | weakest |
+| fcf_to_debt.peer_rank@2024 | FCF to debt, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
 | capex_intensity.peer_median@2024 | Capex intensity, median of low-cost airlines, peer year 2024 (3 companies) | 5.4% | company in line with peer median |
 | cash_liquidity_to_revenue.peer_median@2024 | Cash liquidity to revenue (partial), median of low-cost airlines, peer year 2024 (3 companies) | 33.0% | company in line with peer median |
-| cash_liquidity_to_revenue.peer_rank@2024 | Cash liquidity to revenue (partial), rank in low-cost airlines, peer year 2024 (1st = strongest) | 2nd of 3 |  |
+| cash_liquidity_to_revenue.peer_rank@2024 | Cash liquidity to revenue (partial), rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
 | advance_ticket_cover.peer_median@2024 | Advance ticket cover, median of low-cost airlines, peer year 2024 (3 companies) | 50.2% | company above peer median, worse |
-| advance_ticket_cover.peer_rank@2024 | Advance ticket cover, rank in low-cost airlines, peer year 2024 (1st = strongest) | 3rd of 3 | weakest |
+| advance_ticket_cover.peer_rank@2024 | Advance ticket cover, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
 | fuel_share_of_costs.peer_median@2024 | Fuel share of costs, median of low-cost airlines, peer year 2024 (3 companies) | 28.0% | company above peer median |
 | load_factor.peer_median@2024 | Load factor, median of low-cost airlines, peer year 2024 (2 companies) | 90.3% | company above peer median, better |
-| load_factor.peer_rank@2024 | Load factor, rank in low-cost airlines, peer year 2024 (1st = strongest) | 1st of 2 | best in the group |
+| load_factor.peer_rank@2024 | Load factor, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 1st of 2 | best in the group |
 
 ## Other figures
 
