@@ -60,3 +60,13 @@ measure of the final code.
 - Three runs on all nine companies (prompts `extract-v1`, `-v2`, `-v3`), 41 reports each,
   about 500,000 tokens per run; reports use v3: 228 figures, 178 verified. Undrawn facilities
   are general-purpose only (decision 0015). Check changes in decisions 0013 and 0014
+
+## M4 · Drafting and verifier
+
+Branch: `m4-drafting-verifier`. Plan: `docs/m4/plan.md`. **Status: plan proposed, waiting for
+Imane's approval.**
+
+- [ ] Adversarial suite 100% rejected
+- [ ] Ten consecutive drafts across issuers with zero unreferenced numbers (gate 2)
+- [ ] Commentary score of 4 or more
+- Tracked, not a gate (decision 0015): extraction 80% verified on a fresh blind set
