@@ -63,8 +63,8 @@ measure of the final code.
 
 ## M4 · Drafting and verifier
 
-Branch: `m4-drafting-verifier`. Plan: `docs/m4/plan.md`. **Status: plan proposed, waiting for
-Imane's approval.**
+Branch: `m4-drafting-verifier`. Plan: `docs/m4/plan.md`. **Status: plan approved by Imane on
+2026-11-03; building starts in a fresh session.**
 
 - [ ] Adversarial suite 100% rejected
 - [ ] Ten consecutive drafts across issuers with zero unreferenced numbers (gate 2)

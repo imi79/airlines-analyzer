@@ -1,6 +1,10 @@
 # M4 plan: the AI drafts the commentary, code writes every number
 
-Status: **proposed, waiting for Imane's approval** (2026-11-03). No M4 code is written until then.
+Status: **approved by Imane** (2026-11-03), with every recommendation below: 1. I draft the two
+example notes from the fact sheets, for Imane to rewrite in her own words; 2. English only;
+3. the "flat" thresholds as proposed; 4. gate 2 counts a draft after the AI's two retries, with
+the first-try rate reported; 5. the extraction v4 round is part of M4. Building starts in a
+fresh session (one milestone per session).
 
 ## What M4 is for
 
