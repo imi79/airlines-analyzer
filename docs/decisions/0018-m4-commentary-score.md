@@ -286,3 +286,14 @@ off: each redraft fixes some sentences and loses others. What separates it from 
   passengers.
 
 Tokens: about 8.4 million for M4 AI calls in all.
+
+## M4 closed on the safety result
+
+Imane closed M4 on 2026-11-09 ("close M4 at 3.78 on the safety result"), as she did for M3 and
+for the extraction goal. The commentary score of 4 is not met (3.78); the safety result holds:
+every figure on the page comes from a verified fact, no number written by the AI ever reached
+a final draft, every direction is checked against the computed one, and a sentence that still
+breaks a rule after two retries is removed or its section flagged. What separates 3.78 from 4
+is writing quality the analyst edits in the app (M5): causal links in words ("as" where
+"despite" was meant), peer sentences that list ranks, ADP's event summaries. The causal check
+described above is the first improvement to consider later.

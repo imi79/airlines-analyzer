@@ -206,6 +206,11 @@ redraft fixes some sentences and loses others.
    moves that oppose, for pairs with a known effect such as depreciation on operating
    profit) and redraft once more (about 800,000 tokens).
 
+## Closed
+
+You closed M4 on 2026-11-09 at 3.78 on the safety result (decision 0018). Gate 2 passed; the
+adversarial suite is rejected in full; the commentary is ready to be edited in the app (M5).
+
 ## How to rerun
 
 ```bash
