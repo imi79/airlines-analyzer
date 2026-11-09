@@ -773,9 +773,9 @@ norwegian,2025,2025-12-31,passengers,27300000.0,verified,"Passengers 27.3m, read
 norwegian,2025,2025-12-31,total_debt,19551000000.0,verified,"Borrowings, non-current 3,782 + borrowings, current 2,065 + lease liabilities, non-current 11,930 + lease liabilities, current 1,774 = 19,551",NOK
 vie,2021,2021-12-31,aero_revenue_per_passenger,16.298076923077,verified,Aeronautical revenue 170 ÷ passengers 10.4m = 16.30,per_passenger
 vie,2021,2021-12-31,capex_intensity,0.1490418374,verified,Capex 60.7 ÷ revenue 407 = 14.9%,pct
-vie,2021,2021-12-31,cash_like,181475800.0,unverified,Cash and cash equivalents 124 + other current financial assets 27.1 + other cash-like items (company's net debt definition) 30.7 = 181,EUR
-vie,2021,2021-12-31,cash_liquidity,181475800.0,unverified,Cash and cash-like 181 (without undrawn facilities),EUR
-vie,2021,2021-12-31,cash_liquidity_to_revenue,0.445866110296,unverified,Cash liquidity 181 ÷ revenue 407 = 44.6%,pct
+vie,2021,2021-12-31,cash_like,181475800.0,verified,Cash and cash equivalents 124 + other current financial assets 27.1 + other cash-like items (company's net debt definition) 30.7 = 181,EUR
+vie,2021,2021-12-31,cash_liquidity,181475800.0,verified,Cash and cash-like 181 (without undrawn facilities),EUR
+vie,2021,2021-12-31,cash_liquidity_to_revenue,0.445866110296,verified,Cash liquidity 181 ÷ revenue 407 = 44.6%,pct
 vie,2021,2021-12-31,ebitda,154052099.99999997,verified,Operating profit 20.0 + D&A 134 = 154,EUR
 vie,2021,2021-12-31,ebitda_margin,0.378489091162,verified,EBITDA 154 ÷ revenue 407 = 37.8%,pct
 vie,2021,2021-12-31,fcf,45087200.0,verified,Cash from operations 106 − capex 60.7 = 45.1,EUR
@@ -784,15 +784,15 @@ vie,2021,2021-12-31,ffo,147042100.0,verified,EBITDA 154 − interest paid 15.3 �
 vie,2021,2021-12-31,ffo_to_debt,0.442999968366,verified,FFO 147 ÷ total debt 332 = 44.3%,pct
 vie,2021,2021-12-31,gross_leverage,2.154618469985,verified,Total debt 332 ÷ EBITDA 154 = 2.15x,x
 vie,2021,2021-12-31,interest_coverage,10.056539109318,verified,EBITDA 154 ÷ interest paid (interest expense not tagged) 15.3 = 10.06x,x
-vie,2021,2021-12-31,net_debt,150447699.99999997,unverified,Total debt 332 − cash and cash-like 181 = 150,EUR
-vie,2021,2021-12-31,net_leverage,0.976602720768,unverified,Net debt 150 ÷ EBITDA 154 = 0.98x,x
+vie,2021,2021-12-31,net_debt,150447699.99999997,verified,Total debt 332 − cash and cash-like 181 = 150,EUR
+vie,2021,2021-12-31,net_leverage,0.976602720768,verified,Net debt 150 ÷ EBITDA 154 = 0.98x,x
 vie,2021,2021-12-31,passengers,10400000.0,verified,"Passengers 10.4m, read from the report",count
 vie,2021,2021-12-31,total_debt,331923500.0,verified,Borrowings and lease liabilities (one line) 332,EUR
 vie,2022,2022-12-31,aero_revenue_per_passenger,13.049491783531,unverified,Aeronautical revenue 309 ÷ passengers 23.7m = 13.05,per_passenger
 vie,2022,2022-12-31,capex_intensity,0.087382853777,verified,Capex 60.5 ÷ revenue 693 = 8.7%,pct
-vie,2022,2022-12-31,cash_like,429222800.0,unverified,Cash and cash equivalents 105 + other current financial assets 25.5 + other cash-like items (company's net debt definition) 299 = 429,EUR
-vie,2022,2022-12-31,cash_liquidity,429222800.0,unverified,Cash and cash-like 429 (without undrawn facilities),EUR
-vie,2022,2022-12-31,cash_liquidity_to_revenue,0.619615893198,unverified,Cash liquidity 429 ÷ revenue 693 = 62.0%,pct
+vie,2022,2022-12-31,cash_like,429222800.0,verified,Cash and cash equivalents 105 + other current financial assets 25.5 + other cash-like items (company's net debt definition) 299 = 429,EUR
+vie,2022,2022-12-31,cash_liquidity,429222800.0,verified,Cash and cash-like 429 (without undrawn facilities),EUR
+vie,2022,2022-12-31,cash_liquidity_to_revenue,0.619615893198,verified,Cash liquidity 429 ÷ revenue 693 = 62.0%,pct
 vie,2022,2022-12-31,ebitda,298233400.00000006,verified,Operating profit 167 + D&A 131 = 298,EUR
 vie,2022,2022-12-31,ebitda_margin,0.430522690133,verified,EBITDA 298 ÷ revenue 693 = 43.1%,pct
 vie,2022,2022-12-31,fcf,277070200.0,verified,Cash from operations 338 − capex 60.5 = 277,EUR
@@ -801,16 +801,16 @@ vie,2022,2022-12-31,ffo,276557200.0,verified,EBITDA 298 − interest paid 13.3 �
 vie,2022,2022-12-31,ffo_to_debt,0.988211803062,verified,FFO 277 ÷ total debt 280 = 98.8%,pct
 vie,2022,2022-12-31,gross_leverage,0.938379805884,verified,Total debt 280 ÷ EBITDA 298 = 0.94x,x
 vie,2022,2022-12-31,interest_coverage,22.345104033207,verified,EBITDA 298 ÷ interest paid (interest expense not tagged) 13.3 = 22.35x,x
-vie,2022,2022-12-31,net_debt,-149366600.0,unverified,Total debt 280 − cash and cash-like 429 = -149,EUR
-vie,2022,2022-12-31,net_leverage,-0.500837934316,unverified,Net debt -149 ÷ EBITDA 298 = -0.50x,x
+vie,2022,2022-12-31,net_debt,-149366600.0,verified,Total debt 280 − cash and cash-like 429 = -149,EUR
+vie,2022,2022-12-31,net_leverage,-0.500837934316,verified,Net debt -149 ÷ EBITDA 298 = -0.50x,x
 vie,2022,2022-12-31,passengers,23682133.0,verified,"Passengers 23.7m, read from the report",count
 vie,2022,2022-12-31,total_debt,279856200.0,verified,Borrowings and lease liabilities (one line) 280,EUR
 vie,2022,2022-12-31,traffic_growth,1.277128173077,verified,Passengers 23.7m ÷ prior-year passengers 10.4m − 1 = 127.7%,pct
 vie,2023,2023-12-31,aero_revenue_per_passenger,14.471855491649,verified,Aeronautical revenue 427 ÷ passengers 29.5m = 14.47,per_passenger
 vie,2023,2023-12-31,capex_intensity,0.104996177331,verified,Capex 97.8 ÷ revenue 932 = 10.5%,pct
-vie,2023,2023-12-31,cash_like,417206300.0,unverified,Cash and cash equivalents 31.9 + other current financial assets 42.1 + other cash-like items (company's net debt definition) 343 = 417,EUR
-vie,2023,2023-12-31,cash_liquidity,417206300.0,unverified,Cash and cash-like 417 (without undrawn facilities),EUR
-vie,2023,2023-12-31,cash_liquidity_to_revenue,0.447863352642,unverified,Cash liquidity 417 ÷ revenue 932 = 44.8%,pct
+vie,2023,2023-12-31,cash_like,417206300.0,verified,Cash and cash equivalents 31.9 + other current financial assets 42.1 + other cash-like items (company's net debt definition) 343 = 417,EUR
+vie,2023,2023-12-31,cash_liquidity,417206300.0,verified,Cash and cash-like 417 (without undrawn facilities),EUR
+vie,2023,2023-12-31,cash_liquidity_to_revenue,0.447863352642,verified,Cash liquidity 417 ÷ revenue 932 = 44.8%,pct
 vie,2023,2023-12-31,ebitda,393555399.99999994,verified,Operating profit 262 + D&A 132 = 394,EUR
 vie,2023,2023-12-31,ebitda_margin,0.422474542917,verified,EBITDA 394 ÷ revenue 932 = 42.2%,pct
 vie,2023,2023-12-31,fcf,286967100.0,verified,Cash from operations 385 − capex 97.8 = 287,EUR
@@ -819,16 +819,16 @@ vie,2023,2023-12-31,ffo,346548600.00000006,verified,EBITDA 394 − interest paid
 vie,2023,2023-12-31,ffo_to_debt,6.261583660372,verified,FFO 347 ÷ total debt 55.3 = 626.2%,pct
 vie,2023,2023-12-31,gross_leverage,0.140628739944,verified,Total debt 55.3 ÷ EBITDA 394 = 0.14x,x
 vie,2023,2023-12-31,interest_coverage,32.982911641706,verified,EBITDA 394 ÷ interest paid (interest expense not tagged) 11.9 = 32.98x,x
-vie,2023,2023-12-31,net_debt,-361861100.0,unverified,Total debt 55.3 − cash and cash-like 417 = -362,EUR
-vie,2023,2023-12-31,net_leverage,-0.919466738355,unverified,Net debt -362 ÷ EBITDA 394 = -0.92x,x
+vie,2023,2023-12-31,net_debt,-361861100.0,verified,Total debt 55.3 − cash and cash-like 417 = -362,EUR
+vie,2023,2023-12-31,net_leverage,-0.919466738355,verified,Net debt -362 ÷ EBITDA 394 = -0.92x,x
 vie,2023,2023-12-31,passengers,29533186.0,verified,"Passengers 29.5m, read from the report",count
 vie,2023,2023-12-31,total_debt,55345200.0,verified,Borrowings and lease liabilities (one line) 55.3,EUR
 vie,2023,2023-12-31,traffic_growth,0.247066132092,verified,Passengers 29.5m ÷ prior-year passengers 23.7m − 1 = 24.7%,pct
 vie,2024,2024-12-31,aero_revenue_per_passenger,15.567823343849,verified,Aeronautical revenue 494 ÷ passengers 31.7m = 15.57,per_passenger
 vie,2024,2024-12-31,capex_intensity,0.161305913268,verified,"Capex 170 ÷ revenue 1,053 = 16.1%",pct
-vie,2024,2024-12-31,cash_like,567218900.0,unverified,Cash and cash equivalents 22.1 + other current financial assets 50.7 + other cash-like items (company's net debt definition) 494 = 567,EUR
-vie,2024,2024-12-31,cash_liquidity,567218900.0,unverified,Cash and cash-like 567 (without undrawn facilities),EUR
-vie,2024,2024-12-31,cash_liquidity_to_revenue,0.538803686693,unverified,"Cash liquidity 567 ÷ revenue 1,053 = 53.9%",pct
+vie,2024,2024-12-31,cash_like,567218900.0,verified,Cash and cash equivalents 22.1 + other current financial assets 50.7 + other cash-like items (company's net debt definition) 494 = 567,EUR
+vie,2024,2024-12-31,cash_liquidity,567218900.0,verified,Cash and cash-like 567 (without undrawn facilities),EUR
+vie,2024,2024-12-31,cash_liquidity_to_revenue,0.538803686693,verified,"Cash liquidity 567 ÷ revenue 1,053 = 53.9%",pct
 vie,2024,2024-12-31,ebitda,441926000.0,verified,Operating profit 306 + D&A 136 = 442,EUR
 vie,2024,2024-12-31,ebitda_margin,0.419787419011,verified,"EBITDA 442 ÷ revenue 1,053 = 42.0%",pct
 vie,2024,2024-12-31,fcf,273856600.0,verified,Cash from operations 444 − capex 170 = 274,EUR
@@ -837,16 +837,16 @@ vie,2024,2024-12-31,ffo,358161500.0,verified,EBITDA 442 − interest paid 2.2 �
 vie,2024,2024-12-31,ffo_to_debt,6.440363590592,verified,FFO 358 ÷ total debt 55.6 = 644.0%,pct
 vie,2024,2024-12-31,gross_leverage,0.125840072772,verified,Total debt 55.6 ÷ EBITDA 442 = 0.13x,x
 vie,2024,2024-12-31,interest_coverage,201.86643522748,verified,EBITDA 442 ÷ interest paid (interest expense not tagged) 2.2 = 201.87x,x
-vie,2024,2024-12-31,net_debt,-511606900.0,unverified,Total debt 55.6 − cash and cash-like 567 = -512,EUR
-vie,2024,2024-12-31,net_leverage,-1.157675493182,unverified,Net debt -512 ÷ EBITDA 442 = -1.16x,x
+vie,2024,2024-12-31,net_debt,-511606900.0,verified,Total debt 55.6 − cash and cash-like 567 = -512,EUR
+vie,2024,2024-12-31,net_leverage,-1.157675493182,verified,Net debt -512 ÷ EBITDA 442 = -1.16x,x
 vie,2024,2024-12-31,passengers,31700000.0,verified,"Passengers 31.7m, read from the report",count
 vie,2024,2024-12-31,total_debt,55612000.0,verified,Borrowings and lease liabilities (one line) 55.6,EUR
 vie,2024,2024-12-31,traffic_growth,0.07336878588,verified,Passengers 31.7m ÷ prior-year passengers 29.5m − 1 = 7.3%,pct
 vie,2025,2025-12-31,aero_revenue_per_passenger,16.052147239264,verified,Aeronautical revenue 523 ÷ passengers 32.6m = 16.05,per_passenger
 vie,2025,2025-12-31,capex_intensity,0.240583278681,verified,"Capex 272 ÷ revenue 1,129 = 24.1%",pct
-vie,2025,2025-12-31,cash_like,469707200.0,unverified,Cash and cash equivalents 29.8 + other current financial assets 80.5 + other cash-like items (company's net debt definition) 359 = 470,EUR
-vie,2025,2025-12-31,cash_liquidity,469707200.0,unverified,Cash and cash-like 470 (without undrawn facilities),EUR
-vie,2025,2025-12-31,cash_liquidity_to_revenue,0.416056984672,unverified,"Cash liquidity 470 ÷ revenue 1,129 = 41.6%",pct
+vie,2025,2025-12-31,cash_like,469707200.0,verified,Cash and cash equivalents 29.8 + other current financial assets 80.5 + other cash-like items (company's net debt definition) 359 = 470,EUR
+vie,2025,2025-12-31,cash_liquidity,469707200.0,verified,Cash and cash-like 470 (without undrawn facilities),EUR
+vie,2025,2025-12-31,cash_liquidity_to_revenue,0.416056984672,verified,"Cash liquidity 470 ÷ revenue 1,129 = 41.6%",pct
 vie,2025,2025-12-31,ebitda,412422900.0,verified,Operating profit 280 + D&A 133 = 412,EUR
 vie,2025,2025-12-31,ebitda_margin,0.365315728998,verified,"EBITDA 412 ÷ revenue 1,129 = 36.5%",pct
 vie,2025,2025-12-31,fcf,61714700.0,verified,Cash from operations 333 − capex 272 = 61.7,EUR
@@ -855,8 +855,8 @@ vie,2025,2025-12-31,ffo,246993699.99999997,verified,EBITDA 412 − interest paid
 vie,2025,2025-12-31,ffo_to_debt,4.419290426356,verified,FFO 247 ÷ total debt 55.9 = 441.9%,pct
 vie,2025,2025-12-31,gross_leverage,0.135515995838,verified,Total debt 55.9 ÷ EBITDA 412 = 0.14x,x
 vie,2025,2025-12-31,interest_coverage,208.526089594499,verified,EBITDA 412 ÷ interest paid (interest expense not tagged) 2.0 = 208.53x,x
-vie,2025,2025-12-31,net_debt,-413817300.0,unverified,Total debt 55.9 − cash and cash-like 470 = -414,EUR
-vie,2025,2025-12-31,net_leverage,-1.003380995575,unverified,Net debt -414 ÷ EBITDA 412 = -1.00x,x
+vie,2025,2025-12-31,net_debt,-413817300.0,verified,Total debt 55.9 − cash and cash-like 470 = -414,EUR
+vie,2025,2025-12-31,net_leverage,-1.003380995575,verified,Net debt -414 ÷ EBITDA 412 = -1.00x,x
 vie,2025,2025-12-31,passengers,32600000.0,verified,"Passengers 32.6m, read from the report",count
 vie,2025,2025-12-31,total_debt,55889900.0,verified,Borrowings and lease liabilities (one line) 55.9,EUR
 vie,2025,2025-12-31,traffic_growth,0.028391167192,verified,Passengers 32.6m ÷ prior-year passengers 31.7m − 1 = 2.8%,pct

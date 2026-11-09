@@ -1,0 +1,264 @@
+{
+ "answer": {
+  "sections": {
+   "credit_metrics": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ebitda.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "operating_profit.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "operating_profit@FY2025"
+      }
+     ],
+     "text": "EBITDA rose by {{ebitda.change@FY2025}} to {{ebitda@FY2025}} on revenue up {{revenue.change@FY2025}}, and operating profit increased by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "total_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "total_debt@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "gross_leverage.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "net_cash@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_cash@FY2024"
+      }
+     ],
+     "text": "Total debt was reduced by {{total_debt.change@FY2025}} to {{total_debt@FY2025}}, taking gross leverage down by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}} and leaving net cash of {{net_cash@FY2025}} against {{net_cash@FY2024}} in FY2024."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ffo_to_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "fcf_to_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "fcf.change@FY2025"
+      }
+     ],
+     "text": "Cash generation strengthened: FFO to debt rose by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}} and FCF to debt by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}}, with free cash flow of {{fcf@FY2025}} up {{fcf.change@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "interest_coverage.change@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "better_than_peers"
+       ],
+       "id": "interest_coverage@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "interest_coverage.peer_median@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:costs"
+      }
+     ],
+     "text": "Interest coverage weakened by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}} as airline net financing charges rose, though it remains well above the peer median of {{interest_coverage.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat",
+        "in_line_with_peers"
+       ],
+       "id": "capex_intensity@FY2025"
+      }
+     ],
+     "text": "Capex intensity was broadly unchanged at {{capex_intensity@FY2025}}, in line with the peer median."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "ebitda_margin@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2025"
+      }
+     ],
+     "text": "Profitability: EBITDA margin of {{ebitda_margin@FY2025}} is below the peer median of {{ebitda_margin.peer_median@FY2025}} and the weakest of the group ({{ebitda_margin.peer_rank@FY2025}}), so the earnings base is thinner than peers' relative to revenue."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "passenger_yield.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "passenger_yield@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "rask@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ask.change@FY2025"
+      }
+     ],
+     "text": "Unit revenue: passenger yield fell by {{passenger_yield.change@FY2025}} to {{passenger_yield@FY2025}}, with RASK broadly unchanged at {{rask@FY2025}} as capacity rose by {{ask.change@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "interest_coverage.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "interest_coverage@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:costs"
+      }
+     ],
+     "text": "Coverage: interest coverage fell by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}} as airline net financing charges rose, a trend to monitor against the debt profile."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover.change@FY2025"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "advance_ticket_cover@FY2025"
+      }
+     ],
+     "text": "Customer prepayments: advance ticket cover rose by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}, in the middle of the group, so a larger part of the cash balance is refundable if bookings slow."
+    }
+   ]
+  }
+ },
+ "label": "easyjet_FY2025 attempt 3",
+ "recorded_at": "2026-11-09T16:16:35+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "2cb95499b57a87e7849e22b68d4a6ac0d578ccf0bfb677ef1c74164642fcd5c9",
+  "user_sha256": "ec7f8b5c0f7cdda0a2e0790e31f1d51fffc259dff905d5831e6b702910d46959"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 15131,
+  "output_tokens": 1409
+ }
+}

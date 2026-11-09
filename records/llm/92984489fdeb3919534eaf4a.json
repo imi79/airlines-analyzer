@@ -1,0 +1,232 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_like.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      }
+     ],
+     "text": "Cash and cash-like investments rose by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, and cash liquidity to revenue improved by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "contract_liabilities.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover.change@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "worse"
+       ],
+       "id": "advance_ticket_cover@FY2025"
+      }
+     ],
+     "text": "Customer prepayments grew faster than the cash balance: contract liabilities rose by {{contract_liabilities.change@FY2025}} to {{contract_liabilities@FY2025}}, and advance ticket cover increased by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}, above the peer median."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      }
+     ],
+     "text": "The rating trajectory reflects the leverage path: Fitch downgraded the company to BB+ with a stable outlook, citing slower capacity growth from the engine issues and higher leverage."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@FY2025"
+      }
+     ],
+     "text": "Wizz Air has the highest EBITDA margin in the low-cost peer group ({{ebitda_margin.peer_rank@FY2025}}), against a median of {{ebitda_margin.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "gross_leverage.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ffo_to_debt.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "fcf_to_debt.peer_rank@FY2025"
+      }
+     ],
+     "text": "Leverage and cash generation are the weak spots: net leverage and gross leverage are the highest of the group ({{net_leverage.peer_rank@FY2025}} and {{gross_leverage.peer_rank@FY2025}}), and FFO to debt and FCF to debt are the lowest ({{ffo_to_debt.peer_rank@FY2025}} and {{fcf_to_debt.peer_rank@FY2025}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "interest_coverage.peer_median@FY2025"
+      }
+     ],
+     "text": "Interest coverage is below the peer median of {{interest_coverage.peer_median@FY2025}}, while capex intensity and cash liquidity to revenue sit in the middle of the group."
+    }
+   ],
+   "snapshot": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines"
+      }
+     ],
+     "text": "Wizz Air, the low-cost carrier operating an all-Airbus narrowbody fleet, saw its credit profile weaken in FY2025 as grounded aircraft from the Pratt & Whitney engine recall held capacity broadly unchanged while revenue rose {{revenue.change@FY2025}} to {{revenue@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "net_leverage.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda.change@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_debt@FY2025"
+      }
+     ],
+     "text": "Net leverage rose by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}} as EBITDA fell {{ebitda.change@FY2025}} and net debt increased {{net_debt.change@FY2025}} to {{net_debt@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "cask_ex_fuel.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cask_ex_fuel@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse"
+       ],
+       "id": "interest_coverage@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse"
+       ],
+       "id": "ffo_to_debt@FY2025"
+      }
+     ],
+     "text": "The point to watch is the cost base: CASK ex-fuel rose {{cask_ex_fuel.change@FY2025}} to {{cask_ex_fuel@FY2025}}, leaving interest coverage at {{interest_coverage@FY2025}} and FFO to debt at {{ffo_to_debt@FY2025}}, both below the peer median."
+    }
+   ]
+  }
+ },
+ "label": "wizz_FY2025 attempt 2",
+ "recorded_at": "2026-11-09T16:21:49+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "528e6c12b34e7abee0a268de0fa8809bbc761438b56833515610fe22b8c3d99b",
+  "user_sha256": "43773eac5afe7c8359fbcf885d05fb349e92612a49b93e753759fd4ec7680d6c"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 15882,
+  "output_tokens": 1334
+ }
+}

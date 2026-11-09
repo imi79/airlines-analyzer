@@ -1,0 +1,668 @@
+{
+ "answer": {
+  "sections": {
+   "credit_metrics": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda_margin.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2025"
+      }
+     ],
+     "text": "EBITDA fell by {{ebitda.change@FY2025}} to {{ebitda@FY2025}} on revenue up {{revenue.change@FY2025}}, and the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "operating_profit.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "operating_profit@FY2025"
+      }
+     ],
+     "text": "Operating profit fell by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}}, with depreciation between EBITDA and the operating line absorbing the fleet expansion."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "total_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "total_debt@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_debt@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "gross_leverage.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "net_leverage@FY2025"
+      }
+     ],
+     "text": "Total debt rose by {{total_debt.change@FY2025}} to {{total_debt@FY2025}} and net debt by {{net_debt.change@FY2025}} to {{net_debt@FY2025}}, taking gross leverage up by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}} and net leverage to {{net_leverage@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ffo.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ffo@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ffo_to_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "interest_coverage.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "interest_coverage@FY2025"
+      }
+     ],
+     "text": "FFO fell by {{ffo.change@FY2025}} to {{ffo@FY2025}}, so FFO to debt declined by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}, while interest coverage weakened by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "fcf.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "fcf_to_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "capex_intensity.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity@FY2025"
+      }
+     ],
+     "text": "Free cash flow rose by {{fcf.change@FY2025}} to {{fcf@FY2025}}, lifting FCF to debt by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}}, helped by capex intensity easing by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}."
+    }
+   ],
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_like.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      }
+     ],
+     "text": "Cash and cash-like investments rose by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, and cash liquidity to revenue improved by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "contract_liabilities.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover.change@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "worse"
+       ],
+       "id": "advance_ticket_cover@FY2025"
+      }
+     ],
+     "text": "Customer prepayments grew faster than the cash balance: contract liabilities rose by {{contract_liabilities.change@FY2025}} to {{contract_liabilities@FY2025}}, and advance ticket cover increased by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}, above the peer median."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      }
+     ],
+     "text": "The rating trajectory reflects the leverage path: Fitch downgraded the company to BB+ with a stable outlook, citing slower capacity growth from the engine issues and higher leverage."
+    }
+   ],
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "passengers.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "passengers@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "ask@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "rpk@FY2025"
+      }
+     ],
+     "text": "Passengers rose by {{passengers.change@FY2025}} to {{passengers@FY2025}} while capacity was broadly unchanged, with ASK at {{ask@FY2025}} and RPK at {{rpk@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "load_factor.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "load_factor@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "rask.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "rask@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "passenger_yield@FY2025"
+      }
+     ],
+     "text": "The load factor improved by {{load_factor.change@FY2025}} to {{load_factor@FY2025}}, and RASK rose by {{rask.change@FY2025}} to {{rask@FY2025}} on a passenger yield of {{passenger_yield@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "cask.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cask@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "cask_ex_fuel.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cask_ex_fuel@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "fuel_share_of_costs.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fuel_share_of_costs@FY2025"
+      }
+     ],
+     "text": "Unit cost moved against the revenue line: CASK rose by {{cask.change@FY2025}} to {{cask@FY2025}} and CASK ex-fuel by {{cask_ex_fuel.change@FY2025}} to {{cask_ex_fuel@FY2025}}, with the fuel share of costs down {{fuel_share_of_costs.change@FY2025}} to {{fuel_share_of_costs@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "fleet.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fleet@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fleet_age@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines-4"
+      }
+     ],
+     "text": "The fleet grew by {{fleet.change@FY2025}} to {{fleet@FY2025}} aircraft, with an average age of {{fleet_age@FY2025}}, as new A321neo deliveries were partly offset by redeliveries of older aircraft."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "better_than_peers"
+       ],
+       "id": "ebitda_margin@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@FY2025"
+      }
+     ],
+     "text": "Wizz Air has the highest EBITDA margin in the low-cost peer group ({{ebitda_margin.peer_rank@FY2025}}), at {{ebitda_margin@FY2025}} against a median of {{ebitda_margin.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "net_leverage@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "gross_leverage@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "gross_leverage.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "ffo_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "fcf_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ffo_to_debt.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "fcf_to_debt.peer_rank@FY2025"
+      }
+     ],
+     "text": "Leverage and cash generation are the weak spots: net leverage of {{net_leverage@FY2025}} and gross leverage of {{gross_leverage@FY2025}} are the highest of the group ({{net_leverage.peer_rank@FY2025}} and {{gross_leverage.peer_rank@FY2025}}), and FFO to debt of {{ffo_to_debt@FY2025}} and FCF to debt of {{fcf_to_debt@FY2025}} are the lowest ({{ffo_to_debt.peer_rank@FY2025}} and {{fcf_to_debt.peer_rank@FY2025}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "interest_coverage@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "interest_coverage.peer_median@FY2025"
+      }
+     ],
+     "text": "Interest coverage of {{interest_coverage@FY2025}} is below the peer median of {{interest_coverage.peer_median@FY2025}}, while capex intensity and cash liquidity to revenue sit in the middle of the group."
+    }
+   ],
+   "snapshot": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines"
+      }
+     ],
+     "text": "Wizz Air, the low-cost carrier operating an all-Airbus narrowbody fleet, saw its credit profile weaken in FY2025 as grounded aircraft from the Pratt & Whitney engine recall held capacity broadly flat while revenue rose {{revenue.change@FY2025}} to {{revenue@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "net_leverage.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda.change@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_debt@FY2025"
+      }
+     ],
+     "text": "Net leverage rose by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}} as EBITDA fell {{ebitda.change@FY2025}} and net debt increased {{net_debt.change@FY2025}} to {{net_debt@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "cask_ex_fuel.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cask_ex_fuel@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse"
+       ],
+       "id": "interest_coverage@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse"
+       ],
+       "id": "ffo_to_debt@FY2025"
+      }
+     ],
+     "text": "The point to watch is the cost base: CASK ex-fuel rose {{cask_ex_fuel.change@FY2025}} to {{cask_ex_fuel@FY2025}}, leaving interest coverage at {{interest_coverage@FY2025}} and FFO to debt at {{ffo_to_debt@FY2025}}, both below the peer median."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "net_leverage@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "gross_leverage@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_median@FY2025"
+      }
+     ],
+     "text": "Leverage: net leverage rose to {{net_leverage@FY2025}}, the highest of the peer group ({{net_leverage.peer_rank@FY2025}}), and gross leverage to {{gross_leverage@FY2025}} against a peer median of {{gross_leverage.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ffo_to_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ffo_to_debt.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "interest_coverage.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "interest_coverage@FY2025"
+      }
+     ],
+     "text": "Cash generation: FFO to debt fell by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}, the weakest of the group ({{ffo_to_debt.peer_rank@FY2025}}), and interest coverage declined by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "cask_ex_fuel.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cask_ex_fuel@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "rask.change@FY2025"
+      }
+     ],
+     "text": "Cost base: CASK ex-fuel rose by {{cask_ex_fuel.change@FY2025}} to {{cask_ex_fuel@FY2025}}, outpacing the RASK increase of {{rask.change@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers",
+        "worse"
+       ],
+       "id": "advance_ticket_cover@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "advance_ticket_cover.peer_rank@FY2025"
+      }
+     ],
+     "text": "Customer prepayments: advance ticket cover of {{advance_ticket_cover@FY2025}} is the highest of the group ({{advance_ticket_cover.peer_rank@FY2025}}), so a larger share of the cash balance is refundable if bookings slow."
+    }
+   ]
+  }
+ },
+ "label": "wizz_FY2025 attempt 1",
+ "recorded_at": "2026-11-09T16:21:44+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "010a22e30533e014fb1ef4924492fb8e5e83d466a2300099b228520ee7082b63",
+  "user_sha256": "5f194807125b78a65a00ff88695bb78b518bd00080bea925485f52feb3722827"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 13709,
+  "output_tokens": 3853
+ }
+}

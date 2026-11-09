@@ -1,0 +1,255 @@
+{
+ "answer": {
+  "sections": {
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "passengers@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "passengers.change@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "fleet@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fleet_age@FY2025"
+      }
+     ],
+     "text": "Passengers were broadly unchanged at {{passengers@FY2025}}, a change of {{passengers.change@FY2025}}, with the fleet stable at {{fleet@FY2025}} aircraft and an average age of {{fleet_age@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "fuel_share_of_costs.change@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "fuel_share_of_costs@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fuel_share_of_costs.peer_median@FY2025"
+      }
+     ],
+     "text": "The fuel share of costs fell by {{fuel_share_of_costs.change@FY2025}} to {{fuel_share_of_costs@FY2025}}, above the peer median of {{fuel_share_of_costs.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:costs"
+      }
+     ],
+     "text": "Costs related to environmental regulation increased significantly during the year, with greater use of sustainable aviation fuel and changes to the EU Emissions Trading System weighing on the result."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines"
+      }
+     ],
+     "text": "During the year Finnair purchased leased A321 aircraft, and all aircraft were in operative use at the balance sheet date."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers",
+        "better_than_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "cash_liquidity_to_revenue.peer_rank@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue.peer_median@FY2025"
+      }
+     ],
+     "text": "Finnair's strongest position is cash liquidity to revenue of {{cash_liquidity_to_revenue@FY2025}}, the highest of the network peers ({{cash_liquidity_to_revenue.peer_rank@FY2025}}) against a median of {{cash_liquidity_to_revenue.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "ebitda_margin@FY2025"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "net_leverage@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2025"
+      }
+     ],
+     "text": "It is weakest on profitability and leverage: the EBITDA margin of {{ebitda_margin@FY2025}} and net leverage of {{net_leverage@FY2025}} both rank last of the group ({{ebitda_margin.peer_rank@FY2025}} and {{net_leverage.peer_rank@FY2025}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "capex_intensity.peer_median@FY2025"
+      }
+     ],
+     "text": "FCF to debt sits in the middle of the group, and capex intensity is below the peer median of {{capex_intensity.peer_median@FY2025}}."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "ebitda_margin@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:labour"
+      }
+     ],
+     "text": "Profitability: the EBITDA margin of {{ebitda_margin@FY2025}} is below the peer median of {{ebitda_margin.peer_median@FY2025}}, and the industrial action in the first half weighed on the result."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ffo_to_debt.change@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "ffo_to_debt@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt.peer_median@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_to_debt.change@FY2025"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "fcf_to_debt@FY2025"
+      }
+     ],
+     "text": "Cash generation: FFO to debt fell by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}, below the peer median of {{ffo_to_debt.peer_median@FY2025}}, and FCF to debt fell by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "gross_leverage@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_median@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "gross_leverage.peer_rank@FY2025"
+      }
+     ],
+     "text": "Leverage: gross leverage of {{gross_leverage@FY2025}} is above the peer median of {{gross_leverage.peer_median@FY2025}}, the weakest of the group ({{gross_leverage.peer_rank@FY2025}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "fuel_share_of_costs@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fuel_share_of_costs.peer_median@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:costs"
+      }
+     ],
+     "text": "Costs: the fuel share of costs of {{fuel_share_of_costs@FY2025}} is above the peer median of {{fuel_share_of_costs.peer_median@FY2025}}, and costs related to environmental regulation increased significantly during the year."
+    }
+   ]
+  }
+ },
+ "label": "finnair_FY2025 attempt 3",
+ "recorded_at": "2026-11-09T16:16:10+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "178a2ae1e959e32d0c7c35b6834f0f1c1df4d7b201a7175c6c936c51611ba17b",
+  "user_sha256": "d50cbcda411e1437bb7e953381474cb74a031a8a4beef3c63a8b57c7d7119c5f"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14768,
+  "output_tokens": 1500
+ }
+}

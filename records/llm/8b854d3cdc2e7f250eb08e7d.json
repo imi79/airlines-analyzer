@@ -1,0 +1,349 @@
+{
+ "answer": {
+  "sections": {
+   "credit_metrics": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ebitda.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "revenue.change@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "operating_profit.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "operating_profit@FY2024"
+      }
+     ],
+     "text": "EBITDA increased by {{ebitda.change@FY2024}} to {{ebitda@FY2024}} on revenue up {{revenue.change@FY2024}}, but operating profit fell by {{operating_profit.change@FY2024}} to {{operating_profit@FY2024}} as depreciation increased."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "total_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "total_debt@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_debt@FY2024"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "net_leverage@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "gross_leverage@FY2024"
+      }
+     ],
+     "text": "Total debt rose by {{total_debt.change@FY2024}} to {{total_debt@FY2024}} and net debt by {{net_debt.change@FY2024}} to {{net_debt@FY2024}}, so net leverage was stable at {{net_leverage@FY2024}} while gross leverage eased to {{gross_leverage@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "interest_coverage@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "interest_coverage.change@FY2024"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "ffo_to_debt@FY2024"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "ffo@FY2024"
+      }
+     ],
+     "text": "Interest coverage improved to {{interest_coverage@FY2024}}, up {{interest_coverage.change@FY2024}}, but FFO to debt was broadly unchanged at {{ffo_to_debt@FY2024}} with FFO flat at {{ffo@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_to_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity@FY2024"
+      }
+     ],
+     "text": "Free cash flow fell by {{fcf.change@FY2024}} to {{fcf@FY2024}}, taking FCF to debt down by {{fcf_to_debt.change@FY2024}} to {{fcf_to_debt@FY2024}}, as capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}."
+    }
+   ],
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity@FY2024"
+      }
+     ],
+     "text": "Cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, and cash liquidity declined by the same {{cash_liquidity.change@FY2024}} to {{cash_liquidity@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      }
+     ],
+     "text": "Cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, a thinner buffer against the debt stock."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_debt@FY2024"
+      }
+     ],
+     "text": "The group raised bond funding in May 2024, with the issue proceeds among the cash flows of the year, while net debt rose by {{net_debt.change@FY2024}} to {{net_debt@FY2024}}."
+    }
+   ],
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "passengers@FY2024"
+      }
+     ],
+     "text": "The Paris airports handled {{passengers@FY2024}} passengers in FY2024."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:acquisitions_and_disposals"
+      }
+     ],
+     "text": "Group revenue rose by {{revenue.change@FY2024}} to {{revenue@FY2024}}, with the international operations and the Extime retail and hospitality activities contributing alongside the Paris aviation segment."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda_margin.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2024"
+      }
+     ],
+     "text": "The EBITDA margin narrowed by {{ebitda_margin.change@FY2024}} to {{ebitda_margin@FY2024}}, so EBITDA grew more slowly than revenue."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:one_offs"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "profit.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "profit@FY2024"
+      }
+     ],
+     "text": "Impairment tests on equity-accounted holdings and related loans led to a depreciation charge, and profit for the year fell by {{profit.change@FY2024}} to {{profit@FY2024}}."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@FY2024"
+      }
+     ],
+     "text": "Groupe ADP has the weakest EBITDA margin of the airport peers ({{ebitda_margin.peer_rank@FY2024}}), against a median of {{ebitda_margin.peer_median@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage.peer_median@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "gross_leverage.peer_rank@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_median@FY2024"
+      }
+     ],
+     "text": "Leverage is the weakest in the group, with net leverage ranking {{net_leverage.peer_rank@FY2024}} against a net leverage median of {{net_leverage.peer_median@FY2024}} and gross leverage ranking {{gross_leverage.peer_rank@FY2024}} against a gross leverage median of {{gross_leverage.peer_median@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue.peer_rank@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity.peer_median@FY2024"
+      }
+     ],
+     "text": "Cash liquidity to revenue sits in the middle of the group, while capex intensity is above the peer median of {{capex_intensity.peer_median@FY2024}}."
+    }
+   ]
+  }
+ },
+ "label": "adp_FY2024 attempt 2",
+ "recorded_at": "2026-11-09T16:20:27+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "b2a6f43b7ff5e96f0454b37b72dfa3200e7dc0fc36a4d69a4834365d95b42f4e",
+  "user_sha256": "9d244afd54c0dbb78cc593facc5b38dfc89912d80cb9cb36dc95f9bab387a2cc"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14764,
+  "output_tokens": 1907
+ }
+}

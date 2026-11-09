@@ -1,7 +1,9 @@
 # 0018 · M4: the commentary score, done by Claude against the annual reports
 
 Date: 2026-11-09 · Status: fixes A to D done (Imane: "go with A, B, C and D with ai writing the events
-like in M3"); second score 3.50, still below the pass mark
+like in M3"); Vienna's deposits approved, removal rule confirmed, last round done (Imane:
+"approve vienna figures, confirm removal rule, do the last round"); third score 3.70, below the
+pass mark
 
 **Who scored.** At Imane's request ("check it yourself with the annual reports of the
 companies"), Claude scored the ten drafts of the score sheet, after checking each one against
@@ -119,7 +121,7 @@ rejected in full, now 47 sentences):
 - *A sentence still breaking a rule after the two retries is removed* when its section keeps
   its minimum number of sentences, and shown as removed on the draft page; otherwise the
   section stays flagged, as before. This changes the plan's retry rule: nothing that broke a
-  rule reaches the page, but a draft can be shorter. **For Imane to confirm.**
+  rule reaches the page, but a draft can be shorter. **Confirmed by Imane on 2026-11-09.**
 
 **Gate 2 after the redraft:** 17 of 18 drafts pass (Finnair FY2024 flagged), 11 in a row
 across all nine companies; 14 sentences removed in all, most of them causal side remarks
@@ -155,3 +157,46 @@ below 4:
 - **Event choice and wording** for ADP (minor events; one summary adds a detail).
 
 Tokens: about 6.0 million for M4 AI calls in all (drafts, events, extraction v4).
+
+## Last round (round 3)
+
+- **Vienna's five deposit figures approved by Imane** (2026-11-09): its net cash and liquidity
+  are now verified and in the fact sheets.
+- **Prompt `draft-v6`**: peer positioning in two or three sentences, a rank only for a first
+  or last place; a move explained only by a figure or event of the sentence, in the order of
+  the income statement; never a word on the fact sheet or missing data; cash liquidity never
+  called the company's liquidity; watch items only on weak figures or events.
+- **A score now names the prompt version** as well as the fact sheet fingerprint: seven fact
+  sheets were unchanged since round 2, so the fingerprint alone would have kept round 2's
+  scores on round 3's texts.
+- **Gate 2:** 17 of 18 drafts pass, 17 in a row across all nine companies; 16 sentences
+  removed after two retries; no number outside a blank on the page.
+
+| Draft | Accuracy | Relevance | Concision | Insight | Round 3 | Round 2 | Round 1 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Air France-KLM FY2025 | 4 | 4 | 3 | 4 | 3.75 | 3.50 | 2.75 |
+| IAG FY2025 | 4 | 4 | 4 | 4 | 4.00 | 3.75 | 3.25 |
+| Finnair FY2025 | 4 | 4 | 4 | 4 | 4.00 | 4.00 | 2.25 |
+| easyJet FY2025 | 4 | 4 | 3 | 4 | 3.75 | 3.75 | 3.50 |
+| Groupe ADP FY2025 | 3 | 3 | 3 | 4 | 3.25 | 3.00 | 2.50 |
+| Aena FY2025 | 4 | 3 | 4 | 3 | 3.50 | 3.50 | 3.25 |
+| Flughafen Wien FY2025 | 4 | 4 | 3 | 4 | 3.75 | 3.00 | 1.75 |
+| Norwegian FY2025 | 4 | 3 | 3 | 3 | 3.25 | 3.25 | 3.25 |
+| Wizz Air FY2026 | 4 | 4 | 4 | 4 | 4.00 | 3.50 | 3.50 |
+| Air France-KLM FY2024 | 4 | 4 | 3 | 4 | 3.75 | 3.75 | 3.25 |
+| **Average** | 3.9 | 3.7 | 3.4 | 3.8 | **3.70** | 3.50 | 2.93 |
+
+**Still below 4.** Accuracy is now 4 everywhere but ADP. What remains, with its cause:
+- **The same figure under two names** (four drafts: "cash fell 7.5% to NOK 10.1bn, so cash
+  liquidity fell 7.5% to NOK 10.1bn"): cash and cash-like investments and cash liquidity are
+  equal when there are no undrawn lines, and the fact sheet offers both. A fact sheet fix.
+- **A name the verifier does not know**: "Boeing 737-800" (the allowed names stop at
+  "737-8"), so Norwegian's sentence on buying its leased aircraft, the reason for its capex
+  jump, was removed. A one-line fix.
+- **Figures waiting for Imane's review**: Air France-KLM's undrawn lines, Aena's 2025
+  passengers (53 figures in the M3 review queue).
+- **Event choice**: ADP's events come from the consolidated statements only (minor items such
+  as a Turkish tax dispute); one tariff sentence still adds a detail its quote does not hold.
+- **Peer sentences** that still list ranks in three drafts.
+
+Tokens: about 6.8 million for M4 AI calls in all.

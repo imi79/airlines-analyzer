@@ -184,6 +184,9 @@ def test_review_scores_count_only_for_the_draft_scored(make_llm, tmp_path):
     wrong = {"scored_by": "test", "drafts": {SHEET.key: entry | {"draft": "000000000000"}}}
     assert score_sheet.summary([outcome], right) == (1, 3.0)
     assert score_sheet.summary([outcome], wrong) == (0, None)
+    old = {"scored_by": "test", "drafts": {SHEET.key: entry | {
+        "draft": SHEET.fingerprint()[:12], "prompt_version": "draft-v1"}}}  # fmt: skip
+    assert score_sheet.summary([outcome], old) == (0, None)
 
 
 def test_retry_shows_the_accepted_sections_for_the_repeat_rule():

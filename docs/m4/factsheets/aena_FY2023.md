@@ -9,10 +9,10 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | ebitda_margin@FY2023 | EBITDA margin, FY2023 | 60.0% | up, better vs prior year; company above peer median, better |
 | ebitda_margin@FY2022 | EBITDA margin, FY2022 | 49.7% |  |
 | ebitda_margin.change@FY2023 | change in EBITDA margin, FY2022 to FY2023 | 10.3 points | up, better vs prior year; printed without a sign: say the direction in words |
-| net_leverage@FY2023 | Net leverage, FY2023 | 2.06x | down, better vs prior year |
+| net_leverage@FY2023 | Net leverage, FY2023 | 2.06x | down, better vs prior year; company in line with peer median |
 | net_leverage@FY2022 | Net leverage, FY2022 | 3.00x |  |
 | net_leverage.change@FY2023 | change in Net leverage, FY2022 to FY2023 | 0.94x | down, better vs prior year; printed without a sign: say the direction in words |
-| cash_liquidity_to_revenue@FY2023 | Cash liquidity to revenue (partial), FY2023 | 46.9% | up, better vs prior year |
+| cash_liquidity_to_revenue@FY2023 | Cash liquidity to revenue (partial), FY2023 | 46.9% | up, better vs prior year; company above peer median, better |
 | cash_liquidity_to_revenue@FY2022 | Cash liquidity to revenue (partial), FY2022 | 37.6% |  |
 | cash_liquidity_to_revenue.change@FY2023 | change in Cash liquidity to revenue (partial), FY2022 to FY2023 | 9.3 points | up, better vs prior year; printed without a sign: say the direction in words |
 | liquidity_to_revenue@FY2023 | Liquidity to revenue, FY2023 | 97.6% | up, better vs prior year |
@@ -95,6 +95,8 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | --- | --- | --- | --- |
 | ebitda_margin.peer_median@FY2023 | EBITDA margin, median of airports, peer year 2023 (3 companies) | 42.2% | company above peer median, better |
 | ebitda_margin.peer_rank@FY2023 | EBITDA margin, rank in airports, peer year 2023 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
+| net_leverage.peer_median@FY2023 | Net leverage, median of airports, peer year 2023 (3 companies) | 2.06x | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| net_leverage.peer_rank@FY2023 | Net leverage, rank in airports, peer year 2023 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
 | gross_leverage.peer_median@FY2023 | Gross leverage, median of airports, peer year 2023 (3 companies) | 2.84x | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
 | gross_leverage.peer_rank@FY2023 | Gross leverage, rank in airports, peer year 2023 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
 | interest_coverage.peer_median@FY2023 | Interest coverage, median of airports, peer year 2023 (2 companies) | 9.67x | company above peer median, better |
@@ -104,6 +106,8 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | fcf_to_debt.peer_median@FY2023 | FCF to debt, median of airports, peer year 2023 (2 companies) | 8.3% | company above peer median, better |
 | fcf_to_debt.peer_rank@FY2023 | FCF to debt, rank in airports, peer year 2023 (1st = strongest, i.e. the highest) | 1st of 2 | best in the group |
 | capex_intensity.peer_median@FY2023 | Capex intensity, median of airports, peer year 2023 (3 companies) | 15.9% | company above peer median |
+| cash_liquidity_to_revenue.peer_median@FY2023 | Cash liquidity to revenue (partial), median of airports, peer year 2023 (3 companies) | 44.8% | company above peer median, better |
+| cash_liquidity_to_revenue.peer_rank@FY2023 | Cash liquidity to revenue (partial), rank in airports, peer year 2023 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
 | traffic_growth.peer_median@FY2023 | Traffic growth, median of airports, peer year 2023 (2 companies) | 20.5% | company below peer median, worse |
 | traffic_growth.peer_rank@FY2023 | Traffic growth, rank in airports, peer year 2023 (1st = strongest, i.e. the highest) | 2nd of 2 | weakest |
 
@@ -119,11 +123,7 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 
 These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
 
-- net_leverage.peer_median@FY2023: the peer median would use a figure not verified yet (vie)
-- net_leverage.peer_rank@FY2023: the peer median would use a figure not verified yet (vie)
 - capex_intensity.peer_rank@FY2023: not ranked: neither higher nor lower is better
-- cash_liquidity_to_revenue.peer_median@FY2023: the peer median would use a figure not verified yet (vie)
-- cash_liquidity_to_revenue.peer_rank@FY2023: the peer median would use a figure not verified yet (vie)
 - liquidity_to_revenue.peer_median@FY2023: fewer than two companies in the peer group have a value
 - liquidity_to_revenue.peer_rank@FY2023: fewer than two companies in the peer group have a value
 - revenue_per_passenger@FY2023: n.m.: group revenue includes London Luton and the Brazilian airports, while passengers are the Spanish network only.

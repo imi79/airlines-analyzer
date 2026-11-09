@@ -1,0 +1,527 @@
+{
+ "answer": {
+  "sections": {
+   "credit_metrics": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ebitda.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "operating_profit.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "operating_profit@FY2024"
+      }
+     ],
+     "text": "EBITDA increased by {{ebitda.change@FY2024}} to {{ebitda@FY2024}}, and operating profit rose by {{operating_profit.change@FY2024}} to {{operating_profit@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "total_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "total_debt@FY2024"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "net_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_debt@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "gross_leverage.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage@FY2024"
+      }
+     ],
+     "text": "Total debt was reduced by {{total_debt.change@FY2024}} to {{total_debt@FY2024}} and net debt by {{net_debt.change@FY2024}} to {{net_debt@FY2024}}, taking gross leverage down by {{gross_leverage.change@FY2024}} to {{gross_leverage@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ffo.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ffo@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ffo_to_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "fcf.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2024"
+      }
+     ],
+     "text": "Cash generation strengthened: FFO rose by {{ffo.change@FY2024}} to {{ffo@FY2024}}, lifting FFO to debt by {{ffo_to_debt.change@FY2024}} to {{ffo_to_debt@FY2024}}, and free cash flow rose by {{fcf.change@FY2024}} to {{fcf@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "fcf_to_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt@FY2024"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "capex_intensity.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity@FY2024"
+      }
+     ],
+     "text": "FCF to debt rose by {{fcf_to_debt.change@FY2024}} to {{fcf_to_debt@FY2024}}, while capex intensity fell by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "interest_coverage.change@FY2024"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "better_than_peers"
+       ],
+       "id": "interest_coverage@FY2024"
+      }
+     ],
+     "text": "Interest coverage eased by {{interest_coverage.change@FY2024}} to {{interest_coverage@FY2024}}, still well above the peer median."
+    }
+   ],
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity@FY2024"
+      }
+     ],
+     "text": "Cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, and cash liquidity fell by the same proportion to {{cash_liquidity@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2024"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue.peer_median@FY2024"
+      }
+     ],
+     "text": "Cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "liquidity@FY2023"
+      },
+      {
+       "claims": [],
+       "id": "undrawn_facilities@FY2023"
+      }
+     ],
+     "text": "In FY2023 the group reported liquidity of {{liquidity@FY2023}}, including {{undrawn_facilities@FY2023}} of undrawn committed credit facilities."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      },
+      {
+       "claims": [],
+       "id": "event:funding_and_rating-2"
+      }
+     ],
+     "text": "Fitch raised Aena's long-term and EMTN programme rating and its short-term rating with a stable outlook, and Moody's moved the outlook to positive while confirming the long-term and EMTN programme ratings."
+    }
+   ],
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "passengers.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "passengers@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "traffic_growth@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "traffic_growth@FY2023"
+      }
+     ],
+     "text": "Passengers rose by {{passengers.change@FY2024}} to {{passengers@FY2024}}, with traffic growth of {{traffic_growth@FY2024}} below the {{traffic_growth@FY2023}} of FY2023."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "aero_revenue_per_passenger.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "aero_revenue_per_passenger@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs"
+      }
+     ],
+     "text": "Aeronautical revenue per passenger increased by {{aero_revenue_per_passenger.change@FY2024}} to {{aero_revenue_per_passenger@FY2024}}, with the CNMC setting the maximum adjusted annual revenue per passenger for 2025 unchanged on the prior year."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:acquisitions_and_disposals-2"
+      },
+      {
+       "claims": [],
+       "id": "event:acquisitions_and_disposals"
+      }
+     ],
+     "text": "The concession of the Rafael Núñez International Airport in Cartagena ended during the year, and the result includes the gain on the sale of ADI's stake in ESSP SAS."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2024"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "better_than_peers"
+       ],
+       "id": "ebitda_margin.peer_median@FY2024"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ffo_to_debt.peer_rank@FY2024"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "fcf_to_debt.peer_rank@FY2024"
+      }
+     ],
+     "text": "Aena has the highest EBITDA margin of the airport peers ({{ebitda_margin.peer_rank@FY2024}}), at {{ebitda_margin@FY2024}} against a median of {{ebitda_margin.peer_median@FY2024}}, and leads the group on FFO to debt ({{ffo_to_debt.peer_rank@FY2024}}) and FCF to debt ({{fcf_to_debt.peer_rank@FY2024}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "net_leverage.peer_rank@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_rank@FY2024"
+      }
+     ],
+     "text": "Leverage sits in the middle of the group, with net leverage ranking {{net_leverage.peer_rank@FY2024}} and gross leverage {{gross_leverage.peer_rank@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "cash_liquidity_to_revenue.peer_rank@FY2024"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue.peer_median@FY2024"
+      }
+     ],
+     "text": "Cash liquidity to revenue is the weakest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2024}}), at {{cash_liquidity_to_revenue@FY2024}} against a median of {{cash_liquidity_to_revenue.peer_median@FY2024}}."
+    }
+   ],
+   "snapshot": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      },
+      {
+       "claims": [],
+       "id": "event:funding_and_rating-2"
+      }
+     ],
+     "text": "Aena, the Spanish airport operator, had a stronger FY2024 as revenue rose by {{revenue.change@FY2024}} to {{revenue@FY2024}} and both Fitch and Moody's moved its ratings in a positive direction."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "net_leverage.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ebitda_margin.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2024"
+      }
+     ],
+     "text": "Net leverage fell by {{net_leverage.change@FY2024}} to {{net_leverage@FY2024}}, with the EBITDA margin widening by {{ebitda_margin.change@FY2024}} to {{ebitda_margin@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2024"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      }
+     ],
+     "text": "The point to watch is cash liquidity, which fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}} of revenue, the weakest of the airport peers."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2024"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      }
+     ],
+     "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, the lowest of the airport peers, as cash and cash-like investments declined by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "interest_coverage.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "interest_coverage@FY2024"
+      }
+     ],
+     "text": "Coverage: interest coverage eased by {{interest_coverage.change@FY2024}} to {{interest_coverage@FY2024}}, so the buffer over debt service narrowed even as debt was repaid."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "traffic_growth.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "traffic_growth@FY2024"
+      }
+     ],
+     "text": "Traffic: growth slowed by {{traffic_growth.change@FY2024}} to {{traffic_growth@FY2024}}, which limits the scope for further operating leverage."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs"
+      },
+      {
+       "claims": [],
+       "id": "aero_revenue_per_passenger@FY2024"
+      }
+     ],
+     "text": "Regulation: the CNMC set the maximum adjusted annual revenue per passenger for 2025 unchanged on the prior year, so aeronautical revenue per passenger of {{aero_revenue_per_passenger@FY2024}} depends on traffic rather than tariffs."
+    }
+   ]
+  }
+ },
+ "label": "aena_FY2024 attempt 1",
+ "recorded_at": "2026-11-09T16:20:45+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "010a22e30533e014fb1ef4924492fb8e5e83d466a2300099b228520ee7082b63",
+  "user_sha256": "781f28ca466eb3e769655977b8224756fe8ecdf79f646d18c2834d4a9f65472f"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 12751,
+  "output_tokens": 3061
+ }
+}

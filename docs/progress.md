@@ -66,18 +66,19 @@ measure of the final code.
 Branch: `m4-drafting-verifier`. Plan: `docs/m4/plan.md`. Run: `uv run tearsheet all --offline`
 (replays the recorded drafts; `uv run tearsheet draft` asks the AI for drafts not yet
 recorded). Results: `docs/m4/`. Walkthrough: `docs/m4/walkthrough.md`. Decisions 0016-0018.
-**Status: in progress; gate 2 passed; commentary score 3.50 of 5 after fixes A to D, below
-the mark; Imane to review the entered Vienna deposits and confirm the sentence-removal rule.**
+**Status: in progress; gate 2 passed; commentary score 3.70 of 5 after the last round, below
+the mark of 4; Imane to decide how to close.**
 
 - [x] Adversarial suite 100% rejected: 47 of 47 faulty sentences, each for its rule; 15
       correct but risky sentences and a full correct draft pass (`tests/test_adversarial.py`)
-- [x] Ten consecutive drafts across issuers with zero unreferenced numbers (gate 2): 11 in a
-      row, all nine companies; 17 of 18 pass with prompt `draft-v5` and the year's events,
-      14 sentences removed by the verifier after two retries (decision 0018, for Imane to
-      confirm); no number outside a blank on the page (`docs/m4/drafts.md`)
-- [ ] Commentary score of 4 or more: **3.50 of 5** (round 1: 2.93), scored by Claude at
-      Imane's request after checking the ten drafts against the annual reports (decision 0018,
-      `docs/m4/commentary_review.yaml`, `docs/m4/score_sheet.xlsx`)
+- [x] Ten consecutive drafts across issuers with zero unreferenced numbers (gate 2): 17 in a
+      row, all nine companies; 17 of 18 pass with prompt `draft-v6` and the year's events,
+      16 sentences removed by the verifier after two retries (rule confirmed by Imane, decision
+      0018); no number outside a blank on the page (`docs/m4/drafts.md`)
+- [ ] Commentary score of 4 or more: **3.70 of 5** (rounds 1 and 2: 2.93, 3.50), scored by
+      Claude at Imane's request after checking the ten drafts against the annual reports
+      (decision 0018, `docs/m4/commentary_review.yaml`, `docs/m4/score_sheet.xlsx`)
+- Vienna's short-term deposits entered from its notes, approved by Imane on 2026-11-09
 - Example notes drafted for Imane to rewrite (`docs/m4/example_notes.md`)
 - Tracked, not a gate (decision 0015): extraction 80% verified on a fresh blind set. Not met:
   13 of 22 (59%) on the fourth set (FY2022 reports), written before prompt `extract-v4` and

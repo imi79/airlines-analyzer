@@ -1,0 +1,225 @@
+{
+ "answer": {
+  "sections": {
+   "credit_metrics": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ebitda.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2026"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "operating_profit.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "operating_profit@FY2026"
+      }
+     ],
+     "text": "EBITDA increased by {{ebitda.change@FY2026}} to {{ebitda@FY2026}}, but operating profit fell by {{operating_profit.change@FY2026}} to {{operating_profit@FY2026}} as depreciation rose with the larger fleet."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "total_debt.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "total_debt@FY2026"
+      },
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "gross_leverage.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage@FY2026"
+      }
+     ],
+     "text": "Total debt rose by {{total_debt.change@FY2026}} to {{total_debt@FY2026}}, yet gross leverage fell by {{gross_leverage.change@FY2026}} to {{gross_leverage@FY2026}} on the stronger earnings base."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ffo.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "ffo@FY2026"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ffo_to_debt.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt@FY2026"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "interest_coverage.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "interest_coverage@FY2026"
+      }
+     ],
+     "text": "FFO increased by {{ffo.change@FY2026}} to {{ffo@FY2026}}, lifting FFO to debt by {{ffo_to_debt.change@FY2026}} to {{ffo_to_debt@FY2026}}, and interest coverage improved by {{interest_coverage.change@FY2026}} to {{interest_coverage@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "fcf@FY2026"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_to_debt.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt@FY2026"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity@FY2026"
+      }
+     ],
+     "text": "Free cash flow was broadly unchanged at {{fcf@FY2026}}, so FCF to debt fell by {{fcf_to_debt.change@FY2026}} to {{fcf_to_debt@FY2026}} as capex intensity rose by {{capex_intensity.change@FY2026}} to {{capex_intensity@FY2026}}."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@FY2026"
+      }
+     ],
+     "text": "Wizz Air has the highest EBITDA margin of the low-cost group ({{ebitda_margin.peer_rank@FY2026}}), at {{ebitda_margin@FY2026}} against a median of {{ebitda_margin.peer_median@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage.peer_median@FY2026"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "gross_leverage.peer_rank@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_median@FY2026"
+      }
+     ],
+     "text": "Leverage is the weakest in the group, with net leverage ranking {{net_leverage.peer_rank@FY2026}} against a peer median of {{net_leverage.peer_median@FY2026}} and gross leverage ranking {{gross_leverage.peer_rank@FY2026}} against {{gross_leverage.peer_median@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ffo_to_debt.peer_rank@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt.peer_median@FY2026"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "interest_coverage.peer_rank@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "interest_coverage.peer_median@FY2026"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "cash_liquidity_to_revenue.peer_median@FY2026"
+      }
+     ],
+     "text": "Cash generation and coverage are also below the group, with FFO to debt ranking {{ffo_to_debt.peer_rank@FY2026}} against a median of {{ffo_to_debt.peer_median@FY2026}} and interest coverage ranking {{interest_coverage.peer_rank@FY2026}} against {{interest_coverage.peer_median@FY2026}}, while cash liquidity to revenue sits in the middle of the group at {{cash_liquidity_to_revenue.peer_median@FY2026}}."
+    }
+   ]
+  }
+ },
+ "label": "wizz_FY2026 attempt 3",
+ "recorded_at": "2026-11-09T16:18:26+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "b39b853619f2f422733b2655a83cbfef29bf6fccfa3b0ddd5640b75c3b069104",
+  "user_sha256": "352cd3476eadda523a8676e1b3656235e56a173882860c1973fb191f5ccdb51c"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14997,
+  "output_tokens": 1313
+ }
+}

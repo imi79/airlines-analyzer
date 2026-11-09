@@ -9,10 +9,10 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | ebitda_margin@FY2025 | EBITDA margin, FY2025 | 34.7% | up, better vs prior year; company below peer median, worse |
 | ebitda_margin@FY2024 | EBITDA margin, FY2024 | 33.7% |  |
 | ebitda_margin.change@FY2025 | change in EBITDA margin, FY2024 to FY2025 | 1.0 point | up, better vs prior year; printed without a sign: say the direction in words |
-| net_leverage@FY2025 | Net leverage, FY2025 | 3.68x | down, better vs prior year |
+| net_leverage@FY2025 | Net leverage, FY2025 | 3.68x | down, better vs prior year; company above peer median, worse |
 | net_leverage@FY2024 | Net leverage, FY2024 | 4.13x |  |
 | net_leverage.change@FY2025 | change in Net leverage, FY2024 to FY2025 | 0.45x | down, better vs prior year; printed without a sign: say the direction in words |
-| cash_liquidity_to_revenue@FY2025 | Cash liquidity to revenue (partial), FY2025 | 30.1% | down, worse vs prior year |
+| cash_liquidity_to_revenue@FY2025 | Cash liquidity to revenue (partial), FY2025 | 30.1% | down, worse vs prior year; company below peer median, worse |
 | cash_liquidity_to_revenue@FY2024 | Cash liquidity to revenue (partial), FY2024 | 34.0% |  |
 | cash_liquidity_to_revenue.change@FY2025 | change in Cash liquidity to revenue (partial), FY2024 to FY2025 | 3.9 points | down, worse vs prior year; printed without a sign: say the direction in words |
 | revenue@FY2025 | Revenue, FY2025 | EUR 6.7bn | up, better vs prior year |
@@ -83,6 +83,8 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | --- | --- | --- | --- |
 | ebitda_margin.peer_median@FY2025 | EBITDA margin, median of airports, peer year 2025 (3 companies) | 36.5% | company below peer median, worse |
 | ebitda_margin.peer_rank@FY2025 | EBITDA margin, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
+| net_leverage.peer_median@FY2025 | Net leverage, median of airports, peer year 2025 (3 companies) | 1.46x | company above peer median, worse |
+| net_leverage.peer_rank@FY2025 | Net leverage, rank in airports, peer year 2025 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
 | gross_leverage.peer_median@FY2025 | Gross leverage, median of airports, peer year 2025 (3 companies) | 2.00x | company above peer median, worse |
 | gross_leverage.peer_rank@FY2025 | Gross leverage, rank in airports, peer year 2025 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
 | interest_coverage.peer_median@FY2025 | Interest coverage, median of airports, peer year 2025 (2 companies) | 11.31x | company below peer median, worse |
@@ -92,6 +94,8 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | fcf_to_debt.peer_median@FY2025 | FCF to debt, median of airports, peer year 2025 (2 companies) | 13.4% | company below peer median, worse |
 | fcf_to_debt.peer_rank@FY2025 | FCF to debt, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 2 | weakest |
 | capex_intensity.peer_median@FY2025 | Capex intensity, median of airports, peer year 2025 (3 companies) | 18.2% | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| cash_liquidity_to_revenue.peer_median@FY2025 | Cash liquidity to revenue (partial), median of airports, peer year 2025 (3 companies) | 32.6% | company below peer median, worse |
+| cash_liquidity_to_revenue.peer_rank@FY2025 | Cash liquidity to revenue (partial), rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
 
 ## Other figures
 
@@ -119,11 +123,7 @@ write no number about it, and no direction word unless a figure of the sentence 
 
 These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
 
-- net_leverage.peer_median@FY2025: the peer median would use a figure not verified yet (vie)
-- net_leverage.peer_rank@FY2025: the peer median would use a figure not verified yet (vie)
 - capex_intensity.peer_rank@FY2025: not ranked: neither higher nor lower is better
-- cash_liquidity_to_revenue.peer_median@FY2025: the peer median would use a figure not verified yet (vie)
-- cash_liquidity_to_revenue.peer_rank@FY2025: the peer median would use a figure not verified yet (vie)
 - liquidity@FY2025: Undrawn committed credit facilities not available for FY2025
 - liquidity@FY2024: Undrawn committed credit facilities not available for FY2024
 - liquidity_to_revenue@FY2025: Liquidity: Undrawn committed credit facilities not available for FY2025

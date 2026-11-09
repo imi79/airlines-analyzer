@@ -151,6 +151,26 @@ figure listed as a watch item), peer sections that list ranks, and ADP's minor e
 3. Then either a last round on concision and the watch point (about 800,000 tokens), or accept
    3.50 and close M4 on the safety result, as for the extraction goal.
 
+## The last round (decision 0018, round 3)
+
+With Vienna's figures approved and the removal rule confirmed, the instructions were tightened
+(shorter peer sections, causes only from the sentence's own figures or events, no word on
+missing data, watch items only on weak figures). **Gate 2 still passes** (17 drafts in a row);
+**the score rises to 3.70**, with accuracy at 4 in nine drafts of ten. IAG, Finnair and Wizz
+Air reach 4.0; Vienna goes from 1.75 in round 1 to 3.75.
+
+What still separates 3.70 from 4, in order of ease:
+1. **The same figure under two names** ("cash fell to EUR 2.0bn, so cash liquidity fell to
+   EUR 2.0bn"): my fact sheet offers both when there are no undrawn lines. A fact sheet fix.
+2. **"Boeing 737-800" unknown to the verifier**, which removed Norwegian's best sentence. A
+   one-line fix.
+3. **Your review queue**: Air France-KLM's undrawn lines and Aena's 2025 passengers are among
+   the 53 figures waiting (`docs/m3/extractions.md`).
+4. **ADP's events** come from its statements only (no annual report with the Paris story).
+
+**Your decision:** close M4 at 3.70 on the safety result, as for the extraction goal, or one
+more round with fixes 1 and 2 (about 800,000 tokens) and, ideally, the review of the queue.
+
 ## How to rerun
 
 ```bash

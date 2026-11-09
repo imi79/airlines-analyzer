@@ -9,6 +9,12 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | ebitda_margin@FY2025 | EBITDA margin, FY2025 | 36.5% | down, worse vs prior year; company in line with peer median |
 | ebitda_margin@FY2024 | EBITDA margin, FY2024 | 42.0% |  |
 | ebitda_margin.change@FY2025 | change in EBITDA margin, FY2024 to FY2025 | 5.5 points | down, worse vs prior year; printed without a sign: say the direction in words |
+| net_leverage@FY2025 | Net leverage, FY2025 | -1.00x | up, worse vs prior year; company below peer median, better |
+| net_leverage@FY2024 | Net leverage, FY2024 | -1.16x |  |
+| net_leverage.change@FY2025 | change in Net leverage, FY2024 to FY2025 | 0.16x | up, worse vs prior year; printed without a sign: say the direction in words |
+| cash_liquidity_to_revenue@FY2025 | Cash liquidity to revenue (partial), FY2025 | 41.6% | down, worse vs prior year; company above peer median, better |
+| cash_liquidity_to_revenue@FY2024 | Cash liquidity to revenue (partial), FY2024 | 53.9% |  |
+| cash_liquidity_to_revenue.change@FY2025 | change in Cash liquidity to revenue (partial), FY2024 to FY2025 | 12.3 points | down, worse vs prior year; printed without a sign: say the direction in words |
 | revenue@FY2025 | Revenue, FY2025 | EUR 1.1bn | up, better vs prior year |
 | revenue@FY2024 | Revenue, FY2024 | EUR 1.1bn |  |
 | revenue.change@FY2025 | change in Revenue, FY2024 to FY2025 | 7.2% | up, better vs prior year; printed without a sign: say the direction in words |
@@ -38,6 +44,9 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | operating_profit@FY2025 | Operating profit, FY2025 | EUR 280m | down, worse vs prior year |
 | operating_profit@FY2024 | Operating profit, FY2024 | EUR 306m |  |
 | operating_profit.change@FY2025 | change in Operating profit, FY2024 to FY2025 | 8.7% | down, worse vs prior year; printed without a sign: say the direction in words |
+| net_cash@FY2025 | Net cash (cash and cash-like investments above total debt), FY2025 | EUR 414m | down, worse vs prior year |
+| net_cash@FY2024 | Net cash (cash and cash-like investments above total debt), FY2024 | EUR 512m |  |
+| net_cash.change@FY2025 | change in Net cash (cash and cash-like investments above total debt), FY2024 to FY2025 | 19.1% | down, worse vs prior year; printed without a sign: say the direction in words |
 
 ## Operating performance
 
@@ -53,15 +62,30 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | aero_revenue_per_passenger@FY2024 | Aeronautical revenue per passenger, FY2024 | EUR 15.57 |  |
 | aero_revenue_per_passenger.change@FY2025 | change in Aeronautical revenue per passenger, FY2024 to FY2025 | 3.1% | up, better vs prior year; printed without a sign: say the direction in words |
 
+## Liquidity and funding
+
+| id | what it is | prints as | computed by code |
+| --- | --- | --- | --- |
+| cash_like@FY2025 | Cash and cash-like investments, FY2025 | EUR 470m | down, worse vs prior year |
+| cash_like@FY2024 | Cash and cash-like investments, FY2024 | EUR 567m |  |
+| cash_like.change@FY2025 | change in Cash and cash-like investments, FY2024 to FY2025 | 17.2% | down, worse vs prior year; printed without a sign: say the direction in words |
+| cash_liquidity@FY2025 | Cash liquidity (partial), FY2025 | EUR 470m | down, worse vs prior year |
+| cash_liquidity@FY2024 | Cash liquidity (partial), FY2024 | EUR 567m |  |
+| cash_liquidity.change@FY2025 | change in Cash liquidity (partial), FY2024 to FY2025 | 17.2% | down, worse vs prior year; printed without a sign: say the direction in words |
+
 ## Peer positioning
 
 | id | what it is | prints as | computed by code |
 | --- | --- | --- | --- |
 | ebitda_margin.peer_median@FY2025 | EBITDA margin, median of airports, peer year 2025 (3 companies) | 36.5% | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
 | ebitda_margin.peer_rank@FY2025 | EBITDA margin, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
+| net_leverage.peer_median@FY2025 | Net leverage, median of airports, peer year 2025 (3 companies) | 1.46x | company below peer median, better |
+| net_leverage.peer_rank@FY2025 | Net leverage, rank in airports, peer year 2025 (1st = strongest, i.e. the lowest) | 1st of 3 | best in the group |
 | gross_leverage.peer_median@FY2025 | Gross leverage, median of airports, peer year 2025 (3 companies) | 2.00x | company below peer median, better |
 | gross_leverage.peer_rank@FY2025 | Gross leverage, rank in airports, peer year 2025 (1st = strongest, i.e. the lowest) | 1st of 3 | best in the group |
 | capex_intensity.peer_median@FY2025 | Capex intensity, median of airports, peer year 2025 (3 companies) | 18.2% | company above peer median |
+| cash_liquidity_to_revenue.peer_median@FY2025 | Cash liquidity to revenue (partial), median of airports, peer year 2025 (3 companies) | 32.6% | company above peer median, better |
+| cash_liquidity_to_revenue.peer_rank@FY2025 | Cash liquidity to revenue (partial), rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
 
 ## Other figures
 
@@ -89,12 +113,8 @@ write no number about it, and no direction word unless a figure of the sentence 
 
 These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
 
-- cash_like@FY2025: not verified yet: waiting for Imane's review
-- cash_like@FY2024: not verified yet: waiting for Imane's review
 - net_debt@FY2025: below zero: the company has net cash, use net_cash
 - net_debt@FY2024: below zero: the company has net cash, use net_cash
-- net_leverage@FY2025: not verified yet: waiting for Imane's review
-- net_leverage@FY2024: not verified yet: waiting for Imane's review
 - interest_coverage@FY2025: not meaningful: debt is very small (gross leverage 0.14x), so ratios to debt say little
 - interest_coverage@FY2024: not meaningful: debt is very small (gross leverage 0.14x), so ratios to debt say little
 - interest_coverage.change@FY2025: not meaningful: debt is very small (gross leverage 0.14x), so ratios to debt say little
@@ -111,10 +131,6 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - fcf_to_debt.peer_median@FY2025: not meaningful: debt is very small (gross leverage 0.14x), so ratios to debt say little
 - fcf_to_debt.peer_rank@FY2025: not meaningful: debt is very small (gross leverage 0.14x), so ratios to debt say little
 - capex_intensity.peer_rank@FY2025: not ranked: neither higher nor lower is better
-- cash_liquidity@FY2025: not verified yet: waiting for Imane's review
-- cash_liquidity@FY2024: not verified yet: waiting for Imane's review
-- cash_liquidity_to_revenue@FY2025: not verified yet: waiting for Imane's review
-- cash_liquidity_to_revenue@FY2024: not verified yet: waiting for Imane's review
 - liquidity@FY2025: Undrawn committed credit facilities not available for FY2025
 - liquidity@FY2024: Undrawn committed credit facilities not available for FY2024
 - liquidity_to_revenue@FY2025: Liquidity: Undrawn committed credit facilities not available for FY2025
@@ -129,5 +145,3 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - contract_liabilities@FY2024: no figure for this year
 - undrawn_facilities@FY2025: no figure for this year
 - undrawn_facilities@FY2024: no figure for this year
-- net_cash@FY2025: not verified yet: waiting for Imane's review
-- net_cash@FY2024: not verified yet: waiting for Imane's review

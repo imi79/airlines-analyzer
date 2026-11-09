@@ -1,0 +1,96 @@
+{
+ "answer": {
+  "sections": {
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "passengers.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "passengers@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:capacity_and_network"
+      }
+     ],
+     "text": "Passengers rose by {{passengers.change@FY2025}} to {{passengers@FY2025}}, supported by a summer programme that added new leisure routes."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "ebitda_margin.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2025"
+      }
+     ],
+     "text": "Revenue rose by {{revenue.change@FY2025}} to {{revenue@FY2025}}, with the EBITDA margin widening by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat",
+        "in_line_with_peers"
+       ],
+       "id": "fuel_share_of_costs@FY2025"
+      }
+     ],
+     "text": "Fuel made up {{fuel_share_of_costs@FY2025}} of costs, broadly unchanged on the prior year, in line with the peer median."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines"
+      },
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines-2"
+      }
+     ],
+     "text": "The company acquired previously leased Boeing 737-800 aircraft, which contributed accounting gains and recurring cost savings, and exercised its option for additional 737 MAX 8 aircraft."
+    }
+   ]
+  }
+ },
+ "label": "norwegian_FY2025 attempt 3",
+ "recorded_at": "2026-11-09T16:17:59+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "d5bf2b80f4ba38f057b6f554ddd6cd3d8c55977a14c6334b970fe794a9a1a8af",
+  "user_sha256": "8c6b9cfbfbe6ec7bf461493663ac156dfc3dc29596554206e65099e702b8384e"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 13280,
+  "output_tokens": 427
+ }
+}

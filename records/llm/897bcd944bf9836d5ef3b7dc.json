@@ -1,0 +1,284 @@
+{
+ "answer": {
+  "sections": {
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda_margin.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2025"
+      }
+     ],
+     "text": "Revenue rose by {{revenue.change@FY2025}} to {{revenue@FY2025}}, with the EBITDA margin easing by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "passengers@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "traffic_growth@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "aero_revenue_per_passenger@FY2024"
+      }
+     ],
+     "text": "In FY2024 the Spanish network carried {{passengers@FY2024}} passengers, with traffic growth of {{traffic_growth@FY2024}} and aeronautical revenue per passenger of {{aero_revenue_per_passenger@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs"
+      }
+     ],
+     "text": "The regulator set the average airport charge per passenger for 2026 above the prior year's level, which supports the aeronautical revenue base."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@FY2025"
+      }
+     ],
+     "text": "Aena has the highest EBITDA margin in the airport group ({{ebitda_margin.peer_rank@FY2025}}), against a peer median of {{ebitda_margin.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "interest_coverage.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ffo_to_debt.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "fcf_to_debt.peer_rank@FY2025"
+      }
+     ],
+     "text": "It also leads the group on interest coverage ({{interest_coverage.peer_rank@FY2025}}), FFO to debt ({{ffo_to_debt.peer_rank@FY2025}}) and FCF to debt ({{fcf_to_debt.peer_rank@FY2025}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "net_leverage.peer_rank@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "capex_intensity.peer_median@FY2025"
+      }
+     ],
+     "text": "Leverage sits in the middle of the group, with net leverage ranking {{net_leverage.peer_rank@FY2025}} and gross leverage {{gross_leverage.peer_rank@FY2025}}, and capex intensity is below the peer median of {{capex_intensity.peer_median@FY2025}}."
+    }
+   ],
+   "snapshot": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:funding_and_rating-2"
+      }
+     ],
+     "text": "Aena, the Spanish airport operator, grew revenue by {{revenue.change@FY2025}} to {{revenue@FY2025}} in FY2025, with Moody's raising its long-term issuer rating during the year."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "net_leverage.change@FY2025"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "net_leverage@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ebitda.change@FY2025"
+      }
+     ],
+     "text": "Net leverage fell by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}}, in line with the airport peer median, as EBITDA rose by {{ebitda.change@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity@FY2025"
+      }
+     ],
+     "text": "The point to watch is cash generation: free cash flow fell by {{fcf.change@FY2025}} to {{fcf@FY2025}} as capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_to_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity@FY2025"
+      }
+     ],
+     "text": "Cash generation: free cash flow fell by {{fcf.change@FY2025}} to {{fcf@FY2025}} and FCF to debt by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}}, as capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda_margin.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2025"
+      }
+     ],
+     "text": "Margins: the EBITDA margin eased by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, a weaker result than the prior year."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "total_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "total_debt@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage@FY2025"
+      }
+     ],
+     "text": "Debt: total debt rose by {{total_debt.change@FY2025}} to {{total_debt@FY2025}}, so gross leverage of {{gross_leverage@FY2025}} leaves limited headroom if EBITDA stalls."
+    }
+   ]
+  }
+ },
+ "label": "aena_FY2025 attempt 2",
+ "recorded_at": "2026-11-09T16:17:19+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "b862644c554beb8a871d18fe6e9b976ec7c69a01e4f8575b42e62b51ea20c3c7",
+  "user_sha256": "1e4829aeb16922ca203108c2fe76e4c2fce9139b066b6d3e1aee5547c0a9b957"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14183,
+  "output_tokens": 1598
+ }
+}

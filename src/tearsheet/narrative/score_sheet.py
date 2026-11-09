@@ -7,8 +7,9 @@ before), each printed in full on its own sheet so the file can be read on its ow
 
 Scores come from `docs/m4/commentary_review.yaml` when it exists (decision 0018: scored by
 Claude at Imane's request, after checking each draft against the annual report); a score
-counts only if its draft fingerprint matches the draft scored. Without that file the sheet
-is written blank, and only when it holds no score yet: a rerun never erases typed scores.
+counts only if its fact sheet fingerprint and prompt version match the draft scored. Without
+that file the sheet is written blank, and only when it holds no score yet: a rerun never
+erases typed scores.
 """
 
 from __future__ import annotations
@@ -22,7 +23,7 @@ import xlsxwriter
 import yaml
 
 from tearsheet.config import ROOT
-from tearsheet.narrative.drafting import Outcome, rendered_text
+from tearsheet.narrative.drafting import PROMPT_VERSION, Outcome, rendered_text
 from tearsheet.narrative.factsheet import load_narrative
 
 PATH = ROOT / "docs" / "m4" / "score_sheet.xlsx"
@@ -60,7 +61,11 @@ def review_scores(outcomes: list[Outcome], review: dict | None) -> dict[str, dic
     out = {}
     for o in outcomes:
         entry = (review.get("drafts") or {}).get(o.sheet.key)
-        if entry and o.input_hash().startswith(str(entry["draft"])):
+        if (
+            entry
+            and o.input_hash().startswith(str(entry["draft"]))
+            and entry.get("prompt_version", PROMPT_VERSION) == PROMPT_VERSION
+        ):
             out[o.sheet.key] = entry
     return out
 

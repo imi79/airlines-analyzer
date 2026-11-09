@@ -1,0 +1,104 @@
+{
+ "answer": {
+  "sections": {
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ebitda_margin.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2025"
+      }
+     ],
+     "text": "Revenue grew by {{revenue.change@FY2025}} to {{revenue@FY2025}}, with the EBITDA margin widening by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "passengers@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fleet@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fleet_age@FY2024"
+      }
+     ],
+     "text": "In FY2024 the group carried {{passengers@FY2024}} passengers with a fleet of {{fleet@FY2024}} aircraft at an average age of {{fleet_age@FY2024}}."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "net_leverage.peer_rank@FY2025"
+      }
+     ],
+     "text": "Air France-KLM sits in the middle of the network group on EBITDA margin, net leverage, gross leverage, interest coverage and FFO to debt, each ranking {{net_leverage.peer_rank@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "fcf_to_debt.peer_median@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "fcf_to_debt.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "cash_liquidity_to_revenue.peer_rank@FY2025"
+      }
+     ],
+     "text": "It is weakest on cash generation and liquidity, with FCF to debt below the peer median of {{fcf_to_debt.peer_median@FY2025}} and the lowest of the group ({{fcf_to_debt.peer_rank@FY2025}}), and cash liquidity to revenue the lowest as well ({{cash_liquidity_to_revenue.peer_rank@FY2025}})."
+    }
+   ]
+  }
+ },
+ "label": "afkl_FY2025 attempt 3",
+ "recorded_at": "2026-11-09T16:15:23+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "4d027883e24d0966ba61b18ca4c38a022ddb4c19cc52eb2016bd6dfbff07dcde",
+  "user_sha256": "5e50c6a521cb538f52a8c414ab5a6ab7147a7e8762676f14f2b489d575905c03"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 13743,
+  "output_tokens": 559
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "answer": {
+  "sections": {
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda_margin.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2025"
+      }
+     ],
+     "text": "Revenue rose by {{revenue.change@FY2025}} to {{revenue@FY2025}}, with the EBITDA margin easing by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "passengers@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "traffic_growth@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "aero_revenue_per_passenger@FY2024"
+      }
+     ],
+     "text": "In FY2024 the Spanish network carried {{passengers@FY2024}} passengers, with traffic growth of {{traffic_growth@FY2024}} and aeronautical revenue per passenger of {{aero_revenue_per_passenger@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs"
+      }
+     ],
+     "text": "The regulator set the average airport charge per passenger for 2026 above the prior year's level, which supports the aeronautical revenue base."
+    }
+   ]
+  }
+ },
+ "label": "aena_FY2025 attempt 3",
+ "recorded_at": "2026-11-09T16:17:21+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "d5bf2b80f4ba38f057b6f554ddd6cd3d8c55977a14c6334b970fe794a9a1a8af",
+  "user_sha256": "ead89e58ba154dadd249adb71d438c3d8aa23f4964e0738cfd00e6fe20e2dcb8"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 12450,
+  "output_tokens": 358
+ }
+}

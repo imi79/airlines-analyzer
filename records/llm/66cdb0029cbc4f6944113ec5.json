@@ -1,0 +1,362 @@
+{
+ "answer": {
+  "sections": {
+   "credit_metrics": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ebitda.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "operating_profit.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "operating_profit@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2024"
+      }
+     ],
+     "text": "EBITDA rose by {{ebitda.change@FY2024}} to {{ebitda@FY2024}} and operating profit by {{operating_profit.change@FY2024}} to {{operating_profit@FY2024}}, on revenue up {{revenue.change@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "total_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "total_debt@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "gross_leverage.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "ebitda.change@FY2024"
+      }
+     ],
+     "text": "Total debt increased by {{total_debt.change@FY2024}} to {{total_debt@FY2024}}, yet gross leverage fell by {{gross_leverage.change@FY2024}} to {{gross_leverage@FY2024}} as EBITDA rose by {{ebitda.change@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "interest_coverage.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "interest_coverage@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ffo_to_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ffo.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ffo@FY2024"
+      }
+     ],
+     "text": "Interest coverage improved by {{interest_coverage.change@FY2024}} to {{interest_coverage@FY2024}}, and FFO to debt rose by {{ffo_to_debt.change@FY2024}} to {{ffo_to_debt@FY2024}} on FFO up {{ffo.change@FY2024}} to {{ffo@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_to_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity@FY2024"
+      }
+     ],
+     "text": "Free cash flow declined by {{fcf.change@FY2024}} to {{fcf@FY2024}}, taking FCF to debt down by {{fcf_to_debt.change@FY2024}} to {{fcf_to_debt@FY2024}} as capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}."
+    }
+   ],
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      }
+     ],
+     "text": "Cash and cash-like investments rose by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, and cash liquidity to revenue increased by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "cash_liquidity@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "net_cash@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "net_cash.change@FY2024"
+      }
+     ],
+     "text": "Cash liquidity of {{cash_liquidity@FY2024}} leaves net cash of {{net_cash@FY2024}}, an increase of {{net_cash.change@FY2024}} over the year."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "advance_ticket_cover.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "contract_liabilities.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2024"
+      }
+     ],
+     "text": "Advance ticket cover eased by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, with contract liabilities up {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      },
+      {
+       "claims": [],
+       "id": "event:funding_and_rating-2"
+      }
+     ],
+     "text": "Funding was extended with a euro-denominated guaranteed bond under the EMTN programme maturing in 2031, and the audit committee noted an upgrade of the credit rating."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_to_debt.change@FY2024"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "fcf_to_debt@FY2024"
+      }
+     ],
+     "text": "Cash generation: free cash flow fell by {{fcf.change@FY2024}} to {{fcf@FY2024}} and FCF to debt by {{fcf_to_debt.change@FY2024}} to {{fcf_to_debt@FY2024}}, in line with the peer median."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "cask.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cask@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "cask_ex_fuel.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:costs"
+      }
+     ],
+     "text": "Unit cost: CASK rose by {{cask.change@FY2024}} to {{cask@FY2024}} and CASK ex-fuel by {{cask_ex_fuel.change@FY2024}}, with significant investment in spares to limit aircraft grounding."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2024"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "capex_intensity@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity.peer_median@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines"
+      }
+     ],
+     "text": "Investment: capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}, above the peer median of {{capex_intensity.peer_median@FY2024}}, as NEO aircraft joined the fleet."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "ebitda_margin@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2024"
+      }
+     ],
+     "text": "Profitability: the EBITDA margin of {{ebitda_margin@FY2024}} is below the peer median of {{ebitda_margin.peer_median@FY2024}}, the weakest of the group ({{ebitda_margin.peer_rank@FY2024}})."
+    }
+   ]
+  }
+ },
+ "label": "easyjet_FY2024 attempt 2",
+ "recorded_at": "2026-11-09T16:20:07+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "a2571ea2ac0696bbd9a3ff355eaefa2bee15b01d3af2535ec48128d989d2b7c1",
+  "user_sha256": "cca188526f6162f3b0144150ac22535ccbcbf34f608de7d18578b2ca399e8dbe"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 15346,
+  "output_tokens": 1944
+ }
+}

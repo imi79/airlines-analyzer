@@ -1,0 +1,82 @@
+{
+ "answer": {
+  "sections": {
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ffo_to_debt.peer_rank@FY2025"
+      }
+     ],
+     "text": "IAG leads the network airlines on EBITDA margin ({{ebitda_margin.peer_rank@FY2025}}), net leverage ({{net_leverage.peer_rank@FY2025}}) and FFO to debt ({{ffo_to_debt.peer_rank@FY2025}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "gross_leverage.peer_median@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "interest_coverage.peer_median@FY2025"
+      }
+     ],
+     "text": "Gross leverage is below the peer median of {{gross_leverage.peer_median@FY2025}}, and interest coverage exceeds the median of {{interest_coverage.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "advance_ticket_cover.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      }
+     ],
+     "text": "The weakest position is advance ticket cover, the highest of the group ({{advance_ticket_cover.peer_rank@FY2025}}), while cash liquidity to revenue of {{cash_liquidity_to_revenue@FY2025}} sits in the middle of the group."
+    }
+   ]
+  }
+ },
+ "label": "iag_FY2025 attempt 3",
+ "recorded_at": "2026-11-09T16:15:44+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "912935195ee0bd77beb3be929dc61a81e02b45a3ecb0996f89dfe23efafa47a2",
+  "user_sha256": "017340c407490e74e64ff89d1e098ef9aafe6c4217b71dbc5266cd709ef2dda0"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14142,
+  "output_tokens": 422
+ }
+}

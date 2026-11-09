@@ -31,8 +31,8 @@ Cash and cash-like investments rose to EUR 2.4bn, and liquidity to revenue reach
 **Peer positioning**
 
 Aena has the highest EBITDA margin among the airport peers (1st of 3), at 60.0% against a median of 42.2%.
-Leverage sits at the group median, with net leverage of 2.06x ranking [[net_leverage.peer_rank@FY2023?]].
-Cash liquidity to revenue is the strongest of the group ([[cash_liquidity_to_revenue.peer_rank@FY2023?]]).
+Leverage sits at the group median, with net leverage of 2.06x ranking 2nd of 3.
+Cash liquidity to revenue is the strongest of the group (1st of 3).
 
 **Watch items**
 

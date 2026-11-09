@@ -1,0 +1,611 @@
+{
+ "answer": {
+  "sections": {
+   "credit_metrics": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ebitda.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2026"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "operating_profit.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "operating_profit@FY2026"
+      }
+     ],
+     "text": "EBITDA increased by {{ebitda.change@FY2026}} to {{ebitda@FY2026}}, but operating profit fell by {{operating_profit.change@FY2026}} to {{operating_profit@FY2026}} as depreciation rose with the larger fleet."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "total_debt.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "total_debt@FY2026"
+      },
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "gross_leverage.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage@FY2026"
+      }
+     ],
+     "text": "Total debt rose by {{total_debt.change@FY2026}} to {{total_debt@FY2026}}, yet gross leverage fell by {{gross_leverage.change@FY2026}} to {{gross_leverage@FY2026}} on the stronger earnings base."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ffo.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "ffo@FY2026"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ffo_to_debt.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt@FY2026"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "interest_coverage.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "interest_coverage@FY2026"
+      }
+     ],
+     "text": "FFO rose by {{ffo.change@FY2026}} to {{ffo@FY2026}}, lifting FFO to debt by {{ffo_to_debt.change@FY2026}} to {{ffo_to_debt@FY2026}}, and interest coverage improved by {{interest_coverage.change@FY2026}} to {{interest_coverage@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "fcf@FY2026"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_to_debt.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt@FY2026"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity@FY2026"
+      }
+     ],
+     "text": "Free cash flow was broadly unchanged at {{fcf@FY2026}}, so FCF to debt fell by {{fcf_to_debt.change@FY2026}} to {{fcf_to_debt@FY2026}} as capex intensity rose by {{capex_intensity.change@FY2026}} to {{capex_intensity@FY2026}}."
+    }
+   ],
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_like.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2026"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2026"
+      }
+     ],
+     "text": "Cash and cash-like investments rose by {{cash_like.change@FY2026}} to {{cash_like@FY2026}}, taking cash liquidity to revenue up by {{cash_liquidity_to_revenue.change@FY2026}} to {{cash_liquidity_to_revenue@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "contract_liabilities.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2026"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover.change@FY2026"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "worse"
+       ],
+       "id": "advance_ticket_cover@FY2026"
+      }
+     ],
+     "text": "Customer prepayments grew: contract liabilities rose by {{contract_liabilities.change@FY2026}} to {{contract_liabilities@FY2026}}, and advance ticket cover rose by {{advance_ticket_cover.change@FY2026}} to {{advance_ticket_cover@FY2026}}, above the peer median."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      },
+      {
+       "claims": [],
+       "id": "event:funding_and_rating-2"
+      }
+     ],
+     "text": "The company repaid its eurobond out of free cash and renewed its Euro Medium Term Note programme, with Fitch and Moody's issuing ratings with stable and negative outlooks respectively."
+    }
+   ],
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "passengers.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "passengers@FY2026"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ask.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "ask@FY2026"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "rpk.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "rpk@FY2026"
+      }
+     ],
+     "text": "Passengers rose by {{passengers.change@FY2026}} to {{passengers@FY2026}} on capacity up {{ask.change@FY2026}} to {{ask@FY2026}} available seat kilometres, with RPK up {{rpk.change@FY2026}} to {{rpk@FY2026}} billion."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "load_factor.change@FY2026"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "load_factor@FY2026"
+      }
+     ],
+     "text": "The load factor slipped by {{load_factor.change@FY2026}} to {{load_factor@FY2026}}, in line with the peer median."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "rask@FY2026"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "passenger_yield@FY2026"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "cask@FY2026"
+      }
+     ],
+     "text": "Unit revenue was stable, with RASK at {{rask@FY2026}} and passenger yield at {{passenger_yield@FY2026}}, while CASK was broadly unchanged at {{cask@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "cask_ex_fuel.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "cask_ex_fuel@FY2026"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "fuel_share_of_costs.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "fuel_share_of_costs@FY2026"
+      }
+     ],
+     "text": "CASK ex-fuel rose by {{cask_ex_fuel.change@FY2026}} to {{cask_ex_fuel@FY2026}}, while the fuel share of costs fell by {{fuel_share_of_costs.change@FY2026}} to {{fuel_share_of_costs@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "fleet.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "fleet@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "fleet_age@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines-2"
+      }
+     ],
+     "text": "The fleet grew by {{fleet.change@FY2026}} to {{fleet@FY2026}} aircraft with an average age of {{fleet_age@FY2026}}, and the company renegotiated its Airbus order book to defer deliveries and support lifting the grounded fleet."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@FY2026"
+      }
+     ],
+     "text": "Wizz Air has the highest EBITDA margin of the low-cost group ({{ebitda_margin.peer_rank@FY2026}}), at {{ebitda_margin@FY2026}} against a median of {{ebitda_margin.peer_median@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers",
+        "worse"
+       ],
+       "id": "net_leverage@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage.peer_median@FY2026"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2026"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "worse"
+       ],
+       "id": "gross_leverage@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_median@FY2026"
+      }
+     ],
+     "text": "Leverage is the weakest in the group, with net leverage of {{net_leverage@FY2026}} against a median of {{net_leverage.peer_median@FY2026}} ({{net_leverage.peer_rank@FY2026}}) and gross leverage of {{gross_leverage@FY2026}} against {{gross_leverage.peer_median@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "worse"
+       ],
+       "id": "ffo_to_debt@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt.peer_median@FY2026"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse"
+       ],
+       "id": "interest_coverage@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "interest_coverage.peer_median@FY2026"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2026"
+      }
+     ],
+     "text": "Cash generation and coverage also trail the group, with FFO to debt of {{ffo_to_debt@FY2026}} against a median of {{ffo_to_debt.peer_median@FY2026}} and interest coverage of {{interest_coverage@FY2026}} against {{interest_coverage.peer_median@FY2026}}, while cash liquidity to revenue sits in the middle of the group."
+    }
+   ],
+   "snapshot": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines"
+      }
+     ],
+     "text": "Wizz Air, the Central and Eastern European low-cost carrier, grew revenue by {{revenue.change@FY2026}} to {{revenue@FY2026}} in FY2026 while the Pratt & Whitney GTF engine issue continued to ground aircraft and weigh on capacity, utilisation and cost performance."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ebitda_margin.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2026"
+      },
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "net_leverage.change@FY2026"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "worse"
+       ],
+       "id": "net_leverage@FY2026"
+      }
+     ],
+     "text": "The EBITDA margin widened by {{ebitda_margin.change@FY2026}} to {{ebitda_margin@FY2026}} and net leverage fell by {{net_leverage.change@FY2026}} to {{net_leverage@FY2026}}, still well above the peer median."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_debt.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "net_debt@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "fleet@FY2026"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2026"
+      }
+     ],
+     "text": "The point to watch is leverage: net debt rose by {{net_debt.change@FY2026}} to {{net_debt@FY2026}} as the fleet expanded to {{fleet@FY2026}} aircraft, leaving net leverage at the weakest level of the low-cost group ({{net_leverage.peer_rank@FY2026}})."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers",
+        "worse"
+       ],
+       "id": "net_leverage@FY2026"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2026"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "worse"
+       ],
+       "id": "gross_leverage@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_median@FY2026"
+      }
+     ],
+     "text": "Leverage: net leverage of {{net_leverage@FY2026}} is the highest of the low-cost group ({{net_leverage.peer_rank@FY2026}}) and gross leverage of {{gross_leverage@FY2026}} is above the peer median of {{gross_leverage.peer_median@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_to_debt.change@FY2026"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse"
+       ],
+       "id": "fcf_to_debt@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt.peer_median@FY2026"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity@FY2026"
+      }
+     ],
+     "text": "Cash flow: FCF to debt fell by {{fcf_to_debt.change@FY2026}} to {{fcf_to_debt@FY2026}}, below the peer median of {{fcf_to_debt.peer_median@FY2026}}, as capex intensity rose to {{capex_intensity@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "cask_ex_fuel.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "cask_ex_fuel@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines"
+      }
+     ],
+     "text": "Unit cost: CASK ex-fuel rose by {{cask_ex_fuel.change@FY2026}} to {{cask_ex_fuel@FY2026}}, and the GTF engine issue continued to affect capacity, utilisation and cost performance."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers",
+        "worse"
+       ],
+       "id": "advance_ticket_cover@FY2026"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "advance_ticket_cover.peer_rank@FY2026"
+      }
+     ],
+     "text": "Customer prepayments: advance ticket cover of {{advance_ticket_cover@FY2026}} is the highest of the group ({{advance_ticket_cover.peer_rank@FY2026}}), so a larger share of cash depends on forward bookings."
+    }
+   ]
+  }
+ },
+ "label": "wizz_FY2026 attempt 1",
+ "recorded_at": "2026-11-09T16:18:11+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "010a22e30533e014fb1ef4924492fb8e5e83d466a2300099b228520ee7082b63",
+  "user_sha256": "523179de3f56610208fb6843abf05b1ab3b8ee0a3b5b84106acd520a7ff7b569"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 13747,
+  "output_tokens": 3491
+ }
+}
