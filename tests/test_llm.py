@@ -162,3 +162,15 @@ def test_models_yaml_loads_every_provider():
         s = load_settings(use=name)
         assert s.model("extraction") and s.model("drafting")
     assert load_settings().name == "deepseek"
+
+
+def test_key_typed_in_the_app_is_used_and_never_saved(tmp_path: Path, monkeypatch):
+    """M5 live mode: a key typed for the session is sent to the provider but never written."""
+    monkeypatch.delenv("TEST_LLM_KEY", raising=False)
+    server = Server(openai_answer({"n": 3}))
+    llm = LLM(settings("openai_compatible"), records=tmp_path, http=server.client(),
+              api_key="sk-typed-in-app")  # fmt: skip
+    llm.call_tool("extraction", "system", "user text", TOOL, "extract-v1")
+    assert server.requests[0].headers["authorization"] == "Bearer sk-typed-in-app"
+    saved = "".join(p.read_text() for p in tmp_path.rglob("*") if p.is_file())
+    assert saved and "sk-typed-in-app" not in saved

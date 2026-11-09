@@ -1,0 +1,2298 @@
+{
+ "commentary": {
+  "credit_metrics": {
+   "notes": [],
+   "removed": [],
+   "sentences": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ebitda.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "operating_profit.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "operating_profit@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "dda.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "dda@FY2025"
+      }
+     ],
+     "text": "EBITDA increased by 7.8% to EUR 3.8bn, and operating profit rose by 12.2% to EUR 3.0bn as depreciation, amortisation and impairment fell by 6.0% to EUR 797m.",
+     "text_blanks": "EBITDA increased by {{ebitda.change@FY2025}} to {{ebitda@FY2025}}, and operating profit rose by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}} as depreciation, amortisation and impairment fell by {{dda.change@FY2025}} to {{dda@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "total_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "total_debt@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "net_debt@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "net_leverage.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "gross_leverage@FY2025"
+      }
+     ],
+     "text": "Total debt rose by 3.2% to EUR 7.6bn, but net debt was stable at EUR 5.5bn, so net leverage came down by 0.11x to 1.46x and gross leverage held at 2.00x.",
+     "text_blanks": "Total debt rose by {{total_debt.change@FY2025}} to {{total_debt@FY2025}}, but net debt was stable at {{net_debt@FY2025}}, so net leverage came down by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}} and gross leverage held at {{gross_leverage@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "interest_coverage.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "interest_coverage@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "finance_costs@FY2025"
+      }
+     ],
+     "text": "Interest coverage improved by 2.38x to 14.72x, with finance costs broadly unchanged at EUR 242m.",
+     "text_blanks": "Interest coverage improved by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}}, with finance costs broadly unchanged at {{finance_costs@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ffo.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ffo@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ffo_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_to_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity@FY2025"
+      }
+     ],
+     "text": "FFO rose by 4.8% to EUR 3.0bn, lifting FFO to debt to 39.6%, but FCF to debt fell by 3.4 points to 22.9% as capex intensity rose by 2.6 points to 16.9%.",
+     "text_blanks": "FFO rose by {{ffo.change@FY2025}} to {{ffo@FY2025}}, lifting FFO to debt to {{ffo_to_debt@FY2025}}, but FCF to debt fell by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}} as capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}."
+    }
+   ],
+   "status": "passed",
+   "title": "Credit metrics"
+  },
+  "liquidity_funding": {
+   "notes": [],
+   "removed": [],
+   "sentences": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_like.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "liquidity@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "undrawn_facilities@FY2025"
+      }
+     ],
+     "text": "Cash and cash-like investments rose by 12.4% to EUR 2.0bn, and total liquidity stood at EUR 4.3bn, including EUR 2.2bn of undrawn committed facilities.",
+     "text_blanks": "Cash and cash-like investments rose by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, and total liquidity stood at {{liquidity@FY2025}}, including {{undrawn_facilities@FY2025}} of undrawn committed facilities."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "liquidity_to_revenue@FY2025"
+      }
+     ],
+     "text": "Cash liquidity to revenue rose by 1.0 point to 32.6%, and liquidity to revenue reached 68.4%.",
+     "text_blanks": "Cash liquidity to revenue rose by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, and liquidity to revenue reached {{liquidity_to_revenue@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      },
+      {
+       "claims": [],
+       "id": "event:funding_and_rating-4"
+      },
+      {
+       "claims": [],
+       "id": "event:funding_and_rating-3"
+      }
+     ],
+     "text": "Funding activity continued: the Brazilian subsidiary BOAB issued secured debentures, London Luton airport completed the refinancing of its bank debt, and Fitch affirmed the ratings with a stable long-term outlook.",
+     "text_blanks": "Funding activity continued: the Brazilian subsidiary BOAB issued secured debentures, London Luton airport completed the refinancing of its bank debt, and Fitch affirmed the ratings with a stable long-term outlook."
+    }
+   ],
+   "status": "passed",
+   "title": "Liquidity and funding"
+  },
+  "operating_performance": {
+   "notes": [],
+   "removed": [
+    {
+     "text": "The regulator set the average airport charge per passenger for 2026 above the prior year's level, which supports the aeronautical revenue base.",
+     "why": [
+      "'above' needs a 'up' or 'above_peers' claim on a figure in the same clause"
+     ]
+    }
+   ],
+   "sentences": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "cfo@FY2025"
+      }
+     ],
+     "text": "Revenue rose by 8.9% to EUR 6.3bn, while cash from operations was broadly unchanged at EUR 2.8bn.",
+     "text_blanks": "Revenue rose by {{revenue.change@FY2025}} to {{revenue@FY2025}}, while cash from operations was broadly unchanged at {{cfo@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda_margin.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "ebitda_margin.peer_median@FY2025"
+      }
+     ],
+     "text": "The EBITDA margin narrowed by 0.6 points to 60.3%, still far above the airport peer median of 36.5%.",
+     "text_blanks": "The EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, still far above the airport peer median of {{ebitda_margin.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "passengers@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "traffic_growth@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "aero_revenue_per_passenger@FY2024"
+      }
+     ],
+     "text": "In FY2024 the Spanish network carried 309.3m passengers, with traffic growth of 9.2% and aeronautical revenue per passenger of EUR 10.18.",
+     "text_blanks": "In FY2024 the Spanish network carried {{passengers@FY2024}} passengers, with traffic growth of {{traffic_growth@FY2024}} and aeronautical revenue per passenger of {{aero_revenue_per_passenger@FY2024}}."
+    }
+   ],
+   "status": "passed",
+   "title": "Operating performance"
+  },
+  "peer_positioning": {
+   "notes": [],
+   "removed": [],
+   "sentences": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2025"
+      }
+     ],
+     "text": "Aena has the highest EBITDA margin of the airport group (1st of 3).",
+     "text_blanks": "Aena has the highest EBITDA margin of the airport group ({{ebitda_margin.peer_rank@FY2025}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "interest_coverage.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ffo_to_debt.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "fcf_to_debt.peer_rank@FY2025"
+      }
+     ],
+     "text": "It also leads the group on interest coverage (1st of 2), FFO to debt (1st of 2) and FCF to debt (1st of 2).",
+     "text_blanks": "It also leads the group on interest coverage ({{interest_coverage.peer_rank@FY2025}}), FFO to debt ({{ffo_to_debt.peer_rank@FY2025}}) and FCF to debt ({{fcf_to_debt.peer_rank@FY2025}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "net_leverage.peer_rank@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "capex_intensity.peer_median@FY2025"
+      }
+     ],
+     "text": "Leverage sits in the middle of the group, with net leverage ranking 2nd of 3 and gross leverage 2nd of 3, while capex intensity is below the peer median of 18.2%.",
+     "text_blanks": "Leverage sits in the middle of the group, with net leverage ranking {{net_leverage.peer_rank@FY2025}} and gross leverage {{gross_leverage.peer_rank@FY2025}}, while capex intensity is below the peer median of {{capex_intensity.peer_median@FY2025}}."
+    }
+   ],
+   "status": "passed",
+   "title": "Peer positioning"
+  },
+  "snapshot": {
+   "notes": [],
+   "removed": [],
+   "sentences": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:funding_and_rating-2"
+      }
+     ],
+     "text": "Aena, the Spanish airport operator, grew revenue by 8.9% to EUR 6.3bn in FY2025, and Moody's raised its long-term issuer and senior unsecured ratings during the year.",
+     "text_blanks": "Aena, the Spanish airport operator, grew revenue by {{revenue.change@FY2025}} to {{revenue@FY2025}} in FY2025, and Moody's raised its long-term issuer and senior unsecured ratings during the year."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "net_leverage.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ebitda.change@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "net_debt@FY2025"
+      }
+     ],
+     "text": "Net leverage fell by 0.11x to 1.46x, with EBITDA up 7.8% and net debt broadly unchanged at EUR 5.5bn.",
+     "text_blanks": "Net leverage fell by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}}, with EBITDA up {{ebitda.change@FY2025}} and net debt broadly unchanged at {{net_debt@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex@FY2025"
+      }
+     ],
+     "text": "The point to watch is cash generation: free cash flow fell by 10.2% to EUR 1.7bn as capex rose by 28.7% to EUR 1.1bn.",
+     "text_blanks": "The point to watch is cash generation: free cash flow fell by {{fcf.change@FY2025}} to {{fcf@FY2025}} as capex rose by {{capex.change@FY2025}} to {{capex@FY2025}}."
+    }
+   ],
+   "status": "passed",
+   "title": "Snapshot"
+  },
+  "watch_items": {
+   "notes": [],
+   "removed": [],
+   "sentences": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_to_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex@FY2025"
+      }
+     ],
+     "text": "Cash generation: free cash flow fell by 10.2% to EUR 1.7bn and FCF to debt by 3.4 points to 22.9%, as capex rose by 28.7% to EUR 1.1bn.",
+     "text_blanks": "Cash generation: free cash flow fell by {{fcf.change@FY2025}} to {{fcf@FY2025}} and FCF to debt by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}}, as capex rose by {{capex.change@FY2025}} to {{capex@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cfo@FY2025"
+      }
+     ],
+     "text": "Investment: capex intensity rose by 2.6 points to 16.9%, and capex of EUR 1.1bn absorbed a larger share of cash from operations of EUR 2.8bn.",
+     "text_blanks": "Investment: capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, and capex of {{capex@FY2025}} absorbed a larger share of cash from operations of {{cfo@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda_margin.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2025"
+      }
+     ],
+     "text": "Margins: the EBITDA margin narrowed by 0.6 points to 60.3%, a sign of pressure on operating profitability.",
+     "text_blanks": "Margins: the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, a sign of pressure on operating profitability."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "total_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "total_debt@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2025"
+      }
+     ],
+     "text": "Debt: total debt rose by 3.2% to EUR 7.6bn, so leverage depends on EBITDA holding at EUR 3.8bn.",
+     "text_blanks": "Debt: total debt rose by {{total_debt.change@FY2025}} to {{total_debt@FY2025}}, so leverage depends on EBITDA holding at {{ebitda@FY2025}}."
+    }
+   ],
+   "status": "passed",
+   "title": "Watch items"
+  }
+ },
+ "currency": "EUR",
+ "events": [
+  {
+   "document": "959800R7QMXKF0NFMT29-2025-12-31-ESEF-ES-0",
+   "event_id": "event:acquisitions_and_disposals",
+   "location": "page 181",
+   "quote": "El 18 de diciembre de 2025, la sociedad dependiente Aena Desarrollo Internacional (ADI) ha formalizado un acuerdo para la adquisición del 51% de una nueva sociedad holding propietaria y gestora del 100% del aeropuerto de Leeds Bradford y del 49% del de Newcastle, ambos en el Reino Unido, por 270 millones de GBP (aproximadamente, 309 millones de euros al 31 de diciembre de 2025) cuyo abono está previsto en efectivo, y estará afectado por potenciales ajustes al precio usuales en este tipo de operaciones (que se estima aumentarán el importe a aproximadamente 294,7 millones de GBP, 337,3 millones de euros).",
+   "status": "unverified",
+   "summary": "Aena's international subsidiary formalised an agreement to acquire a majority stake in a holding company owning Leeds Bradford airport and a stake in Newcastle airport, with closing subject to regulatory approvals.",
+   "title": "Agreement to acquire UK airport stakes",
+   "topic": "acquisitions_and_disposals"
+  },
+  {
+   "document": "959800R7QMXKF0NFMT29-2025-12-31-ESEF-ES-0",
+   "event_id": "event:funding_and_rating",
+   "location": "page 61",
+   "quote": "El 30 de octubre de 2025, la filial BOAB realizó su primera emisión de bonos (debentures simples) por importe de 5.300 millones de BRL, no convertibles, con garantía real, con vencimiento en junio de 2048), indexadas a IPCA y con cupón fijo del 8,74% anual, pagadero semestralmente, siendo el primer pago el 15 de junio de 2026 (Nota 20).",
+   "status": "verified",
+   "summary": "The Brazilian subsidiary BOAB issued secured, non-convertible debentures maturing in the long term, indexed to IPCA with a fixed coupon payable semi-annually.",
+   "title": "Brazilian subsidiary issues debentures",
+   "topic": "funding_and_rating"
+  },
+  {
+   "document": "959800R7QMXKF0NFMT29-2025-12-31-ESEF-ES-0",
+   "event_id": "event:funding_and_rating-2",
+   "location": "page 231",
+   "quote": "La agencia de calificación crediticia Moody's Investors Service ha mejorado la calificación de emisor a largo plazo y la calificación de deuda senior no garantizada de Aena S.M.E., S.A. a A2 desde A3.",
+   "status": "verified",
+   "summary": "Moody's raised Aena's long-term issuer and senior unsecured debt ratings.",
+   "title": "Moody's upgrades Aena's rating",
+   "topic": "funding_and_rating"
+  },
+  {
+   "document": "959800R7QMXKF0NFMT29-2025-12-31-ESEF-ES-0",
+   "event_id": "event:funding_and_rating-3",
+   "location": "page 180",
+   "quote": "El 22 de octubre, la agencia Fitch Ratings afirmó la calificación de largo plazo “A”, así como la calificación a corto plazo “F1” de Aena S.M.E., S.A. La perspectiva de largo plazo es estable.",
+   "status": "verified",
+   "summary": "Fitch affirmed Aena's long-term and short-term ratings, with a stable long-term outlook.",
+   "title": "Fitch affirms ratings with stable outlook",
+   "topic": "funding_and_rating"
+  },
+  {
+   "document": "959800R7QMXKF0NFMT29-2025-12-31-ESEF-ES-0",
+   "event_id": "event:funding_and_rating-4",
+   "location": "page 216",
+   "quote": "En junio de 2025, el Aeropuerto London Luton completó la refinanciación de su deuda bancaria.",
+   "status": "verified",
+   "summary": "London Luton airport completed the refinancing of its bank debt.",
+   "title": "Luton airport refinances bank debt",
+   "topic": "funding_and_rating"
+  },
+  {
+   "document": "959800R7QMXKF0NFMT29-2025-12-31-ESEF-ES-0",
+   "event_id": "event:regulation_and_tariffs",
+   "location": "page 180",
+   "quote": "En relación con el Documento de Regulación Aeroportuaria para el período 2022-2026 (DORA II), el 13 de noviembre de 2025, la CNMC emitió su resolución de supervisión de las tarifas aeroportuarias para 2026, estableciendo que el IMAAJ para 2026 sea de 11,00 euros por pasajero, lo que supone un incremento del 6,31% respecto al IMAAJ de 2025 (10,35 euros por",
+   "status": "verified",
+   "summary": "The competition regulator issued its supervision resolution setting the average airport charge per passenger for the following year, above the prior year's level.",
+   "title": "Regulator sets airport charges for next year",
+   "topic": "regulation_and_tariffs"
+  }
+ ],
+ "factsheet": {
+  "currency": "EUR",
+  "fiscal_year": 2025,
+  "higher_is_better": {
+   "aero_revenue_per_passenger": true,
+   "capex": null,
+   "capex_intensity": null,
+   "cash_like": true,
+   "cash_liquidity": true,
+   "cash_liquidity_to_revenue": true,
+   "cfo": true,
+   "contract_liabilities": null,
+   "dda": null,
+   "ebitda": true,
+   "ebitda_margin": true,
+   "fcf": true,
+   "fcf_to_debt": true,
+   "ffo": true,
+   "ffo_to_debt": true,
+   "finance_costs": false,
+   "fuel_cost": null,
+   "gross_leverage": false,
+   "interest_coverage": true,
+   "liquidity": true,
+   "liquidity_to_revenue": true,
+   "net_cash": true,
+   "net_debt": null,
+   "net_leverage": false,
+   "non_aero_share": true,
+   "operating_profit": true,
+   "passengers": true,
+   "profit": true,
+   "revenue": true,
+   "revenue_per_passenger": true,
+   "total_debt": null,
+   "traffic_growth": true,
+   "undrawn_facilities": true
+  },
+  "issuer": "aena",
+  "items": {
+   "aero_revenue_per_passenger@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "aero_revenue_per_passenger@FY2024",
+    "kind": "value",
+    "label": "Aeronautical revenue per passenger, FY2024",
+    "metric": "aero_revenue_per_passenger",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 10.18",
+    "unit": "per_passenger",
+    "value": "10.176259295183",
+    "vs_peers": null
+   },
+   "capex.change@FY2025": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "capex.change@FY2025",
+    "kind": "change",
+    "label": "change in Capex (purchases of PP&E and intangibles), FY2024 to FY2025",
+    "metric": "capex",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "28.7%",
+    "unit": "relative",
+    "value": "0.2870883510469610608006551632",
+    "vs_peers": null
+   },
+   "capex@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "capex@FY2024",
+    "kind": "value",
+    "label": "Capex (purchases of PP&E and intangibles), FY2024",
+    "metric": "capex",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 823m",
+    "unit": "amount",
+    "value": "823001000.000000000000",
+    "vs_peers": null
+   },
+   "capex@FY2025": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "capex@FY2025",
+    "kind": "value",
+    "label": "Capex (purchases of PP&E and intangibles), FY2025",
+    "metric": "capex",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 1.1bn",
+    "unit": "amount",
+    "value": "1059275000.000000000000",
+    "vs_peers": null
+   },
+   "capex_intensity.change@FY2025": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "capex_intensity.change@FY2025",
+    "kind": "change",
+    "label": "change in Capex intensity, FY2024 to FY2025",
+    "metric": "capex_intensity",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "2.6 points",
+    "unit": "points",
+    "value": "0.025924459362",
+    "vs_peers": null
+   },
+   "capex_intensity.peer_median@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "capex_intensity.peer_median@FY2025",
+    "kind": "peer_median",
+    "label": "Capex intensity, median of airports, peer year 2025 (3 companies)",
+    "metric": "capex_intensity",
+    "note": "",
+    "peer_assessment": "neutral",
+    "period": "peer year 2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "18.2%",
+    "unit": "pct",
+    "value": "0.181682577566",
+    "vs_peers": "below"
+   },
+   "capex_intensity@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "capex_intensity@FY2024",
+    "kind": "value",
+    "label": "Capex intensity, FY2024",
+    "metric": "capex_intensity",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "14.3%",
+    "unit": "pct",
+    "value": "0.142794582002",
+    "vs_peers": null
+   },
+   "capex_intensity@FY2025": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "capex_intensity@FY2025",
+    "kind": "value",
+    "label": "Capex intensity, FY2025",
+    "metric": "capex_intensity",
+    "note": "",
+    "peer_assessment": "neutral",
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "16.9%",
+    "unit": "pct",
+    "value": "0.168719041364",
+    "vs_peers": "below"
+   },
+   "cash_like.change@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "cash_like.change@FY2025",
+    "kind": "change",
+    "label": "change in Cash and cash-like investments, FY2024 to FY2025",
+    "metric": "cash_like",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "12.4%",
+    "unit": "relative",
+    "value": "0.1243002872151115449932822082",
+    "vs_peers": null
+   },
+   "cash_like@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "cash_like@FY2024",
+    "kind": "value",
+    "label": "Cash and cash-like investments, FY2024",
+    "metric": "cash_like",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 1.8bn",
+    "unit": "amount",
+    "value": "1821283000.000000000000",
+    "vs_peers": null
+   },
+   "cash_like@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "cash_like@FY2025",
+    "kind": "value",
+    "label": "Cash and cash-like investments, FY2025",
+    "metric": "cash_like",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 2.0bn",
+    "unit": "amount",
+    "value": "2047669000.000000000000",
+    "vs_peers": null
+   },
+   "cash_liquidity_to_revenue.change@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "cash_liquidity_to_revenue.change@FY2025",
+    "kind": "change",
+    "label": "change in Cash liquidity to revenue (partial), FY2024 to FY2025",
+    "metric": "cash_liquidity_to_revenue",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "1.0 point",
+    "unit": "points",
+    "value": "0.010147059728",
+    "vs_peers": null
+   },
+   "cash_liquidity_to_revenue.peer_median@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "cash_liquidity_to_revenue.peer_median@FY2025",
+    "kind": "peer_median",
+    "label": "Cash liquidity to revenue (partial), median of airports, peer year 2025 (3 companies)",
+    "metric": "cash_liquidity_to_revenue",
+    "note": "the company is the median of the group: say it sits in the middle of the group, do not compare it with the median",
+    "peer_assessment": "in_line",
+    "period": "peer year 2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "32.6%",
+    "unit": "pct",
+    "value": "0.326148309656",
+    "vs_peers": "in_line"
+   },
+   "cash_liquidity_to_revenue.peer_rank@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "cash_liquidity_to_revenue.peer_rank@FY2025",
+    "kind": "peer_rank",
+    "label": "Cash liquidity to revenue (partial), rank in airports, peer year 2025 (1st = strongest, i.e. the highest)",
+    "metric": "cash_liquidity_to_revenue",
+    "note": "",
+    "peer_assessment": null,
+    "period": "peer year 2025",
+    "rank": 2,
+    "rank_of": 3,
+    "rendered": "2nd of 3",
+    "unit": "rank",
+    "value": "2",
+    "vs_peers": null
+   },
+   "cash_liquidity_to_revenue@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "cash_liquidity_to_revenue@FY2024",
+    "kind": "value",
+    "label": "Cash liquidity to revenue (partial), FY2024",
+    "metric": "cash_liquidity_to_revenue",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "31.6%",
+    "unit": "pct",
+    "value": "0.316001249928",
+    "vs_peers": null
+   },
+   "cash_liquidity_to_revenue@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "cash_liquidity_to_revenue@FY2025",
+    "kind": "value",
+    "label": "Cash liquidity to revenue (partial), FY2025",
+    "metric": "cash_liquidity_to_revenue",
+    "note": "",
+    "peer_assessment": "in_line",
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "32.6%",
+    "unit": "pct",
+    "value": "0.326148309656",
+    "vs_peers": "in_line"
+   },
+   "cfo.change@FY2025": {
+    "assessment": "neutral",
+    "direction": "flat",
+    "id": "cfo.change@FY2025",
+    "kind": "change",
+    "label": "change in Cash from operations, FY2024 to FY2025",
+    "metric": "cfo",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "1.5%",
+    "unit": "relative",
+    "value": "0.01474805228656333467907368893",
+    "vs_peers": null
+   },
+   "cfo@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "cfo@FY2024",
+    "kind": "value",
+    "label": "Cash from operations, FY2024",
+    "metric": "cfo",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 2.7bn",
+    "unit": "amount",
+    "value": "2746939000.000000000000",
+    "vs_peers": null
+   },
+   "cfo@FY2025": {
+    "assessment": "neutral",
+    "direction": "flat",
+    "id": "cfo@FY2025",
+    "kind": "value",
+    "label": "Cash from operations, FY2025",
+    "metric": "cfo",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 2.8bn",
+    "unit": "amount",
+    "value": "2787451000.000000000000",
+    "vs_peers": null
+   },
+   "dda.change@FY2025": {
+    "assessment": "neutral",
+    "direction": "down",
+    "id": "dda.change@FY2025",
+    "kind": "change",
+    "label": "change in Depreciation, amortisation and impairment, FY2024 to FY2025",
+    "metric": "dda",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "6.0%",
+    "unit": "relative",
+    "value": "0.06005347890036812449944622091",
+    "vs_peers": null
+   },
+   "dda@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "dda@FY2024",
+    "kind": "value",
+    "label": "Depreciation, amortisation and impairment, FY2024",
+    "metric": "dda",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 848m",
+    "unit": "amount",
+    "value": "847811000.000000000000",
+    "vs_peers": null
+   },
+   "dda@FY2025": {
+    "assessment": "neutral",
+    "direction": "down",
+    "id": "dda@FY2025",
+    "kind": "value",
+    "label": "Depreciation, amortisation and impairment, FY2025",
+    "metric": "dda",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 797m",
+    "unit": "amount",
+    "value": "796897000.000000000000",
+    "vs_peers": null
+   },
+   "ebitda.change@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "ebitda.change@FY2025",
+    "kind": "change",
+    "label": "change in EBITDA, FY2024 to FY2025",
+    "metric": "ebitda",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "7.8%",
+    "unit": "relative",
+    "value": "0.07825470639244379164136041833",
+    "vs_peers": null
+   },
+   "ebitda@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "ebitda@FY2024",
+    "kind": "value",
+    "label": "EBITDA, FY2024",
+    "metric": "ebitda",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 3.5bn",
+    "unit": "amount",
+    "value": "3510332000.000000000000",
+    "vs_peers": null
+   },
+   "ebitda@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "ebitda@FY2025",
+    "kind": "value",
+    "label": "EBITDA, FY2025",
+    "metric": "ebitda",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 3.8bn",
+    "unit": "amount",
+    "value": "3785032000.000000000000",
+    "vs_peers": null
+   },
+   "ebitda_margin.change@FY2025": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "ebitda_margin.change@FY2025",
+    "kind": "change",
+    "label": "change in EBITDA margin, FY2024 to FY2025",
+    "metric": "ebitda_margin",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "0.6 points",
+    "unit": "points",
+    "value": "0.006187525140",
+    "vs_peers": null
+   },
+   "ebitda_margin.peer_median@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "ebitda_margin.peer_median@FY2025",
+    "kind": "peer_median",
+    "label": "EBITDA margin, median of airports, peer year 2025 (3 companies)",
+    "metric": "ebitda_margin",
+    "note": "",
+    "peer_assessment": "better",
+    "period": "peer year 2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "36.5%",
+    "unit": "pct",
+    "value": "0.365315728998",
+    "vs_peers": "above"
+   },
+   "ebitda_margin.peer_rank@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "ebitda_margin.peer_rank@FY2025",
+    "kind": "peer_rank",
+    "label": "EBITDA margin, rank in airports, peer year 2025 (1st = strongest, i.e. the highest)",
+    "metric": "ebitda_margin",
+    "note": "best in the group",
+    "peer_assessment": null,
+    "period": "peer year 2025",
+    "rank": 1,
+    "rank_of": 3,
+    "rendered": "1st of 3",
+    "unit": "rank",
+    "value": "1",
+    "vs_peers": null
+   },
+   "ebitda_margin@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "ebitda_margin@FY2024",
+    "kind": "value",
+    "label": "EBITDA margin, FY2024",
+    "metric": "ebitda_margin",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "60.9%",
+    "unit": "pct",
+    "value": "0.609059272866",
+    "vs_peers": null
+   },
+   "ebitda_margin@FY2025": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "ebitda_margin@FY2025",
+    "kind": "value",
+    "label": "EBITDA margin, FY2025",
+    "metric": "ebitda_margin",
+    "note": "",
+    "peer_assessment": "better",
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "60.3%",
+    "unit": "pct",
+    "value": "0.602871747726",
+    "vs_peers": "above"
+   },
+   "event:funding_and_rating": {
+    "assessment": null,
+    "direction": null,
+    "id": "event:funding_and_rating",
+    "kind": "event",
+    "label": "Brazilian subsidiary issues debentures",
+    "metric": "event",
+    "note": "The Brazilian subsidiary BOAB issued secured, non-convertible debentures maturing in the long term, indexed to IPCA with a fixed coupon payable semi-annually. Quote (page 61): \"El 30 de octubre de 2025, la filial BOAB realizó su primera emisión de bonos (debentures simples) por importe de 5.300 millones de BRL, no convertibles, con garantía real, con vencimiento en junio de 2048), indexadas a IPCA y con cupón fijo del 8,74% anual, pagadero semestralmente, siendo el primer pago el 15 de junio de 2026 (Nota 20).\"",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "",
+    "unit": "event",
+    "value": "0",
+    "vs_peers": null
+   },
+   "event:funding_and_rating-2": {
+    "assessment": null,
+    "direction": null,
+    "id": "event:funding_and_rating-2",
+    "kind": "event",
+    "label": "Moody's upgrades Aena's rating",
+    "metric": "event",
+    "note": "Moody's raised Aena's long-term issuer and senior unsecured debt ratings. Quote (page 231): \"La agencia de calificación crediticia Moody's Investors Service ha mejorado la calificación de emisor a largo plazo y la calificación de deuda senior no garantizada de Aena S.M.E., S.A. a A2 desde A3.\"",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "",
+    "unit": "event",
+    "value": "0",
+    "vs_peers": null
+   },
+   "event:funding_and_rating-3": {
+    "assessment": null,
+    "direction": null,
+    "id": "event:funding_and_rating-3",
+    "kind": "event",
+    "label": "Fitch affirms ratings with stable outlook",
+    "metric": "event",
+    "note": "Fitch affirmed Aena's long-term and short-term ratings, with a stable long-term outlook. Quote (page 180): \"El 22 de octubre, la agencia Fitch Ratings afirmó la calificación de largo plazo “A”, así como la calificación a corto plazo “F1” de Aena S.M.E., S.A. La perspectiva de largo plazo es estable.\"",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "",
+    "unit": "event",
+    "value": "0",
+    "vs_peers": null
+   },
+   "event:funding_and_rating-4": {
+    "assessment": null,
+    "direction": null,
+    "id": "event:funding_and_rating-4",
+    "kind": "event",
+    "label": "Luton airport refinances bank debt",
+    "metric": "event",
+    "note": "London Luton airport completed the refinancing of its bank debt. Quote (page 216): \"En junio de 2025, el Aeropuerto London Luton completó la refinanciación de su deuda bancaria.\"",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "",
+    "unit": "event",
+    "value": "0",
+    "vs_peers": null
+   },
+   "event:regulation_and_tariffs": {
+    "assessment": null,
+    "direction": null,
+    "id": "event:regulation_and_tariffs",
+    "kind": "event",
+    "label": "Regulator sets airport charges for next year",
+    "metric": "event",
+    "note": "The competition regulator issued its supervision resolution setting the average airport charge per passenger for the following year, above the prior year's level. Quote (page 180): \"En relación con el Documento de Regulación Aeroportuaria para el período 2022-2026 (DORA II), el 13 de noviembre de 2025, la CNMC emitió su resolución de supervisión de las tarifas aeroportuarias para 2026, estableciendo que el IMAAJ para 2026 sea de 11,00 euros por pasajero, lo que supone un incremento del 6,31% respecto al IMAAJ de 2025 (10,35 euros por\"",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "",
+    "unit": "event",
+    "value": "0",
+    "vs_peers": null
+   },
+   "fcf.change@FY2025": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "fcf.change@FY2025",
+    "kind": "change",
+    "label": "change in Free cash flow, FY2024 to FY2025",
+    "metric": "fcf",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "10.2%",
+    "unit": "relative",
+    "value": "0.1017506801154714964827348906",
+    "vs_peers": null
+   },
+   "fcf@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "fcf@FY2024",
+    "kind": "value",
+    "label": "Free cash flow, FY2024",
+    "metric": "fcf",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 1.9bn",
+    "unit": "amount",
+    "value": "1923938000.000000000000",
+    "vs_peers": null
+   },
+   "fcf@FY2025": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "fcf@FY2025",
+    "kind": "value",
+    "label": "Free cash flow, FY2025",
+    "metric": "fcf",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 1.7bn",
+    "unit": "amount",
+    "value": "1728176000.000000000000",
+    "vs_peers": null
+   },
+   "fcf_to_debt.change@FY2025": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "fcf_to_debt.change@FY2025",
+    "kind": "change",
+    "label": "change in FCF to debt, FY2024 to FY2025",
+    "metric": "fcf_to_debt",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "3.4 points",
+    "unit": "points",
+    "value": "0.034178911465",
+    "vs_peers": null
+   },
+   "fcf_to_debt.peer_median@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "fcf_to_debt.peer_median@FY2025",
+    "kind": "peer_median",
+    "label": "FCF to debt, median of airports, peer year 2025 (2 companies)",
+    "metric": "fcf_to_debt",
+    "note": "",
+    "peer_assessment": "better",
+    "period": "peer year 2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "13.4%",
+    "unit": "pct",
+    "value": "0.134182976007",
+    "vs_peers": "above"
+   },
+   "fcf_to_debt.peer_rank@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "fcf_to_debt.peer_rank@FY2025",
+    "kind": "peer_rank",
+    "label": "FCF to debt, rank in airports, peer year 2025 (1st = strongest, i.e. the highest)",
+    "metric": "fcf_to_debt",
+    "note": "best in the group",
+    "peer_assessment": null,
+    "period": "peer year 2025",
+    "rank": 1,
+    "rank_of": 2,
+    "rendered": "1st of 2",
+    "unit": "rank",
+    "value": "1",
+    "vs_peers": null
+   },
+   "fcf_to_debt@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "fcf_to_debt@FY2024",
+    "kind": "value",
+    "label": "FCF to debt, FY2024",
+    "metric": "fcf_to_debt",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "26.3%",
+    "unit": "pct",
+    "value": "0.262873568495",
+    "vs_peers": null
+   },
+   "fcf_to_debt@FY2025": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "fcf_to_debt@FY2025",
+    "kind": "value",
+    "label": "FCF to debt, FY2025",
+    "metric": "fcf_to_debt",
+    "note": "",
+    "peer_assessment": "better",
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "22.9%",
+    "unit": "pct",
+    "value": "0.228694657030",
+    "vs_peers": "above"
+   },
+   "ffo.change@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "ffo.change@FY2025",
+    "kind": "change",
+    "label": "change in FFO, FY2024 to FY2025",
+    "metric": "ffo",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "4.8%",
+    "unit": "relative",
+    "value": "0.04823665987551739309544694076",
+    "vs_peers": null
+   },
+   "ffo@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "ffo@FY2024",
+    "kind": "value",
+    "label": "FFO, FY2024",
+    "metric": "ffo",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 2.9bn",
+    "unit": "amount",
+    "value": "2854696000.000000000000",
+    "vs_peers": null
+   },
+   "ffo@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "ffo@FY2025",
+    "kind": "value",
+    "label": "FFO, FY2025",
+    "metric": "ffo",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 3.0bn",
+    "unit": "amount",
+    "value": "2992397000.000000000000",
+    "vs_peers": null
+   },
+   "ffo_to_debt.change@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "ffo_to_debt.change@FY2025",
+    "kind": "change",
+    "label": "change in FFO to debt, FY2024 to FY2025",
+    "metric": "ffo_to_debt",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "0.6 points",
+    "unit": "points",
+    "value": "0.005946874720",
+    "vs_peers": null
+   },
+   "ffo_to_debt.peer_median@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "ffo_to_debt.peer_median@FY2025",
+    "kind": "peer_median",
+    "label": "FFO to debt, median of airports, peer year 2025 (2 companies)",
+    "metric": "ffo_to_debt",
+    "note": "",
+    "peer_assessment": "better",
+    "period": "peer year 2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "27.7%",
+    "unit": "pct",
+    "value": "0.276536104774",
+    "vs_peers": "above"
+   },
+   "ffo_to_debt.peer_rank@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "ffo_to_debt.peer_rank@FY2025",
+    "kind": "peer_rank",
+    "label": "FFO to debt, rank in airports, peer year 2025 (1st = strongest, i.e. the highest)",
+    "metric": "ffo_to_debt",
+    "note": "best in the group",
+    "peer_assessment": null,
+    "period": "peer year 2025",
+    "rank": 1,
+    "rank_of": 2,
+    "rendered": "1st of 2",
+    "unit": "rank",
+    "value": "1",
+    "vs_peers": null
+   },
+   "ffo_to_debt@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "ffo_to_debt@FY2024",
+    "kind": "value",
+    "label": "FFO to debt, FY2024",
+    "metric": "ffo_to_debt",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "39.0%",
+    "unit": "pct",
+    "value": "0.390045897783",
+    "vs_peers": null
+   },
+   "ffo_to_debt@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "ffo_to_debt@FY2025",
+    "kind": "value",
+    "label": "FFO to debt, FY2025",
+    "metric": "ffo_to_debt",
+    "note": "",
+    "peer_assessment": "better",
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "39.6%",
+    "unit": "pct",
+    "value": "0.395992772503",
+    "vs_peers": "above"
+   },
+   "finance_costs.change@FY2025": {
+    "assessment": "neutral",
+    "direction": "flat",
+    "id": "finance_costs.change@FY2025",
+    "kind": "change",
+    "label": "change in Finance costs, FY2024 to FY2025",
+    "metric": "finance_costs",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "1.4%",
+    "unit": "relative",
+    "value": "0.01381089571430896690919152953",
+    "vs_peers": null
+   },
+   "finance_costs@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "finance_costs@FY2024",
+    "kind": "value",
+    "label": "Finance costs, FY2024",
+    "metric": "finance_costs",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 246m",
+    "unit": "amount",
+    "value": "245748000.000000000000",
+    "vs_peers": null
+   },
+   "finance_costs@FY2025": {
+    "assessment": "neutral",
+    "direction": "flat",
+    "id": "finance_costs@FY2025",
+    "kind": "value",
+    "label": "Finance costs, FY2025",
+    "metric": "finance_costs",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 242m",
+    "unit": "amount",
+    "value": "242354000.000000000000",
+    "vs_peers": null
+   },
+   "gross_leverage.change@FY2025": {
+    "assessment": "neutral",
+    "direction": "flat",
+    "id": "gross_leverage.change@FY2025",
+    "kind": "change",
+    "label": "change in Gross leverage, FY2024 to FY2025",
+    "metric": "gross_leverage",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "0.08x",
+    "unit": "x",
+    "value": "0.088483315196",
+    "vs_peers": null
+   },
+   "gross_leverage.peer_median@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "gross_leverage.peer_median@FY2025",
+    "kind": "peer_median",
+    "label": "Gross leverage, median of airports, peer year 2025 (3 companies)",
+    "metric": "gross_leverage",
+    "note": "the company is the median of the group: say it sits in the middle of the group, do not compare it with the median",
+    "peer_assessment": "in_line",
+    "period": "peer year 2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "2.00x",
+    "unit": "x",
+    "value": "1.996468193664",
+    "vs_peers": "in_line"
+   },
+   "gross_leverage.peer_rank@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "gross_leverage.peer_rank@FY2025",
+    "kind": "peer_rank",
+    "label": "Gross leverage, rank in airports, peer year 2025 (1st = strongest, i.e. the lowest)",
+    "metric": "gross_leverage",
+    "note": "",
+    "peer_assessment": null,
+    "period": "peer year 2025",
+    "rank": 2,
+    "rank_of": 3,
+    "rendered": "2nd of 3",
+    "unit": "rank",
+    "value": "2",
+    "vs_peers": null
+   },
+   "gross_leverage@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "gross_leverage@FY2024",
+    "kind": "value",
+    "label": "Gross leverage, FY2024",
+    "metric": "gross_leverage",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "2.08x",
+    "unit": "x",
+    "value": "2.084951508860",
+    "vs_peers": null
+   },
+   "gross_leverage@FY2025": {
+    "assessment": "neutral",
+    "direction": "flat",
+    "id": "gross_leverage@FY2025",
+    "kind": "value",
+    "label": "Gross leverage, FY2025",
+    "metric": "gross_leverage",
+    "note": "",
+    "peer_assessment": "in_line",
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "2.00x",
+    "unit": "x",
+    "value": "1.996468193664",
+    "vs_peers": "in_line"
+   },
+   "interest_coverage.change@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "interest_coverage.change@FY2025",
+    "kind": "change",
+    "label": "change in Interest coverage, FY2024 to FY2025",
+    "metric": "interest_coverage",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "2.38x",
+    "unit": "x",
+    "value": "2.385760464155",
+    "vs_peers": null
+   },
+   "interest_coverage.peer_median@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "interest_coverage.peer_median@FY2025",
+    "kind": "peer_median",
+    "label": "Interest coverage, median of airports, peer year 2025 (2 companies)",
+    "metric": "interest_coverage",
+    "note": "",
+    "peer_assessment": "better",
+    "period": "peer year 2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "11.31x",
+    "unit": "x",
+    "value": "11.306144165027",
+    "vs_peers": "above"
+   },
+   "interest_coverage.peer_rank@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "interest_coverage.peer_rank@FY2025",
+    "kind": "peer_rank",
+    "label": "Interest coverage, rank in airports, peer year 2025 (1st = strongest, i.e. the highest)",
+    "metric": "interest_coverage",
+    "note": "best in the group",
+    "peer_assessment": null,
+    "period": "peer year 2025",
+    "rank": 1,
+    "rank_of": 2,
+    "rendered": "1st of 2",
+    "unit": "rank",
+    "value": "1",
+    "vs_peers": null
+   },
+   "interest_coverage@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "interest_coverage@FY2024",
+    "kind": "value",
+    "label": "Interest coverage, FY2024",
+    "metric": "interest_coverage",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "12.34x",
+    "unit": "x",
+    "value": "12.335002442170",
+    "vs_peers": null
+   },
+   "interest_coverage@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "interest_coverage@FY2025",
+    "kind": "value",
+    "label": "Interest coverage, FY2025",
+    "metric": "interest_coverage",
+    "note": "",
+    "peer_assessment": "better",
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "14.72x",
+    "unit": "x",
+    "value": "14.720762906325",
+    "vs_peers": "above"
+   },
+   "liquidity@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "liquidity@FY2025",
+    "kind": "value",
+    "label": "Liquidity, FY2025",
+    "metric": "liquidity",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 4.3bn",
+    "unit": "amount",
+    "value": "4292669000.000000000000",
+    "vs_peers": null
+   },
+   "liquidity_to_revenue@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "liquidity_to_revenue@FY2025",
+    "kind": "value",
+    "label": "Liquidity to revenue, FY2025",
+    "metric": "liquidity_to_revenue",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "68.4%",
+    "unit": "pct",
+    "value": "0.683727076135",
+    "vs_peers": null
+   },
+   "net_debt.change@FY2025": {
+    "assessment": "neutral",
+    "direction": "flat",
+    "id": "net_debt.change@FY2025",
+    "kind": "change",
+    "label": "change in Net debt, FY2024 to FY2025",
+    "metric": "net_debt",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "0.2%",
+    "unit": "relative",
+    "value": "0.002080548400398792998167014668",
+    "vs_peers": null
+   },
+   "net_debt@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "net_debt@FY2024",
+    "kind": "value",
+    "label": "Net debt, FY2024",
+    "metric": "net_debt",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 5.5bn",
+    "unit": "amount",
+    "value": "5497589000.000000000000",
+    "vs_peers": null
+   },
+   "net_debt@FY2025": {
+    "assessment": "neutral",
+    "direction": "flat",
+    "id": "net_debt@FY2025",
+    "kind": "value",
+    "label": "Net debt, FY2025",
+    "metric": "net_debt",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 5.5bn",
+    "unit": "amount",
+    "value": "5509027000.000000000000",
+    "vs_peers": null
+   },
+   "net_leverage.change@FY2025": {
+    "assessment": "better",
+    "direction": "down",
+    "id": "net_leverage.change@FY2025",
+    "kind": "change",
+    "label": "change in Net leverage, FY2024 to FY2025",
+    "metric": "net_leverage",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "0.11x",
+    "unit": "x",
+    "value": "0.110639543619",
+    "vs_peers": null
+   },
+   "net_leverage.peer_median@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "net_leverage.peer_median@FY2025",
+    "kind": "peer_median",
+    "label": "Net leverage, median of airports, peer year 2025 (3 companies)",
+    "metric": "net_leverage",
+    "note": "the company is the median of the group: say it sits in the middle of the group, do not compare it with the median",
+    "peer_assessment": "in_line",
+    "period": "peer year 2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "1.46x",
+    "unit": "x",
+    "value": "1.455476994646",
+    "vs_peers": "in_line"
+   },
+   "net_leverage.peer_rank@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "net_leverage.peer_rank@FY2025",
+    "kind": "peer_rank",
+    "label": "Net leverage, rank in airports, peer year 2025 (1st = strongest, i.e. the lowest)",
+    "metric": "net_leverage",
+    "note": "",
+    "peer_assessment": null,
+    "period": "peer year 2025",
+    "rank": 2,
+    "rank_of": 3,
+    "rendered": "2nd of 3",
+    "unit": "rank",
+    "value": "2",
+    "vs_peers": null
+   },
+   "net_leverage@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "net_leverage@FY2024",
+    "kind": "value",
+    "label": "Net leverage, FY2024",
+    "metric": "net_leverage",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "1.57x",
+    "unit": "x",
+    "value": "1.566116538265",
+    "vs_peers": null
+   },
+   "net_leverage@FY2025": {
+    "assessment": "better",
+    "direction": "down",
+    "id": "net_leverage@FY2025",
+    "kind": "value",
+    "label": "Net leverage, FY2025",
+    "metric": "net_leverage",
+    "note": "",
+    "peer_assessment": "in_line",
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "1.46x",
+    "unit": "x",
+    "value": "1.455476994646",
+    "vs_peers": "in_line"
+   },
+   "operating_profit.change@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "operating_profit.change@FY2025",
+    "kind": "change",
+    "label": "change in Operating profit, FY2024 to FY2025",
+    "metric": "operating_profit",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "12.2%",
+    "unit": "relative",
+    "value": "0.1222953734449418427122264951",
+    "vs_peers": null
+   },
+   "operating_profit@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "operating_profit@FY2024",
+    "kind": "value",
+    "label": "Operating profit, FY2024",
+    "metric": "operating_profit",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 2.7bn",
+    "unit": "amount",
+    "value": "2662521000.000000000000",
+    "vs_peers": null
+   },
+   "operating_profit@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "operating_profit@FY2025",
+    "kind": "value",
+    "label": "Operating profit, FY2025",
+    "metric": "operating_profit",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 3.0bn",
+    "unit": "amount",
+    "value": "2988135000.000000000000",
+    "vs_peers": null
+   },
+   "passengers@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "passengers@FY2024",
+    "kind": "value",
+    "label": "Passengers, FY2024",
+    "metric": "passengers",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "309.3m",
+    "unit": "count",
+    "value": "309300000.000000000000",
+    "vs_peers": null
+   },
+   "profit.change@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "profit.change@FY2025",
+    "kind": "change",
+    "label": "change in Profit for the year, FY2024 to FY2025",
+    "metric": "profit",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "10.8%",
+    "unit": "relative",
+    "value": "0.1079791970499404673767309592",
+    "vs_peers": null
+   },
+   "profit@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "profit@FY2024",
+    "kind": "value",
+    "label": "Profit for the year, FY2024",
+    "metric": "profit",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 2.0bn",
+    "unit": "amount",
+    "value": "1972028000.000000000000",
+    "vs_peers": null
+   },
+   "profit@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "profit@FY2025",
+    "kind": "value",
+    "label": "Profit for the year, FY2025",
+    "metric": "profit",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 2.2bn",
+    "unit": "amount",
+    "value": "2184966000.000000000000",
+    "vs_peers": null
+   },
+   "revenue.change@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "revenue.change@FY2025",
+    "kind": "change",
+    "label": "change in Revenue, FY2024 to FY2025",
+    "metric": "revenue",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "8.9%",
+    "unit": "relative",
+    "value": "0.08932128585757585063739572148",
+    "vs_peers": null
+   },
+   "revenue@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "revenue@FY2024",
+    "kind": "value",
+    "label": "Revenue, FY2024",
+    "metric": "revenue",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 5.8bn",
+    "unit": "amount",
+    "value": "5763531000.000000000000",
+    "vs_peers": null
+   },
+   "revenue@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "revenue@FY2025",
+    "kind": "value",
+    "label": "Revenue, FY2025",
+    "metric": "revenue",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 6.3bn",
+    "unit": "amount",
+    "value": "6278337000.000000000000",
+    "vs_peers": null
+   },
+   "total_debt.change@FY2025": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "total_debt.change@FY2025",
+    "kind": "change",
+    "label": "change in Total debt, FY2024 to FY2025",
+    "metric": "total_debt",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "3.2%",
+    "unit": "relative",
+    "value": "0.03249462485475903937109434350",
+    "vs_peers": null
+   },
+   "total_debt@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "total_debt@FY2024",
+    "kind": "value",
+    "label": "Total debt, FY2024",
+    "metric": "total_debt",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 7.3bn",
+    "unit": "amount",
+    "value": "7318872000.000000000000",
+    "vs_peers": null
+   },
+   "total_debt@FY2025": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "total_debt@FY2025",
+    "kind": "value",
+    "label": "Total debt, FY2025",
+    "metric": "total_debt",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 7.6bn",
+    "unit": "amount",
+    "value": "7556696000.000000000000",
+    "vs_peers": null
+   },
+   "traffic_growth@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "traffic_growth@FY2024",
+    "kind": "value",
+    "label": "Traffic growth, FY2024",
+    "metric": "traffic_growth",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "9.2%",
+    "unit": "pct",
+    "value": "0.092161016949",
+    "vs_peers": null
+   },
+   "undrawn_facilities@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "undrawn_facilities@FY2025",
+    "kind": "value",
+    "label": "Undrawn committed credit facilities, FY2025",
+    "metric": "undrawn_facilities",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 2.2bn",
+    "unit": "amount",
+    "value": "2245000000.000000000000",
+    "vs_peers": null
+   }
+  },
+  "labels": {
+   "aero_revenue_per_passenger": "Aeronautical revenue per passenger",
+   "capex": "Capex (purchases of PP&E and intangibles)",
+   "capex_intensity": "Capex intensity",
+   "cash_like": "Cash and cash-like investments",
+   "cash_liquidity": "Cash liquidity (partial)",
+   "cash_liquidity_to_revenue": "Cash liquidity to revenue (partial)",
+   "cfo": "Cash from operations",
+   "contract_liabilities": "Contract liabilities (advance ticket sales)",
+   "dda": "Depreciation, amortisation and impairment",
+   "ebitda": "EBITDA",
+   "ebitda_margin": "EBITDA margin",
+   "fcf": "Free cash flow",
+   "fcf_to_debt": "FCF to debt",
+   "ffo": "FFO",
+   "ffo_to_debt": "FFO to debt",
+   "finance_costs": "Finance costs",
+   "fuel_cost": "Fuel cost",
+   "gross_leverage": "Gross leverage",
+   "interest_coverage": "Interest coverage",
+   "liquidity": "Liquidity",
+   "liquidity_to_revenue": "Liquidity to revenue",
+   "net_cash": "Net cash (cash and cash-like investments above total debt)",
+   "net_debt": "Net debt",
+   "net_leverage": "Net leverage",
+   "non_aero_share": "Non-aeronautical share",
+   "operating_profit": "Operating profit",
+   "passengers": "Passengers",
+   "profit": "Profit for the year",
+   "revenue": "Revenue",
+   "revenue_per_passenger": "Revenue per passenger",
+   "total_debt": "Total debt",
+   "traffic_growth": "Traffic growth",
+   "undrawn_facilities": "Undrawn committed credit facilities"
+  },
+  "name": "Aena",
+  "peer_group": "Airports",
+  "peer_members": [
+   "adp",
+   "aena",
+   "vie"
+  ],
+  "peer_year": 2025,
+  "period_label": "FY2025",
+  "type": "airport",
+  "unavailable": {
+   "aero_revenue_per_passenger.change@FY2025": "needs both years verified",
+   "aero_revenue_per_passenger@FY2025": "not verified yet: waiting for Imane's review",
+   "capex_intensity.peer_rank@FY2025": "not ranked: neither higher nor lower is better",
+   "cash_liquidity.change@FY2025": "the same figure as cash_like.change@FY2025: use that id",
+   "cash_liquidity@FY2024": "the same figure as cash_like@FY2024: use that id",
+   "cash_liquidity@FY2025": "the same figure as cash_like@FY2025: use that id",
+   "contract_liabilities.change@FY2025": "needs both years verified",
+   "contract_liabilities@FY2024": "no figure for this year",
+   "contract_liabilities@FY2025": "no figure for this year",
+   "fuel_cost.change@FY2025": "needs both years verified",
+   "fuel_cost@FY2024": "no figure for this year",
+   "fuel_cost@FY2025": "no figure for this year",
+   "liquidity.change@FY2025": "needs both years verified",
+   "liquidity@FY2024": "Undrawn committed credit facilities not available for FY2024",
+   "liquidity_to_revenue.change@FY2025": "needs both years verified",
+   "liquidity_to_revenue.peer_median@FY2025": "fewer than two companies in the peer group have a value",
+   "liquidity_to_revenue.peer_rank@FY2025": "fewer than two companies in the peer group have a value",
+   "liquidity_to_revenue@FY2024": "Liquidity: Undrawn committed credit facilities not available for FY2024",
+   "net_cash.change@FY2025": "needs both years verified",
+   "net_cash@FY2024": "the company has net debt, not net cash",
+   "net_cash@FY2025": "the company has net debt, not net cash",
+   "non_aero_share.change@FY2025": "needs both years verified",
+   "non_aero_share.peer_median@FY2025": "the company's own figure is not available",
+   "non_aero_share.peer_rank@FY2025": "the company's own figure is not available",
+   "non_aero_share@FY2024": "n.m.: group revenue includes London Luton and the Brazilian airports, while the aeronautical revenue is the Spanish network's segment only.",
+   "non_aero_share@FY2025": "n.m.: group revenue includes London Luton and the Brazilian airports, while the aeronautical revenue is the Spanish network's segment only.",
+   "passengers.change@FY2025": "needs both years verified",
+   "passengers@FY2025": "not verified yet: waiting for Imane's review",
+   "revenue_per_passenger.change@FY2025": "needs both years verified",
+   "revenue_per_passenger@FY2024": "n.m.: group revenue includes London Luton and the Brazilian airports, while passengers are the Spanish network only.",
+   "revenue_per_passenger@FY2025": "n.m.: group revenue includes London Luton and the Brazilian airports, while passengers are the Spanish network only.",
+   "traffic_growth.change@FY2025": "needs both years verified",
+   "traffic_growth.peer_median@FY2025": "the company's own figure is not available",
+   "traffic_growth.peer_rank@FY2025": "the company's own figure is not available",
+   "traffic_growth@FY2025": "not verified yet: waiting for Imane's review",
+   "undrawn_facilities.change@FY2025": "needs both years verified",
+   "undrawn_facilities@FY2024": "no figure for this year"
+  }
+ },
+ "fiscal_year": 2025,
+ "format_version": 1,
+ "issuer": "aena",
+ "name": "Aena",
+ "peer_group": "Airports",
+ "peer_members": [
+  "adp",
+  "aena",
+  "vie"
+ ],
+ "peer_year": 2025,
+ "period_label": "FY2025",
+ "run": {
+  "calls": 3,
+  "cost_usd": null,
+  "filing_hashes": {
+   "959800R7QMXKF0NFMT29-2024-12-31-ESEF-ES-0": "91d0e131cc1ef604c2e4990ed09db9586833a4026d9af8d766f7445e4d51d62a",
+   "959800R7QMXKF0NFMT29-2025-12-31-ESEF-ES-0": "f96476bc0a3ce715c6588906c58e06e0ee9ed1ab72d64deb32b9c4e1692fe699"
+  },
+  "first_try_ok": false,
+  "input_hash": "4a7949427fe3a0eceaf44390923b58bdb633e0991aecbd71d68a88f63b4667a7",
+  "input_tokens": 40561,
+  "matches_figures": true,
+  "model": "deepseek-flash",
+  "output_tokens": 4890,
+  "passed": true,
+  "prompt_version": "draft-v7",
+  "provider": "deepseek",
+  "recorded_at": "2026-11-09T18:33:03+00:00"
+ },
+ "type": "airport"
+}

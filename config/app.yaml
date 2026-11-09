@@ -1,0 +1,59 @@
+# What the web app shows (M5). Only metric ids: every figure comes from the facts database.
+#
+# kpi_cards     the headline cards at the top of the tearsheet, with the move on last year
+# kpi_table     rows of the four-year table, by company type (all, then airline or airport)
+# charts        the two tearsheet charts
+# years_shown   how many fiscal years the table and charts show (spec: the last three by
+#               default; four on the tearsheet's KPI table)
+
+years_shown: 4
+
+kpi_cards:
+  all: [ebitda_margin, net_leverage, interest_coverage, liquidity_to_revenue]
+  airline: [passengers]
+  airport: [passengers]
+  # when a card's figure is missing or awaiting review, show this one instead
+  fallback:
+    liquidity_to_revenue: cash_liquidity_to_revenue
+
+kpi_table:
+  all:
+    - revenue
+    - ebitda
+    - ebitda_margin
+    - total_debt
+    - net_debt
+    - net_leverage
+    - gross_leverage
+    - interest_coverage
+    - ffo_to_debt
+    - fcf
+    - fcf_to_debt
+    - capex_intensity
+    - liquidity
+    - liquidity_to_revenue
+  airline:
+    - passengers
+    - ask
+    - load_factor
+    - rask
+    - cask
+    - fuel_share_of_costs
+    - advance_ticket_cover
+  airport:
+    - passengers
+    - traffic_growth
+    - revenue_per_passenger
+    - non_aero_share
+
+charts:
+  leverage:
+    title: Leverage
+    metrics: [net_leverage, gross_leverage]
+  liquidity:
+    title: Liquidity
+    # stacked: cash first, then the undrawn credit lines
+    metrics: [cash_like, undrawn_facilities]
+
+# The analyst's name recorded with approvals and edits in live mode.
+analyst: Imane

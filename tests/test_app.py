@@ -1,0 +1,158 @@
+"""The web app (M5), run by Streamlit's page tester: no browser, no network.
+
+Checklist item "Demo mode works without a key": every page opens with no API key, no
+database and the network blocked, for every pre-built tearsheet.
+"""
+
+from __future__ import annotations
+
+import socket
+from pathlib import Path
+
+import pytest
+from streamlit.testing.v1 import AppTest
+
+from tearsheet.config import DB_PATH, ROOT
+from tearsheet.llm.settings import load_settings
+from tearsheet.render import tearsheet
+
+APP = str(ROOT / "src" / "tearsheet" / "app" / "main.py")
+PAGES = ["views/peers_page.py", "views/audit_page.py", "views/method_page.py"]
+TEARSHEETS = tearsheet.available()
+
+
+@pytest.fixture
+def demo(monkeypatch, tmp_path):
+    """No key, no database, no network; the reviews file and notes/ cannot be written."""
+    from tearsheet.app import state
+
+    monkeypatch.delenv(load_settings().api_key_env, raising=False)
+    monkeypatch.setattr(state, "DB_PATH", tmp_path / "no-database.duckdb")
+
+    def refuse(*args, **kwargs):
+        raise OSError("network blocked in tests")
+
+    monkeypatch.setattr(socket, "create_connection", refuse)
+    monkeypatch.setattr(socket.socket, "connect", refuse)
+    reviews = (ROOT / "config" / "extraction_reviews.yaml").read_text()
+    yield
+    assert (ROOT / "config" / "extraction_reviews.yaml").read_text() == reviews
+    assert not (ROOT / "notes").exists() or not any((ROOT / "notes").iterdir())
+
+
+def run(pick=None, page=None) -> AppTest:
+    at = AppTest.from_file(APP, default_timeout=60)
+    if pick:
+        at.session_state["pick"] = pick
+    at.run()
+    if page:
+        at.switch_page(page)
+        at.run()
+    assert not at.exception, [e.value for e in at.exception]
+    return at
+
+
+@pytest.mark.parametrize("pick", TEARSHEETS)
+def test_every_tearsheet_opens_in_demo_mode(demo, pick):
+    at = run(pick)
+    assert at.title[0].value
+    assert [s.value for s in at.subheader][:1] == ["Snapshot"]
+    assert len(at.metric) >= 4
+    assert not at.error
+    text = " ".join(m.value for m in at.markdown)
+    assert "{{" not in text  # every blank was filled by code
+    assert "Not investment advice" in " ".join(c.value for c in at.caption)
+
+
+@pytest.mark.parametrize("page", PAGES)
+def test_other_pages_open_in_demo_mode(demo, page):
+    at = run(("easyjet", 2025), page)
+    assert at.title[0].value in ("Peers", "Data and audit", "Method")
+    assert not at.error
+
+
+def test_no_live_mode_without_the_database(demo):
+    at = run()
+    assert not [r for r in at.radio if r.label == "Mode"]
+
+
+def test_source_button_opens_the_card(demo):
+    at = run(("afkl", 2025))
+    at.button(key="kpi-net_leverage").click().run()
+    assert not at.exception
+    text = " ".join(m.value for m in at.markdown)
+    assert "Net debt" in text and "Built from" in text
+
+
+def test_demo_review_lasts_for_the_session_only(demo):
+    at = run(("afkl", 2025), "views/audit_page.py")
+    form_inputs = [t for t in at.text_input if t.label == "Reason"]
+    assert form_inputs, "no figure awaiting review for Air France-KLM"
+    form_inputs[0].input("Checked on page 15 of the FY2025 statements")
+    at.button[[b.label for b in at.button].index("Save the review")].click().run()
+    assert not at.exception
+    reviews = at.session_state["demo_reviews"]
+    assert len(reviews) == 1
+    assert next(iter(reviews.values()))["action"] == "approve"
+
+
+def test_review_without_reason_is_refused(demo):
+    at = run(("afkl", 2025), "views/audit_page.py")
+    at.button[[b.label for b in at.button].index("Save the review")].click().run()
+    assert any("give a reason" in e.value for e in at.error)
+    assert "demo_reviews" not in at.session_state or not at.session_state["demo_reviews"]
+
+
+def test_edited_sentence_with_a_typed_figure_is_flagged(demo):
+    at = run(("afkl", 2025))
+    at.toggle(key="editing-afkl-2025").set_value(True).run()
+    area = at.text_area(key="ta-afkl-2025-snapshot-2")
+    area.input(area.value + " We expect leverage near 1.5x next year.")
+    labels = [b.label for b in at.button]
+    at.button[labels.index("Save this section")].click().run()  # the snapshot's form
+    assert not at.exception
+    assert any("not traced to a source" in w.value for w in at.warning)
+    note = at.session_state["notes"]["afkl_FY2025"]
+    edit = note["edits"]["snapshot"][2]
+    assert "{{net_leverage@FY2025}}" in edit["text"]  # the original figure stays traced
+    assert edit["untraced"]
+
+
+@pytest.mark.skipif(not Path(DB_PATH).exists(), reason="live mode needs the database")
+def test_live_mode_opens_from_the_database(monkeypatch):
+    monkeypatch.delenv("TEARSHEET_DEMO_ONLY", raising=False)
+    at = AppTest.from_file(APP, default_timeout=120)
+    at.session_state["mode"] = "Live"
+    at.session_state["pick"] = ("vie", 2025)
+    at.run()
+    assert not at.exception, [e.value for e in at.exception]
+    assert at.title[0].value == "Flughafen Wien"
+    assert not at.warning  # the drafts match the database's figures
+
+
+def test_demo_approval_clears_the_ratios_built_on_the_figure():
+    from tearsheet.app.state import with_session_reviews
+    from tearsheet.render.library import Library
+
+    lib = Library.read()
+    k = "afkl:undrawn_facilities@FY2025"
+    assert lib.figures[k]["status"] == "unverified"
+    assert lib.figures["afkl:liquidity_to_revenue@FY2025"]["status"] == "unverified"
+    review = {"action": "approve", "reason": "page 15", "by": "Imane"}
+    after = with_session_reviews(lib, {k: review})
+    assert after.figures[k]["status"] == "overridden"
+    assert after.figures["afkl:liquidity@FY2025"]["status"] == "verified"
+    assert after.figures["afkl:liquidity_to_revenue@FY2025"]["status"] == "verified"
+    assert lib.figures[k]["status"] == "unverified"  # the shared library is untouched
+
+
+def test_a_link_opens_the_named_tearsheet(demo):
+    at = AppTest.from_file(APP, default_timeout=60)
+    at.query_params["company"] = "wizz"
+    at.query_params["year"] = "2026"
+    at.run()
+    assert not at.exception
+    assert at.title[0].value == "Wizz Air Holdings"
+    assert "Apr 2025 to Mar 2026" in at.markdown[0].value or any(
+        "Apr 2025 to Mar 2026" in m.value for m in at.markdown
+    )

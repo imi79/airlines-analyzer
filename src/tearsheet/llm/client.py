@@ -38,8 +38,10 @@ class LLM:
         records: Path = RECORDS,
         offline: bool = False,
         http: httpx.Client | None = None,
+        api_key: str | None = None,
     ):
         self.settings = settings or load_settings()
+        self._api_key = api_key  # a key typed into the app: kept in memory only, never saved
         self.records = records
         self.offline = offline
         self._http = http
@@ -85,7 +87,7 @@ class LLM:
             raise NotRecorded(f"no recorded answer for {label or digest[:12]} (offline mode)")
 
         s = self.settings
-        key = os.environ.get(s.api_key_env)
+        key = self._api_key or os.environ.get(s.api_key_env)
         if not key:
             raise MissingKey(
                 f"the environment variable {s.api_key_env} is not set "
@@ -110,7 +112,7 @@ class LLM:
     def check(self, job: str = "extraction") -> str:
         """Send a tiny request to confirm the address, key and model work. Not recorded."""
         s = self.settings
-        key = os.environ.get(s.api_key_env)
+        key = self._api_key or os.environ.get(s.api_key_env)
         if not key:
             raise MissingKey(f"the environment variable {s.api_key_env} is not set")
         tool = ToolSpec(

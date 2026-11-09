@@ -1,0 +1,2550 @@
+{
+ "commentary": {
+  "credit_metrics": {
+   "notes": [],
+   "removed": [],
+   "sentences": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "ebitda@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "operating_profit.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "operating_profit@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "dda.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "dda@FY2024"
+      }
+     ],
+     "text": "EBITDA was broadly unchanged at EUR 4.1bn on revenue up 4.8% to EUR 31.5bn, but operating profit fell by 12.6% to EUR 1.5bn as depreciation, amortisation and impairment rose by 5.9% to EUR 2.6bn.",
+     "text_blanks": "EBITDA was broadly unchanged at {{ebitda@FY2024}} on revenue up {{revenue.change@FY2024}} to {{revenue@FY2024}}, but operating profit fell by {{operating_profit.change@FY2024}} to {{operating_profit@FY2024}} as depreciation, amortisation and impairment rose by {{dda.change@FY2024}} to {{dda@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "total_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "total_debt@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "gross_leverage.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "net_leverage.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage@FY2024"
+      }
+     ],
+     "text": "Total debt increased by 7.4% to EUR 14.6bn, so gross leverage rose by 0.29x to 3.56x and net leverage by 0.59x to 1.88x.",
+     "text_blanks": "Total debt increased by {{total_debt.change@FY2024}} to {{total_debt@FY2024}}, so gross leverage rose by {{gross_leverage.change@FY2024}} to {{gross_leverage@FY2024}} and net leverage by {{net_leverage.change@FY2024}} to {{net_leverage@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "interest_coverage.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "interest_coverage@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "finance_costs.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "finance_costs@FY2024"
+      }
+     ],
+     "text": "Interest coverage eased by 0.45x to 6.51x as finance costs rose by 5.2% to EUR 631m.",
+     "text_blanks": "Interest coverage eased by {{interest_coverage.change@FY2024}} to {{interest_coverage@FY2024}} as finance costs rose by {{finance_costs.change@FY2024}} to {{finance_costs@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ffo.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ffo@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ffo_to_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "total_debt.change@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_to_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt@FY2024"
+      }
+     ],
+     "text": "FFO rose by 2.1% to EUR 3.4bn, but FFO to debt fell by 1.2 points to 23.4% as total debt increased by 7.4%, and FCF to debt dropped by 2.0 points to -1.6%.",
+     "text_blanks": "FFO rose by {{ffo.change@FY2024}} to {{ffo@FY2024}}, but FFO to debt fell by {{ffo_to_debt.change@FY2024}} to {{ffo_to_debt@FY2024}} as total debt increased by {{total_debt.change@FY2024}}, and FCF to debt dropped by {{fcf_to_debt.change@FY2024}} to {{fcf_to_debt@FY2024}}."
+    }
+   ],
+   "status": "passed",
+   "title": "Credit metrics"
+  },
+  "liquidity_funding": {
+   "notes": [],
+   "removed": [],
+   "sentences": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      }
+     ],
+     "text": "Cash and cash-like investments fell by 16.0% to EUR 6.9bn, taking cash liquidity to revenue down by 5.5 points to 22.0%.",
+     "text_blanks": "Cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, taking cash liquidity to revenue down by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "contract_liabilities.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2024"
+      }
+     ],
+     "text": "Customer prepayments rose: advance ticket cover increased by 12.4 points to 59.1%, with contract liabilities up 6.2% to EUR 4.1bn.",
+     "text_blanks": "Customer prepayments rose: advance ticket cover increased by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, with contract liabilities up {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      }
+     ],
+     "text": "The group launched a cash tender offer on existing bond tranches and announced its intention to issue new bonds to refinance part of its existing debt.",
+     "text_blanks": "The group launched a cash tender offer on existing bond tranches and announced its intention to issue new bonds to refinance part of its existing debt."
+    }
+   ],
+   "status": "passed",
+   "title": "Liquidity and funding"
+  },
+  "operating_performance": {
+   "notes": [],
+   "removed": [],
+   "sentences": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "passengers.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "passengers@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "fleet.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fleet@FY2024"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "fleet_age@FY2024"
+      }
+     ],
+     "text": "Passengers rose by 4.7% to 98.0m, and the fleet grew by 4.3% to 564 aircraft at an average age of 12.1 years.",
+     "text_blanks": "Passengers rose by {{passengers.change@FY2024}} to {{passengers@FY2024}}, and the fleet grew by {{fleet.change@FY2024}} to {{fleet@FY2024}} aircraft at an average age of {{fleet_age@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines"
+      }
+     ],
+     "text": "Fleet renewal was delayed by supply chain constraints and engine problems on part of the new-generation fleet, which prevented the group from operating those aircraft at maximum capacity.",
+     "text_blanks": "Fleet renewal was delayed by supply chain constraints and engine problems on part of the new-generation fleet, which prevented the group from operating those aircraft at maximum capacity."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:costs"
+      },
+      {
+       "claims": [],
+       "id": "event:capacity_and_network"
+      }
+     ],
+     "text": "The operating result included a payment to Virgin in a contract renegotiation and a net provision for the restructuring of the domestic offer from Orly and of call centres.",
+     "text_blanks": "The operating result included a payment to Virgin in a contract renegotiation and a net provision for the restructuring of the domestic offer from Orly and of call centres."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "capex_intensity@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "capex@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cfo@FY2024"
+      }
+     ],
+     "text": "Capex intensity was broadly unchanged at 11.9%, with capex of EUR 3.7bn against cash from operations of EUR 3.5bn.",
+     "text_blanks": "Capex intensity was broadly unchanged at {{capex_intensity@FY2024}}, with capex of {{capex@FY2024}} against cash from operations of {{cfo@FY2024}}."
+    }
+   ],
+   "status": "passed",
+   "title": "Operating performance"
+  },
+  "peer_positioning": {
+   "notes": [],
+   "removed": [],
+   "sentences": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2024"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "ebitda_margin@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@FY2024"
+      }
+     ],
+     "text": "Air France-KLM has the weakest EBITDA margin of the network airlines (3rd of 3), at 13.1% against a peer median of 14.6%.",
+     "text_blanks": "Air France-KLM has the weakest EBITDA margin of the network airlines ({{ebitda_margin.peer_rank@FY2024}}), at {{ebitda_margin@FY2024}} against a peer median of {{ebitda_margin.peer_median@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "net_leverage.peer_rank@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_rank@FY2024"
+      }
+     ],
+     "text": "Leverage, interest coverage and FFO to debt all sit in the middle of the group, with net leverage ranking 2nd of 3 and gross leverage 2nd of 3.",
+     "text_blanks": "Leverage, interest coverage and FFO to debt all sit in the middle of the group, with net leverage ranking {{net_leverage.peer_rank@FY2024}} and gross leverage {{gross_leverage.peer_rank@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "cash_liquidity_to_revenue.peer_rank@FY2024"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "advance_ticket_cover.peer_rank@FY2024"
+      }
+     ],
+     "text": "Cash liquidity to revenue is the weakest of the group (3rd of 3), while advance ticket cover is the lowest (1st of 3).",
+     "text_blanks": "Cash liquidity to revenue is the weakest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2024}}), while advance ticket cover is the lowest ({{advance_ticket_cover.peer_rank@FY2024}})."
+    }
+   ],
+   "status": "passed",
+   "title": "Peer positioning"
+  },
+  "snapshot": {
+   "notes": [],
+   "removed": [],
+   "sentences": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2024"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "ebitda@FY2024"
+      }
+     ],
+     "text": "Air France-KLM, the Franco-Dutch network airline, grew revenue by 4.8% to EUR 31.5bn in FY2024 while EBITDA was broadly unchanged at EUR 4.1bn.",
+     "text_blanks": "Air France-KLM, the Franco-Dutch network airline, grew revenue by {{revenue.change@FY2024}} to {{revenue@FY2024}} in FY2024 while EBITDA was broadly unchanged at {{ebitda@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "net_leverage.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_debt@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda_margin.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2024"
+      }
+     ],
+     "text": "Net leverage rose by 0.59x to 1.88x as net debt increased by 43.5% to EUR 7.7bn, and the EBITDA margin narrowed by 0.8 points to 13.1%.",
+     "text_blanks": "Net leverage rose by {{net_leverage.change@FY2024}} to {{net_leverage@FY2024}} as net debt increased by {{net_debt.change@FY2024}} to {{net_debt@FY2024}}, and the EBITDA margin narrowed by {{ebitda_margin.change@FY2024}} to {{ebitda_margin@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "capex@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      }
+     ],
+     "text": "The point to watch is cash generation: free cash flow turned negative at EUR -232m with capex up 5.0% to EUR 3.7bn, and cash liquidity to revenue fell by 5.5 points to 22.0%.",
+     "text_blanks": "The point to watch is cash generation: free cash flow turned negative at {{fcf@FY2024}} with capex up {{capex.change@FY2024}} to {{capex@FY2024}}, and cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}."
+    }
+   ],
+   "status": "passed",
+   "title": "Snapshot"
+  },
+  "watch_items": {
+   "notes": [],
+   "removed": [],
+   "sentences": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_to_debt.change@FY2024"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "fcf_to_debt@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt.peer_median@FY2024"
+      }
+     ],
+     "text": "Cash generation: free cash flow was negative at EUR -232m and FCF to debt fell by 2.0 points to -1.6%, below the peer median of 20.3%.",
+     "text_blanks": "Cash generation: free cash flow was negative at {{fcf@FY2024}} and FCF to debt fell by {{fcf_to_debt.change@FY2024}} to {{fcf_to_debt@FY2024}}, below the peer median of {{fcf_to_debt.peer_median@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_debt@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "net_leverage.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage@FY2024"
+      }
+     ],
+     "text": "Leverage: net debt rose by 43.5% to EUR 7.7bn, lifting net leverage by 0.59x to 1.88x.",
+     "text_blanks": "Leverage: net debt rose by {{net_debt.change@FY2024}} to {{net_debt@FY2024}}, lifting net leverage by {{net_leverage.change@FY2024}} to {{net_leverage@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2024"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue.peer_median@FY2024"
+      }
+     ],
+     "text": "Liquidity: cash liquidity to revenue fell by 5.5 points to 22.0%, below the peer median of 29.0%.",
+     "text_blanks": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover@FY2024"
+      }
+     ],
+     "text": "Customer prepayments: advance ticket cover rose by 12.4 points to 59.1%, so a larger share of cash reflects refundable ticket sales.",
+     "text_blanks": "Customer prepayments: advance ticket cover rose by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, so a larger share of cash reflects refundable ticket sales."
+    }
+   ],
+   "status": "passed",
+   "title": "Watch items"
+  }
+ },
+ "currency": "EUR",
+ "events": [
+  {
+   "document": "969500AQW31GYO8JZD66-2024-12-31-ESEF-FR-0",
+   "event_id": "event:acquisitions_and_disposals",
+   "location": "page 371",
+   "quote": "Après l’obtention d’autorisations réglementaires en Europe et aux États-Unis, le groupe Air France-KLM a donc finalisé le 28 août 2024 l’acquisition d’une participation minoritaire de 19,90 % dans le capital de SAS AB.",
+   "status": "verified",
+   "summary": "The group completed the acquisition of a minority stake in SAS AB and began a deepened commercial cooperation with the airline.",
+   "title": "Air France-KLM takes minority stake in SAS",
+   "topic": "acquisitions_and_disposals"
+  },
+  {
+   "document": "969500AQW31GYO8JZD66-2024-12-31-ESEF-FR-0",
+   "event_id": "event:acquisitions_and_disposals-2",
+   "location": "page 394",
+   "quote": "Le 1ᵉʳ février 2024, KLM a cédé sa filiale détenue à 100 % KLM Equipment Services B.V. à TCR International N.V. (TCR).",
+   "status": "verified",
+   "summary": "KLM sold its wholly owned subsidiary KLM Equipment Services to TCR International.",
+   "title": "KLM sells KLM Equipment Services",
+   "topic": "acquisitions_and_disposals"
+  },
+  {
+   "document": "969500AQW31GYO8JZD66-2024-12-31-ESEF-FR-0",
+   "event_id": "event:capacity_and_network",
+   "location": "page 369",
+   "quote": "une provision nette de (49) millions liée à la restructuration de l’offre domestique au départ d’Orly et des centres d’appel.",
+   "status": "verified",
+   "summary": "A net provision was recorded for the restructuring of the domestic offer from Orly and of call centres.",
+   "title": "Provision for Orly domestic offer restructuring",
+   "topic": "capacity_and_network"
+  },
+  {
+   "document": "969500AQW31GYO8JZD66-2024-12-31-ESEF-FR-0",
+   "event_id": "event:costs",
+   "location": "page 369",
+   "quote": "un versement de (115) millions d’euros à Virgin dans le cadre de la renégociation d’un contrat ;",
+   "status": "verified",
+   "summary": "Operating result for the year included a payment to Virgin as part of the renegotiation of a contract.",
+   "title": "Payment to Virgin in contract renegotiation",
+   "topic": "costs"
+  },
+  {
+   "document": "969500AQW31GYO8JZD66-2024-12-31-ESEF-FR-0",
+   "event_id": "event:fleet_and_engines",
+   "location": "page 5",
+   "quote": "En 2024, l’intensité GES s’est améliorée (- 1 %) par rapport à 2023 dans un contexte de retards dans le renouvellement de la flotte, en raison de contraintes dans la chaîne d’approvisionnement, de problèmes de moteurs sur une partie de la flotte d’avions de nouvelle génération ne permettant pas au Groupe de les exploiter à leur capacité maximale",
+   "status": "verified",
+   "summary": "Fleet renewal was delayed by supply chain constraints and engine problems on part of the new-generation fleet, preventing the group from operating those aircraft at maximum capacity.",
+   "title": "Fleet renewal constrained by engine problems",
+   "topic": "fleet_and_engines"
+  },
+  {
+   "document": "969500AQW31GYO8JZD66-2024-12-31-ESEF-FR-0",
+   "event_id": "event:funding_and_rating",
+   "location": "page 12",
+   "quote": "Air France-KLM annonce le lancement d’une offre de rachat sur deux souches obligataires existantes et son intention de procéder à une nouvelle émission obligataire",
+   "status": "verified",
+   "summary": "The company launched a cash tender offer on existing bond tranches and announced its intention to issue new bonds to refinance part of its existing debt.",
+   "title": "Bond tender offer and new bond issue",
+   "topic": "funding_and_rating"
+  }
+ ],
+ "factsheet": {
+  "currency": "EUR",
+  "fiscal_year": 2024,
+  "higher_is_better": {
+   "advance_ticket_cover": false,
+   "ask": true,
+   "capex": null,
+   "capex_intensity": null,
+   "cash_like": true,
+   "cash_liquidity": true,
+   "cash_liquidity_to_revenue": true,
+   "cask": false,
+   "cask_ex_fuel": false,
+   "cfo": true,
+   "contract_liabilities": null,
+   "dda": null,
+   "ebitda": true,
+   "ebitda_margin": true,
+   "fcf": true,
+   "fcf_to_debt": true,
+   "ffo": true,
+   "ffo_to_debt": true,
+   "finance_costs": false,
+   "fleet": null,
+   "fleet_age": false,
+   "fuel_cost": null,
+   "fuel_hedge_ratio": null,
+   "fuel_share_of_costs": null,
+   "gross_leverage": false,
+   "interest_coverage": true,
+   "liquidity": true,
+   "liquidity_to_revenue": true,
+   "load_factor": true,
+   "net_cash": true,
+   "net_debt": null,
+   "net_leverage": false,
+   "operating_profit": true,
+   "passenger_yield": true,
+   "passengers": true,
+   "profit": true,
+   "rask": true,
+   "revenue": true,
+   "rpk": true,
+   "total_debt": null,
+   "undrawn_facilities": true
+  },
+  "issuer": "afkl",
+  "items": {
+   "advance_ticket_cover.change@FY2024": {
+    "assessment": "worse",
+    "direction": "up",
+    "id": "advance_ticket_cover.change@FY2024",
+    "kind": "change",
+    "label": "change in Advance ticket cover, FY2023 to FY2024",
+    "metric": "advance_ticket_cover",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "12.4 points",
+    "unit": "points",
+    "value": "0.123787202954",
+    "vs_peers": null
+   },
+   "advance_ticket_cover.peer_median@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "advance_ticket_cover.peer_median@FY2024",
+    "kind": "peer_median",
+    "label": "Advance ticket cover, median of network airlines, peer year 2024 (3 companies)",
+    "metric": "advance_ticket_cover",
+    "note": "",
+    "peer_assessment": "better",
+    "period": "peer year 2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "74.5%",
+    "unit": "pct",
+    "value": "0.745361990950",
+    "vs_peers": "below"
+   },
+   "advance_ticket_cover.peer_rank@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "advance_ticket_cover.peer_rank@FY2024",
+    "kind": "peer_rank",
+    "label": "Advance ticket cover, rank in network airlines, peer year 2024 (1st = strongest, i.e. the lowest)",
+    "metric": "advance_ticket_cover",
+    "note": "best in the group",
+    "peer_assessment": null,
+    "period": "peer year 2024",
+    "rank": 1,
+    "rank_of": 3,
+    "rendered": "1st of 3",
+    "unit": "rank",
+    "value": "1",
+    "vs_peers": null
+   },
+   "advance_ticket_cover@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "advance_ticket_cover@FY2023",
+    "kind": "value",
+    "label": "Advance ticket cover, FY2023",
+    "metric": "advance_ticket_cover",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "46.7%",
+    "unit": "pct",
+    "value": "0.467239917646",
+    "vs_peers": null
+   },
+   "advance_ticket_cover@FY2024": {
+    "assessment": "worse",
+    "direction": "up",
+    "id": "advance_ticket_cover@FY2024",
+    "kind": "value",
+    "label": "Advance ticket cover, FY2024",
+    "metric": "advance_ticket_cover",
+    "note": "",
+    "peer_assessment": "better",
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "59.1%",
+    "unit": "pct",
+    "value": "0.591027120600",
+    "vs_peers": "below"
+   },
+   "capex.change@FY2024": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "capex.change@FY2024",
+    "kind": "change",
+    "label": "change in Capex (purchases of PP&E and intangibles), FY2023 to FY2024",
+    "metric": "capex",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "5.0%",
+    "unit": "relative",
+    "value": "0.04984511405237961137707687975",
+    "vs_peers": null
+   },
+   "capex@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "capex@FY2023",
+    "kind": "value",
+    "label": "Capex (purchases of PP&E and intangibles), FY2023",
+    "metric": "capex",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 3.6bn",
+    "unit": "amount",
+    "value": "3551000000.000000000000",
+    "vs_peers": null
+   },
+   "capex@FY2024": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "capex@FY2024",
+    "kind": "value",
+    "label": "Capex (purchases of PP&E and intangibles), FY2024",
+    "metric": "capex",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 3.7bn",
+    "unit": "amount",
+    "value": "3728000000.000000000000",
+    "vs_peers": null
+   },
+   "capex_intensity.change@FY2024": {
+    "assessment": "neutral",
+    "direction": "flat",
+    "id": "capex_intensity.change@FY2024",
+    "kind": "change",
+    "label": "change in Capex intensity, FY2023 to FY2024",
+    "metric": "capex_intensity",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "0.1 points",
+    "unit": "points",
+    "value": "0.000211700375",
+    "vs_peers": null
+   },
+   "capex_intensity.peer_median@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "capex_intensity.peer_median@FY2024",
+    "kind": "peer_median",
+    "label": "Capex intensity, median of network airlines, peer year 2024 (3 companies)",
+    "metric": "capex_intensity",
+    "note": "",
+    "peer_assessment": "neutral",
+    "period": "peer year 2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "8.8%",
+    "unit": "pct",
+    "value": "0.087725856698",
+    "vs_peers": "above"
+   },
+   "capex_intensity@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "capex_intensity@FY2023",
+    "kind": "value",
+    "label": "Capex intensity, FY2023",
+    "metric": "capex_intensity",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "11.8%",
+    "unit": "pct",
+    "value": "0.118291748559",
+    "vs_peers": null
+   },
+   "capex_intensity@FY2024": {
+    "assessment": "neutral",
+    "direction": "flat",
+    "id": "capex_intensity@FY2024",
+    "kind": "value",
+    "label": "Capex intensity, FY2024",
+    "metric": "capex_intensity",
+    "note": "",
+    "peer_assessment": "neutral",
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "11.9%",
+    "unit": "pct",
+    "value": "0.118503448934",
+    "vs_peers": "above"
+   },
+   "cash_like.change@FY2024": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "cash_like.change@FY2024",
+    "kind": "change",
+    "label": "change in Cash and cash-like investments, FY2023 to FY2024",
+    "metric": "cash_like",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "16.0%",
+    "unit": "relative",
+    "value": "0.1604699043236042146057890275",
+    "vs_peers": null
+   },
+   "cash_like@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "cash_like@FY2023",
+    "kind": "value",
+    "label": "Cash and cash-like investments, FY2023",
+    "metric": "cash_like",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 8.3bn",
+    "unit": "amount",
+    "value": "8257000000.000000000000",
+    "vs_peers": null
+   },
+   "cash_like@FY2024": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "cash_like@FY2024",
+    "kind": "value",
+    "label": "Cash and cash-like investments, FY2024",
+    "metric": "cash_like",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 6.9bn",
+    "unit": "amount",
+    "value": "6932000000.000000000000",
+    "vs_peers": null
+   },
+   "cash_liquidity_to_revenue.change@FY2024": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "cash_liquidity_to_revenue.change@FY2024",
+    "kind": "change",
+    "label": "change in Cash liquidity to revenue (partial), FY2023 to FY2024",
+    "metric": "cash_liquidity_to_revenue",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "5.5 points",
+    "unit": "points",
+    "value": "0.054708832006",
+    "vs_peers": null
+   },
+   "cash_liquidity_to_revenue.peer_median@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "cash_liquidity_to_revenue.peer_median@FY2024",
+    "kind": "peer_median",
+    "label": "Cash liquidity to revenue (partial), median of network airlines, peer year 2024 (3 companies)",
+    "metric": "cash_liquidity_to_revenue",
+    "note": "",
+    "peer_assessment": "worse",
+    "period": "peer year 2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "29.0%",
+    "unit": "pct",
+    "value": "0.289950144319",
+    "vs_peers": "below"
+   },
+   "cash_liquidity_to_revenue.peer_rank@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "cash_liquidity_to_revenue.peer_rank@FY2024",
+    "kind": "peer_rank",
+    "label": "Cash liquidity to revenue (partial), rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest)",
+    "metric": "cash_liquidity_to_revenue",
+    "note": "weakest",
+    "peer_assessment": null,
+    "period": "peer year 2024",
+    "rank": 3,
+    "rank_of": 3,
+    "rendered": "3rd of 3",
+    "unit": "rank",
+    "value": "3",
+    "vs_peers": null
+   },
+   "cash_liquidity_to_revenue@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "cash_liquidity_to_revenue@FY2023",
+    "kind": "value",
+    "label": "Cash liquidity to revenue (partial), FY2023",
+    "metric": "cash_liquidity_to_revenue",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "27.5%",
+    "unit": "pct",
+    "value": "0.275059129218",
+    "vs_peers": null
+   },
+   "cash_liquidity_to_revenue@FY2024": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "cash_liquidity_to_revenue@FY2024",
+    "kind": "value",
+    "label": "Cash liquidity to revenue (partial), FY2024",
+    "metric": "cash_liquidity_to_revenue",
+    "note": "",
+    "peer_assessment": "worse",
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "22.0%",
+    "unit": "pct",
+    "value": "0.220350297212",
+    "vs_peers": "below"
+   },
+   "cfo.change@FY2024": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "cfo.change@FY2024",
+    "kind": "change",
+    "label": "change in Cash from operations, FY2023 to FY2024",
+    "metric": "cfo",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "3.1%",
+    "unit": "relative",
+    "value": "0.03050471436494731003882418192",
+    "vs_peers": null
+   },
+   "cfo@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "cfo@FY2023",
+    "kind": "value",
+    "label": "Cash from operations, FY2023",
+    "metric": "cfo",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 3.6bn",
+    "unit": "amount",
+    "value": "3606000000.000000000000",
+    "vs_peers": null
+   },
+   "cfo@FY2024": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "cfo@FY2024",
+    "kind": "value",
+    "label": "Cash from operations, FY2024",
+    "metric": "cfo",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 3.5bn",
+    "unit": "amount",
+    "value": "3496000000.000000000000",
+    "vs_peers": null
+   },
+   "contract_liabilities.change@FY2024": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "contract_liabilities.change@FY2024",
+    "kind": "change",
+    "label": "change in Contract liabilities (advance ticket sales), FY2023 to FY2024",
+    "metric": "contract_liabilities",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "6.2%",
+    "unit": "relative",
+    "value": "0.06194919647485743908761016071",
+    "vs_peers": null
+   },
+   "contract_liabilities@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "contract_liabilities@FY2023",
+    "kind": "value",
+    "label": "Contract liabilities (advance ticket sales), FY2023",
+    "metric": "contract_liabilities",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 3.9bn",
+    "unit": "amount",
+    "value": "3858000000.000000000000",
+    "vs_peers": null
+   },
+   "contract_liabilities@FY2024": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "contract_liabilities@FY2024",
+    "kind": "value",
+    "label": "Contract liabilities (advance ticket sales), FY2024",
+    "metric": "contract_liabilities",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 4.1bn",
+    "unit": "amount",
+    "value": "4097000000.000000000000",
+    "vs_peers": null
+   },
+   "dda.change@FY2024": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "dda.change@FY2024",
+    "kind": "change",
+    "label": "change in Depreciation, amortisation and impairment, FY2023 to FY2024",
+    "metric": "dda",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "5.9%",
+    "unit": "relative",
+    "value": "0.05889423076923076923076923077",
+    "vs_peers": null
+   },
+   "dda@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "dda@FY2023",
+    "kind": "value",
+    "label": "Depreciation, amortisation and impairment, FY2023",
+    "metric": "dda",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 2.5bn",
+    "unit": "amount",
+    "value": "2496000000.000000000000",
+    "vs_peers": null
+   },
+   "dda@FY2024": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "dda@FY2024",
+    "kind": "value",
+    "label": "Depreciation, amortisation and impairment, FY2024",
+    "metric": "dda",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 2.6bn",
+    "unit": "amount",
+    "value": "2643000000.000000000000",
+    "vs_peers": null
+   },
+   "ebitda.change@FY2024": {
+    "assessment": "neutral",
+    "direction": "flat",
+    "id": "ebitda.change@FY2024",
+    "kind": "change",
+    "label": "change in EBITDA, FY2023 to FY2024",
+    "metric": "ebitda",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "1.5%",
+    "unit": "relative",
+    "value": "0.01533668823388449556673855739",
+    "vs_peers": null
+   },
+   "ebitda@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "ebitda@FY2023",
+    "kind": "value",
+    "label": "EBITDA, FY2023",
+    "metric": "ebitda",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 4.2bn",
+    "unit": "amount",
+    "value": "4173000000.000000000000",
+    "vs_peers": null
+   },
+   "ebitda@FY2024": {
+    "assessment": "neutral",
+    "direction": "flat",
+    "id": "ebitda@FY2024",
+    "kind": "value",
+    "label": "EBITDA, FY2024",
+    "metric": "ebitda",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 4.1bn",
+    "unit": "amount",
+    "value": "4109000000.000000000000",
+    "vs_peers": null
+   },
+   "ebitda_margin.change@FY2024": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "ebitda_margin.change@FY2024",
+    "kind": "change",
+    "label": "change in EBITDA margin, FY2023 to FY2024",
+    "metric": "ebitda_margin",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "0.8 points",
+    "unit": "points",
+    "value": "0.008397508538",
+    "vs_peers": null
+   },
+   "ebitda_margin.peer_median@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "ebitda_margin.peer_median@FY2024",
+    "kind": "peer_median",
+    "label": "EBITDA margin, median of network airlines, peer year 2024 (3 companies)",
+    "metric": "ebitda_margin",
+    "note": "",
+    "peer_assessment": "worse",
+    "period": "peer year 2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "14.6%",
+    "unit": "pct",
+    "value": "0.145795066912",
+    "vs_peers": "below"
+   },
+   "ebitda_margin.peer_rank@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "ebitda_margin.peer_rank@FY2024",
+    "kind": "peer_rank",
+    "label": "EBITDA margin, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest)",
+    "metric": "ebitda_margin",
+    "note": "weakest",
+    "peer_assessment": null,
+    "period": "peer year 2024",
+    "rank": 3,
+    "rank_of": 3,
+    "rendered": "3rd of 3",
+    "unit": "rank",
+    "value": "3",
+    "vs_peers": null
+   },
+   "ebitda_margin@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "ebitda_margin@FY2023",
+    "kind": "value",
+    "label": "EBITDA margin, FY2023",
+    "metric": "ebitda_margin",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "13.9%",
+    "unit": "pct",
+    "value": "0.139011959093",
+    "vs_peers": null
+   },
+   "ebitda_margin@FY2024": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "ebitda_margin@FY2024",
+    "kind": "value",
+    "label": "EBITDA margin, FY2024",
+    "metric": "ebitda_margin",
+    "note": "",
+    "peer_assessment": "worse",
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "13.1%",
+    "unit": "pct",
+    "value": "0.130614450555",
+    "vs_peers": "below"
+   },
+   "event:acquisitions_and_disposals": {
+    "assessment": null,
+    "direction": null,
+    "id": "event:acquisitions_and_disposals",
+    "kind": "event",
+    "label": "Air France-KLM takes minority stake in SAS",
+    "metric": "event",
+    "note": "The group completed the acquisition of a minority stake in SAS AB and began a deepened commercial cooperation with the airline. Quote (page 371): \"Après l’obtention d’autorisations réglementaires en Europe et aux États-Unis, le groupe Air France-KLM a donc finalisé le 28 août 2024 l’acquisition d’une participation minoritaire de 19,90 % dans le capital de SAS AB.\"",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "",
+    "unit": "event",
+    "value": "0",
+    "vs_peers": null
+   },
+   "event:acquisitions_and_disposals-2": {
+    "assessment": null,
+    "direction": null,
+    "id": "event:acquisitions_and_disposals-2",
+    "kind": "event",
+    "label": "KLM sells KLM Equipment Services",
+    "metric": "event",
+    "note": "KLM sold its wholly owned subsidiary KLM Equipment Services to TCR International. Quote (page 394): \"Le 1ᵉʳ février 2024, KLM a cédé sa filiale détenue à 100 % KLM Equipment Services B.V. à TCR International N.V. (TCR).\"",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "",
+    "unit": "event",
+    "value": "0",
+    "vs_peers": null
+   },
+   "event:capacity_and_network": {
+    "assessment": null,
+    "direction": null,
+    "id": "event:capacity_and_network",
+    "kind": "event",
+    "label": "Provision for Orly domestic offer restructuring",
+    "metric": "event",
+    "note": "A net provision was recorded for the restructuring of the domestic offer from Orly and of call centres. Quote (page 369): \"une provision nette de (49) millions liée à la restructuration de l’offre domestique au départ d’Orly et des centres d’appel.\"",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "",
+    "unit": "event",
+    "value": "0",
+    "vs_peers": null
+   },
+   "event:costs": {
+    "assessment": null,
+    "direction": null,
+    "id": "event:costs",
+    "kind": "event",
+    "label": "Payment to Virgin in contract renegotiation",
+    "metric": "event",
+    "note": "Operating result for the year included a payment to Virgin as part of the renegotiation of a contract. Quote (page 369): \"un versement de (115) millions d’euros à Virgin dans le cadre de la renégociation d’un contrat ;\"",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "",
+    "unit": "event",
+    "value": "0",
+    "vs_peers": null
+   },
+   "event:fleet_and_engines": {
+    "assessment": null,
+    "direction": null,
+    "id": "event:fleet_and_engines",
+    "kind": "event",
+    "label": "Fleet renewal constrained by engine problems",
+    "metric": "event",
+    "note": "Fleet renewal was delayed by supply chain constraints and engine problems on part of the new-generation fleet, preventing the group from operating those aircraft at maximum capacity. Quote (page 5): \"En 2024, l’intensité GES s’est améliorée (- 1 %) par rapport à 2023 dans un contexte de retards dans le renouvellement de la flotte, en raison de contraintes dans la chaîne d’approvisionnement, de problèmes de moteurs sur une partie de la flotte d’avions de nouvelle génération ne permettant pas au Groupe de les exploiter à leur capacité maximale\"",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "",
+    "unit": "event",
+    "value": "0",
+    "vs_peers": null
+   },
+   "event:funding_and_rating": {
+    "assessment": null,
+    "direction": null,
+    "id": "event:funding_and_rating",
+    "kind": "event",
+    "label": "Bond tender offer and new bond issue",
+    "metric": "event",
+    "note": "The company launched a cash tender offer on existing bond tranches and announced its intention to issue new bonds to refinance part of its existing debt. Quote (page 12): \"Air France-KLM annonce le lancement d’une offre de rachat sur deux souches obligataires existantes et son intention de procéder à une nouvelle émission obligataire\"",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "",
+    "unit": "event",
+    "value": "0",
+    "vs_peers": null
+   },
+   "fcf@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "fcf@FY2023",
+    "kind": "value",
+    "label": "Free cash flow, FY2023",
+    "metric": "fcf",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 55.0m",
+    "unit": "amount",
+    "value": "55000000.000000000000",
+    "vs_peers": null
+   },
+   "fcf@FY2024": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "fcf@FY2024",
+    "kind": "value",
+    "label": "Free cash flow, FY2024",
+    "metric": "fcf",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR -232m",
+    "unit": "amount",
+    "value": "-232000000.000000000000",
+    "vs_peers": null
+   },
+   "fcf_to_debt.change@FY2024": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "fcf_to_debt.change@FY2024",
+    "kind": "change",
+    "label": "change in FCF to debt, FY2023 to FY2024",
+    "metric": "fcf_to_debt",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "2.0 points",
+    "unit": "points",
+    "value": "0.019879750343",
+    "vs_peers": null
+   },
+   "fcf_to_debt.peer_median@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "fcf_to_debt.peer_median@FY2024",
+    "kind": "peer_median",
+    "label": "FCF to debt, median of network airlines, peer year 2024 (3 companies)",
+    "metric": "fcf_to_debt",
+    "note": "",
+    "peer_assessment": "worse",
+    "period": "peer year 2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "20.3%",
+    "unit": "pct",
+    "value": "0.203259878827",
+    "vs_peers": "below"
+   },
+   "fcf_to_debt.peer_rank@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "fcf_to_debt.peer_rank@FY2024",
+    "kind": "peer_rank",
+    "label": "FCF to debt, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest)",
+    "metric": "fcf_to_debt",
+    "note": "weakest",
+    "peer_assessment": null,
+    "period": "peer year 2024",
+    "rank": 3,
+    "rank_of": 3,
+    "rendered": "3rd of 3",
+    "unit": "rank",
+    "value": "3",
+    "vs_peers": null
+   },
+   "fcf_to_debt@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "fcf_to_debt@FY2023",
+    "kind": "value",
+    "label": "FCF to debt, FY2023",
+    "metric": "fcf_to_debt",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "0.4%",
+    "unit": "pct",
+    "value": "0.004034920402",
+    "vs_peers": null
+   },
+   "fcf_to_debt@FY2024": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "fcf_to_debt@FY2024",
+    "kind": "value",
+    "label": "FCF to debt, FY2024",
+    "metric": "fcf_to_debt",
+    "note": "",
+    "peer_assessment": "worse",
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "-1.6%",
+    "unit": "pct",
+    "value": "-0.015844829941",
+    "vs_peers": "below"
+   },
+   "ffo.change@FY2024": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "ffo.change@FY2024",
+    "kind": "change",
+    "label": "change in FFO, FY2023 to FY2024",
+    "metric": "ffo",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "2.1%",
+    "unit": "relative",
+    "value": "0.02086438152011922503725782414",
+    "vs_peers": null
+   },
+   "ffo@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "ffo@FY2023",
+    "kind": "value",
+    "label": "FFO, FY2023",
+    "metric": "ffo",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 3.4bn",
+    "unit": "amount",
+    "value": "3355000000.000000000000",
+    "vs_peers": null
+   },
+   "ffo@FY2024": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "ffo@FY2024",
+    "kind": "value",
+    "label": "FFO, FY2024",
+    "metric": "ffo",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 3.4bn",
+    "unit": "amount",
+    "value": "3425000000.000000000000",
+    "vs_peers": null
+   },
+   "ffo_to_debt.change@FY2024": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "ffo_to_debt.change@FY2024",
+    "kind": "change",
+    "label": "change in FFO to debt, FY2023 to FY2024",
+    "metric": "ffo_to_debt",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "1.2 points",
+    "unit": "points",
+    "value": "0.012214012848",
+    "vs_peers": null
+   },
+   "ffo_to_debt.peer_median@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "ffo_to_debt.peer_median@FY2024",
+    "kind": "peer_median",
+    "label": "FFO to debt, median of network airlines, peer year 2024 (3 companies)",
+    "metric": "ffo_to_debt",
+    "note": "the company is the median of the group: say it sits in the middle of the group, do not compare it with the median",
+    "peer_assessment": "in_line",
+    "period": "peer year 2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "23.4%",
+    "unit": "pct",
+    "value": "0.233916131676",
+    "vs_peers": "in_line"
+   },
+   "ffo_to_debt.peer_rank@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "ffo_to_debt.peer_rank@FY2024",
+    "kind": "peer_rank",
+    "label": "FFO to debt, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest)",
+    "metric": "ffo_to_debt",
+    "note": "",
+    "peer_assessment": null,
+    "period": "peer year 2024",
+    "rank": 2,
+    "rank_of": 3,
+    "rendered": "2nd of 3",
+    "unit": "rank",
+    "value": "2",
+    "vs_peers": null
+   },
+   "ffo_to_debt@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "ffo_to_debt@FY2023",
+    "kind": "value",
+    "label": "FFO to debt, FY2023",
+    "metric": "ffo_to_debt",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "24.6%",
+    "unit": "pct",
+    "value": "0.246130144524",
+    "vs_peers": null
+   },
+   "ffo_to_debt@FY2024": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "ffo_to_debt@FY2024",
+    "kind": "value",
+    "label": "FFO to debt, FY2024",
+    "metric": "ffo_to_debt",
+    "note": "",
+    "peer_assessment": "in_line",
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "23.4%",
+    "unit": "pct",
+    "value": "0.233916131676",
+    "vs_peers": "in_line"
+   },
+   "finance_costs.change@FY2024": {
+    "assessment": "worse",
+    "direction": "up",
+    "id": "finance_costs.change@FY2024",
+    "kind": "change",
+    "label": "change in Finance costs, FY2023 to FY2024",
+    "metric": "finance_costs",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "5.2%",
+    "unit": "relative",
+    "value": "0.05166666666666666666666666667",
+    "vs_peers": null
+   },
+   "finance_costs@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "finance_costs@FY2023",
+    "kind": "value",
+    "label": "Finance costs, FY2023",
+    "metric": "finance_costs",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 600m",
+    "unit": "amount",
+    "value": "600000000.000000000000",
+    "vs_peers": null
+   },
+   "finance_costs@FY2024": {
+    "assessment": "worse",
+    "direction": "up",
+    "id": "finance_costs@FY2024",
+    "kind": "value",
+    "label": "Finance costs, FY2024",
+    "metric": "finance_costs",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 631m",
+    "unit": "amount",
+    "value": "631000000.000000000000",
+    "vs_peers": null
+   },
+   "fleet.change@FY2024": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "fleet.change@FY2024",
+    "kind": "change",
+    "label": "change in Fleet, FY2023 to FY2024",
+    "metric": "fleet",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "4.3%",
+    "unit": "relative",
+    "value": "0.04251386321626617375231053604",
+    "vs_peers": null
+   },
+   "fleet@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "fleet@FY2023",
+    "kind": "value",
+    "label": "Fleet, FY2023",
+    "metric": "fleet",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "541",
+    "unit": "count",
+    "value": "541.000000000000",
+    "vs_peers": null
+   },
+   "fleet@FY2024": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "fleet@FY2024",
+    "kind": "value",
+    "label": "Fleet, FY2024",
+    "metric": "fleet",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "564",
+    "unit": "count",
+    "value": "564.000000000000",
+    "vs_peers": null
+   },
+   "fleet_age.change@FY2024": {
+    "assessment": "neutral",
+    "direction": "flat",
+    "id": "fleet_age.change@FY2024",
+    "kind": "change",
+    "label": "change in Fleet average age, FY2023 to FY2024",
+    "metric": "fleet_age",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "0.8%",
+    "unit": "relative",
+    "value": "0.008196721311475409836065573770",
+    "vs_peers": null
+   },
+   "fleet_age@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "fleet_age@FY2023",
+    "kind": "value",
+    "label": "Fleet average age, FY2023",
+    "metric": "fleet_age",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "12.2 years",
+    "unit": "years",
+    "value": "12.200000000000",
+    "vs_peers": null
+   },
+   "fleet_age@FY2024": {
+    "assessment": "neutral",
+    "direction": "flat",
+    "id": "fleet_age@FY2024",
+    "kind": "value",
+    "label": "Fleet average age, FY2024",
+    "metric": "fleet_age",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "12.1 years",
+    "unit": "years",
+    "value": "12.100000000000",
+    "vs_peers": null
+   },
+   "gross_leverage.change@FY2024": {
+    "assessment": "worse",
+    "direction": "up",
+    "id": "gross_leverage.change@FY2024",
+    "kind": "change",
+    "label": "change in Gross leverage, FY2023 to FY2024",
+    "metric": "gross_leverage",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "0.29x",
+    "unit": "x",
+    "value": "0.296922462233",
+    "vs_peers": null
+   },
+   "gross_leverage.peer_median@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "gross_leverage.peer_median@FY2024",
+    "kind": "peer_median",
+    "label": "Gross leverage, median of network airlines, peer year 2024 (3 companies)",
+    "metric": "gross_leverage",
+    "note": "the company is the median of the group: say it sits in the middle of the group, do not compare it with the median",
+    "peer_assessment": "in_line",
+    "period": "peer year 2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "3.56x",
+    "unit": "x",
+    "value": "3.563397420297",
+    "vs_peers": "in_line"
+   },
+   "gross_leverage.peer_rank@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "gross_leverage.peer_rank@FY2024",
+    "kind": "peer_rank",
+    "label": "Gross leverage, rank in network airlines, peer year 2024 (1st = strongest, i.e. the lowest)",
+    "metric": "gross_leverage",
+    "note": "",
+    "peer_assessment": null,
+    "period": "peer year 2024",
+    "rank": 2,
+    "rank_of": 3,
+    "rendered": "2nd of 3",
+    "unit": "rank",
+    "value": "2",
+    "vs_peers": null
+   },
+   "gross_leverage@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "gross_leverage@FY2023",
+    "kind": "value",
+    "label": "Gross leverage, FY2023",
+    "metric": "gross_leverage",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "3.27x",
+    "unit": "x",
+    "value": "3.266474958064",
+    "vs_peers": null
+   },
+   "gross_leverage@FY2024": {
+    "assessment": "worse",
+    "direction": "up",
+    "id": "gross_leverage@FY2024",
+    "kind": "value",
+    "label": "Gross leverage, FY2024",
+    "metric": "gross_leverage",
+    "note": "",
+    "peer_assessment": "in_line",
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "3.56x",
+    "unit": "x",
+    "value": "3.563397420297",
+    "vs_peers": "in_line"
+   },
+   "interest_coverage.change@FY2024": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "interest_coverage.change@FY2024",
+    "kind": "change",
+    "label": "change in Interest coverage, FY2023 to FY2024",
+    "metric": "interest_coverage",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "0.45x",
+    "unit": "x",
+    "value": "0.443114104596",
+    "vs_peers": null
+   },
+   "interest_coverage.peer_median@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "interest_coverage.peer_median@FY2024",
+    "kind": "peer_median",
+    "label": "Interest coverage, median of network airlines, peer year 2024 (3 companies)",
+    "metric": "interest_coverage",
+    "note": "the company is the median of the group: say it sits in the middle of the group, do not compare it with the median",
+    "peer_assessment": "in_line",
+    "period": "peer year 2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "6.51x",
+    "unit": "x",
+    "value": "6.511885895404",
+    "vs_peers": "in_line"
+   },
+   "interest_coverage.peer_rank@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "interest_coverage.peer_rank@FY2024",
+    "kind": "peer_rank",
+    "label": "Interest coverage, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest)",
+    "metric": "interest_coverage",
+    "note": "",
+    "peer_assessment": null,
+    "period": "peer year 2024",
+    "rank": 2,
+    "rank_of": 3,
+    "rendered": "2nd of 3",
+    "unit": "rank",
+    "value": "2",
+    "vs_peers": null
+   },
+   "interest_coverage@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "interest_coverage@FY2023",
+    "kind": "value",
+    "label": "Interest coverage, FY2023",
+    "metric": "interest_coverage",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "6.96x",
+    "unit": "x",
+    "value": "6.955000000000",
+    "vs_peers": null
+   },
+   "interest_coverage@FY2024": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "interest_coverage@FY2024",
+    "kind": "value",
+    "label": "Interest coverage, FY2024",
+    "metric": "interest_coverage",
+    "note": "",
+    "peer_assessment": "in_line",
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "6.51x",
+    "unit": "x",
+    "value": "6.511885895404",
+    "vs_peers": "in_line"
+   },
+   "net_debt.change@FY2024": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "net_debt.change@FY2024",
+    "kind": "change",
+    "label": "change in Net debt, FY2023 to FY2024",
+    "metric": "net_debt",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "43.5%",
+    "unit": "relative",
+    "value": "0.4346855228879791589132861928",
+    "vs_peers": null
+   },
+   "net_debt@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "net_debt@FY2023",
+    "kind": "value",
+    "label": "Net debt, FY2023",
+    "metric": "net_debt",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 5.4bn",
+    "unit": "amount",
+    "value": "5374000000.000000000000",
+    "vs_peers": null
+   },
+   "net_debt@FY2024": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "net_debt@FY2024",
+    "kind": "value",
+    "label": "Net debt, FY2024",
+    "metric": "net_debt",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 7.7bn",
+    "unit": "amount",
+    "value": "7710000000.000000000000",
+    "vs_peers": null
+   },
+   "net_leverage.change@FY2024": {
+    "assessment": "worse",
+    "direction": "up",
+    "id": "net_leverage.change@FY2024",
+    "kind": "change",
+    "label": "change in Net leverage, FY2023 to FY2024",
+    "metric": "net_leverage",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "0.59x",
+    "unit": "x",
+    "value": "0.588566406077",
+    "vs_peers": null
+   },
+   "net_leverage.peer_median@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "net_leverage.peer_median@FY2024",
+    "kind": "peer_median",
+    "label": "Net leverage, median of network airlines, peer year 2024 (3 companies)",
+    "metric": "net_leverage",
+    "note": "the company is the median of the group: say it sits in the middle of the group, do not compare it with the median",
+    "peer_assessment": "in_line",
+    "period": "peer year 2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "1.88x",
+    "unit": "x",
+    "value": "1.876368946216",
+    "vs_peers": "in_line"
+   },
+   "net_leverage.peer_rank@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "net_leverage.peer_rank@FY2024",
+    "kind": "peer_rank",
+    "label": "Net leverage, rank in network airlines, peer year 2024 (1st = strongest, i.e. the lowest)",
+    "metric": "net_leverage",
+    "note": "",
+    "peer_assessment": null,
+    "period": "peer year 2024",
+    "rank": 2,
+    "rank_of": 3,
+    "rendered": "2nd of 3",
+    "unit": "rank",
+    "value": "2",
+    "vs_peers": null
+   },
+   "net_leverage@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "net_leverage@FY2023",
+    "kind": "value",
+    "label": "Net leverage, FY2023",
+    "metric": "net_leverage",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "1.29x",
+    "unit": "x",
+    "value": "1.287802540139",
+    "vs_peers": null
+   },
+   "net_leverage@FY2024": {
+    "assessment": "worse",
+    "direction": "up",
+    "id": "net_leverage@FY2024",
+    "kind": "value",
+    "label": "Net leverage, FY2024",
+    "metric": "net_leverage",
+    "note": "",
+    "peer_assessment": "in_line",
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "1.88x",
+    "unit": "x",
+    "value": "1.876368946216",
+    "vs_peers": "in_line"
+   },
+   "operating_profit.change@FY2024": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "operating_profit.change@FY2024",
+    "kind": "change",
+    "label": "change in Operating profit, FY2023 to FY2024",
+    "metric": "operating_profit",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "12.6%",
+    "unit": "relative",
+    "value": "0.1258199165175909361955873584",
+    "vs_peers": null
+   },
+   "operating_profit@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "operating_profit@FY2023",
+    "kind": "value",
+    "label": "Operating profit, FY2023",
+    "metric": "operating_profit",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 1.7bn",
+    "unit": "amount",
+    "value": "1677000000.000000000000",
+    "vs_peers": null
+   },
+   "operating_profit@FY2024": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "operating_profit@FY2024",
+    "kind": "value",
+    "label": "Operating profit, FY2024",
+    "metric": "operating_profit",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 1.5bn",
+    "unit": "amount",
+    "value": "1466000000.000000000000",
+    "vs_peers": null
+   },
+   "passengers.change@FY2024": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "passengers.change@FY2024",
+    "kind": "change",
+    "label": "change in Passengers, FY2023 to FY2024",
+    "metric": "passengers",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "4.7%",
+    "unit": "relative",
+    "value": "0.04700854700854700854700854701",
+    "vs_peers": null
+   },
+   "passengers@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "passengers@FY2023",
+    "kind": "value",
+    "label": "Passengers, FY2023",
+    "metric": "passengers",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "93.6m",
+    "unit": "count",
+    "value": "93600000.000000000000",
+    "vs_peers": null
+   },
+   "passengers@FY2024": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "passengers@FY2024",
+    "kind": "value",
+    "label": "Passengers, FY2024",
+    "metric": "passengers",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "98.0m",
+    "unit": "count",
+    "value": "98000000.000000000000",
+    "vs_peers": null
+   },
+   "profit.change@FY2024": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "profit.change@FY2024",
+    "kind": "change",
+    "label": "change in Profit for the year, FY2023 to FY2024",
+    "metric": "profit",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "50.6%",
+    "unit": "relative",
+    "value": "0.5060606060606060606060606061",
+    "vs_peers": null
+   },
+   "profit@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "profit@FY2023",
+    "kind": "value",
+    "label": "Profit for the year, FY2023",
+    "metric": "profit",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 990m",
+    "unit": "amount",
+    "value": "990000000.000000000000",
+    "vs_peers": null
+   },
+   "profit@FY2024": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "profit@FY2024",
+    "kind": "value",
+    "label": "Profit for the year, FY2024",
+    "metric": "profit",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 489m",
+    "unit": "amount",
+    "value": "489000000.000000000000",
+    "vs_peers": null
+   },
+   "revenue.change@FY2024": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "revenue.change@FY2024",
+    "kind": "change",
+    "label": "change in Revenue, FY2023 to FY2024",
+    "metric": "revenue",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "4.8%",
+    "unit": "relative",
+    "value": "0.04796961924114727339351743896",
+    "vs_peers": null
+   },
+   "revenue@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "revenue@FY2023",
+    "kind": "value",
+    "label": "Revenue, FY2023",
+    "metric": "revenue",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 30.0bn",
+    "unit": "amount",
+    "value": "30019000000.000000000000",
+    "vs_peers": null
+   },
+   "revenue@FY2024": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "revenue@FY2024",
+    "kind": "value",
+    "label": "Revenue, FY2024",
+    "metric": "revenue",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 31.5bn",
+    "unit": "amount",
+    "value": "31459000000.000000000000",
+    "vs_peers": null
+   },
+   "total_debt.change@FY2024": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "total_debt.change@FY2024",
+    "kind": "change",
+    "label": "change in Total debt, FY2023 to FY2024",
+    "metric": "total_debt",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "7.4%",
+    "unit": "relative",
+    "value": "0.07416917320812853055535177170",
+    "vs_peers": null
+   },
+   "total_debt@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "total_debt@FY2023",
+    "kind": "value",
+    "label": "Total debt, FY2023",
+    "metric": "total_debt",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 13.6bn",
+    "unit": "amount",
+    "value": "13631000000.000000000000",
+    "vs_peers": null
+   },
+   "total_debt@FY2024": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "total_debt@FY2024",
+    "kind": "value",
+    "label": "Total debt, FY2024",
+    "metric": "total_debt",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 14.6bn",
+    "unit": "amount",
+    "value": "14642000000.000000000000",
+    "vs_peers": null
+   }
+  },
+  "labels": {
+   "advance_ticket_cover": "Advance ticket cover",
+   "ask": "ASK",
+   "capex": "Capex (purchases of PP&E and intangibles)",
+   "capex_intensity": "Capex intensity",
+   "cash_like": "Cash and cash-like investments",
+   "cash_liquidity": "Cash liquidity (partial)",
+   "cash_liquidity_to_revenue": "Cash liquidity to revenue (partial)",
+   "cask": "CASK",
+   "cask_ex_fuel": "CASK ex-fuel",
+   "cfo": "Cash from operations",
+   "contract_liabilities": "Contract liabilities (advance ticket sales)",
+   "dda": "Depreciation, amortisation and impairment",
+   "ebitda": "EBITDA",
+   "ebitda_margin": "EBITDA margin",
+   "fcf": "Free cash flow",
+   "fcf_to_debt": "FCF to debt",
+   "ffo": "FFO",
+   "ffo_to_debt": "FFO to debt",
+   "finance_costs": "Finance costs",
+   "fleet": "Fleet",
+   "fleet_age": "Fleet average age",
+   "fuel_cost": "Fuel cost",
+   "fuel_hedge_ratio": "Fuel hedge ratio",
+   "fuel_share_of_costs": "Fuel share of costs",
+   "gross_leverage": "Gross leverage",
+   "interest_coverage": "Interest coverage",
+   "liquidity": "Liquidity",
+   "liquidity_to_revenue": "Liquidity to revenue",
+   "load_factor": "Load factor",
+   "net_cash": "Net cash (cash and cash-like investments above total debt)",
+   "net_debt": "Net debt",
+   "net_leverage": "Net leverage",
+   "operating_profit": "Operating profit",
+   "passenger_yield": "Passenger yield",
+   "passengers": "Passengers",
+   "profit": "Profit for the year",
+   "rask": "RASK",
+   "revenue": "Revenue",
+   "rpk": "RPK",
+   "total_debt": "Total debt",
+   "undrawn_facilities": "Undrawn committed credit facilities"
+  },
+  "name": "Air France-KLM",
+  "peer_group": "Network airlines",
+  "peer_members": [
+   "afkl",
+   "iag",
+   "finnair"
+  ],
+  "peer_year": 2024,
+  "period_label": "FY2024",
+  "type": "airline",
+  "unavailable": {
+   "ask.change@FY2024": "needs both years verified",
+   "ask@FY2023": "ASK not available for FY2023",
+   "ask@FY2024": "ASK not available for FY2024",
+   "capex_intensity.peer_rank@FY2024": "not ranked: neither higher nor lower is better",
+   "cash_liquidity.change@FY2024": "the same figure as cash_like.change@FY2024: use that id",
+   "cash_liquidity@FY2023": "the same figure as cash_like@FY2023: use that id",
+   "cash_liquidity@FY2024": "the same figure as cash_like@FY2024: use that id",
+   "cask.change@FY2024": "needs both years verified",
+   "cask@FY2023": "ASK not available for FY2023",
+   "cask@FY2024": "ASK not available for FY2024",
+   "cask_ex_fuel.change@FY2024": "needs both years verified",
+   "cask_ex_fuel@FY2023": "Fuel cost not available for FY2023",
+   "cask_ex_fuel@FY2024": "Fuel cost not available for FY2024",
+   "fcf.change@FY2024": "a percentage change is not meaningful (a year is negative or zero); the direction is still down, on fcf@FY2024",
+   "fuel_cost.change@FY2024": "needs both years verified",
+   "fuel_cost@FY2023": "Fuel cost not tagged separately; to be extracted from the notes (M3).",
+   "fuel_cost@FY2024": "Fuel cost not tagged separately; to be extracted from the notes (M3).",
+   "fuel_hedge_ratio.change@FY2024": "needs both years verified",
+   "fuel_hedge_ratio.peer_median@FY2024": "the company's own figure is not available",
+   "fuel_hedge_ratio.peer_rank@FY2024": "the company's own figure is not available",
+   "fuel_hedge_ratio@FY2023": "Fuel hedge ratio not available for FY2023",
+   "fuel_hedge_ratio@FY2024": "Fuel hedge ratio not available for FY2024",
+   "fuel_share_of_costs.change@FY2024": "needs both years verified",
+   "fuel_share_of_costs.peer_median@FY2024": "the company's own figure is not available",
+   "fuel_share_of_costs.peer_rank@FY2024": "the company's own figure is not available",
+   "fuel_share_of_costs@FY2023": "Fuel cost not available for FY2023",
+   "fuel_share_of_costs@FY2024": "Fuel cost not available for FY2024",
+   "liquidity.change@FY2024": "needs both years verified",
+   "liquidity@FY2023": "Undrawn committed credit facilities not available for FY2023",
+   "liquidity@FY2024": "not verified yet: waiting for Imane's review",
+   "liquidity_to_revenue.change@FY2024": "needs both years verified",
+   "liquidity_to_revenue.peer_median@FY2024": "the company's own figure is not available",
+   "liquidity_to_revenue.peer_rank@FY2024": "the company's own figure is not available",
+   "liquidity_to_revenue@FY2023": "Liquidity: Undrawn committed credit facilities not available for FY2023",
+   "liquidity_to_revenue@FY2024": "not verified yet: waiting for Imane's review",
+   "load_factor.change@FY2024": "needs both years verified",
+   "load_factor.peer_median@FY2024": "the company's own figure is not available",
+   "load_factor.peer_rank@FY2024": "the company's own figure is not available",
+   "load_factor@FY2023": "RPK not available for FY2023",
+   "load_factor@FY2024": "RPK not available for FY2024",
+   "net_cash.change@FY2024": "needs both years verified",
+   "net_cash@FY2023": "the company has net debt, not net cash",
+   "net_cash@FY2024": "the company has net debt, not net cash",
+   "passenger_yield.change@FY2024": "needs both years verified",
+   "passenger_yield@FY2023": "Passenger revenue not available for FY2023",
+   "passenger_yield@FY2024": "Passenger revenue not available for FY2024",
+   "rask.change@FY2024": "needs both years verified",
+   "rask@FY2023": "ASK not available for FY2023",
+   "rask@FY2024": "ASK not available for FY2024",
+   "rpk.change@FY2024": "needs both years verified",
+   "rpk@FY2023": "RPK not available for FY2023",
+   "rpk@FY2024": "RPK not available for FY2024",
+   "undrawn_facilities.change@FY2024": "needs both years verified",
+   "undrawn_facilities@FY2023": "no figure for this year",
+   "undrawn_facilities@FY2024": "not verified yet: waiting for Imane's review"
+  }
+ },
+ "fiscal_year": 2024,
+ "format_version": 1,
+ "issuer": "afkl",
+ "name": "Air France-KLM",
+ "peer_group": "Network airlines",
+ "peer_members": [
+  "afkl",
+  "iag",
+  "finnair"
+ ],
+ "peer_year": 2024,
+ "period_label": "FY2024",
+ "run": {
+  "calls": 2,
+  "cost_usd": null,
+  "filing_hashes": {
+   "969500AQW31GYO8JZD66-2024-12-31-ESEF-FR-0": "3e5fbdef1de4640bfc54052be77a4061e5f8045bb978be4f1598fa57cf9e4b4e",
+   "969500AQW31GYO8JZD66-2024-12-31-manual-pdf": "70d64d938f3a44055fb3d9bc18e7a561d397eda4061c64df1a9a15bf2d7cb545"
+  },
+  "first_try_ok": false,
+  "input_hash": "f59c7057f34a95eac1c1baebf1f3869997e31397dc22e5e173844912ce692892",
+  "input_tokens": 28102,
+  "matches_figures": true,
+  "model": "deepseek-flash",
+  "output_tokens": 4399,
+  "passed": true,
+  "prompt_version": "draft-v7",
+  "provider": "deepseek",
+  "recorded_at": "2026-11-09T18:34:21+00:00"
+ },
+ "type": "airline"
+}

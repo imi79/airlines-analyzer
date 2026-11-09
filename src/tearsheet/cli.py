@@ -10,6 +10,9 @@
     draft        ask the AI to draft the commentary of each company's latest two years (M4),
                  check every sentence and write docs/m4 (costs tokens; answers are recorded,
                  so `all` and `report` replay them for free). --issuer limits the AI calls
+    samples      write the pre-built tearsheets the app's demo mode reads (samples/), from the
+                 database: every figure with its source, and the 18 drafted tearsheets
+    app          open the web app (demo mode by default; live mode needs the database)
     llm-check    send one tiny request to confirm config/models.yaml and the API key work
     add-package  convert and register an ESEF package (.zip) downloaded by hand:
                  add-package <zip> --issuer afkl --origin "Air France-KLM website" [--url ...]
@@ -38,7 +41,17 @@ def main() -> None:
     parser = argparse.ArgumentParser(prog="tearsheet", description=__doc__.splitlines()[0])
     parser.add_argument(
         "command",
-        choices=["load", "report", "all", "extract", "draft", "llm-check", "add-package"],
+        choices=[
+            "load",
+            "report",
+            "all",
+            "extract",
+            "draft",
+            "samples",
+            "app",
+            "llm-check",
+            "add-package",
+        ],  # fmt: skip
     )
     parser.add_argument("package", nargs="?", type=Path, help="add-package: the .zip file")
     parser.add_argument("--offline", action="store_true", help="use the local cache only")
@@ -57,6 +70,20 @@ def main() -> None:
         entry = add_package(args.package, issuer, args.origin, args.url, args.downloaded_on)
         print(f"registered {entry['filing_id']} ({entry['error_count']} Arelle errors)")
         return
+
+    if args.command == "samples":
+        from tearsheet.render.samples import write_samples
+
+        lib, written = write_samples()
+        print(f"samples: {len(lib.figures)} figures, {len(written)} tearsheets (samples/)")
+        return
+
+    if args.command == "app":
+        import subprocess
+        import sys
+
+        app = Path(__file__).parent / "app" / "main.py"
+        raise SystemExit(subprocess.call([sys.executable, "-m", "streamlit", "run", str(app)]))
 
     if args.command == "llm-check":
         from tearsheet.llm import LLM
