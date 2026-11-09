@@ -38,9 +38,9 @@ Company type: airline. Reporting currency: EUR. Peer group: Network airlines (af
 | gross_leverage@FY2025 | Gross leverage, FY2025 | 4.37x | up, worse vs prior year; company above peer median, worse |
 | gross_leverage@FY2024 | Gross leverage, FY2024 | 4.20x |  |
 | gross_leverage.change@FY2025 | change in Gross leverage, FY2024 to FY2025 | 0.17x | up, worse vs prior year; printed without a sign: say the direction in words |
-| interest_coverage@FY2025 | Interest coverage, FY2025 | 4.67x | down, worse vs prior year; company below peer median, worse |
-| interest_coverage@FY2024 | Interest coverage, FY2024 | 11.70x |  |
-| interest_coverage.change@FY2025 | change in Interest coverage, FY2024 to FY2025 | 7.03x | down, worse vs prior year; printed without a sign: say the direction in words |
+| interest_coverage@FY2025 | Interest coverage, FY2025 | 4.98x | up, better vs prior year; company below peer median, worse |
+| interest_coverage@FY2024 | Interest coverage, FY2024 | 4.15x |  |
+| interest_coverage.change@FY2025 | change in Interest coverage, FY2024 to FY2025 | 0.83x | up, better vs prior year; printed without a sign: say the direction in words |
 | ffo@FY2025 | FFO, FY2025 | EUR 320m | down, worse vs prior year |
 | ffo@FY2024 | FFO, FY2024 | EUR 406m |  |
 | ffo.change@FY2025 | change in FFO, FY2024 to FY2025 | 21.2% | down, worse vs prior year; printed without a sign: say the direction in words |

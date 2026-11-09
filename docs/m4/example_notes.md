@@ -20,8 +20,8 @@ Interest coverage weakened to 12.61x from a very high 22.34x, still in line with
 **Operating performance**
 
 Passengers at the Spanish network rose by 16.2% to 283.2m, although traffic growth slowed from the rebound of the year before, to 16.2%.
-Revenue per passenger increased by 3.7% to EUR 17.80, with aeronautical revenue per passenger at EUR 9.77.
-Non-aeronautical activities made up 45.1% of revenue.
+Revenue per passenger increased by [[revenue_per_passenger.change@FY2023?]] to [[revenue_per_passenger@FY2023?]], with aeronautical revenue per passenger at EUR 9.77.
+Non-aeronautical activities made up [[non_aero_share@FY2023?]] of revenue.
 
 **Liquidity and funding**
 
@@ -31,8 +31,8 @@ Cash and cash-like investments rose to EUR 2.4bn, and liquidity to revenue reach
 **Peer positioning**
 
 Aena has the highest EBITDA margin among the airport peers (1st of 3), at 60.0% against a median of 42.2%.
-Leverage sits at the group median, with net leverage of 2.06x ranking 2nd of 3.
-Cash liquidity to revenue is the strongest of the group (1st of 3).
+Leverage sits at the group median, with net leverage of 2.06x ranking [[net_leverage.peer_rank@2023?]].
+Cash liquidity to revenue is the strongest of the group ([[cash_liquidity_to_revenue.peer_rank@2023?]]).
 
 **Watch items**
 

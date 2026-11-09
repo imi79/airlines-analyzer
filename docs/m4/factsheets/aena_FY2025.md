@@ -9,10 +9,10 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | ebitda_margin@FY2025 | EBITDA margin, FY2025 | 60.3% | down, worse vs prior year; company above peer median, better |
 | ebitda_margin@FY2024 | EBITDA margin, FY2024 | 60.9% |  |
 | ebitda_margin.change@FY2025 | change in EBITDA margin, FY2024 to FY2025 | 0.6 points | down, worse vs prior year; printed without a sign: say the direction in words |
-| net_leverage@FY2025 | Net leverage, FY2025 | 1.46x | down, better vs prior year; company in line with peer median |
+| net_leverage@FY2025 | Net leverage, FY2025 | 1.46x | down, better vs prior year |
 | net_leverage@FY2024 | Net leverage, FY2024 | 1.57x |  |
 | net_leverage.change@FY2025 | change in Net leverage, FY2024 to FY2025 | 0.11x | down, better vs prior year; printed without a sign: say the direction in words |
-| cash_liquidity_to_revenue@FY2025 | Cash liquidity to revenue (partial), FY2025 | 32.6% | up, better vs prior year; company above peer median, better |
+| cash_liquidity_to_revenue@FY2025 | Cash liquidity to revenue (partial), FY2025 | 32.6% | up, better vs prior year |
 | cash_liquidity_to_revenue@FY2024 | Cash liquidity to revenue (partial), FY2024 | 31.6% |  |
 | cash_liquidity_to_revenue.change@FY2025 | change in Cash liquidity to revenue (partial), FY2024 to FY2025 | 1.0 point | up, better vs prior year; printed without a sign: say the direction in words |
 | liquidity_to_revenue@FY2025 | Liquidity to revenue, FY2025 | 68.4% |  |
@@ -64,11 +64,7 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | --- | --- | --- | --- |
 | passengers@FY2024 | Passengers, FY2024 | 309.3m |  |
 | traffic_growth@FY2024 | Traffic growth, FY2024 | 9.2% |  |
-| revenue_per_passenger@FY2024 | Revenue per passenger, FY2024 | EUR 18.63 |  |
 | aero_revenue_per_passenger@FY2024 | Aeronautical revenue per passenger, FY2024 | EUR 10.18 |  |
-| non_aero_share@FY2025 | Non-aeronautical share, FY2025 | 47.5% | up, better vs prior year |
-| non_aero_share@FY2024 | Non-aeronautical share, FY2024 | 45.4% |  |
-| non_aero_share.change@FY2025 | change in Non-aeronautical share, FY2024 to FY2025 | 2.1 points | up, better vs prior year; printed without a sign: say the direction in words |
 
 ## Liquidity and funding
 
@@ -89,8 +85,6 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | --- | --- | --- | --- |
 | ebitda_margin.peer_median@2025 | EBITDA margin, median of airports, peer year 2025 (3 companies) | 36.5% | company above peer median, better |
 | ebitda_margin.peer_rank@2025 | EBITDA margin, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
-| net_leverage.peer_median@2025 | Net leverage, median of airports, peer year 2025 (3 companies) | 1.46x | company in line with peer median |
-| net_leverage.peer_rank@2025 | Net leverage, rank in airports, peer year 2025 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
 | gross_leverage.peer_median@2025 | Gross leverage, median of airports, peer year 2025 (3 companies) | 2.00x | company in line with peer median |
 | gross_leverage.peer_rank@2025 | Gross leverage, rank in airports, peer year 2025 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
 | interest_coverage.peer_median@2025 | Interest coverage, median of airports, peer year 2025 (3 companies) | 14.72x | company in line with peer median |
@@ -100,8 +94,6 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | fcf_to_debt.peer_median@2025 | FCF to debt, median of airports, peer year 2025 (3 companies) | 22.9% | company in line with peer median |
 | fcf_to_debt.peer_rank@2025 | FCF to debt, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
 | capex_intensity.peer_median@2025 | Capex intensity, median of airports, peer year 2025 (3 companies) | 18.2% | company below peer median |
-| cash_liquidity_to_revenue.peer_median@2025 | Cash liquidity to revenue (partial), median of airports, peer year 2025 (3 companies) | 30.1% | company above peer median, better |
-| cash_liquidity_to_revenue.peer_rank@2025 | Cash liquidity to revenue (partial), rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
 
 ## Other figures
 
@@ -115,17 +107,22 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 
 These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
 
+- net_leverage.peer_median@2025: the peer median would use a figure not verified yet (vie)
+- net_leverage.peer_rank@2025: the peer median would use a figure not verified yet (vie)
 - capex_intensity.peer_rank@2025: not ranked: neither higher nor lower is better
+- cash_liquidity_to_revenue.peer_median@2025: the peer median would use a figure not verified yet (vie)
+- cash_liquidity_to_revenue.peer_rank@2025: the peer median would use a figure not verified yet (vie)
 - liquidity@FY2024: Undrawn committed credit facilities not available for FY2024
 - liquidity_to_revenue@FY2024: Liquidity: Undrawn committed credit facilities not available for FY2024
 - liquidity_to_revenue.peer_median@2025: fewer than two companies in the peer group have a value
 - liquidity_to_revenue.peer_rank@2025: fewer than two companies in the peer group have a value
 - passengers@FY2025: not verified yet: waiting for Imane's review
 - traffic_growth@FY2025: not verified yet: waiting for Imane's review
-- revenue_per_passenger@FY2025: not verified yet: waiting for Imane's review
+- revenue_per_passenger@FY2025: n.m.: group revenue includes London Luton and the Brazilian airports, while passengers are the Spanish network only.
+- revenue_per_passenger@FY2024: n.m.: group revenue includes London Luton and the Brazilian airports, while passengers are the Spanish network only.
 - aero_revenue_per_passenger@FY2025: not verified yet: waiting for Imane's review
-- non_aero_share.peer_median@2025: the peer median would use a figure not verified yet (adp)
-- non_aero_share.peer_rank@2025: the peer median would use a figure not verified yet (adp)
+- non_aero_share@FY2025: n.m.: group revenue includes London Luton and the Brazilian airports, while the aeronautical revenue is the Spanish network's segment only.
+- non_aero_share@FY2024: n.m.: group revenue includes London Luton and the Brazilian airports, while the aeronautical revenue is the Spanish network's segment only.
 - contract_liabilities@FY2025: no figure for this year
 - contract_liabilities@FY2024: no figure for this year
 - undrawn_facilities@FY2024: no figure for this year

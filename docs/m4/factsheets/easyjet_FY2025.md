@@ -73,9 +73,9 @@ Company type: airline. Reporting currency: GBP. Peer group: Low-cost airlines (e
 | rpk@FY2025 | RPK, FY2025 | 122.0bn | up, better vs prior year |
 | rpk@FY2024 | RPK, FY2024 | 111.6bn |  |
 | rpk.change@FY2025 | change in RPK, FY2024 to FY2025 | 9.3% | up, better vs prior year; printed without a sign: say the direction in words |
-| load_factor@FY2025 | Load factor, FY2025 | 90.8% | up, better vs prior year; company in line with peer median |
+| load_factor@FY2025 | Load factor, FY2025 | 89.8% | up, better vs prior year; company in line with peer median |
 | load_factor@FY2024 | Load factor, FY2024 | 89.3% |  |
-| load_factor.change@FY2025 | change in Load factor, FY2024 to FY2025 | 1.5 points | up, better vs prior year; printed without a sign: say the direction in words |
+| load_factor.change@FY2025 | change in Load factor, FY2024 to FY2025 | 0.5 points | up, better vs prior year; printed without a sign: say the direction in words |
 | passenger_yield@FY2025 | Passenger yield, FY2025 | 4.98 pence | down, worse vs prior year |
 | passenger_yield@FY2024 | Passenger yield, FY2024 | 5.12 pence |  |
 | passenger_yield.change@FY2025 | change in Passenger yield, FY2024 to FY2025 | 2.8% | down, worse vs prior year; printed without a sign: say the direction in words |
@@ -136,8 +136,8 @@ Company type: airline. Reporting currency: GBP. Peer group: Low-cost airlines (e
 | advance_ticket_cover.peer_median@2025 | Advance ticket cover, median of low-cost airlines, peer year 2025 (3 companies) | 55.1% | company in line with peer median |
 | advance_ticket_cover.peer_rank@2025 | Advance ticket cover, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
 | fuel_share_of_costs.peer_median@2025 | Fuel share of costs, median of low-cost airlines, peer year 2025 (3 companies) | 28.2% | company below peer median |
-| load_factor.peer_median@2025 | Load factor, median of low-cost airlines, peer year 2025 (2 companies) | 90.7% | company in line with peer median |
-| load_factor.peer_rank@2025 | Load factor, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 2 | best in the group |
+| load_factor.peer_median@2025 | Load factor, median of low-cost airlines, peer year 2025 (2 companies) | 90.3% | company in line with peer median |
+| load_factor.peer_rank@2025 | Load factor, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 2 | weakest |
 
 ## Other figures
 

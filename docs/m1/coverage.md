@@ -338,7 +338,7 @@ Filings: FY2021 (filings.xbrl.org, es), FY2022 (filings.xbrl.org, es), FY2023 (f
 
 ## Flughafen Wien
 
-Filings: FY2021 (filings.xbrl.org, de), FY2022 (filings.xbrl.org, de), FY2023 (filings.xbrl.org, de), FY2024 (filings.xbrl.org, de), FY2025 (filings.xbrl.org, de).
+Filings: FY2021 (filings.xbrl.org, de), FY2022 (filings.xbrl.org, de), FY2022 (published statements (PDF), entered by hand, nan), FY2023 (filings.xbrl.org, de), FY2023 (published statements (PDF), entered by hand, nan), FY2024 (filings.xbrl.org, de), FY2025 (filings.xbrl.org, de), FY2025 (published statements (PDF), entered by hand, nan).
 
 | Line | FY2021 | FY2022 | FY2023 | FY2024 | FY2025 |
 | --- | --- | --- | --- | --- | --- |
@@ -354,7 +354,7 @@ Filings: FY2021 (filings.xbrl.org, de), FY2022 (filings.xbrl.org, de), FY2023 (f
 | Current investments | · | · | · | · | · |
 | Other current financial assets | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Restricted cash | · | · | · | · | · |
-| Other cash-like items (company's net debt definition) | · | · | · | · | · |
+| Other cash-like items (company's net debt definition) | M | M | M | M | M |
 | Borrowings, current | · | · | · | · | · |
 | Borrowings, non-current | · | · | · | · | · |
 | Borrowings, total | · | · | · | · | · |
@@ -380,7 +380,6 @@ Filings: FY2021 (filings.xbrl.org, de), FY2022 (filings.xbrl.org, de), FY2023 (f
 - · Lease liabilities, current (FY2021-FY2025): Borrowings and lease liabilities are reported on one combined line (see "Borrowings and lease liabilities on one line").
 - · Lease liabilities, non-current (FY2021-FY2025): Borrowings and lease liabilities are reported on one combined line (see "Borrowings and lease liabilities on one line").
 - · Lease liabilities, total (FY2021-FY2025): Borrowings and lease liabilities are reported on one combined line (see "Borrowings and lease liabilities on one line").
-- · Other cash-like items (company's net debt definition) (FY2021-FY2025): Not reported by this issuer.
 - · Restricted cash (FY2021-FY2025): Not reported by this issuer.
 - · Short-term deposits (not cash equivalents) (FY2021-FY2025): Not reported by this issuer.
 

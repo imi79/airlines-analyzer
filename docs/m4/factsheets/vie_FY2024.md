@@ -9,12 +9,6 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | ebitda_margin@FY2024 | EBITDA margin, FY2024 | 42.0% | flat vs prior year; company in line with peer median |
 | ebitda_margin@FY2023 | EBITDA margin, FY2023 | 42.2% |  |
 | ebitda_margin.change@FY2024 | change in EBITDA margin, FY2023 to FY2024 | 0.2 points | flat vs prior year; printed without a sign: say the direction in words |
-| net_leverage@FY2024 | Net leverage, FY2024 | -0.04x | flat vs prior year; company below peer median, better |
-| net_leverage@FY2023 | Net leverage, FY2023 | -0.05x |  |
-| net_leverage.change@FY2024 | change in Net leverage, FY2023 to FY2024 | 0.01x | flat vs prior year; printed without a sign: say the direction in words |
-| cash_liquidity_to_revenue@FY2024 | Cash liquidity to revenue (partial), FY2024 | 6.9% | down, worse vs prior year; company below peer median, worse |
-| cash_liquidity_to_revenue@FY2023 | Cash liquidity to revenue (partial), FY2023 | 7.9% |  |
-| cash_liquidity_to_revenue.change@FY2024 | change in Cash liquidity to revenue (partial), FY2023 to FY2024 | 1.0 point | down, worse vs prior year; printed without a sign: say the direction in words |
 | revenue@FY2024 | Revenue, FY2024 | EUR 1.1bn | up, better vs prior year |
 | revenue@FY2023 | Revenue, FY2023 | EUR 932m |  |
 | revenue.change@FY2024 | change in Revenue, FY2023 to FY2024 | 13.0% | up, better vs prior year; printed without a sign: say the direction in words |
@@ -29,8 +23,6 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | total_debt@FY2024 | Total debt, FY2024 | EUR 55.6m | flat vs prior year |
 | total_debt@FY2023 | Total debt, FY2023 | EUR 55.3m |  |
 | total_debt.change@FY2024 | change in Total debt, FY2023 to FY2024 | 0.5% | flat vs prior year; printed without a sign: say the direction in words |
-| net_debt@FY2024 | Net debt, FY2024 | EUR -17.2m | up vs prior year |
-| net_debt@FY2023 | Net debt, FY2023 | EUR -18.6m |  |
 | gross_leverage@FY2024 | Gross leverage, FY2024 | 0.13x | flat vs prior year; company below peer median, better |
 | gross_leverage@FY2023 | Gross leverage, FY2023 | 0.14x |  |
 | gross_leverage.change@FY2024 | change in Gross leverage, FY2023 to FY2024 | 0.01x | flat vs prior year; printed without a sign: say the direction in words |
@@ -66,26 +58,9 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | traffic_growth@FY2024 | Traffic growth, FY2024 | 7.3% | down, worse vs prior year; company below peer median, worse |
 | traffic_growth@FY2023 | Traffic growth, FY2023 | 24.7% |  |
 | traffic_growth.change@FY2024 | change in Traffic growth, FY2023 to FY2024 | 17.4 points | down, worse vs prior year; printed without a sign: say the direction in words |
-| revenue_per_passenger@FY2024 | Revenue per passenger, FY2024 | EUR 33.21 | up, better vs prior year |
-| revenue_per_passenger@FY2023 | Revenue per passenger, FY2023 | EUR 31.54 |  |
-| revenue_per_passenger.change@FY2024 | change in Revenue per passenger, FY2023 to FY2024 | 5.3% | up, better vs prior year; printed without a sign: say the direction in words |
 | aero_revenue_per_passenger@FY2024 | Aeronautical revenue per passenger, FY2024 | EUR 15.57 | up, better vs prior year |
 | aero_revenue_per_passenger@FY2023 | Aeronautical revenue per passenger, FY2023 | EUR 14.47 |  |
 | aero_revenue_per_passenger.change@FY2024 | change in Aeronautical revenue per passenger, FY2023 to FY2024 | 7.6% | up, better vs prior year; printed without a sign: say the direction in words |
-| non_aero_share@FY2024 | Non-aeronautical share, FY2024 | 53.1% | down, worse vs prior year |
-| non_aero_share@FY2023 | Non-aeronautical share, FY2023 | 54.1% |  |
-| non_aero_share.change@FY2024 | change in Non-aeronautical share, FY2023 to FY2024 | 1.0 point | down, worse vs prior year; printed without a sign: say the direction in words |
-
-## Liquidity and funding
-
-| id | what it is | prints as | computed by code |
-| --- | --- | --- | --- |
-| cash_like@FY2024 | Cash and cash-like investments, FY2024 | EUR 72.8m | flat vs prior year |
-| cash_like@FY2023 | Cash and cash-like investments, FY2023 | EUR 74.0m |  |
-| cash_like.change@FY2024 | change in Cash and cash-like investments, FY2023 to FY2024 | 1.6% | flat vs prior year; printed without a sign: say the direction in words |
-| cash_liquidity@FY2024 | Cash liquidity (partial), FY2024 | EUR 72.8m | flat vs prior year |
-| cash_liquidity@FY2023 | Cash liquidity (partial), FY2023 | EUR 74.0m |  |
-| cash_liquidity.change@FY2024 | change in Cash liquidity (partial), FY2023 to FY2024 | 1.6% | flat vs prior year; printed without a sign: say the direction in words |
 
 ## Peer positioning
 
@@ -93,8 +68,6 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | --- | --- | --- | --- |
 | ebitda_margin.peer_median@2024 | EBITDA margin, median of airports, peer year 2024 (3 companies) | 42.0% | company in line with peer median |
 | ebitda_margin.peer_rank@2024 | EBITDA margin, rank in airports, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| net_leverage.peer_median@2024 | Net leverage, median of airports, peer year 2024 (3 companies) | 1.57x | company below peer median, better |
-| net_leverage.peer_rank@2024 | Net leverage, rank in airports, peer year 2024 (1st = strongest, i.e. the lowest) | 1st of 3 | best in the group |
 | gross_leverage.peer_median@2024 | Gross leverage, median of airports, peer year 2024 (3 companies) | 2.08x | company below peer median, better |
 | gross_leverage.peer_rank@2024 | Gross leverage, rank in airports, peer year 2024 (1st = strongest, i.e. the lowest) | 1st of 3 | best in the group |
 | interest_coverage.peer_median@2024 | Interest coverage, median of airports, peer year 2024 (3 companies) | 12.34x | company above peer median, better |
@@ -104,8 +77,6 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | fcf_to_debt.peer_median@2024 | FCF to debt, median of airports, peer year 2024 (3 companies) | 26.3% | company above peer median, better |
 | fcf_to_debt.peer_rank@2024 | FCF to debt, rank in airports, peer year 2024 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
 | capex_intensity.peer_median@2024 | Capex intensity, median of airports, peer year 2024 (3 companies) | 16.1% | company in line with peer median |
-| cash_liquidity_to_revenue.peer_median@2024 | Cash liquidity to revenue (partial), median of airports, peer year 2024 (3 companies) | 31.6% | company below peer median, worse |
-| cash_liquidity_to_revenue.peer_rank@2024 | Cash liquidity to revenue (partial), rank in airports, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
 | traffic_growth.peer_median@2024 | Traffic growth, median of airports, peer year 2024 (2 companies) | 8.3% | company below peer median, worse |
 | traffic_growth.peer_rank@2024 | Traffic growth, rank in airports, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 2 | weakest |
 
@@ -121,14 +92,25 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 
 These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
 
-- net_debt.change@FY2024: a percentage change is not meaningful (a year is negative or zero); the direction is still up, on net_debt@FY2024
+- cash_like@FY2024: not verified yet: waiting for Imane's review
+- cash_like@FY2023: not verified yet: waiting for Imane's review
+- net_debt@FY2024: not verified yet: waiting for Imane's review
+- net_debt@FY2023: not verified yet: waiting for Imane's review
+- net_leverage@FY2024: not verified yet: waiting for Imane's review
+- net_leverage@FY2023: not verified yet: waiting for Imane's review
 - capex_intensity.peer_rank@2024: not ranked: neither higher nor lower is better
+- cash_liquidity@FY2024: not verified yet: waiting for Imane's review
+- cash_liquidity@FY2023: not verified yet: waiting for Imane's review
+- cash_liquidity_to_revenue@FY2024: not verified yet: waiting for Imane's review
+- cash_liquidity_to_revenue@FY2023: not verified yet: waiting for Imane's review
 - liquidity@FY2024: Undrawn committed credit facilities not available for FY2024
 - liquidity@FY2023: Undrawn committed credit facilities not available for FY2023
 - liquidity_to_revenue@FY2024: Liquidity: Undrawn committed credit facilities not available for FY2024
 - liquidity_to_revenue@FY2023: Liquidity: Undrawn committed credit facilities not available for FY2023
-- non_aero_share.peer_median@2024: the peer median would use a figure not verified yet (adp)
-- non_aero_share.peer_rank@2024: the peer median would use a figure not verified yet (adp)
+- revenue_per_passenger@FY2024: n.m.: group revenue includes Malta and Košice airports, while passengers are Vienna only.
+- revenue_per_passenger@FY2023: n.m.: group revenue includes Malta and Košice airports, while passengers are Vienna only.
+- non_aero_share@FY2024: n.m.: group revenue includes the Malta and Košice airports, while the aeronautical revenue is Vienna's Airport segment only.
+- non_aero_share@FY2023: n.m.: group revenue includes the Malta and Košice airports, while the aeronautical revenue is Vienna's Airport segment only.
 - contract_liabilities@FY2024: no figure for this year
 - contract_liabilities@FY2023: no figure for this year
 - undrawn_facilities@FY2024: no figure for this year

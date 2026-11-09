@@ -134,8 +134,8 @@ Company type: airline. Reporting currency: EUR. Peer group: Low-cost airlines (e
 | advance_ticket_cover.peer_median@2025 | Advance ticket cover, median of low-cost airlines, peer year 2025 (3 companies) | 55.1% | company above peer median, worse |
 | advance_ticket_cover.peer_rank@2025 | Advance ticket cover, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
 | fuel_share_of_costs.peer_median@2025 | Fuel share of costs, median of low-cost airlines, peer year 2025 (3 companies) | 28.2% | company above peer median |
-| load_factor.peer_median@2025 | Load factor, median of low-cost airlines, peer year 2025 (2 companies) | 90.7% | company in line with peer median |
-| load_factor.peer_rank@2025 | Load factor, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 2 | weakest |
+| load_factor.peer_median@2025 | Load factor, median of low-cost airlines, peer year 2025 (2 companies) | 90.3% | company in line with peer median |
+| load_factor.peer_rank@2025 | Load factor, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 2 | best in the group |
 
 ## Other figures
 

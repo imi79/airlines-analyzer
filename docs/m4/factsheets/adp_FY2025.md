@@ -9,10 +9,10 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | ebitda_margin@FY2025 | EBITDA margin, FY2025 | 34.7% | up, better vs prior year; company below peer median, worse |
 | ebitda_margin@FY2024 | EBITDA margin, FY2024 | 33.7% |  |
 | ebitda_margin.change@FY2025 | change in EBITDA margin, FY2024 to FY2025 | 1.0 point | up, better vs prior year; printed without a sign: say the direction in words |
-| net_leverage@FY2025 | Net leverage, FY2025 | 3.68x | down, better vs prior year; company above peer median, worse |
+| net_leverage@FY2025 | Net leverage, FY2025 | 3.68x | down, better vs prior year |
 | net_leverage@FY2024 | Net leverage, FY2024 | 4.13x |  |
 | net_leverage.change@FY2025 | change in Net leverage, FY2024 to FY2025 | 0.45x | down, better vs prior year; printed without a sign: say the direction in words |
-| cash_liquidity_to_revenue@FY2025 | Cash liquidity to revenue (partial), FY2025 | 30.1% | down, worse vs prior year; company in line with peer median |
+| cash_liquidity_to_revenue@FY2025 | Cash liquidity to revenue (partial), FY2025 | 30.1% | down, worse vs prior year |
 | cash_liquidity_to_revenue@FY2024 | Cash liquidity to revenue (partial), FY2024 | 34.0% |  |
 | cash_liquidity_to_revenue.change@FY2025 | change in Cash liquidity to revenue (partial), FY2024 to FY2025 | 3.9 points | down, worse vs prior year; printed without a sign: say the direction in words |
 | revenue@FY2025 | Revenue, FY2025 | EUR 6.7bn | up, better vs prior year |
@@ -65,9 +65,6 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | passengers@FY2024 | Passengers, FY2024 | 103.4m |  |
 | passengers.change@FY2025 | change in Passengers, FY2024 to FY2025 | 3.5% | up, better vs prior year; printed without a sign: say the direction in words |
 | traffic_growth@FY2025 | Traffic growth, FY2025 | 3.5% |  |
-| revenue_per_passenger@FY2025 | Revenue per passenger, FY2025 | EUR 62.65 | up, better vs prior year |
-| revenue_per_passenger@FY2024 | Revenue per passenger, FY2024 | EUR 59.56 |  |
-| revenue_per_passenger.change@FY2025 | change in Revenue per passenger, FY2024 to FY2025 | 5.2% | up, better vs prior year; printed without a sign: say the direction in words |
 
 ## Liquidity and funding
 
@@ -86,8 +83,6 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | --- | --- | --- | --- |
 | ebitda_margin.peer_median@2025 | EBITDA margin, median of airports, peer year 2025 (3 companies) | 36.5% | company below peer median, worse |
 | ebitda_margin.peer_rank@2025 | EBITDA margin, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| net_leverage.peer_median@2025 | Net leverage, median of airports, peer year 2025 (3 companies) | 1.46x | company above peer median, worse |
-| net_leverage.peer_rank@2025 | Net leverage, rank in airports, peer year 2025 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
 | gross_leverage.peer_median@2025 | Gross leverage, median of airports, peer year 2025 (3 companies) | 2.00x | company above peer median, worse |
 | gross_leverage.peer_rank@2025 | Gross leverage, rank in airports, peer year 2025 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
 | interest_coverage.peer_median@2025 | Interest coverage, median of airports, peer year 2025 (3 companies) | 14.72x | company below peer median, worse |
@@ -97,8 +92,6 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | fcf_to_debt.peer_median@2025 | FCF to debt, median of airports, peer year 2025 (3 companies) | 22.9% | company below peer median, worse |
 | fcf_to_debt.peer_rank@2025 | FCF to debt, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
 | capex_intensity.peer_median@2025 | Capex intensity, median of airports, peer year 2025 (3 companies) | 18.2% | company in line with peer median |
-| cash_liquidity_to_revenue.peer_median@2025 | Cash liquidity to revenue (partial), median of airports, peer year 2025 (3 companies) | 30.1% | company in line with peer median |
-| cash_liquidity_to_revenue.peer_rank@2025 | Cash liquidity to revenue (partial), rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
 
 ## Other figures
 
@@ -112,7 +105,11 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 
 These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
 
+- net_leverage.peer_median@2025: the peer median would use a figure not verified yet (vie)
+- net_leverage.peer_rank@2025: the peer median would use a figure not verified yet (vie)
 - capex_intensity.peer_rank@2025: not ranked: neither higher nor lower is better
+- cash_liquidity_to_revenue.peer_median@2025: the peer median would use a figure not verified yet (vie)
+- cash_liquidity_to_revenue.peer_rank@2025: the peer median would use a figure not verified yet (vie)
 - liquidity@FY2025: Undrawn committed credit facilities not available for FY2025
 - liquidity@FY2024: Undrawn committed credit facilities not available for FY2024
 - liquidity_to_revenue@FY2025: Liquidity: Undrawn committed credit facilities not available for FY2025
@@ -120,10 +117,12 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - traffic_growth@FY2024: Passengers not available for FY2023
 - traffic_growth.peer_median@2025: the peer median would use a figure not verified yet (aena)
 - traffic_growth.peer_rank@2025: the peer median would use a figure not verified yet (aena)
+- revenue_per_passenger@FY2025: n.m.: group revenue includes TAV Airports and the other international airports, while passengers are Paris only.
+- revenue_per_passenger@FY2024: n.m.: group revenue includes TAV Airports and the other international airports, while passengers are Paris only.
 - aero_revenue_per_passenger@FY2025: not verified yet: waiting for Imane's review
 - aero_revenue_per_passenger@FY2024: not verified yet: waiting for Imane's review
-- non_aero_share@FY2025: not verified yet: waiting for Imane's review
-- non_aero_share@FY2024: not verified yet: waiting for Imane's review
+- non_aero_share@FY2025: n.m.: group revenue includes TAV Airports and the other international airports, while the aeronautical revenue is the Paris aviation segment only.
+- non_aero_share@FY2024: n.m.: group revenue includes TAV Airports and the other international airports, while the aeronautical revenue is the Paris aviation segment only.
 - contract_liabilities@FY2025: no figure for this year
 - contract_liabilities@FY2024: no figure for this year
 - undrawn_facilities@FY2025: no figure for this year

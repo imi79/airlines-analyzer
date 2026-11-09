@@ -61,3 +61,14 @@ holds for that year: a difference means a typing error or a restatement.
 | Income tax paid | FY2025 | 370 | 6 | verified | 283 | 283 | ✓ |
 | Total assets | FY2025 | 20,267 | 5 | verified | 20,179 | 20,179 | ✓ |
 
+## Flughafen Wien
+
+| Line | Year | Entered | Page | Status | Prior year printed | Prior year in database | Control |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Other cash-like items (company's net debt definition) | FY2021 | 31 | 149 | unverified | – | – | prior-year column, loaded as the figure (nothing tagged to compare) |
+| Other cash-like items (company's net debt definition) | FY2022 | 299 | 149 | unverified | – | – | prior-year column, loaded as the figure (nothing tagged to compare) |
+| Other cash-like items (company's net debt definition) | FY2022 | 299 | 149 | unverified | – | – | no tagged figure to compare (net debt note item) |
+| Other cash-like items (company's net debt definition) | FY2023 | 343 | 149 | unverified | – | – | no tagged figure to compare (net debt note item) |
+| Other cash-like items (company's net debt definition) | FY2024 | 494 | 135 | unverified | – | – | prior-year column, loaded as the figure (nothing tagged to compare) |
+| Other cash-like items (company's net debt definition) | FY2025 | 359 | 135 | unverified | – | – | no tagged figure to compare (net debt note item) |
+

@@ -176,6 +176,17 @@ def test_interest_paid_is_used_when_interest_expense_is_not_tagged():
     assert "interest expense not tagged" in results["interest_coverage"].note
 
 
+def test_finance_costs_are_used_where_interest_paid_is_net():
+    # Finnair prints "financial expenses paid, net" (after interest received): decision 0018
+    results = run(
+        {"finance_costs": 30},
+        settings={"interest_basis": "finance_costs"},
+        drop=("interest_expense",),
+    )
+    assert value(results, "interest_coverage") == Decimal(150) / Decimal(30)
+    assert "finance costs" in results["interest_coverage"].note
+
+
 def test_negative_ebitda_makes_leverage_not_meaningful():
     results = run({"operating_profit": -200})  # EBITDA -150
     for metric in ("net_leverage", "gross_leverage", "interest_coverage"):
@@ -245,6 +256,13 @@ def test_revenue_per_passenger_can_be_set_not_meaningful():
     result = airport(settings={"revenue_per_passenger_not_meaningful": reason})
     assert result["revenue_per_passenger"].kind == "not_meaningful"
     assert reason in result["revenue_per_passenger"].reason
+
+
+def test_non_aero_share_can_be_set_not_meaningful():
+    reason = "group revenue includes airports outside the aeronautical segment"
+    result = airport(settings={"non_aero_share_not_meaningful": reason})
+    assert result["non_aero_share"].kind == "not_meaningful"
+    assert reason in result["non_aero_share"].reason
 
 
 def test_liquidity_without_undrawn_facilities_is_missing_not_cash_only():

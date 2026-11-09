@@ -202,7 +202,10 @@ def gross_leverage(c: Context) -> tuple[Decimal, str]:
 
 def interest_coverage(c: Context) -> tuple[Decimal, str]:
     e = c.metric("ebitda")
-    if c.has("interest_expense"):
+    if c.settings.get("interest_basis") == "finance_costs":
+        # interest paid is printed net of interest received (metric_settings, decision 0018)
+        interest, basis = c.line("finance_costs"), "finance costs (interest paid is net)"
+    elif c.has("interest_expense"):
         interest, basis = c.line("interest_expense"), "interest expense"
     else:
         interest, basis = c.line("interest_paid"), "interest paid (interest expense not tagged)"
@@ -385,6 +388,9 @@ def aero_revenue_per_passenger(c: Context) -> tuple[Decimal, str]:
 
 
 def non_aero_share(c: Context) -> tuple[Decimal, str]:
+    reason = c.settings.get("non_aero_share_not_meaningful")
+    if reason:
+        raise NotMeaningful(reason.strip())
     rev, aero = c.line("revenue"), c.line("aero_revenue")
     value = ratio(rev - aero, rev)
     return value, (

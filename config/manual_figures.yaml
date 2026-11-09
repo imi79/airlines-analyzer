@@ -115,3 +115,53 @@ documents:
     lines:
       other_cash_like: [138, 118, 60, "Net debt note 9.4.2: restricted bank balances"]
     prior_year_as_fact: [other_cash_like]
+
+  # Flughafen Wien: the short-term placements (term deposits, Treasury bills) that the company
+  # counts in its net liquidity but that sit inside "receivables" and are not tagged (decision
+  # 0018, fix A). Read from the gearing table of the capital management note in each annual
+  # report (the ESEF filing's own report, in thousands of euros). Control: cash + placements +
+  # securities - financial and lease liabilities = the net liquidity the company prints.
+  - issuer: vie
+    fiscal_year: 2025
+    period_end: 2025-12-31
+    document: Flughafen Wien annual financial report 2025, capital management note (ESEF filing 549300FQ2ILBH7DJ6I45-2025-12-31-ESEF-AT-0)
+    file: 549300FQ2ILBH7DJ6I45-2025-12-31-ESEF-AT-0
+    sha256: c9ac8b7813ac66b3c7c097e0306c4a33c2341e631fe2d75427721a3e28b56a63
+    supplied_by: filings.xbrl.org
+    entered_by: AI assistant, from the report
+    entered_on: 2026-11-09
+    reviewed_by:
+    scale: 1000
+    lines:
+      other_cash_like: [359400.0, 494408.1, 135, "Gearing note: Kurzfristige Veranlagungen (term deposits and other placements)"]
+    prior_year_as_fact: [other_cash_like]
+
+  - issuer: vie
+    fiscal_year: 2023
+    period_end: 2023-12-31
+    document: Flughafen Wien annual financial report 2023, capital management note (ESEF filing 549300FQ2ILBH7DJ6I45-2023-12-31-ESEF-AT-0)
+    file: 549300FQ2ILBH7DJ6I45-2023-12-31-ESEF-AT-0
+    sha256: b23d5bb63dd1311efdb430aa133a34d6b066a46bad37d9bcba535391d9f0a47f
+    supplied_by: filings.xbrl.org
+    entered_by: AI assistant, from the report
+    entered_on: 2026-11-09
+    reviewed_by:
+    scale: 1000
+    lines:
+      other_cash_like: [343219.5, 298509.4, 149, "Gearing note: Kurz- und langfristige Veranlagungen (term deposits, Treasury bills)"]
+    prior_year_as_fact: [other_cash_like]
+
+  - issuer: vie
+    fiscal_year: 2022
+    period_end: 2022-12-31
+    document: Flughafen Wien annual financial report 2022, capital management note (ESEF filing 549300FQ2ILBH7DJ6I45-2022-12-31-ESEF-AT-1)
+    file: 549300FQ2ILBH7DJ6I45-2022-12-31-ESEF-AT-1
+    sha256: 8b0151b72ad8702db34335c29fadcc5ecb24dd1b8c6f8f8a37c1bd940df1da4b
+    supplied_by: filings.xbrl.org
+    entered_by: AI assistant, from the report
+    entered_on: 2026-11-09
+    reviewed_by:
+    scale: 1000
+    lines:
+      other_cash_like: [298509.4, 30720.0, 149, "Gearing note: Kurz- und langfristige Veranlagungen (term deposits, Treasury bills)"]
+    prior_year_as_fact: [other_cash_like]

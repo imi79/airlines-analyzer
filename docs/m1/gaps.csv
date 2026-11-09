@@ -13,8 +13,10 @@ adp,2021,liquidity,Cash and cash-like investments: Other cash-like items (compan
 adp,2021,liquidity_to_revenue,Liquidity: Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021,True
 adp,2021,net_debt,Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021,True
 adp,2021,net_leverage,Net debt: Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021,True
+adp,2021,non_aero_share,"n.m.: group revenue includes TAV Airports and the other international airports, while the aeronautical revenue is the Paris aviation segment only.",False
 adp,2021,other_cash_like,Not reported by this issuer.,False
 adp,2021,restricted_cash,Not reported by this issuer.,False
+adp,2021,revenue_per_passenger,"n.m.: group revenue includes TAV Airports and the other international airports, while passengers are Paris only.",False
 adp,2021,short_term_deposits,Not reported by this issuer.,False
 adp,2021,traffic_growth,Passengers not available for FY2020,True
 adp,2022,borrowings_total,Reported as current and non-current parts only.,False
@@ -31,8 +33,10 @@ adp,2022,liquidity,Cash and cash-like investments: Other cash-like items (compan
 adp,2022,liquidity_to_revenue,Liquidity: Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022,True
 adp,2022,net_debt,Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022,True
 adp,2022,net_leverage,Net debt: Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022,True
+adp,2022,non_aero_share,"n.m.: group revenue includes TAV Airports and the other international airports, while the aeronautical revenue is the Paris aviation segment only.",False
 adp,2022,other_cash_like,Not reported by this issuer.,False
 adp,2022,restricted_cash,Not reported by this issuer.,False
+adp,2022,revenue_per_passenger,"n.m.: group revenue includes TAV Airports and the other international airports, while passengers are Paris only.",False
 adp,2022,short_term_deposits,Not reported by this issuer.,False
 adp,2023,aero_revenue_per_passenger,Passengers not available for FY2023,True
 adp,2023,borrowings_total,Reported as current and non-current parts only.,False
@@ -45,9 +49,10 @@ adp,2023,lease_liabilities_total,Lease liabilities are included in borrowings on
 adp,2023,lease_payments,Not reported by this issuer.,False
 adp,2023,liquidity,Undrawn committed credit facilities not available for FY2023,True
 adp,2023,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2023,True
+adp,2023,non_aero_share,"n.m.: group revenue includes TAV Airports and the other international airports, while the aeronautical revenue is the Paris aviation segment only.",False
 adp,2023,passengers,Passengers not available for FY2023,True
 adp,2023,restricted_cash,Not reported by this issuer.,False
-adp,2023,revenue_per_passenger,Passengers not available for FY2023,True
+adp,2023,revenue_per_passenger,"n.m.: group revenue includes TAV Airports and the other international airports, while passengers are Paris only.",False
 adp,2023,short_term_deposits,Not reported by this issuer.,False
 adp,2023,traffic_growth,Passengers not available for FY2023,True
 adp,2024,borrowings_total,Reported as current and non-current parts only.,False
@@ -60,7 +65,9 @@ adp,2024,lease_liabilities_total,Lease liabilities are included in borrowings on
 adp,2024,lease_payments,Not reported by this issuer.,False
 adp,2024,liquidity,Undrawn committed credit facilities not available for FY2024,True
 adp,2024,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2024,True
+adp,2024,non_aero_share,"n.m.: group revenue includes TAV Airports and the other international airports, while the aeronautical revenue is the Paris aviation segment only.",False
 adp,2024,restricted_cash,Not reported by this issuer.,False
+adp,2024,revenue_per_passenger,"n.m.: group revenue includes TAV Airports and the other international airports, while passengers are Paris only.",False
 adp,2024,short_term_deposits,Not reported by this issuer.,False
 adp,2024,traffic_growth,Passengers not available for FY2023,True
 adp,2025,borrowings_total,Reported as current and non-current parts only.,False
@@ -73,7 +80,9 @@ adp,2025,lease_liabilities_total,Lease liabilities are included in borrowings on
 adp,2025,lease_payments,Not reported by this issuer.,False
 adp,2025,liquidity,Undrawn committed credit facilities not available for FY2025,True
 adp,2025,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2025,True
+adp,2025,non_aero_share,"n.m.: group revenue includes TAV Airports and the other international airports, while the aeronautical revenue is the Paris aviation segment only.",False
 adp,2025,restricted_cash,Not reported by this issuer.,False
+adp,2025,revenue_per_passenger,"n.m.: group revenue includes TAV Airports and the other international airports, while passengers are Paris only.",False
 adp,2025,short_term_deposits,Not reported by this issuer.,False
 aena,2021,borrowings_total,Reported as current and non-current parts only.,False
 aena,2021,current_investments,Not reported by this issuer.,False
@@ -81,9 +90,11 @@ aena,2021,debt_including_leases,Not reported by this issuer.,False
 aena,2021,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2021,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2021,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
+aena,2021,non_aero_share,"n.m.: group revenue includes London Luton and the Brazilian airports, while the aeronautical revenue is the Spanish network's segment only.",False
 aena,2021,other_cash_like,Not reported by this issuer.,False
 aena,2021,other_current_financial_assets,Not reported by this issuer.,False
 aena,2021,restricted_cash,Not reported by this issuer.,False
+aena,2021,revenue_per_passenger,"n.m.: group revenue includes London Luton and the Brazilian airports, while passengers are the Spanish network only.",False
 aena,2021,short_term_deposits,Not reported by this issuer.,False
 aena,2021,traffic_growth,Passengers not available for FY2020,True
 aena,2022,borrowings_total,Reported as current and non-current parts only.,False
@@ -92,9 +103,11 @@ aena,2022,debt_including_leases,Not reported by this issuer.,False
 aena,2022,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2022,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2022,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
+aena,2022,non_aero_share,"n.m.: group revenue includes London Luton and the Brazilian airports, while the aeronautical revenue is the Spanish network's segment only.",False
 aena,2022,other_cash_like,Not reported by this issuer.,False
 aena,2022,other_current_financial_assets,Not reported by this issuer.,False
 aena,2022,restricted_cash,Not reported by this issuer.,False
+aena,2022,revenue_per_passenger,"n.m.: group revenue includes London Luton and the Brazilian airports, while passengers are the Spanish network only.",False
 aena,2022,short_term_deposits,Not reported by this issuer.,False
 aena,2023,borrowings_total,Reported as current and non-current parts only.,False
 aena,2023,current_investments,Not reported by this issuer.,False
@@ -102,9 +115,11 @@ aena,2023,debt_including_leases,Not reported by this issuer.,False
 aena,2023,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2023,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2023,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
+aena,2023,non_aero_share,"n.m.: group revenue includes London Luton and the Brazilian airports, while the aeronautical revenue is the Spanish network's segment only.",False
 aena,2023,other_cash_like,Not reported by this issuer.,False
 aena,2023,other_current_financial_assets,Not reported by this issuer.,False
 aena,2023,restricted_cash,Not reported by this issuer.,False
+aena,2023,revenue_per_passenger,"n.m.: group revenue includes London Luton and the Brazilian airports, while passengers are the Spanish network only.",False
 aena,2023,short_term_deposits,Not reported by this issuer.,False
 aena,2024,borrowings_total,Reported as current and non-current parts only.,False
 aena,2024,current_investments,Not reported by this issuer.,False
@@ -114,8 +129,10 @@ aena,2024,lease_liabilities_noncurrent,Lease liabilities are included in borrowi
 aena,2024,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2024,liquidity,Undrawn committed credit facilities not available for FY2024,True
 aena,2024,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2024,True
+aena,2024,non_aero_share,"n.m.: group revenue includes London Luton and the Brazilian airports, while the aeronautical revenue is the Spanish network's segment only.",False
 aena,2024,other_cash_like,Not reported by this issuer.,False
 aena,2024,restricted_cash,Not reported by this issuer.,False
+aena,2024,revenue_per_passenger,"n.m.: group revenue includes London Luton and the Brazilian airports, while passengers are the Spanish network only.",False
 aena,2024,short_term_deposits,Not reported by this issuer.,False
 aena,2025,borrowings_total,Reported as current and non-current parts only.,False
 aena,2025,current_investments,Not reported by this issuer.,False
@@ -123,8 +140,10 @@ aena,2025,debt_including_leases,Not reported by this issuer.,False
 aena,2025,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2025,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2025,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
+aena,2025,non_aero_share,"n.m.: group revenue includes London Luton and the Brazilian airports, while the aeronautical revenue is the Spanish network's segment only.",False
 aena,2025,other_cash_like,Not reported by this issuer.,False
 aena,2025,restricted_cash,Not reported by this issuer.,False
+aena,2025,revenue_per_passenger,"n.m.: group revenue includes London Luton and the Brazilian airports, while passengers are the Spanish network only.",False
 aena,2025,short_term_deposits,Not reported by this issuer.,False
 afkl,2021,advance_ticket_cover,Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021,True
 afkl,2021,ask,ASK not available for FY2021,True
@@ -505,8 +524,9 @@ vie,2021,lease_liabilities_noncurrent,"Borrowings and lease liabilities are repo
 vie,2021,lease_liabilities_total,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2021,liquidity,Undrawn committed credit facilities not available for FY2021,True
 vie,2021,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2021,True
-vie,2021,other_cash_like,Not reported by this issuer.,False
+vie,2021,non_aero_share,"n.m.: group revenue includes the Malta and Košice airports, while the aeronautical revenue is Vienna's Airport segment only.",False
 vie,2021,restricted_cash,Not reported by this issuer.,False
+vie,2021,revenue_per_passenger,"n.m.: group revenue includes Malta and Košice airports, while passengers are Vienna only.",False
 vie,2021,short_term_deposits,Not reported by this issuer.,False
 vie,2021,traffic_growth,Passengers not available for FY2020,True
 vie,2022,borrowings_current,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
@@ -519,8 +539,9 @@ vie,2022,lease_liabilities_noncurrent,"Borrowings and lease liabilities are repo
 vie,2022,lease_liabilities_total,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2022,liquidity,Undrawn committed credit facilities not available for FY2022,True
 vie,2022,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2022,True
-vie,2022,other_cash_like,Not reported by this issuer.,False
+vie,2022,non_aero_share,"n.m.: group revenue includes the Malta and Košice airports, while the aeronautical revenue is Vienna's Airport segment only.",False
 vie,2022,restricted_cash,Not reported by this issuer.,False
+vie,2022,revenue_per_passenger,"n.m.: group revenue includes Malta and Košice airports, while passengers are Vienna only.",False
 vie,2022,short_term_deposits,Not reported by this issuer.,False
 vie,2023,borrowings_current,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2023,borrowings_noncurrent,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
@@ -532,8 +553,9 @@ vie,2023,lease_liabilities_noncurrent,"Borrowings and lease liabilities are repo
 vie,2023,lease_liabilities_total,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2023,liquidity,Undrawn committed credit facilities not available for FY2023,True
 vie,2023,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2023,True
-vie,2023,other_cash_like,Not reported by this issuer.,False
+vie,2023,non_aero_share,"n.m.: group revenue includes the Malta and Košice airports, while the aeronautical revenue is Vienna's Airport segment only.",False
 vie,2023,restricted_cash,Not reported by this issuer.,False
+vie,2023,revenue_per_passenger,"n.m.: group revenue includes Malta and Košice airports, while passengers are Vienna only.",False
 vie,2023,short_term_deposits,Not reported by this issuer.,False
 vie,2024,borrowings_current,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2024,borrowings_noncurrent,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
@@ -545,8 +567,9 @@ vie,2024,lease_liabilities_noncurrent,"Borrowings and lease liabilities are repo
 vie,2024,lease_liabilities_total,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2024,liquidity,Undrawn committed credit facilities not available for FY2024,True
 vie,2024,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2024,True
-vie,2024,other_cash_like,Not reported by this issuer.,False
+vie,2024,non_aero_share,"n.m.: group revenue includes the Malta and Košice airports, while the aeronautical revenue is Vienna's Airport segment only.",False
 vie,2024,restricted_cash,Not reported by this issuer.,False
+vie,2024,revenue_per_passenger,"n.m.: group revenue includes Malta and Košice airports, while passengers are Vienna only.",False
 vie,2024,short_term_deposits,Not reported by this issuer.,False
 vie,2025,borrowings_current,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2025,borrowings_noncurrent,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
@@ -558,8 +581,9 @@ vie,2025,lease_liabilities_noncurrent,"Borrowings and lease liabilities are repo
 vie,2025,lease_liabilities_total,"Borrowings and lease liabilities are reported on one combined line (see ""Borrowings and lease liabilities on one line"").",False
 vie,2025,liquidity,Undrawn committed credit facilities not available for FY2025,True
 vie,2025,liquidity_to_revenue,Liquidity: Undrawn committed credit facilities not available for FY2025,True
-vie,2025,other_cash_like,Not reported by this issuer.,False
+vie,2025,non_aero_share,"n.m.: group revenue includes the Malta and Košice airports, while the aeronautical revenue is Vienna's Airport segment only.",False
 vie,2025,restricted_cash,Not reported by this issuer.,False
+vie,2025,revenue_per_passenger,"n.m.: group revenue includes Malta and Košice airports, while passengers are Vienna only.",False
 vie,2025,short_term_deposits,Not reported by this issuer.,False
 wizz,2021,borrowings_total,Reported as current and non-current parts only.,False
 wizz,2021,current_investments,Not reported by this issuer.,False

@@ -2,9 +2,9 @@ fiscal_year,metric,kind,value,reason
 2021,ebitda,value,154052100.000000,
 2021,ebitda_margin,value,0.378489,
 2021,total_debt,value,331923500.000000,
-2021,cash_like,value,150755800.000000,
-2021,net_debt,value,181167700.000000,
-2021,net_leverage,value,1.176016,
+2021,cash_like,value,181475800.000000,
+2021,net_debt,value,150447700.000000,
+2021,net_leverage,value,0.976603,
 2021,gross_leverage,value,2.154618,
 2021,interest_coverage,value,10.056539,
 2021,ffo,value,147042100.000000,
@@ -12,21 +12,21 @@ fiscal_year,metric,kind,value,reason
 2021,fcf,value,45087200.000000,
 2021,fcf_to_debt,value,0.135836,
 2021,capex_intensity,value,0.149042,
-2021,cash_liquidity,value,150755800.000000,
-2021,cash_liquidity_to_revenue,value,0.370390,
+2021,cash_liquidity,value,181475800.000000,
+2021,cash_liquidity_to_revenue,value,0.445866,
 2021,liquidity,missing,,Undrawn committed credit facilities not available for FY2021
 2021,liquidity_to_revenue,missing,,Liquidity: Undrawn committed credit facilities not available for FY2021
 2021,passengers,missing,,Passengers not available for FY2021
 2021,traffic_growth,missing,,Passengers not available for FY2021
-2021,revenue_per_passenger,missing,,Passengers not available for FY2021
+2021,revenue_per_passenger,not_meaningful,,"n.m.: group revenue includes Malta and Košice airports, while passengers are Vienna only."
 2021,aero_revenue_per_passenger,missing,,Aeronautical revenue not available for FY2021
-2021,non_aero_share,missing,,Aeronautical revenue not available for FY2021
+2021,non_aero_share,not_meaningful,,"n.m.: group revenue includes the Malta and Košice airports, while the aeronautical revenue is Vienna's Airport segment only."
 2022,ebitda,value,298233400.000000,
 2022,ebitda_margin,value,0.430523,
 2022,total_debt,value,279856200.000000,
-2022,cash_like,value,130713400.000000,
-2022,net_debt,value,149142800.000000,
-2022,net_leverage,value,0.500088,
+2022,cash_like,value,429222800.000000,
+2022,net_debt,value,-149366600.000000,
+2022,net_leverage,value,-0.500838,
 2022,gross_leverage,value,0.938380,
 2022,interest_coverage,value,22.345104,
 2022,ffo,value,276557200.000000,
@@ -34,21 +34,21 @@ fiscal_year,metric,kind,value,reason
 2022,fcf,value,277070200.000000,
 2022,fcf_to_debt,value,0.990045,
 2022,capex_intensity,value,0.087383,
-2022,cash_liquidity,value,130713400.000000,
-2022,cash_liquidity_to_revenue,value,0.188695,
+2022,cash_liquidity,value,429222800.000000,
+2022,cash_liquidity_to_revenue,value,0.619616,
 2022,liquidity,missing,,Undrawn committed credit facilities not available for FY2022
 2022,liquidity_to_revenue,missing,,Liquidity: Undrawn committed credit facilities not available for FY2022
 2022,passengers,missing,,Passengers not available for FY2022
 2022,traffic_growth,missing,,Passengers not available for FY2022
-2022,revenue_per_passenger,missing,,Passengers not available for FY2022
+2022,revenue_per_passenger,not_meaningful,,"n.m.: group revenue includes Malta and Košice airports, while passengers are Vienna only."
 2022,aero_revenue_per_passenger,missing,,Aeronautical revenue not available for FY2022
-2022,non_aero_share,missing,,Aeronautical revenue not available for FY2022
+2022,non_aero_share,not_meaningful,,"n.m.: group revenue includes the Malta and Košice airports, while the aeronautical revenue is Vienna's Airport segment only."
 2023,ebitda,value,393555400.000000,
 2023,ebitda_margin,value,0.422475,
 2023,total_debt,value,55345200.000000,
-2023,cash_like,value,73986800.000000,
-2023,net_debt,value,-18641600.000000,
-2023,net_leverage,value,-0.047367,
+2023,cash_like,value,417206300.000000,
+2023,net_debt,value,-361861100.000000,
+2023,net_leverage,value,-0.919467,
 2023,gross_leverage,value,0.140629,
 2023,interest_coverage,value,32.982912,
 2023,ffo,value,346548600.000000,
@@ -56,21 +56,21 @@ fiscal_year,metric,kind,value,reason
 2023,fcf,value,286967100.000000,
 2023,fcf_to_debt,value,5.185040,
 2023,capex_intensity,value,0.104996,
-2023,cash_liquidity,value,73986800.000000,
-2023,cash_liquidity_to_revenue,value,0.079423,
+2023,cash_liquidity,value,417206300.000000,
+2023,cash_liquidity_to_revenue,value,0.447863,
 2023,liquidity,missing,,Undrawn committed credit facilities not available for FY2023
 2023,liquidity_to_revenue,missing,,Liquidity: Undrawn committed credit facilities not available for FY2023
 2023,passengers,missing,,Passengers not available for FY2023
 2023,traffic_growth,missing,,Passengers not available for FY2023
-2023,revenue_per_passenger,missing,,Passengers not available for FY2023
+2023,revenue_per_passenger,not_meaningful,,"n.m.: group revenue includes Malta and Košice airports, while passengers are Vienna only."
 2023,aero_revenue_per_passenger,missing,,Aeronautical revenue not available for FY2023
-2023,non_aero_share,missing,,Aeronautical revenue not available for FY2023
+2023,non_aero_share,not_meaningful,,"n.m.: group revenue includes the Malta and Košice airports, while the aeronautical revenue is Vienna's Airport segment only."
 2024,ebitda,value,441926000.000000,
 2024,ebitda_margin,value,0.419787,
 2024,total_debt,value,55612000.000000,
-2024,cash_like,value,72810800.000000,
-2024,net_debt,value,-17198800.000000,
-2024,net_leverage,value,-0.038918,
+2024,cash_like,value,567218900.000000,
+2024,net_debt,value,-511606900.000000,
+2024,net_leverage,value,-1.157675,
 2024,gross_leverage,value,0.125840,
 2024,interest_coverage,value,201.866435,
 2024,ffo,value,358161500.000000,
@@ -78,21 +78,21 @@ fiscal_year,metric,kind,value,reason
 2024,fcf,value,273856600.000000,
 2024,fcf_to_debt,value,4.924416,
 2024,capex_intensity,value,0.161306,
-2024,cash_liquidity,value,72810800.000000,
-2024,cash_liquidity_to_revenue,value,0.069163,
+2024,cash_liquidity,value,567218900.000000,
+2024,cash_liquidity_to_revenue,value,0.538804,
 2024,liquidity,missing,,Undrawn committed credit facilities not available for FY2024
 2024,liquidity_to_revenue,missing,,Liquidity: Undrawn committed credit facilities not available for FY2024
 2024,passengers,missing,,Passengers not available for FY2024
 2024,traffic_growth,missing,,Passengers not available for FY2024
-2024,revenue_per_passenger,missing,,Passengers not available for FY2024
+2024,revenue_per_passenger,not_meaningful,,"n.m.: group revenue includes Malta and Košice airports, while passengers are Vienna only."
 2024,aero_revenue_per_passenger,missing,,Aeronautical revenue not available for FY2024
-2024,non_aero_share,missing,,Aeronautical revenue not available for FY2024
+2024,non_aero_share,not_meaningful,,"n.m.: group revenue includes the Malta and Košice airports, while the aeronautical revenue is Vienna's Airport segment only."
 2025,ebitda,value,412422900.000000,
 2025,ebitda_margin,value,0.365316,
 2025,total_debt,value,55889900.000000,
-2025,cash_like,value,110307200.000000,
-2025,net_debt,value,-54417300.000000,
-2025,net_leverage,value,-0.131945,
+2025,cash_like,value,469707200.000000,
+2025,net_debt,value,-413817300.000000,
+2025,net_leverage,value,-1.003381,
 2025,gross_leverage,value,0.135516,
 2025,interest_coverage,value,208.526090,
 2025,ffo,value,246993700.000000,
@@ -100,12 +100,12 @@ fiscal_year,metric,kind,value,reason
 2025,fcf,value,61714700.000000,
 2025,fcf_to_debt,value,1.104219,
 2025,capex_intensity,value,0.240583,
-2025,cash_liquidity,value,110307200.000000,
-2025,cash_liquidity_to_revenue,value,0.097708,
+2025,cash_liquidity,value,469707200.000000,
+2025,cash_liquidity_to_revenue,value,0.416057,
 2025,liquidity,missing,,Undrawn committed credit facilities not available for FY2025
 2025,liquidity_to_revenue,missing,,Liquidity: Undrawn committed credit facilities not available for FY2025
 2025,passengers,missing,,Passengers not available for FY2025
 2025,traffic_growth,missing,,Passengers not available for FY2025
-2025,revenue_per_passenger,missing,,Passengers not available for FY2025
+2025,revenue_per_passenger,not_meaningful,,"n.m.: group revenue includes Malta and Košice airports, while passengers are Vienna only."
 2025,aero_revenue_per_passenger,missing,,Aeronautical revenue not available for FY2025
-2025,non_aero_share,missing,,Aeronautical revenue not available for FY2025
+2025,non_aero_share,not_meaningful,,"n.m.: group revenue includes the Malta and Košice airports, while the aeronautical revenue is Vienna's Airport segment only."

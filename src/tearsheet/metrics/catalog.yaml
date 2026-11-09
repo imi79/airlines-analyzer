@@ -71,7 +71,8 @@ metrics:
     higher_is_better: true
     definition: >-
       EBITDA ÷ interest expense (lease interest included); interest paid where interest
-      expense isn't tagged. n.m. when EBITDA or interest is zero or negative.
+      expense isn't tagged, or finance costs where interest paid is printed net of interest
+      received. n.m. when EBITDA or interest is zero or negative.
   ffo:
     label: FFO
     unit: amount
@@ -226,4 +227,6 @@ metrics:
     unit: pct
     higher_is_better: true
     applies_to: [airport]
-    definition: (Revenue − aeronautical segment revenue) ÷ revenue.
+    definition: >-
+      (Revenue − aeronautical segment revenue) ÷ revenue (n.m. where group revenue covers
+      airports outside the aeronautical segment).

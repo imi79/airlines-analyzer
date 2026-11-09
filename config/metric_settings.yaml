@@ -37,6 +37,11 @@ issuers:
       investments in commercial paper and certificates, bonds and money market funds"; its
       cash funds are cash plus other current financial assets (884 at 31 Dec 2024).
     associates_in_operating_profit: false
+    interest_basis: finance_costs
+    interest_evidence: >-
+      Finnair's cash flow prints "Financial expenses paid, net", after interest received (38.0
+      in 2024, 87.4 in 2025), so it understates the interest cost; its financial expenses
+      (107.2 in 2024, 84.8 in 2025, tagged as finance costs) are used instead (decision 0018).
 
   easyjet:
     cash_like:
@@ -80,6 +85,12 @@ issuers:
       The income statement shows "Profit (loss) from equity-accounted companies" (-292 in 2024)
       above "Operating income from ordinary activities", and operating income + net financial
       expense = income before tax (994 - 152 = 842).
+    revenue_per_passenger_not_meaningful: >-
+      group revenue includes TAV Airports and the other international airports, while
+      passengers are Paris only.
+    non_aero_share_not_meaningful: >-
+      group revenue includes TAV Airports and the other international airports, while the
+      aeronautical revenue is the Paris aviation segment only.
 
   aena:
     cash_like:
@@ -88,14 +99,27 @@ issuers:
       Aena's covenants use "Deuda Financiera Neta" (net financial debt); no cash-like
       investment line besides cash and cash equivalents is shown. Cash only.
     associates_in_operating_profit: false
+    revenue_per_passenger_not_meaningful: >-
+      group revenue includes London Luton and the Brazilian airports, while passengers are the
+      Spanish network only.
+    non_aero_share_not_meaningful: >-
+      group revenue includes London Luton and the Brazilian airports, while the aeronautical
+      revenue is the Spanish network's segment only.
 
   vie:
     cash_like:
       - line: cash
       - line: other_current_financial_assets
+      - line: other_cash_like
     cash_like_evidence: >-
-      Flughafen Wien's net debt ("Nettoverschuldung") is financial liabilities less cash, long-
-      and short-term investments and short-term securities. Current investments and securities
-      are included; long-term investments are not tagged separately (all other non-current
-      financial assets together are at most 20m, so the effect is small).
+      Flughafen Wien's net liquidity ("Nettoliquidität", capital management note) is cash +
+      short-term placements (term deposits, Treasury bills) + short-term securities - financial
+      and lease liabilities: 29.8 + 359.4 + 80.5 - 55.9 = 413.8 at 31 Dec 2025. The placements
+      sit inside "receivables" and are not tagged, so they are entered from the note (decision
+      0018); securities are the tagged other current financial assets.
     associates_in_operating_profit: false
+    revenue_per_passenger_not_meaningful: >-
+      group revenue includes Malta and Košice airports, while passengers are Vienna only.
+    non_aero_share_not_meaningful: >-
+      group revenue includes the Malta and Košice airports, while the aeronautical revenue is
+      Vienna's Airport segment only.
