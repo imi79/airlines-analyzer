@@ -89,9 +89,6 @@ Company type: airline. Reporting currency: EUR. Peer group: Network airlines (af
 | cash_like@FY2023 | Cash and cash-like investments, FY2023 | EUR 6.8bn | down, worse vs prior year |
 | cash_like@FY2022 | Cash and cash-like investments, FY2022 | EUR 9.6bn |  |
 | cash_like.change@FY2023 | change in Cash and cash-like investments, FY2022 to FY2023 | 28.8% | down, worse vs prior year; printed without a sign: say the direction in words |
-| cash_liquidity@FY2023 | Cash liquidity (partial), FY2023 | EUR 6.8bn | down, worse vs prior year |
-| cash_liquidity@FY2022 | Cash liquidity (partial), FY2022 | EUR 9.6bn |  |
-| cash_liquidity.change@FY2023 | change in Cash liquidity (partial), FY2022 to FY2023 | 28.8% | down, worse vs prior year; printed without a sign: say the direction in words |
 | liquidity@FY2023 | Liquidity, FY2023 | EUR 11.2bn | down, worse vs prior year |
 | liquidity@FY2022 | Liquidity, FY2022 | EUR 12.9bn |  |
 | liquidity.change@FY2023 | change in Liquidity, FY2022 to FY2023 | 12.7% | down, worse vs prior year; printed without a sign: say the direction in words |
@@ -158,3 +155,6 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - fuel_hedge_ratio@FY2022: Fuel hedge ratio not available for FY2022
 - net_cash@FY2023: the company has net debt, not net cash
 - net_cash@FY2022: the company has net debt, not net cash
+- cash_liquidity@FY2023: the same figure as cash_like@FY2023: use that id
+- cash_liquidity.change@FY2023: the same figure as cash_like.change@FY2023: use that id
+- cash_liquidity@FY2022: the same figure as cash_like@FY2022: use that id

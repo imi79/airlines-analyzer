@@ -1,0 +1,157 @@
+{
+ "answer": {
+  "sections": {
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@FY2025"
+      }
+     ],
+     "text": "Aena has the highest EBITDA margin in the airport group ({{ebitda_margin.peer_rank@FY2025}}), against a peer median of {{ebitda_margin.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ffo_to_debt.peer_rank@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt.peer_median@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt.peer_median@FY2025"
+      }
+     ],
+     "text": "Cash generation also leads the group, with FFO to debt and FCF to debt both ranking {{ffo_to_debt.peer_rank@FY2025}} against peer medians of {{ffo_to_debt.peer_median@FY2025}} and {{fcf_to_debt.peer_median@FY2025}} respectively."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "net_leverage.peer_rank@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_rank@FY2025"
+      }
+     ],
+     "text": "Leverage sits in the middle of the group, with net leverage ranking {{net_leverage.peer_rank@FY2025}} and gross leverage ranking {{gross_leverage.peer_rank@FY2025}}."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_to_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity@FY2025"
+      }
+     ],
+     "text": "Cash generation: free cash flow fell by {{fcf.change@FY2025}} to {{fcf@FY2025}} and FCF to debt by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}}, as capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda_margin.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "revenue.change@FY2025"
+      }
+     ],
+     "text": "Margins: the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, a weaker result than the prior year even as revenue rose by {{revenue.change@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "capex_intensity@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity.peer_median@FY2025"
+      }
+     ],
+     "text": "Investment: capex intensity of {{capex_intensity@FY2025}} is below the peer median of {{capex_intensity.peer_median@FY2025}}, but the increase in capital spending absorbs a larger share of cash generated."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs"
+      }
+     ],
+     "text": "Regulation: the regulator set the average airport charge for 2026 above the prior year's level, so the tariff path under the next regulatory period remains the key revenue sensitivity."
+    }
+   ]
+  }
+ },
+ "label": "aena_FY2025 attempt 2",
+ "recorded_at": "2026-11-09T18:11:40+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "134bb527206f4ccba221dbe498620f76356950939b509ce0478916144ce7f36a",
+  "user_sha256": "06c9cbb9327b6ab967db0776093ec57eaf1704109efadc7002db947ad8ff30d9"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 13196,
+  "output_tokens": 917
+ }
+}

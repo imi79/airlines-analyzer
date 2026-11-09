@@ -2,7 +2,7 @@
  "issuer": "afkl",
  "fiscal_year": 2025,
  "prompt_version": "draft-v6",
- "input_hash": "0723bc17f2df7e5743594c2bda589c0340706b61bf36483ac1229dd41dfc673b",
+ "input_hash": "5aadcdcb60e706fc8c13c771f4e8eaf7deedde1ed98e8e05a61c82d37461fef7",
  "status": {
   "snapshot": "passed",
   "credit_metrics": "passed",
@@ -23,12 +23,12 @@
     "peer_positioning",
     "watch_items"
    ],
-   "request_hash": "48fc296cab1aebcddb7859b68d478fe1e488497def51f03644907ceed49feb45",
+   "request_hash": "ddef9768bb084b1f02f3ff57f09e62c3612afed71ae038e08d3c1b2357cddec5",
    "model": "deepseek-flash",
    "draft": {
     "snapshot": [
      {
-      "text": "Air France-KLM, one of the network airlines in the European peer group, grew revenue by {{revenue.change@FY2025}} to {{revenue@FY2025}} in FY2025 while EBITDA rose by {{ebitda.change@FY2025}} to {{ebitda@FY2025}}.",
+      "text": "Air France-KLM, the Franco-Dutch network airline, grew revenue by {{revenue.change@FY2025}} to {{revenue@FY2025}} in FY2025, with the EBITDA margin widening by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}.",
       "facts": [
        {
         "id": "revenue.change@FY2025",
@@ -42,22 +42,6 @@
         "claims": []
        },
        {
-        "id": "ebitda.change@FY2025",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "ebitda@FY2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "The EBITDA margin widened by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, and net leverage fell by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}}.",
-      "facts": [
-       {
         "id": "ebitda_margin.change@FY2025",
         "claims": [
          "up",
@@ -67,7 +51,12 @@
        {
         "id": "ebitda_margin@FY2025",
         "claims": []
-       },
+       }
+      ]
+     },
+     {
+      "text": "Net leverage fell by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}} even as net debt rose by {{net_debt.change@FY2025}} to {{net_debt@FY2025}}, the earnings growth doing the work.",
+      "facts": [
        {
         "id": "net_leverage.change@FY2025",
         "claims": [
@@ -78,11 +67,21 @@
        {
         "id": "net_leverage@FY2025",
         "claims": []
+       },
+       {
+        "id": "net_debt.change@FY2025",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "net_debt@FY2025",
+        "claims": []
        }
       ]
      },
      {
-      "text": "The point to watch is cash liquidity, which fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}} of revenue, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2025}}.",
+      "text": "The point to watch is cash liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, the weakest of the network peers ({{cash_liquidity_to_revenue.peer_rank@FY2025}}).",
       "facts": [
        {
         "id": "cash_liquidity_to_revenue.change@FY2025",
@@ -99,15 +98,17 @@
         ]
        },
        {
-        "id": "cash_liquidity_to_revenue.peer_median@FY2025",
-        "claims": []
+        "id": "cash_liquidity_to_revenue.peer_rank@FY2025",
+        "claims": [
+         "worst_in_group"
+        ]
        }
       ]
      }
     ],
     "credit_metrics": [
      {
-      "text": "EBITDA increased by {{ebitda.change@FY2025}} to {{ebitda@FY2025}}, and operating profit rose by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}}.",
+      "text": "EBITDA increased by {{ebitda.change@FY2025}} to {{ebitda@FY2025}} on revenue up {{revenue.change@FY2025}}, and operating profit rose by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}}.",
       "facts": [
        {
         "id": "ebitda.change@FY2025",
@@ -119,6 +120,13 @@
        {
         "id": "ebitda@FY2025",
         "claims": []
+       },
+       {
+        "id": "revenue.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
        },
        {
         "id": "operating_profit.change@FY2025",
@@ -134,28 +142,8 @@
       ]
      },
      {
-      "text": "Total debt rose by {{total_debt.change@FY2025}} to {{total_debt@FY2025}} and net debt by {{net_debt.change@FY2025}} to {{net_debt@FY2025}}, yet gross leverage fell by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}}.",
+      "text": "Gross leverage fell by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}} and net leverage by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}}, although total debt rose by {{total_debt.change@FY2025}} to {{total_debt@FY2025}}.",
       "facts": [
-       {
-        "id": "total_debt.change@FY2025",
-        "claims": [
-         "up"
-        ]
-       },
-       {
-        "id": "total_debt@FY2025",
-        "claims": []
-       },
-       {
-        "id": "net_debt.change@FY2025",
-        "claims": [
-         "up"
-        ]
-       },
-       {
-        "id": "net_debt@FY2025",
-        "claims": []
-       },
        {
         "id": "gross_leverage.change@FY2025",
         "claims": [
@@ -165,6 +153,27 @@
        },
        {
         "id": "gross_leverage@FY2025",
+        "claims": []
+       },
+       {
+        "id": "net_leverage.change@FY2025",
+        "claims": [
+         "down",
+         "better"
+        ]
+       },
+       {
+        "id": "net_leverage@FY2025",
+        "claims": []
+       },
+       {
+        "id": "total_debt.change@FY2025",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "total_debt@FY2025",
         "claims": []
        }
       ]
@@ -208,7 +217,7 @@
       ]
      },
      {
-      "text": "Free cash flow turned positive at {{fcf@FY2025}} from {{fcf@FY2024}} in FY2024, taking FCF to debt to {{fcf_to_debt@FY2025}} as capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}.",
+      "text": "Free cash flow turned positive at {{fcf@FY2025}}, taking FCF to debt up by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}}, but capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}.",
       "facts": [
        {
         "id": "fcf@FY2025",
@@ -218,14 +227,17 @@
         ]
        },
        {
-        "id": "fcf@FY2024",
-        "claims": []
+        "id": "fcf_to_debt.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
        },
        {
         "id": "fcf_to_debt@FY2025",
         "claims": [
-         "up",
-         "better"
+         "below_peers",
+         "worse_than_peers"
         ]
        },
        {
@@ -236,14 +248,16 @@
        },
        {
         "id": "capex_intensity@FY2025",
-        "claims": []
+        "claims": [
+         "above_peers"
+        ]
        }
       ]
      }
     ],
     "operating_performance": [
      {
-      "text": "Revenue grew by {{revenue.change@FY2025}} to {{revenue@FY2025}}, with EBITDA rising by {{ebitda.change@FY2025}} to {{ebitda@FY2025}} and the EBITDA margin widening by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}.",
+      "text": "Revenue rose by {{revenue.change@FY2025}} to {{revenue@FY2025}}, with the EBITDA margin at {{ebitda_margin@FY2025}} against {{ebitda_margin@FY2024}} in FY2024.",
       "facts": [
        {
         "id": "revenue.change@FY2025",
@@ -257,43 +271,28 @@
         "claims": []
        },
        {
-        "id": "ebitda.change@FY2025",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "ebitda@FY2025",
+        "id": "ebitda_margin@FY2025",
         "claims": []
        },
        {
-        "id": "ebitda_margin.change@FY2025",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "ebitda_margin@FY2025",
+        "id": "ebitda_margin@FY2024",
         "claims": []
        }
       ]
      },
      {
-      "text": "Capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, above the peer median of {{capex_intensity.peer_median@FY2025}}, as the fleet renewal programme absorbed more cash.",
+      "text": "Capital intensity increased, with capex intensity at {{capex_intensity@FY2025}} against {{capex_intensity@FY2024}} in FY2024, above the network peer median of {{capex_intensity.peer_median@FY2025}}.",
       "facts": [
-       {
-        "id": "capex_intensity.change@FY2025",
-        "claims": [
-         "up"
-        ]
-       },
        {
         "id": "capex_intensity@FY2025",
         "claims": [
+         "up",
          "above_peers"
         ]
+       },
+       {
+        "id": "capex_intensity@FY2024",
+        "claims": []
        },
        {
         "id": "capex_intensity.peer_median@FY2025",
@@ -321,7 +320,7 @@
     ],
     "liquidity_funding": [
      {
-      "text": "Cash and cash-like investments were broadly unchanged at {{cash_like@FY2025}}, a change of {{cash_like.change@FY2025}}, so cash liquidity stood at {{cash_liquidity@FY2025}}.",
+      "text": "Cash and cash-like investments were broadly unchanged at {{cash_like@FY2025}}, a change of {{cash_like.change@FY2025}} on FY2024.",
       "facts": [
        {
         "id": "cash_like@FY2025",
@@ -331,12 +330,6 @@
        },
        {
         "id": "cash_like.change@FY2025",
-        "claims": [
-         "flat"
-        ]
-       },
-       {
-        "id": "cash_liquidity@FY2025",
         "claims": [
          "flat"
         ]
@@ -367,7 +360,7 @@
       ]
      },
      {
-      "text": "Contract liabilities rose by {{contract_liabilities.change@FY2025}} to {{contract_liabilities@FY2025}}, and advance ticket cover increased by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}, the lowest of the peer group ({{advance_ticket_cover.peer_rank@FY2025}}).",
+      "text": "Customer prepayments rose, with contract liabilities up by {{contract_liabilities.change@FY2025}} to {{contract_liabilities@FY2025}} and advance ticket cover up by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}.",
       "facts": [
        {
         "id": "contract_liabilities.change@FY2025",
@@ -388,21 +381,12 @@
        },
        {
         "id": "advance_ticket_cover@FY2025",
-        "claims": [
-         "below_peers",
-         "better_than_peers"
-        ]
-       },
-       {
-        "id": "advance_ticket_cover.peer_rank@FY2025",
-        "claims": [
-         "best_in_group"
-        ]
+        "claims": []
        }
       ]
      },
      {
-      "text": "The group placed senior unsecured bonds under its EMTN programme and redeemed its outstanding hybrid bonds from the hard call date, while the extension option on its credit facility pushed that maturity to 2029.",
+      "text": "Funding activity included senior unsecured bonds placed under the EMTN programme and the redemption of the outstanding hybrid bonds, alongside an extension of the Air France-KLM and Air France credit facility maturity.",
       "facts": [
        {
         "id": "event:funding_and_rating",
@@ -421,7 +405,7 @@
     ],
     "peer_positioning": [
      {
-      "text": "Air France-KLM sits in the middle of the network group on EBITDA margin, net leverage, gross leverage, interest coverage and FFO to debt, each ranking {{net_leverage.peer_rank@FY2025}}.",
+      "text": "Air France-KLM sits in the middle of the network group on EBITDA margin, net leverage, gross leverage, interest coverage and FFO to debt, ranking {{net_leverage.peer_rank@FY2025}} on net leverage.",
       "facts": [
        {
         "id": "net_leverage.peer_rank@FY2025",
@@ -478,7 +462,7 @@
     ],
     "watch_items": [
      {
-      "text": "Cash generation: FCF to debt of {{fcf_to_debt@FY2025}} is below the peer median of {{fcf_to_debt.peer_median@FY2025}} and the weakest of the group ({{fcf_to_debt.peer_rank@FY2025}}), despite the improvement of {{fcf_to_debt.change@FY2025}} over the year.",
+      "text": "Cash generation: FCF to debt of {{fcf_to_debt@FY2025}} is below the peer median of {{fcf_to_debt.peer_median@FY2025}} and the weakest of the group, so the conversion of EBITDA into cash remains the key sensitivity.",
       "facts": [
        {
         "id": "fcf_to_debt@FY2025",
@@ -490,24 +474,11 @@
        {
         "id": "fcf_to_debt.peer_median@FY2025",
         "claims": []
-       },
-       {
-        "id": "fcf_to_debt.peer_rank@FY2025",
-        "claims": [
-         "worst_in_group"
-        ]
-       },
-       {
-        "id": "fcf_to_debt.change@FY2025",
-        "claims": [
-         "up",
-         "better"
-        ]
        }
       ]
      },
      {
-      "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, the weakest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2025}}).",
+      "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2025}}.",
       "facts": [
        {
         "id": "cash_liquidity_to_revenue.change@FY2025",
@@ -524,15 +495,13 @@
         ]
        },
        {
-        "id": "cash_liquidity_to_revenue.peer_rank@FY2025",
-        "claims": [
-         "worst_in_group"
-        ]
+        "id": "cash_liquidity_to_revenue.peer_median@FY2025",
+        "claims": []
        }
       ]
      },
      {
-      "text": "Investment: capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, above the peer median of {{capex_intensity.peer_median@FY2025}}, which limits the room to rebuild free cash flow.",
+      "text": "Investment: capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, above the peer median of {{capex_intensity.peer_median@FY2025}}, which limits free cash flow while debt is rising.",
       "facts": [
        {
         "id": "capex_intensity.change@FY2025",
@@ -553,7 +522,7 @@
       ]
      },
      {
-      "text": "Debt: total debt rose by {{total_debt.change@FY2025}} to {{total_debt@FY2025}} and net debt by {{net_debt.change@FY2025}} to {{net_debt@FY2025}}, so leverage depends on EBITDA holding at the FY2025 level.",
+      "text": "Debt: total debt rose by {{total_debt.change@FY2025}} to {{total_debt@FY2025}} and net debt by {{net_debt.change@FY2025}} to {{net_debt@FY2025}}, so leverage now depends on EBITDA holding at the FY2025 level.",
       "facts": [
        {
         "id": "total_debt.change@FY2025",
@@ -580,121 +549,28 @@
     ]
    },
    "errors": [
-    "[rule 1] snapshot, sentence 1: word that states a number: 'one'",
-    "[rule style] operating_performance, sentence 1: ebitda.change@FY2025 is already given in credit_metrics, sentence 1: give each figure in one body section only (the snapshot and watch items may restate it)",
-    "[rule style] operating_performance, sentence 1: ebitda@FY2025 is already given in credit_metrics, sentence 1: give each figure in one body section only (the snapshot and watch items may restate it)",
-    "[rule style] operating_performance, sentence 2: capex_intensity.change@FY2025 is already given in credit_metrics, sentence 4: give each figure in one body section only (the snapshot and watch items may restate it)",
+    "[rule style] operating_performance, sentence 1: revenue.change@FY2025 is already given in credit_metrics, sentence 1: give each figure in one body section only (the snapshot and watch items may restate it)",
     "[rule style] operating_performance, sentence 2: capex_intensity@FY2025 is already given in credit_metrics, sentence 4: give each figure in one body section only (the snapshot and watch items may restate it)",
-    "[rule style] peer_positioning, sentence 2: advance_ticket_cover.peer_rank@FY2025 is already given in liquidity_funding, sentence 3: give each figure in one body section only (the snapshot and watch items may restate it)",
     "[rule style] peer_positioning, sentence 2: advance_ticket_cover@FY2025 is already given in liquidity_funding, sentence 3: give each figure in one body section only (the snapshot and watch items may restate it)",
-    "[rule style] peer_positioning, sentence 3: fcf_to_debt@FY2025 is already given in credit_metrics, sentence 4: give each figure in one body section only (the snapshot and watch items may restate it)"
+    "[rule style] peer_positioning, sentence 3: fcf_to_debt@FY2025 is already given in credit_metrics, sentence 4: give each figure in one body section only (the snapshot and watch items may restate it)",
+    "[rule 4] watch_items, sentence 1: 'weakest' needs a 'worst_in_group' claim on a figure in the same clause"
    ],
    "error": null
   },
   {
    "try": 2,
    "sections": [
-    "snapshot",
     "operating_performance",
-    "peer_positioning"
+    "peer_positioning",
+    "watch_items"
    ],
-   "request_hash": "77b6497810aa33b1f807a514b93b5454dd69a82e0c8b6d119cba16e2a29746ac",
+   "request_hash": "7e5ee5fd373413accc4be6d407c2dabbd7e46c90594636a88a580ba70351225f",
    "model": "deepseek-flash",
    "draft": {
-    "snapshot": [
-     {
-      "text": "Air France-KLM, a network airline in the European peer group, grew revenue by {{revenue.change@FY2025}} to {{revenue@FY2025}} in FY2025 while EBITDA rose by {{ebitda.change@FY2025}} to {{ebitda@FY2025}}.",
-      "facts": [
-       {
-        "id": "revenue.change@FY2025",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "revenue@FY2025",
-        "claims": []
-       },
-       {
-        "id": "ebitda.change@FY2025",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "ebitda@FY2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "The EBITDA margin widened by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, and net leverage fell by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}}.",
-      "facts": [
-       {
-        "id": "ebitda_margin.change@FY2025",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "ebitda_margin@FY2025",
-        "claims": []
-       },
-       {
-        "id": "net_leverage.change@FY2025",
-        "claims": [
-         "down",
-         "better"
-        ]
-       },
-       {
-        "id": "net_leverage@FY2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "The point to watch is cash liquidity, which fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}} of revenue, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2025}}.",
-      "facts": [
-       {
-        "id": "cash_liquidity_to_revenue.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "cash_liquidity_to_revenue@FY2025",
-        "claims": [
-         "below_peers",
-         "worse_than_peers"
-        ]
-       },
-       {
-        "id": "cash_liquidity_to_revenue.peer_median@FY2025",
-        "claims": []
-       }
-      ]
-     }
-    ],
     "operating_performance": [
      {
-      "text": "Revenue grew by {{revenue.change@FY2025}} to {{revenue@FY2025}}, with the EBITDA margin widening by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}.",
+      "text": "The EBITDA margin widened by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, against {{ebitda_margin@FY2024}} in FY2024, as earnings grew faster than the top line.",
       "facts": [
-       {
-        "id": "revenue.change@FY2025",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "revenue@FY2025",
-        "claims": []
-       },
        {
         "id": "ebitda_margin.change@FY2025",
         "claims": [
@@ -705,26 +581,9 @@
        {
         "id": "ebitda_margin@FY2025",
         "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, above the peer median of {{capex_intensity.peer_median@FY2025}}, as the fleet renewal programme absorbed more cash.",
-      "facts": [
-       {
-        "id": "capex_intensity.change@FY2025",
-        "claims": [
-         "up"
-        ]
        },
        {
-        "id": "capex_intensity@FY2025",
-        "claims": [
-         "above_peers"
-        ]
-       },
-       {
-        "id": "capex_intensity.peer_median@FY2025",
+        "id": "ebitda_margin@FY2024",
         "claims": []
        }
       ]
@@ -749,7 +608,7 @@
     ],
     "peer_positioning": [
      {
-      "text": "Air France-KLM sits in the middle of the network group on EBITDA margin, net leverage, gross leverage, interest coverage and FFO to debt, each ranking {{net_leverage.peer_rank@FY2025}}.",
+      "text": "Air France-KLM sits in the middle of the network group on EBITDA margin, net leverage, gross leverage, interest coverage and FFO to debt, ranking {{net_leverage.peer_rank@FY2025}} on net leverage.",
       "facts": [
        {
         "id": "net_leverage.peer_rank@FY2025",
@@ -780,15 +639,8 @@
       ]
      },
      {
-      "text": "It is weakest on cash generation and liquidity, with FCF to debt below the peer median of {{fcf_to_debt.peer_median@FY2025}} and the lowest of the group ({{fcf_to_debt.peer_rank@FY2025}}), and cash liquidity to revenue the lowest as well ({{cash_liquidity_to_revenue.peer_rank@FY2025}}).",
+      "text": "It is weakest on cash generation and liquidity, with FCF to debt the lowest of the group ({{fcf_to_debt.peer_rank@FY2025}}) and cash liquidity to revenue the lowest as well ({{cash_liquidity_to_revenue.peer_rank@FY2025}}).",
       "facts": [
-       {
-        "id": "fcf_to_debt.peer_median@FY2025",
-        "claims": [
-         "below_peers",
-         "worse_than_peers"
-        ]
-       },
        {
         "id": "fcf_to_debt.peer_rank@FY2025",
         "claims": [
@@ -803,12 +655,102 @@
        }
       ]
      }
+    ],
+    "watch_items": [
+     {
+      "text": "Cash generation: FCF to debt of {{fcf_to_debt@FY2025}} is below the peer median of {{fcf_to_debt.peer_median@FY2025}} and the weakest of the group ({{fcf_to_debt.peer_rank@FY2025}}), so the conversion of EBITDA into cash remains the key sensitivity.",
+      "facts": [
+       {
+        "id": "fcf_to_debt@FY2025",
+        "claims": [
+         "below_peers",
+         "worse_than_peers"
+        ]
+       },
+       {
+        "id": "fcf_to_debt.peer_median@FY2025",
+        "claims": []
+       },
+       {
+        "id": "fcf_to_debt.peer_rank@FY2025",
+        "claims": [
+         "worst_in_group"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2025}}.",
+      "facts": [
+       {
+        "id": "cash_liquidity_to_revenue.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2025",
+        "claims": [
+         "below_peers",
+         "worse_than_peers"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue.peer_median@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Investment: capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, above the peer median of {{capex_intensity.peer_median@FY2025}}, which limits free cash flow while debt is rising.",
+      "facts": [
+       {
+        "id": "capex_intensity.change@FY2025",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "capex_intensity@FY2025",
+        "claims": [
+         "above_peers"
+        ]
+       },
+       {
+        "id": "capex_intensity.peer_median@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Debt: total debt rose by {{total_debt.change@FY2025}} to {{total_debt@FY2025}} and net debt by {{net_debt.change@FY2025}} to {{net_debt@FY2025}}, so leverage now depends on EBITDA holding at the FY2025 level.",
+      "facts": [
+       {
+        "id": "total_debt.change@FY2025",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "total_debt@FY2025",
+        "claims": []
+       },
+       {
+        "id": "net_debt.change@FY2025",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "net_debt@FY2025",
+        "claims": []
+       }
+      ]
+     }
     ]
    },
    "errors": [
-    "[rule style] operating_performance, sentence 2: capex_intensity.change@FY2025 is already given in credit_metrics, sentence 4: give each figure in one body section only (the snapshot and watch items may restate it)",
-    "[rule style] operating_performance, sentence 2: capex_intensity@FY2025 is already given in credit_metrics, sentence 4: give each figure in one body section only (the snapshot and watch items may restate it)",
-    "[rule style] peer_positioning, sentence 2: advance_ticket_cover.peer_rank@FY2025 is already given in liquidity_funding, sentence 3: give each figure in one body section only (the snapshot and watch items may restate it)",
     "[rule style] peer_positioning, sentence 2: advance_ticket_cover@FY2025 is already given in liquidity_funding, sentence 3: give each figure in one body section only (the snapshot and watch items may restate it)"
    ],
    "error": null
@@ -816,61 +758,14 @@
   {
    "try": 3,
    "sections": [
-    "operating_performance",
     "peer_positioning"
    ],
-   "request_hash": "3133caabcfdfc28fb7c1a004d83ab01c641f780efa420e6c976b4366941de3a4",
+   "request_hash": "b2dddc0ec195386ee6729cc8661ae23b1615320a28addf44fa90aeef972b31d3",
    "model": "deepseek-flash",
    "draft": {
-    "operating_performance": [
-     {
-      "text": "Revenue grew by {{revenue.change@FY2025}} to {{revenue@FY2025}}, with the EBITDA margin widening by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}.",
-      "facts": [
-       {
-        "id": "revenue.change@FY2025",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "revenue@FY2025",
-        "claims": []
-       },
-       {
-        "id": "ebitda_margin.change@FY2025",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "ebitda_margin@FY2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "In FY2024 the group carried {{passengers@FY2024}} passengers with a fleet of {{fleet@FY2024}} aircraft at an average age of {{fleet_age@FY2024}}.",
-      "facts": [
-       {
-        "id": "passengers@FY2024",
-        "claims": []
-       },
-       {
-        "id": "fleet@FY2024",
-        "claims": []
-       },
-       {
-        "id": "fleet_age@FY2024",
-        "claims": []
-       }
-      ]
-     }
-    ],
     "peer_positioning": [
      {
-      "text": "Air France-KLM sits in the middle of the network group on EBITDA margin, net leverage, gross leverage, interest coverage and FFO to debt, each ranking {{net_leverage.peer_rank@FY2025}}.",
+      "text": "Air France-KLM sits in the middle of the network group on EBITDA margin, net leverage, gross leverage, interest coverage and FFO to debt, ranking {{net_leverage.peer_rank@FY2025}} on net leverage.",
       "facts": [
        {
         "id": "net_leverage.peer_rank@FY2025",
@@ -879,15 +774,25 @@
       ]
      },
      {
-      "text": "It is weakest on cash generation and liquidity, with FCF to debt below the peer median of {{fcf_to_debt.peer_median@FY2025}} and the lowest of the group ({{fcf_to_debt.peer_rank@FY2025}}), and cash liquidity to revenue the lowest as well ({{cash_liquidity_to_revenue.peer_rank@FY2025}}).",
+      "text": "Its strongest relative position is advance ticket cover, the lowest of the group ({{advance_ticket_cover.peer_rank@FY2025}}), below the peer median of {{advance_ticket_cover.peer_median@FY2025}}.",
       "facts": [
        {
-        "id": "fcf_to_debt.peer_median@FY2025",
+        "id": "advance_ticket_cover.peer_rank@FY2025",
         "claims": [
-         "below_peers",
-         "worse_than_peers"
+         "best_in_group"
         ]
        },
+       {
+        "id": "advance_ticket_cover.peer_median@FY2025",
+        "claims": [
+         "below_peers"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "It is weakest on cash generation and liquidity, with FCF to debt the lowest of the group ({{fcf_to_debt.peer_rank@FY2025}}) and cash liquidity to revenue the lowest as well ({{cash_liquidity_to_revenue.peer_rank@FY2025}}).",
+      "facts": [
        {
         "id": "fcf_to_debt.peer_rank@FY2025",
         "claims": [

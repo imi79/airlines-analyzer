@@ -365,7 +365,28 @@ def build(
             sheet.unavailable[change_id] = "needs both years verified"
         if metric in peers["metrics"]:
             _peer_items(sheet, spec, metric, cur, index, ends, members, narrative, debt_ratios)
+    _drop_same_figures(sheet, index, issuer.id, fiscal_year, narrative)
     return sheet
+
+
+def _drop_same_figures(sheet, index, issuer: str, year: int, narrative: dict) -> None:
+    """A figure equal to another under a different name is offered once (cash liquidity is
+    cash and cash-like investments when no undrawn lines are added)."""
+    for twin, original in (narrative.get("same_figure") or {}).items():
+        for y in (year, year - 1):
+            a, b = index.get((issuer, twin, y)), index.get((issuer, original, y))
+            if a is None or b is None or a.value is None or a.value != b.value:
+                continue
+            fid = f"{twin}@FY{y}"
+            if fid in sheet.items:
+                del sheet.items[fid]
+                sheet.unavailable[fid] = f"the same figure as {original}@FY{y}: use that id"
+                if y == year:
+                    change = f"{twin}.change@FY{year}"
+                    sheet.items.pop(change, None)
+                    sheet.unavailable[change] = (
+                        f"the same figure as {original}.change@FY{year}: use that id"
+                    )
 
 
 def _level(fid: str, spec: Spec, fig: Figure, currency: str, period: str) -> Item:

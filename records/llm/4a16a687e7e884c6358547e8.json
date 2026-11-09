@@ -1,0 +1,234 @@
+{
+ "answer": {
+  "sections": {
+   "credit_metrics": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ebitda.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "operating_profit.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "operating_profit@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:costs"
+      }
+     ],
+     "text": "EBITDA increased by {{ebitda.change@FY2025}} to {{ebitda@FY2025}}, and operating profit rose by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}} despite higher depreciation and impairment charges."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "total_debt@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "net_debt@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "net_leverage.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "gross_leverage@FY2025"
+      }
+     ],
+     "text": "Total debt was stable at {{total_debt@FY2025}} and net debt at {{net_debt@FY2025}}, so EBITDA of {{ebitda@FY2025}} brought net leverage down by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}} and gross leverage to {{gross_leverage@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ffo.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ffo@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ffo_to_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "interest_coverage.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "interest_coverage@FY2025"
+      }
+     ],
+     "text": "FFO rose by {{ffo.change@FY2025}} to {{ffo@FY2025}}, lifting FFO to debt by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}, and interest coverage improved by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "fcf.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "fcf_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "capex_intensity.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity@FY2025"
+      }
+     ],
+     "text": "Free cash flow increased by {{fcf.change@FY2025}} to {{fcf@FY2025}}, taking FCF to debt to {{fcf_to_debt@FY2025}}, while capex intensity eased by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "ebitda_margin@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@FY2025"
+      }
+     ],
+     "text": "Groupe ADP has the weakest EBITDA margin of the airport peers ({{ebitda_margin.peer_rank@FY2025}}), at {{ebitda_margin@FY2025}} against a median of {{ebitda_margin.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage.peer_median@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "gross_leverage.peer_rank@FY2025"
+      }
+     ],
+     "text": "Leverage is the weakest in the group, with net leverage ranking {{net_leverage.peer_rank@FY2025}} against a median of {{net_leverage.peer_median@FY2025}} and gross leverage also last ({{gross_leverage.peer_rank@FY2025}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "ffo_to_debt.peer_median@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "interest_coverage.peer_median@FY2025"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "capex_intensity@FY2025"
+      }
+     ],
+     "text": "Cash generation and coverage sit below the group as well, with FFO to debt against a median of {{ffo_to_debt.peer_median@FY2025}} and interest coverage against {{interest_coverage.peer_median@FY2025}}, while capex intensity of {{capex_intensity@FY2025}} sits in the middle of the group."
+    }
+   ]
+  }
+ },
+ "label": "adp_FY2025 attempt 3",
+ "recorded_at": "2026-11-09T18:11:25+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "b39b853619f2f422733b2655a83cbfef29bf6fccfa3b0ddd5640b75c3b069104",
+  "user_sha256": "21e476f2cd04adf84daac23e5c77875a801dc03c1c6d78d2505e48b84e36c018"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 13669,
+  "output_tokens": 1270
+ }
+}

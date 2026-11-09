@@ -2,7 +2,7 @@
  "issuer": "vie",
  "fiscal_year": 2024,
  "prompt_version": "draft-v6",
- "input_hash": "890f33799e292ef066475a4d087e354c7d0296bff602a87e0a37167cf5d1c896",
+ "input_hash": "192a6a55f45a790117c91444625a7b8aba857f9e48bf2b32a296e28eb8e1768b",
  "status": {
   "snapshot": "passed",
   "credit_metrics": "passed",
@@ -23,12 +23,12 @@
     "peer_positioning",
     "watch_items"
    ],
-   "request_hash": "24028873504d8f3dd91623bdcb417beaac127084dfb0fb7a56f07dc1097d510f",
+   "request_hash": "c70f724fc0c5a2d70501c1538742c2a8a0b7696940100cd656d21deca3e7d807",
    "model": "deepseek-flash",
    "draft": {
     "snapshot": [
      {
-      "text": "Flughafen Wien, the Vienna airport group, grew revenue by {{revenue.change@FY2024}} to {{revenue@FY2024}} in FY2024, and the full repayment of interest-bearing financial liabilities leaves it with net cash of {{net_cash@FY2024}}.",
+      "text": "Flughafen Wien, the Vienna airport group, grew revenue by {{revenue.change@FY2024}} to {{revenue@FY2024}} in FY2024, and the complete repayment of interest-bearing financial liabilities leaves it with net cash of {{net_cash@FY2024}}.",
       "facts": [
        {
         "id": "revenue.change@FY2024",
@@ -52,8 +52,15 @@
       ]
      },
      {
-      "text": "Net leverage fell by {{net_leverage.change@FY2024}} to {{net_leverage@FY2024}}, a net cash position, while the EBITDA margin was broadly unchanged at {{ebitda_margin@FY2024}}.",
+      "text": "The EBITDA margin was broadly unchanged at {{ebitda_margin@FY2024}}, while net leverage moved further into net cash territory, down by {{net_leverage.change@FY2024}} to {{net_leverage@FY2024}}.",
       "facts": [
+       {
+        "id": "ebitda_margin@FY2024",
+        "claims": [
+         "flat",
+         "in_line_with_peers"
+        ]
+       },
        {
         "id": "net_leverage.change@FY2024",
         "claims": [
@@ -64,17 +71,11 @@
        {
         "id": "net_leverage@FY2024",
         "claims": []
-       },
-       {
-        "id": "ebitda_margin@FY2024",
-        "claims": [
-         "flat"
-        ]
        }
       ]
      },
      {
-      "text": "The point to watch is cash generation: free cash flow declined by {{fcf.change@FY2024}} to {{fcf@FY2024}} as capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}.",
+      "text": "The point to watch is cash generation: free cash flow fell by {{fcf.change@FY2024}} to {{fcf@FY2024}} as capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}.",
       "facts": [
        {
         "id": "fcf.change@FY2024",
@@ -102,7 +103,7 @@
     ],
     "credit_metrics": [
      {
-      "text": "EBITDA increased by {{ebitda.change@FY2024}} to {{ebitda@FY2024}} on revenue up {{revenue.change@FY2024}}, and operating profit rose by {{operating_profit.change@FY2024}} to {{operating_profit@FY2024}}.",
+      "text": "EBITDA increased by {{ebitda.change@FY2024}} to {{ebitda@FY2024}}, and operating profit rose by {{operating_profit.change@FY2024}} to {{operating_profit@FY2024}}.",
       "facts": [
        {
         "id": "ebitda.change@FY2024",
@@ -114,13 +115,6 @@
        {
         "id": "ebitda@FY2024",
         "claims": []
-       },
-       {
-        "id": "revenue.change@FY2024",
-        "claims": [
-         "up",
-         "better"
-        ]
        },
        {
         "id": "operating_profit.change@FY2024",
@@ -147,7 +141,8 @@
        {
         "id": "gross_leverage@FY2024",
         "claims": [
-         "flat"
+         "flat",
+         "below_peers"
         ]
        },
        {
@@ -164,7 +159,7 @@
       ]
      },
      {
-      "text": "FFO increased by {{ffo.change@FY2024}} to {{ffo@FY2024}}, but free cash flow fell by {{fcf.change@FY2024}} to {{fcf@FY2024}} as capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}.",
+      "text": "FFO grew by {{ffo.change@FY2024}} to {{ffo@FY2024}}, but free cash flow declined by {{fcf.change@FY2024}} to {{fcf@FY2024}} as capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}.",
       "facts": [
        {
         "id": "ffo.change@FY2024",
@@ -203,7 +198,7 @@
     ],
     "operating_performance": [
      {
-      "text": "Passengers rose by {{passengers.change@FY2024}} to {{passengers@FY2024}}, but traffic growth of {{traffic_growth@FY2024}} was below the peer median of {{traffic_growth.peer_median@FY2024}} and down by {{traffic_growth.change@FY2024}} on the prior year.",
+      "text": "Passengers rose by {{passengers.change@FY2024}} to {{passengers@FY2024}}, but traffic growth of {{traffic_growth@FY2024}} was well below the {{traffic_growth.change@FY2024}} slower than in FY2023.",
       "facts": [
        {
         "id": "passengers.change@FY2024",
@@ -219,13 +214,10 @@
        {
         "id": "traffic_growth@FY2024",
         "claims": [
-         "below_peers",
-         "worse"
+         "down",
+         "worse",
+         "below_peers"
         ]
-       },
-       {
-        "id": "traffic_growth.peer_median@FY2024",
-        "claims": []
        },
        {
         "id": "traffic_growth.change@FY2024",
@@ -237,7 +229,7 @@
       ]
      },
      {
-      "text": "Aeronautical revenue per passenger increased by {{aero_revenue_per_passenger.change@FY2024}} to {{aero_revenue_per_passenger@FY2024}}, with airport charges temporarily adjusted by average inflation under the amended airport charges act.",
+      "text": "Aeronautical revenue per passenger increased by {{aero_revenue_per_passenger.change@FY2024}} to {{aero_revenue_per_passenger@FY2024}}, helped by the temporary inflation-linked adjustment of airport charges.",
       "facts": [
        {
         "id": "aero_revenue_per_passenger.change@FY2024",
@@ -286,14 +278,14 @@
       ]
      },
      {
-      "text": "Cash liquidity of {{cash_liquidity@FY2024}} covers total debt of {{total_debt@FY2024}} many times over, and the group repaid its interest-bearing financial liabilities in full during the year.",
+      "text": "With total debt of {{total_debt@FY2024}} against that cash, the group holds net cash of {{net_cash@FY2024}}, and the repayment of interest-bearing liabilities has greatly reduced its exposure to interest rate changes.",
       "facts": [
        {
-        "id": "cash_liquidity@FY2024",
+        "id": "total_debt@FY2024",
         "claims": []
        },
        {
-        "id": "total_debt@FY2024",
+        "id": "net_cash@FY2024",
         "claims": []
        },
        {
@@ -314,7 +306,7 @@
     ],
     "peer_positioning": [
      {
-      "text": "Flughafen Wien has the lowest net leverage of the airport group ({{net_leverage.peer_rank@FY2024}}), against a peer median of {{net_leverage.peer_median@FY2024}}, and the lowest gross leverage ({{gross_leverage.peer_rank@FY2024}}).",
+      "text": "Flughafen Wien has the lowest net leverage of the airport group ({{net_leverage.peer_rank@FY2024}}), at {{net_leverage@FY2024}} against a peer median of {{net_leverage.peer_median@FY2024}}, and also ranks first on gross leverage.",
       "facts": [
        {
         "id": "net_leverage.peer_rank@FY2024",
@@ -323,8 +315,14 @@
         ]
        },
        {
-        "id": "net_leverage.peer_median@FY2024",
+        "id": "net_leverage@FY2024",
         "claims": []
+       },
+       {
+        "id": "net_leverage.peer_median@FY2024",
+        "claims": [
+         "below_peers"
+        ]
        },
        {
         "id": "gross_leverage.peer_rank@FY2024",
@@ -335,7 +333,7 @@
       ]
      },
      {
-      "text": "Cash liquidity to revenue is the strongest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2024}}), well above the peer median of {{cash_liquidity_to_revenue.peer_median@FY2024}}.",
+      "text": "Cash liquidity to revenue is the strongest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2024}}), at {{cash_liquidity_to_revenue@FY2024}} against a median of {{cash_liquidity_to_revenue.peer_median@FY2024}}.",
       "facts": [
        {
         "id": "cash_liquidity_to_revenue.peer_rank@FY2024",
@@ -344,18 +342,30 @@
         ]
        },
        {
-        "id": "cash_liquidity_to_revenue.peer_median@FY2024",
+        "id": "cash_liquidity_to_revenue@FY2024",
         "claims": []
+       },
+       {
+        "id": "cash_liquidity_to_revenue.peer_median@FY2024",
+        "claims": [
+         "above_peers"
+        ]
        }
       ]
      },
      {
-      "text": "The EBITDA margin sits in the middle of the group, and capex intensity is in line with the peer median of {{capex_intensity.peer_median@FY2024}}.",
+      "text": "The group sits in the middle of the peer group on EBITDA margin and capex intensity, while traffic growth of {{traffic_growth@FY2024}} is the weakest of the group ({{traffic_growth.peer_rank@FY2024}}).",
       "facts": [
        {
-        "id": "capex_intensity.peer_median@FY2024",
+        "id": "traffic_growth@FY2024",
         "claims": [
-         "in_line_with_peers"
+         "below_peers"
+        ]
+       },
+       {
+        "id": "traffic_growth.peer_rank@FY2024",
+        "claims": [
+         "worst_in_group"
         ]
        }
       ]
@@ -384,10 +394,6 @@
        },
        {
         "id": "capex_intensity@FY2024",
-        "claims": []
-       },
-       {
-        "id": "capex_intensity.peer_median@FY2024",
         "claims": [
          "in_line_with_peers"
         ]
@@ -395,13 +401,12 @@
       ]
      },
      {
-      "text": "Traffic: growth of {{traffic_growth@FY2024}} is below the peer median of {{traffic_growth.peer_median@FY2024}} and the weakest of the group ({{traffic_growth.peer_rank@FY2024}}), which limits the operating leverage behind the earnings base.",
+      "text": "Traffic: growth of {{traffic_growth@FY2024}} is below the peer median of {{traffic_growth.peer_median@FY2024}} and the weakest of the group ({{traffic_growth.peer_rank@FY2024}}).",
       "facts": [
        {
         "id": "traffic_growth@FY2024",
         "claims": [
-         "below_peers",
-         "worse"
+         "below_peers"
         ]
        },
        {
@@ -417,8 +422,12 @@
       ]
      },
      {
-      "text": "Regulation: airport charges are temporarily adjusted by average inflation, a rule that ends at the end of 2026, so revenue per passenger depends on the tariff formula that follows.",
+      "text": "Regulation: airport charges are temporarily adjusted by average inflation, a rule that ends at the end of 2026, so aeronautical revenue per passenger of {{aero_revenue_per_passenger@FY2024}} depends on the tariff formula that follows.",
       "facts": [
+       {
+        "id": "aero_revenue_per_passenger@FY2024",
+        "claims": []
+       },
        {
         "id": "event:regulation_and_tariffs",
         "claims": []
@@ -426,10 +435,10 @@
       ]
      },
      {
-      "text": "Third runway: complaints were filed against the extension of the construction completion deadline and the single-party procedure, without suspensive effect.",
+      "text": "Litigation: disputes with the Maltese government and employee claims concerning Malta International Airport remain outstanding, which the group considers unfounded.",
       "facts": [
        {
-        "id": "event:regulation_and_tariffs-2",
+        "id": "event:other",
         "claims": []
        }
       ]
@@ -438,8 +447,11 @@
    },
    "errors": [
     "[rule style] liquidity_funding, sentence 2: total_debt@FY2024 is already given in credit_metrics, sentence 2: give each figure in one body section only (the snapshot and watch items may restate it)",
-    "[rule 4] peer_positioning, sentence 2: 'above' needs a 'up' or 'above_peers' claim on a figure in the same clause",
-    "[rule 5] watch_items, sentence 1: capex_intensity.peer_median@FY2024 is listed in the form but not used in the text",
+    "[rule style] liquidity_funding, sentence 2: net_cash@FY2024 is already given in credit_metrics, sentence 2: give each figure in one body section only (the snapshot and watch items may restate it)",
+    "[rule 1] peer_positioning, sentence 1: word that states a number: 'first'",
+    "[rule 5] peer_positioning, sentence 1: gross_leverage.peer_rank@FY2024 is listed in the form but not used in the text",
+    "[rule style] peer_positioning, sentence 2: cash_liquidity_to_revenue@FY2024 is already given in liquidity_funding, sentence 1: give each figure in one body section only (the snapshot and watch items may restate it)",
+    "[rule style] peer_positioning, sentence 3: traffic_growth@FY2024 is already given in operating_performance, sentence 1: give each figure in one body section only (the snapshot and watch items may restate it)",
     "[rule 4] watch_items, sentence 2: 'growth' needs a 'up' claim on a figure in the same clause"
    ],
    "error": null
@@ -451,7 +463,7 @@
     "peer_positioning",
     "watch_items"
    ],
-   "request_hash": "fb9a8ba67caa4c42c7f80bc898034226165eeaa35cb49b6c4d9e51cd1f8051f1",
+   "request_hash": "ac9798931341c47553ac76eda90cbdaa66eb0d9e6978a912cdbe5b65c4c87baa",
    "model": "deepseek-flash",
    "draft": {
     "liquidity_funding": [
@@ -483,12 +495,8 @@
       ]
      },
      {
-      "text": "Cash liquidity of {{cash_liquidity@FY2024}} covers the group's debt many times over, and the group repaid its interest-bearing financial liabilities in full during the year.",
+      "text": "The complete repayment of interest-bearing financial liabilities has greatly reduced the potential effects of interest rate changes on the group.",
       "facts": [
-       {
-        "id": "cash_liquidity@FY2024",
-        "claims": []
-       },
        {
         "id": "event:funding_and_rating",
         "claims": []
@@ -507,7 +515,7 @@
     ],
     "peer_positioning": [
      {
-      "text": "Flughafen Wien has the lowest net leverage of the airport group ({{net_leverage.peer_rank@FY2024}}), against a peer median of {{net_leverage.peer_median@FY2024}}, and the lowest gross leverage ({{gross_leverage.peer_rank@FY2024}}).",
+      "text": "Flughafen Wien has the lowest net leverage of the airport group ({{net_leverage.peer_rank@FY2024}}), at {{net_leverage@FY2024}} against a peer median of {{net_leverage.peer_median@FY2024}}, and the lowest gross leverage ({{gross_leverage.peer_rank@FY2024}}).",
       "facts": [
        {
         "id": "net_leverage.peer_rank@FY2024",
@@ -516,8 +524,14 @@
         ]
        },
        {
-        "id": "net_leverage.peer_median@FY2024",
+        "id": "net_leverage@FY2024",
         "claims": []
+       },
+       {
+        "id": "net_leverage.peer_median@FY2024",
+        "claims": [
+         "below_peers"
+        ]
        },
        {
         "id": "gross_leverage.peer_rank@FY2024",
@@ -528,7 +542,7 @@
       ]
      },
      {
-      "text": "Cash liquidity to revenue is the strongest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2024}}), above the peer median of {{cash_liquidity_to_revenue.peer_median@FY2024}}.",
+      "text": "Cash liquidity to revenue is the strongest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2024}}), against a median of {{cash_liquidity_to_revenue.peer_median@FY2024}}.",
       "facts": [
        {
         "id": "cash_liquidity_to_revenue.peer_rank@FY2024",
@@ -545,12 +559,12 @@
       ]
      },
      {
-      "text": "The EBITDA margin sits in the middle of the group, and capex intensity is in line with the peer median of {{capex_intensity.peer_median@FY2024}}.",
+      "text": "The group sits in the middle of the peer group on EBITDA margin and capex intensity, while traffic growth is the weakest of the group ({{traffic_growth.peer_rank@FY2024}}).",
       "facts": [
        {
-        "id": "capex_intensity.peer_median@FY2024",
+        "id": "traffic_growth.peer_rank@FY2024",
         "claims": [
-         "in_line_with_peers"
+         "worst_in_group"
         ]
        }
       ]
@@ -558,7 +572,7 @@
     ],
     "watch_items": [
      {
-      "text": "Cash generation: free cash flow fell by {{fcf.change@FY2024}} to {{fcf@FY2024}} as capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}, in line with the peer median of {{capex_intensity.peer_median@FY2024}}.",
+      "text": "Cash generation: free cash flow fell by {{fcf.change@FY2024}} to {{fcf@FY2024}} as capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}, in line with the peer median.",
       "facts": [
        {
         "id": "fcf.change@FY2024",
@@ -579,10 +593,6 @@
        },
        {
         "id": "capex_intensity@FY2024",
-        "claims": []
-       },
-       {
-        "id": "capex_intensity.peer_median@FY2024",
         "claims": [
          "in_line_with_peers"
         ]
@@ -590,13 +600,12 @@
       ]
      },
      {
-      "text": "Traffic: traffic growth of {{traffic_growth@FY2024}} is below the peer median of {{traffic_growth.peer_median@FY2024}} and the weakest of the group ({{traffic_growth.peer_rank@FY2024}}), which limits the operating leverage behind the earnings base.",
+      "text": "Traffic: traffic growth of {{traffic_growth@FY2024}} is below the peer median of {{traffic_growth.peer_median@FY2024}} and the weakest of the group ({{traffic_growth.peer_rank@FY2024}}).",
       "facts": [
        {
         "id": "traffic_growth@FY2024",
         "claims": [
-         "below_peers",
-         "worse"
+         "below_peers"
         ]
        },
        {
@@ -612,8 +621,12 @@
       ]
      },
      {
-      "text": "Regulation: airport charges are temporarily adjusted by average inflation, a rule that ends at the end of 2026, so revenue per passenger depends on the tariff formula that follows.",
+      "text": "Regulation: airport charges are temporarily adjusted by average inflation, a rule that ends at the end of 2026, so aeronautical revenue per passenger of {{aero_revenue_per_passenger@FY2024}} depends on the tariff formula that follows.",
       "facts": [
+       {
+        "id": "aero_revenue_per_passenger@FY2024",
+        "claims": []
+       },
        {
         "id": "event:regulation_and_tariffs",
         "claims": []
@@ -621,10 +634,10 @@
       ]
      },
      {
-      "text": "Third runway: complaints were filed against the extension of the construction completion deadline and the single-party procedure, without suspensive effect.",
+      "text": "Litigation: disputes with the Maltese government and employee claims concerning Malta International Airport remain outstanding, which the group considers unfounded.",
       "facts": [
        {
-        "id": "event:regulation_and_tariffs-2",
+        "id": "event:other",
         "claims": []
        }
       ]

@@ -245,3 +245,22 @@ def test_ratios_to_debt_left_out_when_debt_is_tiny():
 
 def test_median_company_is_flagged(sheet):
     assert "middle of the group" in sheet.items["net_leverage.peer_median@FY2025"].note
+
+
+def test_the_same_figure_under_two_names_is_offered_once():
+    extra = [fig("afkl", "cash_like", 2024, "6900000000"),
+             fig("afkl", "cash_like", 2025, "6950000000"),
+             fig("afkl", "cash_liquidity", 2024, "6900000000"),
+             fig("afkl", "cash_liquidity", 2025, "6950000000")]  # fmt: skip
+    sheet = build(ISSUERS["afkl"], 2025, universe(extra))
+    assert "cash_like@FY2025" in sheet.items and "cash_like.change@FY2025" in sheet.items
+    assert "cash_liquidity@FY2025" not in sheet.items
+    assert "cash_like@FY2025" in sheet.unavailable["cash_liquidity@FY2025"]
+    assert "cash_liquidity.change@FY2025" not in sheet.items
+
+
+def test_different_figures_keep_both_names():
+    extra = [fig("afkl", "cash_like", 2025, "6950000000"),
+             fig("afkl", "cash_liquidity", 2025, "9000000000")]  # fmt: skip
+    sheet = build(ISSUERS["afkl"], 2025, universe(extra))
+    assert "cash_liquidity@FY2025" in sheet.items

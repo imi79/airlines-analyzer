@@ -75,9 +75,6 @@ Company type: airline. Reporting currency: NOK. Peer group: Low-cost airlines (e
 | cash_like@FY2025 | Cash and cash-like investments, FY2025 | NOK 10.1bn | down, worse vs prior year |
 | cash_like@FY2024 | Cash and cash-like investments, FY2024 | NOK 10.9bn |  |
 | cash_like.change@FY2025 | change in Cash and cash-like investments, FY2024 to FY2025 | 7.5% | down, worse vs prior year; printed without a sign: say the direction in words |
-| cash_liquidity@FY2025 | Cash liquidity (partial), FY2025 | NOK 10.1bn | down, worse vs prior year |
-| cash_liquidity@FY2024 | Cash liquidity (partial), FY2024 | NOK 10.9bn |  |
-| cash_liquidity.change@FY2025 | change in Cash liquidity (partial), FY2024 to FY2025 | 7.5% | down, worse vs prior year; printed without a sign: say the direction in words |
 | advance_ticket_cover@FY2025 | Advance ticket cover, FY2025 | 43.7% | up, worse vs prior year; company below peer median, better |
 | advance_ticket_cover@FY2024 | Advance ticket cover, FY2024 | 38.1% |  |
 | advance_ticket_cover.change@FY2025 | change in Advance ticket cover, FY2024 to FY2025 | 5.6 points | up, worse vs prior year; printed without a sign: say the direction in words |
@@ -123,8 +120,8 @@ write no number about it, and no direction word unless a figure of the sentence 
 
 | id | event | what happened | quote from the report |
 | --- | --- | --- | --- |
-| event:capital_returns | Initial dividend paid to shareholders | The company paid an initial dividend to its shareholders in August. | (page 6): "In 2025, the company paid its first-ever dividend, distributing NOK 0.90 per share to its nearly 75,000 shareholders in August." |
-| event:fleet_and_engines | Purchase of previously leased aircraft | Norwegian acquired previously leased Boeing aircraft, which contributed accounting gains and recurring cost savings. | (page 3): "Norwegian's acquisition of 13 previously leased Boeing 737-800 aircraft contributed to accounting gains in 2025 and recurring cost savings, further strengthening our financial position." |
+| event:capital_returns | Dividend paid to shareholders | The company paid a dividend to its shareholders in August. | (page 6): "In 2025, the company paid its first-ever dividend, distributing NOK 0.90 per share to its nearly 75,000 shareholders in August." |
+| event:fleet_and_engines | Purchase of previously leased aircraft | Norwegian acquired previously leased Boeing 737-800 aircraft, which contributed accounting gains and recurring cost savings. | (page 3): "Norwegian's acquisition of 13 previously leased Boeing 737-800 aircraft contributed to accounting gains in 2025 and recurring cost savings, further strengthening our financial position." |
 | event:fleet_and_engines-2 | Option exercised for additional 737 MAX 8 aircraft | The company exercised its option to purchase additional Boeing 737 MAX 8 aircraft on top of its previous order. | (page 3): "We also exercised our option to purchase 30 additional Boeing 737 MAX 8 aircraft, adding to the previous 50 aircraft order, reinforcing our commitment to a modern and fuel-efficient fleet." |
 | event:funding_and_rating | Redemption and buy-back of convertible bonds | Norwegian announced it would redeem all outstanding New Capital Perpetual Bonds and launched an offer to repurchase part of them, after which the bonds were redeemed in full. | (page 20): "During the second quarter of 2025, Norwegian announced that it would exercise its call option to redeem all outstanding New Capital Perpetual Bonds bonds, totalling NOK 1,501 million, and that the company would launch an offer to repurchase up to 50 percent of these bonds. Following these transactions, the convertible bonds were redeemed in full." |
 | event:labour | New collective bargaining agreements with unions | The company negotiated several new collective bargaining agreements with its unions covering pilots, cabin crew and technicians. | (page 4): "During the year, we successfully negotiated several new collective bargaining agreements with our unions, securing fair conditions for our pilots, cabin crew, and technicians across the group." |
@@ -164,3 +161,6 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - undrawn_facilities@FY2024: no figure for this year
 - net_cash@FY2025: the company has net debt, not net cash
 - net_cash@FY2024: the company has net debt, not net cash
+- cash_liquidity@FY2025: the same figure as cash_like@FY2025: use that id
+- cash_liquidity.change@FY2025: the same figure as cash_like.change@FY2025: use that id
+- cash_liquidity@FY2024: the same figure as cash_like@FY2024: use that id

@@ -1,0 +1,68 @@
+{
+ "answer": {
+  "sections": {
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "net_leverage.peer_rank@FY2025"
+      }
+     ],
+     "text": "Air France-KLM sits in the middle of the network group on EBITDA margin, net leverage, gross leverage, interest coverage and FFO to debt, ranking {{net_leverage.peer_rank@FY2025}} on net leverage."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "advance_ticket_cover.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "advance_ticket_cover.peer_median@FY2025"
+      }
+     ],
+     "text": "Its strongest relative position is advance ticket cover, the lowest of the group ({{advance_ticket_cover.peer_rank@FY2025}}), below the peer median of {{advance_ticket_cover.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "fcf_to_debt.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "cash_liquidity_to_revenue.peer_rank@FY2025"
+      }
+     ],
+     "text": "It is weakest on cash generation and liquidity, with FCF to debt the lowest of the group ({{fcf_to_debt.peer_rank@FY2025}}) and cash liquidity to revenue the lowest as well ({{cash_liquidity_to_revenue.peer_rank@FY2025}})."
+    }
+   ]
+  }
+ },
+ "label": "afkl_FY2025 attempt 3",
+ "recorded_at": "2026-11-09T18:09:49+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "912935195ee0bd77beb3be929dc61a81e02b45a3ecb0996f89dfe23efafa47a2",
+  "user_sha256": "b95a69483a2ddf39ed51cf248e6292b665fafa6277b67d1b8d533e8e59c5f317"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 12921,
+  "output_tokens": 369
+ }
+}

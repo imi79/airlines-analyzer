@@ -1,0 +1,205 @@
+{
+ "answer": {
+  "sections": {
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "passengers@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "passengers.change@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "fleet@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fleet_age@FY2025"
+      }
+     ],
+     "text": "Passengers were broadly unchanged at {{passengers@FY2025}}, a move of {{passengers.change@FY2025}}, with the fleet stable at {{fleet@FY2025}} aircraft and an average age of {{fleet_age@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "fuel_share_of_costs.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fuel_share_of_costs@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "fuel_share_of_costs.peer_median@FY2025"
+      }
+     ],
+     "text": "The fuel share of costs fell by {{fuel_share_of_costs.change@FY2025}} to {{fuel_share_of_costs@FY2025}}, above the peer median of {{fuel_share_of_costs.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:costs"
+      }
+     ],
+     "text": "Costs related to environmental regulation increased significantly during the year, with greater use of sustainable aviation fuel and changes to the EU Emissions Trading System weighing on the result."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines"
+      }
+     ],
+     "text": "During the year Finnair purchased leased A321 aircraft, and all aircraft were in operative use at the balance sheet date."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda_margin.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "ebitda_margin.peer_median@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:labour"
+      }
+     ],
+     "text": "Earnings: the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, below the peer median of {{ebitda_margin.peer_median@FY2025}}, with industrial action in the first half weighing on the result."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ffo_to_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "ffo_to_debt.peer_median@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_to_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt@FY2025"
+      }
+     ],
+     "text": "Cash generation: FFO to debt fell by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}, below the peer median of {{ffo_to_debt.peer_median@FY2025}}, and FCF to debt dropped by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "gross_leverage.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "gross_leverage.peer_median@FY2025"
+      },
+      {
+       "claims": [
+        "better"
+       ],
+       "id": "net_leverage@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "net_debt.change@FY2025"
+      }
+     ],
+     "text": "Leverage: gross leverage rose by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}}, above the peer median of {{gross_leverage.peer_median@FY2025}}, while net leverage improved to {{net_leverage@FY2025}} as net debt was reduced by {{net_debt.change@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "fuel_share_of_costs@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fuel_share_of_costs.peer_median@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:capital_returns"
+      }
+     ],
+     "text": "Costs and distributions: the fuel share of costs of {{fuel_share_of_costs@FY2025}} is above the peer median of {{fuel_share_of_costs.peer_median@FY2025}}, and the Board proposes a return of capital to shareholders."
+    }
+   ]
+  }
+ },
+ "label": "finnair_FY2025 attempt 3",
+ "recorded_at": "2026-11-09T18:10:39+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "6adf3654168ad92a5d74865ea0c312a605f7549fbc07fb3bf6ebfc92ea543025",
+  "user_sha256": "92f3ea88b3c971344c8a0477769ecb35827c549e309b96bb9c28d8ea60653541"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14252,
+  "output_tokens": 1123
+ }
+}

@@ -1,0 +1,196 @@
+{
+ "answer": {
+  "sections": {
+   "credit_metrics": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ebitda.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "operating_profit.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "operating_profit@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:one_offs"
+      }
+     ],
+     "text": "EBITDA increased by {{ebitda.change@FY2024}} to {{ebitda@FY2024}}, but operating profit fell by {{operating_profit.change@FY2024}} to {{operating_profit@FY2024}} as depreciation rose and impairment tests on equity-accounted holdings led to a charge."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "total_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "total_debt@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "gross_leverage@FY2024"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "net_leverage@FY2024"
+      }
+     ],
+     "text": "Total debt rose by {{total_debt.change@FY2024}} to {{total_debt@FY2024}}, so gross leverage fell only to {{gross_leverage@FY2024}} and net leverage held at {{net_leverage@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "interest_coverage@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "interest_coverage.change@FY2024"
+      }
+     ],
+     "text": "Interest coverage improved to {{interest_coverage@FY2024}}, up {{interest_coverage.change@FY2024}} on the prior year."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "ffo@FY2024"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "ffo_to_debt@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_to_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt@FY2024"
+      }
+     ],
+     "text": "FFO was stable at {{ffo@FY2024}}, so FFO to debt held at {{ffo_to_debt@FY2024}}, while FCF to debt fell by {{fcf_to_debt.change@FY2024}} to {{fcf_to_debt@FY2024}}."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@FY2024"
+      }
+     ],
+     "text": "Groupe ADP has the weakest EBITDA margin of the airport peers ({{ebitda_margin.peer_rank@FY2024}}), against a median of {{ebitda_margin.peer_median@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "net_leverage.peer_median@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_median@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "gross_leverage.peer_rank@FY2024"
+      }
+     ],
+     "text": "Leverage is the weakest in the group, with net leverage against a median of {{net_leverage.peer_median@FY2024}} ({{net_leverage.peer_rank@FY2024}}) and gross leverage against {{gross_leverage.peer_median@FY2024}} ({{gross_leverage.peer_rank@FY2024}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "ffo_to_debt.peer_median@FY2024"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "fcf_to_debt.peer_median@FY2024"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      }
+     ],
+     "text": "Cash generation also lags, with FFO to debt and FCF to debt below peer medians of {{ffo_to_debt.peer_median@FY2024}} and {{fcf_to_debt.peer_median@FY2024}}, while cash liquidity to revenue of {{cash_liquidity_to_revenue@FY2024}} sits in the middle of the group."
+    }
+   ]
+  }
+ },
+ "label": "adp_FY2024 attempt 3",
+ "recorded_at": "2026-11-09T18:14:39+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "b39b853619f2f422733b2655a83cbfef29bf6fccfa3b0ddd5640b75c3b069104",
+  "user_sha256": "8382fe40ea6a45c47e8fdbbe27441c4579628d549458e26dd99cf2a899c6dc3d"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 13124,
+  "output_tokens": 1069
+ }
+}

@@ -1,0 +1,137 @@
+{
+ "answer": {
+  "sections": {
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "passengers.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "passengers@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:capacity_and_network"
+      }
+     ],
+     "text": "Passengers rose by {{passengers.change@FY2025}} to {{passengers@FY2025}}, supported by a summer programme with a large number of routes including new leisure destinations."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "passengers.change@FY2025"
+      }
+     ],
+     "text": "Revenue grew by {{revenue.change@FY2025}} to {{revenue@FY2025}}, faster than the {{passengers.change@FY2025}} increase in passenger volumes, so revenue per passenger rose."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat",
+        "in_line_with_peers"
+       ],
+       "id": "fuel_share_of_costs@FY2025"
+      }
+     ],
+     "text": "Fuel made up {{fuel_share_of_costs@FY2025}} of costs, broadly unchanged on the prior year, in line with the peer median."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines"
+      },
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines-2"
+      }
+     ],
+     "text": "The company acquired previously leased Boeing 737-800 aircraft and exercised its option for additional 737 MAX 8 aircraft, which it says supports recurring cost savings and a more fuel-efficient fleet."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "net_leverage.peer_rank@FY2025"
+      }
+     ],
+     "text": "Norwegian sits in the middle of the low-cost group on EBITDA margin, net leverage, gross leverage, interest coverage, FFO to debt and FCF to debt, ranking {{net_leverage.peer_rank@FY2025}} on net leverage."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "advance_ticket_cover.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "advance_ticket_cover.peer_median@FY2025"
+      }
+     ],
+     "text": "Its strongest relative position is advance ticket cover, the lowest of the group ({{advance_ticket_cover.peer_rank@FY2025}}), below the peer median of {{advance_ticket_cover.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "cash_liquidity_to_revenue.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "capex_intensity.peer_median@FY2025"
+      }
+     ],
+     "text": "The weakest is cash liquidity to revenue, the lowest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2025}}), while capex intensity is above the peer median of {{capex_intensity.peer_median@FY2025}}."
+    }
+   ]
+  }
+ },
+ "label": "norwegian_FY2025 attempt 3",
+ "recorded_at": "2026-11-09T18:12:30+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "4d027883e24d0966ba61b18ca4c38a022ddb4c19cc52eb2016bd6dfbff07dcde",
+  "user_sha256": "22879f2fdc65c4f632e3a40e20a21f42dfb9ad0c82b4b8b7be1894a2c90c6aca"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 13748,
+  "output_tokens": 737
+ }
+}

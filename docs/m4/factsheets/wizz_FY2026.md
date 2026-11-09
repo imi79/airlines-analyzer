@@ -102,9 +102,6 @@ Company type: airline. Reporting currency: EUR. Peer group: Low-cost airlines (e
 | cash_like@FY2026 | Cash and cash-like investments, FY2026 | EUR 2.0bn | up, better vs prior year |
 | cash_like@FY2025 | Cash and cash-like investments, FY2025 | EUR 1.7bn |  |
 | cash_like.change@FY2026 | change in Cash and cash-like investments, FY2025 to FY2026 | 12.4% | up, better vs prior year; printed without a sign: say the direction in words |
-| cash_liquidity@FY2026 | Cash liquidity (partial), FY2026 | EUR 2.0bn | up, better vs prior year |
-| cash_liquidity@FY2025 | Cash liquidity (partial), FY2025 | EUR 1.7bn |  |
-| cash_liquidity.change@FY2026 | change in Cash liquidity (partial), FY2025 to FY2026 | 12.4% | up, better vs prior year; printed without a sign: say the direction in words |
 | advance_ticket_cover@FY2026 | Advance ticket cover, FY2026 | 60.5% | up, worse vs prior year; company above peer median, worse |
 | advance_ticket_cover@FY2025 | Advance ticket cover, FY2025 | 58.4% |  |
 | advance_ticket_cover.change@FY2026 | change in Advance ticket cover, FY2025 to FY2026 | 2.1 points | up, worse vs prior year; printed without a sign: say the direction in words |
@@ -175,3 +172,6 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - undrawn_facilities@FY2025: no figure for this year
 - net_cash@FY2026: the company has net debt, not net cash
 - net_cash@FY2025: the company has net debt, not net cash
+- cash_liquidity@FY2026: the same figure as cash_like@FY2026: use that id
+- cash_liquidity.change@FY2026: the same figure as cash_like.change@FY2026: use that id
+- cash_liquidity@FY2025: the same figure as cash_like@FY2025: use that id

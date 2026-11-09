@@ -171,6 +171,22 @@ What still separates 3.70 from 4, in order of ease:
 **Your decision:** close M4 at 3.70 on the safety result, as for the extraction goal, or one
 more round with fixes 1 and 2 (about 800,000 tokens) and, ideally, the review of the queue.
 
+## Round 4: fixes 1 and 2 (decision 0018)
+
+Each figure is now offered under one name (no more "cash fell to X, so cash liquidity fell to
+X"), and "Boeing 737-800" is an allowed name (Norwegian's aircraft purchases stay in its note).
+Gate 2 still passes (17 in a row) with 8 sentences removed instead of 16. **The score is
+3.75**: Air France-KLM, Finnair and Wizz Air at 4.0, ADP and Aena up, but IAG down (its traffic
+sentence was removed this time). Each redraft is a new throw of the dice, and the strict
+direction rule removes the AI's explanations whenever they rest on something outside the
+fact sheet, such as depreciation.
+
+**Your decision:** close M4 at 3.75 on the safety result, or keep going. Further rounds are
+unlikely to move much without either (a) your review of the 53 queued figures, or (b) adding
+a few more statement lines to the fact sheet (depreciation, net financing costs) so the AI can
+state the causes it currently has removed. (b) is a small change; I would recommend it if you
+want a last attempt at 4.
+
 ## How to rerun
 
 ```bash

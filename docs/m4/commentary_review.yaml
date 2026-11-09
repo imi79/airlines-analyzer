@@ -9,113 +9,102 @@
 # A score counts only for the exact draft scored: `draft` is its fact sheet fingerprint (first
 # 12 characters) and `prompt_version` the instructions it was written with.
 #
-# Round 3 (2026-11-09): prompt draft-v6, Vienna's deposits approved by Imane. Rounds 1 (2.93)
-# and 2 (3.50) are kept in decision 0018.
+# Round 4 (2026-11-09): prompt draft-v6, one name per figure, 737-800 allowed. Rounds 1 to 3
+# (2.93, 3.50, 3.70) are kept in decision 0018.
 
-scored_by: Claude, at Imane's request (2026-11-09, round 3)
+scored_by: Claude, at Imane's request (2026-11-09, round 4)
 drafts:
   afkl_FY2025:
-    draft: 0723bc17f2df
+    draft: 5aadcdcb60e7
     prompt_version: draft-v6
     accuracy: 4
     relevance: 4
-    concision: 3
+    concision: 4
     credit_insight: 4
-    comment: >-
-      Accurate; cash liquidity is now called that, not "liquidity". Funding events right
-      (EMTN bonds, hybrids redeemed, credit line to 2029). Revenue and margin still repeated in
-      operating performance; the undrawn lines wait for Imane's review.
+    comment: 'Accurate and tight: leverage fell ''with earnings doing the work'' while net debt rose;
+      funding events; cash liquidity named as such. The undrawn lines still wait for review.'
   iag_FY2025:
-    draft: 1bbd381c6a23
+    draft: 8cce7f5e65f3
     prompt_version: draft-v6
     accuracy: 4
-    relevance: 4
-    concision: 4
+    relevance: 3
+    concision: 3
     credit_insight: 4
-    comment: >-
-      Lower cash tied to the return of cash to shareholders; engine problems and the ATC
-      strike costs in the right places; a three-sentence peer section that reads well.
+    comment: Accurate, with shareholder returns and disruption in the snapshot. The capacity and
+      traffic sentence was removed (it called RPK 'broadly unchanged ... up'), so operating performance
+      has no traffic; the peer section still lists ranks.
   finnair_FY2025:
-    draft: 756ae089497b
+    draft: d91fc2fa3471
     prompt_version: draft-v6
     accuracy: 4
     relevance: 4
     concision: 4
     credit_insight: 4
-    comment: >-
-      The year is told: strikes, weaker earnings, lower net debt, a new bond. Two sentences on
-      regulation costs removed by the verifier; "3rd of 3 and 3rd of 3" still listed once.
+    comment: 'Strikes, weaker earnings, lower net debt, the bond, the proposed capital return: the
+      year is told, concisely.'
   easyjet_FY2025:
-    draft: a5a83a89e166
+    draft: 56f482cae4b2
     prompt_version: draft-v6
     accuracy: 4
     relevance: 4
     concision: 3
     credit_insight: 4
-    comment: >-
-      Net cash of 602m against 181m, ratings, funding reshaped; profitability rightly the
-      point to watch. The first peer sentence still lists four ranks; easyJet holidays absent.
+    comment: Net cash, ratings, funding reshaped, margin gap to peers. Peer sentence lists five ranks;
+      one watch item (interest coverage and fleet age) is weak.
   adp_FY2025:
-    draft: 64c44771e649
+    draft: 5f53479252d0
     prompt_version: draft-v6
     accuracy: 3
     relevance: 3
-    concision: 3
+    concision: 4
     credit_insight: 4
-    comment: >-
-      Good link between cash generation and the investment programme, depreciation correctly
-      placed. Still a tariff sentence with a detail its quote does not hold, cash given twice
-      in one sentence, and minor events (Turkish tax dispute).
+    comment: Duplicate cash gone, depreciation correctly placed. Two sentences still carry details
+      their quotes do not hold (Ankara investment terms, tariff consultation); events remain minor
+      next to the Paris story.
   aena_FY2025:
-    draft: 7cd238123854
+    draft: 29a759dcc1f8
     prompt_version: draft-v6
     accuracy: 4
-    relevance: 3
+    relevance: 4
     concision: 4
     credit_insight: 3
-    comment: >-
-      Accurate and concise; Moody's upgrade and the Brazil debentures. Traffic only for FY2024
-      (FY2025 passengers wait for review); "limited headroom" at 2.00x gross leverage
-      overstates the point.
+    comment: 'Concise: Moody''s upgrade, Luton and Brazil refinancing, the 2026 tariff decision as
+      a watch item. Traffic only for FY2024 (FY2025 passengers wait for review).'
   vie_FY2025:
-    draft: 443b1098442d
+    draft: efe2c9281df2
     prompt_version: draft-v6
     accuracy: 4
     relevance: 4
     concision: 3
     credit_insight: 4
-    comment: >-
-      Now right on liquidity: net cash of 414m, cash liquidity the strongest of the group,
-      investment-heavy year eating free cash flow; the third runway write-off explained. Cash
-      and cash liquidity given twice in one sentence (the same figure under two names).
+    comment: Net cash of 414m against 512m, as the company reports, spent on the investment programme;
+      third runway write-off and Get2 deconsolidation. Traffic growth stated twice in one sentence.
   norwegian_FY2025:
-    draft: 0bf7d0477264
+    draft: a8bca9431028
     prompt_version: draft-v6
     accuracy: 4
-    relevance: 3
+    relevance: 4
     concision: 3
     credit_insight: 3
-    comment: >-
-      Accurate; perpetual bonds redeemed and first dividend. The sentence on buying leased
-      Boeing 737-800s (the reason for the capex jump) was removed because the verifier does not
-      know the name "737-800"; cash given twice; Widerøe absent.
+    comment: The 737-800 purchases (behind the capex jump) now stay; perpetual bonds and dividend.
+      The peer section lists six middle ranks; low advance ticket cover (a strength) is again a watch
+      item.
   wizz_FY2026:
-    draft: 88d9ba71e1c5
+    draft: 2d87de752355
     prompt_version: draft-v6
     accuracy: 4
     relevance: 4
     concision: 4
     credit_insight: 4
-    comment: >-
-      Leads with the GTF groundings, leverage as the point to watch, order book deferred,
-      Eurobond repaid; the interest-charge error is gone.
+    comment: 'GTF groundings lead, leverage the point to watch, ratings and Eurobond. The sentence
+      on depreciation (why operating profit fell while EBITDA rose) was removed: depreciation is
+      not a fact-sheet figure.'
   afkl_FY2024:
-    draft: 32d65e3643a3
+    draft: d79139566d3d
     prompt_version: draft-v6
     accuracy: 4
     relevance: 4
     concision: 3
     credit_insight: 4
-    comment: >-
-      Well told (Virgin payment, Orly provision, engine problems, SAS stake, bond tender). Cash
-      given twice; the peer section lists four "2nd of 3".
+    comment: Virgin payment, Orly provision, engine problems, SAS stake, bond tender. Peer sentence
+      compares four metrics with medians equal to its own values.

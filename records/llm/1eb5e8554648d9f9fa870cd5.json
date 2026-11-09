@@ -1,0 +1,284 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      }
+     ],
+     "text": "Cash and cash-like investments rose by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, lifting cash liquidity to revenue by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "net_cash.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_cash@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      }
+     ],
+     "text": "Net cash rose by {{net_cash.change@FY2024}} to {{net_cash@FY2024}}, with the group issuing euro-denominated guaranteed notes under its EMTN programme."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "contract_liabilities.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "advance_ticket_cover.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover@FY2024"
+      }
+     ],
+     "text": "Contract liabilities rose by {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}}, while advance ticket cover eased by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}."
+    }
+   ],
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "passengers.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "passengers@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ask.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ask@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "rpk.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "rpk@FY2024"
+      }
+     ],
+     "text": "Passengers rose by {{passengers.change@FY2024}} to {{passengers@FY2024}} and capacity by {{ask.change@FY2024}} to {{ask@FY2024}} available seat kilometres, with RPK up {{rpk.change@FY2024}} to {{rpk@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "load_factor@FY2024"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "passenger_yield@FY2024"
+      }
+     ],
+     "text": "The load factor was stable at {{load_factor@FY2024}} and passenger yield broadly unchanged at {{passenger_yield@FY2024}} per passenger kilometre."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "rask.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "rask@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "cask.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cask@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "cask_ex_fuel.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cask_ex_fuel@FY2024"
+      }
+     ],
+     "text": "RASK rose by {{rask.change@FY2024}} to {{rask@FY2024}}, while CASK increased by {{cask.change@FY2024}} to {{cask@FY2024}} and CASK ex-fuel by {{cask_ex_fuel.change@FY2024}} to {{cask_ex_fuel@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "fuel_share_of_costs.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fuel_share_of_costs@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "fleet.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fleet@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fleet_age@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines"
+      }
+     ],
+     "text": "The fuel share of costs eased by {{fuel_share_of_costs.change@FY2024}} to {{fuel_share_of_costs@FY2024}}, and the fleet grew by {{fleet.change@FY2024}} to {{fleet@FY2024}} aircraft with an average age of {{fleet_age@FY2024}}."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2024"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "interest_coverage.peer_rank@FY2024"
+      }
+     ],
+     "text": "easyJet has the lowest net leverage of the low-cost peer group ({{net_leverage.peer_rank@FY2024}}) and the strongest interest coverage ({{interest_coverage.peer_rank@FY2024}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ffo_to_debt.peer_rank@FY2024"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "cash_liquidity_to_revenue.peer_rank@FY2024"
+      }
+     ],
+     "text": "It also leads the group on FFO to debt ({{ffo_to_debt.peer_rank@FY2024}}) and cash liquidity to revenue ({{cash_liquidity_to_revenue.peer_rank@FY2024}}), while gross leverage and FCF to debt sit in the middle of the group."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "ebitda_margin@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@FY2024"
+      }
+     ],
+     "text": "The weakest position is profitability: the EBITDA margin of {{ebitda_margin@FY2024}} is the lowest of the group ({{ebitda_margin.peer_rank@FY2024}}), below the peer median of {{ebitda_margin.peer_median@FY2024}}."
+    }
+   ]
+  }
+ },
+ "label": "easyjet_FY2024 attempt 2",
+ "recorded_at": "2026-11-09T18:14:15+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "5651bced61d1f84ebae0c2195a808e292ff8a94bc8e39928bd6661a04bcc3d4a",
+  "user_sha256": "a79d9f64af48ebddd2b19f901df3c8b757d9a8cdd4ace465814acdff7d462e5a"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 15226,
+  "output_tokens": 1541
+ }
+}

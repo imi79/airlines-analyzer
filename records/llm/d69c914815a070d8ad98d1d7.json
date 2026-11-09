@@ -1,0 +1,89 @@
+{
+ "answer": {
+  "sections": {
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2024"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2024"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ffo_to_debt.peer_rank@FY2024"
+      }
+     ],
+     "text": "IAG leads the network airlines on EBITDA margin ({{ebitda_margin.peer_rank@FY2024}}), net leverage ({{net_leverage.peer_rank@FY2024}}) and FFO to debt ({{ffo_to_debt.peer_rank@FY2024}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "gross_leverage.peer_median@FY2024"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "interest_coverage.peer_median@FY2024"
+      }
+     ],
+     "text": "Gross leverage is below the peer median of {{gross_leverage.peer_median@FY2024}}, and interest coverage exceeds the median of {{interest_coverage.peer_median@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "advance_ticket_cover.peer_median@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "advance_ticket_cover.peer_rank@FY2024"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "capex_intensity.peer_median@FY2024"
+      }
+     ],
+     "text": "The weakest position is advance ticket cover, above the peer median of {{advance_ticket_cover.peer_median@FY2024}} and the weakest of the group ({{advance_ticket_cover.peer_rank@FY2024}}), while capex intensity sits in the middle of the group at a median of {{capex_intensity.peer_median@FY2024}}."
+    }
+   ]
+  }
+ },
+ "label": "iag_FY2024 attempt 3",
+ "recorded_at": "2026-11-09T18:13:34+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "912935195ee0bd77beb3be929dc61a81e02b45a3ecb0996f89dfe23efafa47a2",
+  "user_sha256": "c942d2528b46facc286985b272f9494da7b49b6e8b341279e162b255081af683"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 13878,
+  "output_tokens": 486
+ }
+}

@@ -82,9 +82,6 @@ Company type: airline. Reporting currency: EUR. Peer group: Network airlines (af
 | cash_like@FY2025 | Cash and cash-like investments, FY2025 | EUR 1.1bn | up, better vs prior year |
 | cash_like@FY2024 | Cash and cash-like investments, FY2024 | EUR 884m |  |
 | cash_like.change@FY2025 | change in Cash and cash-like investments, FY2024 to FY2025 | 20.0% | up, better vs prior year; printed without a sign: say the direction in words |
-| cash_liquidity@FY2025 | Cash liquidity (partial), FY2025 | EUR 1.1bn | up, better vs prior year |
-| cash_liquidity@FY2024 | Cash liquidity (partial), FY2024 | EUR 884m |  |
-| cash_liquidity.change@FY2025 | change in Cash liquidity (partial), FY2024 to FY2025 | 20.0% | up, better vs prior year; printed without a sign: say the direction in words |
 | liquidity@FY2025 | Liquidity, FY2025 | EUR 1.3bn | up, better vs prior year |
 | liquidity@FY2024 | Liquidity, FY2024 | EUR 1.1bn |  |
 | liquidity.change@FY2025 | change in Liquidity, FY2024 to FY2025 | 16.3% | up, better vs prior year; printed without a sign: say the direction in words |
@@ -170,3 +167,6 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - fuel_hedge_ratio@FY2024: not verified yet: waiting for Imane's review
 - net_cash@FY2025: the company has net debt, not net cash
 - net_cash@FY2024: the company has net debt, not net cash
+- cash_liquidity@FY2025: the same figure as cash_like@FY2025: use that id
+- cash_liquidity.change@FY2025: the same figure as cash_like.change@FY2025: use that id
+- cash_liquidity@FY2024: the same figure as cash_like@FY2024: use that id

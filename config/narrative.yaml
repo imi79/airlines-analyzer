@@ -106,8 +106,8 @@ allowed_names:
   - 'A3[1-5]\d(?:neo|ceo|XLR|LR|-\d{3,4})?'
   - 'A220(?:-[13]00)?'
   - 'A380'
-  - 'Boeing 7[3-8]7(?: MAX(?: \d{1,2})?)?(?:-\d{1,2})?'
-  - '7[3-8]7(?: MAX(?: \d{1,2})?)?(?:-\d{1,2})?'
+  - 'Boeing 7[3-8]7(?: MAX(?: \d{1,2})?)?(?:-\d{1,3})?'  # 737-800 (decision 0018, round 4)
+  - '7[3-8]7(?: MAX(?: \d{1,2})?)?(?:-\d{1,3})?'
   - 'E1[79]5|E190(?:-E2)?|E195(?:-E2)?'
   - 'ATR ?[47]2(?:-600)?'
   - 'Q400'
@@ -127,3 +127,9 @@ net_cash:
 small_debt:
   gross_leverage_below: 0.5
   metrics: [ffo_to_debt, fcf_to_debt, interest_coverage]
+
+# The same figure under two names (decision 0018, round 4): where cash liquidity equals cash
+# and cash-like investments (no undrawn lines are added), only the second is offered, so the
+# note never says "cash fell to X, so cash liquidity fell to X".
+same_figure:
+  cash_liquidity: cash_like

@@ -2,8 +2,8 @@
 
 Date: 2026-11-09 · Status: fixes A to D done (Imane: "go with A, B, C and D with ai writing the events
 like in M3"); Vienna's deposits approved, removal rule confirmed, last round done (Imane:
-"approve vienna figures, confirm removal rule, do the last round"); third score 3.70, below the
-pass mark
+"approve vienna figures, confirm removal rule, do the last round"); third score 3.70; a fourth
+round with fixes 1 and 2 ("do one more round with fixes 1 and 2"): 3.75, below the pass mark
 
 **Who scored.** At Imane's request ("check it yourself with the annual reports of the
 companies"), Claude scored the ten drafts of the score sheet, after checking each one against
@@ -200,3 +200,42 @@ Tokens: about 6.0 million for M4 AI calls in all (drafts, events, extraction v4)
 - **Peer sentences** that still list ranks in three drafts.
 
 Tokens: about 6.8 million for M4 AI calls in all.
+
+## Round 4: one name per figure, "737-800" allowed
+
+- **The same figure under two names**: cash liquidity equals cash and cash-like investments
+  whenever no undrawn lines are added (always, by definition), so the fact sheet now offers
+  it once (`same_figure` in `config/narrative.yaml`). The doubled sentences are gone.
+- **"Boeing 737-800"** and the like are allowed names; Norwegian's sentence on buying its
+  leased 737-800s stays.
+- **Gate 2:** 17 of 18 drafts, 17 in a row across all nine companies; 8 sentences removed (16
+  before); no number outside a blank.
+
+| Draft | Round 4 | Round 3 | Round 2 | Round 1 |
+| --- | --- | --- | --- | --- |
+| Air France-KLM FY2025 | 4.00 | 3.75 | 3.50 | 2.75 |
+| IAG FY2025 | 3.50 | 4.00 | 3.75 | 3.25 |
+| Finnair FY2025 | 4.00 | 4.00 | 4.00 | 2.25 |
+| easyJet FY2025 | 3.75 | 3.75 | 3.75 | 3.50 |
+| Groupe ADP FY2025 | 3.50 | 3.25 | 3.00 | 2.50 |
+| Aena FY2025 | 3.75 | 3.50 | 3.50 | 3.25 |
+| Flughafen Wien FY2025 | 3.75 | 3.75 | 3.00 | 1.75 |
+| Norwegian FY2025 | 3.50 | 3.25 | 3.25 | 3.25 |
+| Wizz Air FY2026 | 4.00 | 4.00 | 3.50 | 3.50 |
+| Air France-KLM FY2024 | 3.75 | 3.75 | 3.75 | 3.25 |
+| **Average** | **3.75** | 3.70 | 3.50 | 2.93 |
+
+By criterion: accuracy 3.9, relevance 3.8, concision 3.5, credit insight 3.8.
+
+**Why it stops at 3.75.** The two fixes did what they were for, but each redraft is a new
+throw of the dice: this time IAG lost its traffic sentence (removed for writing "broadly
+unchanged ... up") and Wizz Air again lost its explanation of operating profit (depreciation
+is not a fact-sheet figure, so "as depreciation increased" is refused). What remains:
+- **Things the fact sheet cannot say**: depreciation, causes in general. The verifier refuses
+  direction words it cannot check, so the AI's best explanations are sometimes removed.
+- **Figures waiting for Imane's review** (Air France-KLM's undrawn lines, Aena's 2025
+  passengers).
+- **ADP**: event summaries that add a detail, minor events from the statements only.
+- **Peer sentences** that still list ranks or compare a company with itself as the median.
+
+Tokens: about 7.6 million for M4 AI calls in all.

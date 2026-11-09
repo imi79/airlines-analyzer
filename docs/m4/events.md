@@ -107,9 +107,9 @@ Read by the AI (prompt `events-v2`) and checked by code (decision 0018, fix D): 
 
 ## norwegian FY2025 (`549300IEUH2FEM2Y6B51-2025-12-31-ESEF-NO-0`)
 
-- **Initial dividend paid to shareholders** (capital_returns, `event:capital_returns`). The company paid an initial dividend to its shareholders in August.
+- **Dividend paid to shareholders** (capital_returns, `event:capital_returns`). The company paid a dividend to its shareholders in August.
   > In 2025, the company paid its first-ever dividend, distributing NOK 0.90 per share to its nearly 75,000 shareholders in August. (page 6)
-- **Purchase of previously leased aircraft** (fleet_and_engines, `event:fleet_and_engines`). Norwegian acquired previously leased Boeing aircraft, which contributed accounting gains and recurring cost savings.
+- **Purchase of previously leased aircraft** (fleet_and_engines, `event:fleet_and_engines`). Norwegian acquired previously leased Boeing 737-800 aircraft, which contributed accounting gains and recurring cost savings.
   > Norwegian's acquisition of 13 previously leased Boeing 737-800 aircraft contributed to accounting gains in 2025 and recurring cost savings, further strengthening our financial position. (page 3)
 - **Option exercised for additional 737 MAX 8 aircraft** (fleet_and_engines, `event:fleet_and_engines-2`). The company exercised its option to purchase additional Boeing 737 MAX 8 aircraft on top of its previous order.
   > We also exercised our option to purchase 30 additional Boeing 737 MAX 8 aircraft, adding to the previous 50 aircraft order, reinforcing our commitment to a modern and fuel-efficient fleet. (page 3)

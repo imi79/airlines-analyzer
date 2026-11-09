@@ -66,16 +66,16 @@ measure of the final code.
 Branch: `m4-drafting-verifier`. Plan: `docs/m4/plan.md`. Run: `uv run tearsheet all --offline`
 (replays the recorded drafts; `uv run tearsheet draft` asks the AI for drafts not yet
 recorded). Results: `docs/m4/`. Walkthrough: `docs/m4/walkthrough.md`. Decisions 0016-0018.
-**Status: in progress; gate 2 passed; commentary score 3.70 of 5 after the last round, below
-the mark of 4; Imane to decide how to close.**
+**Status: in progress; gate 2 passed; commentary score 3.75 of 5 after four rounds, below the
+mark of 4; Imane to decide how to close.**
 
 - [x] Adversarial suite 100% rejected: 47 of 47 faulty sentences, each for its rule; 15
       correct but risky sentences and a full correct draft pass (`tests/test_adversarial.py`)
 - [x] Ten consecutive drafts across issuers with zero unreferenced numbers (gate 2): 17 in a
       row, all nine companies; 17 of 18 pass with prompt `draft-v6` and the year's events,
-      16 sentences removed by the verifier after two retries (rule confirmed by Imane, decision
+      8 sentences removed by the verifier after two retries (rule confirmed by Imane, decision
       0018); no number outside a blank on the page (`docs/m4/drafts.md`)
-- [ ] Commentary score of 4 or more: **3.70 of 5** (rounds 1 and 2: 2.93, 3.50), scored by
+- [ ] Commentary score of 4 or more: **3.75 of 5** (rounds 1 to 3: 2.93, 3.50, 3.70), scored by
       Claude at Imane's request after checking the ten drafts against the annual reports
       (decision 0018, `docs/m4/commentary_review.yaml`, `docs/m4/score_sheet.xlsx`)
 - Vienna's short-term deposits entered from its notes, approved by Imane on 2026-11-09

@@ -1,0 +1,227 @@
+{
+ "answer": {
+  "sections": {
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "passengers.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "passengers@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "traffic_growth@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "traffic_growth@FY2023"
+      }
+     ],
+     "text": "Passengers rose by {{passengers.change@FY2024}} to {{passengers@FY2024}}, with traffic growth of {{traffic_growth@FY2024}} below the {{traffic_growth@FY2023}} of FY2023."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "aero_revenue_per_passenger.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "aero_revenue_per_passenger@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs"
+      }
+     ],
+     "text": "Aeronautical revenue per passenger increased by {{aero_revenue_per_passenger.change@FY2024}} to {{aero_revenue_per_passenger@FY2024}}, with the CNMC setting the maximum adjusted annual revenue per passenger for 2025 at the prior year's level."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ebitda_margin.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2024"
+      }
+     ],
+     "text": "The EBITDA margin widened by {{ebitda_margin.change@FY2024}} to {{ebitda_margin@FY2024}}, as revenue growth outpaced the rise in operating costs."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@FY2024"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "interest_coverage.peer_rank@FY2024"
+      }
+     ],
+     "text": "Aena has the highest EBITDA margin of the airport peers ({{ebitda_margin.peer_rank@FY2024}}), against a median of {{ebitda_margin.peer_median@FY2024}}, and the strongest interest coverage ({{interest_coverage.peer_rank@FY2024}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ffo_to_debt.peer_rank@FY2024"
+      }
+     ],
+     "text": "Cash generation also leads the group, with FFO to debt and FCF to debt both ranking {{ffo_to_debt.peer_rank@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "net_leverage.peer_rank@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_rank@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "cash_liquidity_to_revenue.peer_rank@FY2024"
+      }
+     ],
+     "text": "Leverage sits in the middle of the group, with net leverage ranking {{net_leverage.peer_rank@FY2024}} and gross leverage {{gross_leverage.peer_rank@FY2024}}, while cash liquidity to revenue is the weakest of the peers ({{cash_liquidity_to_revenue.peer_rank@FY2024}})."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2024"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue.peer_median@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "cash_liquidity_to_revenue.peer_rank@FY2024"
+      }
+     ],
+     "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2024}} and the weakest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2024}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      }
+     ],
+     "text": "Cash: cash and cash-like investments declined by {{cash_like.change@FY2024}} to {{cash_like@FY2024}} as debt was repaid, so the buffer against maturities is thinner than a year earlier."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "interest_coverage.change@FY2024"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "better_than_peers"
+       ],
+       "id": "interest_coverage@FY2024"
+      }
+     ],
+     "text": "Coverage: interest coverage eased by {{interest_coverage.change@FY2024}} to {{interest_coverage@FY2024}}, a move to monitor even though it remains above the peer median."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "traffic_growth.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "traffic_growth@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs"
+      }
+     ],
+     "text": "Traffic: traffic growth slowed by {{traffic_growth.change@FY2024}} to {{traffic_growth@FY2024}}, and the CNMC set the maximum adjusted annual revenue per passenger for 2025 at the prior year's level, limiting tariff-led revenue."
+    }
+   ]
+  }
+ },
+ "label": "aena_FY2024 attempt 2",
+ "recorded_at": "2026-11-09T18:14:55+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v6",
+  "provider": "deepseek",
+  "system_sha256": "d0d209dc4c1e6f4aaff4e2a29e60963086ce4354a4a6adfbc58803c9042595c6",
+  "tool_sha256": "178a2ae1e959e32d0c7c35b6834f0f1c1df4d7b201a7175c6c936c51611ba17b",
+  "user_sha256": "8a1ae13f8d44f9e402475f00983570e89e491fc8c0eca15e15950c930a363187"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14364,
+  "output_tokens": 1342
+ }
+}

@@ -69,9 +69,6 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | cash_like@FY2024 | Cash and cash-like investments, FY2024 | EUR 567m | up, better vs prior year |
 | cash_like@FY2023 | Cash and cash-like investments, FY2023 | EUR 417m |  |
 | cash_like.change@FY2024 | change in Cash and cash-like investments, FY2023 to FY2024 | 36.0% | up, better vs prior year; printed without a sign: say the direction in words |
-| cash_liquidity@FY2024 | Cash liquidity (partial), FY2024 | EUR 567m | up, better vs prior year |
-| cash_liquidity@FY2023 | Cash liquidity (partial), FY2023 | EUR 417m |  |
-| cash_liquidity.change@FY2024 | change in Cash liquidity (partial), FY2023 to FY2024 | 36.0% | up, better vs prior year; printed without a sign: say the direction in words |
 
 ## Peer positioning
 
@@ -145,3 +142,6 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - contract_liabilities@FY2023: no figure for this year
 - undrawn_facilities@FY2024: no figure for this year
 - undrawn_facilities@FY2023: no figure for this year
+- cash_liquidity@FY2024: the same figure as cash_like@FY2024: use that id
+- cash_liquidity.change@FY2024: the same figure as cash_like.change@FY2024: use that id
+- cash_liquidity@FY2023: the same figure as cash_like@FY2023: use that id

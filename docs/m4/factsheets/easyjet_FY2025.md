@@ -103,9 +103,6 @@ Company type: airline. Reporting currency: GBP. Peer group: Low-cost airlines (e
 | cash_like@FY2025 | Cash and cash-like investments, FY2025 | GBP 3.5bn | flat vs prior year |
 | cash_like@FY2024 | Cash and cash-like investments, FY2024 | GBP 3.5bn |  |
 | cash_like.change@FY2025 | change in Cash and cash-like investments, FY2024 to FY2025 | 1.9% | flat vs prior year; printed without a sign: say the direction in words |
-| cash_liquidity@FY2025 | Cash liquidity (partial), FY2025 | GBP 3.5bn | flat vs prior year |
-| cash_liquidity@FY2024 | Cash liquidity (partial), FY2024 | GBP 3.5bn |  |
-| cash_liquidity.change@FY2025 | change in Cash liquidity (partial), FY2024 to FY2025 | 1.9% | flat vs prior year; printed without a sign: say the direction in words |
 | liquidity@FY2025 | Liquidity, FY2025 | GBP 4.8bn |  |
 | advance_ticket_cover@FY2025 | Advance ticket cover, FY2025 | 55.1% | up, worse vs prior year; company in line with peer median |
 | advance_ticket_cover@FY2024 | Advance ticket cover, FY2024 | 50.2% |  |
@@ -177,3 +174,6 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - fuel_hedge_ratio@FY2025: Fuel hedge ratio not available for FY2025
 - fuel_hedge_ratio@FY2024: Fuel hedge ratio not available for FY2024
 - undrawn_facilities@FY2024: not verified yet: waiting for Imane's review
+- cash_liquidity@FY2025: the same figure as cash_like@FY2025: use that id
+- cash_liquidity.change@FY2025: the same figure as cash_like.change@FY2025: use that id
+- cash_liquidity@FY2024: the same figure as cash_like@FY2024: use that id

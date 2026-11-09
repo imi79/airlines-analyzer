@@ -2,7 +2,7 @@
  "issuer": "norwegian",
  "fiscal_year": 2024,
  "prompt_version": "draft-v6",
- "input_hash": "90c8020f7b334702ba015f14faf5f440f9635efe19f135a0c4031b7134494c52",
+ "input_hash": "808740b1371c1732594dcd509ce214f080cd358b35b1424a2dd53ec9f0ffcb1c",
  "status": {
   "snapshot": "passed",
   "credit_metrics": "passed",
@@ -11,17 +11,7 @@
   "peer_positioning": "passed",
   "watch_items": "passed"
  },
- "removed": {
-  "credit_metrics": [
-   [
-    "FFO rose by {{ffo.change@FY2024}} to {{ffo@FY2024}}, but FFO to debt slipped by {{ffo_to_debt.change@FY2024}} to {{ffo_to_debt@FY2024}} as debt rose faster than cash generation.",
-    [
-     "total_debt.change@FY2024 is listed in the form but not used in the text",
-     "'rose' needs a 'up' claim on a figure in the same clause"
-    ]
-   ]
-  ]
- },
+ "removed": {},
  "attempts": [
   {
    "try": 1,
@@ -33,12 +23,12 @@
     "peer_positioning",
     "watch_items"
    ],
-   "request_hash": "17aa0879d936e3a42c34f3244bf6d258ea4ac35b207ea11c999202910f5b5be3",
+   "request_hash": "4ff9d72122c3b2b40dc9ac26f6383ce52ddc6e076f411b4f509ba4db37799071",
    "model": "deepseek-flash",
    "draft": {
     "snapshot": [
      {
-      "text": "Norwegian Air Shuttle, the low-cost carrier, grew revenue by {{revenue.change@FY2024}} to {{revenue@FY2024}} in FY2024, a year in which the acquisition of Widerøe was finalised and Boeing delivery delays limited fleet growth.",
+      "text": "Norwegian Air Shuttle, the Norwegian low-cost carrier, grew revenue by {{revenue.change@FY2024}} to {{revenue@FY2024}} in FY2024, a year in which the acquisition of Widerøe was finalised and delivery delays from Boeing limited fleet growth.",
       "facts": [
        {
         "id": "revenue.change@FY2024",
@@ -84,7 +74,7 @@
       ]
      },
      {
-      "text": "The point to watch is cash liquidity, which fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}} of revenue, the weakest of the low-cost peers.",
+      "text": "The point to watch is cash liquidity, which fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}} of revenue, the weakest of the low-cost peer group.",
       "facts": [
        {
         "id": "cash_liquidity_to_revenue.change@FY2024",
@@ -111,7 +101,7 @@
     ],
     "credit_metrics": [
      {
-      "text": "EBITDA rose by {{ebitda.change@FY2024}} to {{ebitda@FY2024}}, but operating profit fell by {{operating_profit.change@FY2024}} to {{operating_profit@FY2024}} as depreciation and the weaker krone weighed on the result.",
+      "text": "EBITDA rose by {{ebitda.change@FY2024}} to {{ebitda@FY2024}}, but operating profit fell by {{operating_profit.change@FY2024}} to {{operating_profit@FY2024}} as depreciation and personnel costs rose.",
       "facts": [
        {
         "id": "ebitda.change@FY2024",
@@ -136,7 +126,7 @@
         "claims": []
        },
        {
-        "id": "event:one_offs",
+        "id": "event:labour",
         "claims": []
        }
       ]
@@ -250,7 +240,7 @@
     ],
     "operating_performance": [
      {
-      "text": "Passengers rose by {{passengers.change@FY2024}} to {{passengers@FY2024}}, supported by the Widerøe integration.",
+      "text": "Passengers rose by {{passengers.change@FY2024}} to {{passengers@FY2024}}, helped by the Widerøe acquisition completed at the start of the year.",
       "facts": [
        {
         "id": "passengers.change@FY2024",
@@ -265,40 +255,6 @@
        },
        {
         "id": "event:acquisitions_and_disposals",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "In FY2023 the group carried {{passengers@FY2023}} passengers on {{ask@FY2023}} available seat kilometres, with a load factor of {{load_factor@FY2023}}.",
-      "facts": [
-       {
-        "id": "passengers@FY2023",
-        "claims": []
-       },
-       {
-        "id": "ask@FY2023",
-        "claims": []
-       },
-       {
-        "id": "load_factor@FY2023",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Unit economics in FY2023 showed RASK of {{rask@FY2023}} against CASK of {{cask@FY2023}}, with CASK ex-fuel at {{cask_ex_fuel@FY2023}}.",
-      "facts": [
-       {
-        "id": "rask@FY2023",
-        "claims": []
-       },
-       {
-        "id": "cask@FY2023",
-        "claims": []
-       },
-       {
-        "id": "cask_ex_fuel@FY2023",
         "claims": []
        }
       ]
@@ -321,14 +277,43 @@
       ]
      },
      {
-      "text": "The fleet stood at {{fleet@FY2023}} aircraft in FY2023, and Boeing delivery delays meant only a modest addition during FY2024.",
+      "text": "Capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}, still below the peer median of {{capex_intensity.peer_median@FY2024}}.",
       "facts": [
        {
-        "id": "fleet@FY2023",
+        "id": "capex_intensity.change@FY2024",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "capex_intensity@FY2024",
+        "claims": [
+         "below_peers"
+        ]
+       },
+       {
+        "id": "capex_intensity.peer_median@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "In FY2023 the group carried {{passengers@FY2023}} passengers on {{ask@FY2023}} available seat kilometres, with a load factor of {{load_factor@FY2023}} and a fleet of {{fleet@FY2023}} aircraft.",
+      "facts": [
+       {
+        "id": "passengers@FY2023",
         "claims": []
        },
        {
-        "id": "event:fleet_and_engines",
+        "id": "ask@FY2023",
+        "claims": []
+       },
+       {
+        "id": "load_factor@FY2023",
+        "claims": []
+       },
+       {
+        "id": "fleet@FY2023",
         "claims": []
        }
       ]
@@ -336,7 +321,7 @@
     ],
     "liquidity_funding": [
      {
-      "text": "Cash and cash-like investments rose by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, and cash liquidity increased by the same {{cash_liquidity.change@FY2024}} to {{cash_liquidity@FY2024}}.",
+      "text": "Cash and cash-like investments rose by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, but cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}} as revenue grew faster than the cash balance.",
       "facts": [
        {
         "id": "cash_like.change@FY2024",
@@ -349,22 +334,6 @@
         "id": "cash_like@FY2024",
         "claims": []
        },
-       {
-        "id": "cash_liquidity.change@FY2024",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "cash_liquidity@FY2024",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Cash liquidity to revenue nevertheless fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, as revenue grew faster than the cash balance.",
-      "facts": [
        {
         "id": "cash_liquidity_to_revenue.change@FY2024",
         "claims": [
@@ -379,18 +348,8 @@
       ]
      },
      {
-      "text": "Contract liabilities rose by {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}}, and advance ticket cover increased by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, below the peer median.",
+      "text": "Advance ticket cover rose by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, and contract liabilities increased by {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}}, so a growing part of the cash balance is customers' prepayments.",
       "facts": [
-       {
-        "id": "contract_liabilities.change@FY2024",
-        "claims": [
-         "up"
-        ]
-       },
-       {
-        "id": "contract_liabilities@FY2024",
-        "claims": []
-       },
        {
         "id": "advance_ticket_cover.change@FY2024",
         "claims": [
@@ -400,20 +359,23 @@
        },
        {
         "id": "advance_ticket_cover@FY2024",
+        "claims": []
+       },
+       {
+        "id": "contract_liabilities.change@FY2024",
         "claims": [
-         "below_peers",
-         "better_than_peers"
+         "up"
         ]
+       },
+       {
+        "id": "contract_liabilities@FY2024",
+        "claims": []
        }
       ]
      },
      {
-      "text": "The Board intends to propose a profit distribution per share, subject to approval from debt instrument holders, and financing terms for upcoming aircraft deliveries improved.",
+      "text": "The group secured improved financing terms for part of its aircraft order book, which supports the funding of future deliveries.",
       "facts": [
-       {
-        "id": "event:capital_returns",
-        "claims": []
-       },
        {
         "id": "event:funding_and_rating",
         "claims": []
@@ -454,28 +416,20 @@
       "text": "On EBITDA margin, net leverage, interest coverage and FFO to debt the company sits in the middle of the group.",
       "facts": [
        {
-        "id": "ebitda_margin.peer_median@FY2024",
-        "claims": [
-         "in_line_with_peers"
-        ]
+        "id": "ebitda_margin.peer_rank@FY2024",
+        "claims": []
        },
        {
-        "id": "net_leverage.peer_median@FY2024",
-        "claims": [
-         "in_line_with_peers"
-        ]
+        "id": "net_leverage.peer_rank@FY2024",
+        "claims": []
        },
        {
-        "id": "interest_coverage.peer_median@FY2024",
-        "claims": [
-         "in_line_with_peers"
-        ]
+        "id": "interest_coverage.peer_rank@FY2024",
+        "claims": []
        },
        {
-        "id": "ffo_to_debt.peer_median@FY2024",
-        "claims": [
-         "in_line_with_peers"
-        ]
+        "id": "ffo_to_debt.peer_rank@FY2024",
+        "claims": []
        }
       ]
      },
@@ -527,7 +481,7 @@
       ]
      },
      {
-      "text": "Profitability: the EBITDA margin narrowed by {{ebitda_margin.change@FY2024}} to {{ebitda_margin@FY2024}}, and operating profit fell by {{operating_profit.change@FY2024}} to {{operating_profit@FY2024}}.",
+      "text": "Profitability: the EBITDA margin narrowed by {{ebitda_margin.change@FY2024}} to {{ebitda_margin@FY2024}}, with the operating result hit by the weakening of the krone against the dollar.",
       "facts": [
        {
         "id": "ebitda_margin.change@FY2024",
@@ -541,14 +495,7 @@
         "claims": []
        },
        {
-        "id": "operating_profit.change@FY2024",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "operating_profit@FY2024",
+        "id": "event:one_offs",
         "claims": []
        }
       ]
@@ -580,23 +527,11 @@
       ]
      },
      {
-      "text": "Costs: collective bargaining agreements raised personnel cost across several markets, and capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}.",
+      "text": "Shareholder returns: the Board intends to propose a profit distribution per share, subject to approval from debt instrument holders.",
       "facts": [
        {
-        "id": "event:labour",
+        "id": "event:capital_returns",
         "claims": []
-       },
-       {
-        "id": "capex_intensity.change@FY2024",
-        "claims": [
-         "up"
-        ]
-       },
-       {
-        "id": "capex_intensity@FY2024",
-        "claims": [
-         "below_peers"
-        ]
        }
       ]
      }
@@ -605,13 +540,13 @@
    "errors": [
     "[rule 5] snapshot, sentence 3: cash_liquidity_to_revenue.peer_rank@FY2024 is listed in the form but not used in the text",
     "[rule 4] credit_metrics, sentence 4: 'grew' needs a 'up' claim on a figure in the same clause",
-    "[rule 4] liquidity_funding, sentence 2: 'grew' needs a 'up' claim on a figure in the same clause",
+    "[rule 4] liquidity_funding, sentence 1: 'grew' needs a 'up' claim on a figure in the same clause",
     "[rule style] peer_positioning, sentence 1: fcf_to_debt@FY2024 is already given in credit_metrics, sentence 5: give each figure in one body section only (the snapshot and watch items may restate it)",
-    "[rule 5] peer_positioning, sentence 2: ebitda_margin.peer_median@FY2024 is listed in the form but not used in the text",
-    "[rule 5] peer_positioning, sentence 2: net_leverage.peer_median@FY2024 is listed in the form but not used in the text",
-    "[rule 5] peer_positioning, sentence 2: interest_coverage.peer_median@FY2024 is listed in the form but not used in the text",
-    "[rule 5] peer_positioning, sentence 2: ffo_to_debt.peer_median@FY2024 is listed in the form but not used in the text",
-    "[rule style] peer_positioning, sentence 3: cash_liquidity_to_revenue@FY2024 is already given in liquidity_funding, sentence 2: give each figure in one body section only (the snapshot and watch items may restate it)"
+    "[rule 5] peer_positioning, sentence 2: ebitda_margin.peer_rank@FY2024 is listed in the form but not used in the text",
+    "[rule 5] peer_positioning, sentence 2: net_leverage.peer_rank@FY2024 is listed in the form but not used in the text",
+    "[rule 5] peer_positioning, sentence 2: interest_coverage.peer_rank@FY2024 is listed in the form but not used in the text",
+    "[rule 5] peer_positioning, sentence 2: ffo_to_debt.peer_rank@FY2024 is listed in the form but not used in the text",
+    "[rule style] peer_positioning, sentence 3: cash_liquidity_to_revenue@FY2024 is already given in liquidity_funding, sentence 1: give each figure in one body section only (the snapshot and watch items may restate it)"
    ],
    "error": null
   },
@@ -623,12 +558,12 @@
     "liquidity_funding",
     "peer_positioning"
    ],
-   "request_hash": "0f2b9d4354c49a3d3007479b8326f7065c65f38bf757d49d49ca0d16f26b28c3",
+   "request_hash": "174ab850e3e287c41bc6acb3492495da86aca36df72f08e3122853d9983b643f",
    "model": "deepseek-flash",
    "draft": {
     "snapshot": [
      {
-      "text": "Norwegian Air Shuttle, the low-cost carrier, grew revenue by {{revenue.change@FY2024}} to {{revenue@FY2024}} in FY2024, a year in which the acquisition of Widerøe was finalised and Boeing delivery delays limited fleet growth.",
+      "text": "Norwegian Air Shuttle, the Norwegian low-cost carrier, grew revenue by {{revenue.change@FY2024}} to {{revenue@FY2024}} in FY2024, a year in which the acquisition of Widerøe was finalised and delivery delays from Boeing limited fleet growth.",
       "facts": [
        {
         "id": "revenue.change@FY2024",
@@ -674,7 +609,7 @@
       ]
      },
      {
-      "text": "The point to watch is cash liquidity, which fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}} of revenue, the weakest of the low-cost peers ({{cash_liquidity_to_revenue.peer_rank@FY2024}}).",
+      "text": "The point to watch is cash liquidity, which fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}} of revenue, the weakest of the low-cost peer group ({{cash_liquidity_to_revenue.peer_rank@FY2024}}).",
       "facts": [
        {
         "id": "cash_liquidity_to_revenue.change@FY2024",
@@ -701,7 +636,7 @@
     ],
     "credit_metrics": [
      {
-      "text": "EBITDA rose by {{ebitda.change@FY2024}} to {{ebitda@FY2024}}, but operating profit fell by {{operating_profit.change@FY2024}} to {{operating_profit@FY2024}} as depreciation and the weaker krone weighed on the result.",
+      "text": "EBITDA rose by {{ebitda.change@FY2024}} to {{ebitda@FY2024}}, but operating profit fell by {{operating_profit.change@FY2024}} to {{operating_profit@FY2024}} as depreciation and personnel costs rose.",
       "facts": [
        {
         "id": "ebitda.change@FY2024",
@@ -726,7 +661,7 @@
         "claims": []
        },
        {
-        "id": "event:one_offs",
+        "id": "event:labour",
         "claims": []
        }
       ]
@@ -840,7 +775,7 @@
     ],
     "liquidity_funding": [
      {
-      "text": "Cash and cash-like investments rose by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, and cash liquidity increased by the same {{cash_liquidity.change@FY2024}} to {{cash_liquidity@FY2024}}.",
+      "text": "Cash and cash-like investments rose by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, but cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}} as revenue rose faster than the cash balance.",
       "facts": [
        {
         "id": "cash_like.change@FY2024",
@@ -854,22 +789,6 @@
         "claims": []
        },
        {
-        "id": "cash_liquidity.change@FY2024",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "cash_liquidity@FY2024",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Cash liquidity to revenue nevertheless fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, as revenue rose by {{revenue.change@FY2024}} faster than the cash balance.",
-      "facts": [
-       {
         "id": "cash_liquidity_to_revenue.change@FY2024",
         "claims": [
          "down",
@@ -879,28 +798,12 @@
        {
         "id": "cash_liquidity_to_revenue@FY2024",
         "claims": []
-       },
-       {
-        "id": "revenue.change@FY2024",
-        "claims": [
-         "up"
-        ]
        }
       ]
      },
      {
-      "text": "Contract liabilities rose by {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}}, and advance ticket cover increased by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, below the peer median.",
+      "text": "Advance ticket cover rose by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, and contract liabilities increased by {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}}, so a growing part of the cash balance is customers' prepayments.",
       "facts": [
-       {
-        "id": "contract_liabilities.change@FY2024",
-        "claims": [
-         "up"
-        ]
-       },
-       {
-        "id": "contract_liabilities@FY2024",
-        "claims": []
-       },
        {
         "id": "advance_ticket_cover.change@FY2024",
         "claims": [
@@ -910,20 +813,23 @@
        },
        {
         "id": "advance_ticket_cover@FY2024",
+        "claims": []
+       },
+       {
+        "id": "contract_liabilities.change@FY2024",
         "claims": [
-         "below_peers",
-         "better_than_peers"
+         "up"
         ]
+       },
+       {
+        "id": "contract_liabilities@FY2024",
+        "claims": []
        }
       ]
      },
      {
-      "text": "The Board intends to propose a profit distribution per share, subject to approval from debt instrument holders, and financing terms for upcoming aircraft deliveries improved.",
+      "text": "The group secured improved financing terms for part of its aircraft order book, which supports the funding of future deliveries.",
       "facts": [
-       {
-        "id": "event:capital_returns",
-        "claims": []
-       },
        {
         "id": "event:funding_and_rating",
         "claims": []
@@ -954,31 +860,23 @@
       ]
      },
      {
-      "text": "On EBITDA margin, net leverage, interest coverage and FFO to debt the company sits in the middle of the group, with medians of {{ebitda_margin.peer_median@FY2024}}, {{net_leverage.peer_median@FY2024}}, {{interest_coverage.peer_median@FY2024}} and {{ffo_to_debt.peer_median@FY2024}} respectively.",
+      "text": "On EBITDA margin, net leverage, interest coverage and FFO to debt the company sits in the middle of the group ({{ebitda_margin.peer_rank@FY2024}}, {{net_leverage.peer_rank@FY2024}}, {{interest_coverage.peer_rank@FY2024}} and {{ffo_to_debt.peer_rank@FY2024}}).",
       "facts": [
        {
-        "id": "ebitda_margin.peer_median@FY2024",
-        "claims": [
-         "in_line_with_peers"
-        ]
+        "id": "ebitda_margin.peer_rank@FY2024",
+        "claims": []
        },
        {
-        "id": "net_leverage.peer_median@FY2024",
-        "claims": [
-         "in_line_with_peers"
-        ]
+        "id": "net_leverage.peer_rank@FY2024",
+        "claims": []
        },
        {
-        "id": "interest_coverage.peer_median@FY2024",
-        "claims": [
-         "in_line_with_peers"
-        ]
+        "id": "interest_coverage.peer_rank@FY2024",
+        "claims": []
        },
        {
-        "id": "ffo_to_debt.peer_median@FY2024",
-        "claims": [
-         "in_line_with_peers"
-        ]
+        "id": "ffo_to_debt.peer_rank@FY2024",
+        "claims": []
        }
       ]
      },
@@ -1000,21 +898,23 @@
     ]
    },
    "errors": [
-    "[rule 4] credit_metrics, sentence 4: 'rose' needs a 'up' claim on a figure in the same clause"
+    "[rule 4] credit_metrics, sentence 4: 'rose' needs a 'up' claim on a figure in the same clause",
+    "[rule 4] liquidity_funding, sentence 1: 'rose' needs a 'up' claim on a figure in the same clause"
    ],
    "error": null
   },
   {
    "try": 3,
    "sections": [
-    "credit_metrics"
+    "credit_metrics",
+    "liquidity_funding"
    ],
-   "request_hash": "3c4aada8715eb9c66d21d659eaae88bb3c940e959b7954155b0063f5550990db",
+   "request_hash": "cbf895962819d9b24e533d9980548e2c2874bed34295ba857e36a1b391298337",
    "model": "deepseek-flash",
    "draft": {
     "credit_metrics": [
      {
-      "text": "EBITDA rose by {{ebitda.change@FY2024}} to {{ebitda@FY2024}}, but operating profit fell by {{operating_profit.change@FY2024}} to {{operating_profit@FY2024}} as depreciation and the weaker krone weighed on the result.",
+      "text": "EBITDA rose by {{ebitda.change@FY2024}} to {{ebitda@FY2024}}, but operating profit fell by {{operating_profit.change@FY2024}} to {{operating_profit@FY2024}} as depreciation and personnel costs rose.",
       "facts": [
        {
         "id": "ebitda.change@FY2024",
@@ -1039,7 +939,7 @@
         "claims": []
        },
        {
-        "id": "event:one_offs",
+        "id": "event:labour",
         "claims": []
        }
       ]
@@ -1094,7 +994,7 @@
       ]
      },
      {
-      "text": "FFO rose by {{ffo.change@FY2024}} to {{ffo@FY2024}}, but FFO to debt slipped by {{ffo_to_debt.change@FY2024}} to {{ffo_to_debt@FY2024}} as debt rose faster than cash generation.",
+      "text": "FFO rose by {{ffo.change@FY2024}} to {{ffo@FY2024}}, but FFO to debt slipped by {{ffo_to_debt.change@FY2024}} to {{ffo_to_debt@FY2024}} as total debt increased by {{total_debt.change@FY2024}}.",
       "facts": [
        {
         "id": "ffo.change@FY2024",
@@ -1156,12 +1056,79 @@
        }
       ]
      }
+    ],
+    "liquidity_funding": [
+     {
+      "text": "Cash and cash-like investments rose by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, but cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}} as revenue rose by {{revenue.change@FY2024}}.",
+      "facts": [
+       {
+        "id": "cash_like.change@FY2024",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "cash_like@FY2024",
+        "claims": []
+       },
+       {
+        "id": "cash_liquidity_to_revenue.change@FY2024",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2024",
+        "claims": []
+       },
+       {
+        "id": "revenue.change@FY2024",
+        "claims": [
+         "up"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Advance ticket cover rose by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, and contract liabilities increased by {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}}, so a growing part of the cash balance is customers' prepayments.",
+      "facts": [
+       {
+        "id": "advance_ticket_cover.change@FY2024",
+        "claims": [
+         "up",
+         "worse"
+        ]
+       },
+       {
+        "id": "advance_ticket_cover@FY2024",
+        "claims": []
+       },
+       {
+        "id": "contract_liabilities.change@FY2024",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "contract_liabilities@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "The group secured improved financing terms for part of its aircraft order book, which supports the funding of future deliveries.",
+      "facts": [
+       {
+        "id": "event:funding_and_rating",
+        "claims": []
+       }
+      ]
+     }
     ]
    },
-   "errors": [
-    "[rule 5] credit_metrics, sentence 4: total_debt.change@FY2024 is listed in the form but not used in the text",
-    "[rule 4] credit_metrics, sentence 4: 'rose' needs a 'up' claim on a figure in the same clause"
-   ],
+   "errors": [],
    "error": null
   }
  ]

@@ -296,3 +296,7 @@ correct:
     facts: [{id: operating_profit@FY2025}]
   - text: Fitch upgraded the rating, and airport charges were set above last year's level.
     facts: [{id: event:labour}]
+  - text: >-
+      The group bought its leased Boeing 737-800 aircraft and took more 737 MAX 8 aircraft,
+      with capex intensity at {{capex_intensity@FY2025}}.
+    facts: [{id: capex_intensity@FY2025}]
