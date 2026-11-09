@@ -120,6 +120,37 @@ current design (data, wording, prompt). D changes a rule of the plan: letting th
 mention the year's events, either from a list you write, or read from the report with a
 quote that code checks. Tell me which you want, then I redraft the ten and we score again.
 
+## After the fixes (decision 0018, round 2)
+
+You chose fixes A to D, with the AI reading the year's events from the reports. What changed:
+
+- **The three wrong figures are corrected.** Vienna's deposits are entered from its notes
+  (its net cash now equals the company's own figure, €413.8m) and **wait for your approval**;
+  Finnair's coverage now improves (4.15x to 4.98x); revenue per passenger is "not meaningful"
+  for the three airports.
+- **The year's story is in the notes**: the AI reads each report for events (strikes, grounded
+  aircraft, buybacks, bond issues, rating changes), each with its exact quote, checked by
+  code (`docs/m4/events.md`). Please read the quotes: code can't check that the English
+  summary is a fair reading of a French or German quote, and two of about twenty I read add a
+  detail.
+- **Net cash** reads "net cash of GBP 602m"; figures from an earlier year say so.
+- **A sentence that still breaks a rule after two retries is now removed** when its section
+  can stand without it (14 sentences across 18 drafts, each shown on its draft page). Nothing
+  that broke a rule reaches the page, but this changes the plan's retry rule: please confirm.
+
+**Results.** Gate 2 still passes (11 drafts in a row, 17 of 18). The commentary score rises
+from 2.93 to **3.50**, still below 4. What remains: figures waiting for your review (Vienna's
+liquidity, Air France-KLM's undrawn lines, Aena's 2025 passengers), two reasoning slips the
+checker can't see (Wizz Air's "interest charges" inside operating profit; Norwegian's best
+figure listed as a watch item), peer sections that list ranks, and ADP's minor events.
+
+**Your decisions:**
+1. Approve Vienna's five entered deposit figures (`config/manual_figures.yaml`; each year's net
+   cash matches the company's printed net liquidity).
+2. Confirm or refuse the sentence-removal rule.
+3. Then either a last round on concision and the watch point (about 800,000 tokens), or accept
+   3.50 and close M4 on the safety result, as for the extraction goal.
+
 ## How to rerun
 
 ```bash
