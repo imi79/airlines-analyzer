@@ -66,7 +66,8 @@ measure of the final code.
 Branch: `m4-drafting-verifier`. Plan: `docs/m4/plan.md`. Run: `uv run tearsheet all --offline`
 (replays the recorded drafts; `uv run tearsheet draft` asks the AI for drafts not yet
 recorded). Results: `docs/m4/`. Walkthrough: `docs/m4/walkthrough.md`. Decisions 0016, 0017.
-**Status: in progress; gate 2 passed; waiting for Imane's scores and example notes.**
+**Status: in progress; gate 2 passed; commentary score below the mark (2.93 of 5), fixes
+proposed in decision 0018 for Imane's approval.**
 
 - [x] Adversarial suite 100% rejected: 43 of 43 faulty sentences, each for its rule; 13
       correct but risky sentences and a full correct draft pass (`tests/test_adversarial.py`)
@@ -74,7 +75,11 @@ recorded). Results: `docs/m4/`. Walkthrough: `docs/m4/walkthrough.md`. Decisions
       to 10 pass the verifier after retries (all nine companies); 17 of 18 overall, 5 at the
       first try; no number outside a blank in any final draft (`docs/m4/drafts.md`). Prompt
       `draft-v3`, about 1.55 million tokens in all (decision 0016)
-- [ ] Commentary score of 4 or more: score sheet ready (`docs/m4/score_sheet.xlsx`)
+- [ ] Commentary score of 4 or more: **2.93 of 5**, scored by Claude at Imane's request after
+      checking the ten drafts against the annual reports (decision 0018,
+      `docs/m4/commentary_review.yaml`, `docs/m4/score_sheet.xlsx`). Causes: three wrong
+      figures upstream (Flughafen Wien cash, Finnair interest coverage, ADP revenue per
+      passenger), the year's events missing from the fact sheet, prompt habits
 - Example notes drafted for Imane to rewrite (`docs/m4/example_notes.md`)
 - Tracked, not a gate (decision 0015): extraction 80% verified on a fresh blind set. Not met:
   13 of 22 (59%) on the fourth set (FY2022 reports), written before prompt `extract-v4` and

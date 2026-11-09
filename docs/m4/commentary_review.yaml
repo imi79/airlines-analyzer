@@ -1,0 +1,124 @@
+# M4 commentary score (decision 0018): the ten drafts of the score sheet, scored by Claude at
+# Imane's request ("check it yourself with the annual reports of the companies"), after
+# checking each draft against the company's annual report. Not an independent review: the
+# scorer is the same kind of model that wrote the drafts. Imane can change any score; the
+# score sheet (docs/m4/score_sheet.xlsx) is written from this file.
+#
+# Scale: 5 publishable as is; 4 minor edits; 3 usable after editing; 2 significant errors or
+# omissions; 1 misleading on a credit point.
+# `draft`: the draft's fact sheet fingerprint (first 12 characters), so a score always refers
+# to one exact text.
+
+scored_by: Claude, at Imane's request (2026-11-09)
+drafts:
+  afkl_FY2025:
+    draft: 770ac499456b
+    accuracy: 3
+    relevance: 3
+    concision: 2
+    credit_insight: 3
+    comment: >-
+      Figures match the statements (revenue 33,007, current EBITDA 5,058, deferred revenue on
+      ticket sales 4,264). But fleet (564) and passengers (98.0m) are FY2024 figures written
+      as if current, and "liquidity is the main point to watch" ignores the 2,405m of undrawn
+      RCFs (not yet verified, so not in the fact sheet). Revenue, EBITDA and liquidity are
+      repeated across sections.
+  iag_FY2025:
+    draft: bc8628f5a628
+    accuracy: 4
+    relevance: 3
+    concision: 3
+    credit_insight: 3
+    comment: >-
+      Accurate. Liquidity as the watch point misreads the year: cash fell after a 1.0bn
+      buyback and debt repayment, with 1.5bn more to be returned (not in the fact sheet).
+      Good point on CASK ex-fuel. The peer section lists six first ranks one by one.
+  finnair_FY2025:
+    draft: 5e48d0d96d5c
+    accuracy: 2
+    relevance: 2
+    concision: 3
+    credit_insight: 2
+    comment: >-
+      "Interest coverage weakened by 7.03x" is an artefact: the tool uses Finnair's financial
+      expenses paid, net of interest received (38.0m in 2024, 87.4m in 2025); on financial
+      expenses (107.2m, 84.8m) coverage improved. The advance ticket cover sentence
+      contradicts itself (cover fell, yet "a larger share of liquidity is prepayments").
+      Misses the year's main story: industrial action, about 68m off the comparable operating
+      result.
+  easyjet_FY2025:
+    draft: fbfece2e3c16
+    accuracy: 4
+    relevance: 3
+    concision: 3
+    credit_insight: 4
+    comment: >-
+      Accurate; good point that revenue grew on capacity, not price, and that the margin is
+      the weakest of the low-cost peers. Liquidity as the main watch point is odd for the
+      group's strongest liquidity. "Net debt GBP -602m" should read net cash of 602m. Misses
+      easyJet holidays, which drove most of the profit growth.
+  adp_FY2025:
+    draft: a6cbeaf4eaf8
+    accuracy: 2
+    relevance: 3
+    concision: 2
+    credit_insight: 3
+    comment: >-
+      "Revenue per passenger of EUR 62.65" divides group revenue (TAV and international
+      included) by Paris passengers only: not meaningful, and the catalog says so; ADP's
+      setting was never filled in. "The buffer rests on cash rather than new funding" is not
+      supported. Cash is given twice in one sentence. The leverage gap to peers is the right
+      point.
+  aena_FY2025:
+    draft: 5b69c67bac5b
+    accuracy: 4
+    relevance: 3
+    concision: 3
+    credit_insight: 3
+    comment: >-
+      Accurate. No traffic at all (2025 passengers wait for review); a capex sentence sits in
+      operating performance. The peer sentences restate that Aena is the median ("39.6%
+      against a median of 39.6%"), which says little.
+  vie_FY2025:
+    draft: 4a8191ee7ea5
+    accuracy: 1
+    relevance: 2
+    concision: 2
+    credit_insight: 2
+    comment: >-
+      Misleading on liquidity: the company reports net liquidity of 413.8m (down 19.1%); the
+      tool counts only 110m of cash and securities and misses about 360m of short-term
+      deposits held in receivables, so "the weakest liquidity of the group, a thin buffer" is
+      wrong. "Net cash position of EUR -54.4m" has the wrong sign. FFO to debt of 441.9% and
+      coverage of 208x mean little for a net-cash company. EBITDA (412.4m, -6.8%) and margin
+      (36.5%) match the report.
+  norwegian_FY2025:
+    draft: 446603cacef8
+    accuracy: 4
+    relevance: 3
+    concision: 3
+    credit_insight: 3
+    comment: >-
+      Accurate (27.3m passengers including Widerøe). The rise in net debt is tied to capex,
+      which is the right link. Three peer sentences only say Norwegian is the median.
+  wizz_FY2026:
+    draft: 85737c655e0f
+    accuracy: 4
+    relevance: 3
+    concision: 3
+    credit_insight: 4
+    comment: >-
+      Accurate (operating profit 139.7m vs 167.5m, -16.6%). Good points: leverage fell only
+      because EBITDA grew, and ex-fuel unit cost is the pressure. Misses the cause the
+      company calls the defining challenge of the year: aircraft grounded by Pratt & Whitney
+      GTF engine issues.
+  afkl_FY2024:
+    draft: ac0301c846c5
+    accuracy: 4
+    relevance: 3
+    concision: 3
+    credit_insight: 3
+    comment: >-
+      Accurate (passengers 93.6m to 98.0m, fleet 541 to 564). Liquidity framing again leaves
+      out the undrawn RCFs; "free cash flow turned negative" is on the tool's definition
+      (cash from operations less capex), which a reader should be told.

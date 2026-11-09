@@ -167,3 +167,17 @@ def test_a_section_left_out_of_a_retry_keeps_its_previous_version(make_llm):
     assert outcome.status["credit_metrics"] == "needs_manual_editing"
     assert outcome.sections["credit_metrics"][0].text == BAD["text"]
     assert any(e.message == "section missing" for e in outcome.errors["credit_metrics"])
+
+
+def test_review_scores_count_only_for_the_draft_scored(make_llm, tmp_path):
+    from tearsheet.narrative import score_sheet
+
+    outcome = draft_commentary(make_llm(Server([CORRECT])), SHEET)
+    entry = {"accuracy": 4, "relevance": 3, "concision": 3, "credit_insight": 2, "comment": "x"}
+    right = {
+        "scored_by": "test",
+        "drafts": {SHEET.key: entry | {"draft": SHEET.fingerprint()[:12]}},
+    }
+    wrong = {"scored_by": "test", "drafts": {SHEET.key: entry | {"draft": "000000000000"}}}
+    assert score_sheet.summary([outcome], right) == (1, 3.0)
+    assert score_sheet.summary([outcome], wrong) == (0, None)

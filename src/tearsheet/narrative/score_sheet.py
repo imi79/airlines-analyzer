@@ -5,8 +5,10 @@ averages them per draft and over the ten; the pass mark is 4. The drafts are the
 of the drafting order (the latest year of all nine companies, then Air France-KLM's year
 before), each printed in full on its own sheet so the file can be read on its own.
 
-Written only when the file does not exist yet, or holds no score: a rerun never erases
-Imane's scores.
+Scores come from `docs/m4/commentary_review.yaml` when it exists (decision 0018: scored by
+Claude at Imane's request, after checking each draft against the annual report); a score
+counts only if its draft fingerprint matches the draft scored. Without that file the sheet
+is written blank, and only when it holds no score yet: a rerun never erases typed scores.
 """
 
 from __future__ import annotations
@@ -17,12 +19,15 @@ from datetime import datetime
 from pathlib import Path
 
 import xlsxwriter
+import yaml
 
 from tearsheet.config import ROOT
 from tearsheet.narrative.drafting import Outcome, rendered_text
 from tearsheet.narrative.factsheet import load_narrative
 
 PATH = ROOT / "docs" / "m4" / "score_sheet.xlsx"
+REVIEW = ROOT / "docs" / "m4" / "commentary_review.yaml"
+KEYS = ("accuracy", "relevance", "concision", "credit_insight")
 CRITERIA = [
     ("Accuracy", "Every statement is true and fairly put; nothing misleading."),
     ("Relevance", "The points a credit analyst would pick for this company and year."),
@@ -44,12 +49,41 @@ def has_scores(path: Path) -> bool:
     return bool(re.search(r'<c r="[C-F](?:[5-9]|1[0-4])"[^>]*>(?:<f>[^<]*</f>)?<v>', sheet))
 
 
-def write(outcomes: list[Outcome], path: Path = PATH) -> bool:
-    """Write the score sheet; returns False (and writes nothing) if scores are already in."""
-    if has_scores(path):
+def load_review(path: Path = REVIEW) -> dict | None:
+    return yaml.safe_load(path.read_text()) if path.exists() else None
+
+
+def review_scores(outcomes: list[Outcome], review: dict | None) -> dict[str, dict]:
+    """Scores per draft key, kept only where the draft scored is the draft on file."""
+    if not review:
+        return {}
+    out = {}
+    for o in outcomes:
+        entry = (review.get("drafts") or {}).get(o.sheet.key)
+        if entry and o.input_hash().startswith(str(entry["draft"])):
+            out[o.sheet.key] = entry
+    return out
+
+
+def summary(outcomes: list[Outcome], review: dict | None) -> tuple[int, float | None]:
+    """(drafts scored, average score) over the ten drafts of the sheet."""
+    chosen = [o for o in outcomes if o.drafted][:DRAFTS]
+    scores = review_scores(chosen, review)
+    if not scores:
+        return 0, None
+    averages = [sum(e[k] for k in KEYS) / len(KEYS) for e in scores.values()]
+    return len(scores), sum(averages) / len(averages)
+
+
+def write(outcomes: list[Outcome], path: Path = PATH, review_path: Path = REVIEW) -> bool:
+    """Write the score sheet; returns False (and writes nothing) if scores typed in the sheet
+    would be erased (no review file and the sheet already holds scores)."""
+    review = load_review(review_path)
+    if review is None and has_scores(path):
         return False
     narrative = load_narrative()
     chosen = [o for o in outcomes if o.drafted][:DRAFTS]
+    scores = review_scores(chosen, review)
     path.parent.mkdir(parents=True, exist_ok=True)
     book = xlsxwriter.Workbook(str(path))
     book.set_properties({"created": CREATED})  # a fixed date: reruns give the same file
@@ -79,21 +113,44 @@ def write(outcomes: list[Outcome], path: Path = PATH) -> bool:
     ws.set_column(2, 5, 18)
     ws.set_column(6, 6, 10)
     ws.set_column(7, 7, 60)
+    if review:
+        note = (
+            f"Scored by {review['scored_by']}, after checking each draft against the annual "
+            "report (decision 0018). Change any score you disagree with."
+        )
+        ws.write(2, 0, note)
+    averages = []
     for n, o in enumerate(chosen, start=1):
         row = 3 + n
         ws.write(row, 0, n)
         ws.write_url(row, 1, f"internal:'{n}'!A1", string=f"{o.sheet.name} {o.sheet.period_label}")
-        for c in range(2, 6):
-            ws.write_blank(row, c, None, score)
+        entry = scores.get(o.sheet.key)
+        for c, key in enumerate(KEYS, start=2):
+            if entry:
+                ws.write_number(row, c, entry[key], score)
+            else:
+                ws.write_blank(row, c, None, score)
         cells = f"C{row + 1}:F{row + 1}"
-        ws.write_formula(row, 6, f'=IF(COUNT({cells})=0,"",AVERAGE({cells}))', avg)
-        ws.write_blank(row, 7, None, wrap)
+        value = sum(entry[k] for k in KEYS) / len(KEYS) if entry else ""
+        if entry:
+            averages.append(value)
+        ws.write_formula(row, 6, f'=IF(COUNT({cells})=0,"",AVERAGE({cells}))', avg, value)
+        if entry:
+            ws.write(row, 7, " ".join(entry["comment"].split()), wrap)
+        else:
+            ws.write_blank(row, 7, None, wrap)
     last = 3 + len(chosen) + 1
+    mean = sum(averages) / len(averages) if averages else ""
     ws.write(last + 1, 1, "Average over the drafts scored", bold)
-    ws.write_formula(last + 1, 6, f'=IF(COUNT(G5:G{last})=0,"",AVERAGE(G5:G{last}))', big)
+    ws.write_formula(last + 1, 6, f'=IF(COUNT(G5:G{last})=0,"",AVERAGE(G5:G{last}))', big, mean)
     ws.write(last + 2, 1, "Pass (4 or more)?", bold)
+    verdict = "" if mean == "" else ("yes" if mean >= PASS_MARK else "no")
     ws.write_formula(
-        last + 2, 6, f'=IF(G{last + 2}="","",IF(G{last + 2}>={PASS_MARK},"yes","no"))', bold
+        last + 2,
+        6,
+        f'=IF(G{last + 2}="","",IF(G{last + 2}>={PASS_MARK},"yes","no"))',
+        bold,
+        verdict,
     )
 
     for n, o in enumerate(chosen, start=1):

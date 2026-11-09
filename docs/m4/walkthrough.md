@@ -93,6 +93,33 @@ for the misses seen in M3 ("This amounted to £1.8 billion", "up from 70 aircraf
 is verified; everything the checks don't verify waits for your review and stays off the
 tearsheet. The goal is no longer tracked (decision 0017).
 
+## The commentary score (decision 0018)
+
+You asked me to check the drafts myself against the annual reports. I did, draft by draft, and
+scored them strictly; the scores and a comment per draft are in the score sheet. Keep in mind I
+am the same kind of model that wrote them, so this is not an independent review: change any
+score you disagree with.
+
+**Result: 2.93 of 5, below the pass mark of 4.** The figures the AI used are right, and the
+checker kept every direction honest. What pulls the score down:
+
+1. **Three wrong figures from earlier milestones**, which the drafts repeated faithfully:
+   Flughafen Wien's cash misses about 360m of short-term deposits (the company reports net
+   liquidity of 414m; the draft calls its liquidity the weakest of the group); Finnair's
+   interest coverage uses interest paid *net of interest received*, so it "collapses" when on
+   Finnair's own financial expenses it improved; ADP's revenue per passenger divides group
+   revenue by Paris passengers only.
+2. **The story of the year is missing**: Finnair's strikes, Wizz Air's grounded aircraft,
+   IAG's 1.0bn buyback, easyJet holidays. The fact sheet holds figures only, by design.
+3. **Habits**: liquidity named the point to watch by reflex (six of ten), figures repeated
+   across sections, "in line with the median" when the company *is* the median.
+4. **Negatives**: "net debt of GBP -602m" instead of "net cash of 602m".
+
+**Your decision:** the fixes are listed in decision 0018. A to C are corrections within the
+current design (data, wording, prompt). D changes a rule of the plan: letting the drafts
+mention the year's events, either from a list you write, or read from the report with a
+quote that code checks. Tell me which you want, then I redraft the ten and we score again.
+
 ## How to rerun
 
 ```bash
