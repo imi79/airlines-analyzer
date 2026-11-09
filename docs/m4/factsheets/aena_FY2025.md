@@ -36,19 +36,19 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | gross_leverage@FY2025 | Gross leverage, FY2025 | 2.00x | flat vs prior year; company in line with peer median |
 | gross_leverage@FY2024 | Gross leverage, FY2024 | 2.08x |  |
 | gross_leverage.change@FY2025 | change in Gross leverage, FY2024 to FY2025 | 0.08x | flat vs prior year; printed without a sign: say the direction in words |
-| interest_coverage@FY2025 | Interest coverage, FY2025 | 14.72x | up, better vs prior year; company in line with peer median |
+| interest_coverage@FY2025 | Interest coverage, FY2025 | 14.72x | up, better vs prior year; company above peer median, better |
 | interest_coverage@FY2024 | Interest coverage, FY2024 | 12.34x |  |
 | interest_coverage.change@FY2025 | change in Interest coverage, FY2024 to FY2025 | 2.38x | up, better vs prior year; printed without a sign: say the direction in words |
 | ffo@FY2025 | FFO, FY2025 | EUR 3.0bn | up, better vs prior year |
 | ffo@FY2024 | FFO, FY2024 | EUR 2.9bn |  |
 | ffo.change@FY2025 | change in FFO, FY2024 to FY2025 | 4.8% | up, better vs prior year; printed without a sign: say the direction in words |
-| ffo_to_debt@FY2025 | FFO to debt, FY2025 | 39.6% | up, better vs prior year; company in line with peer median |
+| ffo_to_debt@FY2025 | FFO to debt, FY2025 | 39.6% | up, better vs prior year; company above peer median, better |
 | ffo_to_debt@FY2024 | FFO to debt, FY2024 | 39.0% |  |
 | ffo_to_debt.change@FY2025 | change in FFO to debt, FY2024 to FY2025 | 0.6 points | up, better vs prior year; printed without a sign: say the direction in words |
 | fcf@FY2025 | Free cash flow, FY2025 | EUR 1.7bn | down, worse vs prior year |
 | fcf@FY2024 | Free cash flow, FY2024 | EUR 1.9bn |  |
 | fcf.change@FY2025 | change in Free cash flow, FY2024 to FY2025 | 10.2% | down, worse vs prior year; printed without a sign: say the direction in words |
-| fcf_to_debt@FY2025 | FCF to debt, FY2025 | 22.9% | down, worse vs prior year; company in line with peer median |
+| fcf_to_debt@FY2025 | FCF to debt, FY2025 | 22.9% | down, worse vs prior year; company above peer median, better |
 | fcf_to_debt@FY2024 | FCF to debt, FY2024 | 26.3% |  |
 | fcf_to_debt.change@FY2025 | change in FCF to debt, FY2024 to FY2025 | 3.4 points | down, worse vs prior year; printed without a sign: say the direction in words |
 | capex_intensity@FY2025 | Capex intensity, FY2025 | 16.9% | up vs prior year; company below peer median |
@@ -83,17 +83,17 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 
 | id | what it is | prints as | computed by code |
 | --- | --- | --- | --- |
-| ebitda_margin.peer_median@2025 | EBITDA margin, median of airports, peer year 2025 (3 companies) | 36.5% | company above peer median, better |
-| ebitda_margin.peer_rank@2025 | EBITDA margin, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
-| gross_leverage.peer_median@2025 | Gross leverage, median of airports, peer year 2025 (3 companies) | 2.00x | company in line with peer median |
-| gross_leverage.peer_rank@2025 | Gross leverage, rank in airports, peer year 2025 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
-| interest_coverage.peer_median@2025 | Interest coverage, median of airports, peer year 2025 (3 companies) | 14.72x | company in line with peer median |
-| interest_coverage.peer_rank@2025 | Interest coverage, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| ffo_to_debt.peer_median@2025 | FFO to debt, median of airports, peer year 2025 (3 companies) | 39.6% | company in line with peer median |
-| ffo_to_debt.peer_rank@2025 | FFO to debt, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| fcf_to_debt.peer_median@2025 | FCF to debt, median of airports, peer year 2025 (3 companies) | 22.9% | company in line with peer median |
-| fcf_to_debt.peer_rank@2025 | FCF to debt, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| capex_intensity.peer_median@2025 | Capex intensity, median of airports, peer year 2025 (3 companies) | 18.2% | company below peer median |
+| ebitda_margin.peer_median@FY2025 | EBITDA margin, median of airports, peer year 2025 (3 companies) | 36.5% | company above peer median, better |
+| ebitda_margin.peer_rank@FY2025 | EBITDA margin, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
+| gross_leverage.peer_median@FY2025 | Gross leverage, median of airports, peer year 2025 (3 companies) | 2.00x | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| gross_leverage.peer_rank@FY2025 | Gross leverage, rank in airports, peer year 2025 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
+| interest_coverage.peer_median@FY2025 | Interest coverage, median of airports, peer year 2025 (2 companies) | 11.31x | company above peer median, better |
+| interest_coverage.peer_rank@FY2025 | Interest coverage, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 2 | best in the group |
+| ffo_to_debt.peer_median@FY2025 | FFO to debt, median of airports, peer year 2025 (2 companies) | 27.7% | company above peer median, better |
+| ffo_to_debt.peer_rank@FY2025 | FFO to debt, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 2 | best in the group |
+| fcf_to_debt.peer_median@FY2025 | FCF to debt, median of airports, peer year 2025 (2 companies) | 13.4% | company above peer median, better |
+| fcf_to_debt.peer_rank@FY2025 | FCF to debt, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 2 | best in the group |
+| capex_intensity.peer_median@FY2025 | Capex intensity, median of airports, peer year 2025 (3 companies) | 18.2% | company below peer median |
 
 ## Other figures
 
@@ -103,19 +103,32 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | profit@FY2024 | Profit for the year, FY2024 | EUR 2.0bn |  |
 | profit.change@FY2025 | change in Profit for the year, FY2024 to FY2025 | 10.8% | up, better vs prior year; printed without a sign: say the direction in words |
 
+## Events of the year (read from the report; the quote was checked by code)
+
+Cite an event by listing its id in `facts` (no blank, no claims). It has no figure:
+write no number about it, and no direction word unless a figure of the sentence carries the claim.
+
+| id | event | what happened | quote from the report |
+| --- | --- | --- | --- |
+| event:funding_and_rating | Brazilian subsidiary issues debentures | The Brazilian subsidiary BOAB issued secured, non-convertible debentures maturing in the long term, indexed to IPCA with a fixed coupon payable semi-annually. | (page 61): "El 30 de octubre de 2025, la filial BOAB realizó su primera emisión de bonos (debentures simples) por importe de 5.300 millones de BRL, no convertibles, con garantía real, con vencimiento en junio de 2048), indexadas a IPCA y con cupón fijo del 8,74% anual, pagadero semestralmente, siendo el primer pago el 15 de junio de 2026 (Nota 20)." |
+| event:funding_and_rating-2 | Moody's upgrades Aena's rating | Moody's raised Aena's long-term issuer and senior unsecured debt ratings. | (page 231): "La agencia de calificación crediticia Moody's Investors Service ha mejorado la calificación de emisor a largo plazo y la calificación de deuda senior no garantizada de Aena S.M.E., S.A. a A2 desde A3." |
+| event:funding_and_rating-3 | Fitch affirms ratings with stable outlook | Fitch affirmed Aena's long-term and short-term ratings, with a stable long-term outlook. | (page 180): "El 22 de octubre, la agencia Fitch Ratings afirmó la calificación de largo plazo “A”, así como la calificación a corto plazo “F1” de Aena S.M.E., S.A. La perspectiva de largo plazo es estable." |
+| event:funding_and_rating-4 | Luton airport refinances bank debt | London Luton airport completed the refinancing of its bank debt. | (page 216): "En junio de 2025, el Aeropuerto London Luton completó la refinanciación de su deuda bancaria." |
+| event:regulation_and_tariffs | Regulator sets airport charges for next year | The competition regulator issued its supervision resolution setting the average airport charge per passenger for the following year, above the prior year's level. | (page 180): "En relación con el Documento de Regulación Aeroportuaria para el período 2022-2026 (DORA II), el 13 de noviembre de 2025, la CNMC emitió su resolución de supervisión de las tarifas aeroportuarias para 2026, estableciendo que el IMAAJ para 2026 sea de 11,00 euros por pasajero, lo que supone un incremento del 6,31% respecto al IMAAJ de 2025 (10,35 euros por" |
+
 ## Not available: do not discuss
 
 These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
 
-- net_leverage.peer_median@2025: the peer median would use a figure not verified yet (vie)
-- net_leverage.peer_rank@2025: the peer median would use a figure not verified yet (vie)
-- capex_intensity.peer_rank@2025: not ranked: neither higher nor lower is better
-- cash_liquidity_to_revenue.peer_median@2025: the peer median would use a figure not verified yet (vie)
-- cash_liquidity_to_revenue.peer_rank@2025: the peer median would use a figure not verified yet (vie)
+- net_leverage.peer_median@FY2025: the peer median would use a figure not verified yet (vie)
+- net_leverage.peer_rank@FY2025: the peer median would use a figure not verified yet (vie)
+- capex_intensity.peer_rank@FY2025: not ranked: neither higher nor lower is better
+- cash_liquidity_to_revenue.peer_median@FY2025: the peer median would use a figure not verified yet (vie)
+- cash_liquidity_to_revenue.peer_rank@FY2025: the peer median would use a figure not verified yet (vie)
 - liquidity@FY2024: Undrawn committed credit facilities not available for FY2024
 - liquidity_to_revenue@FY2024: Liquidity: Undrawn committed credit facilities not available for FY2024
-- liquidity_to_revenue.peer_median@2025: fewer than two companies in the peer group have a value
-- liquidity_to_revenue.peer_rank@2025: fewer than two companies in the peer group have a value
+- liquidity_to_revenue.peer_median@FY2025: fewer than two companies in the peer group have a value
+- liquidity_to_revenue.peer_rank@FY2025: fewer than two companies in the peer group have a value
 - passengers@FY2025: not verified yet: waiting for Imane's review
 - traffic_growth@FY2025: not verified yet: waiting for Imane's review
 - revenue_per_passenger@FY2025: n.m.: group revenue includes London Luton and the Brazilian airports, while passengers are the Spanish network only.
@@ -126,3 +139,5 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - contract_liabilities@FY2025: no figure for this year
 - contract_liabilities@FY2024: no figure for this year
 - undrawn_facilities@FY2024: no figure for this year
+- net_cash@FY2025: the company has net debt, not net cash
+- net_cash@FY2024: the company has net debt, not net cash

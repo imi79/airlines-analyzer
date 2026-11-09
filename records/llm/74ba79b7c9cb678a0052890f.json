@@ -1,0 +1,307 @@
+{
+ "answer": {
+  "sections": {
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@2025"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "net_leverage.peer_rank@2025"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "gross_leverage.peer_rank@2025"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "interest_coverage.peer_rank@2025"
+      }
+     ],
+     "text": "IAG ranks top of the network airlines on EBITDA margin ({{ebitda_margin.peer_rank@2025}}), net leverage ({{net_leverage.peer_rank@2025}}), gross leverage ({{gross_leverage.peer_rank@2025}}) and interest coverage ({{interest_coverage.peer_rank@2025}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers",
+        "better_than_peers"
+       ],
+       "id": "ffo_to_debt@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt.peer_median@2025"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "better_than_peers"
+       ],
+       "id": "fcf_to_debt@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt.peer_median@2025"
+      }
+     ],
+     "text": "It also ranks best on cash generation, with FFO to debt of {{ffo_to_debt@FY2025}} against a peer median of {{ffo_to_debt.peer_median@2025}} and FCF to debt of {{fcf_to_debt@FY2025}} against {{fcf_to_debt.peer_median@2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "capex_intensity@FY2025"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue.peer_rank@2025"
+      }
+     ],
+     "text": "Capex intensity of {{capex_intensity@FY2025}} puts the company in the middle of the group, and cash liquidity to revenue of {{cash_liquidity_to_revenue@FY2025}} is in line with the peer median, ranking {{cash_liquidity_to_revenue.peer_rank@2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "advance_ticket_cover@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover.peer_median@2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "advance_ticket_cover.peer_rank@2025"
+      }
+     ],
+     "text": "Advance ticket cover of {{advance_ticket_cover@FY2025}} is above the peer median of {{advance_ticket_cover.peer_median@2025}}, the weakest of the group ({{advance_ticket_cover.peer_rank@2025}})."
+    }
+   ],
+   "snapshot": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:one_offs"
+      }
+     ],
+     "text": "International Airlines Group, the owner of British Airways, Iberia and Aer Lingus, grew revenue by {{revenue.change@FY2025}} to {{revenue@FY2025}} in FY2025, a year in which a French air traffic control strike caused significant disruption and direct costs."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ebitda_margin.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "net_leverage.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage@FY2025"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "net_leverage.peer_rank@2025"
+      }
+     ],
+     "text": "The EBITDA margin widened by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}} and net leverage fell by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}}, the lowest of the network peer group ({{net_leverage.peer_rank@2025}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:capital_returns"
+      }
+     ],
+     "text": "Liquidity is the point to watch: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}} as excess cash was returned to shareholders."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "liquidity_to_revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "liquidity_to_revenue@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "undrawn_facilities.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:capital_returns"
+      }
+     ],
+     "text": "Liquidity: liquidity to revenue fell by {{liquidity_to_revenue.change@FY2025}} to {{liquidity_to_revenue@FY2025}} and undrawn committed facilities were reduced by {{undrawn_facilities.change@FY2025}}, leaving less headroom as excess cash is returned."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "advance_ticket_cover@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover.peer_median@2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "advance_ticket_cover.peer_rank@2025"
+      }
+     ],
+     "text": "Customer prepayments: advance ticket cover of {{advance_ticket_cover@FY2025}} is above the peer median of {{advance_ticket_cover.peer_median@2025}}, the weakest of the group ({{advance_ticket_cover.peer_rank@2025}}), a sensitivity if bookings slow."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "cask_ex_fuel.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cask_ex_fuel@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "cask@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "fuel_share_of_costs@FY2025"
+      }
+     ],
+     "text": "Unit cost: CASK ex-fuel rose by {{cask_ex_fuel.change@FY2025}} to {{cask_ex_fuel@FY2025}}, so the decline in total CASK to {{cask@FY2025}} came with a lower fuel share of costs of {{fuel_share_of_costs@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2025"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "capex_intensity@FY2025"
+      }
+     ],
+     "text": "Cash generation: free cash flow fell by {{fcf.change@FY2025}} to {{fcf@FY2025}} as capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, in line with the peer median."
+    }
+   ]
+  }
+ },
+ "label": "iag_FY2025 attempt 2",
+ "recorded_at": "2026-11-09T14:41:45+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v4",
+  "provider": "deepseek",
+  "system_sha256": "b0604cb7fa50c8024297d0491baf099868983d69337d8b5927b5e5286c493bd1",
+  "tool_sha256": "043626d595ff54039fea1fde577dde4df504d1781301afe6ed1a38f9b30129ab",
+  "user_sha256": "ef47a05e42697890e51e2439cf3ce5a40dc90cf61adf87fee3ae1372ba11f95e"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14629,
+  "output_tokens": 1829
+ }
+}

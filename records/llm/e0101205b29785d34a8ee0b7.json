@@ -1,0 +1,320 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      }
+     ],
+     "text": "The group repaid its interest-bearing financial liabilities in full, which the report says greatly reduces the sensitivity of the company to changes in interest rates."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating-2"
+      }
+     ],
+     "text": "A financing commitment was given to the City Air Terminal joint venture for new train sets, part of which was drawn as a loan in the year."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "fcf@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2024"
+      }
+     ],
+     "text": "Free cash flow of {{fcf@FY2024}} remains the main internal source of funding, having fallen by {{fcf.change@FY2024}} as capital spending rose."
+    },
+    {
+     "facts": [],
+     "text": "Undrawn committed facilities are not disclosed for the year, so the liquidity buffer rests on the cash generated and on the absence of interest-bearing financial liabilities."
+    }
+   ],
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "passengers.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "passengers@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse",
+        "below_peers"
+       ],
+       "id": "traffic_growth@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "traffic_growth@FY2023"
+      }
+     ],
+     "text": "Passengers rose by {{passengers.change@FY2024}} to {{passengers@FY2024}}, but traffic growth of {{traffic_growth@FY2024}} was well below the {{traffic_growth@FY2023}} of FY2023."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "aero_revenue_per_passenger.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "aero_revenue_per_passenger@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs"
+      }
+     ],
+     "text": "Aeronautical revenue per passenger increased by {{aero_revenue_per_passenger.change@FY2024}} to {{aero_revenue_per_passenger@FY2024}}, supporting the revenue base as airport charges are temporarily adjusted by average inflation."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs-2"
+      }
+     ],
+     "text": "The investment programme, including the third runway against which complaints were filed over the extension of the construction completion deadline, is reflected in the capital spending discussed under credit metrics."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "gross_leverage.peer_rank@FY2024"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "gross_leverage.peer_median@FY2024"
+      }
+     ],
+     "text": "Flughafen Wien has the lowest gross leverage of the airport group ({{gross_leverage.peer_rank@FY2024}}), against a peer median of {{gross_leverage.peer_median@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_rank@FY2024"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "capex_intensity.peer_median@FY2024"
+      }
+     ],
+     "text": "On EBITDA margin the company sits in the middle of the group ({{ebitda_margin.peer_rank@FY2024}}), and it also sits in the middle of the group on capex intensity, at a peer median of {{capex_intensity.peer_median@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "traffic_growth.peer_rank@FY2024"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "traffic_growth.peer_median@FY2024"
+      }
+     ],
+     "text": "Traffic growth is the weakest of the group ({{traffic_growth.peer_rank@FY2024}}), below the peer median of {{traffic_growth.peer_median@FY2024}}."
+    }
+   ],
+   "snapshot": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2024"
+      },
+      {
+       "claims": [
+        "flat",
+        "in_line_with_peers"
+       ],
+       "id": "ebitda_margin@FY2024"
+      }
+     ],
+     "text": "Flughafen Wien, the Vienna airport group that also holds Malta and Košice airports, grew revenue by {{revenue.change@FY2024}} to {{revenue@FY2024}} in FY2024, with the EBITDA margin broadly unchanged at {{ebitda_margin@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat",
+        "below_peers"
+       ],
+       "id": "gross_leverage@FY2024"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "total_debt@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      }
+     ],
+     "text": "Gross leverage stayed at {{gross_leverage@FY2024}} as total debt was broadly unchanged at {{total_debt@FY2024}}, and the group repaid its interest-bearing financial liabilities in full."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity@FY2024"
+      }
+     ],
+     "text": "The point to watch is cash generation: free cash flow fell by {{fcf.change@FY2024}} to {{fcf@FY2024}} as capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity@FY2024"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "capex_intensity.peer_median@FY2024"
+      }
+     ],
+     "text": "Cash generation: free cash flow fell by {{fcf.change@FY2024}} to {{fcf@FY2024}} as capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}, in line with the peer median of {{capex_intensity.peer_median@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "worse"
+       ],
+       "id": "traffic_growth@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "traffic_growth.peer_median@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "traffic_growth.peer_rank@FY2024"
+      }
+     ],
+     "text": "Traffic: growth of {{traffic_growth@FY2024}} is below the peer median of {{traffic_growth.peer_median@FY2024}} and the weakest of the group ({{traffic_growth.peer_rank@FY2024}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs"
+      }
+     ],
+     "text": "Regulation: airport charges are temporarily adjusted by average inflation, a rule that ends at the end of 2026, so revenue per passenger depends on the tariff application that follows."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:other"
+      }
+     ],
+     "text": "Litigation: disputes with the Maltese government and employee claims concerning Malta International Airport were outstanding at the balance sheet date, which the group considers unfounded."
+    }
+   ]
+  }
+ },
+ "label": "vie_FY2024 attempt 2",
+ "recorded_at": "2026-11-09T15:02:14+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v5",
+  "provider": "deepseek",
+  "system_sha256": "a84c5b5d2de7e517329ea1e077d0ec7c8fdc9d67a0e6d76a31d39278f691c640",
+  "tool_sha256": "2816ea2a9f7e01e88b3345ec45231cc963b52f6c8909992118b76b30ca1d5e20",
+  "user_sha256": "204084ca073e24df92c701b743fad3fa692298e57697b488e7b02cf9897947e4"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 13842,
+  "output_tokens": 1833
+ }
+}

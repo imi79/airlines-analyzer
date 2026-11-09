@@ -1,0 +1,123 @@
+{
+ "answer": {
+  "sections": {
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2023"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "fcf_to_debt@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt.peer_median@2024"
+      }
+     ],
+     "text": "Cash generation: free cash flow of {{fcf@FY2024}} compares with {{fcf@FY2023}} in FY2023, and FCF to debt of {{fcf_to_debt@FY2024}} is below the peer median of {{fcf_to_debt.peer_median@2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse",
+        "below_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "cash_liquidity_to_revenue.peer_rank@2024"
+      }
+     ],
+     "text": "Liquidity: cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, taking cash liquidity to revenue to {{cash_liquidity_to_revenue@FY2024}}, the weakest of the group ({{cash_liquidity_to_revenue.peer_rank@2024}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover.change@FY2024"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "advance_ticket_cover@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover.peer_median@2024"
+      }
+     ],
+     "text": "Customer prepayments: advance ticket cover rose by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, below the peer median of {{advance_ticket_cover.peer_median@2024}}, so a smaller share of the cash is customers' prepayments."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "capex_intensity@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity.peer_median@2024"
+      },
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines"
+      }
+     ],
+     "text": "Investment: capex intensity of {{capex_intensity@FY2024}} is above the peer median of {{capex_intensity.peer_median@2024}}, with fleet renewal delayed by supply chain constraints and engine problems on part of the new-generation fleet."
+    }
+   ]
+  }
+ },
+ "label": "afkl_FY2024 attempt 3",
+ "recorded_at": "2026-11-09T14:45:13+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v4",
+  "provider": "deepseek",
+  "system_sha256": "b0604cb7fa50c8024297d0491baf099868983d69337d8b5927b5e5286c493bd1",
+  "tool_sha256": "bf89949808c3cfaf136bca2c04e2c1fbe93c3b5950310e089cc25b70884f3a9e",
+  "user_sha256": "3d4c859aef5db116e9087bcbaf156de6c33506e7fc702f3ceee1fc2678f9a02d"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 12029,
+  "output_tokens": 671
+ }
+}

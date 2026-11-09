@@ -1,0 +1,77 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity@FY2024"
+      }
+     ],
+     "text": "Cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, and cash liquidity declined by the same {{cash_liquidity.change@FY2024}} to {{cash_liquidity@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      }
+     ],
+     "text": "Cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, a thinner buffer against the group's debt."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      }
+     ],
+     "text": "The group raised bond proceeds in May 2024, which supported the funding of the investment programme alongside operating cash flow."
+    }
+   ]
+  }
+ },
+ "label": "adp_FY2024 attempt 2",
+ "recorded_at": "2026-11-09T15:01:43+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v5",
+  "provider": "deepseek",
+  "system_sha256": "a84c5b5d2de7e517329ea1e077d0ec7c8fdc9d67a0e6d76a31d39278f691c640",
+  "tool_sha256": "a9a29c4d71e4d0dcd7bcfbf1a78361a71665bb94d0393d4635b5f13dd6cb6dd3",
+  "user_sha256": "7aeadcedd91c9609a0ed0b2e6aa2bbc9774dcd558e3df64a624824e64e10f5df"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 12735,
+  "output_tokens": 343
+ }
+}

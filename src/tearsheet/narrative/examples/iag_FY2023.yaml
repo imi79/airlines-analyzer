@@ -15,11 +15,11 @@ sections:
         - {id: net_leverage@FY2022}
     - text: >-
         The EBITDA margin rose by {{ebitda_margin.change@FY2023}} to {{ebitda_margin@FY2023}},
-        the best in the network peer group ({{ebitda_margin.peer_rank@2023}}).
+        the best in the network peer group ({{ebitda_margin.peer_rank@FY2023}}).
       facts:
         - {id: ebitda_margin.change@FY2023, claims: [up]}
         - {id: ebitda_margin@FY2023}
-        - {id: ebitda_margin.peer_rank@2023, claims: [best_in_group]}
+        - {id: ebitda_margin.peer_rank@FY2023, claims: [best_in_group]}
     - text: >-
         Liquidity is the point to watch: cash and cash-like investments fell by
         {{cash_like.change@FY2023}} as total debt was reduced by {{total_debt.change@FY2023}},
@@ -98,33 +98,30 @@ sections:
         - {id: cash_like@FY2023, claims: [down]}
     - text: >-
         Advance ticket cover rose to {{advance_ticket_cover@FY2023}}, the highest in the peer
-        group ({{advance_ticket_cover.peer_rank@2023}}), so a larger part of the cash is
+        group ({{advance_ticket_cover.peer_rank@FY2023}}), so a larger part of the cash is
         customers' prepayments.
       facts:
         - {id: advance_ticket_cover@FY2023, claims: [up, worse]}
-        - {id: advance_ticket_cover.peer_rank@2023, claims: [worst_in_group]}
+        - {id: advance_ticket_cover.peer_rank@FY2023, claims: [worst_in_group]}
   peer_positioning:
     - text: >-
-        IAG leads the network airlines on EBITDA margin ({{ebitda_margin.peer_rank@2023}}),
-        FFO to debt ({{ffo_to_debt.peer_rank@2023}}) and FCF to debt
-        ({{fcf_to_debt.peer_rank@2023}}).
+        IAG leads the network airlines on EBITDA margin ({{ebitda_margin.peer_rank@FY2023}}),
+        FFO to debt ({{ffo_to_debt.peer_rank@FY2023}}) and FCF to debt
+        ({{fcf_to_debt.peer_rank@FY2023}}).
       facts:
-        - {id: ebitda_margin.peer_rank@2023, claims: [best_in_group]}
-        - {id: ffo_to_debt.peer_rank@2023, claims: [best_in_group]}
-        - {id: fcf_to_debt.peer_rank@2023, claims: [best_in_group]}
+        - {id: ebitda_margin.peer_rank@FY2023, claims: [best_in_group]}
+        - {id: ffo_to_debt.peer_rank@FY2023, claims: [best_in_group]}
+        - {id: fcf_to_debt.peer_rank@FY2023, claims: [best_in_group]}
     - text: >-
-        Its gross leverage of {{gross_leverage@FY2023}} is below the peer median of
-        {{gross_leverage.peer_median@2023}}, while net leverage is in line with the median at
-        {{net_leverage@FY2023}}.
+        Gross leverage is below the network median of {{gross_leverage.peer_median@FY2023}},
+        while net leverage sits in the middle of the group.
       facts:
-        - {id: gross_leverage@FY2023, claims: [below_peers]}
-        - {id: gross_leverage.peer_median@2023}
-        - {id: net_leverage@FY2023, claims: [in_line_with_peers]}
+        - {id: gross_leverage.peer_median@FY2023, claims: [below_peers]}
     - text: >-
         Cash liquidity to revenue is the weakest of the group
-        ({{cash_liquidity_to_revenue.peer_rank@2023}}).
+        ({{cash_liquidity_to_revenue.peer_rank@FY2023}}).
       facts:
-        - {id: cash_liquidity_to_revenue.peer_rank@2023, claims: [worst_in_group]}
+        - {id: cash_liquidity_to_revenue.peer_rank@FY2023, claims: [worst_in_group]}
   watch_items:
     - text: >-
         Liquidity: liquidity to revenue fell by {{liquidity_to_revenue.change@FY2023}} to
@@ -134,11 +131,11 @@ sections:
         - {id: liquidity_to_revenue@FY2023}
     - text: >-
         Customer prepayments: advance ticket cover of {{advance_ticket_cover@FY2023}} is above
-        the peer median of {{advance_ticket_cover.peer_median@2023}}, a sensitivity if
+        the peer median of {{advance_ticket_cover.peer_median@FY2023}}, a sensitivity if
         bookings slow.
       facts:
         - {id: advance_ticket_cover@FY2023, claims: [above_peers]}
-        - {id: advance_ticket_cover.peer_median@2023}
+        - {id: advance_ticket_cover.peer_median@FY2023}
     - text: >-
         Fuel: fuel makes up {{fuel_share_of_costs@FY2023}} of costs, so margins remain exposed
         to jet fuel prices.

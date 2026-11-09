@@ -14,11 +14,11 @@ sections:
     - text: >-
         The EBITDA margin widened by {{ebitda_margin.change@FY2023}} to
         {{ebitda_margin@FY2023}}, the highest of the airport peers
-        ({{ebitda_margin.peer_rank@2023}}).
+        ({{ebitda_margin.peer_rank@FY2023}}).
       facts:
         - {id: ebitda_margin.change@FY2023, claims: [up]}
         - {id: ebitda_margin@FY2023}
-        - {id: ebitda_margin.peer_rank@2023, claims: [best_in_group]}
+        - {id: ebitda_margin.peer_rank@FY2023, claims: [best_in_group]}
     - text: >-
         Net leverage fell to {{net_leverage@FY2023}} even as capex intensity rose to
         {{capex_intensity@FY2023}}, the main point to watch as the investment plan unfolds.
@@ -93,32 +93,32 @@ sections:
   peer_positioning:
     - text: >-
         Aena has the highest EBITDA margin among the airport peers
-        ({{ebitda_margin.peer_rank@2023}}), at {{ebitda_margin@FY2023}} against a median of
-        {{ebitda_margin.peer_median@2023}}.
+        ({{ebitda_margin.peer_rank@FY2023}}), at {{ebitda_margin@FY2023}} against a median of
+        {{ebitda_margin.peer_median@FY2023}}.
       facts:
-        - {id: ebitda_margin.peer_rank@2023, claims: [best_in_group]}
+        - {id: ebitda_margin.peer_rank@FY2023, claims: [best_in_group]}
         - {id: ebitda_margin@FY2023}
-        - {id: ebitda_margin.peer_median@2023}
+        - {id: ebitda_margin.peer_median@FY2023}
     - text: >-
         Leverage sits at the group median, with net leverage of {{net_leverage@FY2023}}
-        ranking {{net_leverage.peer_rank@2023}}.
+        ranking {{net_leverage.peer_rank@FY2023}}.
       facts:
         - {id: net_leverage@FY2023}
-        - {id: net_leverage.peer_rank@2023}
+        - {id: net_leverage.peer_rank@FY2023}
     - text: >-
         Cash liquidity to revenue is the strongest of the group
-        ({{cash_liquidity_to_revenue.peer_rank@2023}}).
+        ({{cash_liquidity_to_revenue.peer_rank@FY2023}}).
       facts:
-        - {id: cash_liquidity_to_revenue.peer_rank@2023, claims: [best_in_group]}
+        - {id: cash_liquidity_to_revenue.peer_rank@FY2023, claims: [best_in_group]}
   watch_items:
     - text: >-
         Investment: capex intensity rose by {{capex_intensity.change@FY2023}} to
         {{capex_intensity@FY2023}}, above the peer median of
-        {{capex_intensity.peer_median@2023}}.
+        {{capex_intensity.peer_median@FY2023}}.
       facts:
         - {id: capex_intensity.change@FY2023, claims: [up]}
         - {id: capex_intensity@FY2023}
-        - {id: capex_intensity.peer_median@2023, claims: [above_peers]}
+        - {id: capex_intensity.peer_median@FY2023, claims: [above_peers]}
     - text: >-
         Free cash flow: FCF to debt fell to {{fcf_to_debt@FY2023}} as capital spending
         absorbed more of the cash generated.

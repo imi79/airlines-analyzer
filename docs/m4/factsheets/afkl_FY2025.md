@@ -85,23 +85,23 @@ Company type: airline. Reporting currency: EUR. Peer group: Network airlines (af
 
 | id | what it is | prints as | computed by code |
 | --- | --- | --- | --- |
-| ebitda_margin.peer_median@2025 | EBITDA margin, median of network airlines, peer year 2025 (3 companies) | 15.3% | company in line with peer median |
-| ebitda_margin.peer_rank@2025 | EBITDA margin, rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| net_leverage.peer_median@2025 | Net leverage, median of network airlines, peer year 2025 (3 companies) | 1.71x | company in line with peer median |
-| net_leverage.peer_rank@2025 | Net leverage, rank in network airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
-| gross_leverage.peer_median@2025 | Gross leverage, median of network airlines, peer year 2025 (3 companies) | 3.07x | company in line with peer median |
-| gross_leverage.peer_rank@2025 | Gross leverage, rank in network airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
-| interest_coverage.peer_median@2025 | Interest coverage, median of network airlines, peer year 2025 (3 companies) | 8.06x | company in line with peer median |
-| interest_coverage.peer_rank@2025 | Interest coverage, rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| ffo_to_debt.peer_median@2025 | FFO to debt, median of network airlines, peer year 2025 (3 companies) | 27.4% | company in line with peer median |
-| ffo_to_debt.peer_rank@2025 | FFO to debt, rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| fcf_to_debt.peer_median@2025 | FCF to debt, median of network airlines, peer year 2025 (3 companies) | 10.8% | company below peer median, worse |
-| fcf_to_debt.peer_rank@2025 | FCF to debt, rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| capex_intensity.peer_median@2025 | Capex intensity, median of network airlines, peer year 2025 (3 companies) | 10.4% | company above peer median |
-| cash_liquidity_to_revenue.peer_median@2025 | Cash liquidity to revenue (partial), median of network airlines, peer year 2025 (3 companies) | 25.0% | company below peer median, worse |
-| cash_liquidity_to_revenue.peer_rank@2025 | Cash liquidity to revenue (partial), rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| advance_ticket_cover.peer_median@2025 | Advance ticket cover, median of network airlines, peer year 2025 (3 companies) | 67.4% | company below peer median, better |
-| advance_ticket_cover.peer_rank@2025 | Advance ticket cover, rank in network airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 1st of 3 | best in the group |
+| ebitda_margin.peer_median@FY2025 | EBITDA margin, median of network airlines, peer year 2025 (3 companies) | 15.3% | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| ebitda_margin.peer_rank@FY2025 | EBITDA margin, rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
+| net_leverage.peer_median@FY2025 | Net leverage, median of network airlines, peer year 2025 (3 companies) | 1.71x | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| net_leverage.peer_rank@FY2025 | Net leverage, rank in network airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
+| gross_leverage.peer_median@FY2025 | Gross leverage, median of network airlines, peer year 2025 (3 companies) | 3.07x | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| gross_leverage.peer_rank@FY2025 | Gross leverage, rank in network airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
+| interest_coverage.peer_median@FY2025 | Interest coverage, median of network airlines, peer year 2025 (3 companies) | 8.06x | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| interest_coverage.peer_rank@FY2025 | Interest coverage, rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
+| ffo_to_debt.peer_median@FY2025 | FFO to debt, median of network airlines, peer year 2025 (3 companies) | 27.4% | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| ffo_to_debt.peer_rank@FY2025 | FFO to debt, rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
+| fcf_to_debt.peer_median@FY2025 | FCF to debt, median of network airlines, peer year 2025 (3 companies) | 10.8% | company below peer median, worse |
+| fcf_to_debt.peer_rank@FY2025 | FCF to debt, rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
+| capex_intensity.peer_median@FY2025 | Capex intensity, median of network airlines, peer year 2025 (3 companies) | 10.4% | company above peer median |
+| cash_liquidity_to_revenue.peer_median@FY2025 | Cash liquidity to revenue (partial), median of network airlines, peer year 2025 (3 companies) | 25.0% | company below peer median, worse |
+| cash_liquidity_to_revenue.peer_rank@FY2025 | Cash liquidity to revenue (partial), rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
+| advance_ticket_cover.peer_median@FY2025 | Advance ticket cover, median of network airlines, peer year 2025 (3 companies) | 67.4% | company below peer median, better |
+| advance_ticket_cover.peer_rank@FY2025 | Advance ticket cover, rank in network airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 1st of 3 | best in the group |
 
 ## Other figures
 
@@ -111,12 +111,25 @@ Company type: airline. Reporting currency: EUR. Peer group: Network airlines (af
 | profit@FY2024 | Profit for the year, FY2024 | EUR 489m |  |
 | profit.change@FY2025 | change in Profit for the year, FY2024 to FY2025 | 258.7% | up, better vs prior year; printed without a sign: say the direction in words |
 
+## Events of the year (read from the report; the quote was checked by code)
+
+Cite an event by listing its id in `facts` (no blank, no claims). It has no figure:
+write no number about it, and no direction word unless a figure of the sentence carries the claim.
+
+| id | event | what happened | quote from the report |
+| --- | --- | --- | --- |
+| event:funding_and_rating | Bond issuance under EMTN programme | The Group placed senior unsecured bonds under its EMTN programme, with the cash received in September 2025. | (page 18): "bonds on August 28, 2025, with a maturity of 5 years and a coupon of 3.75% (yield of 3.866%) under its EMTN program. The cash inflow occurred on September 4, 2025 (see Note 31 “Financial liabilities”)." |
+| event:funding_and_rating-2 | Redemption of convertible subordinated perpetual bonds | The Group notified holders of its last-rank indefinite subordinated convertible bonds of its intention to redeem all outstanding hybrid bonds from the hard call date, and paid the nominal amount plus accrued interest in November 2025. | (page 18): "On October 15, Air France–KLM Group notified the holders of last-rank indefinite subordinated bond convertible into new shares and/or existing shares its intention to redeem all of the outstanding hybrid Bonds from the First Hard Call Date at a price per hybrid Bonds equal to par (€100,000) plus accrued interest of 1,625 euro." |
+| event:acquisitions_and_disposals | Stake acquired in WestJet | Air France-KLM completed the acquisition of a minority stake in Canadian airline WestJet, bought from its joint venture partner Delta Air Lines. | (page 18): "On October 22, 2025, Air France-KLM finalized the acquisition of a 2.3% stake in the capital of Canadian airline WestJet for a total amount of $49 million. This transaction, initially announced on May 9, 2025, remained subject to certain approvals." |
+| event:funding_and_rating-3 | Credit facility maturity extended | The Group exercised an extension option on the Air France-KLM and Air France credit facility, pushing its maturity date out. | (page 17): "This last extension option was exercised in June 2025, bringing the maturity date to 2029." |
+| event:funding_and_rating-4 | Perpetual bond issuance and repayment | The Group issued new perpetual bonds and repaid existing perpetual bonds during the year. | (page 8): "Issuance of perpetual 28.3 494 – Repayment of perpetual 28.3 (802) –" |
+
 ## Not available: do not discuss
 
 These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
 
 - fcf.change@FY2025: a percentage change is not meaningful (a year is negative or zero); the direction is still up, on fcf@FY2025
-- capex_intensity.peer_rank@2025: not ranked: neither higher nor lower is better
+- capex_intensity.peer_rank@FY2025: not ranked: neither higher nor lower is better
 - liquidity@FY2025: not verified yet: waiting for Imane's review
 - liquidity@FY2024: not verified yet: waiting for Imane's review
 - liquidity_to_revenue@FY2025: not verified yet: waiting for Imane's review
@@ -144,3 +157,5 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - fuel_hedge_ratio@FY2024: Fuel hedge ratio not available for FY2024
 - undrawn_facilities@FY2025: not verified yet: waiting for Imane's review
 - undrawn_facilities@FY2024: not verified yet: waiting for Imane's review
+- net_cash@FY2025: the company has net debt, not net cash
+- net_cash@FY2024: the company has net debt, not net cash

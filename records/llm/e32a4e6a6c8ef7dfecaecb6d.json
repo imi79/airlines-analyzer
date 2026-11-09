@@ -1,0 +1,112 @@
+{
+ "answer": {
+  "sections": {
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@2024"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "gross_leverage@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_median@2024"
+      }
+     ],
+     "text": "Leverage: net leverage ranks {{net_leverage.peer_rank@2024}} in the low-cost group, with gross leverage of {{gross_leverage@FY2025}} against a peer median of {{gross_leverage.peer_median@2024}}, so deleveraging depends on earnings recovering."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ffo_to_debt.change@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "ffo_to_debt@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt.peer_median@2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda.change@FY2025"
+      }
+     ],
+     "text": "Cash generation: FFO to debt fell by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}, below the peer median of {{ffo_to_debt.peer_median@2024}}, as EBITDA declined by {{ebitda.change@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "advance_ticket_cover@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover.peer_median@2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "advance_ticket_cover.peer_rank@2024"
+      }
+     ],
+     "text": "Customer prepayments: advance ticket cover of {{advance_ticket_cover@FY2025}} is above the peer median of {{advance_ticket_cover.peer_median@2024}} and ranks {{advance_ticket_cover.peer_rank@2024}}, so a larger part of liquidity is refundable if bookings slow."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines"
+      },
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines-3"
+      }
+     ],
+     "text": "Grounding: the engine recall kept a large number of aircraft out of service during the year, and the new Pratt & Whitney support agreement covers the direct costs of those aircraft."
+    }
+   ]
+  }
+ },
+ "label": "wizz_FY2025 attempt 3",
+ "recorded_at": "2026-11-09T14:48:21+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v4",
+  "provider": "deepseek",
+  "system_sha256": "b0604cb7fa50c8024297d0491baf099868983d69337d8b5927b5e5286c493bd1",
+  "tool_sha256": "bf89949808c3cfaf136bca2c04e2c1fbe93c3b5950310e089cc25b70884f3a9e",
+  "user_sha256": "495a1984ba65fb4cbeefbd73ed10781b38f7147605b2dd0f6ad8528f944451b9"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 12677,
+  "output_tokens": 618
+ }
+}

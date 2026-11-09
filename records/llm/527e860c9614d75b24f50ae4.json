@@ -1,0 +1,124 @@
+{
+ "answer": {
+  "sections": {
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_to_debt.change@FY2024"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "fcf_to_debt@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "above_peers"
+       ],
+       "id": "capex_intensity@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity.peer_median@2024"
+      }
+     ],
+     "text": "Cash generation: FCF to debt fell by {{fcf_to_debt.change@FY2024}} to {{fcf_to_debt@FY2024}}, in line with the peer median, as capex intensity rose to {{capex_intensity@FY2024}} against a peer median of {{capex_intensity.peer_median@2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "ebitda_margin@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@2024"
+      }
+     ],
+     "text": "Profitability: the EBITDA margin of {{ebitda_margin@FY2024}} is the weakest in the peer group ({{ebitda_margin.peer_rank@2024}}), below the median of {{ebitda_margin.peer_median@2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "cask_ex_fuel.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cask_ex_fuel@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "fleet_age.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fleet_age@FY2024"
+      }
+     ],
+     "text": "Unit cost: CASK ex-fuel rose by {{cask_ex_fuel.change@FY2024}} to {{cask_ex_fuel@FY2024}}, and the average fleet age increased by {{fleet_age.change@FY2024}} to {{fleet_age@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "contract_liabilities.change@FY2024"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "advance_ticket_cover@FY2024"
+      }
+     ],
+     "text": "Customer prepayments: contract liabilities of {{contract_liabilities@FY2024}} rose by {{contract_liabilities.change@FY2024}}, and advance ticket cover of {{advance_ticket_cover@FY2024}} sits in the middle of the group."
+    }
+   ]
+  }
+ },
+ "label": "easyjet_FY2024 attempt 3",
+ "recorded_at": "2026-11-09T14:46:23+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v4",
+  "provider": "deepseek",
+  "system_sha256": "b0604cb7fa50c8024297d0491baf099868983d69337d8b5927b5e5286c493bd1",
+  "tool_sha256": "bf89949808c3cfaf136bca2c04e2c1fbe93c3b5950310e089cc25b70884f3a9e",
+  "user_sha256": "48c11cdacfe7797c27aed9a02bdc50100a45d87ad8c3730ef8ff2a1855676282"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 12521,
+  "output_tokens": 659
+ }
+}

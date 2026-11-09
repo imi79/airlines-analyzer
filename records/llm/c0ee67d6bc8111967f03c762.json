@@ -1,0 +1,214 @@
+{
+ "answer": {
+  "sections": {
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "passengers.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "passengers@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:capacity_and_network"
+      }
+     ],
+     "text": "Passengers rose by {{passengers.change@FY2025}} to {{passengers@FY2025}}, with the summer programme adding new leisure routes to the network."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "fuel_share_of_costs@FY2025"
+      }
+     ],
+     "text": "Fuel made up {{fuel_share_of_costs@FY2025}} of costs, broadly unchanged on the prior year, so the cost base remains exposed to jet fuel prices."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines"
+      },
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines-2"
+      }
+     ],
+     "text": "The acquisition of previously leased Boeing 737-800 aircraft brought accounting gains and recurring cost savings, and the group exercised its option for additional 737 MAX 8 aircraft."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:labour"
+      }
+     ],
+     "text": "New collective bargaining agreements with pilots, cabin crew and technicians were concluded during the year, fixing labour costs for the period covered."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_rank@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage.peer_rank@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_rank@FY2025"
+      }
+     ],
+     "text": "Norwegian sits in the middle of the low-cost group on EBITDA margin ({{ebitda_margin.peer_rank@FY2025}}), net leverage ({{net_leverage.peer_rank@FY2025}}) and gross leverage ({{gross_leverage.peer_rank@FY2025}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "ffo_to_debt.peer_rank@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt.peer_rank@FY2025"
+      }
+     ],
+     "text": "Cash generation is also mid-group, with FFO to debt ranking {{ffo_to_debt.peer_rank@FY2025}} and FCF to debt {{fcf_to_debt.peer_rank@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "cash_liquidity_to_revenue.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "advance_ticket_cover.peer_rank@FY2025"
+      }
+     ],
+     "text": "Cash liquidity to revenue is the weakest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2025}}), while advance ticket cover is the strongest ({{advance_ticket_cover.peer_rank@FY2025}})."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue.peer_median@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "cash_liquidity_to_revenue.peer_rank@FY2025"
+      }
+     ],
+     "text": "Liquidity: cash liquidity to revenue of {{cash_liquidity_to_revenue@FY2025}} is below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2025}} and ranks {{cash_liquidity_to_revenue.peer_rank@FY2025}}, the weakest in the group, leaving less headroom against near-term maturities."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "net_leverage.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_debt.change@FY2025"
+      }
+     ],
+     "text": "Leverage: net leverage rose by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}} as net debt increased by {{net_debt.change@FY2025}}, so further debt-funded investment would extend the trend."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "capex_intensity@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity.peer_median@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2025"
+      }
+     ],
+     "text": "Investment: capex intensity of {{capex_intensity@FY2025}} is above the peer median of {{capex_intensity.peer_median@FY2025}}, and free cash flow fell by {{fcf.change@FY2025}} to {{fcf@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "advance_ticket_cover@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover.peer_median@FY2025"
+      }
+     ],
+     "text": "Customer prepayments: advance ticket cover of {{advance_ticket_cover@FY2025}} is below the peer median of {{advance_ticket_cover.peer_median@FY2025}}, so a slower booking cycle would reduce the float funding the cash position."
+    }
+   ]
+  }
+ },
+ "label": "norwegian_FY2025 attempt 2",
+ "recorded_at": "2026-11-09T15:04:29+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v5",
+  "provider": "deepseek",
+  "system_sha256": "a84c5b5d2de7e517329ea1e077d0ec7c8fdc9d67a0e6d76a31d39278f691c640",
+  "tool_sha256": "7a9da467293f2d6dbc9511587281f64d2cde4632f8de6d1e2fff2e39258b73ad",
+  "user_sha256": "0caf18df7283d9d6968ec2e91900a7d1c1559eb4129a00533f8efa0a4af96862"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14236,
+  "output_tokens": 1282
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      }
+     ],
+     "text": "The group repaid its interest-bearing financial liabilities in full, which the report says greatly reduces the sensitivity of the company to changes in interest rates."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating-2"
+      }
+     ],
+     "text": "A financing commitment was given to the City Air Terminal joint venture for new train sets, part of which was drawn as a loan in the year."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:capital_returns"
+      }
+     ],
+     "text": "With interest-bearing financial liabilities repaid, the funding base rests on internally generated cash and on the treasury shares held from the earlier buyback programme, which was terminated early."
+    }
+   ]
+  }
+ },
+ "label": "vie_FY2024 attempt 3",
+ "recorded_at": "2026-11-09T15:14:09+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v5",
+  "provider": "deepseek",
+  "system_sha256": "a84c5b5d2de7e517329ea1e077d0ec7c8fdc9d67a0e6d76a31d39278f691c640",
+  "tool_sha256": "4ca8a30aa52873847dabeefc1bf036d2e4b8f878dd1dafa2f23422ddea9a9ff3",
+  "user_sha256": "75d1fcdd95a16c72d5849da0a8ce4c9643ccc239d5a7ce2054fbb542fefc2563"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 11759,
+  "output_tokens": 210
+ }
+}

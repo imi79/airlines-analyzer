@@ -1,0 +1,165 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      }
+     ],
+     "text": "Cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, and cash liquidity to revenue declined by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "contract_liabilities.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2024"
+      }
+     ],
+     "text": "Advance ticket cover rose by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, with contract liabilities up by {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}}, so a larger share of the cash balance is customers' prepayments."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      }
+     ],
+     "text": "The group launched a cash tender offer on existing bond tranches and announced its intention to issue new bonds to refinance part of its existing debt."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2023"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "fcf_to_debt@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt.peer_median@2024"
+      }
+     ],
+     "text": "Cash generation: free cash flow of {{fcf@FY2024}} compares with {{fcf@FY2023}} in FY2023, and FCF to debt of {{fcf_to_debt@FY2024}} is below the peer median of {{fcf_to_debt.peer_median@2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse",
+        "below_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "cash_liquidity_to_revenue.peer_rank@2024"
+      }
+     ],
+     "text": "Liquidity: cash liquidity to revenue fell to {{cash_liquidity_to_revenue@FY2024}}, the weakest of the group ({{cash_liquidity_to_revenue.peer_rank@2024}}), as cash and cash-like investments declined."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "advance_ticket_cover@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover.peer_median@2024"
+      }
+     ],
+     "text": "Customer prepayments: advance ticket cover of {{advance_ticket_cover@FY2024}} is below the peer median of {{advance_ticket_cover.peer_median@2024}}, a sensitivity if bookings slow."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "capex_intensity@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity.peer_median@2024"
+      }
+     ],
+     "text": "Investment: capex intensity of {{capex_intensity@FY2024}} is above the peer median of {{capex_intensity.peer_median@2024}}, so capital spending absorbs a larger share of earnings than at peers."
+    }
+   ]
+  }
+ },
+ "label": "afkl_FY2024 attempt 2",
+ "recorded_at": "2026-11-09T14:45:09+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v4",
+  "provider": "deepseek",
+  "system_sha256": "b0604cb7fa50c8024297d0491baf099868983d69337d8b5927b5e5286c493bd1",
+  "tool_sha256": "e68d0267eaea51942182fdaf195ef3d14d80fcacad7a0c2e86ea4b0b1a05daf2",
+  "user_sha256": "5dbe34bfc60d6db146bf902b1223d66cab139f985a6de8d6e9568d70f839e18b"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 12721,
+  "output_tokens": 933
+ }
+}

@@ -1,0 +1,148 @@
+{
+ "answer": {
+  "sections": {
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "passengers@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "traffic_growth@FY2024"
+      }
+     ],
+     "text": "In FY2024 the Spanish network carried {{passengers@FY2024}} passengers, with traffic growth of {{traffic_growth@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "aero_revenue_per_passenger@FY2024"
+      }
+     ],
+     "text": "Aeronautical revenue per passenger was {{aero_revenue_per_passenger@FY2024}} in FY2024, the base on which the regulator's charge decision builds."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs"
+      }
+     ],
+     "text": "The CNMC set the average airport charge per passenger for 2026 at a level above the prior year's, which supports the aeronautical revenue base."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2025"
+      }
+     ],
+     "text": "Group revenue rose by {{revenue.change@FY2025}} to {{revenue@FY2025}}, reflecting both the Spanish network and the group's other airports."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_to_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity@FY2025"
+      }
+     ],
+     "text": "Cash generation: FCF to debt fell by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}} as capex intensity rose to {{capex_intensity@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda_margin.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "ebitda_margin.peer_median@FY2025"
+      }
+     ],
+     "text": "Margin: the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, though it remains above the peer median of {{ebitda_margin.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "total_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "total_debt@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "gross_leverage@FY2025"
+      }
+     ],
+     "text": "Debt: total debt rose by {{total_debt.change@FY2025}} to {{total_debt@FY2025}}, leaving gross leverage broadly unchanged at {{gross_leverage@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs"
+      }
+     ],
+     "text": "Regulation: the CNMC set the average airport charge per passenger for 2026 at a level above the prior year's, so the next DORA review governs the aeronautical revenue base."
+    }
+   ]
+  }
+ },
+ "label": "aena_FY2025 attempt 3",
+ "recorded_at": "2026-11-09T15:12:33+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v5",
+  "provider": "deepseek",
+  "system_sha256": "a84c5b5d2de7e517329ea1e077d0ec7c8fdc9d67a0e6d76a31d39278f691c640",
+  "tool_sha256": "6adf3654168ad92a5d74865ea0c312a605f7549fbc07fb3bf6ebfc92ea543025",
+  "user_sha256": "503f636da3ffbfb76a9f6375dd7f1a03e3282d7ce8004bf6827d0b1d5952f9b3"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 12533,
+  "output_tokens": 765
+ }
+}

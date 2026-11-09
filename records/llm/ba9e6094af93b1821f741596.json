@@ -1,0 +1,448 @@
+{
+ "answer": {
+  "sections": {
+   "credit_metrics": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "operating_profit.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "operating_profit@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:one_offs"
+      },
+      {
+       "claims": [],
+       "id": "event:costs"
+      }
+     ],
+     "text": "EBITDA declined by {{ebitda.change@FY2025}} to {{ebitda@FY2025}} and operating profit by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}}, with write-offs on the abandoned third runway project and higher personnel expenses weighing on the result."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "total_debt@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "gross_leverage@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "gross_leverage.change@FY2025"
+      }
+     ],
+     "text": "Total debt was stable at {{total_debt@FY2025}}, so gross leverage held at {{gross_leverage@FY2025}}, a change of {{gross_leverage.change@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ffo.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ffo@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2025"
+      }
+     ],
+     "text": "FFO fell by {{ffo.change@FY2025}} to {{ffo@FY2025}}, and free cash flow dropped by {{fcf.change@FY2025}} to {{fcf@FY2025}} as capital spending absorbed more of the cash generated."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity@FY2024"
+      }
+     ],
+     "text": "Capex intensity increased by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, against {{capex_intensity@FY2024}} in FY2024."
+    }
+   ],
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "total_debt@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage@FY2025"
+      }
+     ],
+     "text": "Debt is minimal for the rating profile, with total debt of {{total_debt@FY2025}} and gross leverage of {{gross_leverage@FY2025}}, so refinancing risk is limited."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "fcf@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2024"
+      }
+     ],
+     "text": "Free cash flow of {{fcf@FY2025}} was generated after capex intensity of {{capex_intensity@FY2025}}, leaving less headroom than the {{fcf@FY2024}} of FY2024."
+    },
+    {
+     "facts": [],
+     "text": "The group's cash and committed facilities are not disclosed in the fact base for FY2025, so the liquidity buffer cannot be sized against revenue."
+    }
+   ],
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "passengers.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "passengers@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "traffic_growth.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "traffic_growth@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "traffic_growth@FY2024"
+      }
+     ],
+     "text": "Passengers rose by {{passengers.change@FY2025}} to {{passengers@FY2025}}, although traffic growth slowed by {{traffic_growth.change@FY2025}} to {{traffic_growth@FY2025}} from {{traffic_growth@FY2024}} in FY2024."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "aero_revenue_per_passenger.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "aero_revenue_per_passenger@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs"
+      }
+     ],
+     "text": "Aeronautical revenue per passenger increased by {{aero_revenue_per_passenger.change@FY2025}} to {{aero_revenue_per_passenger@FY2025}}, helped by charge adjustments under the price-cap formula."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:acquisitions_and_disposals"
+      }
+     ],
+     "text": "The loss of control over the Get2 security subsidiary means it is no longer fully consolidated, which affects the comparability of the group's cost base."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "better"
+       ],
+       "id": "gross_leverage@FY2025"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "gross_leverage.peer_rank@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_median@FY2025"
+      }
+     ],
+     "text": "Gross leverage of {{gross_leverage@FY2025}} is the lowest of the airport peers ({{gross_leverage.peer_rank@FY2025}}), well below the peer median of {{gross_leverage.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "ebitda_margin@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_rank@FY2025"
+      }
+     ],
+     "text": "The EBITDA margin of {{ebitda_margin@FY2025}} places the company in the middle of the group ({{ebitda_margin.peer_rank@FY2025}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "capex_intensity@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity.peer_median@FY2025"
+      }
+     ],
+     "text": "Capex intensity of {{capex_intensity@FY2025}} is above the peer median of {{capex_intensity.peer_median@FY2025}}, the weakest relative position in the comparison."
+    }
+   ],
+   "snapshot": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:one_offs"
+      }
+     ],
+     "text": "Flughafen Wien, the Vienna airport group, reported revenue up {{revenue.change@FY2025}} to {{revenue@FY2025}} in FY2025, a year in which the third runway project was abandoned and carrying amounts were written off."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda_margin.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2025"
+      }
+     ],
+     "text": "The EBITDA margin fell by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, with EBITDA down {{ebitda.change@FY2025}} to {{ebitda@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "capex_intensity@FY2025"
+      }
+     ],
+     "text": "The point to watch is cash generation: free cash flow fell by {{fcf.change@FY2025}} to {{fcf@FY2025}} as capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, above the peer median."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ffo.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ffo@FY2025"
+      }
+     ],
+     "text": "Cash generation: free cash flow fell by {{fcf.change@FY2025}} to {{fcf@FY2025}} and FFO by {{ffo.change@FY2025}} to {{ffo@FY2025}}, so the buffer against the investment programme has narrowed."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "capex_intensity@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity.peer_median@FY2025"
+      }
+     ],
+     "text": "Investment: capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, above the peer median of {{capex_intensity.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda_margin.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:one_offs"
+      },
+      {
+       "claims": [],
+       "id": "event:costs"
+      }
+     ],
+     "text": "Margins: the EBITDA margin fell by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, with write-offs on the abandoned third runway project and higher personnel expenses in the base."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "traffic_growth.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "traffic_growth@FY2025"
+      }
+     ],
+     "text": "Traffic: passenger growth slowed by {{traffic_growth.change@FY2025}} to {{traffic_growth@FY2025}}, which limits the operating leverage behind the charge increases."
+    }
+   ]
+  }
+ },
+ "label": "vie_FY2025 attempt 1",
+ "recorded_at": "2026-11-09T14:53:12+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v5",
+  "provider": "deepseek",
+  "system_sha256": "a84c5b5d2de7e517329ea1e077d0ec7c8fdc9d67a0e6d76a31d39278f691c640",
+  "tool_sha256": "4dabe2c7c4de6bfc02f14792e642150c79685cac3968c5fab183d4c4f9ffd732",
+  "user_sha256": "c92d1947643b05ba4fa6e45c0354500c6897cd877eac8efed5824af4c4ca3e01"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 11747,
+  "output_tokens": 2462
+ }
+}

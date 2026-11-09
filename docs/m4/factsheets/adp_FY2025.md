@@ -81,17 +81,17 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 
 | id | what it is | prints as | computed by code |
 | --- | --- | --- | --- |
-| ebitda_margin.peer_median@2025 | EBITDA margin, median of airports, peer year 2025 (3 companies) | 36.5% | company below peer median, worse |
-| ebitda_margin.peer_rank@2025 | EBITDA margin, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| gross_leverage.peer_median@2025 | Gross leverage, median of airports, peer year 2025 (3 companies) | 2.00x | company above peer median, worse |
-| gross_leverage.peer_rank@2025 | Gross leverage, rank in airports, peer year 2025 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
-| interest_coverage.peer_median@2025 | Interest coverage, median of airports, peer year 2025 (3 companies) | 14.72x | company below peer median, worse |
-| interest_coverage.peer_rank@2025 | Interest coverage, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| ffo_to_debt.peer_median@2025 | FFO to debt, median of airports, peer year 2025 (3 companies) | 39.6% | company below peer median, worse |
-| ffo_to_debt.peer_rank@2025 | FFO to debt, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| fcf_to_debt.peer_median@2025 | FCF to debt, median of airports, peer year 2025 (3 companies) | 22.9% | company below peer median, worse |
-| fcf_to_debt.peer_rank@2025 | FCF to debt, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| capex_intensity.peer_median@2025 | Capex intensity, median of airports, peer year 2025 (3 companies) | 18.2% | company in line with peer median |
+| ebitda_margin.peer_median@FY2025 | EBITDA margin, median of airports, peer year 2025 (3 companies) | 36.5% | company below peer median, worse |
+| ebitda_margin.peer_rank@FY2025 | EBITDA margin, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
+| gross_leverage.peer_median@FY2025 | Gross leverage, median of airports, peer year 2025 (3 companies) | 2.00x | company above peer median, worse |
+| gross_leverage.peer_rank@FY2025 | Gross leverage, rank in airports, peer year 2025 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
+| interest_coverage.peer_median@FY2025 | Interest coverage, median of airports, peer year 2025 (2 companies) | 11.31x | company below peer median, worse |
+| interest_coverage.peer_rank@FY2025 | Interest coverage, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 2 | weakest |
+| ffo_to_debt.peer_median@FY2025 | FFO to debt, median of airports, peer year 2025 (2 companies) | 27.7% | company below peer median, worse |
+| ffo_to_debt.peer_rank@FY2025 | FFO to debt, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 2 | weakest |
+| fcf_to_debt.peer_median@FY2025 | FCF to debt, median of airports, peer year 2025 (2 companies) | 13.4% | company below peer median, worse |
+| fcf_to_debt.peer_rank@FY2025 | FCF to debt, rank in airports, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 2 | weakest |
+| capex_intensity.peer_median@FY2025 | Capex intensity, median of airports, peer year 2025 (3 companies) | 18.2% | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
 
 ## Other figures
 
@@ -101,22 +101,36 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | profit@FY2024 | Profit for the year, FY2024 | EUR 516m |  |
 | profit.change@FY2025 | change in Profit for the year, FY2024 to FY2025 | 17.4% | down, worse vs prior year; printed without a sign: say the direction in words |
 
+## Events of the year (read from the report; the quote was checked by code)
+
+Cite an event by listing its id in `facts` (no blank, no claims). It has no figure:
+write no number about it, and no direction word unless a figure of the sentence carries the claim.
+
+| id | event | what happened | quote from the report |
+| --- | --- | --- | --- |
+| event:capacity_and_network | Ankara Esenboga concession renewal enters service | TAV Airports' renewed concession for Ankara Esenboga airport took effect, covering investments to raise capacity in exchange for operating rights for a long period. | (page 14): "Dans le cadre d’un appel d’offres publics en 2022, TAV Airports, filiale du Groupe ADP (Aéroports de Paris) détenue à 46 %, a remporté l’appel d’offres pour le renouvellement de la concession de l’aéroport de la capitale turque Ankara à partir du 24 mai 2025." |
+| event:acquisitions_and_disposals | Cross-border merger absorbing TAV Airports holding company | Aéroports de Paris SA absorbed Tank Öwa Alpha, the company directly holding TAV Airports, with no impact on the consolidated accounts. | (page 17): "Aéroports de Paris SA le 18 décembre 2025. Cette opération transfrontalière avait pour objet l’absorption par Aéroports de Paris SA de la société Tank Öwa Alpha, société détenant directement TAV Airports. Cette opération n’a pas d’impact dans les comptes consolidés." |
+| event:costs | Higher depreciation charges weigh on operating result | Depreciation and impairment charges rose, reflecting an unfavourable base effect from an impairment reversal recorded the previous year after the extension of the Amman airport concession. | (page 19): "Les dotations aux amortissements et dépréciations d’actifs s’établissent à -1 003 millions d’euros, en hausse de 27 % (211 millions d’euros) en raison d’un effet de base défavorable lié à la reprise de dépréciation de 152 millions d’euros enregistrée en 2024, suite à l’extension de la durée de concession de l’aéroport d’Amman." |
+| event:regulation_and_tariffs | Airport tariffs set outside economic regulation contract | The tariff period took place in a legal framework without an economic regulation contract, with the annual tariff-setting procedure still requiring user consultation and regulatory approval. | (page 21): "Même si la régulation économique d’Aéroports de Paris repose de manière préférentielle sur des contrats de régulation économique (CRE), la période tarifaire 2025 se déroule dans un cadre juridique hors CRE." |
+| event:funding_and_rating | Antalya loan guarantee ends after refinancing | The TAV group had guaranteed part of the bank loan financing the initial Antalya concession payment, and this guarantee no longer exists at year-end because of the refinancing of the previous bank loan. | (page 79): "Le groupe TAV s’est porté garant de 50 % de l’emprunt bancaire utilisé pour le financement du paiement initial pour un montant de 1 097 millions d’euros. Ce paiement initial correspond à la quote-part du groupe TAV dans les avances de 25 % payées pour le renouvellement de la concession Antalya, dont le montant net des redevances à horizon 2052 s’élève à 5,4 milliards d’euros. Cette garantie n’existe plus à fin 2025 en raison du refinancement de l'emprunt bancaire précédent." |
+| event:other | Turkish withholding tax dispute remains contingent liability | The main litigation and arbitration constituting a contingent liability is a dispute before Turkish courts over the withholding tax rate applied to dividends paid by a Turkish subsidiary. | (page 80): "Le principal litige et arbitrage constituant un passif éventuel est un contentieux pendant devant les tribunaux turcs concernant le taux de retenue à la source appliqué aux dividendes versés par une filiale turque." |
+
 ## Not available: do not discuss
 
 These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
 
-- net_leverage.peer_median@2025: the peer median would use a figure not verified yet (vie)
-- net_leverage.peer_rank@2025: the peer median would use a figure not verified yet (vie)
-- capex_intensity.peer_rank@2025: not ranked: neither higher nor lower is better
-- cash_liquidity_to_revenue.peer_median@2025: the peer median would use a figure not verified yet (vie)
-- cash_liquidity_to_revenue.peer_rank@2025: the peer median would use a figure not verified yet (vie)
+- net_leverage.peer_median@FY2025: the peer median would use a figure not verified yet (vie)
+- net_leverage.peer_rank@FY2025: the peer median would use a figure not verified yet (vie)
+- capex_intensity.peer_rank@FY2025: not ranked: neither higher nor lower is better
+- cash_liquidity_to_revenue.peer_median@FY2025: the peer median would use a figure not verified yet (vie)
+- cash_liquidity_to_revenue.peer_rank@FY2025: the peer median would use a figure not verified yet (vie)
 - liquidity@FY2025: Undrawn committed credit facilities not available for FY2025
 - liquidity@FY2024: Undrawn committed credit facilities not available for FY2024
 - liquidity_to_revenue@FY2025: Liquidity: Undrawn committed credit facilities not available for FY2025
 - liquidity_to_revenue@FY2024: Liquidity: Undrawn committed credit facilities not available for FY2024
 - traffic_growth@FY2024: Passengers not available for FY2023
-- traffic_growth.peer_median@2025: the peer median would use a figure not verified yet (aena)
-- traffic_growth.peer_rank@2025: the peer median would use a figure not verified yet (aena)
+- traffic_growth.peer_median@FY2025: the peer median would use a figure not verified yet (aena)
+- traffic_growth.peer_rank@FY2025: the peer median would use a figure not verified yet (aena)
 - revenue_per_passenger@FY2025: n.m.: group revenue includes TAV Airports and the other international airports, while passengers are Paris only.
 - revenue_per_passenger@FY2024: n.m.: group revenue includes TAV Airports and the other international airports, while passengers are Paris only.
 - aero_revenue_per_passenger@FY2025: not verified yet: waiting for Imane's review
@@ -127,3 +141,5 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - contract_liabilities@FY2024: no figure for this year
 - undrawn_facilities@FY2025: no figure for this year
 - undrawn_facilities@FY2024: no figure for this year
+- net_cash@FY2025: the company has net debt, not net cash
+- net_cash@FY2024: the company has net debt, not net cash

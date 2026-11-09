@@ -1,8 +1,8 @@
 {
  "issuer": "adp",
  "fiscal_year": 2025,
- "prompt_version": "draft-v3",
- "input_hash": "a6cbeaf4eaf8526a15c3d5047e4e6318738a13f5dc32d5e571f06580268fe766",
+ "prompt_version": "draft-v5",
+ "input_hash": "7ae28fa0e90cf64d926801329fbf6af419a3efc27415dfaff3fcba360ed435b1",
  "status": {
   "snapshot": "passed",
   "credit_metrics": "passed",
@@ -10,6 +10,22 @@
   "liquidity_funding": "passed",
   "peer_positioning": "passed",
   "watch_items": "passed"
+ },
+ "removed": {
+  "watch_items": [
+   [
+    "Cash flow against debt: FCF to debt of {{fcf_to_debt@FY2025}} is below the peer median of {{fcf_to_debt.peer_median@FY2025}}, so any reduction in debt depends on further earnings.",
+    [
+     "'reduction' needs a 'down' claim on a figure in the same clause"
+    ]
+   ],
+   [
+    "Profit: profit for the year fell by {{profit.change@FY2025}} to {{profit@FY2025}} as depreciation charges increased.",
+    [
+     "'increased' needs a 'up' claim on a figure in the same clause"
+    ]
+   ]
+  ]
  },
  "attempts": [
   {
@@ -22,12 +38,12 @@
     "peer_positioning",
     "watch_items"
    ],
-   "request_hash": "6037f6ef4800357d4baf7b90919fda573714eb312ea445cc1e321ec43d28dfa5",
+   "request_hash": "ffccd3a44b637d02148a58e992223930bee249ad0c7e910e1ed7796a5e732bdf",
    "model": "deepseek-flash",
    "draft": {
     "snapshot": [
      {
-      "text": "Groupe ADP, the French airport group, had a stronger FY2025 as revenue rose by {{revenue.change@FY2025}} to {{revenue@FY2025}} and the EBITDA margin widened by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}.",
+      "text": "Groupe ADP, the Paris airport group that also consolidates TAV Airports, grew revenue by {{revenue.change@FY2025}} to {{revenue@FY2025}} in FY2025, with the renewed Ankara Esenboga concession entering service during the year.",
       "facts": [
        {
         "id": "revenue.change@FY2025",
@@ -41,6 +57,15 @@
         "claims": []
        },
        {
+        "id": "event:capacity_and_network",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "The EBITDA margin widened by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}} and net leverage fell by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}}.",
+      "facts": [
+       {
         "id": "ebitda_margin.change@FY2025",
         "claims": [
          "up",
@@ -50,12 +75,7 @@
        {
         "id": "ebitda_margin@FY2025",
         "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Net leverage fell by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}}, with net debt broadly unchanged at {{net_debt@FY2025}}.",
-      "facts": [
+       },
        {
         "id": "net_leverage.change@FY2025",
         "claims": [
@@ -66,17 +86,11 @@
        {
         "id": "net_leverage@FY2025",
         "claims": []
-       },
-       {
-        "id": "net_debt@FY2025",
-        "claims": [
-         "flat"
-        ]
        }
       ]
      },
      {
-      "text": "The point to watch is liquidity: cash liquidity to revenue declined by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, in line with the peer median.",
+      "text": "The point to watch is liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, and the group's leverage and cash-flow ratios remain below the airport peer medians.",
       "facts": [
        {
         "id": "cash_liquidity_to_revenue.change@FY2025",
@@ -87,8 +101,18 @@
        },
        {
         "id": "cash_liquidity_to_revenue@FY2025",
+        "claims": []
+       },
+       {
+        "id": "gross_leverage.peer_median@FY2025",
         "claims": [
-         "in_line_with_peers"
+         "below_peers"
+        ]
+       },
+       {
+        "id": "ffo_to_debt.peer_median@FY2025",
+        "claims": [
+         "below_peers"
         ]
        }
       ]
@@ -96,7 +120,7 @@
     ],
     "credit_metrics": [
      {
-      "text": "EBITDA increased by {{ebitda.change@FY2025}} to {{ebitda@FY2025}} and operating profit by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}}, on revenue up {{revenue.change@FY2025}}.",
+      "text": "EBITDA increased by {{ebitda.change@FY2025}} to {{ebitda@FY2025}}, and operating profit rose by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}}, although depreciation charges rose on an unfavourable base effect.",
       "facts": [
        {
         "id": "ebitda.change@FY2025",
@@ -121,16 +145,13 @@
         "claims": []
        },
        {
-        "id": "revenue.change@FY2025",
-        "claims": [
-         "up",
-         "better"
-        ]
+        "id": "event:costs",
+        "claims": []
        }
       ]
      },
      {
-      "text": "Total debt was stable at {{total_debt@FY2025}} and net debt at {{net_debt@FY2025}}, so gross leverage fell by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}}.",
+      "text": "Total debt was stable at {{total_debt@FY2025}} and net debt was stable at {{net_debt@FY2025}}, so the earnings growth brought gross leverage down by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}}.",
       "facts": [
        {
         "id": "total_debt@FY2025",
@@ -158,7 +179,7 @@
       ]
      },
      {
-      "text": "Interest coverage improved by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}}.",
+      "text": "Interest coverage improved by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}}, and FFO to debt rose by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}.",
       "facts": [
        {
         "id": "interest_coverage.change@FY2025",
@@ -169,22 +190,6 @@
        },
        {
         "id": "interest_coverage@FY2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "FFO rose by {{ffo.change@FY2025}} to {{ffo@FY2025}}, lifting FFO to debt by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}.",
-      "facts": [
-       {
-        "id": "ffo.change@FY2025",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "ffo@FY2025",
         "claims": []
        },
        {
@@ -201,7 +206,7 @@
       ]
      },
      {
-      "text": "Free cash flow increased by {{fcf.change@FY2025}} to {{fcf@FY2025}}, taking FCF to debt to {{fcf_to_debt@FY2025}} as capex intensity eased by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}.",
+      "text": "Free cash flow increased by {{fcf.change@FY2025}} to {{fcf@FY2025}}, lifting FCF to debt to {{fcf_to_debt@FY2025}}, while capex intensity eased by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}.",
       "facts": [
        {
         "id": "fcf.change@FY2025",
@@ -253,28 +258,8 @@
       ]
      },
      {
-      "text": "Revenue per passenger increased by {{revenue_per_passenger.change@FY2025}} to {{revenue_per_passenger@FY2025}}, so revenue per passenger grew faster than traffic.",
+      "text": "Revenue grew by {{revenue.change@FY2025}} to {{revenue@FY2025}}, faster than passenger volumes, reflecting the international airport portfolio as well as Paris traffic.",
       "facts": [
-       {
-        "id": "revenue_per_passenger.change@FY2025",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "revenue_per_passenger@FY2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Revenue reached {{revenue@FY2025}}, up {{revenue.change@FY2025}}, with EBITDA of {{ebitda@FY2025}} at a margin of {{ebitda_margin@FY2025}}.",
-      "facts": [
-       {
-        "id": "revenue@FY2025",
-        "claims": []
-       },
        {
         "id": "revenue.change@FY2025",
         "claims": [
@@ -283,11 +268,16 @@
         ]
        },
        {
-        "id": "ebitda@FY2025",
+        "id": "revenue@FY2025",
         "claims": []
-       },
+       }
+      ]
+     },
+     {
+      "text": "The tariff period ran in a legal framework outside an economic regulation contract, with the annual tariff-setting procedure still requiring user consultation and regulatory approval.",
+      "facts": [
        {
-        "id": "ebitda_margin@FY2025",
+        "id": "event:regulation_and_tariffs",
         "claims": []
        }
       ]
@@ -295,7 +285,7 @@
     ],
     "liquidity_funding": [
      {
-      "text": "Cash and cash-like investments fell by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, and cash liquidity declined by {{cash_liquidity.change@FY2025}} to {{cash_liquidity@FY2025}}.",
+      "text": "Cash and cash-like investments fell by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, and cash liquidity fell by {{cash_liquidity.change@FY2025}} to {{cash_liquidity@FY2025}}.",
       "facts": [
        {
         "id": "cash_like.change@FY2025",
@@ -322,7 +312,7 @@
       ]
      },
      {
-      "text": "Cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, in line with the peer median of {{cash_liquidity_to_revenue.peer_median@2025}}.",
+      "text": "Cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, a thinner buffer against a debt stock of {{total_debt@FY2025}}.",
       "facts": [
        {
         "id": "cash_liquidity_to_revenue.change@FY2025",
@@ -333,27 +323,19 @@
        },
        {
         "id": "cash_liquidity_to_revenue@FY2025",
-        "claims": [
-         "in_line_with_peers"
-        ]
+        "claims": []
        },
        {
-        "id": "cash_liquidity_to_revenue.peer_median@2025",
+        "id": "total_debt@FY2025",
         "claims": []
        }
       ]
      },
      {
-      "text": "Total debt was stable at {{total_debt@FY2025}} against cash of {{cash_like@FY2025}}, so the buffer against maturities rests on the cash balance rather than on new funding.",
+      "text": "The TAV group's guarantee of part of the Antalya concession bank loan no longer exists at year-end after the refinancing of the previous bank loan.",
       "facts": [
        {
-        "id": "total_debt@FY2025",
-        "claims": [
-         "flat"
-        ]
-       },
-       {
-        "id": "cash_like@FY2025",
+        "id": "event:funding_and_rating",
         "claims": []
        }
       ]
@@ -361,10 +343,10 @@
     ],
     "peer_positioning": [
      {
-      "text": "Groupe ADP ranks last of the airport peers on EBITDA margin ({{ebitda_margin.peer_rank@2025}}), at {{ebitda_margin@FY2025}} against a median of {{ebitda_margin.peer_median@2025}}.",
+      "text": "Groupe ADP has the weakest EBITDA margin of the airport peers ({{ebitda_margin.peer_rank@FY2025}}), at {{ebitda_margin@FY2025}} against a median of {{ebitda_margin.peer_median@FY2025}}.",
       "facts": [
        {
-        "id": "ebitda_margin.peer_rank@2025",
+        "id": "ebitda_margin.peer_rank@FY2025",
         "claims": [
          "worst_in_group"
         ]
@@ -376,38 +358,22 @@
         ]
        },
        {
-        "id": "ebitda_margin.peer_median@2025",
+        "id": "ebitda_margin.peer_median@FY2025",
         "claims": []
        }
       ]
      },
      {
-      "text": "Leverage is the weakest in the group: net leverage of {{net_leverage@FY2025}} ranks {{net_leverage.peer_rank@2025}} against a median of {{net_leverage.peer_median@2025}}, and gross leverage of {{gross_leverage@FY2025}} ranks {{gross_leverage.peer_rank@2025}}.",
+      "text": "Gross leverage is above the peer median of {{gross_leverage.peer_median@FY2025}} and ranks {{gross_leverage.peer_rank@FY2025}} in the group.",
       "facts": [
        {
-        "id": "net_leverage@FY2025",
+        "id": "gross_leverage.peer_median@FY2025",
         "claims": [
          "above_peers"
         ]
        },
        {
-        "id": "net_leverage.peer_rank@2025",
-        "claims": [
-         "worst_in_group"
-        ]
-       },
-       {
-        "id": "net_leverage.peer_median@2025",
-        "claims": []
-       },
-       {
-        "id": "gross_leverage@FY2025",
-        "claims": [
-         "above_peers"
-        ]
-       },
-       {
-        "id": "gross_leverage.peer_rank@2025",
+        "id": "gross_leverage.peer_rank@FY2025",
         "claims": [
          "worst_in_group"
         ]
@@ -415,38 +381,7 @@
       ]
      },
      {
-      "text": "Cash generation trails the peers: FFO to debt of {{ffo_to_debt@FY2025}} and FCF to debt of {{fcf_to_debt@FY2025}} both rank {{ffo_to_debt.peer_rank@2025}} against medians of {{ffo_to_debt.peer_median@2025}} and {{fcf_to_debt.peer_median@2025}}.",
-      "facts": [
-       {
-        "id": "ffo_to_debt@FY2025",
-        "claims": [
-         "below_peers"
-        ]
-       },
-       {
-        "id": "fcf_to_debt@FY2025",
-        "claims": [
-         "below_peers"
-        ]
-       },
-       {
-        "id": "ffo_to_debt.peer_rank@2025",
-        "claims": [
-         "worst_in_group"
-        ]
-       },
-       {
-        "id": "ffo_to_debt.peer_median@2025",
-        "claims": []
-       },
-       {
-        "id": "fcf_to_debt.peer_median@2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Interest coverage of {{interest_coverage@FY2025}} is below the peer median of {{interest_coverage.peer_median@2025}} and ranks {{interest_coverage.peer_rank@2025}}, while capex intensity of {{capex_intensity@FY2025}} is in line with the median.",
+      "text": "Interest coverage of {{interest_coverage@FY2025}} and FFO to debt of {{ffo_to_debt@FY2025}} both sit below the peer medians of {{interest_coverage.peer_median@FY2025}} and {{ffo_to_debt.peer_median@FY2025}}, ranking {{interest_coverage.peer_rank@FY2025}} and {{ffo_to_debt.peer_rank@FY2025}} respectively.",
       "facts": [
        {
         "id": "interest_coverage@FY2025",
@@ -455,15 +390,36 @@
         ]
        },
        {
-        "id": "interest_coverage.peer_median@2025",
+        "id": "ffo_to_debt@FY2025",
+        "claims": [
+         "below_peers"
+        ]
+       },
+       {
+        "id": "interest_coverage.peer_median@FY2025",
         "claims": []
        },
        {
-        "id": "interest_coverage.peer_rank@2025",
+        "id": "ffo_to_debt.peer_median@FY2025",
+        "claims": []
+       },
+       {
+        "id": "interest_coverage.peer_rank@FY2025",
         "claims": [
          "worst_in_group"
         ]
        },
+       {
+        "id": "ffo_to_debt.peer_rank@FY2025",
+        "claims": [
+         "worst_in_group"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Capex intensity of {{capex_intensity@FY2025}} puts the group in the middle of the airport peers.",
+      "facts": [
        {
         "id": "capex_intensity@FY2025",
         "claims": [
@@ -475,47 +431,7 @@
     ],
     "watch_items": [
      {
-      "text": "Leverage: net leverage of {{net_leverage@FY2025}} is above the peer median of {{net_leverage.peer_median@2025}} and ranks {{net_leverage.peer_rank@2025}}, so the ratio remains the main constraint on the credit profile.",
-      "facts": [
-       {
-        "id": "net_leverage@FY2025",
-        "claims": [
-         "above_peers"
-        ]
-       },
-       {
-        "id": "net_leverage.peer_median@2025",
-        "claims": []
-       },
-       {
-        "id": "net_leverage.peer_rank@2025",
-        "claims": [
-         "worst_in_group"
-        ]
-       }
-      ]
-     },
-     {
-      "text": "Cash generation: FFO to debt of {{ffo_to_debt@FY2025}} is below the peer median of {{ffo_to_debt.peer_median@2025}}, and FCF to debt of {{fcf_to_debt@FY2025}} leaves little room after capital spending.",
-      "facts": [
-       {
-        "id": "ffo_to_debt@FY2025",
-        "claims": [
-         "below_peers"
-        ]
-       },
-       {
-        "id": "ffo_to_debt.peer_median@2025",
-        "claims": []
-       },
-       {
-        "id": "fcf_to_debt@FY2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, with cash and cash-like investments down by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}.",
+      "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, leaving less headroom against a debt stock that was stable at {{total_debt@FY2025}}.",
       "facts": [
        {
         "id": "cash_liquidity_to_revenue.change@FY2025",
@@ -529,6 +445,286 @@
         "claims": []
        },
        {
+        "id": "total_debt@FY2025",
+        "claims": [
+         "flat"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Cash flow against debt: FCF to debt of {{fcf_to_debt@FY2025}} is below the peer median of {{fcf_to_debt.peer_median@FY2025}}, so debt reduction depends on further earnings growth.",
+      "facts": [
+       {
+        "id": "fcf_to_debt@FY2025",
+        "claims": [
+         "below_peers"
+        ]
+       },
+       {
+        "id": "fcf_to_debt.peer_median@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Profit: profit for the year fell by {{profit.change@FY2025}} to {{profit@FY2025}} as depreciation charges rose.",
+      "facts": [
+       {
+        "id": "profit.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "profit@FY2025",
+        "claims": []
+       },
+       {
+        "id": "event:costs",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Contingencies: a dispute before the Turkish courts over the withholding tax rate on dividends from a Turkish subsidiary remains a contingent liability.",
+      "facts": [
+       {
+        "id": "event:other",
+        "claims": []
+       }
+      ]
+     }
+    ]
+   },
+   "errors": [
+    "[rule 5] snapshot, sentence 3: gross_leverage.peer_median@FY2025 is listed in the form but not used in the text",
+    "[rule 5] snapshot, sentence 3: ffo_to_debt.peer_median@FY2025 is listed in the form but not used in the text",
+    "[rule 3] snapshot, sentence 3: 'below_peers' claimed on gross_leverage.peer_median@FY2025, but it is above",
+    "[rule 4] credit_metrics, sentence 2: 'growth' needs a 'up' claim on a figure in the same clause",
+    "[rule style] liquidity_funding, sentence 2: total_debt@FY2025 is already given in credit_metrics, sentence 2: give each figure in one body section only (the snapshot and watch items may restate it)",
+    "[rule style] peer_positioning, sentence 3: interest_coverage@FY2025 is already given in credit_metrics, sentence 3: give each figure in one body section only (the snapshot and watch items may restate it)",
+    "[rule style] peer_positioning, sentence 3: ffo_to_debt@FY2025 is already given in credit_metrics, sentence 3: give each figure in one body section only (the snapshot and watch items may restate it)",
+    "[rule style] peer_positioning, sentence 4: capex_intensity@FY2025 is already given in credit_metrics, sentence 4: give each figure in one body section only (the snapshot and watch items may restate it)",
+    "[rule 4] watch_items, sentence 2: 'growth' needs a 'up' claim on a figure in the same clause",
+    "[rule 4] watch_items, sentence 2: 'reduction' needs a 'down' claim on a figure in the same clause",
+    "[rule 4] watch_items, sentence 3: 'rose' needs a 'up' claim on a figure in the same clause"
+   ],
+   "error": null
+  },
+  {
+   "try": 2,
+   "sections": [
+    "snapshot",
+    "credit_metrics",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "request_hash": "da4ba9772e2ef141497113c1eadb9a3a6d2b31c5784e9f26c86dbc9b9cf1801e",
+   "model": "deepseek-flash",
+   "draft": {
+    "snapshot": [
+     {
+      "text": "Groupe ADP, the Paris airport group that also consolidates TAV Airports, grew revenue by {{revenue.change@FY2025}} to {{revenue@FY2025}} in FY2025, with the renewed Ankara Esenboga concession entering service during the year.",
+      "facts": [
+       {
+        "id": "revenue.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "revenue@FY2025",
+        "claims": []
+       },
+       {
+        "id": "event:capacity_and_network",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "The EBITDA margin widened by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}} and net leverage fell by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}}.",
+      "facts": [
+       {
+        "id": "ebitda_margin.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "ebitda_margin@FY2025",
+        "claims": []
+       },
+       {
+        "id": "net_leverage.change@FY2025",
+        "claims": [
+         "down",
+         "better"
+        ]
+       },
+       {
+        "id": "net_leverage@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "The point to watch is liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, while gross leverage sits above the airport peer median of {{gross_leverage.peer_median@FY2025}} and FFO to debt remains below the peer median of {{ffo_to_debt.peer_median@FY2025}}.",
+      "facts": [
+       {
+        "id": "cash_liquidity_to_revenue.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2025",
+        "claims": []
+       },
+       {
+        "id": "gross_leverage.peer_median@FY2025",
+        "claims": [
+         "above_peers"
+        ]
+       },
+       {
+        "id": "ffo_to_debt.peer_median@FY2025",
+        "claims": [
+         "below_peers"
+        ]
+       }
+      ]
+     }
+    ],
+    "credit_metrics": [
+     {
+      "text": "EBITDA increased by {{ebitda.change@FY2025}} to {{ebitda@FY2025}}, and operating profit rose by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}}, although depreciation charges rose on an unfavourable base effect.",
+      "facts": [
+       {
+        "id": "ebitda.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "ebitda@FY2025",
+        "claims": []
+       },
+       {
+        "id": "operating_profit.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "operating_profit@FY2025",
+        "claims": []
+       },
+       {
+        "id": "event:costs",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Total debt was stable at {{total_debt@FY2025}} and net debt was stable at {{net_debt@FY2025}}, so the higher earnings brought gross leverage down by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}}.",
+      "facts": [
+       {
+        "id": "total_debt@FY2025",
+        "claims": [
+         "flat"
+        ]
+       },
+       {
+        "id": "net_debt@FY2025",
+        "claims": [
+         "flat"
+        ]
+       },
+       {
+        "id": "gross_leverage.change@FY2025",
+        "claims": [
+         "down",
+         "better"
+        ]
+       },
+       {
+        "id": "gross_leverage@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Interest coverage improved by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}}, and FFO to debt rose by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}.",
+      "facts": [
+       {
+        "id": "interest_coverage.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "interest_coverage@FY2025",
+        "claims": []
+       },
+       {
+        "id": "ffo_to_debt.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "ffo_to_debt@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Free cash flow increased by {{fcf.change@FY2025}} to {{fcf@FY2025}}, lifting FCF to debt to {{fcf_to_debt@FY2025}}, while capex intensity eased by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}.",
+      "facts": [
+       {
+        "id": "fcf.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "fcf@FY2025",
+        "claims": []
+       },
+       {
+        "id": "fcf_to_debt@FY2025",
+        "claims": []
+       },
+       {
+        "id": "capex_intensity.change@FY2025",
+        "claims": [
+         "down"
+        ]
+       },
+       {
+        "id": "capex_intensity@FY2025",
+        "claims": []
+       }
+      ]
+     }
+    ],
+    "liquidity_funding": [
+     {
+      "text": "Cash and cash-like investments fell by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, and cash liquidity fell by {{cash_liquidity.change@FY2025}} to {{cash_liquidity@FY2025}}.",
+      "facts": [
+       {
         "id": "cash_like.change@FY2025",
         "claims": [
          "down",
@@ -538,35 +734,401 @@
        {
         "id": "cash_like@FY2025",
         "claims": []
+       },
+       {
+        "id": "cash_liquidity.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_liquidity@FY2025",
+        "claims": []
        }
       ]
      },
      {
-      "text": "Investment: capex intensity of {{capex_intensity@FY2025}} is in line with the peer median of {{capex_intensity.peer_median@2025}}, so free cash flow of {{fcf@FY2025}} stays thin relative to debt of {{total_debt@FY2025}}.",
+      "text": "Cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, a thinner buffer against the group's debt stock.",
       "facts": [
        {
-        "id": "capex_intensity@FY2025",
+        "id": "cash_liquidity_to_revenue.change@FY2025",
         "claims": [
-         "in_line_with_peers"
+         "down",
+         "worse"
         ]
        },
        {
-        "id": "capex_intensity.peer_median@2025",
+        "id": "cash_liquidity_to_revenue@FY2025",
         "claims": []
+       }
+      ]
+     },
+     {
+      "text": "The TAV group's guarantee of part of the Antalya concession bank loan no longer exists at year-end after the refinancing of the previous bank loan.",
+      "facts": [
+       {
+        "id": "event:funding_and_rating",
+        "claims": []
+       }
+      ]
+     }
+    ],
+    "peer_positioning": [
+     {
+      "text": "Groupe ADP has the weakest EBITDA margin of the airport peers ({{ebitda_margin.peer_rank@FY2025}}), at {{ebitda_margin@FY2025}} against a median of {{ebitda_margin.peer_median@FY2025}}.",
+      "facts": [
+       {
+        "id": "ebitda_margin.peer_rank@FY2025",
+        "claims": [
+         "worst_in_group"
+        ]
        },
        {
-        "id": "fcf@FY2025",
+        "id": "ebitda_margin@FY2025",
+        "claims": [
+         "below_peers"
+        ]
+       },
+       {
+        "id": "ebitda_margin.peer_median@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Gross leverage is above the peer median of {{gross_leverage.peer_median@FY2025}} and ranks {{gross_leverage.peer_rank@FY2025}} in the group.",
+      "facts": [
+       {
+        "id": "gross_leverage.peer_median@FY2025",
+        "claims": [
+         "above_peers"
+        ]
+       },
+       {
+        "id": "gross_leverage.peer_rank@FY2025",
+        "claims": [
+         "worst_in_group"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Interest coverage and FFO to debt both sit below the peer medians of {{interest_coverage.peer_median@FY2025}} and {{ffo_to_debt.peer_median@FY2025}}, ranking {{interest_coverage.peer_rank@FY2025}} and {{ffo_to_debt.peer_rank@FY2025}} respectively.",
+      "facts": [
+       {
+        "id": "interest_coverage.peer_median@FY2025",
+        "claims": [
+         "below_peers"
+        ]
+       },
+       {
+        "id": "ffo_to_debt.peer_median@FY2025",
+        "claims": [
+         "below_peers"
+        ]
+       },
+       {
+        "id": "interest_coverage.peer_rank@FY2025",
+        "claims": [
+         "worst_in_group"
+        ]
+       },
+       {
+        "id": "ffo_to_debt.peer_rank@FY2025",
+        "claims": [
+         "worst_in_group"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Capex intensity puts the group in the middle of the airport peers.",
+      "facts": []
+     }
+    ],
+    "watch_items": [
+     {
+      "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, leaving less headroom against a debt stock that was stable at {{total_debt@FY2025}}.",
+      "facts": [
+       {
+        "id": "cash_liquidity_to_revenue.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2025",
         "claims": []
        },
        {
         "id": "total_debt@FY2025",
+        "claims": [
+         "flat"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Cash flow against debt: FCF to debt of {{fcf_to_debt@FY2025}} is below the peer median of {{fcf_to_debt.peer_median@FY2025}}, so debt reduction depends on further earnings.",
+      "facts": [
+       {
+        "id": "fcf_to_debt@FY2025",
+        "claims": [
+         "below_peers"
+        ]
+       },
+       {
+        "id": "fcf_to_debt.peer_median@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Profit: profit for the year fell by {{profit.change@FY2025}} to {{profit@FY2025}} as depreciation charges rose.",
+      "facts": [
+       {
+        "id": "profit.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "profit@FY2025",
+        "claims": []
+       },
+       {
+        "id": "event:costs",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Contingencies: a dispute before the Turkish courts over the withholding tax rate on dividends from a Turkish subsidiary remains a contingent liability.",
+      "facts": [
+       {
+        "id": "event:other",
         "claims": []
        }
       ]
      }
     ]
    },
-   "errors": [],
+   "errors": [
+    "[rule 4] credit_metrics, sentence 2: 'higher' needs a 'up' or 'above_peers' claim on a figure in the same clause",
+    "[rule 4] watch_items, sentence 2: 'reduction' needs a 'down' claim on a figure in the same clause",
+    "[rule 4] watch_items, sentence 3: 'rose' needs a 'up' claim on a figure in the same clause"
+   ],
+   "error": null
+  },
+  {
+   "try": 3,
+   "sections": [
+    "credit_metrics",
+    "watch_items"
+   ],
+   "request_hash": "e6102f20da3550fb6f9c058833ae751b1bb3fada3ac282cc4adc619f5ba1a3b8",
+   "model": "deepseek-flash",
+   "draft": {
+    "credit_metrics": [
+     {
+      "text": "EBITDA increased by {{ebitda.change@FY2025}} to {{ebitda@FY2025}}, and operating profit rose by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}}, although depreciation charges rose on an unfavourable base effect.",
+      "facts": [
+       {
+        "id": "ebitda.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "ebitda@FY2025",
+        "claims": []
+       },
+       {
+        "id": "operating_profit.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "operating_profit@FY2025",
+        "claims": []
+       },
+       {
+        "id": "event:costs",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Total debt was stable at {{total_debt@FY2025}} and net debt was stable at {{net_debt@FY2025}}, so gross leverage fell by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}} as EBITDA grew by {{ebitda.change@FY2025}}.",
+      "facts": [
+       {
+        "id": "total_debt@FY2025",
+        "claims": [
+         "flat"
+        ]
+       },
+       {
+        "id": "net_debt@FY2025",
+        "claims": [
+         "flat"
+        ]
+       },
+       {
+        "id": "gross_leverage.change@FY2025",
+        "claims": [
+         "down",
+         "better"
+        ]
+       },
+       {
+        "id": "gross_leverage@FY2025",
+        "claims": []
+       },
+       {
+        "id": "ebitda.change@FY2025",
+        "claims": [
+         "up"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Interest coverage improved by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}}, and FFO to debt rose by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}.",
+      "facts": [
+       {
+        "id": "interest_coverage.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "interest_coverage@FY2025",
+        "claims": []
+       },
+       {
+        "id": "ffo_to_debt.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "ffo_to_debt@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Free cash flow increased by {{fcf.change@FY2025}} to {{fcf@FY2025}}, lifting FCF to debt to {{fcf_to_debt@FY2025}}, while capex intensity eased by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}.",
+      "facts": [
+       {
+        "id": "fcf.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "fcf@FY2025",
+        "claims": []
+       },
+       {
+        "id": "fcf_to_debt@FY2025",
+        "claims": []
+       },
+       {
+        "id": "capex_intensity.change@FY2025",
+        "claims": [
+         "down"
+        ]
+       },
+       {
+        "id": "capex_intensity@FY2025",
+        "claims": []
+       }
+      ]
+     }
+    ],
+    "watch_items": [
+     {
+      "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, leaving less headroom against a debt stock that was stable at {{total_debt@FY2025}}.",
+      "facts": [
+       {
+        "id": "cash_liquidity_to_revenue.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2025",
+        "claims": []
+       },
+       {
+        "id": "total_debt@FY2025",
+        "claims": [
+         "flat"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Cash flow against debt: FCF to debt of {{fcf_to_debt@FY2025}} is below the peer median of {{fcf_to_debt.peer_median@FY2025}}, so any reduction in debt depends on further earnings.",
+      "facts": [
+       {
+        "id": "fcf_to_debt@FY2025",
+        "claims": [
+         "below_peers"
+        ]
+       },
+       {
+        "id": "fcf_to_debt.peer_median@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Profit: profit for the year fell by {{profit.change@FY2025}} to {{profit@FY2025}} as depreciation charges increased.",
+      "facts": [
+       {
+        "id": "profit.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "profit@FY2025",
+        "claims": []
+       },
+       {
+        "id": "event:costs",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Contingencies: a dispute before the Turkish courts over the withholding tax rate on dividends from a Turkish subsidiary remains a contingent liability.",
+      "facts": [
+       {
+        "id": "event:other",
+        "claims": []
+       }
+      ]
+     }
+    ]
+   },
+   "errors": [
+    "[rule 4] watch_items, sentence 2: 'reduction' needs a 'down' claim on a figure in the same clause",
+    "[rule 4] watch_items, sentence 3: 'increased' needs a 'up' claim on a figure in the same clause"
+   ],
    "error": null
   }
  ]

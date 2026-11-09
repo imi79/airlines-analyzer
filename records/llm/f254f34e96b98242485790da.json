@@ -1,0 +1,109 @@
+{
+ "answer": {
+  "sections": {
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@FY2026"
+      }
+     ],
+     "text": "Wizz Air has the highest EBITDA margin in the low-cost peer group ({{ebitda_margin.peer_rank@FY2026}}), against a median of {{ebitda_margin.peer_median@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage.peer_median@FY2026"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "gross_leverage.peer_rank@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_median@FY2026"
+      }
+     ],
+     "text": "Leverage is the weakest in the group: net leverage ranks {{net_leverage.peer_rank@FY2026}} against a median of {{net_leverage.peer_median@FY2026}}, and gross leverage ranks {{gross_leverage.peer_rank@FY2026}} against a median of {{gross_leverage.peer_median@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ffo_to_debt.peer_rank@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt.peer_median@FY2026"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "fcf_to_debt.peer_rank@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt.peer_median@FY2026"
+      }
+     ],
+     "text": "Cash generation is the weakest of the group, with FFO to debt ranking {{ffo_to_debt.peer_rank@FY2026}} against a median of {{ffo_to_debt.peer_median@FY2026}} and FCF to debt ranking {{fcf_to_debt.peer_rank@FY2026}} against a median of {{fcf_to_debt.peer_median@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue.peer_rank@FY2026"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "interest_coverage.peer_rank@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "interest_coverage.peer_median@FY2026"
+      }
+     ],
+     "text": "Cash liquidity to revenue sits in the middle of the group ({{cash_liquidity_to_revenue.peer_rank@FY2026}}), while interest coverage ranks {{interest_coverage.peer_rank@FY2026}} against a median of {{interest_coverage.peer_median@FY2026}}."
+    }
+   ]
+  }
+ },
+ "label": "wizz_FY2026 attempt 3",
+ "recorded_at": "2026-11-09T15:01:00+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v5",
+  "provider": "deepseek",
+  "system_sha256": "a84c5b5d2de7e517329ea1e077d0ec7c8fdc9d67a0e6d76a31d39278f691c640",
+  "tool_sha256": "e0bc10090f092f7824507bcec1338ad64fba91381c0d213a8bccc6fcf2d84db9",
+  "user_sha256": "a7c7114ff871926acfcad2189265b4dfc1b0dbc13a5d2c7e6a29351df9b95d5d"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 12828,
+  "output_tokens": 682
+ }
+}

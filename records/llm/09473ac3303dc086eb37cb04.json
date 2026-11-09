@@ -1,0 +1,300 @@
+{
+ "answer": {
+  "sections": {
+   "credit_metrics": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "operating_profit.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "operating_profit@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:one_offs"
+      },
+      {
+       "claims": [],
+       "id": "event:costs"
+      }
+     ],
+     "text": "EBITDA declined by {{ebitda.change@FY2025}} to {{ebitda@FY2025}} and operating profit by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}}, with write-offs on the abandoned third runway project and personnel expenses rising under collective wage agreements weighing on the result."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "total_debt@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "gross_leverage@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "gross_leverage.change@FY2025"
+      }
+     ],
+     "text": "Total debt was stable at {{total_debt@FY2025}}, so gross leverage held at {{gross_leverage@FY2025}}, a change of {{gross_leverage.change@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ffo.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ffo@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2025"
+      }
+     ],
+     "text": "FFO fell by {{ffo.change@FY2025}} to {{ffo@FY2025}}, and free cash flow dropped by {{fcf.change@FY2025}} to {{fcf@FY2025}} as capital spending absorbed more of the cash generated."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity@FY2024"
+      }
+     ],
+     "text": "Capex intensity increased by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, against {{capex_intensity@FY2024}} in FY2024."
+    }
+   ],
+   "liquidity_funding": [
+    {
+     "facts": [],
+     "text": "The fact base does not carry cash and cash-like investments, undrawn committed facilities or a liquidity figure for FY2025, so the liquidity buffer cannot be sized against revenue."
+    },
+    {
+     "facts": [],
+     "text": "Customer prepayments are likewise not disclosed for FY2025, leaving the share of the cash position that is customers' money unquantified."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "total_debt@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage@FY2025"
+      }
+     ],
+     "text": "With total debt of {{total_debt@FY2025}} and gross leverage of {{gross_leverage@FY2025}}, refinancing needs are small relative to the earnings base, so funding risk sits with the investment programme rather than with maturities."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "gross_leverage.peer_rank@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_median@FY2025"
+      }
+     ],
+     "text": "Gross leverage ranks {{gross_leverage.peer_rank@FY2025}} among the airport peers, the lowest in the group, against a peer median of {{gross_leverage.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "ebitda_margin.peer_median@FY2025"
+      }
+     ],
+     "text": "The EBITDA margin places the company in the middle of the group ({{ebitda_margin.peer_rank@FY2025}}), in line with the peer median."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "capex_intensity.peer_median@FY2025"
+      }
+     ],
+     "text": "Capex intensity is above the peer median of {{capex_intensity.peer_median@FY2025}}, the weakest relative position in the comparison."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ffo.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ffo@FY2025"
+      }
+     ],
+     "text": "Cash generation: free cash flow fell by {{fcf.change@FY2025}} to {{fcf@FY2025}} and FFO by {{ffo.change@FY2025}} to {{ffo@FY2025}}, so the buffer against the investment programme has narrowed."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "capex_intensity@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity.peer_median@FY2025"
+      }
+     ],
+     "text": "Investment: capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, above the peer median of {{capex_intensity.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda_margin.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:one_offs"
+      },
+      {
+       "claims": [],
+       "id": "event:costs"
+      }
+     ],
+     "text": "Margins: the EBITDA margin fell by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, with write-offs on the abandoned third runway project and personnel expenses rising under collective wage agreements in the base."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "passengers.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "passengers@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "traffic_growth.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "traffic_growth@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs"
+      }
+     ],
+     "text": "Traffic: passenger numbers rose by {{passengers.change@FY2025}} to {{passengers@FY2025}}, but traffic growth slowed by {{traffic_growth.change@FY2025}} to {{traffic_growth@FY2025}}, which limits the operating leverage behind the charge adjustments."
+    }
+   ]
+  }
+ },
+ "label": "vie_FY2025 attempt 2",
+ "recorded_at": "2026-11-09T14:53:19+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v5",
+  "provider": "deepseek",
+  "system_sha256": "a84c5b5d2de7e517329ea1e077d0ec7c8fdc9d67a0e6d76a31d39278f691c640",
+  "tool_sha256": "41e435d50712f5da8410617e99ca9c0f47e7448ccb54734459f676b4dbf2eeaf",
+  "user_sha256": "1b22ee92fecb49263c50445b26754518fb254e456009fc5fbc6757c62c52f644"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 13379,
+  "output_tokens": 1644
+ }
+}

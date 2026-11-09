@@ -26,6 +26,7 @@
   "liquidity": true,
   "liquidity_to_revenue": true,
   "load_factor": true,
+  "net_cash": true,
   "net_debt": null,
   "net_leverage": false,
   "operating_profit": true,
@@ -57,10 +58,10 @@
    "value": "0.020861269548",
    "vs_peers": null
   },
-  "advance_ticket_cover.peer_median@2025": {
+  "advance_ticket_cover.peer_median@FY2026": {
    "assessment": null,
    "direction": null,
-   "id": "advance_ticket_cover.peer_median@2025",
+   "id": "advance_ticket_cover.peer_median@FY2026",
    "kind": "peer_median",
    "label": "Advance ticket cover, median of low-cost airlines, peer year 2025 (3 companies)",
    "metric": "advance_ticket_cover",
@@ -74,10 +75,10 @@
    "value": "0.551303854875",
    "vs_peers": "above"
   },
-  "advance_ticket_cover.peer_rank@2025": {
+  "advance_ticket_cover.peer_rank@FY2026": {
    "assessment": null,
    "direction": null,
-   "id": "advance_ticket_cover.peer_rank@2025",
+   "id": "advance_ticket_cover.peer_rank@FY2026",
    "kind": "peer_rank",
    "label": "Advance ticket cover, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the lowest)",
    "metric": "advance_ticket_cover",
@@ -193,10 +194,10 @@
    "value": "0.018036972775",
    "vs_peers": null
   },
-  "capex_intensity.peer_median@2025": {
+  "capex_intensity.peer_median@FY2026": {
    "assessment": null,
    "direction": null,
-   "id": "capex_intensity.peer_median@2025",
+   "id": "capex_intensity.peer_median@FY2026",
    "kind": "peer_median",
    "label": "Capex intensity, median of low-cost airlines, peer year 2025 (3 companies)",
    "metric": "capex_intensity",
@@ -363,14 +364,14 @@
    "value": "0.013411759506",
    "vs_peers": null
   },
-  "cash_liquidity_to_revenue.peer_median@2025": {
+  "cash_liquidity_to_revenue.peer_median@FY2026": {
    "assessment": null,
    "direction": null,
-   "id": "cash_liquidity_to_revenue.peer_median@2025",
+   "id": "cash_liquidity_to_revenue.peer_median@FY2026",
    "kind": "peer_median",
    "label": "Cash liquidity to revenue (partial), median of low-cost airlines, peer year 2025 (3 companies)",
    "metric": "cash_liquidity_to_revenue",
-   "note": "",
+   "note": "the company is the median of the group: say it sits in the middle of the group, do not compare it with the median",
    "peer_assessment": "in_line",
    "period": "peer year 2025",
    "rank": null,
@@ -380,10 +381,10 @@
    "value": "0.342973609305",
    "vs_peers": "in_line"
   },
-  "cash_liquidity_to_revenue.peer_rank@2025": {
+  "cash_liquidity_to_revenue.peer_rank@FY2026": {
    "assessment": null,
    "direction": null,
-   "id": "cash_liquidity_to_revenue.peer_rank@2025",
+   "id": "cash_liquidity_to_revenue.peer_rank@FY2026",
    "kind": "peer_rank",
    "label": "Cash liquidity to revenue (partial), rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest)",
    "metric": "cash_liquidity_to_revenue",
@@ -652,10 +653,10 @@
    "value": "0.016294921823",
    "vs_peers": null
   },
-  "ebitda_margin.peer_median@2025": {
+  "ebitda_margin.peer_median@FY2026": {
    "assessment": null,
    "direction": null,
-   "id": "ebitda_margin.peer_median@2025",
+   "id": "ebitda_margin.peer_median@FY2026",
    "kind": "peer_median",
    "label": "EBITDA margin, median of low-cost airlines, peer year 2025 (3 companies)",
    "metric": "ebitda_margin",
@@ -669,10 +670,10 @@
    "value": "0.211523136588",
    "vs_peers": "above"
   },
-  "ebitda_margin.peer_rank@2025": {
+  "ebitda_margin.peer_rank@FY2026": {
    "assessment": null,
    "direction": null,
-   "id": "ebitda_margin.peer_rank@2025",
+   "id": "ebitda_margin.peer_rank@FY2026",
    "kind": "peer_rank",
    "label": "EBITDA margin, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest)",
    "metric": "ebitda_margin",
@@ -719,6 +720,108 @@
    "unit": "pct",
    "value": "0.231630178866",
    "vs_peers": "above"
+  },
+  "event:capacity_and_network": {
+   "assessment": null,
+   "direction": null,
+   "id": "event:capacity_and_network",
+   "kind": "event",
+   "label": "Exit of Abu Dhabi joint venture and Vienna base closure",
+   "metric": "event",
+   "note": "The company exited its Abu Dhabi joint venture, began closing its Vienna base and reallocated capacity towards Central and Eastern Europe and other core markets. Quote (page 6): \"We exited our Abu Dhabi joint venture, initiated the closure of our Vienna base, and accelerated the reallocation of capacity towards Central and Eastern Europe (CEE) and other core markets where we see stronger structural advantages.\"",
+   "peer_assessment": null,
+   "period": "FY2026",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "",
+   "unit": "event",
+   "value": "0",
+   "vs_peers": null
+  },
+  "event:fleet_and_engines": {
+   "assessment": null,
+   "direction": null,
+   "id": "event:fleet_and_engines",
+   "kind": "event",
+   "label": "GTF engine groundings persist through the year",
+   "metric": "event",
+   "note": "The Pratt & Whitney GTF engine issue continued to ground aircraft, affecting capacity, utilisation and cost performance, though fewer aircraft were grounded on average than in the prior year. Quote (page 4): \"As in the previous year, the Pratt & Whitney Geared Turbofan (GTF) engine issue was a defining challenge for the Company in F26, although we saw improving trends with fewer aircraft grounded on average this year and slightly better turnaround times on our engines. With that said, fleet groundings have continued to affect capacity, utilisation and cost performance, creating structural headwinds largely beyond management’s direct control.\"",
+   "peer_assessment": null,
+   "period": "FY2026",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "",
+   "unit": "event",
+   "value": "0",
+   "vs_peers": null
+  },
+  "event:fleet_and_engines-2": {
+   "assessment": null,
+   "direction": null,
+   "id": "event:fleet_and_engines-2",
+   "kind": "event",
+   "label": "Airbus order book renegotiated and deliveries deferred",
+   "metric": "event",
+   "note": "Wizz Air renegotiated its remaining Airbus order book, deferring deliveries and taking fewer aircraft than usual to support lifting the grounded fleet. Quote (page 23): \"Wizz Air has re-negotiated the remaining order book of 254 aircraft with Airbus, deferring deliveries from 2030 to 2032, reshaping the long-term fleet plan, with the renegotiation finalised in November 2025. Due to the Pratt & Whitney GTF engine inspections in F28, Wizz Air negotiated to take 20-25% fewer deliveries than usual to support the main strategy of lifting the grounded fleet and to maintain balanced operational fleet growth following the initial plans of annual 13-15%.\"",
+   "peer_assessment": null,
+   "period": "FY2026",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "",
+   "unit": "event",
+   "value": "0",
+   "vs_peers": null
+  },
+  "event:fleet_and_engines-3": {
+   "assessment": null,
+   "direction": null,
+   "id": "event:fleet_and_engines-3",
+   "kind": "event",
+   "label": "GTF engines selected for new Airbus aircraft",
+   "metric": "event",
+   "note": "Wizz Air selected Pratt & Whitney GTF engines to power new Airbus A321neo aircraft, continuing a unified fleet. Quote (page 23): \"To deepen the relationship with its major supplier, Wizz Air has selected Pratt & Whitney’s GTF engines to power 177 new Airbus A321neo aircraft, continuing to benefit from operating a unified fleet.\"",
+   "peer_assessment": null,
+   "period": "FY2026",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "",
+   "unit": "event",
+   "value": "0",
+   "vs_peers": null
+  },
+  "event:funding_and_rating": {
+   "assessment": null,
+   "direction": null,
+   "id": "event:funding_and_rating",
+   "kind": "event",
+   "label": "Eurobond repaid and credit ratings updated",
+   "metric": "event",
+   "note": "The company repaid its eurobond out of free cash, and Fitch and Moody's issued credit ratings with stable and negative outlooks respectively. Quote (page 96): \"None of these borrowings contain any financial covenants and the €500.0 million, 1.00 per cent Eurobond was repaid in January 2026 out of free cash. Two ratings agencies, Fitch and Moody’s, issued updates during the fourth quarter with Fitch updating Wizz Air’s credit rating to BB with a stable outlook, while Moody’s issued a Ba2 rating with a negative outlook.\"",
+   "peer_assessment": null,
+   "period": "FY2026",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "",
+   "unit": "event",
+   "value": "0",
+   "vs_peers": null
+  },
+  "event:funding_and_rating-2": {
+   "assessment": null,
+   "direction": null,
+   "id": "event:funding_and_rating-2",
+   "kind": "event",
+   "label": "Euro Medium Term Note programme renewed",
+   "metric": "event",
+   "note": "The company renewed its Euro Medium Term Note programme for possible future euro bond issuance. Quote (page 64): \"The Company renewed the Euro Medium Term Note Program with the total amount of EUR 3bn, for the possibility of future EUR Bond issuance in December 2025.\"",
+   "peer_assessment": null,
+   "period": "FY2026",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "",
+   "unit": "event",
+   "value": "0",
+   "vs_peers": null
   },
   "fcf.change@FY2026": {
    "assessment": "neutral",
@@ -788,10 +891,10 @@
    "value": "0.007891300591",
    "vs_peers": null
   },
-  "fcf_to_debt.peer_median@2025": {
+  "fcf_to_debt.peer_median@FY2026": {
    "assessment": null,
    "direction": null,
-   "id": "fcf_to_debt.peer_median@2025",
+   "id": "fcf_to_debt.peer_median@FY2026",
    "kind": "peer_median",
    "label": "FCF to debt, median of low-cost airlines, peer year 2025 (3 companies)",
    "metric": "fcf_to_debt",
@@ -805,10 +908,10 @@
    "value": "0.145977187868",
    "vs_peers": "below"
   },
-  "fcf_to_debt.peer_rank@2025": {
+  "fcf_to_debt.peer_rank@FY2026": {
    "assessment": null,
    "direction": null,
-   "id": "fcf_to_debt.peer_rank@2025",
+   "id": "fcf_to_debt.peer_rank@FY2026",
    "kind": "peer_rank",
    "label": "FCF to debt, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest)",
    "metric": "fcf_to_debt",
@@ -924,10 +1027,10 @@
    "value": "0.019281192918",
    "vs_peers": null
   },
-  "ffo_to_debt.peer_median@2025": {
+  "ffo_to_debt.peer_median@FY2026": {
    "assessment": null,
    "direction": null,
-   "id": "ffo_to_debt.peer_median@2025",
+   "id": "ffo_to_debt.peer_median@FY2026",
    "kind": "peer_median",
    "label": "FFO to debt, median of low-cost airlines, peer year 2025 (3 companies)",
    "metric": "ffo_to_debt",
@@ -941,10 +1044,10 @@
    "value": "0.354304127666",
    "vs_peers": "below"
   },
-  "ffo_to_debt.peer_rank@2025": {
+  "ffo_to_debt.peer_rank@FY2026": {
    "assessment": null,
    "direction": null,
-   "id": "ffo_to_debt.peer_rank@2025",
+   "id": "ffo_to_debt.peer_rank@FY2026",
    "kind": "peer_rank",
    "label": "FFO to debt, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest)",
    "metric": "ffo_to_debt",
@@ -1111,10 +1214,10 @@
    "value": "0.034723165268",
    "vs_peers": null
   },
-  "fuel_share_of_costs.peer_median@2025": {
+  "fuel_share_of_costs.peer_median@FY2026": {
    "assessment": null,
    "direction": null,
-   "id": "fuel_share_of_costs.peer_median@2025",
+   "id": "fuel_share_of_costs.peer_median@FY2026",
    "kind": "peer_median",
    "label": "Fuel share of costs, median of low-cost airlines, peer year 2025 (3 companies)",
    "metric": "fuel_share_of_costs",
@@ -1179,10 +1282,10 @@
    "value": "0.533149337329",
    "vs_peers": null
   },
-  "gross_leverage.peer_median@2025": {
+  "gross_leverage.peer_median@FY2026": {
    "assessment": null,
    "direction": null,
-   "id": "gross_leverage.peer_median@2025",
+   "id": "gross_leverage.peer_median@FY2026",
    "kind": "peer_median",
    "label": "Gross leverage, median of low-cost airlines, peer year 2025 (3 companies)",
    "metric": "gross_leverage",
@@ -1196,10 +1299,10 @@
    "value": "2.455230440789",
    "vs_peers": "above"
   },
-  "gross_leverage.peer_rank@2025": {
+  "gross_leverage.peer_rank@FY2026": {
    "assessment": null,
    "direction": null,
-   "id": "gross_leverage.peer_rank@2025",
+   "id": "gross_leverage.peer_rank@FY2026",
    "kind": "peer_rank",
    "label": "Gross leverage, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the lowest)",
    "metric": "gross_leverage",
@@ -1264,10 +1367,10 @@
    "value": "0.316652255665",
    "vs_peers": null
   },
-  "interest_coverage.peer_median@2025": {
+  "interest_coverage.peer_median@FY2026": {
    "assessment": null,
    "direction": null,
-   "id": "interest_coverage.peer_median@2025",
+   "id": "interest_coverage.peer_median@FY2026",
    "kind": "peer_median",
    "label": "Interest coverage, median of low-cost airlines, peer year 2025 (3 companies)",
    "metric": "interest_coverage",
@@ -1281,10 +1384,10 @@
    "value": "6.265145554681",
    "vs_peers": "below"
   },
-  "interest_coverage.peer_rank@2025": {
+  "interest_coverage.peer_rank@FY2026": {
    "assessment": null,
    "direction": null,
-   "id": "interest_coverage.peer_rank@2025",
+   "id": "interest_coverage.peer_rank@FY2026",
    "kind": "peer_rank",
    "label": "Interest coverage, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest)",
    "metric": "interest_coverage",
@@ -1349,10 +1452,10 @@
    "value": "0.005000000000",
    "vs_peers": null
   },
-  "load_factor.peer_median@2025": {
+  "load_factor.peer_median@FY2026": {
    "assessment": null,
    "direction": null,
-   "id": "load_factor.peer_median@2025",
+   "id": "load_factor.peer_median@FY2026",
    "kind": "peer_median",
    "label": "Load factor, median of low-cost airlines, peer year 2025 (2 companies)",
    "metric": "load_factor",
@@ -1366,10 +1469,10 @@
    "value": "0.902500000000",
    "vs_peers": "in_line"
   },
-  "load_factor.peer_rank@2025": {
+  "load_factor.peer_rank@FY2026": {
    "assessment": null,
    "direction": null,
-   "id": "load_factor.peer_rank@2025",
+   "id": "load_factor.peer_rank@FY2026",
    "kind": "peer_rank",
    "label": "Load factor, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest)",
    "metric": "load_factor",
@@ -1485,10 +1588,10 @@
    "value": "0.483384857471",
    "vs_peers": null
   },
-  "net_leverage.peer_median@2025": {
+  "net_leverage.peer_median@FY2026": {
    "assessment": null,
    "direction": null,
-   "id": "net_leverage.peer_median@2025",
+   "id": "net_leverage.peer_median@FY2026",
    "kind": "peer_median",
    "label": "Net leverage, median of low-cost airlines, peer year 2025 (3 companies)",
    "metric": "net_leverage",
@@ -1502,10 +1605,10 @@
    "value": "1.192013060404",
    "vs_peers": "above"
   },
-  "net_leverage.peer_rank@2025": {
+  "net_leverage.peer_rank@FY2026": {
    "assessment": null,
    "direction": null,
-   "id": "net_leverage.peer_rank@2025",
+   "id": "net_leverage.peer_rank@FY2026",
    "kind": "peer_rank",
    "label": "Net leverage, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the lowest)",
    "metric": "net_leverage",
@@ -1987,6 +2090,7 @@
   "liquidity": "Liquidity",
   "liquidity_to_revenue": "Liquidity to revenue",
   "load_factor": "Load factor",
+  "net_cash": "Net cash (cash and cash-like investments above total debt)",
   "net_debt": "Net debt",
   "net_leverage": "Net leverage",
   "operating_profit": "Operating profit",
@@ -2010,21 +2114,24 @@
  "period_label": "FY2026 (Apr 2025 to Mar 2026)",
  "type": "airline",
  "unavailable": {
-  "capex_intensity.peer_rank@2025": "not ranked: neither higher nor lower is better",
+  "capex_intensity.peer_rank@FY2026": "not ranked: neither higher nor lower is better",
   "fuel_hedge_ratio.change@FY2026": "needs both years verified",
-  "fuel_hedge_ratio.peer_median@2025": "the company's own figure is not available",
-  "fuel_hedge_ratio.peer_rank@2025": "the company's own figure is not available",
+  "fuel_hedge_ratio.peer_median@FY2026": "the company's own figure is not available",
+  "fuel_hedge_ratio.peer_rank@FY2026": "the company's own figure is not available",
   "fuel_hedge_ratio@FY2025": "Fuel hedge ratio not available for FY2025",
   "fuel_hedge_ratio@FY2026": "Fuel hedge ratio not available for FY2026",
-  "fuel_share_of_costs.peer_rank@2025": "not ranked: neither higher nor lower is better",
+  "fuel_share_of_costs.peer_rank@FY2026": "not ranked: neither higher nor lower is better",
   "liquidity.change@FY2026": "needs both years verified",
   "liquidity@FY2025": "Undrawn committed credit facilities not available for FY2025",
   "liquidity@FY2026": "Undrawn committed credit facilities not available for FY2026",
   "liquidity_to_revenue.change@FY2026": "needs both years verified",
-  "liquidity_to_revenue.peer_median@2025": "the company's own figure is not available",
-  "liquidity_to_revenue.peer_rank@2025": "the company's own figure is not available",
+  "liquidity_to_revenue.peer_median@FY2026": "the company's own figure is not available",
+  "liquidity_to_revenue.peer_rank@FY2026": "the company's own figure is not available",
   "liquidity_to_revenue@FY2025": "Liquidity: Undrawn committed credit facilities not available for FY2025",
   "liquidity_to_revenue@FY2026": "Liquidity: Undrawn committed credit facilities not available for FY2026",
+  "net_cash.change@FY2026": "needs both years verified",
+  "net_cash@FY2025": "the company has net debt, not net cash",
+  "net_cash@FY2026": "the company has net debt, not net cash",
   "undrawn_facilities.change@FY2026": "needs both years verified",
   "undrawn_facilities@FY2025": "no figure for this year",
   "undrawn_facilities@FY2026": "no figure for this year"

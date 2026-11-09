@@ -1,0 +1,230 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity@FY2024"
+      }
+     ],
+     "text": "Cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, and cash liquidity by the same measure to {{cash_liquidity@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "liquidity@FY2023"
+      },
+      {
+       "claims": [],
+       "id": "undrawn_facilities@FY2023"
+      },
+      {
+       "claims": [],
+       "id": "liquidity_to_revenue@FY2023"
+      }
+     ],
+     "text": "In FY2023 the group held liquidity of {{liquidity@FY2023}}, including {{undrawn_facilities@FY2023}} of undrawn committed facilities, and liquidity to revenue of {{liquidity_to_revenue@FY2023}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "total_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "total_debt@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      }
+     ],
+     "text": "The cash decline reflects debt repayment, with total debt down {{total_debt.change@FY2024}} to {{total_debt@FY2024}}, and Fitch raised the long-term rating during the year with the outlook held stable."
+    }
+   ],
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "passengers.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "passengers@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "traffic_growth.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "traffic_growth@FY2024"
+      }
+     ],
+     "text": "Passengers rose by {{passengers.change@FY2024}} to {{passengers@FY2024}}, though traffic growth slowed by {{traffic_growth.change@FY2024}} to {{traffic_growth@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "aero_revenue_per_passenger.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "aero_revenue_per_passenger@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs"
+      }
+     ],
+     "text": "Aeronautical revenue per passenger rose by {{aero_revenue_per_passenger.change@FY2024}} to {{aero_revenue_per_passenger@FY2024}}, with the CNMC setting the 2025 maximum adjusted revenue per passenger at the prior year's level."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "operating_profit.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "operating_profit@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "profit.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "profit@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:acquisitions_and_disposals"
+      }
+     ],
+     "text": "Operating profit rose by {{operating_profit.change@FY2024}} to {{operating_profit@FY2024}}, and profit for the year by {{profit.change@FY2024}} to {{profit@FY2024}}, the latter including the gain on the sale of the ESSP SAS stake."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      }
+     ],
+     "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, so the buffer against maturities is thinner than a year earlier."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "interest_coverage.change@FY2024"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "interest_coverage@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "interest_coverage.peer_median@2024"
+      }
+     ],
+     "text": "Coverage: interest coverage eased by {{interest_coverage.change@FY2024}} to {{interest_coverage@FY2024}}, a mild weakening even though it remains above the peer median of {{interest_coverage.peer_median@2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "passengers.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "passengers@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs"
+      }
+     ],
+     "text": "Traffic: passenger numbers rose by {{passengers.change@FY2024}} to {{passengers@FY2024}}, but the CNMC set the 2025 maximum adjusted revenue per passenger at the prior year's level, so traffic is the main driver of aeronautical revenue."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:acquisitions_and_disposals-2"
+      }
+     ],
+     "text": "Portfolio: the Cartagena concession ended in the year, so the contribution from the Latin American operations is smaller."
+    }
+   ]
+  }
+ },
+ "label": "aena_FY2024 attempt 2",
+ "recorded_at": "2026-11-09T14:47:01+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v4",
+  "provider": "deepseek",
+  "system_sha256": "b0604cb7fa50c8024297d0491baf099868983d69337d8b5927b5e5286c493bd1",
+  "tool_sha256": "3ab51200263b244d0a3a7201d5a4b0af91601cc5ab8c6a7bd43e587050df71fb",
+  "user_sha256": "79fb4028f0bfa2b84c40ddef9127a92df85cc99bbabcb71e175ca32546cc6da5"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 12963,
+  "output_tokens": 1250
+ }
+}

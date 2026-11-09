@@ -1,0 +1,74 @@
+{
+ "answer": {
+  "sections": {
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "passengers@FY2024"
+      }
+     ],
+     "text": "The Paris airports handled {{passengers@FY2024}} passengers in FY2024."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda_margin.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2024"
+      }
+     ],
+     "text": "Group revenue rose by {{revenue.change@FY2024}} to {{revenue@FY2024}}, while the EBITDA margin narrowed by {{ebitda_margin.change@FY2024}} to {{ebitda_margin@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:acquisitions_and_disposals"
+      },
+      {
+       "claims": [],
+       "id": "event:acquisitions_and_disposals-3"
+      }
+     ],
+     "text": "In October 2024 the group acquired Paris Experience Group and P/S, extending the Extime offering beyond the Paris airports, and since the GMR Airports merger it holds a lower economic interest in GMR Airports."
+    }
+   ]
+  }
+ },
+ "label": "adp_FY2024 attempt 3",
+ "recorded_at": "2026-11-09T14:56:11+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v5",
+  "provider": "deepseek",
+  "system_sha256": "a84c5b5d2de7e517329ea1e077d0ec7c8fdc9d67a0e6d76a31d39278f691c640",
+  "tool_sha256": "d5bf2b80f4ba38f057b6f554ddd6cd3d8c55977a14c6334b970fe794a9a1a8af",
+  "user_sha256": "1d3e4ce3906b59375ac0a1ec4fd1951d84a4a61750b94f85eb15d372a20b840e"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 10815,
+  "output_tokens": 321
+ }
+}

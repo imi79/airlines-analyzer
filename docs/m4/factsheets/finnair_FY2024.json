@@ -26,6 +26,7 @@
   "liquidity": true,
   "liquidity_to_revenue": true,
   "load_factor": true,
+  "net_cash": true,
   "net_debt": null,
   "net_leverage": false,
   "operating_profit": true,
@@ -57,14 +58,14 @@
    "value": "0.195736218090",
    "vs_peers": null
   },
-  "advance_ticket_cover.peer_median@2024": {
+  "advance_ticket_cover.peer_median@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "advance_ticket_cover.peer_median@2024",
+   "id": "advance_ticket_cover.peer_median@FY2024",
    "kind": "peer_median",
    "label": "Advance ticket cover, median of network airlines, peer year 2024 (3 companies)",
    "metric": "advance_ticket_cover",
-   "note": "",
+   "note": "the company is the median of the group: say it sits in the middle of the group, do not compare it with the median",
    "peer_assessment": "in_line",
    "period": "peer year 2024",
    "rank": null,
@@ -74,10 +75,10 @@
    "value": "0.745361990950",
    "vs_peers": "in_line"
   },
-  "advance_ticket_cover.peer_rank@2024": {
+  "advance_ticket_cover.peer_rank@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "advance_ticket_cover.peer_rank@2024",
+   "id": "advance_ticket_cover.peer_rank@FY2024",
    "kind": "peer_rank",
    "label": "Advance ticket cover, rank in network airlines, peer year 2024 (1st = strongest, i.e. the lowest)",
    "metric": "advance_ticket_cover",
@@ -142,10 +143,10 @@
    "value": "0.058631488931",
    "vs_peers": null
   },
-  "capex_intensity.peer_median@2024": {
+  "capex_intensity.peer_median@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "capex_intensity.peer_median@2024",
+   "id": "capex_intensity.peer_median@FY2024",
    "kind": "peer_median",
    "label": "Capex intensity, median of network airlines, peer year 2024 (3 companies)",
    "metric": "capex_intensity",
@@ -312,14 +313,14 @@
    "value": "0.018532371994",
    "vs_peers": null
   },
-  "cash_liquidity_to_revenue.peer_median@2024": {
+  "cash_liquidity_to_revenue.peer_median@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "cash_liquidity_to_revenue.peer_median@2024",
+   "id": "cash_liquidity_to_revenue.peer_median@FY2024",
    "kind": "peer_median",
    "label": "Cash liquidity to revenue (partial), median of network airlines, peer year 2024 (3 companies)",
    "metric": "cash_liquidity_to_revenue",
-   "note": "",
+   "note": "the company is the median of the group: say it sits in the middle of the group, do not compare it with the median",
    "peer_assessment": "in_line",
    "period": "peer year 2024",
    "rank": null,
@@ -329,10 +330,10 @@
    "value": "0.289950144319",
    "vs_peers": "in_line"
   },
-  "cash_liquidity_to_revenue.peer_rank@2024": {
+  "cash_liquidity_to_revenue.peer_rank@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "cash_liquidity_to_revenue.peer_rank@2024",
+   "id": "cash_liquidity_to_revenue.peer_rank@FY2024",
    "kind": "peer_rank",
    "label": "Cash liquidity to revenue (partial), rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest)",
    "metric": "cash_liquidity_to_revenue",
@@ -499,14 +500,14 @@
    "value": "0.034094509799",
    "vs_peers": null
   },
-  "ebitda_margin.peer_median@2024": {
+  "ebitda_margin.peer_median@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "ebitda_margin.peer_median@2024",
+   "id": "ebitda_margin.peer_median@FY2024",
    "kind": "peer_median",
    "label": "EBITDA margin, median of network airlines, peer year 2024 (3 companies)",
    "metric": "ebitda_margin",
-   "note": "",
+   "note": "the company is the median of the group: say it sits in the middle of the group, do not compare it with the median",
    "peer_assessment": "in_line",
    "period": "peer year 2024",
    "rank": null,
@@ -516,10 +517,10 @@
    "value": "0.145795066912",
    "vs_peers": "in_line"
   },
-  "ebitda_margin.peer_rank@2024": {
+  "ebitda_margin.peer_rank@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "ebitda_margin.peer_rank@2024",
+   "id": "ebitda_margin.peer_rank@FY2024",
    "kind": "peer_rank",
    "label": "EBITDA margin, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest)",
    "metric": "ebitda_margin",
@@ -566,6 +567,108 @@
    "unit": "pct",
    "value": "0.145795066912",
    "vs_peers": "in_line"
+  },
+  "event:capital_returns": {
+   "assessment": null,
+   "direction": null,
+   "id": "event:capital_returns",
+   "kind": "event",
+   "label": "Return of capital proposed to shareholders",
+   "metric": "event",
+   "note": "The Board of Directors proposed a return of capital per share, rewarding shareholders after a long time. Quote (page 3): \"Thanks to the positive result and our strengthened financial position, we have the opportunity to reward our shareholders after a long time with a return of capital of 0.11 euros per share as proposed by the Board of Directors.\"",
+   "peer_assessment": null,
+   "period": "FY2024",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "",
+   "unit": "event",
+   "value": "0",
+   "vs_peers": null
+  },
+  "event:fleet_and_engines": {
+   "assessment": null,
+   "direction": null,
+   "id": "event:fleet_and_engines",
+   "kind": "event",
+   "label": "New A350 delivered and leased aircraft purchased",
+   "metric": "event",
+   "note": "A new A350 aircraft was delivered during the year and Finnair purchased a leased A350 and a leased A321 aircraft. Quote (page 169): \"During the financial year, a new A350 aircraft was delivered and additionally, Finnair purchased one leased A350 and one leased A321 aircraft. All aircraft were in operative use as at the balance sheet date.\"",
+   "peer_assessment": null,
+   "period": "FY2024",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "",
+   "unit": "event",
+   "value": "0",
+   "vs_peers": null
+  },
+  "event:funding_and_rating": {
+   "assessment": null,
+   "direction": null,
+   "id": "event:funding_and_rating",
+   "kind": "event",
+   "label": "S&P assigns Finnair an issuer credit rating",
+   "metric": "event",
+   "note": "S&P Global Ratings assigned Finnair a long-term issuer credit rating with a stable outlook, the company's inaugural credit rating. Quote (page 22): \"Furthemore, S&P Global Ratings assigned a long-term issuer credit rating of BB+ to Finnair Plc with a stable outlook. It is the first credit rating for Finnair.\"",
+   "peer_assessment": null,
+   "period": "FY2024",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "",
+   "unit": "event",
+   "value": "0",
+   "vs_peers": null
+  },
+  "event:funding_and_rating-2": {
+   "assessment": null,
+   "direction": null,
+   "id": "event:funding_and_rating-2",
+   "kind": "event",
+   "label": "New unsecured senior bond issued to refinance",
+   "metric": "event",
+   "note": "Finnair issued a new unsecured senior bond to refinance the old unsecured senior bond, and the new bond matures later with a fixed annual interest. Quote (page 22): \"As a testament to this, Finnair signed a binding secured revolving credit facility of 200 million euros for general corporate purposes and successfully issued a new 500-million-euro unsecured senior bond to refinance the old 400-million-euro unsecured senior bond. The new bond will mature in 2029 and carries a fixed annual interest of 4.750 per cent.\"",
+   "peer_assessment": null,
+   "period": "FY2024",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "",
+   "unit": "event",
+   "value": "0",
+   "vs_peers": null
+  },
+  "event:funding_and_rating-3": {
+   "assessment": null,
+   "direction": null,
+   "id": "event:funding_and_rating-3",
+   "kind": "event",
+   "label": "New secured revolving credit facility agreed",
+   "metric": "event",
+   "note": "Finnair agreed a new secured revolving credit facility for general corporate purposes, unused at year-end with a multi-year tenor and an extension option. Quote (page 15): \"Further, in April, Finnair agreed on a new secured revolving credit facility 3 of 200 million euros for general corporate purposes. The arrangement was unused at the end of the year and carries a three-year tenor with a one-year extension option.\"",
+   "peer_assessment": null,
+   "period": "FY2024",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "",
+   "unit": "event",
+   "value": "0",
+   "vs_peers": null
+  },
+  "event:labour": {
+   "assessment": null,
+   "direction": null,
+   "id": "event:labour",
+   "kind": "event",
+   "label": "Industrial action caused flight cancellations",
+   "metric": "event",
+   "note": "Industrial action in Finland led to the cancellation of a large number of flights in the early part of the year and again in the late part of the year. Quote (page 7): \"Industrial action in Finland had an impact on Finnair’s operations, leading to the cancellation of approximately 550 flights in the first quarter and more than 500 flights in the fourth quarter.\"",
+   "peer_assessment": null,
+   "period": "FY2024",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "",
+   "unit": "event",
+   "value": "0",
+   "vs_peers": null
   },
   "fcf.change@FY2024": {
    "assessment": "better",
@@ -635,14 +738,14 @@
    "value": "0.169638550760",
    "vs_peers": null
   },
-  "fcf_to_debt.peer_median@2024": {
+  "fcf_to_debt.peer_median@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "fcf_to_debt.peer_median@2024",
+   "id": "fcf_to_debt.peer_median@FY2024",
    "kind": "peer_median",
    "label": "FCF to debt, median of network airlines, peer year 2024 (3 companies)",
    "metric": "fcf_to_debt",
-   "note": "",
+   "note": "the company is the median of the group: say it sits in the middle of the group, do not compare it with the median",
    "peer_assessment": "in_line",
    "period": "peer year 2024",
    "rank": null,
@@ -652,10 +755,10 @@
    "value": "0.203259878827",
    "vs_peers": "in_line"
   },
-  "fcf_to_debt.peer_rank@2024": {
+  "fcf_to_debt.peer_rank@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "fcf_to_debt.peer_rank@2024",
+   "id": "fcf_to_debt.peer_rank@FY2024",
    "kind": "peer_rank",
    "label": "FCF to debt, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest)",
    "metric": "fcf_to_debt",
@@ -771,10 +874,10 @@
    "value": "0.001209925972",
    "vs_peers": null
   },
-  "ffo_to_debt.peer_median@2024": {
+  "ffo_to_debt.peer_median@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "ffo_to_debt.peer_median@2024",
+   "id": "ffo_to_debt.peer_median@FY2024",
    "kind": "peer_median",
    "label": "FFO to debt, median of network airlines, peer year 2024 (3 companies)",
    "metric": "ffo_to_debt",
@@ -788,10 +891,10 @@
    "value": "0.233916131676",
    "vs_peers": "below"
   },
-  "ffo_to_debt.peer_rank@2024": {
+  "ffo_to_debt.peer_rank@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "ffo_to_debt.peer_rank@2024",
+   "id": "ffo_to_debt.peer_rank@FY2024",
    "kind": "peer_rank",
    "label": "FFO to debt, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest)",
    "metric": "ffo_to_debt",
@@ -924,10 +1027,10 @@
    "value": "0.016591077844",
    "vs_peers": null
   },
-  "fuel_share_of_costs.peer_median@2024": {
+  "fuel_share_of_costs.peer_median@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "fuel_share_of_costs.peer_median@2024",
+   "id": "fuel_share_of_costs.peer_median@FY2024",
    "kind": "peer_median",
    "label": "Fuel share of costs, median of network airlines, peer year 2024 (2 companies)",
    "metric": "fuel_share_of_costs",
@@ -992,10 +1095,10 @@
    "value": "0.428279375235",
    "vs_peers": null
   },
-  "gross_leverage.peer_median@2024": {
+  "gross_leverage.peer_median@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "gross_leverage.peer_median@2024",
+   "id": "gross_leverage.peer_median@FY2024",
    "kind": "peer_median",
    "label": "Gross leverage, median of network airlines, peer year 2024 (3 companies)",
    "metric": "gross_leverage",
@@ -1009,10 +1112,10 @@
    "value": "3.563397420297",
    "vs_peers": "above"
   },
-  "gross_leverage.peer_rank@2024": {
+  "gross_leverage.peer_rank@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "gross_leverage.peer_rank@2024",
+   "id": "gross_leverage.peer_rank@FY2024",
    "kind": "peer_rank",
    "label": "Gross leverage, rank in network airlines, peer year 2024 (1st = strongest, i.e. the lowest)",
    "metric": "gross_leverage",
@@ -1077,10 +1180,10 @@
    "value": "0.365864506581",
    "vs_peers": null
   },
-  "interest_coverage.peer_median@2024": {
+  "interest_coverage.peer_median@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "interest_coverage.peer_median@2024",
+   "id": "interest_coverage.peer_median@FY2024",
    "kind": "peer_median",
    "label": "Interest coverage, median of network airlines, peer year 2024 (3 companies)",
    "metric": "interest_coverage",
@@ -1094,10 +1197,10 @@
    "value": "6.511885895404",
    "vs_peers": "below"
   },
-  "interest_coverage.peer_rank@2024": {
+  "interest_coverage.peer_rank@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "interest_coverage.peer_rank@2024",
+   "id": "interest_coverage.peer_rank@FY2024",
    "kind": "peer_rank",
    "label": "Interest coverage, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest)",
    "metric": "interest_coverage",
@@ -1247,10 +1350,10 @@
    "value": "0.154371719160",
    "vs_peers": null
   },
-  "net_leverage.peer_median@2024": {
+  "net_leverage.peer_median@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "net_leverage.peer_median@2024",
+   "id": "net_leverage.peer_median@FY2024",
    "kind": "peer_median",
    "label": "Net leverage, median of network airlines, peer year 2024 (3 companies)",
    "metric": "net_leverage",
@@ -1264,10 +1367,10 @@
    "value": "1.876368946216",
    "vs_peers": "above"
   },
-  "net_leverage.peer_rank@2024": {
+  "net_leverage.peer_rank@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "net_leverage.peer_rank@2024",
+   "id": "net_leverage.peer_rank@FY2024",
    "kind": "peer_rank",
    "label": "Net leverage, rank in network airlines, peer year 2024 (1st = strongest, i.e. the lowest)",
    "metric": "net_leverage",
@@ -1613,6 +1716,7 @@
   "liquidity": "Liquidity",
   "liquidity_to_revenue": "Liquidity to revenue",
   "load_factor": "Load factor",
+  "net_cash": "Net cash (cash and cash-like investments above total debt)",
   "net_debt": "Net debt",
   "net_leverage": "Net leverage",
   "operating_profit": "Operating profit",
@@ -1639,7 +1743,7 @@
   "ask.change@FY2024": "needs both years verified",
   "ask@FY2023": "not verified yet: waiting for Imane's review",
   "ask@FY2024": "not verified yet: waiting for Imane's review",
-  "capex_intensity.peer_rank@2024": "not ranked: neither higher nor lower is better",
+  "capex_intensity.peer_rank@FY2024": "not ranked: neither higher nor lower is better",
   "cask.change@FY2024": "needs both years verified",
   "cask@FY2023": "not verified yet: waiting for Imane's review",
   "cask@FY2024": "not verified yet: waiting for Imane's review",
@@ -1649,22 +1753,25 @@
   "fleet_age.change@FY2024": "needs both years verified",
   "fleet_age@FY2024": "not verified yet: waiting for Imane's review",
   "fuel_hedge_ratio.change@FY2024": "needs both years verified",
-  "fuel_hedge_ratio.peer_median@2024": "the company's own figure is not available",
-  "fuel_hedge_ratio.peer_rank@2024": "the company's own figure is not available",
+  "fuel_hedge_ratio.peer_median@FY2024": "the company's own figure is not available",
+  "fuel_hedge_ratio.peer_rank@FY2024": "the company's own figure is not available",
   "fuel_hedge_ratio@FY2023": "Fuel hedge ratio not available for FY2023",
   "fuel_hedge_ratio@FY2024": "not verified yet: waiting for Imane's review",
-  "fuel_share_of_costs.peer_rank@2024": "not ranked: neither higher nor lower is better",
+  "fuel_share_of_costs.peer_rank@FY2024": "not ranked: neither higher nor lower is better",
   "liquidity.change@FY2024": "needs both years verified",
   "liquidity@FY2023": "Undrawn committed credit facilities not available for FY2023",
   "liquidity_to_revenue.change@FY2024": "needs both years verified",
-  "liquidity_to_revenue.peer_median@2024": "the peer median would use a figure not verified yet (afkl)",
-  "liquidity_to_revenue.peer_rank@2024": "the peer median would use a figure not verified yet (afkl)",
+  "liquidity_to_revenue.peer_median@FY2024": "the peer median would use a figure not verified yet (afkl)",
+  "liquidity_to_revenue.peer_rank@FY2024": "the peer median would use a figure not verified yet (afkl)",
   "liquidity_to_revenue@FY2023": "Liquidity: Undrawn committed credit facilities not available for FY2023",
   "load_factor.change@FY2024": "needs both years verified",
-  "load_factor.peer_median@2024": "the company's own figure is not available",
-  "load_factor.peer_rank@2024": "the company's own figure is not available",
+  "load_factor.peer_median@FY2024": "the company's own figure is not available",
+  "load_factor.peer_rank@FY2024": "the company's own figure is not available",
   "load_factor@FY2023": "not verified yet: waiting for Imane's review",
   "load_factor@FY2024": "not verified yet: waiting for Imane's review",
+  "net_cash.change@FY2024": "needs both years verified",
+  "net_cash@FY2023": "the company has net debt, not net cash",
+  "net_cash@FY2024": "the company has net debt, not net cash",
   "passenger_yield.change@FY2024": "needs both years verified",
   "passenger_yield@FY2023": "not verified yet: waiting for Imane's review",
   "passenger_yield@FY2024": "not verified yet: waiting for Imane's review",

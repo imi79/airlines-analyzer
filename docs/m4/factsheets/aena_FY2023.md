@@ -38,19 +38,19 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | gross_leverage@FY2023 | Gross leverage, FY2023 | 2.84x | down, better vs prior year; company in line with peer median |
 | gross_leverage@FY2022 | Gross leverage, FY2022 | 3.76x |  |
 | gross_leverage.change@FY2023 | change in Gross leverage, FY2022 to FY2023 | 0.92x | down, better vs prior year; printed without a sign: say the direction in words |
-| interest_coverage@FY2023 | Interest coverage, FY2023 | 12.61x | down, worse vs prior year; company in line with peer median |
+| interest_coverage@FY2023 | Interest coverage, FY2023 | 12.61x | down, worse vs prior year; company above peer median, better |
 | interest_coverage@FY2022 | Interest coverage, FY2022 | 22.34x |  |
 | interest_coverage.change@FY2023 | change in Interest coverage, FY2022 to FY2023 | 9.73x | down, worse vs prior year; printed without a sign: say the direction in words |
 | ffo@FY2023 | FFO, FY2023 | EUR 2.4bn | up, better vs prior year |
 | ffo@FY2022 | FFO, FY2022 | EUR 1.8bn |  |
 | ffo.change@FY2023 | change in FFO, FY2022 to FY2023 | 31.6% | up, better vs prior year; printed without a sign: say the direction in words |
-| ffo_to_debt@FY2023 | FFO to debt, FY2023 | 27.7% | up, better vs prior year; company in line with peer median |
+| ffo_to_debt@FY2023 | FFO to debt, FY2023 | 27.7% | up, better vs prior year; company above peer median, better |
 | ffo_to_debt@FY2022 | FFO to debt, FY2022 | 23.1% |  |
 | ffo_to_debt.change@FY2023 | change in FFO to debt, FY2022 to FY2023 | 4.6 points | up, better vs prior year; printed without a sign: say the direction in words |
 | fcf@FY2023 | Free cash flow, FY2023 | EUR 837m | down, worse vs prior year |
 | fcf@FY2022 | Free cash flow, FY2022 | EUR 1.1bn |  |
 | fcf.change@FY2023 | change in Free cash flow, FY2022 to FY2023 | 26.3% | down, worse vs prior year; printed without a sign: say the direction in words |
-| fcf_to_debt@FY2023 | FCF to debt, FY2023 | 9.7% | down, worse vs prior year; company in line with peer median |
+| fcf_to_debt@FY2023 | FCF to debt, FY2023 | 9.7% | down, worse vs prior year; company above peer median, better |
 | fcf_to_debt@FY2022 | FCF to debt, FY2022 | 14.5% |  |
 | fcf_to_debt.change@FY2023 | change in FCF to debt, FY2022 to FY2023 | 4.8 points | down, worse vs prior year; printed without a sign: say the direction in words |
 | capex_intensity@FY2023 | Capex intensity, FY2023 | 27.4% | up vs prior year; company above peer median |
@@ -93,19 +93,19 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 
 | id | what it is | prints as | computed by code |
 | --- | --- | --- | --- |
-| ebitda_margin.peer_median@2023 | EBITDA margin, median of airports, peer year 2023 (3 companies) | 42.2% | company above peer median, better |
-| ebitda_margin.peer_rank@2023 | EBITDA margin, rank in airports, peer year 2023 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
-| gross_leverage.peer_median@2023 | Gross leverage, median of airports, peer year 2023 (3 companies) | 2.84x | company in line with peer median |
-| gross_leverage.peer_rank@2023 | Gross leverage, rank in airports, peer year 2023 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
-| interest_coverage.peer_median@2023 | Interest coverage, median of airports, peer year 2023 (3 companies) | 12.61x | company in line with peer median |
-| interest_coverage.peer_rank@2023 | Interest coverage, rank in airports, peer year 2023 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| ffo_to_debt.peer_median@2023 | FFO to debt, median of airports, peer year 2023 (3 companies) | 27.7% | company in line with peer median |
-| ffo_to_debt.peer_rank@2023 | FFO to debt, rank in airports, peer year 2023 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| fcf_to_debt.peer_median@2023 | FCF to debt, median of airports, peer year 2023 (3 companies) | 9.7% | company in line with peer median |
-| fcf_to_debt.peer_rank@2023 | FCF to debt, rank in airports, peer year 2023 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| capex_intensity.peer_median@2023 | Capex intensity, median of airports, peer year 2023 (3 companies) | 15.9% | company above peer median |
-| traffic_growth.peer_median@2023 | Traffic growth, median of airports, peer year 2023 (2 companies) | 20.5% | company below peer median, worse |
-| traffic_growth.peer_rank@2023 | Traffic growth, rank in airports, peer year 2023 (1st = strongest, i.e. the highest) | 2nd of 2 | weakest |
+| ebitda_margin.peer_median@FY2023 | EBITDA margin, median of airports, peer year 2023 (3 companies) | 42.2% | company above peer median, better |
+| ebitda_margin.peer_rank@FY2023 | EBITDA margin, rank in airports, peer year 2023 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
+| gross_leverage.peer_median@FY2023 | Gross leverage, median of airports, peer year 2023 (3 companies) | 2.84x | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| gross_leverage.peer_rank@FY2023 | Gross leverage, rank in airports, peer year 2023 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
+| interest_coverage.peer_median@FY2023 | Interest coverage, median of airports, peer year 2023 (2 companies) | 9.67x | company above peer median, better |
+| interest_coverage.peer_rank@FY2023 | Interest coverage, rank in airports, peer year 2023 (1st = strongest, i.e. the highest) | 1st of 2 | best in the group |
+| ffo_to_debt.peer_median@FY2023 | FFO to debt, median of airports, peer year 2023 (2 companies) | 21.0% | company above peer median, better |
+| ffo_to_debt.peer_rank@FY2023 | FFO to debt, rank in airports, peer year 2023 (1st = strongest, i.e. the highest) | 1st of 2 | best in the group |
+| fcf_to_debt.peer_median@FY2023 | FCF to debt, median of airports, peer year 2023 (2 companies) | 8.3% | company above peer median, better |
+| fcf_to_debt.peer_rank@FY2023 | FCF to debt, rank in airports, peer year 2023 (1st = strongest, i.e. the highest) | 1st of 2 | best in the group |
+| capex_intensity.peer_median@FY2023 | Capex intensity, median of airports, peer year 2023 (3 companies) | 15.9% | company above peer median |
+| traffic_growth.peer_median@FY2023 | Traffic growth, median of airports, peer year 2023 (2 companies) | 20.5% | company below peer median, worse |
+| traffic_growth.peer_rank@FY2023 | Traffic growth, rank in airports, peer year 2023 (1st = strongest, i.e. the highest) | 2nd of 2 | weakest |
 
 ## Other figures
 
@@ -119,13 +119,13 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 
 These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
 
-- net_leverage.peer_median@2023: the peer median would use a figure not verified yet (vie)
-- net_leverage.peer_rank@2023: the peer median would use a figure not verified yet (vie)
-- capex_intensity.peer_rank@2023: not ranked: neither higher nor lower is better
-- cash_liquidity_to_revenue.peer_median@2023: the peer median would use a figure not verified yet (vie)
-- cash_liquidity_to_revenue.peer_rank@2023: the peer median would use a figure not verified yet (vie)
-- liquidity_to_revenue.peer_median@2023: fewer than two companies in the peer group have a value
-- liquidity_to_revenue.peer_rank@2023: fewer than two companies in the peer group have a value
+- net_leverage.peer_median@FY2023: the peer median would use a figure not verified yet (vie)
+- net_leverage.peer_rank@FY2023: the peer median would use a figure not verified yet (vie)
+- capex_intensity.peer_rank@FY2023: not ranked: neither higher nor lower is better
+- cash_liquidity_to_revenue.peer_median@FY2023: the peer median would use a figure not verified yet (vie)
+- cash_liquidity_to_revenue.peer_rank@FY2023: the peer median would use a figure not verified yet (vie)
+- liquidity_to_revenue.peer_median@FY2023: fewer than two companies in the peer group have a value
+- liquidity_to_revenue.peer_rank@FY2023: fewer than two companies in the peer group have a value
 - revenue_per_passenger@FY2023: n.m.: group revenue includes London Luton and the Brazilian airports, while passengers are the Spanish network only.
 - revenue_per_passenger@FY2022: n.m.: group revenue includes London Luton and the Brazilian airports, while passengers are the Spanish network only.
 - aero_revenue_per_passenger@FY2022: not verified yet: waiting for Imane's review
@@ -133,3 +133,5 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - non_aero_share@FY2022: n.m.: group revenue includes London Luton and the Brazilian airports, while the aeronautical revenue is the Spanish network's segment only.
 - contract_liabilities@FY2023: no figure for this year
 - contract_liabilities@FY2022: no figure for this year
+- net_cash@FY2023: the company has net debt, not net cash
+- net_cash@FY2022: the company has net debt, not net cash

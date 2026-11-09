@@ -1,0 +1,90 @@
+{
+ "answer": {
+  "sections": {
+   "snapshot": [
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating-2"
+      }
+     ],
+     "text": "International Airlines Group, the owner of British Airways, Iberia, Aer Lingus and Vueling, ended FY2024 with both Moody's and S&P having upgraded the group to investment grade during the year."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "net_leverage.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ebitda.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2024"
+      }
+     ],
+     "text": "Net leverage fell by {{net_leverage.change@FY2024}} to {{net_leverage@FY2024}} as EBITDA rose by {{ebitda.change@FY2024}} to {{ebitda@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "advance_ticket_cover.change@FY2024"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "advance_ticket_cover@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover.peer_median@2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "advance_ticket_cover.peer_rank@2024"
+      }
+     ],
+     "text": "The point to watch is customer prepayments: advance ticket cover fell by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, above the peer median of {{advance_ticket_cover.peer_median@2024}} and the weakest of the network peers ({{advance_ticket_cover.peer_rank@2024}})."
+    }
+   ]
+  }
+ },
+ "label": "iag_FY2024 attempt 3",
+ "recorded_at": "2026-11-09T14:45:33+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v4",
+  "provider": "deepseek",
+  "system_sha256": "b0604cb7fa50c8024297d0491baf099868983d69337d8b5927b5e5286c493bd1",
+  "tool_sha256": "f3ffabb68260c2cd545b56720ce5c67c00ae855465b28b5098e29d8e06d8be87",
+  "user_sha256": "3fba0e93f78fe7681d0e9b613d254ce15e753c66505fc254576f920882b31a66"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 12370,
+  "output_tokens": 453
+ }
+}

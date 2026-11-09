@@ -93,23 +93,23 @@ def test_only_verified_figures(sheet):
 
 
 def test_peer_median_and_rank(sheet):
-    median = sheet.items["net_leverage.peer_median@2025"]
+    median = sheet.items["net_leverage.peer_median@FY2025"]
     assert median.value == D("1.71") and median.vs_peers == "in_line"
-    rank = sheet.items["net_leverage.peer_rank@2025"]
+    rank = sheet.items["net_leverage.peer_rank@FY2025"]
     assert (rank.rank, rank.rank_of, rank.rendered) == (2, 3, "2nd of 3")
     assert sheet.items["net_leverage@FY2025"].vs_peers == "in_line"
 
 
 def test_peer_median_withheld_when_a_peer_is_unverified(sheet):
-    assert "ebitda_margin.peer_median@2025" not in sheet.items
-    assert "finnair" in sheet.unavailable["ebitda_margin.peer_median@2025"]
+    assert "ebitda_margin.peer_median@FY2025" not in sheet.items
+    assert "finnair" in sheet.unavailable["ebitda_margin.peer_median@FY2025"]
 
 
 def test_peer_rank_best_and_lower_is_better():
     figures = universe([fig("afkl", "net_leverage", 2025, "0.50")])
     figures = [f for f in figures if not (f.concept == "net_leverage" and f.value == D("1.71"))]
     sheet = build(ISSUERS["afkl"], 2025, figures)
-    rank = sheet.items["net_leverage.peer_rank@2025"]
+    rank = sheet.items["net_leverage.peer_rank@FY2025"]
     assert (rank.rank, rank.note) == (1, "best in the group")
     assert sheet.items["net_leverage@FY2025"].vs_peers == "below"
     assert sheet.items["net_leverage@FY2025"].peer_assessment == "better"
@@ -126,7 +126,8 @@ def test_wizz_peer_year_follows_year_end():
     sheet = build(ISSUERS["wizz"], 2026, figures)
     assert sheet.peer_year == 2025
     assert sheet.period_label == "FY2026 (Apr 2025 to Mar 2026)"
-    assert sheet.items["net_leverage.peer_rank@2025"].rendered == "3rd of 3"
+    assert sheet.items["net_leverage.peer_rank@FY2026"].rendered == "3rd of 3"
+    assert "peer year 2025" in sheet.items["net_leverage.peer_rank@FY2026"].label
     assert sheet.items["net_leverage.change@FY2026"].direction == "down"
 
 
@@ -234,13 +235,13 @@ def test_ratios_to_debt_left_out_when_debt_is_tiny():
     ]
     sheet = build(ISSUERS["afkl"], 2025, universe(extra))
     assert "ffo_to_debt@FY2025" not in sheet.items
-    assert "very small" in sheet.unavailable["ffo_to_debt.peer_median@2025"]
+    assert "very small" in sheet.unavailable["ffo_to_debt.peer_median@FY2025"]
     peer = build(
         ISSUERS["iag"], 2025, universe(extra + [fig("iag", "gross_leverage", 2025, "1.86")])
     )
-    median = peer.items["ffo_to_debt.peer_median@2025"]
+    median = peer.items["ffo_to_debt.peer_median@FY2025"]
     assert median.label.endswith("(2 companies)")  # afkl's ratio to almost no debt left out
 
 
 def test_median_company_is_flagged(sheet):
-    assert "middle of the group" in sheet.items["net_leverage.peer_median@2025"].note
+    assert "middle of the group" in sheet.items["net_leverage.peer_median@FY2025"].note

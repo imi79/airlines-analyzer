@@ -1,0 +1,372 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      }
+     ],
+     "text": "Cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, and cash liquidity to revenue declined by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "liquidity@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "undrawn_facilities@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "liquidity_to_revenue@FY2024"
+      }
+     ],
+     "text": "Total liquidity of {{liquidity@FY2024}} included {{undrawn_facilities@FY2024}} of undrawn committed facilities, and liquidity to revenue reached {{liquidity_to_revenue@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "contract_liabilities.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2024"
+      }
+     ],
+     "text": "Advance ticket cover rose by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, with contract liabilities up {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}}, so a larger share of liquidity is customer prepayments."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating-2"
+      },
+      {
+       "claims": [],
+       "id": "event:funding_and_rating-3"
+      }
+     ],
+     "text": "Funding was refinanced during the year, with a new unsecured senior bond issued to replace the old bond and a new secured revolving credit facility agreed for general corporate purposes."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_rank@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt.peer_rank@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue.peer_rank@FY2024"
+      }
+     ],
+     "text": "Finnair sits in the middle of the network group on EBITDA margin ({{ebitda_margin.peer_rank@FY2024}}), FCF to debt ({{fcf_to_debt.peer_rank@FY2024}}) and cash liquidity to revenue ({{cash_liquidity_to_revenue.peer_rank@FY2024}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "gross_leverage.peer_rank@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_median@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2024"
+      }
+     ],
+     "text": "Leverage is the weakest in the group: gross leverage ranks {{gross_leverage.peer_rank@FY2024}} against a peer median of {{gross_leverage.peer_median@FY2024}}, and net leverage ranks {{net_leverage.peer_rank@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "interest_coverage.peer_rank@FY2024"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "interest_coverage.peer_median@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ffo_to_debt.peer_rank@FY2024"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "ffo_to_debt.peer_median@FY2024"
+      }
+     ],
+     "text": "Coverage and cash generation are also below the group, with interest coverage ranking {{interest_coverage.peer_rank@FY2024}} against a peer median of {{interest_coverage.peer_median@FY2024}} and FFO to debt ranking {{ffo_to_debt.peer_rank@FY2024}} against {{ffo_to_debt.peer_median@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "advance_ticket_cover.peer_rank@FY2024"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "fuel_share_of_costs@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fuel_share_of_costs.peer_median@FY2024"
+      }
+     ],
+     "text": "Advance ticket cover sits in the middle of the group ({{advance_ticket_cover.peer_rank@FY2024}}), and the fuel share of costs of {{fuel_share_of_costs@FY2024}} is above the peer median of {{fuel_share_of_costs.peer_median@FY2024}}."
+    }
+   ],
+   "snapshot": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:labour"
+      }
+     ],
+     "text": "Finnair, the Finnish network carrier, ended FY2024 with revenue up {{revenue.change@FY2024}} to {{revenue@FY2024}} but lower earnings, as industrial action in Finland led to flight cancellations in the early and late parts of the year."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda_margin.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "net_leverage.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage@FY2024"
+      }
+     ],
+     "text": "The EBITDA margin fell by {{ebitda_margin.change@FY2024}} to {{ebitda_margin@FY2024}}, and net leverage rose by {{net_leverage.change@FY2024}} to {{net_leverage@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "net_leverage@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage.peer_median@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2024"
+      }
+     ],
+     "text": "The point to watch is leverage against the network peers: net leverage of {{net_leverage@FY2024}} is above the peer median of {{net_leverage.peer_median@FY2024}} and ranks {{net_leverage.peer_rank@FY2024}}."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "net_leverage.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda.change@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2024"
+      }
+     ],
+     "text": "Leverage: net leverage rose by {{net_leverage.change@FY2024}} to {{net_leverage@FY2024}} as EBITDA fell by {{ebitda.change@FY2024}}, the weakest net leverage in the network group ({{net_leverage.peer_rank@FY2024}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "ffo_to_debt@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt.peer_median@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ffo_to_debt.peer_rank@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "fcf_to_debt@FY2024"
+      }
+     ],
+     "text": "Cash generation: FFO to debt of {{ffo_to_debt@FY2024}} is below the peer median of {{ffo_to_debt.peer_median@FY2024}} and ranks {{ffo_to_debt.peer_rank@FY2024}}, so the stronger FCF to debt of {{fcf_to_debt@FY2024}} rests on lower capital spending."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      }
+     ],
+     "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, with cash and cash-like investments down {{cash_like.change@FY2024}} to {{cash_like@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover.change@FY2024"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "advance_ticket_cover@FY2024"
+      }
+     ],
+     "text": "Customer prepayments: advance ticket cover rose by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, in line with the peer median, so a larger part of liquidity is refundable if bookings slow."
+    }
+   ]
+  }
+ },
+ "label": "finnair_FY2024 attempt 2",
+ "recorded_at": "2026-11-09T15:01:24+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v5",
+  "provider": "deepseek",
+  "system_sha256": "a84c5b5d2de7e517329ea1e077d0ec7c8fdc9d67a0e6d76a31d39278f691c640",
+  "tool_sha256": "9cff8f7de7b26364c90a8e8d6f3a9b3ef402d9226325434ac4ed05ef46baa4cc",
+  "user_sha256": "c9c0fe77c2078182e50faddd6d7f117c71798fb01f157dd29d1f0d65ec93aea2"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14790,
+  "output_tokens": 2299
+ }
+}

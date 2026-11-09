@@ -1,0 +1,135 @@
+{
+ "answer": {
+  "sections": {
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ebitda_margin.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2025"
+      }
+     ],
+     "text": "Revenue grew by {{revenue.change@FY2025}} to {{revenue@FY2025}}, with the EBITDA margin up {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "passengers@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fleet@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fleet_age@FY2024"
+      }
+     ],
+     "text": "In FY2024 the group carried {{passengers@FY2024}} passengers with a fleet of {{fleet@FY2024}} aircraft at an average age of {{fleet_age@FY2024}}."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_rank@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage.peer_rank@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_rank@FY2025"
+      }
+     ],
+     "text": "Air France-KLM sits in the middle of the network airline group on EBITDA margin ({{ebitda_margin.peer_rank@FY2025}}), net leverage ({{net_leverage.peer_rank@FY2025}}) and gross leverage ({{gross_leverage.peer_rank@FY2025}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "interest_coverage.peer_rank@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt.peer_rank@FY2025"
+      }
+     ],
+     "text": "Interest coverage and FFO to debt also rank in the middle of the group ({{interest_coverage.peer_rank@FY2025}} and {{ffo_to_debt.peer_rank@FY2025}} respectively)."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "fcf_to_debt.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "fcf_to_debt.peer_median@FY2025"
+      }
+     ],
+     "text": "FCF to debt is the weakest of the group ({{fcf_to_debt.peer_rank@FY2025}}), against a peer median of {{fcf_to_debt.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "advance_ticket_cover.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "advance_ticket_cover.peer_median@FY2025"
+      }
+     ],
+     "text": "Advance ticket cover is the lowest in the group ({{advance_ticket_cover.peer_rank@FY2025}}), against a peer median of {{advance_ticket_cover.peer_median@FY2025}}."
+    }
+   ]
+  }
+ },
+ "label": "afkl_FY2025 attempt 3",
+ "recorded_at": "2026-11-09T15:11:34+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v5",
+  "provider": "deepseek",
+  "system_sha256": "a84c5b5d2de7e517329ea1e077d0ec7c8fdc9d67a0e6d76a31d39278f691c640",
+  "tool_sha256": "c976347179f8a997ca3b9d86bd67b0ba9c772230ee85be41d41132295c5e3d48",
+  "user_sha256": "837a2a8e78d785886380e9a369b5af884edaacdf796a117129e2317af1869fba"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 13330,
+  "output_tokens": 766
+ }
+}

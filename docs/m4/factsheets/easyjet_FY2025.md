@@ -30,8 +30,6 @@ Company type: airline. Reporting currency: GBP. Peer group: Low-cost airlines (e
 | total_debt@FY2025 | Total debt, FY2025 | GBP 2.9bn | down vs prior year |
 | total_debt@FY2024 | Total debt, FY2024 | GBP 3.3bn |  |
 | total_debt.change@FY2025 | change in Total debt, FY2024 to FY2025 | 10.8% | down vs prior year; printed without a sign: say the direction in words |
-| net_debt@FY2025 | Net debt, FY2025 | GBP -602m | down vs prior year |
-| net_debt@FY2024 | Net debt, FY2024 | GBP -181m |  |
 | gross_leverage@FY2025 | Gross leverage, FY2025 | 2.03x | down, better vs prior year; company below peer median, better |
 | gross_leverage@FY2024 | Gross leverage, FY2024 | 2.41x |  |
 | gross_leverage.change@FY2025 | change in Gross leverage, FY2024 to FY2025 | 0.38x | down, better vs prior year; printed without a sign: say the direction in words |
@@ -56,6 +54,9 @@ Company type: airline. Reporting currency: GBP. Peer group: Low-cost airlines (e
 | operating_profit@FY2025 | Operating profit, FY2025 | GBP 696m | up, better vs prior year |
 | operating_profit@FY2024 | Operating profit, FY2024 | GBP 589m |  |
 | operating_profit.change@FY2025 | change in Operating profit, FY2024 to FY2025 | 18.2% | up, better vs prior year; printed without a sign: say the direction in words |
+| net_cash@FY2025 | Net cash (cash and cash-like investments above total debt), FY2025 | GBP 602m | up, better vs prior year |
+| net_cash@FY2024 | Net cash (cash and cash-like investments above total debt), FY2024 | GBP 181m |  |
+| net_cash.change@FY2025 | change in Net cash (cash and cash-like investments above total debt), FY2024 to FY2025 | 232.6% | up, better vs prior year; printed without a sign: say the direction in words |
 
 ## Operating performance
 
@@ -118,26 +119,26 @@ Company type: airline. Reporting currency: GBP. Peer group: Low-cost airlines (e
 
 | id | what it is | prints as | computed by code |
 | --- | --- | --- | --- |
-| ebitda_margin.peer_median@2025 | EBITDA margin, median of low-cost airlines, peer year 2025 (3 companies) | 21.2% | company below peer median, worse |
-| ebitda_margin.peer_rank@2025 | EBITDA margin, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| net_leverage.peer_median@2025 | Net leverage, median of low-cost airlines, peer year 2025 (3 companies) | 1.19x | company below peer median, better |
-| net_leverage.peer_rank@2025 | Net leverage, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 1st of 3 | best in the group |
-| gross_leverage.peer_median@2025 | Gross leverage, median of low-cost airlines, peer year 2025 (3 companies) | 2.46x | company below peer median, better |
-| gross_leverage.peer_rank@2025 | Gross leverage, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 1st of 3 | best in the group |
-| interest_coverage.peer_median@2025 | Interest coverage, median of low-cost airlines, peer year 2025 (3 companies) | 6.27x | company above peer median, better |
-| interest_coverage.peer_rank@2025 | Interest coverage, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
-| ffo_to_debt.peer_median@2025 | FFO to debt, median of low-cost airlines, peer year 2025 (3 companies) | 35.4% | company above peer median, better |
-| ffo_to_debt.peer_rank@2025 | FFO to debt, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
-| fcf_to_debt.peer_median@2025 | FCF to debt, median of low-cost airlines, peer year 2025 (3 companies) | 14.6% | company above peer median, better |
-| fcf_to_debt.peer_rank@2025 | FCF to debt, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
-| capex_intensity.peer_median@2025 | Capex intensity, median of low-cost airlines, peer year 2025 (3 companies) | 9.9% | company in line with peer median |
-| cash_liquidity_to_revenue.peer_median@2025 | Cash liquidity to revenue (partial), median of low-cost airlines, peer year 2025 (3 companies) | 34.3% | company above peer median, better |
-| cash_liquidity_to_revenue.peer_rank@2025 | Cash liquidity to revenue (partial), rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
-| advance_ticket_cover.peer_median@2025 | Advance ticket cover, median of low-cost airlines, peer year 2025 (3 companies) | 55.1% | company in line with peer median |
-| advance_ticket_cover.peer_rank@2025 | Advance ticket cover, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
-| fuel_share_of_costs.peer_median@2025 | Fuel share of costs, median of low-cost airlines, peer year 2025 (3 companies) | 28.2% | company below peer median |
-| load_factor.peer_median@2025 | Load factor, median of low-cost airlines, peer year 2025 (2 companies) | 90.3% | company in line with peer median |
-| load_factor.peer_rank@2025 | Load factor, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 2 | weakest |
+| ebitda_margin.peer_median@FY2025 | EBITDA margin, median of low-cost airlines, peer year 2025 (3 companies) | 21.2% | company below peer median, worse |
+| ebitda_margin.peer_rank@FY2025 | EBITDA margin, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
+| net_leverage.peer_median@FY2025 | Net leverage, median of low-cost airlines, peer year 2025 (3 companies) | 1.19x | company below peer median, better |
+| net_leverage.peer_rank@FY2025 | Net leverage, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 1st of 3 | best in the group |
+| gross_leverage.peer_median@FY2025 | Gross leverage, median of low-cost airlines, peer year 2025 (3 companies) | 2.46x | company below peer median, better |
+| gross_leverage.peer_rank@FY2025 | Gross leverage, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 1st of 3 | best in the group |
+| interest_coverage.peer_median@FY2025 | Interest coverage, median of low-cost airlines, peer year 2025 (3 companies) | 6.27x | company above peer median, better |
+| interest_coverage.peer_rank@FY2025 | Interest coverage, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
+| ffo_to_debt.peer_median@FY2025 | FFO to debt, median of low-cost airlines, peer year 2025 (3 companies) | 35.4% | company above peer median, better |
+| ffo_to_debt.peer_rank@FY2025 | FFO to debt, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
+| fcf_to_debt.peer_median@FY2025 | FCF to debt, median of low-cost airlines, peer year 2025 (3 companies) | 14.6% | company above peer median, better |
+| fcf_to_debt.peer_rank@FY2025 | FCF to debt, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
+| capex_intensity.peer_median@FY2025 | Capex intensity, median of low-cost airlines, peer year 2025 (3 companies) | 9.9% | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| cash_liquidity_to_revenue.peer_median@FY2025 | Cash liquidity to revenue (partial), median of low-cost airlines, peer year 2025 (3 companies) | 34.3% | company above peer median, better |
+| cash_liquidity_to_revenue.peer_rank@FY2025 | Cash liquidity to revenue (partial), rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
+| advance_ticket_cover.peer_median@FY2025 | Advance ticket cover, median of low-cost airlines, peer year 2025 (3 companies) | 55.1% | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| advance_ticket_cover.peer_rank@FY2025 | Advance ticket cover, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
+| fuel_share_of_costs.peer_median@FY2025 | Fuel share of costs, median of low-cost airlines, peer year 2025 (3 companies) | 28.2% | company below peer median |
+| load_factor.peer_median@FY2025 | Load factor, median of low-cost airlines, peer year 2025 (2 companies) | 90.3% | company in line with peer median |
+| load_factor.peer_rank@FY2025 | Load factor, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 2 | weakest |
 
 ## Other figures
 
@@ -147,17 +148,32 @@ Company type: airline. Reporting currency: GBP. Peer group: Low-cost airlines (e
 | profit@FY2024 | Profit for the year, FY2024 | GBP 452m |  |
 | profit.change@FY2025 | change in Profit for the year, FY2024 to FY2025 | 9.3% | up, better vs prior year; printed without a sign: say the direction in words |
 
+## Events of the year (read from the report; the quote was checked by code)
+
+Cite an event by listing its id in `facts` (no blank, no claims). It has no figure:
+write no number about it, and no direction word unless a figure of the sentence carries the claim.
+
+| id | event | what happened | quote from the report |
+| --- | --- | --- | --- |
+| event:funding_and_rating | New revolving credit facility replaces prior facilities | easyJet entered into a new revolving credit facility that replaced its previous UK Export Finance facility and smaller revolving credit facility, both terminated, lowering annual interest charges. | (page 111): "The Committee also reviewed easyJet’s undrawn facility arrangements and approved management’s recommendation to enter into a new Revolving Credit Facility for $1.7 billion. This new facility replaced the previous $1.75 billion UKEF facility and the $400 million Revolving Credit Facility, both of which have now been terminated." |
+| event:funding_and_rating-2 | Eurobond repaid at maturity | easyJet repaid a Eurobond on its maturity date and secured a new undrawn revolving credit facility. | (page 33): "In the year, easyJet repaid a €500 million Eurobond, and secured a $1.7 billion revolving credit facility (RCF) which is undrawn at 30 September 2025 (this new RCF replaced an existing $400 million RCF and a $1,750 million" |
+| event:fleet_and_engines | Purchase of previously leased aircraft | easyJet bought aircraft it had previously leased, exiting the leases early and recording a credit to the income statement. | (page 167): "Right of use asset disposals in note 18 includes £73 million (2024: £nil) relating to the purchase of eight aircraft that were previously leased, with a corresponding £237 million (2024: £nil) of additions to aircraft owned assets. The early exit of the leases and subsequent purchase of the aircraft resulted in a £54 million (2024: £nil) credit to the income statement." |
+| event:funding_and_rating-3 | Investment grade ratings affirmed | easyJet held investment grade corporate credit ratings from Moody's and Standard & Poor's, both with stable outlooks. | (page 33): "Building on this profit growth, easyJet continues to have one of the strongest investment grade balance sheets in European Aviation (Baa2/stable from Moody’s and BBB+/stable from Standard & Poor’s)." |
+| event:funding_and_rating-4 | EMTN programme refreshed | The Committee reviewed and recommended a refresh of the Company's Euro Medium Term Note programme to access a diverse range of funding alternatives. | (page 111): "During the year the Committee reviewed and recommended to the Board the refresh of the Company’s EMTN Programme, which had originally been established in January 2016. The refresh of the EMTN Programme allows easyJet to access a diverse range of funding alternatives." |
+| event:costs | Airline financing charges increased | Airline net financing charges rose due to lower interest income on cash and higher interest charges on borrowings. | (page 33): "Airline net financing charges increased due to reduced interest income from lower market interest rates on our cash and an increase in interest charges relating to borrowings." |
+
 ## Not available: do not discuss
 
 These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
 
-- net_debt.change@FY2025: a percentage change is not meaningful (a year is negative or zero); the direction is still down, on net_debt@FY2025
-- capex_intensity.peer_rank@2025: not ranked: neither higher nor lower is better
+- net_debt@FY2025: below zero: the company has net cash, use net_cash
+- net_debt@FY2024: below zero: the company has net cash, use net_cash
+- capex_intensity.peer_rank@FY2025: not ranked: neither higher nor lower is better
 - liquidity@FY2024: not verified yet: waiting for Imane's review
 - liquidity_to_revenue@FY2024: not verified yet: waiting for Imane's review
-- liquidity_to_revenue.peer_median@2025: fewer than two companies in the peer group have a value
-- liquidity_to_revenue.peer_rank@2025: fewer than two companies in the peer group have a value
-- fuel_share_of_costs.peer_rank@2025: not ranked: neither higher nor lower is better
+- liquidity_to_revenue.peer_median@FY2025: fewer than two companies in the peer group have a value
+- liquidity_to_revenue.peer_rank@FY2025: fewer than two companies in the peer group have a value
+- fuel_share_of_costs.peer_rank@FY2025: not ranked: neither higher nor lower is better
 - fuel_hedge_ratio@FY2025: Fuel hedge ratio not available for FY2025
 - fuel_hedge_ratio@FY2024: Fuel hedge ratio not available for FY2024
 - undrawn_facilities@FY2024: not verified yet: waiting for Imane's review

@@ -1,0 +1,69 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      }
+     ],
+     "text": "The group repaid its interest-bearing financial liabilities in full, which the report says greatly reduces the sensitivity of the company to changes in interest rates."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "total_debt@FY2024"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "gross_leverage@FY2024"
+      }
+     ],
+     "text": "Total debt was broadly unchanged at {{total_debt@FY2024}}, so gross leverage of {{gross_leverage@FY2024}} leaves little refinancing need and the funding base rests on internal cash generation."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating-2"
+      }
+     ],
+     "text": "A financing commitment was given to the City Air Terminal joint venture for new train sets, part of which was drawn as a loan in the year."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:capital_returns"
+      }
+     ],
+     "text": "Shares acquired under a buyback programme in earlier years were still held by the company in the reporting year, and the programme had been terminated early."
+    }
+   ]
+  }
+ },
+ "label": "vie_FY2024 attempt 3",
+ "recorded_at": "2026-11-09T14:57:00+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v5",
+  "provider": "deepseek",
+  "system_sha256": "a84c5b5d2de7e517329ea1e077d0ec7c8fdc9d67a0e6d76a31d39278f691c640",
+  "tool_sha256": "4ca8a30aa52873847dabeefc1bf036d2e4b8f878dd1dafa2f23422ddea9a9ff3",
+  "user_sha256": "2fa657f0f38892b69213b3a8a7ef6337809d5fd4741469271fd9e42c96face9c"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 10889,
+  "output_tokens": 298
+ }
+}

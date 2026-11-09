@@ -70,3 +70,8 @@ ignored_phrases:
   - 'top-line'
   - 'traffic growth'
   - 'credit lines?'
+
+# Words naming a figure of the fact sheet. A clause with no blank that cites an event may use a
+# direction word ("charges were set above last year's level") only if it names none of these:
+# "strikes hit the year and revenue fell" is still read against the figures (decision 0018).
+figure_words: 'revenues?|sales|turnover|ebitda|ebit|operating (?:profit|result|income)|profits?|earnings|results?|margins?|debt|borrowings|leverage|gearing|coverage|ffo|cash|liquidity|free cash flow|fcf|capex|investment|passengers?|traffic|capacity|ask|rpk|load factor|yield|rask|cask|unit (?:revenue|cost)|costs?|fuel|fleet|prepayments|ticket'

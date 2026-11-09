@@ -1,0 +1,56 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      }
+     ],
+     "text": "The group repaid its interest-bearing financial liabilities in full, which the report says greatly reduces the sensitivity of the company to changes in interest rates."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating-2"
+      }
+     ],
+     "text": "A financing commitment was given to the City Air Terminal joint venture for new train sets, part of which was drawn as a loan in the year."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "total_debt@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2024"
+      }
+     ],
+     "text": "With total debt of {{total_debt@FY2024}} against EBITDA of {{ebitda@FY2024}}, the group's funding need is limited and its debt service burden is small relative to earnings."
+    }
+   ]
+  }
+ },
+ "label": "vie_FY2024 attempt 3",
+ "recorded_at": "2026-11-09T15:06:00+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v5",
+  "provider": "deepseek",
+  "system_sha256": "a84c5b5d2de7e517329ea1e077d0ec7c8fdc9d67a0e6d76a31d39278f691c640",
+  "tool_sha256": "4ca8a30aa52873847dabeefc1bf036d2e4b8f878dd1dafa2f23422ddea9a9ff3",
+  "user_sha256": "86d3c199d8ae7beea381be3dcc3b53050bf39e327b70099a409c484d6cf68917"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 11735,
+  "output_tokens": 239
+ }
+}

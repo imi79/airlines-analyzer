@@ -1,0 +1,245 @@
+{
+ "answer": {
+  "sections": {
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2024"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "ebitda_margin@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@FY2024"
+      }
+     ],
+     "text": "Groupe ADP has the weakest EBITDA margin in the airport peer group ({{ebitda_margin.peer_rank@FY2024}}), at {{ebitda_margin@FY2024}} against a median of {{ebitda_margin.peer_median@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "gross_leverage@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "gross_leverage.peer_rank@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_median@FY2024"
+      }
+     ],
+     "text": "Gross leverage of {{gross_leverage@FY2024}} is the highest of the group ({{gross_leverage.peer_rank@FY2024}}) and above the peer median of {{gross_leverage.peer_median@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "ffo_to_debt@FY2024"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "fcf_to_debt@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ffo_to_debt.peer_rank@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt.peer_median@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt.peer_median@FY2024"
+      }
+     ],
+     "text": "Cash generation lags the group: FFO to debt of {{ffo_to_debt@FY2024}} and FCF to debt of {{fcf_to_debt@FY2024}} both rank {{ffo_to_debt.peer_rank@FY2024}} against medians of {{ffo_to_debt.peer_median@FY2024}} and {{fcf_to_debt.peer_median@FY2024}} respectively."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "interest_coverage@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "interest_coverage.peer_median@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "interest_coverage.peer_rank@FY2024"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "capex_intensity@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity.peer_median@FY2024"
+      }
+     ],
+     "text": "Interest coverage of {{interest_coverage@FY2024}} is below the peer median of {{interest_coverage.peer_median@FY2024}}, ranking {{interest_coverage.peer_rank@FY2024}}, while capex intensity of {{capex_intensity@FY2024}} is above the peer median of {{capex_intensity.peer_median@FY2024}}."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_to_debt.change@FY2024"
+      },
+      {
+       "claims": [
+        "worse_than_peers"
+       ],
+       "id": "fcf_to_debt@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "fcf_to_debt.peer_rank@FY2024"
+      }
+     ],
+     "text": "Cash generation: free cash flow fell by {{fcf.change@FY2024}} to {{fcf@FY2024}}, taking FCF to debt down by {{fcf_to_debt.change@FY2024}} to {{fcf_to_debt@FY2024}}, the weakest of the group ({{fcf_to_debt.peer_rank@FY2024}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2024"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "capex_intensity@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity.peer_median@FY2024"
+      }
+     ],
+     "text": "Investment: capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}, above the peer median of {{capex_intensity.peer_median@FY2024}}, which absorbs a larger share of operating cash flow."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      }
+     ],
+     "text": "Liquidity: cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, and cash liquidity to revenue declined by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_debt@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "ebitda.change@FY2024"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "net_leverage@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_median@FY2024"
+      }
+     ],
+     "text": "Leverage: net debt rose by {{net_debt.change@FY2024}} to {{net_debt@FY2024}} while EBITDA grew by {{ebitda.change@FY2024}}, leaving net leverage broadly unchanged at {{net_leverage@FY2024}} and gross leverage above the peer median of {{gross_leverage.peer_median@FY2024}}."
+    }
+   ]
+  }
+ },
+ "label": "adp_FY2024 attempt 3",
+ "recorded_at": "2026-11-09T15:01:49+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v5",
+  "provider": "deepseek",
+  "system_sha256": "a84c5b5d2de7e517329ea1e077d0ec7c8fdc9d67a0e6d76a31d39278f691c640",
+  "tool_sha256": "efcf5797f6e1c2605db69a6317bda09d08814646a8338dd9e16a620550634816",
+  "user_sha256": "4b23dd7652f82055fac5172b4f83a55273614f8071240531ed2e9e2dbc4f2427"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 10783,
+  "output_tokens": 1452
+ }
+}

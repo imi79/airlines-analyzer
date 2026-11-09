@@ -1,0 +1,399 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_like.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2026"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2026"
+      }
+     ],
+     "text": "Cash and cash-like investments rose by {{cash_like.change@FY2026}} to {{cash_like@FY2026}}, taking cash liquidity to revenue up by {{cash_liquidity_to_revenue.change@FY2026}} to {{cash_liquidity_to_revenue@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover@FY2026"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "contract_liabilities.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2026"
+      }
+     ],
+     "text": "Advance ticket cover rose by {{advance_ticket_cover.change@FY2026}} to {{advance_ticket_cover@FY2026}}, with contract liabilities up {{contract_liabilities.change@FY2026}} to {{contract_liabilities@FY2026}}, so a larger share of the cash balance is customer prepayment."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      },
+      {
+       "claims": [],
+       "id": "event:funding_and_rating-2"
+      }
+     ],
+     "text": "The company repaid its eurobond out of free cash and renewed its Euro Medium Term Note programme, while Fitch and Moody's issued ratings with stable and negative outlooks respectively."
+    }
+   ],
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "passengers.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "passengers@FY2026"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ask.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "ask@FY2026"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "rpk.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "rpk@FY2026"
+      }
+     ],
+     "text": "Passengers rose by {{passengers.change@FY2026}} to {{passengers@FY2026}} on capacity up {{ask.change@FY2026}} to {{ask@FY2026}} available seat kilometres, with RPK up {{rpk.change@FY2026}} to {{rpk@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "load_factor.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "load_factor@FY2026"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "passenger_yield@FY2026"
+      }
+     ],
+     "text": "The load factor slipped by {{load_factor.change@FY2026}} to {{load_factor@FY2026}} as capacity outgrew traffic, while passenger yield was broadly unchanged at {{passenger_yield@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "rask@FY2026"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "cask@FY2026"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "cask_ex_fuel.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "cask_ex_fuel@FY2026"
+      }
+     ],
+     "text": "RASK was stable at {{rask@FY2026}} and CASK at {{cask@FY2026}}, but CASK ex-fuel rose by {{cask_ex_fuel.change@FY2026}} to {{cask_ex_fuel@FY2026}}, so the cost base outside fuel carried the pressure."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "fuel_share_of_costs.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "fuel_share_of_costs@FY2026"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "fleet.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "fleet@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "fleet_age@FY2026"
+      }
+     ],
+     "text": "The fuel share of costs fell by {{fuel_share_of_costs.change@FY2026}} to {{fuel_share_of_costs@FY2026}}, and the fleet grew by {{fleet.change@FY2026}} to {{fleet@FY2026}} aircraft with an average age of {{fleet_age@FY2026}}."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@FY2026"
+      }
+     ],
+     "text": "Wizz Air has the highest EBITDA margin in the low-cost peer group ({{ebitda_margin.peer_rank@FY2026}}), against a median of {{ebitda_margin.peer_median@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage.peer_median@FY2026"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "gross_leverage.peer_rank@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_median@FY2026"
+      }
+     ],
+     "text": "Leverage is the weakest in the group: net leverage ranks {{net_leverage.peer_rank@FY2026}} against a median of {{net_leverage.peer_median@FY2026}}, and gross leverage ranks {{gross_leverage.peer_rank@FY2026}} against a median of {{gross_leverage.peer_median@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ffo_to_debt.peer_rank@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt.peer_median@FY2026"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "fcf_to_debt.peer_rank@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt.peer_median@FY2026"
+      }
+     ],
+     "text": "Cash generation is the weakest in the group, with FFO to debt ranking {{ffo_to_debt.peer_rank@FY2026}} against a median of {{ffo_to_debt.peer_median@FY2026}} and FCF to debt ranking {{fcf_to_debt.peer_rank@FY2026}} against a median of {{fcf_to_debt.peer_median@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue.peer_rank@FY2026"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "interest_coverage.peer_rank@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "interest_coverage.peer_median@FY2026"
+      }
+     ],
+     "text": "Cash liquidity to revenue sits in the middle of the group ({{cash_liquidity_to_revenue.peer_rank@FY2026}}), and interest coverage ranks {{interest_coverage.peer_rank@FY2026}} against a median of {{interest_coverage.peer_median@FY2026}}."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "net_leverage@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage.peer_median@FY2026"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2026"
+      }
+     ],
+     "text": "Leverage: net leverage of {{net_leverage@FY2026}} is above the peer median of {{net_leverage.peer_median@FY2026}} and ranks {{net_leverage.peer_rank@FY2026}}, the weakest in the group, so the pace of deleveraging matters most."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "ffo_to_debt@FY2026"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "fcf_to_debt@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt.peer_median@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt.peer_median@FY2026"
+      }
+     ],
+     "text": "Cash generation: FFO to debt of {{ffo_to_debt@FY2026}} and FCF to debt of {{fcf_to_debt@FY2026}} both sit below the peer medians of {{ffo_to_debt.peer_median@FY2026}} and {{fcf_to_debt.peer_median@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "advance_ticket_cover@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover.peer_median@FY2026"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "advance_ticket_cover.peer_rank@FY2026"
+      }
+     ],
+     "text": "Customer prepayments: advance ticket cover of {{advance_ticket_cover@FY2026}} is above the peer median of {{advance_ticket_cover.peer_median@FY2026}} and ranks {{advance_ticket_cover.peer_rank@FY2026}}, the weakest in the group, a sensitivity if bookings slow."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "cask_ex_fuel.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "cask_ex_fuel@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "fleet.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "fleet@FY2026"
+      }
+     ],
+     "text": "Costs and fleet: CASK ex-fuel rose by {{cask_ex_fuel.change@FY2026}} to {{cask_ex_fuel@FY2026}} while the GTF engine issue continued to ground aircraft, and the fleet grew by {{fleet.change@FY2026}} to {{fleet@FY2026}} aircraft."
+    }
+   ]
+  }
+ },
+ "label": "wizz_FY2026 attempt 2",
+ "recorded_at": "2026-11-09T14:54:06+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v5",
+  "provider": "deepseek",
+  "system_sha256": "a84c5b5d2de7e517329ea1e077d0ec7c8fdc9d67a0e6d76a31d39278f691c640",
+  "tool_sha256": "78bc4efce3435eece86875c2329d5258cc84eba2dac75a7a942647f180782610",
+  "user_sha256": "a5a98725ae3c3bc34c09e99f998c5b6702c25df266baae46edcc4c8c3089515e"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 15545,
+  "output_tokens": 2443
+ }
+}

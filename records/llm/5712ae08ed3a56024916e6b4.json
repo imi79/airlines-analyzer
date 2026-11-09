@@ -1,0 +1,81 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity@FY2024"
+      }
+     ],
+     "text": "Cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, and cash liquidity on the same partial basis to {{cash_liquidity@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "liquidity@FY2023"
+      },
+      {
+       "claims": [],
+       "id": "undrawn_facilities@FY2023"
+      },
+      {
+       "claims": [],
+       "id": "liquidity_to_revenue@FY2023"
+      }
+     ],
+     "text": "In FY2023 the group held liquidity of {{liquidity@FY2023}}, including {{undrawn_facilities@FY2023}} of undrawn committed facilities, and liquidity to revenue of {{liquidity_to_revenue@FY2023}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "total_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "total_debt@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      }
+     ],
+     "text": "The cash decline came alongside debt repayment, with total debt down {{total_debt.change@FY2024}} to {{total_debt@FY2024}}, and Fitch raised the long-term rating during the year with the outlook held stable."
+    }
+   ]
+  }
+ },
+ "label": "aena_FY2024 attempt 3",
+ "recorded_at": "2026-11-09T14:47:03+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v4",
+  "provider": "deepseek",
+  "system_sha256": "b0604cb7fa50c8024297d0491baf099868983d69337d8b5927b5e5286c493bd1",
+  "tool_sha256": "4ca8a30aa52873847dabeefc1bf036d2e4b8f878dd1dafa2f23422ddea9a9ff3",
+  "user_sha256": "80c8be2a2516642e92fd6ef9d79d138dbeeb6bd1f8f75795f3fe9d032d887aca"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 11398,
+  "output_tokens": 388
+ }
+}

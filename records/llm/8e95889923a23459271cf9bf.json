@@ -1,0 +1,116 @@
+{
+ "answer": {
+  "sections": {
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "gross_leverage@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_median@2025"
+      }
+     ],
+     "text": "Leverage: gross leverage of {{gross_leverage@FY2025}} is above the peer median of {{gross_leverage.peer_median@2025}}, leaving limited headroom if EBITDA growth stalls."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "ffo_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "fcf_to_debt@FY2025"
+      }
+     ],
+     "text": "Cash generation: FFO to debt of {{ffo_to_debt@FY2025}} and FCF to debt of {{fcf_to_debt@FY2025}} remain below the peer medians, so the pace of deleveraging depends on operating cash flow."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2025"
+      }
+     ],
+     "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, with cash and cash-like investments down by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "profit.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "profit@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "ebitda_margin@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@2025"
+      }
+     ],
+     "text": "Profitability: profit for the year fell by {{profit.change@FY2025}} to {{profit@FY2025}}, and the EBITDA margin of {{ebitda_margin@FY2025}} is the weakest of the airport peers ({{ebitda_margin.peer_rank@2025}})."
+    }
+   ]
+  }
+ },
+ "label": "adp_FY2025 attempt 2",
+ "recorded_at": "2026-11-09T14:43:18+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v4",
+  "provider": "deepseek",
+  "system_sha256": "b0604cb7fa50c8024297d0491baf099868983d69337d8b5927b5e5286c493bd1",
+  "tool_sha256": "bf89949808c3cfaf136bca2c04e2c1fbe93c3b5950310e089cc25b70884f3a9e",
+  "user_sha256": "02413f5d0fc89866ba37b62193d45d4df36e0d4e425f0e3b27b2fb348bbc6bf4"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 11733,
+  "output_tokens": 614
+ }
+}

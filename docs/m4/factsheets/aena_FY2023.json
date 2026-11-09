@@ -18,6 +18,7 @@
   "interest_coverage": true,
   "liquidity": true,
   "liquidity_to_revenue": true,
+  "net_cash": true,
   "net_debt": null,
   "net_leverage": false,
   "non_aero_share": true,
@@ -66,10 +67,10 @@
    "value": "0.100403444136",
    "vs_peers": null
   },
-  "capex_intensity.peer_median@2023": {
+  "capex_intensity.peer_median@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "capex_intensity.peer_median@2023",
+   "id": "capex_intensity.peer_median@FY2023",
    "kind": "peer_median",
    "label": "Capex intensity, median of airports, peer year 2023 (3 companies)",
    "metric": "capex_intensity",
@@ -338,10 +339,10 @@
    "value": "0.102670066391",
    "vs_peers": null
   },
-  "ebitda_margin.peer_median@2023": {
+  "ebitda_margin.peer_median@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "ebitda_margin.peer_median@2023",
+   "id": "ebitda_margin.peer_median@FY2023",
    "kind": "peer_median",
    "label": "EBITDA margin, median of airports, peer year 2023 (3 companies)",
    "metric": "ebitda_margin",
@@ -355,10 +356,10 @@
    "value": "0.422474542917",
    "vs_peers": "above"
   },
-  "ebitda_margin.peer_rank@2023": {
+  "ebitda_margin.peer_rank@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "ebitda_margin.peer_rank@2023",
+   "id": "ebitda_margin.peer_rank@FY2023",
    "kind": "peer_rank",
    "label": "EBITDA margin, rank in airports, peer year 2023 (1st = strongest, i.e. the highest)",
    "metric": "ebitda_margin",
@@ -474,38 +475,38 @@
    "value": "0.047792501604",
    "vs_peers": null
   },
-  "fcf_to_debt.peer_median@2023": {
+  "fcf_to_debt.peer_median@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "fcf_to_debt.peer_median@2023",
+   "id": "fcf_to_debt.peer_median@FY2023",
    "kind": "peer_median",
-   "label": "FCF to debt, median of airports, peer year 2023 (3 companies)",
+   "label": "FCF to debt, median of airports, peer year 2023 (2 companies)",
    "metric": "fcf_to_debt",
    "note": "",
-   "peer_assessment": "in_line",
+   "peer_assessment": "better",
    "period": "peer year 2023",
    "rank": null,
    "rank_of": null,
-   "rendered": "9.7%",
+   "rendered": "8.3%",
    "unit": "pct",
-   "value": "0.097474946305",
-   "vs_peers": "in_line"
+   "value": "0.0831554956805",
+   "vs_peers": "above"
   },
-  "fcf_to_debt.peer_rank@2023": {
+  "fcf_to_debt.peer_rank@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "fcf_to_debt.peer_rank@2023",
+   "id": "fcf_to_debt.peer_rank@FY2023",
    "kind": "peer_rank",
    "label": "FCF to debt, rank in airports, peer year 2023 (1st = strongest, i.e. the highest)",
    "metric": "fcf_to_debt",
-   "note": "",
+   "note": "best in the group",
    "peer_assessment": null,
    "period": "peer year 2023",
-   "rank": 2,
-   "rank_of": 3,
-   "rendered": "2nd of 3",
+   "rank": 1,
+   "rank_of": 2,
+   "rendered": "1st of 2",
    "unit": "rank",
-   "value": "2",
+   "value": "1",
    "vs_peers": null
   },
   "fcf_to_debt@FY2022": {
@@ -533,14 +534,14 @@
    "label": "FCF to debt, FY2023",
    "metric": "fcf_to_debt",
    "note": "",
-   "peer_assessment": "in_line",
+   "peer_assessment": "better",
    "period": "FY2023",
    "rank": null,
    "rank_of": null,
    "rendered": "9.7%",
    "unit": "pct",
    "value": "0.097474946305",
-   "vs_peers": "in_line"
+   "vs_peers": "above"
   },
   "ffo.change@FY2023": {
    "assessment": "better",
@@ -610,38 +611,38 @@
    "value": "0.045740307099",
    "vs_peers": null
   },
-  "ffo_to_debt.peer_median@2023": {
+  "ffo_to_debt.peer_median@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "ffo_to_debt.peer_median@2023",
+   "id": "ffo_to_debt.peer_median@FY2023",
    "kind": "peer_median",
-   "label": "FFO to debt, median of airports, peer year 2023 (3 companies)",
+   "label": "FFO to debt, median of airports, peer year 2023 (2 companies)",
    "metric": "ffo_to_debt",
    "note": "",
-   "peer_assessment": "in_line",
+   "peer_assessment": "better",
    "period": "peer year 2023",
    "rank": null,
    "rank_of": null,
-   "rendered": "27.7%",
+   "rendered": "21.0%",
    "unit": "pct",
-   "value": "0.276501940467",
-   "vs_peers": "in_line"
+   "value": "0.210360337712",
+   "vs_peers": "above"
   },
-  "ffo_to_debt.peer_rank@2023": {
+  "ffo_to_debt.peer_rank@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "ffo_to_debt.peer_rank@2023",
+   "id": "ffo_to_debt.peer_rank@FY2023",
    "kind": "peer_rank",
    "label": "FFO to debt, rank in airports, peer year 2023 (1st = strongest, i.e. the highest)",
    "metric": "ffo_to_debt",
-   "note": "",
+   "note": "best in the group",
    "peer_assessment": null,
    "period": "peer year 2023",
-   "rank": 2,
-   "rank_of": 3,
-   "rendered": "2nd of 3",
+   "rank": 1,
+   "rank_of": 2,
+   "rendered": "1st of 2",
    "unit": "rank",
-   "value": "2",
+   "value": "1",
    "vs_peers": null
   },
   "ffo_to_debt@FY2022": {
@@ -669,14 +670,14 @@
    "label": "FFO to debt, FY2023",
    "metric": "ffo_to_debt",
    "note": "",
-   "peer_assessment": "in_line",
+   "peer_assessment": "better",
    "period": "FY2023",
    "rank": null,
    "rank_of": null,
    "rendered": "27.7%",
    "unit": "pct",
    "value": "0.276501940467",
-   "vs_peers": "in_line"
+   "vs_peers": "above"
   },
   "gross_leverage.change@FY2023": {
    "assessment": "better",
@@ -695,14 +696,14 @@
    "value": "0.919530454766",
    "vs_peers": null
   },
-  "gross_leverage.peer_median@2023": {
+  "gross_leverage.peer_median@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "gross_leverage.peer_median@2023",
+   "id": "gross_leverage.peer_median@FY2023",
    "kind": "peer_median",
    "label": "Gross leverage, median of airports, peer year 2023 (3 companies)",
    "metric": "gross_leverage",
-   "note": "",
+   "note": "the company is the median of the group: say it sits in the middle of the group, do not compare it with the median",
    "peer_assessment": "in_line",
    "period": "peer year 2023",
    "rank": null,
@@ -712,10 +713,10 @@
    "value": "2.840445839854",
    "vs_peers": "in_line"
   },
-  "gross_leverage.peer_rank@2023": {
+  "gross_leverage.peer_rank@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "gross_leverage.peer_rank@2023",
+   "id": "gross_leverage.peer_rank@FY2023",
    "kind": "peer_rank",
    "label": "Gross leverage, rank in airports, peer year 2023 (1st = strongest, i.e. the lowest)",
    "metric": "gross_leverage",
@@ -780,38 +781,38 @@
    "value": "9.730128019486",
    "vs_peers": null
   },
-  "interest_coverage.peer_median@2023": {
+  "interest_coverage.peer_median@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "interest_coverage.peer_median@2023",
+   "id": "interest_coverage.peer_median@FY2023",
    "kind": "peer_median",
-   "label": "Interest coverage, median of airports, peer year 2023 (3 companies)",
+   "label": "Interest coverage, median of airports, peer year 2023 (2 companies)",
    "metric": "interest_coverage",
    "note": "",
-   "peer_assessment": "in_line",
+   "peer_assessment": "better",
    "period": "peer year 2023",
    "rank": null,
    "rank_of": null,
-   "rendered": "12.61x",
+   "rendered": "9.67x",
    "unit": "x",
-   "value": "12.609918189745",
-   "vs_peers": "in_line"
+   "value": "9.672656689374",
+   "vs_peers": "above"
   },
-  "interest_coverage.peer_rank@2023": {
+  "interest_coverage.peer_rank@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "interest_coverage.peer_rank@2023",
+   "id": "interest_coverage.peer_rank@FY2023",
    "kind": "peer_rank",
    "label": "Interest coverage, rank in airports, peer year 2023 (1st = strongest, i.e. the highest)",
    "metric": "interest_coverage",
-   "note": "",
+   "note": "best in the group",
    "peer_assessment": null,
    "period": "peer year 2023",
-   "rank": 2,
-   "rank_of": 3,
-   "rendered": "2nd of 3",
+   "rank": 1,
+   "rank_of": 2,
+   "rendered": "1st of 2",
    "unit": "rank",
-   "value": "2",
+   "value": "1",
    "vs_peers": null
   },
   "interest_coverage@FY2022": {
@@ -839,14 +840,14 @@
    "label": "Interest coverage, FY2023",
    "metric": "interest_coverage",
    "note": "",
-   "peer_assessment": "in_line",
+   "peer_assessment": "better",
    "period": "FY2023",
    "rank": null,
    "rank_of": null,
    "rendered": "12.61x",
    "unit": "x",
    "value": "12.609918189745",
-   "vs_peers": "in_line"
+   "vs_peers": "above"
   },
   "liquidity.change@FY2023": {
    "assessment": "better",
@@ -1324,10 +1325,10 @@
    "value": "0.868748803173",
    "vs_peers": null
   },
-  "traffic_growth.peer_median@2023": {
+  "traffic_growth.peer_median@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "traffic_growth.peer_median@2023",
+   "id": "traffic_growth.peer_median@FY2023",
    "kind": "peer_median",
    "label": "Traffic growth, median of airports, peer year 2023 (2 companies)",
    "metric": "traffic_growth",
@@ -1341,10 +1342,10 @@
    "value": "0.204575331126",
    "vs_peers": "below"
   },
-  "traffic_growth.peer_rank@2023": {
+  "traffic_growth.peer_rank@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "traffic_growth.peer_rank@2023",
+   "id": "traffic_growth.peer_rank@FY2023",
    "kind": "peer_rank",
    "label": "Traffic growth, rank in airports, peer year 2023 (1st = strongest, i.e. the highest)",
    "metric": "traffic_growth",
@@ -1461,6 +1462,7 @@
   "interest_coverage": "Interest coverage",
   "liquidity": "Liquidity",
   "liquidity_to_revenue": "Liquidity to revenue",
+  "net_cash": "Net cash (cash and cash-like investments above total debt)",
   "net_debt": "Net debt",
   "net_leverage": "Net leverage",
   "non_aero_share": "Non-aeronautical share",
@@ -1486,19 +1488,22 @@
  "unavailable": {
   "aero_revenue_per_passenger.change@FY2023": "needs both years verified",
   "aero_revenue_per_passenger@FY2022": "not verified yet: waiting for Imane's review",
-  "capex_intensity.peer_rank@2023": "not ranked: neither higher nor lower is better",
-  "cash_liquidity_to_revenue.peer_median@2023": "the peer median would use a figure not verified yet (vie)",
-  "cash_liquidity_to_revenue.peer_rank@2023": "the peer median would use a figure not verified yet (vie)",
+  "capex_intensity.peer_rank@FY2023": "not ranked: neither higher nor lower is better",
+  "cash_liquidity_to_revenue.peer_median@FY2023": "the peer median would use a figure not verified yet (vie)",
+  "cash_liquidity_to_revenue.peer_rank@FY2023": "the peer median would use a figure not verified yet (vie)",
   "contract_liabilities.change@FY2023": "needs both years verified",
   "contract_liabilities@FY2022": "no figure for this year",
   "contract_liabilities@FY2023": "no figure for this year",
-  "liquidity_to_revenue.peer_median@2023": "fewer than two companies in the peer group have a value",
-  "liquidity_to_revenue.peer_rank@2023": "fewer than two companies in the peer group have a value",
-  "net_leverage.peer_median@2023": "the peer median would use a figure not verified yet (vie)",
-  "net_leverage.peer_rank@2023": "the peer median would use a figure not verified yet (vie)",
+  "liquidity_to_revenue.peer_median@FY2023": "fewer than two companies in the peer group have a value",
+  "liquidity_to_revenue.peer_rank@FY2023": "fewer than two companies in the peer group have a value",
+  "net_cash.change@FY2023": "needs both years verified",
+  "net_cash@FY2022": "the company has net debt, not net cash",
+  "net_cash@FY2023": "the company has net debt, not net cash",
+  "net_leverage.peer_median@FY2023": "the peer median would use a figure not verified yet (vie)",
+  "net_leverage.peer_rank@FY2023": "the peer median would use a figure not verified yet (vie)",
   "non_aero_share.change@FY2023": "needs both years verified",
-  "non_aero_share.peer_median@2023": "the company's own figure is not available",
-  "non_aero_share.peer_rank@2023": "the company's own figure is not available",
+  "non_aero_share.peer_median@FY2023": "the company's own figure is not available",
+  "non_aero_share.peer_rank@FY2023": "the company's own figure is not available",
   "non_aero_share@FY2022": "n.m.: group revenue includes London Luton and the Brazilian airports, while the aeronautical revenue is the Spanish network's segment only.",
   "non_aero_share@FY2023": "n.m.: group revenue includes London Luton and the Brazilian airports, while the aeronautical revenue is the Spanish network's segment only.",
   "revenue_per_passenger.change@FY2023": "needs both years verified",

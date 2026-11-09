@@ -1,0 +1,69 @@
+{
+ "answer": {
+  "sections": {
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "passengers.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "passengers@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:capacity_and_network"
+      }
+     ],
+     "text": "Passengers rose by {{passengers.change@FY2025}} to {{passengers@FY2025}}, supported by a summer programme with a large number of routes including new leisure destinations."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "fuel_share_of_costs@FY2025"
+      }
+     ],
+     "text": "Fuel made up {{fuel_share_of_costs@FY2025}} of costs, broadly unchanged on the prior year, so the cost base remains exposed to jet fuel prices."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines"
+      },
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines-2"
+      }
+     ],
+     "text": "The acquisition of previously leased Boeing 737-800 aircraft brought accounting gains and recurring cost savings, and the group exercised its option for additional 737 MAX 8 aircraft."
+    }
+   ]
+  }
+ },
+ "label": "norwegian_FY2025 attempt 3",
+ "recorded_at": "2026-11-09T15:12:51+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v5",
+  "provider": "deepseek",
+  "system_sha256": "a84c5b5d2de7e517329ea1e077d0ec7c8fdc9d67a0e6d76a31d39278f691c640",
+  "tool_sha256": "d5bf2b80f4ba38f057b6f554ddd6cd3d8c55977a14c6334b970fe794a9a1a8af",
+  "user_sha256": "a54892ce2dd78133a9a4c9c4ba9e2c437ea4c0070ccd753fe74448b9ad832238"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 12858,
+  "output_tokens": 288
+ }
+}

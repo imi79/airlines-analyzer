@@ -1,8 +1,8 @@
 {
  "issuer": "aena",
  "fiscal_year": 2025,
- "prompt_version": "draft-v3",
- "input_hash": "5b69c67bac5b24c6798f4cbe567a506cf99c4d1f45a5dab0396c943835fd8397",
+ "prompt_version": "draft-v5",
+ "input_hash": "f53221167e215a2004298a4ec69098f90cba1badd8a8468dff4d38bea50afc04",
  "status": {
   "snapshot": "passed",
   "credit_metrics": "passed",
@@ -10,6 +10,24 @@
   "liquidity_funding": "passed",
   "peer_positioning": "passed",
   "watch_items": "passed"
+ },
+ "removed": {
+  "operating_performance": [
+   [
+    "The CNMC set the average airport charge per passenger for 2026 at a level above the prior year's, which supports the aeronautical revenue base.",
+    [
+     "'above' needs a 'up' or 'above_peers' claim on a figure in the same clause"
+    ]
+   ]
+  ],
+  "watch_items": [
+   [
+    "Regulation: the CNMC set the average airport charge per passenger for 2026 at a level above the prior year's, so the next DORA review governs the aeronautical revenue base.",
+    [
+     "'above' needs a 'up' or 'above_peers' claim on a figure in the same clause"
+    ]
+   ]
+  ]
  },
  "attempts": [
   {
@@ -22,12 +40,12 @@
     "peer_positioning",
     "watch_items"
    ],
-   "request_hash": "4d39bc96f317c44dacfc3a81e64f5ee69317f9903228f93cff41ed26f74175cb",
+   "request_hash": "aca07f20bb5a8bd935cd1152803f9aa635114bb0a2b21c100d2b585d70f6b41a",
    "model": "deepseek-flash",
    "draft": {
     "snapshot": [
      {
-      "text": "Aena, the Spanish airport operator, ended FY2025 with revenue up {{revenue.change@FY2025}} to {{revenue@FY2025}} and net leverage down to {{net_leverage@FY2025}}.",
+      "text": "Aena, the Spanish airport operator, grew revenue by {{revenue.change@FY2025}} to {{revenue@FY2025}} in FY2025, and Moody's raised its long-term issuer and senior unsecured ratings during the year.",
       "facts": [
        {
         "id": "revenue.change@FY2025",
@@ -41,42 +59,36 @@
         "claims": []
        },
        {
-        "id": "net_leverage@FY2025",
-        "claims": [
-         "down",
-         "better",
-         "in_line_with_peers"
-        ]
+        "id": "event:funding_and_rating-2",
+        "claims": []
        }
       ]
      },
      {
-      "text": "The EBITDA margin eased by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, still the highest of the airport peers ({{ebitda_margin.peer_rank@2025}}).",
+      "text": "Net leverage fell by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}}, helped by EBITDA up {{ebitda.change@FY2025}}.",
       "facts": [
        {
-        "id": "ebitda_margin.change@FY2025",
+        "id": "net_leverage.change@FY2025",
         "claims": [
          "down",
-         "worse"
+         "better"
         ]
        },
        {
-        "id": "ebitda_margin@FY2025",
-        "claims": [
-         "above_peers",
-         "better_than_peers"
-        ]
+        "id": "net_leverage@FY2025",
+        "claims": []
        },
        {
-        "id": "ebitda_margin.peer_rank@2025",
+        "id": "ebitda.change@FY2025",
         "claims": [
-         "best_in_group"
+         "up",
+         "better"
         ]
        }
       ]
      },
      {
-      "text": "The main point to watch is cash generation: free cash flow fell by {{fcf.change@FY2025}} to {{fcf@FY2025}} as capex intensity rose to {{capex_intensity@FY2025}}.",
+      "text": "The point to watch is cash generation: free cash flow fell by {{fcf.change@FY2025}} to {{fcf@FY2025}} as capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}.",
       "facts": [
        {
         "id": "fcf.change@FY2025",
@@ -90,10 +102,14 @@
         "claims": []
        },
        {
-        "id": "capex_intensity@FY2025",
+        "id": "capex_intensity.change@FY2025",
         "claims": [
          "up"
         ]
+       },
+       {
+        "id": "capex_intensity@FY2025",
+        "claims": []
        }
       ]
      }
@@ -127,7 +143,7 @@
       ]
      },
      {
-      "text": "Total debt rose by {{total_debt.change@FY2025}} to {{total_debt@FY2025}}, while net debt was stable at {{net_debt@FY2025}}.",
+      "text": "Total debt rose by {{total_debt.change@FY2025}} to {{total_debt@FY2025}}, while net debt was stable at {{net_debt@FY2025}} and gross leverage broadly unchanged at {{gross_leverage@FY2025}}.",
       "facts": [
        {
         "id": "total_debt.change@FY2025",
@@ -144,49 +160,28 @@
         "claims": [
          "flat"
         ]
-       }
-      ]
-     },
-     {
-      "text": "Gross leverage was broadly unchanged at {{gross_leverage@FY2025}}, in line with the peer median, and net leverage fell by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}}.",
-      "facts": [
+       },
        {
         "id": "gross_leverage@FY2025",
         "claims": [
-         "flat",
-         "in_line_with_peers"
+         "flat"
         ]
-       },
-       {
-        "id": "net_leverage.change@FY2025",
-        "claims": [
-         "down",
-         "better"
-        ]
-       },
-       {
-        "id": "net_leverage@FY2025",
-        "claims": []
        }
       ]
      },
      {
-      "text": "Interest coverage improved to {{interest_coverage@FY2025}}, up {{interest_coverage.change@FY2025}}, and FFO to debt rose by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}.",
+      "text": "Interest coverage improved by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}}, and FFO to debt rose by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}} on FFO up {{ffo.change@FY2025}} to {{ffo@FY2025}}.",
       "facts": [
-       {
-        "id": "interest_coverage@FY2025",
-        "claims": [
-         "up",
-         "better",
-         "in_line_with_peers"
-        ]
-       },
        {
         "id": "interest_coverage.change@FY2025",
         "claims": [
          "up",
          "better"
         ]
+       },
+       {
+        "id": "interest_coverage@FY2025",
+        "claims": []
        },
        {
         "id": "ffo_to_debt.change@FY2025",
@@ -198,11 +193,22 @@
        {
         "id": "ffo_to_debt@FY2025",
         "claims": []
+       },
+       {
+        "id": "ffo.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "ffo@FY2025",
+        "claims": []
        }
       ]
      },
      {
-      "text": "FCF to debt declined by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}}, in line with the peer median, as capex intensity increased by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}.",
+      "text": "FCF to debt fell by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}}, as free cash flow declined by {{fcf.change@FY2025}} to {{fcf@FY2025}} with capex intensity up {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}.",
       "facts": [
        {
         "id": "fcf_to_debt.change@FY2025",
@@ -213,9 +219,18 @@
        },
        {
         "id": "fcf_to_debt@FY2025",
+        "claims": []
+       },
+       {
+        "id": "fcf.change@FY2025",
         "claims": [
-         "in_line_with_peers"
+         "down",
+         "worse"
         ]
+       },
+       {
+        "id": "fcf@FY2025",
+        "claims": []
        },
        {
         "id": "capex_intensity.change@FY2025",
@@ -225,16 +240,45 @@
        },
        {
         "id": "capex_intensity@FY2025",
-        "claims": [
-         "below_peers"
-        ]
+        "claims": []
        }
       ]
      }
     ],
     "operating_performance": [
      {
-      "text": "Revenue rose by {{revenue.change@FY2025}} to {{revenue@FY2025}}, with non-aeronautical activities making up {{non_aero_share@FY2025}} of the total, up {{non_aero_share.change@FY2025}}.",
+      "text": "In FY2024 the Spanish network carried {{passengers@FY2024}} passengers, with traffic growth of {{traffic_growth@FY2024}}.",
+      "facts": [
+       {
+        "id": "passengers@FY2024",
+        "claims": []
+       },
+       {
+        "id": "traffic_growth@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Aeronautical revenue per passenger was {{aero_revenue_per_passenger@FY2024}} in FY2024, the base on which the regulator's charge decision builds.",
+      "facts": [
+       {
+        "id": "aero_revenue_per_passenger@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "The CNMC set the average airport charge per passenger for 2026 above the prior year's level, which supports the aeronautical revenue base.",
+      "facts": [
+       {
+        "id": "event:regulation_and_tariffs",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Group revenue rose by {{revenue.change@FY2025}} to {{revenue@FY2025}}, with EBITDA up {{ebitda.change@FY2025}} to {{ebitda@FY2025}}.",
       "facts": [
        {
         "id": "revenue.change@FY2025",
@@ -248,33 +292,14 @@
         "claims": []
        },
        {
-        "id": "non_aero_share@FY2025",
-        "claims": []
-       },
-       {
-        "id": "non_aero_share.change@FY2025",
+        "id": "ebitda.change@FY2025",
         "claims": [
          "up",
          "better"
         ]
-       }
-      ]
-     },
-     {
-      "text": "The commercial mix therefore carries more of the revenue base, which is less directly exposed to the regulated aeronautical tariff.",
-      "facts": []
-     },
-     {
-      "text": "Capex intensity of {{capex_intensity@FY2025}} compares with a peer median of {{capex_intensity.peer_median@2025}}, so investment spending remains below the airport group.",
-      "facts": [
-       {
-        "id": "capex_intensity@FY2025",
-        "claims": [
-         "below_peers"
-        ]
        },
        {
-        "id": "capex_intensity.peer_median@2025",
+        "id": "ebitda@FY2025",
         "claims": []
        }
       ]
@@ -282,7 +307,7 @@
     ],
     "liquidity_funding": [
      {
-      "text": "Cash and cash-like investments rose by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, and total liquidity stood at {{liquidity@FY2025}}.",
+      "text": "Cash and cash-like investments rose by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, and cash liquidity to revenue increased by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}.",
       "facts": [
        {
         "id": "cash_like.change@FY2025",
@@ -296,14 +321,25 @@
         "claims": []
        },
        {
-        "id": "liquidity@FY2025",
+        "id": "cash_liquidity_to_revenue.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2025",
         "claims": []
        }
       ]
      },
      {
-      "text": "Undrawn committed facilities of {{undrawn_facilities@FY2025}} supplement the cash position, taking liquidity to revenue to {{liquidity_to_revenue@FY2025}}.",
+      "text": "Total liquidity was {{liquidity@FY2025}}, including {{undrawn_facilities@FY2025}} of undrawn committed credit facilities, equal to {{liquidity_to_revenue@FY2025}} of revenue.",
       "facts": [
+       {
+        "id": "liquidity@FY2025",
+        "claims": []
+       },
        {
         "id": "undrawn_facilities@FY2025",
         "claims": []
@@ -315,24 +351,14 @@
       ]
      },
      {
-      "text": "Cash liquidity to revenue increased by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, above the peer median of {{cash_liquidity_to_revenue.peer_median@2025}}.",
+      "text": "Funding access was supported by the Brazilian subsidiary's first debenture issue and by the refinancing of London Luton's bank debt.",
       "facts": [
        {
-        "id": "cash_liquidity_to_revenue.change@FY2025",
-        "claims": [
-         "up",
-         "better"
-        ]
+        "id": "event:funding_and_rating",
+        "claims": []
        },
        {
-        "id": "cash_liquidity_to_revenue@FY2025",
-        "claims": [
-         "above_peers",
-         "better_than_peers"
-        ]
-       },
-       {
-        "id": "cash_liquidity_to_revenue.peer_median@2025",
+        "id": "event:funding_and_rating-4",
         "claims": []
        }
       ]
@@ -340,90 +366,60 @@
     ],
     "peer_positioning": [
      {
-      "text": "Aena has the highest EBITDA margin in the airport group ({{ebitda_margin.peer_rank@2025}}), at {{ebitda_margin@FY2025}} against a peer median of {{ebitda_margin.peer_median@2025}}.",
+      "text": "Aena has the highest EBITDA margin among the airport peers ({{ebitda_margin.peer_rank@FY2025}}), at {{ebitda_margin@FY2025}} against a median of {{ebitda_margin.peer_median@FY2025}}.",
       "facts": [
        {
-        "id": "ebitda_margin.peer_rank@2025",
+        "id": "ebitda_margin.peer_rank@FY2025",
         "claims": [
          "best_in_group"
         ]
        },
        {
         "id": "ebitda_margin@FY2025",
-        "claims": [
-         "above_peers",
-         "better_than_peers"
-        ]
+        "claims": []
        },
        {
-        "id": "ebitda_margin.peer_median@2025",
+        "id": "ebitda_margin.peer_median@FY2025",
         "claims": []
        }
       ]
      },
      {
-      "text": "Net leverage of {{net_leverage@FY2025}} and gross leverage of {{gross_leverage@FY2025}} both sit in line with the peer medians of {{net_leverage.peer_median@2025}} and {{gross_leverage.peer_median@2025}}, ranking {{net_leverage.peer_rank@2025}} and {{gross_leverage.peer_rank@2025}} respectively.",
+      "text": "Gross leverage sits in the middle of the group ({{gross_leverage.peer_rank@FY2025}}), and capex intensity of {{capex_intensity@FY2025}} is below the peer median of {{capex_intensity.peer_median@FY2025}}.",
       "facts": [
        {
-        "id": "net_leverage@FY2025",
+        "id": "gross_leverage.peer_rank@FY2025",
+        "claims": []
+       },
+       {
+        "id": "capex_intensity@FY2025",
         "claims": [
-         "in_line_with_peers"
+         "below_peers"
         ]
        },
        {
-        "id": "gross_leverage@FY2025",
-        "claims": [
-         "in_line_with_peers"
-        ]
-       },
-       {
-        "id": "net_leverage.peer_median@2025",
-        "claims": []
-       },
-       {
-        "id": "gross_leverage.peer_median@2025",
-        "claims": []
-       },
-       {
-        "id": "net_leverage.peer_rank@2025",
-        "claims": []
-       },
-       {
-        "id": "gross_leverage.peer_rank@2025",
+        "id": "capex_intensity.peer_median@FY2025",
         "claims": []
        }
       ]
      },
      {
-      "text": "Cash generation and coverage are in line with the group: FFO to debt of {{ffo_to_debt@FY2025}} and interest coverage of {{interest_coverage@FY2025}} match the peer medians of {{ffo_to_debt.peer_median@2025}} and {{interest_coverage.peer_median@2025}}.",
+      "text": "Interest coverage, FFO to debt and FCF to debt all rank best in the group ({{interest_coverage.peer_rank@FY2025}}, {{ffo_to_debt.peer_rank@FY2025}} and {{fcf_to_debt.peer_rank@FY2025}}).",
       "facts": [
        {
-        "id": "ffo_to_debt@FY2025",
+        "id": "interest_coverage.peer_rank@FY2025",
         "claims": [
-         "in_line_with_peers"
+         "best_in_group"
         ]
        },
        {
-        "id": "interest_coverage@FY2025",
+        "id": "ffo_to_debt.peer_rank@FY2025",
         "claims": [
-         "in_line_with_peers"
+         "best_in_group"
         ]
        },
        {
-        "id": "ffo_to_debt.peer_median@2025",
-        "claims": []
-       },
-       {
-        "id": "interest_coverage.peer_median@2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Cash liquidity to revenue is the strongest of the group ({{cash_liquidity_to_revenue.peer_rank@2025}}).",
-      "facts": [
-       {
-        "id": "cash_liquidity_to_revenue.peer_rank@2025",
+        "id": "fcf_to_debt.peer_rank@FY2025",
         "claims": [
          "best_in_group"
         ]
@@ -433,7 +429,7 @@
     ],
     "watch_items": [
      {
-      "text": "Cash generation: FCF to debt fell by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}}, in line with the peer median, as free cash flow declined by {{fcf.change@FY2025}}.",
+      "text": "Cash generation: FCF to debt fell by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}} as capex intensity rose to {{capex_intensity@FY2025}}.",
       "facts": [
        {
         "id": "fcf_to_debt.change@FY2025",
@@ -444,42 +440,18 @@
        },
        {
         "id": "fcf_to_debt@FY2025",
-        "claims": [
-         "in_line_with_peers"
-        ]
-       },
-       {
-        "id": "fcf.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       }
-      ]
-     },
-     {
-      "text": "Investment: capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, below the peer median of {{capex_intensity.peer_median@2025}}, so the investment cycle is the main swing factor for free cash flow.",
-      "facts": [
-       {
-        "id": "capex_intensity.change@FY2025",
-        "claims": [
-         "up"
-        ]
+        "claims": []
        },
        {
         "id": "capex_intensity@FY2025",
         "claims": [
-         "below_peers"
+         "up"
         ]
-       },
-       {
-        "id": "capex_intensity.peer_median@2025",
-        "claims": []
        }
       ]
      },
      {
-      "text": "Margins: the EBITDA margin eased by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, though it remains above the peer median of {{ebitda_margin.peer_median@2025}}.",
+      "text": "Margin: the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, though it remains above the peer median of {{ebitda_margin.peer_median@FY2025}}.",
       "facts": [
        {
         "id": "ebitda_margin.change@FY2025",
@@ -490,19 +462,18 @@
        },
        {
         "id": "ebitda_margin@FY2025",
-        "claims": [
-         "above_peers",
-         "better_than_peers"
-        ]
+        "claims": []
        },
        {
-        "id": "ebitda_margin.peer_median@2025",
-        "claims": []
+        "id": "ebitda_margin.peer_median@FY2025",
+        "claims": [
+         "above_peers"
+        ]
        }
       ]
      },
      {
-      "text": "Debt: total debt rose by {{total_debt.change@FY2025}} to {{total_debt@FY2025}} while net debt was stable at {{net_debt@FY2025}}, so leverage depends on EBITDA holding at current levels.",
+      "text": "Debt: total debt rose by {{total_debt.change@FY2025}} to {{total_debt@FY2025}}, leaving gross leverage broadly unchanged at {{gross_leverage@FY2025}}.",
       "facts": [
        {
         "id": "total_debt.change@FY2025",
@@ -515,16 +486,434 @@
         "claims": []
        },
        {
-        "id": "net_debt@FY2025",
+        "id": "gross_leverage@FY2025",
         "claims": [
          "flat"
         ]
        }
       ]
+     },
+     {
+      "text": "Regulation: the CNMC set the average airport charge per passenger for 2026 above the prior year's level, so the next DORA review governs the aeronautical revenue base.",
+      "facts": [
+       {
+        "id": "event:regulation_and_tariffs",
+        "claims": []
+       }
+      ]
      }
     ]
    },
-   "errors": [],
+   "errors": [
+    "[rule 4] operating_performance, sentence 3: 'above' needs a 'up' or 'above_peers' claim on a figure in the same clause",
+    "[rule style] operating_performance, sentence 4: ebitda.change@FY2025 is already given in credit_metrics, sentence 1: give each figure in one body section only (the snapshot and watch items may restate it)",
+    "[rule style] operating_performance, sentence 4: ebitda@FY2025 is already given in credit_metrics, sentence 1: give each figure in one body section only (the snapshot and watch items may restate it)",
+    "[rule 1] liquidity_funding, sentence 3: word that states a number: 'first'",
+    "[rule style] peer_positioning, sentence 2: capex_intensity@FY2025 is already given in credit_metrics, sentence 4: give each figure in one body section only (the snapshot and watch items may restate it)",
+    "[rule 4] watch_items, sentence 4: 'above' needs a 'up' or 'above_peers' claim on a figure in the same clause"
+   ],
+   "error": null
+  },
+  {
+   "try": 2,
+   "sections": [
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "request_hash": "f6ecd634740fb712d5d6bf0f7daa237ab7da072451a75a88219deddf4a2aad2d",
+   "model": "deepseek-flash",
+   "draft": {
+    "operating_performance": [
+     {
+      "text": "In FY2024 the Spanish network carried {{passengers@FY2024}} passengers, with traffic growth of {{traffic_growth@FY2024}}.",
+      "facts": [
+       {
+        "id": "passengers@FY2024",
+        "claims": []
+       },
+       {
+        "id": "traffic_growth@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Aeronautical revenue per passenger was {{aero_revenue_per_passenger@FY2024}} in FY2024, the base on which the regulator's charge decision builds.",
+      "facts": [
+       {
+        "id": "aero_revenue_per_passenger@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "The CNMC set the average airport charge per passenger for 2026 above the prior year's level, which supports the aeronautical revenue base.",
+      "facts": [
+       {
+        "id": "event:regulation_and_tariffs",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Group revenue rose by {{revenue.change@FY2025}} to {{revenue@FY2025}}, reflecting both the Spanish network and the group's other airports.",
+      "facts": [
+       {
+        "id": "revenue.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "revenue@FY2025",
+        "claims": []
+       }
+      ]
+     }
+    ],
+    "liquidity_funding": [
+     {
+      "text": "Cash and cash-like investments rose by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, and cash liquidity to revenue increased by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}.",
+      "facts": [
+       {
+        "id": "cash_like.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "cash_like@FY2025",
+        "claims": []
+       },
+       {
+        "id": "cash_liquidity_to_revenue.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Total liquidity was {{liquidity@FY2025}}, including {{undrawn_facilities@FY2025}} of undrawn committed credit facilities, equal to {{liquidity_to_revenue@FY2025}} of revenue.",
+      "facts": [
+       {
+        "id": "liquidity@FY2025",
+        "claims": []
+       },
+       {
+        "id": "undrawn_facilities@FY2025",
+        "claims": []
+       },
+       {
+        "id": "liquidity_to_revenue@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Funding access was supported by the Brazilian subsidiary's debenture issue and by the refinancing of London Luton's bank debt.",
+      "facts": [
+       {
+        "id": "event:funding_and_rating",
+        "claims": []
+       },
+       {
+        "id": "event:funding_and_rating-4",
+        "claims": []
+       }
+      ]
+     }
+    ],
+    "peer_positioning": [
+     {
+      "text": "Aena has the highest EBITDA margin among the airport peers ({{ebitda_margin.peer_rank@FY2025}}), at {{ebitda_margin@FY2025}} against a median of {{ebitda_margin.peer_median@FY2025}}.",
+      "facts": [
+       {
+        "id": "ebitda_margin.peer_rank@FY2025",
+        "claims": [
+         "best_in_group"
+        ]
+       },
+       {
+        "id": "ebitda_margin@FY2025",
+        "claims": []
+       },
+       {
+        "id": "ebitda_margin.peer_median@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Gross leverage sits in the middle of the group ({{gross_leverage.peer_rank@FY2025}}), and capex intensity is below the peer median of {{capex_intensity.peer_median@FY2025}}.",
+      "facts": [
+       {
+        "id": "gross_leverage.peer_rank@FY2025",
+        "claims": []
+       },
+       {
+        "id": "capex_intensity.peer_median@FY2025",
+        "claims": [
+         "below_peers"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Interest coverage, FFO to debt and FCF to debt all rank best in the group ({{interest_coverage.peer_rank@FY2025}}, {{ffo_to_debt.peer_rank@FY2025}} and {{fcf_to_debt.peer_rank@FY2025}}).",
+      "facts": [
+       {
+        "id": "interest_coverage.peer_rank@FY2025",
+        "claims": [
+         "best_in_group"
+        ]
+       },
+       {
+        "id": "ffo_to_debt.peer_rank@FY2025",
+        "claims": [
+         "best_in_group"
+        ]
+       },
+       {
+        "id": "fcf_to_debt.peer_rank@FY2025",
+        "claims": [
+         "best_in_group"
+        ]
+       }
+      ]
+     }
+    ],
+    "watch_items": [
+     {
+      "text": "Cash generation: FCF to debt fell by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}} as capex intensity rose to {{capex_intensity@FY2025}}.",
+      "facts": [
+       {
+        "id": "fcf_to_debt.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "fcf_to_debt@FY2025",
+        "claims": []
+       },
+       {
+        "id": "capex_intensity@FY2025",
+        "claims": [
+         "up"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Margin: the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, though it remains above the peer median of {{ebitda_margin.peer_median@FY2025}}.",
+      "facts": [
+       {
+        "id": "ebitda_margin.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "ebitda_margin@FY2025",
+        "claims": []
+       },
+       {
+        "id": "ebitda_margin.peer_median@FY2025",
+        "claims": [
+         "above_peers"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Debt: total debt rose by {{total_debt.change@FY2025}} to {{total_debt@FY2025}}, leaving gross leverage broadly unchanged at {{gross_leverage@FY2025}}.",
+      "facts": [
+       {
+        "id": "total_debt.change@FY2025",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "total_debt@FY2025",
+        "claims": []
+       },
+       {
+        "id": "gross_leverage@FY2025",
+        "claims": [
+         "flat"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Regulation: the CNMC set the average airport charge per passenger for 2026 above the prior year's level, so the next DORA review governs the aeronautical revenue base.",
+      "facts": [
+       {
+        "id": "event:regulation_and_tariffs",
+        "claims": []
+       }
+      ]
+     }
+    ]
+   },
+   "errors": [
+    "[rule 4] operating_performance, sentence 3: 'above' needs a 'up' or 'above_peers' claim on a figure in the same clause",
+    "[rule 4] watch_items, sentence 4: 'above' needs a 'up' or 'above_peers' claim on a figure in the same clause"
+   ],
+   "error": null
+  },
+  {
+   "try": 3,
+   "sections": [
+    "operating_performance",
+    "watch_items"
+   ],
+   "request_hash": "5a9da59ce33b026097bef825128dd6706871d17187ad16c780ae903923b6c4af",
+   "model": "deepseek-flash",
+   "draft": {
+    "operating_performance": [
+     {
+      "text": "In FY2024 the Spanish network carried {{passengers@FY2024}} passengers, with traffic growth of {{traffic_growth@FY2024}}.",
+      "facts": [
+       {
+        "id": "passengers@FY2024",
+        "claims": []
+       },
+       {
+        "id": "traffic_growth@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Aeronautical revenue per passenger was {{aero_revenue_per_passenger@FY2024}} in FY2024, the base on which the regulator's charge decision builds.",
+      "facts": [
+       {
+        "id": "aero_revenue_per_passenger@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "The CNMC set the average airport charge per passenger for 2026 at a level above the prior year's, which supports the aeronautical revenue base.",
+      "facts": [
+       {
+        "id": "event:regulation_and_tariffs",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Group revenue rose by {{revenue.change@FY2025}} to {{revenue@FY2025}}, reflecting both the Spanish network and the group's other airports.",
+      "facts": [
+       {
+        "id": "revenue.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "revenue@FY2025",
+        "claims": []
+       }
+      ]
+     }
+    ],
+    "watch_items": [
+     {
+      "text": "Cash generation: FCF to debt fell by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}} as capex intensity rose to {{capex_intensity@FY2025}}.",
+      "facts": [
+       {
+        "id": "fcf_to_debt.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "fcf_to_debt@FY2025",
+        "claims": []
+       },
+       {
+        "id": "capex_intensity@FY2025",
+        "claims": [
+         "up"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Margin: the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, though it remains above the peer median of {{ebitda_margin.peer_median@FY2025}}.",
+      "facts": [
+       {
+        "id": "ebitda_margin.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "ebitda_margin@FY2025",
+        "claims": []
+       },
+       {
+        "id": "ebitda_margin.peer_median@FY2025",
+        "claims": [
+         "above_peers"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Debt: total debt rose by {{total_debt.change@FY2025}} to {{total_debt@FY2025}}, leaving gross leverage broadly unchanged at {{gross_leverage@FY2025}}.",
+      "facts": [
+       {
+        "id": "total_debt.change@FY2025",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "total_debt@FY2025",
+        "claims": []
+       },
+       {
+        "id": "gross_leverage@FY2025",
+        "claims": [
+         "flat"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Regulation: the CNMC set the average airport charge per passenger for 2026 at a level above the prior year's, so the next DORA review governs the aeronautical revenue base.",
+      "facts": [
+       {
+        "id": "event:regulation_and_tariffs",
+        "claims": []
+       }
+      ]
+     }
+    ]
+   },
+   "errors": [
+    "[rule 4] operating_performance, sentence 3: 'above' needs a 'up' or 'above_peers' claim on a figure in the same clause",
+    "[rule 4] watch_items, sentence 4: 'above' needs a 'up' or 'above_peers' claim on a figure in the same clause"
+   ],
    "error": null
   }
  ]

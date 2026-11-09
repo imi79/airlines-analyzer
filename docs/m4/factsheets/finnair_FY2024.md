@@ -96,24 +96,24 @@ Company type: airline. Reporting currency: EUR. Peer group: Network airlines (af
 
 | id | what it is | prints as | computed by code |
 | --- | --- | --- | --- |
-| ebitda_margin.peer_median@2024 | EBITDA margin, median of network airlines, peer year 2024 (3 companies) | 14.6% | company in line with peer median |
-| ebitda_margin.peer_rank@2024 | EBITDA margin, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| net_leverage.peer_median@2024 | Net leverage, median of network airlines, peer year 2024 (3 companies) | 1.88x | company above peer median, worse |
-| net_leverage.peer_rank@2024 | Net leverage, rank in network airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
-| gross_leverage.peer_median@2024 | Gross leverage, median of network airlines, peer year 2024 (3 companies) | 3.56x | company above peer median, worse |
-| gross_leverage.peer_rank@2024 | Gross leverage, rank in network airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
-| interest_coverage.peer_median@2024 | Interest coverage, median of network airlines, peer year 2024 (3 companies) | 6.51x | company below peer median, worse |
-| interest_coverage.peer_rank@2024 | Interest coverage, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| ffo_to_debt.peer_median@2024 | FFO to debt, median of network airlines, peer year 2024 (3 companies) | 23.4% | company below peer median, worse |
-| ffo_to_debt.peer_rank@2024 | FFO to debt, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| fcf_to_debt.peer_median@2024 | FCF to debt, median of network airlines, peer year 2024 (3 companies) | 20.3% | company in line with peer median |
-| fcf_to_debt.peer_rank@2024 | FCF to debt, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| capex_intensity.peer_median@2024 | Capex intensity, median of network airlines, peer year 2024 (3 companies) | 8.8% | company below peer median |
-| cash_liquidity_to_revenue.peer_median@2024 | Cash liquidity to revenue (partial), median of network airlines, peer year 2024 (3 companies) | 29.0% | company in line with peer median |
-| cash_liquidity_to_revenue.peer_rank@2024 | Cash liquidity to revenue (partial), rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| advance_ticket_cover.peer_median@2024 | Advance ticket cover, median of network airlines, peer year 2024 (3 companies) | 74.5% | company in line with peer median |
-| advance_ticket_cover.peer_rank@2024 | Advance ticket cover, rank in network airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
-| fuel_share_of_costs.peer_median@2024 | Fuel share of costs, median of network airlines, peer year 2024 (2 companies) | 28.9% | company above peer median |
+| ebitda_margin.peer_median@FY2024 | EBITDA margin, median of network airlines, peer year 2024 (3 companies) | 14.6% | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| ebitda_margin.peer_rank@FY2024 | EBITDA margin, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
+| net_leverage.peer_median@FY2024 | Net leverage, median of network airlines, peer year 2024 (3 companies) | 1.88x | company above peer median, worse |
+| net_leverage.peer_rank@FY2024 | Net leverage, rank in network airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
+| gross_leverage.peer_median@FY2024 | Gross leverage, median of network airlines, peer year 2024 (3 companies) | 3.56x | company above peer median, worse |
+| gross_leverage.peer_rank@FY2024 | Gross leverage, rank in network airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
+| interest_coverage.peer_median@FY2024 | Interest coverage, median of network airlines, peer year 2024 (3 companies) | 6.51x | company below peer median, worse |
+| interest_coverage.peer_rank@FY2024 | Interest coverage, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
+| ffo_to_debt.peer_median@FY2024 | FFO to debt, median of network airlines, peer year 2024 (3 companies) | 23.4% | company below peer median, worse |
+| ffo_to_debt.peer_rank@FY2024 | FFO to debt, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
+| fcf_to_debt.peer_median@FY2024 | FCF to debt, median of network airlines, peer year 2024 (3 companies) | 20.3% | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| fcf_to_debt.peer_rank@FY2024 | FCF to debt, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
+| capex_intensity.peer_median@FY2024 | Capex intensity, median of network airlines, peer year 2024 (3 companies) | 8.8% | company below peer median |
+| cash_liquidity_to_revenue.peer_median@FY2024 | Cash liquidity to revenue (partial), median of network airlines, peer year 2024 (3 companies) | 29.0% | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| cash_liquidity_to_revenue.peer_rank@FY2024 | Cash liquidity to revenue (partial), rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
+| advance_ticket_cover.peer_median@FY2024 | Advance ticket cover, median of network airlines, peer year 2024 (3 companies) | 74.5% | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| advance_ticket_cover.peer_rank@FY2024 | Advance ticket cover, rank in network airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
+| fuel_share_of_costs.peer_median@FY2024 | Fuel share of costs, median of network airlines, peer year 2024 (2 companies) | 28.9% | company above peer median |
 
 ## Other figures
 
@@ -123,16 +123,30 @@ Company type: airline. Reporting currency: EUR. Peer group: Network airlines (af
 | profit@FY2023 | Profit for the year, FY2023 | EUR 254m |  |
 | profit.change@FY2024 | change in Profit for the year, FY2023 to FY2024 | 85.5% | down, worse vs prior year; printed without a sign: say the direction in words |
 
+## Events of the year (read from the report; the quote was checked by code)
+
+Cite an event by listing its id in `facts` (no blank, no claims). It has no figure:
+write no number about it, and no direction word unless a figure of the sentence carries the claim.
+
+| id | event | what happened | quote from the report |
+| --- | --- | --- | --- |
+| event:funding_and_rating | S&P assigns Finnair an issuer credit rating | S&P Global Ratings assigned Finnair a long-term issuer credit rating with a stable outlook, the company's inaugural credit rating. | (page 22): "Furthemore, S&P Global Ratings assigned a long-term issuer credit rating of BB+ to Finnair Plc with a stable outlook. It is the first credit rating for Finnair." |
+| event:funding_and_rating-2 | New unsecured senior bond issued to refinance | Finnair issued a new unsecured senior bond to refinance the old unsecured senior bond, and the new bond matures later with a fixed annual interest. | (page 22): "As a testament to this, Finnair signed a binding secured revolving credit facility of 200 million euros for general corporate purposes and successfully issued a new 500-million-euro unsecured senior bond to refinance the old 400-million-euro unsecured senior bond. The new bond will mature in 2029 and carries a fixed annual interest of 4.750 per cent." |
+| event:funding_and_rating-3 | New secured revolving credit facility agreed | Finnair agreed a new secured revolving credit facility for general corporate purposes, unused at year-end with a multi-year tenor and an extension option. | (page 15): "Further, in April, Finnair agreed on a new secured revolving credit facility 3 of 200 million euros for general corporate purposes. The arrangement was unused at the end of the year and carries a three-year tenor with a one-year extension option." |
+| event:labour | Industrial action caused flight cancellations | Industrial action in Finland led to the cancellation of a large number of flights in the early part of the year and again in the late part of the year. | (page 7): "Industrial action in Finland had an impact on Finnair’s operations, leading to the cancellation of approximately 550 flights in the first quarter and more than 500 flights in the fourth quarter." |
+| event:fleet_and_engines | New A350 delivered and leased aircraft purchased | A new A350 aircraft was delivered during the year and Finnair purchased a leased A350 and a leased A321 aircraft. | (page 169): "During the financial year, a new A350 aircraft was delivered and additionally, Finnair purchased one leased A350 and one leased A321 aircraft. All aircraft were in operative use as at the balance sheet date." |
+| event:capital_returns | Return of capital proposed to shareholders | The Board of Directors proposed a return of capital per share, rewarding shareholders after a long time. | (page 3): "Thanks to the positive result and our strengthened financial position, we have the opportunity to reward our shareholders after a long time with a return of capital of 0.11 euros per share as proposed by the Board of Directors." |
+
 ## Not available: do not discuss
 
 These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
 
-- capex_intensity.peer_rank@2024: not ranked: neither higher nor lower is better
+- capex_intensity.peer_rank@FY2024: not ranked: neither higher nor lower is better
 - liquidity@FY2023: Undrawn committed credit facilities not available for FY2023
 - liquidity_to_revenue@FY2023: Liquidity: Undrawn committed credit facilities not available for FY2023
-- liquidity_to_revenue.peer_median@2024: the peer median would use a figure not verified yet (afkl)
-- liquidity_to_revenue.peer_rank@2024: the peer median would use a figure not verified yet (afkl)
-- fuel_share_of_costs.peer_rank@2024: not ranked: neither higher nor lower is better
+- liquidity_to_revenue.peer_median@FY2024: the peer median would use a figure not verified yet (afkl)
+- liquidity_to_revenue.peer_rank@FY2024: the peer median would use a figure not verified yet (afkl)
+- fuel_share_of_costs.peer_rank@FY2024: not ranked: neither higher nor lower is better
 - ask@FY2024: not verified yet: waiting for Imane's review
 - ask@FY2023: not verified yet: waiting for Imane's review
 - rpk@FY2024: not verified yet: waiting for Imane's review
@@ -151,3 +165,5 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - fuel_hedge_ratio@FY2024: not verified yet: waiting for Imane's review
 - fuel_hedge_ratio@FY2023: Fuel hedge ratio not available for FY2023
 - undrawn_facilities@FY2023: no figure for this year
+- net_cash@FY2024: the company has net debt, not net cash
+- net_cash@FY2023: the company has net debt, not net cash

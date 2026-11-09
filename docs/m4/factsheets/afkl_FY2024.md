@@ -91,23 +91,23 @@ Company type: airline. Reporting currency: EUR. Peer group: Network airlines (af
 
 | id | what it is | prints as | computed by code |
 | --- | --- | --- | --- |
-| ebitda_margin.peer_median@2024 | EBITDA margin, median of network airlines, peer year 2024 (3 companies) | 14.6% | company below peer median, worse |
-| ebitda_margin.peer_rank@2024 | EBITDA margin, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| net_leverage.peer_median@2024 | Net leverage, median of network airlines, peer year 2024 (3 companies) | 1.88x | company in line with peer median |
-| net_leverage.peer_rank@2024 | Net leverage, rank in network airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
-| gross_leverage.peer_median@2024 | Gross leverage, median of network airlines, peer year 2024 (3 companies) | 3.56x | company in line with peer median |
-| gross_leverage.peer_rank@2024 | Gross leverage, rank in network airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
-| interest_coverage.peer_median@2024 | Interest coverage, median of network airlines, peer year 2024 (3 companies) | 6.51x | company in line with peer median |
-| interest_coverage.peer_rank@2024 | Interest coverage, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| ffo_to_debt.peer_median@2024 | FFO to debt, median of network airlines, peer year 2024 (3 companies) | 23.4% | company in line with peer median |
-| ffo_to_debt.peer_rank@2024 | FFO to debt, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| fcf_to_debt.peer_median@2024 | FCF to debt, median of network airlines, peer year 2024 (3 companies) | 20.3% | company below peer median, worse |
-| fcf_to_debt.peer_rank@2024 | FCF to debt, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| capex_intensity.peer_median@2024 | Capex intensity, median of network airlines, peer year 2024 (3 companies) | 8.8% | company above peer median |
-| cash_liquidity_to_revenue.peer_median@2024 | Cash liquidity to revenue (partial), median of network airlines, peer year 2024 (3 companies) | 29.0% | company below peer median, worse |
-| cash_liquidity_to_revenue.peer_rank@2024 | Cash liquidity to revenue (partial), rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| advance_ticket_cover.peer_median@2024 | Advance ticket cover, median of network airlines, peer year 2024 (3 companies) | 74.5% | company below peer median, better |
-| advance_ticket_cover.peer_rank@2024 | Advance ticket cover, rank in network airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 1st of 3 | best in the group |
+| ebitda_margin.peer_median@FY2024 | EBITDA margin, median of network airlines, peer year 2024 (3 companies) | 14.6% | company below peer median, worse |
+| ebitda_margin.peer_rank@FY2024 | EBITDA margin, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
+| net_leverage.peer_median@FY2024 | Net leverage, median of network airlines, peer year 2024 (3 companies) | 1.88x | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| net_leverage.peer_rank@FY2024 | Net leverage, rank in network airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
+| gross_leverage.peer_median@FY2024 | Gross leverage, median of network airlines, peer year 2024 (3 companies) | 3.56x | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| gross_leverage.peer_rank@FY2024 | Gross leverage, rank in network airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
+| interest_coverage.peer_median@FY2024 | Interest coverage, median of network airlines, peer year 2024 (3 companies) | 6.51x | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| interest_coverage.peer_rank@FY2024 | Interest coverage, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
+| ffo_to_debt.peer_median@FY2024 | FFO to debt, median of network airlines, peer year 2024 (3 companies) | 23.4% | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| ffo_to_debt.peer_rank@FY2024 | FFO to debt, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
+| fcf_to_debt.peer_median@FY2024 | FCF to debt, median of network airlines, peer year 2024 (3 companies) | 20.3% | company below peer median, worse |
+| fcf_to_debt.peer_rank@FY2024 | FCF to debt, rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
+| capex_intensity.peer_median@FY2024 | Capex intensity, median of network airlines, peer year 2024 (3 companies) | 8.8% | company above peer median |
+| cash_liquidity_to_revenue.peer_median@FY2024 | Cash liquidity to revenue (partial), median of network airlines, peer year 2024 (3 companies) | 29.0% | company below peer median, worse |
+| cash_liquidity_to_revenue.peer_rank@FY2024 | Cash liquidity to revenue (partial), rank in network airlines, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
+| advance_ticket_cover.peer_median@FY2024 | Advance ticket cover, median of network airlines, peer year 2024 (3 companies) | 74.5% | company below peer median, better |
+| advance_ticket_cover.peer_rank@FY2024 | Advance ticket cover, rank in network airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 1st of 3 | best in the group |
 
 ## Other figures
 
@@ -117,12 +117,26 @@ Company type: airline. Reporting currency: EUR. Peer group: Network airlines (af
 | profit@FY2023 | Profit for the year, FY2023 | EUR 990m |  |
 | profit.change@FY2024 | change in Profit for the year, FY2023 to FY2024 | 50.6% | down, worse vs prior year; printed without a sign: say the direction in words |
 
+## Events of the year (read from the report; the quote was checked by code)
+
+Cite an event by listing its id in `facts` (no blank, no claims). It has no figure:
+write no number about it, and no direction word unless a figure of the sentence carries the claim.
+
+| id | event | what happened | quote from the report |
+| --- | --- | --- | --- |
+| event:acquisitions_and_disposals | Air France-KLM takes minority stake in SAS | The group completed the acquisition of a minority stake in SAS AB and began a deepened commercial cooperation with the airline. | (page 371): "Après l’obtention d’autorisations réglementaires en Europe et aux États-Unis, le groupe Air France-KLM a donc finalisé le 28 août 2024 l’acquisition d’une participation minoritaire de 19,90 % dans le capital de SAS AB." |
+| event:funding_and_rating | Bond tender offer and new bond issue | The company launched a cash tender offer on existing bond tranches and announced its intention to issue new bonds to refinance part of its existing debt. | (page 12): "Air France-KLM annonce le lancement d’une offre de rachat sur deux souches obligataires existantes et son intention de procéder à une nouvelle émission obligataire" |
+| event:costs | Payment to Virgin in contract renegotiation | Operating result for the year included a payment to Virgin as part of the renegotiation of a contract. | (page 369): "un versement de (115) millions d’euros à Virgin dans le cadre de la renégociation d’un contrat ;" |
+| event:capacity_and_network | Provision for Orly domestic offer restructuring | A net provision was recorded for the restructuring of the domestic offer from Orly and of call centres. | (page 369): "une provision nette de (49) millions liée à la restructuration de l’offre domestique au départ d’Orly et des centres d’appel." |
+| event:fleet_and_engines | Fleet renewal constrained by engine problems | Fleet renewal was delayed by supply chain constraints and engine problems on part of the new-generation fleet, preventing the group from operating those aircraft at maximum capacity. | (page 5): "En 2024, l’intensité GES s’est améliorée (- 1 %) par rapport à 2023 dans un contexte de retards dans le renouvellement de la flotte, en raison de contraintes dans la chaîne d’approvisionnement, de problèmes de moteurs sur une partie de la flotte d’avions de nouvelle génération ne permettant pas au Groupe de les exploiter à leur capacité maximale" |
+| event:acquisitions_and_disposals-2 | KLM sells KLM Equipment Services | KLM sold its wholly owned subsidiary KLM Equipment Services to TCR International. | (page 394): "Le 1ᵉʳ février 2024, KLM a cédé sa filiale détenue à 100 % KLM Equipment Services B.V. à TCR International N.V. (TCR)." |
+
 ## Not available: do not discuss
 
 These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
 
 - fcf.change@FY2024: a percentage change is not meaningful (a year is negative or zero); the direction is still down, on fcf@FY2024
-- capex_intensity.peer_rank@2024: not ranked: neither higher nor lower is better
+- capex_intensity.peer_rank@FY2024: not ranked: neither higher nor lower is better
 - liquidity@FY2024: not verified yet: waiting for Imane's review
 - liquidity@FY2023: Undrawn committed credit facilities not available for FY2023
 - liquidity_to_revenue@FY2024: not verified yet: waiting for Imane's review
@@ -147,3 +161,5 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - fuel_hedge_ratio@FY2023: Fuel hedge ratio not available for FY2023
 - undrawn_facilities@FY2024: not verified yet: waiting for Imane's review
 - undrawn_facilities@FY2023: no figure for this year
+- net_cash@FY2024: the company has net debt, not net cash
+- net_cash@FY2023: the company has net debt, not net cash

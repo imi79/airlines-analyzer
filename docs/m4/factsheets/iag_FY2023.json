@@ -26,6 +26,7 @@
   "liquidity": true,
   "liquidity_to_revenue": true,
   "load_factor": true,
+  "net_cash": true,
   "net_debt": null,
   "net_leverage": false,
   "operating_profit": true,
@@ -57,10 +58,10 @@
    "value": "0.373507228879",
    "vs_peers": null
   },
-  "advance_ticket_cover.peer_median@2023": {
+  "advance_ticket_cover.peer_median@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "advance_ticket_cover.peer_median@2023",
+   "id": "advance_ticket_cover.peer_median@FY2023",
    "kind": "peer_median",
    "label": "Advance ticket cover, median of network airlines, peer year 2023 (3 companies)",
    "metric": "advance_ticket_cover",
@@ -74,10 +75,10 @@
    "value": "0.549625772860",
    "vs_peers": "above"
   },
-  "advance_ticket_cover.peer_rank@2023": {
+  "advance_ticket_cover.peer_rank@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "advance_ticket_cover.peer_rank@2023",
+   "id": "advance_ticket_cover.peer_rank@FY2023",
    "kind": "peer_rank",
    "label": "Advance ticket cover, rank in network airlines, peer year 2023 (1st = strongest, i.e. the lowest)",
    "metric": "advance_ticket_cover",
@@ -193,10 +194,10 @@
    "value": "0.056564412206",
    "vs_peers": null
   },
-  "capex_intensity.peer_median@2023": {
+  "capex_intensity.peer_median@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "capex_intensity.peer_median@2023",
+   "id": "capex_intensity.peer_median@FY2023",
    "kind": "peer_median",
    "label": "Capex intensity, median of network airlines, peer year 2023 (3 companies)",
    "metric": "capex_intensity",
@@ -363,10 +364,10 @@
    "value": "0.184021095894",
    "vs_peers": null
   },
-  "cash_liquidity_to_revenue.peer_median@2023": {
+  "cash_liquidity_to_revenue.peer_median@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "cash_liquidity_to_revenue.peer_median@2023",
+   "id": "cash_liquidity_to_revenue.peer_median@FY2023",
    "kind": "peer_median",
    "label": "Cash liquidity to revenue (partial), median of network airlines, peer year 2023 (3 companies)",
    "metric": "cash_liquidity_to_revenue",
@@ -380,10 +381,10 @@
    "value": "0.275059129218",
    "vs_peers": "below"
   },
-  "cash_liquidity_to_revenue.peer_rank@2023": {
+  "cash_liquidity_to_revenue.peer_rank@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "cash_liquidity_to_revenue.peer_rank@2023",
+   "id": "cash_liquidity_to_revenue.peer_rank@FY2023",
    "kind": "peer_rank",
    "label": "Cash liquidity to revenue (partial), rank in network airlines, peer year 2023 (1st = strongest, i.e. the highest)",
    "metric": "cash_liquidity_to_revenue",
@@ -652,10 +653,10 @@
    "value": "0.043966157245",
    "vs_peers": null
   },
-  "ebitda_margin.peer_median@2023": {
+  "ebitda_margin.peer_median@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "ebitda_margin.peer_median@2023",
+   "id": "ebitda_margin.peer_median@FY2023",
    "kind": "peer_median",
    "label": "EBITDA margin, median of network airlines, peer year 2023 (3 companies)",
    "metric": "ebitda_margin",
@@ -669,10 +670,10 @@
    "value": "0.179889576711",
    "vs_peers": "above"
   },
-  "ebitda_margin.peer_rank@2023": {
+  "ebitda_margin.peer_rank@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "ebitda_margin.peer_rank@2023",
+   "id": "ebitda_margin.peer_rank@FY2023",
    "kind": "peer_rank",
    "label": "EBITDA margin, rank in network airlines, peer year 2023 (1st = strongest, i.e. the highest)",
    "metric": "ebitda_margin",
@@ -788,10 +789,10 @@
    "value": "0.033090152012",
    "vs_peers": null
   },
-  "fcf_to_debt.peer_median@2023": {
+  "fcf_to_debt.peer_median@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "fcf_to_debt.peer_median@2023",
+   "id": "fcf_to_debt.peer_median@FY2023",
    "kind": "peer_median",
    "label": "FCF to debt, median of network airlines, peer year 2023 (3 companies)",
    "metric": "fcf_to_debt",
@@ -805,10 +806,10 @@
    "value": "0.033621328067",
    "vs_peers": "above"
   },
-  "fcf_to_debt.peer_rank@2023": {
+  "fcf_to_debt.peer_rank@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "fcf_to_debt.peer_rank@2023",
+   "id": "fcf_to_debt.peer_rank@FY2023",
    "kind": "peer_rank",
    "label": "FCF to debt, rank in network airlines, peer year 2023 (1st = strongest, i.e. the highest)",
    "metric": "fcf_to_debt",
@@ -924,10 +925,10 @@
    "value": "0.145817008040",
    "vs_peers": null
   },
-  "ffo_to_debt.peer_median@2023": {
+  "ffo_to_debt.peer_median@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "ffo_to_debt.peer_median@2023",
+   "id": "ffo_to_debt.peer_median@FY2023",
    "kind": "peer_median",
    "label": "FFO to debt, median of network airlines, peer year 2023 (3 companies)",
    "metric": "ffo_to_debt",
@@ -941,10 +942,10 @@
    "value": "0.246130144524",
    "vs_peers": "above"
   },
-  "ffo_to_debt.peer_rank@2023": {
+  "ffo_to_debt.peer_rank@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "ffo_to_debt.peer_rank@2023",
+   "id": "ffo_to_debt.peer_rank@FY2023",
    "kind": "peer_rank",
    "label": "FFO to debt, rank in network airlines, peer year 2023 (1st = strongest, i.e. the highest)",
    "metric": "ffo_to_debt",
@@ -1043,10 +1044,10 @@
    "value": "0.010370205700",
    "vs_peers": null
   },
-  "fuel_share_of_costs.peer_median@2023": {
+  "fuel_share_of_costs.peer_median@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "fuel_share_of_costs.peer_median@2023",
+   "id": "fuel_share_of_costs.peer_median@FY2023",
    "kind": "peer_median",
    "label": "Fuel share of costs, median of network airlines, peer year 2023 (2 companies)",
    "metric": "fuel_share_of_costs",
@@ -1111,10 +1112,10 @@
    "value": "3.081683536783",
    "vs_peers": null
   },
-  "gross_leverage.peer_median@2023": {
+  "gross_leverage.peer_median@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "gross_leverage.peer_median@2023",
+   "id": "gross_leverage.peer_median@FY2023",
    "kind": "peer_median",
    "label": "Gross leverage, median of network airlines, peer year 2023 (3 companies)",
    "metric": "gross_leverage",
@@ -1128,10 +1129,10 @@
    "value": "3.266474958064",
    "vs_peers": "below"
   },
-  "gross_leverage.peer_rank@2023": {
+  "gross_leverage.peer_rank@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "gross_leverage.peer_rank@2023",
+   "id": "gross_leverage.peer_rank@FY2023",
    "kind": "peer_rank",
    "label": "Gross leverage, rank in network airlines, peer year 2023 (1st = strongest, i.e. the lowest)",
    "metric": "gross_leverage",
@@ -1196,14 +1197,14 @@
    "value": "1.444369340568",
    "vs_peers": null
   },
-  "interest_coverage.peer_median@2023": {
+  "interest_coverage.peer_median@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "interest_coverage.peer_median@2023",
+   "id": "interest_coverage.peer_median@FY2023",
    "kind": "peer_median",
    "label": "Interest coverage, median of network airlines, peer year 2023 (3 companies)",
    "metric": "interest_coverage",
-   "note": "",
+   "note": "the company is the median of the group: say it sits in the middle of the group, do not compare it with the median",
    "peer_assessment": "in_line",
    "period": "peer year 2023",
    "rank": null,
@@ -1213,10 +1214,10 @@
    "value": "5.542288557214",
    "vs_peers": "in_line"
   },
-  "interest_coverage.peer_rank@2023": {
+  "interest_coverage.peer_rank@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "interest_coverage.peer_rank@2023",
+   "id": "interest_coverage.peer_rank@FY2023",
    "kind": "peer_rank",
    "label": "Interest coverage, rank in network airlines, peer year 2023 (1st = strongest, i.e. the highest)",
    "metric": "interest_coverage",
@@ -1434,14 +1435,14 @@
    "value": "1.442067291708",
    "vs_peers": null
   },
-  "net_leverage.peer_median@2023": {
+  "net_leverage.peer_median@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "net_leverage.peer_median@2023",
+   "id": "net_leverage.peer_median@FY2023",
    "kind": "peer_median",
    "label": "Net leverage, median of network airlines, peer year 2023 (3 companies)",
    "metric": "net_leverage",
-   "note": "",
+   "note": "the company is the median of the group: say it sits in the middle of the group, do not compare it with the median",
    "peer_assessment": "in_line",
    "period": "peer year 2023",
    "rank": null,
@@ -1451,10 +1452,10 @@
    "value": "1.659784560144",
    "vs_peers": "in_line"
   },
-  "net_leverage.peer_rank@2023": {
+  "net_leverage.peer_rank@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "net_leverage.peer_rank@2023",
+   "id": "net_leverage.peer_rank@FY2023",
    "kind": "peer_rank",
    "label": "Net leverage, rank in network airlines, peer year 2023 (1st = strongest, i.e. the lowest)",
    "metric": "net_leverage",
@@ -1834,6 +1835,7 @@
   "liquidity": "Liquidity",
   "liquidity_to_revenue": "Liquidity to revenue",
   "load_factor": "Load factor",
+  "net_cash": "Net cash (cash and cash-like investments above total debt)",
   "net_debt": "Net debt",
   "net_leverage": "Net leverage",
   "operating_profit": "Operating profit",
@@ -1857,24 +1859,27 @@
  "period_label": "FY2023",
  "type": "airline",
  "unavailable": {
-  "capex_intensity.peer_rank@2023": "not ranked: neither higher nor lower is better",
+  "capex_intensity.peer_rank@FY2023": "not ranked: neither higher nor lower is better",
   "fleet.change@FY2023": "needs both years verified",
   "fleet@FY2022": "Fleet (aircraft in operation) not available for FY2022",
   "fleet_age.change@FY2023": "needs both years verified",
   "fleet_age@FY2022": "not verified yet: waiting for Imane's review",
   "fuel_hedge_ratio.change@FY2023": "needs both years verified",
-  "fuel_hedge_ratio.peer_median@2023": "the company's own figure is not available",
-  "fuel_hedge_ratio.peer_rank@2023": "the company's own figure is not available",
+  "fuel_hedge_ratio.peer_median@FY2023": "the company's own figure is not available",
+  "fuel_hedge_ratio.peer_rank@FY2023": "the company's own figure is not available",
   "fuel_hedge_ratio@FY2022": "Fuel hedge ratio not available for FY2022",
   "fuel_hedge_ratio@FY2023": "Fuel hedge ratio not available for FY2023",
-  "fuel_share_of_costs.peer_rank@2023": "not ranked: neither higher nor lower is better",
-  "liquidity_to_revenue.peer_median@2023": "fewer than two companies in the peer group have a value",
-  "liquidity_to_revenue.peer_rank@2023": "fewer than two companies in the peer group have a value",
+  "fuel_share_of_costs.peer_rank@FY2023": "not ranked: neither higher nor lower is better",
+  "liquidity_to_revenue.peer_median@FY2023": "fewer than two companies in the peer group have a value",
+  "liquidity_to_revenue.peer_rank@FY2023": "fewer than two companies in the peer group have a value",
   "load_factor.change@FY2023": "needs both years verified",
-  "load_factor.peer_median@2023": "the company's own figure is not available",
-  "load_factor.peer_rank@2023": "the company's own figure is not available",
+  "load_factor.peer_median@FY2023": "the company's own figure is not available",
+  "load_factor.peer_rank@FY2023": "the company's own figure is not available",
   "load_factor@FY2022": "not verified yet: waiting for Imane's review",
   "load_factor@FY2023": "not verified yet: waiting for Imane's review",
+  "net_cash.change@FY2023": "needs both years verified",
+  "net_cash@FY2022": "the company has net debt, not net cash",
+  "net_cash@FY2023": "the company has net debt, not net cash",
   "passenger_yield.change@FY2023": "needs both years verified",
   "passenger_yield@FY2022": "RPK not available for FY2022",
   "passenger_yield@FY2023": "RPK not available for FY2023",

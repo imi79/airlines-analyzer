@@ -1,0 +1,109 @@
+{
+ "answer": {
+  "sections": {
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "advance_ticket_cover.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "advance_ticket_cover.peer_rank@FY2024"
+      }
+     ],
+     "text": "Customer prepayments: advance ticket cover fell by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, the weakest of the network peers ({{advance_ticket_cover.peer_rank@FY2024}}), so the cushion from bookings is thinner than at the group's rivals."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "undrawn_facilities.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "undrawn_facilities@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "liquidity@FY2024"
+      }
+     ],
+     "text": "Committed backstops: undrawn committed facilities fell by {{undrawn_facilities.change@FY2024}} to {{undrawn_facilities@FY2024}}, so liquidity of {{liquidity@FY2024}} relies more on cash than on committed lines."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "cask_ex_fuel.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cask_ex_fuel@FY2024"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "cask@FY2024"
+      }
+     ],
+     "text": "Unit cost: CASK ex-fuel rose by {{cask_ex_fuel.change@FY2024}} to {{cask_ex_fuel@FY2024}}, a weaker trend than the broadly unchanged headline CASK of {{cask@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "fleet_age.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fleet_age@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines"
+      }
+     ],
+     "text": "Fleet: average fleet age rose by {{fleet_age.change@FY2024}} to {{fleet_age@FY2024}} years, with engine reliability issues and delivery delays still affecting operations."
+    }
+   ]
+  }
+ },
+ "label": "iag_FY2024 attempt 3",
+ "recorded_at": "2026-11-09T15:05:02+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v5",
+  "provider": "deepseek",
+  "system_sha256": "a84c5b5d2de7e517329ea1e077d0ec7c8fdc9d67a0e6d76a31d39278f691c640",
+  "tool_sha256": "bf89949808c3cfaf136bca2c04e2c1fbe93c3b5950310e089cc25b70884f3a9e",
+  "user_sha256": "4e302f3dd28c7ba647f664ee4e55d63376100135d4e0693a1270a7422a89a0d0"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 13744,
+  "output_tokens": 557
+ }
+}

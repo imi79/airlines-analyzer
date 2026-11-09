@@ -1,0 +1,197 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      }
+     ],
+     "text": "The group fully repaid its interest-bearing financial liabilities, which the report says greatly reduces the potential effect of interest rate changes on the company."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "total_debt@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2024"
+      }
+     ],
+     "text": "Total debt of {{total_debt@FY2024}} is small against EBITDA of {{ebitda@FY2024}}, so ratios to debt say little about the credit profile."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating-2"
+      }
+     ],
+     "text": "A financing commitment was given for the City Air Terminal joint venture's new train sets, part of which was drawn as a loan in the year."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "gross_leverage@FY2024"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "gross_leverage.peer_rank@2024"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_median@2024"
+      }
+     ],
+     "text": "Gross leverage of {{gross_leverage@FY2024}} is the lowest of the airport peers ({{gross_leverage.peer_rank@2024}}), against a peer median of {{gross_leverage.peer_median@2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "ebitda_margin@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_rank@2024"
+      }
+     ],
+     "text": "On EBITDA margin the company sits in the middle of the group at {{ebitda_margin@FY2024}} ({{ebitda_margin.peer_rank@2024}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "capex_intensity@FY2024"
+      }
+     ],
+     "text": "Capex intensity of {{capex_intensity@FY2024}} also places it in the middle of the group, in line with the peer median."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "traffic_growth@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "traffic_growth.peer_rank@2024"
+      },
+      {
+       "claims": [],
+       "id": "traffic_growth.peer_median@2024"
+      }
+     ],
+     "text": "Traffic growth of {{traffic_growth@FY2024}} is the weakest of the group ({{traffic_growth.peer_rank@2024}}), below the peer median of {{traffic_growth.peer_median@2024}}."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2024"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "capex_intensity@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2024"
+      }
+     ],
+     "text": "Investment: capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}, in line with the peer median, and free cash flow fell by {{fcf.change@FY2024}} to {{fcf@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "traffic_growth@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "traffic_growth.peer_rank@2024"
+      },
+      {
+       "claims": [],
+       "id": "traffic_growth.peer_median@2024"
+      }
+     ],
+     "text": "Traffic: growth of {{traffic_growth@FY2024}} is the weakest of the airport peers ({{traffic_growth.peer_rank@2024}}), below the peer median of {{traffic_growth.peer_median@2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs"
+      }
+     ],
+     "text": "Regulation: airport charges are temporarily adjusted by average inflation, a rule that ends at the end of 2026, so revenue per passenger depends on the tariff formula that follows."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:other"
+      }
+     ],
+     "text": "Litigation: disputes with the Maltese government and employee claims concerning Malta International Airport are outstanding, which the group considers unfounded."
+    }
+   ]
+  }
+ },
+ "label": "vie_FY2024 attempt 2",
+ "recorded_at": "2026-11-09T14:47:17+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v4",
+  "provider": "deepseek",
+  "system_sha256": "b0604cb7fa50c8024297d0491baf099868983d69337d8b5927b5e5286c493bd1",
+  "tool_sha256": "a9a29c4d71e4d0dcd7bcfbf1a78361a71665bb94d0393d4635b5f13dd6cb6dd3",
+  "user_sha256": "1fddff29b8b96ab0c486c5ab8345070faccf7f26c3fefbca4fd5ec80297da0f6"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 12408,
+  "output_tokens": 1092
+ }
+}

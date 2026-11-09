@@ -22,7 +22,7 @@ from tearsheet.narrative.verifier import CLAIMS, Draft, Error, Report, Verifier,
 HERE = Path(__file__).parent
 PROMPTS = HERE / "prompts"
 EXAMPLES = HERE / "examples"
-PROMPT_VERSION = "draft-v4"  # bump with every change to the prompt, examples, form or request
+PROMPT_VERSION = "draft-v5"  # bump with every change to the prompt, examples, form or request
 MAX_RETRIES = 2  # spec: up to two retries with the error list fed back
 NOT_RUN = "not drafted yet: no recorded AI answer (run `tearsheet draft`)"
 
@@ -119,13 +119,15 @@ def retry_message(
     narrative: dict,
     previous: Draft,
     errors: list[Error],
+    accepted: dict[str, list] | None = None,
 ) -> str:
     lines = [
         user_message(sheet, sections, narrative),
         "# Your previous draft of these sections was rejected",
         "",
-        "Rewrite only the sections below, each in full, and fix every error. The verifier's "
-        "errors:",
+        "Return the sections below in full. Rewrite only the sentences named in the errors and "
+        "keep every other sentence word for word; a sentence that breaks a rule is never "
+        "accepted. The verifier's errors:",
         "",
     ]
     lines += [f"- {e}" for e in errors]
@@ -135,6 +137,15 @@ def retry_message(
         for s in previous.sections.get(name, []):
             facts = [{"id": r.id, "claims": list(r.claims)} for r in s.facts]
             lines.append(json.dumps({"text": s.text, "facts": facts}, ensure_ascii=False))
+        lines.append("")
+    if accepted:
+        lines += [
+            "The sections already accepted, for reference only (do not rewrite them; a figure "
+            "they give in a body section must not be given again in another body section):",
+            "",
+        ]
+        for name, sentences in accepted.items():
+            lines.append(f"`{name}`: " + " ".join(s.text for s in sentences))
         lines.append("")
     return "\n".join(lines)
 
@@ -160,10 +171,15 @@ class Outcome:
     status: dict[str, str] = field(default_factory=dict)  # passed | needs_manual_editing
     errors: dict[str, list[Error]] = field(default_factory=dict)  # remaining, per section
     not_run: str | None = None
+    removed: dict[str, list[tuple[str, list[str]]]] = field(default_factory=dict)  # text, why
 
     @property
     def drafted(self) -> bool:
         return self.not_run is None
+
+    @property
+    def sentences_removed(self) -> int:
+        return sum(len(v) for v in self.removed.values())
 
     @property
     def passed(self) -> bool:
@@ -206,7 +222,8 @@ def draft_commentary(
         if number == 1:
             message = user_message(sheet, ask, narrative)
         else:
-            message = retry_message(sheet, ask, narrative, previous, previous_errors)
+            accepted = {k: v for k, v in outcome.sections.items() if k not in ask}
+            message = retry_message(sheet, ask, narrative, previous, previous_errors, accepted)
         try:
             attempt.result = llm.call_tool(
                 "drafting",
@@ -235,20 +252,72 @@ def draft_commentary(
         draft, form_errors = parse_sections(attempt.result.arguments.get("sections") or {})
         accepted = {k: v for k, v in outcome.sections.items() if k not in ask}
         report = verifier.check(sheet, draft, ask, others=accepted)
+        if number > 1 and keep_good_sentences(draft, report, outcome, ask):
+            report = verifier.check(sheet, draft, ask, others=accepted)  # the merged sections
         report.errors = form_errors + report.errors
         attempt.draft, attempt.report = draft, report
-        failed = [s for s in ask if report.for_section(s)]
+        blocked = set(report.sections_failed())  # safety errors
+        noted = [s for s in ask if report.for_section(s)]  # safety errors or style notes
         for s in ask:
+            if s in blocked and outcome.status.get(s) == "passed":
+                continue  # a rewrite asked for style broke a rule: keep the safe version
             if s in draft.sections or s not in outcome.sections:
                 outcome.sections[s] = draft.sections.get(s, [])
             # else: the AI left the section out of a retry; keep its previous version
-            outcome.status[s] = "needs_manual_editing" if s in failed else "passed"
+            outcome.status[s] = "needs_manual_editing" if s in blocked else "passed"
             outcome.errors[s] = report.for_section(s)
-        if not failed:
+        if not noted:
             break
-        ask, previous, previous_errors = failed, draft, report.errors
+        ask, previous, previous_errors = noted, draft, report.errors
     outcome.sections = {s: outcome.sections.get(s, []) for s in narrative["sections"]}
+    remove_failing_sentences(outcome, verifier, narrative)
     return outcome
+
+
+def remove_failing_sentences(outcome: Outcome, verifier: Verifier, narrative: dict) -> None:
+    """After the retries, a sentence that still breaks a rule is removed when its section
+    keeps at least its minimum number of sentences (decision 0018); the removal is recorded
+    and shown with the draft. Otherwise the section stays flagged for manual editing. Either
+    way, no sentence that broke a rule reaches the page as finished text."""
+    for name, status in list(outcome.status.items()):
+        if status == "passed":
+            continue
+        errors = [e for e in outcome.errors.get(name, []) if e.blocking]
+        if any(e.sentence is None for e in errors):
+            continue  # the section as a whole is wrong (missing, wrong count)
+        bad = sorted({e.sentence for e in errors})
+        sentences = outcome.sections.get(name, [])
+        low = narrative["sections"][name]["sentences"][0]
+        if len(sentences) - len(bad) < low:
+            continue
+        kept = [x for i, x in enumerate(sentences, start=1) if i not in bad]
+        others = {k: v for k, v in outcome.sections.items() if k != name}
+        report = verifier.check(outcome.sheet, Draft({name: kept}), [name], others=others)
+        if not report.ok:
+            continue
+        outcome.removed[name] = [
+            (sentences[i - 1].text, [e.message for e in errors if e.sentence == i]) for i in bad
+        ]
+        outcome.sections[name] = kept
+        outcome.status[name] = "passed"
+        outcome.errors[name] = report.for_section(name)
+
+
+def keep_good_sentences(draft: Draft, report: Report, outcome: Outcome, ask: list[str]) -> bool:
+    """After a retry, a sentence that passed before and breaks a rule now is put back as it
+    was: a retry can only fix sentences, never break good ones. Same sentence count only."""
+    changed = False
+    for name in ask:
+        new, old = draft.sections.get(name), outcome.sections.get(name)
+        if not new or not old or len(new) != len(old):
+            continue
+        new_bad = {e.sentence for e in report.for_section(name) if e.blocking and e.sentence}
+        old_bad = {e.sentence for e in outcome.errors.get(name, []) if e.blocking and e.sentence}
+        for i in range(len(new)):
+            if i + 1 in new_bad and i + 1 not in old_bad:
+                new[i] = old[i]
+                changed = True
+    return changed
 
 
 def rendered_text(text: str, rendered: dict[str, str]) -> str:

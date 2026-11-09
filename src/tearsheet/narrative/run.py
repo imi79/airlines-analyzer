@@ -267,6 +267,9 @@ def write_draft(outcome: Outcome, narrative: dict, out: Path) -> None:
             md.append(f"\n> Event `{eid}`: {sheet.items[eid].note}")
         for e in outcome.errors.get(name, []):
             md.append(f"\n> verifier: {e}")
+        for text, why in outcome.removed.get(name, []):
+            md.append(f"\n> removed by the verifier (still broke a rule after two retries): "
+                      f"\"{text}\" ({'; '.join(why)})")  # fmt: skip
         md.append("")
     md += ["## Analyst view", "", "_Left for the analyst: never drafted._", ""]
     md += ["## How each try went", "", "| Try | Sections asked | Verifier | Tokens |",
@@ -294,6 +297,7 @@ def write_draft(outcome: Outcome, narrative: dict, out: Path) -> None:
         "prompt_version": PROMPT_VERSION,
         "input_hash": outcome.input_hash(),
         "status": outcome.status,
+        "removed": outcome.removed,
         "attempts": [
             {
                 "try": a.number,
@@ -355,19 +359,20 @@ def write_summary(outcomes: list[Outcome], out: Path) -> None:
         f"**{'passed' if ok else 'not passed'}**.",
         f"- **Tokens:** {sum(t[0] for t in tokens):,} in, {sum(t[1] for t in tokens):,} out.",
         "",
-        "| # | Company and year | Verifier | First try | Tries | Numbers outside blanks | Page |",
-        "| --- | --- | --- | --- | --- | --- | --- |",
+        "| # | Company and year | Verifier | First try | Tries | Sentences removed | "
+        "Numbers outside blanks | Page |",
+        "| --- | --- | --- | --- | --- | --- | --- | --- |",
     ]
     for n, o in enumerate(outcomes, start=1):
         s = o.sheet
         if not o.drafted:
-            md.append(f"| {n} | {s.name} {s.period_label} | not drafted | | | | |")
+            md.append(f"| {n} | {s.name} {s.period_label} | not drafted | | | | | |")
             continue
         verdict = "passed" if o.passed else "needs manual editing"
         md.append(
             f"| {n} | {s.name} {s.period_label} | {verdict} | "
             f"{'yes' if o.first_try_passed else 'no'} | {len(o.attempts)} | "
-            f"{o.numbers_outside_blanks} | [draft](drafts/{s.key}.md) |"
+            f"{o.sentences_removed} | {o.numbers_outside_blanks} | [draft](drafts/{s.key}.md) |"
         )
     md.append("")
     (out / "drafts.md").write_text("\n".join(md))

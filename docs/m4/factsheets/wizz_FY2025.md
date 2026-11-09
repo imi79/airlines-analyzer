@@ -114,24 +114,24 @@ Company type: airline. Reporting currency: EUR. Peer group: Low-cost airlines (e
 
 | id | what it is | prints as | computed by code |
 | --- | --- | --- | --- |
-| ebitda_margin.peer_median@2024 | EBITDA margin, median of low-cost airlines, peer year 2024 (3 companies) | 18.9% | company above peer median, better |
-| ebitda_margin.peer_rank@2024 | EBITDA margin, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
-| net_leverage.peer_median@2024 | Net leverage, median of low-cost airlines, peer year 2024 (3 companies) | 0.78x | company above peer median, worse |
-| net_leverage.peer_rank@2024 | Net leverage, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
-| gross_leverage.peer_median@2024 | Gross leverage, median of low-cost airlines, peer year 2024 (3 companies) | 2.41x | company above peer median, worse |
-| gross_leverage.peer_rank@2024 | Gross leverage, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
-| interest_coverage.peer_median@2024 | Interest coverage, median of low-cost airlines, peer year 2024 (3 companies) | 5.89x | company below peer median, worse |
-| interest_coverage.peer_rank@2024 | Interest coverage, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| ffo_to_debt.peer_median@2024 | FFO to debt, median of low-cost airlines, peer year 2024 (3 companies) | 35.6% | company below peer median, worse |
-| ffo_to_debt.peer_rank@2024 | FFO to debt, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| fcf_to_debt.peer_median@2024 | FCF to debt, median of low-cost airlines, peer year 2024 (3 companies) | 16.3% | company below peer median, worse |
-| fcf_to_debt.peer_rank@2024 | FCF to debt, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| capex_intensity.peer_median@2024 | Capex intensity, median of low-cost airlines, peer year 2024 (3 companies) | 5.4% | company in line with peer median |
-| cash_liquidity_to_revenue.peer_median@2024 | Cash liquidity to revenue (partial), median of low-cost airlines, peer year 2024 (3 companies) | 33.0% | company in line with peer median |
-| cash_liquidity_to_revenue.peer_rank@2024 | Cash liquidity to revenue (partial), rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| advance_ticket_cover.peer_median@2024 | Advance ticket cover, median of low-cost airlines, peer year 2024 (3 companies) | 50.2% | company above peer median, worse |
-| advance_ticket_cover.peer_rank@2024 | Advance ticket cover, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
-| fuel_share_of_costs.peer_median@2024 | Fuel share of costs, median of low-cost airlines, peer year 2024 (3 companies) | 28.0% | company above peer median |
+| ebitda_margin.peer_median@FY2025 | EBITDA margin, median of low-cost airlines, peer year 2024 (3 companies) | 18.9% | company above peer median, better |
+| ebitda_margin.peer_rank@FY2025 | EBITDA margin, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
+| net_leverage.peer_median@FY2025 | Net leverage, median of low-cost airlines, peer year 2024 (3 companies) | 0.78x | company above peer median, worse |
+| net_leverage.peer_rank@FY2025 | Net leverage, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
+| gross_leverage.peer_median@FY2025 | Gross leverage, median of low-cost airlines, peer year 2024 (3 companies) | 2.41x | company above peer median, worse |
+| gross_leverage.peer_rank@FY2025 | Gross leverage, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
+| interest_coverage.peer_median@FY2025 | Interest coverage, median of low-cost airlines, peer year 2024 (3 companies) | 5.89x | company below peer median, worse |
+| interest_coverage.peer_rank@FY2025 | Interest coverage, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
+| ffo_to_debt.peer_median@FY2025 | FFO to debt, median of low-cost airlines, peer year 2024 (3 companies) | 35.6% | company below peer median, worse |
+| ffo_to_debt.peer_rank@FY2025 | FFO to debt, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
+| fcf_to_debt.peer_median@FY2025 | FCF to debt, median of low-cost airlines, peer year 2024 (3 companies) | 16.3% | company below peer median, worse |
+| fcf_to_debt.peer_rank@FY2025 | FCF to debt, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
+| capex_intensity.peer_median@FY2025 | Capex intensity, median of low-cost airlines, peer year 2024 (3 companies) | 5.4% | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| cash_liquidity_to_revenue.peer_median@FY2025 | Cash liquidity to revenue (partial), median of low-cost airlines, peer year 2024 (3 companies) | 33.0% | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| cash_liquidity_to_revenue.peer_rank@FY2025 | Cash liquidity to revenue (partial), rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
+| advance_ticket_cover.peer_median@FY2025 | Advance ticket cover, median of low-cost airlines, peer year 2024 (3 companies) | 50.2% | company above peer median, worse |
+| advance_ticket_cover.peer_rank@FY2025 | Advance ticket cover, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
+| fuel_share_of_costs.peer_median@FY2025 | Fuel share of costs, median of low-cost airlines, peer year 2024 (3 companies) | 28.0% | company above peer median |
 
 ## Other figures
 
@@ -141,20 +141,36 @@ Company type: airline. Reporting currency: EUR. Peer group: Low-cost airlines (e
 | profit@FY2024 | Profit for the year, FY2024 | EUR 366m |  |
 | profit.change@FY2025 | change in Profit for the year, FY2024 to FY2025 | 41.5% | down, worse vs prior year; printed without a sign: say the direction in words |
 
+## Events of the year (read from the report; the quote was checked by code)
+
+Cite an event by listing its id in `facts` (no blank, no claims). It has no figure:
+write no number about it, and no direction word unless a figure of the sentence carries the claim.
+
+| id | event | what happened | quote from the report |
+| --- | --- | --- | --- |
+| event:fleet_and_engines | GTF engine recall grounds large part of fleet | A manufacturer recall affecting some of the company's aircraft engines, together with a shortage of spare engines and limited maintenance shop capacity, forced a large number of aircraft to be grounded at any time during the fiscal year. | (page 6): "A year ago this time, Wizz Air faced an unprecedented situation due to a manufacturer recall affecting some of our aircraft engines. This shortage of spare engines and limited maintenance shop capacity forced between forty and fifty-five aircraft to be grounded at any time during this F25 fiscal year." |
+| event:fleet_and_engines-2 | Airbus delivery schedule renegotiated and smoothed | The company renegotiated its delivery pipeline with Airbus so that the delivery schedule was smoothed and extended, while the total number of aircraft deliveries stayed the same. | (page 4): "During the year, we renegotiated our delivery pipeline with Airbus. Delays in aircraft deliveries this year risked creating unsustainable growth spikes in the coming years, which would have strained both the business and the industry. While the total number of aircraft deliveries remains unchanged, the delivery schedule has been smoothed and now extends into 2030." |
+| event:funding_and_rating | Fitch downgrades credit rating | Fitch Ratings downgraded the company with a stable outlook, citing slower capacity growth from the engine issues, higher leverage and increased costs. | (page 15): "In October 2024, Wizz Air was downgraded by Fitch Ratings to 'BB+' with a ‘Stable Outlook’ due to the slower capacity growth caused by the Pratt & Whitney engine issues, leading to higher leverage, above the 2.0x threshold for a 'BBB-' rating; and increased costs impacting profitability." |
+| event:fleet_and_engines-3 | New Pratt & Whitney compensation agreement signed | A new commercial support agreement with Pratt & Whitney was agreed at the end of the year, covering a multi-year period and compensating direct costs associated with grounded aircraft. | (page 9): "The new commercial support agreement with Pratt & Whitney was agreed at the end of 2024, covering the two-year period for the calendar years 2025 and 2026. The compensation package, which covers Wizz’s direct costs associated with the aircraft that have been and those expected to be grounded, is similar to the levels of the previous agreement in place during 2024." |
+| event:fleet_and_engines-4 | New aircraft delivered and older aircraft redelivered | The company took delivery of new A321neo aircraft, secured former Wizz Air aircraft on dry leases and redelivered A320ceo aircraft, ending the fiscal year with a larger total fleet. | (page 8): "During F25 , Wizz Air took delivery of 26 new A321neo aircraft and also secured three former Wizz Air aircraft on dry leases, while six A320ceo aircraft were redelivered, ending the fiscal year with a total fleet of 231 aircraft: 37x A320ceo, 41x A321ceo, 6x A320neo and 147x A321neo." |
+| event:capacity_and_network | Wet-leased aircraft added for summer capacity | The company added wet-leased aircraft for summer 2024 operations to provide additional capacity, with the last of them returned in October 2024. | (page 8): "Wizz Air also added eight wet-leased aircraft for summer 2024 operations, providing additional capacity in F25. The last wet-leased aircraft were returned in October 2024." |
+
 ## Not available: do not discuss
 
 These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
 
-- capex_intensity.peer_rank@2024: not ranked: neither higher nor lower is better
+- capex_intensity.peer_rank@FY2025: not ranked: neither higher nor lower is better
 - liquidity@FY2025: Undrawn committed credit facilities not available for FY2025
 - liquidity@FY2024: Undrawn committed credit facilities not available for FY2024
 - liquidity_to_revenue@FY2025: Liquidity: Undrawn committed credit facilities not available for FY2025
 - liquidity_to_revenue@FY2024: Liquidity: Undrawn committed credit facilities not available for FY2024
-- fuel_share_of_costs.peer_rank@2024: not ranked: neither higher nor lower is better
-- load_factor.peer_median@2024: the peer median would use a figure not verified yet (norwegian)
-- load_factor.peer_rank@2024: the peer median would use a figure not verified yet (norwegian)
+- fuel_share_of_costs.peer_rank@FY2025: not ranked: neither higher nor lower is better
+- load_factor.peer_median@FY2025: the peer median would use a figure not verified yet (norwegian)
+- load_factor.peer_rank@FY2025: the peer median would use a figure not verified yet (norwegian)
 - passenger_yield@FY2024: not verified yet: waiting for Imane's review
 - fuel_hedge_ratio@FY2025: Fuel hedge ratio not available for FY2025
 - fuel_hedge_ratio@FY2024: Fuel hedge ratio not available for FY2024
 - undrawn_facilities@FY2025: no figure for this year
 - undrawn_facilities@FY2024: no figure for this year
+- net_cash@FY2025: the company has net debt, not net cash
+- net_cash@FY2024: the company has net debt, not net cash

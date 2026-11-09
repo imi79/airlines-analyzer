@@ -26,21 +26,12 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | gross_leverage@FY2024 | Gross leverage, FY2024 | 0.13x | flat vs prior year; company below peer median, better |
 | gross_leverage@FY2023 | Gross leverage, FY2023 | 0.14x |  |
 | gross_leverage.change@FY2024 | change in Gross leverage, FY2023 to FY2024 | 0.01x | flat vs prior year; printed without a sign: say the direction in words |
-| interest_coverage@FY2024 | Interest coverage, FY2024 | 201.87x | up, better vs prior year; company above peer median, better |
-| interest_coverage@FY2023 | Interest coverage, FY2023 | 32.98x |  |
-| interest_coverage.change@FY2024 | change in Interest coverage, FY2023 to FY2024 | 168.89x | up, better vs prior year; printed without a sign: say the direction in words |
 | ffo@FY2024 | FFO, FY2024 | EUR 358m | up, better vs prior year |
 | ffo@FY2023 | FFO, FY2023 | EUR 347m |  |
 | ffo.change@FY2024 | change in FFO, FY2023 to FY2024 | 3.4% | up, better vs prior year; printed without a sign: say the direction in words |
-| ffo_to_debt@FY2024 | FFO to debt, FY2024 | 644.0% | up, better vs prior year; company above peer median, better |
-| ffo_to_debt@FY2023 | FFO to debt, FY2023 | 626.2% |  |
-| ffo_to_debt.change@FY2024 | change in FFO to debt, FY2023 to FY2024 | 17.8 points | up, better vs prior year; printed without a sign: say the direction in words |
 | fcf@FY2024 | Free cash flow, FY2024 | EUR 274m | down, worse vs prior year |
 | fcf@FY2023 | Free cash flow, FY2023 | EUR 287m |  |
 | fcf.change@FY2024 | change in Free cash flow, FY2023 to FY2024 | 4.6% | down, worse vs prior year; printed without a sign: say the direction in words |
-| fcf_to_debt@FY2024 | FCF to debt, FY2024 | 492.4% | down, worse vs prior year; company above peer median, better |
-| fcf_to_debt@FY2023 | FCF to debt, FY2023 | 518.5% |  |
-| fcf_to_debt.change@FY2024 | change in FCF to debt, FY2023 to FY2024 | 26.1 points | down, worse vs prior year; printed without a sign: say the direction in words |
 | capex_intensity@FY2024 | Capex intensity, FY2024 | 16.1% | up vs prior year; company in line with peer median |
 | capex_intensity@FY2023 | Capex intensity, FY2023 | 10.5% |  |
 | capex_intensity.change@FY2024 | change in Capex intensity, FY2023 to FY2024 | 5.6 points | up vs prior year; printed without a sign: say the direction in words |
@@ -66,19 +57,13 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 
 | id | what it is | prints as | computed by code |
 | --- | --- | --- | --- |
-| ebitda_margin.peer_median@2024 | EBITDA margin, median of airports, peer year 2024 (3 companies) | 42.0% | company in line with peer median |
-| ebitda_margin.peer_rank@2024 | EBITDA margin, rank in airports, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| gross_leverage.peer_median@2024 | Gross leverage, median of airports, peer year 2024 (3 companies) | 2.08x | company below peer median, better |
-| gross_leverage.peer_rank@2024 | Gross leverage, rank in airports, peer year 2024 (1st = strongest, i.e. the lowest) | 1st of 3 | best in the group |
-| interest_coverage.peer_median@2024 | Interest coverage, median of airports, peer year 2024 (3 companies) | 12.34x | company above peer median, better |
-| interest_coverage.peer_rank@2024 | Interest coverage, rank in airports, peer year 2024 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
-| ffo_to_debt.peer_median@2024 | FFO to debt, median of airports, peer year 2024 (3 companies) | 39.0% | company above peer median, better |
-| ffo_to_debt.peer_rank@2024 | FFO to debt, rank in airports, peer year 2024 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
-| fcf_to_debt.peer_median@2024 | FCF to debt, median of airports, peer year 2024 (3 companies) | 26.3% | company above peer median, better |
-| fcf_to_debt.peer_rank@2024 | FCF to debt, rank in airports, peer year 2024 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
-| capex_intensity.peer_median@2024 | Capex intensity, median of airports, peer year 2024 (3 companies) | 16.1% | company in line with peer median |
-| traffic_growth.peer_median@2024 | Traffic growth, median of airports, peer year 2024 (2 companies) | 8.3% | company below peer median, worse |
-| traffic_growth.peer_rank@2024 | Traffic growth, rank in airports, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 2 | weakest |
+| ebitda_margin.peer_median@FY2024 | EBITDA margin, median of airports, peer year 2024 (3 companies) | 42.0% | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| ebitda_margin.peer_rank@FY2024 | EBITDA margin, rank in airports, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
+| gross_leverage.peer_median@FY2024 | Gross leverage, median of airports, peer year 2024 (3 companies) | 2.08x | company below peer median, better |
+| gross_leverage.peer_rank@FY2024 | Gross leverage, rank in airports, peer year 2024 (1st = strongest, i.e. the lowest) | 1st of 3 | best in the group |
+| capex_intensity.peer_median@FY2024 | Capex intensity, median of airports, peer year 2024 (3 companies) | 16.1% | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| traffic_growth.peer_median@FY2024 | Traffic growth, median of airports, peer year 2024 (2 companies) | 8.3% | company below peer median, worse |
+| traffic_growth.peer_rank@FY2024 | Traffic growth, rank in airports, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 2 | weakest |
 
 ## Other figures
 
@@ -88,17 +73,46 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | profit@FY2023 | Profit for the year, FY2023 | EUR 189m |  |
 | profit.change@FY2024 | change in Profit for the year, FY2023 to FY2024 | 27.0% | up, better vs prior year; printed without a sign: say the direction in words |
 
+## Events of the year (read from the report; the quote was checked by code)
+
+Cite an event by listing its id in `facts` (no blank, no claims). It has no figure:
+write no number about it, and no direction word unless a figure of the sentence carries the claim.
+
+| id | event | what happened | quote from the report |
+| --- | --- | --- | --- |
+| event:funding_and_rating | Full repayment of interest-bearing financial liabilities | The report states that the complete elimination of interest-bearing financial liabilities has greatly reduced the potential effects of interest rate changes on the company. | (part 24): "Der vollständige Abbau zinstragender Finanzverbindlichkeiten hat die potenziellen Auswirkungen einer Zinsänderung auf die FWAG massiv reduziert." |
+| event:regulation_and_tariffs | Airport charges temporarily adjusted by average inflation | Airport charges at Vienna Airport are temporarily adjusted by average inflation under the amended airport charges act, with this rule ending at the end of 2026. | (part 9): "Die Flughafenentgelte am Flughafen Wien werden gemäß § 17a FEG vorübergehend um die durchschnittliche Inflation (gerechnet von 1.8. bis 31.7.) angepasst. Diese Regelung endet mit 31. Dezember 2026, wodurch die Flughäfen im Entgeltantrag 2026 zur bestehenden Formel zurückkehren und diese mit 1. Jänner 2027 wieder anwenden." |
+| event:regulation_and_tariffs-2 | Complaints against third runway deadline extension | Several complaints without suspensive effect were filed against the extension of the construction completion deadline and the single-party procedure for the third runway. | (part 24): "Gegen die Verlängerung der Bauvollendungsfrist und die Abwicklung im Einparteienverfahren wurden mehrere Beschwerden ohne aufschiebende Wirkung eingebracht." |
+| event:other | Litigation with Maltese government and employee claims | At the balance sheet date there were disputes with the Maltese government and claims by individual employees concerning Malta International Airport, which the group considers unfounded. | (part 77): "Zum Bilanzstichtag bestanden betreffend Malta International Airport p.l.c. Streitigkeiten mit der maltesischen Regierung (Streitwert: rund € 8,3 Mio., VJ: rund € 7,5 Mio.) sowie Forderungen einzelner Arbeitnehmer. Aus Sicht des FWAG-Konzerns sind sämtliche Ansprüche unbegründet." |
+| event:funding_and_rating-2 | Financing commitment for City Air Terminal trains | A financing commitment was given for the joint venture City Air Terminal for the procurement of new train sets, part of which was drawn as a loan in the reporting year. | (part 77): "Es gibt für das Gemeinschaftsunternehmen City Air Terminal Betriebsgesellschaft m.b.H. eine Finanzierungszusage für die Beschaffung neuer Zuggarnituren in Höhe von rund € 30,0 Mio., im laufenden Geschäftsjahr wurden davon T€ 1.002,0 als Darlehen in Anspruch genommen." |
+| event:capital_returns | Treasury shares held from earlier buyback | Shares acquired under a buyback programme in earlier years were still held by the company in the reporting year, and the programme had been terminated early. | (part 43): "Im Rahmen eines Aktienrückkaufprogrammes hat die FWAG im Zeitraum von 4.11.2019 bis 30.6.2020 insgesamt 125.319 Aktien im Betrag von T€ 4.532,6 erworben und hielt diese Aktien auch im Berichtsjahr 2024. Das Rückkaufprogramm wurde am 29.5.2020 vorzeitig beendet." |
+
 ## Not available: do not discuss
 
 These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
 
 - cash_like@FY2024: not verified yet: waiting for Imane's review
 - cash_like@FY2023: not verified yet: waiting for Imane's review
-- net_debt@FY2024: not verified yet: waiting for Imane's review
-- net_debt@FY2023: not verified yet: waiting for Imane's review
+- net_debt@FY2024: below zero: the company has net cash, use net_cash
+- net_debt@FY2023: below zero: the company has net cash, use net_cash
 - net_leverage@FY2024: not verified yet: waiting for Imane's review
 - net_leverage@FY2023: not verified yet: waiting for Imane's review
-- capex_intensity.peer_rank@2024: not ranked: neither higher nor lower is better
+- interest_coverage@FY2024: not meaningful: debt is very small (gross leverage 0.13x), so ratios to debt say little
+- interest_coverage@FY2023: not meaningful: debt is very small (gross leverage 0.13x), so ratios to debt say little
+- interest_coverage.change@FY2024: not meaningful: debt is very small (gross leverage 0.13x), so ratios to debt say little
+- interest_coverage.peer_median@FY2024: not meaningful: debt is very small (gross leverage 0.13x), so ratios to debt say little
+- interest_coverage.peer_rank@FY2024: not meaningful: debt is very small (gross leverage 0.13x), so ratios to debt say little
+- ffo_to_debt@FY2024: not meaningful: debt is very small (gross leverage 0.13x), so ratios to debt say little
+- ffo_to_debt@FY2023: not meaningful: debt is very small (gross leverage 0.13x), so ratios to debt say little
+- ffo_to_debt.change@FY2024: not meaningful: debt is very small (gross leverage 0.13x), so ratios to debt say little
+- ffo_to_debt.peer_median@FY2024: not meaningful: debt is very small (gross leverage 0.13x), so ratios to debt say little
+- ffo_to_debt.peer_rank@FY2024: not meaningful: debt is very small (gross leverage 0.13x), so ratios to debt say little
+- fcf_to_debt@FY2024: not meaningful: debt is very small (gross leverage 0.13x), so ratios to debt say little
+- fcf_to_debt@FY2023: not meaningful: debt is very small (gross leverage 0.13x), so ratios to debt say little
+- fcf_to_debt.change@FY2024: not meaningful: debt is very small (gross leverage 0.13x), so ratios to debt say little
+- fcf_to_debt.peer_median@FY2024: not meaningful: debt is very small (gross leverage 0.13x), so ratios to debt say little
+- fcf_to_debt.peer_rank@FY2024: not meaningful: debt is very small (gross leverage 0.13x), so ratios to debt say little
+- capex_intensity.peer_rank@FY2024: not ranked: neither higher nor lower is better
 - cash_liquidity@FY2024: not verified yet: waiting for Imane's review
 - cash_liquidity@FY2023: not verified yet: waiting for Imane's review
 - cash_liquidity_to_revenue@FY2024: not verified yet: waiting for Imane's review
@@ -115,3 +129,5 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - contract_liabilities@FY2023: no figure for this year
 - undrawn_facilities@FY2024: no figure for this year
 - undrawn_facilities@FY2023: no figure for this year
+- net_cash@FY2024: not verified yet: waiting for Imane's review
+- net_cash@FY2023: not verified yet: waiting for Imane's review

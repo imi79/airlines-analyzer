@@ -8,11 +8,14 @@ from pathlib import Path
 import pytest
 import yaml
 
-from tearsheet.narrative.factsheet import FactSheet
+from tearsheet.extract.events import Event
+from tearsheet.narrative.factsheet import FactSheet, add_events
 from tearsheet.narrative.verifier import Draft, Verifier, parse_sections
 
 FIXTURES = Path(__file__).parent / "fixtures" / "narrative"
 SHEET = FactSheet.from_json(FIXTURES / "afkl_FY2025.json")
+add_events(SHEET, [Event("event:labour", "afkl", 2025, "labour", "Strikes", "Strikes hit the "
+                         "year.", "quote", "page 1", "doc")])  # fmt: skip
 CORRECT = yaml.safe_load((FIXTURES / "afkl_FY2025_correct.yaml").read_text())
 SUITE = yaml.safe_load((FIXTURES / "adversarial.yaml").read_text())
 V = Verifier()
@@ -31,7 +34,7 @@ def with_sentence(case: dict) -> Draft:
     if "add" in case:
         draft.sections.setdefault(case["add"], []).append(new)
         return draft
-    section, number = case.get("replace", ["credit_metrics", 4])
+    section, number = case.get("replace", ["watch_items", 2])  # where restating is allowed
     draft.sections[section][number - 1] = new
     return draft
 
@@ -57,3 +60,14 @@ def test_faulty_draft_is_rejected_for_its_rule(case):
 def test_correct_sentence_passes(case):
     report = V.check(SHEET, with_sentence(case))
     assert report.ok, "\n".join(str(e) for e in report.errors)
+
+
+def test_a_repeated_figure_is_a_style_note_not_a_rejection():
+    case = {"replace": ["credit_metrics", 4],
+            "text": "Cash liquidity to revenue stood at {{cash_liquidity_to_revenue@FY2025}}.",
+            "facts": [{"id": "cash_liquidity_to_revenue@FY2025"}]}  # fmt: skip
+    report = V.check(SHEET, with_sentence(case))
+    assert report.ok
+    assert [e.rule for e in report.errors] == ["style"]
+    assert report.errors[0].section == "liquidity_funding"
+    assert "credit_metrics, sentence 4" in report.errors[0].message

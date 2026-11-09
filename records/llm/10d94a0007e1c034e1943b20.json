@@ -1,0 +1,69 @@
+{
+ "answer": {
+  "sections": {
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ebitda.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2025"
+      }
+     ],
+     "text": "Revenue grew by {{revenue.change@FY2025}} to {{revenue@FY2025}}, with EBITDA up {{ebitda.change@FY2025}} to {{ebitda@FY2025}} as the margin widened."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "passengers@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fleet@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fleet_age@FY2024"
+      }
+     ],
+     "text": "In FY2024 the group carried {{passengers@FY2024}} passengers with a fleet of {{fleet@FY2024}} aircraft at an average age of {{fleet_age@FY2024}} years."
+    }
+   ]
+  }
+ },
+ "label": "afkl_FY2025 attempt 3",
+ "recorded_at": "2026-11-09T15:07:53+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v5",
+  "provider": "deepseek",
+  "system_sha256": "a84c5b5d2de7e517329ea1e077d0ec7c8fdc9d67a0e6d76a31d39278f691c640",
+  "tool_sha256": "d5bf2b80f4ba38f057b6f554ddd6cd3d8c55977a14c6334b970fe794a9a1a8af",
+  "user_sha256": "254f700ed7fda1ab664800ad20477851103368ba95553fef99a9fa4bacd8a558"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 12704,
+  "output_tokens": 280
+ }
+}

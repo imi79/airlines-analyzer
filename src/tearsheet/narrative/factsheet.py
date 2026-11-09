@@ -5,8 +5,8 @@ Each item has an id the AI writes as a blank, for example:
     net_leverage@FY2025                the level for the year
     net_leverage@FY2024                the prior year
     net_leverage.change@FY2025         the change from FY2024, with direction and assessment
-    net_leverage.peer_median@2025      the peer group's median for peer year 2025
-    net_leverage.peer_rank@2025        the company's rank in its peer group (1 = strongest)
+    net_leverage.peer_median@FY2025    the peer group's median (the label gives the peer year)
+    net_leverage.peer_rank@FY2025      the company's rank in its peer group (1 = strongest)
 
 Only verified figures (or figures Imane approved) become items. Anything unverified, missing or
 not meaningful is listed as "not available, do not discuss", with its reason, so the AI
@@ -319,8 +319,8 @@ def build(
             )
             for fid in (f"{metric}@FY{fiscal_year}", f"{metric}@FY{prior_year}",
                         f"{metric}.change@FY{fiscal_year}",
-                        f"{metric}.peer_median@{sheet.peer_year}",
-                        f"{metric}.peer_rank@{sheet.peer_year}"):  # fmt: skip
+                        f"{metric}.peer_median@FY{fiscal_year}",
+                        f"{metric}.peer_rank@FY{fiscal_year}"):  # fmt: skip
                 sheet.unavailable[fid] = reason
             continue
         cur = index.get((issuer.id, metric, fiscal_year))
@@ -387,7 +387,8 @@ def _with(item: Item, **changes) -> Item:
 
 def _peer_items(sheet, spec, metric, cur, index, ends, members, narrative, debt_ratios) -> None:
     py = sheet.peer_year
-    median_id, rank_id = f"{metric}.peer_median@{py}", f"{metric}.peer_rank@{py}"
+    fy = f"FY{sheet.fiscal_year}"  # the sheet's year; the label gives the peer year
+    median_id, rank_id = f"{metric}.peer_median@{fy}", f"{metric}.peer_rank@{fy}"
     if not _usable(cur):
         reason = "the company's own figure is not available"
         sheet.unavailable[median_id] = sheet.unavailable[rank_id] = reason

@@ -92,8 +92,8 @@ def test_rule_3_claim_on_prior_year_has_no_direction(sheet):
 def test_rule_3_superlative_needs_rank_one(sheet):
     found = errors(
         sheet,
-        "Net leverage ranks {{net_leverage.peer_rank@2025}}, the strongest in the group.",
-        ("net_leverage.peer_rank@2025", "best_in_group"),
+        "Net leverage ranks {{net_leverage.peer_rank@FY2025}}, the strongest in the group.",
+        ("net_leverage.peer_rank@FY2025", "best_in_group"),
     )
     assert "3" in rules(found)  # the rank is 2nd of 3
 
@@ -140,12 +140,12 @@ def test_rule_4_lowest_follows_higher_is_better():
     figures += [fig("afkl", "net_leverage", 2025, "0.5")]
     sheet = build(ISSUERS["afkl"], 2025, figures)
     ok = errors(sheet, "Net leverage is the lowest in the group, ranking"
-                " {{net_leverage.peer_rank@2025}}.",
-                ("net_leverage.peer_rank@2025", "best_in_group"))  # fmt: skip
+                " {{net_leverage.peer_rank@FY2025}}.",
+                ("net_leverage.peer_rank@FY2025", "best_in_group"))  # fmt: skip
     assert not ok
     wrong = errors(sheet, "Net leverage is the highest in the group, ranking"
-                   " {{net_leverage.peer_rank@2025}}.",
-                   ("net_leverage.peer_rank@2025", "best_in_group"))  # fmt: skip
+                   " {{net_leverage.peer_rank@FY2025}}.",
+                   ("net_leverage.peer_rank@FY2025", "best_in_group"))  # fmt: skip
     assert rules(wrong) == ["4"]
 
 

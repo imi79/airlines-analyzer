@@ -1,8 +1,8 @@
 {
  "issuer": "easyjet",
  "fiscal_year": 2024,
- "prompt_version": "draft-v3",
- "input_hash": "d02678c8a45ba195fad7663b88cc86c5c113ffb6681a46baf6e8c6e72703afa4",
+ "prompt_version": "draft-v5",
+ "input_hash": "d39d1e9939d2b31d5fa6c04f3f4c6c7b9df677d73233ffe400acd25a95af84cc",
  "status": {
   "snapshot": "passed",
   "credit_metrics": "passed",
@@ -11,6 +11,7 @@
   "peer_positioning": "passed",
   "watch_items": "passed"
  },
+ "removed": {},
  "attempts": [
   {
    "try": 1,
@@ -22,12 +23,12 @@
     "peer_positioning",
     "watch_items"
    ],
-   "request_hash": "0169dceb8a91ca6167f86098bcb7cc58dccada04436420ba7dccf9dacc99c604",
+   "request_hash": "fc2488165d10b107bfe6b3a5ad67510ead8437615603be7fdfb4f543c9557ecd",
    "model": "deepseek-flash",
    "draft": {
     "snapshot": [
      {
-      "text": "easyJet, the UK low-cost carrier, grew revenue by {{revenue.change@FY2024}} to {{revenue@FY2024}} in FY2024, with EBITDA up {{ebitda.change@FY2024}} to {{ebitda@FY2024}}.",
+      "text": "easyJet, the UK low-cost carrier, grew revenue by {{revenue.change@FY2024}} to {{revenue@FY2024}} in FY2024, with EBITDA up {{ebitda.change@FY2024}} and an EBITDA margin of {{ebitda_margin@FY2024}}.",
       "facts": [
        {
         "id": "revenue.change@FY2024",
@@ -48,27 +49,29 @@
         ]
        },
        {
-        "id": "ebitda@FY2024",
+        "id": "ebitda_margin@FY2024",
         "claims": []
        }
       ]
      },
      {
-      "text": "The EBITDA margin widened by {{ebitda_margin.change@FY2024}} to {{ebitda_margin@FY2024}}, while net leverage was broadly unchanged at {{net_leverage@FY2024}}, a net cash position.",
+      "text": "The balance sheet stayed in net cash, with net cash of {{net_cash@FY2024}} and net leverage of {{net_leverage@FY2024}}, broadly unchanged on the year at {{net_leverage.change@FY2024}}.",
       "facts": [
        {
-        "id": "ebitda_margin.change@FY2024",
+        "id": "net_cash@FY2024",
         "claims": [
          "up",
          "better"
         ]
        },
        {
-        "id": "ebitda_margin@FY2024",
-        "claims": []
+        "id": "net_leverage@FY2024",
+        "claims": [
+         "flat"
+        ]
        },
        {
-        "id": "net_leverage@FY2024",
+        "id": "net_leverage.change@FY2024",
         "claims": [
          "flat"
         ]
@@ -76,7 +79,7 @@
       ]
      },
      {
-      "text": "The main point to watch is cash generation: free cash flow fell by {{fcf.change@FY2024}} to {{fcf@FY2024}} as capex intensity rose to {{capex_intensity@FY2024}}.",
+      "text": "The point to watch is cash generation: free cash flow fell by {{fcf.change@FY2024}} to {{fcf@FY2024}} as capex intensity rose to {{capex_intensity@FY2024}}, and the EBITDA margin of {{ebitda_margin@FY2024}} is the weakest of the low-cost peers ({{ebitda_margin.peer_rank@FY2024}}).",
       "facts": [
        {
         "id": "fcf.change@FY2024",
@@ -94,13 +97,26 @@
         "claims": [
          "up"
         ]
+       },
+       {
+        "id": "ebitda_margin@FY2024",
+        "claims": [
+         "below_peers",
+         "worse_than_peers"
+        ]
+       },
+       {
+        "id": "ebitda_margin.peer_rank@FY2024",
+        "claims": [
+         "worst_in_group"
+        ]
        }
       ]
      }
     ],
     "credit_metrics": [
      {
-      "text": "EBITDA rose by {{ebitda.change@FY2024}} to {{ebitda@FY2024}} and operating profit by {{operating_profit.change@FY2024}} to {{operating_profit@FY2024}}, on revenue up {{revenue.change@FY2024}}.",
+      "text": "EBITDA increased by {{ebitda.change@FY2024}} to {{ebitda@FY2024}}, lifting the EBITDA margin by {{ebitda_margin.change@FY2024}} to {{ebitda_margin@FY2024}}.",
       "facts": [
        {
         "id": "ebitda.change@FY2024",
@@ -114,28 +130,31 @@
         "claims": []
        },
        {
-        "id": "operating_profit.change@FY2024",
+        "id": "ebitda_margin.change@FY2024",
         "claims": [
          "up",
          "better"
         ]
        },
        {
-        "id": "operating_profit@FY2024",
+        "id": "ebitda_margin@FY2024",
         "claims": []
-       },
-       {
-        "id": "revenue.change@FY2024",
-        "claims": [
-         "up",
-         "better"
-        ]
        }
       ]
      },
      {
-      "text": "Gross leverage fell by {{gross_leverage.change@FY2024}} to {{gross_leverage@FY2024}}, even as total debt increased by {{total_debt.change@FY2024}} to {{total_debt@FY2024}}.",
+      "text": "Total debt rose by {{total_debt.change@FY2024}} to {{total_debt@FY2024}}, but gross leverage fell by {{gross_leverage.change@FY2024}} to {{gross_leverage@FY2024}} as earnings grew faster than debt.",
       "facts": [
+       {
+        "id": "total_debt.change@FY2024",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "total_debt@FY2024",
+        "claims": []
+       },
        {
         "id": "gross_leverage.change@FY2024",
         "claims": [
@@ -146,21 +165,11 @@
        {
         "id": "gross_leverage@FY2024",
         "claims": []
-       },
-       {
-        "id": "total_debt.change@FY2024",
-        "claims": [
-         "up"
-        ]
-       },
-       {
-        "id": "total_debt@FY2024",
-        "claims": []
        }
       ]
      },
      {
-      "text": "Interest coverage improved by {{interest_coverage.change@FY2024}} to {{interest_coverage@FY2024}}, and FFO to debt rose by {{ffo_to_debt.change@FY2024}} to {{ffo_to_debt@FY2024}}.",
+      "text": "Interest coverage improved by {{interest_coverage.change@FY2024}} to {{interest_coverage@FY2024}}, and FFO to debt rose by {{ffo_to_debt.change@FY2024}} to {{ffo_to_debt@FY2024}} on FFO up {{ffo.change@FY2024}} to {{ffo@FY2024}}.",
       "facts": [
        {
         "id": "interest_coverage.change@FY2024",
@@ -183,12 +192,34 @@
        {
         "id": "ffo_to_debt@FY2024",
         "claims": []
+       },
+       {
+        "id": "ffo.change@FY2024",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "ffo@FY2024",
+        "claims": []
        }
       ]
      },
      {
-      "text": "Cash flow against debt weakened: FCF to debt fell by {{fcf_to_debt.change@FY2024}} to {{fcf_to_debt@FY2024}}, with capex intensity up {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}.",
+      "text": "Free cash flow declined by {{fcf.change@FY2024}} to {{fcf@FY2024}}, taking FCF to debt down by {{fcf_to_debt.change@FY2024}} to {{fcf_to_debt@FY2024}} as capex intensity increased by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}.",
       "facts": [
+       {
+        "id": "fcf.change@FY2024",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "fcf@FY2024",
+        "claims": []
+       },
        {
         "id": "fcf_to_debt.change@FY2024",
         "claims": [
@@ -215,7 +246,7 @@
     ],
     "operating_performance": [
      {
-      "text": "Passengers rose by {{passengers.change@FY2024}} to {{passengers@FY2024}}, with capacity up {{ask.change@FY2024}} to {{ask@FY2024}} available seat kilometres and revenue passenger kilometres up {{rpk.change@FY2024}}.",
+      "text": "Passengers rose by {{passengers.change@FY2024}} to {{passengers@FY2024}} on capacity up {{ask.change@FY2024}} to {{ask@FY2024}} available seat kilometres, with RPK up {{rpk.change@FY2024}} to {{rpk@FY2024}}.",
       "facts": [
        {
         "id": "passengers.change@FY2024",
@@ -245,11 +276,15 @@
          "up",
          "better"
         ]
+       },
+       {
+        "id": "rpk@FY2024",
+        "claims": []
        }
       ]
      },
      {
-      "text": "The load factor was stable at {{load_factor@FY2024}} and passenger yield broadly unchanged at {{passenger_yield@FY2024}}.",
+      "text": "The load factor was stable at {{load_factor@FY2024}} and passenger yield broadly unchanged at {{passenger_yield@FY2024}}, so unit revenue growth came from mix rather than pricing.",
       "facts": [
        {
         "id": "load_factor@FY2024",
@@ -266,7 +301,7 @@
       ]
      },
      {
-      "text": "Unit revenue rose by {{rask.change@FY2024}} to {{rask@FY2024}}, but unit cost rose by {{cask.change@FY2024}} to {{cask@FY2024}} and CASK ex-fuel by {{cask_ex_fuel.change@FY2024}} to {{cask_ex_fuel@FY2024}}.",
+      "text": "RASK rose by {{rask.change@FY2024}} to {{rask@FY2024}}, but CASK rose by {{cask.change@FY2024}} to {{cask@FY2024}} and CASK ex-fuel by {{cask_ex_fuel.change@FY2024}} to {{cask_ex_fuel@FY2024}}, so the unit cost base moved against the airline.",
       "facts": [
        {
         "id": "rask.change@FY2024",
@@ -304,8 +339,18 @@
       ]
      },
      {
-      "text": "The fleet grew by {{fleet.change@FY2024}} to {{fleet@FY2024}} aircraft, with an average age of {{fleet_age@FY2024}}, and fuel made up {{fuel_share_of_costs@FY2024}} of costs.",
+      "text": "The fuel share of costs eased by {{fuel_share_of_costs.change@FY2024}} to {{fuel_share_of_costs@FY2024}}, while the fleet grew by {{fleet.change@FY2024}} to {{fleet@FY2024}} aircraft and the average age rose to {{fleet_age@FY2024}}.",
       "facts": [
+       {
+        "id": "fuel_share_of_costs.change@FY2024",
+        "claims": [
+         "down"
+        ]
+       },
+       {
+        "id": "fuel_share_of_costs@FY2024",
+        "claims": []
+       },
        {
         "id": "fleet.change@FY2024",
         "claims": [
@@ -318,10 +363,22 @@
        },
        {
         "id": "fleet_age@FY2024",
+        "claims": [
+         "up",
+         "worse"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "The airline invested significantly in spares to limit the time aircraft are grounded, and NEO aircraft joined the fleet during the year.",
+      "facts": [
+       {
+        "id": "event:costs",
         "claims": []
        },
        {
-        "id": "fuel_share_of_costs@FY2024",
+        "id": "event:fleet_and_engines",
         "claims": []
        }
       ]
@@ -329,7 +386,7 @@
     ],
     "liquidity_funding": [
      {
-      "text": "Cash and cash-like investments rose by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, and cash liquidity to revenue increased by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}.",
+      "text": "Cash and cash-like investments rose by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, taking cash liquidity to revenue up by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}.",
       "facts": [
        {
         "id": "cash_like.change@FY2024",
@@ -356,8 +413,42 @@
       ]
      },
      {
-      "text": "Advance ticket cover eased by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, while contract liabilities from advance ticket sales rose by {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}}.",
+      "text": "Net cash rose by {{net_cash.change@FY2024}} to {{net_cash@FY2024}}, with cash and cash-like investments of {{cash_like@FY2024}} exceeding total debt of {{total_debt@FY2024}}.",
       "facts": [
+       {
+        "id": "net_cash.change@FY2024",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "net_cash@FY2024",
+        "claims": []
+       },
+       {
+        "id": "cash_like@FY2024",
+        "claims": []
+       },
+       {
+        "id": "total_debt@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Customer prepayments remain a large part of the funding base: contract liabilities rose by {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}}, while advance ticket cover eased by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}.",
+      "facts": [
+       {
+        "id": "contract_liabilities.change@FY2024",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "contract_liabilities@FY2024",
+        "claims": []
+       },
        {
         "id": "advance_ticket_cover.change@FY2024",
         "claims": [
@@ -368,7 +459,206 @@
        {
         "id": "advance_ticket_cover@FY2024",
         "claims": []
+       }
+      ]
+     },
+     {
+      "text": "The group issued a euro-denominated guaranteed bond under its EMTN programme maturing in 2031, and the audit committee noted an upgrade of the credit rating.",
+      "facts": [
+       {
+        "id": "event:funding_and_rating",
+        "claims": []
        },
+       {
+        "id": "event:funding_and_rating-2",
+        "claims": []
+       }
+      ]
+     }
+    ],
+    "peer_positioning": [
+     {
+      "text": "easyJet has the lowest net leverage of the low-cost peers ({{net_leverage.peer_rank@FY2024}}), against a peer median of {{net_leverage.peer_median@FY2024}}.",
+      "facts": [
+       {
+        "id": "net_leverage.peer_rank@FY2024",
+        "claims": [
+         "best_in_group"
+        ]
+       },
+       {
+        "id": "net_leverage.peer_median@FY2024",
+        "claims": [
+         "below_peers"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "It leads the group on interest coverage ({{interest_coverage.peer_rank@FY2024}}) and FFO to debt ({{ffo_to_debt.peer_rank@FY2024}}), and its cash liquidity to revenue is the strongest of the peers ({{cash_liquidity_to_revenue.peer_rank@FY2024}}).",
+      "facts": [
+       {
+        "id": "interest_coverage.peer_rank@FY2024",
+        "claims": [
+         "best_in_group"
+        ]
+       },
+       {
+        "id": "ffo_to_debt.peer_rank@FY2024",
+        "claims": [
+         "best_in_group"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue.peer_rank@FY2024",
+        "claims": [
+         "best_in_group"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Gross leverage, FCF to debt and advance ticket cover all sit in the middle of the group, with ranks of {{gross_leverage.peer_rank@FY2024}}, {{fcf_to_debt.peer_rank@FY2024}} and {{advance_ticket_cover.peer_rank@FY2024}} respectively.",
+      "facts": [
+       {
+        "id": "gross_leverage.peer_rank@FY2024",
+        "claims": []
+       },
+       {
+        "id": "fcf_to_debt.peer_rank@FY2024",
+        "claims": []
+       },
+       {
+        "id": "advance_ticket_cover.peer_rank@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Profitability is the weak spot: the EBITDA margin is the lowest of the peers ({{ebitda_margin.peer_rank@FY2024}}) against a peer median of {{ebitda_margin.peer_median@FY2024}}, and capex intensity of {{capex_intensity@FY2024}} is above the peer median of {{capex_intensity.peer_median@FY2024}}.",
+      "facts": [
+       {
+        "id": "ebitda_margin.peer_rank@FY2024",
+        "claims": [
+         "worst_in_group"
+        ]
+       },
+       {
+        "id": "ebitda_margin.peer_median@FY2024",
+        "claims": [
+         "above_peers"
+        ]
+       },
+       {
+        "id": "capex_intensity@FY2024",
+        "claims": [
+         "above_peers"
+        ]
+       },
+       {
+        "id": "capex_intensity.peer_median@FY2024",
+        "claims": []
+       }
+      ]
+     }
+    ],
+    "watch_items": [
+     {
+      "text": "Cash generation: free cash flow fell by {{fcf.change@FY2024}} to {{fcf@FY2024}} and FCF to debt by {{fcf_to_debt.change@FY2024}} to {{fcf_to_debt@FY2024}}, with capex intensity of {{capex_intensity@FY2024}} above the peer median of {{capex_intensity.peer_median@FY2024}}.",
+      "facts": [
+       {
+        "id": "fcf.change@FY2024",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "fcf@FY2024",
+        "claims": []
+       },
+       {
+        "id": "fcf_to_debt.change@FY2024",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "fcf_to_debt@FY2024",
+        "claims": []
+       },
+       {
+        "id": "capex_intensity@FY2024",
+        "claims": [
+         "above_peers"
+        ]
+       },
+       {
+        "id": "capex_intensity.peer_median@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Unit costs: CASK rose by {{cask.change@FY2024}} to {{cask@FY2024}} and CASK ex-fuel by {{cask_ex_fuel.change@FY2024}} to {{cask_ex_fuel@FY2024}}, outpacing the RASK increase of {{rask.change@FY2024}}.",
+      "facts": [
+       {
+        "id": "cask.change@FY2024",
+        "claims": [
+         "up",
+         "worse"
+        ]
+       },
+       {
+        "id": "cask@FY2024",
+        "claims": []
+       },
+       {
+        "id": "cask_ex_fuel.change@FY2024",
+        "claims": [
+         "up",
+         "worse"
+        ]
+       },
+       {
+        "id": "cask_ex_fuel@FY2024",
+        "claims": []
+       },
+       {
+        "id": "rask.change@FY2024",
+        "claims": [
+         "up",
+         "better"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Profitability: the EBITDA margin of {{ebitda_margin@FY2024}} is below the peer median of {{ebitda_margin.peer_median@FY2024}} and the weakest of the group ({{ebitda_margin.peer_rank@FY2024}}).",
+      "facts": [
+       {
+        "id": "ebitda_margin@FY2024",
+        "claims": [
+         "below_peers",
+         "worse_than_peers"
+        ]
+       },
+       {
+        "id": "ebitda_margin.peer_median@FY2024",
+        "claims": []
+       },
+       {
+        "id": "ebitda_margin.peer_rank@FY2024",
+        "claims": [
+         "worst_in_group"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Customer prepayments: contract liabilities rose by {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}}, so a slower booking cycle would reduce the cash held on behalf of passengers.",
+      "facts": [
        {
         "id": "contract_liabilities.change@FY2024",
         "claims": [
@@ -380,46 +670,98 @@
         "claims": []
        }
       ]
-     },
-     {
-      "text": "Undrawn committed facilities stood at {{undrawn_facilities@FY2023}} at the prior year end, a buffer that sits alongside the cash balance.",
-      "facts": [
-       {
-        "id": "undrawn_facilities@FY2023",
-        "claims": []
-       }
-      ]
      }
-    ],
-    "peer_positioning": [
+    ]
+   },
+   "errors": [
+    "[rule 4] credit_metrics, sentence 2: 'grew' needs a 'up' claim on a figure in the same clause",
+    "[rule 4] operating_performance, sentence 2: 'growth' needs a 'up' claim on a figure in the same clause",
+    "[rule 4] liquidity_funding, sentence 2: 'exceeding' needs a 'up' or 'above_peers' claim on a figure in the same clause",
+    "[rule style] liquidity_funding, sentence 2: total_debt@FY2024 is already given in credit_metrics, sentence 2: give each figure in one body section only (the snapshot and watch items may restate it)",
+    "[rule 3] peer_positioning, sentence 4: 'above_peers' claimed on ebitda_margin.peer_median@FY2024, but it is below",
+    "[rule style] peer_positioning, sentence 4: capex_intensity@FY2024 is already given in credit_metrics, sentence 4: give each figure in one body section only (the snapshot and watch items may restate it)"
+   ],
+   "error": null
+  },
+  {
+   "try": 2,
+   "sections": [
+    "credit_metrics",
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning"
+   ],
+   "request_hash": "657cc8817ec6f380b704ae5168d2eca1d2e570b2f3410ba92269e2a4f9e8d09c",
+   "model": "deepseek-flash",
+   "draft": {
+    "credit_metrics": [
      {
-      "text": "easyJet has the lowest net leverage in the low-cost peer group ({{net_leverage.peer_rank@2024}}), at {{net_leverage@FY2024}} against a peer median of {{net_leverage.peer_median@2024}}.",
+      "text": "EBITDA increased by {{ebitda.change@FY2024}} to {{ebitda@FY2024}}, lifting the EBITDA margin by {{ebitda_margin.change@FY2024}} to {{ebitda_margin@FY2024}}.",
       "facts": [
        {
-        "id": "net_leverage.peer_rank@2024",
+        "id": "ebitda.change@FY2024",
         "claims": [
-         "best_in_group"
+         "up",
+         "better"
         ]
        },
        {
-        "id": "net_leverage@FY2024",
+        "id": "ebitda@FY2024",
+        "claims": []
+       },
+       {
+        "id": "ebitda_margin.change@FY2024",
         "claims": [
-         "below_peers"
+         "up",
+         "better"
         ]
        },
        {
-        "id": "net_leverage.peer_median@2024",
+        "id": "ebitda_margin@FY2024",
         "claims": []
        }
       ]
      },
      {
-      "text": "It leads the group on interest coverage ({{interest_coverage.peer_rank@2024}}) at {{interest_coverage@FY2024}} and on FFO to debt ({{ffo_to_debt.peer_rank@2024}}) at {{ffo_to_debt@FY2024}}.",
+      "text": "Total debt rose by {{total_debt.change@FY2024}} to {{total_debt@FY2024}}, but gross leverage fell by {{gross_leverage.change@FY2024}} to {{gross_leverage@FY2024}} as EBITDA rose by {{ebitda.change@FY2024}}.",
       "facts": [
        {
-        "id": "interest_coverage.peer_rank@2024",
+        "id": "total_debt.change@FY2024",
         "claims": [
-         "best_in_group"
+         "up"
+        ]
+       },
+       {
+        "id": "total_debt@FY2024",
+        "claims": []
+       },
+       {
+        "id": "gross_leverage.change@FY2024",
+        "claims": [
+         "down",
+         "better"
+        ]
+       },
+       {
+        "id": "gross_leverage@FY2024",
+        "claims": []
+       },
+       {
+        "id": "ebitda.change@FY2024",
+        "claims": [
+         "up"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Interest coverage improved by {{interest_coverage.change@FY2024}} to {{interest_coverage@FY2024}}, and FFO to debt rose by {{ffo_to_debt.change@FY2024}} to {{ffo_to_debt@FY2024}} on FFO up {{ffo.change@FY2024}} to {{ffo@FY2024}}.",
+      "facts": [
+       {
+        "id": "interest_coverage.change@FY2024",
+        "claims": [
+         "up",
+         "better"
         ]
        },
        {
@@ -427,70 +769,43 @@
         "claims": []
        },
        {
-        "id": "ffo_to_debt.peer_rank@2024",
+        "id": "ffo_to_debt.change@FY2024",
         "claims": [
-         "best_in_group"
+         "up",
+         "better"
         ]
        },
        {
         "id": "ffo_to_debt@FY2024",
         "claims": []
+       },
+       {
+        "id": "ffo.change@FY2024",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "ffo@FY2024",
+        "claims": []
        }
       ]
      },
      {
-      "text": "Its EBITDA margin of {{ebitda_margin@FY2024}} is the weakest of the group ({{ebitda_margin.peer_rank@2024}}), below the peer median of {{ebitda_margin.peer_median@2024}}, while gross leverage is in line with the median at {{gross_leverage@FY2024}}.",
+      "text": "Free cash flow declined by {{fcf.change@FY2024}} to {{fcf@FY2024}}, taking FCF to debt down by {{fcf_to_debt.change@FY2024}} to {{fcf_to_debt@FY2024}} as capex intensity increased by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}.",
       "facts": [
        {
-        "id": "ebitda_margin@FY2024",
+        "id": "fcf.change@FY2024",
         "claims": [
-         "below_peers"
+         "down",
+         "worse"
         ]
        },
        {
-        "id": "ebitda_margin.peer_rank@2024",
-        "claims": [
-         "worst_in_group"
-        ]
-       },
-       {
-        "id": "ebitda_margin.peer_median@2024",
+        "id": "fcf@FY2024",
         "claims": []
        },
-       {
-        "id": "gross_leverage@FY2024",
-        "claims": [
-         "in_line_with_peers"
-        ]
-       }
-      ]
-     },
-     {
-      "text": "Cash liquidity to revenue is the strongest of the group ({{cash_liquidity_to_revenue.peer_rank@2024}}), at {{cash_liquidity_to_revenue@FY2024}} against a median of {{cash_liquidity_to_revenue.peer_median@2024}}.",
-      "facts": [
-       {
-        "id": "cash_liquidity_to_revenue.peer_rank@2024",
-        "claims": [
-         "best_in_group"
-        ]
-       },
-       {
-        "id": "cash_liquidity_to_revenue@FY2024",
-        "claims": [
-         "above_peers"
-        ]
-       },
-       {
-        "id": "cash_liquidity_to_revenue.peer_median@2024",
-        "claims": []
-       }
-      ]
-     }
-    ],
-    "watch_items": [
-     {
-      "text": "Cash generation: FCF to debt fell by {{fcf_to_debt.change@FY2024}} to {{fcf_to_debt@FY2024}}, in line with the peer median of {{fcf_to_debt.peer_median@2024}}.",
-      "facts": [
        {
         "id": "fcf_to_debt.change@FY2024",
         "claims": [
@@ -500,19 +815,8 @@
        },
        {
         "id": "fcf_to_debt@FY2024",
-        "claims": [
-         "in_line_with_peers"
-        ]
-       },
-       {
-        "id": "fcf_to_debt.peer_median@2024",
         "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Investment: capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}, above the peer median of {{capex_intensity.peer_median@2024}}.",
-      "facts": [
+       },
        {
         "id": "capex_intensity.change@FY2024",
         "claims": [
@@ -521,53 +825,313 @@
        },
        {
         "id": "capex_intensity@FY2024",
+        "claims": []
+       }
+      ]
+     }
+    ],
+    "operating_performance": [
+     {
+      "text": "Passengers rose by {{passengers.change@FY2024}} to {{passengers@FY2024}} on capacity up {{ask.change@FY2024}} to {{ask@FY2024}} available seat kilometres, with RPK up {{rpk.change@FY2024}} to {{rpk@FY2024}}.",
+      "facts": [
+       {
+        "id": "passengers.change@FY2024",
         "claims": [
-         "above_peers"
+         "up",
+         "better"
         ]
        },
        {
-        "id": "capex_intensity.peer_median@2024",
+        "id": "passengers@FY2024",
+        "claims": []
+       },
+       {
+        "id": "ask.change@FY2024",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "ask@FY2024",
+        "claims": []
+       },
+       {
+        "id": "rpk.change@FY2024",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "rpk@FY2024",
         "claims": []
        }
       ]
      },
      {
-      "text": "Profitability: the EBITDA margin of {{ebitda_margin@FY2024}} is below the peer median of {{ebitda_margin.peer_median@2024}}, the weakest of the group ({{ebitda_margin.peer_rank@2024}}).",
+      "text": "The load factor was stable at {{load_factor@FY2024}} and passenger yield broadly unchanged at {{passenger_yield@FY2024}}, so unit revenue rose by {{rask.change@FY2024}} to {{rask@FY2024}} without a pricing tailwind.",
       "facts": [
        {
-        "id": "ebitda_margin@FY2024",
+        "id": "load_factor@FY2024",
+        "claims": [
+         "flat"
+        ]
+       },
+       {
+        "id": "passenger_yield@FY2024",
+        "claims": [
+         "flat"
+        ]
+       },
+       {
+        "id": "rask.change@FY2024",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "rask@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "CASK rose by {{cask.change@FY2024}} to {{cask@FY2024}} and CASK ex-fuel by {{cask_ex_fuel.change@FY2024}} to {{cask_ex_fuel@FY2024}}, so the unit cost base moved against the airline.",
+      "facts": [
+       {
+        "id": "cask.change@FY2024",
+        "claims": [
+         "up",
+         "worse"
+        ]
+       },
+       {
+        "id": "cask@FY2024",
+        "claims": []
+       },
+       {
+        "id": "cask_ex_fuel.change@FY2024",
+        "claims": [
+         "up",
+         "worse"
+        ]
+       },
+       {
+        "id": "cask_ex_fuel@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "The fuel share of costs eased by {{fuel_share_of_costs.change@FY2024}} to {{fuel_share_of_costs@FY2024}}, while the fleet grew by {{fleet.change@FY2024}} to {{fleet@FY2024}} aircraft and the average age rose to {{fleet_age@FY2024}}.",
+      "facts": [
+       {
+        "id": "fuel_share_of_costs.change@FY2024",
+        "claims": [
+         "down"
+        ]
+       },
+       {
+        "id": "fuel_share_of_costs@FY2024",
+        "claims": []
+       },
+       {
+        "id": "fleet.change@FY2024",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "fleet@FY2024",
+        "claims": []
+       },
+       {
+        "id": "fleet_age@FY2024",
+        "claims": [
+         "up",
+         "worse"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "The airline invested significantly in spares to limit the time aircraft are grounded, and NEO aircraft joined the fleet during the year.",
+      "facts": [
+       {
+        "id": "event:costs",
+        "claims": []
+       },
+       {
+        "id": "event:fleet_and_engines",
+        "claims": []
+       }
+      ]
+     }
+    ],
+    "liquidity_funding": [
+     {
+      "text": "Cash and cash-like investments rose by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, taking cash liquidity to revenue up by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}.",
+      "facts": [
+       {
+        "id": "cash_like.change@FY2024",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "cash_like@FY2024",
+        "claims": []
+       },
+       {
+        "id": "cash_liquidity_to_revenue.change@FY2024",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Net cash rose by {{net_cash.change@FY2024}} to {{net_cash@FY2024}}, so cash and cash-like investments now exceed total debt.",
+      "facts": [
+       {
+        "id": "net_cash.change@FY2024",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "net_cash@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Customer prepayments remain a large part of the funding base: contract liabilities rose by {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}}, while advance ticket cover eased by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}.",
+      "facts": [
+       {
+        "id": "contract_liabilities.change@FY2024",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "contract_liabilities@FY2024",
+        "claims": []
+       },
+       {
+        "id": "advance_ticket_cover.change@FY2024",
+        "claims": [
+         "down",
+         "better"
+        ]
+       },
+       {
+        "id": "advance_ticket_cover@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "The group issued a euro-denominated guaranteed bond under its EMTN programme maturing in 2031, and the audit committee noted an upgrade of the credit rating.",
+      "facts": [
+       {
+        "id": "event:funding_and_rating",
+        "claims": []
+       },
+       {
+        "id": "event:funding_and_rating-2",
+        "claims": []
+       }
+      ]
+     }
+    ],
+    "peer_positioning": [
+     {
+      "text": "easyJet has the lowest net leverage of the low-cost peers ({{net_leverage.peer_rank@FY2024}}), against a peer median of {{net_leverage.peer_median@FY2024}}.",
+      "facts": [
+       {
+        "id": "net_leverage.peer_rank@FY2024",
+        "claims": [
+         "best_in_group"
+        ]
+       },
+       {
+        "id": "net_leverage.peer_median@FY2024",
+        "claims": [
+         "below_peers"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "It leads the group on interest coverage ({{interest_coverage.peer_rank@FY2024}}) and FFO to debt ({{ffo_to_debt.peer_rank@FY2024}}), and its cash liquidity to revenue is the strongest of the peers ({{cash_liquidity_to_revenue.peer_rank@FY2024}}).",
+      "facts": [
+       {
+        "id": "interest_coverage.peer_rank@FY2024",
+        "claims": [
+         "best_in_group"
+        ]
+       },
+       {
+        "id": "ffo_to_debt.peer_rank@FY2024",
+        "claims": [
+         "best_in_group"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue.peer_rank@FY2024",
+        "claims": [
+         "best_in_group"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Gross leverage, FCF to debt and advance ticket cover all sit in the middle of the group, with ranks of {{gross_leverage.peer_rank@FY2024}}, {{fcf_to_debt.peer_rank@FY2024}} and {{advance_ticket_cover.peer_rank@FY2024}} respectively.",
+      "facts": [
+       {
+        "id": "gross_leverage.peer_rank@FY2024",
+        "claims": []
+       },
+       {
+        "id": "fcf_to_debt.peer_rank@FY2024",
+        "claims": []
+       },
+       {
+        "id": "advance_ticket_cover.peer_rank@FY2024",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Profitability is the weak spot: the EBITDA margin is the lowest of the peers ({{ebitda_margin.peer_rank@FY2024}}) against a peer median of {{ebitda_margin.peer_median@FY2024}}, and capex intensity is above the peer median of {{capex_intensity.peer_median@FY2024}}.",
+      "facts": [
+       {
+        "id": "ebitda_margin.peer_rank@FY2024",
+        "claims": [
+         "worst_in_group"
+        ]
+       },
+       {
+        "id": "ebitda_margin.peer_median@FY2024",
         "claims": [
          "below_peers"
         ]
        },
        {
-        "id": "ebitda_margin.peer_median@2024",
-        "claims": []
-       },
-       {
-        "id": "ebitda_margin.peer_rank@2024",
+        "id": "capex_intensity.peer_median@FY2024",
         "claims": [
-         "worst_in_group"
+         "above_peers"
         ]
-       }
-      ]
-     },
-     {
-      "text": "Customer prepayments: advance ticket cover of {{advance_ticket_cover@FY2024}} is in line with the peer median of {{advance_ticket_cover.peer_median@2024}}, so contract liabilities of {{contract_liabilities@FY2024}} remain a refund sensitivity.",
-      "facts": [
-       {
-        "id": "advance_ticket_cover@FY2024",
-        "claims": [
-         "in_line_with_peers"
-        ]
-       },
-       {
-        "id": "advance_ticket_cover.peer_median@2024",
-        "claims": []
-       },
-       {
-        "id": "contract_liabilities@FY2024",
-        "claims": []
        }
       ]
      }

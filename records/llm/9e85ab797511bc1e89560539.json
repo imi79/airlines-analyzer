@@ -1,0 +1,148 @@
+{
+ "answer": {
+  "sections": {
+   "snapshot": [
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating-2"
+      }
+     ],
+     "text": "International Airlines Group, the owner of British Airways, Iberia, Aer Lingus and Vueling, ended FY2024 with both Moody's and S&P having upgraded the group to investment grade during the year."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "net_leverage.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ebitda.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2024"
+      }
+     ],
+     "text": "Net leverage fell by {{net_leverage.change@FY2024}} to {{net_leverage@FY2024}} as EBITDA rose by {{ebitda.change@FY2024}} to {{ebitda@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "advance_ticket_cover.change@FY2024"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "advance_ticket_cover@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "advance_ticket_cover.peer_rank@FY2024"
+      }
+     ],
+     "text": "The point to watch is customer prepayments: advance ticket cover fell by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, the weakest of the network peers ({{advance_ticket_cover.peer_rank@FY2024}})."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "cask_ex_fuel.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cask_ex_fuel@FY2024"
+      }
+     ],
+     "text": "Unit cost: CASK ex-fuel rose by {{cask_ex_fuel.change@FY2024}} to {{cask_ex_fuel@FY2024}}, so the non-fuel cost base is the weaker side of the unit economics."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "undrawn_facilities.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "undrawn_facilities@FY2024"
+      }
+     ],
+     "text": "Committed facilities: undrawn committed facilities fell by {{undrawn_facilities.change@FY2024}} to {{undrawn_facilities@FY2024}}, so the buffer outside cash is smaller."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "fleet_age.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fleet_age@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines"
+      },
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs"
+      },
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs-2"
+      }
+     ],
+     "text": "Fleet and regulation: the average fleet age rose by {{fleet_age.change@FY2024}} to {{fleet_age@FY2024}} amid engine reliability issues, and the Dublin passenger cap and the Vueling hand luggage sanction remain subject to legal review."
+    }
+   ]
+  }
+ },
+ "label": "iag_FY2024 attempt 2",
+ "recorded_at": "2026-11-09T14:45:30+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v4",
+  "provider": "deepseek",
+  "system_sha256": "b0604cb7fa50c8024297d0491baf099868983d69337d8b5927b5e5286c493bd1",
+  "tool_sha256": "2b0e5cd83e17faaf063551cce42a469d542fbe2af969ddbace68b3c407f7ac9d",
+  "user_sha256": "14bb42233353fdf492b8b6976cc94169e2bdc6367fec6bb446d185e7e98d6898"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 13228,
+  "output_tokens": 773
+ }
+}

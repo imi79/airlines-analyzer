@@ -10,15 +10,19 @@ A sentence is rejected if it breaks any of the five rules of the M4 plan:
 4. a direction word in the prose ("rose", "improved", "lowest") not backed by a matching
    claim on a figure of the same clause, so the form and the sentence cannot disagree (a
    clause with no blank that states a scenario, "if bookings slow", is not a statement about
-   a reported figure and is not read);
+   a reported figure and is not read, nor is a clause with no blank that describes a cited
+   event and names no figure, "Fitch upgraded the rating": decision 0018);
 5. ids listed in the form that the sentence doesn't use, or the reverse (an event of the
    year, `event:...`, is listed but never written as a blank: it has no figure);
 6. a figure from an earlier year used on its own, without its year in the sentence ("the
    fleet stood at {{fleet@FY2024}}" in an FY2025 note must say "in FY2024") (decision 0018).
 
 Plus the form itself ("form"): every section present, with the number of sentences the
-tearsheet allows (the snapshot has exactly three), and no figure in more than two sentences
-of the note (decision 0018: the snapshot and one section).
+tearsheet allows (the snapshot has exactly three).
+
+Style notes ("style", decision 0018) are not rejections: each figure in one body section
+only (the snapshot and the watch items may restate it). They go back to the AI with a retry,
+and a rewrite is kept only if it breaks no rule above.
 """
 
 from __future__ import annotations
@@ -49,7 +53,8 @@ CLAIMS = (
 )
 YEAR = r"(?:201[5-9]|202\d|203[0-5])"
 EVENT = "event:"
-MAX_USES = 2  # sentences per figure in a note: the snapshot and one section (decision 0018)
+STYLE = "style"  # a note on the writing (repetition): fed back, never a rejection
+SUMMARY_SECTIONS = ("snapshot", "watch_items")  # may restate a figure (decision 0018)
 HYPOTHETICAL = re.compile(r"\b(?:if|unless|would|could|might|should)\b", re.I)
 CLAUSE_BREAK = re.compile(  # brackets don't split: "(rank)" belongs to its clause
     r"[,;:\u2013\u2014]|\b(?:while|whereas|but|although|though|and|yet)\b", re.I
@@ -100,6 +105,11 @@ class Error:
         where = self.section + (f", sentence {self.sentence}" if self.sentence else "")
         return f"[rule {self.rule}] {where}: {self.message}"
 
+    @property
+    def blocking(self) -> bool:
+        """Safety rules reject; a style note (repetition) is fed back but rejects nothing."""
+        return self.rule != STYLE
+
 
 @dataclass
 class Report:
@@ -107,10 +117,11 @@ class Report:
 
     @property
     def ok(self) -> bool:
-        return not self.errors
+        """No safety error (style notes do not count)."""
+        return not any(e.blocking for e in self.errors)
 
     def sections_failed(self) -> list[str]:
-        return list(dict.fromkeys(e.section for e in self.errors))
+        return list(dict.fromkeys(e.section for e in self.errors if e.blocking))
 
     def for_section(self, section: str) -> list[Error]:
         return [e for e in self.errors if e.section == section]
@@ -162,6 +173,7 @@ class Verifier:
             r"\b(?:" + "|".join(voc["allowed_phrases"]) + r")\b", re.I
         )
         self.symbols = re.compile(voc["symbols"])
+        self.figure_words = re.compile(rf"\b(?:{voc['figure_words']})\b", re.I)
         self.ignored = re.compile(r"\b(?:" + "|".join(voc["ignored_phrases"]) + r")\b", re.I)
         self.directions = {
             name: (re.compile(rf"\b(?:{d['words']})\b", re.I), tuple(d["claims"]))
@@ -180,11 +192,13 @@ class Verifier:
         expected = self.narrative["sections"]
         wanted = sections or list(expected)
         report = Report()
-        uses: dict[str, int] = {}
-        for sentences in (others or {}).values():
-            for sentence in sentences:
+        first_use: dict[str, str] = {}
+        for other, sentences in (others or {}).items():
+            if other in SUMMARY_SECTIONS:
+                continue
+            for n, sentence in enumerate(sentences, start=1):
                 for fid in self.counted(sheet, sentence):
-                    uses[fid] = uses.get(fid, 0) + 1
+                    first_use.setdefault(fid, f"{other}, sentence {n}")
         for name in draft.sections:
             if name not in expected:
                 report.errors.append(Error(name, None, "form", "not a drafted section"))
@@ -202,13 +216,16 @@ class Verifier:
             for n, sentence in enumerate(sentences, start=1):
                 for rule, message in self.check_sentence(sheet, sentence):
                     report.errors.append(Error(name, n, rule, message))
+                if name in SUMMARY_SECTIONS:
+                    continue
                 for fid in self.counted(sheet, sentence):
-                    uses[fid] = uses.get(fid, 0) + 1
-                    if uses[fid] > MAX_USES:
-                        report.errors.append(Error(name, n, "form", (
-                            f"{fid} is already in {MAX_USES} sentences of the note; give each "
-                            "figure at most twice (the snapshot and one section)"
+                    where = f"{name}, sentence {n}"
+                    if fid in first_use and not first_use[fid].startswith(f"{name},"):
+                        report.errors.append(Error(name, n, STYLE, (
+                            f"{fid} is already given in {first_use[fid]}: give each figure in "
+                            "one body section only (the snapshot and watch items may restate it)"
                         )))  # fmt: skip
+                    first_use.setdefault(fid, where)
         return report
 
     @staticmethod
@@ -341,6 +358,7 @@ class Verifier:
         A clause's figures include the sentence's other figures for the same metric: in
         "FCF to debt rose to {{a}}, below the median of {{b}}", "below" may rest on {{a}}."""
         claims = {r.id: set(r.claims) for r in s.facts}
+        cites_event = any(r.id.startswith(EVENT) for r in s.facts)
         text = PLACEHOLDER.sub(lambda m: f" \u27e6{m.group(1)}\u27e7 ", s.text)
         text = self.ignored.sub(" ", text)
         out = []
@@ -348,6 +366,8 @@ class Verifier:
             ids = re.findall(r"\u27e6([^\u27e7]*)\u27e7", clause)
             if not ids and HYPOTHETICAL.search(clause):
                 continue  # "if bookings slow": a scenario, not a statement about a figure
+            if not ids and cites_event and not self.figure_words.search(clause):
+                continue  # describes a cited event ("Fitch upgraded"), names no figure
             metrics = {_metric(sheet, fid) for fid in ids}
             scope = [f for f in claims if f in ids or _metric(sheet, f) in metrics] or list(claims)
             words_text = re.sub(r"\u27e6[^\u27e7]*\u27e7", " ", clause)

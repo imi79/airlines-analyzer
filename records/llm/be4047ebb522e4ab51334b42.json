@@ -1,0 +1,416 @@
+{
+ "answer": {
+  "sections": {
+   "credit_metrics": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ebitda.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "operating_profit.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "operating_profit@FY2024"
+      }
+     ],
+     "text": "EBITDA increased by {{ebitda.change@FY2024}} to {{ebitda@FY2024}}, and operating profit rose by {{operating_profit.change@FY2024}} to {{operating_profit@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "total_debt@FY2024"
+      },
+      {
+       "claims": [
+        "flat",
+        "below_peers"
+       ],
+       "id": "gross_leverage@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_median@2024"
+      }
+     ],
+     "text": "Total debt was stable at {{total_debt@FY2024}}, so gross leverage held at {{gross_leverage@FY2024}}, well below the peer median of {{gross_leverage.peer_median@2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "ffo.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ffo@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2024"
+      }
+     ],
+     "text": "FFO rose by {{ffo.change@FY2024}} to {{ffo@FY2024}}, but free cash flow declined by {{fcf.change@FY2024}} to {{fcf@FY2024}} as capital spending absorbed more of the cash generated."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "profit.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "profit@FY2024"
+      }
+     ],
+     "text": "Profit for the year increased by {{profit.change@FY2024}} to {{profit@FY2024}}."
+    }
+   ],
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      }
+     ],
+     "text": "The group fully repaid its interest-bearing financial liabilities, which the report says greatly reduces the potential effect of interest rate changes on the company."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "total_debt@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda@FY2024"
+      }
+     ],
+     "text": "Total debt of {{total_debt@FY2024}} is small against EBITDA of {{ebitda@FY2024}}, so ratios to debt say little about the credit profile."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating-2"
+      }
+     ],
+     "text": "A financing commitment was given for the City Air Terminal joint venture's new train sets, part of which was drawn as a loan in the year."
+    }
+   ],
+   "operating_performance": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "passengers.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "passengers@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse",
+        "below_peers"
+       ],
+       "id": "traffic_growth@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "traffic_growth@FY2023"
+      }
+     ],
+     "text": "Passengers rose by {{passengers.change@FY2024}} to {{passengers@FY2024}}, but traffic growth of {{traffic_growth@FY2024}} was well below the {{traffic_growth@FY2023}} of FY2023."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "aero_revenue_per_passenger.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "aero_revenue_per_passenger@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs"
+      }
+     ],
+     "text": "Aeronautical revenue per passenger increased by {{aero_revenue_per_passenger.change@FY2024}} to {{aero_revenue_per_passenger@FY2024}}, helped by the temporary inflation-linked adjustment of airport charges."
+    }
+   ],
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "gross_leverage@FY2024"
+      },
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "gross_leverage.peer_rank@2024"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_median@2024"
+      }
+     ],
+     "text": "Gross leverage of {{gross_leverage@FY2024}} is the lowest of the airport peers ({{gross_leverage.peer_rank@2024}}), against a peer median of {{gross_leverage.peer_median@2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "ebitda_margin@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_rank@2024"
+      }
+     ],
+     "text": "On EBITDA margin the company sits in the middle of the group at {{ebitda_margin@FY2024}} ({{ebitda_margin.peer_rank@2024}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "capex_intensity@FY2024"
+      }
+     ],
+     "text": "Capex intensity of {{capex_intensity@FY2024}} also places it in the middle of the group, in line with the peer median."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "traffic_growth@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "traffic_growth.peer_rank@2024"
+      },
+      {
+       "claims": [],
+       "id": "traffic_growth.peer_median@2024"
+      }
+     ],
+     "text": "Traffic growth of {{traffic_growth@FY2024}} is the weakest of the group ({{traffic_growth.peer_rank@2024}}), below the peer median of {{traffic_growth.peer_median@2024}}."
+    }
+   ],
+   "snapshot": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "revenue@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      }
+     ],
+     "text": "Flughafen Wien, the Vienna airport group that also holds Malta and Košice airports, grew revenue by {{revenue.change@FY2024}} to {{revenue@FY2024}} in FY2024, with the complete repayment of interest-bearing financial liabilities leaving the balance sheet largely insulated from rate moves."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat",
+        "in_line_with_peers"
+       ],
+       "id": "ebitda_margin@FY2024"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "ebitda_margin.change@FY2024"
+      },
+      {
+       "claims": [
+        "flat",
+        "below_peers"
+       ],
+       "id": "gross_leverage@FY2024"
+      }
+     ],
+     "text": "The EBITDA margin was broadly unchanged at {{ebitda_margin@FY2024}}, a move of {{ebitda_margin.change@FY2024}}, while gross leverage stayed at {{gross_leverage@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2024"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "capex_intensity@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2024"
+      }
+     ],
+     "text": "The point to watch is capital spending: capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}, and free cash flow fell by {{fcf.change@FY2024}} to {{fcf@FY2024}}."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2024"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "capex_intensity@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf@FY2024"
+      }
+     ],
+     "text": "Investment: capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}, in line with the peer median, and free cash flow fell by {{fcf.change@FY2024}} to {{fcf@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "traffic_growth@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "traffic_growth.peer_rank@2024"
+      },
+      {
+       "claims": [],
+       "id": "traffic_growth.peer_median@2024"
+      }
+     ],
+     "text": "Traffic: growth of {{traffic_growth@FY2024}} is the weakest of the airport peers ({{traffic_growth.peer_rank@FY2024}}), below the peer median of {{traffic_growth.peer_median@2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs"
+      }
+     ],
+     "text": "Regulation: airport charges are temporarily adjusted by average inflation, a rule that ends at the end of 2026, so revenue per passenger depends on the tariff formula that follows."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:other"
+      }
+     ],
+     "text": "Litigation: disputes with the Maltese government and employee claims concerning Malta International Airport are outstanding, which the group considers unfounded."
+    }
+   ]
+  }
+ },
+ "label": "vie_FY2024 attempt 1",
+ "recorded_at": "2026-11-09T14:47:13+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v4",
+  "provider": "deepseek",
+  "system_sha256": "b0604cb7fa50c8024297d0491baf099868983d69337d8b5927b5e5286c493bd1",
+  "tool_sha256": "4dabe2c7c4de6bfc02f14792e642150c79685cac3968c5fab183d4c4f9ffd732",
+  "user_sha256": "c8fd234be863e90389d2d02debe3754b12dcee3772a2ac7f86b1049e55e81699"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 11759,
+  "output_tokens": 2279
+ }
+}

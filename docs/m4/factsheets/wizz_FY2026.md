@@ -116,26 +116,26 @@ Company type: airline. Reporting currency: EUR. Peer group: Low-cost airlines (e
 
 | id | what it is | prints as | computed by code |
 | --- | --- | --- | --- |
-| ebitda_margin.peer_median@2025 | EBITDA margin, median of low-cost airlines, peer year 2025 (3 companies) | 21.2% | company above peer median, better |
-| ebitda_margin.peer_rank@2025 | EBITDA margin, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
-| net_leverage.peer_median@2025 | Net leverage, median of low-cost airlines, peer year 2025 (3 companies) | 1.19x | company above peer median, worse |
-| net_leverage.peer_rank@2025 | Net leverage, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
-| gross_leverage.peer_median@2025 | Gross leverage, median of low-cost airlines, peer year 2025 (3 companies) | 2.46x | company above peer median, worse |
-| gross_leverage.peer_rank@2025 | Gross leverage, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
-| interest_coverage.peer_median@2025 | Interest coverage, median of low-cost airlines, peer year 2025 (3 companies) | 6.27x | company below peer median, worse |
-| interest_coverage.peer_rank@2025 | Interest coverage, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| ffo_to_debt.peer_median@2025 | FFO to debt, median of low-cost airlines, peer year 2025 (3 companies) | 35.4% | company below peer median, worse |
-| ffo_to_debt.peer_rank@2025 | FFO to debt, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| fcf_to_debt.peer_median@2025 | FCF to debt, median of low-cost airlines, peer year 2025 (3 companies) | 14.6% | company below peer median, worse |
-| fcf_to_debt.peer_rank@2025 | FCF to debt, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| capex_intensity.peer_median@2025 | Capex intensity, median of low-cost airlines, peer year 2025 (3 companies) | 9.9% | company below peer median |
-| cash_liquidity_to_revenue.peer_median@2025 | Cash liquidity to revenue (partial), median of low-cost airlines, peer year 2025 (3 companies) | 34.3% | company in line with peer median |
-| cash_liquidity_to_revenue.peer_rank@2025 | Cash liquidity to revenue (partial), rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| advance_ticket_cover.peer_median@2025 | Advance ticket cover, median of low-cost airlines, peer year 2025 (3 companies) | 55.1% | company above peer median, worse |
-| advance_ticket_cover.peer_rank@2025 | Advance ticket cover, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
-| fuel_share_of_costs.peer_median@2025 | Fuel share of costs, median of low-cost airlines, peer year 2025 (3 companies) | 28.2% | company above peer median |
-| load_factor.peer_median@2025 | Load factor, median of low-cost airlines, peer year 2025 (2 companies) | 90.3% | company in line with peer median |
-| load_factor.peer_rank@2025 | Load factor, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 2 | best in the group |
+| ebitda_margin.peer_median@FY2026 | EBITDA margin, median of low-cost airlines, peer year 2025 (3 companies) | 21.2% | company above peer median, better |
+| ebitda_margin.peer_rank@FY2026 | EBITDA margin, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
+| net_leverage.peer_median@FY2026 | Net leverage, median of low-cost airlines, peer year 2025 (3 companies) | 1.19x | company above peer median, worse |
+| net_leverage.peer_rank@FY2026 | Net leverage, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
+| gross_leverage.peer_median@FY2026 | Gross leverage, median of low-cost airlines, peer year 2025 (3 companies) | 2.46x | company above peer median, worse |
+| gross_leverage.peer_rank@FY2026 | Gross leverage, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
+| interest_coverage.peer_median@FY2026 | Interest coverage, median of low-cost airlines, peer year 2025 (3 companies) | 6.27x | company below peer median, worse |
+| interest_coverage.peer_rank@FY2026 | Interest coverage, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
+| ffo_to_debt.peer_median@FY2026 | FFO to debt, median of low-cost airlines, peer year 2025 (3 companies) | 35.4% | company below peer median, worse |
+| ffo_to_debt.peer_rank@FY2026 | FFO to debt, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
+| fcf_to_debt.peer_median@FY2026 | FCF to debt, median of low-cost airlines, peer year 2025 (3 companies) | 14.6% | company below peer median, worse |
+| fcf_to_debt.peer_rank@FY2026 | FCF to debt, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
+| capex_intensity.peer_median@FY2026 | Capex intensity, median of low-cost airlines, peer year 2025 (3 companies) | 9.9% | company below peer median |
+| cash_liquidity_to_revenue.peer_median@FY2026 | Cash liquidity to revenue (partial), median of low-cost airlines, peer year 2025 (3 companies) | 34.3% | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| cash_liquidity_to_revenue.peer_rank@FY2026 | Cash liquidity to revenue (partial), rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
+| advance_ticket_cover.peer_median@FY2026 | Advance ticket cover, median of low-cost airlines, peer year 2025 (3 companies) | 55.1% | company above peer median, worse |
+| advance_ticket_cover.peer_rank@FY2026 | Advance ticket cover, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
+| fuel_share_of_costs.peer_median@FY2026 | Fuel share of costs, median of low-cost airlines, peer year 2025 (3 companies) | 28.2% | company above peer median |
+| load_factor.peer_median@FY2026 | Load factor, median of low-cost airlines, peer year 2025 (2 companies) | 90.3% | company in line with peer median |
+| load_factor.peer_rank@FY2026 | Load factor, rank in low-cost airlines, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 2 | best in the group |
 
 ## Other figures
 
@@ -145,17 +145,33 @@ Company type: airline. Reporting currency: EUR. Peer group: Low-cost airlines (e
 | profit@FY2025 | Profit for the year, FY2025 | EUR 214m |  |
 | profit.change@FY2026 | change in Profit for the year, FY2025 to FY2026 | 99.4% | down, worse vs prior year; printed without a sign: say the direction in words |
 
+## Events of the year (read from the report; the quote was checked by code)
+
+Cite an event by listing its id in `facts` (no blank, no claims). It has no figure:
+write no number about it, and no direction word unless a figure of the sentence carries the claim.
+
+| id | event | what happened | quote from the report |
+| --- | --- | --- | --- |
+| event:fleet_and_engines | GTF engine groundings persist through the year | The Pratt & Whitney GTF engine issue continued to ground aircraft, affecting capacity, utilisation and cost performance, though fewer aircraft were grounded on average than in the prior year. | (page 4): "As in the previous year, the Pratt & Whitney Geared Turbofan (GTF) engine issue was a defining challenge for the Company in F26, although we saw improving trends with fewer aircraft grounded on average this year and slightly better turnaround times on our engines. With that said, fleet groundings have continued to affect capacity, utilisation and cost performance, creating structural headwinds largely beyond management’s direct control." |
+| event:capacity_and_network | Exit of Abu Dhabi joint venture and Vienna base closure | The company exited its Abu Dhabi joint venture, began closing its Vienna base and reallocated capacity towards Central and Eastern Europe and other core markets. | (page 6): "We exited our Abu Dhabi joint venture, initiated the closure of our Vienna base, and accelerated the reallocation of capacity towards Central and Eastern Europe (CEE) and other core markets where we see stronger structural advantages." |
+| event:fleet_and_engines-2 | Airbus order book renegotiated and deliveries deferred | Wizz Air renegotiated its remaining Airbus order book, deferring deliveries and taking fewer aircraft than usual to support lifting the grounded fleet. | (page 23): "Wizz Air has re-negotiated the remaining order book of 254 aircraft with Airbus, deferring deliveries from 2030 to 2032, reshaping the long-term fleet plan, with the renegotiation finalised in November 2025. Due to the Pratt & Whitney GTF engine inspections in F28, Wizz Air negotiated to take 20-25% fewer deliveries than usual to support the main strategy of lifting the grounded fleet and to maintain balanced operational fleet growth following the initial plans of annual 13-15%." |
+| event:funding_and_rating | Eurobond repaid and credit ratings updated | The company repaid its eurobond out of free cash, and Fitch and Moody's issued credit ratings with stable and negative outlooks respectively. | (page 96): "None of these borrowings contain any financial covenants and the €500.0 million, 1.00 per cent Eurobond was repaid in January 2026 out of free cash. Two ratings agencies, Fitch and Moody’s, issued updates during the fourth quarter with Fitch updating Wizz Air’s credit rating to BB with a stable outlook, while Moody’s issued a Ba2 rating with a negative outlook." |
+| event:funding_and_rating-2 | Euro Medium Term Note programme renewed | The company renewed its Euro Medium Term Note programme for possible future euro bond issuance. | (page 64): "The Company renewed the Euro Medium Term Note Program with the total amount of EUR 3bn, for the possibility of future EUR Bond issuance in December 2025." |
+| event:fleet_and_engines-3 | GTF engines selected for new Airbus aircraft | Wizz Air selected Pratt & Whitney GTF engines to power new Airbus A321neo aircraft, continuing a unified fleet. | (page 23): "To deepen the relationship with its major supplier, Wizz Air has selected Pratt & Whitney’s GTF engines to power 177 new Airbus A321neo aircraft, continuing to benefit from operating a unified fleet." |
+
 ## Not available: do not discuss
 
 These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
 
-- capex_intensity.peer_rank@2025: not ranked: neither higher nor lower is better
+- capex_intensity.peer_rank@FY2026: not ranked: neither higher nor lower is better
 - liquidity@FY2026: Undrawn committed credit facilities not available for FY2026
 - liquidity@FY2025: Undrawn committed credit facilities not available for FY2025
 - liquidity_to_revenue@FY2026: Liquidity: Undrawn committed credit facilities not available for FY2026
 - liquidity_to_revenue@FY2025: Liquidity: Undrawn committed credit facilities not available for FY2025
-- fuel_share_of_costs.peer_rank@2025: not ranked: neither higher nor lower is better
+- fuel_share_of_costs.peer_rank@FY2026: not ranked: neither higher nor lower is better
 - fuel_hedge_ratio@FY2026: Fuel hedge ratio not available for FY2026
 - fuel_hedge_ratio@FY2025: Fuel hedge ratio not available for FY2025
 - undrawn_facilities@FY2026: no figure for this year
 - undrawn_facilities@FY2025: no figure for this year
+- net_cash@FY2026: the company has net debt, not net cash
+- net_cash@FY2025: the company has net debt, not net cash

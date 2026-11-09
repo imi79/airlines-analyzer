@@ -102,13 +102,16 @@ def test_retry_asks_only_for_the_rejected_section(make_llm):
 
 
 def test_flagged_after_two_retries(make_llm):
-    bad = {"credit_metrics": with_bad("credit_metrics")["credit_metrics"]}
-    server = Server([with_bad("credit_metrics"), bad, bad])
+    first = with_bad("credit_metrics")
+    first["credit_metrics"][1] = first["credit_metrics"][2] = BAD  # 3 of 4 bad: cannot stand
+    bad = {"credit_metrics": first["credit_metrics"]}
+    server = Server([first, bad, bad])
     outcome = draft_commentary(make_llm(server), SHEET)
     assert len(outcome.attempts) == 1 + MAX_RETRIES
     assert outcome.status["credit_metrics"] == "needs_manual_editing"
     assert outcome.status["snapshot"] == "passed"
-    assert not outcome.passed and outcome.numbers_outside_blanks == 1
+    assert not outcome.passed and outcome.numbers_outside_blanks == 3
+    assert outcome.sentences_removed == 0
 
 
 def test_records_replay_offline(make_llm):
@@ -181,3 +184,54 @@ def test_review_scores_count_only_for_the_draft_scored(make_llm, tmp_path):
     wrong = {"scored_by": "test", "drafts": {SHEET.key: entry | {"draft": "000000000000"}}}
     assert score_sheet.summary([outcome], right) == (1, 3.0)
     assert score_sheet.summary([outcome], wrong) == (0, None)
+
+
+def test_retry_shows_the_accepted_sections_for_the_repeat_rule():
+    draft, _ = parse_sections(with_bad("snapshot"))
+    accepted = {"credit_metrics": parse_sections(CORRECT)[0].sections["credit_metrics"]}
+    text = retry_message(SHEET, ["snapshot"], NARRATIVE, draft, [], accepted)
+    assert "already accepted" in text and "{{gross_leverage@FY2025}}" in text
+
+
+def test_a_style_rewrite_that_breaks_a_rule_keeps_the_safe_version(make_llm):
+    repeated = json.loads(json.dumps(CORRECT))
+    repeated["credit_metrics"][3] = {
+        "text": "Cash liquidity to revenue stood at {{cash_liquidity_to_revenue@FY2025}}.",
+        "facts": [{"id": "cash_liquidity_to_revenue@FY2025"}],
+    }
+    broken = {"liquidity_funding": [BAD, *CORRECT["liquidity_funding"][1:]]}
+    server = Server([repeated, broken, broken])
+    outcome = draft_commentary(make_llm(server), SHEET)
+    assert outcome.passed and outcome.first_try_passed
+    assert len(server.requests) == 2  # the third request repeats the second: replayed
+    kept = outcome.sections["liquidity_funding"]
+    assert kept[0].text == " ".join(CORRECT["liquidity_funding"][0]["text"].split())
+    assert [e.rule for e in outcome.errors["liquidity_funding"]] == ["style"]
+
+
+def test_a_retry_cannot_break_a_sentence_that_passed(make_llm):
+    first = with_bad("credit_metrics")  # sentence 1 breaks rule 1, the others pass
+    retry = json.loads(json.dumps(CORRECT["credit_metrics"]))
+    retry[1] = BAD  # sentence 1 fixed, sentence 2 broken
+    server = Server([first, {"credit_metrics": retry}])
+    outcome = draft_commentary(make_llm(server), SHEET)
+    assert outcome.status["credit_metrics"] == "passed"
+    good = parse_sections(CORRECT)[0].sections["credit_metrics"]
+    assert outcome.sections["credit_metrics"] == good
+
+
+def test_a_sentence_still_failing_after_retries_is_removed_if_the_section_stands(make_llm):
+    bad = with_bad("credit_metrics")  # 4 sentences, minimum 2: the bad one can go
+    still = {"credit_metrics": bad["credit_metrics"]}
+    outcome = draft_commentary(make_llm(Server([bad, still, still])), SHEET)
+    assert outcome.passed and outcome.sentences_removed == 1
+    assert len(outcome.sections["credit_metrics"]) == 3
+    assert outcome.removed["credit_metrics"][0][0] == BAD["text"]
+
+
+def test_the_snapshot_cannot_lose_a_sentence(make_llm):
+    bad = with_bad("snapshot")  # exactly three sentences required
+    still = {"snapshot": bad["snapshot"]}
+    outcome = draft_commentary(make_llm(Server([bad, still, still])), SHEET)
+    assert outcome.status["snapshot"] == "needs_manual_editing"
+    assert not outcome.passed and outcome.sentences_removed == 0

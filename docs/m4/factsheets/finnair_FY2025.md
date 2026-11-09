@@ -102,24 +102,24 @@ Company type: airline. Reporting currency: EUR. Peer group: Network airlines (af
 
 | id | what it is | prints as | computed by code |
 | --- | --- | --- | --- |
-| ebitda_margin.peer_median@2025 | EBITDA margin, median of network airlines, peer year 2025 (3 companies) | 15.3% | company below peer median, worse |
-| ebitda_margin.peer_rank@2025 | EBITDA margin, rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| net_leverage.peer_median@2025 | Net leverage, median of network airlines, peer year 2025 (3 companies) | 1.71x | company in line with peer median |
-| net_leverage.peer_rank@2025 | Net leverage, rank in network airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
-| gross_leverage.peer_median@2025 | Gross leverage, median of network airlines, peer year 2025 (3 companies) | 3.07x | company above peer median, worse |
-| gross_leverage.peer_rank@2025 | Gross leverage, rank in network airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
-| interest_coverage.peer_median@2025 | Interest coverage, median of network airlines, peer year 2025 (3 companies) | 8.06x | company below peer median, worse |
-| interest_coverage.peer_rank@2025 | Interest coverage, rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| ffo_to_debt.peer_median@2025 | FFO to debt, median of network airlines, peer year 2025 (3 companies) | 27.4% | company below peer median, worse |
-| ffo_to_debt.peer_rank@2025 | FFO to debt, rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| fcf_to_debt.peer_median@2025 | FCF to debt, median of network airlines, peer year 2025 (3 companies) | 10.8% | company in line with peer median |
-| fcf_to_debt.peer_rank@2025 | FCF to debt, rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| capex_intensity.peer_median@2025 | Capex intensity, median of network airlines, peer year 2025 (3 companies) | 10.4% | company below peer median |
-| cash_liquidity_to_revenue.peer_median@2025 | Cash liquidity to revenue (partial), median of network airlines, peer year 2025 (3 companies) | 25.0% | company above peer median, better |
-| cash_liquidity_to_revenue.peer_rank@2025 | Cash liquidity to revenue (partial), rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
-| advance_ticket_cover.peer_median@2025 | Advance ticket cover, median of network airlines, peer year 2025 (3 companies) | 67.4% | company in line with peer median |
-| advance_ticket_cover.peer_rank@2025 | Advance ticket cover, rank in network airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
-| fuel_share_of_costs.peer_median@2025 | Fuel share of costs, median of network airlines, peer year 2025 (2 companies) | 27.0% | company above peer median |
+| ebitda_margin.peer_median@FY2025 | EBITDA margin, median of network airlines, peer year 2025 (3 companies) | 15.3% | company below peer median, worse |
+| ebitda_margin.peer_rank@FY2025 | EBITDA margin, rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
+| net_leverage.peer_median@FY2025 | Net leverage, median of network airlines, peer year 2025 (3 companies) | 1.71x | company in line with peer median |
+| net_leverage.peer_rank@FY2025 | Net leverage, rank in network airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
+| gross_leverage.peer_median@FY2025 | Gross leverage, median of network airlines, peer year 2025 (3 companies) | 3.07x | company above peer median, worse |
+| gross_leverage.peer_rank@FY2025 | Gross leverage, rank in network airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
+| interest_coverage.peer_median@FY2025 | Interest coverage, median of network airlines, peer year 2025 (3 companies) | 8.06x | company below peer median, worse |
+| interest_coverage.peer_rank@FY2025 | Interest coverage, rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
+| ffo_to_debt.peer_median@FY2025 | FFO to debt, median of network airlines, peer year 2025 (3 companies) | 27.4% | company below peer median, worse |
+| ffo_to_debt.peer_rank@FY2025 | FFO to debt, rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
+| fcf_to_debt.peer_median@FY2025 | FCF to debt, median of network airlines, peer year 2025 (3 companies) | 10.8% | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| fcf_to_debt.peer_rank@FY2025 | FCF to debt, rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
+| capex_intensity.peer_median@FY2025 | Capex intensity, median of network airlines, peer year 2025 (3 companies) | 10.4% | company below peer median |
+| cash_liquidity_to_revenue.peer_median@FY2025 | Cash liquidity to revenue (partial), median of network airlines, peer year 2025 (3 companies) | 25.0% | company above peer median, better |
+| cash_liquidity_to_revenue.peer_rank@FY2025 | Cash liquidity to revenue (partial), rank in network airlines, peer year 2025 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
+| advance_ticket_cover.peer_median@FY2025 | Advance ticket cover, median of network airlines, peer year 2025 (3 companies) | 67.4% | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| advance_ticket_cover.peer_rank@FY2025 | Advance ticket cover, rank in network airlines, peer year 2025 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
+| fuel_share_of_costs.peer_median@FY2025 | Fuel share of costs, median of network airlines, peer year 2025 (2 companies) | 27.0% | company above peer median |
 
 ## Other figures
 
@@ -129,14 +129,28 @@ Company type: airline. Reporting currency: EUR. Peer group: Network airlines (af
 | profit@FY2024 | Profit for the year, FY2024 | EUR 37.0m |  |
 | profit.change@FY2025 | change in Profit for the year, FY2024 to FY2025 | 50.3% | down, worse vs prior year; printed without a sign: say the direction in words |
 
+## Events of the year (read from the report; the quote was checked by code)
+
+Cite an event by listing its id in `facts` (no blank, no claims). It has no figure:
+write no number about it, and no direction word unless a figure of the sentence carries the claim.
+
+| id | event | what happened | quote from the report |
+| --- | --- | --- | --- |
+| event:labour | Prolonged industrial action hit comparable operating result | Industrial action in the first half of the year had an immediate negative impact on the comparable operating result, and increased environmental regulation costs as well as higher navigation and landing charges also weighed on the result. | (page 3): "The prolonged industrial action during the first half of the year had an immediate negative impact of approximately 68 million euros on the comparable operating result. In addition, increased costs related to environmental regulation as well as higher navigation and landing charges weighed on the result." |
+| event:funding_and_rating | Bond issued to strengthen financial position | Finnair issued a bond towards the end of the year to further strengthen its financial position and support execution of strategic investments. | (page 4): "To further strengthen our financial position, we issued a 300million-euro bond towards the end of the year, supporting the execution of strategic investments in the coming years." |
+| event:fleet_and_engines | Purchase of leased A321 aircraft | During the financial year Finnair purchased leased A321 aircraft, and all aircraft were in operative use at the balance sheet date. | (page 163): "During the financial year Finnair purchased four leased A321 aircraft. All aircraft were in operative use as at the balance sheet date." |
+| event:costs | Higher environmental regulation and navigation costs | Costs related to environmental regulation increased significantly in 2025, with increased use of sustainable aviation fuel and changes to the EU Emissions Trading System weighing on the result. | (page 4): "In 2025, costs related to environmental regulation increased significantly, and the increased use of sustainable aviation fuel as well as changes to the EU Emissions Trading System weighed on the result." |
+| event:capital_returns | Board proposes return of capital to shareholders | The Board of Directors proposes a return of capital per share to the Annual General Meeting, supported by the company's financial position. | (page 4): "Our financial position also enables us to reward our shareholders, and the Board of Directors proposes a return of capital of 0.09 euros per share to the Annual General Meeting." |
+| event:other | Pension index adjustments reinstated | Index adjustments were reinstated for the pilots in 2024 and for the cabin crew and other groups in 2025, following a decision of the Helsinki Administrative Court. | (page 12): "decision of the Helsinki Administrative Court. Index adjustments were reinstated for the pilots in 2024 and for the cabin crew and other groups in 2025." |
+
 ## Not available: do not discuss
 
 These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
 
-- capex_intensity.peer_rank@2025: not ranked: neither higher nor lower is better
-- liquidity_to_revenue.peer_median@2025: the peer median would use a figure not verified yet (afkl)
-- liquidity_to_revenue.peer_rank@2025: the peer median would use a figure not verified yet (afkl)
-- fuel_share_of_costs.peer_rank@2025: not ranked: neither higher nor lower is better
+- capex_intensity.peer_rank@FY2025: not ranked: neither higher nor lower is better
+- liquidity_to_revenue.peer_median@FY2025: the peer median would use a figure not verified yet (afkl)
+- liquidity_to_revenue.peer_rank@FY2025: the peer median would use a figure not verified yet (afkl)
+- fuel_share_of_costs.peer_rank@FY2025: not ranked: neither higher nor lower is better
 - ask@FY2025: not verified yet: waiting for Imane's review
 - ask@FY2024: not verified yet: waiting for Imane's review
 - rpk@FY2025: not verified yet: waiting for Imane's review
@@ -154,3 +168,5 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - fleet_age@FY2024: not verified yet: waiting for Imane's review
 - fuel_hedge_ratio@FY2025: Fuel hedge ratio not available for FY2025
 - fuel_hedge_ratio@FY2024: not verified yet: waiting for Imane's review
+- net_cash@FY2025: the company has net debt, not net cash
+- net_cash@FY2024: the company has net debt, not net cash

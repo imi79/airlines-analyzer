@@ -26,6 +26,7 @@
   "liquidity": true,
   "liquidity_to_revenue": true,
   "load_factor": true,
+  "net_cash": true,
   "net_debt": null,
   "net_leverage": false,
   "operating_profit": true,
@@ -57,14 +58,14 @@
    "value": "0.010258682215",
    "vs_peers": null
   },
-  "advance_ticket_cover.peer_median@2024": {
+  "advance_ticket_cover.peer_median@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "advance_ticket_cover.peer_median@2024",
+   "id": "advance_ticket_cover.peer_median@FY2024",
    "kind": "peer_median",
    "label": "Advance ticket cover, median of low-cost airlines, peer year 2024 (3 companies)",
    "metric": "advance_ticket_cover",
-   "note": "",
+   "note": "the company is the median of the group: say it sits in the middle of the group, do not compare it with the median",
    "peer_assessment": "in_line",
    "period": "peer year 2024",
    "rank": null,
@@ -74,10 +75,10 @@
    "value": "0.501878069922",
    "vs_peers": "in_line"
   },
-  "advance_ticket_cover.peer_rank@2024": {
+  "advance_ticket_cover.peer_rank@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "advance_ticket_cover.peer_rank@2024",
+   "id": "advance_ticket_cover.peer_rank@FY2024",
    "kind": "peer_rank",
    "label": "Advance ticket cover, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the lowest)",
    "metric": "advance_ticket_cover",
@@ -193,10 +194,10 @@
    "value": "0.007518329439",
    "vs_peers": null
   },
-  "capex_intensity.peer_median@2024": {
+  "capex_intensity.peer_median@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "capex_intensity.peer_median@2024",
+   "id": "capex_intensity.peer_median@FY2024",
    "kind": "peer_median",
    "label": "Capex intensity, median of low-cost airlines, peer year 2024 (3 companies)",
    "metric": "capex_intensity",
@@ -363,10 +364,10 @@
    "value": "0.013817419865",
    "vs_peers": null
   },
-  "cash_liquidity_to_revenue.peer_median@2024": {
+  "cash_liquidity_to_revenue.peer_median@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "cash_liquidity_to_revenue.peer_median@2024",
+   "id": "cash_liquidity_to_revenue.peer_median@FY2024",
    "kind": "peer_median",
    "label": "Cash liquidity to revenue (partial), median of low-cost airlines, peer year 2024 (3 companies)",
    "metric": "cash_liquidity_to_revenue",
@@ -380,10 +381,10 @@
    "value": "0.329561849799",
    "vs_peers": "above"
   },
-  "cash_liquidity_to_revenue.peer_rank@2024": {
+  "cash_liquidity_to_revenue.peer_rank@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "cash_liquidity_to_revenue.peer_rank@2024",
+   "id": "cash_liquidity_to_revenue.peer_rank@FY2024",
    "kind": "peer_rank",
    "label": "Cash liquidity to revenue (partial), rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest)",
    "metric": "cash_liquidity_to_revenue",
@@ -652,10 +653,10 @@
    "value": "0.008183323485",
    "vs_peers": null
   },
-  "ebitda_margin.peer_median@2024": {
+  "ebitda_margin.peer_median@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "ebitda_margin.peer_median@2024",
+   "id": "ebitda_margin.peer_median@FY2024",
    "kind": "peer_median",
    "label": "EBITDA margin, median of low-cost airlines, peer year 2024 (3 companies)",
    "metric": "ebitda_margin",
@@ -669,10 +670,10 @@
    "value": "0.189144038282",
    "vs_peers": "below"
   },
-  "ebitda_margin.peer_rank@2024": {
+  "ebitda_margin.peer_rank@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "ebitda_margin.peer_rank@2024",
+   "id": "ebitda_margin.peer_rank@FY2024",
    "kind": "peer_rank",
    "label": "EBITDA margin, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest)",
    "metric": "ebitda_margin",
@@ -719,6 +720,91 @@
    "unit": "pct",
    "value": "0.145987753787",
    "vs_peers": "below"
+  },
+  "event:acquisitions_and_disposals": {
+   "assessment": null,
+   "direction": null,
+   "id": "event:acquisitions_and_disposals",
+   "kind": "event",
+   "label": "Acquisition of SR Technics Malta maintenance facility",
+   "metric": "event",
+   "note": "easyJet completed the acquisition of the SR Technics Malta maintenance facility and welcomed its skilled new colleagues. Quote (page 61): \"In May, we finalised the acquisition of the SR Technics Malta maintenance facility and welcomed 400 highly skilled and valued new colleagues.\"",
+   "peer_assessment": null,
+   "period": "FY2024",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "",
+   "unit": "event",
+   "value": "0",
+   "vs_peers": null
+  },
+  "event:costs": {
+   "assessment": null,
+   "direction": null,
+   "id": "event:costs",
+   "kind": "event",
+   "label": "Investment in spares to limit aircraft grounding",
+   "metric": "event",
+   "note": "easyJet invested significantly in spares because supply-chain delays made just-in-time spares unviable. Quote (page 21): \"Significant investment in spares made during the year, continuing a trend started in 2023. Global supply-chain issues with spares means that it is no longer viable to run a just-in-time spares process due to delivery delays, and so we have made this investment to minimise the period of time when aircraft are grounded\"",
+   "peer_assessment": null,
+   "period": "FY2024",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "",
+   "unit": "event",
+   "value": "0",
+   "vs_peers": null
+  },
+  "event:fleet_and_engines": {
+   "assessment": null,
+   "direction": null,
+   "id": "event:fleet_and_engines",
+   "kind": "event",
+   "label": "Fleet renewal with NEO aircraft deliveries",
+   "metric": "event",
+   "note": "NEO aircraft joined the fleet during the year, with a large number still on order. Quote (page 41): \"16 NEO aircraft joined the fleet, with a further 299 on order.\"",
+   "peer_assessment": null,
+   "period": "FY2024",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "",
+   "unit": "event",
+   "value": "0",
+   "vs_peers": null
+  },
+  "event:funding_and_rating": {
+   "assessment": null,
+   "direction": null,
+   "id": "event:funding_and_rating",
+   "kind": "event",
+   "label": "Eurobond issued under EMTN programme",
+   "metric": "event",
+   "note": "easyJet issued a euro-denominated guaranteed bond under its EMTN programme, maturing in 2031. Quote (page 148): \"March 2024: Eurobonds consisting of €850 million guaranteed Notes paying 3.750% coupon and maturing in 2031.\"",
+   "peer_assessment": null,
+   "period": "FY2024",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "",
+   "unit": "event",
+   "value": "0",
+   "vs_peers": null
+  },
+  "event:funding_and_rating-2": {
+   "assessment": null,
+   "direction": null,
+   "id": "event:funding_and_rating-2",
+   "kind": "event",
+   "label": "Credit rating upgrade noted by committee",
+   "metric": "event",
+   "note": "The audit committee reviewed easyJet's credit rating position and noted an upgrade of rating. Quote (page 119): \"The Committee reviewed easyJet’s credit rating position and noted the upgrade of rating from\"",
+   "peer_assessment": null,
+   "period": "FY2024",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "",
+   "unit": "event",
+   "value": "0",
+   "vs_peers": null
   },
   "fcf.change@FY2024": {
    "assessment": "worse",
@@ -788,14 +874,14 @@
    "value": "0.112937654342",
    "vs_peers": null
   },
-  "fcf_to_debt.peer_median@2024": {
+  "fcf_to_debt.peer_median@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "fcf_to_debt.peer_median@2024",
+   "id": "fcf_to_debt.peer_median@FY2024",
    "kind": "peer_median",
    "label": "FCF to debt, median of low-cost airlines, peer year 2024 (3 companies)",
    "metric": "fcf_to_debt",
-   "note": "",
+   "note": "the company is the median of the group: say it sits in the middle of the group, do not compare it with the median",
    "peer_assessment": "in_line",
    "period": "peer year 2024",
    "rank": null,
@@ -805,10 +891,10 @@
    "value": "0.163414634146",
    "vs_peers": "in_line"
   },
-  "fcf_to_debt.peer_rank@2024": {
+  "fcf_to_debt.peer_rank@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "fcf_to_debt.peer_rank@2024",
+   "id": "fcf_to_debt.peer_rank@FY2024",
    "kind": "peer_rank",
    "label": "FCF to debt, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest)",
    "metric": "fcf_to_debt",
@@ -924,10 +1010,10 @@
    "value": "0.051000473597",
    "vs_peers": null
   },
-  "ffo_to_debt.peer_median@2024": {
+  "ffo_to_debt.peer_median@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "ffo_to_debt.peer_median@2024",
+   "id": "ffo_to_debt.peer_median@FY2024",
    "kind": "peer_median",
    "label": "FFO to debt, median of low-cost airlines, peer year 2024 (3 companies)",
    "metric": "ffo_to_debt",
@@ -941,10 +1027,10 @@
    "value": "0.355641248912",
    "vs_peers": "above"
   },
-  "ffo_to_debt.peer_rank@2024": {
+  "ffo_to_debt.peer_rank@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "ffo_to_debt.peer_rank@2024",
+   "id": "ffo_to_debt.peer_rank@FY2024",
    "kind": "peer_rank",
    "label": "FFO to debt, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest)",
    "metric": "ffo_to_debt",
@@ -1111,10 +1197,10 @@
    "value": "0.008479017238",
    "vs_peers": null
   },
-  "fuel_share_of_costs.peer_median@2024": {
+  "fuel_share_of_costs.peer_median@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "fuel_share_of_costs.peer_median@2024",
+   "id": "fuel_share_of_costs.peer_median@FY2024",
    "kind": "peer_median",
    "label": "Fuel share of costs, median of low-cost airlines, peer year 2024 (3 companies)",
    "metric": "fuel_share_of_costs",
@@ -1179,14 +1265,14 @@
    "value": "0.147739496051",
    "vs_peers": null
   },
-  "gross_leverage.peer_median@2024": {
+  "gross_leverage.peer_median@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "gross_leverage.peer_median@2024",
+   "id": "gross_leverage.peer_median@FY2024",
    "kind": "peer_median",
    "label": "Gross leverage, median of low-cost airlines, peer year 2024 (3 companies)",
    "metric": "gross_leverage",
-   "note": "",
+   "note": "the company is the median of the group: say it sits in the middle of the group, do not compare it with the median",
    "peer_assessment": "in_line",
    "period": "peer year 2024",
    "rank": null,
@@ -1196,10 +1282,10 @@
    "value": "2.413539367182",
    "vs_peers": "in_line"
   },
-  "gross_leverage.peer_rank@2024": {
+  "gross_leverage.peer_rank@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "gross_leverage.peer_rank@2024",
+   "id": "gross_leverage.peer_rank@FY2024",
    "kind": "peer_rank",
    "label": "Gross leverage, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the lowest)",
    "metric": "gross_leverage",
@@ -1264,10 +1350,10 @@
    "value": "4.039898989899",
    "vs_peers": null
   },
-  "interest_coverage.peer_median@2024": {
+  "interest_coverage.peer_median@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "interest_coverage.peer_median@2024",
+   "id": "interest_coverage.peer_median@FY2024",
    "kind": "peer_median",
    "label": "Interest coverage, median of low-cost airlines, peer year 2024 (3 companies)",
    "metric": "interest_coverage",
@@ -1281,10 +1367,10 @@
    "value": "5.885462555066",
    "vs_peers": "above"
   },
-  "interest_coverage.peer_rank@2024": {
+  "interest_coverage.peer_rank@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "interest_coverage.peer_rank@2024",
+   "id": "interest_coverage.peer_rank@FY2024",
    "kind": "peer_rank",
    "label": "Interest coverage, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest)",
    "metric": "interest_coverage",
@@ -1417,38 +1503,55 @@
    "value": "0.893000000000",
    "vs_peers": null
   },
-  "net_debt@FY2023": {
+  "net_cash.change@FY2024": {
+   "assessment": "better",
+   "direction": "up",
+   "id": "net_cash.change@FY2024",
+   "kind": "change",
+   "label": "change in Net cash (cash and cash-like investments above total debt), FY2023 to FY2024",
+   "metric": "net_cash",
+   "note": "printed without a sign: say the direction in words",
+   "peer_assessment": null,
+   "period": "FY2023 to FY2024",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "341.5%",
+   "unit": "relative",
+   "value": "3.414634146341463414634146341",
+   "vs_peers": null
+  },
+  "net_cash@FY2023": {
    "assessment": null,
    "direction": null,
-   "id": "net_debt@FY2023",
+   "id": "net_cash@FY2023",
    "kind": "value",
-   "label": "Net debt, FY2023",
-   "metric": "net_debt",
+   "label": "Net cash (cash and cash-like investments above total debt), FY2023",
+   "metric": "net_cash",
    "note": "",
    "peer_assessment": null,
    "period": "FY2023",
    "rank": null,
    "rank_of": null,
-   "rendered": "GBP -41.0m",
+   "rendered": "GBP 41.0m",
    "unit": "amount",
-   "value": "-41000000.000000000000",
+   "value": "41000000.000000000000",
    "vs_peers": null
   },
-  "net_debt@FY2024": {
-   "assessment": "neutral",
-   "direction": "down",
-   "id": "net_debt@FY2024",
+  "net_cash@FY2024": {
+   "assessment": "better",
+   "direction": "up",
+   "id": "net_cash@FY2024",
    "kind": "value",
-   "label": "Net debt, FY2024",
-   "metric": "net_debt",
+   "label": "Net cash (cash and cash-like investments above total debt), FY2024",
+   "metric": "net_cash",
    "note": "",
    "peer_assessment": null,
    "period": "FY2024",
    "rank": null,
    "rank_of": null,
-   "rendered": "GBP -181m",
+   "rendered": "GBP 181m",
    "unit": "amount",
-   "value": "-181000000.000000000000",
+   "value": "181000000.000000000000",
    "vs_peers": null
   },
   "net_leverage.change@FY2024": {
@@ -1468,10 +1571,10 @@
    "value": "0.096774088146",
    "vs_peers": null
   },
-  "net_leverage.peer_median@2024": {
+  "net_leverage.peer_median@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "net_leverage.peer_median@2024",
+   "id": "net_leverage.peer_median@FY2024",
    "kind": "peer_median",
    "label": "Net leverage, median of low-cost airlines, peer year 2024 (3 companies)",
    "metric": "net_leverage",
@@ -1485,10 +1588,10 @@
    "value": "0.778143712575",
    "vs_peers": "below"
   },
-  "net_leverage.peer_rank@2024": {
+  "net_leverage.peer_rank@FY2024": {
    "assessment": null,
    "direction": null,
-   "id": "net_leverage.peer_rank@2024",
+   "id": "net_leverage.peer_rank@FY2024",
    "kind": "peer_rank",
    "label": "Net leverage, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the lowest)",
    "metric": "net_leverage",
@@ -1987,6 +2090,7 @@
   "liquidity": "Liquidity",
   "liquidity_to_revenue": "Liquidity to revenue",
   "load_factor": "Load factor",
+  "net_cash": "Net cash (cash and cash-like investments above total debt)",
   "net_debt": "Net debt",
   "net_leverage": "Net leverage",
   "operating_profit": "Operating profit",
@@ -2010,22 +2114,24 @@
  "period_label": "FY2024 (Oct 2023 to Sep 2024)",
  "type": "airline",
  "unavailable": {
-  "capex_intensity.peer_rank@2024": "not ranked: neither higher nor lower is better",
+  "capex_intensity.peer_rank@FY2024": "not ranked: neither higher nor lower is better",
   "fuel_hedge_ratio.change@FY2024": "needs both years verified",
-  "fuel_hedge_ratio.peer_median@2024": "the company's own figure is not available",
-  "fuel_hedge_ratio.peer_rank@2024": "the company's own figure is not available",
+  "fuel_hedge_ratio.peer_median@FY2024": "the company's own figure is not available",
+  "fuel_hedge_ratio.peer_rank@FY2024": "the company's own figure is not available",
   "fuel_hedge_ratio@FY2023": "Fuel hedge ratio not available for FY2023",
   "fuel_hedge_ratio@FY2024": "Fuel hedge ratio not available for FY2024",
-  "fuel_share_of_costs.peer_rank@2024": "not ranked: neither higher nor lower is better",
+  "fuel_share_of_costs.peer_rank@FY2024": "not ranked: neither higher nor lower is better",
   "liquidity.change@FY2024": "needs both years verified",
   "liquidity@FY2024": "not verified yet: waiting for Imane's review",
   "liquidity_to_revenue.change@FY2024": "needs both years verified",
-  "liquidity_to_revenue.peer_median@2024": "the company's own figure is not available",
-  "liquidity_to_revenue.peer_rank@2024": "the company's own figure is not available",
+  "liquidity_to_revenue.peer_median@FY2024": "the company's own figure is not available",
+  "liquidity_to_revenue.peer_rank@FY2024": "the company's own figure is not available",
   "liquidity_to_revenue@FY2024": "not verified yet: waiting for Imane's review",
-  "load_factor.peer_median@2024": "the peer median would use a figure not verified yet (norwegian)",
-  "load_factor.peer_rank@2024": "the peer median would use a figure not verified yet (norwegian)",
-  "net_debt.change@FY2024": "a percentage change is not meaningful (a year is negative or zero); the direction is still down, on net_debt@FY2024",
+  "load_factor.peer_median@FY2024": "the peer median would use a figure not verified yet (norwegian)",
+  "load_factor.peer_rank@FY2024": "the peer median would use a figure not verified yet (norwegian)",
+  "net_debt.change@FY2024": "needs both years verified",
+  "net_debt@FY2023": "below zero: the company has net cash, use net_cash",
+  "net_debt@FY2024": "below zero: the company has net cash, use net_cash",
   "undrawn_facilities.change@FY2024": "needs both years verified",
   "undrawn_facilities@FY2024": "not verified yet: waiting for Imane's review"
  }

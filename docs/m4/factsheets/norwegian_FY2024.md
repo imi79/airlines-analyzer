@@ -98,24 +98,24 @@ Company type: airline. Reporting currency: NOK. Peer group: Low-cost airlines (e
 
 | id | what it is | prints as | computed by code |
 | --- | --- | --- | --- |
-| ebitda_margin.peer_median@2024 | EBITDA margin, median of low-cost airlines, peer year 2024 (3 companies) | 18.9% | company in line with peer median |
-| ebitda_margin.peer_rank@2024 | EBITDA margin, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| net_leverage.peer_median@2024 | Net leverage, median of low-cost airlines, peer year 2024 (3 companies) | 0.78x | company in line with peer median |
-| net_leverage.peer_rank@2024 | Net leverage, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
-| gross_leverage.peer_median@2024 | Gross leverage, median of low-cost airlines, peer year 2024 (3 companies) | 2.41x | company in line with peer median |
-| gross_leverage.peer_rank@2024 | Gross leverage, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 1st of 3 | best in the group |
-| interest_coverage.peer_median@2024 | Interest coverage, median of low-cost airlines, peer year 2024 (3 companies) | 5.89x | company in line with peer median |
-| interest_coverage.peer_rank@2024 | Interest coverage, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| ffo_to_debt.peer_median@2024 | FFO to debt, median of low-cost airlines, peer year 2024 (3 companies) | 35.6% | company in line with peer median |
-| ffo_to_debt.peer_rank@2024 | FFO to debt, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
-| fcf_to_debt.peer_median@2024 | FCF to debt, median of low-cost airlines, peer year 2024 (3 companies) | 16.3% | company above peer median, better |
-| fcf_to_debt.peer_rank@2024 | FCF to debt, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
-| capex_intensity.peer_median@2024 | Capex intensity, median of low-cost airlines, peer year 2024 (3 companies) | 5.4% | company below peer median |
-| cash_liquidity_to_revenue.peer_median@2024 | Cash liquidity to revenue (partial), median of low-cost airlines, peer year 2024 (3 companies) | 33.0% | company below peer median, worse |
-| cash_liquidity_to_revenue.peer_rank@2024 | Cash liquidity to revenue (partial), rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| advance_ticket_cover.peer_median@2024 | Advance ticket cover, median of low-cost airlines, peer year 2024 (3 companies) | 50.2% | company below peer median, better |
-| advance_ticket_cover.peer_rank@2024 | Advance ticket cover, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 1st of 3 | best in the group |
-| fuel_share_of_costs.peer_median@2024 | Fuel share of costs, median of low-cost airlines, peer year 2024 (3 companies) | 28.0% | company in line with peer median |
+| ebitda_margin.peer_median@FY2024 | EBITDA margin, median of low-cost airlines, peer year 2024 (3 companies) | 18.9% | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| ebitda_margin.peer_rank@FY2024 | EBITDA margin, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
+| net_leverage.peer_median@FY2024 | Net leverage, median of low-cost airlines, peer year 2024 (3 companies) | 0.78x | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| net_leverage.peer_rank@FY2024 | Net leverage, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 2nd of 3 |  |
+| gross_leverage.peer_median@FY2024 | Gross leverage, median of low-cost airlines, peer year 2024 (3 companies) | 2.41x | company in line with peer median |
+| gross_leverage.peer_rank@FY2024 | Gross leverage, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 1st of 3 | best in the group |
+| interest_coverage.peer_median@FY2024 | Interest coverage, median of low-cost airlines, peer year 2024 (3 companies) | 5.89x | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| interest_coverage.peer_rank@FY2024 | Interest coverage, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
+| ffo_to_debt.peer_median@FY2024 | FFO to debt, median of low-cost airlines, peer year 2024 (3 companies) | 35.6% | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
+| ffo_to_debt.peer_rank@FY2024 | FFO to debt, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 3 |  |
+| fcf_to_debt.peer_median@FY2024 | FCF to debt, median of low-cost airlines, peer year 2024 (3 companies) | 16.3% | company above peer median, better |
+| fcf_to_debt.peer_rank@FY2024 | FCF to debt, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 1st of 3 | best in the group |
+| capex_intensity.peer_median@FY2024 | Capex intensity, median of low-cost airlines, peer year 2024 (3 companies) | 5.4% | company below peer median |
+| cash_liquidity_to_revenue.peer_median@FY2024 | Cash liquidity to revenue (partial), median of low-cost airlines, peer year 2024 (3 companies) | 33.0% | company below peer median, worse |
+| cash_liquidity_to_revenue.peer_rank@FY2024 | Cash liquidity to revenue (partial), rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
+| advance_ticket_cover.peer_median@FY2024 | Advance ticket cover, median of low-cost airlines, peer year 2024 (3 companies) | 50.2% | company below peer median, better |
+| advance_ticket_cover.peer_rank@FY2024 | Advance ticket cover, rank in low-cost airlines, peer year 2024 (1st = strongest, i.e. the lowest) | 1st of 3 | best in the group |
+| fuel_share_of_costs.peer_median@FY2024 | Fuel share of costs, median of low-cost airlines, peer year 2024 (3 companies) | 28.0% | company in line with peer median; the company is the median of the group: say it sits in the middle of the group, do not compare it with the median |
 
 ## Other figures
 
@@ -125,16 +125,30 @@ Company type: airline. Reporting currency: NOK. Peer group: Low-cost airlines (e
 | profit@FY2023 | Profit for the year, FY2023 | NOK 1.7bn |  |
 | profit.change@FY2024 | change in Profit for the year, FY2023 to FY2024 | 22.0% | down, worse vs prior year; printed without a sign: say the direction in words |
 
+## Events of the year (read from the report; the quote was checked by code)
+
+Cite an event by listing its id in `facts` (no blank, no claims). It has no figure:
+write no number about it, and no direction word unless a figure of the sentence carries the claim.
+
+| id | event | what happened | quote from the report |
+| --- | --- | --- | --- |
+| event:acquisitions_and_disposals | Acquisition of Widerøe completed | The acquisition of Widerøe was finalised at the start of the year, adding a large number of employees to the Group and already yielding benefits. | (page 3): "A major change was the acquisition of Widerøe which was finalised at the very start of the year. We warmly welcomed nearly 3,500 new employees to the Group and with the integration going well the acquisition has already yielded benefits." |
+| event:fleet_and_engines | Boeing delivery delays constrain fleet growth | Delivery delays from Boeing meant Norwegian added only a single new aircraft during the year and added cost and complexity to operations. | (page 3): "For Norwegian, there was only a modest increase of one new aircraft for Norwegian from the previous year due to delivery delays from Boeing." |
+| event:labour | Collective bargaining agreements concluded | Several key collective bargaining agreements were concluded, raising personnel cost across markets while reducing the risk of industrial action. | (page 4): "During 2024, we concluded several key collective bargaining agreements. While these agreements resulted in increased personnel cost across several markets, they also provide improved visibility for 2025 with a reduced risk of industrial action." |
+| event:capital_returns | Board proposes profit distribution to shareholders | The Board intends to propose a profit distribution per share for the year, paid as dividend or share buy-back, subject to approval from debt instrument holders. | (page 15): "The Board of Directors intends to propose a profit distribution of NOK 0.60 per share for 2024 at the 2025 Annual General Meeting, to be paid out either through dividend or buy-back of shares." |
+| event:funding_and_rating | Improved financing terms for aircraft deliveries | Norwegian secured its best-ever financing terms for a portion of its aircraft order book. | (page 3): "Additionally, we are seeing improvements to the financing terms for our upcoming aircraft deliveries, with Norwegian securing the best-ever terms for the first 25 of our 50 aircraft on order in the Company’s history." |
+| event:one_offs | Currency weakness and external disruptions hit results | The operating result was particularly negatively impacted by the weakening of the Norwegian krone against the US dollar, and the year was affected by weather, air traffic control congestion and cost increases. | (page 6): "The operating result was particularly negatively impacted by the weakening of NOK against USD." |
+
 ## Not available: do not discuss
 
 These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
 
-- capex_intensity.peer_rank@2024: not ranked: neither higher nor lower is better
+- capex_intensity.peer_rank@FY2024: not ranked: neither higher nor lower is better
 - liquidity@FY2024: Undrawn committed credit facilities not available for FY2024
 - liquidity@FY2023: Undrawn committed credit facilities not available for FY2023
 - liquidity_to_revenue@FY2024: Liquidity: Undrawn committed credit facilities not available for FY2024
 - liquidity_to_revenue@FY2023: Liquidity: Undrawn committed credit facilities not available for FY2023
-- fuel_share_of_costs.peer_rank@2024: not ranked: neither higher nor lower is better
+- fuel_share_of_costs.peer_rank@FY2024: not ranked: neither higher nor lower is better
 - ask@FY2024: ASK not available for FY2024
 - rpk@FY2024: RPK not available for FY2024
 - load_factor@FY2024: not verified yet: waiting for Imane's review
@@ -148,3 +162,5 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - fuel_hedge_ratio@FY2024: Fuel hedge ratio not available for FY2024
 - undrawn_facilities@FY2024: no figure for this year
 - undrawn_facilities@FY2023: no figure for this year
+- net_cash@FY2024: the company has net debt, not net cash
+- net_cash@FY2023: the company has net debt, not net cash

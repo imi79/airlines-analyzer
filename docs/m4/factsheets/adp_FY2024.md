@@ -78,17 +78,17 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 
 | id | what it is | prints as | computed by code |
 | --- | --- | --- | --- |
-| ebitda_margin.peer_median@2024 | EBITDA margin, median of airports, peer year 2024 (3 companies) | 42.0% | company below peer median, worse |
-| ebitda_margin.peer_rank@2024 | EBITDA margin, rank in airports, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| gross_leverage.peer_median@2024 | Gross leverage, median of airports, peer year 2024 (3 companies) | 2.08x | company above peer median, worse |
-| gross_leverage.peer_rank@2024 | Gross leverage, rank in airports, peer year 2024 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
-| interest_coverage.peer_median@2024 | Interest coverage, median of airports, peer year 2024 (3 companies) | 12.34x | company below peer median, worse |
-| interest_coverage.peer_rank@2024 | Interest coverage, rank in airports, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| ffo_to_debt.peer_median@2024 | FFO to debt, median of airports, peer year 2024 (3 companies) | 39.0% | company below peer median, worse |
-| ffo_to_debt.peer_rank@2024 | FFO to debt, rank in airports, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| fcf_to_debt.peer_median@2024 | FCF to debt, median of airports, peer year 2024 (3 companies) | 26.3% | company below peer median, worse |
-| fcf_to_debt.peer_rank@2024 | FCF to debt, rank in airports, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
-| capex_intensity.peer_median@2024 | Capex intensity, median of airports, peer year 2024 (3 companies) | 16.1% | company above peer median |
+| ebitda_margin.peer_median@FY2024 | EBITDA margin, median of airports, peer year 2024 (3 companies) | 42.0% | company below peer median, worse |
+| ebitda_margin.peer_rank@FY2024 | EBITDA margin, rank in airports, peer year 2024 (1st = strongest, i.e. the highest) | 3rd of 3 | weakest |
+| gross_leverage.peer_median@FY2024 | Gross leverage, median of airports, peer year 2024 (3 companies) | 2.08x | company above peer median, worse |
+| gross_leverage.peer_rank@FY2024 | Gross leverage, rank in airports, peer year 2024 (1st = strongest, i.e. the lowest) | 3rd of 3 | weakest |
+| interest_coverage.peer_median@FY2024 | Interest coverage, median of airports, peer year 2024 (2 companies) | 9.65x | company below peer median, worse |
+| interest_coverage.peer_rank@FY2024 | Interest coverage, rank in airports, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 2 | weakest |
+| ffo_to_debt.peer_median@FY2024 | FFO to debt, median of airports, peer year 2024 (2 companies) | 26.5% | company below peer median, worse |
+| ffo_to_debt.peer_rank@FY2024 | FFO to debt, rank in airports, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 2 | weakest |
+| fcf_to_debt.peer_median@FY2024 | FCF to debt, median of airports, peer year 2024 (2 companies) | 14.8% | company below peer median, worse |
+| fcf_to_debt.peer_rank@FY2024 | FCF to debt, rank in airports, peer year 2024 (1st = strongest, i.e. the highest) | 2nd of 2 | weakest |
+| capex_intensity.peer_median@FY2024 | Capex intensity, median of airports, peer year 2024 (3 companies) | 16.1% | company above peer median |
 
 ## Other figures
 
@@ -98,15 +98,28 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | profit@FY2023 | Profit for the year, FY2023 | EUR 784m |  |
 | profit.change@FY2024 | change in Profit for the year, FY2023 to FY2024 | 34.2% | down, worse vs prior year; printed without a sign: say the direction in words |
 
+## Events of the year (read from the report; the quote was checked by code)
+
+Cite an event by listing its id in `facts` (no blank, no claims). It has no figure:
+write no number about it, and no direction word unless a figure of the sentence carries the claim.
+
+| id | event | what happened | quote from the report |
+| --- | --- | --- | --- |
+| event:acquisitions_and_disposals | Acquisitions of Paris Experience Group and P/S | In October 2024 the group acquired Paris Experience Group and P/S, extending the Extime offering beyond Paris airports. | (page 17): "En octobre 2024, le Groupe ADP a acquis, d’une part, Paris Expérience Group et, d’autre part, P/S, élargissant ainsi l'offre d'Extime au-delà des aéroports parisiens et renforçant ses perspectives de croissance à l'international ;" |
+| event:funding_and_rating | Bond issue during the year | The report mentions the proceeds of the bond issue among the group's cash flows. | (page 530): "Les flux de trésorerie opérationnels s'établissent à 1 524 millions d'euros et les produits de l'émission obligataire du 7 mai 2024 par" |
+| event:acquisitions_and_disposals-3 | Change in GMR Airports economic interest after merger | Following the merger of GMR Airports Infrastructures Ltd and GMR Airports Ltd, the group holds a lower economic interest in GMR Airports. | (page 17): "Depuis le 25 juillet 2024, suite à la fusion de GMR Airports Infrastructures Ltd et de GMR Airports Ltd, le Groupe ADP détient un intérêt économique de 45,7 % dans GMR Airports (contre 49,0 % précédemment)." |
+| event:regulation_and_tariffs | Delhi tariff proposal filed and final tariffs published | DIAL filed its tariff proposal for the upcoming regulatory period, with final tariffs published later and effective in April 2025. | (page 86): "DIAL a déposé en mai 2024 sa proposition tarifaire pour la quatrième période de régulation. Les tarifs finaux ont été publiés le 28 mars 2025 et entreront en vigueur le 16 avril 2025, marquant une hausse notable par rapport à la période de régulation précédente et, pour la première fois en Inde, l’introduction d’une structure tarifaire différenciée." |
+| event:one_offs | Impairment tests on equity-accounted holdings | Impairment tests on equity-accounted holdings and related loans led the group to book an impairment. | (page 577): "Les tests menés sur les titres mis en équivalence et les prêts consentis aux sociétés testées ont conclu à la nécessité de constater une dépréciation de 47 millions d’euros." |
+
 ## Not available: do not discuss
 
 These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
 
-- net_leverage.peer_median@2024: the peer median would use a figure not verified yet (vie)
-- net_leverage.peer_rank@2024: the peer median would use a figure not verified yet (vie)
-- capex_intensity.peer_rank@2024: not ranked: neither higher nor lower is better
-- cash_liquidity_to_revenue.peer_median@2024: the peer median would use a figure not verified yet (vie)
-- cash_liquidity_to_revenue.peer_rank@2024: the peer median would use a figure not verified yet (vie)
+- net_leverage.peer_median@FY2024: the peer median would use a figure not verified yet (vie)
+- net_leverage.peer_rank@FY2024: the peer median would use a figure not verified yet (vie)
+- capex_intensity.peer_rank@FY2024: not ranked: neither higher nor lower is better
+- cash_liquidity_to_revenue.peer_median@FY2024: the peer median would use a figure not verified yet (vie)
+- cash_liquidity_to_revenue.peer_rank@FY2024: the peer median would use a figure not verified yet (vie)
 - liquidity@FY2024: Undrawn committed credit facilities not available for FY2024
 - liquidity@FY2023: Undrawn committed credit facilities not available for FY2023
 - liquidity_to_revenue@FY2024: Liquidity: Undrawn committed credit facilities not available for FY2024
@@ -124,3 +137,5 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - contract_liabilities@FY2023: no figure for this year
 - undrawn_facilities@FY2024: no figure for this year
 - undrawn_facilities@FY2023: no figure for this year
+- net_cash@FY2024: the company has net debt, not net cash
+- net_cash@FY2023: the company has net debt, not net cash
