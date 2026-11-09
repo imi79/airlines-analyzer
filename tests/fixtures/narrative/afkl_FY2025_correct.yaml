@@ -33,12 +33,10 @@ credit_metrics:
       - {id: operating_profit.change@FY2025, claims: [up]}
       - {id: operating_profit@FY2025}
   - text: >-
-      Gross leverage fell to {{gross_leverage@FY2025}} and net leverage to
-      {{net_leverage@FY2025}}, even though net debt rose by {{net_debt.change@FY2025}} to
-      {{net_debt@FY2025}}.
+      Gross leverage fell to {{gross_leverage@FY2025}}, even though net debt rose by
+      {{net_debt.change@FY2025}} to {{net_debt@FY2025}}.
     facts:
       - {id: gross_leverage@FY2025, claims: [down]}
-      - {id: net_leverage@FY2025, claims: [down]}
       - {id: net_debt.change@FY2025, claims: [up]}
       - {id: net_debt@FY2025}
   - text: >-
@@ -81,11 +79,9 @@ liquidity_funding:
       - {id: advance_ticket_cover@FY2025}
 peer_positioning:
   - text: >-
-      Net leverage of {{net_leverage@FY2025}} is in line with the network median of
-      {{net_leverage.peer_median@2025}}.
+      Net leverage is in line with the network median of {{net_leverage.peer_median@2025}}.
     facts:
-      - {id: net_leverage@FY2025, claims: [in_line_with_peers]}
-      - {id: net_leverage.peer_median@2025}
+      - {id: net_leverage.peer_median@2025, claims: [in_line_with_peers]}
   - text: >-
       Advance ticket cover is the lowest of the group ({{advance_ticket_cover.peer_rank@2025}}),
       a strength for liquidity.

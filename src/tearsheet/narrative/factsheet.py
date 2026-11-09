@@ -39,6 +39,12 @@ NOT_VERIFIED = "not verified yet: waiting for Imane's review"
 NOT_REPORTED = "no figure for this year"
 PEER_UNVERIFIED = "the peer median would use a figure not verified yet"
 TOO_FEW_PEERS = "fewer than two companies in the peer group have a value"
+NET_CASH_INSTEAD = "below zero: the company has net cash, use net_cash"
+HAS_NET_DEBT = "the company has net debt, not net cash"
+MEDIAN_COMPANY = (
+    "the company is the median of the group: say it sits in the middle of the group, do not "
+    "compare it with the median"
+)
 
 
 @dataclass(frozen=True)
@@ -159,7 +165,43 @@ def load_specs(narrative: dict | None = None) -> dict[str, Spec]:
         )
     for line, better in narrative["statement_lines"].items():
         specs[line] = Spec(line, names[line], "amount", better, thresholds["amount"])
+    if narrative.get("net_cash"):
+        net = narrative["net_cash"]
+        specs["net_cash"] = Spec("net_cash", net["label"], "amount", True, thresholds["amount"])
     return specs
+
+
+def with_net_cash(figures: list[Figure], narrative: dict) -> list[Figure]:
+    """Net debt below zero becomes net cash, a positive figure: "net cash of GBP 602m"."""
+    source = (narrative.get("net_cash") or {}).get("from")
+    if not source:
+        return figures
+    out = []
+    for f in figures:
+        if f.concept != source:
+            out.append(f)
+            continue
+        if f.value is not None and f.value < 0:
+            out.append(Figure(f.issuer, "net_cash", f.fiscal_year, f.period_end, -f.value,
+                              f.status))  # fmt: skip
+            out.append(Figure(f.issuer, f.concept, f.fiscal_year, f.period_end, None, None,
+                              NET_CASH_INSTEAD))  # fmt: skip
+        else:
+            out.append(f)
+            reason = HAS_NET_DEBT if f.value is not None else f.reason
+            out.append(Figure(f.issuer, "net_cash", f.fiscal_year, f.period_end, None, None,
+                              reason))  # fmt: skip
+    return out
+
+
+def small_debt(index: dict, issuer: str, year: int, narrative: dict) -> Decimal | None:
+    """The gross leverage, if it is below the small-debt limit (ratios to debt mean little)."""
+    rule = narrative.get("small_debt")
+    fig = index.get((issuer, "gross_leverage", year))
+    if not rule or fig is None or fig.value is None:
+        return None
+    limit = Decimal(str(rule["gross_leverage_below"]))
+    return fig.value if fig.value < limit else None
 
 
 # --- Directions --------------------------------------------------------------------------
@@ -243,6 +285,7 @@ def build(
     narrative = narrative or load_narrative()
     specs = specs or load_specs(narrative)
     peers = peers or yaml.safe_load(PEERS.read_text())
+    figures = with_net_cash(figures, narrative)
     index = {(f.issuer, f.concept, f.fiscal_year): f for f in figures}
     ends = {}
     for f in figures:
@@ -262,11 +305,24 @@ def build(
         peer_members=members,
     )
     prior_year = fiscal_year - 1
+    tiny = small_debt(index, issuer.id, fiscal_year, narrative)
+    debt_ratios = set((narrative.get("small_debt") or {}).get("metrics") or ())
     for metric, spec in specs.items():
         if spec.applies_to and issuer.type not in spec.applies_to:
             continue
         sheet.higher_is_better[metric] = spec.higher_is_better
         sheet.labels[metric] = spec.label
+        if tiny is not None and metric in debt_ratios:
+            reason = (
+                f"not meaningful: debt is very small (gross leverage {tiny:.2f}x), so ratios "
+                "to debt say little"
+            )
+            for fid in (f"{metric}@FY{fiscal_year}", f"{metric}@FY{prior_year}",
+                        f"{metric}.change@FY{fiscal_year}",
+                        f"{metric}.peer_median@{sheet.peer_year}",
+                        f"{metric}.peer_rank@{sheet.peer_year}"):  # fmt: skip
+                sheet.unavailable[fid] = reason
+            continue
         cur = index.get((issuer.id, metric, fiscal_year))
         pri = index.get((issuer.id, metric, prior_year))
         cur_id, pri_id = f"{metric}@FY{fiscal_year}", f"{metric}@FY{prior_year}"
@@ -308,7 +364,7 @@ def build(
         else:
             sheet.unavailable[change_id] = "needs both years verified"
         if metric in peers["metrics"]:
-            _peer_items(sheet, spec, metric, cur, index, ends, members)
+            _peer_items(sheet, spec, metric, cur, index, ends, members, narrative, debt_ratios)
     return sheet
 
 
@@ -329,7 +385,7 @@ def _with(item: Item, **changes) -> Item:
     return Item(**(asdict(item) | changes))
 
 
-def _peer_items(sheet, spec, metric, cur, index, ends, members) -> None:
+def _peer_items(sheet, spec, metric, cur, index, ends, members, narrative, debt_ratios) -> None:
     py = sheet.peer_year
     median_id, rank_id = f"{metric}.peer_median@{py}", f"{metric}.peer_rank@{py}"
     if not _usable(cur):
@@ -342,6 +398,8 @@ def _peer_items(sheet, spec, metric, cur, index, ends, members) -> None:
         fig = index.get((member, metric, years[0])) if years else None
         if fig is None or fig.value is None:
             continue
+        if metric in debt_ratios and small_debt(index, member, years[0], narrative) is not None:
+            continue  # a ratio to almost no debt would distort the median and the rank
         if fig.status not in ("verified", "overridden"):
             unverified.append(member)
             continue
@@ -368,6 +426,7 @@ def _peer_items(sheet, spec, metric, cur, index, ends, members) -> None:
         period=f"peer year {py}",
         vs_peers=side,
         peer_assessment=quality,
+        note=MEDIAN_COMPANY if cur.value == mid else "",
     )
     cur_id = f"{metric}@FY{sheet.fiscal_year}"
     sheet.items[cur_id] = _with(sheet.items[cur_id], vs_peers=side, peer_assessment=quality)

@@ -43,7 +43,7 @@ def test_the_correct_draft_passes():
 
 def test_suite_size():
     assert len(SUITE["faulty"]) >= 30
-    assert {c["rule"] for c in SUITE["faulty"]} == {"1", "2", "3", "4", "5", "form"}
+    assert {c["rule"] for c in SUITE["faulty"]} == {"1", "2", "3", "4", "5", "6", "form"}
 
 
 @pytest.mark.parametrize("case", SUITE["faulty"], ids=[c["name"] for c in SUITE["faulty"]])

@@ -203,3 +203,44 @@ def test_absolute_change_adds_up_as_printed():
     assert render.change_between(D("1.8814"), D("1.7165"), "x") == "0.16x"  # 1.88x - 1.72x
     assert render.change_between(D("1.8849"), D("1.7149"), "x") == "0.17x"  # 1.88x - 1.71x
     assert render.change_between(D("0.13149"), D("0.15251"), "points") == "2.2 points"
+
+
+# --- Fix B (decision 0018) ---------------------------------------------------------------------
+
+
+def test_negative_net_debt_becomes_net_cash():
+    figures = universe([fig("afkl", "net_debt", 2024, "-500000000"),
+                        fig("afkl", "net_debt", 2025, "-602000000")])  # fmt: skip
+    sheet = build(ISSUERS["afkl"], 2025, figures)
+    assert sheet.items["net_cash@FY2025"].rendered == "EUR 602m"
+    assert sheet.items["net_cash.change@FY2025"].direction == "up"
+    assert sheet.items["net_cash.change@FY2025"].assessment == "better"
+    assert "net cash" in sheet.unavailable["net_debt@FY2025"]
+
+
+def test_positive_net_debt_has_no_net_cash():
+    sheet = build(ISSUERS["afkl"], 2025, universe([fig("afkl", "net_debt", 2025, "8700000000")]))
+    assert sheet.items["net_debt@FY2025"].rendered == "EUR 8.7bn"
+    assert "net_cash@FY2025" in sheet.unavailable
+
+
+def test_ratios_to_debt_left_out_when_debt_is_tiny():
+    extra = [
+        fig("afkl", "gross_leverage", 2025, "0.14"),
+        fig("afkl", "ffo_to_debt", 2025, "4.42"),
+        fig("afkl", "ffo_to_debt", 2024, "6.44"),
+        fig("iag", "ffo_to_debt", 2025, "0.455"),
+        fig("finnair", "ffo_to_debt", 2025, "0.18"),
+    ]
+    sheet = build(ISSUERS["afkl"], 2025, universe(extra))
+    assert "ffo_to_debt@FY2025" not in sheet.items
+    assert "very small" in sheet.unavailable["ffo_to_debt.peer_median@2025"]
+    peer = build(
+        ISSUERS["iag"], 2025, universe(extra + [fig("iag", "gross_leverage", 2025, "1.86")])
+    )
+    median = peer.items["ffo_to_debt.peer_median@2025"]
+    assert median.label.endswith("(2 companies)")  # afkl's ratio to almost no debt left out
+
+
+def test_median_company_is_flagged(sheet):
+    assert "middle of the group" in sheet.items["net_leverage.peer_median@2025"].note

@@ -233,7 +233,8 @@ def draft_commentary(
                 outcome.errors[s] = attempt.report.for_section(s)
             continue
         draft, form_errors = parse_sections(attempt.result.arguments.get("sections") or {})
-        report = verifier.check(sheet, draft, ask)
+        accepted = {k: v for k, v in outcome.sections.items() if k not in ask}
+        report = verifier.check(sheet, draft, ask, others=accepted)
         report.errors = form_errors + report.errors
         attempt.draft, attempt.report = draft, report
         failed = [s for s in ask if report.for_section(s)]

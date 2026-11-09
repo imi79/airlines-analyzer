@@ -191,7 +191,21 @@ faulty:
     text: Net leverage was {{net_leverage@FY2025}} at the year end.
     facts: [{id: net_leverage@FY2025}, {id: revenue@FY2025}]
 
+  # --- Rule 6: an earlier year's figure written as if current (decision 0018) ---------------
+  - name: last year's fleet written as the current fleet
+    rule: "6"
+    text: The fleet stood at {{fleet@FY2024}} aircraft.
+    facts: [{id: fleet@FY2024}]
+  - name: last year's passengers written as the current traffic
+    rule: "6"
+    text: The group carries {{passengers@FY2024}} passengers a year.
+    facts: [{id: passengers@FY2024}]
+
   # --- The form itself -----------------------------------------------------------------------
+  - name: a figure repeated in a third sentence (decision 0018)
+    rule: form
+    text: Cash liquidity to revenue stood at {{cash_liquidity_to_revenue@FY2025}}.
+    facts: [{id: cash_liquidity_to_revenue@FY2025}]
   - name: a fourth sentence in the snapshot
     rule: form
     add: snapshot

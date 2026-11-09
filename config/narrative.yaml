@@ -25,6 +25,7 @@ sections:
       - ebitda_margin
       - total_debt
       - net_debt
+      - net_cash
       - net_leverage
       - gross_leverage
       - interest_coverage
@@ -112,3 +113,17 @@ allowed_names:
   - 'Q400'
   - 'Terminal ?\d'
   - 'T\d'
+
+# Net cash (decision 0018, fix B): where net debt is below zero, the fact sheet offers "net
+# cash" as a positive figure, so the note reads "net cash of GBP 602m", never "net debt of
+# GBP -602m".
+net_cash:
+  from: net_debt
+  label: Net cash (cash and cash-like investments above total debt)
+
+# Ratios to debt mean little when there is almost no debt (Flughafen Wien: FFO to debt 442%,
+# coverage 209x). Below this gross leverage they are left out of the fact sheet, and the
+# company is left out of the peer median and rank for them.
+small_debt:
+  gross_leverage_below: 0.5
+  metrics: [ffo_to_debt, fcf_to_debt, interest_coverage]

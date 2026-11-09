@@ -11,10 +11,14 @@ A sentence is rejected if it breaks any of the five rules of the M4 plan:
    claim on a figure of the same clause, so the form and the sentence cannot disagree (a
    clause with no blank that states a scenario, "if bookings slow", is not a statement about
    a reported figure and is not read);
-5. ids listed in the form that the sentence doesn't use, or the reverse.
+5. ids listed in the form that the sentence doesn't use, or the reverse (an event of the
+   year, `event:...`, is listed but never written as a blank: it has no figure);
+6. a figure from an earlier year used on its own, without its year in the sentence ("the
+   fleet stood at {{fleet@FY2024}}" in an FY2025 note must say "in FY2024") (decision 0018).
 
 Plus the form itself ("form"): every section present, with the number of sentences the
-tearsheet allows (the snapshot has exactly three).
+tearsheet allows (the snapshot has exactly three), and no figure in more than two sentences
+of the note (decision 0018: the snapshot and one section).
 """
 
 from __future__ import annotations
@@ -44,6 +48,8 @@ CLAIMS = (
     "worst_in_group",
 )
 YEAR = r"(?:201[5-9]|202\d|203[0-5])"
+EVENT = "event:"
+MAX_USES = 2  # sentences per figure in a note: the snapshot and one section (decision 0018)
 HYPOTHETICAL = re.compile(r"\b(?:if|unless|would|could|might|should)\b", re.I)
 CLAUSE_BREAK = re.compile(  # brackets don't split: "(rank)" belongs to its clause
     r"[,;:\u2013\u2014]|\b(?:while|whereas|but|although|though|and|yet)\b", re.I
@@ -162,11 +168,23 @@ class Verifier:
             for name, d in voc["directions"].items()
         }
 
-    def check(self, sheet: FactSheet, draft: Draft, sections: list[str] | None = None) -> Report:
-        """Check the draft's `sections` (all sections of config/narrative.yaml by default)."""
+    def check(
+        self,
+        sheet: FactSheet,
+        draft: Draft,
+        sections: list[str] | None = None,
+        others: dict[str, list[Sentence]] | None = None,
+    ) -> Report:
+        """Check the draft's `sections` (all sections of config/narrative.yaml by default).
+        `others`: the note's sections already accepted, counted for repeated figures."""
         expected = self.narrative["sections"]
         wanted = sections or list(expected)
         report = Report()
+        uses: dict[str, int] = {}
+        for sentences in (others or {}).values():
+            for sentence in sentences:
+                for fid in self.counted(sheet, sentence):
+                    uses[fid] = uses.get(fid, 0) + 1
         for name in draft.sections:
             if name not in expected:
                 report.errors.append(Error(name, None, "form", "not a drafted section"))
@@ -184,7 +202,23 @@ class Verifier:
             for n, sentence in enumerate(sentences, start=1):
                 for rule, message in self.check_sentence(sheet, sentence):
                     report.errors.append(Error(name, n, rule, message))
+                for fid in self.counted(sheet, sentence):
+                    uses[fid] = uses.get(fid, 0) + 1
+                    if uses[fid] > MAX_USES:
+                        report.errors.append(Error(name, n, "form", (
+                            f"{fid} is already in {MAX_USES} sentences of the note; give each "
+                            "figure at most twice (the snapshot and one section)"
+                        )))  # fmt: skip
         return report
+
+    @staticmethod
+    def counted(sheet: FactSheet, s: Sentence) -> list[str]:
+        """The figures of a sentence that count towards repetition (not events)."""
+        return [
+            fid
+            for fid in dict.fromkeys(m.group(1) for m in PLACEHOLDER.finditer(s.text))
+            if fid in sheet.items and sheet.items[fid].kind != "event"
+        ]
 
     def check_sentence(self, sheet: FactSheet, s: Sentence) -> list[tuple[str, str]]:
         errors: list[tuple[str, str]] = []
@@ -208,8 +242,31 @@ class Verifier:
             if fid not in listed:
                 errors.append(("5", f"{fid} is in the text but not listed in the form"))
         for fid in dict.fromkeys(listed):
-            if fid not in used:
+            if fid not in used and not fid.startswith(EVENT):
                 errors.append(("5", f"{fid} is listed in the form but not used in the text"))
+        for fid in dict.fromkeys(used):
+            if fid.startswith(EVENT):
+                errors.append(("5", f"{fid} is an event, not a figure: list it, no blank"))
+        # Rule 6: a figure from an earlier year, used on its own, names its year
+        current = f"FY{sheet.fiscal_year}"
+        for fid in dict.fromkeys(used):
+            item = sheet.items.get(fid)
+            if item is None or item.kind != "value" or item.period == current:
+                continue
+            same = [
+                sheet.items[u]
+                for u in used
+                if u in sheet.items
+                and sheet.items[u].metric == item.metric
+                and sheet.items[u].kind in ("value", "change")
+                and sheet.items[u].period != item.period
+            ]
+            year = item.period.removeprefix("FY")
+            if not same and not re.search(rf"\b(?:FY)?{year}\b", prose):
+                errors.append(("6", (
+                    f"{fid} is a {item.period} figure: say so in the sentence "
+                    f"('in {item.period}'), or pair it with the {current} figure"
+                )))  # fmt: skip
         # Rule 3: each claim against the computed direction
         for ref in s.facts:
             for claim in ref.claims:
