@@ -59,6 +59,18 @@ Company type: airline. Reporting currency: EUR. Peer group: Network airlines (af
 | operating_profit@FY2025 | Operating profit, FY2025 | EUR 64.2m | down, worse vs prior year |
 | operating_profit@FY2024 | Operating profit, FY2024 | EUR 114m |  |
 | operating_profit.change@FY2025 | change in Operating profit, FY2024 to FY2025 | 43.8% | down, worse vs prior year; printed without a sign: say the direction in words |
+| dda@FY2025 | Depreciation, amortisation and impairment, FY2025 | EUR 344m | up vs prior year |
+| dda@FY2024 | Depreciation, amortisation and impairment, FY2024 | EUR 330m |  |
+| dda.change@FY2025 | change in Depreciation, amortisation and impairment, FY2024 to FY2025 | 4.1% | up vs prior year; printed without a sign: say the direction in words |
+| finance_costs@FY2025 | Finance costs, FY2025 | EUR 81.9m | down, better vs prior year |
+| finance_costs@FY2024 | Finance costs, FY2024 | EUR 107m |  |
+| finance_costs.change@FY2025 | change in Finance costs, FY2024 to FY2025 | 23.6% | down, better vs prior year; printed without a sign: say the direction in words |
+| cfo@FY2025 | Cash from operations, FY2025 | EUR 402m | down, worse vs prior year |
+| cfo@FY2024 | Cash from operations, FY2024 | EUR 613m |  |
+| cfo.change@FY2025 | change in Cash from operations, FY2024 to FY2025 | 34.4% | down, worse vs prior year; printed without a sign: say the direction in words |
+| capex@FY2025 | Capex (purchases of PP&E and intangibles), FY2025 | EUR 209m | down vs prior year |
+| capex@FY2024 | Capex (purchases of PP&E and intangibles), FY2024 | EUR 234m |  |
+| capex.change@FY2025 | change in Capex (purchases of PP&E and intangibles), FY2024 to FY2025 | 10.5% | down vs prior year; printed without a sign: say the direction in words |
 
 ## Operating performance
 
@@ -74,6 +86,9 @@ Company type: airline. Reporting currency: EUR. Peer group: Network airlines (af
 | fleet@FY2024 | Fleet, FY2024 | 80 |  |
 | fleet.change@FY2025 | change in Fleet, FY2024 to FY2025 | 1.3% | flat vs prior year; printed without a sign: say the direction in words |
 | fleet_age@FY2025 | Fleet average age, FY2025 | 14.3 years |  |
+| fuel_cost@FY2025 | Fuel cost, FY2025 | EUR 879m | flat vs prior year |
+| fuel_cost@FY2024 | Fuel cost, FY2024 | EUR 894m |  |
+| fuel_cost.change@FY2025 | change in Fuel cost, FY2024 to FY2025 | 1.7% | flat vs prior year; printed without a sign: say the direction in words |
 
 ## Liquidity and funding
 

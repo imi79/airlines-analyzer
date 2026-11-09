@@ -56,6 +56,18 @@ Company type: airline. Reporting currency: NOK. Peer group: Low-cost airlines (e
 | operating_profit@FY2024 | Operating profit, FY2024 | NOK 1.9bn | down, worse vs prior year |
 | operating_profit@FY2023 | Operating profit, FY2023 | NOK 2.2bn |  |
 | operating_profit.change@FY2024 | change in Operating profit, FY2023 to FY2024 | 16.1% | down, worse vs prior year; printed without a sign: say the direction in words |
+| dda@FY2024 | Depreciation, amortisation and impairment, FY2024 | NOK 4.8bn | up vs prior year |
+| dda@FY2023 | Depreciation, amortisation and impairment, FY2023 | NOK 3.5bn |  |
+| dda.change@FY2024 | change in Depreciation, amortisation and impairment, FY2023 to FY2024 | 36.0% | up vs prior year; printed without a sign: say the direction in words |
+| finance_costs@FY2024 | Finance costs, FY2024 | NOK 1.1bn | up, worse vs prior year |
+| finance_costs@FY2023 | Finance costs, FY2023 | NOK 848m |  |
+| finance_costs.change@FY2024 | change in Finance costs, FY2023 to FY2024 | 33.8% | up, worse vs prior year; printed without a sign: say the direction in words |
+| cfo@FY2024 | Cash from operations, FY2024 | NOK 6.9bn | up, better vs prior year |
+| cfo@FY2023 | Cash from operations, FY2023 | NOK 5.3bn |  |
+| cfo.change@FY2024 | change in Cash from operations, FY2023 to FY2024 | 32.1% | up, better vs prior year; printed without a sign: say the direction in words |
+| capex@FY2024 | Capex (purchases of PP&E and intangibles), FY2024 | NOK 1.2bn | up vs prior year |
+| capex@FY2023 | Capex (purchases of PP&E and intangibles), FY2023 | NOK 542m |  |
+| capex.change@FY2024 | change in Capex (purchases of PP&E and intangibles), FY2023 to FY2024 | 129.9% | up vs prior year; printed without a sign: say the direction in words |
 
 ## Operating performance
 
@@ -76,6 +88,9 @@ Company type: airline. Reporting currency: NOK. Peer group: Low-cost airlines (e
 | cask_ex_fuel@FY2023 | CASK ex-fuel, FY2023 | 48.27 øre |  |
 | fleet@FY2023 | Fleet, FY2023 | 87 |  |
 | fuel_hedge_ratio@FY2023 | Fuel hedge ratio, FY2023 | 50.0% |  |
+| fuel_cost@FY2024 | Fuel cost, FY2024 | NOK 9.4bn | up vs prior year |
+| fuel_cost@FY2023 | Fuel cost, FY2023 | NOK 7.7bn |  |
+| fuel_cost.change@FY2024 | change in Fuel cost, FY2023 to FY2024 | 21.5% | up vs prior year; printed without a sign: say the direction in words |
 
 ## Liquidity and funding
 

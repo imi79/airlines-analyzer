@@ -56,6 +56,18 @@ Company type: airline. Reporting currency: EUR. Peer group: Low-cost airlines (e
 | operating_profit@FY2026 | Operating profit, FY2026 | EUR 140m | down, worse vs prior year |
 | operating_profit@FY2025 | Operating profit, FY2025 | EUR 168m |  |
 | operating_profit.change@FY2026 | change in Operating profit, FY2025 to FY2026 | 16.6% | down, worse vs prior year; printed without a sign: say the direction in words |
+| dda@FY2026 | Depreciation, amortisation and impairment, FY2026 | EUR 1.2bn | up vs prior year |
+| dda@FY2025 | Depreciation, amortisation and impairment, FY2025 | EUR 967m |  |
+| dda.change@FY2026 | change in Depreciation, amortisation and impairment, FY2025 to FY2026 | 21.9% | up vs prior year; printed without a sign: say the direction in words |
+| finance_costs@FY2026 | Finance costs, FY2026 | EUR 268m | up, worse vs prior year |
+| finance_costs@FY2025 | Finance costs, FY2025 | EUR 250m |  |
+| finance_costs.change@FY2026 | change in Finance costs, FY2025 to FY2026 | 7.3% | up, worse vs prior year; printed without a sign: say the direction in words |
+| cfo@FY2026 | Cash from operations, FY2026 | EUR 1.2bn | up, better vs prior year |
+| cfo@FY2025 | Cash from operations, FY2025 | EUR 1.1bn |  |
+| cfo.change@FY2026 | change in Cash from operations, FY2025 to FY2026 | 10.7% | up, better vs prior year; printed without a sign: say the direction in words |
+| capex@FY2026 | Capex (purchases of PP&E and intangibles), FY2026 | EUR 408m | up vs prior year |
+| capex@FY2025 | Capex (purchases of PP&E and intangibles), FY2025 | EUR 283m |  |
+| capex.change@FY2026 | change in Capex (purchases of PP&E and intangibles), FY2025 to FY2026 | 44.4% | up vs prior year; printed without a sign: say the direction in words |
 
 ## Operating performance
 
@@ -94,6 +106,9 @@ Company type: airline. Reporting currency: EUR. Peer group: Low-cost airlines (e
 | fleet_age@FY2026 | Fleet average age, FY2026 | 4.6 years | up, worse vs prior year |
 | fleet_age@FY2025 | Fleet average age, FY2025 | 4.5 years |  |
 | fleet_age.change@FY2026 | change in Fleet average age, FY2025 to FY2026 | 2.2% | up, worse vs prior year; printed without a sign: say the direction in words |
+| fuel_cost@FY2026 | Fuel cost, FY2026 | EUR 1.8bn | flat vs prior year |
+| fuel_cost@FY2025 | Fuel cost, FY2025 | EUR 1.8bn |  |
+| fuel_cost.change@FY2026 | change in Fuel cost, FY2025 to FY2026 | 1.9% | flat vs prior year; printed without a sign: say the direction in words |
 
 ## Liquidity and funding
 

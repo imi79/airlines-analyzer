@@ -1,33 +1,35 @@
 # Air France-KLM, FY2025: draft commentary
 
-Status: passed the verifier. First try: rejected; tries: 3. Model deepseek-flash, prompt `draft-v6`, fact sheet `5aadcdcb60e7` ([fact sheet](../factsheets/afkl_FY2025.md)). Tokens: 39,928 in, 4,824 out.
+Status: passed the verifier. First try: passed; tries: 2. Model deepseek-flash, prompt `draft-v7`, fact sheet `e4bef16a5386` ([fact sheet](../factsheets/afkl_FY2025.md)). Tokens: 27,057 in, 3,808 out.
 
 Every figure below was written by code from the fact sheet; the AI wrote the words.
 
 ## Snapshot
 
-Air France-KLM, the Franco-Dutch network airline, grew revenue by 4.9% to EUR 33.0bn in FY2025, with the EBITDA margin widening by 2.2 points to 15.3%.
-Net leverage fell by 0.17x to 1.71x even as net debt rose by 12.3% to EUR 8.7bn, the earnings growth doing the work.
-The point to watch is cash liquidity: cash liquidity to revenue fell by 1.2 points to 20.8%, the weakest of the network peers (3rd of 3).
+Air France-KLM, the network airline group spanning Air France and KLM, grew revenue by 4.9% to EUR 33.0bn in FY2025, with the EBITDA margin widening by 2.2 points to 15.3%.
+Net leverage fell by 0.17x to 1.71x, in line with the peer median, even as net debt rose by 12.3% to EUR 8.7bn.
+The point to watch is cash liquidity: cash liquidity to revenue fell by 1.2 points to 20.8%, below the peer median, while capex intensity rose by 1.6 points to 13.5%.
 
 ## Credit metrics
 
-EBITDA increased by 23.0% to EUR 5.1bn on revenue up 4.9%, and operating profit rose by 36.6% to EUR 2.0bn.
-Gross leverage fell by 0.49x to 3.07x and net leverage by 0.17x to 1.71x, although total debt rose by 5.9% to EUR 15.5bn.
-FFO rose by 24.1% to EUR 4.3bn, lifting FFO to debt by 4.0 points to 27.4%, and interest coverage improved by 1.55x to 8.06x.
-Free cash flow turned positive at EUR 606m, taking FCF to debt up by 5.5 points to 3.9%, but capex intensity rose by 1.6 points to 13.5%.
+EBITDA increased by 23.0% to EUR 5.1bn, and operating profit rose by 36.6% to EUR 2.0bn as depreciation, amortisation and impairment grew by 15.6% to EUR 3.1bn.
+Total debt rose by 5.9% to EUR 15.5bn, but gross leverage fell by 0.49x to 3.07x on the larger earnings base.
+Interest coverage improved by 1.55x to 8.06x, with finance costs broadly unchanged at EUR 627m.
+FFO rose by 24.1% to EUR 4.3bn, lifting FFO to debt by 4.0 points to 27.4%, and free cash flow turned positive at EUR 606m as cash from operations grew by 44.6% to EUR 5.1bn.
+FCF to debt improved by 5.5 points to 3.9%, held back by capex of EUR 4.4bn, up 19.3%.
 
 ## Operating performance
 
-The EBITDA margin widened by 2.2 points to 15.3%, against 13.1% in FY2024, as earnings grew faster than the top line.
+Revenue grew by 4.9% to EUR 33.0bn, with the EBITDA margin at 15.3% against 13.1% in FY2024.
+Capex intensity rose by 1.6 points to 13.5%, above the peer median of 10.4%, as the group invested in its fleet.
 In FY2024 the group carried 98.0m passengers with a fleet of 564 aircraft at an average age of 12.1 years.
 
 ## Liquidity and funding
 
-Cash and cash-like investments were broadly unchanged at EUR 6.9bn, a change of 1.1% on FY2024.
+Cash and cash-like investments were stable at EUR 6.9bn, a change of 1.1% on FY2024.
 Cash liquidity to revenue fell by 1.2 points to 20.8%, below the peer median of 25.0%.
-Customer prepayments rose, with contract liabilities up by 4.1% to EUR 4.3bn and advance ticket cover up by 3.1 points to 62.2%.
-Funding activity included senior unsecured bonds placed under the EMTN programme and the redemption of the outstanding hybrid bonds, alongside an extension of the Air France-KLM and Air France credit facility maturity.
+Contract liabilities rose by 4.1% to EUR 4.3bn, and advance ticket cover increased by 3.1 points to 62.2%, so a larger share of cash is customer prepayments.
+Funding activity included senior unsecured bonds placed under the EMTN programme and the redemption of the outstanding hybrid bonds from the hard call date, while the maturity of the Air France-KLM and Air France credit facility was extended.
 
 > Event `event:funding_and_rating`: The Group placed senior unsecured bonds under its EMTN programme, with the cash received in September 2025. Quote (page 18): "bonds on August 28, 2025, with a maturity of 5 years and a coupon of 3.75% (yield of 3.866%) under its EMTN program. The cash inflow occurred on September 4, 2025 (see Note 31 “Financial liabilities”)."
 
@@ -37,16 +39,16 @@ Funding activity included senior unsecured bonds placed under the EMTN programme
 
 ## Peer positioning
 
-Air France-KLM sits in the middle of the network group on EBITDA margin, net leverage, gross leverage, interest coverage and FFO to debt, ranking 2nd of 3 on net leverage.
-Its strongest relative position is advance ticket cover, the lowest of the group (1st of 3), below the peer median of 67.4%.
-It is weakest on cash generation and liquidity, with FCF to debt the lowest of the group (3rd of 3) and cash liquidity to revenue the lowest as well (3rd of 3).
+Air France-KLM sits in the middle of the network group on EBITDA margin, net leverage, gross leverage, interest coverage and FFO to debt, each ranking 2nd of 3.
+Its strongest position is advance ticket cover, the lowest of the group (1st of 3), against a peer median of 67.4%.
+It is weakest on cash generation and liquidity, with FCF to debt against a peer median of 10.8% (3rd of 3) and cash liquidity to revenue the lowest of the group (3rd of 3).
 
 ## Watch items
 
-- Cash generation: FCF to debt of 3.9% is below the peer median of 10.8% and the weakest of the group (3rd of 3), so the conversion of EBITDA into cash remains the key sensitivity.
-- Liquidity: cash liquidity to revenue fell by 1.2 points to 20.8%, below the peer median of 25.0%.
-- Investment: capex intensity rose by 1.6 points to 13.5%, above the peer median of 10.4%, which limits free cash flow while debt is rising.
-- Debt: total debt rose by 5.9% to EUR 15.5bn and net debt by 12.3% to EUR 8.7bn, so leverage now depends on EBITDA holding at the FY2025 level.
+- Cash generation: FCF to debt of 3.9% is the weakest of the group (3rd of 3) and below the peer median of 10.8%, with capex intensity at 13.5% above the peer median.
+- Liquidity: cash liquidity to revenue fell by 1.2 points to 20.8%, the lowest of the group (3rd of 3).
+- Debt: net debt rose by 12.3% to EUR 8.7bn and total debt by 5.9% to EUR 15.5bn, so leverage depends on EBITDA holding at EUR 5.1bn.
+- Customer prepayments: advance ticket cover rose by 3.1 points to 62.2%, so a larger part of the cash balance is refundable if bookings slow.
 
 ## Analyst view
 
@@ -56,60 +58,54 @@ _Left for the analyst: never drafted._
 
 | Try | Sections asked | Verifier | Tokens |
 | --- | --- | --- | --- |
-| 1 | snapshot, credit_metrics, operating_performance, liquidity_funding, peer_positioning, watch_items | 5 errors | 12,716 / 3,195 |
-| 2 | operating_performance, peer_positioning, watch_items | passed | 14,291 / 1,260 |
-| 3 | peer_positioning | passed | 12,921 / 369 |
+| 1 | snapshot, credit_metrics, operating_performance, liquidity_funding, peer_positioning, watch_items | passed | 13,304 / 3,408 |
+| 2 | peer_positioning | passed | 13,753 / 400 |
 
 ### Errors found, by try
 
 Try 1:
 
-- [rule style] operating_performance, sentence 1: revenue.change@FY2025 is already given in credit_metrics, sentence 1: give each figure in one body section only (the snapshot and watch items may restate it)
-- [rule style] operating_performance, sentence 2: capex_intensity@FY2025 is already given in credit_metrics, sentence 4: give each figure in one body section only (the snapshot and watch items may restate it)
 - [rule style] peer_positioning, sentence 2: advance_ticket_cover@FY2025 is already given in liquidity_funding, sentence 3: give each figure in one body section only (the snapshot and watch items may restate it)
-- [rule style] peer_positioning, sentence 3: fcf_to_debt@FY2025 is already given in credit_metrics, sentence 4: give each figure in one body section only (the snapshot and watch items may restate it)
-- [rule 4] watch_items, sentence 1: 'weakest' needs a 'worst_in_group' claim on a figure in the same clause
-
-Try 2:
-
-- [rule style] peer_positioning, sentence 2: advance_ticket_cover@FY2025 is already given in liquidity_funding, sentence 3: give each figure in one body section only (the snapshot and watch items may restate it)
+- [rule style] peer_positioning, sentence 3: fcf_to_debt@FY2025 is already given in credit_metrics, sentence 5: give each figure in one body section only (the snapshot and watch items may restate it)
 
 ### Text with blanks (as the AI wrote it)
 
 `snapshot`
 
-- Air France-KLM, the Franco-Dutch network airline, grew revenue by {{revenue.change@FY2025}} to {{revenue@FY2025}} in FY2025, with the EBITDA margin widening by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}.
-- Net leverage fell by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}} even as net debt rose by {{net_debt.change@FY2025}} to {{net_debt@FY2025}}, the earnings growth doing the work.
-- The point to watch is cash liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, the weakest of the network peers ({{cash_liquidity_to_revenue.peer_rank@FY2025}}).
+- Air France-KLM, the network airline group spanning Air France and KLM, grew revenue by {{revenue.change@FY2025}} to {{revenue@FY2025}} in FY2025, with the EBITDA margin widening by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}.
+- Net leverage fell by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}}, in line with the peer median, even as net debt rose by {{net_debt.change@FY2025}} to {{net_debt@FY2025}}.
+- The point to watch is cash liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, below the peer median, while capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}.
 
 `credit_metrics`
 
-- EBITDA increased by {{ebitda.change@FY2025}} to {{ebitda@FY2025}} on revenue up {{revenue.change@FY2025}}, and operating profit rose by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}}.
-- Gross leverage fell by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}} and net leverage by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}}, although total debt rose by {{total_debt.change@FY2025}} to {{total_debt@FY2025}}.
-- FFO rose by {{ffo.change@FY2025}} to {{ffo@FY2025}}, lifting FFO to debt by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}, and interest coverage improved by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}}.
-- Free cash flow turned positive at {{fcf@FY2025}}, taking FCF to debt up by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}}, but capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}.
+- EBITDA increased by {{ebitda.change@FY2025}} to {{ebitda@FY2025}}, and operating profit rose by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}} as depreciation, amortisation and impairment grew by {{dda.change@FY2025}} to {{dda@FY2025}}.
+- Total debt rose by {{total_debt.change@FY2025}} to {{total_debt@FY2025}}, but gross leverage fell by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}} on the larger earnings base.
+- Interest coverage improved by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}}, with finance costs broadly unchanged at {{finance_costs@FY2025}}.
+- FFO rose by {{ffo.change@FY2025}} to {{ffo@FY2025}}, lifting FFO to debt by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}, and free cash flow turned positive at {{fcf@FY2025}} as cash from operations grew by {{cfo.change@FY2025}} to {{cfo@FY2025}}.
+- FCF to debt improved by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}}, held back by capex of {{capex@FY2025}}, up {{capex.change@FY2025}}.
 
 `operating_performance`
 
-- The EBITDA margin widened by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, against {{ebitda_margin@FY2024}} in FY2024, as earnings grew faster than the top line.
+- Revenue grew by {{revenue.change@FY2025}} to {{revenue@FY2025}}, with the EBITDA margin at {{ebitda_margin@FY2025}} against {{ebitda_margin@FY2024}} in FY2024.
+- Capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, above the peer median of {{capex_intensity.peer_median@FY2025}}, as the group invested in its fleet.
 - In FY2024 the group carried {{passengers@FY2024}} passengers with a fleet of {{fleet@FY2024}} aircraft at an average age of {{fleet_age@FY2024}}.
 
 `liquidity_funding`
 
-- Cash and cash-like investments were broadly unchanged at {{cash_like@FY2025}}, a change of {{cash_like.change@FY2025}} on FY2024.
+- Cash and cash-like investments were stable at {{cash_like@FY2025}}, a change of {{cash_like.change@FY2025}} on FY2024.
 - Cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2025}}.
-- Customer prepayments rose, with contract liabilities up by {{contract_liabilities.change@FY2025}} to {{contract_liabilities@FY2025}} and advance ticket cover up by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}.
-- Funding activity included senior unsecured bonds placed under the EMTN programme and the redemption of the outstanding hybrid bonds, alongside an extension of the Air France-KLM and Air France credit facility maturity.
+- Contract liabilities rose by {{contract_liabilities.change@FY2025}} to {{contract_liabilities@FY2025}}, and advance ticket cover increased by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}, so a larger share of cash is customer prepayments.
+- Funding activity included senior unsecured bonds placed under the EMTN programme and the redemption of the outstanding hybrid bonds from the hard call date, while the maturity of the Air France-KLM and Air France credit facility was extended.
 
 `peer_positioning`
 
-- Air France-KLM sits in the middle of the network group on EBITDA margin, net leverage, gross leverage, interest coverage and FFO to debt, ranking {{net_leverage.peer_rank@FY2025}} on net leverage.
-- Its strongest relative position is advance ticket cover, the lowest of the group ({{advance_ticket_cover.peer_rank@FY2025}}), below the peer median of {{advance_ticket_cover.peer_median@FY2025}}.
-- It is weakest on cash generation and liquidity, with FCF to debt the lowest of the group ({{fcf_to_debt.peer_rank@FY2025}}) and cash liquidity to revenue the lowest as well ({{cash_liquidity_to_revenue.peer_rank@FY2025}}).
+- Air France-KLM sits in the middle of the network group on EBITDA margin, net leverage, gross leverage, interest coverage and FFO to debt, each ranking {{net_leverage.peer_rank@FY2025}}.
+- Its strongest position is advance ticket cover, the lowest of the group ({{advance_ticket_cover.peer_rank@FY2025}}), against a peer median of {{advance_ticket_cover.peer_median@FY2025}}.
+- It is weakest on cash generation and liquidity, with FCF to debt against a peer median of {{fcf_to_debt.peer_median@FY2025}} ({{fcf_to_debt.peer_rank@FY2025}}) and cash liquidity to revenue the lowest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2025}}).
 
 `watch_items`
 
-- Cash generation: FCF to debt of {{fcf_to_debt@FY2025}} is below the peer median of {{fcf_to_debt.peer_median@FY2025}} and the weakest of the group ({{fcf_to_debt.peer_rank@FY2025}}), so the conversion of EBITDA into cash remains the key sensitivity.
-- Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2025}}.
-- Investment: capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, above the peer median of {{capex_intensity.peer_median@FY2025}}, which limits free cash flow while debt is rising.
-- Debt: total debt rose by {{total_debt.change@FY2025}} to {{total_debt@FY2025}} and net debt by {{net_debt.change@FY2025}} to {{net_debt@FY2025}}, so leverage now depends on EBITDA holding at the FY2025 level.
+- Cash generation: FCF to debt of {{fcf_to_debt@FY2025}} is the weakest of the group ({{fcf_to_debt.peer_rank@FY2025}}) and below the peer median of {{fcf_to_debt.peer_median@FY2025}}, with capex intensity at {{capex_intensity@FY2025}} above the peer median.
+- Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, the lowest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2025}}).
+- Debt: net debt rose by {{net_debt.change@FY2025}} to {{net_debt@FY2025}} and total debt by {{total_debt.change@FY2025}} to {{total_debt@FY2025}}, so leverage depends on EBITDA holding at {{ebitda@FY2025}}.
+- Customer prepayments: advance ticket cover rose by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}, so a larger part of the cash balance is refundable if bookings slow.

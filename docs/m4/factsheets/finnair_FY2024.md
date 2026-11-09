@@ -57,6 +57,18 @@ Company type: airline. Reporting currency: EUR. Peer group: Network airlines (af
 | operating_profit@FY2024 | Operating profit, FY2024 | EUR 114m | down, worse vs prior year |
 | operating_profit@FY2023 | Operating profit, FY2023 | EUR 191m |  |
 | operating_profit.change@FY2024 | change in Operating profit, FY2023 to FY2024 | 40.3% | down, worse vs prior year; printed without a sign: say the direction in words |
+| dda@FY2024 | Depreciation, amortisation and impairment, FY2024 | EUR 330m | down vs prior year |
+| dda@FY2023 | Depreciation, amortisation and impairment, FY2023 | EUR 346m |  |
+| dda.change@FY2024 | change in Depreciation, amortisation and impairment, FY2023 to FY2024 | 4.6% | down vs prior year; printed without a sign: say the direction in words |
+| finance_costs@FY2024 | Finance costs, FY2024 | EUR 107m | down, better vs prior year |
+| finance_costs@FY2023 | Finance costs, FY2023 | EUR 142m |  |
+| finance_costs.change@FY2024 | change in Finance costs, FY2023 to FY2024 | 24.6% | down, better vs prior year; printed without a sign: say the direction in words |
+| cfo@FY2024 | Cash from operations, FY2024 | EUR 613m | up, better vs prior year |
+| cfo@FY2023 | Cash from operations, FY2023 | EUR 472m |  |
+| cfo.change@FY2024 | change in Cash from operations, FY2023 to FY2024 | 29.7% | up, better vs prior year; printed without a sign: say the direction in words |
+| capex@FY2024 | Capex (purchases of PP&E and intangibles), FY2024 | EUR 234m | down vs prior year |
+| capex@FY2023 | Capex (purchases of PP&E and intangibles), FY2023 | EUR 404m |  |
+| capex.change@FY2024 | change in Capex (purchases of PP&E and intangibles), FY2023 to FY2024 | 42.2% | down vs prior year; printed without a sign: say the direction in words |
 
 ## Operating performance
 
@@ -72,6 +84,9 @@ Company type: airline. Reporting currency: EUR. Peer group: Network airlines (af
 | fleet@FY2023 | Fleet, FY2023 | 79 |  |
 | fleet.change@FY2024 | change in Fleet, FY2023 to FY2024 | 1.3% | flat vs prior year; printed without a sign: say the direction in words |
 | fleet_age@FY2023 | Fleet average age, FY2023 | 12.5 years |  |
+| fuel_cost@FY2024 | Fuel cost, FY2024 | EUR 894m | flat vs prior year |
+| fuel_cost@FY2023 | Fuel cost, FY2023 | EUR 899m |  |
+| fuel_cost.change@FY2024 | change in Fuel cost, FY2023 to FY2024 | 0.5% | flat vs prior year; printed without a sign: say the direction in words |
 
 ## Liquidity and funding
 

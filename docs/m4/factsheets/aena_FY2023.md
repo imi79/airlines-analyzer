@@ -59,6 +59,18 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | operating_profit@FY2023 | Operating profit, FY2023 | EUR 2.2bn | up, better vs prior year |
 | operating_profit@FY2022 | Operating profit, FY2022 | EUR 1.3bn |  |
 | operating_profit.change@FY2023 | change in Operating profit, FY2022 to FY2023 | 71.5% | up, better vs prior year; printed without a sign: say the direction in words |
+| dda@FY2023 | Depreciation, amortisation and impairment, FY2023 | EUR 821m | up vs prior year |
+| dda@FY2022 | Depreciation, amortisation and impairment, FY2022 | EUR 795m |  |
+| dda.change@FY2023 | change in Depreciation, amortisation and impairment, FY2022 to FY2023 | 3.3% | up vs prior year; printed without a sign: say the direction in words |
+| finance_costs@FY2023 | Finance costs, FY2023 | EUR 207m | up, worse vs prior year |
+| finance_costs@FY2022 | Finance costs, FY2022 | EUR 114m |  |
+| finance_costs.change@FY2023 | change in Finance costs, FY2022 to FY2023 | 81.5% | up, worse vs prior year; printed without a sign: say the direction in words |
+| cfo@FY2023 | Cash from operations, FY2023 | EUR 2.2bn | up, better vs prior year |
+| cfo@FY2022 | Cash from operations, FY2022 | EUR 1.9bn |  |
+| cfo.change@FY2023 | change in Cash from operations, FY2022 to FY2023 | 19.1% | up, better vs prior year; printed without a sign: say the direction in words |
+| capex@FY2023 | Capex (purchases of PP&E and intangibles), FY2023 | EUR 1.4bn | up vs prior year |
+| capex@FY2022 | Capex (purchases of PP&E and intangibles), FY2022 | EUR 728m |  |
+| capex.change@FY2023 | change in Capex (purchases of PP&E and intangibles), FY2022 to FY2023 | 90.0% | up vs prior year; printed without a sign: say the direction in words |
 
 ## Operating performance
 
@@ -130,6 +142,8 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - non_aero_share@FY2022: n.m.: group revenue includes London Luton and the Brazilian airports, while the aeronautical revenue is the Spanish network's segment only.
 - contract_liabilities@FY2023: no figure for this year
 - contract_liabilities@FY2022: no figure for this year
+- fuel_cost@FY2023: no figure for this year
+- fuel_cost@FY2022: no figure for this year
 - net_cash@FY2023: the company has net debt, not net cash
 - net_cash@FY2022: the company has net debt, not net cash
 - cash_liquidity@FY2023: the same figure as cash_like@FY2023: use that id

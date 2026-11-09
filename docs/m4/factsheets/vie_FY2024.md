@@ -44,6 +44,18 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | operating_profit@FY2024 | Operating profit, FY2024 | EUR 306m | up, better vs prior year |
 | operating_profit@FY2023 | Operating profit, FY2023 | EUR 262m |  |
 | operating_profit.change@FY2024 | change in Operating profit, FY2023 to FY2024 | 16.9% | up, better vs prior year; printed without a sign: say the direction in words |
+| dda@FY2024 | Depreciation, amortisation and impairment, FY2024 | EUR 136m | up vs prior year |
+| dda@FY2023 | Depreciation, amortisation and impairment, FY2023 | EUR 132m |  |
+| dda.change@FY2024 | change in Depreciation, amortisation and impairment, FY2023 to FY2024 | 3.1% | up vs prior year; printed without a sign: say the direction in words |
+| finance_costs@FY2024 | Finance costs, FY2024 | EUR 2.8m | down, better vs prior year |
+| finance_costs@FY2023 | Finance costs, FY2023 | EUR 12.0m |  |
+| finance_costs.change@FY2024 | change in Finance costs, FY2023 to FY2024 | 76.3% | down, better vs prior year; printed without a sign: say the direction in words |
+| cfo@FY2024 | Cash from operations, FY2024 | EUR 444m | up, better vs prior year |
+| cfo@FY2023 | Cash from operations, FY2023 | EUR 385m |  |
+| cfo.change@FY2024 | change in Cash from operations, FY2023 to FY2024 | 15.3% | up, better vs prior year; printed without a sign: say the direction in words |
+| capex@FY2024 | Capex (purchases of PP&E and intangibles), FY2024 | EUR 170m | up vs prior year |
+| capex@FY2023 | Capex (purchases of PP&E and intangibles), FY2023 | EUR 97.8m |  |
+| capex.change@FY2024 | change in Capex (purchases of PP&E and intangibles), FY2023 to FY2024 | 73.6% | up vs prior year; printed without a sign: say the direction in words |
 | net_cash@FY2024 | Net cash (cash and cash-like investments above total debt), FY2024 | EUR 512m | up, better vs prior year |
 | net_cash@FY2023 | Net cash (cash and cash-like investments above total debt), FY2023 | EUR 362m |  |
 | net_cash.change@FY2024 | change in Net cash (cash and cash-like investments above total debt), FY2023 to FY2024 | 41.4% | up, better vs prior year; printed without a sign: say the direction in words |
@@ -142,6 +154,8 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - contract_liabilities@FY2023: no figure for this year
 - undrawn_facilities@FY2024: no figure for this year
 - undrawn_facilities@FY2023: no figure for this year
+- fuel_cost@FY2024: no figure for this year
+- fuel_cost@FY2023: no figure for this year
 - cash_liquidity@FY2024: the same figure as cash_like@FY2024: use that id
 - cash_liquidity.change@FY2024: the same figure as cash_like.change@FY2024: use that id
 - cash_liquidity@FY2023: the same figure as cash_like@FY2023: use that id

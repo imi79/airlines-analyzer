@@ -3,7 +3,9 @@
 Date: 2026-11-09 · Status: fixes A to D done (Imane: "go with A, B, C and D with ai writing the events
 like in M3"); Vienna's deposits approved, removal rule confirmed, last round done (Imane:
 "approve vienna figures, confirm removal rule, do the last round"); third score 3.70; a fourth
-round with fixes 1 and 2 ("do one more round with fixes 1 and 2"): 3.75, below the pass mark
+round with fixes 1 and 2 ("do one more round with fixes 1 and 2"): 3.75; a last attempt with
+the cause lines ("do the last attempt with the extra statement lines"): 3.78, below the pass
+mark
 
 **Who scored.** At Imane's request ("check it yourself with the annual reports of the
 companies"), Claude scored the ten drafts of the score sheet, after checking each one against
@@ -239,3 +241,48 @@ is not a fact-sheet figure, so "as depreciation increased" is refused). What rem
 - **Peer sentences** that still list ranks or compare a company with itself as the median.
 
 Tokens: about 7.6 million for M4 AI calls in all.
+
+## Round 5: the cause lines (last attempt)
+
+- **Five statement lines added to the fact sheet** (`config/narrative.yaml`): depreciation,
+  amortisation and impairment, finance costs, fuel cost, cash from operations, capex, each
+  with its computed direction. Prompt `draft-v7` tells the AI to explain moves with them.
+- **Gate 2:** 16 of 18 drafts pass, drafts 1 to 11 in a row across all nine companies; 3 pass
+  at the first try (the most of any run); 6 sentences removed; no number outside a blank.
+
+| Draft | Round 5 | Round 4 | Round 3 | Round 2 | Round 1 |
+| --- | --- | --- | --- | --- | --- |
+| Air France-KLM FY2025 | 3.75 | 4.00 | 3.75 | 3.50 | 2.75 |
+| IAG FY2025 | 3.75 | 3.50 | 4.00 | 3.75 | 3.25 |
+| Finnair FY2025 | 4.00 | 4.00 | 4.00 | 4.00 | 2.25 |
+| easyJet FY2025 | 3.75 | 3.75 | 3.75 | 3.75 | 3.50 |
+| Groupe ADP FY2025 | 3.50 | 3.50 | 3.25 | 3.00 | 2.50 |
+| Aena FY2025 | 3.75 | 3.75 | 3.50 | 3.50 | 3.25 |
+| Flughafen Wien FY2025 | 3.50 | 3.75 | 3.75 | 3.00 | 1.75 |
+| Norwegian FY2025 | 3.75 | 3.50 | 3.25 | 3.25 | 3.25 |
+| Wizz Air FY2026 | 4.00 | 4.00 | 4.00 | 3.50 | 3.50 |
+| Air France-KLM FY2024 | 4.00 | 3.75 | 3.75 | 3.75 | 3.25 |
+| **Average** | **3.78** | 3.75 | 3.70 | 3.50 | 2.93 |
+
+By criterion: accuracy 3.7, relevance 3.9, concision 3.5, credit insight 4.0.
+
+**What the cause lines did.** Insight reaches 4.0: Wizz Air now explains why operating profit
+fell while EBITDA rose (depreciation up 21.9%), Finnair and easyJet tie coverage to finance
+costs, Aena and Norwegian tie operating profit to lower depreciation. **What they brought:** a
+new kind of error the verifier cannot see, a cause pointing the wrong way. Air France-KLM
+FY2025: operating profit rose "as" depreciation grew; Flughafen Wien: operating profit fell
+"as" depreciation eased. Each figure and each direction is right; the link between them is
+not ("despite" was meant). Accuracy drops from 3.9 to 3.7.
+
+**Where the score stops.** Over five rounds the score rose from 2.93 to 3.78 and has levelled
+off: each redraft fixes some sentences and loses others. What separates it from 4:
+- **Causal links** in words ("as", "despite"), which the verifier does not read. A check is
+  possible: for pairs whose effect is known (more depreciation lowers operating profit, more
+  finance costs lower coverage, more capex lowers free cash flow), "as" must link moves that
+  agree and "despite" moves that oppose. Not built: it is a new rule, for Imane to decide.
+- **Peer sentences that list ranks** in five drafts, despite the instructions.
+- **ADP's event summaries** that add details, and its minor events (statements only).
+- **Figures waiting for Imane's review**: Air France-KLM's undrawn lines, Aena's 2025
+  passengers.
+
+Tokens: about 8.4 million for M4 AI calls in all.

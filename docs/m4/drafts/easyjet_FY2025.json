@@ -1,8 +1,8 @@
 {
  "issuer": "easyjet",
  "fiscal_year": 2025,
- "prompt_version": "draft-v6",
- "input_hash": "56f482cae4b2db0663194b36d7799495c35ec595de86927ece11ec4377b42eae",
+ "prompt_version": "draft-v7",
+ "input_hash": "8dc5bbbf7004da5db3a620414bbe9ea48704fbd90496d58ca534d0d8a8e78b1c",
  "status": {
   "snapshot": "passed",
   "credit_metrics": "passed",
@@ -23,7 +23,7 @@
     "peer_positioning",
     "watch_items"
    ],
-   "request_hash": "767554066af123699dc9ec62d437eda886675ccbaa8efba3662266ed1d5d4feb",
+   "request_hash": "e453cb30b0687dfddd610c072ab10ff23c10e973126151fe0828f148777e3663",
    "model": "deepseek-flash",
    "draft": {
     "snapshot": [
@@ -50,7 +50,7 @@
       ]
      },
      {
-      "text": "The balance sheet strengthened: net leverage fell by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}}, a net cash position, and gross leverage came down to {{gross_leverage@FY2025}}.",
+      "text": "The balance sheet strengthened: net leverage fell by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}}, a net cash position, as total debt was reduced by {{total_debt.change@FY2025}}.",
       "facts": [
        {
         "id": "net_leverage.change@FY2025",
@@ -64,28 +64,16 @@
         "claims": []
        },
        {
-        "id": "gross_leverage@FY2025",
+        "id": "total_debt.change@FY2025",
         "claims": [
-         "down",
-         "better"
+         "down"
         ]
        }
       ]
      },
      {
-      "text": "The point to watch is the margin gap to peers, with EBITDA margin of {{ebitda_margin@FY2025}} below the peer median of {{ebitda_margin.peer_median@FY2025}} and cash liquidity to revenue down by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}.",
+      "text": "The point to watch is liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, and the EBITDA margin of {{ebitda_margin@FY2025}} is the weakest of the low-cost peers ({{ebitda_margin.peer_rank@FY2025}}).",
       "facts": [
-       {
-        "id": "ebitda_margin@FY2025",
-        "claims": [
-         "below_peers",
-         "worse_than_peers"
-        ]
-       },
-       {
-        "id": "ebitda_margin.peer_median@FY2025",
-        "claims": []
-       },
        {
         "id": "cash_liquidity_to_revenue.change@FY2025",
         "claims": [
@@ -96,13 +84,26 @@
        {
         "id": "cash_liquidity_to_revenue@FY2025",
         "claims": []
+       },
+       {
+        "id": "ebitda_margin@FY2025",
+        "claims": [
+         "below_peers",
+         "worse"
+        ]
+       },
+       {
+        "id": "ebitda_margin.peer_rank@FY2025",
+        "claims": [
+         "worst_in_group"
+        ]
        }
       ]
      }
     ],
     "credit_metrics": [
      {
-      "text": "EBITDA rose by {{ebitda.change@FY2025}} to {{ebitda@FY2025}} on revenue up {{revenue.change@FY2025}}, and operating profit increased by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}}.",
+      "text": "EBITDA rose by {{ebitda.change@FY2025}} to {{ebitda@FY2025}} on revenue up {{revenue.change@FY2025}}, and operating profit increased by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}} as depreciation fell by {{dda.change@FY2025}}.",
       "facts": [
        {
         "id": "ebitda.change@FY2025",
@@ -132,11 +133,17 @@
        {
         "id": "operating_profit@FY2025",
         "claims": []
+       },
+       {
+        "id": "dda.change@FY2025",
+        "claims": [
+         "down"
+        ]
        }
       ]
      },
      {
-      "text": "Total debt was reduced by {{total_debt.change@FY2025}} to {{total_debt@FY2025}}, taking gross leverage down by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}} and leaving net cash of {{net_cash@FY2025}}.",
+      "text": "Total debt was cut by {{total_debt.change@FY2025}} to {{total_debt@FY2025}}, taking gross leverage down by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}} and leaving net cash of {{net_cash@FY2025}} against {{net_cash@FY2024}} in FY2024.",
       "facts": [
        {
         "id": "total_debt.change@FY2025",
@@ -161,13 +168,31 @@
        },
        {
         "id": "net_cash@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "net_cash@FY2024",
         "claims": []
        }
       ]
      },
      {
-      "text": "Cash generation improved: FFO to debt rose by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}} and FCF to debt by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}}, with free cash flow of {{fcf@FY2025}}.",
+      "text": "Cash generation improved: FFO rose by {{ffo.change@FY2025}} to {{ffo@FY2025}}, lifting FFO to debt by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}, and free cash flow rose by {{fcf.change@FY2025}} to {{fcf@FY2025}} despite capex up {{capex.change@FY2025}} to {{capex@FY2025}}.",
       "facts": [
+       {
+        "id": "ffo.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "ffo@FY2025",
+        "claims": []
+       },
        {
         "id": "ffo_to_debt.change@FY2025",
         "claims": [
@@ -180,24 +205,30 @@
         "claims": []
        },
        {
-        "id": "fcf_to_debt.change@FY2025",
+        "id": "fcf.change@FY2025",
         "claims": [
          "up",
          "better"
         ]
        },
        {
-        "id": "fcf_to_debt@FY2025",
+        "id": "fcf@FY2025",
         "claims": []
        },
        {
-        "id": "fcf@FY2025",
+        "id": "capex.change@FY2025",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "capex@FY2025",
         "claims": []
        }
       ]
      },
      {
-      "text": "Interest coverage eased by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}}, still well above the peer median of {{interest_coverage.peer_median@FY2025}}, as airline net financing charges increased.",
+      "text": "Interest coverage eased by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}} as finance costs rose by {{finance_costs.change@FY2025}} to {{finance_costs@FY2025}}, with airline net financing charges up on lower interest income on cash and higher charges on borrowings.",
       "facts": [
        {
         "id": "interest_coverage.change@FY2025",
@@ -211,45 +242,27 @@
         "claims": []
        },
        {
-        "id": "interest_coverage.peer_median@FY2025",
+        "id": "finance_costs.change@FY2025",
         "claims": [
-         "above_peers"
+         "up",
+         "worse"
         ]
+       },
+       {
+        "id": "finance_costs@FY2025",
+        "claims": []
        },
        {
         "id": "event:costs",
         "claims": []
        }
       ]
-     },
-     {
-      "text": "Capex intensity was broadly unchanged at {{capex_intensity@FY2025}}, in line with the peer median.",
-      "facts": [
-       {
-        "id": "capex_intensity@FY2025",
-        "claims": [
-         "flat",
-         "in_line_with_peers"
-        ]
-       }
-      ]
      }
     ],
     "operating_performance": [
      {
-      "text": "Passengers rose by {{passengers.change@FY2025}} to {{passengers@FY2025}} as capacity grew by {{ask.change@FY2025}} to {{ask@FY2025}} available seat kilometres.",
+      "text": "Capacity grew by {{ask.change@FY2025}} to {{ask@FY2025}} available seat kilometres and traffic by {{rpk.change@FY2025}} to {{rpk@FY2025}} revenue passenger kilometres, with passengers up {{passengers.change@FY2025}} to {{passengers@FY2025}}.",
       "facts": [
-       {
-        "id": "passengers.change@FY2025",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "passengers@FY2025",
-        "claims": []
-       },
        {
         "id": "ask.change@FY2025",
         "claims": [
@@ -260,12 +273,7 @@
        {
         "id": "ask@FY2025",
         "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Traffic rose by {{rpk.change@FY2025}} to {{rpk@FY2025}} revenue passenger kilometres, lifting the load factor by {{load_factor.change@FY2025}} to {{load_factor@FY2025}}.",
-      "facts": [
+       },
        {
         "id": "rpk.change@FY2025",
         "claims": [
@@ -278,6 +286,22 @@
         "claims": []
        },
        {
+        "id": "passengers.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "passengers@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "The load factor rose by {{load_factor.change@FY2025}} to {{load_factor@FY2025}}, but passenger yield fell by {{passenger_yield.change@FY2025}} to {{passenger_yield@FY2025}}, leaving RASK broadly unchanged at {{rask@FY2025}}.",
+      "facts": [
+       {
         "id": "load_factor.change@FY2025",
         "claims": [
          "up",
@@ -287,12 +311,7 @@
        {
         "id": "load_factor@FY2025",
         "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Passenger yield fell by {{passenger_yield.change@FY2025}} to {{passenger_yield@FY2025}}, leaving RASK broadly unchanged at {{rask@FY2025}}.",
-      "facts": [
+       },
        {
         "id": "passenger_yield.change@FY2025",
         "claims": [
@@ -313,7 +332,7 @@
       ]
      },
      {
-      "text": "CASK declined by {{cask.change@FY2025}} to {{cask@FY2025}}, while CASK ex-fuel was broadly unchanged at {{cask_ex_fuel@FY2025}} and the fuel share of costs fell by {{fuel_share_of_costs.change@FY2025}} to {{fuel_share_of_costs@FY2025}}.",
+      "text": "CASK fell by {{cask.change@FY2025}} to {{cask@FY2025}} while CASK ex-fuel was stable at {{cask_ex_fuel@FY2025}}, and fuel cost was broadly unchanged at {{fuel_cost@FY2025}}, taking the fuel share of costs down by {{fuel_share_of_costs.change@FY2025}} to {{fuel_share_of_costs@FY2025}}.",
       "facts": [
        {
         "id": "cask.change@FY2025",
@@ -333,6 +352,12 @@
         ]
        },
        {
+        "id": "fuel_cost@FY2025",
+        "claims": [
+         "flat"
+        ]
+       },
+       {
         "id": "fuel_share_of_costs.change@FY2025",
         "claims": [
          "down"
@@ -345,7 +370,7 @@
       ]
      },
      {
-      "text": "The fleet grew by {{fleet.change@FY2025}} to {{fleet@FY2025}} aircraft, with an average age of {{fleet_age@FY2025}} after the purchase of previously leased aircraft.",
+      "text": "The fleet rose by {{fleet.change@FY2025}} to {{fleet@FY2025}} aircraft, with an average age of {{fleet_age@FY2025}} after the purchase of aircraft previously held on lease.",
       "facts": [
        {
         "id": "fleet.change@FY2025",
@@ -389,8 +414,12 @@
       ]
      },
      {
-      "text": "Cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, while liquidity to revenue was {{liquidity_to_revenue@FY2025}}.",
+      "text": "Liquidity to revenue was {{liquidity_to_revenue@FY2025}}, while cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}.",
       "facts": [
+       {
+        "id": "liquidity_to_revenue@FY2025",
+        "claims": []
+       },
        {
         "id": "cash_liquidity_to_revenue.change@FY2025",
         "claims": [
@@ -400,10 +429,6 @@
        },
        {
         "id": "cash_liquidity_to_revenue@FY2025",
-        "claims": []
-       },
-       {
-        "id": "liquidity_to_revenue@FY2025",
         "claims": []
        }
       ]
@@ -435,7 +460,7 @@
       ]
      },
      {
-      "text": "Funding was reshaped during the year: a new revolving credit facility replaced the previous UK Export Finance facility and smaller facility, and a Eurobond was repaid at maturity.",
+      "text": "Funding was reshaped during the year: a new revolving credit facility replaced the previous UK Export Finance facility and smaller facility, a Eurobond was repaid at maturity, and the EMTN programme was refreshed.",
       "facts": [
        {
         "id": "event:funding_and_rating",
@@ -444,18 +469,32 @@
        {
         "id": "event:funding_and_rating-2",
         "claims": []
+       },
+       {
+        "id": "event:funding_and_rating-4",
+        "claims": []
        }
       ]
      }
     ],
     "peer_positioning": [
      {
-      "text": "easyJet has the lowest net leverage and gross leverage of the low-cost peer group ({{net_leverage.peer_rank@FY2025}} and {{gross_leverage.peer_rank@FY2025}}), and leads on interest coverage, FFO to debt and FCF to debt ({{interest_coverage.peer_rank@FY2025}}, {{ffo_to_debt.peer_rank@FY2025}}, {{fcf_to_debt.peer_rank@FY2025}}).",
+      "text": "easyJet has the lowest net leverage of the low-cost group ({{net_leverage.peer_rank@FY2025}}), at {{net_leverage@FY2025}} against a peer median of {{net_leverage.peer_median@FY2025}}, and also leads on gross leverage, interest coverage, FFO to debt and FCF to debt.",
       "facts": [
        {
         "id": "net_leverage.peer_rank@FY2025",
         "claims": [
          "best_in_group"
+        ]
+       },
+       {
+        "id": "net_leverage@FY2025",
+        "claims": []
+       },
+       {
+        "id": "net_leverage.peer_median@FY2025",
+        "claims": [
+         "below_peers"
         ]
        },
        {
@@ -485,13 +524,13 @@
       ]
      },
      {
-      "text": "The weakest point is profitability: EBITDA margin of {{ebitda_margin@FY2025}} is the lowest of the group ({{ebitda_margin.peer_rank@FY2025}}) against a peer median of {{ebitda_margin.peer_median@FY2025}}.",
+      "text": "The weakest point is profitability: the EBITDA margin of {{ebitda_margin@FY2025}} is the lowest of the group ({{ebitda_margin.peer_rank@FY2025}}) against a peer median of {{ebitda_margin.peer_median@FY2025}}.",
       "facts": [
        {
         "id": "ebitda_margin@FY2025",
         "claims": [
          "below_peers",
-         "worse_than_peers"
+         "worse"
         ]
        },
        {
@@ -507,24 +546,24 @@
       ]
      },
      {
-      "text": "Cash liquidity to revenue is the strongest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2025}}), while capex intensity and advance ticket cover sit in the middle of the group.",
+      "text": "Capex intensity sits in the middle of the group, advance ticket cover is in line with the peer median, and cash liquidity to revenue is the highest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2025}}).",
       "facts": [
+       {
+        "id": "capex_intensity.peer_median@FY2025",
+        "claims": [
+         "in_line_with_peers"
+        ]
+       },
+       {
+        "id": "advance_ticket_cover.peer_median@FY2025",
+        "claims": [
+         "in_line_with_peers"
+        ]
+       },
        {
         "id": "cash_liquidity_to_revenue.peer_rank@FY2025",
         "claims": [
          "best_in_group"
-        ]
-       },
-       {
-        "id": "capex_intensity@FY2025",
-        "claims": [
-         "in_line_with_peers"
-        ]
-       },
-       {
-        "id": "advance_ticket_cover@FY2025",
-        "claims": [
-         "in_line_with_peers"
         ]
        }
       ]
@@ -532,13 +571,13 @@
     ],
     "watch_items": [
      {
-      "text": "Profitability: EBITDA margin of {{ebitda_margin@FY2025}} is below the peer median of {{ebitda_margin.peer_median@FY2025}}, the weakest margin in the group.",
+      "text": "Profitability: the EBITDA margin of {{ebitda_margin@FY2025}} is below the peer median of {{ebitda_margin.peer_median@FY2025}} and the weakest of the group ({{ebitda_margin.peer_rank@FY2025}}).",
       "facts": [
        {
         "id": "ebitda_margin@FY2025",
         "claims": [
          "below_peers",
-         "worse_than_peers"
+         "worse"
         ]
        },
        {
@@ -554,29 +593,7 @@
       ]
      },
      {
-      "text": "Unit revenue: passenger yield fell by {{passenger_yield.change@FY2025}} to {{passenger_yield@FY2025}}, so RASK was broadly unchanged at {{rask@FY2025}} despite capacity growth.",
-      "facts": [
-       {
-        "id": "passenger_yield.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "passenger_yield@FY2025",
-        "claims": []
-       },
-       {
-        "id": "rask@FY2025",
-        "claims": [
-         "flat"
-        ]
-       }
-      ]
-     },
-     {
-      "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, and advance ticket cover rose by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}, so more of the cash is customers' prepayments.",
+      "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, a thinner buffer even though it remains the highest of the group.",
       "facts": [
        {
         "id": "cash_liquidity_to_revenue.change@FY2025",
@@ -590,20 +607,15 @@
         "claims": []
        },
        {
-        "id": "advance_ticket_cover.change@FY2025",
+        "id": "cash_liquidity_to_revenue.peer_rank@FY2025",
         "claims": [
-         "up",
-         "worse"
+         "best_in_group"
         ]
-       },
-       {
-        "id": "advance_ticket_cover@FY2025",
-        "claims": []
        }
       ]
      },
      {
-      "text": "Costs and fleet: interest coverage eased by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}}, and the average fleet age rose by {{fleet_age.change@FY2025}} to {{fleet_age@FY2025}}.",
+      "text": "Coverage: interest coverage fell by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}} as finance costs rose by {{finance_costs.change@FY2025}} to {{finance_costs@FY2025}}.",
       "facts": [
        {
         "id": "interest_coverage.change@FY2025",
@@ -617,14 +629,30 @@
         "claims": []
        },
        {
-        "id": "fleet_age.change@FY2025",
+        "id": "finance_costs.change@FY2025",
         "claims": [
          "up",
          "worse"
         ]
        },
        {
-        "id": "fleet_age@FY2025",
+        "id": "finance_costs@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Customer prepayments: advance ticket cover rose by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}, so a larger share of the cash balance is refundable if bookings slow.",
+      "facts": [
+       {
+        "id": "advance_ticket_cover.change@FY2025",
+        "claims": [
+         "up",
+         "worse"
+        ]
+       },
+       {
+        "id": "advance_ticket_cover@FY2025",
         "claims": []
        }
       ]
@@ -632,30 +660,121 @@
     ]
    },
    "errors": [
-    "[rule 5] peer_positioning, sentence 3: capex_intensity@FY2025 is listed in the form but not used in the text",
-    "[rule 5] peer_positioning, sentence 3: advance_ticket_cover@FY2025 is listed in the form but not used in the text",
-    "[rule 5] watch_items, sentence 1: ebitda_margin.peer_rank@FY2025 is listed in the form but not used in the text",
-    "[rule 4] watch_items, sentence 2: 'growth' needs a 'up' claim on a figure in the same clause"
+    "[rule 3] snapshot, sentence 3: 'worse' claimed on ebitda_margin@FY2025, but it is neither better nor worse",
+    "[rule 5] peer_positioning, sentence 1: gross_leverage.peer_rank@FY2025 is listed in the form but not used in the text",
+    "[rule 5] peer_positioning, sentence 1: interest_coverage.peer_rank@FY2025 is listed in the form but not used in the text",
+    "[rule 5] peer_positioning, sentence 1: ffo_to_debt.peer_rank@FY2025 is listed in the form but not used in the text",
+    "[rule 5] peer_positioning, sentence 1: fcf_to_debt.peer_rank@FY2025 is listed in the form but not used in the text",
+    "[rule 3] peer_positioning, sentence 2: 'worse' claimed on ebitda_margin@FY2025, but it is neither better nor worse",
+    "[rule 5] peer_positioning, sentence 3: capex_intensity.peer_median@FY2025 is listed in the form but not used in the text",
+    "[rule 5] peer_positioning, sentence 3: advance_ticket_cover.peer_median@FY2025 is listed in the form but not used in the text",
+    "[rule 3] watch_items, sentence 1: 'worse' claimed on ebitda_margin@FY2025, but it is neither better nor worse",
+    "[rule 5] watch_items, sentence 2: cash_liquidity_to_revenue.peer_rank@FY2025 is listed in the form but not used in the text"
    ],
    "error": null
   },
   {
    "try": 2,
    "sections": [
+    "snapshot",
     "peer_positioning",
     "watch_items"
    ],
-   "request_hash": "8eb77132e0c9c4f7d4aeac055e65676e56650989e47744a8c65fceed1bc5fe39",
+   "request_hash": "ce1232d169f1a1277e18ec2682ead4a60b6b4083e1183eab5f18961e8e8b69e3",
    "model": "deepseek-flash",
    "draft": {
+    "snapshot": [
+     {
+      "text": "easyJet, the UK low-cost carrier, grew revenue by {{revenue.change@FY2025}} to {{revenue@FY2025}} in FY2025 while holding its EBITDA margin broadly unchanged at {{ebitda_margin@FY2025}}.",
+      "facts": [
+       {
+        "id": "revenue.change@FY2025",
+        "claims": [
+         "up",
+         "better"
+        ]
+       },
+       {
+        "id": "revenue@FY2025",
+        "claims": []
+       },
+       {
+        "id": "ebitda_margin@FY2025",
+        "claims": [
+         "flat"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "The balance sheet strengthened: net leverage fell by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}}, a net cash position, as total debt was reduced by {{total_debt.change@FY2025}}.",
+      "facts": [
+       {
+        "id": "net_leverage.change@FY2025",
+        "claims": [
+         "down",
+         "better"
+        ]
+       },
+       {
+        "id": "net_leverage@FY2025",
+        "claims": []
+       },
+       {
+        "id": "total_debt.change@FY2025",
+        "claims": [
+         "down"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "The point to watch is liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, and the EBITDA margin of {{ebitda_margin@FY2025}} is the weakest of the low-cost peers ({{ebitda_margin.peer_rank@FY2025}}).",
+      "facts": [
+       {
+        "id": "cash_liquidity_to_revenue.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2025",
+        "claims": []
+       },
+       {
+        "id": "ebitda_margin@FY2025",
+        "claims": [
+         "below_peers"
+        ]
+       },
+       {
+        "id": "ebitda_margin.peer_rank@FY2025",
+        "claims": [
+         "worst_in_group"
+        ]
+       }
+      ]
+     }
+    ],
     "peer_positioning": [
      {
-      "text": "easyJet has the lowest net leverage and gross leverage of the low-cost peer group ({{net_leverage.peer_rank@FY2025}} and {{gross_leverage.peer_rank@FY2025}}), and leads on interest coverage, FFO to debt and FCF to debt ({{interest_coverage.peer_rank@FY2025}}, {{ffo_to_debt.peer_rank@FY2025}}, {{fcf_to_debt.peer_rank@FY2025}}).",
+      "text": "easyJet has the lowest net leverage of the low-cost group ({{net_leverage.peer_rank@FY2025}}), at {{net_leverage@FY2025}} against a peer median of {{net_leverage.peer_median@FY2025}}, and also ranks first on gross leverage ({{gross_leverage.peer_rank@FY2025}}), interest coverage ({{interest_coverage.peer_rank@FY2025}}), FFO to debt ({{ffo_to_debt.peer_rank@FY2025}}) and FCF to debt ({{fcf_to_debt.peer_rank@FY2025}}).",
       "facts": [
        {
         "id": "net_leverage.peer_rank@FY2025",
         "claims": [
          "best_in_group"
+        ]
+       },
+       {
+        "id": "net_leverage@FY2025",
+        "claims": []
+       },
+       {
+        "id": "net_leverage.peer_median@FY2025",
+        "claims": [
+         "below_peers"
         ]
        },
        {
@@ -685,13 +804,12 @@
       ]
      },
      {
-      "text": "The weakest point is profitability: EBITDA margin of {{ebitda_margin@FY2025}} is the lowest of the group ({{ebitda_margin.peer_rank@FY2025}}) against a peer median of {{ebitda_margin.peer_median@FY2025}}.",
+      "text": "The weakest point is profitability: the EBITDA margin of {{ebitda_margin@FY2025}} is the lowest of the group ({{ebitda_margin.peer_rank@FY2025}}) against a peer median of {{ebitda_margin.peer_median@FY2025}}.",
       "facts": [
        {
         "id": "ebitda_margin@FY2025",
         "claims": [
-         "below_peers",
-         "worse_than_peers"
+         "below_peers"
         ]
        },
        {
@@ -707,24 +825,24 @@
       ]
      },
      {
-      "text": "Cash liquidity to revenue is the strongest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2025}}), while capex intensity of {{capex_intensity@FY2025}} and advance ticket cover of {{advance_ticket_cover@FY2025}} sit in the middle of the group.",
+      "text": "Capex intensity sits in the middle of the group, advance ticket cover is in the middle of the group, and cash liquidity to revenue is the highest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2025}}).",
       "facts": [
+       {
+        "id": "capex_intensity.peer_median@FY2025",
+        "claims": [
+         "in_line_with_peers"
+        ]
+       },
+       {
+        "id": "advance_ticket_cover.peer_median@FY2025",
+        "claims": [
+         "in_line_with_peers"
+        ]
+       },
        {
         "id": "cash_liquidity_to_revenue.peer_rank@FY2025",
         "claims": [
          "best_in_group"
-        ]
-       },
-       {
-        "id": "capex_intensity@FY2025",
-        "claims": [
-         "in_line_with_peers"
-        ]
-       },
-       {
-        "id": "advance_ticket_cover@FY2025",
-        "claims": [
-         "in_line_with_peers"
         ]
        }
       ]
@@ -732,13 +850,12 @@
     ],
     "watch_items": [
      {
-      "text": "Profitability: EBITDA margin of {{ebitda_margin@FY2025}} is below the peer median of {{ebitda_margin.peer_median@FY2025}}, the weakest margin in the group ({{ebitda_margin.peer_rank@FY2025}}).",
+      "text": "Profitability: the EBITDA margin of {{ebitda_margin@FY2025}} is below the peer median of {{ebitda_margin.peer_median@FY2025}} and the weakest of the group ({{ebitda_margin.peer_rank@FY2025}}).",
       "facts": [
        {
         "id": "ebitda_margin@FY2025",
         "claims": [
-         "below_peers",
-         "worse_than_peers"
+         "below_peers"
         ]
        },
        {
@@ -754,35 +871,7 @@
       ]
      },
      {
-      "text": "Unit revenue: passenger yield fell by {{passenger_yield.change@FY2025}} to {{passenger_yield@FY2025}}, so RASK was broadly unchanged at {{rask@FY2025}} even as capacity rose by {{ask.change@FY2025}}.",
-      "facts": [
-       {
-        "id": "passenger_yield.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "passenger_yield@FY2025",
-        "claims": []
-       },
-       {
-        "id": "rask@FY2025",
-        "claims": [
-         "flat"
-        ]
-       },
-       {
-        "id": "ask.change@FY2025",
-        "claims": [
-         "up"
-        ]
-       }
-      ]
-     },
-     {
-      "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, and advance ticket cover rose by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}, so more of the cash is customers' prepayments.",
+      "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, a thinner buffer even though it remains the highest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2025}}).",
       "facts": [
        {
         "id": "cash_liquidity_to_revenue.change@FY2025",
@@ -796,20 +885,15 @@
         "claims": []
        },
        {
-        "id": "advance_ticket_cover.change@FY2025",
+        "id": "cash_liquidity_to_revenue.peer_rank@FY2025",
         "claims": [
-         "up",
-         "worse"
+         "best_in_group"
         ]
-       },
-       {
-        "id": "advance_ticket_cover@FY2025",
-        "claims": []
        }
       ]
      },
      {
-      "text": "Costs and fleet: interest coverage eased by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}}, and the average fleet age rose by {{fleet_age.change@FY2025}} to {{fleet_age@FY2025}}.",
+      "text": "Coverage: interest coverage fell by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}} as finance costs rose by {{finance_costs.change@FY2025}} to {{finance_costs@FY2025}}.",
       "facts": [
        {
         "id": "interest_coverage.change@FY2025",
@@ -823,14 +907,30 @@
         "claims": []
        },
        {
-        "id": "fleet_age.change@FY2025",
+        "id": "finance_costs.change@FY2025",
         "claims": [
          "up",
          "worse"
         ]
        },
        {
-        "id": "fleet_age@FY2025",
+        "id": "finance_costs@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Customer prepayments: advance ticket cover rose by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}, so a larger share of the cash balance is refundable if bookings slow.",
+      "facts": [
+       {
+        "id": "advance_ticket_cover.change@FY2025",
+        "claims": [
+         "up",
+         "worse"
+        ]
+       },
+       {
+        "id": "advance_ticket_cover@FY2025",
         "claims": []
        }
       ]
@@ -838,8 +938,9 @@
     ]
    },
    "errors": [
-    "[rule style] peer_positioning, sentence 3: capex_intensity@FY2025 is already given in credit_metrics, sentence 5: give each figure in one body section only (the snapshot and watch items may restate it)",
-    "[rule style] peer_positioning, sentence 3: advance_ticket_cover@FY2025 is already given in liquidity_funding, sentence 3: give each figure in one body section only (the snapshot and watch items may restate it)"
+    "[rule 1] peer_positioning, sentence 1: word that states a number: 'first'",
+    "[rule 5] peer_positioning, sentence 3: capex_intensity.peer_median@FY2025 is listed in the form but not used in the text",
+    "[rule 5] peer_positioning, sentence 3: advance_ticket_cover.peer_median@FY2025 is listed in the form but not used in the text"
    ],
    "error": null
   },
@@ -848,17 +949,27 @@
    "sections": [
     "peer_positioning"
    ],
-   "request_hash": "e2c9b61b899142fcab5926e5aaa43fdbef777c80a231e2060c61731d615b250e",
+   "request_hash": "8586b4f9c67440edecca24bc7532f52fb3c5084c89b4d1aa27444c7ca032603d",
    "model": "deepseek-flash",
    "draft": {
     "peer_positioning": [
      {
-      "text": "easyJet has the lowest net leverage and gross leverage of the low-cost peer group ({{net_leverage.peer_rank@FY2025}} and {{gross_leverage.peer_rank@FY2025}}), and leads on interest coverage, FFO to debt and FCF to debt ({{interest_coverage.peer_rank@FY2025}}, {{ffo_to_debt.peer_rank@FY2025}}, {{fcf_to_debt.peer_rank@FY2025}}).",
+      "text": "easyJet has the lowest net leverage of the low-cost group ({{net_leverage.peer_rank@FY2025}}), at {{net_leverage@FY2025}} against a peer median of {{net_leverage.peer_median@FY2025}}, and also leads on gross leverage ({{gross_leverage.peer_rank@FY2025}}), interest coverage ({{interest_coverage.peer_rank@FY2025}}), FFO to debt ({{ffo_to_debt.peer_rank@FY2025}}) and FCF to debt ({{fcf_to_debt.peer_rank@FY2025}}).",
       "facts": [
        {
         "id": "net_leverage.peer_rank@FY2025",
         "claims": [
          "best_in_group"
+        ]
+       },
+       {
+        "id": "net_leverage@FY2025",
+        "claims": []
+       },
+       {
+        "id": "net_leverage.peer_median@FY2025",
+        "claims": [
+         "below_peers"
         ]
        },
        {
@@ -888,13 +999,12 @@
       ]
      },
      {
-      "text": "The weakest point is profitability: EBITDA margin of {{ebitda_margin@FY2025}} is the lowest of the group ({{ebitda_margin.peer_rank@FY2025}}) against a peer median of {{ebitda_margin.peer_median@FY2025}}.",
+      "text": "The weakest point is profitability: the EBITDA margin of {{ebitda_margin@FY2025}} is the lowest of the group ({{ebitda_margin.peer_rank@FY2025}}) against a peer median of {{ebitda_margin.peer_median@FY2025}}.",
       "facts": [
        {
         "id": "ebitda_margin@FY2025",
         "claims": [
-         "below_peers",
-         "worse_than_peers"
+         "below_peers"
         ]
        },
        {
@@ -910,8 +1020,20 @@
       ]
      },
      {
-      "text": "Cash liquidity to revenue is the strongest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2025}}), while capex intensity and advance ticket cover sit in the middle of the group.",
+      "text": "Capex intensity sits in the middle of the group at {{capex_intensity.peer_median@FY2025}}, advance ticket cover is in the middle of the group at {{advance_ticket_cover.peer_median@FY2025}}, and cash liquidity to revenue is the highest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2025}}).",
       "facts": [
+       {
+        "id": "capex_intensity.peer_median@FY2025",
+        "claims": [
+         "in_line_with_peers"
+        ]
+       },
+       {
+        "id": "advance_ticket_cover.peer_median@FY2025",
+        "claims": [
+         "in_line_with_peers"
+        ]
+       },
        {
         "id": "cash_liquidity_to_revenue.peer_rank@FY2025",
         "claims": [

@@ -187,6 +187,25 @@ a few more statement lines to the fact sheet (depreciation, net financing costs)
 state the causes it currently has removed. (b) is a small change; I would recommend it if you
 want a last attempt at 4.
 
+## Round 5: the cause lines (last attempt, decision 0018)
+
+The fact sheet now gives depreciation, finance costs, fuel cost, cash from operations and
+capex, so the AI can explain a move with a checked figure. Credit insight reaches 4.0 (Wizz
+Air: "operating profit fell as depreciation rose by 21.9%"), but a new kind of error appears:
+a cause pointing the wrong way ("operating profit rose *as* depreciation grew", where
+"despite" was meant), in two drafts. **Score 3.78**; gate 2 still passes (11 in a row).
+
+Over five rounds the score went 2.93, 3.50, 3.70, 3.75, 3.78: it has levelled off. Each
+redraft fixes some sentences and loses others.
+
+**Your decision:**
+1. **Close M4 at 3.78 on the safety result** (my recommendation): every figure on the page is
+   checked, no number was ever written by the AI, and what separates 3.78 from 4 is writing
+   quality you would edit in the app (M5) anyway.
+2. **Or add a causal check** to the verifier ("as" must link moves that agree, "despite"
+   moves that oppose, for pairs with a known effect such as depreciation on operating
+   profit) and redraft once more (about 800,000 tokens).
+
 ## How to rerun
 
 ```bash

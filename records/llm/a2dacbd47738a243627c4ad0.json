@@ -1,0 +1,95 @@
+{
+ "answer": {
+  "sections": {
+   "peer_positioning": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "best_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2026"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "better_than_peers"
+       ],
+       "id": "ebitda_margin@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@FY2026"
+      }
+     ],
+     "text": "Wizz Air has the highest EBITDA margin of the low-cost group ({{ebitda_margin.peer_rank@FY2026}}), at {{ebitda_margin@FY2026}} against a median of {{ebitda_margin.peer_median@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage.peer_median@FY2026"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "gross_leverage.peer_rank@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_median@FY2026"
+      }
+     ],
+     "text": "Leverage is the weakest part of the profile: net leverage ranks last of the group ({{net_leverage.peer_rank@FY2026}}), against a median of {{net_leverage.peer_median@FY2026}}, and gross leverage also ranks last ({{gross_leverage.peer_rank@FY2026}}) against a median of {{gross_leverage.peer_median@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "ffo_to_debt.peer_median@FY2026"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "fcf_to_debt.peer_median@FY2026"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "interest_coverage.peer_median@FY2026"
+      }
+     ],
+     "text": "Cash generation trails the group, with FFO to debt and FCF to debt below medians of {{ffo_to_debt.peer_median@FY2026}} and {{fcf_to_debt.peer_median@FY2026}}, and interest coverage below a median of {{interest_coverage.peer_median@FY2026}}."
+    }
+   ]
+  }
+ },
+ "label": "wizz_FY2026 attempt 3",
+ "recorded_at": "2026-11-09T18:34:04+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v7",
+  "provider": "deepseek",
+  "system_sha256": "7df976c15d2778aae50b27df37bc68eb09be8016c2aae3675b56624520ea8fec",
+  "tool_sha256": "912935195ee0bd77beb3be929dc61a81e02b45a3ecb0996f89dfe23efafa47a2",
+  "user_sha256": "e8bb86e7565223eec393317bad17b8b35e1250e087c216eb00a14e44b4c8d0d2"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 15127,
+  "output_tokens": 551
+ }
+}

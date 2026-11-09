@@ -57,6 +57,18 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | operating_profit@FY2025 | Operating profit, FY2025 | EUR 3.0bn | up, better vs prior year |
 | operating_profit@FY2024 | Operating profit, FY2024 | EUR 2.7bn |  |
 | operating_profit.change@FY2025 | change in Operating profit, FY2024 to FY2025 | 12.2% | up, better vs prior year; printed without a sign: say the direction in words |
+| dda@FY2025 | Depreciation, amortisation and impairment, FY2025 | EUR 797m | down vs prior year |
+| dda@FY2024 | Depreciation, amortisation and impairment, FY2024 | EUR 848m |  |
+| dda.change@FY2025 | change in Depreciation, amortisation and impairment, FY2024 to FY2025 | 6.0% | down vs prior year; printed without a sign: say the direction in words |
+| finance_costs@FY2025 | Finance costs, FY2025 | EUR 242m | flat vs prior year |
+| finance_costs@FY2024 | Finance costs, FY2024 | EUR 246m |  |
+| finance_costs.change@FY2025 | change in Finance costs, FY2024 to FY2025 | 1.4% | flat vs prior year; printed without a sign: say the direction in words |
+| cfo@FY2025 | Cash from operations, FY2025 | EUR 2.8bn | flat vs prior year |
+| cfo@FY2024 | Cash from operations, FY2024 | EUR 2.7bn |  |
+| cfo.change@FY2025 | change in Cash from operations, FY2024 to FY2025 | 1.5% | flat vs prior year; printed without a sign: say the direction in words |
+| capex@FY2025 | Capex (purchases of PP&E and intangibles), FY2025 | EUR 1.1bn | up vs prior year |
+| capex@FY2024 | Capex (purchases of PP&E and intangibles), FY2024 | EUR 823m |  |
+| capex.change@FY2025 | change in Capex (purchases of PP&E and intangibles), FY2024 to FY2025 | 28.7% | up vs prior year; printed without a sign: say the direction in words |
 
 ## Operating performance
 
@@ -136,6 +148,8 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - contract_liabilities@FY2025: no figure for this year
 - contract_liabilities@FY2024: no figure for this year
 - undrawn_facilities@FY2024: no figure for this year
+- fuel_cost@FY2025: no figure for this year
+- fuel_cost@FY2024: no figure for this year
 - net_cash@FY2025: the company has net debt, not net cash
 - net_cash@FY2024: the company has net debt, not net cash
 - cash_liquidity@FY2025: the same figure as cash_like@FY2025: use that id

@@ -9,102 +9,104 @@
 # A score counts only for the exact draft scored: `draft` is its fact sheet fingerprint (first
 # 12 characters) and `prompt_version` the instructions it was written with.
 #
-# Round 4 (2026-11-09): prompt draft-v6, one name per figure, 737-800 allowed. Rounds 1 to 3
-# (2.93, 3.50, 3.70) are kept in decision 0018.
+# Round 5 (2026-11-09): prompt draft-v7, cause lines (depreciation, finance costs, fuel cost,
+# cash from operations, capex) in the fact sheet. Rounds 1 to 4 (2.93, 3.50, 3.70, 3.75) are
+# kept in decision 0018.
 
-scored_by: Claude, at Imane's request (2026-11-09, round 4)
+scored_by: Claude, at Imane's request (2026-11-09, round 5)
 drafts:
   afkl_FY2025:
-    draft: 5aadcdcb60e7
-    prompt_version: draft-v6
-    accuracy: 4
+    draft: e4bef16a5386
+    prompt_version: draft-v7
+    accuracy: 3
     relevance: 4
     concision: 4
     credit_insight: 4
-    comment: 'Accurate and tight: leverage fell ''with earnings doing the work'' while net debt rose;
-      funding events; cash liquidity named as such. The undrawn lines still wait for review.'
+    comment: 'Concise and well funded (EMTN bonds, hybrids redeemed, credit line extended), cash
+      liquidity named as such. One wrong causal link: operating profit rose ''as'' depreciation grew
+      15.6% (it rose despite it).'
   iag_FY2025:
-    draft: 8cce7f5e65f3
-    prompt_version: draft-v6
+    draft: 5ea6d9870f97
+    prompt_version: draft-v7
     accuracy: 4
-    relevance: 3
+    relevance: 4
     concision: 3
     credit_insight: 4
-    comment: Accurate, with shareholder returns and disruption in the snapshot. The capacity and
-      traffic sentence was removed (it called RPK 'broadly unchanged ... up'), so operating performance
-      has no traffic; the peer section still lists ranks.
+    comment: Traffic back, shareholder returns behind the lower cash, coverage tied to lower finance
+      costs, operating profit up 'even as' depreciation grew. Peer sentences still list ranks.
   finnair_FY2025:
-    draft: d91fc2fa3471
-    prompt_version: draft-v6
+    draft: a6e9c5fbd38f
+    prompt_version: draft-v7
     accuracy: 4
     relevance: 4
     concision: 4
     credit_insight: 4
-    comment: 'Strikes, weaker earnings, lower net debt, the bond, the proposed capital return: the
-      year is told, concisely.'
+    comment: 'Strikes, coverage improving as finance costs fell, FFO to debt down as cash from operations
+      fell: causes now rest on checked figures.'
   easyjet_FY2025:
-    draft: 56f482cae4b2
-    prompt_version: draft-v6
+    draft: 8dc5bbbf7004
+    prompt_version: draft-v7
     accuracy: 4
     relevance: 4
     concision: 3
     credit_insight: 4
-    comment: Net cash, ratings, funding reshaped, margin gap to peers. Peer sentence lists five ranks;
-      one watch item (interest coverage and fleet age) is weak.
+    comment: Operating profit up as depreciation fell, coverage eased as finance costs rose, net
+      cash. Liquidity again named the point to watch though first in the group; peer sentence lists
+      five ranks.
   adp_FY2025:
-    draft: 5f53479252d0
-    prompt_version: draft-v6
+    draft: 71b0da6dc4ff
+    prompt_version: draft-v7
     accuracy: 3
     relevance: 3
     concision: 4
     credit_insight: 4
-    comment: Duplicate cash gone, depreciation correctly placed. Two sentences still carry details
-      their quotes do not hold (Ankara investment terms, tariff consultation); events remain minor
-      next to the Paris story.
+    comment: Coverage 'even as' finance costs rose, the Amman base effect on depreciation, cash from
+      operations against capex. The Ankara and tariff sentences still carry details their quotes
+      do not hold.
   aena_FY2025:
-    draft: 29a759dcc1f8
-    prompt_version: draft-v6
+    draft: 4a7949427fe3
+    prompt_version: draft-v7
     accuracy: 4
     relevance: 4
-    concision: 4
-    credit_insight: 3
-    comment: 'Concise: Moody''s upgrade, Luton and Brazil refinancing, the 2026 tariff decision as
-      a watch item. Traffic only for FY2024 (FY2025 passengers wait for review).'
+    concision: 3
+    credit_insight: 4
+    comment: Operating profit up as depreciation fell, capex up 28.7% eating free cash flow, Moody's
+      upgrade, funding events. Traffic only for FY2024; peer sentence lists ranks.
   vie_FY2025:
-    draft: efe2c9281df2
-    prompt_version: draft-v6
+    draft: fc44386045a8
+    prompt_version: draft-v7
+    accuracy: 3
+    relevance: 4
+    concision: 3
+    credit_insight: 4
+    comment: 'Net cash 414m against 512m, write-offs and special items well explained. One wrong
+      causal link: operating profit fell ''as'' depreciation eased (it fell despite it); finance
+      costs of 4.3m given a sentence.'
+  norwegian_FY2025:
+    draft: 60fda5c79ff6
+    prompt_version: draft-v7
     accuracy: 4
     relevance: 4
     concision: 3
     credit_insight: 4
-    comment: Net cash of 414m against 512m, as the company reports, spent on the investment programme;
-      third runway write-off and Get2 deconsolidation. Traffic growth stated twice in one sentence.
-  norwegian_FY2025:
-    draft: a8bca9431028
-    prompt_version: draft-v6
-    accuracy: 4
-    relevance: 4
-    concision: 3
-    credit_insight: 3
-    comment: The 737-800 purchases (behind the capex jump) now stay; perpetual bonds and dividend.
-      The peer section lists six middle ranks; low advance ticket cover (a strength) is again a watch
-      item.
+    comment: Operating profit up as depreciation fell, capex up nearly fourfold behind lower free
+      cash flow, the 737-800 purchases, perpetuals redeemed, first dividend. Peer sentence lists
+      six middle ranks.
   wizz_FY2026:
-    draft: 2d87de752355
-    prompt_version: draft-v6
+    draft: 2f8f9b6dd8e2
+    prompt_version: draft-v7
     accuracy: 4
     relevance: 4
     concision: 4
     credit_insight: 4
-    comment: 'GTF groundings lead, leverage the point to watch, ratings and Eurobond. The sentence
-      on depreciation (why operating profit fell while EBITDA rose) was removed: depreciation is
-      not a fact-sheet figure.'
+    comment: 'Now explains the year: EBITDA up but operating profit down as depreciation rose 21.9%;
+      capex up 44.4% against cash from operations; GTF groundings; leverage the point to watch.'
   afkl_FY2024:
-    draft: d79139566d3d
-    prompt_version: draft-v6
+    draft: f59c7057f34a
+    prompt_version: draft-v7
     accuracy: 4
     relevance: 4
-    concision: 3
+    concision: 4
     credit_insight: 4
-    comment: Virgin payment, Orly provision, engine problems, SAS stake, bond tender. Peer sentence
-      compares four metrics with medians equal to its own values.
+    comment: Operating profit down as depreciation rose, plus the Virgin payment and Orly provision;
+      coverage eased as finance costs rose; capex against cash from operations; concise peers.

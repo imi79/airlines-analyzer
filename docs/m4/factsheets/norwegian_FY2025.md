@@ -56,6 +56,18 @@ Company type: airline. Reporting currency: NOK. Peer group: Low-cost airlines (e
 | operating_profit@FY2025 | Operating profit, FY2025 | NOK 3.7bn | up, better vs prior year |
 | operating_profit@FY2024 | Operating profit, FY2024 | NOK 1.9bn |  |
 | operating_profit.change@FY2025 | change in Operating profit, FY2024 to FY2025 | 99.3% | up, better vs prior year; printed without a sign: say the direction in words |
+| dda@FY2025 | Depreciation, amortisation and impairment, FY2025 | NOK 4.2bn | down vs prior year |
+| dda@FY2024 | Depreciation, amortisation and impairment, FY2024 | NOK 4.8bn |  |
+| dda.change@FY2025 | change in Depreciation, amortisation and impairment, FY2024 to FY2025 | 12.0% | down vs prior year; printed without a sign: say the direction in words |
+| finance_costs@FY2025 | Finance costs, FY2025 | NOK 1.3bn | up, worse vs prior year |
+| finance_costs@FY2024 | Finance costs, FY2024 | NOK 1.1bn |  |
+| finance_costs.change@FY2025 | change in Finance costs, FY2024 to FY2025 | 12.0% | up, worse vs prior year; printed without a sign: say the direction in words |
+| cfo@FY2025 | Cash from operations, FY2025 | NOK 7.8bn | up, better vs prior year |
+| cfo@FY2024 | Cash from operations, FY2024 | NOK 6.9bn |  |
+| cfo.change@FY2025 | change in Cash from operations, FY2024 to FY2025 | 12.9% | up, better vs prior year; printed without a sign: say the direction in words |
+| capex@FY2025 | Capex (purchases of PP&E and intangibles), FY2025 | NOK 5.0bn | up vs prior year |
+| capex@FY2024 | Capex (purchases of PP&E and intangibles), FY2024 | NOK 1.2bn |  |
+| capex.change@FY2025 | change in Capex (purchases of PP&E and intangibles), FY2024 to FY2025 | 299.8% | up vs prior year; printed without a sign: say the direction in words |
 
 ## Operating performance
 
@@ -67,6 +79,9 @@ Company type: airline. Reporting currency: NOK. Peer group: Low-cost airlines (e
 | passengers@FY2025 | Passengers, FY2025 | 27.3m | up, better vs prior year |
 | passengers@FY2024 | Passengers, FY2024 | 26.4m |  |
 | passengers.change@FY2025 | change in Passengers, FY2024 to FY2025 | 3.4% | up, better vs prior year; printed without a sign: say the direction in words |
+| fuel_cost@FY2025 | Fuel cost, FY2025 | NOK 9.6bn | up vs prior year |
+| fuel_cost@FY2024 | Fuel cost, FY2024 | NOK 9.4bn |  |
+| fuel_cost.change@FY2025 | change in Fuel cost, FY2024 to FY2025 | 2.1% | up vs prior year; printed without a sign: say the direction in words |
 
 ## Liquidity and funding
 

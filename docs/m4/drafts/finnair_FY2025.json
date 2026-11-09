@@ -1,8 +1,8 @@
 {
  "issuer": "finnair",
  "fiscal_year": 2025,
- "prompt_version": "draft-v6",
- "input_hash": "d91fc2fa3471a351883a3d587205e9e4b626e22057c605acb82a34b7b0235b77",
+ "prompt_version": "draft-v7",
+ "input_hash": "a6e9c5fbd38fb754f3507b632334dcd787f6414dffd5f1a1ce7977acb39ecf39",
  "status": {
   "snapshot": "passed",
   "credit_metrics": "passed",
@@ -14,7 +14,15 @@
  "removed": {
   "operating_performance": [
    [
-    "Costs related to environmental regulation increased significantly during the year, with greater use of sustainable aviation fuel and changes to the EU Emissions Trading System weighing on the result.",
+    "Costs related to environmental regulation increased significantly during the year, with sustainable aviation fuel use and changes to the EU Emissions Trading System weighing on the result.",
+    [
+     "'increased' needs a 'up' claim on a figure in the same clause"
+    ]
+   ]
+  ],
+  "watch_items": [
+   [
+    "Cost base: the fuel share of costs of {{fuel_share_of_costs@FY2025}} is above the peer median of {{fuel_share_of_costs.peer_median@FY2025}}, and costs related to environmental regulation increased significantly during the year.",
     [
      "'increased' needs a 'up' claim on a figure in the same clause"
     ]
@@ -32,18 +40,22 @@
     "peer_positioning",
     "watch_items"
    ],
-   "request_hash": "378fd5d44a9e38563c8cd8ce1ed4c62a890e586683dae4fbceae838995328666",
+   "request_hash": "49bb1b67aec30cf3fb72623334d40bcb5a8682fecd0ee9e72dba1488fb2dfabe",
    "model": "deepseek-flash",
    "draft": {
     "snapshot": [
      {
-      "text": "Finnair, the Finnish network carrier, kept revenue broadly unchanged at {{revenue@FY2025}} in FY2025, a year in which prolonged industrial action in the first half weighed on the comparable operating result.",
+      "text": "Finnair, the Finnish network carrier, closed FY2025 with revenue broadly unchanged at {{revenue@FY2025}} and EBITDA of {{ebitda@FY2025}}, as prolonged industrial action in the first half weighed on the result.",
       "facts": [
        {
         "id": "revenue@FY2025",
         "claims": [
          "flat"
         ]
+       },
+       {
+        "id": "ebitda@FY2025",
+        "claims": []
        },
        {
         "id": "event:labour",
@@ -109,7 +121,7 @@
     ],
     "credit_metrics": [
      {
-      "text": "EBITDA fell by {{ebitda.change@FY2025}} to {{ebitda@FY2025}} on revenue of {{revenue@FY2025}}, and operating profit declined by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}}.",
+      "text": "EBITDA declined by {{ebitda.change@FY2025}} to {{ebitda@FY2025}} on revenue of {{revenue@FY2025}}, broadly unchanged on the prior year.",
       "facts": [
        {
         "id": "ebitda.change@FY2025",
@@ -124,8 +136,15 @@
        },
        {
         "id": "revenue@FY2025",
-        "claims": []
-       },
+        "claims": [
+         "flat"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Operating profit fell by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}} as depreciation, amortisation and impairment rose by {{dda.change@FY2025}} to {{dda@FY2025}}.",
+      "facts": [
        {
         "id": "operating_profit.change@FY2025",
         "claims": [
@@ -135,6 +154,16 @@
        },
        {
         "id": "operating_profit@FY2025",
+        "claims": []
+       },
+       {
+        "id": "dda.change@FY2025",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "dda@FY2025",
         "claims": []
        }
       ]
@@ -166,7 +195,7 @@
       ]
      },
      {
-      "text": "Interest coverage improved by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}}, still below the peer median of {{interest_coverage.peer_median@FY2025}}.",
+      "text": "Interest coverage improved by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}} as finance costs fell by {{finance_costs.change@FY2025}} to {{finance_costs@FY2025}}.",
       "facts": [
        {
         "id": "interest_coverage.change@FY2025",
@@ -180,15 +209,20 @@
         "claims": []
        },
        {
-        "id": "interest_coverage.peer_median@FY2025",
+        "id": "finance_costs.change@FY2025",
         "claims": [
-         "below_peers"
+         "down",
+         "better"
         ]
+       },
+       {
+        "id": "finance_costs@FY2025",
+        "claims": []
        }
       ]
      },
      {
-      "text": "Cash generation weakened: FFO fell by {{ffo.change@FY2025}} to {{ffo@FY2025}}, taking FFO to debt down by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}, and free cash flow declined by {{fcf.change@FY2025}} to {{fcf@FY2025}}.",
+      "text": "Cash generation weakened: FFO fell by {{ffo.change@FY2025}} to {{ffo@FY2025}} and FCF by {{fcf.change@FY2025}} to {{fcf@FY2025}}, taking FFO to debt down by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}} and FCF to debt to {{fcf_to_debt@FY2025}}.",
       "facts": [
        {
         "id": "ffo.change@FY2025",
@@ -199,6 +233,17 @@
        },
        {
         "id": "ffo@FY2025",
+        "claims": []
+       },
+       {
+        "id": "fcf.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "fcf@FY2025",
         "claims": []
        },
        {
@@ -213,40 +258,7 @@
         "claims": []
        },
        {
-        "id": "fcf.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "fcf@FY2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "FCF to debt fell by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}}, while capex intensity eased by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}.",
-      "facts": [
-       {
-        "id": "fcf_to_debt.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
         "id": "fcf_to_debt@FY2025",
-        "claims": []
-       },
-       {
-        "id": "capex_intensity.change@FY2025",
-        "claims": [
-         "down"
-        ]
-       },
-       {
-        "id": "capex_intensity@FY2025",
         "claims": []
        }
       ]
@@ -254,7 +266,7 @@
     ],
     "operating_performance": [
      {
-      "text": "Passengers were broadly unchanged at {{passengers@FY2025}}, up {{passengers.change@FY2025}}, with the fleet stable at {{fleet@FY2025}} aircraft and an average age of {{fleet_age@FY2025}}.",
+      "text": "Passengers were broadly stable at {{passengers@FY2025}}, up {{passengers.change@FY2025}}, with the fleet at {{fleet@FY2025}} aircraft and an average age of {{fleet_age@FY2025}}.",
       "facts": [
        {
         "id": "passengers@FY2025",
@@ -270,9 +282,7 @@
        },
        {
         "id": "fleet@FY2025",
-        "claims": [
-         "flat"
-        ]
+        "claims": []
        },
        {
         "id": "fleet_age@FY2025",
@@ -281,8 +291,20 @@
       ]
      },
      {
-      "text": "The fuel share of costs fell by {{fuel_share_of_costs.change@FY2025}} to {{fuel_share_of_costs@FY2025}}, above the peer median of {{fuel_share_of_costs.peer_median@FY2025}}.",
+      "text": "Fuel cost was broadly unchanged at {{fuel_cost@FY2025}}, down {{fuel_cost.change@FY2025}}, and the fuel share of costs fell by {{fuel_share_of_costs.change@FY2025}} to {{fuel_share_of_costs@FY2025}}.",
       "facts": [
+       {
+        "id": "fuel_cost@FY2025",
+        "claims": [
+         "flat"
+        ]
+       },
+       {
+        "id": "fuel_cost.change@FY2025",
+        "claims": [
+         "down"
+        ]
+       },
        {
         "id": "fuel_share_of_costs.change@FY2025",
         "claims": [
@@ -292,17 +314,11 @@
        {
         "id": "fuel_share_of_costs@FY2025",
         "claims": []
-       },
-       {
-        "id": "fuel_share_of_costs.peer_median@FY2025",
-        "claims": [
-         "above_peers"
-        ]
        }
       ]
      },
      {
-      "text": "Costs related to environmental regulation increased significantly during the year, with greater use of sustainable aviation fuel and changes to the EU Emissions Trading System weighing on the result.",
+      "text": "Costs related to environmental regulation increased significantly during the year, with sustainable aviation fuel use and changes to the EU Emissions Trading System weighing on the result.",
       "facts": [
        {
         "id": "event:costs",
@@ -311,7 +327,7 @@
       ]
      },
      {
-      "text": "During the year Finnair purchased leased A321 aircraft, and all aircraft were in operative use at the balance sheet date.",
+      "text": "Finnair purchased leased A321 aircraft during the year, and all aircraft were in operative use at the balance sheet date.",
       "facts": [
        {
         "id": "event:fleet_and_engines",
@@ -322,7 +338,7 @@
     ],
     "liquidity_funding": [
      {
-      "text": "Liquidity rose by {{liquidity.change@FY2025}} to {{liquidity@FY2025}}, of which cash and cash-like investments of {{cash_like@FY2025}} were up {{cash_like.change@FY2025}}.",
+      "text": "Liquidity rose by {{liquidity.change@FY2025}} to {{liquidity@FY2025}}, of which {{undrawn_facilities@FY2025}} in undrawn committed facilities, broadly unchanged on the prior year.",
       "facts": [
        {
         "id": "liquidity.change@FY2025",
@@ -336,53 +352,43 @@
         "claims": []
        },
        {
-        "id": "cash_like@FY2025",
-        "claims": []
-       },
+        "id": "undrawn_facilities@FY2025",
+        "claims": [
+         "flat"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Cash and cash-like investments increased by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, lifting cash liquidity to revenue by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}.",
+      "facts": [
        {
         "id": "cash_like.change@FY2025",
         "claims": [
          "up",
          "better"
         ]
-       }
-      ]
-     },
-     {
-      "text": "Undrawn committed facilities were stable at {{undrawn_facilities@FY2025}}, and liquidity to revenue rose by {{liquidity_to_revenue.change@FY2025}} to {{liquidity_to_revenue@FY2025}}.",
-      "facts": [
-       {
-        "id": "undrawn_facilities@FY2025",
-        "claims": [
-         "flat"
-        ]
        },
        {
-        "id": "liquidity_to_revenue.change@FY2025",
+        "id": "cash_like@FY2025",
+        "claims": []
+       },
+       {
+        "id": "cash_liquidity_to_revenue.change@FY2025",
         "claims": [
          "up",
          "better"
         ]
        },
        {
-        "id": "liquidity_to_revenue@FY2025",
+        "id": "cash_liquidity_to_revenue@FY2025",
         "claims": []
        }
       ]
      },
      {
-      "text": "Customer prepayments grew: contract liabilities rose by {{contract_liabilities.change@FY2025}} to {{contract_liabilities@FY2025}}, while advance ticket cover fell by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}.",
+      "text": "Advance ticket cover fell by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}, while contract liabilities rose by {{contract_liabilities.change@FY2025}} to {{contract_liabilities@FY2025}}.",
       "facts": [
-       {
-        "id": "contract_liabilities.change@FY2025",
-        "claims": [
-         "up"
-        ]
-       },
-       {
-        "id": "contract_liabilities@FY2025",
-        "claims": []
-       },
        {
         "id": "advance_ticket_cover.change@FY2025",
         "claims": [
@@ -392,6 +398,16 @@
        },
        {
         "id": "advance_ticket_cover@FY2025",
+        "claims": []
+       },
+       {
+        "id": "contract_liabilities.change@FY2025",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "contract_liabilities@FY2025",
         "claims": []
        }
       ]
@@ -408,7 +424,7 @@
     ],
     "peer_positioning": [
      {
-      "text": "Finnair's clearest strength is cash liquidity to revenue of {{cash_liquidity_to_revenue@FY2025}}, the highest of the network peers ({{cash_liquidity_to_revenue.peer_rank@FY2025}}) against a median of {{cash_liquidity_to_revenue.peer_median@FY2025}}.",
+      "text": "Finnair's strongest position is liquidity: cash liquidity to revenue of {{cash_liquidity_to_revenue@FY2025}} is the highest of the network peers ({{cash_liquidity_to_revenue.peer_rank@FY2025}}), against a median of {{cash_liquidity_to_revenue.peer_median@FY2025}}.",
       "facts": [
        {
         "id": "cash_liquidity_to_revenue@FY2025",
@@ -429,7 +445,7 @@
       ]
      },
      {
-      "text": "Profitability and leverage are the weak spots: the EBITDA margin of {{ebitda_margin@FY2025}} is the lowest of the group ({{ebitda_margin.peer_rank@FY2025}}) against a median of {{ebitda_margin.peer_median@FY2025}}, and gross leverage of {{gross_leverage@FY2025}} is the highest ({{gross_leverage.peer_rank@FY2025}}).",
+      "text": "It is weakest on earnings and leverage: the EBITDA margin of {{ebitda_margin@FY2025}} is the lowest of the group ({{ebitda_margin.peer_rank@FY2025}}), and gross leverage of {{gross_leverage@FY2025}} is above the peer median of {{gross_leverage.peer_median@FY2025}}.",
       "facts": [
        {
         "id": "ebitda_margin@FY2025",
@@ -442,42 +458,30 @@
         ]
        },
        {
-        "id": "ebitda_margin.peer_median@FY2025",
-        "claims": [
-         "below_peers"
-        ]
-       },
-       {
         "id": "gross_leverage@FY2025",
         "claims": []
        },
        {
-        "id": "gross_leverage.peer_rank@FY2025",
+        "id": "gross_leverage.peer_median@FY2025",
         "claims": [
-         "worst_in_group"
+         "above_peers"
         ]
        }
       ]
      },
      {
-      "text": "Net leverage of {{net_leverage@FY2025}} sits in the middle of the group, and FCF to debt of {{fcf_to_debt@FY2025}} is also in the middle, while FFO to debt of {{ffo_to_debt@FY2025}} is the weakest of the peers ({{ffo_to_debt.peer_rank@FY2025}}).",
+      "text": "FCF to debt sits in the middle of the group, and advance ticket cover of {{advance_ticket_cover@FY2025}} is also in the middle of the group.",
       "facts": [
        {
-        "id": "net_leverage@FY2025",
-        "claims": []
-       },
-       {
         "id": "fcf_to_debt@FY2025",
-        "claims": []
-       },
-       {
-        "id": "ffo_to_debt@FY2025",
-        "claims": []
-       },
-       {
-        "id": "ffo_to_debt.peer_rank@FY2025",
         "claims": [
-         "worst_in_group"
+         "in_line_with_peers"
+        ]
+       },
+       {
+        "id": "advance_ticket_cover@FY2025",
+        "claims": [
+         "in_line_with_peers"
         ]
        }
       ]
@@ -511,7 +515,7 @@
       ]
      },
      {
-      "text": "Cash generation: FFO to debt fell by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}, below the peer median of {{ffo_to_debt.peer_median@FY2025}}, and FCF to debt dropped by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}}.",
+      "text": "Cash generation: FFO to debt fell by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}, below the peer median of {{ffo_to_debt.peer_median@FY2025}}, as cash from operations declined by {{cfo.change@FY2025}} to {{cfo@FY2025}}.",
       "facts": [
        {
         "id": "ffo_to_debt.change@FY2025",
@@ -531,20 +535,20 @@
         ]
        },
        {
-        "id": "fcf_to_debt.change@FY2025",
+        "id": "cfo.change@FY2025",
         "claims": [
          "down",
          "worse"
         ]
        },
        {
-        "id": "fcf_to_debt@FY2025",
+        "id": "cfo@FY2025",
         "claims": []
        }
       ]
      },
      {
-      "text": "Leverage: gross leverage rose by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}}, above the peer median of {{gross_leverage.peer_median@FY2025}}, so the reduction in net debt of {{net_debt.change@FY2025}} carried the net leverage improvement.",
+      "text": "Leverage: gross leverage rose by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}}, above the peer median of {{gross_leverage.peer_median@FY2025}}, and interest coverage of {{interest_coverage@FY2025}} remains below the peer median of {{interest_coverage.peer_median@FY2025}}.",
       "facts": [
        {
         "id": "gross_leverage.change@FY2025",
@@ -564,15 +568,19 @@
         ]
        },
        {
-        "id": "net_debt.change@FY2025",
+        "id": "interest_coverage@FY2025",
+        "claims": []
+       },
+       {
+        "id": "interest_coverage.peer_median@FY2025",
         "claims": [
-         "down"
+         "below_peers"
         ]
        }
       ]
      },
      {
-      "text": "Costs and distributions: the fuel share of costs of {{fuel_share_of_costs@FY2025}} is above the peer median of {{fuel_share_of_costs.peer_median@FY2025}}, and the Board proposes a return of capital to shareholders.",
+      "text": "Cost base: the fuel share of costs of {{fuel_share_of_costs@FY2025}} is above the peer median of {{fuel_share_of_costs.peer_median@FY2025}}, and environmental regulation costs increased significantly during the year.",
       "facts": [
        {
         "id": "fuel_share_of_costs@FY2025",
@@ -585,7 +593,7 @@
         "claims": []
        },
        {
-        "id": "event:capital_returns",
+        "id": "event:costs",
         "claims": []
        }
       ]
@@ -593,13 +601,15 @@
     ]
    },
    "errors": [
-    "[rule 4] credit_metrics, sentence 2: 'fell' needs a 'down' claim on a figure in the same clause",
+    "[rule 4] credit_metrics, sentence 3: 'fell' needs a 'down' claim on a figure in the same clause",
     "[rule 3] operating_performance, sentence 1: 'up' claimed on passengers.change@FY2025, but it moved flat",
+    "[rule 3] operating_performance, sentence 2: 'down' claimed on fuel_cost.change@FY2025, but it moved flat",
     "[rule 4] operating_performance, sentence 3: 'increased' needs a 'up' claim on a figure in the same clause",
-    "[rule style] peer_positioning, sentence 2: gross_leverage@FY2025 is already given in credit_metrics, sentence 2: give each figure in one body section only (the snapshot and watch items may restate it)",
-    "[rule style] peer_positioning, sentence 3: fcf_to_debt@FY2025 is already given in credit_metrics, sentence 5: give each figure in one body section only (the snapshot and watch items may restate it)",
-    "[rule style] peer_positioning, sentence 3: ffo_to_debt@FY2025 is already given in credit_metrics, sentence 4: give each figure in one body section only (the snapshot and watch items may restate it)",
-    "[rule 4] watch_items, sentence 3: 'improvement' needs a 'better' or 'better_than_peers' or 'best_in_group' claim on a figure in the same clause"
+    "[rule style] peer_positioning, sentence 1: cash_liquidity_to_revenue@FY2025 is already given in liquidity_funding, sentence 2: give each figure in one body section only (the snapshot and watch items may restate it)",
+    "[rule style] peer_positioning, sentence 2: gross_leverage@FY2025 is already given in credit_metrics, sentence 3: give each figure in one body section only (the snapshot and watch items may restate it)",
+    "[rule 5] peer_positioning, sentence 3: fcf_to_debt@FY2025 is listed in the form but not used in the text",
+    "[rule style] peer_positioning, sentence 3: advance_ticket_cover@FY2025 is already given in liquidity_funding, sentence 3: give each figure in one body section only (the snapshot and watch items may restate it)",
+    "[rule 4] watch_items, sentence 4: 'increased' needs a 'up' claim on a figure in the same clause"
    ],
    "error": null
   },
@@ -611,12 +621,12 @@
     "peer_positioning",
     "watch_items"
    ],
-   "request_hash": "47814123409841aa12c3bbc2f0cb97086c1940c28dd0eb383029985cd135b143",
+   "request_hash": "6540d493a1b1426eea596fb8a0a868df23cd31250f8128d593e88cf1d6c82f45",
    "model": "deepseek-flash",
    "draft": {
     "credit_metrics": [
      {
-      "text": "EBITDA fell by {{ebitda.change@FY2025}} to {{ebitda@FY2025}} on revenue of {{revenue@FY2025}}, and operating profit declined by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}}.",
+      "text": "EBITDA declined by {{ebitda.change@FY2025}} to {{ebitda@FY2025}} on revenue of {{revenue@FY2025}}, broadly unchanged on the prior year.",
       "facts": [
        {
         "id": "ebitda.change@FY2025",
@@ -631,8 +641,15 @@
        },
        {
         "id": "revenue@FY2025",
-        "claims": []
-       },
+        "claims": [
+         "flat"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Operating profit fell by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}} as depreciation, amortisation and impairment rose by {{dda.change@FY2025}} to {{dda@FY2025}}.",
+      "facts": [
        {
         "id": "operating_profit.change@FY2025",
         "claims": [
@@ -642,6 +659,16 @@
        },
        {
         "id": "operating_profit@FY2025",
+        "claims": []
+       },
+       {
+        "id": "dda.change@FY2025",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "dda@FY2025",
         "claims": []
        }
       ]
@@ -680,7 +707,7 @@
       ]
      },
      {
-      "text": "Interest coverage improved by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}}, still below the peer median of {{interest_coverage.peer_median@FY2025}}.",
+      "text": "Interest coverage improved by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}} as finance costs fell by {{finance_costs.change@FY2025}} to {{finance_costs@FY2025}}.",
       "facts": [
        {
         "id": "interest_coverage.change@FY2025",
@@ -694,15 +721,20 @@
         "claims": []
        },
        {
-        "id": "interest_coverage.peer_median@FY2025",
+        "id": "finance_costs.change@FY2025",
         "claims": [
-         "below_peers"
+         "down",
+         "better"
         ]
+       },
+       {
+        "id": "finance_costs@FY2025",
+        "claims": []
        }
       ]
      },
      {
-      "text": "Cash generation weakened: FFO fell by {{ffo.change@FY2025}} to {{ffo@FY2025}}, taking FFO to debt down by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}, and free cash flow declined by {{fcf.change@FY2025}} to {{fcf@FY2025}}.",
+      "text": "Cash generation weakened: FFO fell by {{ffo.change@FY2025}} to {{ffo@FY2025}} and FCF by {{fcf.change@FY2025}} to {{fcf@FY2025}}, taking FFO to debt down by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}} and FCF to debt to {{fcf_to_debt@FY2025}}.",
       "facts": [
        {
         "id": "ffo.change@FY2025",
@@ -713,6 +745,17 @@
        },
        {
         "id": "ffo@FY2025",
+        "claims": []
+       },
+       {
+        "id": "fcf.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "fcf@FY2025",
         "claims": []
        },
        {
@@ -727,40 +770,7 @@
         "claims": []
        },
        {
-        "id": "fcf.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "fcf@FY2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "FCF to debt fell by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}}, while capex intensity eased by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}.",
-      "facts": [
-       {
-        "id": "fcf_to_debt.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
         "id": "fcf_to_debt@FY2025",
-        "claims": []
-       },
-       {
-        "id": "capex_intensity.change@FY2025",
-        "claims": [
-         "down"
-        ]
-       },
-       {
-        "id": "capex_intensity@FY2025",
         "claims": []
        }
       ]
@@ -768,7 +778,7 @@
     ],
     "operating_performance": [
      {
-      "text": "Passengers were broadly unchanged at {{passengers@FY2025}}, a move of {{passengers.change@FY2025}}, with the fleet stable at {{fleet@FY2025}} aircraft and an average age of {{fleet_age@FY2025}}.",
+      "text": "Passengers were broadly stable at {{passengers@FY2025}}, a change of {{passengers.change@FY2025}}, with the fleet at {{fleet@FY2025}} aircraft and an average age of {{fleet_age@FY2025}}.",
       "facts": [
        {
         "id": "passengers@FY2025",
@@ -784,9 +794,7 @@
        },
        {
         "id": "fleet@FY2025",
-        "claims": [
-         "flat"
-        ]
+        "claims": []
        },
        {
         "id": "fleet_age@FY2025",
@@ -795,8 +803,20 @@
       ]
      },
      {
-      "text": "The fuel share of costs fell by {{fuel_share_of_costs.change@FY2025}} to {{fuel_share_of_costs@FY2025}}, above the peer median of {{fuel_share_of_costs.peer_median@FY2025}}.",
+      "text": "Fuel cost was broadly unchanged at {{fuel_cost@FY2025}}, a change of {{fuel_cost.change@FY2025}}, and the fuel share of costs fell by {{fuel_share_of_costs.change@FY2025}} to {{fuel_share_of_costs@FY2025}}.",
       "facts": [
+       {
+        "id": "fuel_cost@FY2025",
+        "claims": [
+         "flat"
+        ]
+       },
+       {
+        "id": "fuel_cost.change@FY2025",
+        "claims": [
+         "flat"
+        ]
+       },
        {
         "id": "fuel_share_of_costs.change@FY2025",
         "claims": [
@@ -806,17 +826,11 @@
        {
         "id": "fuel_share_of_costs@FY2025",
         "claims": []
-       },
-       {
-        "id": "fuel_share_of_costs.peer_median@FY2025",
-        "claims": [
-         "above_peers"
-        ]
        }
       ]
      },
      {
-      "text": "Costs related to environmental regulation rose significantly during the year, with greater use of sustainable aviation fuel and changes to the EU Emissions Trading System weighing on the result.",
+      "text": "Costs related to environmental regulation rose significantly during the year, with sustainable aviation fuel use and changes to the EU Emissions Trading System weighing on the result.",
       "facts": [
        {
         "id": "event:costs",
@@ -825,7 +839,7 @@
       ]
      },
      {
-      "text": "During the year Finnair purchased leased A321 aircraft, and all aircraft were in operative use at the balance sheet date.",
+      "text": "Finnair purchased leased A321 aircraft during the year, and all aircraft were in operative use at the balance sheet date.",
       "facts": [
        {
         "id": "event:fleet_and_engines",
@@ -836,12 +850,8 @@
     ],
     "peer_positioning": [
      {
-      "text": "Finnair's clearest strength is cash liquidity to revenue of {{cash_liquidity_to_revenue@FY2025}}, the highest of the network peers ({{cash_liquidity_to_revenue.peer_rank@FY2025}}) against a median of {{cash_liquidity_to_revenue.peer_median@FY2025}}.",
+      "text": "Finnair's strongest position is liquidity: cash liquidity to revenue is the highest of the network peers ({{cash_liquidity_to_revenue.peer_rank@FY2025}}), against a median of {{cash_liquidity_to_revenue.peer_median@FY2025}}.",
       "facts": [
-       {
-        "id": "cash_liquidity_to_revenue@FY2025",
-        "claims": []
-       },
        {
         "id": "cash_liquidity_to_revenue.peer_rank@FY2025",
         "claims": [
@@ -857,26 +867,10 @@
       ]
      },
      {
-      "text": "Profitability is the weak spot: the EBITDA margin of {{ebitda_margin@FY2025}} is the lowest of the group ({{ebitda_margin.peer_rank@FY2025}}) against a median of {{ebitda_margin.peer_median@FY2025}}, and gross leverage ranks {{gross_leverage.peer_rank@FY2025}} against a median of {{gross_leverage.peer_median@FY2025}}.",
+      "text": "It is weakest on earnings and leverage: the EBITDA margin is the lowest of the group ({{ebitda_margin.peer_rank@FY2025}}), and gross leverage is above the peer median of {{gross_leverage.peer_median@FY2025}}.",
       "facts": [
        {
-        "id": "ebitda_margin@FY2025",
-        "claims": []
-       },
-       {
         "id": "ebitda_margin.peer_rank@FY2025",
-        "claims": [
-         "worst_in_group"
-        ]
-       },
-       {
-        "id": "ebitda_margin.peer_median@FY2025",
-        "claims": [
-         "below_peers"
-        ]
-       },
-       {
-        "id": "gross_leverage.peer_rank@FY2025",
         "claims": [
          "worst_in_group"
         ]
@@ -890,19 +884,15 @@
       ]
      },
      {
-      "text": "Net leverage and FCF to debt sit in the middle of the group, while FFO to debt ranks {{ffo_to_debt.peer_rank@FY2025}} against a median of {{ffo_to_debt.peer_median@FY2025}}.",
+      "text": "FCF to debt sits in the middle of the group, and advance ticket cover is also in the middle of the group.",
       "facts": [
        {
-        "id": "ffo_to_debt.peer_rank@FY2025",
-        "claims": [
-         "worst_in_group"
-        ]
+        "id": "fcf_to_debt.peer_rank@FY2025",
+        "claims": []
        },
        {
-        "id": "ffo_to_debt.peer_median@FY2025",
-        "claims": [
-         "below_peers"
-        ]
+        "id": "advance_ticket_cover.peer_rank@FY2025",
+        "claims": []
        }
       ]
      }
@@ -935,7 +925,7 @@
       ]
      },
      {
-      "text": "Cash generation: FFO to debt fell by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}, below the peer median of {{ffo_to_debt.peer_median@FY2025}}, and FCF to debt dropped by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}}.",
+      "text": "Cash generation: FFO to debt fell by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}, below the peer median of {{ffo_to_debt.peer_median@FY2025}}, as cash from operations declined by {{cfo.change@FY2025}} to {{cfo@FY2025}}.",
       "facts": [
        {
         "id": "ffo_to_debt.change@FY2025",
@@ -955,20 +945,20 @@
         ]
        },
        {
-        "id": "fcf_to_debt.change@FY2025",
+        "id": "cfo.change@FY2025",
         "claims": [
          "down",
          "worse"
         ]
        },
        {
-        "id": "fcf_to_debt@FY2025",
+        "id": "cfo@FY2025",
         "claims": []
        }
       ]
      },
      {
-      "text": "Leverage: gross leverage rose by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}}, above the peer median of {{gross_leverage.peer_median@FY2025}}, so the reduction in net debt of {{net_debt.change@FY2025}} carried the net leverage improvement.",
+      "text": "Leverage: gross leverage rose by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}}, above the peer median of {{gross_leverage.peer_median@FY2025}}, and interest coverage of {{interest_coverage@FY2025}} remains below the peer median of {{interest_coverage.peer_median@FY2025}}.",
       "facts": [
        {
         "id": "gross_leverage.change@FY2025",
@@ -988,15 +978,19 @@
         ]
        },
        {
-        "id": "net_debt.change@FY2025",
+        "id": "interest_coverage@FY2025",
+        "claims": []
+       },
+       {
+        "id": "interest_coverage.peer_median@FY2025",
         "claims": [
-         "down"
+         "below_peers"
         ]
        }
       ]
      },
      {
-      "text": "Costs and distributions: the fuel share of costs of {{fuel_share_of_costs@FY2025}} is above the peer median of {{fuel_share_of_costs.peer_median@FY2025}}, and the Board proposes a return of capital to shareholders.",
+      "text": "Cost base: the fuel share of costs of {{fuel_share_of_costs@FY2025}} is above the peer median of {{fuel_share_of_costs.peer_median@FY2025}}, and costs related to environmental regulation rose significantly during the year.",
       "facts": [
        {
         "id": "fuel_share_of_costs@FY2025",
@@ -1009,7 +1003,7 @@
         "claims": []
        },
        {
-        "id": "event:capital_returns",
+        "id": "event:costs",
         "claims": []
        }
       ]
@@ -1018,7 +1012,9 @@
    },
    "errors": [
     "[rule 4] operating_performance, sentence 3: 'rose' needs a 'up' claim on a figure in the same clause",
-    "[rule 4] watch_items, sentence 3: 'improvement' needs a 'better' or 'better_than_peers' or 'best_in_group' claim on a figure in the same clause"
+    "[rule 5] peer_positioning, sentence 3: fcf_to_debt.peer_rank@FY2025 is listed in the form but not used in the text",
+    "[rule 5] peer_positioning, sentence 3: advance_ticket_cover.peer_rank@FY2025 is listed in the form but not used in the text",
+    "[rule 4] watch_items, sentence 4: 'rose' needs a 'up' claim on a figure in the same clause"
    ],
    "error": null
   },
@@ -1026,14 +1022,15 @@
    "try": 3,
    "sections": [
     "operating_performance",
+    "peer_positioning",
     "watch_items"
    ],
-   "request_hash": "9dd7e5ff94332d913fc27b8e01107faf540348fff626966c25b5cb5393ddb7e3",
+   "request_hash": "e8b83aa9bc032deac5b3632018b0c72f6c1c1f03e7221db374c075707aa033e3",
    "model": "deepseek-flash",
    "draft": {
     "operating_performance": [
      {
-      "text": "Passengers were broadly unchanged at {{passengers@FY2025}}, a move of {{passengers.change@FY2025}}, with the fleet stable at {{fleet@FY2025}} aircraft and an average age of {{fleet_age@FY2025}}.",
+      "text": "Passengers were broadly stable at {{passengers@FY2025}}, a change of {{passengers.change@FY2025}}, with the fleet at {{fleet@FY2025}} aircraft and an average age of {{fleet_age@FY2025}}.",
       "facts": [
        {
         "id": "passengers@FY2025",
@@ -1049,9 +1046,7 @@
        },
        {
         "id": "fleet@FY2025",
-        "claims": [
-         "flat"
-        ]
+        "claims": []
        },
        {
         "id": "fleet_age@FY2025",
@@ -1060,8 +1055,20 @@
       ]
      },
      {
-      "text": "The fuel share of costs fell by {{fuel_share_of_costs.change@FY2025}} to {{fuel_share_of_costs@FY2025}}, above the peer median of {{fuel_share_of_costs.peer_median@FY2025}}.",
+      "text": "Fuel cost was broadly unchanged at {{fuel_cost@FY2025}}, a change of {{fuel_cost.change@FY2025}}, and the fuel share of costs fell by {{fuel_share_of_costs.change@FY2025}} to {{fuel_share_of_costs@FY2025}}.",
       "facts": [
+       {
+        "id": "fuel_cost@FY2025",
+        "claims": [
+         "flat"
+        ]
+       },
+       {
+        "id": "fuel_cost.change@FY2025",
+        "claims": [
+         "flat"
+        ]
+       },
        {
         "id": "fuel_share_of_costs.change@FY2025",
         "claims": [
@@ -1071,17 +1078,11 @@
        {
         "id": "fuel_share_of_costs@FY2025",
         "claims": []
-       },
-       {
-        "id": "fuel_share_of_costs.peer_median@FY2025",
-        "claims": [
-         "above_peers"
-        ]
        }
       ]
      },
      {
-      "text": "Costs related to environmental regulation increased significantly during the year, with greater use of sustainable aviation fuel and changes to the EU Emissions Trading System weighing on the result.",
+      "text": "Costs related to environmental regulation increased significantly during the year, with sustainable aviation fuel use and changes to the EU Emissions Trading System weighing on the result.",
       "facts": [
        {
         "id": "event:costs",
@@ -1090,10 +1091,59 @@
       ]
      },
      {
-      "text": "During the year Finnair purchased leased A321 aircraft, and all aircraft were in operative use at the balance sheet date.",
+      "text": "Finnair purchased leased A321 aircraft during the year, and all aircraft were in operative use at the balance sheet date.",
       "facts": [
        {
         "id": "event:fleet_and_engines",
+        "claims": []
+       }
+      ]
+     }
+    ],
+    "peer_positioning": [
+     {
+      "text": "Finnair's strongest position is liquidity: cash liquidity to revenue is the highest of the network peers ({{cash_liquidity_to_revenue.peer_rank@FY2025}}), against a median of {{cash_liquidity_to_revenue.peer_median@FY2025}}.",
+      "facts": [
+       {
+        "id": "cash_liquidity_to_revenue.peer_rank@FY2025",
+        "claims": [
+         "best_in_group"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue.peer_median@FY2025",
+        "claims": [
+         "above_peers"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "It is weakest on earnings and leverage: the EBITDA margin is the lowest of the group ({{ebitda_margin.peer_rank@FY2025}}), and gross leverage is above the peer median of {{gross_leverage.peer_median@FY2025}}.",
+      "facts": [
+       {
+        "id": "ebitda_margin.peer_rank@FY2025",
+        "claims": [
+         "worst_in_group"
+        ]
+       },
+       {
+        "id": "gross_leverage.peer_median@FY2025",
+        "claims": [
+         "above_peers"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "FCF to debt ranks {{fcf_to_debt.peer_rank@FY2025}} and advance ticket cover {{advance_ticket_cover.peer_rank@FY2025}}, so both sit in the middle of the group.",
+      "facts": [
+       {
+        "id": "fcf_to_debt.peer_rank@FY2025",
+        "claims": []
+       },
+       {
+        "id": "advance_ticket_cover.peer_rank@FY2025",
         "claims": []
        }
       ]
@@ -1127,7 +1177,7 @@
       ]
      },
      {
-      "text": "Cash generation: FFO to debt fell by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}, below the peer median of {{ffo_to_debt.peer_median@FY2025}}, and FCF to debt dropped by {{fcf_to_debt.change@FY2025}} to {{fcf_to_debt@FY2025}}.",
+      "text": "Cash generation: FFO to debt fell by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}, below the peer median of {{ffo_to_debt.peer_median@FY2025}}, as cash from operations declined by {{cfo.change@FY2025}} to {{cfo@FY2025}}.",
       "facts": [
        {
         "id": "ffo_to_debt.change@FY2025",
@@ -1147,20 +1197,20 @@
         ]
        },
        {
-        "id": "fcf_to_debt.change@FY2025",
+        "id": "cfo.change@FY2025",
         "claims": [
          "down",
          "worse"
         ]
        },
        {
-        "id": "fcf_to_debt@FY2025",
+        "id": "cfo@FY2025",
         "claims": []
        }
       ]
      },
      {
-      "text": "Leverage: gross leverage rose by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}}, above the peer median of {{gross_leverage.peer_median@FY2025}}, while net leverage improved to {{net_leverage@FY2025}} as net debt was reduced by {{net_debt.change@FY2025}}.",
+      "text": "Leverage: gross leverage rose by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}}, above the peer median of {{gross_leverage.peer_median@FY2025}}, and interest coverage of {{interest_coverage@FY2025}} remains below the peer median of {{interest_coverage.peer_median@FY2025}}.",
       "facts": [
        {
         "id": "gross_leverage.change@FY2025",
@@ -1180,21 +1230,19 @@
         ]
        },
        {
-        "id": "net_leverage@FY2025",
-        "claims": [
-         "better"
-        ]
+        "id": "interest_coverage@FY2025",
+        "claims": []
        },
        {
-        "id": "net_debt.change@FY2025",
+        "id": "interest_coverage.peer_median@FY2025",
         "claims": [
-         "down"
+         "below_peers"
         ]
        }
       ]
      },
      {
-      "text": "Costs and distributions: the fuel share of costs of {{fuel_share_of_costs@FY2025}} is above the peer median of {{fuel_share_of_costs.peer_median@FY2025}}, and the Board proposes a return of capital to shareholders.",
+      "text": "Cost base: the fuel share of costs of {{fuel_share_of_costs@FY2025}} is above the peer median of {{fuel_share_of_costs.peer_median@FY2025}}, and costs related to environmental regulation increased significantly during the year.",
       "facts": [
        {
         "id": "fuel_share_of_costs@FY2025",
@@ -1207,7 +1255,7 @@
         "claims": []
        },
        {
-        "id": "event:capital_returns",
+        "id": "event:costs",
         "claims": []
        }
       ]
@@ -1215,7 +1263,8 @@
     ]
    },
    "errors": [
-    "[rule 4] operating_performance, sentence 3: 'increased' needs a 'up' claim on a figure in the same clause"
+    "[rule 4] operating_performance, sentence 3: 'increased' needs a 'up' claim on a figure in the same clause",
+    "[rule 4] watch_items, sentence 4: 'increased' needs a 'up' claim on a figure in the same clause"
    ],
    "error": null
   }

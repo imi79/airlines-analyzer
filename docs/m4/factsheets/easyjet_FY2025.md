@@ -54,6 +54,18 @@ Company type: airline. Reporting currency: GBP. Peer group: Low-cost airlines (e
 | operating_profit@FY2025 | Operating profit, FY2025 | GBP 696m | up, better vs prior year |
 | operating_profit@FY2024 | Operating profit, FY2024 | GBP 589m |  |
 | operating_profit.change@FY2025 | change in Operating profit, FY2024 to FY2025 | 18.2% | up, better vs prior year; printed without a sign: say the direction in words |
+| dda@FY2025 | Depreciation, amortisation and impairment, FY2025 | GBP 743m | down vs prior year |
+| dda@FY2024 | Depreciation, amortisation and impairment, FY2024 | GBP 770m |  |
+| dda.change@FY2025 | change in Depreciation, amortisation and impairment, FY2024 to FY2025 | 3.5% | down vs prior year; printed without a sign: say the direction in words |
+| finance_costs@FY2025 | Finance costs, FY2025 | GBP 156m | up, worse vs prior year |
+| finance_costs@FY2024 | Finance costs, FY2024 | GBP 132m |  |
+| finance_costs.change@FY2025 | change in Finance costs, FY2024 to FY2025 | 18.2% | up, worse vs prior year; printed without a sign: say the direction in words |
+| cfo@FY2025 | Cash from operations, FY2025 | GBP 1.6bn | up, better vs prior year |
+| cfo@FY2024 | Cash from operations, FY2024 | GBP 1.5bn |  |
+| cfo.change@FY2025 | change in Cash from operations, FY2024 to FY2025 | 10.9% | up, better vs prior year; printed without a sign: say the direction in words |
+| capex@FY2025 | Capex (purchases of PP&E and intangibles), FY2025 | GBP 1.0bn | up vs prior year |
+| capex@FY2024 | Capex (purchases of PP&E and intangibles), FY2024 | GBP 929m |  |
+| capex.change@FY2025 | change in Capex (purchases of PP&E and intangibles), FY2024 to FY2025 | 7.8% | up vs prior year; printed without a sign: say the direction in words |
 | net_cash@FY2025 | Net cash (cash and cash-like investments above total debt), FY2025 | GBP 602m | up, better vs prior year |
 | net_cash@FY2024 | Net cash (cash and cash-like investments above total debt), FY2024 | GBP 181m |  |
 | net_cash.change@FY2025 | change in Net cash (cash and cash-like investments above total debt), FY2024 to FY2025 | 232.6% | up, better vs prior year; printed without a sign: say the direction in words |
@@ -95,6 +107,9 @@ Company type: airline. Reporting currency: GBP. Peer group: Low-cost airlines (e
 | fleet_age@FY2025 | Fleet average age, FY2025 | 10.9 years | up, worse vs prior year |
 | fleet_age@FY2024 | Fleet average age, FY2024 | 10.2 years |  |
 | fleet_age.change@FY2025 | change in Fleet average age, FY2024 to FY2025 | 6.9% | up, worse vs prior year; printed without a sign: say the direction in words |
+| fuel_cost@FY2025 | Fuel cost, FY2025 | GBP 2.3bn | flat vs prior year |
+| fuel_cost@FY2024 | Fuel cost, FY2024 | GBP 2.2bn |  |
+| fuel_cost.change@FY2025 | change in Fuel cost, FY2024 to FY2025 | 1.3% | flat vs prior year; printed without a sign: say the direction in words |
 
 ## Liquidity and funding
 

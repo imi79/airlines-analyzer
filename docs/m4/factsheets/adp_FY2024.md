@@ -56,6 +56,18 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | operating_profit@FY2024 | Operating profit, FY2024 | EUR 994m | down, worse vs prior year |
 | operating_profit@FY2023 | Operating profit, FY2023 | EUR 1.2bn |  |
 | operating_profit.change@FY2024 | change in Operating profit, FY2023 to FY2024 | 20.0% | down, worse vs prior year; printed without a sign: say the direction in words |
+| dda@FY2024 | Depreciation, amortisation and impairment, FY2024 | EUR 791m | flat vs prior year |
+| dda@FY2023 | Depreciation, amortisation and impairment, FY2023 | EUR 792m |  |
+| dda.change@FY2024 | change in Depreciation, amortisation and impairment, FY2023 to FY2024 | 0.1% | flat vs prior year; printed without a sign: say the direction in words |
+| finance_costs@FY2024 | Finance costs, FY2024 | EUR 595m | down, better vs prior year |
+| finance_costs@FY2023 | Finance costs, FY2023 | EUR 1.1bn |  |
+| finance_costs.change@FY2024 | change in Finance costs, FY2023 to FY2024 | 46.6% | down, better vs prior year; printed without a sign: say the direction in words |
+| cfo@FY2024 | Cash from operations, FY2024 | EUR 1.5bn | down, worse vs prior year |
+| cfo@FY2023 | Cash from operations, FY2023 | EUR 1.6bn |  |
+| cfo.change@FY2024 | change in Cash from operations, FY2023 to FY2024 | 4.0% | down, worse vs prior year; printed without a sign: say the direction in words |
+| capex@FY2024 | Capex (purchases of PP&E and intangibles), FY2024 | EUR 1.2bn | up vs prior year |
+| capex@FY2023 | Capex (purchases of PP&E and intangibles), FY2023 | EUR 872m |  |
+| capex.change@FY2024 | change in Capex (purchases of PP&E and intangibles), FY2023 to FY2024 | 34.1% | up vs prior year; printed without a sign: say the direction in words |
 
 ## Operating performance
 
@@ -134,6 +146,8 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - contract_liabilities@FY2023: no figure for this year
 - undrawn_facilities@FY2024: no figure for this year
 - undrawn_facilities@FY2023: no figure for this year
+- fuel_cost@FY2024: no figure for this year
+- fuel_cost@FY2023: no figure for this year
 - net_cash@FY2024: the company has net debt, not net cash
 - net_cash@FY2023: the company has net debt, not net cash
 - cash_liquidity@FY2024: the same figure as cash_like@FY2024: use that id

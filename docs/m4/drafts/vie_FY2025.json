@@ -1,8 +1,8 @@
 {
  "issuer": "vie",
  "fiscal_year": 2025,
- "prompt_version": "draft-v6",
- "input_hash": "efe2c9281df2772550a02e9c2ae081c67691ff549e386788dcc7105661b2a9af",
+ "prompt_version": "draft-v7",
+ "input_hash": "fc44386045a84fddde3a9089af9be29495fc8253276f08fc405f9c85eaebec0f",
  "status": {
   "snapshot": "passed",
   "credit_metrics": "passed",
@@ -14,18 +14,9 @@
  "removed": {
   "liquidity_funding": [
    [
-    "Cash and cash-like investments fell by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, still comfortably above the group's total debt of {{total_debt@FY2025}}.",
+    "Cash and cash-like investments fell by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, a buffer that still stands well above the group's small debt stock.",
     [
      "'above' needs a 'up' or 'above_peers' claim on a figure in the same clause"
-    ]
-   ]
-  ],
-  "watch_items": [
-   [
-    "Costs: the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}} as personnel expenses rose on collective wage increases and provisions, and the abandoned third runway project left write-offs in the result.",
-    [
-     "'rose' needs a 'up' claim on a figure in the same clause",
-     "'increases' needs a 'up' claim on a figure in the same clause"
     ]
    ]
   ]
@@ -41,12 +32,12 @@
     "peer_positioning",
     "watch_items"
    ],
-   "request_hash": "04054e1d967595e556f3a4219fe54f16566d4636ab72f410a8dc5ddc4198ede9",
+   "request_hash": "16ed3c045e7662cb29a2312c6dfc61fe5f19fbb09de9b0d6a589b7d0022ddd40",
    "model": "deepseek-flash",
    "draft": {
     "snapshot": [
      {
-      "text": "Flughafen Wien, the Vienna airport group, grew revenue by {{revenue.change@FY2025}} to {{revenue@FY2025}} in FY2025, but the year carried one-off write-offs from the abandoned third runway project and the deconsolidation of the Get2 security subsidiary.",
+      "text": "Flughafen Wien, the Vienna airport group, grew revenue by {{revenue.change@FY2025}} to {{revenue@FY2025}} in FY2025, but earnings fell as write-offs on the abandoned third runway project and higher personnel costs weighed on the result.",
       "facts": [
        {
         "id": "revenue.change@FY2025",
@@ -64,13 +55,13 @@
         "claims": []
        },
        {
-        "id": "event:acquisitions_and_disposals",
+        "id": "event:costs",
         "claims": []
        }
       ]
      },
      {
-      "text": "The EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, and net leverage moved to net cash of {{net_cash@FY2025}} from {{net_cash@FY2024}} in FY2024.",
+      "text": "The EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, and net leverage moved to net cash of {{net_cash@FY2025}} from {{net_cash@FY2024}}.",
       "facts": [
        {
         "id": "ebitda_margin.change@FY2025",
@@ -97,7 +88,7 @@
       ]
      },
      {
-      "text": "The point to watch is cash generation: free cash flow fell by {{fcf.change@FY2025}} to {{fcf@FY2025}} as capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, above the peer median.",
+      "text": "The point to watch is cash generation: free cash flow fell by {{fcf.change@FY2025}} to {{fcf@FY2025}} as capex rose by {{capex.change@FY2025}} to {{capex@FY2025}}, leaving cash liquidity to revenue at {{cash_liquidity_to_revenue@FY2025}}.",
       "facts": [
        {
         "id": "fcf.change@FY2025",
@@ -111,15 +102,20 @@
         "claims": []
        },
        {
-        "id": "capex_intensity.change@FY2025",
+        "id": "capex.change@FY2025",
         "claims": [
          "up"
         ]
        },
        {
-        "id": "capex_intensity@FY2025",
+        "id": "capex@FY2025",
+        "claims": []
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2025",
         "claims": [
-         "above_peers"
+         "down",
+         "worse"
         ]
        }
       ]
@@ -127,7 +123,7 @@
     ],
     "credit_metrics": [
      {
-      "text": "EBITDA declined by {{ebitda.change@FY2025}} to {{ebitda@FY2025}} on revenue up {{revenue.change@FY2025}}, with operating profit down {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}} after the write-offs on the third runway project.",
+      "text": "EBITDA fell by {{ebitda.change@FY2025}} to {{ebitda@FY2025}} on revenue up {{revenue.change@FY2025}}, with the write-offs on the third runway project and environmental measures in the neighbouring municipalities among the special items.",
       "facts": [
        {
         "id": "ebitda.change@FY2025",
@@ -148,6 +144,19 @@
         ]
        },
        {
+        "id": "event:one_offs",
+        "claims": []
+       },
+       {
+        "id": "event:costs-2",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Operating profit declined by {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}} as depreciation, amortisation and impairment eased by {{dda.change@FY2025}} to {{dda@FY2025}}.",
+      "facts": [
+       {
         "id": "operating_profit.change@FY2025",
         "claims": [
          "down",
@@ -159,13 +168,19 @@
         "claims": []
        },
        {
-        "id": "event:one_offs",
+        "id": "dda.change@FY2025",
+        "claims": [
+         "down"
+        ]
+       },
+       {
+        "id": "dda@FY2025",
         "claims": []
        }
       ]
      },
      {
-      "text": "Total debt was stable at {{total_debt@FY2025}}, so gross leverage held at {{gross_leverage@FY2025}} and the group retains net cash of {{net_cash@FY2025}}, down {{net_cash.change@FY2025}} as cash was spent on the investment programme.",
+      "text": "Total debt was stable at {{total_debt@FY2025}}, so gross leverage held at {{gross_leverage@FY2025}} and the group kept net cash of {{net_cash@FY2025}}, down by {{net_cash.change@FY2025}}.",
       "facts": [
        {
         "id": "total_debt@FY2025",
@@ -181,7 +196,10 @@
        },
        {
         "id": "net_cash@FY2025",
-        "claims": []
+        "claims": [
+         "down",
+         "worse"
+        ]
        },
        {
         "id": "net_cash.change@FY2025",
@@ -193,7 +211,7 @@
       ]
      },
      {
-      "text": "Cash generation weakened: FFO fell by {{ffo.change@FY2025}} to {{ffo@FY2025}} and free cash flow by {{fcf.change@FY2025}} to {{fcf@FY2025}}, with capex intensity up {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}.",
+      "text": "Cash generation weakened: FFO fell by {{ffo.change@FY2025}} to {{ffo@FY2025}} and cash from operations by {{cfo.change@FY2025}} to {{cfo@FY2025}}, while capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}.",
       "facts": [
        {
         "id": "ffo.change@FY2025",
@@ -207,14 +225,14 @@
         "claims": []
        },
        {
-        "id": "fcf.change@FY2025",
+        "id": "cfo.change@FY2025",
         "claims": [
          "down",
          "worse"
         ]
        },
        {
-        "id": "fcf@FY2025",
+        "id": "cfo@FY2025",
         "claims": []
        },
        {
@@ -228,11 +246,31 @@
         "claims": []
        }
       ]
+     },
+     {
+      "text": "Finance costs rose by {{finance_costs.change@FY2025}} to {{finance_costs@FY2025}}, a small charge against an EBITDA of {{ebitda@FY2025}} given the minimal debt stock.",
+      "facts": [
+       {
+        "id": "finance_costs.change@FY2025",
+        "claims": [
+         "up",
+         "worse"
+        ]
+       },
+       {
+        "id": "finance_costs@FY2025",
+        "claims": []
+       },
+       {
+        "id": "ebitda@FY2025",
+        "claims": []
+       }
+      ]
      }
     ],
     "operating_performance": [
      {
-      "text": "Passengers rose by {{passengers.change@FY2025}} to {{passengers@FY2025}}, a slower rate than the {{traffic_growth@FY2024}} growth of FY2024, with traffic growth of {{traffic_growth@FY2025}} in FY2025.",
+      "text": "Passengers rose by {{passengers.change@FY2025}} to {{passengers@FY2025}}, with traffic growth of {{traffic_growth@FY2025}} against {{traffic_growth@FY2024}} in FY2024.",
       "facts": [
        {
         "id": "passengers.change@FY2025",
@@ -246,20 +284,20 @@
         "claims": []
        },
        {
-        "id": "traffic_growth@FY2024",
-        "claims": []
-       },
-       {
         "id": "traffic_growth@FY2025",
         "claims": [
          "down",
          "worse"
         ]
+       },
+       {
+        "id": "traffic_growth@FY2024",
+        "claims": []
        }
       ]
      },
      {
-      "text": "Aeronautical revenue per passenger increased by {{aero_revenue_per_passenger.change@FY2025}} to {{aero_revenue_per_passenger@FY2025}}, supported by charge adjustments under the price-cap formula and partly offset by higher temporary winter incentives.",
+      "text": "Aeronautical revenue per passenger increased by {{aero_revenue_per_passenger.change@FY2025}} to {{aero_revenue_per_passenger@FY2025}}, helped by charge adjustments under the price-cap formula and dampened by higher temporary winter incentives.",
       "facts": [
        {
         "id": "aero_revenue_per_passenger.change@FY2025",
@@ -279,10 +317,14 @@
       ]
      },
      {
-      "text": "Personnel expenses rose on collective wage increases and additions to personnel provisions, which weighed on the cost base against the revenue growth.",
+      "text": "Personnel expenses rose on collective wage increases and additions to personnel provisions, partly related to underutilisation, and the loss of control over the Get2 subsidiary removed it from full consolidation.",
       "facts": [
        {
         "id": "event:costs",
+        "claims": []
+       },
+       {
+        "id": "event:acquisitions_and_disposals",
         "claims": []
        }
       ]
@@ -310,7 +352,7 @@
       ]
      },
      {
-      "text": "Cash liquidity to revenue declined by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, a buffer that remains above the airport peer median of {{cash_liquidity_to_revenue.peer_median@FY2025}}.",
+      "text": "Cash liquidity to revenue declined by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, as the capital programme absorbed cash.",
       "facts": [
        {
         "id": "cash_liquidity_to_revenue.change@FY2025",
@@ -322,20 +364,22 @@
        {
         "id": "cash_liquidity_to_revenue@FY2025",
         "claims": []
-       },
-       {
-        "id": "cash_liquidity_to_revenue.peer_median@FY2025",
-        "claims": [
-         "above_peers"
-        ]
        }
       ]
      },
      {
-      "text": "Funding needs are modest given gross leverage of {{gross_leverage@FY2025}}, so the investment programme is largely met from internal cash rather than new borrowing.",
+      "text": "Net cash of {{net_cash@FY2025}} leaves the group with no meaningful refinancing need, with finance costs of {{finance_costs@FY2025}} against EBITDA of {{ebitda@FY2025}}.",
       "facts": [
        {
-        "id": "gross_leverage@FY2025",
+        "id": "net_cash@FY2025",
+        "claims": []
+       },
+       {
+        "id": "finance_costs@FY2025",
+        "claims": []
+       },
+       {
+        "id": "ebitda@FY2025",
         "claims": []
        }
       ]
@@ -343,7 +387,7 @@
     ],
     "peer_positioning": [
      {
-      "text": "Flughafen Wien has the lowest net leverage of the airport group ({{net_leverage.peer_rank@FY2025}}), at {{net_leverage@FY2025}} against a peer median of {{net_leverage.peer_median@FY2025}}, and the lowest gross leverage ({{gross_leverage.peer_rank@FY2025}}).",
+      "text": "Flughafen Wien has the lowest net leverage of the airport group ({{net_leverage.peer_rank@FY2025}}), against a peer median of {{net_leverage.peer_median@FY2025}}, and the lowest gross leverage ({{gross_leverage.peer_rank@FY2025}}).",
       "facts": [
        {
         "id": "net_leverage.peer_rank@FY2025",
@@ -352,15 +396,10 @@
         ]
        },
        {
-        "id": "net_leverage@FY2025",
-        "claims": [
-         "below_peers",
-         "better"
-        ]
-       },
-       {
         "id": "net_leverage.peer_median@FY2025",
-        "claims": []
+        "claims": [
+         "below_peers"
+        ]
        },
        {
         "id": "gross_leverage.peer_rank@FY2025",
@@ -371,7 +410,7 @@
       ]
      },
      {
-      "text": "Cash liquidity to revenue is the strongest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2025}}), while the EBITDA margin sits in the middle of the group.",
+      "text": "Cash liquidity to revenue is the strongest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2025}}), above the peer median of {{cash_liquidity_to_revenue.peer_median@FY2025}}.",
       "facts": [
        {
         "id": "cash_liquidity_to_revenue.peer_rank@FY2025",
@@ -380,32 +419,28 @@
         ]
        },
        {
+        "id": "cash_liquidity_to_revenue.peer_median@FY2025",
+        "claims": [
+         "above_peers"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "The EBITDA margin sits in the middle of the group, in line with the peer median of {{ebitda_margin.peer_median@FY2025}}.",
+      "facts": [
+       {
         "id": "ebitda_margin.peer_median@FY2025",
         "claims": [
          "in_line_with_peers"
         ]
        }
       ]
-     },
-     {
-      "text": "Capex intensity of {{capex_intensity@FY2025}} is above the peer median of {{capex_intensity.peer_median@FY2025}}, the main offset to the balance-sheet strength.",
-      "facts": [
-       {
-        "id": "capex_intensity@FY2025",
-        "claims": [
-         "above_peers"
-        ]
-       },
-       {
-        "id": "capex_intensity.peer_median@FY2025",
-        "claims": []
-       }
-      ]
      }
     ],
     "watch_items": [
      {
-      "text": "Cash generation: free cash flow fell by {{fcf.change@FY2025}} to {{fcf@FY2025}} and FFO by {{ffo.change@FY2025}} to {{ffo@FY2025}}, so the investment programme absorbs most of the cash the group generates.",
+      "text": "Cash generation: free cash flow fell by {{fcf.change@FY2025}} to {{fcf@FY2025}} as capex rose by {{capex.change@FY2025}} to {{capex@FY2025}}.",
       "facts": [
        {
         "id": "fcf.change@FY2025",
@@ -419,20 +454,19 @@
         "claims": []
        },
        {
-        "id": "ffo.change@FY2025",
+        "id": "capex.change@FY2025",
         "claims": [
-         "down",
-         "worse"
+         "up"
         ]
        },
        {
-        "id": "ffo@FY2025",
+        "id": "capex@FY2025",
         "claims": []
        }
       ]
      },
      {
-      "text": "Investment: capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, above the peer median of {{capex_intensity.peer_median@FY2025}}, which keeps pressure on free cash flow.",
+      "text": "Investment: capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, above the peer median of {{capex_intensity.peer_median@FY2025}}.",
       "facts": [
        {
         "id": "capex_intensity.change@FY2025",
@@ -442,45 +476,18 @@
        },
        {
         "id": "capex_intensity@FY2025",
-        "claims": [
-         "above_peers"
-        ]
+        "claims": []
        },
        {
         "id": "capex_intensity.peer_median@FY2025",
-        "claims": []
+        "claims": [
+         "above_peers"
+        ]
        }
       ]
      },
      {
-      "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}} as cash and cash-like investments declined by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}.",
-      "facts": [
-       {
-        "id": "cash_liquidity_to_revenue.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "cash_liquidity_to_revenue@FY2025",
-        "claims": []
-       },
-       {
-        "id": "cash_like.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "cash_like@FY2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Costs: the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}} as personnel expenses rose on collective wage increases and provisions, and the abandoned third runway project left write-offs in the result.",
+      "text": "Margins: the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, with write-offs on the abandoned third runway project and environmental payments to neighbouring municipalities among the special items.",
       "facts": [
        {
         "id": "ebitda_margin.change@FY2025",
@@ -494,11 +501,38 @@
         "claims": []
        },
        {
-        "id": "event:costs",
+        "id": "event:one_offs",
         "claims": []
        },
        {
-        "id": "event:one_offs",
+        "id": "event:costs-2",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Liquidity: cash and cash-like investments fell by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, taking cash liquidity to revenue down by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}.",
+      "facts": [
+       {
+        "id": "cash_like.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_like@FY2025",
+        "claims": []
+       },
+       {
+        "id": "cash_liquidity_to_revenue.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2025",
         "claims": []
        }
       ]
@@ -506,274 +540,51 @@
     ]
    },
    "errors": [
-    "[rule 4] operating_performance, sentence 1: 'growth' needs a 'up' claim on a figure in the same clause",
-    "[rule 4] operating_performance, sentence 3: 'growth' needs a 'up' claim on a figure in the same clause",
+    "[rule 4] snapshot, sentence 1: 'fell' needs a 'down' claim on a figure in the same clause",
     "[rule 4] liquidity_funding, sentence 1: 'above' needs a 'up' or 'above_peers' claim on a figure in the same clause",
-    "[rule style] liquidity_funding, sentence 1: total_debt@FY2025 is already given in credit_metrics, sentence 2: give each figure in one body section only (the snapshot and watch items may restate it)",
-    "[rule style] liquidity_funding, sentence 3: gross_leverage@FY2025 is already given in credit_metrics, sentence 2: give each figure in one body section only (the snapshot and watch items may restate it)",
-    "[rule 3] peer_positioning, sentence 1: 'better' claimed on net_leverage@FY2025, but it is worse",
-    "[rule 5] peer_positioning, sentence 2: ebitda_margin.peer_median@FY2025 is listed in the form but not used in the text",
-    "[rule style] peer_positioning, sentence 3: capex_intensity@FY2025 is already given in credit_metrics, sentence 3: give each figure in one body section only (the snapshot and watch items may restate it)",
-    "[rule 4] watch_items, sentence 4: 'rose' needs a 'up' claim on a figure in the same clause",
-    "[rule 4] watch_items, sentence 4: 'increases' needs a 'up' claim on a figure in the same clause"
+    "[rule style] liquidity_funding, sentence 1: total_debt@FY2025 is already given in credit_metrics, sentence 3: give each figure in one body section only (the snapshot and watch items may restate it)",
+    "[rule style] liquidity_funding, sentence 3: net_cash@FY2025 is already given in credit_metrics, sentence 3: give each figure in one body section only (the snapshot and watch items may restate it)",
+    "[rule style] liquidity_funding, sentence 3: finance_costs@FY2025 is already given in credit_metrics, sentence 5: give each figure in one body section only (the snapshot and watch items may restate it)",
+    "[rule style] liquidity_funding, sentence 3: ebitda@FY2025 is already given in credit_metrics, sentence 1: give each figure in one body section only (the snapshot and watch items may restate it)"
    ],
    "error": null
   },
   {
    "try": 2,
    "sections": [
-    "operating_performance",
-    "liquidity_funding",
-    "peer_positioning",
-    "watch_items"
+    "snapshot",
+    "liquidity_funding"
    ],
-   "request_hash": "174237032c95e63f5877b07bfa88f0c34c2cfb975e7d9c4314b7263078d04d51",
+   "request_hash": "ebc8c970a6b6f01c918ef9e99d1a05474de2b181628b0dbfbc874e620cf309d7",
    "model": "deepseek-flash",
    "draft": {
-    "operating_performance": [
+    "snapshot": [
      {
-      "text": "Passengers rose by {{passengers.change@FY2025}} to {{passengers@FY2025}}, a slower rate than the {{traffic_growth@FY2024}} growth of FY2024, with traffic growth of {{traffic_growth@FY2025}} in FY2025.",
+      "text": "Flughafen Wien, the Vienna airport group, grew revenue by {{revenue.change@FY2025}} to {{revenue@FY2025}} in FY2025, but earnings declined as write-offs on the abandoned third runway project and higher personnel costs weighed on the result.",
       "facts": [
-       {
-        "id": "passengers.change@FY2025",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "passengers@FY2025",
-        "claims": []
-       },
-       {
-        "id": "traffic_growth@FY2024",
-        "claims": []
-       },
-       {
-        "id": "traffic_growth@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       }
-      ]
-     },
-     {
-      "text": "Aeronautical revenue per passenger increased by {{aero_revenue_per_passenger.change@FY2025}} to {{aero_revenue_per_passenger@FY2025}}, supported by charge adjustments under the price-cap formula and partly offset by higher temporary winter incentives.",
-      "facts": [
-       {
-        "id": "aero_revenue_per_passenger.change@FY2025",
-        "claims": [
-         "up",
-         "better"
-        ]
-       },
-       {
-        "id": "aero_revenue_per_passenger@FY2025",
-        "claims": []
-       },
-       {
-        "id": "event:regulation_and_tariffs",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Personnel expenses rose on collective wage increases and additions to personnel provisions, which weighed on the cost base while revenue grew by {{revenue.change@FY2025}}.",
-      "facts": [
-       {
-        "id": "event:costs",
-        "claims": []
-       },
        {
         "id": "revenue.change@FY2025",
         "claims": [
          "up",
          "better"
         ]
-       }
-      ]
-     }
-    ],
-    "liquidity_funding": [
-     {
-      "text": "Cash and cash-like investments fell by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, still comfortably above the group's total debt.",
-      "facts": [
-       {
-        "id": "cash_like.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
        },
        {
-        "id": "cash_like@FY2025",
+        "id": "revenue@FY2025",
+        "claims": []
+       },
+       {
+        "id": "event:one_offs",
+        "claims": []
+       },
+       {
+        "id": "event:costs",
         "claims": []
        }
       ]
      },
      {
-      "text": "Cash liquidity to revenue declined by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, a buffer that remains above the airport peer median of {{cash_liquidity_to_revenue.peer_median@FY2025}}.",
-      "facts": [
-       {
-        "id": "cash_liquidity_to_revenue.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "cash_liquidity_to_revenue@FY2025",
-        "claims": []
-       },
-       {
-        "id": "cash_liquidity_to_revenue.peer_median@FY2025",
-        "claims": [
-         "above_peers"
-        ]
-       }
-      ]
-     },
-     {
-      "text": "Funding needs are modest given the group's very low gross leverage, so the investment programme is largely met from internal cash rather than new borrowing.",
-      "facts": []
-     }
-    ],
-    "peer_positioning": [
-     {
-      "text": "Flughafen Wien has the lowest net leverage of the airport group ({{net_leverage.peer_rank@FY2025}}), at {{net_leverage@FY2025}} against a peer median of {{net_leverage.peer_median@FY2025}}, and the lowest gross leverage ({{gross_leverage.peer_rank@FY2025}}).",
-      "facts": [
-       {
-        "id": "net_leverage.peer_rank@FY2025",
-        "claims": [
-         "best_in_group"
-        ]
-       },
-       {
-        "id": "net_leverage@FY2025",
-        "claims": [
-         "below_peers"
-        ]
-       },
-       {
-        "id": "net_leverage.peer_median@FY2025",
-        "claims": []
-       },
-       {
-        "id": "gross_leverage.peer_rank@FY2025",
-        "claims": [
-         "best_in_group"
-        ]
-       }
-      ]
-     },
-     {
-      "text": "Cash liquidity to revenue is the strongest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2025}}), while the EBITDA margin sits in the middle of the group.",
-      "facts": [
-       {
-        "id": "cash_liquidity_to_revenue.peer_rank@FY2025",
-        "claims": [
-         "best_in_group"
-        ]
-       },
-       {
-        "id": "ebitda_margin.peer_median@FY2025",
-        "claims": [
-         "in_line_with_peers"
-        ]
-       }
-      ]
-     },
-     {
-      "text": "Capex intensity is above the peer median of {{capex_intensity.peer_median@FY2025}}, the main offset to the balance-sheet strength.",
-      "facts": [
-       {
-        "id": "capex_intensity.peer_median@FY2025",
-        "claims": [
-         "above_peers"
-        ]
-       }
-      ]
-     }
-    ],
-    "watch_items": [
-     {
-      "text": "Cash generation: free cash flow fell by {{fcf.change@FY2025}} to {{fcf@FY2025}} and FFO by {{ffo.change@FY2025}} to {{ffo@FY2025}}, so the investment programme absorbs most of the cash the group generates.",
-      "facts": [
-       {
-        "id": "fcf.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "fcf@FY2025",
-        "claims": []
-       },
-       {
-        "id": "ffo.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "ffo@FY2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Investment: capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, above the peer median of {{capex_intensity.peer_median@FY2025}}, which keeps pressure on free cash flow.",
-      "facts": [
-       {
-        "id": "capex_intensity.change@FY2025",
-        "claims": [
-         "up"
-        ]
-       },
-       {
-        "id": "capex_intensity@FY2025",
-        "claims": [
-         "above_peers"
-        ]
-       },
-       {
-        "id": "capex_intensity.peer_median@FY2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}} as cash and cash-like investments declined by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}.",
-      "facts": [
-       {
-        "id": "cash_liquidity_to_revenue.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "cash_liquidity_to_revenue@FY2025",
-        "claims": []
-       },
-       {
-        "id": "cash_like.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "cash_like@FY2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Costs: the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}} as personnel expenses rose on collective wage increases and provisions, and the abandoned third runway project left write-offs in the result.",
+      "text": "The EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, and net leverage moved to net cash of {{net_cash@FY2025}} from {{net_cash@FY2024}}.",
       "facts": [
        {
         "id": "ebitda_margin.change@FY2025",
@@ -787,279 +598,140 @@
         "claims": []
        },
        {
-        "id": "event:costs",
-        "claims": []
+        "id": "net_cash@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
        },
        {
-        "id": "event:one_offs",
+        "id": "net_cash@FY2024",
         "claims": []
        }
       ]
+     },
+     {
+      "text": "The point to watch is cash generation: free cash flow fell by {{fcf.change@FY2025}} to {{fcf@FY2025}} as capex rose by {{capex.change@FY2025}} to {{capex@FY2025}}, leaving cash liquidity to revenue at {{cash_liquidity_to_revenue@FY2025}}.",
+      "facts": [
+       {
+        "id": "fcf.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "fcf@FY2025",
+        "claims": []
+       },
+       {
+        "id": "capex.change@FY2025",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "capex@FY2025",
+        "claims": []
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       }
+      ]
+     }
+    ],
+    "liquidity_funding": [
+     {
+      "text": "Cash and cash-like investments fell by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, a buffer that still exceeds the group's small debt stock.",
+      "facts": [
+       {
+        "id": "cash_like.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_like@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Cash liquidity to revenue declined by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, as the capital programme absorbed cash.",
+      "facts": [
+       {
+        "id": "cash_liquidity_to_revenue.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "The cash position covers the group's debt several times over, so refinancing needs are limited and the liquidity profile rests on the cash balance rather than on committed lines.",
+      "facts": []
      }
     ]
    },
    "errors": [
-    "[rule 4] operating_performance, sentence 1: 'growth' needs a 'up' claim on a figure in the same clause",
-    "[rule style] operating_performance, sentence 3: revenue.change@FY2025 is already given in credit_metrics, sentence 1: give each figure in one body section only (the snapshot and watch items may restate it)",
-    "[rule 4] liquidity_funding, sentence 1: 'above' needs a 'up' or 'above_peers' claim on a figure in the same clause",
-    "[rule 5] peer_positioning, sentence 2: ebitda_margin.peer_median@FY2025 is listed in the form but not used in the text",
-    "[rule 4] watch_items, sentence 4: 'rose' needs a 'up' claim on a figure in the same clause",
-    "[rule 4] watch_items, sentence 4: 'increases' needs a 'up' claim on a figure in the same clause"
+    "[rule 4] snapshot, sentence 1: 'declined' needs a 'down' claim on a figure in the same clause",
+    "[rule 4] liquidity_funding, sentence 1: 'exceeds' needs a 'up' or 'above_peers' claim on a figure in the same clause"
    ],
    "error": null
   },
   {
    "try": 3,
    "sections": [
-    "operating_performance",
-    "liquidity_funding",
-    "peer_positioning",
-    "watch_items"
+    "snapshot",
+    "liquidity_funding"
    ],
-   "request_hash": "a20e1a4651c1cda67357465b76e4470a7bc3bd1de92b53e8cb097bb4e9b194f5",
+   "request_hash": "863684dc722aaffeac71e4e2aa6af761c3d3f65ce1efdcd68f95a33a6c5d1e9d",
    "model": "deepseek-flash",
    "draft": {
-    "operating_performance": [
+    "snapshot": [
      {
-      "text": "Passengers rose by {{passengers.change@FY2025}} to {{passengers@FY2025}}, a slower rate than the {{traffic_growth@FY2024}} traffic growth of FY2024, with traffic growth of {{traffic_growth@FY2025}} in FY2025.",
+      "text": "Flughafen Wien, the Vienna airport group, grew revenue by {{revenue.change@FY2025}} to {{revenue@FY2025}} in FY2025, but EBITDA fell by {{ebitda.change@FY2025}} as write-offs on the abandoned third runway project and higher personnel costs weighed on the result.",
       "facts": [
        {
-        "id": "passengers.change@FY2025",
+        "id": "revenue.change@FY2025",
         "claims": [
          "up",
          "better"
         ]
        },
        {
-        "id": "passengers@FY2025",
+        "id": "revenue@FY2025",
         "claims": []
        },
        {
-        "id": "traffic_growth@FY2024",
-        "claims": []
-       },
-       {
-        "id": "traffic_growth@FY2025",
+        "id": "ebitda.change@FY2025",
         "claims": [
          "down",
          "worse"
         ]
-       }
-      ]
-     },
-     {
-      "text": "Aeronautical revenue per passenger increased by {{aero_revenue_per_passenger.change@FY2025}} to {{aero_revenue_per_passenger@FY2025}}, supported by charge adjustments under the price-cap formula and partly offset by higher temporary winter incentives.",
-      "facts": [
-       {
-        "id": "aero_revenue_per_passenger.change@FY2025",
-        "claims": [
-         "up",
-         "better"
-        ]
        },
        {
-        "id": "aero_revenue_per_passenger@FY2025",
+        "id": "event:one_offs",
         "claims": []
        },
-       {
-        "id": "event:regulation_and_tariffs",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Personnel expenses rose on collective wage increases and additions to personnel provisions, which weighed on the cost base.",
-      "facts": [
        {
         "id": "event:costs",
         "claims": []
        }
       ]
-     }
-    ],
-    "liquidity_funding": [
-     {
-      "text": "Cash and cash-like investments fell by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, still comfortably above the group's total debt of {{total_debt@FY2025}}.",
-      "facts": [
-       {
-        "id": "cash_like.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "cash_like@FY2025",
-        "claims": []
-       },
-       {
-        "id": "total_debt@FY2025",
-        "claims": []
-       }
-      ]
      },
      {
-      "text": "Cash liquidity to revenue declined by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, a buffer that remains above the airport peer median of {{cash_liquidity_to_revenue.peer_median@FY2025}}.",
-      "facts": [
-       {
-        "id": "cash_liquidity_to_revenue.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "cash_liquidity_to_revenue@FY2025",
-        "claims": []
-       },
-       {
-        "id": "cash_liquidity_to_revenue.peer_median@FY2025",
-        "claims": [
-         "above_peers"
-        ]
-       }
-      ]
-     },
-     {
-      "text": "Funding needs are modest given the group's very low gross leverage, so the investment programme is largely met from internal cash rather than new borrowing.",
-      "facts": []
-     }
-    ],
-    "peer_positioning": [
-     {
-      "text": "Flughafen Wien has the lowest net leverage of the airport group ({{net_leverage.peer_rank@FY2025}}), at {{net_leverage@FY2025}} against a peer median of {{net_leverage.peer_median@FY2025}}, and the lowest gross leverage ({{gross_leverage.peer_rank@FY2025}}).",
-      "facts": [
-       {
-        "id": "net_leverage.peer_rank@FY2025",
-        "claims": [
-         "best_in_group"
-        ]
-       },
-       {
-        "id": "net_leverage@FY2025",
-        "claims": [
-         "below_peers"
-        ]
-       },
-       {
-        "id": "net_leverage.peer_median@FY2025",
-        "claims": []
-       },
-       {
-        "id": "gross_leverage.peer_rank@FY2025",
-        "claims": [
-         "best_in_group"
-        ]
-       }
-      ]
-     },
-     {
-      "text": "Cash liquidity to revenue is the strongest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2025}}), while the EBITDA margin sits in the middle of the group at {{ebitda_margin.peer_median@FY2025}}.",
-      "facts": [
-       {
-        "id": "cash_liquidity_to_revenue.peer_rank@FY2025",
-        "claims": [
-         "best_in_group"
-        ]
-       },
-       {
-        "id": "ebitda_margin.peer_median@FY2025",
-        "claims": [
-         "in_line_with_peers"
-        ]
-       }
-      ]
-     },
-     {
-      "text": "Capex intensity is above the peer median of {{capex_intensity.peer_median@FY2025}}, the main offset to the balance-sheet strength.",
-      "facts": [
-       {
-        "id": "capex_intensity.peer_median@FY2025",
-        "claims": [
-         "above_peers"
-        ]
-       }
-      ]
-     }
-    ],
-    "watch_items": [
-     {
-      "text": "Cash generation: free cash flow fell by {{fcf.change@FY2025}} to {{fcf@FY2025}} and FFO by {{ffo.change@FY2025}} to {{ffo@FY2025}}, so the investment programme absorbs most of the cash the group generates.",
-      "facts": [
-       {
-        "id": "fcf.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "fcf@FY2025",
-        "claims": []
-       },
-       {
-        "id": "ffo.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "ffo@FY2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Investment: capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, above the peer median of {{capex_intensity.peer_median@FY2025}}, which keeps pressure on free cash flow.",
-      "facts": [
-       {
-        "id": "capex_intensity.change@FY2025",
-        "claims": [
-         "up"
-        ]
-       },
-       {
-        "id": "capex_intensity@FY2025",
-        "claims": [
-         "above_peers"
-        ]
-       },
-       {
-        "id": "capex_intensity.peer_median@FY2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}} as cash and cash-like investments declined by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}.",
-      "facts": [
-       {
-        "id": "cash_liquidity_to_revenue.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "cash_liquidity_to_revenue@FY2025",
-        "claims": []
-       },
-       {
-        "id": "cash_like.change@FY2025",
-        "claims": [
-         "down",
-         "worse"
-        ]
-       },
-       {
-        "id": "cash_like@FY2025",
-        "claims": []
-       }
-      ]
-     },
-     {
-      "text": "Costs: the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}} as personnel expenses rose on collective wage increases and provisions, and the abandoned third runway project left write-offs in the result.",
+      "text": "The EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, and net leverage moved to net cash of {{net_cash@FY2025}} from {{net_cash@FY2024}}.",
       "facts": [
        {
         "id": "ebitda_margin.change@FY2025",
@@ -1073,22 +745,93 @@
         "claims": []
        },
        {
-        "id": "event:costs",
-        "claims": []
+        "id": "net_cash@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
        },
        {
-        "id": "event:one_offs",
+        "id": "net_cash@FY2024",
         "claims": []
        }
       ]
+     },
+     {
+      "text": "The point to watch is cash generation: free cash flow fell by {{fcf.change@FY2025}} to {{fcf@FY2025}} as capex rose by {{capex.change@FY2025}} to {{capex@FY2025}}, leaving cash liquidity to revenue at {{cash_liquidity_to_revenue@FY2025}}.",
+      "facts": [
+       {
+        "id": "fcf.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "fcf@FY2025",
+        "claims": []
+       },
+       {
+        "id": "capex.change@FY2025",
+        "claims": [
+         "up"
+        ]
+       },
+       {
+        "id": "capex@FY2025",
+        "claims": []
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       }
+      ]
+     }
+    ],
+    "liquidity_funding": [
+     {
+      "text": "Cash and cash-like investments fell by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, a buffer that still stands well above the group's small debt stock.",
+      "facts": [
+       {
+        "id": "cash_like.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_like@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "Cash liquidity to revenue declined by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, as the capital programme absorbed cash.",
+      "facts": [
+       {
+        "id": "cash_liquidity_to_revenue.change@FY2025",
+        "claims": [
+         "down",
+         "worse"
+        ]
+       },
+       {
+        "id": "cash_liquidity_to_revenue@FY2025",
+        "claims": []
+       }
+      ]
+     },
+     {
+      "text": "The cash position covers the group's debt several times over, so refinancing needs are limited and the liquidity profile rests on the cash balance rather than on committed lines.",
+      "facts": []
      }
     ]
    },
    "errors": [
-    "[rule 4] liquidity_funding, sentence 1: 'above' needs a 'up' or 'above_peers' claim on a figure in the same clause",
-    "[rule style] liquidity_funding, sentence 1: total_debt@FY2025 is already given in credit_metrics, sentence 2: give each figure in one body section only (the snapshot and watch items may restate it)",
-    "[rule 4] watch_items, sentence 4: 'rose' needs a 'up' claim on a figure in the same clause",
-    "[rule 4] watch_items, sentence 4: 'increases' needs a 'up' claim on a figure in the same clause"
+    "[rule 4] liquidity_funding, sentence 1: 'above' needs a 'up' or 'above_peers' claim on a figure in the same clause"
    ],
    "error": null
   }

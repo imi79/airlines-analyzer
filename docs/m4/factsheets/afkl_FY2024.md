@@ -55,6 +55,18 @@ Company type: airline. Reporting currency: EUR. Peer group: Network airlines (af
 | operating_profit@FY2024 | Operating profit, FY2024 | EUR 1.5bn | down, worse vs prior year |
 | operating_profit@FY2023 | Operating profit, FY2023 | EUR 1.7bn |  |
 | operating_profit.change@FY2024 | change in Operating profit, FY2023 to FY2024 | 12.6% | down, worse vs prior year; printed without a sign: say the direction in words |
+| dda@FY2024 | Depreciation, amortisation and impairment, FY2024 | EUR 2.6bn | up vs prior year |
+| dda@FY2023 | Depreciation, amortisation and impairment, FY2023 | EUR 2.5bn |  |
+| dda.change@FY2024 | change in Depreciation, amortisation and impairment, FY2023 to FY2024 | 5.9% | up vs prior year; printed without a sign: say the direction in words |
+| finance_costs@FY2024 | Finance costs, FY2024 | EUR 631m | up, worse vs prior year |
+| finance_costs@FY2023 | Finance costs, FY2023 | EUR 600m |  |
+| finance_costs.change@FY2024 | change in Finance costs, FY2023 to FY2024 | 5.2% | up, worse vs prior year; printed without a sign: say the direction in words |
+| cfo@FY2024 | Cash from operations, FY2024 | EUR 3.5bn | down, worse vs prior year |
+| cfo@FY2023 | Cash from operations, FY2023 | EUR 3.6bn |  |
+| cfo.change@FY2024 | change in Cash from operations, FY2023 to FY2024 | 3.1% | down, worse vs prior year; printed without a sign: say the direction in words |
+| capex@FY2024 | Capex (purchases of PP&E and intangibles), FY2024 | EUR 3.7bn | up vs prior year |
+| capex@FY2023 | Capex (purchases of PP&E and intangibles), FY2023 | EUR 3.6bn |  |
+| capex.change@FY2024 | change in Capex (purchases of PP&E and intangibles), FY2023 to FY2024 | 5.0% | up vs prior year; printed without a sign: say the direction in words |
 
 ## Operating performance
 
@@ -158,6 +170,8 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - fuel_hedge_ratio@FY2023: Fuel hedge ratio not available for FY2023
 - undrawn_facilities@FY2024: not verified yet: waiting for Imane's review
 - undrawn_facilities@FY2023: no figure for this year
+- fuel_cost@FY2024: Fuel cost not tagged separately; to be extracted from the notes (M3).
+- fuel_cost@FY2023: Fuel cost not tagged separately; to be extracted from the notes (M3).
 - net_cash@FY2024: the company has net debt, not net cash
 - net_cash@FY2023: the company has net debt, not net cash
 - cash_liquidity@FY2024: the same figure as cash_like@FY2024: use that id
