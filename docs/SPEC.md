@@ -354,7 +354,7 @@ Seven decisions are still open; the first three should be settled before M2.
 - [x] Repository owner: Imane's GitHub account (`imi79/airlines-analyzer`).
 - [ ] License: MIT for visibility, or source-available to keep the commercial option open?
 - [ ] Commentary language: English only, or an English and French toggle?
-- [ ] Live mode on the public link: closed, or open with each visitor's own key?
+- [x] Live mode on the public link: closed in v1, demo only ([decision 0019](decisions/0019-m5-web-app.md)).
 
 ## Working instructions for Claude Code
 

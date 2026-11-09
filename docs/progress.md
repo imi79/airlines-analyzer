@@ -85,3 +85,24 @@ commentary score at 3.78 of 5 (decision 0018).**
   13 of 22 (59%) on the fourth set (FY2022 reports), written before prompt `extract-v4` and
   four check fixes; 0 of 93 wrong values verified. **Closed by Imane on 2026-11-03 on the
   safety result** (decision 0017)
+
+## M5 · Web app
+
+Branch: `m5-web-app`. Plan: `docs/m5/plan.md`. Run: `uv run tearsheet app` (demo mode; live
+mode appears where `uv run tearsheet all` has built the database). Demo files: `uv run
+tearsheet samples`. Results: `docs/m5/`. Walkthrough: `docs/m5/walkthrough.md`. Decision
+0019. **Status: done.**
+
+- [x] A pre-generated tearsheet opens in under ten seconds: 18 of 18, slowest 2.0 seconds,
+      each from a fresh browser tab (`docs/m5/timing.md`)
+- [x] Every figure on screen shows its source on click: KPI cards, table rows, chart points,
+      commentary sentences, peer rows and medians, audit rows; a test follows every figure of
+      all 18 tearsheets and every peer table down to a filing fact, a quote or a hand entry
+      (1,986 of 1,986 figures trace; `tests/test_sources.py`, screenshots in `docs/m5/`)
+- [x] Demo mode works without a key: every page and all 18 tearsheets open with no key, no
+      database and the network blocked (`tests/test_app.py`)
+- Four pages (Tearsheet, Peers, Data and audit, Method); commentary editing with untraced
+  figures flagged; analyst view; approve or correct with a reason (saved in live mode only);
+  live redraft through the existing drafting and verifier. Ratios to a very small debt shown
+  as n.m., as in the M4 fact sheets. 480 tests, 99 new. No AI tokens spent
+

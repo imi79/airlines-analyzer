@@ -1,7 +1,9 @@
 # M5 plan: the web app, where the tearsheet is read, audited and finished
 
-Status: **draft, waiting for Imane's approval.** No app code is written until the plan is
-approved (working rules). Starting point: `main` at the M4 close, 381 tests green.
+Status: **approved by Imane** (2026-11-09) with every recommendation: 1. one sources button
+per sentence; 2. the 18 tearsheets with commentary; 3. a typed figure is flagged, not refused;
+4. the public link is demo only; 5. branch `m5-web-app`. Built in the same session; results in
+`docs/m5/walkthrough.md`, choices in decision 0019.
 
 ## What M5 is for
 
