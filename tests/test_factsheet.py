@@ -264,3 +264,13 @@ def test_different_figures_keep_both_names():
              fig("afkl", "cash_liquidity", 2025, "9000000000")]  # fmt: skip
     sheet = build(ISSUERS["afkl"], 2025, universe(extra))
     assert "cash_liquidity@FY2025" in sheet.items
+
+
+def test_cause_lines_are_offered_with_their_direction():
+    extra = [fig("afkl", "dda", 2024, "2643000000"), fig("afkl", "dda", 2025, "3054000000"),
+             fig("afkl", "finance_costs", 2024, "631000000"),
+             fig("afkl", "finance_costs", 2025, "627000000")]  # fmt: skip
+    sheet = build(ISSUERS["afkl"], 2025, universe(extra))
+    dda = sheet.items["dda.change@FY2025"]
+    assert (dda.direction, dda.assessment, dda.rendered) == ("up", "neutral", "15.6%")
+    assert sheet.items["finance_costs@FY2025"].direction == "flat"

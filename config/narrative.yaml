@@ -22,6 +22,10 @@ sections:
       - revenue
       - operating_profit
       - ebitda
+      - dda
+      - finance_costs
+      - cfo
+      - capex
       - ebitda_margin
       - total_debt
       - net_debt
@@ -50,6 +54,7 @@ sections:
       - cask
       - cask_ex_fuel
       - fuel_share_of_costs
+      - fuel_cost
       - fleet
       - fleet_age
       - fuel_hedge_ratio
@@ -91,6 +96,13 @@ statement_lines:
   profit: true
   contract_liabilities: null
   undrawn_facilities: true
+  # Round 5 (decision 0018): the lines that explain moves, so a cause such as "as depreciation
+  # rose" rests on a checked figure instead of being removed by the verifier.
+  dda: null
+  finance_costs: false
+  fuel_cost: null
+  cfo: true
+  capex: null
 
 # Peer group used for medians and ranks: the company's own group (not "all airlines").
 peer_groups: [network, low_cost, airports]
