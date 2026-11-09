@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "page 164",
+    "quote": "El 7 de mayo, Fitch Ratings mejoró la calificación de largo plazo y del programa EMTN a “A” desde “A-“, así como la calificación a corto plazo a “F1” desde “F2”, manteniendo la perspectiva estable.",
+    "summary": "Fitch raised Aena's long-term issuer and EMTN programme rating and its short-term rating, keeping the outlook stable.",
+    "title": "Fitch upgrades Aena's long-term rating",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 164",
+    "quote": "El 19 de marzo, la agencia de rating Moody’s mejoró la perspectiva de Aena S.M.E., S.A. a positiva desde estable y confirmó la calificación de largo plazo “A3” y del programa EMTN.",
+    "summary": "Moody's changed Aena's outlook to positive from stable and confirmed the long-term rating and the EMTN programme rating.",
+    "title": "Moody's improves Aena's outlook to positive",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 164",
+    "quote": "En relación con el Documento de Regulación Aeroportuaria para el período 2022-2026 (DORA II), el 28 de noviembre de 2024, la CNMC emitió su resolución de supervisión de las tarifas aeroportuarias para 2025, declarando que el ingreso máximo anual ajustado por pasajero (IMAAJ) aplicable es de 10,35 euros, lo que supone una variación del 0% respecto a",
+    "summary": "The CNMC issued its supervision resolution on airport tariffs for 2025, stating the applicable maximum adjusted annual revenue per passenger and a zero variation versus the prior year.",
+    "title": "CNMC sets airport tariff for 2025",
+    "topic": "regulation_and_tariffs"
+   },
+   {
+    "location": "page 173",
+    "quote": "El 1 de febrero de 2024, la CNMC emitió su resolución de supervisión de las tarifas aeroportuarias para 2024, declarando que el ingreso máximo anual ajustado por pasajero (IMAAJ) aplicable es de 10,35 euros, lo que supone una variación tarifaria del 4,09% respecto a las de 2023.",
+    "summary": "The CNMC issued its supervision resolution on airport tariffs, stating the applicable maximum adjusted annual revenue per passenger and the resulting tariff variation versus the prior year.",
+    "title": "CNMC sets airport tariffs for the year",
+    "topic": "regulation_and_tariffs"
+   },
+   {
+    "location": "page 193",
+    "quote": "concesión en Brasil (23,2 millones de euros) así como, el resultado por la venta de la participación de ADI en la sociedad European Satellite Services Provider SAS (ESSP SAS) (8,6 millones de euros).",
+    "summary": "The result for the year includes the gain on the sale of ADI's stake in European Satellite Services Provider SAS.",
+    "title": "Sale of stake in ESSP SAS",
+    "topic": "acquisitions_and_disposals"
+   },
+   {
+    "location": "page 189",
+    "quote": "En relación con SACSA, según se indica en el apartado 2.2.2 (Sociedades asociadas y con control conjunto) el 29 febrero de 2024 finalizó la concesión del Aeropuerto Internacional Rafael Núñez (Cartagena de Indias-Colombia) gestionada a través de esta Sociedad.",
+    "summary": "The concession of the Rafael Núñez International Airport in Cartagena de Indias, managed through SACSA, ended.",
+    "title": "Cartagena airport concession ends",
+    "topic": "acquisitions_and_disposals"
+   }
+  ]
+ },
+ "label": "aena FY2024 events 959800R7QMXKF0NFMT29-2024-12-31-ESEF-ES-0",
+ "recorded_at": "2026-11-09T14:38:49+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v2",
+  "provider": "deepseek",
+  "system_sha256": "443a4436d6b697443b1d13ac78d1949a7decbb38acff14498e97c654b4f0869a",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "db75b00cccb1069b9010e7f7c373daa25db706be465b71400de71fae54476cfb"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 10228,
+  "output_tokens": 864
+ }
+}

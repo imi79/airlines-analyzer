@@ -1,0 +1,35 @@
+{
+ "answer": {
+  "events": [
+   {
+    "quote": "In 2025, the company paid its first-ever dividend, distributing NOK 0.90 per share to its nearly 75,000 shareholders in August.",
+    "summary": "The company paid an initial dividend to its shareholders in August.",
+    "title": "Initial dividend paid to shareholders",
+    "topic": "capital_returns"
+   },
+   {
+    "quote": "Norwegian's acquisition of 13 previously leased Boeing 737-800 aircraft contributed to accounting gains in 2025 and recurring cost savings, further strengthening our financial position.",
+    "summary": "Norwegian acquired previously leased Boeing aircraft, which contributed accounting gains and recurring cost savings.",
+    "title": "Purchase of previously leased aircraft",
+    "topic": "fleet_and_engines"
+   }
+  ]
+ },
+ "label": "norwegian FY2025 events retry 549300IEUH2FEM2Y6B51-2025-12-31-ESEF-NO-0",
+ "recorded_at": "2026-11-09T14:39:48+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v2",
+  "provider": "deepseek",
+  "system_sha256": "443a4436d6b697443b1d13ac78d1949a7decbb38acff14498e97c654b4f0869a",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "eb80450ee99199cd965911a67e57f79e8be6b436f3a613fc091e6ccd54754455"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 9061,
+  "output_tokens": 183
+ }
+}

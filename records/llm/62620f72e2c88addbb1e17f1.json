@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "page 185",
+    "quote": "El 18 de diciembre de 2025, la sociedad dependiente Aena Desarrollo Internacional (ADI) ha formalizado un acuerdo para la adquisición del 51% de una nueva sociedad holding propietaria y gestora del 100% del aeropuerto de Leeds Bradford y del 49% del de Newcastle, ambos en el Reino Unido, por 270 millones de GBP (aproximadamente, 309 millones de euros al 31 de diciembre de 2025) cuyo abono está previsto en efectivo, y estará afectado por potenciales ajustes al precio usuales en este tipo de operaciones (que se estima aumentarán el importe a aproximadamente 294,7 millones de GBP, 337,3 millones de euros).",
+    "summary": "Aena agreed to acquire a majority stake in a holding owning Leeds Bradford and a stake in Newcastle, expanding its international footprint and adding acquisition funding needs.",
+    "title": "Aena agrees to buy UK airport holding stakes",
+    "topic": "acquisitions_and_disposals"
+   },
+   {
+    "location": "page 61",
+    "quote": "El 30 de octubre de 2025, la filial BOAB realizó su primera emisión de bonos (debentures simples) por importe de 5.300 millones de BRL, no convertibles, con garantía real, con vencimiento en junio de 2048), indexadas a IPCA y con cupón fijo del 8,74% anual, pagadero semestralmente, siendo el primer pago el 15 de junio de 2026 (Nota 20).",
+    "summary": "The Brazilian subsidiary BOAB issued a large long-dated local bond, lengthening group debt maturity but adding indexed, higher-coupon debt.",
+    "title": "Brazilian subsidiary issues large local bond",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 231",
+    "quote": "La agencia de calificación crediticia Moody's Investors Service ha mejorado la calificación de emisor a largo plazo y la calificación de deuda senior no garantizada de Aena S.M.E., S.A. a A2 desde A3.",
+    "summary": "Moody's raised Aena's long-term issuer and senior unsecured ratings, improving the group's funding position and credit standing.",
+    "title": "Moody's upgrades Aena issuer rating",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 180",
+    "quote": "En relación con el Documento de Regulación Aeroportuaria para el período 2022-2026 (DORA II), el 13 de noviembre de 2025, la CNMC emitió su resolución de supervisión de las tarifas aeroportuarias para 2026, estableciendo que el IMAAJ para 2026 sea de 11,00 euros por pasajero, lo que supone un incremento del 6,31% respecto al IMAAJ de 2025 (10,35 euros por",
+    "summary": "The regulator set the regulated per-passenger charge for the coming year above the current level, supporting regulated revenue growth.",
+    "title": "Regulator sets airport charges for next year",
+    "topic": "regulation_and_tariffs"
+   },
+   {
+    "location": "page 20",
+    "quote": "Asimismo, el 3 de abril de 2025 la Secretaria de Estado de Transportes británica aprobó la ampliación de la capacidad del aeropuerto desde los actuales 19 millones de pasajeros a 32 millones, a través de un proceso denominado Development Consetnt Order (DCO) solicitado por el Ayuntamiento de Luton.",
+    "summary": "The UK government approved a large expansion of Luton airport's capacity, supporting long-term traffic growth at Aena's UK concession.",
+    "title": "Luton airport capacity expansion approved",
+    "topic": "acquisitions_and_disposals"
+   },
+   {
+    "location": "page 25",
+    "quote": "El plazo de la concesión del aeropuerto internacional Alfonso Bonilla Aragón, Cali, gestionado por la Sociedad Aerocali S.A. finalizaba el pasado 1 de septiembre de 2020. El contrato fue prorrogado posteriormente en varias ocasiones por acuerdos alcanzados con la entidad concedente, finalizando definitivamente el 31 de agosto de 2025.",
+    "summary": "The Cali airport concession ended and Aena booked an impairment on its equity-accounted stake, a small hit to earnings.",
+    "title": "Cali concession ends with impairment",
+    "topic": "acquisitions_and_disposals"
+   }
+  ]
+ },
+ "label": "aena FY2025 events 959800R7QMXKF0NFMT29-2025-12-31-ESEF-ES-0",
+ "recorded_at": "2026-11-09T14:35:58+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v1",
+  "provider": "deepseek",
+  "system_sha256": "65a62a6da6dc039bdb144a445e10bff34f0c428673333043ff8dd55b3ebd96df",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "cd152b1def88f62fbbec3c68f397110bb66f6a51f5126ea1cbdeed079072d035"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 10194,
+  "output_tokens": 1038
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "answer": {
+  "events": [
+   {
+    "quote": "El 18 de diciembre de 2025, la sociedad dependiente Aena Desarrollo Internacional (ADI) ha formalizado un acuerdo para la adquisición del 51% de una nueva sociedad holding propietaria y gestora del 100% del aeropuerto de Leeds Bradford y del 49% del de Newcastle, ambos en el Reino Unido, por 270 millones de GBP (aproximadamente, 309 millones de euros al 31 de diciembre de 2025) cuyo abono está previsto en efectivo, y estará afectado por potenciales ajustes al precio usuales en este tipo de operaciones (que se estima aumentarán el importe a aproximadamente 294,7 millones de GBP, 337,3 millones de euros).",
+    "summary": "Aena's international subsidiary formalised an agreement to acquire a majority stake in a holding company owning Leeds Bradford airport and a stake in Newcastle airport, with closing subject to regulatory approvals.",
+    "title": "Agreement to acquire UK airport stakes",
+    "topic": "acquisitions_and_disposals"
+   },
+   {
+    "quote": "El 30 de octubre de 2025, la filial BOAB realizó su primera emisión de bonos (debentures simples) por importe de 5.300 millones de BRL, no convertibles, con garantía real, con vencimiento en junio de 2048), indexadas a IPCA y con cupón fijo del 8,74% anual, pagadero semestralmente, siendo el primer pago el 15 de junio de 2026 (Nota 20).",
+    "summary": "The Brazilian subsidiary BOAB issued secured, non-convertible debentures maturing in the long term, indexed to IPCA with a fixed coupon payable semi-annually.",
+    "title": "Brazilian subsidiary issues debentures",
+    "topic": "funding_and_rating"
+   }
+  ]
+ },
+ "label": "aena FY2025 events retry 959800R7QMXKF0NFMT29-2025-12-31-ESEF-ES-0",
+ "recorded_at": "2026-11-09T14:39:46+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v2",
+  "provider": "deepseek",
+  "system_sha256": "443a4436d6b697443b1d13ac78d1949a7decbb38acff14498e97c654b4f0869a",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "d282572c55cc9864cba41e562876982bafd0a0411ff78845f230e82d68339038"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 10703,
+  "output_tokens": 436
+ }
+}

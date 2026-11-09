@@ -1,0 +1,35 @@
+{
+ "answer": {
+  "events": [
+   {
+    "quote": "The Group continues to be impacted by reliability and performance issues with Rolls-Royce Trent 1000 and Pratt and Whitney GTF engines, which are mitigated by using replacement aircraft and invoking remedy support from the engine manufacturers.",
+    "summary": "The Group continues to be impacted by reliability and performance issues with Rolls-Royce Trent and Pratt and Whitney GTF engines, mitigated by using replacement aircraft and invoking remedy support from the engine manufacturers.",
+    "title": "Engine reliability issues and aircraft delivery delays",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "quote": "The signing of the fourth collective bargaining agreement for pilots also marks a significant step in securing sustainable agreements across all our labour groups.",
+    "summary": "The signing of a further collective bargaining agreement for pilots is described as a significant step in securing sustainable agreements across all labour groups.",
+    "title": "New collective bargaining agreement signed for pilots",
+    "topic": "labour"
+   }
+  ]
+ },
+ "label": "iag FY2024 events retry 959800TZHQRUSH1ESL13-2024-12-31-ESEF-ES-0",
+ "recorded_at": "2026-11-09T14:39:53+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v2",
+  "provider": "deepseek",
+  "system_sha256": "443a4436d6b697443b1d13ac78d1949a7decbb38acff14498e97c654b4f0869a",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "4cbb511daa186bae5f98fae50b2e9d4a48a2951a4188b3ea2cf5b46da81cb720"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 9328,
+  "output_tokens": 226
+ }
+}

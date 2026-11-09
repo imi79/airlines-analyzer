@@ -453,6 +453,27 @@ def _peer_items(sheet, spec, metric, cur, index, ends, members, narrative, debt_
     )
 
 
+# --- Events of the year (fix D) ------------------------------------------------------------
+
+
+def add_events(sheet: FactSheet, events) -> None:
+    """Checked events become items the AI may cite by id (no figure, no blank)."""
+    for e in events:
+        if not e.verified:
+            continue
+        sheet.items[e.id] = Item(
+            id=e.id,
+            metric="event",
+            kind="event",
+            label=e.title,
+            unit="event",
+            value=Decimal(0),
+            rendered="",
+            period=f"FY{e.fiscal_year}",
+            note=f'{e.summary} Quote ({e.location}): "{e.quote}"',
+        )
+
+
 # --- Reading the facts database ------------------------------------------------------------
 
 
@@ -531,11 +552,27 @@ def as_text(sheet: FactSheet, narrative: dict | None = None) -> str:
             placed.add(item.id)
             lines.append(f"| {item.id} | {item.label} | {item.rendered} | {_computed(item)} |")
         lines.append("")
-    others = [i for i in sheet.items.values() if i.id not in placed]
+    events = [i for i in sheet.items.values() if i.kind == "event"]
+    others = [i for i in sheet.items.values() if i.id not in placed and i.kind != "event"]
     if others:
         lines += ["## Other figures", "", "| id | what it is | prints as | computed by code |",
                   "| --- | --- | --- | --- |"]  # fmt: skip
         lines += [f"| {i.id} | {i.label} | {i.rendered} | {_computed(i)} |" for i in others]
+        lines.append("")
+    if events:
+        lines += [
+            "## Events of the year (read from the report; the quote was checked by code)",
+            "",
+            "Cite an event by listing its id in `facts` (no blank, no claims). It has no figure:",
+            "write no number about it, and no direction word unless a figure of the sentence "
+            "carries the claim.",
+            "",
+            "| id | event | what happened | quote from the report |",
+            "| --- | --- | --- | --- |",
+        ]
+        for e in events:
+            summary, _, quote = e.note.partition(" Quote ")
+            lines.append(f"| {e.id} | {e.label} | {summary} | {quote} |")
         lines.append("")
     shown = {k: v for k, v in sheet.unavailable.items() if v not in QUIET_REASONS}
     lines += [

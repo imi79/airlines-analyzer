@@ -22,7 +22,7 @@ from tearsheet.narrative.verifier import CLAIMS, Draft, Error, Report, Verifier,
 HERE = Path(__file__).parent
 PROMPTS = HERE / "prompts"
 EXAMPLES = HERE / "examples"
-PROMPT_VERSION = "draft-v3"  # bump with every change to the prompt, examples, form or request
+PROMPT_VERSION = "draft-v4"  # bump with every change to the prompt, examples, form or request
 MAX_RETRIES = 2  # spec: up to two retries with the error list fed back
 NOT_RUN = "not drafted yet: no recorded AI answer (run `tearsheet draft`)"
 

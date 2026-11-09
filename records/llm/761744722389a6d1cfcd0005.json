@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "page 111",
+    "quote": "The Committee also reviewed easyJet's undrawn facility arrangements and approved management's recommendation to enter into a new Revolving Credit Facility for $1.7 billion. This new facility replaced the previous $1.75 billion UKEF facility and the $400 million Revolving Credit Facility, both of which have now been terminated.",
+    "summary": "easyJet signed a new undrawn revolving credit facility that replaced its previous UKEF-backed term loan and smaller facility, lowering annual interest charges and simplifying its liquidity structure.",
+    "title": "New revolving credit facility replaces prior facilities",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 33",
+    "quote": "In the year, easyJet repaid a €500 million Eurobond, and secured a $1.7 billion revolving credit facility (RCF) which is undrawn at 30 September 2025",
+    "summary": "The group repaid a large euro-denominated bond at maturity, using cash that had earned higher interest, which raised net financing charges for the airline.",
+    "title": "Eurobond repaid at maturity",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 167",
+    "quote": "Right of use asset disposals in note 18 includes £73 million (2024: £nil) relating to the purchase of eight aircraft that were previously leased, with a corresponding £237 million (2024: £nil) of additions to aircraft owned assets. The early exit of the leases and subsequent purchase of the aircraft resulted in a £54 million (2024: £nil) credit to the income statement.",
+    "summary": "easyJet bought aircraft it had been leasing, exiting the leases early and recording a credit to the income statement while shifting assets to owned.",
+    "title": "Purchase of previously leased aircraft",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "location": "page 111",
+    "quote": "During the year the Committee reviewed and recommended to the Board the refresh of the Company's EMTN Programme, which had originally been established in January 2016. The refresh of the EMTN Programme allows easyJet to access a diverse range of funding alternatives.",
+    "summary": "The audit committee refreshed the company's euro medium term note programme, widening access to diverse funding sources as aircraft deliveries accelerate.",
+    "title": "EMTN programme refreshed for funding flexibility",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 5",
+    "quote": "Ongoing conflicts in the Middle East and Ukraine, inflationary cost pressures, air traffic control underperformance across Europe, and continued aircraft production and supply chain challenges, all impacted operations.",
+    "summary": "Management flagged air traffic control underperformance, aircraft production constraints and geopolitical conflicts as external factors that weighed on operations during the year.",
+    "title": "Air traffic control and supply chain pressure operations",
+    "topic": "costs"
+   },
+   {
+    "location": "page 5",
+    "quote": "Given the performance in the financial year alongside easyJet's strong liquidity position, the Board intends to pay an increased dividend of 13.2 pence per share, up 9% and equivalent to 20% of FY25's headline profit after tax.",
+    "summary": "The Board proposed a higher ordinary dividend reflecting strong liquidity, while noting that additional excess capital returns are not a near-term prospect.",
+    "title": "Increased ordinary dividend proposed",
+    "topic": "capital_returns"
+   }
+  ]
+ },
+ "label": "easyjet FY2025 events 2138001S47XKWIB7TH90-2025-09-30-ESEF-GB-0",
+ "recorded_at": "2026-11-09T14:35:45+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v1",
+  "provider": "deepseek",
+  "system_sha256": "65a62a6da6dc039bdb144a445e10bff34f0c428673333043ff8dd55b3ebd96df",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "2f9cf574954476bda4b79e80c2027342a9171aeea0d871fbf49ccc2873891a90"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 8627,
+  "output_tokens": 743
+ }
+}

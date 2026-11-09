@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "Note 5, Évolution du périmètre de consolidation",
+    "quote": "Après l’obtention d’autorisations réglementaires en Europe et aux États-Unis, le groupe Air France-KLM a donc finalisé le 28 août 2024 l’acquisition d’une participation minoritaire de 19,90 % dans le capital de SAS AB.",
+    "summary": "The group completed the acquisition of a minority stake in SAS AB and began a deepened commercial cooperation with the airline.",
+    "title": "Air France-KLM takes minority stake in SAS",
+    "topic": "acquisitions_and_disposals"
+   },
+   {
+    "location": "Faits marquants de l'exercice 2024, 13 mai 2024",
+    "quote": "Air France-KLM annonce le lancement d’une offre de rachat sur deux souches obligataires existantes et son intention de procéder à une nouvelle émission obligataire",
+    "summary": "The company launched a cash tender offer on two existing bond tranches and announced its intention to issue new bonds to refinance part of its existing debt.",
+    "title": "Bond tender offer and new bond issue",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "Commentaires sur la situation financière",
+    "quote": "un versement de (115) millions d’euros à Virgin dans le cadre de la renégociation d’un contrat ;",
+    "summary": "Operating result for the year included a payment to Virgin as part of the renegotiation of a contract.",
+    "title": "Payment to Virgin in contract renegotiation",
+    "topic": "costs"
+   },
+   {
+    "location": "Commentaires sur la situation financière",
+    "quote": "une provision nette de (49) millions liée à la restructuration de l’offre domestique au départ d’Orly et des centres d’appel.",
+    "summary": "A net provision was recorded for the restructuring of the domestic offer from Orly and of call centres.",
+    "title": "Provision for Orly domestic offer restructuring",
+    "topic": "capacity_and_network"
+   },
+   {
+    "location": "Chiffres clés, indicateurs environnementaux",
+    "quote": "En 2024, l’intensité GES s’est améliorée (- 1 %) par rapport à 2023 dans un contexte de retards dans le renouvellement de la flotte, en raison de contraintes dans la chaîne d’approvisionnement, de problèmes de moteurs sur une partie de la flotte d’avions de nouvelle génération ne permettant pas au Groupe de les exploiter à leur capacité maximale",
+    "summary": "Fleet renewal was delayed by supply chain constraints and engine problems on part of the new-generation fleet, preventing the group from operating those aircraft at maximum capacity.",
+    "title": "Fleet renewal constrained by engine problems",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "location": "Note 5, Évolution du périmètre de consolidation",
+    "quote": "Le 1ᵉʳ février 2024, KLM a cédé sa filiale détenue à 100 % KLM Equipment Services B.V. à TCR International N.V. (TCR).",
+    "summary": "KLM sold its wholly owned subsidiary KLM Equipment Services to TCR International.",
+    "title": "KLM sells KLM Equipment Services",
+    "topic": "acquisitions_and_disposals"
+   }
+  ]
+ },
+ "label": "afkl FY2024 events 969500AQW31GYO8JZD66-2024-12-31-ESEF-FR-0",
+ "recorded_at": "2026-11-09T14:38:24+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v2",
+  "provider": "deepseek",
+  "system_sha256": "443a4436d6b697443b1d13ac78d1949a7decbb38acff14498e97c654b4f0869a",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "58238399f4d263451f588d76d2e01c5f4755726d1a9640fa49be6e2a089afe8c"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 11276,
+  "output_tokens": 765
+ }
+}

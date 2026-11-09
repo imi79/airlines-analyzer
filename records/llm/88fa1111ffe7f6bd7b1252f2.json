@@ -1,0 +1,29 @@
+{
+ "answer": {
+  "events": [
+   {
+    "quote": "Air France-KLM annonce le lancement d’une offre de rachat sur deux souches obligataires existantes et son intention de procéder à une nouvelle émission obligataire",
+    "summary": "The company launched a cash tender offer on existing bond tranches and announced its intention to issue new bonds to refinance part of its existing debt.",
+    "title": "Bond tender offer and new bond issue",
+    "topic": "funding_and_rating"
+   }
+  ]
+ },
+ "label": "afkl FY2024 events retry 969500AQW31GYO8JZD66-2024-12-31-ESEF-FR-0",
+ "recorded_at": "2026-11-09T14:39:51+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v2",
+  "provider": "deepseek",
+  "system_sha256": "443a4436d6b697443b1d13ac78d1949a7decbb38acff14498e97c654b4f0869a",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "a712d6a5299e51f661dc955480410afd218452155f060e945412061765efab47"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 11425,
+  "output_tokens": 135
+ }
+}

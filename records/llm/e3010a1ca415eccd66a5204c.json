@@ -1,0 +1,35 @@
+{
+ "answer": {
+  "events": [
+   {
+    "quote": "The new commercial support agreement with Pratt & Whitney was agreed at the end of 2024, covering the two-year period for the calendar years 2025 and 2026. The compensation package, which covers Wizz’s direct costs associated with the aircraft that have been and those expected to be grounded, is similar to the levels of the previous agreement in place during 2024.",
+    "summary": "A new commercial support agreement with Pratt & Whitney was agreed at the end of the year, covering a multi-year period and compensating direct costs associated with grounded aircraft.",
+    "title": "New Pratt & Whitney compensation agreement signed",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "quote": "During F25 , Wizz Air took delivery of 26 new A321neo aircraft and also secured three former Wizz Air aircraft on dry leases, while six A320ceo aircraft were redelivered, ending the fiscal year with a total fleet of 231 aircraft: 37x A320ceo, 41x A321ceo, 6x A320neo and 147x A321neo.",
+    "summary": "The company took delivery of new A321neo aircraft, secured former Wizz Air aircraft on dry leases and redelivered A320ceo aircraft, ending the fiscal year with a larger total fleet.",
+    "title": "New aircraft delivered and older aircraft redelivered",
+    "topic": "fleet_and_engines"
+   }
+  ]
+ },
+ "label": "wizz FY2025 events retry 213800COXGZCORLJZA85-2025-03-31-ESEF-GB-0",
+ "recorded_at": "2026-11-09T14:40:09+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v2",
+  "provider": "deepseek",
+  "system_sha256": "443a4436d6b697443b1d13ac78d1949a7decbb38acff14498e97c654b4f0869a",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "683908805eb8d5de1b326cdbe0715b9098db010281ae2daebd0a68da4b77bbfd"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 8368,
+  "output_tokens": 334
+ }
+}

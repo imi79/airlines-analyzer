@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "page 3",
+    "quote": "The prolonged industrial action during the first half of the year had an immediate negative impact of approximately 68 million euros on the comparable operating result.",
+    "summary": "A prolonged industrial action in the first half of the year forced mass flight cancellations and directly hit the comparable operating result, weakening earnings and cash generation.",
+    "title": "Prolonged industrial action cancelled thousands of flights",
+    "topic": "labour"
+   },
+   {
+    "location": "page 4",
+    "quote": "During the first half of the year, industrial action caused significant disruption to our operations, and we had to cancel more than 2,600 flights in total.",
+    "summary": "Industrial action across the network led to cancellations of more than 2,600 flights between January and July, disrupting operations and customer satisfaction.",
+    "title": "Industrial action caused widespread flight cancellations",
+    "topic": "labour"
+   },
+   {
+    "location": "page 4",
+    "quote": "To further strengthen our financial position, we issued a 300 million-euro bond towards the end of the year, supporting the execution of strategic investments in the coming years.",
+    "summary": "Finnair issued a bond towards the end of the year to strengthen its financial position and support execution of strategic investments, improving liquidity.",
+    "title": "Bond issued to strengthen financial position",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 3",
+    "quote": "In addition, increased costs related to environmental regulation as well as higher navigation and landing charges weighed on the result.",
+    "summary": "Higher costs from environmental regulation, sustainable aviation fuel use, emissions trading changes and increased navigation and landing charges weighed on the result.",
+    "title": "Environmental regulation and airport charges raised costs",
+    "topic": "costs"
+   },
+   {
+    "location": "page 12",
+    "quote": "Other items affecting comparability totalled 14.5 million euros and consisted of fair value changes of derivatives for which hedge accounting is not applied and sales gains or losses, mostly related to a positive result impact from the lease buyouts of four A321 aircraft and the sale of three aircraft engines.",
+    "summary": "Finnair bought four previously leased aircraft and sold engines, reducing lease liabilities and gearing while generating disposal gains.",
+    "title": "Leased aircraft purchased and engines sold",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "location": "page 4",
+    "quote": "Our financial position also enables us to reward our shareholders, and the Board of Directors proposes a return of capital of 0.09 euros per share to the Annual General Meeting.",
+    "summary": "The Board proposed a return of capital per share, a distribution to shareholders that reduces equity and is relevant to credit assessment.",
+    "title": "Board proposes return of capital to shareholders",
+    "topic": "capital_returns"
+   }
+  ]
+ },
+ "label": "finnair FY2025 events 213800SB6EOB8SSK9W63-2025-12-31-ESEF-FI-0",
+ "recorded_at": "2026-11-09T14:35:39+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v1",
+  "provider": "deepseek",
+  "system_sha256": "65a62a6da6dc039bdb144a445e10bff34f0c428673333043ff8dd55b3ebd96df",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "229331935886d4fc1b562c372da1c6f23e3f8692153a815c00c8989668ee2218"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 8936,
+  "output_tokens": 620
+ }
+}

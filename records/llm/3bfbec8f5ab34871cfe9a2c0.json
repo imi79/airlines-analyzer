@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "page 164",
+    "quote": "El 19 de marzo de 2024, la agencia de rating Moody’s mejoró la perspectiva de Aena S.M.E., S.A. a positiva desde estable y confirmó la calificación de largo plazo “A3” y del programa EMTN. El 25 de septiembre, en el ámbito de la revisión periódica, esta agencia ha reevaluado la idoneidad de dichas calificaciones. El 7 de mayo, Fitch Ratings mejoró la calificación de largo plazo y del programa EMTN a “A” desde “A-“, así como la calificación a corto plazo a “F1” desde “F2”, manteniendo la perspectiva estable.",
+    "summary": "Moody's moved the outlook to positive and Fitch upgraded the long-term and short-term ratings, strengthening the group's funding position and cost of debt.",
+    "title": "Rating agencies improve Aena's credit ratings and outlook",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 173",
+    "quote": "El 1 de febrero de 2024, la CNMC emitió su resolución de supervisión de las tarifas aeroportuarias para 2024, declarando que el ingreso máximo anual ajustado por pasajero (IMAAJ) aplicable es de 10,35 euros, lo que supone una variación tarifaria del 4,09% respecto a las de 2023.",
+    "summary": "The competition regulator fixed the maximum adjusted revenue per passenger, allowing a tariff increase that supports regulated aeronautical revenue.",
+    "title": "Regulator sets airport tariff path for the year",
+    "topic": "regulation_and_tariffs"
+   },
+   {
+    "location": "page 164",
+    "quote": "En relación con el Documento de Regulación Aeroportuaria para el período 2022-2026 (DORA II), el 28 de noviembre de 2024, la CNMC emitió su resolución de supervisión de las tarifas aeroportuarias para 2025, declarando que el ingreso máximo anual ajustado por pasajero (IMAAJ) aplicable es de 10,35 euros, lo que supone una variación del 0% respecto a",
+    "summary": "The regulator's supervision resolution for the next year set no tariff variation, limiting future regulated revenue growth relative to the prior year's increase.",
+    "title": "Regulator keeps tariffs flat for the following year",
+    "topic": "regulation_and_tariffs"
+   },
+   {
+    "location": "page 193",
+    "quote": "concesión en Brasil (23,2 millones de euros) así como, el resultado por la venta de la participación de ADI en la sociedad European Satellite Services Provider SAS (ESSP SAS) (8,6 millones de euros). El resto de la variación se ha producido por las diferencias de tipo de cambio registradas.",
+    "summary": "The international division sold its stake in a satellite services provider, generating a gain that lifted non-recurring results.",
+    "title": "Disposal of stake in satellite services provider",
+    "topic": "acquisitions_and_disposals"
+   },
+   {
+    "location": "page 18",
+    "quote": "Con fecha 13 de octubre de 2023, la capacidad máxima regulatoria del aeropuerto de Luton fue ampliada en un millón de pasajeros, quedando establecida en 19 millones de pasajeros, una vez finalizados los trámites formales adicionales requeridos en abril de 2024 (Nota 3).",
+    "summary": "The regulatory capacity of London Luton was raised after formal procedures concluded, supporting future traffic growth at the concession.",
+    "title": "Luton airport regulatory capacity increased",
+    "topic": "capacity_and_network"
+   },
+   {
+    "location": "page 189",
+    "quote": "En relación con SACSA, según se indica en el apartado 2.2.2 (Sociedades asociadas y con control conjunto) el 29 febrero de 2024 finalizó la concesión del Aeropuerto Internacional Rafael Núñez (Cartagena de Indias-Colombia) gestionada a través de esta Sociedad.",
+    "summary": "The concession of the Cartagena de Indias airport managed through an associate expired, ending that source of equity-accounted results and triggering impairment reversals.",
+    "title": "Colombian Cartagena airport concession ends",
+    "topic": "acquisitions_and_disposals"
+   }
+  ]
+ },
+ "label": "aena FY2024 events 959800R7QMXKF0NFMT29-2024-12-31-ESEF-ES-0",
+ "recorded_at": "2026-11-09T14:36:51+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v1",
+  "provider": "deepseek",
+  "system_sha256": "65a62a6da6dc039bdb144a445e10bff34f0c428673333043ff8dd55b3ebd96df",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "db75b00cccb1069b9010e7f7c373daa25db706be465b71400de71fae54476cfb"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 10188,
+  "output_tokens": 996
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "page 12",
+    "quote": "Last February we announced a €1 billion share buyback and we are pleased to be announcing another return of excess cash of €1.5 billion today. This takes the total amount of excess cash returns announced in the last three years to €2.85 billion as we build a track record of cash returns to shareholders.",
+    "summary": "The company announced a share buyback and a further return of excess cash to shareholders within the next twelve months.",
+    "title": "Share buyback and further excess cash return announced",
+    "topic": "capital_returns"
+   },
+   {
+    "location": "page 44",
+    "quote": "Supply chain pressures continued in 2025. British Airways reduced frequencies to some Middle East destinations due to a lack of available aircraft after experiencing Rolls Royce engine problems, and Boeing and Airbus reported delivery shortfalls.",
+    "summary": "British Airways reduced frequencies to some Middle East destinations because of a lack of available aircraft following Rolls Royce engine problems, while Boeing and Airbus reported delivery shortfalls.",
+    "title": "Engine problems force Middle East frequency cuts",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "location": "page 45",
+    "quote": "ATC strikes caused significant disruption, especially in France, where a July strike resulted in 1,400 daily cancellations and over €120 million in direct costs for the",
+    "summary": "A July strike by air traffic control in France led to large daily cancellations and direct costs for the group.",
+    "title": "French ATC strike causes mass cancellations and costs",
+    "topic": "one_offs"
+   },
+   {
+    "location": "page 44",
+    "quote": "IAG actively engaged with authorities in the UK, EU, Spain and Ireland during negotiations with the US, and both the EU and UK eventually reached separate agreements to reduce tariffs to zero on aircraft and aircraft parts covered by the 1979 World Trade Organization Agreement on Trade in Civil Aircraft.",
+    "summary": "IAG engaged with authorities during US trade negotiations and the EU and UK reached separate agreements reducing tariffs to zero on aircraft and aircraft parts covered by the WTO civil aircraft agreement.",
+    "title": "US and EU/UK agreements cut aircraft tariffs",
+    "topic": "regulation_and_tariffs"
+   },
+   {
+    "location": "page 44",
+    "quote": "In October 2025, the US Department of Transportation took steps to address this competitive imbalance by prohibiting Chinese passenger airlines from using Russian airspace on US-bound flights, citing fairness and safety concerns.",
+    "summary": "The US Department of Transportation prohibited Chinese passenger airlines from using Russian airspace on US-bound flights.",
+    "title": "US restricts Chinese airlines over Russian airspace",
+    "topic": "regulation_and_tariffs"
+   },
+   {
+    "location": "page 15",
+    "quote": "In January 2025 the UK Government confirmed its support for a third runway at Heathrow. IAG supports this commitment to growth but the cost must be far lower to ensure that Heathrow remains globally competitive.",
+    "summary": "The UK Government confirmed its support for a third runway at Heathrow, which IAG supports provided the cost is far lower.",
+    "title": "UK Government backs Heathrow third runway",
+    "topic": "regulation_and_tariffs"
+   }
+  ]
+ },
+ "label": "iag FY2025 events 959800TZHQRUSH1ESL13-2025-12-31-ESEF-GB-0",
+ "recorded_at": "2026-11-09T14:37:41+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v2",
+  "provider": "deepseek",
+  "system_sha256": "443a4436d6b697443b1d13ac78d1949a7decbb38acff14498e97c654b4f0869a",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "8d8649cb526e66074b79cde03dc275b1e90b39177bc7dc0c6a44910dabd99adf"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 8185,
+  "output_tokens": 695
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "page 3",
+    "quote": "A major change was the acquisition of Widerøe which was finalised at the very start of the year. We warmly welcomed nearly 3,500 new employees to the Group and with the integration going well the acquisition has already yielded benefits.",
+    "summary": "The acquisition of Widerøe was finalised at the start of the year, adding thousands of employees and aircraft to the Group.",
+    "title": "Acquisition of Widerøe completed",
+    "topic": "acquisitions_and_disposals"
+   },
+   {
+    "location": "page 3",
+    "quote": "For Norwegian, there was only a modest increase of one new aircraft for Norwegian from the previous year due to delivery delays from Boeing.",
+    "summary": "Delivery delays from Boeing meant Norwegian added only a single new aircraft during the year and added cost and complexity to operations.",
+    "title": "Boeing delivery delays constrain fleet growth",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "location": "page 4",
+    "quote": "During 2024, we concluded several key collective bargaining agreements. While these agreements resulted in increased personnel cost across several markets, they also provide improved visibility for 2025 with a reduced risk of industrial action.",
+    "summary": "Several key collective bargaining agreements were concluded, raising personnel cost across markets while reducing the risk of industrial action.",
+    "title": "Collective bargaining agreements concluded",
+    "topic": "labour"
+   },
+   {
+    "location": "page 15",
+    "quote": "The Board of Directors intends to propose a profit distribution of NOK 0.60 per share for 2024 at the 2025 Annual General Meeting, to be paid out either through dividend or buy-back of shares.",
+    "summary": "The Board intends to propose a profit distribution per share for the year, paid as dividend or share buy-back, subject to approval from debt instrument holders.",
+    "title": "Board proposes profit distribution to shareholders",
+    "topic": "capital_returns"
+   },
+   {
+    "location": "page 3",
+    "quote": "Additionally, we are seeing improvements to the financing terms for our upcoming aircraft deliveries, with Norwegian securing the best-ever terms for the first 25 of our 50 aircraft on order in the Company’s history.",
+    "summary": "Norwegian secured its best-ever financing terms for the first part of its aircraft order book.",
+    "title": "Improved financing terms for aircraft deliveries",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 6",
+    "quote": "The operating result was particularly negatively impacted by the weakening of NOK against USD.",
+    "summary": "The operating result was particularly negatively impacted by the weakening of the Norwegian krone against the US dollar, and the year was affected by weather, air traffic control congestion and cost increases.",
+    "title": "Currency weakness and external disruptions hit results",
+    "topic": "one_offs"
+   }
+  ]
+ },
+ "label": "norwegian FY2024 events 549300IEUH2FEM2Y6B51-2024-12-31-ESEF-NO-0",
+ "recorded_at": "2026-11-09T14:39:00+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v2",
+  "provider": "deepseek",
+  "system_sha256": "443a4436d6b697443b1d13ac78d1949a7decbb38acff14498e97c654b4f0869a",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "10a5a3e0d969544019a6e5a1afb8c468d6ba8ceb18e95961c227769d4bcbc07a"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 8199,
+  "output_tokens": 624
+ }
+}

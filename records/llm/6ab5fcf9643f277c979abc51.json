@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "page 6",
+    "quote": "This shortage of spare engines and limited maintenance shop capacity forced between forty and fifty-five aircraft to be grounded at any time during this F25 fiscal year. This is unprecedented for any airline and hit Wizz Air hardest as we are one of the largest operators of this particular engine variant.",
+    "summary": "Pratt & Whitney GTF engine durability issues and shop capacity forced a large share of the fleet to be grounded all year, holding capacity flat and inflating unit fixed costs, a major drag on earnings and leverage.",
+    "title": "GTF engine recall grounds large part of fleet",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "location": "page 9",
+    "quote": "The new commercial support agreement with Pratt & Whitney was agreed at the end of 2024, covering the two-year period for the calendar years 2025 and 2026. The compensation package, which covers Wizz’s direct costs associated with the aircraft that have been and those expected to be grounded, is similar to the levels of the previous agreement in place during 2024.",
+    "summary": "Wizz Air concluded a follow-on commercial support agreement with its engine manufacturer covering the next two calendar years, partially offsetting the direct costs of grounded aircraft and supporting earnings.",
+    "title": "Compensation agreement with Pratt & Whitney extended",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "location": "page 15",
+    "quote": "In October 2024, Wizz Air was downgraded by Fitch Ratings to 'BB+' with a ‘Stable Outlook’ due to the slower capacity growth caused by the Pratt & Whitney engine issues, leading to higher leverage, above the 2.0x threshold for a 'BBB-' rating; and increased costs impacting profitability.",
+    "summary": "Fitch cut the credit rating citing slower capacity growth from engine groundings, higher leverage and weaker profitability, a negative development for the credit story even as the outlook was stable.",
+    "title": "Fitch downgrades Wizz Air on higher leverage",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 4",
+    "quote": "During the year, we renegotiated our delivery pipeline with Airbus. Delays in aircraft deliveries this year risked creating unsustainable growth spikes in the coming years, which would have strained both the business and the industry. While the total number of aircraft deliveries remains unchanged, the delivery schedule has been smoothed and now extends into 2030.",
+    "summary": "Wizz Air renegotiated its Airbus order book so deliveries are spread over more years, avoiding unsustainable growth spikes and preserving flexibility for grounded aircraft to return, which affects future capex and pre-delivery payments.",
+    "title": "Airbus delivery schedule renegotiated and smoothed",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "location": "page 8",
+    "quote": "Wizz Air also added eight wet-leased aircraft for summer 2024 operations, providing additional capacity in F25. The last wet-leased aircraft were returned in October 2024.",
+    "summary": "To keep seat capacity flat despite groundings, Wizz Air added wet-leased aircraft for the summer season and extended leases, a costly mitigation that supported revenue but added expense.",
+    "title": "Wet leases and lease extensions offset groundings",
+    "topic": "capacity_and_network"
+   },
+   {
+    "location": "page 63",
+    "quote": "The Company retired its $211.6 million pre-delivery payment (PDP) facility.",
+    "summary": "The Company retired its pre-delivery payment facility, reducing a financing obligation as part of its balance-sheet management during the year.",
+    "title": "Pre-delivery payment facility retired",
+    "topic": "funding_and_rating"
+   }
+  ]
+ },
+ "label": "wizz FY2025 events 213800COXGZCORLJZA85-2025-03-31-ESEF-GB-0",
+ "recorded_at": "2026-11-09T14:37:09+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v1",
+  "provider": "deepseek",
+  "system_sha256": "65a62a6da6dc039bdb144a445e10bff34f0c428673333043ff8dd55b3ebd96df",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "669f25351847f371a95ad4f80d502cb46fd5befb7c2ddcbbb0f63275b33f5cbb"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 7968,
+  "output_tokens": 814
+ }
+}

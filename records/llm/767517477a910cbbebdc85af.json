@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "page 22",
+    "quote": "Furthemore, S&P Global Ratings assigned a long-term issuer credit rating of BB+ to Finnair Plc with a stable outlook. It is the first credit rating for Finnair. A public rating enables deeper funding sources from debt capital markets and increases execution certainty of financing transactions. As a testament to this, Finnair signed a binding secured revolving credit facility of 200 million euros for general corporate purposes and successfully issued a new 500-million-euro unsecured senior bond to refinance the old 400-million-euro unsecured senior bond.",
+    "summary": "Finnair obtained its first public issuer credit rating and used a new unsecured senior bond to refinance an older bond, improving access to debt capital markets and extending maturities.",
+    "title": "First credit rating assigned; bond issued and refinanced",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 15",
+    "quote": "Further, in April, Finnair agreed on a new secured revolving credit facility\n3\nof 200 million euros for general corporate purposes. The arrangement was unused at the end of the year\nand carries a three-year tenor with a one-year extension option.",
+    "summary": "Finnair secured a new revolving credit facility for general corporate purposes and repaid the remaining pension premium loan ahead of schedule, supporting liquidity and reducing debt.",
+    "title": "New revolving credit facility agreed and pension loan repaid early",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 7",
+    "quote": "Industrial action in Finland had an impact on Finnair’s operations, leading to the cancellation of approximately 550 flights in the first quarter and more than 500 flights in the fourth quarter.",
+    "summary": "Industrial action in Finland forced the cancellation of a large number of flights in both the first and fourth quarters, slowing capacity growth and weakening customer satisfaction.",
+    "title": "Industrial action caused widespread flight cancellations",
+    "topic": "labour"
+   },
+   {
+    "location": "page 169",
+    "quote": "During the financial year, a new A350 aircraft\nwas delivered and additionally, Finnair purchased one leased A350 and one leased A321 aircraft. All aircraft\nwere in operative use as at the balance sheet date.",
+    "summary": "Finnair took delivery of an additional wide-body aircraft and bought two previously leased aircraft, expanding owned fleet and supporting long-haul growth while adding capital expenditure.",
+    "title": "New A350 delivered and leased aircraft purchased",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "location": "page 3",
+    "quote": "Thanks to the positive result and our strengthened financial position, we have the opportunity to reward\nour shareholders after a long time with a return of capital of 0.11 euros per share as proposed by the\nBoard of Directors.",
+    "summary": "After a long period without distributions, the Board proposed a return of capital to shareholders, reflecting the improved result and strengthened financial position.",
+    "title": "Return of capital proposed to shareholders",
+    "topic": "capital_returns"
+   },
+   {
+    "location": "page 4",
+    "quote": "We increased flights to, for example, Finnish Lapland, the Canary Islands, northern\nNorway and London, reopened our route to Nagoya in\nJapan and added weekly frequencies to Dallas.",
+    "summary": "Finnair added frequencies and reopened a Japanese route while the role of North Atlantic and European traffic grew, rebalancing the network away from Asia after the Russian airspace closure.",
+    "title": "Network rebalanced with growth in Europe and North Atlantic",
+    "topic": "capacity_and_network"
+   }
+  ]
+ },
+ "label": "finnair FY2024 events 213800SB6EOB8SSK9W63-2024-12-31-ESEF-FI-0",
+ "recorded_at": "2026-11-09T14:36:33+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v1",
+  "provider": "deepseek",
+  "system_sha256": "65a62a6da6dc039bdb144a445e10bff34f0c428673333043ff8dd55b3ebd96df",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "a7f223d6b19dc3f06d3c8686462bf0ba10f9f96d32246b5cb4e8921c5ab58e42"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 8984,
+  "output_tokens": 782
+ }
+}

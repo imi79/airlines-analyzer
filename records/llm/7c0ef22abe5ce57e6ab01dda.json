@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "page 18",
+    "quote": "Air France-KLM has placed €650 million of senior unsecurred bonds on January 8, 2026, with a maturity of 5 years and a fixed annual coupon of 3.875% (yield of 4.033%) under its EMTN program.",
+    "summary": "The group raised new senior unsecured debt under its EMTN programme and redeemed a convertible subordinated hybrid bond, reshaping its debt profile and hybrid capital base.",
+    "title": "Bond issuance and hybrid redemption",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 18",
+    "quote": "On October 15, Air France–KLM Group notified the holders of last-rank indefinite subordinated bond convertible into new shares and/or existing shares its intention to redeem all of the outstanding hybrid Bonds from the First Hard Call Date at a price per hybrid Bonds equal to par (€100,000) plus accrued interest of 1,625 euro.",
+    "summary": "The group redeemed its last-rank perpetual convertible bonds, reducing hybrid capital and requiring cash outflow.",
+    "title": "Redemption of convertible subordinated hybrid bonds",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 18",
+    "quote": "On October 22, 2025, Air France-KLM finalized the acquisition of a 2.3% stake in the capital of Canadian airline WestJet for a total amount of $49 million. This transaction, initially announced on May 9, 2025, remained subject to certain approvals.",
+    "summary": "The group bought a minority stake in Canadian carrier WestJet from its joint venture partner, deepening transatlantic cooperation but adding a non-consolidated equity investment.",
+    "title": "Stake acquired in WestJet",
+    "topic": "acquisitions_and_disposals"
+   },
+   {
+    "location": "page 17",
+    "quote": "This last extension option was exercised in June 2025, bringing the maturity date to 2029.",
+    "summary": "The group exercised an extension option on its revolving credit facility, pushing the maturity out and improving liquidity headroom.",
+    "title": "Credit facility maturity extended",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 17",
+    "quote": "Provided all the necessary conditions are met, Air France-KLM would fully acquire the stakes held by Castlelake and Lind Invest, bringing its own stake to 60.5%. The Danish State would retain its 26.4% stake in SAS and its seats on the Board of Directors.",
+    "summary": "The group is progressing toward control of SAS, which would bring a large airline onto the balance sheet and change the consolidation scope.",
+    "title": "Planned majority stake in SAS",
+    "topic": "acquisitions_and_disposals"
+   },
+   {
+    "location": "page 3",
+    "quote": "Salaries and related costs\n8\n(9,888)\n(9,461)",
+    "summary": "Staff costs rose faster than revenues, weighing on the operating margin and cash generation.",
+    "title": "Higher salaries and related costs",
+    "topic": "costs"
+   }
+  ]
+ },
+ "label": "afkl FY2025 events afkl-2025-consolidated-statements-en",
+ "recorded_at": "2026-11-09T14:35:30+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v1",
+  "provider": "deepseek",
+  "system_sha256": "65a62a6da6dc039bdb144a445e10bff34f0c428673333043ff8dd55b3ebd96df",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "0c94cb621b7d45b2d5ea08328eb671444af5b814aa7d05a201b5fa1dde531ceb"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 10173,
+  "output_tokens": 685
+ }
+}

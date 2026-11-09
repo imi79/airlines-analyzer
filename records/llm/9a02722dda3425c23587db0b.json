@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "Konzernlagebericht, Finanzwirtschaftliche Steuerung / Risiken",
+    "quote": "Der vollständige Abbau zinstragender Finanzverbindlichkeiten hat die potenziellen Auswirkungen einer Zinsänderung auf die FWAG massiv reduziert.",
+    "summary": "The group eliminated all interest-bearing financial liabilities, turning into a net cash position and sharply reducing interest-rate risk, a clear strengthening of the credit profile.",
+    "title": "Full repayment of interest-bearing financial liabilities",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "Entgelte- und Incentive-Politik am Flughafen Wien",
+    "quote": "Die Flughafenentgelte am Flughafen Wien werden gemäß § 17a FEG vorübergehend um die durchschnittliche Inflation (gerechnet von 1.8. bis 31.7.) angepasst. Diese Regelung endet mit 31. Dezember 2026, wodurch die Flughäfen im Entgeltantrag 2026 zur bestehenden Formel zurückkehren und diese mit 1. Jänner 2027 wieder anwenden.",
+    "summary": "Airport charges at Vienna are adjusted temporarily by average inflation under the amended airport charges act, a rule that expires at the end of 2026, which supports revenue but leaves tariff-setting subject to regulatory change.",
+    "title": "Airport charges temporarily indexed to average inflation",
+    "topic": "regulation_and_tariffs"
+   },
+   {
+    "location": "Risiken der zukünftigen Entwicklung",
+    "quote": "Gegen die Verlängerung der Bauvollendungsfrist und die Abwicklung im Einparteienverfahren wurden mehrere Beschwerden ohne aufschiebende Wirkung eingebracht.",
+    "summary": "Several complaints were filed against the extension of the realisation deadline for the third runway and the single-party procedure, creating legal uncertainty over the key long-term growth project.",
+    "title": "Complaints against third runway permit extension",
+    "topic": "regulation_and_tariffs"
+   },
+   {
+    "location": "Strategie 2030",
+    "quote": "Hoher Kostendruck (insb. durch steigende Personalkosten) macht weitere Einsparungen sowie Prozessoptimierungen unerlässlich.",
+    "summary": "High cost pressure, particularly from rising personnel costs, forces further savings and process optimisation, a margin risk for the airport operator.",
+    "title": "Rising personnel costs drive cost pressure",
+    "topic": "costs"
+   },
+   {
+    "location": "Sonstige Verpflichtungen und Risiken",
+    "quote": "Zum Bilanzstichtag bestanden betreffend Malta International Airport p.l.c. Streitigkeiten mit der maltesischen Regierung (Streitwert: rund € 8,3 Mio., VJ: rund € 7,5 Mio.) sowie Forderungen einzelner Arbeitnehmer. Aus Sicht des FWAG-Konzerns sind sämtliche Ansprüche unbegründet.",
+    "summary": "At the balance sheet date there were disputes with the Maltese government and claims from individual employees at Malta International Airport, which the group considers unfounded but which represent a litigation risk.",
+    "title": "Malta government dispute and employee claims",
+    "topic": "other"
+   },
+   {
+    "location": "Sonstige Verpflichtungen und Risiken",
+    "quote": "Es gibt für das Gemeinschaftsunternehmen City Air Terminal Betriebsgesellschaft m.b.H. eine Finanzierungszusage für die Beschaffung neuer Zuggarnituren in Höhe von rund € 30,0 Mio., im laufenden Geschäftsjahr wurden davon T€ 1.002,0 als Darlehen in Anspruch genommen.",
+    "summary": "The group gave a financing commitment for new train sets at the City Air Terminal joint venture and drew part of it as a loan during the year, an off-balance-sheet obligation becoming funded debt exposure.",
+    "title": "Financing commitment for City Air Terminal trains",
+    "topic": "funding_and_rating"
+   }
+  ]
+ },
+ "label": "vie FY2024 events 549300FQ2ILBH7DJ6I45-2024-12-31-ESEF-AT-0",
+ "recorded_at": "2026-11-09T14:36:58+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v1",
+  "provider": "deepseek",
+  "system_sha256": "65a62a6da6dc039bdb144a445e10bff34f0c428673333043ff8dd55b3ebd96df",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "e97a0e1943aeab91b5facd5b5ad766f8a6ff23210bbfff32c055fbad8acee651"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14342,
+  "output_tokens": 893
+ }
+}

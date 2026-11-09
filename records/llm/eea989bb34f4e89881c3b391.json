@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "page 6",
+    "quote": "A year ago this time, Wizz Air faced an unprecedented situation due to a manufacturer recall affecting some of our aircraft engines. This shortage of spare engines and limited maintenance shop capacity forced between forty and fifty-five aircraft to be grounded at any time during this F25 fiscal year.",
+    "summary": "A manufacturer recall affecting some of the company's aircraft engines, together with a shortage of spare engines and limited maintenance shop capacity, forced a large number of aircraft to be grounded at any time during the fiscal year.",
+    "title": "GTF engine recall grounds large part of fleet",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "location": "page 4",
+    "quote": "During the year, we renegotiated our delivery pipeline with Airbus. Delays in aircraft deliveries this year risked creating unsustainable growth spikes in the coming years, which would have strained both the business and the industry. While the total number of aircraft deliveries remains unchanged, the delivery schedule has been smoothed and now extends into 2030.",
+    "summary": "The company renegotiated its delivery pipeline with Airbus so that the delivery schedule was smoothed and extended, while the total number of aircraft deliveries stayed the same.",
+    "title": "Airbus delivery schedule renegotiated and smoothed",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "location": "page 15",
+    "quote": "In October 2024, Wizz Air was downgraded by Fitch Ratings to 'BB+' with a ‘Stable Outlook’ due to the slower capacity growth caused by the Pratt & Whitney engine issues, leading to higher leverage, above the 2.0x threshold for a 'BBB-' rating; and increased costs impacting profitability.",
+    "summary": "Fitch Ratings downgraded the company with a stable outlook, citing slower capacity growth from the engine issues, higher leverage and increased costs.",
+    "title": "Fitch downgrades credit rating",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 9",
+    "quote": "The new commercial support agreement with Pratt & Whitney was agreed at the end of 2024, covering the two-year period for the calendar years 2025 and 2026. The compensation package, which covers Wizz’s direct costs associated with the aircraft that have been and those expected to be grounded, is similar to the levels of the previous agreement in place during 2024.",
+    "summary": "A new commercial support agreement with Pratt & Whitney was agreed at the end of the year, covering a two-year period and compensating direct costs associated with grounded aircraft.",
+    "title": "New Pratt & Whitney compensation agreement signed",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "location": "page 8",
+    "quote": "During F25 , Wizz Air took delivery of 26 new A321neo aircraft and also secured three former Wizz Air aircraft on dry leases, while six A320ceo aircraft were redelivered, ending the fiscal year with a total fleet of 231 aircraft: 37x A320ceo, 41x A321ceo, 6x A320neo and 147x A321neo.",
+    "summary": "The company took delivery of new A321neo aircraft, secured former aircraft on dry leases and redelivered A320ceo aircraft, ending the fiscal year with a fleet of 231 aircraft.",
+    "title": "New aircraft delivered and older aircraft redelivered",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "location": "page 8",
+    "quote": "Wizz Air also added eight wet-leased aircraft for summer 2024 operations, providing additional capacity in F25. The last wet-leased aircraft were returned in October 2024.",
+    "summary": "The company added wet-leased aircraft for summer 2024 operations to provide additional capacity, with the last of them returned in October 2024.",
+    "title": "Wet-leased aircraft added for summer capacity",
+    "topic": "capacity_and_network"
+   }
+  ]
+ },
+ "label": "wizz FY2025 events 213800COXGZCORLJZA85-2025-03-31-ESEF-GB-0",
+ "recorded_at": "2026-11-09T14:39:05+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v2",
+  "provider": "deepseek",
+  "system_sha256": "443a4436d6b697443b1d13ac78d1949a7decbb38acff14498e97c654b4f0869a",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "669f25351847f371a95ad4f80d502cb46fd5befb7c2ddcbbb0f63275b33f5cbb"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 8008,
+  "output_tokens": 864
+ }
+}

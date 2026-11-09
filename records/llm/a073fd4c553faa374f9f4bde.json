@@ -1,0 +1,29 @@
+{
+ "answer": {
+  "events": [
+   {
+    "quote": "On October 15, Air France–KLM Group notified the holders of last-rank indefinite subordinated bond convertible into new shares and/or existing shares its intention to redeem all of the outstanding hybrid Bonds from the First Hard Call Date at a price per hybrid Bonds equal to par (€100,000) plus accrued interest of 1,625 euro.",
+    "summary": "The Group notified holders of its last-rank indefinite subordinated convertible bonds of its intention to redeem all outstanding hybrid bonds from the hard call date, and paid the nominal amount plus accrued interest in November 2025.",
+    "title": "Redemption of convertible subordinated perpetual bonds",
+    "topic": "funding_and_rating"
+   }
+  ]
+ },
+ "label": "afkl FY2025 events retry afkl-2025-consolidated-statements-en",
+ "recorded_at": "2026-11-09T14:39:36+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v2",
+  "provider": "deepseek",
+  "system_sha256": "443a4436d6b697443b1d13ac78d1949a7decbb38acff14498e97c654b4f0869a",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "02f9be3bf6106c7f824d6bf63536702466aa719c164fd8a35b9f6b4aac3ca9fb"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 10405,
+  "output_tokens": 177
+ }
+}

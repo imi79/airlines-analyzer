@@ -1,0 +1,35 @@
+{
+ "answer": {
+  "events": [
+   {
+    "quote": "A major change was the acquisition of Widerøe which was finalised at the very start of the year. We warmly welcomed nearly 3,500 new employees to the Group and with the integration going well the acquisition has already yielded benefits.",
+    "summary": "The acquisition of Widerøe was finalised at the start of the year, adding a large number of employees to the Group and already yielding benefits.",
+    "title": "Acquisition of Widerøe completed",
+    "topic": "acquisitions_and_disposals"
+   },
+   {
+    "quote": "Additionally, we are seeing improvements to the financing terms for our upcoming aircraft deliveries, with Norwegian securing the best-ever terms for the first 25 of our 50 aircraft on order in the Company’s history.",
+    "summary": "Norwegian secured its best-ever financing terms for a portion of its aircraft order book.",
+    "title": "Improved financing terms for aircraft deliveries",
+    "topic": "funding_and_rating"
+   }
+  ]
+ },
+ "label": "norwegian FY2024 events retry 549300IEUH2FEM2Y6B51-2024-12-31-ESEF-NO-0",
+ "recorded_at": "2026-11-09T14:40:05+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v2",
+  "provider": "deepseek",
+  "system_sha256": "443a4436d6b697443b1d13ac78d1949a7decbb38acff14498e97c654b4f0869a",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "829dd554034de82163b8bdeee655d51c3ff9d86f183728e8e79e9639c60aa86f"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 8455,
+  "output_tokens": 231
+ }
+}

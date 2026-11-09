@@ -1,0 +1,47 @@
+{
+ "answer": {
+  "events": [
+   {
+    "quote": "The prolonged industrial action during the first half of the year had an immediate negative impact of approximately 68 million euros on the comparable operating result. In addition, increased costs related to environmental regulation as well as higher navigation and landing charges weighed on the result.",
+    "summary": "Industrial action in the first half of the year had an immediate negative impact on the comparable operating result, and increased environmental regulation costs as well as higher navigation and landing charges also weighed on the result.",
+    "title": "Prolonged industrial action hit comparable operating result",
+    "topic": "labour"
+   },
+   {
+    "quote": "To further strengthen our financial position, we issued a 300million-euro bond towards the end of the year, supporting the execution of strategic investments in the coming years.",
+    "summary": "Finnair issued a bond towards the end of the year to further strengthen its financial position and support execution of strategic investments.",
+    "title": "Bond issued to strengthen financial position",
+    "topic": "funding_and_rating"
+   },
+   {
+    "quote": "During the financial year Finnair purchased four leased A321 aircraft. All aircraft were in operative use as at the balance sheet date.",
+    "summary": "During the financial year Finnair purchased leased A321 aircraft, and all aircraft were in operative use at the balance sheet date.",
+    "title": "Purchase of leased A321 aircraft",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "quote": "Our financial position also enables us to reward our shareholders, and the Board of Directors proposes a return of capital of 0.09 euros per share to the Annual General Meeting.",
+    "summary": "The Board of Directors proposes a return of capital per share to the Annual General Meeting, supported by the company's financial position.",
+    "title": "Board proposes return of capital to shareholders",
+    "topic": "capital_returns"
+   }
+  ]
+ },
+ "label": "finnair FY2025 events retry 213800SB6EOB8SSK9W63-2025-12-31-ESEF-FI-0",
+ "recorded_at": "2026-11-09T14:39:42+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v2",
+  "provider": "deepseek",
+  "system_sha256": "443a4436d6b697443b1d13ac78d1949a7decbb38acff14498e97c654b4f0869a",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "368e091181953ad5bbfc52728731c839e70f5567b54e000f6a21caaf05b3da43"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 9515,
+  "output_tokens": 413
+ }
+}

@@ -1,0 +1,30 @@
+# Events of the year (decision 0018, fix D): words that point the locator to passages worth
+# sending, by report language (English is always added). Matching ignores spaces, as for the
+# figures (some reports split words).
+topics:
+  - labour
+  - fleet_and_engines
+  - capacity_and_network
+  - costs
+  - capital_returns
+  - funding_and_rating
+  - acquisitions_and_disposals
+  - regulation_and_tariffs
+  - one_offs
+  - other
+
+terms:
+  en: [strike, industrial action, grounded, groundings, engine, Pratt, delivery delays,
+       share buyback, buy-back, special dividend, return of excess cash, acquisition, acquired,
+       stake, merger, disposal, bond, refinanc, revolving credit, credit rating, Moody,
+       Standard & Poor, Fitch, investment grade, impairment, litigation, tariff, regulat,
+       concession, airspace, outage, significant events, highlights]
+  fr: [grève, mouvement social, rachat d'actions, acquisition, prise de participation,
+       cession, émission obligataire, refinancement, notation, dépréciation, litige, redevances,
+       régulation, faits marquants, événements significatifs, moteurs, livraisons]
+  es: [huelga, recompra de acciones, adquisición, participación, desinversión, emisión de bonos,
+       refinanciación, calificación crediticia, deterioro, tarifas, DORA, regulación, concesión,
+       hechos relevantes, hitos]
+  de: [Streik, Aktienrückkauf, Übernahme, Erwerb, Beteiligung, Anleihe, Refinanzierung, Rating,
+       Wertminderung, Entgelte, Regulierung, Piste, Konzession, wesentliche Ereignisse,
+       Highlights]

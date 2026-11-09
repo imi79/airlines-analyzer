@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "page 3, CEO Review",
+    "quote": "The prolonged industrial action during the first half of the year had an immediate negative impact of approximately 68 million euros on the comparable operating result. In addition, increased costs related to environmental regulation as well as higher navigation and landing charges weighed on the result.",
+    "summary": "Industrial action in the first half of the year caused significant disruption and the cancellation of more than 2,600 flights between January and July, with an immediate negative impact of approximately 68 million euros on the comparable operating result.",
+    "title": "Prolonged industrial action cancelled thousands of flights",
+    "topic": "labour"
+   },
+   {
+    "location": "page 4, CEO Review",
+    "quote": "To further strengthen our financial position, we issued a 300million-euro bond towards the end of the year, supporting the execution of strategic investments in the coming years.",
+    "summary": "Finnair issued a 300 million euro bond towards the end of the year to further strengthen its financial position and support execution of strategic investments.",
+    "title": "Bond issued to strengthen financial position",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 163, Note 2.1",
+    "quote": "During the financial year Finnair purchased four leased A321 aircraft. All aircraft were in operative use as at the balance sheet date.",
+    "summary": "During the financial year Finnair purchased four leased A321 aircraft, and the related leasing contracts were terminated in connection with the acquisitions.",
+    "title": "Purchase of four leased A321 aircraft",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "location": "page 4, CEO Review",
+    "quote": "In 2025, costs related to environmental regulation increased significantly, and the increased use of sustainable aviation fuel as well as changes to the EU Emissions Trading System weighed on the result.",
+    "summary": "Costs related to environmental regulation increased significantly in 2025, with increased use of sustainable aviation fuel and changes to the EU Emissions Trading System weighing on the result.",
+    "title": "Higher environmental regulation and navigation costs",
+    "topic": "costs"
+   },
+   {
+    "location": "page 4, CEO Review",
+    "quote": "Our financial position also enables us to reward our shareholders, and the Board of Directors proposes a return of capital of 0.09 euros per share to the Annual General Meeting.",
+    "summary": "The Board of Directors proposes a return of capital of 0.09 euros per share to the Annual General Meeting.",
+    "title": "Board proposes return of capital to shareholders",
+    "topic": "capital_returns"
+   },
+   {
+    "location": "page 12",
+    "quote": "decision of the Helsinki Administrative Court. Index adjustments were reinstated for the pilots in 2024 and for the cabin crew and other groups in 2025.",
+    "summary": "Index adjustments were reinstated for the pilots in 2024 and for the cabin crew and other groups in 2025, following a decision of the Helsinki Administrative Court.",
+    "title": "Pension index adjustments reinstated",
+    "topic": "other"
+   }
+  ]
+ },
+ "label": "finnair FY2025 events 213800SB6EOB8SSK9W63-2025-12-31-ESEF-FI-0",
+ "recorded_at": "2026-11-09T14:37:45+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v2",
+  "provider": "deepseek",
+  "system_sha256": "443a4436d6b697443b1d13ac78d1949a7decbb38acff14498e97c654b4f0869a",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "229331935886d4fc1b562c372da1c6f23e3f8692153a815c00c8989668ee2218"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 8976,
+  "output_tokens": 672
+ }
+}

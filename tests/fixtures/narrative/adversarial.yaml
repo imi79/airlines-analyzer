@@ -30,6 +30,10 @@ faulty:
     rule: "1"
     text: Leases account for about a third of total debt of {{total_debt@FY2025}}.
     facts: [{id: total_debt@FY2025}]
+  - name: half on its own is still a number
+    rule: "1"
+    text: Half of the fleet is leased, with total debt at {{total_debt@FY2025}}.
+    facts: [{id: total_debt@FY2025}]
   - name: halved
     rule: "1"
     text: Net leverage has almost halved over recent years, to {{net_leverage@FY2025}}.
@@ -285,3 +289,6 @@ correct:
   - text: >-
       The fleet stood at {{fleet@FY2024}} aircraft at the last reported count, in FY2024.
     facts: [{id: fleet@FY2024}]
+  - text: >-
+      Strikes in the first half weighed on the operating result of {{operating_profit@FY2025}}.
+    facts: [{id: operating_profit@FY2025}]

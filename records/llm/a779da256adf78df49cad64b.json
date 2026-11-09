@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "page 185",
+    "quote": "El 18 de diciembre de 2025, la sociedad dependiente Aena Desarrollo Internacional (ADI) ha formalizado un acuerdo para la adquisición del 51% de una nueva sociedad holding propietaria y gestora del 100% del aeropuerto de Leeds Bradford y del 49% del de Newcastle, ambos en el Reino Unido, por 270 millones de GBP (aproximadamente, 309 millones de euros al 31 de diciembre de 2025) cuyo abono está previsto en efectivo, y estará afectado por potenciales ajustes al precio usuales en este tipo de operaciones (que se estima aumentarán el importe a aproximadamente 294,7 millones de GBP, 337,3 millones de euros).",
+    "summary": "Aena's international subsidiary formalised an agreement to acquire a majority stake in a holding company owning Leeds Bradford airport and a stake in Newcastle airport, with closing subject to regulatory approvals.",
+    "title": "Agreement to acquire UK airport stakes",
+    "topic": "acquisitions_and_disposals"
+   },
+   {
+    "location": "page 61",
+    "quote": "El 30 de octubre de 2025, la filial BOAB realizó su primera emisión de bonos (debentures simples) por importe de 5.300 millones de BRL, no convertibles, con garantía real, con vencimiento en junio de 2048), indexadas a IPCA y con cupón fijo del 8,74% anual, pagadero semestralmente, siendo el primer pago el 15 de junio de 2026 (Nota 20).",
+    "summary": "The Brazilian subsidiary BOAB made its first bond issuance, non-convertible and secured, maturing in 2048 and indexed to IPCA with a fixed coupon.",
+    "title": "Brazilian subsidiary issues debentures",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 231",
+    "quote": "La agencia de calificación crediticia Moody's Investors Service ha mejorado la calificación de emisor a largo plazo y la calificación de deuda senior no garantizada de Aena S.M.E., S.A. a A2 desde A3.",
+    "summary": "Moody's raised Aena's long-term issuer and senior unsecured debt ratings.",
+    "title": "Moody's upgrades Aena's rating",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 180",
+    "quote": "El 22 de octubre, la agencia Fitch Ratings afirmó la calificación de largo plazo “A”, así como la calificación a corto plazo “F1” de Aena S.M.E., S.A. La perspectiva de largo plazo es estable.",
+    "summary": "Fitch affirmed Aena's long-term and short-term ratings, with a stable long-term outlook.",
+    "title": "Fitch affirms ratings with stable outlook",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 216",
+    "quote": "En junio de 2025, el Aeropuerto London Luton completó la refinanciación de su deuda bancaria.",
+    "summary": "London Luton airport completed the refinancing of its bank debt.",
+    "title": "Luton airport refinances bank debt",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 180",
+    "quote": "En relación con el Documento de Regulación Aeroportuaria para el período 2022-2026 (DORA II), el 13 de noviembre de 2025, la CNMC emitió su resolución de supervisión de las tarifas aeroportuarias para 2026, estableciendo que el IMAAJ para 2026 sea de 11,00 euros por pasajero, lo que supone un incremento del 6,31% respecto al IMAAJ de 2025 (10,35 euros por",
+    "summary": "The competition regulator issued its supervision resolution setting the average airport charge per passenger for the following year, above the prior year's level.",
+    "title": "Regulator sets airport charges for next year",
+    "topic": "regulation_and_tariffs"
+   }
+  ]
+ },
+ "label": "aena FY2025 events 959800R7QMXKF0NFMT29-2025-12-31-ESEF-ES-0",
+ "recorded_at": "2026-11-09T14:38:03+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v2",
+  "provider": "deepseek",
+  "system_sha256": "443a4436d6b697443b1d13ac78d1949a7decbb38acff14498e97c654b4f0869a",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "cd152b1def88f62fbbec3c68f397110bb66f6a51f5126ea1cbdeed079072d035"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 10234,
+  "output_tokens": 933
+ }
+}

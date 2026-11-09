@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "Note 5, page 394",
+    "quote": "le groupe Air France-KLM a donc finalisé le 28 août 2024 l’acquisition d’une participation minoritaire de 19,90 % dans le capital de SAS AB.",
+    "summary": "Air France-KLM completed the acquisition of a minority stake in SAS and began deep commercial cooperation, strengthening its role in European consolidation but tying up capital in a partner.",
+    "title": "Acquisition of minority stake in SAS",
+    "topic": "acquisitions_and_disposals"
+   },
+   {
+    "location": "Faits marquants, page 12",
+    "quote": "Air France-KLM annonce le lancement d’une offre de rachat sur deux souches obligataires existantes et son intention de procéder à une nouvelle émission obligataire",
+    "summary": "The group launched a cash tender offer on two existing bond lines alongside a new rated bond issue to refinance debt and lengthen average maturity, improving its debt profile.",
+    "title": "Bond tender offer and new bond issue",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "Chiffres clés, page 7",
+    "quote": "En 2024, l’intensité GES s’est améliorée (- 1 %) par rapport à 2023 dans un contexte de retards dans le renouvellement de la flotte, en raison de contraintes dans la chaîne d’approvisionnement, de problèmes de moteurs sur une partie de la flotte d’avions de nouvelle génération ne permettant pas au Groupe de les exploiter à leur capacité maximale",
+    "summary": "Supply-chain delays and engine issues on part of the new-generation fleet prevented the group from operating aircraft at full capacity, weighing on unit costs and emissions intensity.",
+    "title": "Engine problems and delivery delays constrain fleet",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "location": "Rapport financier, page 369",
+    "quote": "un versement de (115) millions d’euros à Virgin dans le cadre de la renégociation d’un contrat ; une provision nette de (49) millions liée à la restructuration de l’offre domestique au départ d’Orly et des centres d’appel.",
+    "summary": "Operating result was hit by a payment to Virgin on a renegotiated contract and a provision for restructuring the domestic offer from Orly and call centres, reducing earnings.",
+    "title": "One-off charges from Virgin contract and Orly restructuring",
+    "topic": "costs"
+   },
+   {
+    "location": "Messages des dirigeants, page 3",
+    "quote": "En dépit de ce contexte particulier et de l’impact négatif des Jeux Olympiques sur nos revenus cet été, la marge opérationnelle d’Air France-KLM a atteint 5,1 % en 2024, démontrant la pertinence de notre stratégie.",
+    "summary": "The Paris Olympic and Paralympic Games had a negative impact on revenue over the summer, dampening the group's operating margin for the year.",
+    "title": "Olympic Games weighed on summer revenue",
+    "topic": "one_offs"
+   },
+   {
+    "location": "Note 4, page 394",
+    "quote": "Le 29 janvier 2025, KLM a annoncé la suppression de 250 emplois portant exclusivement sur des postes non opérationnels. Toutes les parties prenantes travaillent à un plan détaillé qui sera discuté avec les instances représentatives du personnel.",
+    "summary": "KLM announced the elimination of non-operational positions and is negotiating a detailed plan with employee representatives, adding restructuring risk and costs.",
+    "title": "KLM announces cut of non-operational jobs",
+    "topic": "labour"
+   }
+  ]
+ },
+ "label": "afkl FY2024 events 969500AQW31GYO8JZD66-2024-12-31-ESEF-FR-0",
+ "recorded_at": "2026-11-09T14:36:21+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v1",
+  "provider": "deepseek",
+  "system_sha256": "65a62a6da6dc039bdb144a445e10bff34f0c428673333043ff8dd55b3ebd96df",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "58238399f4d263451f588d76d2e01c5f4755726d1a9640fa49be6e2a089afe8c"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 11236,
+  "output_tokens": 842
+ }
+}

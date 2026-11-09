@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "page 14",
+    "quote": "Dans le cadre d’un appel d’offres publics en 2022, TAV Airports, filiale du Groupe ADP (Aéroports de Paris) détenue à 46 %, a remporté l’appel d’offres pour le renouvellement de la concession de l’aéroport de la capitale turque Ankara à partir du 24 mai 2025.",
+    "summary": "TAV Airports began operating the renewed Ankara Esenboga concession under a long-term contract requiring capacity investments, tying up capital and adding concession fee obligations for the group.",
+    "title": "TAV Airports wins renewed Ankara Esenboga concession",
+    "topic": "acquisitions_and_disposals"
+   },
+   {
+    "location": "page 79",
+    "quote": "Le groupe TAV s’est porté garant de 50 % de l’emprunt bancaire utilisé pour le financement du paiement initial pour un montant de 1 097 millions d’euros. Ce paiement initial correspond à la quote-part du groupe TAV dans les avances de 25 % payées pour le renouvellement de la concession Antalya, dont le montant net des redevances à horizon 2052 s’élève à 5,4 milliards d’euros. Cette garantie n’existe plus à fin 2025 en raison du refinancement de l'emprunt bancaire précédent.",
+    "summary": "The refinancing of the bank loan funding the Antalya concession down payment removed a large contingent guarantee from the group's commitments.",
+    "title": "TAV refinances Antalya concession bank loan, guarantee released",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 29",
+    "quote": "Enfin, certaines concessions, pour des raisons structurelles ou conjoncturelles, ont vu leur trajectoire financière révisée en lien avec les performances constatées au cours de l'année 2025 ou l'évolution des discussions avec les prêteurs et les autorités concédantes. Ces éléments justifient donc que le groupe ait conduit des tests de dépréciation sur les concessions aéroportuaires précédemment dépréciées ou présentant un risque avéré de dépréciation : pour 2025, cela inclut les concessions de Fraport TAV Antalya (FTA) 2 , Ravinala Airports, Embassair",
+    "summary": "Revised financial trajectories for several international concessions, including Antalya, Ravinala and Embassair, triggered impairment testing and reduced the value of equity-accounted holdings.",
+    "title": "Impairment tests on international airport concessions",
+    "topic": "costs"
+   },
+   {
+    "location": "page 13",
+    "quote": "En 2025, le Groupe ADP a accueilli 379 millions de passagers dans l’ensemble de son réseau d’aéroports, dont 107 millions de passagers à Paris Aéroport.",
+    "summary": "Passenger traffic rose across the group's network, driving revenue growth in the aeronautical and retail segments and supporting earnings.",
+    "title": "Traffic growth across the group's airport network",
+    "topic": "capacity_and_network"
+   },
+   {
+    "location": "page 21",
+    "quote": "Même si la régulation économique d’Aéroports de Paris repose de manière préférentielle sur des contrats de régulation économique (CRE), la période tarifaire 2025 se déroule dans un cadre juridique hors CRE.",
+    "summary": "The tariff period was set without an economic regulation contract, leaving tariffs subject to annual approval by the transport regulator and creating regulatory uncertainty for aeronautical revenue.",
+    "title": "Airport tariffs set outside economic regulation contract",
+    "topic": "regulation_and_tariffs"
+   },
+   {
+    "location": "page 17",
+    "quote": "Aéroports de Paris SA le 18 décembre 2025. Cette opération transfrontalière avait pour objet l’absorption par Aéroports de Paris SA de la société Tank Öwa Alpha, société détenant directement TAV Airports. Cette opération n’a pas d’impact dans les comptes consolidés.",
+    "summary": "Aéroports de Paris absorbed the holding company that directly owns TAV Airports, simplifying the group structure without affecting consolidated accounts.",
+    "title": "Cross-border merger of Tank Owa Alpha into Aéroports de Paris",
+    "topic": "acquisitions_and_disposals"
+   }
+  ]
+ },
+ "label": "adp FY2025 events adp-2025-comptes-consolides-fr",
+ "recorded_at": "2026-11-09T14:35:51+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v1",
+  "provider": "deepseek",
+  "system_sha256": "65a62a6da6dc039bdb144a445e10bff34f0c428673333043ff8dd55b3ebd96df",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "79a2a3840d64860bf8c7c856dd34907f151a4ce450499be5145fde91202861fb"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 11261,
+  "output_tokens": 997
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "page 6",
+    "quote": "In 2025, the company paid its first-ever dividend, distributing NOK 0.90 per share to its nearly 75,000 shareholders in August.",
+    "summary": "The company paid its first-ever dividend to its shareholders in August.",
+    "title": "First-ever dividend paid to shareholders",
+    "topic": "capital_returns"
+   },
+   {
+    "location": "page 3",
+    "quote": "Norwegian's acquisition of 13 previously leased Boeing 737-800 aircraft contributed to accounting gains in 2025 and recurring cost savings, further strengthening our financial position.",
+    "summary": "Norwegian acquired previously leased Boeing 737-800 aircraft, which contributed accounting gains and recurring cost savings.",
+    "title": "Purchase of previously leased aircraft",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "location": "page 3",
+    "quote": "We also exercised our option to purchase 30 additional Boeing 737 MAX 8 aircraft, adding to the previous 50 aircraft order, reinforcing our commitment to a modern and fuel-efficient fleet.",
+    "summary": "The company exercised its option to purchase additional Boeing 737 MAX 8 aircraft on top of its previous order.",
+    "title": "Option exercised for additional 737 MAX 8 aircraft",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "location": "page 20",
+    "quote": "During the second quarter of 2025, Norwegian announced that it would exercise its call option to redeem all outstanding New Capital Perpetual Bonds bonds, totalling NOK 1,501 million, and that the company would launch an offer to repurchase up to 50 percent of these bonds. Following these transactions, the convertible bonds were redeemed in full.",
+    "summary": "Norwegian announced it would redeem all outstanding New Capital Perpetual Bonds and launched an offer to repurchase part of them, after which the bonds were redeemed in full.",
+    "title": "Redemption and buy-back of convertible bonds",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 4",
+    "quote": "During the year, we successfully negotiated several new collective bargaining agreements with our unions, securing fair conditions for our pilots, cabin crew, and technicians across the group.",
+    "summary": "The company negotiated several new collective bargaining agreements with its unions covering pilots, cabin crew and technicians.",
+    "title": "New collective bargaining agreements with unions",
+    "topic": "labour"
+   },
+   {
+    "location": "page 3",
+    "quote": "Norwegian’s summer 2025 programme featured nearly 350 routes, including 17 new routes to attractive leisure destinations.",
+    "summary": "The summer programme featured a large number of routes, including new routes to leisure destinations, and the winter season operated routes to many destinations.",
+    "title": "Network expansion with new routes",
+    "topic": "capacity_and_network"
+   }
+  ]
+ },
+ "label": "norwegian FY2025 events 549300IEUH2FEM2Y6B51-2025-12-31-ESEF-NO-0",
+ "recorded_at": "2026-11-09T14:38:13+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v2",
+  "provider": "deepseek",
+  "system_sha256": "443a4436d6b697443b1d13ac78d1949a7decbb38acff14498e97c654b4f0869a",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "210b5ad4d70328a8e26c85c4ea113726cf29a8a62eec285596615302f2065d80"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 8833,
+  "output_tokens": 620
+ }
+}

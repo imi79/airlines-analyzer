@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "part 24 / part 120",
+    "quote": "Der vollständige Abbau zinstragender Finanzverbindlichkeiten hat die potenziellen Auswirkungen einer Zinsänderung auf die FWAG massiv reduziert.",
+    "summary": "The report states that the complete elimination of interest-bearing financial liabilities has greatly reduced the potential effects of interest rate changes on the company.",
+    "title": "Full repayment of interest-bearing financial liabilities",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "part 9",
+    "quote": "Die Flughafenentgelte am Flughafen Wien werden gemäß § 17a FEG vorübergehend um die durchschnittliche Inflation (gerechnet von 1.8. bis 31.7.) angepasst. Diese Regelung endet mit 31. Dezember 2026, wodurch die Flughäfen im Entgeltantrag 2026 zur bestehenden Formel zurückkehren und diese mit 1. Jänner 2027 wieder anwenden.",
+    "summary": "Airport charges at Vienna Airport are temporarily adjusted by average inflation under the amended airport charges act, with this rule ending at the end of 2026.",
+    "title": "Airport charges temporarily adjusted by average inflation",
+    "topic": "regulation_and_tariffs"
+   },
+   {
+    "location": "part 24",
+    "quote": "Gegen die Verlängerung der Bauvollendungsfrist und die Abwicklung im Einparteienverfahren wurden mehrere Beschwerden ohne aufschiebende Wirkung eingebracht.",
+    "summary": "Several complaints without suspensive effect were filed against the extension of the construction completion deadline and the single-party procedure for the third runway.",
+    "title": "Complaints against third runway deadline extension",
+    "topic": "regulation_and_tariffs"
+   },
+   {
+    "location": "part 77",
+    "quote": "Zum Bilanzstichtag bestanden betreffend Malta International Airport p.l.c. Streitigkeiten mit der maltesischen Regierung (Streitwert: rund € 8,3 Mio., VJ: rund € 7,5 Mio.) sowie Forderungen einzelner Arbeitnehmer. Aus Sicht des FWAG-Konzerns sind sämtliche Ansprüche unbegründet.",
+    "summary": "At the balance sheet date there were disputes with the Maltese government and claims by individual employees concerning Malta International Airport, which the group considers unfounded.",
+    "title": "Litigation with Maltese government and employee claims",
+    "topic": "other"
+   },
+   {
+    "location": "part 77",
+    "quote": "Es gibt für das Gemeinschaftsunternehmen City Air Terminal Betriebsgesellschaft m.b.H. eine Finanzierungszusage für die Beschaffung neuer Zuggarnituren in Höhe von rund € 30,0 Mio., im laufenden Geschäftsjahr wurden davon T€ 1.002,0 als Darlehen in Anspruch genommen.",
+    "summary": "A financing commitment was given for the joint venture City Air Terminal for the procurement of new train sets, part of which was drawn as a loan in the reporting year.",
+    "title": "Financing commitment for City Air Terminal trains",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "part 43",
+    "quote": "Im Rahmen eines Aktienrückkaufprogrammes hat die FWAG im Zeitraum von 4.11.2019 bis 30.6.2020 insgesamt 125.319 Aktien im Betrag von T€ 4.532,6 erworben und hielt diese Aktien auch im Berichtsjahr 2024. Das Rückkaufprogramm wurde am 29.5.2020 vorzeitig beendet.",
+    "summary": "Shares acquired under a buyback programme in earlier years were still held by the company in the reporting year, and the programme had been terminated early.",
+    "title": "Treasury shares held from earlier buyback",
+    "topic": "capital_returns"
+   }
+  ]
+ },
+ "label": "vie FY2024 events 549300FQ2ILBH7DJ6I45-2024-12-31-ESEF-AT-0",
+ "recorded_at": "2026-11-09T14:38:55+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v2",
+  "provider": "deepseek",
+  "system_sha256": "443a4436d6b697443b1d13ac78d1949a7decbb38acff14498e97c654b4f0869a",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "e97a0e1943aeab91b5facd5b5ad766f8a6ff23210bbfff32c055fbad8acee651"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14382,
+  "output_tokens": 883
+ }
+}

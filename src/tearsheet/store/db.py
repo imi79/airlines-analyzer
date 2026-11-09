@@ -152,6 +152,24 @@ CREATE TABLE runs (
     passed          BOOLEAN,
     recorded_at     VARCHAR            -- when the last AI answer was recorded
 );
+
+-- Events of the year read from the reports (M4, decision 0018, fix D).
+CREATE TABLE events (
+    issuer          VARCHAR NOT NULL,
+    fiscal_year     INTEGER NOT NULL,
+    event_id        VARCHAR NOT NULL,
+    topic           VARCHAR NOT NULL,
+    title           VARCHAR NOT NULL,
+    summary         VARCHAR NOT NULL,
+    quote           VARCHAR NOT NULL,
+    location        VARCHAR,           -- found by code in the report
+    document        VARCHAR NOT NULL,
+    status          VARCHAR NOT NULL,  -- verified | unverified
+    reasons         VARCHAR,           -- JSON list
+    model           VARCHAR,
+    prompt_version  VARCHAR,
+    request_hash    VARCHAR
+);
 """
 SCHEMA += DRAFT_TABLES
 

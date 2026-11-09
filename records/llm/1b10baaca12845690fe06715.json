@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "page 4, Chairman's statement",
+    "quote": "As in the previous year, the Pratt & Whitney Geared Turbofan (GTF) engine issue was a defining challenge for the Company in F26, although we saw improving trends with fewer aircraft grounded on average this year and slightly better turnaround times on our engines. With that said, fleet groundings have continued to affect capacity, utilisation and cost performance, creating structural headwinds largely beyond management’s direct control.",
+    "summary": "The Pratt & Whitney GTF engine issue continued to ground aircraft, affecting capacity, utilisation and cost performance, though fewer aircraft were grounded on average than in the prior year.",
+    "title": "GTF engine groundings persist through the year",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "location": "page 6, Chief Executive's review",
+    "quote": "We exited our Abu Dhabi joint venture, initiated the closure of our Vienna base, and accelerated the reallocation of capacity towards Central and Eastern Europe (CEE) and other core markets where we see stronger structural advantages.",
+    "summary": "The company exited its Abu Dhabi joint venture, began closing its Vienna base and reallocated capacity towards Central and Eastern Europe and other core markets.",
+    "title": "Exit of Abu Dhabi joint venture and Vienna base closure",
+    "topic": "capacity_and_network"
+   },
+   {
+    "location": "page 23",
+    "quote": "Wizz Air has re-negotiated the remaining order book of 254 aircraft with Airbus, deferring deliveries from 2030 to 2032, reshaping the long-term fleet plan, with the renegotiation finalised in November 2025. Due to the Pratt & Whitney GTF engine inspections in F28, Wizz Air negotiated to take 20-25% fewer deliveries than usual to support the main strategy of lifting the grounded fleet and to maintain balanced operational fleet growth following the initial plans of annual 13-15%.",
+    "summary": "Wizz Air renegotiated its remaining Airbus order book, deferring deliveries and taking fewer aircraft than usual to support lifting the grounded fleet.",
+    "title": "Airbus order book renegotiated and deliveries deferred",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "location": "page 96",
+    "quote": "None of these borrowings contain any financial covenants and the €500.0 million, 1.00 per cent Eurobond was repaid in January 2026 out of free cash. Two ratings agencies, Fitch and Moody’s, issued updates during the fourth quarter with Fitch updating Wizz Air’s credit rating to BB with a stable outlook, while Moody’s issued a Ba2 rating with a negative outlook.",
+    "summary": "The company repaid its eurobond out of free cash, and Fitch and Moody's issued credit ratings with stable and negative outlooks respectively.",
+    "title": "Eurobond repaid and credit ratings updated",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 64, Audit and Risk Committee report",
+    "quote": "The Company renewed the Euro Medium Term Note Program with the total amount of EUR 3bn, for the possibility of future EUR Bond issuance in December 2025.",
+    "summary": "The company renewed its Euro Medium Term Note programme for possible future euro bond issuance.",
+    "title": "Euro Medium Term Note programme renewed",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 23",
+    "quote": "To deepen the relationship with its major supplier, Wizz Air has selected Pratt & Whitney’s GTF engines to power 177 new Airbus A321neo aircraft, continuing to benefit from operating a unified fleet.",
+    "summary": "Wizz Air selected Pratt & Whitney GTF engines to power new Airbus A321neo aircraft, continuing a unified fleet.",
+    "title": "GTF engines selected for new Airbus aircraft",
+    "topic": "fleet_and_engines"
+   }
+  ]
+ },
+ "label": "wizz FY2026 events 213800COXGZCORLJZA85-2026-03-31-ESEF-GB-0",
+ "recorded_at": "2026-11-09T14:38:19+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v2",
+  "provider": "deepseek",
+  "system_sha256": "443a4436d6b697443b1d13ac78d1949a7decbb38acff14498e97c654b4f0869a",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "64a91cb56b13fecf3f120bbb11815020aba26f71b7876064c7c4a6ba8b1a33af"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 7817,
+  "output_tokens": 845
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "page 3, Letter from the CEO",
+    "quote": "A major change was the acquisition of Widerøe which was finalised at the very start of the year. We warmly welcomed nearly 3,500 new employees to the Group and with the integration going well the acquisition has already yielded benefits.",
+    "summary": "Norwegian completed the acquisition of regional carrier Widerøe, adding a large workforce, a fleet and passenger volume, and materially increasing revenue and debt while diversifying the group's network.",
+    "title": "Acquisition of Widerøe completed at start of year",
+    "topic": "acquisitions_and_disposals"
+   },
+   {
+    "location": "page 3, Letter from the CEO",
+    "quote": "For Norwegian, there was only a modest increase of one new aircraft for Norwegian from the previous year due to delivery delays from Boeing.",
+    "summary": "Persistent aircraft delivery delays from Boeing limited Norwegian's fleet growth and added cost and complexity to operations, weighing on the year's results.",
+    "title": "Boeing delivery delays constrained fleet growth",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "location": "page 4, Letter from the CEO",
+    "quote": "During 2024, we concluded several key collective bargaining agreements. While these agreements resulted in increased personnel cost across several markets, they also provide improved visibility for 2025 with a reduced risk of industrial action.",
+    "summary": "Several key collective bargaining agreements were concluded, raising personnel costs across markets but reducing the risk of industrial action and improving visibility for the coming year.",
+    "title": "Collective bargaining agreements concluded with higher personnel costs",
+    "topic": "labour"
+   },
+   {
+    "location": "page 4, Letter from the CEO",
+    "quote": "During November last year we introduced “Program X”, a profitability programme aimed at harnessing cost efficiencies and profitability gains across the group in 2025 and 2026.",
+    "summary": "Norwegian introduced a group-wide profitability programme targeting revenue initiatives, Widerøe synergies and cost efficiencies, reflecting pressure on margins from cost inflation and currency weakness.",
+    "title": "Profitability programme launched to cut group costs",
+    "topic": "costs"
+   },
+   {
+    "location": "page 15, Financial review",
+    "quote": "The Board of Directors intends to propose a profit distribution of NOK 0.60 per share for 2024 at the 2025 Annual General Meeting, to be paid out either through dividend or buy-back of shares.",
+    "summary": "The Board proposed a profit distribution to shareholders through dividend or share buyback, subject to approval from debt instrument holders, which constrains the payout until consent is obtained.",
+    "title": "Board proposes shareholder distribution for the year",
+    "topic": "capital_returns"
+   },
+   {
+    "location": "page 6, Board of Directors' report",
+    "quote": "The operating result was particularly negatively impacted by the weakening of NOK against USD.",
+    "summary": "Operating profit fell year on year, mainly due to the weakening of the Norwegian krone against the dollar, alongside challenging weather, air traffic control congestion and cost inflation.",
+    "title": "Currency weakness and external disruptions hit earnings",
+    "topic": "one_offs"
+   }
+  ]
+ },
+ "label": "norwegian FY2024 events 549300IEUH2FEM2Y6B51-2024-12-31-ESEF-NO-0",
+ "recorded_at": "2026-11-09T14:37:03+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v1",
+  "provider": "deepseek",
+  "system_sha256": "65a62a6da6dc039bdb144a445e10bff34f0c428673333043ff8dd55b3ebd96df",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "10a5a3e0d969544019a6e5a1afb8c468d6ba8ceb18e95961c227769d4bcbc07a"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 8159,
+  "output_tokens": 687
+ }
+}

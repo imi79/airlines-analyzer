@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "page 6",
+    "quote": "In 2025, the company paid its first-ever dividend, distributing NOK 0.90 per share to its nearly 75,000 shareholders in August.",
+    "summary": "The company paid its first dividend, returning cash to shareholders and reducing liquidity and equity, a milestone in its post-restructuring capital returns.",
+    "title": "First-ever dividend paid to shareholders",
+    "topic": "capital_returns"
+   },
+   {
+    "location": "page 3",
+    "quote": "Norwegian's acquisition of 13 previously leased Boeing 737-800 aircraft contributed to accounting gains in 2025 and recurring cost savings, further strengthening our financial position. We also exercised our option to purchase 30 additional Boeing 737 MAX 8 aircraft, adding to the previous 50 aircraft order, reinforcing our commitment to a modern and fuel-efficient fleet.",
+    "summary": "Norwegian bought aircraft it had leased, generating accounting gains and recurring cost savings, and exercised options for more fuel-efficient aircraft, shifting owned versus leased fleet economics.",
+    "title": "Purchase of previously leased aircraft and MAX order",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "location": "page 20",
+    "quote": "During the second quarter of 2025, Norwegian announced that it would exercise its call option to redeem all outstanding New Capital Perpetual Bonds bonds, totalling NOK 1,501 million, and that the company would launch an offer to repurchase up to 50 percent of these bonds. Following these transactions, the convertible bonds were redeemed in full.",
+    "summary": "The company called and repurchased its subordinated convertible bonds, simplifying the capital structure and reducing debt but consuming liquidity and equity.",
+    "title": "Redemption and buyback of convertible perpetual bonds",
+    "topic": "funding_and_rating"
+   },
+   {
+    "location": "page 3",
+    "quote": "The “Program X” profitability initiative, introduced in late 2024, has been instrumental in driving cost efficiencies and profitability gains, and is on track to deliver over NOK 1.25 billion in recurring underlying profit improvement by the end of 2026.",
+    "summary": "The profitability programme delivered recurring cost improvements, supporting the record operating margin and offsetting industry cost inflation.",
+    "title": "Program X cost efficiency initiative",
+    "topic": "costs"
+   },
+   {
+    "location": "page 4",
+    "quote": "During the year, we successfully negotiated several new collective bargaining agreements with our unions, securing fair conditions for our pilots, cabin crew, and technicians across the group.",
+    "summary": "New collective agreements were negotiated with pilots, cabin crew and technicians, reducing industrial-action risk and stabilising the cost base.",
+    "title": "New collective bargaining agreements with unions",
+    "topic": "labour"
+   },
+   {
+    "location": "page 3",
+    "quote": "Norwegian’s summer 2025 programme featured nearly 350 routes, including 17 new routes to attractive leisure destinations.",
+    "summary": "The airline expanded its route network and added new leisure destinations, growing capacity and traffic while maintaining load factors.",
+    "title": "Network expansion with new routes",
+    "topic": "capacity_and_network"
+   }
+  ]
+ },
+ "label": "norwegian FY2025 events 549300IEUH2FEM2Y6B51-2025-12-31-ESEF-NO-0",
+ "recorded_at": "2026-11-09T14:36:10+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v1",
+  "provider": "deepseek",
+  "system_sha256": "65a62a6da6dc039bdb144a445e10bff34f0c428673333043ff8dd55b3ebd96df",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "210b5ad4d70328a8e26c85c4ea113726cf29a8a62eec285596615302f2065d80"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 8793,
+  "output_tokens": 682
+ }
+}

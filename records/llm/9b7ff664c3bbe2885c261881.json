@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "page 12",
+    "quote": "Last February we announced a €1 billion share buyback and we are pleased to be announcing another return of excess cash of €1.5 billion today. This takes the total amount of excess cash returns announced in the last three years to €2.85 billion as we build a track record of cash returns to shareholders.",
+    "summary": "The group completed a large share buyback during the year and announced a further return of excess cash to shareholders, supported by strong cash generation and a stronger balance sheet.",
+    "title": "Large share buyback and further excess cash return announced",
+    "topic": "capital_returns"
+   },
+   {
+    "location": "page 44",
+    "quote": "Supply chain pressures continued in 2025. British Airways reduced frequencies to some Middle East destinations due to a lack of available aircraft after experiencing Rolls Royce engine problems, and Boeing and Airbus reported delivery shortfalls.",
+    "summary": "Rolls Royce engine problems left British Airways short of aircraft, forcing frequency reductions to some Middle East destinations and constraining capacity.",
+    "title": "Engine problems force British Airways to cut Middle East frequencies",
+    "topic": "fleet_and_engines"
+   },
+   {
+    "location": "page 45",
+    "quote": "ATC strikes caused significant disruption, especially in France, where a July strike resulted in 1,400 daily cancellations and over €120 million in direct costs for the",
+    "summary": "A French air traffic control strike in the summer caused widespread cancellations and significant direct costs, adding to sector-wide disruption and cost headwinds.",
+    "title": "French ATC strike causes mass cancellations and direct costs",
+    "topic": "one_offs"
+   },
+   {
+    "location": "page 44",
+    "quote": "Global inflation eased and travel demand recovered in 2025 but volatile trade policy with the US’s imposition of tariffs was a key concern. IAG actively engaged with authorities in the UK, EU, Spain and Ireland during negotiations with the US, and both the EU and UK eventually reached separate agreements to reduce tariffs to zero on aircraft and aircraft parts covered by the 1979 World Trade Organization Agreement on Trade in Civil Aircraft.",
+    "summary": "Volatile US trade policy and tariff imposition created uncertainty, but separate EU and UK agreements eliminated tariffs on aircraft and aircraft parts, easing cost pressure.",
+    "title": "US and EU/UK agreements remove aircraft tariffs",
+    "topic": "regulation_and_tariffs"
+   },
+   {
+    "location": "page 15",
+    "quote": "In January 2025 the UK Government confirmed its support for a third runway at Heathrow. IAG supports this commitment to growth but the cost must be far lower to ensure that Heathrow remains globally competitive.",
+    "summary": "The UK government confirmed support for a third runway at Heathrow, a capacity decision IAG backs while pressing for lower costs to keep the hub competitive.",
+    "title": "UK government backs Heathrow third runway",
+    "topic": "regulation_and_tariffs"
+   },
+   {
+    "location": "page 82",
+    "quote": "The Group successfully raised long-term financing for all the aircraft deliveries it sought to finance during 2025, representing approximately one-third of the number of deliveries. The Group’s credit ratings are investment grade: S&P’s BBB stable and Moody’s Baa2 stable.",
+    "summary": "The group kept investment grade ratings from both agencies and raised long-term financing for the aircraft deliveries it sought to finance during the year.",
+    "title": "Investment grade ratings maintained with aircraft financing secured",
+    "topic": "funding_and_rating"
+   }
+  ]
+ },
+ "label": "iag FY2025 events 959800TZHQRUSH1ESL13-2025-12-31-ESEF-GB-0",
+ "recorded_at": "2026-11-09T14:35:35+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v1",
+  "provider": "deepseek",
+  "system_sha256": "65a62a6da6dc039bdb144a445e10bff34f0c428673333043ff8dd55b3ebd96df",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "8d8649cb526e66074b79cde03dc275b1e90b39177bc7dc0c6a44910dabd99adf"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 8145,
+  "output_tokens": 764
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "Entwicklung der Segmente, Segment Airport",
+    "quote": "Dabei waren mehrere Sondereffekte zu berücksichtigen: Einerseits Buchwertabgänge von insgesamt € 55,9 Mio. betreffend die Nichtrealisierung des Projektes 3. Piste, andererseits Aufwendungen für Umweltmaßnahmen in den Umlandgemeinden in Höhe von € 6,5 Mio.",
+    "summary": "The company recorded write-offs of carrying amounts because the third runway project was not realised.",
+    "title": "Third runway project abandoned, asset write-offs",
+    "topic": "one_offs"
+   },
+   {
+    "location": "Ertragslage im Überblick",
+    "quote": "Ein Sondereffekt im Periodenvergleich ergibt sich aus dem Verlust der Beherrschung über die Tochtergesellschaft „GetService“ Flughafen-Sicherheits- und Servicedienst GmbH (Get2) durch vertragliche Anpassungen. Seit dem 1. Jänner 2025 wird diese Gesellschaft nicht mehr voll konsolidiert, sondern nach der at-Equity-Methode bilanziert.",
+    "summary": "Contractual changes led to loss of control over the GetService subsidiary, which is no longer fully consolidated but accounted for using the equity method.",
+    "title": "Loss of control over Get2 subsidiary",
+    "topic": "acquisitions_and_disposals"
+   },
+   {
+    "location": "Entwicklung der Segmente, Segment Airport",
+    "quote": "Der Anstieg des Personalaufwands um € 11,2 Mio. auf € 66,1 Mio. ist auf kollektivvertragliche Erhöhungen (ab 1.5.2025 +3,3%) und Dotierungen von Personalrückstellungen unter anderem im Zusammenhang mit Unterauslastung zurückzuführen.",
+    "summary": "Personnel expenses rose due to collective agreement increases and additions to personnel provisions, partly related to underutilisation.",
+    "title": "Higher personnel expenses from collective wage increases",
+    "topic": "costs"
+   },
+   {
+    "location": "Ertragslage im Überblick",
+    "quote": "Dabei sind mehrere Sondereffekte zu berücksichtigen: Einerseits Aufwendungen für Umweltmaßnahmen in den Umlandgemeinden in Höhe von € 6,5 Mio., andererseits Buchwertabgänge von insgesamt € 55,9 Mio. aufgrund der Nichtrealisierung des Projektes 3. Piste.",
+    "summary": "The company incurred expenses for environmental measures in the surrounding municipalities.",
+    "title": "Environmental measures payments to neighbouring municipalities",
+    "topic": "costs"
+   },
+   {
+    "location": "Ertragslage im Überblick",
+    "quote": "Die laufenden Ergebnisbeiträgen beliefen sich auf € 2,7 Mio. (2024: € 2,0 Mio.) denen jedoch ein Impairment von € 2,7 Mio. gegenüber steht. Dazu wird auf die entsprechenden Erläuterungen in der Anhangangabe (18) verwiesen. Das at-Equity-Ergebnis beläuft sich somit auf minus T€ 46,5 (2024: € 2,0 Mio.).",
+    "summary": "An impairment was recognised on an at-equity investment, turning the at-equity result negative.",
+    "title": "Impairment on equity-accounted investment",
+    "topic": "acquisitions_and_disposals"
+   },
+   {
+    "location": "Umsatz Segment Airport",
+    "quote": "Die passagierbezogenen Entgelte legten in Folge der robusten Passagierentwicklung (+2,6%) sowie von Ent-geltanpassungen um 5.1% auf € 390,2 Mio. zu (2024: € 371,3 Mio.). Dämpfend wirkten im Vergleich zur Vorperiode höhere temporäre Incentives im Winterflugplan zu Beginn des Jahres.",
+    "summary": "Passenger-related charges increased due to passenger growth and charge adjustments, while higher temporary incentives in the winter schedule had a dampening effect.",
+    "title": "Airport charges adjusted under price-cap formula",
+    "topic": "regulation_and_tariffs"
+   }
+  ]
+ },
+ "label": "vie FY2025 events 549300FQ2ILBH7DJ6I45-2025-12-31-ESEF-AT-0",
+ "recorded_at": "2026-11-09T14:38:09+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v2",
+  "provider": "deepseek",
+  "system_sha256": "443a4436d6b697443b1d13ac78d1949a7decbb38acff14498e97c654b4f0869a",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "19bead244259e44493348cfe554c75fa73a88b550e1694419697485ac26c92c6"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 15351,
+  "output_tokens": 930
+ }
+}

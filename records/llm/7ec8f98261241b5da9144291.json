@@ -1,0 +1,65 @@
+{
+ "answer": {
+  "events": [
+   {
+    "location": "Entwicklung der Segmente, Segment Airport",
+    "quote": "Dabei waren mehrere Sondereffekte zu berücksichtigen: Einerseits Buchwertabgänge von insgesamt € 55,9 Mio. betreffend die Nichtrealisierung des Projektes 3. Piste, andererseits Aufwendungen für Umweltmaßnahmen in den Umlandgemeinden in Höhe von € 6,5 Mio.",
+    "summary": "The airport abandoned its third runway project and wrote off the related carrying amounts, a large one-off charge that cut EBITDA and net profit for the year.",
+    "title": "Third runway project abandoned, carrying values written off",
+    "topic": "one_offs"
+   },
+   {
+    "location": "Ertragslage im Überblick",
+    "quote": "Ein Sondereffekt im Periodenvergleich ergibt sich aus dem Verlust der Beherrschung über die Tochtergesellschaft „GetService“ Flughafen-Sicherheits- und Servicedienst GmbH (Get2) durch vertragliche Anpassungen. Seit dem 1. Jänner 2025 wird diese Gesellschaft nicht mehr voll konsolidiert, sondern nach der at-Equity-Methode bilanziert.",
+    "summary": "Contractual changes removed control over the security services subsidiary Get2, which is now accounted for at equity, shifting personnel costs into external services and reducing headcount.",
+    "title": "Get2 deconsolidated and accounted for at equity",
+    "topic": "acquisitions_and_disposals"
+   },
+   {
+    "location": "Ertragslage im Überblick",
+    "quote": "Bereinigt um den Gesamteffekt der Änderung der Konsolidierung der Get2 wäre der Personalaufwand um 12,4% oder € 47,7 Mio. angestiegen.",
+    "summary": "Collective wage increases and higher provisions pushed personnel costs up sharply, pressuring margins despite revenue growth.",
+    "title": "Personnel costs rise on collective wage increases",
+    "topic": "costs"
+   },
+   {
+    "location": "Ertragslage im Überblick",
+    "quote": "Im Geschäftsjahr 2025 wurden weiters € 0,7 Mio. an Zuweisungen zu Wertberichtigungen dotiert gegenüber Auflösungen in Höhe von € 5,5 Mio. im Vorjahr.",
+    "summary": "Payments for environmental measures in neighbouring municipalities added a further one-off cost burden in the year.",
+    "title": "Environmental measures payments to surrounding municipalities",
+    "topic": "costs"
+   },
+   {
+    "location": "Ertragslage im Überblick",
+    "quote": "Die laufenden Ergebnisbeiträgen beliefen sich auf € 2,7 Mio. (2024: € 2,0 Mio.) denen jedoch ein Impairment von € 2,7 Mio. gegenüber steht.",
+    "summary": "An impairment on an at-equity investment offset the operating contributions of the associates, turning the at-equity result negative.",
+    "title": "Impairment on at-equity investment",
+    "topic": "acquisitions_and_disposals"
+   },
+   {
+    "location": "Die Flughafen-Wien-Gruppe",
+    "quote": "Die drei internationalen Flughäfen Wien, Malta und Košice registrierten in 2025 in Summe 43,4 Mio. Passagiere (2024: 41,4 Mio. Passagiere). Den Flughafen Wien frequentierten im letzten Jahr 32,6 Mio. Fluggäste (2024: 31,7 Mio.).",
+    "summary": "Passenger numbers grew across the group's airports, supporting aviation revenue growth and improving the traffic base behind the credit story.",
+    "title": "Passenger growth at Vienna, Malta and Košice",
+    "topic": "capacity_and_network"
+   }
+  ]
+ },
+ "label": "vie FY2025 events 549300FQ2ILBH7DJ6I45-2025-12-31-ESEF-AT-0",
+ "recorded_at": "2026-11-09T14:36:04+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v1",
+  "provider": "deepseek",
+  "system_sha256": "65a62a6da6dc039bdb144a445e10bff34f0c428673333043ff8dd55b3ebd96df",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "19bead244259e44493348cfe554c75fa73a88b550e1694419697485ac26c92c6"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 15311,
+  "output_tokens": 847
+ }
+}

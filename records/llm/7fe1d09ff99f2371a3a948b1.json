@@ -1,0 +1,35 @@
+{
+ "answer": {
+  "events": [
+   {
+    "quote": "Furthemore, S&P Global Ratings assigned a long-term issuer credit rating of BB+ to Finnair Plc with a stable outlook. It is the first credit rating for Finnair.",
+    "summary": "S&P Global Ratings assigned Finnair a long-term issuer credit rating with a stable outlook, the company's inaugural credit rating.",
+    "title": "S&P assigns Finnair an issuer credit rating",
+    "topic": "funding_and_rating"
+   },
+   {
+    "quote": "Industrial action in Finland had an impact on Finnair’s operations, leading to the cancellation of approximately 550 flights in the first quarter and more than 500 flights in the fourth quarter.",
+    "summary": "Industrial action in Finland led to the cancellation of a large number of flights in the early part of the year and again in the late part of the year.",
+    "title": "Industrial action caused flight cancellations",
+    "topic": "labour"
+   }
+  ]
+ },
+ "label": "finnair FY2024 events retry 213800SB6EOB8SSK9W63-2024-12-31-ESEF-FI-0",
+ "recorded_at": "2026-11-09T14:39:56+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v2",
+  "provider": "deepseek",
+  "system_sha256": "443a4436d6b697443b1d13ac78d1949a7decbb38acff14498e97c654b4f0869a",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "ea45602e624f04751d5c34efbc6a04e4c54138f2255b30a2937680180502f2fc"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 9330,
+  "output_tokens": 226
+ }
+}

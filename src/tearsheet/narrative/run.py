@@ -18,6 +18,9 @@ from pathlib import Path
 import duckdb
 
 from tearsheet.config import DB_PATH, ROOT, Issuer, load_issuers
+from tearsheet.extract import events as ev
+from tearsheet.extract.documents import Document, from_report, supplied_documents
+from tearsheet.ingest.client import Client
 from tearsheet.llm import LLM
 from tearsheet.narrative import score_sheet
 from tearsheet.narrative.drafting import (
@@ -30,6 +33,7 @@ from tearsheet.narrative.drafting import (
 )
 from tearsheet.narrative.factsheet import (
     FactSheet,
+    add_events,
     as_text,
     build,
     load_figures,
@@ -85,6 +89,14 @@ def run(
     verifier = Verifier(narrative)
     sheets = build_sheets(db_path)
     recorded = LLM(offline=True)
+    issuers = {i.id: i for i in load_issuers()}
+    event_runs = []
+    for sheet in sheets.drafted:
+        use = llm if not only or sheet.issuer in only else recorded
+        event_run = events_for(use, issuers[sheet.issuer], sheet, db_path, verifier)
+        add_events(sheet, event_run.events)
+        event_runs.append(event_run)
+    write_events(event_runs, out)
     for sheet in sheets.drafted + sheets.examples:
         write_factsheet(sheet, narrative, out)
     write_examples(sheets.examples, narrative, out)
@@ -96,9 +108,86 @@ def run(
         write_draft(outcome, narrative, out)
     write_summary(outcomes, out)
     write_db(outcomes, db_path)
+    write_events_db(event_runs, db_path)
     if out == OUT and sum(o.drafted for o in outcomes) >= score_sheet.DRAFTS:
         score_sheet.write(outcomes)
     return outcomes
+
+
+# --- Events of the year (fix D) ------------------------------------------------------------
+
+
+def report_document(issuer: Issuer, year: int, db_path: Path) -> Document | None:
+    """The year's own annual report: the filing's report, else a PDF supplied by Imane."""
+    con = duckdb.connect(str(db_path), read_only=True)
+    row = con.execute(
+        "SELECT filing_id, language, report_url, sha256 FROM filings "
+        "WHERE issuer = ? AND fiscal_year = ? AND report_url IS NOT NULL",
+        [issuer.id, year],
+    ).fetchone()
+    con.close()
+    if row:
+        filing_id, language, url, sha = row
+        try:
+            path = Client(offline=True).download(url, "report")
+        except FileNotFoundError:
+            return None
+        return from_report(filing_id, issuer.id, year, language, path, url, sha)
+    supplied = [d for d in supplied_documents(issuer.id) if d.fiscal_year == year]
+    return supplied[0] if supplied else None
+
+
+def events_for(llm: LLM, issuer: Issuer, sheet: FactSheet, db_path: Path, verifier):
+    doc = report_document(issuer, sheet.fiscal_year, db_path)
+    if doc is None:
+        run = ev.EventsRun(issuer.id, sheet.fiscal_year, "-")
+        run.error = "no report for this year in the local cache"
+        return run
+    return ev.read_events(llm, issuer, doc, sheet.period_label, verifier.numbers)
+
+
+def write_events(runs: list, out: Path) -> None:
+    md = [
+        "# Events of the year, read from the reports",
+        "",
+        "Read by the AI (prompt `"
+        + ev.PROMPT_VERSION
+        + "`) and checked by code (decision 0018, fix D): the quote "
+        "is in the report word for word, and the title and summary hold no number. Only checked "
+        "events reach the fact sheets. Code cannot check that the English summary is a fair "
+        "reading of the quote: please read the quotes.",
+        "",
+    ]
+    for run in runs:
+        md += [f"## {run.issuer} FY{run.fiscal_year} (`{run.document}`)", ""]
+        if run.error:
+            md += [f"_{run.error}_", ""]
+            continue
+        if not run.events:
+            md += ["_No event recorded._", ""]
+        for e in run.events:
+            mark = "" if e.verified else " \\* (not checked: " + "; ".join(e.failures) + ")"
+            md += [f"- **{e.title}** ({e.topic}, `{e.id}`){mark}. {e.summary}",
+                   f"  > {e.quote} ({e.location or 'not found'})"]  # fmt: skip
+        md.append("")
+    (out / "events.md").write_text("\n".join(md))
+
+
+def write_events_db(runs: list, db_path: Path) -> None:
+    con = duckdb.connect(str(db_path))
+    db.ensure_draft_tables(con)
+    con.execute("DELETE FROM events")
+    for run in runs:
+        r = run.result
+        for e in run.events:
+            con.execute(
+                "INSERT INTO events VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                [e.issuer, e.fiscal_year, e.id, e.topic, e.title, e.summary, e.quote, e.location,
+                 e.document, "verified" if e.verified else "unverified",
+                 json.dumps(e.failures, ensure_ascii=False), r.model if r else None,
+                 r.prompt_version if r else None, r.request_hash if r else None],
+            )  # fmt: skip
+    con.close()
 
 
 # --- Pages ---------------------------------------------------------------------------------
@@ -172,6 +261,10 @@ def write_draft(outcome: Outcome, narrative: dict, out: Path) -> None:
         md += [f"## {title}{flag}", ""]
         bullet = "- " if name == "watch_items" else ""
         md += [bullet + rendered_text(s.text, rendered) for s in sentences]
+        cited = [r.id for s in sentences for r in s.facts if r.id in sheet.items
+                 and sheet.items[r.id].kind == "event"]  # fmt: skip
+        for eid in dict.fromkeys(cited):
+            md.append(f"\n> Event `{eid}`: {sheet.items[eid].note}")
         for e in outcome.errors.get(name, []):
             md.append(f"\n> verifier: {e}")
         md.append("")

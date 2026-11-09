@@ -22,6 +22,8 @@ allowed_phrases:
   - 'one-off'
   - 'one-offs'
   - 'no one'
+  - '(?:first|second) half(?: of the (?:fiscal )?year)?'  # a period, not a quantity
+  - 'third runway'  # Heathrow's project: a name
 
 # Symbols rejected outside a blank.
 symbols: '[%€£$¥‰]'

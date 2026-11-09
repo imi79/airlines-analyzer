@@ -1,0 +1,35 @@
+{
+ "answer": {
+  "events": [
+   {
+    "quote": "Last February we announced a €1 billion share buyback and we are pleased to be announcing another return of excess cash of €1.5 billion today. This takes the total amount of excess cash returns announced in the last three years to €2.85 billion as we build a track record of cash returns to shareholders.",
+    "summary": "The company announced a share buyback and a further return of excess cash to shareholders in the coming year.",
+    "title": "Share buyback and further excess cash return announced",
+    "topic": "capital_returns"
+   },
+   {
+    "quote": "IAG actively engaged with authorities in the UK, EU, Spain and Ireland during negotiations with the US, and both the EU and UK eventually reached separate agreements to reduce tariffs to zero on aircraft and aircraft parts covered by the 1979 World Trade Organization Agreement on Trade in Civil Aircraft.",
+    "summary": "IAG engaged with authorities during US trade negotiations and the EU and UK reached separate agreements reducing tariffs on aircraft and aircraft parts covered by the WTO civil aircraft agreement.",
+    "title": "US and EU/UK agreements cut aircraft tariffs",
+    "topic": "regulation_and_tariffs"
+   }
+  ]
+ },
+ "label": "iag FY2025 events retry 959800TZHQRUSH1ESL13-2025-12-31-ESEF-GB-0",
+ "recorded_at": "2026-11-09T14:39:39+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "events-v2",
+  "provider": "deepseek",
+  "system_sha256": "443a4436d6b697443b1d13ac78d1949a7decbb38acff14498e97c654b4f0869a",
+  "tool_sha256": "4b03714d421b2dfab5616776491334e8bca5dcaf82e57309aca9772504188481",
+  "user_sha256": "62e26360ce2e7ad6689ca581a6f1969292d84d25cbbb2fef9404a0ac76088859"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 8487,
+  "output_tokens": 271
+ }
+}
