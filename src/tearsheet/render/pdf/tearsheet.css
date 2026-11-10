@@ -1,0 +1,84 @@
+/* The two-page A4 tearsheet (M6). --fs is the body size; the code steps it down in half
+   points (to 7.5pt) if a tearsheet would run onto a third page (decision 0020). */
+
+@font-face { font-family: "Inter"; src: url("fonts/Inter-Regular.otf"); font-weight: 400; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter-Italic.otf"); font-weight: 400;
+             font-style: italic; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter-SemiBold.otf"); font-weight: 600; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter-Bold.otf"); font-weight: 700; }
+
+:root { --ink: #1b1f24; --muted: #5b6470; --rule: #c9d1db; --navy: #1f4e79; --tint: #eef3f8; }
+
+@page {
+  size: A4;
+  margin: 11mm 12mm 13mm 12mm;
+  @bottom-left { content: string(company) " · " string(period) " · credit tearsheet";
+                 font: 6.5pt "Inter"; color: #5b6470; }
+  @bottom-right { content: "Page " counter(page) " of " counter(pages);
+                  font: 6.5pt "Inter"; color: #5b6470; }
+}
+
+html { font-family: "Inter"; font-size: var(--fs); color: var(--ink); line-height: 1.32; }
+td { font-variant-numeric: tabular-nums; }
+body { margin: 0; }
+p { margin: 0 0 0.35em 0; }
+b { font-weight: 600; }
+
+.page { page-break-after: always; }
+.page:last-child { page-break-after: auto; }
+
+header { display: flex; justify-content: space-between; align-items: flex-end;
+         border-bottom: 2pt solid var(--navy); padding-bottom: 2.5mm; margin-bottom: 3mm; }
+header h1 { font-size: 17pt; font-weight: 700; margin: 0; color: var(--navy);
+            string-set: company content(); }
+header .sub { color: var(--muted); margin-top: 1mm; }
+header .period { string-set: period content(); font-weight: 600; color: var(--ink); }
+header .right { text-align: right; color: var(--muted); font-size: 0.9em; }
+
+h2 { font-size: 1.05em; text-transform: uppercase; letter-spacing: 0.04em; color: var(--navy);
+     border-bottom: 0.6pt solid var(--rule); padding-bottom: 0.6mm; margin: 2.6mm 0 1.4mm 0; }
+
+.snapshot { background: var(--tint); padding: 2mm 3mm; border-left: 2pt solid var(--navy);
+            margin-bottom: 1mm; }
+.snapshot p { margin-bottom: 0.25em; }
+
+.row { display: flex; gap: 5mm; }
+.col { flex: 1 1 0; min-width: 0; }
+.col-wide { flex: 1.25 1 0; min-width: 0; }
+
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 0.55mm 1.2mm; border-bottom: 0.4pt solid var(--rule); }
+th { text-align: right; font-weight: 600; color: var(--muted); }
+th:first-child, td:first-child { text-align: left; }
+td { text-align: right; white-space: nowrap; }
+td:first-child { white-space: normal; }
+td.own, th.own { font-weight: 600; background: var(--tint); }
+td.flag { color: var(--muted); font-style: italic; }
+.rank { color: var(--muted); font-size: 0.85em; }
+
+.chart { margin-bottom: 1.5mm; }
+.chart .title { font-weight: 600; font-size: 0.95em; margin-bottom: 0.5mm; }
+.chart img { width: 100%; }
+
+.commentary p { text-align: left; }
+ul.watch { margin: 0; padding-left: 4mm; }
+ul.watch li { margin-bottom: 0.3em; }
+.flagged { color: #8a4b00; }
+.mark { font-size: 0.8em; vertical-align: super; color: #8a4b00; }
+.draft-note { font-style: italic; color: #8a4b00; font-size: 0.9em; }
+
+.view { border: 0.6pt solid var(--navy); padding: 2mm 3mm; height: 11.2em; overflow: hidden; }
+.view .empty { color: var(--muted); font-style: italic; }
+.view p { margin: 0; }
+
+.defs-p1 { margin-top: 3mm; border-top: 0.6pt solid var(--rule); padding-top: 1.5mm;
+           font-size: 6.3pt; line-height: 1.28; color: #39414b; columns: 2; column-gap: 5mm; }
+.defs-p1 p { margin: 0 0 0.25em 0; break-inside: avoid; }
+footer { margin-top: 2.5mm; border-top: 0.6pt solid var(--rule); padding-top: 1.5mm;
+         font-size: 6.3pt; line-height: 1.28; color: #39414b; }
+footer .defs { columns: 2; column-gap: 5mm; }
+footer .defs p { margin: 0 0 0.25em 0; break-inside: avoid; }
+footer .links p, footer .notes p { margin: 0 0 0.2em 0; }
+footer a { color: var(--navy); text-decoration: none; }
+.disclaimer { font-weight: 600; color: var(--ink); margin-top: 1mm; }
+#end { height: 0; }

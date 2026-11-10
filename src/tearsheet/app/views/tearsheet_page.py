@@ -2,16 +2,18 @@
 
 from __future__ import annotations
 
+import json
+
 import altair as alt
 import pandas as pd
 import streamlit as st
 
 from tearsheet.app import state
 from tearsheet.app.cards import safe, selection_opens, sources_button
-from tearsheet.app.notes_ui import analyst_view, edit_section, edited_sentence
+from tearsheet.app.notes_ui import analyst_view, edit_section, edited_sentence, get_note
 from tearsheet.narrative.factsheet import load_narrative
 from tearsheet.narrative.render import PLACEHOLDER
-from tearsheet.render import tearsheet
+from tearsheet.render import export, pdf, tearsheet
 from tearsheet.render.library import key, small_debt
 from tearsheet.render.sources import ref_of_id, ref_of_key
 
@@ -194,3 +196,43 @@ st.divider()
 analyst_view(ts)
 st.caption("Draft prepared with AI assistance. Figures computed from regulatory filings and "
            "checked automatically. Not investment advice.")  # fmt: skip
+
+# --- Export: the two-page PDF, the Excel backup and the manifest (M6) ----------------------------
+st.divider()
+st.subheader("Export")
+note = get_note(ts)
+if not pdf.view_fits(note):
+    st.warning("The analyst view is longer than the PDF's box (about eight lines): the PDF "
+               "shows the start, marked \"continued in the app\".")  # fmt: skip
+untraced = sum(1 for v in (note.get("edits") or {}).values() for e in v.values()
+               if e.get("untraced"))  # fmt: skip
+if untraced:
+    st.info(f"{untraced} edited sentence(s) contain a figure not traced to a source: the PDF "
+            "marks them with † and a footnote.")  # fmt: skip
+ready_key = f"export-{issuer}-{year}"
+if st.button("Prepare the PDF and the Excel backup", key=f"prepare-{issuer}-{year}",
+             icon=":material/picture_as_pdf:"):  # fmt: skip
+    session = st.session_state.get("demo_reviews") or {}
+    reviews = [k for k in session if k.startswith(f"{issuer}:")]
+    with st.spinner("Laying out the two pages and writing the workbook..."):
+        st.session_state[ready_key] = export.build(
+            lib, ts, note, mode=state.mode().lower(), session_reviews=len(reviews)
+        )
+done = st.session_state.get(ready_key)
+if done is not None:
+    left, mid, right = st.columns(3)
+    left.download_button("Download PDF", done.pdf, f"{done.name}.pdf", "application/pdf",
+                         key=f"dl-pdf-{issuer}-{year}", icon=":material/download:")  # fmt: skip
+    mid.download_button(
+        "Download Excel", done.xlsx, f"{done.name}.xlsx",
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        key=f"dl-xlsx-{issuer}-{year}", icon=":material/download:",
+    )  # fmt: skip
+    right.download_button(
+        "Download manifest", json.dumps(done.manifest, indent=1, ensure_ascii=False),
+        f"{done.name}_manifest.json", "application/json", key=f"dl-json-{issuer}-{year}",
+        icon=":material/download:",
+    )  # fmt: skip
+    st.caption(f"Prepared at {done.manifest['exported_at'][:16].replace('T', ' ')} UTC, text at "
+               f"{done.font_size} point. Includes your edits and analyst view as they were "
+               "then; prepare again after a change.")  # fmt: skip

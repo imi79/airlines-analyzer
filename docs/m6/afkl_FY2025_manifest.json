@@ -1,0 +1,131 @@
+{
+ "tearsheet": {
+  "company": "afkl",
+  "name": "Air France-KLM",
+  "fiscal_year": 2025,
+  "period": "FY2025",
+  "currency": "EUR",
+  "peer_group": "Network airlines",
+  "peer_year": 2025
+ },
+ "exported_at": "2026-11-10T22:31:57+00:00",
+ "code_version": "6e7ed9559042",
+ "mode": "export",
+ "filings": {
+  "969500AQW31GYO8JZD66-2022-12-31-ESEF-FR-0": {
+   "company": "afkl",
+   "fiscal_year": 2022,
+   "origin": "filings.xbrl.org",
+   "sha256": "eb5f825474c13acd282cd412eb9957b3858f821ad975e7aa99586bca0070823f",
+   "link": "https://filings.xbrl.org/969500AQW31GYO8JZD66/2022-12-31/ESEF/FR/0/afklm-2022-12-31-fr/reports/ixbrlviewer.html",
+   "figures": 12
+  },
+  "969500AQW31GYO8JZD66-2024-12-31-ESEF-FR-0": {
+   "company": "afkl",
+   "fiscal_year": 2024,
+   "origin": "filings.xbrl.org",
+   "sha256": "3e5fbdef1de4640bfc54052be77a4061e5f8045bb978be4f1598fa57cf9e4b4e",
+   "link": "https://filings.xbrl.org/969500AQW31GYO8JZD66/2024-12-31/ESEF/FR/0/afklm-2024-12-31-fr/reports/ixbrlviewer.html",
+   "figures": 28
+  },
+  "969500AQW31GYO8JZD66-2025-12-31-manual-pdf": {
+   "company": "afkl",
+   "fiscal_year": 2025,
+   "origin": "published statements (PDF), entered by hand",
+   "sha256": "aaba4d2512928f6cf9efde24af67b05619459f1d0f891b42bbb084473d7d550f",
+   "link": null,
+   "figures": 16
+  },
+  "969500AQW31GYO8JZD66-2024-12-31-manual-pdf": {
+   "company": "afkl",
+   "fiscal_year": 2024,
+   "origin": "published statements (PDF), entered by hand",
+   "sha256": "70d64d938f3a44055fb3d9bc18e7a561d397eda4061c64df1a9a15bf2d7cb545",
+   "link": null,
+   "figures": 1
+  },
+  "213800SB6EOB8SSK9W63-2025-12-31-ESEF-FI-0": {
+   "company": "finnair",
+   "fiscal_year": 2025,
+   "origin": "filings.xbrl.org",
+   "sha256": "24497cdd2ccb0d489089a3360630212dc87e00ea1b6ccfc5fcd428464318d4c6",
+   "link": "https://filings.xbrl.org/213800SB6EOB8SSK9W63/2025-12-31/ESEF/FI/0/213800SB6EOB8SSK9W63-2025-12-31-1-en/reports/ixbrlviewer.html",
+   "figures": 16
+  },
+  "959800TZHQRUSH1ESL13-2025-12-31-ESEF-GB-0": {
+   "company": "iag",
+   "fiscal_year": 2025,
+   "origin": "filings.xbrl.org",
+   "sha256": "f8695f7f47d22afa7e39c336f8aab3a0aac633cf82cfacf33f39c2a9238195b0",
+   "link": "https://filings.xbrl.org/959800TZHQRUSH1ESL13/2025-12-31/ESEF/GB/0/959800TZHQRUSH1ESL13-2025-12-31/reports/ixbrlviewer.html",
+   "figures": 13
+  }
+ },
+ "documents": {
+  "969500AQW31GYO8JZD66-2024-12-31-ESEF-FR-0": {
+   "kind": "filing report",
+   "sha256": "3e5fbdef1de4640bfc54052be77a4061e5f8045bb978be4f1598fa57cf9e4b4e",
+   "link": "https://filings.xbrl.org/969500AQW31GYO8JZD66/2024-12-31/ESEF/FR/0/afklm-2024-12-31-fr/reports/afklm-2024-12-31-fr.xhtml",
+   "figures": 4
+  },
+  "969500AQW31GYO8JZD66-2022-12-31-ESEF-FR-0": {
+   "kind": "filing report",
+   "sha256": "eb5f825474c13acd282cd412eb9957b3858f821ad975e7aa99586bca0070823f",
+   "link": "https://filings.xbrl.org/969500AQW31GYO8JZD66/2022-12-31/ESEF/FR/0/afklm-2022-12-31-fr/reports/afklm-2022-12-31-fr.xhtml",
+   "figures": 1
+  },
+  "afkl-2025-consolidated-statements-en": {
+   "kind": "report supplied by Imane",
+   "file": "2025.12-air-france-klm-consolidated-financial-statements-and-notes.pdf",
+   "sha256": "aaba4d2512928f6cf9efde24af67b05619459f1d0f891b42bbb084473d7d550f",
+   "figures": 1
+  },
+  "213800SB6EOB8SSK9W63-2025-12-31-ESEF-FI-0": {
+   "kind": "filing report",
+   "sha256": "24497cdd2ccb0d489089a3360630212dc87e00ea1b6ccfc5fcd428464318d4c6",
+   "link": "https://filings.xbrl.org/213800SB6EOB8SSK9W63/2025-12-31/ESEF/FI/0/213800SB6EOB8SSK9W63-2025-12-31-1-en/reports/213800SB6EOB8SSK9W63-2025-12-31-1-en.xhtml",
+   "figures": 2
+  },
+  "959800TZHQRUSH1ESL13-2025-12-31-ESEF-GB-0": {
+   "kind": "filing report",
+   "sha256": "f8695f7f47d22afa7e39c336f8aab3a0aac633cf82cfacf33f39c2a9238195b0",
+   "link": "https://filings.xbrl.org/959800TZHQRUSH1ESL13/2025-12-31/ESEF/GB/0/959800TZHQRUSH1ESL13-2025-12-31/reports/959800TZHQRUSH1ESL13-2025-12-31-T01.html",
+   "figures": 2
+  }
+ },
+ "ai": {
+  "drafting": {
+   "provider": "deepseek",
+   "model": "deepseek-flash",
+   "prompt_version": "draft-v7",
+   "calls": 2,
+   "input_tokens": 27057,
+   "output_tokens": 3808,
+   "cost_usd": null,
+   "recorded_at": "2026-11-09T18:31:01+00:00"
+  },
+  "extraction": [
+   {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "prompt_version": "extract-v4",
+    "figures": 10
+   }
+  ],
+  "events": [
+   {
+    "model": "deepseek-flash",
+    "prompt_version": "events-v2"
+   }
+  ]
+ },
+ "fact_sheet_fingerprint": "e4bef16a53864ba8de7fa3a30ee3634ea085fe7a77d75f273ec3c96ebd2efb5d",
+ "commentary_matches_figures": true,
+ "analyst": {
+  "edited_sentences": 0,
+  "sentences_with_untraced_figures": 0,
+  "analyst_view": false,
+  "reviews_in_session_not_saved": 0
+ },
+ "figures_traced": 96
+}

@@ -143,7 +143,10 @@ def _run(con, sheet: FactSheet) -> dict | None:
 
 
 def _events(con, sheet: FactSheet) -> list[dict]:
-    cols = ["event_id", "topic", "title", "summary", "quote", "location", "document", "status"]
+    cols = [
+        "event_id", "topic", "title", "summary", "quote", "location", "document", "status",
+        "model", "prompt_version",
+    ]  # fmt: skip
     rows = con.execute(
         f"SELECT {', '.join(cols)} FROM events WHERE issuer = ? AND fiscal_year = ? "
         "ORDER BY event_id",
@@ -230,11 +233,18 @@ def kpi_cards(lib: Library, ts: dict, config: dict | None = None) -> list[dict]:
     return out
 
 
-def kpi_table(lib: Library, ts: dict, config: dict | None = None) -> dict:
+def kpi_table(lib: Library, ts: dict, config: dict | None = None, part: str = "both") -> dict:
+    """The four-year table. `part`: "credit" (the rows for every company, PDF page 1),
+    "operating" (the airline or airport rows, PDF page 2) or "both" (the app)."""
     config = config or load_app_config()
     years = years_shown(lib, ts, config)
     rows = []
-    for metric in config["kpi_table"]["all"] + config["kpi_table"].get(ts["type"], []):
+    metrics = {
+        "credit": config["kpi_table"]["all"],
+        "operating": config["kpi_table"].get(ts["type"], []),
+        "both": config["kpi_table"]["all"] + config["kpi_table"].get(ts["type"], []),
+    }[part]
+    for metric in metrics:
         cells = [cell(lib, key(ts["issuer"], metric, y)) for y in years]
         if all(c.status == "missing" for c in cells):
             continue
@@ -272,6 +282,39 @@ def commentary_ids(ts: dict) -> list[str]:
         for s in section["sentences"]:
             ids += [f["id"] for f in s["facts"]]
     return list(dict.fromkeys(ids))
+
+
+def peer_table_for(lib: Library, ts: dict) -> dict:
+    """The company's own peer group in its peer year (the tearsheet's peer table)."""
+    from tearsheet.narrative.factsheet import load_narrative
+    from tearsheet.render.library import peer_groups, peer_table
+
+    groups = peer_groups()
+    own = next(
+        g for g in load_narrative()["peer_groups"] if ts["issuer"] in groups["groups"][g]["members"]
+    )
+    return peer_table(lib, own, ts["peer_year"], groups)
+
+
+def page_refs(lib: Library, ts: dict, config: dict | None = None) -> list[dict]:
+    """Every figure the tearsheet shows (app page and PDF), as references for source cards:
+    {"key": library key} or {"fid": fact sheet id}."""
+    config = config or load_app_config()
+    refs: list[dict] = []
+    for kpi in kpi_cards(lib, ts, config):
+        if kpi["cell"].key:
+            refs.append({"key": kpi["cell"].key})
+        if kpi["change_id"]:
+            refs.append({"fid": kpi["change_id"]})
+    for row in kpi_table(lib, ts, config)["rows"]:
+        refs += [{"key": c.key} for c in row["cells"] if c.key]
+    for chart in config["charts"]:
+        refs += [{"key": p["key"]} for p in chart_series(lib, ts, chart, config)]
+    for row in peer_table_for(lib, ts)["rows"]:
+        refs += [{"key": c["key"]} for c in row["cells"].values() if c.get("key")]
+    refs += [{"fid": fid} for fid in commentary_ids(ts)]
+    unique = {repr(sorted(r.items())): r for r in refs}
+    return list(unique.values())
 
 
 def live_record(db_path: Path, issuer_id: str, fiscal_year: int) -> dict:

@@ -12,6 +12,9 @@
                  so `all` and `report` replay them for free). --issuer limits the AI calls
     samples      write the pre-built tearsheets the app's demo mode reads (samples/), from the
                  database: every figure with its source, and the 18 drafted tearsheets
+    export       the two-page PDF, the Excel backup and the run manifest of each pre-built
+                 tearsheet, into exports/ (--issuer, --year to pick one; --check recalculates
+                 every workbook with LibreOffice and compares it with the app's values)
     app          open the web app (demo mode by default; live mode needs the database)
     llm-check    send one tiny request to confirm config/models.yaml and the API key work
     add-package  convert and register an ESEF package (.zip) downloaded by hand:
@@ -48,6 +51,7 @@ def main() -> None:
             "extract",
             "draft",
             "samples",
+            "export",
             "app",
             "llm-check",
             "add-package",
@@ -58,6 +62,10 @@ def main() -> None:
     parser.add_argument("--issuer", help="issuer id(s), e.g. afkl or afkl,easyjet")
     parser.add_argument("--origin", help="add-package: where the package came from")
     parser.add_argument("--url", help="add-package: the page or link it was downloaded from")
+    parser.add_argument("--year", type=int, help="export: the fiscal year")
+    parser.add_argument("--out", type=Path, help="export: folder (default exports/)")
+    parser.add_argument("--only", choices=["pdf", "excel"], help="export: one kind of file")
+    parser.add_argument("--check", action="store_true", help="export: recalculate workbooks")
     parser.add_argument("--downloaded-on", type=date.fromisoformat, default=date.today())
     args = parser.parse_args()
 
@@ -77,6 +85,25 @@ def main() -> None:
         lib, written = write_samples()
         print(f"samples: {len(lib.figures)} figures, {len(written)} tearsheets (samples/)")
         return
+
+    if args.command == "export":
+        from tearsheet.render import export
+
+        rows = export.run(args.issuer, args.year, args.out or export.EXPORTS, args.only,
+                          args.check)  # fmt: skip
+        failed = 0
+        for r in rows:
+            line = f"{r['tearsheet']:16} PDF at {r['font_size']}pt"
+            if r["view_truncated"]:
+                line += " (analyst view cut: continued in the app)"
+            if "mismatches" in r:
+                ok = not r["mismatches"] and r["metrics_checked"]
+                failed += not ok
+                line += (f"  Excel: {r['metrics_checked']} metrics and {r['medians_checked']} "
+                         f"medians recalculated, {'all equal' if ok else 'MISMATCH'}")  # fmt: skip
+            print(line)
+        print(f"{len(rows)} exported to {args.out or export.EXPORTS}")
+        raise SystemExit(1 if failed else 0)
 
     if args.command == "app":
         import subprocess

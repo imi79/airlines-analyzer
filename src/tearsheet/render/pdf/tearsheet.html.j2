@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ name }}, {{ period }}: credit tearsheet</title>
+<style>:root { --fs: {{ fs }}pt; }</style>
+</head>
+<body>
+
+{% macro sentences(items) -%}
+{% for s in items %}<p>{{ s | safe }}</p>{% endfor %}
+{%- endmacro %}
+
+{% macro section(sec, id) -%}
+<h2 id="{{ id }}">{{ sec.title }}</h2>
+{% if sec.note %}<p class="draft-note">{{ sec.note }}</p>{% endif %}
+<div class="commentary">{{ sentences(sec.sentences) }}</div>
+{%- endmacro %}
+
+{% macro figures(t) -%}
+<table>
+  <tr><th>{{ t.first }}</th>{% for l in t.labels %}<th>{{ l }}</th>{% endfor %}</tr>
+  {% for r in t.rows %}
+  <tr><td>{{ r.label }}</td>{% for c in r.cells %}<td class="{{ c.cls }}">{{ c.text | safe }}</td>{% endfor %}</tr>
+  {% endfor %}
+</table>
+{%- endmacro %}
+
+<!-- Page 1: header, snapshot, KPI table, charts, credit metrics -->
+<section class="page" id="page1">
+  <header>
+    <div>
+      <h1>{{ name }}</h1>
+      <div class="sub"><span class="period">{{ period }}</span> · {{ kind }} · reporting currency {{ currency }} · peer group: {{ peer_group }}</div>
+    </div>
+    <div class="right">Credit tearsheet<br>{{ exported }}{% if prepared_by %}<br>Analyst: {{ prepared_by }}{% endif %}</div>
+  </header>
+
+  <h2 id="snapshot">{{ snapshot.title }}</h2>
+  {% if snapshot.note %}<p class="draft-note">{{ snapshot.note }}</p>{% endif %}
+  <div class="snapshot">{{ sentences(snapshot.sentences) }}</div>
+
+  <div class="row">
+    <div class="col-wide">
+      <h2 id="kpi">Key figures</h2>
+      {{ figures(kpi) }}
+    </div>
+    <div class="col">
+      {% for c in charts %}
+      <h2>{{ c.title }}</h2>
+      <div class="chart">{% if c.img %}<img src="{{ c.img }}" alt="{{ c.title }} chart">{% else %}<p class="draft-note">No verified figures to chart.</p>{% endif %}</div>
+      {% endfor %}
+    </div>
+  </div>
+
+  {{ section(credit, "credit") }}
+
+  <div class="defs-p1" id="definitions1">
+    {% for label, text in definitions_p1 %}<p><b>{{ label }}</b>: {{ text }}</p>{% endfor %}
+  </div>
+</section>
+
+<!-- Page 2: operating metrics, peers, liquidity, watch items, analyst view, footnotes -->
+<section class="page" id="page2">
+  <div class="row">
+    <div class="col">
+      <h2 id="operating">Operating metrics</h2>
+      {{ figures(operating_table) }}
+      {% if operating.sentences %}<div class="commentary" style="margin-top:1.5mm">{{ sentences(operating.sentences) }}</div>{% endif %}
+    </div>
+    <div class="col-wide">
+      <h2 id="peers">Peers: {{ peers.label }}, peer year {{ peers.peer_year }}</h2>
+      {{ figures(peers.table) }}
+      {% if peer_text.sentences %}<div class="commentary" style="margin-top:1.5mm">{{ sentences(peer_text.sentences) }}</div>{% endif %}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">{{ section(liquidity, "liquidity") }}</div>
+    <div class="col">
+      <h2 id="watch">{{ watch.title }}</h2>
+      {% if watch.note %}<p class="draft-note">{{ watch.note }}</p>{% endif %}
+      <ul class="watch">{% for s in watch.sentences %}<li>{{ s | safe }}</li>{% endfor %}</ul>
+    </div>
+  </div>
+
+  <h2 id="view">Analyst view</h2>
+  <div class="view">
+    {% if view %}{% for p in view %}<p>{{ p }}</p>{% endfor %}{% else %}<p class="empty">Written by the analyst; never drafted by the AI.</p>{% endif %}
+  </div>
+
+  <footer id="footnotes">
+    <div class="defs">
+      {% for label, text in definitions %}<p><b>{{ label }}</b>: {{ text }}</p>{% endfor %}
+    </div>
+    <div class="notes">
+      {% for n in notes %}<p>{{ n | safe }}</p>{% endfor %}
+    </div>
+    <div class="links">
+      <p><b>Sources</b>: {% for f in filings %}{% if f.link %}<a href="{{ f.link }}">{{ f.label }}</a>{% else %}{{ f.label }}{% endif %}{% if not loop.last %} · {% endif %}{% endfor %}. Peers' filings and every fingerprint: Excel backup, Manifest sheet.</p>
+      <p>{{ manifest_line }}</p>
+    </div>
+    <p class="disclaimer">Draft prepared with AI assistance. Figures computed from regulatory filings and checked automatically. Not investment advice.</p>
+  </footer>
+  <div id="end"></div>
+</section>
+</body>
+</html>

@@ -154,3 +154,9 @@ def test_ratios_to_a_very_small_debt_are_not_meaningful(lib):
     assert row["count"] == 2
     card = sources.figure_card(lib, k)
     assert any("very small" in line for line in card["lines"])
+
+
+def test_filing_links_are_full_addresses(lib):
+    """Every link to a filing opens on its own (the database stores them relative to the site)."""
+    links = [rec[u] for rec in lib.filings.values() for u in ("viewer_url", "report_url") if rec[u]]
+    assert links and all(link.startswith("https://filings.xbrl.org/") for link in links)

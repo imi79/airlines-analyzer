@@ -1,7 +1,9 @@
 # M6 plan: the tearsheet as a two-page PDF and an Excel backup
 
-Status: **draft, waiting for Imane's approval.** No code until the plan is approved (working
-rules). Starting point: `main` at the M5 close, 480 tests green.
+Status: **approved by Imane** (2026-11-10) with every recommendation: 1. text steps down in
+half points to a floor of 7.5 point; 2. a fixed analyst view box of about eight lines; 3. flagged
+text printed with a marker and a footnote; 4. Imane opens one workbook in Microsoft Excel
+(optional); 5. all 18 PDFs kept in `docs/m6/pdf/`. Built in the same session, on `m6-exports`.
 
 ## What M6 is for
 

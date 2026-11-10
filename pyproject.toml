@@ -8,10 +8,13 @@ dependencies = [
     "arelle-release>=2.47.3",
     "duckdb>=1.1",
     "httpx>=0.27",
+    "jinja2>=3.1",
     "pandas>=2.2",
     "pydantic>=2.14.2",
     "pyyaml>=6.0",
     "streamlit>=1.67",
+    "vl-convert-python>=1.8",
+    "weasyprint>=66",
     "xlsxwriter>=3.2",
 ]
 

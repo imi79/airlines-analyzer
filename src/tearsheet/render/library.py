@@ -23,6 +23,7 @@ import duckdb
 import yaml
 
 from tearsheet.config import CONFIG, ROOT, load_issuers
+from tearsheet.ingest.client import FILINGS_BASE
 from tearsheet.metrics.engine import ITEMS, labels, load_catalog
 from tearsheet.metrics.peers import fiscal_label, months_from_december, peer_year
 from tearsheet.narrative import render
@@ -69,13 +70,32 @@ class Concepts:
         unit = {k: "amount" for k in lines}
         unit |= {k: v["unit"] for k, v in items.items()}
         unit |= {k: v["unit"] for k, v in catalog.items()}
-        definition = {k: " ".join(str(v.get("definition") or "").split()) for k, v in lines.items()}
+        definition = {k: _line_definition(v) for k, v in lines.items()}
         definition |= {
             k: " ".join(str(v.get("definition") or "").split()) for k, v in items.items()
         }
         definition |= {k: " ".join(str(v["definition"]).split()) for k, v in catalog.items()}
         better = {k: v.get("higher_is_better") for k, v in catalog.items()}
         return cls(labels(catalog), unit, definition, better)
+
+
+STATEMENTS = {
+    "income": "the income statement",
+    "balance": "the balance sheet",
+    "cash_flow": "the cash flow statement",
+    "cashflow": "the cash flow statement",
+}
+
+
+def _line_definition(spec: dict) -> str:
+    """A statement line is defined by where it is reported: "As reported in the income
+    statement (IFRS tag ifrs-full:Revenue)"."""
+    if spec.get("definition"):
+        return " ".join(str(spec["definition"]).split())
+    where = STATEMENTS.get(spec.get("statement", ""), "the financial statements")
+    rules = spec.get("rules") or []
+    tag = rules[0]["concepts"][0] if rules and rules[0].get("concepts") else None
+    return f"As reported in {where}" + (f" (IFRS tag {tag})." if tag else ".")
 
 
 # --- The library --------------------------------------------------------------------------------
@@ -221,6 +241,9 @@ def _filings(con) -> dict[str, dict]:
     for row in rows:
         rec = dict(zip(cols, row, strict=True))
         rec["period_end"] = str(rec["period_end"])
+        for url in ("json_url", "viewer_url", "report_url", "package_url"):
+            if rec[url] and rec[url].startswith("/"):  # stored relative to the filings site
+                rec[url] = FILINGS_BASE + rec[url]
         out[rec.pop("filing_id")] = rec
     return out
 

@@ -57,3 +57,22 @@ charts:
 
 # The analyst's name recorded with approvals and edits in live mode.
 analyst: Imane
+
+# Short names for narrow table headings (PDF peer table).
+short_names:
+  afkl: AF-KLM
+  iag: IAG
+  finnair: Finnair
+  easyjet: easyJet
+  norwegian: Norwegian
+  wizz: Wizz Air
+  adp: ADP
+  aena: Aena
+  vie: Vienna
+
+# The PDF tearsheet (M6, decision 0020): body text sizes tried in turn until it fits two
+# pages, and the analyst view's fixed box.
+pdf:
+  font_sizes: [8.5, 8.0, 7.5]
+  analyst_view_max_lines: 8
+  analyst_view_chars_per_line: 110  # at the first size; more fit at smaller sizes

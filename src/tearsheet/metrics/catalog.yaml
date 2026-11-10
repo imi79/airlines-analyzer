@@ -5,6 +5,10 @@
 #   passenger-km, shown in cents), per_passenger (reporting currency per passenger).
 # higher_is_better: colours peer views and decides the rank (true, false, or null = not ranked).
 # definition: one line, reused as the tearsheet footnote.
+# excel: the metric as a spreadsheet formula (M6, the Excel backup), on the figures the code
+#   used for that company and year: names are lines or metrics; `name?` is left out when the
+#   company has no such line; `a | b` is whichever of the two the code used; `sum()` adds every
+#   input (company-specific lists such as cash-like investments); `name@prior` is the year before.
 # Metrics using figures read from the report text (M3) are verified only if those figures
 # passed the grounding checks or were reviewed by Imane.
 # The formulas are in metrics/formulas.py under the same id. These definitions differ from
@@ -29,6 +33,7 @@ metrics:
   ebitda:
     label: EBITDA
     unit: amount
+    excel: "operating_profit - share_of_associates? + dda"
     higher_is_better: true
     definition: >-
       Operating profit + depreciation, amortisation and impairment, excluding the share of
@@ -36,16 +41,19 @@ metrics:
   ebitda_margin:
     label: EBITDA margin
     unit: pct
+    excel: "ebitda / revenue"
     higher_is_better: true
     definition: EBITDA ÷ revenue.
   total_debt:
     label: Total debt
     unit: amount
+    excel: "sum()"
     higher_is_better: null
     definition: Borrowings + lease liabilities, current and non-current.
   cash_like:
     label: Cash and cash-like investments
     unit: amount
+    excel: "sum()"
     higher_is_better: true
     definition: >-
       Cash and cash equivalents + the short-term investments the company itself deducts in
@@ -53,21 +61,25 @@ metrics:
   net_debt:
     label: Net debt
     unit: amount
+    excel: "total_debt - cash_like"
     higher_is_better: null
     definition: Total debt − cash and cash-like investments. Negative means net cash.
   net_leverage:
     label: Net leverage
     unit: x
+    excel: "net_debt / ebitda"
     higher_is_better: false
     definition: Net debt ÷ EBITDA. Not meaningful (n.m.) when EBITDA is zero or negative.
   gross_leverage:
     label: Gross leverage
     unit: x
+    excel: "total_debt / ebitda"
     higher_is_better: false
     definition: Total debt ÷ EBITDA. n.m. when EBITDA is zero or negative.
   interest_coverage:
     label: Interest coverage
     unit: x
+    excel: "ebitda / (finance_costs | interest_expense | interest_paid)"
     higher_is_better: true
     definition: >-
       EBITDA ÷ interest expense (lease interest included); interest paid where interest
@@ -76,52 +88,62 @@ metrics:
   ffo:
     label: FFO
     unit: amount
+    excel: "ebitda - interest_paid - tax_paid"
     higher_is_better: true
     definition: EBITDA − interest paid − income tax paid.
   ffo_to_debt:
     label: FFO to debt
     unit: pct
+    excel: "ffo / total_debt"
     higher_is_better: true
     definition: FFO ÷ total debt.
   fcf:
     label: Free cash flow
     unit: amount
+    excel: "cfo - capex"
     higher_is_better: true
     definition: Cash from operations − purchases of PP&E and intangibles (cash paid).
   fcf_to_debt:
     label: FCF to debt
     unit: pct
+    excel: "fcf / total_debt"
     higher_is_better: true
     definition: Free cash flow ÷ total debt.
   capex_intensity:
     label: Capex intensity
     unit: pct
+    excel: "capex / revenue"
     higher_is_better: null
     definition: Purchases of PP&E and intangibles ÷ revenue.
   cash_liquidity:
     label: Cash liquidity (partial)
     unit: amount
+    excel: "cash_like"
     higher_is_better: true
     definition: >-
       Cash and cash-like investments, without undrawn facilities (see Liquidity).
   cash_liquidity_to_revenue:
     label: Cash liquidity to revenue (partial)
     unit: pct
+    excel: "cash_liquidity / revenue"
     higher_is_better: true
     definition: Cash liquidity ÷ revenue, without undrawn facilities.
   liquidity:
     label: Liquidity
     unit: amount
+    excel: "cash_like + undrawn_facilities"
     higher_is_better: true
     definition: Cash + cash-like investments + undrawn committed facilities.
   liquidity_to_revenue:
     label: Liquidity to revenue
     unit: pct
+    excel: "liquidity / revenue"
     higher_is_better: true
     definition: Liquidity ÷ revenue.
   advance_ticket_cover:
     label: Advance ticket cover
     unit: pct
+    excel: "contract_liabilities / cash_like"
     higher_is_better: false
     applies_to: [airline]
     definition: >-
@@ -132,71 +154,83 @@ metrics:
   fuel_share_of_costs:
     label: Fuel share of costs
     unit: pct
+    excel: "fuel_cost / (revenue - operating_profit)"
     higher_is_better: null
     applies_to: [airline]
     definition: Fuel cost ÷ (revenue − operating profit).
   passengers:
     label: Passengers
     unit: count
+    excel: "passengers"
     higher_is_better: true
     definition: Passengers carried (airlines) or handled (airports), scope defined per company.
   ask:
     label: ASK
     unit: count
+    excel: "ask"
     higher_is_better: true
     applies_to: [airline]
     definition: Available seat kilometres.
   rpk:
     label: RPK
     unit: count
+    excel: "rpk"
     higher_is_better: true
     applies_to: [airline]
     definition: Revenue passenger kilometres.
   load_factor:
     label: Load factor
     unit: pct
+    excel: "rpk / ask"
     higher_is_better: true
     applies_to: [airline]
     definition: RPK ÷ ASK.
   passenger_yield:
     label: Passenger yield
     unit: per_km
+    excel: "passenger_revenue / rpk"
     higher_is_better: true
     applies_to: [airline]
     definition: Passenger revenue ÷ RPK.
   rask:
     label: RASK
     unit: per_km
+    excel: "revenue / ask"
     higher_is_better: true
     applies_to: [airline]
     definition: Revenue ÷ ASK.
   cask:
     label: CASK
     unit: per_km
+    excel: "(revenue - operating_profit) / ask"
     higher_is_better: false
     applies_to: [airline]
     definition: (Revenue − operating profit) ÷ ASK.
   cask_ex_fuel:
     label: CASK ex-fuel
     unit: per_km
+    excel: "(revenue - operating_profit - fuel_cost) / ask"
     higher_is_better: false
     applies_to: [airline]
     definition: (Revenue − operating profit − fuel cost) ÷ ASK.
   fleet:
     label: Fleet
     unit: count
+    excel: "fleet_count"
     higher_is_better: null
     applies_to: [airline]
     definition: Aircraft in the fleet at year end.
   fleet_age:
     label: Fleet average age
     unit: years
+    excel: "fleet_age"
     higher_is_better: false
     applies_to: [airline]
     definition: Average age of the fleet at year end.
   fuel_hedge_ratio:
     label: Fuel hedge ratio
     unit: pct
+    excel: "fuel_hedge_ratio"
     higher_is_better: null
     applies_to: [airline]
     definition: Share of the next twelve months' fuel needs hedged.
@@ -205,12 +239,14 @@ metrics:
   traffic_growth:
     label: Traffic growth
     unit: pct
+    excel: "passengers / passengers@prior - 1"
     higher_is_better: true
     applies_to: [airport]
     definition: Passengers ÷ prior-year passengers − 1.
   revenue_per_passenger:
     label: Revenue per passenger
     unit: per_passenger
+    excel: "revenue / passengers"
     higher_is_better: true
     applies_to: [airport]
     definition: >-
@@ -219,12 +255,14 @@ metrics:
   aero_revenue_per_passenger:
     label: Aeronautical revenue per passenger
     unit: per_passenger
+    excel: "aero_revenue / passengers"
     higher_is_better: true
     applies_to: [airport]
     definition: Aeronautical segment revenue ÷ passengers.
   non_aero_share:
     label: Non-aeronautical share
     unit: pct
+    excel: "(revenue - aero_revenue) / revenue"
     higher_is_better: true
     applies_to: [airport]
     definition: >-

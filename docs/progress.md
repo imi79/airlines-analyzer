@@ -106,3 +106,23 @@ tearsheet samples`. Results: `docs/m5/`. Walkthrough: `docs/m5/walkthrough.md`. 
   live redraft through the existing drafting and verifier. Ratios to a very small debt shown
   as n.m., as in the M4 fact sheets. 480 tests, 99 new. No AI tokens spent
 
+## M6 · Exports
+
+Branch: `m6-exports`. Plan: `docs/m6/plan.md`. Run: `uv run tearsheet export` (add `--check` to
+recalculate every workbook with LibreOffice), or the Export buttons on the app's Tearsheet page.
+Results: `docs/m6/`. Walkthrough: `docs/m6/walkthrough.md`. Decision 0020. **Status: done.**
+
+- [x] PDF fits two pages for every v1 issuer, with no overflow: 18 of 18, every section on its
+      page, no table out of its column and no hidden lines, measured on the laid-out page, also
+      with a full analyst view and an edited sentence (`tests/test_pdf.py`); 16 at 8.5 point,
+      two at 8.0. All 18 in `docs/m6/pdf/`
+- [x] Excel recalculates to the app's values: 18 of 18 workbooks recalculated by LibreOffice,
+      2,044 of 2,044 metric values and 195 of 195 medians equal (`docs/m6/excel_check.md`);
+      every formula lives in `catalog.yaml`. Imane's check in Microsoft Excel is optional
+      (`docs/m6/afkl_FY2025.xlsx`)
+- [x] Manifest lists filing hashes, model and prompt version: every filing and report behind
+      every figure with its SHA-256, the drafting, extraction and events models and prompt
+      versions, the code version (`tests/test_manifest.py`)
+- Also fixed: filing links in the app (relative addresses since M5). 533 tests, 52 new. No AI
+  tokens spent
+

@@ -156,3 +156,24 @@ def test_a_link_opens_the_named_tearsheet(demo):
     assert "Apr 2025 to Mar 2026" in at.markdown[0].value or any(
         "Apr 2025 to Mar 2026" in m.value for m in at.markdown
     )
+
+
+def test_demo_export_includes_the_session_and_saves_nothing(demo):
+    """Demo mode: the PDF and Excel carry the visitor's analyst view; no file is written."""
+    from tearsheet.render.export import EXPORTS
+
+    before = set(EXPORTS.glob("*")) if EXPORTS.exists() else set()
+    at = run(("vie", 2025))
+    form = [t for t in at.text_area if t.label == "Your view"][0]
+    form.input("Stable credit; liquidity ample.")
+    labels = [b.label for b in at.button]
+    at.button[labels.index("Save the analyst view")].click().run()
+    labels = [b.label for b in at.button]
+    at.button[labels.index("Prepare the PDF and the Excel backup")].click().run()
+    assert not at.exception, [e.value for e in at.exception]
+    done = at.session_state["export-vie-2025"]
+    assert done.pdf.startswith(b"%PDF") and done.xlsx[:2] == b"PK"
+    assert done.manifest["mode"] == "demo" and done.manifest["analyst"]["analyst_view"]
+    assert len(at.get("download_button")) == 3
+    after = set(EXPORTS.glob("*")) if EXPORTS.exists() else set()
+    assert after == before
