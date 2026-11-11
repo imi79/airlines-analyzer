@@ -1,0 +1,114 @@
+{
+ "answer": {
+  "tables": [
+   {
+    "basis": "contractual_cash_flows",
+    "caption": "NOK million",
+    "comment": "IFRS 7 contractual undiscounted cash flow table for borrowings excluding lease liabilities; no total column is printed for the borrowings row.",
+    "currency": "NOK",
+    "fiscal_year": 2025,
+    "header": "Less than 1 year | Between 1 and 2 years | Between 2 and 3 years | Between 3 and 5 years | Over 5 years",
+    "layer": "borrowings",
+    "location": "page 129",
+    "rows": [
+     {
+      "columns": [
+       {
+        "label": "Less than 1 year",
+        "printed_value": "2,293",
+        "quote": "Borrowings 2,293 531 467 1,044 1,513"
+       },
+       {
+        "label": "Between 1 and 2 years",
+        "printed_value": "531",
+        "quote": "Borrowings 2,293 531 467 1,044 1,513"
+       },
+       {
+        "label": "Between 2 and 3 years",
+        "printed_value": "467",
+        "quote": "Borrowings 2,293 531 467 1,044 1,513"
+       },
+       {
+        "label": "Between 3 and 5 years",
+        "printed_value": "1,044",
+        "quote": "Borrowings 2,293 531 467 1,044 1,513"
+       },
+       {
+        "label": "Over 5 years",
+        "printed_value": "1,513",
+        "quote": "Borrowings 2,293 531 467 1,044 1,513"
+       }
+      ],
+      "name": "Borrowings",
+      "total": {
+       "label": "Total",
+       "printed_value": "5,848",
+       "quote": "Borrowings 2,293 531 467 1,044 1,513"
+      }
+     }
+    ],
+    "scale": "million"
+   },
+   {
+    "basis": "principal",
+    "caption": "NOK million",
+    "comment": "Parent company nominal cash flow maturity table for borrowings at 31 December 2025; no total column is printed.",
+    "currency": "NOK",
+    "fiscal_year": 2025,
+    "header": "Less than 1 year | Between 1 and 2 years | Between 2 and 3 years | Over 3 years",
+    "layer": "borrowings",
+    "location": "page 187",
+    "rows": [
+     {
+      "columns": [
+       {
+        "label": "Less than 1 year",
+        "printed_value": "1,495",
+        "quote": "Borrowings 1,495 – 23 –"
+       },
+       {
+        "label": "Between 1 and 2 years",
+        "printed_value": "–",
+        "quote": "Borrowings 1,495 – 23 –"
+       },
+       {
+        "label": "Between 2 and 3 years",
+        "printed_value": "23",
+        "quote": "Borrowings 1,495 – 23 –"
+       },
+       {
+        "label": "Over 3 years",
+        "printed_value": "–",
+        "quote": "Borrowings 1,495 – 23 –"
+       }
+      ],
+      "name": "Borrowings",
+      "total": {
+       "label": "Total",
+       "printed_value": "1,518",
+       "quote": "Borrowings 1,495 – 23 –"
+      }
+     }
+    ],
+    "scale": "million"
+   }
+  ]
+ },
+ "label": "norwegian FY2025 maturity 549300IEUH2FEM2Y6B51-2025-12-31-ESEF-NO-0",
+ "recorded_at": "2026-11-11T18:42:46+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "maturity-v1",
+  "provider": "deepseek",
+  "system_sha256": "bb4eaabcf33095a3d93d017b6ab2d4e02d28d25087ba47512d12c7d8d195de5e",
+  "tool_sha256": "15dfbcb11b70f61e4b18c666e5d49a268139a82cbb82be12b0f2eb026a7b30af",
+  "user_sha256": "ddd2b6d5e99ec3540f338bad51bb36c897c05f6539b8503710a60668fab6c04d"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 7896,
+  "output_tokens": 745
+ }
+}

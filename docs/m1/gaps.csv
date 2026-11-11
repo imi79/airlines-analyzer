@@ -63,7 +63,7 @@ adp,2023,revenue_per_passenger,"n.m.: group revenue includes TAV Airports and th
 adp,2023,short_term_debt_cover,Liquidity: Undrawn committed credit facilities not available for FY2023,True
 adp,2023,short_term_deposits,Not reported by this issuer.,False
 adp,2023,traffic_growth,Passengers not available for FY2023,True
-adp,2024,borrowings_due_2y,No checked maturity table of borrowings for FY2024,True
+adp,2024,borrowings_due_2y,the maturity table does not show the second year on its own,True
 adp,2024,borrowings_total,Reported as current and non-current parts only.,False
 adp,2024,current_investments,Not reported by this issuer.,False
 adp,2024,debt_including_leases,Not reported by this issuer.,False
@@ -80,7 +80,7 @@ adp,2024,revenue_per_passenger,"n.m.: group revenue includes TAV Airports and th
 adp,2024,short_term_debt_cover,Liquidity: Undrawn committed credit facilities not available for FY2024,True
 adp,2024,short_term_deposits,Not reported by this issuer.,False
 adp,2024,traffic_growth,Passengers not available for FY2023,True
-adp,2025,borrowings_due_2y,No checked maturity table of borrowings for FY2025,True
+adp,2025,borrowings_due_2y,the maturity table does not show the second year on its own,True
 adp,2025,borrowings_total,Reported as current and non-current parts only.,False
 adp,2025,current_investments,Not reported by this issuer.,False
 adp,2025,debt_including_leases,Not reported by this issuer.,False
@@ -139,7 +139,6 @@ aena,2023,other_current_financial_assets,Not reported by this issuer.,False
 aena,2023,restricted_cash,Not reported by this issuer.,False
 aena,2023,revenue_per_passenger,"n.m.: group revenue includes London Luton and the Brazilian airports, while passengers are the Spanish network only.",False
 aena,2023,short_term_deposits,Not reported by this issuer.,False
-aena,2024,borrowings_due_2y,No checked maturity table of borrowings for FY2024,True
 aena,2024,borrowings_total,Reported as current and non-current parts only.,False
 aena,2024,current_investments,Not reported by this issuer.,False
 aena,2024,debt_including_leases,Not reported by this issuer.,False
@@ -155,14 +154,12 @@ aena,2024,restricted_cash,Not reported by this issuer.,False
 aena,2024,revenue_per_passenger,"n.m.: group revenue includes London Luton and the Brazilian airports, while passengers are the Spanish network only.",False
 aena,2024,short_term_debt_cover,Liquidity: Undrawn committed credit facilities not available for FY2024,True
 aena,2024,short_term_deposits,Not reported by this issuer.,False
-aena,2025,borrowings_due_2y,No checked maturity table of borrowings for FY2025,True
 aena,2025,borrowings_total,Reported as current and non-current parts only.,False
 aena,2025,current_investments,Not reported by this issuer.,False
 aena,2025,debt_including_leases,Not reported by this issuer.,False
 aena,2025,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2025,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 aena,2025,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
-aena,2025,liquidity_to_borrowings_due_2y,Borrowings due within two years: No checked maturity table of borrowings for FY2025,True
 aena,2025,non_aero_share,"n.m.: group revenue includes London Luton and the Brazilian airports, while the aeronautical revenue is the Spanish network's segment only.",False
 aena,2025,other_cash_like,Not reported by this issuer.,False
 aena,2025,restricted_cash,Not reported by this issuer.,False
@@ -249,7 +246,6 @@ afkl,2023,rpk,RPK not available for FY2023,True
 afkl,2023,short_term_debt_cover,Liquidity: Undrawn committed credit facilities not available for FY2023,True
 afkl,2023,short_term_deposits,Not reported by this issuer.,False
 afkl,2024,ask,ASK not available for FY2024,True
-afkl,2024,borrowings_due_2y,No checked maturity table of borrowings for FY2024,True
 afkl,2024,borrowings_total,Reported as current and non-current parts only.,False
 afkl,2024,cask,ASK not available for FY2024,True
 afkl,2024,cask_ex_fuel,Fuel cost not available for FY2024,True
@@ -259,7 +255,6 @@ afkl,2024,fuel_cost,Fuel cost not tagged separately; to be extracted from the no
 afkl,2024,fuel_hedge_ratio,Fuel hedge ratio not available for FY2024,True
 afkl,2024,fuel_share_of_costs,Fuel cost not available for FY2024,True
 afkl,2024,lease_liabilities_total,Reported as current and non-current parts only.,False
-afkl,2024,liquidity_to_borrowings_due_2y,Borrowings due within two years: No checked maturity table of borrowings for FY2024,True
 afkl,2024,load_factor,RPK not available for FY2024,True
 afkl,2024,passenger_yield,Passenger revenue not available for FY2024,True
 afkl,2024,rask,ASK not available for FY2024,True
@@ -267,7 +262,6 @@ afkl,2024,restricted_cash,Not reported by this issuer.,False
 afkl,2024,rpk,RPK not available for FY2024,True
 afkl,2024,short_term_deposits,Not reported by this issuer.,False
 afkl,2025,ask,ASK not available for FY2025,True
-afkl,2025,borrowings_due_2y,No checked maturity table of borrowings for FY2025,True
 afkl,2025,borrowings_total,Reported as current and non-current parts only.,False
 afkl,2025,cask,ASK not available for FY2025,True
 afkl,2025,cask_ex_fuel,Fuel cost not available for FY2025,True
@@ -279,7 +273,6 @@ afkl,2025,fuel_cost,Fuel cost not tagged separately; to be extracted from the no
 afkl,2025,fuel_hedge_ratio,Fuel hedge ratio not available for FY2025,True
 afkl,2025,fuel_share_of_costs,Fuel cost not available for FY2025,True
 afkl,2025,lease_liabilities_total,Reported as current and non-current parts only.,False
-afkl,2025,liquidity_to_borrowings_due_2y,Borrowings due within two years: No checked maturity table of borrowings for FY2025,True
 afkl,2025,load_factor,RPK not available for FY2025,True
 afkl,2025,passenger_yield,Passenger revenue not available for FY2025,True
 afkl,2025,passengers,Passengers not available for FY2025,True
@@ -324,12 +317,10 @@ easyjet,2023,other_cash_like,Not reported by this issuer.,False
 easyjet,2023,other_current_financial_assets,Not reported by this issuer.,False
 easyjet,2023,share_of_associates,Not reported by this issuer.,False
 easyjet,2023,short_term_deposits,Not reported by this issuer.,False
-easyjet,2024,borrowings_due_2y,No checked maturity table of borrowings for FY2024,True
 easyjet,2024,borrowings_total,Reported as current and non-current parts only.,False
 easyjet,2024,debt_including_leases,Not reported by this issuer.,False
 easyjet,2024,fuel_hedge_ratio,Fuel hedge ratio not available for FY2024,True
 easyjet,2024,lease_liabilities_total,Reported as current and non-current parts only.,False
-easyjet,2024,liquidity_to_borrowings_due_2y,Borrowings due within two years: No checked maturity table of borrowings for FY2024,True
 easyjet,2024,other_cash_like,Not reported by this issuer.,False
 easyjet,2024,other_current_financial_assets,Not reported by this issuer.,False
 easyjet,2024,restricted_cash,Not reported by this issuer.,False
@@ -399,25 +390,21 @@ finnair,2023,restricted_cash,Not reported by this issuer.,False
 finnair,2023,share_of_associates,Not reported by this issuer.,False
 finnair,2023,short_term_debt_cover,Liquidity: Undrawn committed credit facilities not available for FY2023,True
 finnair,2023,short_term_deposits,Not reported by this issuer.,False
-finnair,2024,borrowings_due_2y,No checked maturity table of borrowings for FY2024,True
 finnair,2024,borrowings_total,Reported as current and non-current parts only.,False
 finnair,2024,current_investments,Not reported by this issuer.,False
 finnair,2024,debt_including_leases,Not reported by this issuer.,False
 finnair,2024,interest_expense,Not reported by this issuer.,False
 finnair,2024,lease_liabilities_total,Reported as current and non-current parts only.,False
-finnair,2024,liquidity_to_borrowings_due_2y,Borrowings due within two years: No checked maturity table of borrowings for FY2024,True
 finnair,2024,other_cash_like,Not reported by this issuer.,False
 finnair,2024,restricted_cash,Not reported by this issuer.,False
 finnair,2024,share_of_associates,Not reported by this issuer.,False
 finnair,2024,short_term_deposits,Not reported by this issuer.,False
-finnair,2025,borrowings_due_2y,No checked maturity table of borrowings for FY2025,True
 finnair,2025,borrowings_total,Reported as current and non-current parts only.,False
 finnair,2025,current_investments,Not reported by this issuer.,False
 finnair,2025,debt_including_leases,Not reported by this issuer.,False
 finnair,2025,fuel_hedge_ratio,Fuel hedge ratio not available for FY2025,True
 finnair,2025,interest_expense,Not reported by this issuer.,False
 finnair,2025,lease_liabilities_total,Reported as current and non-current parts only.,False
-finnair,2025,liquidity_to_borrowings_due_2y,Borrowings due within two years: No checked maturity table of borrowings for FY2025,True
 finnair,2025,other_cash_like,Not reported by this issuer.,False
 finnair,2025,restricted_cash,Not reported by this issuer.,False
 finnair,2025,share_of_associates,Not reported by this issuer.,False
@@ -481,7 +468,6 @@ iag,2023,passengers,Passengers not available for FY2023,True
 iag,2023,restricted_cash,Not reported by this issuer.,False
 iag,2023,rpk,RPK not available for FY2023,True
 iag,2023,share_of_associates,Not reported by this issuer.,False
-iag,2024,borrowings_due_2y,No checked maturity table of borrowings for FY2024,True
 iag,2024,borrowings_total,Reported as current and non-current parts only.,False
 iag,2024,current_investments,Not reported by this issuer.,False
 iag,2024,debt_including_leases,Not reported by this issuer.,False
@@ -490,12 +476,10 @@ iag,2024,interest_expense,Not reported by this issuer.,False
 iag,2024,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 iag,2024,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 iag,2024,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
-iag,2024,liquidity_to_borrowings_due_2y,Borrowings due within two years: No checked maturity table of borrowings for FY2024,True
 iag,2024,other_cash_like,Not reported by this issuer.,False
 iag,2024,other_current_financial_assets,Not reported by this issuer.,False
 iag,2024,restricted_cash,Not reported by this issuer.,False
 iag,2024,share_of_associates,Not reported by this issuer.,False
-iag,2025,borrowings_due_2y,No checked maturity table of borrowings for FY2025,True
 iag,2025,borrowings_total,Reported as current and non-current parts only.,False
 iag,2025,current_investments,Not reported by this issuer.,False
 iag,2025,debt_including_leases,Not reported by this issuer.,False
@@ -504,7 +488,6 @@ iag,2025,interest_expense,Not reported by this issuer.,False
 iag,2025,lease_liabilities_current,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 iag,2025,lease_liabilities_noncurrent,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
 iag,2025,lease_liabilities_total,Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).,False
-iag,2025,liquidity_to_borrowings_due_2y,Borrowings due within two years: No checked maturity table of borrowings for FY2025,True
 iag,2025,other_cash_like,Not reported by this issuer.,False
 iag,2025,other_current_financial_assets,Not reported by this issuer.,False
 iag,2025,restricted_cash,Not reported by this issuer.,False
@@ -579,7 +562,6 @@ norwegian,2024,share_of_associates,Not reported by this issuer.,False
 norwegian,2024,short_term_debt_cover,Liquidity: Undrawn committed credit facilities not available for FY2024,True
 norwegian,2024,short_term_deposits,Not reported by this issuer.,False
 norwegian,2025,ask,ASK not available for FY2025,True
-norwegian,2025,borrowings_due_2y,No checked maturity table of borrowings for FY2025,True
 norwegian,2025,borrowings_total,Reported as current and non-current parts only.,False
 norwegian,2025,cask,ASK not available for FY2025,True
 norwegian,2025,cask_ex_fuel,ASK not available for FY2025,True

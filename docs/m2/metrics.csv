@@ -169,6 +169,7 @@ aena,2023,2023-12-31,short_term_debt_cover,2.775741270013,verified,"Liquidity 4,
 aena,2023,2023-12-31,total_debt,8585560000.0,verified,"Borrowings, non-current 6,814 + borrowings, current 1,772 = 8,586 (lease liabilities included in borrowings)",EUR
 aena,2023,2023-12-31,traffic_growth,0.16208453016,verified,Passengers 283.2m ÷ prior-year passengers 243.7m − 1 = 16.2%,pct
 aena,2024,2024-12-31,aero_revenue_per_passenger,10.176259295183,verified,"Aeronautical revenue 3,148 ÷ passengers 309.3m = 10.18",per_passenger
+aena,2024,2024-12-31,borrowings_due_2y,3088210000.0,verified,"Borrowings due within 1 year 2,132 + in 1 to 2 years 956 = 3,088, from the maturity table",EUR
 aena,2024,2024-12-31,capex_intensity,0.142794582002,verified,"Capex 823 ÷ revenue 5,764 = 14.3%",pct
 aena,2024,2024-12-31,cash_like,1821283000.0,verified,"Cash and cash equivalents 1,821 = 1,821",EUR
 aena,2024,2024-12-31,cash_liquidity,1821283000.0,verified,"Cash and cash-like 1,821 (without undrawn facilities)",EUR
@@ -191,6 +192,7 @@ aena,2024,2024-12-31,passengers,309300000.0,verified,"Passengers 309.3m, read fr
 aena,2024,2024-12-31,total_debt,7318872000.0,verified,"Borrowings, non-current 5,978 + borrowings, current 1,341 = 7,319 (lease liabilities included in borrowings)",EUR
 aena,2024,2024-12-31,traffic_growth,0.092161016949,verified,Passengers 309.3m ÷ prior-year passengers 283.2m − 1 = 9.2%,pct
 aena,2025,2025-12-31,aero_revenue_per_passenger,10.252375749795,unverified,"Aeronautical revenue 3,297 ÷ passengers 321.6m = 10.25",per_passenger
+aena,2025,2025-12-31,borrowings_due_2y,2824621000.0,verified,"Borrowings due within 1 year 1,708 + in 1 to 2 years 1,117 = 2,825, from the maturity table",EUR
 aena,2025,2025-12-31,capex_intensity,0.168719041364,verified,"Capex 1,059 ÷ revenue 6,278 = 16.9%",pct
 aena,2025,2025-12-31,cash_like,2047669000.0,verified,"Cash and cash equivalents 2,048 = 2,048",EUR
 aena,2025,2025-12-31,cash_liquidity,2047669000.0,verified,"Cash and cash-like 2,048 (without undrawn facilities)",EUR
@@ -207,6 +209,7 @@ aena,2025,2025-12-31,ffo_to_debt,0.395992772503,verified,"FFO 2,992 ÷ total deb
 aena,2025,2025-12-31,gross_leverage,1.996468193664,verified,"Total debt 7,557 ÷ EBITDA 3,785 = 2.00x",x
 aena,2025,2025-12-31,interest_coverage,14.720762906325,verified,"EBITDA 3,785 ÷ interest expense 257 = 14.72x",x
 aena,2025,2025-12-31,liquidity,4292669000.0,verified,"Cash and cash-like 2,048 + undrawn committed facilities 2,245 = 4,293",EUR
+aena,2025,2025-12-31,liquidity_to_borrowings_due_2y,1.519732735825,verified,"Liquidity 4,293 ÷ borrowings due within 2 years 2,825 = 1.52x",x
 aena,2025,2025-12-31,liquidity_to_revenue,0.683727076135,verified,"Liquidity 4,293 ÷ revenue 6,278 = 68.4%",pct
 aena,2025,2025-12-31,net_capex,1016811000.0,verified,"Capex 1,059 − disposal proceeds 42.5 = 1,017",EUR
 aena,2025,2025-12-31,net_debt,5509027000.0,verified,"Total debt 7,557 − cash and cash-like 2,048 = 5,509",EUR
@@ -270,6 +273,7 @@ afkl,2023,2023-12-31,net_leverage,1.287802540139,verified,"Net debt 5,374 ÷ EBI
 afkl,2023,2023-12-31,passengers,93600000.0,verified,"Passengers 93.6m, read from the report",count
 afkl,2023,2023-12-31,total_debt,13631000000.0,verified,"Borrowings, non-current 7,538 + borrowings, current 1,664 + lease liabilities, non-current 3,581 + lease liabilities, current 848 = 13,631",EUR
 afkl,2024,2024-12-31,advance_ticket_cover,0.5910271206,verified,"Advance ticket sales 4,097 ÷ cash and cash-like 6,932 = 59.1%",pct
+afkl,2024,2024-12-31,borrowings_due_2y,3912999999.9999995,verified,"Borrowings due within 1 year 2,065 + in 1 to 2 years 1,848 = 3,913, from the maturity table",EUR
 afkl,2024,2024-12-31,capex_intensity,0.118503448934,verified,"Capex 3,728 ÷ revenue 31,459 = 11.9%",pct
 afkl,2024,2024-12-31,cash_like,6932000000.0,verified,"Cash and cash equivalents 4,829 + other cash-like items (company's net debt definition) 2,103 = 6,932",EUR
 afkl,2024,2024-12-31,cash_liquidity,6932000000.0,verified,"Cash and cash-like 6,932 (without undrawn facilities)",EUR
@@ -288,6 +292,7 @@ afkl,2024,2024-12-31,fleet_age,12.1,verified,"Fleet average age 12.1 years, read
 afkl,2024,2024-12-31,gross_leverage,3.563397420297,verified,"Total debt 14,642 ÷ EBITDA 4,109 = 3.56x",x
 afkl,2024,2024-12-31,interest_coverage,6.511885895404,verified,"EBITDA 4,109 ÷ interest expense 631 = 6.51x",x
 afkl,2024,2024-12-31,liquidity,9337000000.0,unverified,"Cash and cash-like 6,932 + undrawn committed facilities 2,405 = 9,337",EUR
+afkl,2024,2024-12-31,liquidity_to_borrowings_due_2y,2.386148734986,unverified,"Liquidity 9,337 ÷ borrowings due within 2 years 3,913 = 2.39x",x
 afkl,2024,2024-12-31,liquidity_to_revenue,0.296799008233,unverified,"Liquidity 9,337 ÷ revenue 31,459 = 29.7%",pct
 afkl,2024,2024-12-31,net_capex,3050000000.0,verified,"Capex 3,728 − disposal proceeds 678 = 3,050",EUR
 afkl,2024,2024-12-31,net_debt,7710000000.000001,verified,"Total debt 14,642 − cash and cash-like 6,932 = 7,710",EUR
@@ -296,6 +301,7 @@ afkl,2024,2024-12-31,passengers,98000000.0,verified,"Passengers 98.0m, read from
 afkl,2024,2024-12-31,short_term_debt_cover,3.49177262528,unverified,"Liquidity 9,337 ÷ debt due within one year 2,674 = 3.49x",x
 afkl,2024,2024-12-31,total_debt,14642000000.0,verified,"Borrowings, non-current 7,254 + borrowings, current 1,692 + lease liabilities, non-current 4,714 + lease liabilities, current 982 = 14,642",EUR
 afkl,2025,2025-12-31,advance_ticket_cover,0.621755613882,verified,"Advance ticket sales 4,264 ÷ cash and cash-like 6,858 = 62.2%",pct
+afkl,2025,2025-12-31,borrowings_due_2y,3072000000.0,unverified,"Borrowings due within 1 year 2,113 + in 1 to 2 years 959 = 3,072, from the maturity table",EUR
 afkl,2025,2025-12-31,capex_intensity,0.134789590087,verified,"Capex 4,449 ÷ revenue 33,007 = 13.5%",pct
 afkl,2025,2025-12-31,cash_like,6857999999.999999,verified,"Cash and cash equivalents 4,714 + other cash-like items (company's net debt definition) 2,144 = 6,858",EUR
 afkl,2025,2025-12-31,cash_liquidity,6857999999.999999,verified,"Cash and cash-like 6,858 (without undrawn facilities)",EUR
@@ -312,6 +318,7 @@ afkl,2025,2025-12-31,ffo_to_debt,0.27396377232,verified,"FFO 4,250 ÷ total debt
 afkl,2025,2025-12-31,gross_leverage,3.068235759494,verified,"Total debt 15,513 ÷ EBITDA 5,056 = 3.07x",x
 afkl,2025,2025-12-31,interest_coverage,8.06379585327,verified,"EBITDA 5,056 ÷ interest expense 627 = 8.06x",x
 afkl,2025,2025-12-31,liquidity,9263000000.0,unverified,"Cash and cash-like 6,858 + undrawn committed facilities 2,405 = 9,263",EUR
+afkl,2025,2025-12-31,liquidity_to_borrowings_due_2y,3.015299479167,unverified,"Liquidity 9,263 ÷ borrowings due within 2 years 3,072 = 3.02x",x
 afkl,2025,2025-12-31,liquidity_to_revenue,0.280637440543,unverified,"Liquidity 9,263 ÷ revenue 33,007 = 28.1%",pct
 afkl,2025,2025-12-31,net_capex,3058000000.0,unverified,"Capex 4,449 − disposal proceeds 1,391 = 3,058",EUR
 afkl,2025,2025-12-31,net_debt,8655000000.0,verified,"Total debt 15,513 − cash and cash-like 6,858 = 8,655",EUR
@@ -416,6 +423,7 @@ easyjet,2023,2023-09-30,short_term_debt_cover,7.269230769231,verified,"Liquidity
 easyjet,2023,2023-09-30,total_debt,2884000000.0,verified,"Borrowings, non-current 1,462 + borrowings, current 433 + lease liabilities, non-current 772 + lease liabilities, current 217 = 2,884",GBP
 easyjet,2024,2024-09-30,advance_ticket_cover,0.501878069922,verified,"Advance ticket sales 1,737 ÷ cash and cash-like 3,461 = 50.2%",pct
 easyjet,2024,2024-09-30,ask,122885000000.0,verified,"ASK 122.9bn, read from the report",count
+easyjet,2024,2024-09-30,borrowings_due_2y,510000000.0,unverified,"Borrowings due within 1 year 465 + in 1 to 2 years 45.0 = 510, from the maturity table",GBP
 easyjet,2024,2024-09-30,capex_intensity,0.099795896444,verified,"Capex 929 ÷ revenue 9,309 = 10.0%",pct
 easyjet,2024,2024-09-30,cash_like,3460999999.9999995,verified,"Cash and cash equivalents 1,343 + current investments 2,118 = 3,461",GBP
 easyjet,2024,2024-09-30,cash_liquidity,3460999999.9999995,verified,"Cash and cash-like 3,461 (without undrawn facilities)",GBP
@@ -437,6 +445,7 @@ easyjet,2024,2024-09-30,fuel_share_of_costs,0.254931192661,verified,"Fuel 2,223 
 easyjet,2024,2024-09-30,gross_leverage,2.413539367182,verified,"Total debt 3,280 ÷ EBITDA 1,359 = 2.41x",x
 easyjet,2024,2024-09-30,interest_coverage,10.295454545455,verified,"EBITDA 1,359 ÷ interest expense 132 = 10.30x",x
 easyjet,2024,2024-09-30,liquidity,3759474455.1625576,unverified,"Cash and cash-like 3,461 + undrawn committed facilities 298 = 3,759",GBP
+easyjet,2024,2024-09-30,liquidity_to_borrowings_due_2y,7.371518539534,unverified,"Liquidity 3,759 ÷ borrowings due within 2 years 510 = 7.37x",x
 easyjet,2024,2024-09-30,liquidity_to_revenue,0.403853738872,unverified,"Liquidity 3,759 ÷ revenue 9,309 = 40.4%",pct
 easyjet,2024,2024-09-30,load_factor,0.90828823697,verified,RPK 111.6bn ÷ ASK 122.9bn = 90.8%,pct
 easyjet,2024,2024-09-30,net_capex,806000000.0,verified,Capex 929 − disposal proceeds 123 = 806,GBP
@@ -571,6 +580,7 @@ finnair,2023,2023-12-31,rpk,27626400000.0,unverified,"RPK 27.6bn, read from the 
 finnair,2023,2023-12-31,total_debt,2025500000.0000002,verified,"Borrowings, non-current 790 + borrowings, current 120 + lease liabilities, non-current 951 + lease liabilities, current 164 = 2,026",EUR
 finnair,2024,2024-12-31,advance_ticket_cover,0.74536199095,verified,Advance ticket sales 659 ÷ cash and cash-like 884 = 74.5%,pct
 finnair,2024,2024-12-31,ask,38259300000.0,unverified,"ASK 38.3bn, read from the report",count
+finnair,2024,2024-12-31,borrowings_due_2y,182200000.0,verified,"Borrowings due within 1 year 126 + in 1 to 2 years 56.7 = 182, from the maturity table",EUR
 finnair,2024,2024-12-31,capex_intensity,0.07662030963,verified,"Capex 234 ÷ revenue 3,049 = 7.7%",pct
 finnair,2024,2024-12-31,cash_like,884000000.0,verified,Cash and cash equivalents 219 + other current financial assets 665 = 884,EUR
 finnair,2024,2024-12-31,cash_liquidity,884000000.0,verified,Cash and cash-like 884 (without undrawn facilities),EUR
@@ -593,6 +603,7 @@ finnair,2024,2024-12-31,fuel_share_of_costs,0.304777482451,verified,"Fuel 894 ÷
 finnair,2024,2024-12-31,gross_leverage,4.195950506187,verified,"Total debt 1,865 ÷ EBITDA 444 = 4.20x",x
 finnair,2024,2024-12-31,interest_coverage,4.146455223881,verified,EBITDA 444 ÷ finance costs (interest paid is net) 107 = 4.15x,x
 finnair,2024,2024-12-31,liquidity,1084000000.0,verified,"Cash and cash-like 884 + undrawn committed facilities 200 = 1,084",EUR
+finnair,2024,2024-12-31,liquidity_to_borrowings_due_2y,5.949506037322,verified,"Liquidity 1,084 ÷ borrowings due within 2 years 182 = 5.95x",x
 finnair,2024,2024-12-31,liquidity_to_revenue,0.355549724482,verified,"Liquidity 1,084 ÷ revenue 3,049 = 35.6%",pct
 finnair,2024,2024-12-31,load_factor,0.75799086758,unverified,RPK 29.0bn ÷ ASK 38.3bn = 75.8%,pct
 finnair,2024,2024-12-31,net_capex,233600000.0,verified,Capex 234 − disposal proceeds 0.0 = 234,EUR
@@ -606,6 +617,7 @@ finnair,2024,2024-12-31,short_term_debt_cover,3.737931034483,verified,"Liquidity
 finnair,2024,2024-12-31,total_debt,1865100000.0000002,verified,"Borrowings, non-current 735 + borrowings, current 125 + lease liabilities, non-current 840 + lease liabilities, current 165 = 1,865",EUR
 finnair,2025,2025-12-31,advance_ticket_cover,0.67370405278,verified,"Advance ticket sales 715 ÷ cash and cash-like 1,061 = 67.4%",pct
 finnair,2025,2025-12-31,ask,39306600000.0,unverified,"ASK 39.3bn, read from the report",count
+finnair,2025,2025-12-31,borrowings_due_2y,72500000.0,verified,"Borrowings due within 1 year 51.5 + in 1 to 2 years 21.0 = 72.5, from the maturity table",EUR
 finnair,2025,2025-12-31,capex_intensity,0.067284785268,verified,"Capex 209 ÷ revenue 3,106 = 6.7%",pct
 finnair,2025,2025-12-31,cash_like,1061000000.0,verified,"Cash and cash equivalents 530 + other current financial assets 531 = 1,061",EUR
 finnair,2025,2025-12-31,cash_liquidity,1061000000.0,verified,"Cash and cash-like 1,061 (without undrawn facilities)",EUR
@@ -627,6 +639,7 @@ finnair,2025,2025-12-31,fuel_share_of_costs,0.288954635108,verified,"Fuel 879 ÷
 finnair,2025,2025-12-31,gross_leverage,4.370679088012,verified,"Total debt 1,783 ÷ EBITDA 408 = 4.37x",x
 finnair,2025,2025-12-31,interest_coverage,4.980463980464,verified,EBITDA 408 ÷ finance costs (interest paid is net) 81.9 = 4.98x,x
 finnair,2025,2025-12-31,liquidity,1261000000.0,verified,"Cash and cash-like 1,061 + undrawn committed facilities 200 = 1,261",EUR
+finnair,2025,2025-12-31,liquidity_to_borrowings_due_2y,17.393103448276,verified,"Liquidity 1,261 ÷ borrowings due within 2 years 72.5 = 17.39x",x
 finnair,2025,2025-12-31,liquidity_to_revenue,0.40596226901,verified,"Liquidity 1,261 ÷ revenue 3,106 = 40.6%",pct
 finnair,2025,2025-12-31,load_factor,0.769013346359,unverified,RPK 30.2bn ÷ ASK 39.3bn = 76.9%,pct
 finnair,2025,2025-12-31,net_capex,200700000.0,verified,Capex 209 − disposal proceeds 8.3 = 201,EUR
@@ -725,6 +738,7 @@ iag,2023,2023-12-31,short_term_debt_cover,3.778636210951,verified,"Liquidity 11,
 iag,2023,2023-12-31,total_debt,16082000000.0,verified,"Borrowings, non-current 13,105 + borrowings, current 2,977 = 16,082 (lease liabilities included in borrowings)",EUR
 iag,2024,2024-12-31,advance_ticket_cover,0.847883597884,verified,"Advance ticket sales 8,333 ÷ cash and cash-like 9,828 = 84.8%",pct
 iag,2024,2024-12-31,ask,343253000000.0,verified,"ASK 343.3bn, read from the report",count
+iag,2024,2024-12-31,borrowings_due_2y,1052000000.0,unverified,"Borrowings due within 1 year 528 + in 1 to 2 years 524 = 1,052, from the maturity table",EUR
 iag,2024,2024-12-31,capex_intensity,0.087725856698,verified,"Capex 2,816 ÷ revenue 32,100 = 8.8%",pct
 iag,2024,2024-12-31,cash_like,9827999999.999998,verified,"Cash and cash equivalents 8,189 + short-term deposits (not cash equivalents) 1,639 = 9,828",EUR
 iag,2024,2024-12-31,cash_liquidity,9827999999.999998,verified,"Cash and cash-like 9,828 (without undrawn facilities)",EUR
@@ -746,6 +760,7 @@ iag,2024,2024-12-31,fuel_share_of_costs,0.273501815437,verified,"Fuel 7,608 ÷ o
 iag,2024,2024-12-31,gross_leverage,2.60944787122,verified,"Total debt 17,345 ÷ EBITDA 6,647 = 2.61x",x
 iag,2024,2024-12-31,interest_coverage,8.700261780105,verified,"EBITDA 6,647 ÷ interest paid (interest expense not tagged) 764 = 8.70x",x
 iag,2024,2024-12-31,liquidity,13228000000.000002,verified,"Cash and cash-like 9,828 + undrawn committed facilities 3,400 = 13,228",EUR
+iag,2024,2024-12-31,liquidity_to_borrowings_due_2y,12.574144486692,unverified,"Liquidity 13,228 ÷ borrowings due within 2 years 1,052 = 12.57x",x
 iag,2024,2024-12-31,liquidity_to_revenue,0.412087227414,verified,"Liquidity 13,228 ÷ revenue 32,100 = 41.2%",pct
 iag,2024,2024-12-31,load_factor,0.86489265935,verified,RPK 296.9bn ÷ ASK 343.3bn = 86.5%,pct
 iag,2024,2024-12-31,net_capex,2232000000.0,verified,"Capex 2,816 − disposal proceeds 584 = 2,232",EUR
@@ -759,6 +774,7 @@ iag,2024,2024-12-31,short_term_debt_cover,3.806618705036,verified,"Liquidity 13,
 iag,2024,2024-12-31,total_debt,17345000000.0,verified,"Borrowings, non-current 13,870 + borrowings, current 3,475 = 17,345 (lease liabilities included in borrowings)",EUR
 iag,2025,2025-12-31,advance_ticket_cover,0.965500661137,verified,"Advance ticket sales 8,032 ÷ cash and cash-like 8,319 = 96.6%",pct
 iag,2025,2025-12-31,ask,351435000000.0,verified,"ASK 351.4bn, read from the report",count
+iag,2025,2025-12-31,borrowings_due_2y,4087000000.0000005,unverified,"Borrowings due within 1 year 2,028 + in 1 to 2 years 2,059 = 4,087, from the maturity table",EUR
 iag,2025,2025-12-31,capex_intensity,0.10363411917,verified,"Capex 3,442 ÷ revenue 33,213 = 10.4%",pct
 iag,2025,2025-12-31,cash_like,8319000000.0,verified,"Cash and cash equivalents 7,421 + short-term deposits (not cash equivalents) 898 = 8,319",EUR
 iag,2025,2025-12-31,cash_liquidity,8319000000.0,verified,"Cash and cash-like 8,319 (without undrawn facilities)",EUR
@@ -780,6 +796,7 @@ iag,2025,2025-12-31,fuel_share_of_costs,0.251268225194,verified,"Fuel 7,083 ÷ o
 iag,2025,2025-12-31,gross_leverage,1.864479874543,verified,"Total debt 14,267 ÷ EBITDA 7,652 = 1.86x",x
 iag,2025,2025-12-31,interest_coverage,11.489489489489,verified,"EBITDA 7,652 ÷ interest paid (interest expense not tagged) 666 = 11.49x",x
 iag,2025,2025-12-31,liquidity,10947999999.999998,verified,"Cash and cash-like 8,319 + undrawn committed facilities 2,629 = 10,948",EUR
+iag,2025,2025-12-31,liquidity_to_borrowings_due_2y,2.67873746024,unverified,"Liquidity 10,948 ÷ borrowings due within 2 years 4,087 = 2.68x",x
 iag,2025,2025-12-31,liquidity_to_revenue,0.329629964171,verified,"Liquidity 10,948 ÷ revenue 33,213 = 33.0%",pct
 iag,2025,2025-12-31,load_factor,0.855959138959,verified,RPK 300.8bn ÷ ASK 351.4bn = 85.6%,pct
 iag,2025,2025-12-31,net_capex,3416000000.0,verified,"Capex 3,442 − disposal proceeds 26.0 = 3,416",EUR
@@ -905,6 +922,7 @@ norwegian,2024,2024-12-31,net_leverage,0.778143712575,verified,"Net debt 5,198 �
 norwegian,2024,2024-12-31,passengers,26400000.0,verified,"Passengers 26.4m, read from the report",count
 norwegian,2024,2024-12-31,total_debt,16078000000.0,verified,"Borrowings, non-current 2,948 + borrowings, current 1,805 + lease liabilities, non-current 9,301 + lease liabilities, current 2,024 = 16,078",NOK
 norwegian,2025,2025-12-31,advance_ticket_cover,0.437021572721,verified,"Advance ticket sales 4,396 ÷ cash and cash-like 10,059 = 43.7%",pct
+norwegian,2025,2025-12-31,borrowings_due_2y,1495000000.0,unverified,"Borrowings due within 1 year 1,495 + in 1 to 2 years 0.0 = 1,495, from the maturity table",NOK
 norwegian,2025,2025-12-31,capex_intensity,0.132444349997,verified,"Capex 4,986 ÷ revenue 37,646 = 13.2%",pct
 norwegian,2025,2025-12-31,cash_like,10059000000.0,verified,"Cash and cash equivalents 7,434 + current investments 2,625 = 10,059",NOK
 norwegian,2025,2025-12-31,cash_liquidity,10059000000.0,verified,"Cash and cash-like 10,059 (without undrawn facilities)",NOK

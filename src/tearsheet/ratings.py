@@ -55,7 +55,9 @@ class RatingEntry:
     entered_by: str
     entered_on: date
     reviewed_by: str | None
-    not_rated: bool = False
+    not_stated: bool = False  # the report gives no rating (not a claim that none exists)
+    scope: str = "issuer"
+    comment: str | None = None
     failures: list[str] = field(default_factory=list)
 
     @property
@@ -74,9 +76,9 @@ class RatingEntry:
         return (today - self.as_at).days > STALE_DAYS
 
     def text(self) -> str:
-        """'S&P BBB+ (stable), Moody's Baa2 (stable)', or 'Not rated'."""
-        if self.not_rated:
-            return "Not rated"
+        """'S&P BBB+ (stable), Moody's Baa2 (stable)', or that the report gives none."""
+        if self.not_stated:
+            return f"No rating given in the FY{self.fiscal_year} annual report"
         return ", ".join(
             f"{r.agency} {r.rating}" + (f" ({r.outlook})" if r.outlook else "")
             for r in self.ratings
@@ -102,7 +104,9 @@ def load_entries(path: Path = RATINGS) -> list[RatingEntry]:
                 entered_by=e["entered_by"],
                 entered_on=e["entered_on"],
                 reviewed_by=e.get("reviewed_by"),
-                not_rated=bool(e.get("not_rated")),
+                not_stated=bool(e.get("not_stated")),
+                scope=e.get("scope") or "issuer",
+                comment=e.get("comment"),
             )
         )
     return out
@@ -111,6 +115,8 @@ def load_entries(path: Path = RATINGS) -> list[RatingEntry]:
 def check_entry(entry: RatingEntry, report_text: str | None) -> RatingEntry:
     """The quote is in the report word for word, and names each agency, rating and outlook."""
     entry.failures = []
+    if entry.not_stated:
+        return entry  # nothing to find: Imane's review confirms the report gives no rating
     if report_text is None:
         entry.failures.append("the report is not available to check the quote against")
         return entry
@@ -123,11 +129,11 @@ def check_entry(entry: RatingEntry, report_text: str | None) -> RatingEntry:
             entry.failures.append(f"unknown agency '{r.agency}'")
             continue
         if not re.fullmatch(SCALES[r.agency], r.rating):
-            entry.failures.append(f"'{r.rating}' is not on {r.agency}'s rating scale")
+            entry.failures.append(f"'{r.rating}' is not on the {r.agency} rating scale")
         if not any(name.lower() in entry.quote.lower() for name in AGENCY_NAMES[r.agency]):
             entry.failures.append(f"the quote does not name {r.agency}")
         if not re.search(rf"(?<![A-Za-z]){re.escape(r.rating)}(?![A-Za-z0-9+-])", entry.quote):
-            entry.failures.append(f"the quote does not show {r.agency}'s rating {r.rating}")
+            entry.failures.append(f"the quote does not show the {r.agency} rating {r.rating}")
         if r.outlook and r.outlook.lower() not in OUTLOOKS:
             entry.failures.append(f"unknown outlook '{r.outlook}'")
         elif r.outlook:
@@ -141,3 +147,33 @@ def check_entry(entry: RatingEntry, report_text: str | None) -> RatingEntry:
 def _squash(text: str) -> str:
     text = text.replace("’", "'").replace("‘", "'")
     return re.sub(r"\s+", "", text).lower()
+
+
+def report_text(document: str, db_path=None) -> str | None:
+    """The text of the report a rating was copied from (cached by `tearsheet load`)."""
+    import duckdb
+
+    from tearsheet.config import DB_PATH
+    from tearsheet.extract.documents import from_report
+    from tearsheet.ingest.client import Client
+
+    con = duckdb.connect(str(db_path or DB_PATH), read_only=True)
+    row = con.execute(
+        "SELECT issuer, fiscal_year, language, report_url, sha256 FROM filings "
+        "WHERE filing_id = ? AND report_url IS NOT NULL",
+        [document],
+    ).fetchone()
+    con.close()
+    if row is None:
+        return None
+    issuer, year, language, url, sha = row
+    try:
+        path = Client(offline=True).download(url, "report")
+    except FileNotFoundError:
+        return None
+    return from_report(document, issuer, year, language, path, url, sha).text
+
+
+def checked_entries(db_path=None, path: Path = RATINGS) -> dict[str, RatingEntry]:
+    """Every entry, checked against its report."""
+    return {e.issuer: check_entry(e, report_text(e.document, db_path)) for e in load_entries(path)}

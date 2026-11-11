@@ -58,7 +58,8 @@ def coverage_report(db_path: Path = DB_PATH, out: Path = OUT) -> dict[str, int]:
     con = _connect(db_path)
     facts = con.execute(
         "SELECT issuer, fiscal_year, concept, restated, note, footnote, warnings, source_ref, "
-        "source_type FROM facts WHERE is_primary AND source_type NOT IN ('computed', 'extracted')"
+        "source_type FROM facts WHERE is_primary AND source_type NOT IN ('computed', 'extracted') "
+        "AND concept NOT LIKE 'maturity_%'"
     ).df()
     gaps = con.execute("SELECT * FROM gaps").df()
     gaps = gaps[gaps.concept.isin(list(lines))]
@@ -161,8 +162,9 @@ def check_sheet(
     lines = _lines()
     con = _connect(db_path)
     facts = con.execute(
-        "SELECT * FROM facts WHERE is_primary AND source_type <> 'extracted'"
-    ).df()  # figures read from the report text are checked in docs/m3
+        "SELECT * FROM facts WHERE is_primary AND source_type <> 'extracted' "
+        "AND concept NOT LIKE 'maturity_%'"
+    ).df()  # figures read from the report text are checked in docs/m3; maturity tables in m8
     gaps = con.execute("SELECT * FROM gaps").df()
     filings = con.execute("SELECT * FROM filings").df()
     con.close()
@@ -296,7 +298,8 @@ def manual_entries_report(db_path: Path = DB_PATH, out: Path = OUT) -> tuple[int
     }
     entered = con.execute(
         "SELECT issuer, fiscal_year, concept, value, status, source_ref FROM facts "
-        "WHERE source_type = 'manual' ORDER BY issuer, concept"
+        "WHERE source_type = 'manual' AND concept NOT LIKE 'maturity_%' "
+        "ORDER BY issuer, concept"
     ).df()
     con.close()
     md = [

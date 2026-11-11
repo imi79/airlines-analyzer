@@ -266,7 +266,7 @@ def buckets(cells: list[tuple[tuple, Decimal]]) -> dict[str, Decimal]:
     owner = list(range(len(std)))
 
     def where(x, end=False):
-        for i, (lo, hi) in enumerate(std):
+        for i, (_, hi) in enumerate(std):
             if hi is None or (x <= hi if end else x < hi):
                 return i
         return len(std) - 1

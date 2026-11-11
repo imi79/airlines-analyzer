@@ -1,0 +1,176 @@
+{
+ "answer": {
+  "tables": [
+   {
+    "basis": "contractual_cash_flows",
+    "caption": "€ million",
+    "comment": "IFRS 7 contractual undiscounted liquidity table for interest-bearing loans and borrowings (including lease liabilities) at 31 December 2025; trade payables and derivatives excluded.",
+    "currency": "EUR",
+    "fiscal_year": 2025,
+    "header": "Within 6 months | 6-12 months | 1-2 years | 2-5 years | More than 5 years | Total 2025",
+    "layer": "borrowings",
+    "location": "page 209",
+    "rows": [
+     {
+      "columns": [
+       {
+        "label": "Within 6 months",
+        "printed_value": "(239)",
+        "quote": "Asset financing liabilities (239) (239) (481) (1,737) (3,525) (6,221)"
+       },
+       {
+        "label": "6-12 months",
+        "printed_value": "(239)",
+        "quote": "Asset financing liabilities (239) (239) (481) (1,737) (3,525) (6,221)"
+       },
+       {
+        "label": "1-2 years",
+        "printed_value": "(481)",
+        "quote": "Asset financing liabilities (239) (239) (481) (1,737) (3,525) (6,221)"
+       },
+       {
+        "label": "2-5 years",
+        "printed_value": "(1,737)",
+        "quote": "Asset financing liabilities (239) (239) (481) (1,737) (3,525) (6,221)"
+       },
+       {
+        "label": "More than 5 years",
+        "printed_value": "(3,525)",
+        "quote": "Asset financing liabilities (239) (239) (481) (1,737) (3,525) (6,221)"
+       }
+      ],
+      "name": "Asset financing liabilities",
+      "total": {
+       "label": "Total 2025",
+       "printed_value": "(6,221)",
+       "quote": "Asset financing liabilities (239) (239) (481) (1,737) (3,525) (6,221)"
+      }
+     },
+     {
+      "columns": [
+       {
+        "label": "Within 6 months",
+        "printed_value": "(775)",
+        "quote": "Lease liabilities (775) (707) (1,342) (2,759) (4,329) (9,912)"
+       },
+       {
+        "label": "6-12 months",
+        "printed_value": "(707)",
+        "quote": "Lease liabilities (775) (707) (1,342) (2,759) (4,329) (9,912)"
+       },
+       {
+        "label": "1-2 years",
+        "printed_value": "(1,342)",
+        "quote": "Lease liabilities (775) (707) (1,342) (2,759) (4,329) (9,912)"
+       },
+       {
+        "label": "2-5 years",
+        "printed_value": "(2,759)",
+        "quote": "Lease liabilities (775) (707) (1,342) (2,759) (4,329) (9,912)"
+       },
+       {
+        "label": "More than 5 years",
+        "printed_value": "(4,329)",
+        "quote": "Lease liabilities (775) (707) (1,342) (2,759) (4,329) (9,912)"
+       }
+      ],
+      "name": "Lease liabilities",
+      "total": {
+       "label": "Total 2025",
+       "printed_value": "(9,912)",
+       "quote": "Lease liabilities (775) (707) (1,342) (2,759) (4,329) (9,912)"
+      }
+     },
+     {
+      "columns": [
+       {
+        "label": "Within 6 months",
+        "printed_value": "(17)",
+        "quote": "Fixed rate borrowings (17) (25) (220) (1,383) – (1,645)"
+       },
+       {
+        "label": "6-12 months",
+        "printed_value": "(25)",
+        "quote": "Fixed rate borrowings (17) (25) (220) (1,383) – (1,645)"
+       },
+       {
+        "label": "1-2 years",
+        "printed_value": "(220)",
+        "quote": "Fixed rate borrowings (17) (25) (220) (1,383) – (1,645)"
+       },
+       {
+        "label": "2-5 years",
+        "printed_value": "(1,383)",
+        "quote": "Fixed rate borrowings (17) (25) (220) (1,383) – (1,645)"
+       },
+       {
+        "label": "More than 5 years",
+        "printed_value": "–",
+        "quote": "Fixed rate borrowings (17) (25) (220) (1,383) – (1,645)"
+       }
+      ],
+      "name": "Fixed rate borrowings",
+      "total": {
+       "label": "Total 2025",
+       "printed_value": "(1,645)",
+       "quote": "Fixed rate borrowings (17) (25) (220) (1,383) – (1,645)"
+      }
+     },
+     {
+      "columns": [
+       {
+        "label": "Within 6 months",
+        "printed_value": "(13)",
+        "quote": "Floating rate borrowings (13) (13) (16) – – (42)"
+       },
+       {
+        "label": "6-12 months",
+        "printed_value": "(13)",
+        "quote": "Floating rate borrowings (13) (13) (16) – – (42)"
+       },
+       {
+        "label": "1-2 years",
+        "printed_value": "(16)",
+        "quote": "Floating rate borrowings (13) (13) (16) – – (42)"
+       },
+       {
+        "label": "2-5 years",
+        "printed_value": "–",
+        "quote": "Floating rate borrowings (13) (13) (16) – – (42)"
+       },
+       {
+        "label": "More than 5 years",
+        "printed_value": "–",
+        "quote": "Floating rate borrowings (13) (13) (16) – – (42)"
+       }
+      ],
+      "name": "Floating rate borrowings",
+      "total": {
+       "label": "Total 2025",
+       "printed_value": "(42)",
+       "quote": "Floating rate borrowings (13) (13) (16) – – (42)"
+      }
+     }
+    ],
+    "scale": "million"
+   }
+  ]
+ },
+ "label": "iag FY2025 maturity 959800TZHQRUSH1ESL13-2025-12-31-ESEF-GB-0",
+ "recorded_at": "2026-11-11T18:41:12+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "maturity-v1",
+  "provider": "deepseek",
+  "system_sha256": "bb4eaabcf33095a3d93d017b6ab2d4e02d28d25087ba47512d12c7d8d195de5e",
+  "tool_sha256": "15dfbcb11b70f61e4b18c666e5d49a268139a82cbb82be12b0f2eb026a7b30af",
+  "user_sha256": "3eefa352f5c239dcb9e403792b0aa868312a9338096f131ec509b020250ff8de"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 9033,
+  "output_tokens": 1370
+ }
+}

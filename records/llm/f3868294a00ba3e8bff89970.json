@@ -1,0 +1,22 @@
+{
+ "answer": {
+  "tables": []
+ },
+ "label": "vie FY2025 maturity 549300FQ2ILBH7DJ6I45-2025-12-31-ESEF-AT-0",
+ "recorded_at": "2026-11-11T18:42:31+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "maturity-v1",
+  "provider": "deepseek",
+  "system_sha256": "bb4eaabcf33095a3d93d017b6ab2d4e02d28d25087ba47512d12c7d8d195de5e",
+  "tool_sha256": "15dfbcb11b70f61e4b18c666e5d49a268139a82cbb82be12b0f2eb026a7b30af",
+  "user_sha256": "45af0801336827f431ca7fbb200a1a4ad61d1e7f24a13f637bb4ffcb6ebe98ee"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 9231,
+  "output_tokens": 36
+ }
+}

@@ -1,0 +1,76 @@
+{
+ "answer": {
+  "tables": [
+   {
+    "basis": "contractual_cash_flows",
+    "caption": "31 de diciembre de 2025",
+    "comment": "IFRS 7 contractual undiscounted cash-flow maturity table (including lease liabilities and trade payables) at 31 December 2025; the total row is quoted as the table has no borrowings-only subtotal.",
+    "currency": "EUR",
+    "fiscal_year": 2025,
+    "header": "Notas Valor en libros 2026 2027 2028 2029 2030 Siguientes Total",
+    "layer": "borrowings",
+    "location": "page 62",
+    "rows": [
+     {
+      "columns": [
+       {
+        "label": "2026",
+        "printed_value": "1.707.903",
+        "quote": "Total 8.266.283 1.707.903 1.116.718 533.638 843.826 920.786 3.853.653 8.976.524"
+       },
+       {
+        "label": "2027",
+        "printed_value": "1.116.718",
+        "quote": "Total 8.266.283 1.707.903 1.116.718 533.638 843.826 920.786 3.853.653 8.976.524"
+       },
+       {
+        "label": "2028",
+        "printed_value": "533.638",
+        "quote": "Total 8.266.283 1.707.903 1.116.718 533.638 843.826 920.786 3.853.653 8.976.524"
+       },
+       {
+        "label": "2029",
+        "printed_value": "843.826",
+        "quote": "Total 8.266.283 1.707.903 1.116.718 533.638 843.826 920.786 3.853.653 8.976.524"
+       },
+       {
+        "label": "2030",
+        "printed_value": "920.786",
+        "quote": "Total 8.266.283 1.707.903 1.116.718 533.638 843.826 920.786 3.853.653 8.976.524"
+       },
+       {
+        "label": "Siguientes",
+        "printed_value": "3.853.653",
+        "quote": "Total 8.266.283 1.707.903 1.116.718 533.638 843.826 920.786 3.853.653 8.976.524"
+       }
+      ],
+      "name": "Total",
+      "total": {
+       "label": "Total",
+       "printed_value": "8.976.524",
+       "quote": "Total 8.266.283 1.707.903 1.116.718 533.638 843.826 920.786 3.853.653 8.976.524"
+      }
+     }
+    ],
+    "scale": "thousand"
+   }
+  ]
+ },
+ "label": "aena FY2025 maturity 959800R7QMXKF0NFMT29-2025-12-31-ESEF-ES-0",
+ "recorded_at": "2026-11-11T18:42:17+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "maturity-v1",
+  "provider": "deepseek",
+  "system_sha256": "bb4eaabcf33095a3d93d017b6ab2d4e02d28d25087ba47512d12c7d8d195de5e",
+  "tool_sha256": "15dfbcb11b70f61e4b18c666e5d49a268139a82cbb82be12b0f2eb026a7b30af",
+  "user_sha256": "b65ccf15dea7d191cafd6c733e9757f4b8f38c6b4565c0cbd20fd33961b3f60c"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 11697,
+  "output_tokens": 652
+ }
+}

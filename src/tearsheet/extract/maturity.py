@@ -42,6 +42,7 @@ from tearsheet.extract.locator import Window, _merge_and_cap, find_terms
 from tearsheet.extract.numbers import (
     CURRENCY_WORDS,
     SCALE_FACTORS,
+    Token,
     contains_any,
     decimals_of,
     number_tokens,
@@ -124,8 +125,8 @@ def parse_label(label: str, fiscal_year_end: date) -> Span | None:
     text = re.sub(r"\s+", " ", text).strip(" :")
     if not text:
         return None
-    # French relative years: N+1, N+2 à N+5, au-delà de N+5 / > N+5
-    rel = re.findall(r"n\s*\+\s*(\d+)", text)
+    # Relative years: N+1, N+2 à N+5, au-delà de N+5 / > N+5 (French), Y+1 (English)
+    rel = re.findall(r"(?<![a-z])[ny]\s*\+\s*(\d+)", text)  # N+1 (French), Y+1 (English)
     if rel:
         values = [int(v) for v in rel]
         if re.search(OVER, text) and len(values) == 1:
@@ -473,8 +474,31 @@ def _value(cell: RawCell, language: str | None) -> Decimal | None:
     return None if number is None else abs(number)
 
 
+def squash_find(text: str, label: str) -> int | None:
+    """Where the label ends in the text, ignoring spaces (None if it is not there)."""
+    target = squash(label)
+    if not target:
+        return None
+    flat, index = [], []
+    for i, ch in enumerate(text):
+        if not ch.isspace():
+            flat.append(squash(ch) or ch)
+            index.append(i)
+    joined = "".join(flat)
+    at = joined.find(target)
+    if at < 0:
+        return None
+    return index[at + len(target) - 1] + 1
+
+
 def _check_cell(
-    cell: RawCell, index: DocumentIndex, header: str, pages: list[int], doc: Document, what: str
+    cell: RawCell,
+    index: DocumentIndex,
+    header: str,
+    pages: list[int],
+    doc: Document,
+    what: str,
+    total: bool = False,
 ) -> tuple[Decimal | None, list[str]]:
     failures = []
     if len(cell.quote) > MAX_QUOTE:
@@ -484,7 +508,10 @@ def _check_cell(
         return None, [f"{what}: quote not found word for word in the report"]
     if pages and not any(0 <= q - p <= 1 for q in quote_pages for p in pages):
         failures.append(f"{what}: quote is not on the caption's page or the next one")
-    if squash(cell.label) not in squash(cell.quote) and squash(cell.label) not in squash(header):
+    # A total row is often printed without a label; its value is checked by the foot instead
+    # (fix after the first run).
+    in_text = squash(cell.label) in squash(cell.quote) or squash(cell.label) in squash(header)
+    if not total and not in_text:
         failures.append(f"{what}: label '{cell.label}' is not in the quote or the header")
     value = _value(cell, doc.language)
     if value is None:
@@ -498,10 +525,16 @@ def _check_cell(
     if token is None:
         failures.append(f"{what}: value {cell.printed_value} is not printed in the quote")
         return value, failures
-    # The year, where the row shows several years (a table with a column per year).
+    # The year, where the row shows several years (a table with a column per year). Numbers
+    # inside the row's label ("N+1", "1-2 years") are not columns (fix after the first run).
     year = attached_year(cell.quote, token)
     if year is None and header and not re.search(r"(?<!\d)20[2-6]\d(?!\d)", cell.label):
-        year = _table_year(cell.quote, token, header, doc.language)
+        at = squash_find(cell.quote, cell.label)
+        rest = cell.quote[at:] if at is not None else cell.quote
+        shifted = Token(token.text, token.value, token.start - (len(cell.quote) - len(rest)),
+                        token.end - (len(cell.quote) - len(rest)))  # fmt: skip
+        if shifted.start >= 0:
+            year = _table_year(rest, shifted, header, doc.language)
     if year is not None and year != doc.fiscal_year:
         failures.append(f"{what}: the quote ties the value to {year}, not FY{doc.fiscal_year}")
     return value, failures
@@ -529,11 +562,17 @@ def check_table(
         t.failures.append("caption not found word for word in the report")
     else:
         t.location = doc.location(caption_pages[0])
-    header = raw.header or ""
+    # The AI marks cell boundaries in the header with "|", which the report does not print
+    # (fix after the first run, decision 0022).
+    header = " ".join((raw.header or "").replace("|", " ").split())
     if header and not index.pages_of(header):
         t.failures.append("header not found word for word in the report")
         header = ""
     context = " ".join([raw.caption, header] + [c.quote for c in raw.cells])
+    # The unit may be printed once at the top of the page ("Importes en miles de euros",
+    # "in T€"), not above each table: the quote's page counts too (fix after the first run).
+    pages = sorted({p for c in raw.cells for p in index.pages_of(c.quote)})
+    context += " " + " ".join(doc.pages[p] for p in pages[:2])
     if not scale_named(context, raw.scale):
         t.failures.append(f"the table does not show its scale ({raw.scale})")
     currency = (raw.currency or issuer.currency).upper()
@@ -543,8 +582,8 @@ def check_table(
     if not contains_any(context, words):
         t.failures.append(f"the table does not show the currency ({currency})")
 
-    def cell_check(cell, what):
-        return _check_cell(cell, index, header, caption_pages, doc, what)
+    def cell_check(cell, what, total=False):
+        return _check_cell(cell, index, header, caption_pages, doc, what, total)
 
     _rows(t, raw, fiscal_year_end, config, doc.language, cell_check)
     if t.buckets:  # 5. Agreement with the balance sheet.
@@ -570,7 +609,7 @@ def _rows(t: CheckedTable, raw: RawTable, end: date, config: dict, language, cel
             if span is None:
                 t.failures.append(f"{what}: code cannot read the label as a time span")
             values.append(None if value is None else value * factor)
-        total, failures = cell_check(row.total, f"{where}, total")
+        total, failures = cell_check(row.total, f"{where}, total", True)
         t.failures += failures
         spans_by_row.append(spans)
         values_by_row.append(values)
@@ -895,7 +934,7 @@ def _check_hand(raw: RawTable, doc: Document, end: date, tagged: dict, config: d
     text): the labels, the foot and the balance sheet checks still apply."""
     t = CheckedTable(raw, doc)
 
-    def cell_check(cell, what):
+    def cell_check(cell, what, total=False):
         value = _value(cell, doc.language)
         return value, ([] if value is not None else [f"{what}: '{cell.printed_value}' unread"])
 

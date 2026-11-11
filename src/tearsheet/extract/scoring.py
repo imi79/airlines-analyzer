@@ -98,7 +98,7 @@ def extracted_from_db(db_path: Path = DB_PATH) -> dict[tuple[str, int, str], Ext
     con = duckdb.connect(str(db_path), read_only=True)
     rows = con.execute(
         "SELECT issuer, fiscal_year, concept, value, decimals, status, source_ref FROM facts "
-        "WHERE source_type = 'extracted' AND is_primary"
+        "WHERE source_type = 'extracted' AND is_primary AND concept NOT LIKE 'maturity_%'"
     ).fetchall()
     con.close()
     out = {}

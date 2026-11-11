@@ -1,0 +1,129 @@
+{
+ "answer": {
+  "tables": [
+   {
+    "basis": "contractual_cash_flows",
+    "caption": "The maturity profile of borrowings as at 31 March 2026 is as follows:",
+    "comment": "Contractual maturity profile of total borrowings including IFRS 16 lease liabilities at 31 March 2026.",
+    "currency": "EUR",
+    "fiscal_year": 2026,
+    "header": "IFRS 16 aircraft and engine lease liability | IFRS 16 other lease liability | JOLCO, FTL and FL liability | Unsecured debt | Secured debt | Loans from non-controlling interests | Total",
+    "layer": "borrowings",
+    "location": "page 154",
+    "rows": [
+     {
+      "columns": [
+       {
+        "label": "Within one month",
+        "printed_value": "121.7",
+        "quote": "Within one month 58.9 0.2 17.3 2.3 — 43.0 121.7"
+       },
+       {
+        "label": "Between one and three months",
+        "printed_value": "84.9",
+        "quote": "Between one and three months 53.0 0.5 31.4 — — — 84.9"
+       },
+       {
+        "label": "Between three months and one year",
+        "printed_value": "609.3",
+        "quote": "Between three months and one year 469.8 2.0 137.5 — — — 609.3"
+       },
+       {
+        "label": "Between one and two years",
+        "printed_value": "1,059.7",
+        "quote": "Between one and two years 567.2 2.9 181.5 — 308.1 — 1,059.7"
+       },
+       {
+        "label": "Between two and three years",
+        "printed_value": "718.4",
+        "quote": "Between two and three years 529.0 2.4 187.0 — — — 718.4"
+       },
+       {
+        "label": "Between three and four years",
+        "printed_value": "840.3",
+        "quote": "Between three and four years 528.1 1.9 310.3 — — — 840.3"
+       },
+       {
+        "label": "Between four and five years",
+        "printed_value": "724.2",
+        "quote": "Between four and five years 516.0 1.9 206.3 — — — 724.2"
+       },
+       {
+        "label": "More than five years",
+        "printed_value": "2,795.9",
+        "quote": "More than five years 1,330.4 5.8 1,459.7 — — — 2,795.9"
+       }
+      ],
+      "name": "Total borrowings",
+      "total": {
+       "label": "Total borrowings",
+       "printed_value": "6,954.4",
+       "quote": "Total borrowings 4,052.4 17.6 2,531.0 2.3 308.1 43.0 6,954.4"
+      }
+     }
+    ],
+    "scale": "million"
+   },
+   {
+    "basis": "carrying_amount",
+    "caption": "The following table indicates the effective interest rate of the interest-bearing liabilities of the Group on the reporting date and the periods in which they mature.",
+    "comment": "Effective interest rate table showing carrying amounts of interest-bearing liabilities (including lease liabilities) by maturity at 31 March 2026.",
+    "currency": "EUR",
+    "fiscal_year": 2026,
+    "header": "31 March 2026 | Effective interest rate | Total € million | Within one year € million | One to two years € million | Two to five years € million | Above five years € million",
+    "layer": "borrowings",
+    "location": "page 162",
+    "rows": [
+     {
+      "columns": [
+       {
+        "label": "Within one year",
+        "printed_value": "774.0",
+        "quote": "Total 6,937.2 774.0 1,084.4 2,282.9 2,795.9 6,600.1 1,518.2 730.7 1,932.8 2,418.4"
+       },
+       {
+        "label": "One to two years",
+        "printed_value": "1,084.4",
+        "quote": "Total 6,937.2 774.0 1,084.4 2,282.9 2,795.9 6,600.1 1,518.2 730.7 1,932.8 2,418.4"
+       },
+       {
+        "label": "Two to five years",
+        "printed_value": "2,282.9",
+        "quote": "Total 6,937.2 774.0 1,084.4 2,282.9 2,795.9 6,600.1 1,518.2 730.7 1,932.8 2,418.4"
+       },
+       {
+        "label": "Above five years",
+        "printed_value": "2,795.9",
+        "quote": "Total 6,937.2 774.0 1,084.4 2,282.9 2,795.9 6,600.1 1,518.2 730.7 1,932.8 2,418.4"
+       }
+      ],
+      "name": "Total",
+      "total": {
+       "label": "Total",
+       "printed_value": "6,937.2",
+       "quote": "Total 6,937.2 774.0 1,084.4 2,282.9 2,795.9 6,600.1 1,518.2 730.7 1,932.8 2,418.4"
+      }
+     }
+    ],
+    "scale": "million"
+   }
+  ]
+ },
+ "label": "wizz FY2026 maturity 213800COXGZCORLJZA85-2026-03-31-ESEF-GB-0",
+ "recorded_at": "2026-11-11T18:43:04+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "maturity-v1",
+  "provider": "deepseek",
+  "system_sha256": "bb4eaabcf33095a3d93d017b6ab2d4e02d28d25087ba47512d12c7d8d195de5e",
+  "tool_sha256": "15dfbcb11b70f61e4b18c666e5d49a268139a82cbb82be12b0f2eb026a7b30af",
+  "user_sha256": "15d5e015a405f7b128b9c7ec749c3f0cf2a05051d25a2fbeabf02bd7859b26fc"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 9241,
+  "output_tokens": 1242
+ }
+}

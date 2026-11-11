@@ -1,0 +1,54 @@
+# Debt maturity tables entered by hand (M8, decision 0022), for the years whose only report is
+# a PDF supplied by Imane (decision 0007): the PDF's tables lose their rows when turned into
+# text, so the AI's quotes could not be checked word for word. Each table is copied as printed
+# (EUR millions); code then reads the column labels, foots each row and checks the table
+# against the balance sheet, as for the tables the AI reads. Unverified until Imane reviews.
+
+entries:
+  - issuer: afkl
+    fiscal_year: 2025
+    document: afkl-2025-consolidated-statements-en
+    entered_by: AI assistant, from the PDF
+    entered_on: 2026-11-11
+    reviewed_by:
+    tables:
+      - layer: borrowings
+        basis: contractual_cash_flows
+        page: 75
+        caption: "31.4 Maturity analysis: The financial liabilities maturities break down as follows (in € millions)"
+        scale: million
+        currency: EUR
+        rows:
+          - name: "TOTAL (principal 9,068 + interests 1,436; lease debt not included)"
+            columns: [["Y+1", "2,113"], ["Y+2", "959"], ["Y+3", "1,364"], ["Y+4", "1,626"],
+                      ["Y+5", "1,266"], ["Over 5 years", "3,176"]]
+            total: "10,504"
+
+  - issuer: adp
+    fiscal_year: 2025
+    document: adp-2025-comptes-consolides-fr
+    entered_by: AI assistant, from the PDF
+    entered_on: 2026-11-11
+    reviewed_by:
+    tables:
+      - layer: borrowings
+        basis: contractual_cash_flows
+        page: 64
+        caption: "Les échéances contractuelles résiduelles des passifs financiers (en millions d'euros)"
+        scale: million
+        currency: EUR
+        rows:
+          - name: "Emprunts et dettes financières hors dérivés (montant au bilan 9 988)"
+            columns: [["0 - 1 an", "1 469"], ["1 - 5 ans", "5 418"], ["Plus de 5 ans", "4 776"]]
+            total: "11 663"
+      - layer: borrowings
+        basis: carrying_amount
+        page: 57
+        caption: "9.4.3 Détail des emprunts obligataires et bancaires (en millions d'euros)"
+        scale: million
+        currency: EUR
+        rows:
+          - name: "TOTAL emprunts obligataires et bancaires"
+            columns: [["Échéances inférieures à 1 an", "1 139"], ["Échéances entre 1 et 5 ans", "4 156"],
+                      ["Échéances supérieures à 5 ans", "4 115"]]
+            total: "9 410"

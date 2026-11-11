@@ -1,0 +1,59 @@
+{
+ "answer": {
+  "tables": [
+   {
+    "basis": "contractual_cash_flows",
+    "caption": "(en millions d'euros)",
+    "comment": "IFRS 7 contractual maturity table including lease liabilities (dettes de location) within borrowings; the interest line is excluded from the layer.",
+    "fiscal_year": 2024,
+    "header": "Montant\nau bilan\n31/12/2024\nTotal des\néchéances\ncontractuelles\n31/12/2024\n0 - 1 an\n1 - 5 ans\nPlus de 5 ans",
+    "layer": "borrowings",
+    "location": "page 614",
+    "rows": [
+     {
+      "columns": [
+       {
+        "label": "0 - 1 an",
+        "printed_value": "1 456",
+        "quote": "Emprunts et dettes financières hors dérivés 10 142 11 689 1 456 4 917 5 316"
+       },
+       {
+        "label": "1 - 5 ans",
+        "printed_value": "4 917",
+        "quote": "Emprunts et dettes financières hors dérivés 10 142 11 689 1 456 4 917 5 316"
+       },
+       {
+        "label": "Plus de 5 ans",
+        "printed_value": "5 316",
+        "quote": "Emprunts et dettes financières hors dérivés 10 142 11 689 1 456 4 917 5 316"
+       }
+      ],
+      "name": "Emprunts et dettes financières hors dérivés",
+      "total": {
+       "label": "Total des échéances contractuelles 31/12/2024",
+       "printed_value": "11 689",
+       "quote": "Emprunts et dettes financières hors dérivés 10 142 11 689 1 456 4 917 5 316"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "label": "adp FY2024 maturity 969500PJMBSFHYC37989-2024-12-31-ESEF-FR-0",
+ "recorded_at": "2026-11-11T18:42:01+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "maturity-v1",
+  "provider": "deepseek",
+  "system_sha256": "bb4eaabcf33095a3d93d017b6ab2d4e02d28d25087ba47512d12c7d8d195de5e",
+  "tool_sha256": "15dfbcb11b70f61e4b18c666e5d49a268139a82cbb82be12b0f2eb026a7b30af",
+  "user_sha256": "01bc2122d92d5e931097dbc3d7b55bfdf97fcd4a623f6dd17b45b47e367c3621"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 10744,
+  "output_tokens": 434
+ }
+}

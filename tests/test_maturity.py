@@ -66,6 +66,7 @@ D = Decimal
         ("Beyond 2030", 5, None),
         ("Au-delà de 2030", 5, None),
         ("N+1", 0, 1),
+        ("Y+2", 1, 2),
         ("N+2 à N+5", 1, 5),
         ("Au-delà de N+5", 5, None),
         ("Au delà de 5 ans", 5, None),

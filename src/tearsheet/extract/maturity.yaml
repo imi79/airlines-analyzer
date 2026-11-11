@@ -33,7 +33,10 @@ cross_check:
   # a plausible amount of interest.
   contractual:
     first_bucket_floor: 0.90              # at least 90% of the tagged current debt
-    first_bucket_interest: 0.15           # at most current debt + 15% of the layer total
+    first_bucket_interest: 0.10           # at most current debt + 10% of the layer total
+    # (0.15 before the first run; tightened after it, decision 0022: a year's interest above
+    # 10% of the debt is implausible for these companies, and 15% let through a table that
+    # added trade payables to the debt)
     total_floor: 0.90                     # the total at least 90% of the tagged total
     total_ceiling: 1.60                   # and at most 160% of it
 

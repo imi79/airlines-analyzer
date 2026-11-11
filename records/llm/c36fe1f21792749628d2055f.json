@@ -1,0 +1,154 @@
+{
+ "answer": {
+  "tables": [
+   {
+    "basis": "principal",
+    "caption": "Maturity dates of interest-bearing financial liabilities 31 Dec 2025 EUR mill.",
+    "comment": "Borrowings (JOLCO loans and other plus bonds) are shown by nominal maturity at 31 Dec 2025, excluding lease liabilities.",
+    "fiscal_year": 2025,
+    "header": "EUR mill. 2026 2027 2028 2029 2030 Later Total",
+    "layer": "borrowings",
+    "location": "page 170",
+    "rows": [
+     {
+      "columns": [
+       {
+        "label": "2026",
+        "printed_value": "9.9",
+        "quote": "JOLCO loans and other, fixed interest 9.9 - - - - - 9.9"
+       },
+       {
+        "label": "2027",
+        "printed_value": "-",
+        "quote": "JOLCO loans and other, fixed interest 9.9 - - - - - 9.9"
+       },
+       {
+        "label": "2028",
+        "printed_value": "-",
+        "quote": "JOLCO loans and other, fixed interest 9.9 - - - - - 9.9"
+       },
+       {
+        "label": "2029",
+        "printed_value": "-",
+        "quote": "JOLCO loans and other, fixed interest 9.9 - - - - - 9.9"
+       },
+       {
+        "label": "2030",
+        "printed_value": "-",
+        "quote": "JOLCO loans and other, fixed interest 9.9 - - - - - 9.9"
+       },
+       {
+        "label": "Later",
+        "printed_value": "-",
+        "quote": "JOLCO loans and other, fixed interest 9.9 - - - - - 9.9"
+       }
+      ],
+      "name": "JOLCO loans and other, fixed interest",
+      "total": {
+       "label": "Total",
+       "printed_value": "9.9",
+       "quote": "JOLCO loans and other, fixed interest 9.9 - - - - - 9.9"
+      }
+     },
+     {
+      "columns": [
+       {
+        "label": "2026",
+        "printed_value": "41.6",
+        "quote": "JOLCO loans and other, variable interest 41.6 21.0 21.1 21.3 21.4 87.2 213.7"
+       },
+       {
+        "label": "2027",
+        "printed_value": "21.0",
+        "quote": "JOLCO loans and other, variable interest 41.6 21.0 21.1 21.3 21.4 87.2 213.7"
+       },
+       {
+        "label": "2028",
+        "printed_value": "21.1",
+        "quote": "JOLCO loans and other, variable interest 41.6 21.0 21.1 21.3 21.4 87.2 213.7"
+       },
+       {
+        "label": "2029",
+        "printed_value": "21.3",
+        "quote": "JOLCO loans and other, variable interest 41.6 21.0 21.1 21.3 21.4 87.2 213.7"
+       },
+       {
+        "label": "2030",
+        "printed_value": "21.4",
+        "quote": "JOLCO loans and other, variable interest 41.6 21.0 21.1 21.3 21.4 87.2 213.7"
+       },
+       {
+        "label": "Later",
+        "printed_value": "87.2",
+        "quote": "JOLCO loans and other, variable interest 41.6 21.0 21.1 21.3 21.4 87.2 213.7"
+       }
+      ],
+      "name": "JOLCO loans and other, variable interest",
+      "total": {
+       "label": "Total",
+       "printed_value": "213.7",
+       "quote": "JOLCO loans and other, variable interest 41.6 21.0 21.1 21.3 21.4 87.2 213.7"
+      }
+     },
+     {
+      "columns": [
+       {
+        "label": "2026",
+        "printed_value": "-",
+        "quote": "Bonds, fixed interest - - - 500.0 300.0 - 800.0"
+       },
+       {
+        "label": "2027",
+        "printed_value": "-",
+        "quote": "Bonds, fixed interest - - - 500.0 300.0 - 800.0"
+       },
+       {
+        "label": "2028",
+        "printed_value": "-",
+        "quote": "Bonds, fixed interest - - - 500.0 300.0 - 800.0"
+       },
+       {
+        "label": "2029",
+        "printed_value": "500.0",
+        "quote": "Bonds, fixed interest - - - 500.0 300.0 - 800.0"
+       },
+       {
+        "label": "2030",
+        "printed_value": "300.0",
+        "quote": "Bonds, fixed interest - - - 500.0 300.0 - 800.0"
+       },
+       {
+        "label": "Later",
+        "printed_value": "-",
+        "quote": "Bonds, fixed interest - - - 500.0 300.0 - 800.0"
+       }
+      ],
+      "name": "Bonds, fixed interest",
+      "total": {
+       "label": "Total",
+       "printed_value": "800.0",
+       "quote": "Bonds, fixed interest - - - 500.0 300.0 - 800.0"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "label": "finnair FY2025 maturity 213800SB6EOB8SSK9W63-2025-12-31-ESEF-FI-0",
+ "recorded_at": "2026-11-11T18:41:34+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "maturity-v1",
+  "provider": "deepseek",
+  "system_sha256": "bb4eaabcf33095a3d93d017b6ab2d4e02d28d25087ba47512d12c7d8d195de5e",
+  "tool_sha256": "15dfbcb11b70f61e4b18c666e5d49a268139a82cbb82be12b0f2eb026a7b30af",
+  "user_sha256": "c99144f3bb1aa322a4ae6d3fe862d4801896d308f7977d8ad0c59009e7f05e6d"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 9819,
+  "output_tokens": 1186
+ }
+}

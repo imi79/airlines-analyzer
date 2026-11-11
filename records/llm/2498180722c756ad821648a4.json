@@ -1,0 +1,66 @@
+{
+ "answer": {
+  "tables": [
+   {
+    "basis": "contractual_cash_flows",
+    "caption": "The maturity profile of financial liabilities and derivatives based on undiscounted cash flows and contractual maturities is as follows:",
+    "comment": "IFRS 7 undiscounted contractual maturity table for borrowings principal and interest at 30 September 2024; no total column is printed, so the total is the sum of the four columns.",
+    "currency": "GBP",
+    "fiscal_year": 2024,
+    "header": "Within one year One-two years Two-five years Over five years",
+    "layer": "borrowings",
+    "location": "page 195",
+    "rows": [
+     {
+      "columns": [
+       {
+        "label": "Within one year",
+        "printed_value": "465",
+        "quote": "Borrowings principal and interest 465 45 1,115 760"
+       },
+       {
+        "label": "One-two years",
+        "printed_value": "45",
+        "quote": "Borrowings principal and interest 465 45 1,115 760"
+       },
+       {
+        "label": "Two-five years",
+        "printed_value": "1,115",
+        "quote": "Borrowings principal and interest 465 45 1,115 760"
+       },
+       {
+        "label": "Over five years",
+        "printed_value": "760",
+        "quote": "Borrowings principal and interest 465 45 1,115 760"
+       }
+      ],
+      "name": "Borrowings principal and interest",
+      "total": {
+       "label": "Total",
+       "printed_value": "2,385",
+       "quote": "Borrowings principal and interest 465 45 1,115 760"
+      }
+     }
+    ],
+    "scale": "million"
+   }
+  ]
+ },
+ "label": "easyjet FY2024 maturity 2138001S47XKWIB7TH90-2024-09-30-ESEF-GB-0",
+ "recorded_at": "2026-11-11T18:41:46+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "maturity-v1",
+  "provider": "deepseek",
+  "system_sha256": "bb4eaabcf33095a3d93d017b6ab2d4e02d28d25087ba47512d12c7d8d195de5e",
+  "tool_sha256": "15dfbcb11b70f61e4b18c666e5d49a268139a82cbb82be12b0f2eb026a7b30af",
+  "user_sha256": "0e3feef3a104a0f462ade70df935969807b567789d9fdc4028d7da451fd1ffab"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 7940,
+  "output_tokens": 382
+ }
+}

@@ -1,0 +1,141 @@
+# Credit ratings (M8, decision 0022): entered by hand from each company's own annual report,
+# with the exact sentence, its page and the date the report gives the ratings at. Code checks
+# that the sentence is in the report word for word and shows each agency, rating and outlook;
+# Imane reviews each entry (`reviewed_by`). Until both hold, the entry stays off the page.
+#
+# scope: "issuer" (the company's long-term rating) unless the report only rates a bond issue.
+# not_stated: the latest annual report gives no rating; the box says so (it does not claim the
+#   company is unrated).
+# No agency research is reproduced: names, ratings, outlooks and dates only (spec, legal).
+
+issuers:
+  afkl:
+    as_at: 2024-05-13
+    document: 969500AQW31GYO8JZD66-2024-12-31-ESEF-FR-0
+    fiscal_year: 2024
+    location: page 12
+    quote: >-
+      Air France-KLM (la « Société ») (Euronext Paris: FR0000031122) notée BBB- par Fitch et BB+
+      par S&P
+    ratings:
+      - {agency: Fitch, rating: BBB-}
+      - {agency: S&P, rating: BB+}
+    comment: >-
+      The FY2025 statements (the only FY2025 document) give no rating; the FY2024 universal
+      registration document quotes them in the press release of 13 May 2024.
+    entered_by: AI assistant, from the report
+    entered_on: 2026-11-11
+    reviewed_by:
+
+  iag:
+    as_at: 2026-02-26
+    document: 959800TZHQRUSH1ESL13-2025-12-31-ESEF-GB-0
+    fiscal_year: 2025
+    location: page 41
+    quote: >-
+      The Group’s current ratings (at 26 February 2026) are all investment grade, with the
+      following ratings: S&P: BBB (stable outlook) and Moody’s: Baa2 (stable outlook).
+    ratings:
+      - {agency: S&P, rating: BBB, outlook: stable}
+      - {agency: Moody's, rating: Baa2, outlook: stable}
+    entered_by: AI assistant, from the report
+    entered_on: 2026-11-11
+    reviewed_by:
+
+  finnair:
+    as_at: 2025-12-31
+    document: 213800SB6EOB8SSK9W63-2025-12-31-ESEF-FI-0
+    fiscal_year: 2025
+    location: page 174
+    quote: >-
+      S&P Global Ratings has assigned a long-term issuer credit rating of BB+ to Finnair Plc,
+      with a stable outlook.
+    ratings:
+      - {agency: S&P, rating: BB+, outlook: stable}
+    entered_by: AI assistant, from the report
+    entered_on: 2026-11-11
+    reviewed_by:
+
+  easyjet:
+    as_at: 2025-09-30
+    document: 2138001S47XKWIB7TH90-2025-09-30-ESEF-GB-0
+    fiscal_year: 2025
+    location: page 33
+    quote: >-
+      easyJet continues to have one of the strongest investment grade balance sheets in European
+      Aviation (Baa2/stable from Moody’s and BBB+/stable from Standard & Poor’s).
+    ratings:
+      - {agency: Moody's, rating: Baa2, outlook: stable}
+      - {agency: S&P, rating: BBB+, outlook: stable}
+    entered_by: AI assistant, from the report
+    entered_on: 2026-11-11
+    reviewed_by:
+
+  norwegian:
+    not_stated: true
+    as_at: 2025-12-31
+    document: 549300IEUH2FEM2Y6B51-2025-12-31-ESEF-NO-0
+    fiscal_year: 2025
+    location: whole report
+    quote: ""
+    comment: The FY2025 annual report names no credit rating agency for the company.
+    entered_by: AI assistant, from the report
+    entered_on: 2026-11-11
+    reviewed_by:
+
+  wizz:
+    not_stated: true
+    as_at: 2026-03-31
+    document: 213800COXGZCORLJZA85-2026-03-31-ESEF-GB-0
+    fiscal_year: 2026
+    location: whole report
+    quote: ""
+    comment: The FY2026 annual report names no credit rating agency for the company.
+    entered_by: AI assistant, from the report
+    entered_on: 2026-11-11
+    reviewed_by:
+
+  adp:
+    as_at: 2024-12-31
+    document: 969500PJMBSFHYC37989-2024-12-31-ESEF-FR-0
+    fiscal_year: 2024
+    location: page 111
+    quote: >-
+      (A- perspective stable par l’agence Standard and Poor’s depuis le 10 juin 2024)
+    ratings:
+      - {agency: S&P, rating: A-, outlook: stable}
+    comment: >-
+      The FY2025 statements (the only FY2025 document) mention S&P only in a covenant clause;
+      the rating is from the FY2024 universal registration document.
+    entered_by: AI assistant, from the report
+    entered_on: 2026-11-11
+    reviewed_by:
+
+  aena:
+    scope: bond issue (EMTN, EUR 500 million due October 2030)
+    as_at: 2025-12-31
+    document: 959800R7QMXKF0NFMT29-2025-12-31-ESEF-ES-0
+    fiscal_year: 2025
+    location: page 61
+    quote: >-
+      Las agencias de rating Fitch y Moody’s asignaron a la emisión una calificación “A-” y “A3”
+      respectivamente.
+    ratings:
+      - {agency: Fitch, rating: A-}
+      - {agency: Moody's, rating: A3}
+    comment: The FY2025 accounts give the rating of the 2025 bond issue, not an issuer rating.
+    entered_by: AI assistant, from the report
+    entered_on: 2026-11-11
+    reviewed_by:
+
+  vie:
+    not_stated: true
+    as_at: 2025-12-31
+    document: 549300FQ2ILBH7DJ6I45-2025-12-31-ESEF-AT-0
+    fiscal_year: 2025
+    location: whole report
+    quote: ""
+    comment: The FY2025 annual report names no credit rating agency for the company.
+    entered_by: AI assistant, from the report
+    entered_on: 2026-11-11
+    reviewed_by:

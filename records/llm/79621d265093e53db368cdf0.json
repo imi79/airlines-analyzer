@@ -1,0 +1,64 @@
+{
+ "answer": {
+  "tables": [
+   {
+    "basis": "carrying_amount",
+    "caption": "The maturity profile of borrowings as at 31 March 2025 is as follows:",
+    "comment": "The FY2025 maturity profile table is cut off after the 'Between one and two years' row, so the remaining maturity columns and the total row cannot be quoted.",
+    "fiscal_year": 2025,
+    "header": "IFRS 16 aircraft and engine lease liability | IFRS 16 other lease liability | JOLCO, FTL and FL liability | Unsecured debt | Secured debt | Loans from non-controlling interests | Total",
+    "layer": "borrowings",
+    "location": "page 152",
+    "rows": [
+     {
+      "columns": [
+       {
+        "label": "Within one month",
+        "printed_value": "55.1",
+        "quote": "Within one month 42.8 0.3 11.4 0.6 — — 55.1"
+       },
+       {
+        "label": "Between one and three months",
+        "printed_value": "122.6",
+        "quote": "Between one and three months 95.7 0.6 26.3 — — — 122.6"
+       },
+       {
+        "label": "Between three months and one year",
+        "printed_value": "1,340.2",
+        "quote": "Between three months and one year 463.7 2.6 101.7 500.3 271.9 — 1,340.2"
+       },
+       {
+        "label": "Between one and two years",
+        "printed_value": "705.5",
+        "quote": "Between one and two years 558.5 3.1 143.9 — — — 705.5"
+       }
+      ],
+      "name": "Total borrowings",
+      "total": {
+       "label": "Total",
+       "printed_value": "",
+       "quote": ""
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "label": "wizz FY2025 maturity 213800COXGZCORLJZA85-2025-03-31-ESEF-GB-0",
+ "recorded_at": "2026-11-11T18:42:58+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "maturity-v1",
+  "provider": "deepseek",
+  "system_sha256": "bb4eaabcf33095a3d93d017b6ab2d4e02d28d25087ba47512d12c7d8d195de5e",
+  "tool_sha256": "15dfbcb11b70f61e4b18c666e5d49a268139a82cbb82be12b0f2eb026a7b30af",
+  "user_sha256": "6833583387fd4721d4d644172c42c78c77cb6755bd69c64352a473a48043fb1f"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 9565,
+  "output_tokens": 419
+ }
+}

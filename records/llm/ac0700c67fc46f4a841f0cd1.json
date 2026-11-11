@@ -1,0 +1,61 @@
+{
+ "answer": {
+  "tables": [
+   {
+    "basis": "contractual_cash_flows",
+    "caption": "2024 in T€",
+    "comment": "FY2024 IFRS 7 liquidity table shows only lease liabilities (plus trade and other payables) as contractual gross cash flows; no borrowings maturity table is given.",
+    "currency": "EUR",
+    "fiscal_year": 2024,
+    "header": "Buchwert\nBrutto-Cashflows\nZinssatz1\n31.12.2024\ngesamt zum\n31.12.2024\n< 1 Jahr\n1-5 Jahre\n> 5 Jahre",
+    "layer": "leases",
+    "location": "page 129",
+    "rows": [
+     {
+      "columns": [
+       {
+        "label": "< 1 Jahr",
+        "printed_value": "1.922,2",
+        "quote": "Leasingverbind-\nlichkeiten\n55.612,1\n129.964,5\n1.922,2\n8.026,7\n120.015,6\n4,06%"
+       },
+       {
+        "label": "1-5 Jahre",
+        "printed_value": "8.026,7",
+        "quote": "Leasingverbind-\nlichkeiten\n55.612,1\n129.964,5\n1.922,2\n8.026,7\n120.015,6\n4,06%"
+       },
+       {
+        "label": "> 5 Jahre",
+        "printed_value": "120.015,6",
+        "quote": "Leasingverbind-\nlichkeiten\n55.612,1\n129.964,5\n1.922,2\n8.026,7\n120.015,6\n4,06%"
+       }
+      ],
+      "name": "Leasingverbindlichkeiten",
+      "total": {
+       "label": "gesamt zum 31.12.2024",
+       "printed_value": "129.964,5",
+       "quote": "Leasingverbind-\nlichkeiten\n55.612,1\n129.964,5\n1.922,2\n8.026,7\n120.015,6\n4,06%"
+      }
+     }
+    ],
+    "scale": "thousand"
+   }
+  ]
+ },
+ "label": "vie FY2024 maturity 549300FQ2ILBH7DJ6I45-2024-12-31-ESEF-AT-0",
+ "recorded_at": "2026-11-11T18:42:30+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "maturity-v1",
+  "provider": "deepseek",
+  "system_sha256": "bb4eaabcf33095a3d93d017b6ab2d4e02d28d25087ba47512d12c7d8d195de5e",
+  "tool_sha256": "15dfbcb11b70f61e4b18c666e5d49a268139a82cbb82be12b0f2eb026a7b30af",
+  "user_sha256": "2b0c29065809aecdf9f959553c4cf9e8aa1b1166c61bad2045c8903c3c060791"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 13687,
+  "output_tokens": 487
+ }
+}

@@ -40,10 +40,11 @@ def _load(db_path: Path):
     con = duckdb.connect(str(db_path), read_only=True)
     facts = con.execute(
         "SELECT issuer, fiscal_year, period_end, concept, value, status, filing_id, "
-        "comparative, source_ref FROM facts WHERE source_type = 'extracted' AND is_primary"
+        "comparative, source_ref FROM facts WHERE source_type = 'extracted' AND is_primary "
+        "AND concept NOT LIKE 'maturity_%'"  # the maturity wall is reported in docs/m8
     ).df()
     log = con.execute("SELECT * FROM extraction_log").df()
-    calls = con.execute("SELECT * FROM llm_calls").df()
+    calls = con.execute("SELECT * FROM llm_calls WHERE job = 'extraction'").df()  # M3 only
     ends = con.execute(
         "SELECT issuer, fiscal_year, max(period_end) AS period_end FROM facts "
         "WHERE source_type NOT IN ('computed', 'extracted') AND is_primary GROUP BY 1, 2"
