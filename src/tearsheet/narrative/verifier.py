@@ -180,6 +180,10 @@ class Verifier:
         self.symbols = re.compile(voc["symbols"])
         self.figure_words = re.compile(rf"\b(?:{voc['figure_words']})\b", re.I)
         self.ignored = re.compile(r"\b(?:" + "|".join(voc["ignored_phrases"]) + r")\b", re.I)
+        # M8 redraft only: a lone "A" after a word ("upgraded its rating to A"), which plain
+        # prose rarely has but would be read too widely in the draft-v7 checks
+        lone = voc.get("lone_rating")
+        self.lone_rating = re.compile(lone) if lone else None
         self.directions = {
             name: (re.compile(rf"\b(?:{d['words']})\b", re.I), tuple(d["claims"]))
             for name, d in voc["directions"].items()
@@ -309,6 +313,10 @@ class Verifier:
             out.append(f"symbol written outside a blank: '{sym}'")
         for rating in RATING.findall(text):
             out.append(f"rating written outside a blank: '{rating}' (M8: ratings come from blanks)")
+        if self.lone_rating is not None:
+            for rating in self.lone_rating.findall(text):
+                out.append(f"rating written outside a blank: '{rating}' (M8: ratings come from "
+                           "blanks)")  # fmt: skip
         words = self.allowed_phrases.sub(" ", text)
         for word in self.number_words.findall(words):
             out.append(f"word that states a number: '{word}'")

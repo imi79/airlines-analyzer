@@ -235,15 +235,11 @@
       },
       {
        "claims": [],
-       "id": "cash_like@FY2024"
-      },
-      {
-       "claims": [],
        "id": "event:funding_and_rating"
       }
      ],
-     "text": "Debt due within one year was stable at GBP 643m, so cash of GBP 3.5bn covers the near-term maturities without new funding, and the group issued a euro-denominated guaranteed bond under its EMTN programme maturing in 2031.",
-     "text_blanks": "Debt due within one year was stable at {{debt_due_1y@FY2024}}, so cash of {{cash_like@FY2024}} covers the near-term maturities without new funding, and the group issued a euro-denominated guaranteed bond under its EMTN programme maturing in 2031."
+     "text": "Debt due within one year was stable at GBP 643m, so cash on the balance sheet covers the near-term maturities without new funding, and the group issued a euro-denominated guaranteed bond under its EMTN programme maturing in 2031.",
+     "text_blanks": "Debt due within one year was stable at {{debt_due_1y@FY2024}}, so cash on the balance sheet covers the near-term maturities without new funding, and the group issued a euro-denominated guaranteed bond under its EMTN programme maturing in 2031."
     },
     {
      "facts": [
@@ -263,28 +259,15 @@
         "down",
         "worse"
        ],
-       "id": "fcf_after_leases_to_debt@FY2024"
-      },
-      {
-       "claims": [
-        "down",
-        "worse"
-       ],
        "id": "fcf_after_leases_to_debt.change@FY2024"
       },
       {
-       "claims": [
-        "up"
-       ],
-       "id": "net_capex.change@FY2024"
-      },
-      {
        "claims": [],
-       "id": "net_capex@FY2024"
+       "id": "fcf_after_leases_to_debt@FY2024"
       }
      ],
-     "text": "Free cash flow after lease payments fell by 33.3% to GBP 437m, or 13.3% of debt, down 9.4 points, as net capex rose by 18.9% to GBP 806m.",
-     "text_blanks": "Free cash flow after lease payments fell by {{fcf_after_leases.change@FY2024}} to {{fcf_after_leases@FY2024}}, or {{fcf_after_leases_to_debt@FY2024}} of debt, down {{fcf_after_leases_to_debt.change@FY2024}}, as net capex rose by {{net_capex.change@FY2024}} to {{net_capex@FY2024}}."
+     "text": "Free cash flow after lease payments fell by 33.3% to GBP 437m, and FCF after leases to debt dropped by 9.4 points to 13.3%, the comparable measure of cash left for debt holders once lease payments in financing are taken out.",
+     "text_blanks": "Free cash flow after lease payments fell by {{fcf_after_leases.change@FY2024}} to {{fcf_after_leases@FY2024}}, and FCF after leases to debt dropped by {{fcf_after_leases_to_debt.change@FY2024}} to {{fcf_after_leases_to_debt@FY2024}}, the comparable measure of cash left for debt holders once lease payments in financing are taken out."
     },
     {
      "facts": [
@@ -300,13 +283,18 @@
       },
       {
        "claims": [
-        "in_line_with_peers"
+        "down",
+        "better"
        ],
+       "id": "advance_ticket_cover.change@FY2024"
+      },
+      {
+       "claims": [],
        "id": "advance_ticket_cover@FY2024"
       }
      ],
-     "text": "Customer prepayments remain a large part of the funding base: contract liabilities rose by 16.0% to GBP 1.7bn, with advance ticket cover of 50.2% in line with the peer median.",
-     "text_blanks": "Customer prepayments remain a large part of the funding base: contract liabilities rose by {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}}, with advance ticket cover of {{advance_ticket_cover@FY2024}} in line with the peer median."
+     "text": "Customer prepayments remain a large part of the funding base: contract liabilities rose by 16.0% to GBP 1.7bn, while advance ticket cover eased by 1.0 point to 50.2%, in the middle of the peer group.",
+     "text_blanks": "Customer prepayments remain a large part of the funding base: contract liabilities rose by {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}}, while advance ticket cover eased by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, in the middle of the peer group."
     }
    ],
    "status": "passed",
@@ -634,17 +622,6 @@
         "down",
         "worse"
        ],
-       "id": "fcf_after_leases.change@FY2024"
-      },
-      {
-       "claims": [],
-       "id": "fcf_after_leases@FY2024"
-      },
-      {
-       "claims": [
-        "down",
-        "worse"
-       ],
        "id": "fcf_after_leases_to_debt.change@FY2024"
       },
       {
@@ -652,8 +629,8 @@
        "id": "fcf_after_leases_to_debt@FY2024"
       }
      ],
-     "text": "Cash generation: free cash flow after lease payments fell by 33.3% to GBP 437m, taking FCF after leases to debt down by 9.4 points to 13.3%.",
-     "text_blanks": "Cash generation: free cash flow after lease payments fell by {{fcf_after_leases.change@FY2024}} to {{fcf_after_leases@FY2024}}, taking FCF after leases to debt down by {{fcf_after_leases_to_debt.change@FY2024}} to {{fcf_after_leases_to_debt@FY2024}}."
+     "text": "Cash generation: FCF after leases to debt fell by 9.4 points to 13.3%, so less cash is left for debt holders after lease payments and capital spending.",
+     "text_blanks": "Cash generation: FCF after leases to debt fell by {{fcf_after_leases_to_debt.change@FY2024}} to {{fcf_after_leases_to_debt@FY2024}}, so less cash is left for debt holders after lease payments and capital spending."
     },
     {
      "facts": [
@@ -664,36 +641,31 @@
        "id": "capex_intensity.change@FY2024"
       },
       {
-       "claims": [
-        "above_peers"
-       ],
+       "claims": [],
        "id": "capex_intensity@FY2024"
       },
       {
-       "claims": [],
+       "claims": [
+        "above_peers"
+       ],
        "id": "capex_intensity.peer_median@FY2024"
       },
       {
+       "claims": [
+        "up"
+       ],
+       "id": "net_capex.change@FY2024"
+      },
+      {
        "claims": [],
-       "id": "event:costs"
+       "id": "net_capex@FY2024"
       }
      ],
-     "text": "Investment: capex intensity rose by 0.8 points to 10.0%, above the peer median of 5.4%, with significant investment in spares to limit aircraft grounding.",
-     "text_blanks": "Investment: capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}, above the peer median of {{capex_intensity.peer_median@FY2024}}, with significant investment in spares to limit aircraft grounding."
+     "text": "Investment: capex intensity rose by 0.8 points to 10.0%, above the peer median of 5.4%, with net capex up 18.9% to GBP 806m.",
+     "text_blanks": "Investment: capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}, above the peer median of {{capex_intensity.peer_median@FY2024}}, with net capex up {{net_capex.change@FY2024}} to {{net_capex@FY2024}}."
     },
     {
      "facts": [
-      {
-       "claims": [
-        "up",
-        "worse"
-       ],
-       "id": "cask.change@FY2024"
-      },
-      {
-       "claims": [],
-       "id": "cask@FY2024"
-      },
       {
        "claims": [
         "up",
@@ -704,10 +676,14 @@
       {
        "claims": [],
        "id": "cask_ex_fuel@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:costs"
       }
      ],
-     "text": "Unit costs: CASK rose by 4.2% to 7.10 pence and CASK ex-fuel by 5.4% to 5.29 pence, so the cost base moved against the group.",
-     "text_blanks": "Unit costs: CASK rose by {{cask.change@FY2024}} to {{cask@FY2024}} and CASK ex-fuel by {{cask_ex_fuel.change@FY2024}} to {{cask_ex_fuel@FY2024}}, so the cost base moved against the group."
+     "text": "Unit costs: CASK ex-fuel rose by 5.4% to 5.29 pence, with significant investment in spares made during the year to limit the time aircraft are grounded by supply-chain delays.",
+     "text_blanks": "Unit costs: CASK ex-fuel rose by {{cask_ex_fuel.change@FY2024}} to {{cask_ex_fuel@FY2024}}, with significant investment in spares made during the year to limit the time aircraft are grounded by supply-chain delays."
     },
     {
      "facts": [
@@ -3404,8 +3380,6 @@
    "net_debt.change@FY2024": "needs both years verified",
    "net_debt@FY2023": "below zero: the company has net cash, use net_cash",
    "net_debt@FY2024": "below zero: the company has net cash, use net_cash",
-   "rating_moodys@FY2024": "not reviewed yet: waiting for Imane's review",
-   "rating_sp@FY2024": "not reviewed yet: waiting for Imane's review",
    "short_term_debt_cover.change@FY2024": "needs both years verified",
    "short_term_debt_cover@FY2024": "not verified yet: waiting for Imane's review",
    "undrawn_facilities.change@FY2024": "needs both years verified",
@@ -3428,12 +3402,12 @@
   "as_at": "2025-09-30",
   "document": "2138001S47XKWIB7TH90-2025-09-30-ESEF-GB-0",
   "quote": "easyJet continues to have one of the strongest investment grade balance sheets in European Aviation (Baa2/stable from Moody’s and BBB+/stable from Standard & Poor’s).",
-  "reason": "not reviewed yet: waiting for Imane's review",
+  "reason": null,
   "scope": "issuer",
   "source": "FY2025 annual report, page 33",
-  "stale": false,
-  "status": "unverified",
-  "text": "awaiting review"
+  "stale": true,
+  "status": "verified",
+  "text": "Moody's Baa2 (stable), S&P BBB+ (stable)"
  },
  "run": {
   "calls": 1,
@@ -3443,15 +3417,15 @@
    "2138001S47XKWIB7TH90-2024-09-30-ESEF-GB-0": "caae76e3b6dd5a76f3c1cb95282df0f2efbfccb1115ffbfaa254ef50f7a31fac"
   },
   "first_try_ok": true,
-  "input_hash": "a2e65095df1b8ce91d24fdc7498be64d2fc7df3fb6ed77794e50a9018878c1ae",
-  "input_tokens": 29220,
+  "input_hash": "0a7b7f959b04394c4adcc4afc9354e553d1d44e6717be0bfe9fd79ef9206759a",
+  "input_tokens": 29178,
   "matches_figures": true,
   "model": "deepseek-flash",
-  "output_tokens": 4984,
+  "output_tokens": 4885,
   "passed": true,
   "prompt_version": "draft-v7 + draft-v8 (liquidity_funding, watch_items)",
   "provider": "deepseek",
-  "recorded_at": "2026-11-11T18:55:53+00:00"
+  "recorded_at": "2026-11-11T21:24:51+00:00"
  },
  "type": "airline"
 }

@@ -222,7 +222,8 @@
       },
       {
        "claims": [
-        "down"
+        "down",
+        "worse"
        ],
        "id": "cash_liquidity_to_revenue@FY2024"
       }
@@ -247,8 +248,8 @@
        "id": "borrowings_due_2y@FY2024"
       }
      ],
-     "text": "Debt due within one year rose by 6.4% to EUR 2.7bn, and borrowings due within two years stood at EUR 3.9bn, so the near-term maturities are covered by cash on hand without new funding.",
-     "text_blanks": "Debt due within one year rose by {{debt_due_1y.change@FY2024}} to {{debt_due_1y@FY2024}}, and borrowings due within two years stood at {{borrowings_due_2y@FY2024}}, so the near-term maturities are covered by cash on hand without new funding."
+     "text": "Debt due within one year rose by 6.4% to EUR 2.7bn, and borrowings due within two years stood at EUR 3.9bn, so the near-term maturities are covered by cash liquidity without new funding.",
+     "text_blanks": "Debt due within one year rose by {{debt_due_1y.change@FY2024}} to {{debt_due_1y@FY2024}}, and borrowings due within two years stood at {{borrowings_due_2y@FY2024}}, so the near-term maturities are covered by cash liquidity without new funding."
     },
     {
      "facts": [
@@ -260,25 +261,23 @@
        "id": "fcf_after_leases@FY2024"
       },
       {
+       "claims": [],
+       "id": "fcf_after_leases@FY2023"
+      },
+      {
        "claims": [
         "down",
         "worse"
        ],
-       "id": "fcf_after_leases_to_debt@FY2024"
-      },
-      {
-       "claims": [
-        "up"
-       ],
-       "id": "net_capex.change@FY2024"
+       "id": "fcf_after_leases_to_debt.change@FY2024"
       },
       {
        "claims": [],
-       "id": "net_capex@FY2024"
+       "id": "fcf_after_leases_to_debt@FY2024"
       }
      ],
-     "text": "Free cash flow after lease payments was EUR -1.1bn, or -7.6% of debt, as net capex rose by 13.6% to EUR 3.1bn.",
-     "text_blanks": "Free cash flow after lease payments was {{fcf_after_leases@FY2024}}, or {{fcf_after_leases_to_debt@FY2024}} of debt, as net capex rose by {{net_capex.change@FY2024}} to {{net_capex@FY2024}}."
+     "text": "Free cash flow after lease payments was EUR -1.1bn, down from EUR -615m in FY2023, and FCF after leases to debt fell by 3.1 points to -7.6%, so cash left for debt holders was negative after leases.",
+     "text_blanks": "Free cash flow after lease payments was {{fcf_after_leases@FY2024}}, down from {{fcf_after_leases@FY2023}} in FY2023, and FCF after leases to debt fell by {{fcf_after_leases_to_debt.change@FY2024}} to {{fcf_after_leases_to_debt@FY2024}}, so cash left for debt holders was negative after leases."
     },
     {
      "facts": [
@@ -297,11 +296,15 @@
         "up",
         "worse"
        ],
+       "id": "advance_ticket_cover.change@FY2024"
+      },
+      {
+       "claims": [],
        "id": "advance_ticket_cover@FY2024"
       }
      ],
-     "text": "Customer prepayments rose, with contract liabilities up 6.2% to EUR 4.1bn and advance ticket cover at 59.1%, so a larger share of the cash balance is customers' money.",
-     "text_blanks": "Customer prepayments rose, with contract liabilities up {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}} and advance ticket cover at {{advance_ticket_cover@FY2024}}, so a larger share of the cash balance is customers' money."
+     "text": "Customer prepayments rose: contract liabilities increased by 6.2% to EUR 4.1bn, with advance ticket cover up by 12.4 points to 59.1%.",
+     "text_blanks": "Customer prepayments rose: contract liabilities increased by {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}}, with advance ticket cover up by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}."
     }
    ],
    "status": "passed",
@@ -575,11 +578,15 @@
         "down",
         "worse"
        ],
+       "id": "fcf_after_leases_to_debt.change@FY2024"
+      },
+      {
+       "claims": [],
        "id": "fcf_after_leases_to_debt@FY2024"
       }
      ],
-     "text": "Cash generation: free cash flow after lease payments was EUR -1.1bn, or -7.6% of debt, so cash flow did not cover capital spending and lease payments.",
-     "text_blanks": "Cash generation: free cash flow after lease payments was {{fcf_after_leases@FY2024}}, or {{fcf_after_leases_to_debt@FY2024}} of debt, so cash flow did not cover capital spending and lease payments."
+     "text": "Cash generation: free cash flow after leases was EUR -1.1bn and FCF after leases to debt fell by 3.1 points to -7.6%, so the group consumed cash after lease payments.",
+     "text_blanks": "Cash generation: free cash flow after leases was {{fcf_after_leases@FY2024}} and FCF after leases to debt fell by {{fcf_after_leases_to_debt.change@FY2024}} to {{fcf_after_leases_to_debt@FY2024}}, so the group consumed cash after lease payments."
     },
     {
      "facts": [
@@ -598,18 +605,12 @@
        "id": "cash_liquidity_to_revenue@FY2024"
       },
       {
-       "claims": [
-        "worst_in_group"
-       ],
-       "id": "cash_liquidity_to_revenue.peer_rank@FY2024"
-      },
-      {
        "claims": [],
        "id": "cash_liquidity_to_revenue.peer_median@FY2024"
       }
      ],
-     "text": "Liquidity: cash liquidity to revenue fell by 5.5 points to 22.0%, the weakest of the network peers (3rd of 3), against a median of 29.0%.",
-     "text_blanks": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, the weakest of the network peers ({{cash_liquidity_to_revenue.peer_rank@FY2024}}), against a median of {{cash_liquidity_to_revenue.peer_median@FY2024}}."
+     "text": "Liquidity: cash liquidity to revenue fell by 5.5 points to 22.0%, below the peer median of 29.0%.",
+     "text_blanks": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2024}}."
     },
     {
      "facts": [
@@ -642,24 +643,27 @@
      "facts": [
       {
        "claims": [
-        "up",
+        "down",
         "worse"
        ],
-       "id": "advance_ticket_cover.change@FY2024"
+       "id": "ebitda_margin.change@FY2024"
       },
       {
        "claims": [
-        "below_peers"
+        "below_peers",
+        "worse_than_peers"
        ],
-       "id": "advance_ticket_cover@FY2024"
+       "id": "ebitda_margin@FY2024"
       },
       {
-       "claims": [],
-       "id": "advance_ticket_cover.peer_median@FY2024"
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2024"
       }
      ],
-     "text": "Customer prepayments: advance ticket cover rose by 12.4 points to 59.1%, below the peer median of 74.5%, which raises the sensitivity of the cash balance to bookings.",
-     "text_blanks": "Customer prepayments: advance ticket cover rose by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, below the peer median of {{advance_ticket_cover.peer_median@FY2024}}, which raises the sensitivity of the cash balance to bookings."
+     "text": "Margins: the EBITDA margin narrowed by 0.8 points to 13.1%, the weakest of the network airlines (3rd of 3).",
+     "text_blanks": "Margins: the EBITDA margin narrowed by {{ebitda_margin.change@FY2024}} to {{ebitda_margin@FY2024}}, the weakest of the network airlines ({{ebitda_margin.peer_rank@FY2024}})."
     }
    ],
    "status": "passed",
@@ -2598,6 +2602,40 @@
     "value": "489000000.000000000000",
     "vs_peers": null
    },
+   "rating_fitch@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "rating_fitch@FY2024",
+    "kind": "rating",
+    "label": "Fitch long-term rating, as at 2024-05-13",
+    "metric": "rating_fitch",
+    "note": "From the company's report (page 12); never typed, always a blank.",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "BBB-",
+    "unit": "rating",
+    "value": "0",
+    "vs_peers": null
+   },
+   "rating_sp@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "rating_sp@FY2024",
+    "kind": "rating",
+    "label": "S&P long-term rating, as at 2024-05-13",
+    "metric": "rating_sp",
+    "note": "From the company's report (page 12); never typed, always a blank.",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "BB+",
+    "unit": "rating",
+    "value": "0",
+    "vs_peers": null
+   },
    "revenue.change@FY2024": {
     "assessment": "better",
     "direction": "up",
@@ -2817,8 +2855,6 @@
    "rask.change@FY2024": "needs both years verified",
    "rask@FY2023": "ASK not available for FY2023",
    "rask@FY2024": "ASK not available for FY2024",
-   "rating_fitch@FY2024": "not reviewed yet: waiting for Imane's review",
-   "rating_sp@FY2024": "not reviewed yet: waiting for Imane's review",
    "rpk.change@FY2024": "needs both years verified",
    "rpk@FY2023": "RPK not available for FY2023",
    "rpk@FY2024": "RPK not available for FY2024",
@@ -2846,30 +2882,30 @@
   "as_at": "2024-05-13",
   "document": "969500AQW31GYO8JZD66-2024-12-31-ESEF-FR-0",
   "quote": "Air France-KLM (la « Société ») (Euronext Paris: FR0000031122) notée BBB- par Fitch et BB+ par S&P",
-  "reason": "not reviewed yet: waiting for Imane's review",
+  "reason": null,
   "scope": "issuer",
   "source": "FY2024 annual report, page 12",
-  "stale": false,
-  "status": "unverified",
-  "text": "awaiting review"
+  "stale": true,
+  "status": "verified",
+  "text": "Fitch BBB-, S&P BB+"
  },
  "run": {
-  "calls": 2,
+  "calls": 1,
   "cost_usd": null,
   "filing_hashes": {
    "969500AQW31GYO8JZD66-2024-12-31-ESEF-FR-0": "3e5fbdef1de4640bfc54052be77a4061e5f8045bb978be4f1598fa57cf9e4b4e",
    "969500AQW31GYO8JZD66-2024-12-31-manual-pdf": "70d64d938f3a44055fb3d9bc18e7a561d397eda4061c64df1a9a15bf2d7cb545"
   },
-  "first_try_ok": false,
-  "input_hash": "bb785d6280887875f96200e9a409a07f04a9d144f212fbd98570e4b815ac3718",
-  "input_tokens": 57727,
+  "first_try_ok": true,
+  "input_hash": "644e36880f9111226a0552b2cd5b502d8a8b6fe0390e462e3b05db020b80ebb3",
+  "input_tokens": 42641,
   "matches_figures": true,
   "model": "deepseek-flash",
-  "output_tokens": 6304,
+  "output_tokens": 5712,
   "passed": true,
   "prompt_version": "draft-v7 + draft-v8 (liquidity_funding, watch_items)",
   "provider": "deepseek",
-  "recorded_at": "2026-11-11T18:57:42+00:00"
+  "recorded_at": "2026-11-11T21:14:24+00:00"
  },
  "type": "airline"
 }

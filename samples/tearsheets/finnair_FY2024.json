@@ -394,14 +394,13 @@
       },
       {
        "claims": [
-        "up",
-        "worse"
+        "in_line_with_peers"
        ],
        "id": "advance_ticket_cover@FY2024"
       }
      ],
-     "text": "Customer prepayments rose, with contract liabilities up by 30.0% to EUR 659m and advance ticket cover at 74.5%, so a larger share of the cash balance is customers' money.",
-     "text_blanks": "Customer prepayments rose, with contract liabilities up by {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}} and advance ticket cover at {{advance_ticket_cover@FY2024}}, so a larger share of the cash balance is customers' money."
+     "text": "Customer prepayments rose, with contract liabilities up by 30.0% to EUR 659m and advance ticket cover at 74.5%, in line with the peer median.",
+     "text_blanks": "Customer prepayments rose, with contract liabilities up by {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}} and advance ticket cover at {{advance_ticket_cover@FY2024}}, in line with the peer median."
     }
    ],
    "status": "passed",
@@ -693,17 +692,6 @@
      "facts": [
       {
        "claims": [
-        "down",
-        "worse"
-       ],
-       "id": "ebitda_margin.change@FY2024"
-      },
-      {
-       "claims": [],
-       "id": "ebitda_margin@FY2024"
-      },
-      {
-       "claims": [
         "below_peers"
        ],
        "id": "ffo_to_debt@FY2024"
@@ -711,10 +699,20 @@
       {
        "claims": [],
        "id": "ffo_to_debt.peer_median@FY2024"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "ffo.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ffo@FY2024"
       }
      ],
-     "text": "Earnings: the EBITDA margin narrowed by 3.4 points to 14.6%, and FFO to debt of 21.8% is below the peer median of 23.4%.",
-     "text_blanks": "Earnings: the EBITDA margin narrowed by {{ebitda_margin.change@FY2024}} to {{ebitda_margin@FY2024}}, and FFO to debt of {{ffo_to_debt@FY2024}} is below the peer median of {{ffo_to_debt.peer_median@FY2024}}."
+     "text": "Cash generation: FFO to debt of 21.8% is below the peer median of 23.4%, and FFO fell by 7.4% to EUR 406m.",
+     "text_blanks": "Cash generation: FFO to debt of {{ffo_to_debt@FY2024}} is below the peer median of {{ffo_to_debt.peer_median@FY2024}}, and FFO fell by {{ffo.change@FY2024}} to {{ffo@FY2024}}."
     },
     {
      "facts": [
@@ -757,8 +755,8 @@
        "id": "advance_ticket_cover@FY2024"
       }
      ],
-     "text": "Customer prepayments: advance ticket cover rose by 19.5 points to 74.5%, so refunds or slower bookings would draw on cash held for customers.",
-     "text_blanks": "Customer prepayments: advance ticket cover rose by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, so refunds or slower bookings would draw on cash held for customers."
+     "text": "Customer prepayments: advance ticket cover rose by 19.5 points to 74.5%, so a larger share of liquidity is customers' prepayments.",
+     "text_blanks": "Customer prepayments: advance ticket cover rose by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, so a larger share of liquidity is customers' prepayments."
     }
    ],
    "status": "passed",
@@ -3094,7 +3092,6 @@
    "rask.change@FY2024": "needs both years verified",
    "rask@FY2023": "not verified yet: waiting for Imane's review",
    "rask@FY2024": "not verified yet: waiting for Imane's review",
-   "rating_sp@FY2024": "not reviewed yet: waiting for Imane's review",
    "rpk.change@FY2024": "needs both years verified",
    "rpk@FY2023": "not verified yet: waiting for Imane's review",
    "rpk@FY2024": "not verified yet: waiting for Imane's review",
@@ -3120,12 +3117,12 @@
   "as_at": "2025-12-31",
   "document": "213800SB6EOB8SSK9W63-2025-12-31-ESEF-FI-0",
   "quote": "S&P Global Ratings has assigned a long-term issuer credit rating of BB+ to Finnair Plc, with a stable outlook.",
-  "reason": "not reviewed yet: waiting for Imane's review",
+  "reason": null,
   "scope": "issuer",
   "source": "FY2025 annual report, page 174",
   "stale": false,
-  "status": "unverified",
-  "text": "awaiting review"
+  "status": "verified",
+  "text": "S&P BB+ (stable)"
  },
  "run": {
   "calls": 1,
@@ -3135,15 +3132,15 @@
    "213800SB6EOB8SSK9W63-2024-12-31-ESEF-FI-0": "eea44d0f2e16c6e372e2c945cca1d06636cdc3e44ff11c1548903a6761bff299"
   },
   "first_try_ok": true,
-  "input_hash": "dfa105ea3f51dfc4be123c81a5c633990ff2277d65904b60f223a18b02b1673c",
-  "input_tokens": 61452,
+  "input_hash": "68c116864d365b77d647c4f751e044d40be98170ad12ad5ee3d04987e3cb93be",
+  "input_tokens": 61432,
   "matches_figures": true,
   "model": "deepseek-flash",
-  "output_tokens": 9760,
+  "output_tokens": 9736,
   "passed": false,
   "prompt_version": "draft-v7 + draft-v8 (liquidity_funding, watch_items)",
   "provider": "deepseek",
-  "recorded_at": "2026-11-11T18:55:44+00:00"
+  "recorded_at": "2026-11-11T21:24:46+00:00"
  },
  "type": "airline"
 }

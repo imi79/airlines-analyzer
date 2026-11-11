@@ -1,6 +1,6 @@
 # easyJet, FY2025 (Oct 2024 to Sep 2025)
 
-Fact sheet `7fc933c28a1b`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
+Fact sheet `47d1edb73d34`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
 
 ## Snapshot (draft-v7, passed)
 
@@ -25,9 +25,9 @@ Fact sheet `7fc933c28a1b`. Sections marked **draft-v8** were redrafted in M8; th
 ## Liquidity and funding (draft-v8, passed)
 
 1. Cash and cash-like investments were broadly unchanged at GBP 3.5bn, and with GBP 1.3bn of undrawn committed facilities liquidity reached GBP 4.8bn, or 47.4% of revenue.
-2. Debt due within one year fell by 60.0% to GBP 257m, covered 18.65x by liquidity, so the near-term maturities are met without new funding.
-3. Free cash flow after lease payments, the comparable measure of cash left for debt holders, fell by 8.0% to GBP 402m, with net capex up 23.7% to GBP 997m, and FCF after leases to debt was stable at 13.7%.
-4. Customer prepayments rose, with contract liabilities up 12.0% to GBP 1.9bn and advance ticket cover up 4.9 points to 55.1%, so a larger share of the cash balance is refundable if bookings slow.
+2. Debt due within one year fell by 60.0% to GBP 257m, covered 18.65x by liquidity, so near-term maturities are met without new funding.
+3. Free cash flow after lease payments fell by 8.0% to GBP 402m, equal to 13.7% of debt, as net capex rose by 23.7% to GBP 997m.
+4. Customer prepayments rose, with contract liabilities up 12.0% to GBP 1.9bn and advance ticket cover up 4.9 points to 55.1%, so a larger share of the cash belongs to customers; the group also entered into a new revolving credit facility that replaced its previous facilities.
 
 ## Peer positioning (draft-v7, passed)
 
@@ -37,7 +37,7 @@ Fact sheet `7fc933c28a1b`. Sections marked **draft-v8** were redrafted in M8; th
 
 ## Watch items (draft-v8, passed)
 
-1. Cash flow after leases: FCF after leases fell by 8.0% to GBP 402m as net capex rose by 23.7% to GBP 997m, leaving FCF after leases to debt at 13.7%.
-2. Liquidity: cash liquidity to revenue fell by 2.3 points to 34.9%, and cash and cash-like investments were broadly unchanged at GBP 3.5bn while debt due within one year fell by 60.0% to GBP 257m.
-3. Customer prepayments: advance ticket cover rose by 4.9 points to 55.1%, above the prior year, so refunds on a slower booking environment would absorb more of the cash position.
-4. Profitability: the EBITDA margin of 14.2% is the lowest of the low-cost group (3rd of 3) against a peer median of 21.2%, and passenger yield fell by 2.8% to 4.98 pence.
+1. Liquidity: cash liquidity to revenue fell by 2.3 points to 34.9%, and free cash flow after leases declined by 8.0% to GBP 402m as net capex rose by 23.7%.
+2. Profitability: the EBITDA margin of 14.2% is the lowest of the low-cost group (3rd of 3), against a peer median of 21.2%.
+3. Customer prepayments: advance ticket cover rose by 4.9 points to 55.1%, above the level of a year earlier, which raises the sensitivity of the cash position to bookings.
+4. Interest: coverage eased by 1.08x to 9.22x as finance costs rose by 18.2% to GBP 156m, with airline net financing charges up on lower interest income on cash and higher charges on borrowings.

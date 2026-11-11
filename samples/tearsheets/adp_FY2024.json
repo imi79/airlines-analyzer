@@ -293,8 +293,8 @@
        "id": "cash_like@FY2024"
       }
      ],
-     "text": "Debt due within one year declined by 4.3% to EUR 1.8bn, which cash and cash-like investments of EUR 2.1bn cover, so the near-term maturities do not require new funding.",
-     "text_blanks": "Debt due within one year declined by {{debt_due_1y.change@FY2024}} to {{debt_due_1y@FY2024}}, which cash and cash-like investments of {{cash_like@FY2024}} cover, so the near-term maturities do not require new funding."
+     "text": "Debt due within one year declined by 4.3% to EUR 1.8bn, which cash and cash-like investments of EUR 2.1bn cover, so the near-term maturities do not depend on new funding.",
+     "text_blanks": "Debt due within one year declined by {{debt_due_1y.change@FY2024}} to {{debt_due_1y@FY2024}}, which cash and cash-like investments of {{cash_like@FY2024}} cover, so the near-term maturities do not depend on new funding."
     },
     {
      "facts": [
@@ -310,6 +310,10 @@
        "id": "fcf_after_leases@FY2024"
       },
       {
+       "claims": [],
+       "id": "fcf_after_leases_to_debt@FY2024"
+      },
+      {
        "claims": [
         "up"
        ],
@@ -318,27 +322,10 @@
       {
        "claims": [],
        "id": "net_capex@FY2024"
-      },
-      {
-       "claims": [
-        "down",
-        "worse"
-       ],
-       "id": "fcf_after_leases_to_debt@FY2024"
       }
      ],
-     "text": "Free cash flow after lease payments fell by 89.8% to EUR 42.0m, as net capex rose by 33.6% to EUR 1.2bn, leaving FCF after leases to debt at 0.4%.",
-     "text_blanks": "Free cash flow after lease payments fell by {{fcf_after_leases.change@FY2024}} to {{fcf_after_leases@FY2024}}, as net capex rose by {{net_capex.change@FY2024}} to {{net_capex@FY2024}}, leaving FCF after leases to debt at {{fcf_after_leases_to_debt@FY2024}}."
-    },
-    {
-     "facts": [
-      {
-       "claims": [],
-       "id": "event:funding_and_rating"
-      }
-     ],
-     "text": "The group issued a bond in May 2024, whose proceeds sit among the year's cash flows.",
-     "text_blanks": "The group issued a bond in May 2024, whose proceeds sit among the year's cash flows."
+     "text": "Free cash flow after lease payments fell by 89.8% to EUR 42.0m, only 0.4% of total debt, as net capex rose by 33.6% to EUR 1.2bn.",
+     "text_blanks": "Free cash flow after lease payments fell by {{fcf_after_leases.change@FY2024}} to {{fcf_after_leases@FY2024}}, only {{fcf_after_leases_to_debt@FY2024}} of total debt, as net capex rose by {{net_capex.change@FY2024}} to {{net_capex@FY2024}}."
     }
    ],
    "status": "passed",
@@ -587,22 +574,33 @@
        "id": "fcf_after_leases@FY2024"
       },
       {
+       "claims": [],
+       "id": "fcf_after_leases_to_debt@FY2024"
+      },
+      {
        "claims": [
         "down",
         "worse"
        ],
        "id": "fcf_after_leases_to_debt.change@FY2024"
-      },
-      {
-       "claims": [],
-       "id": "fcf_after_leases_to_debt@FY2024"
       }
      ],
-     "text": "Cash generation: free cash flow after lease payments fell by 89.8% to EUR 42.0m, and FCF after leases to debt dropped by 3.6 points to 0.4%, so cash left for debt holders is thin against the investment programme.",
-     "text_blanks": "Cash generation: free cash flow after lease payments fell by {{fcf_after_leases.change@FY2024}} to {{fcf_after_leases@FY2024}}, and FCF after leases to debt dropped by {{fcf_after_leases_to_debt.change@FY2024}} to {{fcf_after_leases_to_debt@FY2024}}, so cash left for debt holders is thin against the investment programme."
+     "text": "Cash generation: free cash flow after lease payments dropped by 89.8% to EUR 42.0m, leaving FCF after leases to debt at 0.4%, down 3.6 points.",
+     "text_blanks": "Cash generation: free cash flow after lease payments dropped by {{fcf_after_leases.change@FY2024}} to {{fcf_after_leases@FY2024}}, leaving FCF after leases to debt at {{fcf_after_leases_to_debt@FY2024}}, down {{fcf_after_leases_to_debt.change@FY2024}}."
     },
     {
      "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
       {
        "claims": [
         "down",
@@ -615,35 +613,10 @@
         "in_line_with_peers"
        ],
        "id": "cash_liquidity_to_revenue@FY2024"
-      },
-      {
-       "claims": [],
-       "id": "cash_liquidity_to_revenue.peer_median@FY2024"
       }
      ],
-     "text": "Liquidity: cash liquidity to revenue fell by 10.8 points to 34.0%, in line with the peer median of 34.0% but lower than a year earlier.",
-     "text_blanks": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, in line with the peer median of {{cash_liquidity_to_revenue.peer_median@FY2024}} but lower than a year earlier."
-    },
-    {
-     "facts": [
-      {
-       "claims": [],
-       "id": "debt_due_1y@FY2024"
-      },
-      {
-       "claims": [],
-       "id": "cash_like@FY2024"
-      },
-      {
-       "claims": [
-        "down",
-        "worse"
-       ],
-       "id": "cash_like.change@FY2024"
-      }
-     ],
-     "text": "Maturities: debt due within one year of EUR 1.8bn is covered by cash and cash-like investments of EUR 2.1bn, but the buffer narrowed as cash fell by 14.8%.",
-     "text_blanks": "Maturities: debt due within one year of {{debt_due_1y@FY2024}} is covered by cash and cash-like investments of {{cash_like@FY2024}}, but the buffer narrowed as cash fell by {{cash_like.change@FY2024}}."
+     "text": "Liquidity: cash and cash-like investments fell by 14.8% to EUR 2.1bn, and cash liquidity to revenue declined by 10.8 points to 34.0%, in line with the peer median.",
+     "text_blanks": "Liquidity: cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, and cash liquidity to revenue declined by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, in line with the peer median."
     },
     {
      "facts": [
@@ -664,8 +637,31 @@
        "id": "capex_intensity.peer_median@FY2024"
       }
      ],
-     "text": "Investment: capex intensity rose by 3.1 points to 19.0%, above the peer median of 16.1%, which keeps pressure on free cash flow.",
-     "text_blanks": "Investment: capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}, above the peer median of {{capex_intensity.peer_median@FY2024}}, which keeps pressure on free cash flow."
+     "text": "Investment: capex intensity rose by 3.1 points to 19.0%, above the peer median of 16.1%, so capital spending absorbs a larger share of cash flow.",
+     "text_blanks": "Investment: capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}, above the peer median of {{capex_intensity.peer_median@FY2024}}, so capital spending absorbs a larger share of cash flow."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda_margin.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "ebitda_margin.peer_rank@FY2024"
+      }
+     ],
+     "text": "Earnings quality: the EBITDA margin narrowed by 2.0 points to 33.7%, the weakest of the airport group (3rd of 3).",
+     "text_blanks": "Earnings quality: the EBITDA margin narrowed by {{ebitda_margin.change@FY2024}} to {{ebitda_margin@FY2024}}, the weakest of the airport group ({{ebitda_margin.peer_rank@FY2024}})."
     }
    ],
    "status": "passed",
@@ -2324,6 +2320,23 @@
     "value": "516000000.000000000000",
     "vs_peers": null
    },
+   "rating_sp@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "rating_sp@FY2024",
+    "kind": "rating",
+    "label": "S&P long-term rating, outlook stable, as at 2024-12-31",
+    "metric": "rating_sp",
+    "note": "From the company's report (page 111); never typed, always a blank.",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "A-",
+    "unit": "rating",
+    "value": "0",
+    "vs_peers": null
+   },
    "revenue.change@FY2024": {
     "assessment": "better",
     "direction": "up",
@@ -2517,7 +2530,6 @@
    "non_aero_share@FY2024": "n.m.: group revenue includes TAV Airports and the other international airports, while the aeronautical revenue is the Paris aviation segment only.",
    "passengers.change@FY2024": "needs both years verified",
    "passengers@FY2023": "Passengers not available for FY2023",
-   "rating_sp@FY2024": "not reviewed yet: waiting for Imane's review",
    "revenue_per_passenger.change@FY2024": "needs both years verified",
    "revenue_per_passenger@FY2023": "n.m.: group revenue includes TAV Airports and the other international airports, while passengers are Paris only.",
    "revenue_per_passenger@FY2024": "n.m.: group revenue includes TAV Airports and the other international airports, while passengers are Paris only.",
@@ -2550,30 +2562,30 @@
   "as_at": "2024-12-31",
   "document": "969500PJMBSFHYC37989-2024-12-31-ESEF-FR-0",
   "quote": "(A- perspective stable par l’agence Standard and Poor’s depuis le 10 juin 2024)",
-  "reason": "not reviewed yet: waiting for Imane's review",
+  "reason": null,
   "scope": "issuer",
   "source": "FY2024 annual report, page 111",
-  "stale": false,
-  "status": "unverified",
-  "text": "awaiting review"
+  "stale": true,
+  "status": "verified",
+  "text": "S&P A- (stable)"
  },
  "run": {
-  "calls": 1,
+  "calls": 3,
   "cost_usd": null,
   "filing_hashes": {
    "969500PJMBSFHYC37989-2024-12-31-ESEF-FR-0": "2f61ed6871fff16505413e92a893967a3bdb71e21a73f3fc3b9a3c9ea9a893d5",
    "969500PJMBSFHYC37989-2024-12-31-manual-pdf": "0d53c1996b5b410934512afa02d2313c2aa52283954fc3652f20466c7add1098"
   },
-  "first_try_ok": true,
-  "input_hash": "9dd3348c0c7ca12ebf15a7d9d3fbabf3dbf3fadffa46df62c14291e3864866dd",
-  "input_tokens": 55285,
+  "first_try_ok": false,
+  "input_hash": "d07484f3361bba7ec4ebddcd92cc319973179d793d4bc56d2422bb6a6eb4a140",
+  "input_tokens": 83896,
   "matches_figures": true,
   "model": "deepseek-flash",
-  "output_tokens": 7152,
+  "output_tokens": 8342,
   "passed": true,
   "prompt_version": "draft-v7 + draft-v8 (liquidity_funding, watch_items)",
   "provider": "deepseek",
-  "recorded_at": "2026-11-11T18:56:02+00:00"
+  "recorded_at": "2026-11-11T21:14:52+00:00"
  },
  "type": "airport"
 }

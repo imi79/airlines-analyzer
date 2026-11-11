@@ -1,6 +1,6 @@
 # Finnair, FY2024
 
-Fact sheet `dfa105ea3f51`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
+Fact sheet `68c116864d36`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
 
 ## Snapshot (draft-v7, needs_manual_editing)
 
@@ -28,7 +28,7 @@ Fact sheet `dfa105ea3f51`. Sections marked **draft-v8** were redrafted in M8; th
 1. Cash and cash-like investments fell by 4.1% to EUR 884m, and with EUR 200m of undrawn committed facilities liquidity stood at EUR 1.1bn, or 35.6% of revenue.
 2. Debt due within one year rose by 2.0% to EUR 290m, covered 3.74x by liquidity, and borrowings due within two years of EUR 182m are covered 5.95x by liquidity, so near-term maturities are met without new funding.
 3. Free cash flow after lease payments turned positive at EUR 209m, from EUR -130m in FY2023, lifting FCF after leases to debt by 17.6 points to 11.2%.
-4. Customer prepayments rose, with contract liabilities up by 30.0% to EUR 659m and advance ticket cover at 74.5%, so a larger share of the cash balance is customers' money.
+4. Customer prepayments rose, with contract liabilities up by 30.0% to EUR 659m and advance ticket cover at 74.5%, in line with the peer median.
 
 ## Peer positioning (draft-v7, passed)
 
@@ -41,6 +41,6 @@ Fact sheet `dfa105ea3f51`. Sections marked **draft-v8** were redrafted in M8; th
 ## Watch items (draft-v8, passed)
 
 1. Leverage: net leverage rose by 0.16x to 2.21x and gross leverage by 0.43x to 4.20x, both above the peer medians of 1.88x and 3.56x.
-2. Earnings: the EBITDA margin narrowed by 3.4 points to 14.6%, and FFO to debt of 21.8% is below the peer median of 23.4%.
+2. Cash generation: FFO to debt of 21.8% is below the peer median of 23.4%, and FFO fell by 7.4% to EUR 406m.
 3. Liquidity: cash liquidity to revenue fell by 1.8 points to 29.0%, and cash and cash-like investments declined by 4.1% to EUR 884m.
-4. Customer prepayments: advance ticket cover rose by 19.5 points to 74.5%, so refunds or slower bookings would draw on cash held for customers.
+4. Customer prepayments: advance ticket cover rose by 19.5 points to 74.5%, so a larger share of liquidity is customers' prepayments.

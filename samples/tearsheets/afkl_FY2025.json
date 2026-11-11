@@ -198,9 +198,7 @@
    "title": "Credit metrics"
   },
   "liquidity_funding": {
-   "notes": [
-    "[rule style] liquidity_funding, sentence 4: advance_ticket_cover.peer_rank@FY2025 is already given in peer_positioning, sentence 2: give each figure in one body section only (the snapshot and watch items may restate it)"
-   ],
+   "notes": [],
    "removed": [],
    "sentences": [
     {
@@ -213,19 +211,6 @@
       },
       {
        "claims": [
-        "flat"
-       ],
-       "id": "cash_like.change@FY2025"
-      },
-      {
-       "claims": [
-        "down",
-        "worse"
-       ],
-       "id": "cash_liquidity_to_revenue.change@FY2025"
-      },
-      {
-       "claims": [
         "below_peers"
        ],
        "id": "cash_liquidity_to_revenue@FY2025"
@@ -235,8 +220,8 @@
        "id": "cash_liquidity_to_revenue.peer_median@FY2025"
       }
      ],
-     "text": "Cash and cash-like investments were stable at EUR 6.9bn, a change of 1.1%, and cash liquidity to revenue fell by 1.2 points to 20.8%, below the peer median of 25.0%.",
-     "text_blanks": "Cash and cash-like investments were stable at {{cash_like@FY2025}}, a change of {{cash_like.change@FY2025}}, and cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2025}}."
+     "text": "Cash and cash-like investments were stable at EUR 6.9bn, leaving cash liquidity to revenue at 20.8%, below the peer median of 25.0%.",
+     "text_blanks": "Cash and cash-like investments were stable at {{cash_like@FY2025}}, leaving cash liquidity to revenue at {{cash_liquidity_to_revenue@FY2025}}, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2025}}."
     },
     {
      "facts": [
@@ -251,22 +236,22 @@
        "id": "debt_due_1y@FY2025"
       }
      ],
-     "text": "Debt due within one year rose by 3.3% to EUR 2.8bn, so the near-term maturities are covered by cash on hand without new funding.",
-     "text_blanks": "Debt due within one year rose by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, so the near-term maturities are covered by cash on hand without new funding."
+     "text": "Debt due within one year rose by 3.3% to EUR 2.8bn, so the near-term maturities absorb a large part of the cash balance and leave little headroom without new funding.",
+     "text_blanks": "Debt due within one year rose by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, so the near-term maturities absorb a large part of the cash balance and leave little headroom without new funding."
     },
     {
      "facts": [
       {
        "claims": [],
-       "id": "fcf_after_leases@FY2024"
+       "id": "event:funding_and_rating"
       },
       {
        "claims": [],
-       "id": "fcf_after_leases_to_debt@FY2024"
+       "id": "event:funding_and_rating-3"
       }
      ],
-     "text": "In FY2024 free cash flow after lease payments was EUR -1.1bn, or -7.6% of debt, showing that lease payments absorbed the cash that free cash flow left out.",
-     "text_blanks": "In FY2024 free cash flow after lease payments was {{fcf_after_leases@FY2024}}, or {{fcf_after_leases_to_debt@FY2024}} of debt, showing that lease payments absorbed the cash that free cash flow left out."
+     "text": "The group placed senior unsecured bonds under its EMTN programme and exercised the extension option on its Air France-KLM and Air France credit facility, bringing that maturity to 2029.",
+     "text_blanks": "The group placed senior unsecured bonds under its EMTN programme and exercised the extension option on its Air France-KLM and Air France credit facility, bringing that maturity to 2029."
     },
     {
      "facts": [
@@ -281,25 +266,12 @@
        "id": "contract_liabilities@FY2025"
       },
       {
-       "claims": [
-        "up",
-        "worse"
-       ],
-       "id": "advance_ticket_cover.change@FY2025"
-      },
-      {
        "claims": [],
        "id": "advance_ticket_cover@FY2025"
-      },
-      {
-       "claims": [
-        "best_in_group"
-       ],
-       "id": "advance_ticket_cover.peer_rank@FY2025"
       }
      ],
-     "text": "Customer prepayments rose, with contract liabilities up 4.1% to EUR 4.3bn, and advance ticket cover increased by 3.1 points to 62.2%, the lowest of the peer group (1st of 3).",
-     "text_blanks": "Customer prepayments rose, with contract liabilities up {{contract_liabilities.change@FY2025}} to {{contract_liabilities@FY2025}}, and advance ticket cover increased by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}, the lowest of the peer group ({{advance_ticket_cover.peer_rank@FY2025}})."
+     "text": "Customer prepayments rose, with contract liabilities up 4.1% to EUR 4.3bn and advance ticket cover at 62.2%, so a larger share of the cash balance is refundable if bookings slow.",
+     "text_blanks": "Customer prepayments rose, with contract liabilities up {{contract_liabilities.change@FY2025}} to {{contract_liabilities@FY2025}} and advance ticket cover at {{advance_ticket_cover@FY2025}}, so a larger share of the cash balance is refundable if bookings slow."
     }
    ],
    "status": "passed",
@@ -545,14 +517,8 @@
        "id": "cash_liquidity_to_revenue.change@FY2025"
       },
       {
-       "claims": [
-        "below_peers"
-       ],
-       "id": "cash_liquidity_to_revenue@FY2025"
-      },
-      {
        "claims": [],
-       "id": "cash_liquidity_to_revenue.peer_median@FY2025"
+       "id": "cash_liquidity_to_revenue@FY2025"
       },
       {
        "claims": [
@@ -561,26 +527,46 @@
        "id": "cash_liquidity_to_revenue.peer_rank@FY2025"
       }
      ],
-     "text": "Cash liquidity: cash liquidity to revenue fell by 1.2 points to 20.8%, below the peer median of 25.0% and the lowest of the group (3rd of 3).",
-     "text_blanks": "Cash liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2025}} and the lowest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2025}})."
+     "text": "Cash liquidity: cash liquidity to revenue fell by 1.2 points to 20.8%, the lowest of the network group (3rd of 3).",
+     "text_blanks": "Cash liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, the lowest of the network group ({{cash_liquidity_to_revenue.peer_rank@FY2025}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "debt_due_1y@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "debt_due_1y.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2025"
+      }
+     ],
+     "text": "Maturities: debt due within one year of EUR 2.8bn rose by 3.3% and sits against cash and cash-like investments of EUR 6.9bn, so refinancing is needed to cover the balance.",
+     "text_blanks": "Maturities: debt due within one year of {{debt_due_1y@FY2025}} rose by {{debt_due_1y.change@FY2025}} and sits against cash and cash-like investments of {{cash_like@FY2025}}, so refinancing is needed to cover the balance."
     },
     {
      "facts": [
       {
        "claims": [
-        "below_peers"
+        "worse_than_peers"
        ],
        "id": "fcf_to_debt@FY2025"
-      },
-      {
-       "claims": [],
-       "id": "fcf_to_debt.peer_median@FY2025"
       },
       {
        "claims": [
         "worst_in_group"
        ],
        "id": "fcf_to_debt.peer_rank@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt.peer_median@FY2025"
       },
       {
        "claims": [
@@ -593,48 +579,24 @@
        "id": "capex_intensity.peer_median@FY2025"
       }
      ],
-     "text": "Cash generation: FCF to debt of 3.9% is below the peer median of 10.8% and the weakest of the group (3rd of 3), with capex intensity at 13.5% above the peer median of 10.4%.",
-     "text_blanks": "Cash generation: FCF to debt of {{fcf_to_debt@FY2025}} is below the peer median of {{fcf_to_debt.peer_median@FY2025}} and the weakest of the group ({{fcf_to_debt.peer_rank@FY2025}}), with capex intensity at {{capex_intensity@FY2025}} above the peer median of {{capex_intensity.peer_median@FY2025}}."
+     "text": "Cash generation: FCF to debt of 3.9% is the weakest of the group (3rd of 3) against a peer median of 10.8%, with capex intensity of 13.5% above the peer median of 10.4%.",
+     "text_blanks": "Cash generation: FCF to debt of {{fcf_to_debt@FY2025}} is the weakest of the group ({{fcf_to_debt.peer_rank@FY2025}}) against a peer median of {{fcf_to_debt.peer_median@FY2025}}, with capex intensity of {{capex_intensity@FY2025}} above the peer median of {{capex_intensity.peer_median@FY2025}}."
     },
     {
      "facts": [
       {
        "claims": [
-        "up"
+        "below_peers"
        ],
-       "id": "debt_due_1y.change@FY2025"
+       "id": "advance_ticket_cover@FY2025"
       },
       {
        "claims": [],
-       "id": "debt_due_1y@FY2025"
-      },
-      {
-       "claims": [
-        "flat"
-       ],
-       "id": "cash_like@FY2025"
+       "id": "advance_ticket_cover.peer_median@FY2025"
       }
      ],
-     "text": "Maturities: debt due within one year rose by 3.3% to EUR 2.8bn, against cash and cash-like investments of EUR 6.9bn that were stable over the year.",
-     "text_blanks": "Maturities: debt due within one year rose by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, against cash and cash-like investments of {{cash_like@FY2025}} that were stable over the year."
-    },
-    {
-     "facts": [
-      {
-       "claims": [],
-       "id": "event:funding_and_rating"
-      },
-      {
-       "claims": [],
-       "id": "event:funding_and_rating-2"
-      },
-      {
-       "claims": [],
-       "id": "event:funding_and_rating-3"
-      }
-     ],
-     "text": "Funding: the group placed senior unsecured bonds under its EMTN programme and redeemed its hybrid bonds from the hard call date, while extending the maturity of its committed credit facility to 2029.",
-     "text_blanks": "Funding: the group placed senior unsecured bonds under its EMTN programme and redeemed its hybrid bonds from the hard call date, while extending the maturity of its committed credit facility to 2029."
+     "text": "Customer prepayments: advance ticket cover of 62.2% is below the peer median of 67.4%, so a larger share of the cash balance is refundable if bookings slow.",
+     "text_blanks": "Customer prepayments: advance ticket cover of {{advance_ticket_cover@FY2025}} is below the peer median of {{advance_ticket_cover.peer_median@FY2025}}, so a larger share of the cash balance is refundable if bookings slow."
     }
    ],
    "status": "passed",
@@ -2587,8 +2549,6 @@
    "rask.change@FY2025": "needs both years verified",
    "rask@FY2024": "ASK not available for FY2024",
    "rask@FY2025": "ASK not available for FY2025",
-   "rating_fitch@FY2025": "not reviewed yet: waiting for Imane's review",
-   "rating_sp@FY2025": "not reviewed yet: waiting for Imane's review",
    "rpk.change@FY2025": "needs both years verified",
    "rpk@FY2024": "RPK not available for FY2024",
    "rpk@FY2025": "RPK not available for FY2025",
@@ -2616,12 +2576,12 @@
   "as_at": "2024-05-13",
   "document": "969500AQW31GYO8JZD66-2024-12-31-ESEF-FR-0",
   "quote": "Air France-KLM (la « Société ») (Euronext Paris: FR0000031122) notée BBB- par Fitch et BB+ par S&P",
-  "reason": "not reviewed yet: waiting for Imane's review",
+  "reason": null,
   "scope": "issuer",
   "source": "FY2024 annual report, page 12",
-  "stale": false,
-  "status": "unverified",
-  "text": "awaiting review"
+  "stale": true,
+  "status": "verified",
+  "text": "Fitch BBB-, S&P BB+"
  },
  "run": {
   "calls": 3,
@@ -2632,15 +2592,15 @@
    "969500AQW31GYO8JZD66-2025-12-31-manual-pdf": "aaba4d2512928f6cf9efde24af67b05619459f1d0f891b42bbb084473d7d550f"
   },
   "first_try_ok": false,
-  "input_hash": "121b525ec30b5ca38615ee225a09cc8689dbc3b4708d956075d4a3180cacc425",
-  "input_tokens": 70672,
+  "input_hash": "851c94ef2841c677da91c784363ed1ecac56979dd966d4cfd4158fbf1142309f",
+  "input_tokens": 70271,
   "matches_figures": true,
   "model": "deepseek-flash",
-  "output_tokens": 6440,
+  "output_tokens": 5998,
   "passed": true,
   "prompt_version": "draft-v7 + draft-v8 (liquidity_funding, watch_items)",
   "provider": "deepseek",
-  "recorded_at": "2026-11-11T18:57:18+00:00"
+  "recorded_at": "2026-11-11T21:24:24+00:00"
  },
  "type": "airline"
 }

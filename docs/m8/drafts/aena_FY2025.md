@@ -1,6 +1,6 @@
 # Aena, FY2025
 
-Fact sheet `aeee2abd4035`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
+Fact sheet `b3d54f8fde26`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
 
 ## Snapshot (draft-v7, passed)
 
@@ -23,10 +23,10 @@ Fact sheet `aeee2abd4035`. Sections marked **draft-v8** were redrafted in M8; th
 
 ## Liquidity and funding (draft-v8, passed)
 
-1. Cash and cash-like investments rose by 12.4% to EUR 2.0bn, and with EUR 2.2bn of undrawn committed facilities total liquidity reached EUR 4.3bn, or 68.4% of revenue.
-2. Debt due within one year fell by 35.5% to EUR 864m, covered 4.97x by liquidity, so the near-term maturities are met without new funding.
-3. Free cash flow after lease payments fell by 9.6% to EUR 1.8bn, or 23.2% of debt, as net capex rose by 28.0% to EUR 1.0bn.
-4. The Brazilian subsidiary BOAB issued secured debentures maturing in the long term, and London Luton airport completed the refinancing of its bank debt.
+1. Cash and cash-like investments rose by 12.4% to EUR 2.0bn, and with EUR 2.2bn of undrawn committed facilities total liquidity stood at EUR 4.3bn, or 68.4% of revenue.
+2. Debt due within one year fell by 35.5% to EUR 864m, so liquidity covers it 4.97x over and the near-term maturities are covered without new funding.
+3. Free cash flow after lease payments, the comparable measure of cash left for debt holders, fell by 9.6% to EUR 1.8bn, or 23.2% of debt, as net capex rose by 28.0% to EUR 1.0bn.
+4. On funding, the Brazilian subsidiary BOAB issued secured debentures maturing in the long term, London Luton airport completed the refinancing of its bank debt, and Fitch affirmed the group's ratings with a stable long-term outlook.
 
 ## Peer positioning (draft-v7, passed)
 
@@ -36,7 +36,7 @@ Fact sheet `aeee2abd4035`. Sections marked **draft-v8** were redrafted in M8; th
 
 ## Watch items (draft-v8, passed)
 
-1. Cash generation: free cash flow after leases fell by 9.6% to EUR 1.8bn, taking FCF after leases to debt down by 3.3 points to 23.2%.
-2. Investment: capex intensity rose by 2.6 points to 16.9%, below the peer median of 18.2% but absorbing more of operating cash flow.
-3. Margins: the EBITDA margin narrowed by 0.6 points to 60.3%, though it remains above the peer median of 36.5%.
-4. Liquidity: cash liquidity to revenue rose by 1.0 point to 32.6%, in the middle of the group, and covers the EUR 864m due within one year.
+1. Cash generation: free cash flow after leases fell by 9.6% to EUR 1.8bn and FCF after leases to debt by 3.3 points to 23.2%, as net capex rose by 28.0%.
+2. Investment: capex intensity rose by 2.6 points to 16.9%, below the peer median of 18.2% but absorbing a larger share of revenue.
+3. Margins: the EBITDA margin narrowed by 0.6 points to 60.3%, a level still well above the peer median of 36.5%.
+4. Liquidity: cash liquidity to revenue rose by 1.0 point to 32.6%, in the middle of the group, and debt due within one year of EUR 864m is covered 4.97x over by liquidity.

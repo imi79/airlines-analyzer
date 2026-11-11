@@ -1,12 +1,13 @@
 # Aena, FY2024
 
-Fact sheet `e770daef975b`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
+Fact sheet `d48a5e698f1e`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
 
-## Snapshot (draft-v7, passed)
+## Snapshot (draft-v7, needs_manual_editing)
 
 1. Aena, the Spanish airport operator, had a stronger FY2024 as revenue rose by 14.4% to EUR 5.8bn and Fitch upgraded its long-term rating to A.
 2. Net leverage fell by 0.49x to 1.57x, with the EBITDA margin widening by 0.9 points to 60.9%.
 3. The point to watch is cash liquidity: cash and cash-like investments fell by 22.9% to EUR 1.8bn, taking cash liquidity to revenue down by 15.3 points to 31.6%.
+- error: [rule 1] snapshot, sentence 1: rating written outside a blank: 'A' (M8: ratings come from blanks)
 
 ## Credit metrics (draft-v7, passed)
 
@@ -23,10 +24,10 @@ Fact sheet `e770daef975b`. Sections marked **draft-v8** were redrafted in M8; th
 
 ## Liquidity and funding (draft-v8, passed)
 
-1. Cash and cash-like investments fell by 22.9% to EUR 1.8bn, taking cash liquidity to revenue to 31.6%, below the peer median.
-2. Debt due within one year was reduced by 24.3% to EUR 1.3bn, comfortably inside the cash balance of EUR 1.8bn, so near-term maturities are covered without new funding.
-3. Free cash flow after lease payments rose by 134.6% to EUR 1.9bn, equal to 26.5% of debt, so lease payments leave the cash available to debt holders broadly intact.
-4. Net capex fell by 42.6% to EUR 794m, which is what lifted cash generation after leases.
+1. Cash and cash-like investments fell by 22.9% to EUR 1.8bn, which is the whole of the cash liquidity position and excludes undrawn credit lines.
+2. Debt due within one year was reduced by 24.3% to EUR 1.3bn, so the near-term maturities are covered by cash liquidity without new funding.
+3. Free cash flow after lease payments rose by 134.6% to EUR 1.9bn, equal to 26.5% of debt, the comparable measure of cash left for debt holders once leases are paid.
+4. Net capex fell by 42.6% to EUR 794m, which released cash for debt reduction.
 
 ## Peer positioning (draft-v7, passed)
 
@@ -36,7 +37,7 @@ Fact sheet `e770daef975b`. Sections marked **draft-v8** were redrafted in M8; th
 
 ## Watch items (draft-v8, passed)
 
-1. Cash liquidity: cash and cash-like investments fell by 22.9% to EUR 1.8bn, and cash liquidity to revenue of 31.6% is the weakest of the airport peers (3rd of 3).
-2. Maturities: debt due within one year of EUR 1.3bn is covered by the cash balance of EUR 1.8bn, but the buffer against it narrowed as cash fell by 22.9%.
-3. Interest coverage: coverage eased by 0.27x to 12.34x as finance costs rose by 18.8% to EUR 246m, though it remains above the peer median of 9.65x.
-- removed by the verifier: “Tariffs: the CNMC set the maximum adjusted annual revenue per passenger for 2025 at the same level as the prior year, so aeronautical revenue per passenger of {{aero_revenue_per_passenger@FY2024}} has no tariff uplift behind it.” ('behind' needs a 'down' or 'below_peers' claim on a figure in the same clause)
+1. Cash liquidity: cash and cash-like investments fell by 22.9% to EUR 1.8bn, taking cash liquidity to revenue down by 15.3 points to 31.6%, below the peer median of 34.0%.
+2. Maturities: debt due within one year of EUR 1.3bn is covered by cash liquidity, but the buffer is thinner than a year earlier as cash and cash-like investments fell by 22.9%.
+3. Interest coverage: coverage eased by 0.27x to 12.34x as finance costs rose by 18.8% to EUR 246m, so the cost of debt is rising faster than EBITDA.
+- removed by the verifier: “Tariffs: the CNMC set the maximum adjusted annual revenue per passenger for 2025 at the same level as the prior year, so aeronautical revenue per passenger of {{aero_revenue_per_passenger@FY2024}} has limited scope to rise through tariffs.” ('rise' needs a 'up' claim on a figure in the same clause)

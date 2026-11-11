@@ -1,6 +1,6 @@
 # easyJet, FY2024 (Oct 2023 to Sep 2024)
 
-Fact sheet `a2e65095df1b`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
+Fact sheet `0a7b7f959b04`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
 
 ## Snapshot (draft-v7, passed)
 
@@ -27,9 +27,9 @@ Fact sheet `a2e65095df1b`. Sections marked **draft-v8** were redrafted in M8; th
 ## Liquidity and funding (draft-v8, passed)
 
 1. Cash and cash-like investments rose by 18.3% to GBP 3.5bn, taking cash liquidity to revenue up by 1.4 points to 37.2%, above the peer median of 33.0%.
-2. Debt due within one year was stable at GBP 643m, so cash of GBP 3.5bn covers the near-term maturities without new funding, and the group issued a euro-denominated guaranteed bond under its EMTN programme maturing in 2031.
-3. Free cash flow after lease payments fell by 33.3% to GBP 437m, or 13.3% of debt, down 9.4 points, as net capex rose by 18.9% to GBP 806m.
-4. Customer prepayments remain a large part of the funding base: contract liabilities rose by 16.0% to GBP 1.7bn, with advance ticket cover of 50.2% in line with the peer median.
+2. Debt due within one year was stable at GBP 643m, so cash on the balance sheet covers the near-term maturities without new funding, and the group issued a euro-denominated guaranteed bond under its EMTN programme maturing in 2031.
+3. Free cash flow after lease payments fell by 33.3% to GBP 437m, and FCF after leases to debt dropped by 9.4 points to 13.3%, the comparable measure of cash left for debt holders once lease payments in financing are taken out.
+4. Customer prepayments remain a large part of the funding base: contract liabilities rose by 16.0% to GBP 1.7bn, while advance ticket cover eased by 1.0 point to 50.2%, in the middle of the peer group.
 
 ## Peer positioning (draft-v7, passed)
 
@@ -39,7 +39,7 @@ Fact sheet `a2e65095df1b`. Sections marked **draft-v8** were redrafted in M8; th
 
 ## Watch items (draft-v8, passed)
 
-1. Cash generation: free cash flow after lease payments fell by 33.3% to GBP 437m, taking FCF after leases to debt down by 9.4 points to 13.3%.
-2. Investment: capex intensity rose by 0.8 points to 10.0%, above the peer median of 5.4%, with significant investment in spares to limit aircraft grounding.
-3. Unit costs: CASK rose by 4.2% to 7.10 pence and CASK ex-fuel by 5.4% to 5.29 pence, so the cost base moved against the group.
+1. Cash generation: FCF after leases to debt fell by 9.4 points to 13.3%, so less cash is left for debt holders after lease payments and capital spending.
+2. Investment: capex intensity rose by 0.8 points to 10.0%, above the peer median of 5.4%, with net capex up 18.9% to GBP 806m.
+3. Unit costs: CASK ex-fuel rose by 5.4% to 5.29 pence, with significant investment in spares made during the year to limit the time aircraft are grounded by supply-chain delays.
 4. Profitability: the EBITDA margin of 14.6% is the weakest of the low-cost group (3rd of 3), below the peer median of 18.9%.

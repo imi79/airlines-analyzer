@@ -216,12 +216,19 @@
        "id": "undrawn_facilities@FY2024"
       },
       {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
        "claims": [],
-       "id": "liquidity_to_revenue@FY2024"
+       "id": "cash_like@FY2024"
       }
      ],
-     "text": "Liquidity rose by 17.6% to EUR 13.2bn, of which EUR 3.4bn in undrawn committed facilities, and liquidity to revenue reached 41.2%.",
-     "text_blanks": "Liquidity rose by {{liquidity.change@FY2024}} to {{liquidity@FY2024}}, of which {{undrawn_facilities@FY2024}} in undrawn committed facilities, and liquidity to revenue reached {{liquidity_to_revenue@FY2024}}."
+     "text": "Liquidity rose by 17.6% to EUR 13.2bn, of which EUR 3.4bn in undrawn committed facilities, and cash and cash-like investments increased by 43.7% to EUR 9.8bn.",
+     "text_blanks": "Liquidity rose by {{liquidity.change@FY2024}} to {{liquidity@FY2024}}, of which {{undrawn_facilities@FY2024}} in undrawn committed facilities, and cash and cash-like investments increased by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}."
     },
     {
      "facts": [
@@ -276,10 +283,6 @@
     {
      "facts": [
       {
-       "claims": [],
-       "id": "contract_liabilities@FY2024"
-      },
-      {
        "claims": [
         "up"
        ],
@@ -287,11 +290,11 @@
       },
       {
        "claims": [],
-       "id": "event:funding_and_rating"
+       "id": "contract_liabilities@FY2024"
       }
      ],
-     "text": "Customer prepayments remain large, with contract liabilities of EUR 8.3bn, up 7.3%, and the group replaced its secured revolving credit facility with a new sustainability-linked facility during the year.",
-     "text_blanks": "Customer prepayments remain large, with contract liabilities of {{contract_liabilities@FY2024}}, up {{contract_liabilities.change@FY2024}}, and the group replaced its secured revolving credit facility with a new sustainability-linked facility during the year."
+     "text": "Customer prepayments remain large: contract liabilities rose by 7.3% to EUR 8.3bn, a book that has to be flown or refunded.",
+     "text_blanks": "Customer prepayments remain large: contract liabilities rose by {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}}, a book that has to be flown or refunded."
     }
    ],
    "status": "passed",
@@ -590,29 +593,8 @@
        "id": "cask_ex_fuel@FY2024"
       }
      ],
-     "text": "Unit cost: CASK ex-fuel rose by 3.4% to 5.89 euro cents, so non-fuel costs are absorbing part of the revenue gain.",
-     "text_blanks": "Unit cost: CASK ex-fuel rose by {{cask_ex_fuel.change@FY2024}} to {{cask_ex_fuel@FY2024}}, so non-fuel costs are absorbing part of the revenue gain."
-    },
-    {
-     "facts": [
-      {
-       "claims": [
-        "down",
-        "worse"
-       ],
-       "id": "undrawn_facilities.change@FY2024"
-      },
-      {
-       "claims": [],
-       "id": "undrawn_facilities@FY2024"
-      },
-      {
-       "claims": [],
-       "id": "liquidity@FY2024"
-      }
-     ],
-     "text": "Undrawn facilities: committed undrawn lines fell by 22.9% to EUR 3.4bn, a thinner buffer alongside liquidity of EUR 13.2bn.",
-     "text_blanks": "Undrawn facilities: committed undrawn lines fell by {{undrawn_facilities.change@FY2024}} to {{undrawn_facilities@FY2024}}, a thinner buffer alongside liquidity of {{liquidity@FY2024}}."
+     "text": "Unit cost: CASK ex-fuel rose by 3.4% to 5.89 euro cents, so non-fuel costs absorbed part of the revenue gain.",
+     "text_blanks": "Unit cost: CASK ex-fuel rose by {{cask_ex_fuel.change@FY2024}} to {{cask_ex_fuel@FY2024}}, so non-fuel costs absorbed part of the revenue gain."
     },
     {
      "facts": [
@@ -633,29 +615,29 @@
        "id": "advance_ticket_cover.peer_rank@FY2024"
       }
      ],
-     "text": "Customer prepayments: advance ticket cover of 84.8% is above the peer median of 74.5% but the weakest of the group (3rd of 3), leaving the cash position sensitive to a slower booking cycle.",
-     "text_blanks": "Customer prepayments: advance ticket cover of {{advance_ticket_cover@FY2024}} is above the peer median of {{advance_ticket_cover.peer_median@FY2024}} but the weakest of the group ({{advance_ticket_cover.peer_rank@FY2024}}), leaving the cash position sensitive to a slower booking cycle."
+     "text": "Customer prepayments: advance ticket cover of 84.8% is above the peer median of 74.5% but the weakest of the group (3rd of 3), a sensitivity if bookings slow.",
+     "text_blanks": "Customer prepayments: advance ticket cover of {{advance_ticket_cover@FY2024}} is above the peer median of {{advance_ticket_cover.peer_median@FY2024}} but the weakest of the group ({{advance_ticket_cover.peer_rank@FY2024}}), a sensitivity if bookings slow."
     },
     {
      "facts": [
       {
        "claims": [
-        "up",
+        "down",
         "worse"
        ],
-       "id": "fleet_age.change@FY2024"
+       "id": "undrawn_facilities.change@FY2024"
       },
       {
        "claims": [],
-       "id": "fleet_age@FY2024"
+       "id": "undrawn_facilities@FY2024"
       },
       {
        "claims": [],
-       "id": "event:fleet_and_engines"
+       "id": "cash_like@FY2024"
       }
      ],
-     "text": "Fleet and operations: the average fleet age rose by 3.3% to 12.4 years, and reliability issues with Rolls-Royce Trent and Pratt and Whitney GTF engines continued to affect operations.",
-     "text_blanks": "Fleet and operations: the average fleet age rose by {{fleet_age.change@FY2024}} to {{fleet_age@FY2024}}, and reliability issues with Rolls-Royce Trent and Pratt and Whitney GTF engines continued to affect operations."
+     "text": "Committed facilities: undrawn committed credit facilities fell by 22.9% to EUR 3.4bn, so a larger share of liquidity now rests on cash of EUR 9.8bn.",
+     "text_blanks": "Committed facilities: undrawn committed credit facilities fell by {{undrawn_facilities.change@FY2024}} to {{undrawn_facilities@FY2024}}, so a larger share of liquidity now rests on cash of {{cash_like@FY2024}}."
     }
    ],
    "status": "passed",
@@ -3348,8 +3330,6 @@
    "passenger_yield@FY2023": "RPK not available for FY2023",
    "passengers.change@FY2024": "needs both years verified",
    "passengers@FY2023": "Passengers not available for FY2023",
-   "rating_moodys@FY2024": "not reviewed yet: waiting for Imane's review",
-   "rating_sp@FY2024": "not reviewed yet: waiting for Imane's review",
    "rpk.change@FY2024": "needs both years verified",
    "rpk@FY2023": "RPK not available for FY2023"
   }
@@ -3370,12 +3350,12 @@
   "as_at": "2026-02-26",
   "document": "959800TZHQRUSH1ESL13-2025-12-31-ESEF-GB-0",
   "quote": "The Group’s current ratings (at 26 February 2026) are all investment grade, with the following ratings: S&P: BBB (stable outlook) and Moody’s: Baa2 (stable outlook).",
-  "reason": "not reviewed yet: waiting for Imane's review",
+  "reason": null,
   "scope": "issuer",
   "source": "FY2025 annual report, page 41",
   "stale": false,
-  "status": "unverified",
-  "text": "awaiting review"
+  "status": "verified",
+  "text": "S&P BBB (stable), Moody's Baa2 (stable)"
  },
  "run": {
   "calls": 3,
@@ -3385,15 +3365,15 @@
    "959800TZHQRUSH1ESL13-2024-12-31-ESEF-ES-0": "7387351e5f81db1476948143a2d7870d2e78fb365e7107dee9c7f95d2e7d5138"
   },
   "first_try_ok": false,
-  "input_hash": "9b7da2f3a0018085f806d51c5585dde343778634cf81418b8e384c5136fa109f",
-  "input_tokens": 91578,
+  "input_hash": "f2c1346018cbc38e8b2e0b1bf1a3f68f9d6fbb7ea1d35b8e1792669832f9c6bc",
+  "input_tokens": 91399,
   "matches_figures": true,
   "model": "deepseek-flash",
-  "output_tokens": 7269,
+  "output_tokens": 7230,
   "passed": true,
   "prompt_version": "draft-v7 + draft-v8 (liquidity_funding, watch_items)",
   "provider": "deepseek",
-  "recorded_at": "2026-11-11T18:57:50+00:00"
+  "recorded_at": "2026-11-11T21:24:41+00:00"
  },
  "type": "airline"
 }

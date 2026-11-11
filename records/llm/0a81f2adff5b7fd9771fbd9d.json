@@ -1,0 +1,108 @@
+{
+ "answer": {
+  "sections": {
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue.peer_median@FY2024"
+      }
+     ],
+     "text": "Cash liquidity: cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, leaving cash liquidity to revenue at {{cash_liquidity_to_revenue@FY2024}}, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "debt_due_1y@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2023"
+      }
+     ],
+     "text": "Maturities: debt due within one year of {{debt_due_1y@FY2024}} is covered by the cash balance, but the buffer is thinner than in FY2023, when cash and cash-like investments stood at {{cash_like@FY2023}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "interest_coverage.change@FY2024"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "interest_coverage@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "finance_costs.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "finance_costs@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "interest_coverage.peer_median@FY2024"
+      }
+     ],
+     "text": "Interest cover: coverage eased by {{interest_coverage.change@FY2024}} to {{interest_coverage@FY2024}} as finance costs rose by {{finance_costs.change@FY2024}} to {{finance_costs@FY2024}}, though it remains above the peer median of {{interest_coverage.peer_median@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "aero_revenue_per_passenger@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs"
+      }
+     ],
+     "text": "Tariffs: the CNMC set the maximum adjusted annual revenue per passenger for 2025 at the same level as the prior year, so aeronautical revenue per passenger of {{aero_revenue_per_passenger@FY2024}} has limited scope to rise through tariffs."
+    }
+   ]
+  }
+ },
+ "label": "aena_FY2024 attempt 3 draft-v8",
+ "recorded_at": "2026-11-11T21:15:03+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v8",
+  "provider": "deepseek",
+  "system_sha256": "759a32520f9ec250c917f926c554cb9f126a9e17ae12fadbbc685d925eceb6df",
+  "tool_sha256": "bf89949808c3cfaf136bca2c04e2c1fbe93c3b5950310e089cc25b70884f3a9e",
+  "user_sha256": "f5446b2ebaeb708dd1e004f694bdddd24b4eb61c76473c054ef2dc9b913fc1d9"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14921,
+  "output_tokens": 603
+ }
+}

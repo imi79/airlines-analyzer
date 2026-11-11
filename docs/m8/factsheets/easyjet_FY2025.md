@@ -172,6 +172,8 @@ Company type: airline. Reporting currency: GBP. Peer group: Low-cost airlines (e
 | profit@FY2025 | Profit for the year, FY2025 | GBP 494m | up, better vs prior year |
 | profit@FY2024 | Profit for the year, FY2024 | GBP 452m |  |
 | profit.change@FY2025 | change in Profit for the year, FY2024 to FY2025 | 9.3% | up, better vs prior year; printed without a sign: say the direction in words |
+| rating_moodys@FY2025 | Moody's long-term rating, outlook stable, as at 2025-09-30 | Baa2 | From the company's report (page 33); never typed, always a blank. |
+| rating_sp@FY2025 | S&P long-term rating, outlook stable, as at 2025-09-30 | BBB+ | From the company's report (page 33); never typed, always a blank. |
 
 ## Events of the year (read from the report; the quote was checked by code)
 
@@ -210,5 +212,3 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - cash_liquidity@FY2025: the same figure as cash_like@FY2025: use that id
 - cash_liquidity.change@FY2025: the same figure as cash_like.change@FY2025: use that id
 - cash_liquidity@FY2024: the same figure as cash_like@FY2024: use that id
-- rating_moodys@FY2025: not reviewed yet: waiting for Imane's review
-- rating_sp@FY2025: not reviewed yet: waiting for Imane's review

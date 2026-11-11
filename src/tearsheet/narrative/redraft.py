@@ -58,6 +58,7 @@ def vocabulary_v8(narrative: dict) -> dict:
 
     vocabulary = yaml.safe_load(VOCABULARY.read_text())
     vocabulary["allowed_phrases"] += narrative["m8_redraft"].get("allowed_phrases", [])
+    vocabulary["lone_rating"] = narrative["m8_redraft"].get("lone_rating")
     return vocabulary
 
 

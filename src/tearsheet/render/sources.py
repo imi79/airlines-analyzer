@@ -228,8 +228,20 @@ def item_card(lib: Library, ts: dict, fid: str) -> dict:
             "quotes": [quote],
             "inputs": [],
         }
-    lines = [item["note"]] if item.get("note") else []  # a rating (M8): its source
-    return {"kind": kind, "title": item["label"], "rendered": item["rendered"], "lines": lines,
+    if kind == "rating":  # M8: copied from the company's report, the quote checked by code
+        rating = ts.get("rating") or {}
+        quote = rating.get("quote") or ""
+        return {
+            "kind": "rating",
+            "title": item["label"],
+            "rendered": item["rendered"],
+            "how": "Entered by hand from the company's report; the quote was found in the report "
+            "by code; reviewed by the analyst",
+            "lines": [f"Source: {rating.get('source', '')}", f"Quote: “{quote}”"],
+            "quotes": [quote] if quote else [],
+            "inputs": [],
+        }
+    return {"kind": kind, "title": item["label"], "rendered": item["rendered"], "lines": [],
             "inputs": []}  # fmt: skip
 
 
@@ -357,4 +369,4 @@ def traced(c: dict) -> bool:
         if c["kind"] == "extracted":
             return bool(c.get("quotes"))
         return bool(c["lines"])
-    return c["kind"] == "event" and bool(c.get("quotes"))
+    return c["kind"] in ("event", "rating") and bool(c.get("quotes"))

@@ -250,8 +250,8 @@
        "id": "liquidity_to_revenue@FY2025"
       }
      ],
-     "text": "Cash and cash-like investments rose by 12.4% to EUR 2.0bn, and with EUR 2.2bn of undrawn committed facilities total liquidity reached EUR 4.3bn, or 68.4% of revenue.",
-     "text_blanks": "Cash and cash-like investments rose by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, and with {{undrawn_facilities@FY2025}} of undrawn committed facilities total liquidity reached {{liquidity@FY2025}}, or {{liquidity_to_revenue@FY2025}} of revenue."
+     "text": "Cash and cash-like investments rose by 12.4% to EUR 2.0bn, and with EUR 2.2bn of undrawn committed facilities total liquidity stood at EUR 4.3bn, or 68.4% of revenue.",
+     "text_blanks": "Cash and cash-like investments rose by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, and with {{undrawn_facilities@FY2025}} of undrawn committed facilities total liquidity stood at {{liquidity@FY2025}}, or {{liquidity_to_revenue@FY2025}} of revenue."
     },
     {
      "facts": [
@@ -270,8 +270,8 @@
        "id": "short_term_debt_cover@FY2025"
       }
      ],
-     "text": "Debt due within one year fell by 35.5% to EUR 864m, covered 4.97x by liquidity, so the near-term maturities are met without new funding.",
-     "text_blanks": "Debt due within one year fell by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, covered {{short_term_debt_cover@FY2025}} by liquidity, so the near-term maturities are met without new funding."
+     "text": "Debt due within one year fell by 35.5% to EUR 864m, so liquidity covers it 4.97x over and the near-term maturities are covered without new funding.",
+     "text_blanks": "Debt due within one year fell by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, so liquidity covers it {{short_term_debt_cover@FY2025}} over and the near-term maturities are covered without new funding."
     },
     {
      "facts": [
@@ -287,7 +287,10 @@
        "id": "fcf_after_leases@FY2025"
       },
       {
-       "claims": [],
+       "claims": [
+        "down",
+        "worse"
+       ],
        "id": "fcf_after_leases_to_debt@FY2025"
       },
       {
@@ -301,8 +304,8 @@
        "id": "net_capex@FY2025"
       }
      ],
-     "text": "Free cash flow after lease payments fell by 9.6% to EUR 1.8bn, or 23.2% of debt, as net capex rose by 28.0% to EUR 1.0bn.",
-     "text_blanks": "Free cash flow after lease payments fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}}, or {{fcf_after_leases_to_debt@FY2025}} of debt, as net capex rose by {{net_capex.change@FY2025}} to {{net_capex@FY2025}}."
+     "text": "Free cash flow after lease payments, the comparable measure of cash left for debt holders, fell by 9.6% to EUR 1.8bn, or 23.2% of debt, as net capex rose by 28.0% to EUR 1.0bn.",
+     "text_blanks": "Free cash flow after lease payments, the comparable measure of cash left for debt holders, fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}}, or {{fcf_after_leases_to_debt@FY2025}} of debt, as net capex rose by {{net_capex.change@FY2025}} to {{net_capex@FY2025}}."
     },
     {
      "facts": [
@@ -313,10 +316,14 @@
       {
        "claims": [],
        "id": "event:funding_and_rating-4"
+      },
+      {
+       "claims": [],
+       "id": "event:funding_and_rating-3"
       }
      ],
-     "text": "The Brazilian subsidiary BOAB issued secured debentures maturing in the long term, and London Luton airport completed the refinancing of its bank debt.",
-     "text_blanks": "The Brazilian subsidiary BOAB issued secured debentures maturing in the long term, and London Luton airport completed the refinancing of its bank debt."
+     "text": "On funding, the Brazilian subsidiary BOAB issued secured debentures maturing in the long term, London Luton airport completed the refinancing of its bank debt, and Fitch affirmed the group's ratings with a stable long-term outlook.",
+     "text_blanks": "On funding, the Brazilian subsidiary BOAB issued secured debentures maturing in the long term, London Luton airport completed the refinancing of its bank debt, and Fitch affirmed the group's ratings with a stable long-term outlook."
     }
    ],
    "status": "passed",
@@ -578,10 +585,16 @@
       {
        "claims": [],
        "id": "fcf_after_leases_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_capex.change@FY2025"
       }
      ],
-     "text": "Cash generation: free cash flow after leases fell by 9.6% to EUR 1.8bn, taking FCF after leases to debt down by 3.3 points to 23.2%.",
-     "text_blanks": "Cash generation: free cash flow after leases fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}}, taking FCF after leases to debt down by {{fcf_after_leases_to_debt.change@FY2025}} to {{fcf_after_leases_to_debt@FY2025}}."
+     "text": "Cash generation: free cash flow after leases fell by 9.6% to EUR 1.8bn and FCF after leases to debt by 3.3 points to 23.2%, as net capex rose by 28.0%.",
+     "text_blanks": "Cash generation: free cash flow after leases fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}} and FCF after leases to debt by {{fcf_after_leases_to_debt.change@FY2025}} to {{fcf_after_leases_to_debt@FY2025}}, as net capex rose by {{net_capex.change@FY2025}}."
     },
     {
      "facts": [
@@ -592,18 +605,18 @@
        "id": "capex_intensity.change@FY2025"
       },
       {
-       "claims": [],
-       "id": "capex_intensity@FY2025"
-      },
-      {
        "claims": [
         "below_peers"
        ],
+       "id": "capex_intensity@FY2025"
+      },
+      {
+       "claims": [],
        "id": "capex_intensity.peer_median@FY2025"
       }
      ],
-     "text": "Investment: capex intensity rose by 2.6 points to 16.9%, below the peer median of 18.2% but absorbing more of operating cash flow.",
-     "text_blanks": "Investment: capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, below the peer median of {{capex_intensity.peer_median@FY2025}} but absorbing more of operating cash flow."
+     "text": "Investment: capex intensity rose by 2.6 points to 16.9%, below the peer median of 18.2% but absorbing a larger share of revenue.",
+     "text_blanks": "Investment: capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, below the peer median of {{capex_intensity.peer_median@FY2025}} but absorbing a larger share of revenue."
     },
     {
      "facts": [
@@ -615,18 +628,18 @@
        "id": "ebitda_margin.change@FY2025"
       },
       {
-       "claims": [],
-       "id": "ebitda_margin@FY2025"
-      },
-      {
        "claims": [
         "above_peers"
        ],
+       "id": "ebitda_margin@FY2025"
+      },
+      {
+       "claims": [],
        "id": "ebitda_margin.peer_median@FY2025"
       }
      ],
-     "text": "Margins: the EBITDA margin narrowed by 0.6 points to 60.3%, though it remains above the peer median of 36.5%.",
-     "text_blanks": "Margins: the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, though it remains above the peer median of {{ebitda_margin.peer_median@FY2025}}."
+     "text": "Margins: the EBITDA margin narrowed by 0.6 points to 60.3%, a level still well above the peer median of 36.5%.",
+     "text_blanks": "Margins: the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, a level still well above the peer median of {{ebitda_margin.peer_median@FY2025}}."
     },
     {
      "facts": [
@@ -638,16 +651,22 @@
        "id": "cash_liquidity_to_revenue.change@FY2025"
       },
       {
-       "claims": [],
+       "claims": [
+        "in_line_with_peers"
+       ],
        "id": "cash_liquidity_to_revenue@FY2025"
       },
       {
        "claims": [],
        "id": "debt_due_1y@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "short_term_debt_cover@FY2025"
       }
      ],
-     "text": "Liquidity: cash liquidity to revenue rose by 1.0 point to 32.6%, in the middle of the group, and covers the EUR 864m due within one year.",
-     "text_blanks": "Liquidity: cash liquidity to revenue rose by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, in the middle of the group, and covers the {{debt_due_1y@FY2025}} due within one year."
+     "text": "Liquidity: cash liquidity to revenue rose by 1.0 point to 32.6%, in the middle of the group, and debt due within one year of EUR 864m is covered 4.97x over by liquidity.",
+     "text_blanks": "Liquidity: cash liquidity to revenue rose by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, in the middle of the group, and debt due within one year of {{debt_due_1y@FY2025}} is covered {{short_term_debt_cover@FY2025}} over by liquidity."
     }
    ],
    "status": "passed",
@@ -2357,6 +2376,40 @@
     "value": "2184966000.000000000000",
     "vs_peers": null
    },
+   "rating_fitch@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "rating_fitch@FY2025",
+    "kind": "rating",
+    "label": "Fitch long-term rating (bond issue (EMTN, EUR 500 million due October 2030)), as at 2025-12-31",
+    "metric": "rating_fitch",
+    "note": "From the company's report (page 61); never typed, always a blank.",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "A-",
+    "unit": "rating",
+    "value": "0",
+    "vs_peers": null
+   },
+   "rating_moodys@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "rating_moodys@FY2025",
+    "kind": "rating",
+    "label": "Moody's long-term rating (bond issue (EMTN, EUR 500 million due October 2030)), as at 2025-12-31",
+    "metric": "rating_moodys",
+    "note": "From the company's report (page 61); never typed, always a blank.",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "A3",
+    "unit": "rating",
+    "value": "0",
+    "vs_peers": null
+   },
    "revenue.change@FY2025": {
     "assessment": "better",
     "direction": "up",
@@ -2598,8 +2651,6 @@
    "non_aero_share@FY2025": "n.m.: group revenue includes London Luton and the Brazilian airports, while the aeronautical revenue is the Spanish network's segment only.",
    "passengers.change@FY2025": "needs both years verified",
    "passengers@FY2025": "not verified yet: waiting for Imane's review",
-   "rating_fitch@FY2025": "not reviewed yet: waiting for Imane's review",
-   "rating_moodys@FY2025": "not reviewed yet: waiting for Imane's review",
    "revenue_per_passenger.change@FY2025": "needs both years verified",
    "revenue_per_passenger@FY2024": "n.m.: group revenue includes London Luton and the Brazilian airports, while passengers are the Spanish network only.",
    "revenue_per_passenger@FY2025": "n.m.: group revenue includes London Luton and the Brazilian airports, while passengers are the Spanish network only.",
@@ -2629,12 +2680,12 @@
   "as_at": "2025-12-31",
   "document": "959800R7QMXKF0NFMT29-2025-12-31-ESEF-ES-0",
   "quote": "Las agencias de rating Fitch y Moody’s asignaron a la emisión una calificación “A-” y “A3” respectivamente.",
-  "reason": "not reviewed yet: waiting for Imane's review",
+  "reason": null,
   "scope": "bond issue (EMTN, EUR 500 million due October 2030)",
   "source": "FY2025 annual report, page 61",
   "stale": false,
-  "status": "unverified",
-  "text": "awaiting review"
+  "status": "verified",
+  "text": "Fitch A-, Moody's A3"
  },
  "run": {
   "calls": 1,
@@ -2644,15 +2695,15 @@
    "959800R7QMXKF0NFMT29-2025-12-31-ESEF-ES-0": "f96476bc0a3ce715c6588906c58e06e0ee9ed1ab72d64deb32b9c4e1692fe699"
   },
   "first_try_ok": true,
-  "input_hash": "aeee2abd40351922d953bf8e22422af0afc43acf9a7241e3fdd2e0c2cef2f1c8",
-  "input_tokens": 54351,
+  "input_hash": "b3d54f8fde268d8746f2c479aba12ed78d7674382084027473eec611e74cc0de",
+  "input_tokens": 54433,
   "matches_figures": true,
   "model": "deepseek-flash",
-  "output_tokens": 6130,
+  "output_tokens": 6267,
   "passed": true,
   "prompt_version": "draft-v7 + draft-v8 (liquidity_funding, watch_items)",
   "provider": "deepseek",
-  "recorded_at": "2026-11-11T18:54:43+00:00"
+  "recorded_at": "2026-11-11T21:14:19+00:00"
  },
  "type": "airport"
 }

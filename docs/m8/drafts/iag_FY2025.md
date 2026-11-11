@@ -1,6 +1,6 @@
 # International Airlines Group, FY2025
 
-Fact sheet `f5b506705508`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
+Fact sheet `145f8c81f758`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
 
 ## Snapshot (draft-v7, passed)
 
@@ -26,9 +26,9 @@ Fact sheet `f5b506705508`. Sections marked **draft-v8** were redrafted in M8; th
 ## Liquidity and funding (draft-v8, passed)
 
 1. Liquidity fell by 17.2% to EUR 10.9bn, of which EUR 2.6bn in undrawn committed facilities, down 22.7%, and cash and cash-like investments of EUR 8.3bn.
-2. Debt due within one year was reduced by 12.3% to EUR 3.0bn, covered 3.59x by liquidity, so the near-term maturities are covered without new funding even though the cover ratio eased by 0.22x.
-3. Free cash flow after lease payments, the comparable measure of cash left for debt holders, fell by 23.9% to EUR 1.8bn, with FCF after leases to debt down 1.1 points to 12.8% as net capex rose by 53.0%.
-4. Customer prepayments remain large: contract liabilities of EUR 8.0bn were reduced by 3.6%, while advance ticket cover rose by 11.8 points to 96.6%.
+2. Debt due within one year was reduced by 12.3% to EUR 3.0bn, so liquidity covers it 3.59x times, down 0.22x but still covering the near-term maturities without new funding.
+3. Free cash flow after lease payments, the comparable measure of cash left for debt holders, fell by 23.9% to EUR 1.8bn, taking FCF after leases to debt down by 1.1 points to 12.8%.
+4. Customer prepayments remain large: contract liabilities of EUR 8.0bn were reduced by 3.6%, while advance ticket cover rose by 11.8 points to 96.6%, so a larger share of liquidity is customers' money.
 
 ## Peer positioning (draft-v7, passed)
 
@@ -38,7 +38,7 @@ Fact sheet `f5b506705508`. Sections marked **draft-v8** were redrafted in M8; th
 
 ## Watch items (draft-v8, passed)
 
-1. Liquidity: liquidity fell by 17.2% to EUR 10.9bn and cash liquidity to revenue by 5.6 points to 25.0%, in line with the peer median, as cash was returned to shareholders.
-2. Cash flow after leases: FCF after leases fell by 23.9% to EUR 1.8bn and FCF after leases to debt by 1.1 points to 12.8%, as net capex rose by 53.0%.
-3. Customer prepayments: advance ticket cover of 96.6% is above the peer median of 67.4% and the highest of the group (3rd of 3), so a larger share of liquidity is customers' prepayments.
-4. Near-term maturities: debt due within one year of EUR 3.0bn is covered 3.59x by liquidity, a cover ratio that eased by 0.22x as liquidity fell by 17.2%.
+1. Liquidity: liquidity fell by 17.2% to EUR 10.9bn and cash liquidity to revenue by 5.6 points to 25.0%, in line with the peer median, as excess cash was returned to shareholders.
+2. Near-term maturities: short-term debt cover eased by 0.22x to 3.59x as liquidity fell by 17.2%, leaving less headroom over the EUR 3.0bn due within a year.
+3. Cash flow after leases: FCF after leases fell by 23.9% to EUR 1.8bn and FCF after leases to debt by 1.1 points to 12.8%, as net capex rose by 53.0% to EUR 3.4bn.
+4. Customer prepayments: advance ticket cover of 96.6% is the highest of the network peers (3rd of 3) and above the peer median of 67.4%, so a larger share of liquidity is customers' money.

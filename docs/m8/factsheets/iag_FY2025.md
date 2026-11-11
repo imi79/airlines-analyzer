@@ -178,6 +178,8 @@ Company type: airline. Reporting currency: EUR. Peer group: Network airlines (af
 | profit@FY2025 | Profit for the year, FY2025 | EUR 3.3bn | up, better vs prior year |
 | profit@FY2024 | Profit for the year, FY2024 | EUR 2.7bn |  |
 | profit.change@FY2025 | change in Profit for the year, FY2024 to FY2025 | 22.3% | up, better vs prior year; printed without a sign: say the direction in words |
+| rating_sp@FY2025 | S&P long-term rating, outlook stable, as at 2026-02-26 | BBB | From the company's report (page 41); never typed, always a blank. |
+| rating_moodys@FY2025 | Moody's long-term rating, outlook stable, as at 2026-02-26 | Baa2 | From the company's report (page 41); never typed, always a blank. |
 
 ## Events of the year (read from the report; the quote was checked by code)
 
@@ -214,5 +216,3 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - cash_liquidity@FY2025: the same figure as cash_like@FY2025: use that id
 - cash_liquidity.change@FY2025: the same figure as cash_like.change@FY2025: use that id
 - cash_liquidity@FY2024: the same figure as cash_like@FY2024: use that id
-- rating_sp@FY2025: not reviewed yet: waiting for Imane's review
-- rating_moodys@FY2025: not reviewed yet: waiting for Imane's review

@@ -58,8 +58,7 @@ France-KLM's, ADP's and easyJet's dates are more than a year old: flagged.
 
 ## What you do (about 30 minutes)
 
-1. **Review the nine ratings** in `config/ratings.yaml` (each has the page and the sentence):
-   write your name and date in `reviewed_by` for those you accept.
+1. ~~Review the nine ratings~~: done on 2026-11-11, recorded in `config/ratings.yaml`.
 2. **Review four FY2025 hand entries** in `config/manual_figures.yaml` (`pending_review`): Air
    France-KLM disposals 1,391 (statements page 8); ADP lease payments 30 and disposals 35 (French
    statements, page 7). Until then those two tearsheets show FCF after leases as awaiting review.
@@ -70,9 +69,9 @@ France-KLM's, ADP's and easyJet's dates are more than a year old: flagged.
 4. **Optionally approve flagged maturity tables** in the app (Data and audit), where you judge
    the reason acceptable (for example IAG's convertible bond).
 5. **Read two or three redrafted notes** (`docs/m8/drafts/`, or `docs/m8/pdf/`), and edit the
-   two flagged snapshots if you wish. One small wording glitch to fix by hand: Finnair FY2025
+   three flagged snapshots (Finnair FY2024, Wizz Air FY2025, Aena FY2024) if you wish. One small wording glitch to fix by hand: Finnair FY2025
    says "covered 17.39x times".
-6. **Say go to merge into `main`**: the public link updates then.
+6. ~~Say go to merge into `main`~~: merged on 2026-11-11; the public link follows `main`.
 
 ## Results
 
@@ -80,10 +79,13 @@ France-KLM's, ADP's and easyJet's dates are more than a year old: flagged.
 | --- | --- | --- |
 | Cash flow after leases for every company and year, tested, second-source check | 9 of 9 companies; 16 of 16 within tolerance | ✓ |
 | Maturity wall: no wrong value verified on the answer key; flagged otherwise | 0 wrong, 4 verified, 10 flagged with reasons | ✓ |
-| Ratings box complete and reviewed by you | 9 entries checked by code; your review pending | to do |
-| The tearsheet stays clean | Sources 18 of 18; PDF two pages 18 of 18; Excel 18 of 18; 52 of 52 faulty sentences rejected; 18 notes in a row with no number outside a blank | ✓ |
+| Ratings box complete and reviewed by you | 9 entries checked by code, reviewed on 2026-11-11 | ✓ |
+| The tearsheet stays clean | Sources 18 of 18; PDF two pages 18 of 18; Excel 18 of 18; 52 of 52 faulty sentences rejected; 14 notes in a row with no number outside a blank | ✓ |
 
-AI tokens: about 165,000 for the maturity tables, about 563,000 for the redraft. 638 tests pass.
+AI tokens: about 168,000 for the maturity tables; about 1,430,000 for the redraft over four
+rounds, 1.8 times the plan's estimate: recording your ratings review changed the fact sheets,
+and a rating is now offered only to the note of its own year, so the notes concerned were
+redrafted. 638 tests pass.
 
 ## Next
 

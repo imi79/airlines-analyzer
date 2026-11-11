@@ -1,6 +1,6 @@
 # Finnair, FY2025
 
-Fact sheet `69b2dac25c15`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
+Fact sheet `d5bf967be45a`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
 
 ## Snapshot (draft-v7, passed)
 
@@ -25,8 +25,8 @@ Fact sheet `69b2dac25c15`. Sections marked **draft-v8** were redrafted in M8; th
 ## Liquidity and funding (draft-v8, passed)
 
 1. Liquidity rose by 16.3% to EUR 1.3bn, of which EUR 200m in undrawn committed facilities, broadly unchanged on the prior year, and cash and cash-like investments increased by 20.0% to EUR 1.1bn.
-2. Debt due within one year fell by 37.3% to EUR 182m, so short-term debt cover improved by 3.19x to 6.93x, and borrowings due within two years of EUR 72.5m are covered 17.39x times by liquidity, so near-term maturities are met without new funding.
-3. Free cash flow after lease payments fell by 75.7% to EUR 50.8m, taking FCF after leases to debt down by 8.4 points to 2.8%, a thin buffer once lease payments are charged against cash flow.
+2. Near-term maturities are well covered: debt due within one year fell by 37.3% to EUR 182m, taking short-term debt cover up by 3.19x to 6.93x, and borrowings due within two years declined by 60.2% to EUR 72.5m, so liquidity covers them 17.39x times.
+3. Cash flow after lease payments is the weaker measure: FCF after leases fell by 75.7% to EUR 50.8m, taking FCF after leases to debt down by 8.4 points to 2.8%, as cash from operations declined by 34.4% to EUR 402m.
 4. Customer prepayments remain a material part of the funding base: contract liabilities rose by 8.5% to EUR 715m, while advance ticket cover fell by 7.1 points to 67.4%.
 
 ## Peer positioning (draft-v7, passed)
@@ -37,7 +37,7 @@ Fact sheet `69b2dac25c15`. Sections marked **draft-v8** were redrafted in M8; th
 
 ## Watch items (draft-v8, passed)
 
-1. Cash flow after leases: FCF after leases to debt fell by 8.4 points to 2.8%, so lease payments absorb most of the cash generated after capital spending.
-2. Earnings: the EBITDA margin narrowed by 1.5 points to 13.1%, below the peer median of 15.3%, with industrial action in the first half weighing on the result.
-3. Leverage: gross leverage rose by 0.17x to 4.37x, above the peer median of 3.07x, as EBITDA declined by 8.2%.
-- removed by the verifier: “Costs: fuel makes up {{fuel_share_of_costs@FY2025}} of costs, above the peer median of {{fuel_share_of_costs.peer_median@FY2025}}, and costs related to environmental regulation increased during the year.” ('increased' needs a 'up' claim on a figure in the same clause)
+1. Cash generation: FCF after leases fell by 75.7% to EUR 50.8m, only 2.8% of debt, so the cash left for debt holders after lease payments is thin.
+2. Earnings: the EBITDA margin narrowed by 1.5 points to 13.1%, below the peer median of 15.3%, and FFO to debt fell by 3.8 points to 18.0% against a peer median of 27.4%.
+3. Leverage: gross leverage rose by 0.17x to 4.37x, above the peer median of 3.07x, and interest coverage of 4.98x remains below the peer median of 8.06x.
+4. Cost base: industrial action in the first half weighed on the result, and costs related to environmental regulation and navigation and landing charges added to it, with operating profit down 43.8% to EUR 64.2m.

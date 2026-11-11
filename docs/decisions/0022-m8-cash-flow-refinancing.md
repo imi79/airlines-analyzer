@@ -1,7 +1,8 @@
 # 0022 · M8: cash flow after leases, the maturity wall and a ratings box
 
 Date: 2026-11-11 · Status: plan approved by Imane with every recommendation ("approved with
-all recommendations, go ahead on m8-cash-flow-refinancing"); results waiting for her review
+all recommendations, go ahead on m8-cash-flow-refinancing"); ratings reviewed and merged into
+`main` on her go-ahead ("I reviewed the ratings, merge into main")
 
 **Choices approved with the plan** (`docs/m8/plan.md`):
 
@@ -102,3 +103,22 @@ new adversarial cases, 52 in all, all rejected).
   order, and it changed when M8 added rows. The computed one is now always kept. The frozen
   M4 fact sheets keep what was sent; the M8 fact sheets use the fixed rule.
 - **The maturity tables are kept out of the M1 and M3 reports**, which are unchanged.
+
+**After Imane's review of the ratings.**
+
+- **Her review is recorded as "Imane (2026-11-11)"** on all nine entries, as for the M1 hand
+  entries. The reviewed ratings became figures the AI may cite (through a blank), which changed
+  the fact sheets of the twelve notes with a rating; those notes were redrafted.
+- **A rating belongs to the note of its report's year.** The first redraft after the review
+  offered the FY2025 report's rating to the FY2024 note too (Aena FY2024 cited a rating dated
+  after its year end). The fact sheet now offers a rating only to its own year; the six notes
+  concerned were redrafted. The header still shows the latest rating with its date.
+- **A rating typed in M4.** Aena FY2024's draft-v7 snapshot says Fitch "upgraded its long-term
+  rating to A", written without a blank. The M8 checks now catch a lone "A" after "to", "at",
+  "of", "is" or "rated" (narrowly, so ordinary prose passes), in the redraft only so the M4
+  record stays as it was; the snapshot is flagged for editing.
+- **Tokens**: the redraft took about 1,340,000 in and 91,000 out over four rounds, 1.8 times
+  the plan's estimate of 790,000; the maturity tables about 168,000.
+- **Final**: 15 of 18 notes pass the verifier in full; 14 in a row with no number outside a
+  blank (the checklist asks for ten); three kept M4 snapshots flagged for Imane.
+

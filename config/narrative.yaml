@@ -159,6 +159,9 @@ m8_redraft:
     - 'due within (?:one|two) years?'
     - 'within (?:one|two) years?'
     - '(?:one|two)-year'
+  # A rating "A" written alone after a word ("upgraded its rating to A"): a rating typed outside
+  # a blank (the other letters, "BBB+", "A-", are caught by the verifier everywhere).
+  lone_rating: '(?:(?<= to )|(?<= at )|(?<= of )|(?<= is )|(?<=rated ))A(?![\w+-])'
   liquidity_funding:
     purpose: >-
       Cash, undrawn committed facilities and liquidity against revenue; the debt due within one

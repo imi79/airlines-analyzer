@@ -2399,6 +2399,40 @@
    "value": "0.094506807802",
    "vs_peers": null
   },
+  "rating_moodys@FY2025": {
+   "assessment": null,
+   "direction": null,
+   "id": "rating_moodys@FY2025",
+   "kind": "rating",
+   "label": "Moody's long-term rating, outlook stable, as at 2026-02-26",
+   "metric": "rating_moodys",
+   "note": "From the company's report (page 41); never typed, always a blank.",
+   "peer_assessment": null,
+   "period": "FY2025",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "Baa2",
+   "unit": "rating",
+   "value": "0",
+   "vs_peers": null
+  },
+  "rating_sp@FY2025": {
+   "assessment": null,
+   "direction": null,
+   "id": "rating_sp@FY2025",
+   "kind": "rating",
+   "label": "S&P long-term rating, outlook stable, as at 2026-02-26",
+   "metric": "rating_sp",
+   "note": "From the company's report (page 41); never typed, always a blank.",
+   "peer_assessment": null,
+   "period": "FY2025",
+   "rank": null,
+   "rank_of": null,
+   "rendered": "BBB",
+   "unit": "rating",
+   "value": "0",
+   "vs_peers": null
+  },
   "revenue.change@FY2025": {
    "assessment": "better",
    "direction": "up",
@@ -2738,8 +2772,6 @@
   "load_factor.peer_rank@FY2025": "the peer median would use a figure not verified yet (finnair)",
   "net_cash.change@FY2025": "needs both years verified",
   "net_cash@FY2024": "the company has net debt, not net cash",
-  "net_cash@FY2025": "the company has net debt, not net cash",
-  "rating_moodys@FY2025": "not reviewed yet: waiting for Imane's review",
-  "rating_sp@FY2025": "not reviewed yet: waiting for Imane's review"
+  "net_cash@FY2025": "the company has net debt, not net cash"
  }
 }

@@ -172,4 +172,3 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - cash_liquidity@FY2025: the same figure as cash_like@FY2025: use that id
 - cash_liquidity.change@FY2025: the same figure as cash_like.change@FY2025: use that id
 - cash_liquidity@FY2024: the same figure as cash_like@FY2024: use that id
-- rating_sp@FY2025: not reviewed yet: waiting for Imane's review

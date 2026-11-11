@@ -351,6 +351,12 @@
        "id": "short_term_debt_cover@FY2025"
       },
       {
+       "claims": [
+        "down"
+       ],
+       "id": "borrowings_due_2y.change@FY2025"
+      },
+      {
        "claims": [],
        "id": "borrowings_due_2y@FY2025"
       },
@@ -359,8 +365,8 @@
        "id": "liquidity_to_borrowings_due_2y@FY2025"
       }
      ],
-     "text": "Debt due within one year fell by 37.3% to EUR 182m, so short-term debt cover improved by 3.19x to 6.93x, and borrowings due within two years of EUR 72.5m are covered 17.39x times by liquidity, so near-term maturities are met without new funding.",
-     "text_blanks": "Debt due within one year fell by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, so short-term debt cover improved by {{short_term_debt_cover.change@FY2025}} to {{short_term_debt_cover@FY2025}}, and borrowings due within two years of {{borrowings_due_2y@FY2025}} are covered {{liquidity_to_borrowings_due_2y@FY2025}} times by liquidity, so near-term maturities are met without new funding."
+     "text": "Near-term maturities are well covered: debt due within one year fell by 37.3% to EUR 182m, taking short-term debt cover up by 3.19x to 6.93x, and borrowings due within two years declined by 60.2% to EUR 72.5m, so liquidity covers them 17.39x times.",
+     "text_blanks": "Near-term maturities are well covered: debt due within one year fell by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, taking short-term debt cover up by {{short_term_debt_cover.change@FY2025}} to {{short_term_debt_cover@FY2025}}, and borrowings due within two years declined by {{borrowings_due_2y.change@FY2025}} to {{borrowings_due_2y@FY2025}}, so liquidity covers them {{liquidity_to_borrowings_due_2y@FY2025}} times."
     },
     {
      "facts": [
@@ -385,10 +391,21 @@
       {
        "claims": [],
        "id": "fcf_after_leases_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cfo.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cfo@FY2025"
       }
      ],
-     "text": "Free cash flow after lease payments fell by 75.7% to EUR 50.8m, taking FCF after leases to debt down by 8.4 points to 2.8%, a thin buffer once lease payments are charged against cash flow.",
-     "text_blanks": "Free cash flow after lease payments fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}}, taking FCF after leases to debt down by {{fcf_after_leases_to_debt.change@FY2025}} to {{fcf_after_leases_to_debt@FY2025}}, a thin buffer once lease payments are charged against cash flow."
+     "text": "Cash flow after lease payments is the weaker measure: FCF after leases fell by 75.7% to EUR 50.8m, taking FCF after leases to debt down by 8.4 points to 2.8%, as cash from operations declined by 34.4% to EUR 402m.",
+     "text_blanks": "Cash flow after lease payments is the weaker measure: FCF after leases fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}}, taking FCF after leases to debt down by {{fcf_after_leases_to_debt.change@FY2025}} to {{fcf_after_leases_to_debt@FY2025}}, as cash from operations declined by {{cfo.change@FY2025}} to {{cfo@FY2025}}."
     },
     {
      "facts": [
@@ -661,15 +678,22 @@
         "down",
         "worse"
        ],
-       "id": "fcf_after_leases_to_debt.change@FY2025"
+       "id": "fcf_after_leases.change@FY2025"
       },
       {
        "claims": [],
+       "id": "fcf_after_leases@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
        "id": "fcf_after_leases_to_debt@FY2025"
       }
      ],
-     "text": "Cash flow after leases: FCF after leases to debt fell by 8.4 points to 2.8%, so lease payments absorb most of the cash generated after capital spending.",
-     "text_blanks": "Cash flow after leases: FCF after leases to debt fell by {{fcf_after_leases_to_debt.change@FY2025}} to {{fcf_after_leases_to_debt@FY2025}}, so lease payments absorb most of the cash generated after capital spending."
+     "text": "Cash generation: FCF after leases fell by 75.7% to EUR 50.8m, only 2.8% of debt, so the cash left for debt holders after lease payments is thin.",
+     "text_blanks": "Cash generation: FCF after leases fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}}, only {{fcf_after_leases_to_debt@FY2025}} of debt, so the cash left for debt holders after lease payments is thin."
     },
     {
      "facts": [
@@ -692,12 +716,26 @@
        "id": "ebitda_margin.peer_median@FY2025"
       },
       {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ffo_to_debt.change@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "ffo_to_debt@FY2025"
+      },
+      {
        "claims": [],
-       "id": "event:labour"
+       "id": "ffo_to_debt.peer_median@FY2025"
       }
      ],
-     "text": "Earnings: the EBITDA margin narrowed by 1.5 points to 13.1%, below the peer median of 15.3%, with industrial action in the first half weighing on the result.",
-     "text_blanks": "Earnings: the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, below the peer median of {{ebitda_margin.peer_median@FY2025}}, with industrial action in the first half weighing on the result."
+     "text": "Earnings: the EBITDA margin narrowed by 1.5 points to 13.1%, below the peer median of 15.3%, and FFO to debt fell by 3.8 points to 18.0% against a peer median of 27.4%.",
+     "text_blanks": "Earnings: the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, below the peer median of {{ebitda_margin.peer_median@FY2025}}, and FFO to debt fell by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}} against a peer median of {{ffo_to_debt.peer_median@FY2025}}."
     },
     {
      "facts": [
@@ -721,14 +759,43 @@
       },
       {
        "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "interest_coverage@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "interest_coverage.peer_median@FY2025"
+      }
+     ],
+     "text": "Leverage: gross leverage rose by 0.17x to 4.37x, above the peer median of 3.07x, and interest coverage of 4.98x remains below the peer median of 8.06x.",
+     "text_blanks": "Leverage: gross leverage rose by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}}, above the peer median of {{gross_leverage.peer_median@FY2025}}, and interest coverage of {{interest_coverage@FY2025}} remains below the peer median of {{interest_coverage.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:labour"
+      },
+      {
+       "claims": [],
+       "id": "event:costs"
+      },
+      {
+       "claims": [
         "down",
         "worse"
        ],
-       "id": "ebitda.change@FY2025"
+       "id": "operating_profit.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "operating_profit@FY2025"
       }
      ],
-     "text": "Leverage: gross leverage rose by 0.17x to 4.37x, above the peer median of 3.07x, as EBITDA declined by 8.2%.",
-     "text_blanks": "Leverage: gross leverage rose by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}}, above the peer median of {{gross_leverage.peer_median@FY2025}}, as EBITDA declined by {{ebitda.change@FY2025}}."
+     "text": "Cost base: industrial action in the first half weighed on the result, and costs related to environmental regulation and navigation and landing charges added to it, with operating profit down 43.8% to EUR 64.2m.",
+     "text_blanks": "Cost base: industrial action in the first half weighed on the result, and costs related to environmental regulation and navigation and landing charges added to it, with operating profit down {{operating_profit.change@FY2025}} to {{operating_profit@FY2025}}."
     }
    ],
    "status": "passed",
@@ -2973,6 +3040,23 @@
     "value": "18400000.000000000000",
     "vs_peers": null
    },
+   "rating_sp@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "rating_sp@FY2025",
+    "kind": "rating",
+    "label": "S&P long-term rating, outlook stable, as at 2025-12-31",
+    "metric": "rating_sp",
+    "note": "From the company's report (page 174); never typed, always a blank.",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "BB+",
+    "unit": "rating",
+    "value": "0",
+    "vs_peers": null
+   },
    "revenue.change@FY2025": {
     "assessment": "neutral",
     "direction": "flat",
@@ -3276,7 +3360,6 @@
    "rask.change@FY2025": "needs both years verified",
    "rask@FY2024": "not verified yet: waiting for Imane's review",
    "rask@FY2025": "not verified yet: waiting for Imane's review",
-   "rating_sp@FY2025": "not reviewed yet: waiting for Imane's review",
    "rpk.change@FY2025": "needs both years verified",
    "rpk@FY2024": "not verified yet: waiting for Imane's review",
    "rpk@FY2025": "not verified yet: waiting for Imane's review"
@@ -3298,30 +3381,30 @@
   "as_at": "2025-12-31",
   "document": "213800SB6EOB8SSK9W63-2025-12-31-ESEF-FI-0",
   "quote": "S&P Global Ratings has assigned a long-term issuer credit rating of BB+ to Finnair Plc, with a stable outlook.",
-  "reason": "not reviewed yet: waiting for Imane's review",
+  "reason": null,
   "scope": "issuer",
   "source": "FY2025 annual report, page 174",
   "stale": false,
-  "status": "unverified",
-  "text": "awaiting review"
+  "status": "verified",
+  "text": "S&P BB+ (stable)"
  },
  "run": {
-  "calls": 3,
+  "calls": 1,
   "cost_usd": null,
   "filing_hashes": {
    "213800SB6EOB8SSK9W63-2024-12-31-ESEF-FI-0": "eea44d0f2e16c6e372e2c945cca1d06636cdc3e44ff11c1548903a6761bff299",
    "213800SB6EOB8SSK9W63-2025-12-31-ESEF-FI-0": "24497cdd2ccb0d489089a3360630212dc87e00ea1b6ccfc5fcd428464318d4c6"
   },
-  "first_try_ok": false,
-  "input_hash": "69b2dac25c15d4d9c5d0f82bebe3b7f62ff1f82f57486f2aff041c4cbdf995db",
-  "input_tokens": 91618,
+  "first_try_ok": true,
+  "input_hash": "d5bf967be45a062f9593a172e5c8e2964758097b0a42b958046eaf6086e9b708",
+  "input_tokens": 60455,
   "matches_figures": true,
   "model": "deepseek-flash",
-  "output_tokens": 9785,
+  "output_tokens": 8822,
   "passed": true,
   "prompt_version": "draft-v7 + draft-v8 (liquidity_funding, watch_items)",
   "provider": "deepseek",
-  "recorded_at": "2026-11-11T18:57:29+00:00"
+  "recorded_at": "2026-11-11T21:14:01+00:00"
  },
  "type": "airline"
 }

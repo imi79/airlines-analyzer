@@ -224,16 +224,10 @@
       {
        "claims": [],
        "id": "cash_like@FY2024"
-      },
-      {
-       "claims": [
-        "below_peers"
-       ],
-       "id": "cash_liquidity_to_revenue@FY2024"
       }
      ],
-     "text": "Cash and cash-like investments fell by 22.9% to EUR 1.8bn, taking cash liquidity to revenue to 31.6%, below the peer median.",
-     "text_blanks": "Cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, taking cash liquidity to revenue to {{cash_liquidity_to_revenue@FY2024}}, below the peer median."
+     "text": "Cash and cash-like investments fell by 22.9% to EUR 1.8bn, which is the whole of the cash liquidity position and excludes undrawn credit lines.",
+     "text_blanks": "Cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, which is the whole of the cash liquidity position and excludes undrawn credit lines."
     },
     {
      "facts": [
@@ -246,14 +240,10 @@
       {
        "claims": [],
        "id": "debt_due_1y@FY2024"
-      },
-      {
-       "claims": [],
-       "id": "cash_like@FY2024"
       }
      ],
-     "text": "Debt due within one year was reduced by 24.3% to EUR 1.3bn, comfortably inside the cash balance of EUR 1.8bn, so near-term maturities are covered without new funding.",
-     "text_blanks": "Debt due within one year was reduced by {{debt_due_1y.change@FY2024}} to {{debt_due_1y@FY2024}}, comfortably inside the cash balance of {{cash_like@FY2024}}, so near-term maturities are covered without new funding."
+     "text": "Debt due within one year was reduced by 24.3% to EUR 1.3bn, so the near-term maturities are covered by cash liquidity without new funding.",
+     "text_blanks": "Debt due within one year was reduced by {{debt_due_1y.change@FY2024}} to {{debt_due_1y@FY2024}}, so the near-term maturities are covered by cash liquidity without new funding."
     },
     {
      "facts": [
@@ -273,8 +263,8 @@
        "id": "fcf_after_leases_to_debt@FY2024"
       }
      ],
-     "text": "Free cash flow after lease payments rose by 134.6% to EUR 1.9bn, equal to 26.5% of debt, so lease payments leave the cash available to debt holders broadly intact.",
-     "text_blanks": "Free cash flow after lease payments rose by {{fcf_after_leases.change@FY2024}} to {{fcf_after_leases@FY2024}}, equal to {{fcf_after_leases_to_debt@FY2024}} of debt, so lease payments leave the cash available to debt holders broadly intact."
+     "text": "Free cash flow after lease payments rose by 134.6% to EUR 1.9bn, equal to 26.5% of debt, the comparable measure of cash left for debt holders once leases are paid.",
+     "text_blanks": "Free cash flow after lease payments rose by {{fcf_after_leases.change@FY2024}} to {{fcf_after_leases@FY2024}}, equal to {{fcf_after_leases_to_debt@FY2024}} of debt, the comparable measure of cash left for debt holders once leases are paid."
     },
     {
      "facts": [
@@ -289,8 +279,8 @@
        "id": "net_capex@FY2024"
       }
      ],
-     "text": "Net capex fell by 42.6% to EUR 794m, which is what lifted cash generation after leases.",
-     "text_blanks": "Net capex fell by {{net_capex.change@FY2024}} to {{net_capex@FY2024}}, which is what lifted cash generation after leases."
+     "text": "Net capex fell by 42.6% to EUR 794m, which released cash for debt reduction.",
+     "text_blanks": "Net capex fell by {{net_capex.change@FY2024}} to {{net_capex@FY2024}}, which released cash for debt reduction."
     }
    ],
    "status": "passed",
@@ -459,7 +449,9 @@
    "title": "Peer positioning"
   },
   "snapshot": {
-   "notes": [],
+   "notes": [
+    "[rule 1] snapshot, sentence 1: rating written outside a blank: 'A' (M8: ratings come from blanks)"
+   ],
    "removed": [],
    "sentences": [
     {
@@ -540,7 +532,7 @@
      "text_blanks": "The point to watch is cash liquidity: cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, taking cash liquidity to revenue down by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}."
     }
    ],
-   "status": "passed",
+   "status": "needs_manual_editing",
    "title": "Snapshot"
   },
   "watch_items": {
@@ -561,19 +553,23 @@
       },
       {
        "claims": [
+        "down"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2024"
+      },
+      {
+       "claims": [
         "below_peers"
        ],
        "id": "cash_liquidity_to_revenue@FY2024"
       },
       {
-       "claims": [
-        "worst_in_group"
-       ],
-       "id": "cash_liquidity_to_revenue.peer_rank@FY2024"
+       "claims": [],
+       "id": "cash_liquidity_to_revenue.peer_median@FY2024"
       }
      ],
-     "text": "Cash liquidity: cash and cash-like investments fell by 22.9% to EUR 1.8bn, and cash liquidity to revenue of 31.6% is the weakest of the airport peers (3rd of 3).",
-     "text_blanks": "Cash liquidity: cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, and cash liquidity to revenue of {{cash_liquidity_to_revenue@FY2024}} is the weakest of the airport peers ({{cash_liquidity_to_revenue.peer_rank@FY2024}})."
+     "text": "Cash liquidity: cash and cash-like investments fell by 22.9% to EUR 1.8bn, taking cash liquidity to revenue down by 15.3 points to 31.6%, below the peer median of 34.0%.",
+     "text_blanks": "Cash liquidity: cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, taking cash liquidity to revenue down by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2024}}."
     },
     {
      "facts": [
@@ -582,18 +578,14 @@
        "id": "debt_due_1y@FY2024"
       },
       {
-       "claims": [],
-       "id": "cash_like@FY2024"
-      },
-      {
        "claims": [
         "down"
        ],
        "id": "cash_like.change@FY2024"
       }
      ],
-     "text": "Maturities: debt due within one year of EUR 1.3bn is covered by the cash balance of EUR 1.8bn, but the buffer against it narrowed as cash fell by 22.9%.",
-     "text_blanks": "Maturities: debt due within one year of {{debt_due_1y@FY2024}} is covered by the cash balance of {{cash_like@FY2024}}, but the buffer against it narrowed as cash fell by {{cash_like.change@FY2024}}."
+     "text": "Maturities: debt due within one year of EUR 1.3bn is covered by cash liquidity, but the buffer is thinner than a year earlier as cash and cash-like investments fell by 22.9%.",
+     "text_blanks": "Maturities: debt due within one year of {{debt_due_1y@FY2024}} is covered by cash liquidity, but the buffer is thinner than a year earlier as cash and cash-like investments fell by {{cash_like.change@FY2024}}."
     },
     {
      "facts": [
@@ -605,9 +597,7 @@
        "id": "interest_coverage.change@FY2024"
       },
       {
-       "claims": [
-        "above_peers"
-       ],
+       "claims": [],
        "id": "interest_coverage@FY2024"
       },
       {
@@ -620,14 +610,10 @@
       {
        "claims": [],
        "id": "finance_costs@FY2024"
-      },
-      {
-       "claims": [],
-       "id": "interest_coverage.peer_median@FY2024"
       }
      ],
-     "text": "Interest coverage: coverage eased by 0.27x to 12.34x as finance costs rose by 18.8% to EUR 246m, though it remains above the peer median of 9.65x.",
-     "text_blanks": "Interest coverage: coverage eased by {{interest_coverage.change@FY2024}} to {{interest_coverage@FY2024}} as finance costs rose by {{finance_costs.change@FY2024}} to {{finance_costs@FY2024}}, though it remains above the peer median of {{interest_coverage.peer_median@FY2024}}."
+     "text": "Interest coverage: coverage eased by 0.27x to 12.34x as finance costs rose by 18.8% to EUR 246m, so the cost of debt is rising faster than EBITDA.",
+     "text_blanks": "Interest coverage: coverage eased by {{interest_coverage.change@FY2024}} to {{interest_coverage@FY2024}} as finance costs rose by {{finance_costs.change@FY2024}} to {{finance_costs@FY2024}}, so the cost of debt is rising faster than EBITDA."
     }
    ],
    "status": "passed",
@@ -2727,8 +2713,6 @@
    "non_aero_share.peer_rank@FY2024": "the company's own figure is not available",
    "non_aero_share@FY2023": "n.m.: group revenue includes London Luton and the Brazilian airports, while the aeronautical revenue is the Spanish network's segment only.",
    "non_aero_share@FY2024": "n.m.: group revenue includes London Luton and the Brazilian airports, while the aeronautical revenue is the Spanish network's segment only.",
-   "rating_fitch@FY2024": "not reviewed yet: waiting for Imane's review",
-   "rating_moodys@FY2024": "not reviewed yet: waiting for Imane's review",
    "revenue_per_passenger.change@FY2024": "needs both years verified",
    "revenue_per_passenger@FY2023": "n.m.: group revenue includes London Luton and the Brazilian airports, while passengers are the Spanish network only.",
    "revenue_per_passenger@FY2024": "n.m.: group revenue includes London Luton and the Brazilian airports, while passengers are the Spanish network only.",
@@ -2754,12 +2738,12 @@
   "as_at": "2025-12-31",
   "document": "959800R7QMXKF0NFMT29-2025-12-31-ESEF-ES-0",
   "quote": "Las agencias de rating Fitch y Moody’s asignaron a la emisión una calificación “A-” y “A3” respectivamente.",
-  "reason": "not reviewed yet: waiting for Imane's review",
+  "reason": null,
   "scope": "bond issue (EMTN, EUR 500 million due October 2030)",
   "source": "FY2025 annual report, page 61",
   "stale": false,
-  "status": "unverified",
-  "text": "awaiting review"
+  "status": "verified",
+  "text": "Fitch A-, Moody's A3"
  },
  "run": {
   "calls": 3,
@@ -2769,15 +2753,15 @@
    "959800R7QMXKF0NFMT29-2024-12-31-ESEF-ES-0": "91d0e131cc1ef604c2e4990ed09db9586833a4026d9af8d766f7445e4d51d62a"
   },
   "first_try_ok": false,
-  "input_hash": "e770daef975b6cffc72d511b0351630896257e5866879d48ebe5370e856f666c",
-  "input_tokens": 72677,
+  "input_hash": "d48a5e698f1ea40be09a7643106b0c99fba17368943ae3134e4bce0cd20cbcf6",
+  "input_tokens": 71739,
   "matches_figures": true,
   "model": "deepseek-flash",
-  "output_tokens": 7347,
-  "passed": true,
+  "output_tokens": 6668,
+  "passed": false,
   "prompt_version": "draft-v7 + draft-v8 (liquidity_funding, watch_items)",
   "provider": "deepseek",
-  "recorded_at": "2026-11-11T18:57:58+00:00"
+  "recorded_at": "2026-11-11T21:25:02+00:00"
  },
  "type": "airport"
 }

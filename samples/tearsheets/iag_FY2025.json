@@ -328,8 +328,8 @@
        "id": "short_term_debt_cover.change@FY2025"
       }
      ],
-     "text": "Debt due within one year was reduced by 12.3% to EUR 3.0bn, covered 3.59x by liquidity, so the near-term maturities are covered without new funding even though the cover ratio eased by 0.22x.",
-     "text_blanks": "Debt due within one year was reduced by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, covered {{short_term_debt_cover@FY2025}} by liquidity, so the near-term maturities are covered without new funding even though the cover ratio eased by {{short_term_debt_cover.change@FY2025}}."
+     "text": "Debt due within one year was reduced by 12.3% to EUR 3.0bn, so liquidity covers it 3.59x times, down 0.22x but still covering the near-term maturities without new funding.",
+     "text_blanks": "Debt due within one year was reduced by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, so liquidity covers it {{short_term_debt_cover@FY2025}} times, down {{short_term_debt_cover.change@FY2025}} but still covering the near-term maturities without new funding."
     },
     {
      "facts": [
@@ -350,18 +350,15 @@
        "id": "fcf_after_leases_to_debt.change@FY2025"
       },
       {
-       "claims": [],
-       "id": "fcf_after_leases_to_debt@FY2025"
-      },
-      {
        "claims": [
-        "up"
+        "down",
+        "worse"
        ],
-       "id": "net_capex.change@FY2025"
+       "id": "fcf_after_leases_to_debt@FY2025"
       }
      ],
-     "text": "Free cash flow after lease payments, the comparable measure of cash left for debt holders, fell by 23.9% to EUR 1.8bn, with FCF after leases to debt down 1.1 points to 12.8% as net capex rose by 53.0%.",
-     "text_blanks": "Free cash flow after lease payments, the comparable measure of cash left for debt holders, fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}}, with FCF after leases to debt down {{fcf_after_leases_to_debt.change@FY2025}} to {{fcf_after_leases_to_debt@FY2025}} as net capex rose by {{net_capex.change@FY2025}}."
+     "text": "Free cash flow after lease payments, the comparable measure of cash left for debt holders, fell by 23.9% to EUR 1.8bn, taking FCF after leases to debt down by 1.1 points to 12.8%.",
+     "text_blanks": "Free cash flow after lease payments, the comparable measure of cash left for debt holders, fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}}, taking FCF after leases to debt down by {{fcf_after_leases_to_debt.change@FY2025}} to {{fcf_after_leases_to_debt@FY2025}}."
     },
     {
      "facts": [
@@ -389,8 +386,8 @@
        "id": "advance_ticket_cover@FY2025"
       }
      ],
-     "text": "Customer prepayments remain large: contract liabilities of EUR 8.0bn were reduced by 3.6%, while advance ticket cover rose by 11.8 points to 96.6%.",
-     "text_blanks": "Customer prepayments remain large: contract liabilities of {{contract_liabilities@FY2025}} were reduced by {{contract_liabilities.change@FY2025}}, while advance ticket cover rose by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}."
+     "text": "Customer prepayments remain large: contract liabilities of EUR 8.0bn were reduced by 3.6%, while advance ticket cover rose by 11.8 points to 96.6%, so a larger share of liquidity is customers' money.",
+     "text_blanks": "Customer prepayments remain large: contract liabilities of {{contract_liabilities@FY2025}} were reduced by {{contract_liabilities.change@FY2025}}, while advance ticket cover rose by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}, so a larger share of liquidity is customers' money."
     }
    ],
    "status": "passed",
@@ -732,8 +729,37 @@
        "id": "event:capital_returns"
       }
      ],
-     "text": "Liquidity: liquidity fell by 17.2% to EUR 10.9bn and cash liquidity to revenue by 5.6 points to 25.0%, in line with the peer median, as cash was returned to shareholders.",
-     "text_blanks": "Liquidity: liquidity fell by {{liquidity.change@FY2025}} to {{liquidity@FY2025}} and cash liquidity to revenue by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, in line with the peer median, as cash was returned to shareholders."
+     "text": "Liquidity: liquidity fell by 17.2% to EUR 10.9bn and cash liquidity to revenue by 5.6 points to 25.0%, in line with the peer median, as excess cash was returned to shareholders.",
+     "text_blanks": "Liquidity: liquidity fell by {{liquidity.change@FY2025}} to {{liquidity@FY2025}} and cash liquidity to revenue by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, in line with the peer median, as excess cash was returned to shareholders."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "short_term_debt_cover.change@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "short_term_debt_cover@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "liquidity.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "debt_due_1y@FY2025"
+      }
+     ],
+     "text": "Near-term maturities: short-term debt cover eased by 0.22x to 3.59x as liquidity fell by 17.2%, leaving less headroom over the EUR 3.0bn due within a year.",
+     "text_blanks": "Near-term maturities: short-term debt cover eased by {{short_term_debt_cover.change@FY2025}} to {{short_term_debt_cover@FY2025}} as liquidity fell by {{liquidity.change@FY2025}}, leaving less headroom over the {{debt_due_1y@FY2025}} due within a year."
     },
     {
      "facts": [
@@ -754,7 +780,10 @@
        "id": "fcf_after_leases_to_debt.change@FY2025"
       },
       {
-       "claims": [],
+       "claims": [
+        "down",
+        "worse"
+       ],
        "id": "fcf_after_leases_to_debt@FY2025"
       },
       {
@@ -762,63 +791,36 @@
         "up"
        ],
        "id": "net_capex.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_capex@FY2025"
       }
      ],
-     "text": "Cash flow after leases: FCF after leases fell by 23.9% to EUR 1.8bn and FCF after leases to debt by 1.1 points to 12.8%, as net capex rose by 53.0%.",
-     "text_blanks": "Cash flow after leases: FCF after leases fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}} and FCF after leases to debt by {{fcf_after_leases_to_debt.change@FY2025}} to {{fcf_after_leases_to_debt@FY2025}}, as net capex rose by {{net_capex.change@FY2025}}."
+     "text": "Cash flow after leases: FCF after leases fell by 23.9% to EUR 1.8bn and FCF after leases to debt by 1.1 points to 12.8%, as net capex rose by 53.0% to EUR 3.4bn.",
+     "text_blanks": "Cash flow after leases: FCF after leases fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}} and FCF after leases to debt by {{fcf_after_leases_to_debt.change@FY2025}} to {{fcf_after_leases_to_debt@FY2025}}, as net capex rose by {{net_capex.change@FY2025}} to {{net_capex@FY2025}}."
     },
     {
      "facts": [
       {
        "claims": [
-        "up",
-        "worse",
         "above_peers"
        ],
        "id": "advance_ticket_cover@FY2025"
-      },
-      {
-       "claims": [],
-       "id": "advance_ticket_cover.peer_median@FY2025"
       },
       {
        "claims": [
         "worst_in_group"
        ],
        "id": "advance_ticket_cover.peer_rank@FY2025"
-      }
-     ],
-     "text": "Customer prepayments: advance ticket cover of 96.6% is above the peer median of 67.4% and the highest of the group (3rd of 3), so a larger share of liquidity is customers' prepayments.",
-     "text_blanks": "Customer prepayments: advance ticket cover of {{advance_ticket_cover@FY2025}} is above the peer median of {{advance_ticket_cover.peer_median@FY2025}} and the highest of the group ({{advance_ticket_cover.peer_rank@FY2025}}), so a larger share of liquidity is customers' prepayments."
-    },
-    {
-     "facts": [
+      },
       {
        "claims": [],
-       "id": "debt_due_1y@FY2025"
-      },
-      {
-       "claims": [
-        "down",
-        "worse"
-       ],
-       "id": "short_term_debt_cover@FY2025"
-      },
-      {
-       "claims": [
-        "down"
-       ],
-       "id": "short_term_debt_cover.change@FY2025"
-      },
-      {
-       "claims": [
-        "down"
-       ],
-       "id": "liquidity.change@FY2025"
+       "id": "advance_ticket_cover.peer_median@FY2025"
       }
      ],
-     "text": "Near-term maturities: debt due within one year of EUR 3.0bn is covered 3.59x by liquidity, a cover ratio that eased by 0.22x as liquidity fell by 17.2%.",
-     "text_blanks": "Near-term maturities: debt due within one year of {{debt_due_1y@FY2025}} is covered {{short_term_debt_cover@FY2025}} by liquidity, a cover ratio that eased by {{short_term_debt_cover.change@FY2025}} as liquidity fell by {{liquidity.change@FY2025}}."
+     "text": "Customer prepayments: advance ticket cover of 96.6% is the highest of the network peers (3rd of 3) and above the peer median of 67.4%, so a larger share of liquidity is customers' money.",
+     "text_blanks": "Customer prepayments: advance ticket cover of {{advance_ticket_cover@FY2025}} is the highest of the network peers ({{advance_ticket_cover.peer_rank@FY2025}}) and above the peer median of {{advance_ticket_cover.peer_median@FY2025}}, so a larger share of liquidity is customers' money."
     }
    ],
    "status": "passed",
@@ -3301,6 +3303,40 @@
     "value": "0.094506807802",
     "vs_peers": null
    },
+   "rating_moodys@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "rating_moodys@FY2025",
+    "kind": "rating",
+    "label": "Moody's long-term rating, outlook stable, as at 2026-02-26",
+    "metric": "rating_moodys",
+    "note": "From the company's report (page 41); never typed, always a blank.",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "Baa2",
+    "unit": "rating",
+    "value": "0",
+    "vs_peers": null
+   },
+   "rating_sp@FY2025": {
+    "assessment": null,
+    "direction": null,
+    "id": "rating_sp@FY2025",
+    "kind": "rating",
+    "label": "S&P long-term rating, outlook stable, as at 2026-02-26",
+    "metric": "rating_sp",
+    "note": "From the company's report (page 41); never typed, always a blank.",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "BBB",
+    "unit": "rating",
+    "value": "0",
+    "vs_peers": null
+   },
    "revenue.change@FY2025": {
     "assessment": "better",
     "direction": "up",
@@ -3640,9 +3676,7 @@
    "load_factor.peer_rank@FY2025": "the peer median would use a figure not verified yet (finnair)",
    "net_cash.change@FY2025": "needs both years verified",
    "net_cash@FY2024": "the company has net debt, not net cash",
-   "net_cash@FY2025": "the company has net debt, not net cash",
-   "rating_moodys@FY2025": "not reviewed yet: waiting for Imane's review",
-   "rating_sp@FY2025": "not reviewed yet: waiting for Imane's review"
+   "net_cash@FY2025": "the company has net debt, not net cash"
   }
  },
  "fiscal_year": 2025,
@@ -3661,12 +3695,12 @@
   "as_at": "2026-02-26",
   "document": "959800TZHQRUSH1ESL13-2025-12-31-ESEF-GB-0",
   "quote": "The Group’s current ratings (at 26 February 2026) are all investment grade, with the following ratings: S&P: BBB (stable outlook) and Moody’s: Baa2 (stable outlook).",
-  "reason": "not reviewed yet: waiting for Imane's review",
+  "reason": null,
   "scope": "issuer",
   "source": "FY2025 annual report, page 41",
   "stale": false,
-  "status": "unverified",
-  "text": "awaiting review"
+  "status": "verified",
+  "text": "S&P BBB (stable), Moody's Baa2 (stable)"
  },
  "run": {
   "calls": 2,
@@ -3675,16 +3709,16 @@
    "959800TZHQRUSH1ESL13-2024-12-31-ESEF-ES-0": "7387351e5f81db1476948143a2d7870d2e78fb365e7107dee9c7f95d2e7d5138",
    "959800TZHQRUSH1ESL13-2025-12-31-ESEF-GB-0": "f8695f7f47d22afa7e39c336f8aab3a0aac633cf82cfacf33f39c2a9238195b0"
   },
-  "first_try_ok": false,
-  "input_hash": "f5b5067055085e1339709874e42e8dd3ddc9919a65282dc482ba4934753f2ee6",
-  "input_tokens": 78195,
+  "first_try_ok": true,
+  "input_hash": "145f8c81f758ddcad5ee4c07cb9081c2e01f3396736a9b852ac470abd4f7ccec",
+  "input_tokens": 78384,
   "matches_figures": true,
   "model": "deepseek-flash",
-  "output_tokens": 8730,
+  "output_tokens": 8759,
   "passed": true,
   "prompt_version": "draft-v7 + draft-v8 (liquidity_funding, watch_items)",
   "provider": "deepseek",
-  "recorded_at": "2026-11-11T18:57:22+00:00"
+  "recorded_at": "2026-11-11T21:13:55+00:00"
  },
  "type": "airline"
 }

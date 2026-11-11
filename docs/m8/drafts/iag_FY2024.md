@@ -1,6 +1,6 @@
 # International Airlines Group, FY2024
 
-Fact sheet `9b7da2f3a001`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
+Fact sheet `f2c1346018cb`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
 
 ## Snapshot (draft-v7, passed)
 
@@ -24,10 +24,10 @@ Fact sheet `9b7da2f3a001`. Sections marked **draft-v8** were redrafted in M8; th
 
 ## Liquidity and funding (draft-v8, passed)
 
-1. Liquidity rose by 17.6% to EUR 13.2bn, of which EUR 3.4bn in undrawn committed facilities, and liquidity to revenue reached 41.2%.
+1. Liquidity rose by 17.6% to EUR 13.2bn, of which EUR 3.4bn in undrawn committed facilities, and cash and cash-like investments increased by 43.7% to EUR 9.8bn.
 2. Debt due within one year rose by 16.7% to EUR 3.5bn, but short-term debt cover was stable at 3.81x, so the near-term maturities are covered by liquidity without new funding.
 3. Free cash flow after lease payments rose by 259.2% to EUR 2.4bn, lifting FCF after leases to debt by 9.7 points to 13.9%, the comparable measure of cash left for debt holders once lease payments in financing cash flows are taken out.
-4. Customer prepayments remain large, with contract liabilities of EUR 8.3bn, up 7.3%, and the group replaced its secured revolving credit facility with a new sustainability-linked facility during the year.
+4. Customer prepayments remain large: contract liabilities rose by 7.3% to EUR 8.3bn, a book that has to be flown or refunded.
 
 ## Peer positioning (draft-v7, passed)
 
@@ -40,7 +40,7 @@ Fact sheet `9b7da2f3a001`. Sections marked **draft-v8** were redrafted in M8; th
 
 ## Watch items (draft-v8, passed)
 
-1. Unit cost: CASK ex-fuel rose by 3.4% to 5.89 euro cents, so non-fuel costs are absorbing part of the revenue gain.
-2. Undrawn facilities: committed undrawn lines fell by 22.9% to EUR 3.4bn, a thinner buffer alongside liquidity of EUR 13.2bn.
-3. Customer prepayments: advance ticket cover of 84.8% is above the peer median of 74.5% but the weakest of the group (3rd of 3), leaving the cash position sensitive to a slower booking cycle.
-4. Fleet and operations: the average fleet age rose by 3.3% to 12.4 years, and reliability issues with Rolls-Royce Trent and Pratt and Whitney GTF engines continued to affect operations.
+1. Unit cost: CASK ex-fuel rose by 3.4% to 5.89 euro cents, so non-fuel costs absorbed part of the revenue gain.
+2. Customer prepayments: advance ticket cover of 84.8% is above the peer median of 74.5% but the weakest of the group (3rd of 3), a sensitivity if bookings slow.
+3. Committed facilities: undrawn committed credit facilities fell by 22.9% to EUR 3.4bn, so a larger share of liquidity now rests on cash of EUR 9.8bn.
+- removed by the verifier: “Maturities: debt due within one year rose by {{debt_due_1y.change@FY2024}} to {{debt_due_1y@FY2024}}, covered {{short_term_debt_cover@FY2024}} by liquidity, so refinancing needs to be met without drawing down the cash buffer.” ('down' needs a 'down' claim on a figure in the same clause)

@@ -154,8 +154,9 @@ gate 3 passed; v1 complete. Closed by Imane on 2026-11-11.**
 Branch: `m8-cash-flow-refinancing`. Plan: `docs/m8/plan.md`. Run: `uv run tearsheet all
 --offline` (replays the recorded AI answers; `uv run tearsheet extract` reads the maturity
 tables not yet read, `uv run tearsheet draft` redrafts). Results: `docs/m8/`. Walkthrough:
-`docs/m8/walkthrough.md`. Decision 0022. **Status: built, checks green; waiting for Imane's
-reviews (ratings, the FY2025 hand entries, flagged maturity tables) and her go-ahead to merge.**
+`docs/m8/walkthrough.md`. Decision 0022. **Status: done; ratings reviewed and merged into
+`main` by Imane's go-ahead (2026-11-11). Still open for her review: four FY2025 hand entries,
+two hand-entered maturity tables, the flagged maturity tables and three flagged snapshots.**
 
 - [x] Cash flow after leases computed for every issuer and year, or missing with a stated
       reason: net capex, FCF after leases and its ratio to debt for 9 of 9 companies (Vienna's
@@ -167,13 +168,16 @@ reviews (ratings, the FY2025 hand entries, flagged maturity tables) and her go-a
       table flagged with its reasons (`docs/m8/maturity_score.md`). First run with the checks as
       written: 2 verified, both correct; four form fixes and a tighter interest bound after it
       (decision 0022). Coverage is low: a checked wall on 4 of 18 tearsheets
-- [ ] Ratings box complete: nine entries with agency, rating, outlook, date and source, each
-      quote checked against its report by code (`config/ratings.yaml`); **waiting for Imane's
-      review**, shown as "awaiting review" until then
+- [x] Ratings box complete: nine entries with agency, rating, outlook, date and source, each
+      quote checked against its report by code (`config/ratings.yaml`); reviewed by Imane on
+      2026-11-11. A rating is offered to the commentary only in the note of its report's year
 - [x] The tearsheet stays clean: every new figure traces to its source on click (all source
       tests pass on the 18 tearsheets); PDF two pages 18 of 18; Excel recalculated 18 of 18;
-      adversarial suite 52 of 52 rejected (5 new: typed ratings and maturities); redraft 18 in a
-      row with no number outside a blank, 16 of 18 pass the verifier in full (two snapshots
-      flagged after the load factor correction)
-- Prompt `draft-v8`: about 528,000 tokens in and 35,000 out; maturity tables `maturity-v1`:
-  about 165,000 tokens. 638 tests pass
+      adversarial suite 52 of 52 rejected (5 new: typed ratings and maturities); redraft 14 in a
+      row with no number outside a blank, 15 of 18 pass the verifier in full (three kept M4
+      snapshots flagged: two after the load factor correction, Aena FY2024 for a rating typed
+      in M4, "upgraded to A")
+- Prompt `draft-v8`: about 1,340,000 tokens in and 91,000 out over four rounds (first draft;
+  the figure-name phrases; after the ratings review; ratings limited to their own year), 1.8
+  times the plan's estimate; maturity tables `maturity-v1`: about 168,000 tokens. 638 tests
+  pass

@@ -1,6 +1,6 @@
 # Air France-KLM, FY2024
 
-Fact sheet `bb785d628088`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
+Fact sheet `644e36880f91`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
 
 ## Snapshot (draft-v7, passed)
 
@@ -25,9 +25,9 @@ Fact sheet `bb785d628088`. Sections marked **draft-v8** were redrafted in M8; th
 ## Liquidity and funding (draft-v8, passed)
 
 1. Cash and cash-like investments fell by 16.0% to EUR 6.9bn, taking cash liquidity to revenue down to 22.0%.
-2. Debt due within one year rose by 6.4% to EUR 2.7bn, and borrowings due within two years stood at EUR 3.9bn, so the near-term maturities are covered by cash on hand without new funding.
-3. Free cash flow after lease payments was EUR -1.1bn, or -7.6% of debt, as net capex rose by 13.6% to EUR 3.1bn.
-4. Customer prepayments rose, with contract liabilities up 6.2% to EUR 4.1bn and advance ticket cover at 59.1%, so a larger share of the cash balance is customers' money.
+2. Debt due within one year rose by 6.4% to EUR 2.7bn, and borrowings due within two years stood at EUR 3.9bn, so the near-term maturities are covered by cash liquidity without new funding.
+3. Free cash flow after lease payments was EUR -1.1bn, down from EUR -615m in FY2023, and FCF after leases to debt fell by 3.1 points to -7.6%, so cash left for debt holders was negative after leases.
+4. Customer prepayments rose: contract liabilities increased by 6.2% to EUR 4.1bn, with advance ticket cover up by 12.4 points to 59.1%.
 
 ## Peer positioning (draft-v7, passed)
 
@@ -37,7 +37,7 @@ Fact sheet `bb785d628088`. Sections marked **draft-v8** were redrafted in M8; th
 
 ## Watch items (draft-v8, passed)
 
-1. Cash generation: free cash flow after lease payments was EUR -1.1bn, or -7.6% of debt, so cash flow did not cover capital spending and lease payments.
-2. Liquidity: cash liquidity to revenue fell by 5.5 points to 22.0%, the weakest of the network peers (3rd of 3), against a median of 29.0%.
+1. Cash generation: free cash flow after leases was EUR -1.1bn and FCF after leases to debt fell by 3.1 points to -7.6%, so the group consumed cash after lease payments.
+2. Liquidity: cash liquidity to revenue fell by 5.5 points to 22.0%, below the peer median of 29.0%.
 3. Maturities: debt due within one year rose by 6.4% to EUR 2.7bn, against cash and cash-like investments of EUR 6.9bn that fell by 16.0%.
-4. Customer prepayments: advance ticket cover rose by 12.4 points to 59.1%, below the peer median of 74.5%, which raises the sensitivity of the cash balance to bookings.
+4. Margins: the EBITDA margin narrowed by 0.8 points to 13.1%, the weakest of the network airlines (3rd of 3).

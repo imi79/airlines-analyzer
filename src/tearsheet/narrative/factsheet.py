@@ -513,10 +513,11 @@ AGENCY_IDS = {"S&P": "sp", "Moody's": "moodys", "Fitch": "fitch"}
 
 def add_ratings(sheet: FactSheet, entries: dict) -> None:
     """Reviewed ratings become items the AI may cite only by blank (M8, decision 0022); the
-    others are listed as not available. `entries`: issuer -> ratings.RatingEntry."""
+    others are listed as not available. Only in the note of the year whose report gives the
+    rating. `entries`: issuer -> ratings.RatingEntry."""
     e = entries.get(sheet.issuer)
-    if e is None or e.not_stated:
-        return
+    if e is None or e.not_stated or e.fiscal_year != sheet.fiscal_year:
+        return  # a rating belongs to the note of the year whose report gives it
     for r in e.ratings:
         fid = f"rating_{AGENCY_IDS[r.agency]}@FY{sheet.fiscal_year}"
         if e.status != "verified":

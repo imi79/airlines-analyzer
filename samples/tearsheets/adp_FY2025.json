@@ -258,8 +258,8 @@
        "id": "cash_like@FY2025"
       }
      ],
-     "text": "Debt due within one year rose by 4.1% to EUR 1.9bn, which cash and cash-like investments of EUR 2.0bn cover only in part, so the near-term maturities depend on refinancing or on cash generated in the year.",
-     "text_blanks": "Debt due within one year rose by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, which cash and cash-like investments of {{cash_like@FY2025}} cover only in part, so the near-term maturities depend on refinancing or on cash generated in the year."
+     "text": "Debt due within one year rose by 4.1% to EUR 1.9bn, which cash and cash-like investments of EUR 2.0bn cover, so the near-term maturities do not depend on new funding.",
+     "text_blanks": "Debt due within one year rose by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, which cash and cash-like investments of {{cash_like@FY2025}} cover, so the near-term maturities do not depend on new funding."
     },
     {
      "facts": [
@@ -549,16 +549,10 @@
       {
        "claims": [],
        "id": "cash_liquidity_to_revenue.peer_median@FY2025"
-      },
-      {
-       "claims": [
-        "worst_in_group"
-       ],
-       "id": "cash_liquidity_to_revenue.peer_rank@FY2025"
       }
      ],
-     "text": "Liquidity: cash liquidity to revenue fell by 3.9 points to 30.1%, below the peer median of 32.6% and the weakest of the group (3rd of 3).",
-     "text_blanks": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2025}} and the weakest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2025}})."
+     "text": "Cash liquidity: cash liquidity to revenue fell by 3.9 points to 30.1%, below the peer median of 32.6%.",
+     "text_blanks": "Cash liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2025}}."
     },
     {
      "facts": [
@@ -575,10 +569,17 @@
       {
        "claims": [],
        "id": "cash_like@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2025"
       }
      ],
-     "text": "Maturities: debt due within one year rose by 4.1% to EUR 1.9bn, against cash and cash-like investments of EUR 2.0bn, so refinancing access matters for the coming year.",
-     "text_blanks": "Maturities: debt due within one year rose by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, against cash and cash-like investments of {{cash_like@FY2025}}, so refinancing access matters for the coming year."
+     "text": "Maturities: debt due within one year rose by 4.1% to EUR 1.9bn, against cash and cash-like investments of EUR 2.0bn that fell by 3.8%.",
+     "text_blanks": "Maturities: debt due within one year rose by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, against cash and cash-like investments of {{cash_like@FY2025}} that fell by {{cash_like.change@FY2025}}."
     },
     {
      "facts": [
@@ -589,14 +590,10 @@
       {
        "claims": [],
        "id": "fcf_after_leases_to_debt@FY2024"
-      },
-      {
-       "claims": [],
-       "id": "fcf_to_debt@FY2025"
       }
      ],
-     "text": "Cash flow after leases: free cash flow after lease payments was EUR 42.0m in FY2024, only 0.4% of debt, a small fraction of the 4.0% FCF to debt reported before lease payments.",
-     "text_blanks": "Cash flow after leases: free cash flow after lease payments was {{fcf_after_leases@FY2024}} in FY2024, only {{fcf_after_leases_to_debt@FY2024}} of debt, a small fraction of the {{fcf_to_debt@FY2025}} FCF to debt reported before lease payments."
+     "text": "Cash flow after leases: free cash flow after lease payments was EUR 42.0m in FY2024, only 0.4% of debt, so lease payments absorb most of the cash the group generates.",
+     "text_blanks": "Cash flow after leases: free cash flow after lease payments was {{fcf_after_leases@FY2024}} in FY2024, only {{fcf_after_leases_to_debt@FY2024}} of debt, so lease payments absorb most of the cash the group generates."
     },
     {
      "facts": [
@@ -618,8 +615,8 @@
        "id": "net_leverage.peer_rank@FY2025"
       }
      ],
-     "text": "Leverage: net leverage of 3.68x is above the peer median of 1.46x and the highest of the group (3rd of 3), leaving less room if EBITDA growth slows.",
-     "text_blanks": "Leverage: net leverage of {{net_leverage@FY2025}} is above the peer median of {{net_leverage.peer_median@FY2025}} and the highest of the group ({{net_leverage.peer_rank@FY2025}}), leaving less room if EBITDA growth slows."
+     "text": "Leverage: net leverage of 3.68x is above the peer median of 1.46x, the weakest of the group (3rd of 3).",
+     "text_blanks": "Leverage: net leverage of {{net_leverage@FY2025}} is above the peer median of {{net_leverage.peer_median@FY2025}}, the weakest of the group ({{net_leverage.peer_rank@FY2025}})."
     }
    ],
    "status": "passed",
@@ -2441,7 +2438,6 @@
    "non_aero_share.peer_rank@FY2025": "the company's own figure is not available",
    "non_aero_share@FY2024": "n.m.: group revenue includes TAV Airports and the other international airports, while the aeronautical revenue is the Paris aviation segment only.",
    "non_aero_share@FY2025": "n.m.: group revenue includes TAV Airports and the other international airports, while the aeronautical revenue is the Paris aviation segment only.",
-   "rating_sp@FY2025": "not reviewed yet: waiting for Imane's review",
    "revenue_per_passenger.change@FY2025": "needs both years verified",
    "revenue_per_passenger@FY2024": "n.m.: group revenue includes TAV Airports and the other international airports, while passengers are Paris only.",
    "revenue_per_passenger@FY2025": "n.m.: group revenue includes TAV Airports and the other international airports, while passengers are Paris only.",
@@ -2473,31 +2469,31 @@
   "as_at": "2024-12-31",
   "document": "969500PJMBSFHYC37989-2024-12-31-ESEF-FR-0",
   "quote": "(A- perspective stable par l’agence Standard and Poor’s depuis le 10 juin 2024)",
-  "reason": "not reviewed yet: waiting for Imane's review",
+  "reason": null,
   "scope": "issuer",
   "source": "FY2024 annual report, page 111",
-  "stale": false,
-  "status": "unverified",
-  "text": "awaiting review"
+  "stale": true,
+  "status": "verified",
+  "text": "S&P A- (stable)"
  },
  "run": {
-  "calls": 2,
+  "calls": 1,
   "cost_usd": null,
   "filing_hashes": {
    "969500PJMBSFHYC37989-2024-12-31-ESEF-FR-0": "2f61ed6871fff16505413e92a893967a3bdb71e21a73f3fc3b9a3c9ea9a893d5",
    "969500PJMBSFHYC37989-2024-12-31-manual-pdf": "0d53c1996b5b410934512afa02d2313c2aa52283954fc3652f20466c7add1098",
    "969500PJMBSFHYC37989-2025-12-31-manual-pdf": "54853840da660e7bfcb89b58f985aca183c4c03ad3e9540744d4e23cbbdb439e"
   },
-  "first_try_ok": false,
-  "input_hash": "a57dee623c080fe1456010766c0471e673228884e77abcba61fe0e40f2274aba",
-  "input_tokens": 72968,
+  "first_try_ok": true,
+  "input_hash": "59af09726dca170a2a3647bd78c066d57208f2aa26ce40a904743956a058e87f",
+  "input_tokens": 58531,
   "matches_figures": true,
   "model": "deepseek-flash",
-  "output_tokens": 9602,
+  "output_tokens": 8845,
   "passed": true,
   "prompt_version": "draft-v7 + draft-v8 (liquidity_funding, watch_items)",
   "provider": "deepseek",
-  "recorded_at": "2026-11-11T18:57:36+00:00"
+  "recorded_at": "2026-11-11T21:24:28+00:00"
  },
  "type": "airport"
 }

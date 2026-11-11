@@ -1,6 +1,6 @@
 # Groupe ADP, FY2024
 
-Fact sheet `9dd3348c0c7c`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
+Fact sheet `d07484f3361b`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
 
 ## Snapshot (draft-v7, passed)
 
@@ -25,9 +25,9 @@ Fact sheet `9dd3348c0c7c`. Sections marked **draft-v8** were redrafted in M8; th
 ## Liquidity and funding (draft-v8, passed)
 
 1. Cash and cash-like investments fell by 14.8% to EUR 2.1bn, taking cash liquidity to revenue down to 34.0%.
-2. Debt due within one year declined by 4.3% to EUR 1.8bn, which cash and cash-like investments of EUR 2.1bn cover, so the near-term maturities do not require new funding.
-3. Free cash flow after lease payments fell by 89.8% to EUR 42.0m, as net capex rose by 33.6% to EUR 1.2bn, leaving FCF after leases to debt at 0.4%.
-4. The group issued a bond in May 2024, whose proceeds sit among the year's cash flows.
+2. Debt due within one year declined by 4.3% to EUR 1.8bn, which cash and cash-like investments of EUR 2.1bn cover, so the near-term maturities do not depend on new funding.
+3. Free cash flow after lease payments fell by 89.8% to EUR 42.0m, only 0.4% of total debt, as net capex rose by 33.6% to EUR 1.2bn.
+- removed by the verifier: “The group issued a bond in May 2024, and S&P rates the group {{rating_sp@FY2024}} with a stable outlook.” ('stable' needs a 'flat' or 'in_line_with_peers' claim on a figure in the same clause)
 
 ## Peer positioning (draft-v7, passed)
 
@@ -37,7 +37,7 @@ Fact sheet `9dd3348c0c7c`. Sections marked **draft-v8** were redrafted in M8; th
 
 ## Watch items (draft-v8, passed)
 
-1. Cash generation: free cash flow after lease payments fell by 89.8% to EUR 42.0m, and FCF after leases to debt dropped by 3.6 points to 0.4%, so cash left for debt holders is thin against the investment programme.
-2. Liquidity: cash liquidity to revenue fell by 10.8 points to 34.0%, in line with the peer median of 34.0% but lower than a year earlier.
-3. Maturities: debt due within one year of EUR 1.8bn is covered by cash and cash-like investments of EUR 2.1bn, but the buffer narrowed as cash fell by 14.8%.
-4. Investment: capex intensity rose by 3.1 points to 19.0%, above the peer median of 16.1%, which keeps pressure on free cash flow.
+1. Cash generation: free cash flow after lease payments dropped by 89.8% to EUR 42.0m, leaving FCF after leases to debt at 0.4%, down 3.6 points.
+2. Liquidity: cash and cash-like investments fell by 14.8% to EUR 2.1bn, and cash liquidity to revenue declined by 10.8 points to 34.0%, in line with the peer median.
+3. Investment: capex intensity rose by 3.1 points to 19.0%, above the peer median of 16.1%, so capital spending absorbs a larger share of cash flow.
+4. Earnings quality: the EBITDA margin narrowed by 2.0 points to 33.7%, the weakest of the airport group (3rd of 3).
