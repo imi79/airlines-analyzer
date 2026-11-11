@@ -10,7 +10,8 @@ PDFs"); deployment pending her steps
    is "Imane"; she may add her full name.
 2. **History tidied once before publishing**, with a separate go-ahead at that step: commit email
    switched to the GitHub noreply address; the two supplied company PDFs (see below).
-3. **Imane writes the analyst views** of the three samples.
+3. **Imane writes the analyst views** of the three samples; in the end she asked for drafts
+   and adopted them unchanged (see below).
 4. **Samples:** Air France-KLM, easyJet and Aena FY2025 (`samples/pdf/`), one per peer group.
 5. **Commentary in English only**, French later (closes the spec's open question).
 6. **A rehearsal in the chat** for "can explain every stage without notes"
@@ -67,3 +68,8 @@ PDFs"); deployment pending her steps
 - **The two supplied company PDFs stay** in `documents/`: the full rebuild reads them (the
   recorded AI answers are keyed on their text), and they are public investor documents. Their
   SHA-256 fingerprints are in `config/report_documents.yaml` and `config/manual_figures.yaml`.
+- **The sample analyst views were drafted at Imane's request** ("draft the three analyst views
+  for me to rewrite"), from verified figures only, and adopted by her unchanged ("use the drafts
+  as they are"). Each note in `notes/` records this in `view_origin`. The tool itself never
+  drafts an analyst view; these three were written outside it, like the M4 example notes.
+

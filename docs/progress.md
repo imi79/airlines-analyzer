@@ -141,5 +141,7 @@ and tested; waiting for Imane's analyst views, the public repository and the dep
   README with the architecture diagram; MIT licence; demo script, LinkedIn post and CV line
   drafts; secret scan of the whole history (no leak); history rewritten to the noreply address
   (Imane's go-ahead); gate 2 count corrected (11 in a row); the PDF's bundled font fixed
-- To do: three sample PDFs with Imane's analyst views; public repository; deployment; gate 3
+- Three sample PDFs in `samples/pdf/` (Air France-KLM, easyJet, Aena FY2025) with the analyst
+  views Imane adopted (`notes/`); two pages at 8.5 point, bundled font
+- To do: public repository; deployment; gate 3; rehearsal
 
