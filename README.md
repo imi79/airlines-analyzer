@@ -103,6 +103,17 @@ stated as plainly as the passes.
 | PDF on two A4 pages, no overflow | 18 of 18 |
 | Excel recalculated (LibreOffice) equals the app | 2,044 of 2,044 values, 195 of 195 medians |
 
+**After v1, M8: cash flow after leases, refinancing, ratings**
+([decision 0022](docs/decisions/0022-m8-cash-flow-refinancing.md)).
+
+| Check | Result |
+| --- | --- |
+| FCF after leases and debt due within a year vs a second-source model (Air France-KLM, ADP, FY2024-FY2025) | 16 of 16 within tolerance |
+| Maturity wall read from the debt note: none wrong marked verified (answer key of 11 tables, eight company-years) | 0 wrong; 4 verified, the rest flagged for review |
+| Verifier against faulty sentences, with typed ratings and maturities added | 52 of 52 rejected |
+| Two sections redrafted: notes in a row with no number outside a blank | 18 of 18 |
+| PDF on two pages / Excel recalculated, with the new figures | 18 of 18 / 18 of 18 |
+
 The design choices are recorded as short notes in [`docs/decisions/`](docs/decisions/), and each
 milestone has a plain-language walkthrough (for example [M5, the web app](docs/m5/walkthrough.md)).
 
@@ -171,6 +182,9 @@ tests/         unit tests, golden files, the verifier's adversarial suite
   and rating-agency-adjusted figures (no pension or hybrid adjustments).
 - The drafted commentary is a starting point for the analyst (3.78 of 5), not a finished note.
 - Some operating figures await analyst review and show as "pending" until then.
+- The debt maturity wall is checked and shown for 4 of 18 tearsheets; the others show the
+  debt due within a year from the balance sheet, and their tables wait for analyst review.
+- Ratings are shown only once reviewed, as stated in each company's own report.
 - The free hosting puts the demo to sleep after 12 hours without visitors; the first visitor
   waits about half a minute.
 

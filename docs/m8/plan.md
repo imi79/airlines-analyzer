@@ -1,6 +1,9 @@
 # M8 plan: cash flow after leases, the maturity wall and a ratings box
 
-Status: **waiting for Imane's approval** (written 2026-11-11). Branch: `m8-cash-flow-refinancing`.
+Status: **approved by Imane** (2026-11-11) with every recommendation: 1. all three parts,
+without rating trigger headroom; 2. principal maturity walls where printed; 3. ratings from the
+companies' own reports; 4. two sections redrafted; 5. the page 1 chart becomes liquidity against
+maturities. Built on `m8-cash-flow-refinancing` (decision 0022, `docs/m8/walkthrough.md`).
 
 ## What M8 is for
 

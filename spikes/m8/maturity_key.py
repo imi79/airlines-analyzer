@@ -354,7 +354,8 @@ def score(key_path: Path = OUT, out: Path = SCORE) -> dict:
         layer = "borrowings" if concept.startswith("maturity_borrowings_") else "leases"
         bucket = concept.removeprefix(f"maturity_{layer}_")
         basis = json.loads(ref).get("basis")
-        w = walls.setdefault((issuer, int(year), layer, basis), {"status": status, "b": {}})
+        w = walls.setdefault((issuer, int(year), layer, basis),
+                             {"status": status, "b": {}, "why": json.loads(ref).get("checks_failed") or []})  # noqa: E501  # fmt: skip
         if bucket != "total":
             w["b"][bucket] = D(value)
     counts = {"verified_correct": 0, "verified_wrong": 0, "verified_not_in_key": 0,
@@ -366,7 +367,7 @@ def score(key_path: Path = OUT, out: Path = SCORE) -> dict:
         shown = ", ".join(f"{b} {v / 10**6:,.1f}" for b, v in w["b"].items())
         if w["status"] not in ("verified", "overridden"):
             counts["unverified"] += 1
-            result = "unverified (flagged)"
+            result = "flagged: " + "; ".join(w["why"]) if w["why"] else "unverified (flagged)"
         elif k not in key:
             counts["verified_not_in_key"] += 1
             result = "verified, not in the key: check by hand"

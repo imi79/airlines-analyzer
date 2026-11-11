@@ -43,7 +43,16 @@ falls within six months of its year end. Medians and ranks use verified figures 
 
 **Limits.** Annual figures only (no half-year or LTM). The tool's own definitions, applied
 identically to every company: they differ from company-reported and rating-agency-adjusted
-figures (no pension or hybrid adjustments). No ratings, prices or spreads.
+figures (no pension or hybrid adjustments). No prices or spreads. Ratings (from M8) are copied
+from each company's own annual report, with the page and the date, and shown only after the
+analyst's review; they are a record of a public rating, never ranked or compared.
+
+**Cash flow after leases and refinancing (M8).** Lease payments sit in financing cash flows,
+so free cash flow flatters companies that lease their aircraft: FCF after leases takes them
+out, and interest paid where a company shows it in financing. The maturity wall is read from
+the debt note by the AI and checked by code: quotes word for word, column labels read as time
+spans by code, each row footed, and the table compared with the balance sheet; a table that
+fails stays off the page until reviewed.
 
 **Disclaimer.** Draft prepared with AI assistance. Figures computed from regulatory filings and
 checked automatically. Not investment advice.
