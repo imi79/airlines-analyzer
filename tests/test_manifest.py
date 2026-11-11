@@ -44,8 +44,9 @@ def test_manifest_lists_every_source_with_its_fingerprint(lib, recorded, issuer,
     for entry in list(m["filings"].values()) + list(m["documents"].values()):
         assert entry["sha256"] and len(entry["sha256"]) == 64
     d = m["ai"]["drafting"]
-    assert d["prompt_version"] == PROMPT_VERSION
-    assert (d["model"], d["prompt_version"]) in recorded
+    # M8: four sections from draft-v7, liquidity and watch items from draft-v8 (decision 0022)
+    assert d["prompt_version"].startswith(f"{PROMPT_VERSION} + draft-v8")
+    assert (d["model"], "draft-v8") in recorded
     for e in m["ai"]["extraction"] + m["ai"]["events"]:
         assert (e["model"], e["prompt_version"]) in recorded
     assert m["commentary_matches_figures"] is True

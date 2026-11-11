@@ -217,8 +217,7 @@
      "facts": [
       {
        "claims": [
-        "down",
-        "worse"
+        "down"
        ],
        "id": "cash_like.change@FY2024"
       },
@@ -228,50 +227,70 @@
       },
       {
        "claims": [
-        "down",
-        "worse"
+        "below_peers"
        ],
-       "id": "cash_liquidity_to_revenue.change@FY2024"
-      },
-      {
-       "claims": [],
        "id": "cash_liquidity_to_revenue@FY2024"
       }
      ],
-     "text": "Cash and cash-like investments fell by 22.9% to EUR 1.8bn, and cash liquidity to revenue declined by 15.3 points to 31.6%.",
-     "text_blanks": "Cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, and cash liquidity to revenue declined by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}."
+     "text": "Cash and cash-like investments fell by 22.9% to EUR 1.8bn, taking cash liquidity to revenue to 31.6%, below the peer median.",
+     "text_blanks": "Cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, taking cash liquidity to revenue to {{cash_liquidity_to_revenue@FY2024}}, below the peer median."
     },
     {
      "facts": [
       {
-       "claims": [],
-       "id": "liquidity@FY2023"
+       "claims": [
+        "down"
+       ],
+       "id": "debt_due_1y.change@FY2024"
       },
       {
        "claims": [],
-       "id": "undrawn_facilities@FY2023"
+       "id": "debt_due_1y@FY2024"
       },
       {
        "claims": [],
-       "id": "liquidity_to_revenue@FY2023"
+       "id": "cash_like@FY2024"
       }
      ],
-     "text": "In FY2023 the group reported liquidity of EUR 4.9bn, including EUR 2.6bn of undrawn committed facilities, and liquidity to revenue of 97.6%.",
-     "text_blanks": "In FY2023 the group reported liquidity of {{liquidity@FY2023}}, including {{undrawn_facilities@FY2023}} of undrawn committed facilities, and liquidity to revenue of {{liquidity_to_revenue@FY2023}}."
+     "text": "Debt due within one year was reduced by 24.3% to EUR 1.3bn, comfortably inside the cash balance of EUR 1.8bn, so near-term maturities are covered without new funding.",
+     "text_blanks": "Debt due within one year was reduced by {{debt_due_1y.change@FY2024}} to {{debt_due_1y@FY2024}}, comfortably inside the cash balance of {{cash_like@FY2024}}, so near-term maturities are covered without new funding."
     },
     {
      "facts": [
       {
-       "claims": [],
-       "id": "event:funding_and_rating"
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "fcf_after_leases.change@FY2024"
       },
       {
        "claims": [],
-       "id": "event:funding_and_rating-2"
+       "id": "fcf_after_leases@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases_to_debt@FY2024"
       }
      ],
-     "text": "Funding conditions improved during the year, with Fitch raising the long-term rating and Moody's moving the outlook to positive.",
-     "text_blanks": "Funding conditions improved during the year, with Fitch raising the long-term rating and Moody's moving the outlook to positive."
+     "text": "Free cash flow after lease payments rose by 134.6% to EUR 1.9bn, equal to 26.5% of debt, so lease payments leave the cash available to debt holders broadly intact.",
+     "text_blanks": "Free cash flow after lease payments rose by {{fcf_after_leases.change@FY2024}} to {{fcf_after_leases@FY2024}}, equal to {{fcf_after_leases_to_debt@FY2024}} of debt, so lease payments leave the cash available to debt holders broadly intact."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "net_capex.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_capex@FY2024"
+      }
+     ],
+     "text": "Net capex fell by 42.6% to EUR 794m, which is what lifted cash generation after leases.",
+     "text_blanks": "Net capex fell by {{net_capex.change@FY2024}} to {{net_capex@FY2024}}, which is what lifted cash generation after leases."
     }
    ],
    "status": "passed",
@@ -532,10 +551,13 @@
      "facts": [
       {
        "claims": [
-        "down",
-        "worse"
+        "down"
        ],
-       "id": "cash_liquidity_to_revenue.change@FY2024"
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
       },
       {
        "claims": [
@@ -544,12 +566,34 @@
        "id": "cash_liquidity_to_revenue@FY2024"
       },
       {
-       "claims": [],
-       "id": "cash_liquidity_to_revenue.peer_median@FY2024"
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "cash_liquidity_to_revenue.peer_rank@FY2024"
       }
      ],
-     "text": "Liquidity: cash liquidity to revenue fell by 15.3 points to 31.6%, below the peer median of 34.0%.",
-     "text_blanks": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2024}}."
+     "text": "Cash liquidity: cash and cash-like investments fell by 22.9% to EUR 1.8bn, and cash liquidity to revenue of 31.6% is the weakest of the airport peers (3rd of 3).",
+     "text_blanks": "Cash liquidity: cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, and cash liquidity to revenue of {{cash_liquidity_to_revenue@FY2024}} is the weakest of the airport peers ({{cash_liquidity_to_revenue.peer_rank@FY2024}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "debt_due_1y@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "cash_like.change@FY2024"
+      }
+     ],
+     "text": "Maturities: debt due within one year of EUR 1.3bn is covered by the cash balance of EUR 1.8bn, but the buffer against it narrowed as cash fell by 22.9%.",
+     "text_blanks": "Maturities: debt due within one year of {{debt_due_1y@FY2024}} is covered by the cash balance of {{cash_like@FY2024}}, but the buffer against it narrowed as cash fell by {{cash_like.change@FY2024}}."
     },
     {
      "facts": [
@@ -561,7 +605,9 @@
        "id": "interest_coverage.change@FY2024"
       },
       {
-       "claims": [],
+       "claims": [
+        "above_peers"
+       ],
        "id": "interest_coverage@FY2024"
       },
       {
@@ -574,31 +620,14 @@
       {
        "claims": [],
        "id": "finance_costs@FY2024"
-      }
-     ],
-     "text": "Coverage: interest coverage eased by 0.27x to 12.34x as finance costs rose by 18.8% to EUR 246m.",
-     "text_blanks": "Coverage: interest coverage eased by {{interest_coverage.change@FY2024}} to {{interest_coverage@FY2024}} as finance costs rose by {{finance_costs.change@FY2024}} to {{finance_costs@FY2024}}."
-    },
-    {
-     "facts": [
-      {
-       "claims": [
-        "down",
-        "worse"
-       ],
-       "id": "traffic_growth.change@FY2024"
       },
       {
        "claims": [],
-       "id": "traffic_growth@FY2024"
-      },
-      {
-       "claims": [],
-       "id": "event:regulation_and_tariffs"
+       "id": "interest_coverage.peer_median@FY2024"
       }
      ],
-     "text": "Traffic: traffic growth slowed by 7.0 points to 9.2%, and the CNMC set the maximum adjusted annual revenue per passenger for 2025 at the same level as the prior year.",
-     "text_blanks": "Traffic: traffic growth slowed by {{traffic_growth.change@FY2024}} to {{traffic_growth@FY2024}}, and the CNMC set the maximum adjusted annual revenue per passenger for 2025 at the same level as the prior year."
+     "text": "Interest coverage: coverage eased by 0.27x to 12.34x as finance costs rose by 18.8% to EUR 246m, though it remains above the peer median of 9.65x.",
+     "text_blanks": "Interest coverage: coverage eased by {{interest_coverage.change@FY2024}} to {{interest_coverage@FY2024}} as finance costs rose by {{finance_costs.change@FY2024}} to {{finance_costs@FY2024}}, though it remains above the peer median of {{interest_coverage.peer_median@FY2024}}."
     }
    ],
    "status": "passed",
@@ -685,6 +714,7 @@
   "fiscal_year": 2024,
   "higher_is_better": {
    "aero_revenue_per_passenger": true,
+   "borrowings_due_2y": null,
    "capex": null,
    "capex_intensity": null,
    "cash_like": true,
@@ -693,9 +723,12 @@
    "cfo": true,
    "contract_liabilities": null,
    "dda": null,
+   "debt_due_1y": null,
    "ebitda": true,
    "ebitda_margin": true,
    "fcf": true,
+   "fcf_after_leases": true,
+   "fcf_after_leases_to_debt": true,
    "fcf_to_debt": true,
    "ffo": true,
    "ffo_to_debt": true,
@@ -704,7 +737,9 @@
    "gross_leverage": false,
    "interest_coverage": true,
    "liquidity": true,
+   "liquidity_to_borrowings_due_2y": true,
    "liquidity_to_revenue": true,
+   "net_capex": null,
    "net_cash": true,
    "net_debt": null,
    "net_leverage": false,
@@ -714,6 +749,7 @@
    "profit": true,
    "revenue": true,
    "revenue_per_passenger": true,
+   "short_term_debt_cover": true,
    "total_debt": null,
    "traffic_growth": true,
    "undrawn_facilities": true
@@ -1128,6 +1164,57 @@
     "value": "847811000.000000000000",
     "vs_peers": null
    },
+   "debt_due_1y.change@FY2024": {
+    "assessment": "neutral",
+    "direction": "down",
+    "id": "debt_due_1y.change@FY2024",
+    "kind": "change",
+    "label": "change in Debt due within one year, FY2023 to FY2024",
+    "metric": "debt_due_1y",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "24.3%",
+    "unit": "relative",
+    "value": "0.2434005860627240628866072477",
+    "vs_peers": null
+   },
+   "debt_due_1y@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "debt_due_1y@FY2023",
+    "kind": "value",
+    "label": "Debt due within one year, FY2023",
+    "metric": "debt_due_1y",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 1.8bn",
+    "unit": "amount",
+    "value": "1771824000.000000000000",
+    "vs_peers": null
+   },
+   "debt_due_1y@FY2024": {
+    "assessment": "neutral",
+    "direction": "down",
+    "id": "debt_due_1y@FY2024",
+    "kind": "value",
+    "label": "Debt due within one year, FY2024",
+    "metric": "debt_due_1y",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 1.3bn",
+    "unit": "amount",
+    "value": "1340561000.000000000000",
+    "vs_peers": null
+   },
    "ebitda.change@FY2024": {
     "assessment": "better",
     "direction": "up",
@@ -1415,6 +1502,108 @@
     "rendered": "EUR 1.9bn",
     "unit": "amount",
     "value": "1923938000.000000000000",
+    "vs_peers": null
+   },
+   "fcf_after_leases.change@FY2024": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "fcf_after_leases.change@FY2024",
+    "kind": "change",
+    "label": "change in FCF after leases, FY2023 to FY2024",
+    "metric": "fcf_after_leases",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "134.6%",
+    "unit": "relative",
+    "value": "1.345751475228368856034871341",
+    "vs_peers": null
+   },
+   "fcf_after_leases@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "fcf_after_leases@FY2023",
+    "kind": "value",
+    "label": "FCF after leases, FY2023",
+    "metric": "fcf_after_leases",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 827m",
+    "unit": "amount",
+    "value": "827499000.000000000000",
+    "vs_peers": null
+   },
+   "fcf_after_leases@FY2024": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "fcf_after_leases@FY2024",
+    "kind": "value",
+    "label": "FCF after leases, FY2024",
+    "metric": "fcf_after_leases",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 1.9bn",
+    "unit": "amount",
+    "value": "1941107000.000000000000",
+    "vs_peers": null
+   },
+   "fcf_after_leases_to_debt.change@FY2024": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "fcf_after_leases_to_debt.change@FY2024",
+    "kind": "change",
+    "label": "change in FCF after leases to debt, FY2023 to FY2024",
+    "metric": "fcf_after_leases_to_debt",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "16.9 points",
+    "unit": "points",
+    "value": "0.168836774649",
+    "vs_peers": null
+   },
+   "fcf_after_leases_to_debt@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "fcf_after_leases_to_debt@FY2023",
+    "kind": "value",
+    "label": "FCF after leases to debt, FY2023",
+    "metric": "fcf_after_leases_to_debt",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "9.6%",
+    "unit": "pct",
+    "value": "0.096382647142",
+    "vs_peers": null
+   },
+   "fcf_after_leases_to_debt@FY2024": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "fcf_after_leases_to_debt@FY2024",
+    "kind": "value",
+    "label": "FCF after leases to debt, FY2024",
+    "metric": "fcf_after_leases_to_debt",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "26.5%",
+    "unit": "pct",
+    "value": "0.265219421791",
     "vs_peers": null
    },
    "fcf_to_debt.change@FY2024": {
@@ -1893,6 +2082,57 @@
     "value": "0.975852917028",
     "vs_peers": null
    },
+   "net_capex.change@FY2024": {
+    "assessment": "neutral",
+    "direction": "down",
+    "id": "net_capex.change@FY2024",
+    "kind": "change",
+    "label": "change in Net capex, FY2023 to FY2024",
+    "metric": "net_capex",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2023 to FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "42.6%",
+    "unit": "relative",
+    "value": "0.4256119941747207756240699149",
+    "vs_peers": null
+   },
+   "net_capex@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "net_capex@FY2023",
+    "kind": "value",
+    "label": "Net capex, FY2023",
+    "metric": "net_capex",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 1.4bn",
+    "unit": "amount",
+    "value": "1382938000.000000000000",
+    "vs_peers": null
+   },
+   "net_capex@FY2024": {
+    "assessment": "neutral",
+    "direction": "down",
+    "id": "net_capex@FY2024",
+    "kind": "value",
+    "label": "Net capex, FY2024",
+    "metric": "net_capex",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 794m",
+    "unit": "amount",
+    "value": "794343000.000000000000",
+    "vs_peers": null
+   },
    "net_debt.change@FY2024": {
     "assessment": "neutral",
     "direction": "down",
@@ -2233,6 +2473,23 @@
     "value": "5763531000.000000000000",
     "vs_peers": null
    },
+   "short_term_debt_cover@FY2023": {
+    "assessment": null,
+    "direction": null,
+    "id": "short_term_debt_cover@FY2023",
+    "kind": "value",
+    "label": "Short-term debt cover, FY2023",
+    "metric": "short_term_debt_cover",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2023",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "2.78x",
+    "unit": "x",
+    "value": "2.775741270013",
+    "vs_peers": null
+   },
    "total_debt.change@FY2024": {
     "assessment": "neutral",
     "direction": "down",
@@ -2389,6 +2646,7 @@
   },
   "labels": {
    "aero_revenue_per_passenger": "Aeronautical revenue per passenger",
+   "borrowings_due_2y": "Borrowings due within two years",
    "capex": "Capex (purchases of PP&E and intangibles)",
    "capex_intensity": "Capex intensity",
    "cash_like": "Cash and cash-like investments",
@@ -2397,9 +2655,12 @@
    "cfo": "Cash from operations",
    "contract_liabilities": "Contract liabilities (advance ticket sales)",
    "dda": "Depreciation, amortisation and impairment",
+   "debt_due_1y": "Debt due within one year",
    "ebitda": "EBITDA",
    "ebitda_margin": "EBITDA margin",
    "fcf": "Free cash flow",
+   "fcf_after_leases": "FCF after leases",
+   "fcf_after_leases_to_debt": "FCF after leases to debt",
    "fcf_to_debt": "FCF to debt",
    "ffo": "FFO",
    "ffo_to_debt": "FFO to debt",
@@ -2408,7 +2669,9 @@
    "gross_leverage": "Gross leverage",
    "interest_coverage": "Interest coverage",
    "liquidity": "Liquidity",
+   "liquidity_to_borrowings_due_2y": "Liquidity to borrowings due within two years",
    "liquidity_to_revenue": "Liquidity to revenue",
+   "net_capex": "Net capex",
    "net_cash": "Net cash (cash and cash-like investments above total debt)",
    "net_debt": "Net debt",
    "net_leverage": "Net leverage",
@@ -2418,6 +2681,7 @@
    "profit": "Profit for the year",
    "revenue": "Revenue",
    "revenue_per_passenger": "Revenue per passenger",
+   "short_term_debt_cover": "Short-term debt cover",
    "total_debt": "Total debt",
    "traffic_growth": "Traffic growth",
    "undrawn_facilities": "Undrawn committed credit facilities"
@@ -2433,6 +2697,9 @@
   "period_label": "FY2024",
   "type": "airport",
   "unavailable": {
+   "borrowings_due_2y.change@FY2024": "needs both years verified",
+   "borrowings_due_2y@FY2023": "No checked maturity table of borrowings for FY2023",
+   "borrowings_due_2y@FY2024": "not verified yet: waiting for Imane's review",
    "capex_intensity.peer_rank@FY2024": "not ranked: neither higher nor lower is better",
    "cash_liquidity.change@FY2024": "the same figure as cash_like.change@FY2024: use that id",
    "cash_liquidity@FY2023": "the same figure as cash_like@FY2023: use that id",
@@ -2445,6 +2712,9 @@
    "fuel_cost@FY2024": "no figure for this year",
    "liquidity.change@FY2024": "needs both years verified",
    "liquidity@FY2024": "Undrawn committed credit facilities not available for FY2024",
+   "liquidity_to_borrowings_due_2y.change@FY2024": "needs both years verified",
+   "liquidity_to_borrowings_due_2y@FY2023": "Borrowings due within two years: No checked maturity table of borrowings for FY2023",
+   "liquidity_to_borrowings_due_2y@FY2024": "Liquidity: Undrawn committed credit facilities not available for FY2024",
    "liquidity_to_revenue.change@FY2024": "needs both years verified",
    "liquidity_to_revenue.peer_median@FY2024": "the company's own figure is not available",
    "liquidity_to_revenue.peer_rank@FY2024": "the company's own figure is not available",
@@ -2457,9 +2727,13 @@
    "non_aero_share.peer_rank@FY2024": "the company's own figure is not available",
    "non_aero_share@FY2023": "n.m.: group revenue includes London Luton and the Brazilian airports, while the aeronautical revenue is the Spanish network's segment only.",
    "non_aero_share@FY2024": "n.m.: group revenue includes London Luton and the Brazilian airports, while the aeronautical revenue is the Spanish network's segment only.",
+   "rating_fitch@FY2024": "not reviewed yet: waiting for Imane's review",
+   "rating_moodys@FY2024": "not reviewed yet: waiting for Imane's review",
    "revenue_per_passenger.change@FY2024": "needs both years verified",
    "revenue_per_passenger@FY2023": "n.m.: group revenue includes London Luton and the Brazilian airports, while passengers are the Spanish network only.",
    "revenue_per_passenger@FY2024": "n.m.: group revenue includes London Luton and the Brazilian airports, while passengers are the Spanish network only.",
+   "short_term_debt_cover.change@FY2024": "needs both years verified",
+   "short_term_debt_cover@FY2024": "Liquidity: Undrawn committed credit facilities not available for FY2024",
    "undrawn_facilities.change@FY2024": "needs both years verified",
    "undrawn_facilities@FY2024": "no figure for this year"
   }
@@ -2476,23 +2750,34 @@
  ],
  "peer_year": 2024,
  "period_label": "FY2024",
+ "rating": {
+  "as_at": "2025-12-31",
+  "document": "959800R7QMXKF0NFMT29-2025-12-31-ESEF-ES-0",
+  "quote": "Las agencias de rating Fitch y Moody’s asignaron a la emisión una calificación “A-” y “A3” respectivamente.",
+  "reason": "not reviewed yet: waiting for Imane's review",
+  "scope": "bond issue (EMTN, EUR 500 million due October 2030)",
+  "source": "FY2025 annual report, page 61",
+  "stale": false,
+  "status": "unverified",
+  "text": "awaiting review"
+ },
  "run": {
-  "calls": 2,
+  "calls": 3,
   "cost_usd": null,
   "filing_hashes": {
    "959800R7QMXKF0NFMT29-2023-12-31-ESEF-ES-0": "fc2f5cf1da5d2416eea34725d16d2916afac10b2197ec3bfa2c8ccc51075e352",
    "959800R7QMXKF0NFMT29-2024-12-31-ESEF-ES-0": "91d0e131cc1ef604c2e4990ed09db9586833a4026d9af8d766f7445e4d51d62a"
   },
   "first_try_ok": false,
-  "input_hash": "cd955135ef24a5ad741aa1b0bf54e5d5ec9cdceb0612aa7063ae881591d254d3",
-  "input_tokens": 28025,
+  "input_hash": "e770daef975b6cffc72d511b0351630896257e5866879d48ebe5370e856f666c",
+  "input_tokens": 72677,
   "matches_figures": true,
   "model": "deepseek-flash",
-  "output_tokens": 4414,
+  "output_tokens": 7347,
   "passed": true,
-  "prompt_version": "draft-v7",
+  "prompt_version": "draft-v7 + draft-v8 (liquidity_funding, watch_items)",
   "provider": "deepseek",
-  "recorded_at": "2026-11-09T18:35:58+00:00"
+  "recorded_at": "2026-11-11T18:57:58+00:00"
  },
  "type": "airport"
 }

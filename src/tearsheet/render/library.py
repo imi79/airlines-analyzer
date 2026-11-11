@@ -277,6 +277,11 @@ def _figures(con, issuers: dict, concepts: Concepts) -> dict[str, dict]:
             # a metric with the same id as the line it repeats (passengers): the line has the
             # source, the metric only copies it
             continue
+        if k in out and out[k]["source_type"] == "computed":
+            if Decimal(str(out[k]["value"])) != Decimal(str(r["value"])):
+                # load factor: RPK ÷ ASK is the metric; the printed figure is a cross-check
+                # only (M8, decision 0022: as in the fact sheet)
+                continue
         currency = issuers[r["issuer"]]["currency"]
         unit = concepts.unit.get(concept, "amount")
         value = Decimal(str(r["value"]))

@@ -233,7 +233,9 @@
    "title": "Credit metrics"
   },
   "liquidity_funding": {
-   "notes": [],
+   "notes": [
+    "[rule style] liquidity_funding, sentence 2: total_debt@FY2025 is already given in credit_metrics, sentence 3: give each figure in one body section only (the snapshot and watch items may restate it)"
+   ],
    "removed": [
     {
      "text": "Cash and cash-like investments fell by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, a buffer that still stands well above the group's small debt stock.",
@@ -247,8 +249,17 @@
      "facts": [
       {
        "claims": [
-        "down",
-        "worse"
+        "down"
+       ],
+       "id": "cash_like.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2025"
+      },
+      {
+       "claims": [
+        "down"
        ],
        "id": "cash_liquidity_to_revenue.change@FY2025"
       },
@@ -257,13 +268,44 @@
        "id": "cash_liquidity_to_revenue@FY2025"
       }
      ],
-     "text": "Cash liquidity to revenue declined by 12.3 points to 41.6%, as the capital programme absorbed cash.",
-     "text_blanks": "Cash liquidity to revenue declined by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, as the capital programme absorbed cash."
+     "text": "Cash and cash-like investments fell by 17.2% to EUR 470m, taking cash liquidity to revenue down by 12.3 points to 41.6%.",
+     "text_blanks": "Cash and cash-like investments fell by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, taking cash liquidity to revenue down by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}."
     },
     {
-     "facts": [],
-     "text": "The cash position covers the group's debt several times over, so refinancing needs are limited and the liquidity profile rests on the cash balance rather than on committed lines.",
-     "text_blanks": "The cash position covers the group's debt several times over, so refinancing needs are limited and the liquidity profile rests on the cash balance rather than on committed lines."
+     "facts": [
+      {
+       "claims": [],
+       "id": "total_debt@FY2025"
+      }
+     ],
+     "text": "That cash pile covers the whole debt stock of EUR 55.9m many times over, so near-term maturities are met from existing cash without new funding.",
+     "text_blanks": "That cash pile covers the whole debt stock of {{total_debt@FY2025}} many times over, so near-term maturities are met from existing cash without new funding."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "fcf_after_leases.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_capex.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_capex@FY2025"
+      }
+     ],
+     "text": "Free cash flow after lease payments fell by 77.1% to EUR 62.9m, as net capex rose by 60.0% to EUR 270m.",
+     "text_blanks": "Free cash flow after lease payments fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}}, as net capex rose by {{net_capex.change@FY2025}} to {{net_capex@FY2025}}."
     }
    ],
    "status": "passed",
@@ -512,28 +554,53 @@
      "facts": [
       {
        "claims": [
-        "down",
-        "worse"
+        "down"
        ],
-       "id": "fcf.change@FY2025"
+       "id": "fcf_after_leases.change@FY2025"
       },
       {
        "claims": [],
-       "id": "fcf@FY2025"
+       "id": "fcf_after_leases@FY2025"
       },
       {
        "claims": [
         "up"
        ],
-       "id": "capex.change@FY2025"
+       "id": "net_capex.change@FY2025"
       },
       {
        "claims": [],
-       "id": "capex@FY2025"
+       "id": "net_capex@FY2025"
       }
      ],
-     "text": "Cash generation: free cash flow fell by 77.5% to EUR 61.7m as capex rose by 59.9% to EUR 272m.",
-     "text_blanks": "Cash generation: free cash flow fell by {{fcf.change@FY2025}} to {{fcf@FY2025}} as capex rose by {{capex.change@FY2025}} to {{capex@FY2025}}."
+     "text": "Cash generation: free cash flow after lease payments fell by 77.1% to EUR 62.9m as net capex rose by 60.0% to EUR 270m, so the investment programme now absorbs most of the cash the group generates.",
+     "text_blanks": "Cash generation: free cash flow after lease payments fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}} as net capex rose by {{net_capex.change@FY2025}} to {{net_capex@FY2025}}, so the investment programme now absorbs most of the cash the group generates."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "cash_like.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      }
+     ],
+     "text": "Cash liquidity: cash and cash-like investments fell by 17.2% to EUR 470m, and cash liquidity to revenue declined by 12.3 points to 41.6%, a thinner buffer against the capital spending plan.",
+     "text_blanks": "Cash liquidity: cash and cash-like investments fell by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, and cash liquidity to revenue declined by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, a thinner buffer against the capital spending plan."
     },
     {
      "facts": [
@@ -554,61 +621,28 @@
        "id": "capex_intensity.peer_median@FY2025"
       }
      ],
-     "text": "Investment: capex intensity rose by 8.0 points to 24.1%, above the peer median of 18.2%.",
-     "text_blanks": "Investment: capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, above the peer median of {{capex_intensity.peer_median@FY2025}}."
+     "text": "Investment: capex intensity rose by 8.0 points to 24.1%, above the peer median of 18.2%, which keeps pressure on free cash flow while the programme runs.",
+     "text_blanks": "Investment: capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, above the peer median of {{capex_intensity.peer_median@FY2025}}, which keeps pressure on free cash flow while the programme runs."
     },
     {
      "facts": [
       {
+       "claims": [],
+       "id": "event:costs"
+      },
+      {
        "claims": [
-        "down",
-        "worse"
+        "down"
        ],
        "id": "ebitda_margin.change@FY2025"
       },
       {
        "claims": [],
        "id": "ebitda_margin@FY2025"
-      },
-      {
-       "claims": [],
-       "id": "event:one_offs"
-      },
-      {
-       "claims": [],
-       "id": "event:costs-2"
       }
      ],
-     "text": "Margins: the EBITDA margin narrowed by 5.5 points to 36.5%, with write-offs on the abandoned third runway project and environmental payments to neighbouring municipalities among the special items.",
-     "text_blanks": "Margins: the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, with write-offs on the abandoned third runway project and environmental payments to neighbouring municipalities among the special items."
-    },
-    {
-     "facts": [
-      {
-       "claims": [
-        "down",
-        "worse"
-       ],
-       "id": "cash_like.change@FY2025"
-      },
-      {
-       "claims": [],
-       "id": "cash_like@FY2025"
-      },
-      {
-       "claims": [
-        "down",
-        "worse"
-       ],
-       "id": "cash_liquidity_to_revenue.change@FY2025"
-      },
-      {
-       "claims": [],
-       "id": "cash_liquidity_to_revenue@FY2025"
-      }
-     ],
-     "text": "Liquidity: cash and cash-like investments fell by 17.2% to EUR 470m, taking cash liquidity to revenue down by 12.3 points to 41.6%.",
-     "text_blanks": "Liquidity: cash and cash-like investments fell by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, taking cash liquidity to revenue down by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}."
+     "text": "Cost base: personnel expenses rose on collective wage increases and additions to personnel provisions, partly related to underutilisation, and the EBITDA margin narrowed by 5.5 points to 36.5%.",
+     "text_blanks": "Cost base: personnel expenses rose on collective wage increases and additions to personnel provisions, partly related to underutilisation, and the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}."
     }
    ],
    "status": "passed",
@@ -695,6 +729,7 @@
   "fiscal_year": 2025,
   "higher_is_better": {
    "aero_revenue_per_passenger": true,
+   "borrowings_due_2y": null,
    "capex": null,
    "capex_intensity": null,
    "cash_like": true,
@@ -703,9 +738,12 @@
    "cfo": true,
    "contract_liabilities": null,
    "dda": null,
+   "debt_due_1y": null,
    "ebitda": true,
    "ebitda_margin": true,
    "fcf": true,
+   "fcf_after_leases": true,
+   "fcf_after_leases_to_debt": true,
    "fcf_to_debt": true,
    "ffo": true,
    "ffo_to_debt": true,
@@ -714,7 +752,9 @@
    "gross_leverage": false,
    "interest_coverage": true,
    "liquidity": true,
+   "liquidity_to_borrowings_due_2y": true,
    "liquidity_to_revenue": true,
+   "net_capex": null,
    "net_cash": true,
    "net_debt": null,
    "net_leverage": false,
@@ -724,6 +764,7 @@
    "profit": true,
    "revenue": true,
    "revenue_per_passenger": true,
+   "short_term_debt_cover": true,
    "total_debt": null,
    "traffic_growth": true,
    "undrawn_facilities": true
@@ -1427,6 +1468,57 @@
     "value": "61714700.000000000000",
     "vs_peers": null
    },
+   "fcf_after_leases.change@FY2025": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "fcf_after_leases.change@FY2025",
+    "kind": "change",
+    "label": "change in FCF after leases, FY2024 to FY2025",
+    "metric": "fcf_after_leases",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "77.1%",
+    "unit": "relative",
+    "value": "0.7708363901952738578137760313",
+    "vs_peers": null
+   },
+   "fcf_after_leases@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "fcf_after_leases@FY2024",
+    "kind": "value",
+    "label": "FCF after leases, FY2024",
+    "metric": "fcf_after_leases",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 275m",
+    "unit": "amount",
+    "value": "274655300.000000000000",
+    "vs_peers": null
+   },
+   "fcf_after_leases@FY2025": {
+    "assessment": "worse",
+    "direction": "down",
+    "id": "fcf_after_leases@FY2025",
+    "kind": "value",
+    "label": "FCF after leases, FY2025",
+    "metric": "fcf_after_leases",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 62.9m",
+    "unit": "amount",
+    "value": "62941000.000000000000",
+    "vs_peers": null
+   },
    "ffo.change@FY2025": {
     "assessment": "worse",
     "direction": "down",
@@ -1613,6 +1705,57 @@
     "unit": "x",
     "value": "0.135515995838",
     "vs_peers": "below"
+   },
+   "net_capex.change@FY2025": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "net_capex.change@FY2025",
+    "kind": "change",
+    "label": "change in Net capex, FY2024 to FY2025",
+    "metric": "net_capex",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "60.0%",
+    "unit": "relative",
+    "value": "0.6000466448280475114273909322",
+    "vs_peers": null
+   },
+   "net_capex@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "net_capex@FY2024",
+    "kind": "value",
+    "label": "Net capex, FY2024",
+    "metric": "net_capex",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 169m",
+    "unit": "amount",
+    "value": "168936200.000000000000",
+    "vs_peers": null
+   },
+   "net_capex@FY2025": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "net_capex@FY2025",
+    "kind": "value",
+    "label": "Net capex, FY2025",
+    "metric": "net_capex",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 270m",
+    "unit": "amount",
+    "value": "270305800.000000000000",
+    "vs_peers": null
    },
    "net_cash.change@FY2025": {
     "assessment": "worse",
@@ -2059,6 +2202,7 @@
   },
   "labels": {
    "aero_revenue_per_passenger": "Aeronautical revenue per passenger",
+   "borrowings_due_2y": "Borrowings due within two years",
    "capex": "Capex (purchases of PP&E and intangibles)",
    "capex_intensity": "Capex intensity",
    "cash_like": "Cash and cash-like investments",
@@ -2067,9 +2211,12 @@
    "cfo": "Cash from operations",
    "contract_liabilities": "Contract liabilities (advance ticket sales)",
    "dda": "Depreciation, amortisation and impairment",
+   "debt_due_1y": "Debt due within one year",
    "ebitda": "EBITDA",
    "ebitda_margin": "EBITDA margin",
    "fcf": "Free cash flow",
+   "fcf_after_leases": "FCF after leases",
+   "fcf_after_leases_to_debt": "FCF after leases to debt",
    "fcf_to_debt": "FCF to debt",
    "ffo": "FFO",
    "ffo_to_debt": "FFO to debt",
@@ -2078,7 +2225,9 @@
    "gross_leverage": "Gross leverage",
    "interest_coverage": "Interest coverage",
    "liquidity": "Liquidity",
+   "liquidity_to_borrowings_due_2y": "Liquidity to borrowings due within two years",
    "liquidity_to_revenue": "Liquidity to revenue",
+   "net_capex": "Net capex",
    "net_cash": "Net cash (cash and cash-like investments above total debt)",
    "net_debt": "Net debt",
    "net_leverage": "Net leverage",
@@ -2088,6 +2237,7 @@
    "profit": "Profit for the year",
    "revenue": "Revenue",
    "revenue_per_passenger": "Revenue per passenger",
+   "short_term_debt_cover": "Short-term debt cover",
    "total_debt": "Total debt",
    "traffic_growth": "Traffic growth",
    "undrawn_facilities": "Undrawn committed credit facilities"
@@ -2103,6 +2253,9 @@
   "period_label": "FY2025",
   "type": "airport",
   "unavailable": {
+   "borrowings_due_2y.change@FY2025": "needs both years verified",
+   "borrowings_due_2y@FY2024": "No checked maturity table of borrowings for FY2024",
+   "borrowings_due_2y@FY2025": "No checked maturity table of borrowings for FY2025",
    "capex_intensity.peer_rank@FY2025": "not ranked: neither higher nor lower is better",
    "cash_liquidity.change@FY2025": "the same figure as cash_like.change@FY2025: use that id",
    "cash_liquidity@FY2024": "the same figure as cash_like@FY2024: use that id",
@@ -2110,6 +2263,14 @@
    "contract_liabilities.change@FY2025": "needs both years verified",
    "contract_liabilities@FY2024": "no figure for this year",
    "contract_liabilities@FY2025": "no figure for this year",
+   "debt_due_1y.change@FY2025": "needs both years verified",
+   "debt_due_1y@FY2024": "Current borrowings not reported separately for FY2024",
+   "debt_due_1y@FY2025": "Current borrowings not reported separately for FY2025",
+   "fcf_after_leases_to_debt.change@FY2025": "not meaningful: debt is very small (gross leverage 0.14x), so ratios to debt say little",
+   "fcf_after_leases_to_debt.peer_median@FY2025": "not meaningful: debt is very small (gross leverage 0.14x), so ratios to debt say little",
+   "fcf_after_leases_to_debt.peer_rank@FY2025": "not meaningful: debt is very small (gross leverage 0.14x), so ratios to debt say little",
+   "fcf_after_leases_to_debt@FY2024": "not meaningful: debt is very small (gross leverage 0.14x), so ratios to debt say little",
+   "fcf_after_leases_to_debt@FY2025": "not meaningful: debt is very small (gross leverage 0.14x), so ratios to debt say little",
    "fcf_to_debt.change@FY2025": "not meaningful: debt is very small (gross leverage 0.14x), so ratios to debt say little",
    "fcf_to_debt.peer_median@FY2025": "not meaningful: debt is very small (gross leverage 0.14x), so ratios to debt say little",
    "fcf_to_debt.peer_rank@FY2025": "not meaningful: debt is very small (gross leverage 0.14x), so ratios to debt say little",
@@ -2131,6 +2292,9 @@
    "liquidity.change@FY2025": "needs both years verified",
    "liquidity@FY2024": "Undrawn committed credit facilities not available for FY2024",
    "liquidity@FY2025": "Undrawn committed credit facilities not available for FY2025",
+   "liquidity_to_borrowings_due_2y.change@FY2025": "needs both years verified",
+   "liquidity_to_borrowings_due_2y@FY2024": "Liquidity: Undrawn committed credit facilities not available for FY2024",
+   "liquidity_to_borrowings_due_2y@FY2025": "Liquidity: Undrawn committed credit facilities not available for FY2025",
    "liquidity_to_revenue.change@FY2025": "needs both years verified",
    "liquidity_to_revenue.peer_median@FY2025": "the company's own figure is not available",
    "liquidity_to_revenue.peer_rank@FY2025": "the company's own figure is not available",
@@ -2147,6 +2311,9 @@
    "revenue_per_passenger.change@FY2025": "needs both years verified",
    "revenue_per_passenger@FY2024": "n.m.: group revenue includes Malta and Košice airports, while passengers are Vienna only.",
    "revenue_per_passenger@FY2025": "n.m.: group revenue includes Malta and Košice airports, while passengers are Vienna only.",
+   "short_term_debt_cover.change@FY2025": "needs both years verified",
+   "short_term_debt_cover@FY2024": "Liquidity: Undrawn committed credit facilities not available for FY2024",
+   "short_term_debt_cover@FY2025": "Liquidity: Undrawn committed credit facilities not available for FY2025",
    "traffic_growth.peer_median@FY2025": "the peer median would use a figure not verified yet (aena)",
    "traffic_growth.peer_rank@FY2025": "the peer median would use a figure not verified yet (aena)",
    "undrawn_facilities.change@FY2025": "needs both years verified",
@@ -2166,6 +2333,17 @@
  ],
  "peer_year": 2025,
  "period_label": "FY2025",
+ "rating": {
+  "as_at": "2025-12-31",
+  "document": "549300FQ2ILBH7DJ6I45-2025-12-31-ESEF-AT-0",
+  "quote": "",
+  "reason": "not reviewed yet: waiting for Imane's review",
+  "scope": "issuer",
+  "source": "FY2025 annual report, whole report",
+  "stale": false,
+  "status": "unverified",
+  "text": "awaiting review"
+ },
  "run": {
   "calls": 3,
   "cost_usd": null,
@@ -2174,16 +2352,16 @@
    "549300FQ2ILBH7DJ6I45-2025-12-31-ESEF-AT-0": "c9ac8b7813ac66b3c7c097e0306c4a33c2341e631fe2d75427721a3e28b56a63",
    "549300FQ2ILBH7DJ6I45-2025-12-31-manual-pdf": "c9ac8b7813ac66b3c7c097e0306c4a33c2341e631fe2d75427721a3e28b56a63"
   },
-  "first_try_ok": false,
-  "input_hash": "fc44386045a84fddde3a9089af9be29495fc8253276f08fc405f9c85eaebec0f",
-  "input_tokens": 40925,
+  "first_try_ok": true,
+  "input_hash": "12921746e2a31f16d70e7519ce2f8153bec3e8e3ff45cff9e745589b5142ce64",
+  "input_tokens": 83873,
   "matches_figures": true,
   "model": "deepseek-flash",
-  "output_tokens": 4414,
+  "output_tokens": 6243,
   "passed": true,
-  "prompt_version": "draft-v7",
+  "prompt_version": "draft-v7 + draft-v8 (liquidity_funding, watch_items)",
   "provider": "deepseek",
-  "recorded_at": "2026-11-09T18:33:23+00:00"
+  "recorded_at": "2026-11-11T18:54:57+00:00"
  },
  "type": "airport"
 }

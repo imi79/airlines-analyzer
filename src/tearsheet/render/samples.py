@@ -21,6 +21,10 @@ def write_samples(
     figures_file: Path = library.FIGURES_FILE,
     folder: Path = tearsheet.TEARSHEETS,
 ) -> tuple[Library, list[Path]]:
+    import duckdb
+
+    from tearsheet.config import load_issuers
+    from tearsheet.narrative.factsheet import build, load_figures, load_narrative, load_specs
     from tearsheet.narrative.run import build_sheets
 
     if not db_path.exists():
@@ -30,8 +34,20 @@ def write_samples(
     folder.mkdir(parents=True, exist_ok=True)
     for old in folder.glob("*.json"):
         old.unlink()
+    # The drafted company-years, each with the fact sheet of M8: every metric (decision 0022).
+    narrative = load_narrative()
+    specs = load_specs(narrative)
+    con = duckdb.connect(str(db_path), read_only=True)
+    figures = load_figures(con, set(specs))
+    con.close()
+    issuers = {i.id: i for i in load_issuers()}
     written = [
-        tearsheet.write(tearsheet.from_database(db_path, sheet), folder)
-        for sheet in build_sheets(db_path).drafted
+        tearsheet.write(
+            tearsheet.from_database(
+                db_path, build(issuers[s.issuer], s.fiscal_year, figures, specs, narrative)
+            ),
+            folder,
+        )
+        for s in build_sheets(db_path).drafted
     ]
     return lib, written

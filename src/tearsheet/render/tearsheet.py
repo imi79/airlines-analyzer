@@ -37,10 +37,10 @@ def file_name(issuer: str, fiscal_year: int) -> str:
 # --- Building from the database ----------------------------------------------------------------
 
 
-def from_database(db_path: Path, sheet: FactSheet) -> dict:
-    """The tearsheet record for a fact sheet (built by narrative.run.build_sheets). The year's
-    checked events are added to the fact sheet as in M4, so its fingerprint can be compared
-    with the one the draft was written from."""
+def from_database(db_path: Path, sheet: FactSheet, ratings: bool = True) -> dict:
+    """The tearsheet record for a fact sheet (built from the database with every metric). The
+    year's checked events, then the ratings (M8), are added as the redraft added them, so its
+    fingerprint can be compared with the one the draft was written from."""
     con = duckdb.connect(str(db_path), read_only=True)
     try:
         commentary = _commentary(con, sheet)
@@ -49,6 +49,11 @@ def from_database(db_path: Path, sheet: FactSheet) -> dict:
     finally:
         con.close()
     add_events(sheet, [_Event(sheet.fiscal_year, e) for e in event_rows])
+    if ratings:
+        from tearsheet.narrative.factsheet import add_ratings
+        from tearsheet.ratings import checked_entries
+
+        add_ratings(sheet, checked_entries(db_path))
     current = sheet.fingerprint()
     if run is not None:
         run["matches_figures"] = run["input_hash"] == current

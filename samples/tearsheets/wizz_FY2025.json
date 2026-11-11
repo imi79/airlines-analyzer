@@ -310,15 +310,43 @@
      "facts": [
       {
        "claims": [
-        "up",
-        "worse"
+        "up"
        ],
-       "id": "advance_ticket_cover.change@FY2025"
+       "id": "debt_due_1y.change@FY2025"
       },
       {
        "claims": [],
-       "id": "advance_ticket_cover@FY2025"
+       "id": "debt_due_1y@FY2025"
+      }
+     ],
+     "text": "Debt due within one year rose by 40.0% to EUR 1.5bn, so cash liquidity covers the near-term maturities only in part and the balance depends on refinancing.",
+     "text_blanks": "Debt due within one year rose by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, so cash liquidity covers the near-term maturities only in part and the balance depends on refinancing."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "fcf_after_leases.change@FY2025"
       },
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "fcf_after_leases_to_debt@FY2025"
+      }
+     ],
+     "text": "Free cash flow after lease payments rose by 17.0% to EUR 143m, but at 2.2% of debt it was broadly unchanged and leaves little cash for debt holders once leases are paid.",
+     "text_blanks": "Free cash flow after lease payments rose by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}}, but at {{fcf_after_leases_to_debt@FY2025}} of debt it was broadly unchanged and leaves little cash for debt holders once leases are paid."
+    },
+    {
+     "facts": [
       {
        "claims": [
         "up"
@@ -328,34 +356,21 @@
       {
        "claims": [],
        "id": "contract_liabilities@FY2025"
-      }
-     ],
-     "text": "Advance ticket cover rose by 8.2 points to 58.4%, and contract liabilities increased by 27.1% to EUR 1.0bn, so a larger share of the cash balance is customers' prepayments.",
-     "text_blanks": "Advance ticket cover rose by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}, and contract liabilities increased by {{contract_liabilities.change@FY2025}} to {{contract_liabilities@FY2025}}, so a larger share of the cash balance is customers' prepayments."
-    },
-    {
-     "facts": [
-      {
-       "claims": [],
-       "id": "cfo@FY2025"
-      },
-      {
-       "claims": [],
-       "id": "capex@FY2025"
       },
       {
        "claims": [
-        "down"
+        "up",
+        "worse"
        ],
-       "id": "capex_intensity.change@FY2025"
+       "id": "advance_ticket_cover.change@FY2025"
       },
       {
        "claims": [],
-       "id": "capex_intensity@FY2025"
+       "id": "advance_ticket_cover@FY2025"
       }
      ],
-     "text": "Cash generation supported the balance sheet, with cash from operations of EUR 1.1bn against capex of EUR 283m and capex intensity down by 1.3 points to 5.4%.",
-     "text_blanks": "Cash generation supported the balance sheet, with cash from operations of {{cfo@FY2025}} against capex of {{capex@FY2025}} and capex intensity down by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}."
+     "text": "Customer prepayments rose: contract liabilities increased by 27.1% to EUR 1.0bn, and advance ticket cover rose by 8.2 points to 58.4%, so a larger share of liquidity is cash received for future travel.",
+     "text_blanks": "Customer prepayments rose: contract liabilities increased by {{contract_liabilities.change@FY2025}} to {{contract_liabilities@FY2025}}, and advance ticket cover rose by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}, so a larger share of liquidity is cash received for future travel."
     }
    ],
    "status": "passed",
@@ -408,7 +423,7 @@
        "id": "rpk@FY2025"
       }
      ],
-     "text": "The load factor improved by 0.9 points to 91.2%, with RPK broadly stable at 111.1bn.",
+     "text": "The load factor improved by 1.0 point to 91.3%, with RPK broadly stable at 111.1bn.",
      "text_blanks": "The load factor improved by {{load_factor.change@FY2025}} to {{load_factor@FY2025}}, with RPK broadly stable at {{rpk@FY2025}}."
     },
     {
@@ -671,16 +686,18 @@
        "id": "net_leverage@FY2025"
       },
       {
-       "claims": [],
-       "id": "net_leverage.peer_median@FY2025"
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2025"
       },
       {
        "claims": [],
-       "id": "event:funding_and_rating"
+       "id": "net_leverage.peer_median@FY2025"
       }
      ],
-     "text": "Leverage: net leverage rose by 0.38x to 4.28x, well above the peer median of 0.78x, and Fitch downgraded the company citing higher leverage and increased costs.",
-     "text_blanks": "Leverage: net leverage rose by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}}, well above the peer median of {{net_leverage.peer_median@FY2025}}, and Fitch downgraded the company citing higher leverage and increased costs."
+     "text": "Leverage: net leverage rose by 0.38x to 4.28x, the weakest of the low-cost peer group (3rd of 3) and well above the peer median of 0.78x.",
+     "text_blanks": "Leverage: net leverage rose by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}}, the weakest of the low-cost peer group ({{net_leverage.peer_rank@FY2025}}) and well above the peer median of {{net_leverage.peer_median@FY2025}}."
     },
     {
      "facts": [
@@ -710,49 +727,31 @@
        "id": "ffo.change@FY2025"
       }
      ],
-     "text": "Cash flow: FFO to debt fell by 2.9 points to 13.2%, below the peer median of 35.6%, as FFO declined by 13.3%.",
-     "text_blanks": "Cash flow: FFO to debt fell by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}, below the peer median of {{ffo_to_debt.peer_median@FY2025}}, as FFO declined by {{ffo.change@FY2025}}."
+     "text": "Cash generation: FFO to debt fell by 2.9 points to 13.2%, below the peer median of 35.6%, as FFO declined by 13.3%.",
+     "text_blanks": "Cash generation: FFO to debt fell by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}, below the peer median of {{ffo_to_debt.peer_median@FY2025}}, as FFO declined by {{ffo.change@FY2025}}."
     },
     {
      "facts": [
       {
        "claims": [
-        "down",
-        "worse"
+        "up"
        ],
-       "id": "interest_coverage.change@FY2025"
-      },
-      {
-       "claims": [
-        "below_peers",
-        "worse_than_peers"
-       ],
-       "id": "interest_coverage@FY2025"
+       "id": "debt_due_1y.change@FY2025"
       },
       {
        "claims": [],
-       "id": "interest_coverage.peer_median@FY2025"
+       "id": "debt_due_1y@FY2025"
       },
       {
-       "claims": [
-        "up",
-        "worse"
-       ],
-       "id": "finance_costs.change@FY2025"
+       "claims": [],
+       "id": "cash_like@FY2025"
       }
      ],
-     "text": "Coverage: interest coverage fell by 1.93x to 5.08x, below the peer median of 5.89x, as finance costs rose by 26.8%.",
-     "text_blanks": "Coverage: interest coverage fell by {{interest_coverage.change@FY2025}} to {{interest_coverage@FY2025}}, below the peer median of {{interest_coverage.peer_median@FY2025}}, as finance costs rose by {{finance_costs.change@FY2025}}."
+     "text": "Maturities: debt due within one year rose by 40.0% to EUR 1.5bn against cash and cash-like investments of EUR 1.7bn, so refinancing risk is concentrated in the near term.",
+     "text_blanks": "Maturities: debt due within one year rose by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}} against cash and cash-like investments of {{cash_like@FY2025}}, so refinancing risk is concentrated in the near term."
     },
     {
      "facts": [
-      {
-       "claims": [
-        "up",
-        "worse"
-       ],
-       "id": "advance_ticket_cover.change@FY2025"
-      },
       {
        "claims": [
         "above_peers",
@@ -761,12 +760,14 @@
        "id": "advance_ticket_cover@FY2025"
       },
       {
-       "claims": [],
-       "id": "advance_ticket_cover.peer_median@FY2025"
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "advance_ticket_cover.peer_rank@FY2025"
       }
      ],
-     "text": "Customer prepayments: advance ticket cover rose by 8.2 points to 58.4%, above the peer median of 50.2%, a sensitivity if bookings slow.",
-     "text_blanks": "Customer prepayments: advance ticket cover rose by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}, above the peer median of {{advance_ticket_cover.peer_median@FY2025}}, a sensitivity if bookings slow."
+     "text": "Customer prepayments: advance ticket cover of 58.4% is the highest of the peer group (3rd of 3), so liquidity relies on cash received for future travel.",
+     "text_blanks": "Customer prepayments: advance ticket cover of {{advance_ticket_cover@FY2025}} is the highest of the peer group ({{advance_ticket_cover.peer_rank@FY2025}}), so liquidity relies on cash received for future travel."
     }
    ],
    "status": "passed",
@@ -854,6 +855,7 @@
   "higher_is_better": {
    "advance_ticket_cover": false,
    "ask": true,
+   "borrowings_due_2y": null,
    "capex": null,
    "capex_intensity": null,
    "cash_like": true,
@@ -864,9 +866,12 @@
    "cfo": true,
    "contract_liabilities": null,
    "dda": null,
+   "debt_due_1y": null,
    "ebitda": true,
    "ebitda_margin": true,
    "fcf": true,
+   "fcf_after_leases": true,
+   "fcf_after_leases_to_debt": true,
    "fcf_to_debt": true,
    "ffo": true,
    "ffo_to_debt": true,
@@ -879,8 +884,10 @@
    "gross_leverage": false,
    "interest_coverage": true,
    "liquidity": true,
+   "liquidity_to_borrowings_due_2y": true,
    "liquidity_to_revenue": true,
    "load_factor": true,
+   "net_capex": null,
    "net_cash": true,
    "net_debt": null,
    "net_leverage": false,
@@ -891,6 +898,7 @@
    "rask": true,
    "revenue": true,
    "rpk": true,
+   "short_term_debt_cover": true,
    "total_debt": null,
    "undrawn_facilities": true
   },
@@ -1542,6 +1550,57 @@
     "value": "966800000.000000000000",
     "vs_peers": null
    },
+   "debt_due_1y.change@FY2025": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "debt_due_1y.change@FY2025",
+    "kind": "change",
+    "label": "change in Debt due within one year, FY2024 to FY2025",
+    "metric": "debt_due_1y",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "40.0%",
+    "unit": "relative",
+    "value": "0.3998893295213501798395278060",
+    "vs_peers": null
+   },
+   "debt_due_1y@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "debt_due_1y@FY2024",
+    "kind": "value",
+    "label": "Debt due within one year, FY2024",
+    "metric": "debt_due_1y",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 1.1bn",
+    "unit": "amount",
+    "value": "1084300000.000000000000",
+    "vs_peers": null
+   },
+   "debt_due_1y@FY2025": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "debt_due_1y@FY2025",
+    "kind": "value",
+    "label": "Debt due within one year, FY2025",
+    "metric": "debt_due_1y",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 1.5bn",
+    "unit": "amount",
+    "value": "1517900000.000000000000",
+    "vs_peers": null
+   },
    "ebitda.change@FY2025": {
     "assessment": "worse",
     "direction": "down",
@@ -1829,6 +1888,108 @@
     "rendered": "EUR 783m",
     "unit": "amount",
     "value": "782900000.000000000000",
+    "vs_peers": null
+   },
+   "fcf_after_leases.change@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "fcf_after_leases.change@FY2025",
+    "kind": "change",
+    "label": "change in FCF after leases, FY2024 to FY2025",
+    "metric": "fcf_after_leases",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "17.0%",
+    "unit": "relative",
+    "value": "0.1702127659574468085106382979",
+    "vs_peers": null
+   },
+   "fcf_after_leases@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "fcf_after_leases@FY2024",
+    "kind": "value",
+    "label": "FCF after leases, FY2024",
+    "metric": "fcf_after_leases",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 122m",
+    "unit": "amount",
+    "value": "122200000.000000000000",
+    "vs_peers": null
+   },
+   "fcf_after_leases@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "fcf_after_leases@FY2025",
+    "kind": "value",
+    "label": "FCF after leases, FY2025",
+    "metric": "fcf_after_leases",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 143m",
+    "unit": "amount",
+    "value": "143000000.000000000000",
+    "vs_peers": null
+   },
+   "fcf_after_leases_to_debt.change@FY2025": {
+    "assessment": "neutral",
+    "direction": "flat",
+    "id": "fcf_after_leases_to_debt.change@FY2025",
+    "kind": "change",
+    "label": "change in FCF after leases to debt, FY2024 to FY2025",
+    "metric": "fcf_after_leases_to_debt",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "0.2 points",
+    "unit": "points",
+    "value": "0.002133697132",
+    "vs_peers": null
+   },
+   "fcf_after_leases_to_debt@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "fcf_after_leases_to_debt@FY2024",
+    "kind": "value",
+    "label": "FCF after leases to debt, FY2024",
+    "metric": "fcf_after_leases_to_debt",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "2.0%",
+    "unit": "pct",
+    "value": "0.019570787956",
+    "vs_peers": null
+   },
+   "fcf_after_leases_to_debt@FY2025": {
+    "assessment": "neutral",
+    "direction": "flat",
+    "id": "fcf_after_leases_to_debt@FY2025",
+    "kind": "value",
+    "label": "FCF after leases to debt, FY2025",
+    "metric": "fcf_after_leases_to_debt",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "2.2%",
+    "unit": "pct",
+    "value": "0.021704485088",
     "vs_peers": null
    },
    "fcf_to_debt.change@FY2025": {
@@ -2506,9 +2667,9 @@
     "period": "FY2024 to FY2025",
     "rank": null,
     "rank_of": null,
-    "rendered": "0.9 points",
+    "rendered": "1.0 point",
     "unit": "points",
-    "value": "0.008817382634",
+    "value": "0.010299570072",
     "vs_peers": null
    },
    "load_factor@FY2024": {
@@ -2540,9 +2701,43 @@
     "period": "FY2025",
     "rank": null,
     "rank_of": null,
-    "rendered": "91.2%",
+    "rendered": "91.3%",
     "unit": "pct",
-    "value": "0.912000000000",
+    "value": "0.913482187438",
+    "vs_peers": null
+   },
+   "net_capex@FY2024": {
+    "assessment": null,
+    "direction": null,
+    "id": "net_capex@FY2024",
+    "kind": "value",
+    "label": "Net capex, FY2024",
+    "metric": "net_capex",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2024",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR -208m",
+    "unit": "amount",
+    "value": "-208300000.000000000000",
+    "vs_peers": null
+   },
+   "net_capex@FY2025": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "net_capex@FY2025",
+    "kind": "value",
+    "label": "Net capex, FY2025",
+    "metric": "net_capex",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR -20.9m",
+    "unit": "amount",
+    "value": "-20900000.000000000000",
     "vs_peers": null
    },
    "net_debt.change@FY2025": {
@@ -3059,6 +3254,7 @@
   "labels": {
    "advance_ticket_cover": "Advance ticket cover",
    "ask": "ASK",
+   "borrowings_due_2y": "Borrowings due within two years",
    "capex": "Capex (purchases of PP&E and intangibles)",
    "capex_intensity": "Capex intensity",
    "cash_like": "Cash and cash-like investments",
@@ -3069,9 +3265,12 @@
    "cfo": "Cash from operations",
    "contract_liabilities": "Contract liabilities (advance ticket sales)",
    "dda": "Depreciation, amortisation and impairment",
+   "debt_due_1y": "Debt due within one year",
    "ebitda": "EBITDA",
    "ebitda_margin": "EBITDA margin",
    "fcf": "Free cash flow",
+   "fcf_after_leases": "FCF after leases",
+   "fcf_after_leases_to_debt": "FCF after leases to debt",
    "fcf_to_debt": "FCF to debt",
    "ffo": "FFO",
    "ffo_to_debt": "FFO to debt",
@@ -3084,8 +3283,10 @@
    "gross_leverage": "Gross leverage",
    "interest_coverage": "Interest coverage",
    "liquidity": "Liquidity",
+   "liquidity_to_borrowings_due_2y": "Liquidity to borrowings due within two years",
    "liquidity_to_revenue": "Liquidity to revenue",
    "load_factor": "Load factor",
+   "net_capex": "Net capex",
    "net_cash": "Net cash (cash and cash-like investments above total debt)",
    "net_debt": "Net debt",
    "net_leverage": "Net leverage",
@@ -3096,6 +3297,7 @@
    "rask": "RASK",
    "revenue": "Revenue",
    "rpk": "RPK",
+   "short_term_debt_cover": "Short-term debt cover",
    "total_debt": "Total debt",
    "undrawn_facilities": "Undrawn committed credit facilities"
   },
@@ -3110,6 +3312,9 @@
   "period_label": "FY2025 (Apr 2024 to Mar 2025)",
   "type": "airline",
   "unavailable": {
+   "borrowings_due_2y.change@FY2025": "needs both years verified",
+   "borrowings_due_2y@FY2024": "No checked maturity table of borrowings for FY2024",
+   "borrowings_due_2y@FY2025": "No checked maturity table of borrowings for FY2025",
    "capex_intensity.peer_rank@FY2025": "not ranked: neither higher nor lower is better",
    "cash_liquidity.change@FY2025": "the same figure as cash_like.change@FY2025: use that id",
    "cash_liquidity@FY2024": "the same figure as cash_like@FY2024: use that id",
@@ -3123,6 +3328,9 @@
    "liquidity.change@FY2025": "needs both years verified",
    "liquidity@FY2024": "Undrawn committed credit facilities not available for FY2024",
    "liquidity@FY2025": "Undrawn committed credit facilities not available for FY2025",
+   "liquidity_to_borrowings_due_2y.change@FY2025": "needs both years verified",
+   "liquidity_to_borrowings_due_2y@FY2024": "Liquidity: Undrawn committed credit facilities not available for FY2024",
+   "liquidity_to_borrowings_due_2y@FY2025": "Liquidity: Undrawn committed credit facilities not available for FY2025",
    "liquidity_to_revenue.change@FY2025": "needs both years verified",
    "liquidity_to_revenue.peer_median@FY2025": "the company's own figure is not available",
    "liquidity_to_revenue.peer_rank@FY2025": "the company's own figure is not available",
@@ -3130,11 +3338,15 @@
    "liquidity_to_revenue@FY2025": "Liquidity: Undrawn committed credit facilities not available for FY2025",
    "load_factor.peer_median@FY2025": "the peer median would use a figure not verified yet (norwegian)",
    "load_factor.peer_rank@FY2025": "the peer median would use a figure not verified yet (norwegian)",
+   "net_capex.change@FY2025": "a percentage change is not meaningful (a year is negative or zero); the direction is still up, on net_capex@FY2025",
    "net_cash.change@FY2025": "needs both years verified",
    "net_cash@FY2024": "the company has net debt, not net cash",
    "net_cash@FY2025": "the company has net debt, not net cash",
    "passenger_yield.change@FY2025": "needs both years verified",
    "passenger_yield@FY2024": "not verified yet: waiting for Imane's review",
+   "short_term_debt_cover.change@FY2025": "needs both years verified",
+   "short_term_debt_cover@FY2024": "Liquidity: Undrawn committed credit facilities not available for FY2024",
+   "short_term_debt_cover@FY2025": "Liquidity: Undrawn committed credit facilities not available for FY2025",
    "undrawn_facilities.change@FY2025": "needs both years verified",
    "undrawn_facilities@FY2024": "no figure for this year",
    "undrawn_facilities@FY2025": "no figure for this year"
@@ -3152,22 +3364,33 @@
  ],
  "peer_year": 2024,
  "period_label": "FY2025 (Apr 2024 to Mar 2025)",
+ "rating": {
+  "as_at": "2026-03-31",
+  "document": "213800COXGZCORLJZA85-2026-03-31-ESEF-GB-0",
+  "quote": "",
+  "reason": "not reviewed yet: waiting for Imane's review",
+  "scope": "issuer",
+  "source": "FY2026 annual report, whole report",
+  "stale": false,
+  "status": "unverified",
+  "text": "awaiting review"
+ },
  "run": {
-  "calls": 3,
+  "calls": 1,
   "cost_usd": null,
   "filing_hashes": {
    "213800COXGZCORLJZA85-2025-03-31-ESEF-GB-0": "c0dc3e9a85031bfb0880e9063f739ee7a32572c53cb4b7eb6b3ad6b578d5745f"
   },
-  "first_try_ok": false,
-  "input_hash": "6a904918485b8f75e7647fff623290bcdae9290d3cd32f5be008f949d32d72cd",
-  "input_tokens": 46800,
+  "first_try_ok": true,
+  "input_hash": "e5e1c9725fe08ffdf7daff0273e4167355a0abea8dbc6e7137bb4bd8af837f07",
+  "input_tokens": 62140,
   "matches_figures": true,
   "model": "deepseek-flash",
-  "output_tokens": 7437,
+  "output_tokens": 8703,
   "passed": false,
-  "prompt_version": "draft-v7",
+  "prompt_version": "draft-v7 + draft-v8 (liquidity_funding, watch_items)",
   "provider": "deepseek",
-  "recorded_at": "2026-11-09T18:37:06+00:00"
+  "recorded_at": "2026-11-11T18:56:43+00:00"
  },
  "type": "airline"
 }
