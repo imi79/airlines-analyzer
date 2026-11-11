@@ -11,7 +11,11 @@ from tearsheet.render import notes, tearsheet
 
 @st.cache_resource(show_spinner=False)
 def _verifier() -> Verifier:
-    return Verifier()
+    """The checks of the current drafts (M8): an edit is judged like the draft it replaces."""
+    from tearsheet.narrative.redraft import narrative_v8, vocabulary_v8
+
+    narrative = narrative_v8()
+    return Verifier(narrative, vocabulary_v8(narrative))
 
 
 def get_note(ts: dict) -> dict:

@@ -1,0 +1,19 @@
+# The analyst's edits and view for this tearsheet, saved by the app (live mode).
+# Figures in {{blanks}} are filled and traced by code; any other figure is flagged.
+issuer: finnair
+fiscal_year: 2025
+analyst_view: ''
+edits:
+  liquidity_funding:
+    2:
+      text: 'Near-term maturities are well covered: debt due within one year fell
+        by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, taking short-term
+        debt cover up by {{short_term_debt_cover.change@FY2025}} to {{short_term_debt_cover@FY2025}},
+        and borrowings due within two years declined by {{borrowings_due_2y.change@FY2025}}
+        to {{borrowings_due_2y@FY2025}}, so liquidity covers them {{liquidity_to_borrowings_due_2y@FY2025}}.'
+      untraced: []
+updated_by: Imane
+updated_on: '2026-11-11'
+edits_origin: 'Liquidity and funding, sentence 2: ''covers ... times'' reworded by
+  the AI assistant at Imane''s request (the figure already prints with its x); figures
+  unchanged, all in blanks (2026-11-11).'
