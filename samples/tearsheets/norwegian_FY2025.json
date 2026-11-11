@@ -1,4 +1,61 @@
 {
+ "attempts": [
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "number written outside a blank: '350'",
+     "rule": "1",
+     "section": "operating_performance",
+     "sentence": 1,
+     "text": "Passengers rose by 3.4% to 27.3m, supported by a summer programme of nearly 350 routes including 17 new leisure routes."
+    },
+    {
+     "message": "number written outside a blank: '17'",
+     "rule": "1",
+     "section": "operating_performance",
+     "sentence": 1,
+     "text": "Passengers rose by 3.4% to 27.3m, supported by a summer programme of nearly 350 routes including 17 new leisure routes."
+    },
+    {
+     "message": "word that states a number: 'first'",
+     "rule": "1",
+     "section": "liquidity_funding",
+     "sentence": 4,
+     "text": "The company paid a dividend to shareholders in August, its first distribution."
+    },
+    {
+     "message": "cash_liquidity_to_revenue.peer_rank@FY2025 is listed in the form but not used in the text",
+     "rule": "5",
+     "section": "watch_items",
+     "sentence": 1,
+     "text": "Liquidity: cash liquidity to revenue fell by 4.1 points to 26.7%, the weakest of the peer group, with no undrawn committed facilities counted in the measure."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "credit_metrics",
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 3,
+   "try": 1
+  },
+  {
+   "error": null,
+   "rejections": [],
+   "sections": [
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 0,
+   "try": 2
+  }
+ ],
  "commentary": {
   "credit_metrics": {
    "notes": [],

@@ -352,8 +352,8 @@ Seven decisions are still open; the first three should be settled before M2.
 - [x] Liquid investments: each company's own net debt definition, recorded per issuer with evidence (decision 0008).
 - [x] Ratings: left out of v1 (decision 0008).
 - [x] Repository owner: Imane's GitHub account (`imi79/airlines-analyzer`).
-- [ ] License: MIT for visibility, or source-available to keep the commercial option open?
-- [ ] Commentary language: English only, or an English and French toggle?
+- [x] License: MIT, public repository (M7 plan, question 1; [decision 0021](decisions/0021-m7-portfolio.md)).
+- [x] Commentary language: English only in v1, French later (M4 plan, question 2; M7 plan, question 5).
 - [x] Live mode on the public link: closed in v1, demo only ([decision 0019](decisions/0019-m5-web-app.md)).
 
 ## Working instructions for Claude Code

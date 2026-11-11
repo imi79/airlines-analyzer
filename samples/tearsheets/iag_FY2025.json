@@ -1,4 +1,99 @@
 {
+ "attempts": [
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "net_leverage.peer_rank@FY2025 is listed in the form but not used in the text",
+     "rule": "5",
+     "section": "snapshot",
+     "sentence": 2,
+     "text": "The EBITDA margin widened by 2.3 points to 23.0% and net leverage fell by 0.35x to 0.78x, the lowest of the network peers."
+    },
+    {
+     "message": "'up' needs a 'up' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "operating_performance",
+     "sentence": 1,
+     "text": "Capacity grew by 2.4% to 351.4bn available seat kilometres, while traffic was broadly unchanged, with RPK up 1.3% to 300.8bn and passengers stable at 121.6m."
+    },
+    {
+     "message": "word that states a number: 'first'",
+     "rule": "1",
+     "section": "peer_positioning",
+     "sentence": 2,
+     "text": "Its EBITDA margin of 23.0% is the highest of the group (1st of 3), well above the peer median of 15.3%, and interest coverage of 11.49x also ranks first (1st of 3)."
+    },
+    {
+     "message": "advance_ticket_cover.peer_rank@FY2025 is listed in the form but not used in the text",
+     "rule": "5",
+     "section": "watch_items",
+     "sentence": 3,
+     "text": "Customer prepayments: advance ticket cover of 96.6% is above the peer median of 67.4% and the highest of the group, a sensitivity if bookings slow."
+    },
+    {
+     "message": "'lower' needs a 'down' or 'below_peers' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "watch_items",
+     "sentence": 4,
+     "text": "Unit cost: CASK ex-fuel rose by 2.0% to 6.01 euro cents, so the improvement in total unit cost rests on the lower fuel bill."
+    },
+    {
+     "message": "'improvement' needs a 'better' or 'better_than_peers' or 'best_in_group' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "watch_items",
+     "sentence": 4,
+     "text": "Unit cost: CASK ex-fuel rose by 2.0% to 6.01 euro cents, so the improvement in total unit cost rests on the lower fuel bill."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "credit_metrics",
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 2,
+   "try": 1
+  },
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'fall' needs a 'down' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "watch_items",
+     "sentence": 4,
+     "text": "Unit cost: CASK ex-fuel rose by 2.0% to 6.01 euro cents, so the fall in total unit cost rests on the lower fuel bill."
+    },
+    {
+     "message": "'lower' needs a 'down' or 'below_peers' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "watch_items",
+     "sentence": 4,
+     "text": "Unit cost: CASK ex-fuel rose by 2.0% to 6.01 euro cents, so the fall in total unit cost rests on the lower fuel bill."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "operating_performance",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 0,
+   "try": 2
+  },
+  {
+   "error": null,
+   "rejections": [],
+   "sections": [
+    "watch_items"
+   ],
+   "style_notes": 0,
+   "try": 3
+  }
+ ],
  "commentary": {
   "credit_metrics": {
    "notes": [],

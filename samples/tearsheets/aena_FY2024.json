@@ -1,4 +1,53 @@
 {
+ "attempts": [
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'unchanged' needs a 'flat' or 'in_line_with_peers' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "operating_performance",
+     "sentence": 2,
+     "text": "Aeronautical revenue per passenger increased by 4.1% to EUR 10.18, with the CNMC setting the maximum adjusted annual revenue per passenger for 2025 unchanged versus the prior year."
+    },
+    {
+     "message": "'growth' needs a 'up' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "watch_items",
+     "sentence": 3,
+     "text": "Traffic: growth slowed by 7.0 points to 9.2%, and the CNMC left the maximum adjusted annual revenue per passenger for 2025 unchanged versus the prior year."
+    },
+    {
+     "message": "'unchanged' needs a 'flat' or 'in_line_with_peers' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "watch_items",
+     "sentence": 3,
+     "text": "Traffic: growth slowed by 7.0 points to 9.2%, and the CNMC left the maximum adjusted annual revenue per passenger for 2025 unchanged versus the prior year."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "credit_metrics",
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 1,
+   "try": 1
+  },
+  {
+   "error": null,
+   "rejections": [],
+   "sections": [
+    "operating_performance",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 0,
+   "try": 2
+  }
+ ],
  "commentary": {
   "credit_metrics": {
    "notes": [],

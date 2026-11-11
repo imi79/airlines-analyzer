@@ -1,4 +1,71 @@
 {
+ "attempts": [
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'above' needs a 'up' or 'above_peers' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "operating_performance",
+     "sentence": 4,
+     "text": "The regulator set the average airport charge per passenger for 2026 above the prior year's level, which supports the aeronautical revenue base."
+    },
+    {
+     "message": "word that states a number: 'first'",
+     "rule": "1",
+     "section": "watch_items",
+     "sentence": 3,
+     "text": "Margins: the EBITDA margin narrowed by 0.6 points to 60.3%, a first sign of pressure on operating profitability."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "credit_metrics",
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 3,
+   "try": 1
+  },
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'above' needs a 'up' or 'above_peers' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "operating_performance",
+     "sentence": 4,
+     "text": "The regulator set the average airport charge per passenger for 2026 above the prior year's level, which supports the aeronautical revenue base."
+    }
+   ],
+   "sections": [
+    "operating_performance",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 0,
+   "try": 2
+  },
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'above' needs a 'up' or 'above_peers' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "operating_performance",
+     "sentence": 4,
+     "text": "The regulator set the average airport charge per passenger for 2026 above the prior year's level, which supports the aeronautical revenue base."
+    }
+   ],
+   "sections": [
+    "operating_performance"
+   ],
+   "style_notes": 0,
+   "try": 3
+  }
+ ],
  "commentary": {
   "credit_metrics": {
    "notes": [],

@@ -177,3 +177,17 @@ def test_demo_export_includes_the_session_and_saves_nothing(demo):
     assert len(at.get("download_button")) == 3
     after = set(EXPORTS.glob("*")) if EXPORTS.exists() else set()
     assert after == before
+
+
+def test_try_the_verifier_on_the_method_page(demo):
+    at = run(("afkl", 2025), "views/method_page.py")
+    at.selectbox(key="verifier-example-afkl-2025").set_value(1).run()  # the wrong direction
+    at.button(key="verifier-check-afkl-2025").click().run()
+    assert not at.exception
+    assert at.error and "Rejected" in at.error[0].value
+    assert any("Rule 4" in m.value for m in at.markdown)
+
+
+def test_audit_page_shows_the_rejected_attempts(demo):
+    at = run(("easyjet", 2025), "views/audit_page.py")
+    assert any(e.label.startswith("Try 1:") and "rejected" in e.label for e in at.expander)

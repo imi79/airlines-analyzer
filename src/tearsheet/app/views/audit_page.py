@@ -15,7 +15,7 @@ from tearsheet.app import state
 from tearsheet.app.cards import open_sources, safe, selection_opens
 from tearsheet.config import ROOT
 from tearsheet.llm.settings import load_settings
-from tearsheet.render import notes, tearsheet
+from tearsheet.render import notes, tearsheet, verifier_demo
 from tearsheet.render.sources import SOURCE_WORDS, STATUS_WORDS, figure_card, ref_of_key
 
 lib = state.get_library()
@@ -171,6 +171,39 @@ else:
             for e in ts["events"]:
                 if st.button(f"{e['title']} ({e['status']})", key=f"ev-{e['event_id']}"):
                     open_sources([{"fid": e["event_id"]}], e["title"])
+
+# --- How the draft was checked: the AI's attempts and the verifier's verdicts (M7) ----------
+st.subheader("How the AI's draft was checked")
+tries = ts.get("attempts") or []
+if not tries:
+    st.info("No recorded draft for this year.")
+else:
+    rejected = sum(len(a["rejections"]) for a in tries)
+    st.caption(
+        f"The AI handed in {len(tries)} version(s). The verifier rejected {rejected} sentence(s) "
+        "along the way; a rejected section goes back to the AI with the reasons, up to two "
+        "times. Only what passed reaches the tearsheet."
+    )
+    for a in tries:
+        n = len(a["rejections"])
+        head = (
+            f"Try {a['try']}: "
+            + (f"{n} sentence(s) rejected" if n else "passed the verifier")
+            + f" ({', '.join(a['sections'])})"
+        )
+        with st.expander(head, expanded=bool(n) and a["try"] == 1):
+            if a.get("error"):
+                st.warning(safe(a["error"]))
+            for r in a["rejections"]:
+                title = verifier_demo.RULES.get(r["rule"], r["rule"])
+                where = f"{r['section'].replace('_', ' ')}, sentence {r['sentence']}" if (
+                    r["sentence"]) else r["section"].replace("_", " ")  # fmt: skip
+                st.markdown(f"**Rule {r['rule']}: {safe(title)}** · {safe(where)}")
+                if r["text"]:
+                    st.markdown(f"> {safe(r['text'])}")
+                st.caption(safe(r["message"]))
+            if a["style_notes"]:
+                st.caption(f"Plus {a['style_notes']} note(s) on style, sent back but not rejected.")
 
 # --- Live mode: rebuild and redraft -----------------------------------------------------------
 if live:

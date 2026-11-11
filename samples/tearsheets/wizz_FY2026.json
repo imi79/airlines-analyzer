@@ -1,4 +1,75 @@
 {
+ "attempts": [
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "cash_liquidity_to_revenue@FY2026 is listed in the form but not used in the text",
+     "rule": "5",
+     "section": "peer_positioning",
+     "sentence": 3,
+     "text": "Cash generation also trails the group, with FFO to debt of 15.2% and FCF to debt of 11.1% below medians of 35.4% and 14.6%, while cash liquidity to revenue sits in the middle of the group."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "credit_metrics",
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 3,
+   "try": 1
+  },
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'above_peers' claimed on ffo_to_debt.peer_median@FY2026, but it is below",
+     "rule": "3",
+     "section": "peer_positioning",
+     "sentence": 3,
+     "text": "Cash generation trails the group, with FFO to debt and FCF to debt below medians of 35.4% and 14.6%, while cash liquidity to revenue of 34.3% sits in the middle of the group."
+    },
+    {
+     "message": "'above_peers' claimed on fcf_to_debt.peer_median@FY2026, but it is below",
+     "rule": "3",
+     "section": "peer_positioning",
+     "sentence": 3,
+     "text": "Cash generation trails the group, with FFO to debt and FCF to debt below medians of 35.4% and 14.6%, while cash liquidity to revenue of 34.3% sits in the middle of the group."
+    },
+    {
+     "message": "'trails' needs a 'down' or 'below_peers' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "peer_positioning",
+     "sentence": 3,
+     "text": "Cash generation trails the group, with FFO to debt and FCF to debt below medians of 35.4% and 14.6%, while cash liquidity to revenue of 34.3% sits in the middle of the group."
+    },
+    {
+     "message": "'below' needs a 'down' or 'below_peers' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "peer_positioning",
+     "sentence": 3,
+     "text": "Cash generation trails the group, with FFO to debt and FCF to debt below medians of 35.4% and 14.6%, while cash liquidity to revenue of 34.3% sits in the middle of the group."
+    }
+   ],
+   "sections": [
+    "peer_positioning"
+   ],
+   "style_notes": 1,
+   "try": 2
+  },
+  {
+   "error": null,
+   "rejections": [],
+   "sections": [
+    "peer_positioning"
+   ],
+   "style_notes": 0,
+   "try": 3
+  }
+ ],
  "commentary": {
   "credit_metrics": {
    "notes": [],

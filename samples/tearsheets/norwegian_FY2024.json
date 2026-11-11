@@ -1,4 +1,87 @@
 {
+ "attempts": [
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'grew' needs a 'up' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "credit_metrics",
+     "sentence": 4,
+     "text": "Cash generation improved: FFO rose by 11.1% to NOK 5.7bn and free cash flow by 20.9% to NOK 5.7bn, although FFO to debt eased by 1.1 points to 35.6% as debt grew."
+    },
+    {
+     "message": "'grew' needs a 'up' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "operating_performance",
+     "sentence": 2,
+     "text": "Fuel cost increased by 21.5% to NOK 9.4bn, while the fuel share of costs fell by 5.1 points to 28.0% as revenue grew faster than fuel spending."
+    },
+    {
+     "message": "'weakening' needs a 'worse' or 'worse_than_peers' or 'worst_in_group' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "operating_performance",
+     "sentence": 3,
+     "text": "The operating result was held back by the weakening of the Norwegian krone against the US dollar and by external disruptions during the year."
+    },
+    {
+     "message": "'grew' needs a 'up' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "liquidity_funding",
+     "sentence": 1,
+     "text": "Cash and cash-like investments rose by 14.8% to NOK 10.9bn, taking cash liquidity to revenue down to 30.8% as revenue grew faster than the cash balance."
+    },
+    {
+     "message": "'rose' needs a 'up' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "watch_items",
+     "sentence": 2,
+     "text": "Margins: the EBITDA margin narrowed by 3.7 points to 18.9%, with operating profit down 16.1% as depreciation rose."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "credit_metrics",
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 3,
+   "try": 1
+  },
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'weakening' needs a 'worse' or 'worse_than_peers' or 'worst_in_group' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "operating_performance",
+     "sentence": 3,
+     "text": "The operating result was held back by the weakening of the Norwegian krone against the US dollar and by external disruptions during the year."
+    }
+   ],
+   "sections": [
+    "credit_metrics",
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 1,
+   "try": 2
+  },
+  {
+   "error": null,
+   "rejections": [],
+   "sections": [
+    "operating_performance",
+    "liquidity_funding"
+   ],
+   "style_notes": 2,
+   "try": 3
+  }
+ ],
  "commentary": {
   "credit_metrics": {
    "notes": [],

@@ -1,4 +1,133 @@
 {
+ "attempts": [
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'worse' claimed on ebitda_margin@FY2025, but it is neither better nor worse",
+     "rule": "3",
+     "section": "snapshot",
+     "sentence": 3,
+     "text": "The point to watch is liquidity: cash liquidity to revenue fell by 2.3 points to 34.9%, and the EBITDA margin of 14.2% is the weakest of the low-cost peers (3rd of 3)."
+    },
+    {
+     "message": "gross_leverage.peer_rank@FY2025 is listed in the form but not used in the text",
+     "rule": "5",
+     "section": "peer_positioning",
+     "sentence": 1,
+     "text": "easyJet has the lowest net leverage of the low-cost group (1st of 3), at -0.42x against a peer median of 1.19x, and also leads on gross leverage, interest coverage, FFO to debt and FCF to debt."
+    },
+    {
+     "message": "interest_coverage.peer_rank@FY2025 is listed in the form but not used in the text",
+     "rule": "5",
+     "section": "peer_positioning",
+     "sentence": 1,
+     "text": "easyJet has the lowest net leverage of the low-cost group (1st of 3), at -0.42x against a peer median of 1.19x, and also leads on gross leverage, interest coverage, FFO to debt and FCF to debt."
+    },
+    {
+     "message": "ffo_to_debt.peer_rank@FY2025 is listed in the form but not used in the text",
+     "rule": "5",
+     "section": "peer_positioning",
+     "sentence": 1,
+     "text": "easyJet has the lowest net leverage of the low-cost group (1st of 3), at -0.42x against a peer median of 1.19x, and also leads on gross leverage, interest coverage, FFO to debt and FCF to debt."
+    },
+    {
+     "message": "fcf_to_debt.peer_rank@FY2025 is listed in the form but not used in the text",
+     "rule": "5",
+     "section": "peer_positioning",
+     "sentence": 1,
+     "text": "easyJet has the lowest net leverage of the low-cost group (1st of 3), at -0.42x against a peer median of 1.19x, and also leads on gross leverage, interest coverage, FFO to debt and FCF to debt."
+    },
+    {
+     "message": "'worse' claimed on ebitda_margin@FY2025, but it is neither better nor worse",
+     "rule": "3",
+     "section": "peer_positioning",
+     "sentence": 2,
+     "text": "The weakest point is profitability: the EBITDA margin of 14.2% is the lowest of the group (3rd of 3) against a peer median of 21.2%."
+    },
+    {
+     "message": "capex_intensity.peer_median@FY2025 is listed in the form but not used in the text",
+     "rule": "5",
+     "section": "peer_positioning",
+     "sentence": 3,
+     "text": "Capex intensity sits in the middle of the group, advance ticket cover is in line with the peer median, and cash liquidity to revenue is the highest of the group (1st of 3)."
+    },
+    {
+     "message": "advance_ticket_cover.peer_median@FY2025 is listed in the form but not used in the text",
+     "rule": "5",
+     "section": "peer_positioning",
+     "sentence": 3,
+     "text": "Capex intensity sits in the middle of the group, advance ticket cover is in line with the peer median, and cash liquidity to revenue is the highest of the group (1st of 3)."
+    },
+    {
+     "message": "'worse' claimed on ebitda_margin@FY2025, but it is neither better nor worse",
+     "rule": "3",
+     "section": "watch_items",
+     "sentence": 1,
+     "text": "Profitability: the EBITDA margin of 14.2% is below the peer median of 21.2% and the weakest of the group (3rd of 3)."
+    },
+    {
+     "message": "cash_liquidity_to_revenue.peer_rank@FY2025 is listed in the form but not used in the text",
+     "rule": "5",
+     "section": "watch_items",
+     "sentence": 2,
+     "text": "Liquidity: cash liquidity to revenue fell by 2.3 points to 34.9%, a thinner buffer even though it remains the highest of the group."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "credit_metrics",
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 0,
+   "try": 1
+  },
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "word that states a number: 'first'",
+     "rule": "1",
+     "section": "peer_positioning",
+     "sentence": 1,
+     "text": "easyJet has the lowest net leverage of the low-cost group (1st of 3), at -0.42x against a peer median of 1.19x, and also ranks first on gross leverage (1st of 3), interest coverage (1st of 3), FFO to debt (1st of 3) and FCF to debt (1st of 3)."
+    },
+    {
+     "message": "capex_intensity.peer_median@FY2025 is listed in the form but not used in the text",
+     "rule": "5",
+     "section": "peer_positioning",
+     "sentence": 3,
+     "text": "Capex intensity sits in the middle of the group, advance ticket cover is in the middle of the group, and cash liquidity to revenue is the highest of the group (1st of 3)."
+    },
+    {
+     "message": "advance_ticket_cover.peer_median@FY2025 is listed in the form but not used in the text",
+     "rule": "5",
+     "section": "peer_positioning",
+     "sentence": 3,
+     "text": "Capex intensity sits in the middle of the group, advance ticket cover is in the middle of the group, and cash liquidity to revenue is the highest of the group (1st of 3)."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 0,
+   "try": 2
+  },
+  {
+   "error": null,
+   "rejections": [],
+   "sections": [
+    "peer_positioning"
+   ],
+   "style_notes": 0,
+   "try": 3
+  }
+ ],
  "commentary": {
   "credit_metrics": {
    "notes": [],

@@ -1,4 +1,72 @@
 {
+ "attempts": [
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'fell' needs a 'down' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "credit_metrics",
+     "sentence": 3,
+     "text": "Interest coverage improved to 6.97x as finance costs fell, and FFO was stable at EUR 1.5bn, leaving FFO to debt broadly unchanged at 14.0%."
+    },
+    {
+     "message": "'weakest' needs a 'worst_in_group' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "peer_positioning",
+     "sentence": 2,
+     "text": "Leverage is the weakest in the group on both measures, with net leverage of 4.13x against a peer median of 1.57x and gross leverage of 5.14x against 2.08x."
+    },
+    {
+     "message": "cash_liquidity_to_revenue@FY2024 is listed in the form but not used in the text",
+     "rule": "5",
+     "section": "peer_positioning",
+     "sentence": 3,
+     "text": "Cash liquidity to revenue sits in the middle of the group, while capex intensity of 19.0% is above the peer median of 16.1%."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "credit_metrics",
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 8,
+   "try": 1
+  },
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "cash_liquidity_to_revenue@FY2024 is listed in the form but not used in the text",
+     "rule": "5",
+     "section": "peer_positioning",
+     "sentence": 3,
+     "text": "Cash liquidity to revenue sits in the middle of the group, while capex intensity of 19.0% is above the peer median of 16.1%."
+    }
+   ],
+   "sections": [
+    "credit_metrics",
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning"
+   ],
+   "style_notes": 3,
+   "try": 2
+  },
+  {
+   "error": null,
+   "rejections": [],
+   "sections": [
+    "liquidity_funding",
+    "peer_positioning"
+   ],
+   "style_notes": 0,
+   "try": 3
+  }
+ ],
  "commentary": {
   "credit_metrics": {
    "notes": [],

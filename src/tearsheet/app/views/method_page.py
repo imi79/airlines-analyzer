@@ -8,6 +8,8 @@ import streamlit as st
 from tearsheet.app import state
 from tearsheet.app.cards import safe
 from tearsheet.metrics.engine import load_catalog
+from tearsheet.narrative.factsheet import FactSheet
+from tearsheet.render import verifier_demo
 
 lib = state.get_library()
 st.title("Method")
@@ -63,3 +65,56 @@ for spec in catalog.values():
     )
 st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch", height=600)
 st.caption(safe(f"{len(rows)} metrics, from src/tearsheet/metrics/catalog.yaml."))
+
+
+# --- Try the verifier (M7) ---------------------------------------------------------------------
+st.subheader("Try the verifier")
+issuer, year = state.current()
+ts = state.get_tearsheet(issuer, year)
+sheet = FactSheet.from_dict(ts["factsheet"])
+st.markdown(
+    f"The AI writes sentences with blanks such as `{{{{net_leverage@FY{year}}}}}`; code fills "
+    f"them from the checked figures. Put a sentence through the verifier on "
+    f"**{safe(ts['name'])} {safe(ts['period_label'])}**: pick an example, or write your own."
+)
+demos = verifier_demo.examples(sheet)
+choice = st.selectbox(
+    "Example",
+    range(len(demos)),
+    format_func=lambda n: demos[n]["name"],
+    key=f"verifier-example-{issuer}-{year}",
+)
+text = st.text_area(
+    "Sentence, with figures as {{blanks}}",
+    demos[choice]["text"] if demos else "",
+    key=f"verifier-text-{issuer}-{year}-{choice}",
+    height=80,
+)
+with st.expander("Figures this tearsheet's sentences may use"):
+    usable = [i for i in sheet.items.values() if i.kind != "event"]
+    st.dataframe(
+        pd.DataFrame(
+            [
+                {"Blank": "{{" + i.id + "}}", "Prints as": i.rendered, "What it is": i.label}
+                for i in usable
+            ]  # fmt: skip
+        ),
+        hide_index=True,
+        width="stretch",
+        height=260,
+    )
+if st.button("Check with the verifier", key=f"verifier-check-{issuer}-{year}", type="primary"):
+    verdict = verifier_demo.check(sheet, text)
+    if not verdict:
+        filled = verifier_demo.fill(text, {i.id: i.rendered for i in sheet.items.values()})
+        st.success("Passes: this sentence would reach the tearsheet as")
+        st.markdown(f"> {safe(filled)}")
+    else:
+        st.error(f"Rejected: {len(verdict)} problem(s). The AI would get this list back and "
+                 "rewrite the sentence.")  # fmt: skip
+        for v in verdict:
+            st.markdown(f"- **Rule {v['rule']}: {safe(v['title'])}**: {safe(v['message'])}")
+st.caption(
+    "The form the AI fills in also states the direction it claims for each figure; here it "
+    "is set to the direction computed by code, so only what the sentence says can be wrong."
+)

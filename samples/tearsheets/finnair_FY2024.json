@@ -1,4 +1,111 @@
 {
+ "attempts": [
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'weaker' needs a 'worse' or 'worse_than_peers' or 'worst_in_group' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "snapshot",
+     "sentence": 1,
+     "text": "Finnair, the Finnish network carrier, ended FY2024 with revenue up 2.0% to EUR 3.0bn but a weaker earnings base, as industrial action in Finland led to the cancellation of a large number of flights in the early and late parts of the year."
+    },
+    {
+     "message": "'fell' needs a 'down' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "credit_metrics",
+     "sentence": 2,
+     "text": "Total debt was reduced by 7.9% to EUR 1.9bn and net debt by 11.1% to EUR 981m, yet gross leverage rose by 0.43x to 4.20x as EBITDA fell."
+    },
+    {
+     "message": "word that states a number: 'one'",
+     "rule": "1",
+     "section": "liquidity_funding",
+     "sentence": 4,
+     "text": "Funding was refinanced during the year: a new unsecured senior bond was issued to replace the old one, and a new secured revolving credit facility was agreed and left unused at year-end."
+    },
+    {
+     "message": "'down' needs a 'down' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "watch_items",
+     "sentence": 1,
+     "text": "Leverage: net leverage rose by 0.16x to 2.21x, above the peer median of 1.88x, so the earnings base needs to recover to bring it down."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "credit_metrics",
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 3,
+   "try": 1
+  },
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'weaker' needs a 'worse' or 'worse_than_peers' or 'worst_in_group' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "snapshot",
+     "sentence": 1,
+     "text": "Finnair, the Finnish network carrier, ended FY2024 with revenue up 2.0% to EUR 3.0bn but a weaker earnings base, as industrial action in Finland led to the cancellation of a large number of flights in the early and late parts of the year."
+    },
+    {
+     "message": "word that states a number: 'one'",
+     "rule": "1",
+     "section": "liquidity_funding",
+     "sentence": 4,
+     "text": "Funding was refinanced during the year: a new unsecured senior bond was issued to replace the old one, and a new secured revolving credit facility was agreed and left unused at year-end."
+    },
+    {
+     "message": "'down' needs a 'down' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "watch_items",
+     "sentence": 1,
+     "text": "Leverage: net leverage rose by 0.16x to 2.21x, above the peer median of 1.88x, so the earnings base needs to recover to bring it down."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "credit_metrics",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 2,
+   "try": 2
+  },
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'lower' needs a 'down' or 'below_peers' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "snapshot",
+     "sentence": 1,
+     "text": "Finnair, the Finnish network carrier, ended FY2024 with revenue up 2.0% to EUR 3.0bn but a lower earnings base, as industrial action in Finland led to the cancellation of a large number of flights in the early and late parts of the year."
+    },
+    {
+     "message": "'down' needs a 'down' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "watch_items",
+     "sentence": 1,
+     "text": "Leverage: net leverage rose by 0.16x to 2.21x, above the peer median of 1.88x, so the earnings base needs to recover to bring it down."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 2,
+   "try": 3
+  }
+ ],
  "commentary": {
   "credit_metrics": {
    "notes": [],

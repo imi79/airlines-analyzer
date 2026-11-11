@@ -1,4 +1,38 @@
 {
+ "attempts": [
+  {
+   "error": null,
+   "rejections": [],
+   "sections": [
+    "snapshot",
+    "credit_metrics",
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 3,
+   "try": 1
+  },
+  {
+   "error": null,
+   "rejections": [],
+   "sections": [
+    "peer_positioning"
+   ],
+   "style_notes": 3,
+   "try": 2
+  },
+  {
+   "error": null,
+   "rejections": [],
+   "sections": [
+    "peer_positioning"
+   ],
+   "style_notes": 3,
+   "try": 3
+  }
+ ],
  "commentary": {
   "credit_metrics": {
    "notes": [],

@@ -1,4 +1,84 @@
 {
+ "attempts": [
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "cash_liquidity_to_revenue.peer_rank@FY2025 is listed in the form but not used in the text",
+     "rule": "5",
+     "section": "snapshot",
+     "sentence": 3,
+     "text": "The point to watch is cash liquidity, which fell by 3.9 points to 30.1% of revenue, the weakest of the airport peers."
+    },
+    {
+     "message": "'growth' needs a 'up' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "credit_metrics",
+     "sentence": 2,
+     "text": "Total debt was broadly unchanged at EUR 10.6bn and net debt at EUR 8.6bn, so the earnings growth took gross leverage down by 0.59x to 4.55x."
+    },
+    {
+     "message": "cash_liquidity_to_revenue.peer_rank@FY2025 is listed in the form but not used in the text",
+     "rule": "5",
+     "section": "watch_items",
+     "sentence": 1,
+     "text": "Liquidity: cash liquidity to revenue of 30.1% is below the peer median of 32.6% and the weakest of the group, with cash and cash-like investments down by 3.8% to EUR 2.0bn."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "credit_metrics",
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 3,
+   "try": 1
+  },
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'higher' needs a 'up' or 'above_peers' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "credit_metrics",
+     "sentence": 2,
+     "text": "Total debt was broadly unchanged at EUR 10.6bn and net debt at EUR 8.6bn, so the higher earnings took gross leverage down by 0.59x to 4.55x."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "credit_metrics",
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 3,
+   "try": 2
+  },
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'growth' needs a 'up' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "credit_metrics",
+     "sentence": 2,
+     "text": "Total debt was broadly unchanged at EUR 10.6bn and net debt at EUR 8.6bn, so the earnings growth took gross leverage down by 0.59x to 4.55x."
+    }
+   ],
+   "sections": [
+    "credit_metrics",
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning"
+   ],
+   "style_notes": 2,
+   "try": 3
+  }
+ ],
  "commentary": {
   "credit_metrics": {
    "notes": [

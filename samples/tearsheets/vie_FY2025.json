@@ -1,4 +1,78 @@
 {
+ "attempts": [
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'fell' needs a 'down' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "snapshot",
+     "sentence": 1,
+     "text": "Flughafen Wien, the Vienna airport group, grew revenue by 7.2% to EUR 1.1bn in FY2025, but earnings fell as write-offs on the abandoned third runway project and higher personnel costs weighed on the result."
+    },
+    {
+     "message": "'above' needs a 'up' or 'above_peers' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "liquidity_funding",
+     "sentence": 1,
+     "text": "Cash and cash-like investments fell by 17.2% to EUR 470m, still comfortably above total debt of EUR 55.9m."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "credit_metrics",
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 4,
+   "try": 1
+  },
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'declined' needs a 'down' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "snapshot",
+     "sentence": 1,
+     "text": "Flughafen Wien, the Vienna airport group, grew revenue by 7.2% to EUR 1.1bn in FY2025, but earnings declined as write-offs on the abandoned third runway project and higher personnel costs weighed on the result."
+    },
+    {
+     "message": "'exceeds' needs a 'up' or 'above_peers' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "liquidity_funding",
+     "sentence": 1,
+     "text": "Cash and cash-like investments fell by 17.2% to EUR 470m, a buffer that still exceeds the group's small debt stock."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "liquidity_funding"
+   ],
+   "style_notes": 0,
+   "try": 2
+  },
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'above' needs a 'up' or 'above_peers' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "liquidity_funding",
+     "sentence": 1,
+     "text": "Cash and cash-like investments fell by 17.2% to EUR 470m, a buffer that still stands well above the group's small debt stock."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "liquidity_funding"
+   ],
+   "style_notes": 0,
+   "try": 3
+  }
+ ],
  "commentary": {
   "credit_metrics": {
    "notes": [],

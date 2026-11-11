@@ -1,7 +1,10 @@
 # M7 plan: the portfolio piece, live on a public link
 
-Status: **draft, waiting for Imane's approval.** No code until the plan is approved (working
-rules). Starting point: `main` at the M6 close, 533 tests green.
+Status: **approved by Imane** (2026-11-11) with every recommendation: 1. public repository,
+MIT licence; 2. history tidied once before publishing, with a go-ahead at that step; 3. Imane
+writes the three analyst views; 4. Air France-KLM, easyJet and Aena FY2025 as samples; 5.
+commentary in English only, French later; 6. a rehearsal in the chat for the second checklist
+item. Built in the same session, on `m7-portfolio`.
 
 ## What M7 is for
 

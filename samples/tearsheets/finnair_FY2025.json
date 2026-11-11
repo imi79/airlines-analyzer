@@ -1,4 +1,130 @@
 {
+ "attempts": [
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'fell' needs a 'down' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "credit_metrics",
+     "sentence": 3,
+     "text": "Total debt was reduced by 4.4% to EUR 1.8bn, but gross leverage rose by 0.17x to 4.37x as EBITDA fell."
+    },
+    {
+     "message": "'up' claimed on passengers.change@FY2025, but it moved flat",
+     "rule": "3",
+     "section": "operating_performance",
+     "sentence": 1,
+     "text": "Passengers were broadly stable at 11.9m, up 2.0%, with the fleet at 79 aircraft and an average age of 14.3 years."
+    },
+    {
+     "message": "'down' claimed on fuel_cost.change@FY2025, but it moved flat",
+     "rule": "3",
+     "section": "operating_performance",
+     "sentence": 2,
+     "text": "Fuel cost was broadly unchanged at EUR 879m, down 1.7%, and the fuel share of costs fell by 1.6 points to 28.9%."
+    },
+    {
+     "message": "'increased' needs a 'up' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "operating_performance",
+     "sentence": 3,
+     "text": "Costs related to environmental regulation increased significantly during the year, with sustainable aviation fuel use and changes to the EU Emissions Trading System weighing on the result."
+    },
+    {
+     "message": "fcf_to_debt@FY2025 is listed in the form but not used in the text",
+     "rule": "5",
+     "section": "peer_positioning",
+     "sentence": 3,
+     "text": "FCF to debt sits in the middle of the group, and advance ticket cover of 67.4% is also in the middle of the group."
+    },
+    {
+     "message": "'increased' needs a 'up' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "watch_items",
+     "sentence": 4,
+     "text": "Cost base: the fuel share of costs of 28.9% is above the peer median of 27.0%, and environmental regulation costs increased significantly during the year."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "credit_metrics",
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 3,
+   "try": 1
+  },
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'rose' needs a 'up' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "operating_performance",
+     "sentence": 3,
+     "text": "Costs related to environmental regulation rose significantly during the year, with sustainable aviation fuel use and changes to the EU Emissions Trading System weighing on the result."
+    },
+    {
+     "message": "fcf_to_debt.peer_rank@FY2025 is listed in the form but not used in the text",
+     "rule": "5",
+     "section": "peer_positioning",
+     "sentence": 3,
+     "text": "FCF to debt sits in the middle of the group, and advance ticket cover is also in the middle of the group."
+    },
+    {
+     "message": "advance_ticket_cover.peer_rank@FY2025 is listed in the form but not used in the text",
+     "rule": "5",
+     "section": "peer_positioning",
+     "sentence": 3,
+     "text": "FCF to debt sits in the middle of the group, and advance ticket cover is also in the middle of the group."
+    },
+    {
+     "message": "'rose' needs a 'up' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "watch_items",
+     "sentence": 4,
+     "text": "Cost base: the fuel share of costs of 28.9% is above the peer median of 27.0%, and costs related to environmental regulation rose significantly during the year."
+    }
+   ],
+   "sections": [
+    "credit_metrics",
+    "operating_performance",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 0,
+   "try": 2
+  },
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'increased' needs a 'up' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "operating_performance",
+     "sentence": 3,
+     "text": "Costs related to environmental regulation increased significantly during the year, with sustainable aviation fuel use and changes to the EU Emissions Trading System weighing on the result."
+    },
+    {
+     "message": "'increased' needs a 'up' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "watch_items",
+     "sentence": 4,
+     "text": "Cost base: the fuel share of costs of 28.9% is above the peer median of 27.0%, and costs related to environmental regulation increased significantly during the year."
+    }
+   ],
+   "sections": [
+    "operating_performance",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 0,
+   "try": 3
+  }
+ ],
  "commentary": {
   "credit_metrics": {
    "notes": [],

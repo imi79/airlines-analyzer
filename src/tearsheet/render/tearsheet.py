@@ -18,6 +18,7 @@ import yaml
 from tearsheet.config import CONFIG, ROOT, load_issuers
 from tearsheet.narrative.factsheet import FactSheet, add_events
 from tearsheet.render.library import SAMPLES, Library, key, small_debt
+from tearsheet.render.verifier_demo import attempts
 
 TEARSHEETS = SAMPLES / "tearsheets"
 APP_CONFIG = CONFIG / "app.yaml"
@@ -66,6 +67,7 @@ def from_database(db_path: Path, sheet: FactSheet) -> dict:
         "commentary": commentary,
         "events": event_rows,
         "run": run,
+        "attempts": attempts(sheet.issuer, sheet.fiscal_year, sheet.rendered()),
     }
 
 

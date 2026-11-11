@@ -1,4 +1,39 @@
 {
+ "attempts": [
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'growth' needs a 'up' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "watch_items",
+     "sentence": 2,
+     "text": "Traffic: growth of 7.3% was below the peer median of 8.3% and the weakest of the group (2nd of 2)."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "credit_metrics",
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 4,
+   "try": 1
+  },
+  {
+   "error": null,
+   "rejections": [],
+   "sections": [
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 0,
+   "try": 2
+  }
+ ],
  "commentary": {
   "credit_metrics": {
    "notes": [],

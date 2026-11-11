@@ -1,4 +1,45 @@
 {
+ "attempts": [
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'grew' needs a 'up' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "credit_metrics",
+     "sentence": 4,
+     "text": "FFO rose by 2.1% to EUR 3.4bn, but FFO to debt fell by 1.2 points to 23.4% as debt grew, and FCF to debt dropped by 2.0 points to -1.6%."
+    },
+    {
+     "message": "word that states a number: 'two'",
+     "rule": "1",
+     "section": "liquidity_funding",
+     "sentence": 3,
+     "text": "The group launched a cash tender offer on two existing bond tranches and announced its intention to issue new bonds to refinance part of its existing debt."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "credit_metrics",
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 0,
+   "try": 1
+  },
+  {
+   "error": null,
+   "rejections": [],
+   "sections": [
+    "credit_metrics",
+    "liquidity_funding"
+   ],
+   "style_notes": 0,
+   "try": 2
+  }
+ ],
  "commentary": {
   "credit_metrics": {
    "notes": [],

@@ -1,4 +1,87 @@
 {
+ "attempts": [
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'increased' needs a 'up' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "snapshot",
+     "sentence": 3,
+     "text": "The point to watch is leverage against the peer group: net leverage of 4.28x compares with a peer median of 0.78x, and Fitch downgraded the company citing higher leverage and increased costs."
+    },
+    {
+     "message": "'rose' needs a 'up' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "credit_metrics",
+     "sentence": 1,
+     "text": "Revenue rose by 3.8% to EUR 5.3bn, but EBITDA fell by 4.9% to EUR 1.1bn as unit costs rose."
+    },
+    {
+     "message": "'up' needs a 'up' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "operating_performance",
+     "sentence": 1,
+     "text": "Passengers rose by 2.2% to 63.4m while capacity was broadly unchanged, with ASK up 0.1% to 121.7bn available seat kilometres."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "credit_metrics",
+    "operating_performance",
+    "liquidity_funding",
+    "peer_positioning",
+    "watch_items"
+   ],
+   "style_notes": 1,
+   "try": 1
+  },
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'increased' needs a 'up' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "snapshot",
+     "sentence": 3,
+     "text": "The point to watch is leverage against the peer group: net leverage of 4.28x compares with a peer median of 0.78x, and Fitch downgraded the company citing higher leverage and increased costs."
+    },
+    {
+     "message": "'up' needs a 'up' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "operating_performance",
+     "sentence": 1,
+     "text": "Passengers rose by 2.2% to 63.4m while capacity was broadly unchanged, with ASK up 0.1% to 121.7bn available seat kilometres."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "credit_metrics",
+    "operating_performance",
+    "peer_positioning"
+   ],
+   "style_notes": 0,
+   "try": 2
+  },
+  {
+   "error": null,
+   "rejections": [
+    {
+     "message": "'increased' needs a 'up' claim on a figure in the same clause",
+     "rule": "4",
+     "section": "snapshot",
+     "sentence": 3,
+     "text": "The point to watch is leverage against the peer group: net leverage of 4.28x compares with a peer median of 0.78x, and Fitch downgraded the company citing higher leverage and increased costs."
+    }
+   ],
+   "sections": [
+    "snapshot",
+    "operating_performance"
+   ],
+   "style_notes": 0,
+   "try": 3
+  }
+ ],
  "commentary": {
   "credit_metrics": {
    "notes": [],
