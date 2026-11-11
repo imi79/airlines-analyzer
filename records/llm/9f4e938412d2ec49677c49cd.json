@@ -1,0 +1,167 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      }
+     ],
+     "text": "Cash and cash-like investments rose by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, taking cash liquidity to revenue up by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      }
+     ],
+     "text": "With the interest-bearing financial liabilities fully repaid, the cash pile covers the group's borrowings outright, so near-term maturities do not depend on new funding."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_capex.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_capex@FY2024"
+      }
+     ],
+     "text": "Free cash flow after lease payments fell by {{fcf_after_leases.change@FY2024}} to {{fcf_after_leases@FY2024}}, as net capex rose by {{net_capex.change@FY2024}} to {{net_capex@FY2024}}."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2024"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "capex_intensity@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_capex.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_capex@FY2024"
+      }
+     ],
+     "text": "Investment: capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}, in the middle of the peer group, and net capex rose by {{net_capex.change@FY2024}} to {{net_capex@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2024"
+      }
+     ],
+     "text": "Cash flow after leases: free cash flow after lease payments fell by {{fcf_after_leases.change@FY2024}} to {{fcf_after_leases@FY2024}}, so the cash left for debt holders narrowed even with net cash on the balance sheet."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "traffic_growth@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "traffic_growth.peer_median@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "traffic_growth.peer_rank@FY2024"
+      }
+     ],
+     "text": "Traffic: traffic growth of {{traffic_growth@FY2024}} was below the peer median of {{traffic_growth.peer_median@FY2024}} and the weakest of the group ({{traffic_growth.peer_rank@FY2024}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs"
+      },
+      {
+       "claims": [],
+       "id": "aero_revenue_per_passenger@FY2024"
+      }
+     ],
+     "text": "Regulation: airport charges are temporarily adjusted by average inflation, a rule that ends at the end of 2026, so aeronautical revenue per passenger of {{aero_revenue_per_passenger@FY2024}} depends on the tariff framework that follows."
+    }
+   ]
+  }
+ },
+ "label": "vie_FY2024 attempt 2 draft-v8",
+ "recorded_at": "2026-11-11T18:56:28+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v8",
+  "provider": "deepseek",
+  "system_sha256": "759a32520f9ec250c917f926c554cb9f126a9e17ae12fadbbc685d925eceb6df",
+  "tool_sha256": "e68d0267eaea51942182fdaf195ef3d14d80fcacad7a0c2e86ea4b0b1a05daf2",
+  "user_sha256": "d25899480ab8467d7ee4eaa409e6575cbe44b651034d3dc6ebd4a35c6ca63898"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 15034,
+  "output_tokens": 945
+ }
+}

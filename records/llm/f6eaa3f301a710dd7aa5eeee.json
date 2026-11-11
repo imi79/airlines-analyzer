@@ -1,0 +1,113 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "cash_like@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "cash_like.change@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue.peer_median@FY2025"
+      }
+     ],
+     "text": "Cash and cash-like investments were stable at {{cash_like@FY2025}}, a change of {{cash_like.change@FY2025}}, and cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "debt_due_1y.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "debt_due_1y@FY2025"
+      }
+     ],
+     "text": "Debt due within one year rose by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, so the near-term maturities are covered by cash on hand without new funding."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases_to_debt@FY2024"
+      }
+     ],
+     "text": "In FY2024 free cash flow after lease payments was {{fcf_after_leases@FY2024}}, or {{fcf_after_leases_to_debt@FY2024}} of debt, showing that lease payments absorbed the cash that free cash flow left out."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "contract_liabilities.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover@FY2025"
+      }
+     ],
+     "text": "Customer prepayments rose, with contract liabilities up {{contract_liabilities.change@FY2025}} to {{contract_liabilities@FY2025}}, and advance ticket cover increased by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}, the lowest of the peer group."
+    }
+   ]
+  }
+ },
+ "label": "afkl_FY2025 attempt 3 draft-v8",
+ "recorded_at": "2026-11-11T18:57:18+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v8",
+  "provider": "deepseek",
+  "system_sha256": "759a32520f9ec250c917f926c554cb9f126a9e17ae12fadbbc685d925eceb6df",
+  "tool_sha256": "4ca8a30aa52873847dabeefc1bf036d2e4b8f878dd1dafa2f23422ddea9a9ff3",
+  "user_sha256": "3502241cea7ff1ba892d9112d5a4bcc3c439a46f1ec18218b85716a3422c0ef7"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14802,
+  "output_tokens": 636
+ }
+}

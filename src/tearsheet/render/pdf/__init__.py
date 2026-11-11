@@ -25,6 +25,7 @@ import jinja2
 
 from tearsheet.narrative.factsheet import load_narrative
 from tearsheet.narrative.render import PLACEHOLDER, SMALL_UNITS
+from tearsheet.ratings import header_text
 from tearsheet.render import charts, notes
 from tearsheet.render.library import Library, key
 from tearsheet.render.manifest import summary_line
@@ -271,6 +272,7 @@ def context(lib: Library, ts: dict, note: dict | None, manifest: dict, font_size
         "kind": KIND_WORDS.get(info.get("segment") or "", info["type"].capitalize()),
         "currency": ts["currency"],
         "peer_group": ts["peer_group"],
+        "rating": header_text(ts.get("rating")),
         "exported": f"{exported:%d %b %Y}",
         "prepared_by": config.get("analyst") if (note.get("analyst_view") or "").strip() else None,
         "snapshot": sections["snapshot"],

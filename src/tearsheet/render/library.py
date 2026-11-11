@@ -75,6 +75,14 @@ class Concepts:
             k: " ".join(str(v.get("definition") or "").split()) for k, v in items.items()
         }
         definition |= {k: " ".join(str(v["definition"]).split()) for k, v in catalog.items()}
+        from tearsheet.extract.maturity import line_labels
+
+        definition |= {
+            k: "Read from the company's debt maturity table and checked by code: quotes word for "
+            "word, column labels read as time spans, the table footed and compared with the "
+            "balance sheet (M8)."
+            for k in line_labels()
+        }
         better = {k: v.get("higher_is_better") for k, v in catalog.items()}
         return cls(labels(catalog), unit, definition, better)
 

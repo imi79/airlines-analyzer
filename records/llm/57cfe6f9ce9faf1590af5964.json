@@ -1,0 +1,182 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "cash_like.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "cash_liquidity_to_revenue.peer_median@FY2025"
+      }
+     ],
+     "text": "Cash and cash-like investments fell by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, taking cash liquidity to revenue down by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, still above the peer median of {{cash_liquidity_to_revenue.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "total_debt@FY2025"
+      }
+     ],
+     "text": "That cash pile covers the whole debt stock of {{total_debt@FY2025}} many times over, so near-term maturities are met from existing cash without new funding."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "fcf_after_leases.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_capex.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_capex@FY2025"
+      }
+     ],
+     "text": "Free cash flow after lease payments fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}}, as net capex rose by {{net_capex.change@FY2025}} to {{net_capex@FY2025}}."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "fcf_after_leases.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_capex.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_capex@FY2025"
+      }
+     ],
+     "text": "Cash generation: free cash flow after lease payments fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}} as net capex rose by {{net_capex.change@FY2025}} to {{net_capex@FY2025}}, so the investment programme now absorbs most of the cash the group generates."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "cash_like.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      }
+     ],
+     "text": "Cash liquidity: cash and cash-like investments fell by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, and cash liquidity to revenue declined by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, a thinner buffer against the capital spending plan."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "capex_intensity.peer_median@FY2025"
+      }
+     ],
+     "text": "Investment: capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, above the peer median of {{capex_intensity.peer_median@FY2025}}, which keeps pressure on free cash flow while the programme runs."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:costs"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "ebitda_margin.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin@FY2025"
+      }
+     ],
+     "text": "Cost base: personnel expenses rose on collective wage increases and additions to personnel provisions, partly related to underutilisation, and the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}."
+    }
+   ]
+  }
+ },
+ "label": "vie_FY2025 attempt 1 draft-v8",
+ "recorded_at": "2026-11-11T18:54:52+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v8",
+  "provider": "deepseek",
+  "system_sha256": "759a32520f9ec250c917f926c554cb9f126a9e17ae12fadbbc685d925eceb6df",
+  "tool_sha256": "e68d0267eaea51942182fdaf195ef3d14d80fcacad7a0c2e86ea4b0b1a05daf2",
+  "user_sha256": "5f481bb00eb7af45bee285ab3f26b3c1e0e2577703cf47181ab0db225475f02c"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 13986,
+  "output_tokens": 1058
+ }
+}

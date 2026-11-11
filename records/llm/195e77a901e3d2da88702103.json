@@ -1,0 +1,79 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "cash_like.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      }
+     ],
+     "text": "Cash and cash-like investments fell by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, taking cash liquidity to revenue down by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}."
+    },
+    {
+     "facts": [],
+     "text": "That cash pile exceeds the group's borrowings many times over, so near-term maturities are met from existing cash without new funding."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "fcf_after_leases.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_capex.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_capex@FY2025"
+      }
+     ],
+     "text": "Free cash flow after lease payments fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}}, as net capex rose by {{net_capex.change@FY2025}} to {{net_capex@FY2025}}."
+    }
+   ]
+  }
+ },
+ "label": "vie_FY2025 attempt 2 draft-v8",
+ "recorded_at": "2026-11-11T18:54:55+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v8",
+  "provider": "deepseek",
+  "system_sha256": "759a32520f9ec250c917f926c554cb9f126a9e17ae12fadbbc685d925eceb6df",
+  "tool_sha256": "4ca8a30aa52873847dabeefc1bf036d2e4b8f878dd1dafa2f23422ddea9a9ff3",
+  "user_sha256": "f09c13507d0686f5546f170c4a05dc60b4f5ea79add4501e45928f1f5e79662a"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14537,
+  "output_tokens": 386
+ }
+}

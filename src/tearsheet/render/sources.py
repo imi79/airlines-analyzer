@@ -78,7 +78,9 @@ def figure_card(lib: Library, figure_key: str) -> dict:
     }
     src = f["source"]
     filing = lib.filings.get(f["filing_id"] or "", {})
-    if f["source_type"] == "tagged":
+    if concept.startswith("maturity_"):
+        _maturity_lines(card, f, src, filing)
+    elif f["source_type"] == "tagged":
         concepts = ", ".join(src.get("concepts") or [])
         card["lines"] += [
             f"Filing: {f['filing_id']} ({filing.get('origin', 'filing')})",
@@ -141,6 +143,37 @@ def figure_card(lib: Library, figure_key: str) -> dict:
     return card
 
 
+def _maturity_lines(card: dict, f: dict, src: dict, filing: dict) -> None:
+    """A maturity bucket (M8): the table, its rows as printed, the time spans code read from
+    the column labels, and the checks (or the hand entry, for a supplied PDF)."""
+    basis = (src.get("basis") or "").replace("_", " ")
+    by_hand = f["source_type"] == "manual"
+    card["lines"].append(f"Document: {src.get('document')}" + (", entered by hand" if by_hand
+                                                                 else ""))  # fmt: skip
+    where = ", ".join(x for x in src.get("locations") or [] if x)
+    card["lines"].append(f"Table: “{src.get('caption', '').strip()}”" + (f" ({where})" if where
+                                                                          else ""))  # fmt: skip
+    card["lines"].append(f"Basis: {basis}")
+    for row in src.get("rows") or []:
+        cells = "; ".join(f"{c['label']} {c['printed']}" for c in row["columns"])
+        card["lines"].append(f"Row “{row['name']}”: {cells}; total {row['total']}")
+    if src.get("spans"):
+        card["lines"].append("Columns read by code as: " + ", ".join(src["spans"]))
+    if src.get("model"):
+        card["lines"].append(f"Read by {src.get('provider', '')} {src['model']}, prompt "
+                             f"{src.get('prompt_version', '')}")  # fmt: skip
+    if not src.get("checks_failed"):
+        card["lines"].append("Checks passed: quotes word for word, labels read by code, the "
+                             "table foots, agreement with the balance sheet")  # fmt: skip
+    for why in src.get("checks_failed") or []:
+        card["lines"].append(f"Check failed: {why}")
+    if f.get("note"):
+        card["lines"].append(f["note"])
+    quotes = [] if by_hand else [q.strip() for q in src.get("quotes") or [] if q and q.strip()]
+    card["quotes"] = quotes
+    card["link"] = filing.get("report_url") or filing.get("viewer_url")
+
+
 def _plain(value) -> str:
     v = Decimal(str(value))
     return f"{v:,.0f}" if v == v.to_integral() else f"{v:,f}".rstrip("0")
@@ -195,7 +228,8 @@ def item_card(lib: Library, ts: dict, fid: str) -> dict:
             "quotes": [quote],
             "inputs": [],
         }
-    return {"kind": kind, "title": item["label"], "rendered": item["rendered"], "lines": [],
+    lines = [item["note"]] if item.get("note") else []  # a rating (M8): its source
+    return {"kind": kind, "title": item["label"], "rendered": item["rendered"], "lines": lines,
             "inputs": []}  # fmt: skip
 
 

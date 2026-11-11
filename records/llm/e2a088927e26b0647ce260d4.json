@@ -1,0 +1,112 @@
+{
+ "answer": {
+  "sections": {
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue.peer_median@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "cash_liquidity_to_revenue.peer_rank@FY2025"
+      }
+     ],
+     "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2025}} and the weakest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2025}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "debt_due_1y.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "debt_due_1y@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2025"
+      }
+     ],
+     "text": "Maturities: debt due within one year rose by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, against cash and cash-like investments of {{cash_like@FY2025}}, so refinancing access matters for the coming year."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases_to_debt@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt@FY2025"
+      }
+     ],
+     "text": "Cash flow after leases: free cash flow after lease payments was {{fcf_after_leases@FY2024}} in FY2024, only {{fcf_after_leases_to_debt@FY2024}} of debt, a small fraction of the {{fcf_to_debt@FY2025}} FCF to debt reported before lease payments."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "net_leverage@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage.peer_median@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2025"
+      }
+     ],
+     "text": "Leverage: net leverage of {{net_leverage@FY2025}} is above the peer median of {{net_leverage.peer_median@FY2025}} and the highest of the group ({{net_leverage.peer_rank@FY2025}}), leaving less room if EBITDA growth slows."
+    }
+   ]
+  }
+ },
+ "label": "adp_FY2025 attempt 2 draft-v8",
+ "recorded_at": "2026-11-11T18:57:36+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v8",
+  "provider": "deepseek",
+  "system_sha256": "759a32520f9ec250c917f926c554cb9f126a9e17ae12fadbbc685d925eceb6df",
+  "tool_sha256": "bf89949808c3cfaf136bca2c04e2c1fbe93c3b5950310e089cc25b70884f3a9e",
+  "user_sha256": "c09c1293d412449f78668fe75a81d65c6fe064eaa323817d1cb16f22cdce5a65"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14417,
+  "output_tokens": 683
+ }
+}

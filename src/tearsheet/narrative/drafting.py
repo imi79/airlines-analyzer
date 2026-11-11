@@ -150,6 +150,21 @@ def retry_message(
     return "\n".join(lines)
 
 
+def kept_message(kept: dict[str, list], narrative: dict) -> str:
+    """The sections already written, which the new sections must fit (M8 redraft)."""
+    lines = [
+        "# The sections already written (kept as they are)",
+        "",
+        "For reference only: do not rewrite them. A figure they give in a body section must not "
+        "be given again in another body section; the watch items may restate it.",
+        "",
+    ]
+    for name, sentences in kept.items():
+        lines.append(f"`{name}` ({narrative['sections'][name]['title']}): "
+                     + " ".join(s.text for s in sentences))  # fmt: skip
+    return "\n".join(lines) + "\n"
+
+
 # --- Drafting with retries -----------------------------------------------------------------
 
 
@@ -208,12 +223,21 @@ def draft_commentary(
     verifier: Verifier | None = None,
     narrative: dict | None = None,
     retries: int = MAX_RETRIES,
+    sections: list[str] | None = None,
+    kept: dict[str, list] | None = None,
+    prompt_version: str = PROMPT_VERSION,
 ) -> Outcome:
+    """Draft `sections` (all by default). `kept`: sections already written and kept as they
+    are (M8: the redraft of two sections with draft-v8 keeps the other four of draft-v7); the
+    AI sees them for reference, and the verifier counts their figures for repetition."""
     narrative = narrative or load_narrative()
     verifier = verifier or Verifier(narrative)
-    system = system_prompt(narrative=narrative)
+    system = system_prompt(prompt_version, narrative=narrative)
     outcome = Outcome(sheet)
-    ask = list(narrative["sections"])
+    kept = dict(kept or {})
+    outcome.sections.update(kept)
+    outcome.status.update({k: "passed" for k in kept})
+    ask = list(sections or narrative["sections"])
     previous: Draft | None = None
     previous_errors: list[Error] = []
     for number in range(1, retries + 2):
@@ -221,6 +245,8 @@ def draft_commentary(
         outcome.attempts.append(attempt)
         if number == 1:
             message = user_message(sheet, ask, narrative)
+            if kept:
+                message += "\n" + kept_message(kept, narrative)
         else:
             accepted = {k: v for k, v in outcome.sections.items() if k not in ask}
             message = retry_message(sheet, ask, narrative, previous, previous_errors, accepted)
@@ -230,8 +256,8 @@ def draft_commentary(
                 system,
                 message,
                 tool(ask, narrative),
-                PROMPT_VERSION,
-                label=f"{sheet.key} attempt {number}",
+                prompt_version,
+                label=f"{sheet.key} attempt {number}" + (f" {prompt_version}" if kept else ""),
             )
         except NotRecorded:
             if number == 1:

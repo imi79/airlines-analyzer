@@ -13,6 +13,7 @@ from tearsheet.app.cards import safe, selection_opens, sources_button
 from tearsheet.app.notes_ui import analyst_view, edit_section, edited_sentence, get_note
 from tearsheet.narrative.factsheet import load_narrative
 from tearsheet.narrative.render import PLACEHOLDER
+from tearsheet.ratings import header_text
 from tearsheet.render import export, pdf, tearsheet
 from tearsheet.render.library import key, small_debt
 from tearsheet.render.sources import ref_of_id, ref_of_key
@@ -71,6 +72,9 @@ st.markdown(
     f"**{safe(ts['period_label'])}** · {kind[0].upper() + kind[1:]} · reporting currency "
     f"{ts['currency']} · peer group: {ts['peer_group']}"
 )
+rating_line = header_text(ts.get("rating"))
+if rating_line:
+    st.caption(safe(rating_line))  # M8: the ratings box, from the company's own report
 run = ts.get("run")
 if run is not None and run.get("matches_figures") is False:
     st.warning(
@@ -161,7 +165,7 @@ for col, chart_id in ((left, "leverage"), (right, "liquidity")):
                 alt.Chart(data)
                 .mark_bar()
                 .encode(
-                    x=alt.X("year:N", title=None),
+                    x=alt.X("year:N", title=None, sort=None),  # liquidity, then maturities
                     y=alt.Y("millions:Q", title=f"{unit} m", stack="zero"),
                     color=alt.Color("metric:N", title=None, legend=alt.Legend(orient="bottom")),
                     tooltip=["year", "metric", "rendered"],

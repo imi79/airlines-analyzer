@@ -1,0 +1,117 @@
+{
+ "answer": {
+  "sections": {
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases_to_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases_to_debt@FY2025"
+      }
+     ],
+     "text": "Cash flow after leases: FCF after leases to debt fell by {{fcf_after_leases_to_debt.change@FY2025}} to {{fcf_after_leases_to_debt@FY2025}}, so lease payments absorb most of the cash generated after capital spending."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda_margin.change@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "ebitda_margin@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:labour"
+      }
+     ],
+     "text": "Earnings: the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, below the peer median of {{ebitda_margin.peer_median@FY2025}}, with industrial action in the first half weighing on the result."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "gross_leverage.change@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "gross_leverage@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_median@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda.change@FY2025"
+      }
+     ],
+     "text": "Leverage: gross leverage rose by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}}, above the peer median of {{gross_leverage.peer_median@FY2025}}, as EBITDA declined by {{ebitda.change@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "fuel_share_of_costs@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fuel_share_of_costs.peer_median@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:costs"
+      }
+     ],
+     "text": "Costs: fuel makes up {{fuel_share_of_costs@FY2025}} of costs, above the peer median of {{fuel_share_of_costs.peer_median@FY2025}}, and costs related to environmental regulation increased during the year."
+    }
+   ]
+  }
+ },
+ "label": "finnair_FY2025 attempt 3 draft-v8",
+ "recorded_at": "2026-11-11T18:57:29+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v8",
+  "provider": "deepseek",
+  "system_sha256": "759a32520f9ec250c917f926c554cb9f126a9e17ae12fadbbc685d925eceb6df",
+  "tool_sha256": "bf89949808c3cfaf136bca2c04e2c1fbe93c3b5950310e089cc25b70884f3a9e",
+  "user_sha256": "a4fbc3703d2ef9b6505abb2ed1f4c6dd410ad08614763d2462f7c062f610b54c"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 15595,
+  "output_tokens": 629
+ }
+}

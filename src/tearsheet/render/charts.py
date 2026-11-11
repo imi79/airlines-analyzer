@@ -23,13 +23,14 @@ def leverage(points: list[dict]) -> alt.Chart:
 
 
 def liquidity(points: list[dict], currency: str) -> alt.Chart:
+    """Stacked bars in the order given: the liquidity bar, then the maturities (M8)."""
     data = pd.DataFrame(points)
     data["millions"] = data["value"] / 1e6
     return (
         alt.Chart(data)
         .mark_bar()
         .encode(
-            x=alt.X("year:N", title=None, axis=alt.Axis(labelAngle=0)),
+            x=alt.X("year:N", title=None, sort=None, axis=alt.Axis(labelAngle=0)),
             y=alt.Y("millions:Q", title=f"{currency} m", stack="zero"),
             color=alt.Color("metric:N", title=None, legend=alt.Legend(orient="bottom")),
             tooltip=["year", "metric", "rendered"],

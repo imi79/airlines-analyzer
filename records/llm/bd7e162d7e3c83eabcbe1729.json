@@ -1,0 +1,258 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "liquidity.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "liquidity@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "undrawn_facilities@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "undrawn_facilities.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2025"
+      }
+     ],
+     "text": "Liquidity fell by {{liquidity.change@FY2025}} to {{liquidity@FY2025}}, of which {{undrawn_facilities@FY2025}} in undrawn committed facilities, down {{undrawn_facilities.change@FY2025}}, and cash and cash-like investments of {{cash_like@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "debt_due_1y.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "debt_due_1y@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "short_term_debt_cover@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "short_term_debt_cover.change@FY2025"
+      }
+     ],
+     "text": "Debt due within one year was reduced by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, covered {{short_term_debt_cover@FY2025}} by liquidity, so the near-term maturities are covered without new funding even though the cover ratio eased by {{short_term_debt_cover.change@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "fcf_after_leases.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "fcf_after_leases_to_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_capex.change@FY2025"
+      }
+     ],
+     "text": "Free cash flow after lease payments, the comparable measure of cash left for debt holders, fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}}, with FCF after leases to debt down {{fcf_after_leases_to_debt.change@FY2025}} to {{fcf_after_leases_to_debt@FY2025}} as net capex rose by {{net_capex.change@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "contract_liabilities.change@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "advance_ticket_cover.change@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover@FY2025"
+      }
+     ],
+     "text": "Customer prepayments remain large: contract liabilities of {{contract_liabilities@FY2025}} were reduced by {{contract_liabilities.change@FY2025}}, while advance ticket cover rose by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "liquidity.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "liquidity@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse",
+        "in_line_with_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:capital_returns"
+      }
+     ],
+     "text": "Liquidity: liquidity fell by {{liquidity.change@FY2025}} to {{liquidity@FY2025}} and cash liquidity to revenue by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, in line with the peer median, as cash was returned to shareholders."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "fcf_after_leases.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "fcf_after_leases_to_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_capex.change@FY2025"
+      }
+     ],
+     "text": "Cash flow after leases: FCF after leases fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}} and FCF after leases to debt by {{fcf_after_leases_to_debt.change@FY2025}} to {{fcf_after_leases_to_debt@FY2025}}, as net capex rose by {{net_capex.change@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse",
+        "above_peers"
+       ],
+       "id": "advance_ticket_cover@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover.peer_median@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "advance_ticket_cover.peer_rank@FY2025"
+      }
+     ],
+     "text": "Customer prepayments: advance ticket cover of {{advance_ticket_cover@FY2025}} is above the peer median of {{advance_ticket_cover.peer_median@FY2025}} and the highest of the group ({{advance_ticket_cover.peer_rank@FY2025}}), so a larger share of liquidity is customers' prepayments."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "debt_due_1y@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "short_term_debt_cover@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "short_term_debt_cover.change@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "liquidity.change@FY2025"
+      }
+     ],
+     "text": "Near-term maturities: debt due within one year of {{debt_due_1y@FY2025}} is covered {{short_term_debt_cover@FY2025}} by liquidity, a cover ratio that eased by {{short_term_debt_cover.change@FY2025}} as liquidity fell."
+    }
+   ]
+  }
+ },
+ "label": "iag_FY2025 attempt 1 draft-v8",
+ "recorded_at": "2026-11-11T18:53:54+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v8",
+  "provider": "deepseek",
+  "system_sha256": "759a32520f9ec250c917f926c554cb9f126a9e17ae12fadbbc685d925eceb6df",
+  "tool_sha256": "e68d0267eaea51942182fdaf195ef3d14d80fcacad7a0c2e86ea4b0b1a05daf2",
+  "user_sha256": "38e35cf02c794face77aa939cb14b93dfe09a07dea2d0b4f0847e7a7918de191"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 15603,
+  "output_tokens": 1549
+ }
+}

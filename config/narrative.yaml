@@ -138,10 +138,50 @@ net_cash:
 # company is left out of the peer median and rank for them.
 small_debt:
   gross_leverage_below: 0.5
-  metrics: [ffo_to_debt, fcf_to_debt, interest_coverage]
+  metrics: [ffo_to_debt, fcf_to_debt, interest_coverage, fcf_after_leases_to_debt]
 
 # The same figure under two names (decision 0018, round 4): where cash liquidity equals cash
 # and cash-like investments (no undrawn lines are added), only the second is offered, so the
 # note never says "cash fell to X, so cash liquidity fell to X".
 same_figure:
   cash_liquidity: cash_like
+
+# M8 (decision 0022): two sections redrafted with prompt draft-v8 and the new figures (cash
+# flow after leases, debt due within one and two years, ratings); the other four sections keep
+# their draft-v7 text. Read only by the redraft, so the recorded draft-v7 requests stay as sent.
+m8_redraft:
+  prompt_version: draft-v8
+  sections: [liquidity_funding, watch_items]
+  # The names of the M8 figures hold number words ("debt due within one year"); without them
+  # the AI rewords the figure into something else ("due within the following year"). Allowed
+  # in the redraft only, so the draft-v7 checks stay as they were.
+  allowed_phrases:
+    - 'due within (?:one|two) years?'
+    - 'within (?:one|two) years?'
+    - '(?:one|two)-year'
+  liquidity_funding:
+    purpose: >-
+      Cash, undrawn committed facilities and liquidity against revenue; the debt due within one
+      year (and within two years, where the maturity table gives it) against liquidity; free
+      cash flow after lease payments; customer prepayments.
+    uses:
+      - cash_like
+      - undrawn_facilities
+      - liquidity
+      - liquidity_to_revenue
+      - cash_liquidity
+      - cash_liquidity_to_revenue
+      - debt_due_1y
+      - short_term_debt_cover
+      - borrowings_due_2y
+      - liquidity_to_borrowings_due_2y
+      - fcf_after_leases
+      - fcf_after_leases_to_debt
+      - net_capex
+      - advance_ticket_cover
+      - contract_liabilities
+  watch_items:
+    purpose: >-
+      Points a credit analyst should monitor, each tied to a figure: a weakening metric, a
+      figure below peers, a funding or liquidity point (near-term maturities against liquidity,
+      cash flow after leases).

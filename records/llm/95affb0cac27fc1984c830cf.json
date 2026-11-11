@@ -1,0 +1,201 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      }
+     ],
+     "text": "Cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, taking cash liquidity to revenue down to {{cash_liquidity_to_revenue@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "debt_due_1y.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "debt_due_1y@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      }
+     ],
+     "text": "Debt due within a year declined by {{debt_due_1y.change@FY2024}} to {{debt_due_1y@FY2024}}, which cash and cash-like investments of {{cash_like@FY2024}} cover, so the near-term maturities do not require new funding."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_capex.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_capex@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases_to_debt@FY2024"
+      }
+     ],
+     "text": "Free cash flow after lease payments fell by {{fcf_after_leases.change@FY2024}} to {{fcf_after_leases@FY2024}}, as net capex rose by {{net_capex.change@FY2024}} to {{net_capex@FY2024}}, leaving FCF after leases to debt at {{fcf_after_leases_to_debt@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      }
+     ],
+     "text": "The group issued a bond in May 2024, whose proceeds sit among the year's cash flows."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases_to_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases_to_debt@FY2024"
+      }
+     ],
+     "text": "Cash generation: free cash flow after lease payments fell by {{fcf_after_leases.change@FY2024}} to {{fcf_after_leases@FY2024}}, and FCF after leases to debt dropped by {{fcf_after_leases_to_debt.change@FY2024}} to {{fcf_after_leases_to_debt@FY2024}}, so cash left for debt holders is thin against the investment programme."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2024"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue.peer_median@FY2024"
+      }
+     ],
+     "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, in line with the peer median of {{cash_liquidity_to_revenue.peer_median@FY2024}} but lower than a year earlier."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "debt_due_1y@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2024"
+      }
+     ],
+     "text": "Maturities: debt due within a year of {{debt_due_1y@FY2024}} is covered by cash and cash-like investments of {{cash_like@FY2024}}, but the buffer narrowed as cash fell by {{cash_like.change@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2024"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "capex_intensity@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity.peer_median@FY2024"
+      }
+     ],
+     "text": "Investment: capex intensity rose by {{capex_intensity.change@FY2024}} to {{capex_intensity@FY2024}}, above the peer median of {{capex_intensity.peer_median@FY2024}}, which keeps pressure on free cash flow."
+    }
+   ]
+  }
+ },
+ "label": "adp_FY2024 attempt 2 draft-v8",
+ "recorded_at": "2026-11-11T18:56:06+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v8",
+  "provider": "deepseek",
+  "system_sha256": "759a32520f9ec250c917f926c554cb9f126a9e17ae12fadbbc685d925eceb6df",
+  "tool_sha256": "e68d0267eaea51942182fdaf195ef3d14d80fcacad7a0c2e86ea4b0b1a05daf2",
+  "user_sha256": "83c332001d2ef98906eaceb41bc92c0c664be946df09ed1b4612c8acc0fe7475"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14896,
+  "output_tokens": 1188
+ }
+}

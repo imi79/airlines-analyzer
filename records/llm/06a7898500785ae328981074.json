@@ -1,0 +1,239 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "liquidity.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "liquidity@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "undrawn_facilities@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_like.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2025"
+      }
+     ],
+     "text": "Liquidity rose by {{liquidity.change@FY2025}} to {{liquidity@FY2025}}, of which {{undrawn_facilities@FY2025}} in undrawn committed facilities, broadly unchanged on the prior year, and cash and cash-like investments increased by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "debt_due_1y.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "debt_due_1y@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "short_term_debt_cover.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "short_term_debt_cover@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "borrowings_due_2y@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "liquidity_to_borrowings_due_2y@FY2025"
+      }
+     ],
+     "text": "Debt due within one year fell by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, so short-term debt cover improved by {{short_term_debt_cover.change@FY2025}} to {{short_term_debt_cover@FY2025}}, and borrowings due within two years of {{borrowings_due_2y@FY2025}} are covered {{liquidity_to_borrowings_due_2y@FY2025}} times by liquidity, so near-term maturities are met without new funding."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases_to_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases_to_debt@FY2025"
+      }
+     ],
+     "text": "Free cash flow after lease payments fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}}, taking FCF after leases to debt down by {{fcf_after_leases_to_debt.change@FY2025}} to {{fcf_after_leases_to_debt@FY2025}}, a thin buffer once lease payments are charged against cash flow."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "contract_liabilities.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "better"
+       ],
+       "id": "advance_ticket_cover.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover@FY2025"
+      }
+     ],
+     "text": "Customer prepayments remain a material part of the funding base: contract liabilities rose by {{contract_liabilities.change@FY2025}} to {{contract_liabilities@FY2025}}, while advance ticket cover fell by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases_to_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases_to_debt@FY2025"
+      }
+     ],
+     "text": "Cash flow after leases: FCF after leases to debt fell by {{fcf_after_leases_to_debt.change@FY2025}} to {{fcf_after_leases_to_debt@FY2025}}, so lease payments absorb most of the cash generated after capital spending."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda_margin.change@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "ebitda_margin@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ebitda_margin.peer_median@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:labour"
+      }
+     ],
+     "text": "Earnings: the EBITDA margin narrowed by {{ebitda_margin.change@FY2025}} to {{ebitda_margin@FY2025}}, below the peer median of {{ebitda_margin.peer_median@FY2025}}, with industrial action in the first half weighing on the result."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "gross_leverage.change@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "gross_leverage@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "gross_leverage.peer_median@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ebitda.change@FY2025"
+      }
+     ],
+     "text": "Leverage: gross leverage rose by {{gross_leverage.change@FY2025}} to {{gross_leverage@FY2025}}, above the peer median of {{gross_leverage.peer_median@FY2025}}, as EBITDA declined by {{ebitda.change@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "fuel_share_of_costs@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fuel_share_of_costs.peer_median@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:costs"
+      }
+     ],
+     "text": "Costs: fuel makes up {{fuel_share_of_costs@FY2025}} of costs, above the peer median of {{fuel_share_of_costs.peer_median@FY2025}}, and costs related to environmental regulation increased during the year."
+    }
+   ]
+  }
+ },
+ "label": "finnair_FY2025 attempt 1 draft-v8",
+ "recorded_at": "2026-11-11T18:54:06+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v8",
+  "provider": "deepseek",
+  "system_sha256": "759a32520f9ec250c917f926c554cb9f126a9e17ae12fadbbc685d925eceb6df",
+  "tool_sha256": "e68d0267eaea51942182fdaf195ef3d14d80fcacad7a0c2e86ea4b0b1a05daf2",
+  "user_sha256": "27274afeb9d772b86a66dc14e16682927732ec9bb564b8043326756141e8b594"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14880,
+  "output_tokens": 1465
+ }
+}

@@ -29,9 +29,11 @@ kpi_table:
     - ffo_to_debt
     - fcf
     - fcf_to_debt
+    - fcf_after_leases
     - capex_intensity
     - liquidity
     - liquidity_to_revenue
+    - short_term_debt_cover
   airline:
     - passengers
     - ask
@@ -51,9 +53,16 @@ charts:
     title: Leverage
     metrics: [net_leverage, gross_leverage]
   liquidity:
-    title: Liquidity
-    # stacked: cash first, then the undrawn credit lines
+    # M8 (plan question 5): the year's liquidity beside the debt falling due, from the checked
+    # maturity table (borrowings, then leases where shown apart); without a checked table, the
+    # debt due within one year from the balance sheet. Liquidity over four years stays in the
+    # KPI table.
+    title: Liquidity against maturities
+    kind: maturities
+    # the liquidity bar, stacked: cash first, then the undrawn credit lines
     metrics: [cash_like, undrawn_facilities]
+    layers: [borrowings, leases]
+    fallback: debt_due_1y
 
 # The analyst's name recorded with approvals and edits in live mode.
 analyst: Imane

@@ -1,0 +1,209 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      }
+     ],
+     "text": "Cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, taking cash liquidity to revenue down to {{cash_liquidity_to_revenue@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "debt_due_1y.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "debt_due_1y@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "borrowings_due_2y@FY2024"
+      }
+     ],
+     "text": "Debt due within one year rose by {{debt_due_1y.change@FY2024}} to {{debt_due_1y@FY2024}}, and borrowings due within two years stood at {{borrowings_due_2y@FY2024}}, so the near-term maturities are covered by cash on hand without new funding."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases_to_debt@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_capex.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_capex@FY2024"
+      }
+     ],
+     "text": "Free cash flow after lease payments was {{fcf_after_leases@FY2024}}, or {{fcf_after_leases_to_debt@FY2024}} of debt, as net capex rose by {{net_capex.change@FY2024}} to {{net_capex@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "contract_liabilities.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover@FY2024"
+      }
+     ],
+     "text": "Customer prepayments rose, with contract liabilities up {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}} and advance ticket cover at {{advance_ticket_cover@FY2024}}, so a larger share of the cash balance is customers' money."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases_to_debt@FY2024"
+      }
+     ],
+     "text": "Cash generation: free cash flow after lease payments was {{fcf_after_leases@FY2024}}, or {{fcf_after_leases_to_debt@FY2024}} of debt, so cash flow did not cover capital spending and lease payments."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2024"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue.peer_median@FY2024"
+      }
+     ],
+     "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, the weakest of the network peers against a median of {{cash_liquidity_to_revenue.peer_median@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "debt_due_1y.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "debt_due_1y@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2024"
+      }
+     ],
+     "text": "Maturities: debt due within one year rose by {{debt_due_1y.change@FY2024}} to {{debt_due_1y@FY2024}}, against cash and cash-like investments of {{cash_like@FY2024}} that fell by {{cash_like.change@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover.change@FY2024"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "advance_ticket_cover@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover.peer_median@FY2024"
+      }
+     ],
+     "text": "Customer prepayments: advance ticket cover rose by {{advance_ticket_cover.change@FY2024}} to {{advance_ticket_cover@FY2024}}, above the peer median of {{advance_ticket_cover.peer_median@FY2024}}, which raises the sensitivity of the cash balance to bookings."
+    }
+   ]
+  }
+ },
+ "label": "afkl_FY2024 attempt 1 draft-v8",
+ "recorded_at": "2026-11-11T18:55:20+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v8",
+  "provider": "deepseek",
+  "system_sha256": "759a32520f9ec250c917f926c554cb9f126a9e17ae12fadbbc685d925eceb6df",
+  "tool_sha256": "e68d0267eaea51942182fdaf195ef3d14d80fcacad7a0c2e86ea4b0b1a05daf2",
+  "user_sha256": "a23be9b03bd1c1f8eba03f925445aa3aa2f4bb1dd5bf8422b74c31c6ba1da8e0"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14489,
+  "output_tokens": 1221
+ }
+}

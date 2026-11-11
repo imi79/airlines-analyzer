@@ -1,0 +1,213 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_like.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      }
+     ],
+     "text": "Cash and cash-like investments rose by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, taking cash liquidity to revenue up by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "debt_due_1y.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "debt_due_1y@FY2025"
+      }
+     ],
+     "text": "Debt due within a year rose by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, so cash liquidity covers the near-term maturities only in part and the balance depends on refinancing."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "fcf_after_leases.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "fcf_after_leases_to_debt@FY2025"
+      }
+     ],
+     "text": "Free cash flow after lease payments rose by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}}, but at {{fcf_after_leases_to_debt@FY2025}} of debt it was broadly unchanged and leaves little cash for debt holders once leases are paid."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "contract_liabilities.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover@FY2025"
+      }
+     ],
+     "text": "Customer prepayments rose: contract liabilities increased by {{contract_liabilities.change@FY2025}} to {{contract_liabilities@FY2025}}, and advance ticket cover rose by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}, so a larger share of liquidity is cash received for future travel."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "net_leverage.change@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "net_leverage@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage.peer_median@FY2025"
+      }
+     ],
+     "text": "Leverage: net leverage rose by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}}, the weakest of the low-cost peer group ({{net_leverage.peer_rank@FY2025}}) and well above the peer median of {{net_leverage.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ffo_to_debt.change@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "ffo_to_debt@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "ffo_to_debt.peer_median@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "ffo.change@FY2025"
+      }
+     ],
+     "text": "Cash generation: FFO to debt fell by {{ffo_to_debt.change@FY2025}} to {{ffo_to_debt@FY2025}}, below the peer median of {{ffo_to_debt.peer_median@FY2025}}, as FFO declined by {{ffo.change@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "debt_due_1y.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "debt_due_1y@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2025"
+      }
+     ],
+     "text": "Maturities: debt due within a year rose by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}} against cash and cash-like investments of {{cash_like@FY2025}}, so refinancing risk is concentrated in the near term."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "advance_ticket_cover@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "advance_ticket_cover.peer_rank@FY2025"
+      }
+     ],
+     "text": "Customer prepayments: advance ticket cover of {{advance_ticket_cover@FY2025}} is the highest of the peer group ({{advance_ticket_cover.peer_rank@FY2025}}), so liquidity relies on cash received for future travel."
+    }
+   ]
+  }
+ },
+ "label": "wizz_FY2025 attempt 2 draft-v8",
+ "recorded_at": "2026-11-11T18:56:49+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v8",
+  "provider": "deepseek",
+  "system_sha256": "759a32520f9ec250c917f926c554cb9f126a9e17ae12fadbbc685d925eceb6df",
+  "tool_sha256": "e68d0267eaea51942182fdaf195ef3d14d80fcacad7a0c2e86ea4b0b1a05daf2",
+  "user_sha256": "fc066335106ecce42f9aa5a19357d7ec135f1155b128111676ce6310f84ea372"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 16641,
+  "output_tokens": 1266
+ }
+}

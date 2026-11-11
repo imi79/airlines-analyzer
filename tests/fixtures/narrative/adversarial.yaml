@@ -223,6 +223,28 @@ faulty:
     text: We see the credit as improving.
     facts: []
 
+  # M8: ratings and the new cash flow and maturity figures (decision 0022)
+  - name: rating typed by the AI (S&P scale)
+    rule: "1"
+    text: The group is rated BBB- by Fitch, with liquidity at {{net_leverage@FY2025}}.
+    facts: [{id: net_leverage@FY2025}]
+  - name: rating typed by the AI (Moody's scale)
+    rule: "1"
+    text: Moody's rates the group Baa3, with net leverage at {{net_leverage@FY2025}}.
+    facts: [{id: net_leverage@FY2025}]
+  - name: rating with an outlook typed by the AI
+    rule: "1"
+    text: The S&P rating of BB+ stands with a stable outlook beside {{net_leverage@FY2025}}.
+    facts: [{id: net_leverage@FY2025}]
+  - name: maturity amount typed by the AI
+    rule: "1"
+    text: Borrowings of EUR 2.1bn fall due within a year, against net leverage of {{net_leverage@FY2025}}.
+    facts: [{id: net_leverage@FY2025}]
+  - name: maturity year count typed in words
+    rule: "1"
+    text: Two years of maturities are covered with net leverage of {{net_leverage@FY2025}}.
+    facts: [{id: net_leverage@FY2025}]
+
 correct:
   - text: >-
       Under IFRS 16, leases count as debt, and total debt stood at {{total_debt@FY2025}} at
@@ -300,3 +322,7 @@ correct:
       The group bought its leased Boeing 737-800 aircraft and took more 737 MAX 8 aircraft,
       with capex intensity at {{capex_intensity@FY2025}}.
     facts: [{id: capex_intensity@FY2025}]
+  - text: >-
+      The investment-grade rating rests on net leverage of {{net_leverage@FY2025}} and A-class
+      Airbus A321neo deliveries.
+    facts: [{id: net_leverage@FY2025}]

@@ -177,3 +177,38 @@ def report_text(document: str, db_path=None) -> str | None:
 def checked_entries(db_path=None, path: Path = RATINGS) -> dict[str, RatingEntry]:
     """Every entry, checked against its report."""
     return {e.issuer: check_entry(e, report_text(e.document, db_path)) for e in load_entries(path)}
+
+
+def record(issuer: str, today: date, db_path=None) -> dict | None:
+    """What the tearsheet header shows for the company (stored with the pre-built tearsheets,
+    so the demo needs no report): the ratings once reviewed, else "awaiting review"."""
+    entries = checked_entries(db_path)
+    e = entries.get(issuer)
+    if e is None:
+        return None
+    shown = e.status == "verified"
+    return {
+        "text": e.text() if shown else "awaiting review",
+        "status": e.status,
+        "reason": e.reason,
+        "as_at": str(e.as_at),
+        "stale": shown and not e.not_stated and e.stale(today),
+        "scope": e.scope,
+        "source": f"FY{e.fiscal_year} annual report, {e.location}",
+        "quote": e.quote,
+        "document": e.document,
+    }
+
+
+def header_text(rating: dict | None) -> str | None:
+    """The header line: "Ratings: S&P BBB (stable), Moody's Baa2 (stable), as at 26 Feb 2026"."""
+    if not rating:
+        return None
+    if rating["status"] != "verified":
+        return "Ratings: awaiting review"
+    if rating["text"].startswith("No rating"):
+        return rating["text"]
+    as_at = date.fromisoformat(rating["as_at"])
+    scope = "" if rating["scope"] == "issuer" else f" ({rating['scope']})"
+    stale = " (more than a year old)" if rating["stale"] else ""
+    return f"Ratings{scope}: {rating['text']}, as at {as_at:%d %b %Y}{stale}"

@@ -1,0 +1,117 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_like.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2026"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2026"
+      }
+     ],
+     "text": "Cash and cash-like investments rose by {{cash_like.change@FY2026}} to {{cash_like@FY2026}}, equal to cash liquidity to revenue of {{cash_liquidity_to_revenue@FY2026}}, up {{cash_liquidity_to_revenue.change@FY2026}} on the prior year."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "debt_due_1y.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "debt_due_1y@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      }
+     ],
+     "text": "Debt due within a year fell by {{debt_due_1y.change@FY2026}} to {{debt_due_1y@FY2026}}, so cash on the balance sheet covers the near-term maturities without new funding, and the group repaid its eurobond out of free cash during the year."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "fcf_after_leases.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2026"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "fcf_after_leases_to_debt.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases_to_debt@FY2026"
+      }
+     ],
+     "text": "Free cash flow after lease payments rose by {{fcf_after_leases.change@FY2026}} to {{fcf_after_leases@FY2026}}, lifting FCF after leases to debt by {{fcf_after_leases_to_debt.change@FY2026}} to {{fcf_after_leases_to_debt@FY2026}}, the measure that leaves lease payments in financing cash flows."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "contract_liabilities.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover@FY2026"
+      }
+     ],
+     "text": "Customer prepayments remain a large part of the funding base: contract liabilities rose by {{contract_liabilities.change@FY2026}} to {{contract_liabilities@FY2026}}, with advance ticket cover at {{advance_ticket_cover@FY2026}}."
+    }
+   ]
+  }
+ },
+ "label": "wizz_FY2026 attempt 2 draft-v8",
+ "recorded_at": "2026-11-11T18:55:14+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v8",
+  "provider": "deepseek",
+  "system_sha256": "759a32520f9ec250c917f926c554cb9f126a9e17ae12fadbbc685d925eceb6df",
+  "tool_sha256": "4ca8a30aa52873847dabeefc1bf036d2e4b8f878dd1dafa2f23422ddea9a9ff3",
+  "user_sha256": "aa85ea0234faa997754319a8b968fcc5c79b687f53520d367f75758e5af8df43"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 16141,
+  "output_tokens": 660
+ }
+}

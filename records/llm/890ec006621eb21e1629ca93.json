@@ -1,0 +1,140 @@
+{
+ "answer": {
+  "sections": {
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "liquidity.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "liquidity@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse",
+        "in_line_with_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:capital_returns"
+      }
+     ],
+     "text": "Liquidity: liquidity fell by {{liquidity.change@FY2025}} to {{liquidity@FY2025}} and cash liquidity to revenue by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, in line with the peer median, as cash was returned to shareholders."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "fcf_after_leases.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "fcf_after_leases_to_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_capex.change@FY2025"
+      }
+     ],
+     "text": "Cash flow after leases: FCF after leases fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}} and FCF after leases to debt by {{fcf_after_leases_to_debt.change@FY2025}} to {{fcf_after_leases_to_debt@FY2025}}, as net capex rose by {{net_capex.change@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse",
+        "above_peers"
+       ],
+       "id": "advance_ticket_cover@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover.peer_median@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "advance_ticket_cover.peer_rank@FY2025"
+      }
+     ],
+     "text": "Customer prepayments: advance ticket cover of {{advance_ticket_cover@FY2025}} is above the peer median of {{advance_ticket_cover.peer_median@FY2025}} and the highest of the group ({{advance_ticket_cover.peer_rank@FY2025}}), so a larger share of liquidity is customers' prepayments."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "debt_due_1y@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "short_term_debt_cover@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "short_term_debt_cover.change@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "liquidity.change@FY2025"
+      }
+     ],
+     "text": "Near-term maturities: debt due within one year of {{debt_due_1y@FY2025}} is covered {{short_term_debt_cover@FY2025}} by liquidity, a cover ratio that eased by {{short_term_debt_cover.change@FY2025}} as liquidity fell by {{liquidity.change@FY2025}}."
+    }
+   ]
+  }
+ },
+ "label": "iag_FY2025 attempt 2 draft-v8",
+ "recorded_at": "2026-11-11T18:57:22+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v8",
+  "provider": "deepseek",
+  "system_sha256": "759a32520f9ec250c917f926c554cb9f126a9e17ae12fadbbc685d925eceb6df",
+  "tool_sha256": "bf89949808c3cfaf136bca2c04e2c1fbe93c3b5950310e089cc25b70884f3a9e",
+  "user_sha256": "a9fb65394a1c03a5ee1385e26e566ba8742757078dfffb4f799aac0912b50cfe"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 16437,
+  "output_tokens": 797
+ }
+}

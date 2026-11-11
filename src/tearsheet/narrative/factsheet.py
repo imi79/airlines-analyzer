@@ -508,6 +508,35 @@ def add_events(sheet: FactSheet, events) -> None:
         )
 
 
+AGENCY_IDS = {"S&P": "sp", "Moody's": "moodys", "Fitch": "fitch"}
+
+
+def add_ratings(sheet: FactSheet, entries: dict) -> None:
+    """Reviewed ratings become items the AI may cite only by blank (M8, decision 0022); the
+    others are listed as not available. `entries`: issuer -> ratings.RatingEntry."""
+    e = entries.get(sheet.issuer)
+    if e is None or e.not_stated:
+        return
+    for r in e.ratings:
+        fid = f"rating_{AGENCY_IDS[r.agency]}@FY{sheet.fiscal_year}"
+        if e.status != "verified":
+            sheet.unavailable[fid] = e.reason or NOT_VERIFIED
+            continue
+        scope = "" if e.scope == "issuer" else f" ({e.scope})"
+        outlook = f", outlook {r.outlook}" if r.outlook else ""
+        sheet.items[fid] = Item(
+            id=fid,
+            metric=f"rating_{AGENCY_IDS[r.agency]}",
+            kind="rating",
+            label=f"{r.agency} long-term rating{scope}{outlook}, as at {e.as_at}",
+            unit="rating",
+            value=Decimal(0),
+            rendered=r.rating,
+            period=f"FY{sheet.fiscal_year}",
+            note=f"From the company's report ({e.location}); never typed, always a blank.",
+        )
+
+
 # --- Reading the facts database ------------------------------------------------------------
 
 

@@ -160,6 +160,11 @@ def parse_sections(data: dict) -> tuple[Draft, list[Error]]:
 # --- The verifier ----------------------------------------------------------------------------
 
 
+# Credit ratings on the S&P and Fitch scales (Moody's ratings carry a digit, caught above).
+# A rating, like a number, only reaches the page through a blank (M8, decision 0022).
+RATING = re.compile(r"(?<![\w+-])(?:AAA|AA[+-]?|A[+-]|BBB[+-]?|BB[+-]?|B[+-]|CCC[+-]?)(?![\w+])")
+
+
 class Verifier:
     def __init__(self, narrative: dict | None = None, vocabulary: dict | None = None):
         self.narrative = narrative or load_narrative()
@@ -302,6 +307,8 @@ class Verifier:
             out.append(f"number written outside a blank: '{token.strip('.,;:')}'")
         for sym in self.symbols.findall(text):
             out.append(f"symbol written outside a blank: '{sym}'")
+        for rating in RATING.findall(text):
+            out.append(f"rating written outside a blank: '{rating}' (M8: ratings come from blanks)")
         words = self.allowed_phrases.sub(" ", text)
         for word in self.number_words.findall(words):
             out.append(f"word that states a number: '{word}'")

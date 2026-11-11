@@ -1,0 +1,129 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      }
+     ],
+     "text": "Cash and cash-like investments fell by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, taking cash liquidity to {{cash_liquidity_to_revenue@FY2025}} of revenue, with undrawn committed facilities not part of that measure."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "debt_due_1y@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2025"
+      }
+     ],
+     "text": "Debt due within a year was broadly unchanged at {{debt_due_1y@FY2025}}, so cash and cash-like investments of {{cash_like@FY2025}} cover the near-term maturities without new funding."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases_to_debt.change@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_capex.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_capex@FY2025"
+      }
+     ],
+     "text": "Free cash flow after lease payments fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}}, or {{fcf_after_leases_to_debt@FY2025}} of debt, down {{fcf_after_leases_to_debt.change@FY2025}}, as net capex rose by {{net_capex.change@FY2025}} to {{net_capex@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "contract_liabilities.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover.change@FY2025"
+      }
+     ],
+     "text": "Customer prepayments rose, with contract liabilities up {{contract_liabilities.change@FY2025}} to {{contract_liabilities@FY2025}} and advance ticket cover at {{advance_ticket_cover@FY2025}}, up {{advance_ticket_cover.change@FY2025}}."
+    }
+   ]
+  }
+ },
+ "label": "norwegian_FY2025 attempt 2 draft-v8",
+ "recorded_at": "2026-11-11T18:55:06+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v8",
+  "provider": "deepseek",
+  "system_sha256": "759a32520f9ec250c917f926c554cb9f126a9e17ae12fadbbc685d925eceb6df",
+  "tool_sha256": "4ca8a30aa52873847dabeefc1bf036d2e4b8f878dd1dafa2f23422ddea9a9ff3",
+  "user_sha256": "20849c1842f488a8854c6dee53e8acc18ef9a7b514ac5ba2ce99a78cdae5791d"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 15250,
+  "output_tokens": 686
+ }
+}

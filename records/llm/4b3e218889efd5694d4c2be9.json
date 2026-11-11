@@ -1,0 +1,223 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_like.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2026"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2026"
+      }
+     ],
+     "text": "Cash and cash-like investments rose by {{cash_like.change@FY2026}} to {{cash_like@FY2026}}, equal to cash liquidity to revenue of {{cash_liquidity_to_revenue@FY2026}}, up {{cash_liquidity_to_revenue.change@FY2026}} on the prior year."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "debt_due_1y.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "debt_due_1y@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      }
+     ],
+     "text": "Debt due within one year fell by {{debt_due_1y.change@FY2026}} to {{debt_due_1y@FY2026}}, so cash on the balance sheet covers the near-term maturities without new funding, and the group repaid its eurobond out of free cash during the year."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "fcf_after_leases.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2026"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "fcf_after_leases_to_debt.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases_to_debt@FY2026"
+      }
+     ],
+     "text": "Free cash flow after lease payments rose by {{fcf_after_leases.change@FY2026}} to {{fcf_after_leases@FY2026}}, lifting FCF after leases to debt by {{fcf_after_leases_to_debt.change@FY2026}} to {{fcf_after_leases_to_debt@FY2026}}, the measure that leaves lease payments in financing cash flows."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "contract_liabilities.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover@FY2026"
+      }
+     ],
+     "text": "Customer prepayments remain a large part of the funding base: contract liabilities rose by {{contract_liabilities.change@FY2026}} to {{contract_liabilities@FY2026}}, with advance ticket cover at {{advance_ticket_cover@FY2026}}."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "net_leverage@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "net_leverage.peer_median@FY2026"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "net_leverage.peer_rank@FY2026"
+      }
+     ],
+     "text": "Leverage: net leverage of {{net_leverage@FY2026}} is above the peer median of {{net_leverage.peer_median@FY2026}} and ranks last of the group ({{net_leverage.peer_rank@FY2026}}), so the balance sheet remains the weakest part of the profile."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_to_debt.change@FY2026"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "fcf_to_debt@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt.peer_median@FY2026"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity@FY2026"
+      }
+     ],
+     "text": "Cash generation: FCF to debt slipped by {{fcf_to_debt.change@FY2026}} to {{fcf_to_debt@FY2026}}, below the peer median of {{fcf_to_debt.peer_median@FY2026}}, as capex intensity rose by {{capex_intensity.change@FY2026}} to {{capex_intensity@FY2026}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover.change@FY2026"
+      },
+      {
+       "claims": [
+        "above_peers",
+        "worse_than_peers"
+       ],
+       "id": "advance_ticket_cover@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover.peer_median@FY2026"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "advance_ticket_cover.peer_rank@FY2026"
+      }
+     ],
+     "text": "Customer prepayments: advance ticket cover rose by {{advance_ticket_cover.change@FY2026}} to {{advance_ticket_cover@FY2026}}, above the peer median of {{advance_ticket_cover.peer_median@FY2026}} and the weakest of the group ({{advance_ticket_cover.peer_rank@FY2026}}), so a larger share of liquidity is refundable if bookings slow."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "cask_ex_fuel.change@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "cask_ex_fuel@FY2026"
+      },
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines"
+      }
+     ],
+     "text": "Costs: CASK ex-fuel rose by {{cask_ex_fuel.change@FY2026}} to {{cask_ex_fuel@FY2026}} while the GTF engine issue continued to ground aircraft and weigh on utilisation and cost performance."
+    }
+   ]
+  }
+ },
+ "label": "wizz_FY2026 attempt 1 draft-v8",
+ "recorded_at": "2026-11-11T18:55:11+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v8",
+  "provider": "deepseek",
+  "system_sha256": "759a32520f9ec250c917f926c554cb9f126a9e17ae12fadbbc685d925eceb6df",
+  "tool_sha256": "e68d0267eaea51942182fdaf195ef3d14d80fcacad7a0c2e86ea4b0b1a05daf2",
+  "user_sha256": "9a8fb5222d563d95d061ee9647c896f9267996e8283b3882e48c8d6732649c13"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 15457,
+  "output_tokens": 1371
+ }
+}

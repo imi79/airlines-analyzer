@@ -32,6 +32,7 @@
     <div>
       <h1>{{ name }}</h1>
       <div class="sub"><span class="period">{{ period }}</span> · {{ kind }} · reporting currency {{ currency }} · peer group: {{ peer_group }}</div>
+      {% if rating %}<div class="sub rating">{{ rating }}</div>{% endif %}
     </div>
     <div class="right">Credit tearsheet<br>{{ exported }}{% if prepared_by %}<br>Analyst: {{ prepared_by }}{% endif %}</div>
   </header>

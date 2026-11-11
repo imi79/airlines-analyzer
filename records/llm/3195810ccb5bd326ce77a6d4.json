@@ -1,0 +1,128 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "undrawn_facilities@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "liquidity@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "liquidity_to_revenue@FY2024"
+      }
+     ],
+     "text": "Cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, and with {{undrawn_facilities@FY2024}} of undrawn committed facilities liquidity stood at {{liquidity@FY2024}}, or {{liquidity_to_revenue@FY2024}} of revenue."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "debt_due_1y.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "debt_due_1y@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "short_term_debt_cover@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "borrowings_due_2y@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "liquidity_to_borrowings_due_2y@FY2024"
+      }
+     ],
+     "text": "Debt due within a year rose by {{debt_due_1y.change@FY2024}} to {{debt_due_1y@FY2024}}, covered {{short_term_debt_cover@FY2024}} by liquidity, and borrowings maturing within the following year of {{borrowings_due_2y@FY2024}} are covered {{liquidity_to_borrowings_due_2y@FY2024}} by liquidity, so near-term maturities are met without new funding."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "fcf_after_leases@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2023"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "fcf_after_leases_to_debt.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases_to_debt@FY2024"
+      }
+     ],
+     "text": "Free cash flow after lease payments turned positive at {{fcf_after_leases@FY2024}}, from {{fcf_after_leases@FY2023}} in FY2023, lifting FCF after leases to debt by {{fcf_after_leases_to_debt.change@FY2024}} to {{fcf_after_leases_to_debt@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "contract_liabilities.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover@FY2024"
+      }
+     ],
+     "text": "Customer prepayments rose, with contract liabilities up by {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}} and advance ticket cover at {{advance_ticket_cover@FY2024}}, so a larger share of the cash balance is customers' money."
+    }
+   ]
+  }
+ },
+ "label": "finnair_FY2024 attempt 2 draft-v8",
+ "recorded_at": "2026-11-11T18:55:47+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v8",
+  "provider": "deepseek",
+  "system_sha256": "759a32520f9ec250c917f926c554cb9f126a9e17ae12fadbbc685d925eceb6df",
+  "tool_sha256": "4ca8a30aa52873847dabeefc1bf036d2e4b8f878dd1dafa2f23422ddea9a9ff3",
+  "user_sha256": "ff5d4d1088bed6ef75d59cd73a11fa54f32cc5d458241c0404d989f69a42d3ed"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 15492,
+  "output_tokens": 773
+ }
+}

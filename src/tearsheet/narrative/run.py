@@ -147,6 +147,10 @@ def run(
     write_summary(outcomes, out)
     write_db(outcomes, db_path)
     write_events_db(event_runs, db_path)
+    if out == OUT:  # M8: the two sections redrafted with draft-v8 (docs/m8, the database)
+        from tearsheet.narrative import redraft
+
+        redraft.run(llm, outcomes, db_path, only=only)
     if out == OUT and sum(o.drafted for o in outcomes) >= score_sheet.DRAFTS:
         score_sheet.write(outcomes)
     return outcomes

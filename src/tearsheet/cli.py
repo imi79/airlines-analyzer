@@ -171,6 +171,10 @@ def main() -> None:
             f"run of {length} over {len(companies)} companies, "
             f"{'passed' if ok else 'not passed'} (docs/m4/drafts.md)"
         )
+        from tearsheet.narrative import redraft
+
+        if redraft.LAST:
+            print(redraft.summary_line(redraft.LAST))
 
 
 def _extraction_summary(extraction) -> str:

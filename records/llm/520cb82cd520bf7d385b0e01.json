@@ -1,0 +1,242 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      }
+     ],
+     "text": "Cash and cash-like investments fell by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, taking cash liquidity to {{cash_liquidity_to_revenue@FY2025}} of revenue, with undrawn committed facilities not part of that measure."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "debt_due_1y@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2025"
+      }
+     ],
+     "text": "Debt due within one year was broadly unchanged at {{debt_due_1y@FY2025}}, so cash and cash-like investments cover the near-term maturities without new funding."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases_to_debt.change@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_capex.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_capex@FY2025"
+      }
+     ],
+     "text": "Free cash flow after lease payments fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}}, or {{fcf_after_leases_to_debt@FY2025}} of debt, down {{fcf_after_leases_to_debt.change@FY2025}}, as net capex rose by {{net_capex.change@FY2025}} to {{net_capex@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "contract_liabilities.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover.change@FY2025"
+      }
+     ],
+     "text": "Customer prepayments rose, with contract liabilities up {{contract_liabilities.change@FY2025}} to {{contract_liabilities@FY2025}} and advance ticket cover at {{advance_ticket_cover@FY2025}}, up {{advance_ticket_cover.change@FY2025}}."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_like.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "cash_liquidity_to_revenue.peer_rank@FY2025"
+      }
+     ],
+     "text": "Cash liquidity: cash and cash-like investments fell by {{cash_like.change@FY2025}} to {{cash_like@FY2025}}, leaving cash liquidity to revenue at {{cash_liquidity_to_revenue@FY2025}}, the weakest of the low-cost group ({{cash_liquidity_to_revenue.peer_rank@FY2025}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2025"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_capex.change@FY2025"
+      }
+     ],
+     "text": "Cash flow after leases: free cash flow after lease payments fell by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}}, only {{fcf_after_leases_to_debt@FY2025}} of debt, as net capex rose by {{net_capex.change@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "net_leverage.change@FY2025"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "net_leverage@FY2025"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_debt@FY2025"
+      }
+     ],
+     "text": "Leverage: net leverage rose by {{net_leverage.change@FY2025}} to {{net_leverage@FY2025}} as net debt increased by {{net_debt.change@FY2025}} to {{net_debt@FY2025}}, in line with the peer median."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "capex_intensity.change@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "capex_intensity@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity.peer_median@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:fleet_and_engines-2"
+      }
+     ],
+     "text": "Investment: capex intensity rose by {{capex_intensity.change@FY2025}} to {{capex_intensity@FY2025}}, above the peer median of {{capex_intensity.peer_median@FY2025}}, with options exercised on additional 737 MAX 8 aircraft."
+    }
+   ]
+  }
+ },
+ "label": "norwegian_FY2025 attempt 1 draft-v8",
+ "recorded_at": "2026-11-11T18:55:03+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v8",
+  "provider": "deepseek",
+  "system_sha256": "759a32520f9ec250c917f926c554cb9f126a9e17ae12fadbbc685d925eceb6df",
+  "tool_sha256": "e68d0267eaea51942182fdaf195ef3d14d80fcacad7a0c2e86ea4b0b1a05daf2",
+  "user_sha256": "48f10489fc569a12ff8548faab267584cea0b862052ddf938c3af9794ca82815"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14539,
+  "output_tokens": 1358
+ }
+}

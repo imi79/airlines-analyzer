@@ -121,6 +121,13 @@ Credit metrics, for airlines and airports:
 | Liquidity | Cash + liquid investments + undrawn committed facilities | EUR m | Computed and extracted |
 | Liquidity to revenue | Liquidity ÷ revenue | % | Computed |
 | Advance ticket cover (airlines) | Advance ticket sales ÷ (cash + liquid investments) | % | Tagged or override |
+| Net capex (M8) | Purchases of PP&E and intangibles − disposal proceeds (sale-and-leaseback included) | EUR m | Computed |
+| FCF after leases (M8) | Cash from operations − net capex − lease principal payments − interest paid shown in financing | EUR m | Computed |
+| FCF after leases to debt (M8) | FCF after leases ÷ total debt | % | Computed |
+| Debt due within one year (M8) | Current borrowings + current lease liabilities | EUR m | Computed from tagged |
+| Short-term debt cover (M8) | Liquidity ÷ debt due within one year | x | Computed |
+| Maturity wall (M8) | Debt due within 1 year, 1 to 2, 2 to 5, over 5 years, from the debt note | EUR m | Extracted and checked |
+| Borrowings due within two years (M8) | From the maturity wall; and liquidity over it | EUR m, x | Extracted and computed |
 
 Airline operating metrics:
 
@@ -336,6 +343,15 @@ Builds: public deployment, Dockerfile, README with the architecture diagram and 
 - [ ] Public link works in a fresh browser with no key (gate 3)
 - [ ] Imane can explain every stage of the pipeline without notes
 
+### M8 · Cash flow and refinancing (M), after v1
+
+Added after v1 from comparing the tearsheet with a sell-side credit note (`docs/m8/plan.md`, [decision 0022](decisions/0022-m8-cash-flow-refinancing.md)). Builds: cash flow after lease payments and net capex; debt due within one and two years against liquidity, with the maturity wall read from the debt note and checked by code; a ratings box entered by hand from each company's report; the liquidity and funding and watch items sections redrafted (prompt `draft-v8`); the page 1 chart becomes liquidity against maturities.
+
+- [ ] Cash flow after leases computed for every issuer and year, or missing with a stated reason; one unit test per new metric; checked against a second-source model for Air France-KLM and ADP FY2024-FY2025 within the gate 1 tolerances
+- [ ] Maturity wall: no wrong value marked verified on an answer key of at least eight issuer-years, written before the extraction runs; every table foots or is flagged; every unverified bucket visibly flagged
+- [ ] Ratings box complete: every entry with agency, rating, outlook, date and source, reviewed by Imane
+- [ ] The tearsheet stays clean: every new figure traces to its source on click; the PDF still fits two pages for all 18 tearsheets; Excel recalculates 18 of 18; the adversarial suite, extended with maturity and rating sentences, 100% rejected; ten consecutive redrafts with zero unreferenced numbers
+
 ## Beyond v1
 
 The v1 architecture already separates sources, metrics and narrative, so later versions add inputs and features without a rewrite.
@@ -350,7 +366,7 @@ Seven decisions are still open; the first three should be settled before M2.
 
 - [x] Peer groups: network, low-cost and airports compared separately, plus an all-airlines view ([decision 0008](decisions/0008-m2-metric-choices.md)).
 - [x] Liquid investments: each company's own net debt definition, recorded per issuer with evidence (decision 0008).
-- [x] Ratings: left out of v1 (decision 0008).
+- [x] Ratings: left out of v1 (decision 0008); shown from M8, entered by hand from each company's report and reviewed by Imane ([decision 0022](decisions/0022-m8-cash-flow-refinancing.md)).
 - [x] Repository owner: Imane's GitHub account (`imi79/airlines-analyzer`).
 - [x] License: MIT, public repository (M7 plan, question 1; [decision 0021](decisions/0021-m7-portfolio.md)).
 - [x] Commentary language: English only in v1, French later (M4 plan, question 2; M7 plan, question 5).

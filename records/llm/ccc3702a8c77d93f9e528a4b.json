@@ -1,0 +1,138 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "cash_liquidity_to_revenue.peer_median@FY2024"
+      }
+     ],
+     "text": "Cash and cash-like investments rose by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, taking cash liquidity to revenue up by {{cash_liquidity_to_revenue.change@FY2024}} to {{cash_liquidity_to_revenue@FY2024}}, above the peer median of {{cash_liquidity_to_revenue.peer_median@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "debt_due_1y@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      }
+     ],
+     "text": "Debt due within a year was stable at {{debt_due_1y@FY2024}}, so cash of {{cash_like@FY2024}} covers the near-term maturities without new funding, and the group issued a euro-denominated guaranteed bond under its EMTN programme maturing in 2031."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases_to_debt@FY2024"
+      },
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "fcf_after_leases_to_debt.change@FY2024"
+      },
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "net_capex.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "net_capex@FY2024"
+      }
+     ],
+     "text": "Free cash flow after lease payments fell by {{fcf_after_leases.change@FY2024}} to {{fcf_after_leases@FY2024}}, or {{fcf_after_leases_to_debt@FY2024}} of debt, down {{fcf_after_leases_to_debt.change@FY2024}}, as net capex rose by {{net_capex.change@FY2024}} to {{net_capex@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "contract_liabilities.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2024"
+      },
+      {
+       "claims": [
+        "in_line_with_peers"
+       ],
+       "id": "advance_ticket_cover@FY2024"
+      }
+     ],
+     "text": "Customer prepayments remain a large part of the funding base: contract liabilities rose by {{contract_liabilities.change@FY2024}} to {{contract_liabilities@FY2024}}, with advance ticket cover of {{advance_ticket_cover@FY2024}} in line with the peer median."
+    }
+   ]
+  }
+ },
+ "label": "easyjet_FY2024 attempt 2 draft-v8",
+ "recorded_at": "2026-11-11T18:55:56+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v8",
+  "provider": "deepseek",
+  "system_sha256": "759a32520f9ec250c917f926c554cb9f126a9e17ae12fadbbc685d925eceb6df",
+  "tool_sha256": "4ca8a30aa52873847dabeefc1bf036d2e4b8f878dd1dafa2f23422ddea9a9ff3",
+  "user_sha256": "39f98cf30fc822bec0e1a5920bcf6f0d28544c6c1164815630a4b4618b7df102"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 15916,
+  "output_tokens": 776
+ }
+}

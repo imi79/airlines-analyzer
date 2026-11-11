@@ -68,7 +68,17 @@ def from_database(db_path: Path, sheet: FactSheet) -> dict:
         "events": event_rows,
         "run": run,
         "attempts": attempts(sheet.issuer, sheet.fiscal_year, sheet.rendered()),
+        "rating": rating_record(sheet.issuer, db_path),
     }
+
+
+def rating_record(issuer: str, db_path: Path) -> dict | None:
+    """The ratings box (M8), checked against the company's report when the record is built."""
+    from datetime import date
+
+    from tearsheet.ratings import record
+
+    return record(issuer, date.today(), db_path)
 
 
 @dataclass(frozen=True)
@@ -255,9 +265,53 @@ def kpi_table(lib: Library, ts: dict, config: dict | None = None, part: str = "b
             "rows": rows}  # fmt: skip
 
 
+SHORT_SPANS = {"0_1": "< 1 yr", "1_2": "1-2 yrs", "2_5": "2-5 yrs", "5_plus": "> 5 yrs",
+               "0_2": "< 2 yrs", "0_5": "< 5 yrs", "1_5": "1-5 yrs", "2_plus": "> 2 yrs",
+               "1_plus": "> 1 yr", "0_plus": "all"}  # fmt: skip
+
+
+def maturity_series(lib: Library, ts: dict, spec: dict) -> list[dict]:
+    """The liquidity-against-maturities chart (M8): one bar for the year's liquidity (stacked),
+    then one per maturity bucket of the checked maturity table, in time order ("year" holds the
+    bar's label). Without a checked table: the debt due within one year (balance sheet)."""
+    issuer, year = ts["issuer"], ts["fiscal_year"]
+    points = []
+
+    def point(bar: str, metric: str, k: str) -> dict:
+        f = lib.figures[k]
+        return {"year": bar, "metric": lib.label.get(metric, metric), "value": float(f["value"]),
+                "rendered": f["rendered"], "key": k}  # fmt: skip
+
+    for metric in spec["metrics"]:
+        k = key(issuer, metric, year)
+        if lib.usable(k):
+            points.append(point(f"Liquidity FY{year}", metric, k))
+    walls = []
+    for layer in spec.get("layers", []):
+        prefix = f"maturity_{layer}_"
+        for k, f in lib.figures.items():
+            concept = f["concept"]
+            if f["issuer"] != issuer or int(f["fiscal_year"]) != year:
+                continue
+            if not concept.startswith(prefix) or concept.endswith("_total") or not lib.usable(k):
+                continue
+            bucket = concept.removeprefix(prefix)
+            start = float(bucket.split("_")[0])
+            name = "Borrowings due" if layer == "borrowings" else "Lease liabilities due"
+            walls.append((start, layer, {**point(SHORT_SPANS.get(bucket, bucket), concept, k),
+                                         "metric": name}))  # fmt: skip
+    if walls:
+        points += [p for _, _, p in sorted(walls, key=lambda w: (w[0], w[1]))]
+    elif spec.get("fallback") and lib.usable(key(issuer, spec["fallback"], year)):
+        points.append(point("Due < 1 yr", spec["fallback"], key(issuer, spec["fallback"], year)))
+    return points if len({p["year"] for p in points}) > 1 else []
+
+
 def chart_series(lib: Library, ts: dict, chart: str, config: dict | None = None) -> list[dict]:
     """Points of one chart: year, metric, value (only figures on the tearsheet), and the key."""
     config = config or load_app_config()
+    if config["charts"][chart].get("kind") == "maturities":
+        return maturity_series(lib, ts, config["charts"][chart])
     points = []
     for metric in config["charts"][chart]["metrics"]:
         for y in years_shown(lib, ts, config):

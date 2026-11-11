@@ -1,0 +1,117 @@
+{
+ "answer": {
+  "sections": {
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "cash_like.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2024"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "cash_liquidity_to_revenue.peer_rank@FY2024"
+      }
+     ],
+     "text": "Cash liquidity: cash and cash-like investments fell by {{cash_like.change@FY2024}} to {{cash_like@FY2024}}, and cash liquidity to revenue of {{cash_liquidity_to_revenue@FY2024}} is the weakest of the airport peers ({{cash_liquidity_to_revenue.peer_rank@FY2024}})."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "debt_due_1y@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "cash_like@FY2024"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "cash_like.change@FY2024"
+      }
+     ],
+     "text": "Maturities: debt due within a year of {{debt_due_1y@FY2024}} is covered by the cash balance of {{cash_like@FY2024}}, but the buffer against it narrowed as cash fell by {{cash_like.change@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "interest_coverage.change@FY2024"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "interest_coverage@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "finance_costs.change@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "finance_costs@FY2024"
+      },
+      {
+       "claims": [],
+       "id": "interest_coverage.peer_median@FY2024"
+      }
+     ],
+     "text": "Interest coverage: coverage eased by {{interest_coverage.change@FY2024}} to {{interest_coverage@FY2024}} as finance costs rose by {{finance_costs.change@FY2024}} to {{finance_costs@FY2024}}, though it remains above the peer median of {{interest_coverage.peer_median@FY2024}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [],
+       "id": "event:regulation_and_tariffs"
+      },
+      {
+       "claims": [],
+       "id": "aero_revenue_per_passenger@FY2024"
+      }
+     ],
+     "text": "Tariffs: the CNMC set the maximum adjusted annual revenue per passenger for 2025 at the same level as the prior year, so aeronautical revenue per passenger of {{aero_revenue_per_passenger@FY2024}} has no tariff uplift behind it."
+    }
+   ]
+  }
+ },
+ "label": "aena_FY2024 attempt 3 draft-v8",
+ "recorded_at": "2026-11-11T18:56:19+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v8",
+  "provider": "deepseek",
+  "system_sha256": "759a32520f9ec250c917f926c554cb9f126a9e17ae12fadbbc685d925eceb6df",
+  "tool_sha256": "bf89949808c3cfaf136bca2c04e2c1fbe93c3b5950310e089cc25b70884f3a9e",
+  "user_sha256": "8342068b3c070ec716778294ce22b196bb649dcd1e198df2e5a1c5f113d53648"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14817,
+  "output_tokens": 636
+ }
+}
