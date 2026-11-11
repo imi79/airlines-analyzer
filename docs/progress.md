@@ -71,8 +71,9 @@ commentary score at 3.78 of 5 (decision 0018).**
 
 - [x] Adversarial suite 100% rejected: 47 of 47 faulty sentences, each for its rule; 15
       correct but risky sentences and a full correct draft pass (`tests/test_adversarial.py`)
-- [x] Ten consecutive drafts across issuers with zero unreferenced numbers (gate 2): 17 in a
-      row, all nine companies; 16 of 18 pass with prompt `draft-v7`, the year's events and the
+- [x] Ten consecutive drafts across issuers with zero unreferenced numbers (gate 2): 11 in a
+      row, all nine companies (corrected in M7 from "17", which the record never showed: only
+      16 of 18 drafts pass; decision 0021); 16 of 18 pass with prompt `draft-v7`, the year's events and the
       cause lines, 6 sentences removed by the verifier after two retries (rule confirmed by
       Imane, decision 0018); no number outside a blank on the page (`docs/m4/drafts.md`)
 - [ ] Commentary score of 4 or more: **3.78 of 5** (rounds 1 to 4: 2.93, 3.50, 3.70, 3.75). **Waived by
