@@ -130,15 +130,16 @@ Results: `docs/m6/`. Walkthrough: `docs/m6/walkthrough.md`. Decision 0020. **Sta
 ## M7 · Portfolio packaging
 
 Branch: `m7-portfolio`. Plan: `docs/m7/plan.md`. Decision 0021. Live:
-https://airlines-analyzer.streamlit.app. **Status: in progress**: gate 3 passed; the rehearsal
-remains.
+https://airlines-analyzer.streamlit.app. Walkthrough: `docs/m7/walkthrough.md`. **Status: done;
+gate 3 passed; v1 complete. Closed by Imane on 2026-11-11.**
 
 - [x] Public link works in a fresh browser with no key (gate 3): every page, a figure followed
       down to its source, a two-page PDF download and the verifier demo, from a fresh browser,
       not signed in (`docs/m7/gate3.md`); the hosting copy (Debian 12 and 11) and the Docker
       image passed the same tour beforehand
-- [ ] Imane can explain every stage of the pipeline without notes: explainer ready
-      (`docs/m7/pipeline_explained.md`), rehearsal to do
+- [x] Imane can explain every stage of the pipeline without notes: rehearsal held in the chat on
+      2026-11-11, nine interview questions (the seven stages and two follow-ups), every stage
+      explained correctly; ticked by Imane. Explainer: `docs/m7/pipeline_explained.md`
 - Done: verifier demo in the app; Dockerfile; checks on GitHub (tests, style, secret scan);
   README with the architecture diagram; MIT licence; demo script, LinkedIn post and CV line
   drafts; secret scan of the whole history (no leak); history rewritten to the noreply address
@@ -146,5 +147,5 @@ remains.
 - Three sample PDFs in `samples/pdf/` (Air France-KLM, easyJet, Aena FY2025) with the analyst
   views Imane adopted (`notes/`); two pages at 8.5 point, bundled font
 - Public repository, deployed by Imane
-- To do: rehearsal
+- Next (not started): M8 candidates in `docs/m7/walkthrough.md`
 

@@ -4,7 +4,8 @@ Status: **approved by Imane** (2026-11-11) with every recommendation: 1. public 
 MIT licence; 2. history tidied once before publishing, with a go-ahead at that step; 3. Imane
 writes the three analyst views; 4. Air France-KLM, easyJet and Aena FY2025 as samples; 5.
 commentary in English only, French later; 6. a rehearsal in the chat for the second checklist
-item. Built in the same session, on `m7-portfolio`.
+item. Built in the same session, on `m7-portfolio`. **Closed on 2026-11-11**
+(`docs/m7/walkthrough.md`).
 
 ## What M7 is for
 

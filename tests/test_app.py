@@ -35,9 +35,17 @@ def demo(monkeypatch, tmp_path):
     monkeypatch.setattr(socket, "create_connection", refuse)
     monkeypatch.setattr(socket.socket, "connect", refuse)
     reviews = (ROOT / "config" / "extraction_reviews.yaml").read_text()
+    saved_notes = _snapshot(ROOT / "notes")
     yield
     assert (ROOT / "config" / "extraction_reviews.yaml").read_text() == reviews
-    assert not (ROOT / "notes").exists() or not any((ROOT / "notes").iterdir())
+    assert _snapshot(ROOT / "notes") == saved_notes  # demo mode writes no note
+
+
+def _snapshot(folder: Path) -> dict[str, str]:
+    """Every file in the folder and its content (the saved analyst notes)."""
+    if not folder.exists():
+        return {}
+    return {p.name: p.read_text() for p in sorted(folder.iterdir()) if p.is_file()}
 
 
 def run(pick=None, page=None) -> AppTest:

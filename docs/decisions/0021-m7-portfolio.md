@@ -2,7 +2,8 @@
 
 Date: 2026-11-11 · Status: plan approved by Imane with every recommendation ("approved with all
 recommendations, go ahead on m7-portfolio"); history rewritten on her go-ahead ("rewrite, keep
-PDFs"); deployed by Imane at https://airlines-analyzer.streamlit.app, gate 3 passed
+PDFs"); deployed by Imane at https://airlines-analyzer.streamlit.app, gate 3 passed;
+rehearsal held and M7 closed by Imane (2026-11-11)
 
 **Choices approved with the plan** (`docs/m7/plan.md`):
 
@@ -72,4 +73,9 @@ PDFs"); deployed by Imane at https://airlines-analyzer.streamlit.app, gate 3 pas
   for me to rewrite"), from verified figures only, and adopted by her unchanged ("use the drafts
   as they are"). Each note in `notes/` records this in `view_origin`. The tool itself never
   drafts an analyst view; these three were written outside it, like the M4 example notes.
+- **A test that broke when the notes were committed.** The M5 check that demo mode saves nothing
+  assumed `notes/` was empty; once the three analyst views were committed, it failed (30 errors)
+  and GitHub's checks were red on `main` for two pushes before it was noticed at closing. The
+  check now compares the folder's files before and after each demo test, so it still catches any
+  write.
 
