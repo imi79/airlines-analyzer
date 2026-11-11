@@ -117,7 +117,11 @@ new adversarial cases, 52 in all, all rejected).
   rating to A", written without a blank. The M8 checks now catch a lone "A" after "to", "at",
   "of", "is" or "rated" (narrowly, so ordinary prose passes), in the redraft only so the M4
   record stays as it was; the snapshot is flagged for editing.
-- **Tokens**: the redraft took about 1,340,000 in and 91,000 out over four rounds, 1.8 times
+- **Hand entries reviewed** by Imane the same day (three FY2025 figures, two maturity tables):
+  Air France-KLM FY2025's wall passes every check and is shown; ADP FY2025's tables still
+  disagree with the balance sheet and stay flagged. The two notes concerned were redrafted.
+  The run manifest takes a hand-entered table's PDF fingerprint from the table's own record.
+- **Tokens**: the redraft took about 1,420,000 in and 96,000 out over five rounds, 1.9 times
   the plan's estimate of 790,000; the maturity tables about 168,000.
 - **Final**: 15 of 18 notes pass the verifier in full; 14 in a row with no number outside a
   blank (the checklist asks for ten); three kept M4 snapshots flagged for Imane.

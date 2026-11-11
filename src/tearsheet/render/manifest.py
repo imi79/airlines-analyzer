@@ -79,6 +79,11 @@ def build(lib: Library, ts: dict, note: dict | None = None, mode: str = "demo",
         f = lib.figures[k]
         if f["source_type"] in ("tagged", "manual"):
             rec = lib.filings.get(f["filing_id"] or "", {})
+            if not rec:  # a table entered by hand from a supplied PDF (M8): the PDF's record
+                src = f["source"] or {}
+                rec = {"issuer": f["issuer"], "fiscal_year": f["fiscal_year"],
+                       "origin": "PDF supplied by Imane, entered by hand",
+                       "sha256": src.get("document_sha256")}  # fmt: skip
             entry = filings.setdefault(
                 f["filing_id"],
                 {

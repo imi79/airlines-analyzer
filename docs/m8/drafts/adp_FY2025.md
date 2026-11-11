@@ -1,6 +1,6 @@
 # Groupe ADP, FY2025
 
-Fact sheet `59af09726dca`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
+Fact sheet `4c56495fde3f`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
 
 ## Snapshot (draft-v7, passed)
 
@@ -26,9 +26,8 @@ Fact sheet `59af09726dca`. Sections marked **draft-v8** were redrafted in M8; th
 ## Liquidity and funding (draft-v8, passed)
 
 1. Cash and cash-like investments fell by 3.8% to EUR 2.0bn, taking cash liquidity to revenue down by 3.9 points to 30.1%.
-2. Debt due within one year rose by 4.1% to EUR 1.9bn, which cash and cash-like investments of EUR 2.0bn cover, so the near-term maturities do not depend on new funding.
-3. Free cash flow after lease payments was EUR 42.0m in FY2024, or 0.4% of debt, a small fraction of the EUR 355m free cash flow reported before lease payments.
-4. The TAV group's guarantee of part of the bank loan financing the initial Antalya concession payment no longer exists at year-end after the refinancing of the previous bank loan.
+2. Debt due within one year rose by 4.1% to EUR 1.9bn, so cash liquidity covers the near-term maturities only in part and the group depends on refinancing for the balance.
+3. Free cash flow after lease payments rose by 209.5% to EUR 130m, but that is only 1.2% of debt, up 0.8 points, as net capex of EUR 1.2bn absorbed most of the cash generated.
 
 ## Peer positioning (draft-v7, passed)
 
@@ -39,7 +38,7 @@ Fact sheet `59af09726dca`. Sections marked **draft-v8** were redrafted in M8; th
 
 ## Watch items (draft-v8, passed)
 
-1. Cash liquidity: cash liquidity to revenue fell by 3.9 points to 30.1%, below the peer median of 32.6%.
-2. Maturities: debt due within one year rose by 4.1% to EUR 1.9bn, against cash and cash-like investments of EUR 2.0bn that fell by 3.8%.
-3. Cash flow after leases: free cash flow after lease payments was EUR 42.0m in FY2024, only 0.4% of debt, so lease payments absorb most of the cash the group generates.
-4. Leverage: net leverage of 3.68x is above the peer median of 1.46x, the weakest of the group (3rd of 3).
+1. Cash liquidity: cash liquidity to revenue fell by 3.9 points to 30.1%, below the peer median of 32.6% and the weakest of the group (3rd of 3).
+2. Maturities: debt due within one year rose by 4.1% to EUR 1.9bn, against cash and cash-like investments of EUR 2.0bn, so part of the near-term maturities needs refinancing.
+3. Cash flow after leases: FCF after leases of EUR 130m is only 1.2% of debt, leaving little headroom while net capex of EUR 1.2bn stays high.
+4. Leverage: net leverage of 3.68x is above the peer median of 1.46x and the highest of the group (3rd of 3), so the ratio remains the main constraint on the credit profile.

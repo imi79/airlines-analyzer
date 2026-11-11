@@ -83,13 +83,20 @@ Company type: airline. Reporting currency: EUR. Peer group: Network airlines (af
 | cash_like@FY2025 | Cash and cash-like investments, FY2025 | EUR 6.9bn | flat vs prior year |
 | cash_like@FY2024 | Cash and cash-like investments, FY2024 | EUR 6.9bn |  |
 | cash_like.change@FY2025 | change in Cash and cash-like investments, FY2024 to FY2025 | 1.1% | flat vs prior year; printed without a sign: say the direction in words |
+| net_capex@FY2025 | Net capex, FY2025 | EUR 3.1bn | flat vs prior year |
 | net_capex@FY2024 | Net capex, FY2024 | EUR 3.1bn |  |
+| net_capex.change@FY2025 | change in Net capex, FY2024 to FY2025 | 0.3% | flat vs prior year; printed without a sign: say the direction in words |
+| fcf_after_leases@FY2025 | FCF after leases, FY2025 | EUR 367m | up, better vs prior year |
 | fcf_after_leases@FY2024 | FCF after leases, FY2024 | EUR -1.1bn |  |
+| fcf_after_leases_to_debt@FY2025 | FCF after leases to debt, FY2025 | 2.4% | up, better vs prior year |
 | fcf_after_leases_to_debt@FY2024 | FCF after leases to debt, FY2024 | -7.6% |  |
+| fcf_after_leases_to_debt.change@FY2025 | change in FCF after leases to debt, FY2024 to FY2025 | 10.0 points | up, better vs prior year; printed without a sign: say the direction in words |
 | debt_due_1y@FY2025 | Debt due within one year, FY2025 | EUR 2.8bn | up vs prior year |
 | debt_due_1y@FY2024 | Debt due within one year, FY2024 | EUR 2.7bn |  |
 | debt_due_1y.change@FY2025 | change in Debt due within one year, FY2024 to FY2025 | 3.3% | up vs prior year; printed without a sign: say the direction in words |
+| borrowings_due_2y@FY2025 | Borrowings due within two years, FY2025 | EUR 3.1bn | down vs prior year |
 | borrowings_due_2y@FY2024 | Borrowings due within two years, FY2024 | EUR 3.9bn |  |
+| borrowings_due_2y.change@FY2025 | change in Borrowings due within two years, FY2024 to FY2025 | 21.5% | down vs prior year; printed without a sign: say the direction in words |
 | advance_ticket_cover@FY2025 | Advance ticket cover, FY2025 | 62.2% | up, worse vs prior year; company below peer median, better |
 | advance_ticket_cover@FY2024 | Advance ticket cover, FY2024 | 59.1% |  |
 | advance_ticket_cover.change@FY2025 | change in Advance ticket cover, FY2024 to FY2025 | 3.1 points | up, worse vs prior year; printed without a sign: say the direction in words |
@@ -145,9 +152,7 @@ write no number about it, and no direction word unless a figure of the sentence 
 These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
 
 - fcf.change@FY2025: a percentage change is not meaningful (a year is negative or zero); the direction is still up, on fcf@FY2025
-- net_capex@FY2025: not verified yet: waiting for Imane's review
-- fcf_after_leases@FY2025: not verified yet: waiting for Imane's review
-- fcf_after_leases_to_debt@FY2025: not verified yet: waiting for Imane's review
+- fcf_after_leases.change@FY2025: a percentage change is not meaningful (a year is negative or zero); the direction is still up, on fcf_after_leases@FY2025
 - capex_intensity.peer_rank@FY2025: not ranked: neither higher nor lower is better
 - liquidity@FY2025: not verified yet: waiting for Imane's review
 - liquidity@FY2024: not verified yet: waiting for Imane's review
@@ -155,7 +160,6 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - liquidity_to_revenue@FY2024: not verified yet: waiting for Imane's review
 - short_term_debt_cover@FY2025: not verified yet: waiting for Imane's review
 - short_term_debt_cover@FY2024: not verified yet: waiting for Imane's review
-- borrowings_due_2y@FY2025: not verified yet: waiting for Imane's review
 - liquidity_to_borrowings_due_2y@FY2025: not verified yet: waiting for Imane's review
 - liquidity_to_borrowings_due_2y@FY2024: not verified yet: waiting for Imane's review
 - fuel_share_of_costs@FY2025: Fuel cost not available for FY2025

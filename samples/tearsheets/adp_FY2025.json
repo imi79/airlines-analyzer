@@ -252,42 +252,42 @@
       {
        "claims": [],
        "id": "debt_due_1y@FY2025"
-      },
-      {
-       "claims": [],
-       "id": "cash_like@FY2025"
       }
      ],
-     "text": "Debt due within one year rose by 4.1% to EUR 1.9bn, which cash and cash-like investments of EUR 2.0bn cover, so the near-term maturities do not depend on new funding.",
-     "text_blanks": "Debt due within one year rose by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, which cash and cash-like investments of {{cash_like@FY2025}} cover, so the near-term maturities do not depend on new funding."
+     "text": "Debt due within one year rose by 4.1% to EUR 1.9bn, so cash liquidity covers the near-term maturities only in part and the group depends on refinancing for the balance.",
+     "text_blanks": "Debt due within one year rose by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, so cash liquidity covers the near-term maturities only in part and the group depends on refinancing for the balance."
     },
     {
      "facts": [
       {
-       "claims": [],
-       "id": "fcf_after_leases@FY2024"
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "fcf_after_leases.change@FY2025"
       },
       {
        "claims": [],
-       "id": "fcf_after_leases_to_debt@FY2024"
+       "id": "fcf_after_leases@FY2025"
       },
       {
        "claims": [],
-       "id": "fcf@FY2024"
-      }
-     ],
-     "text": "Free cash flow after lease payments was EUR 42.0m in FY2024, or 0.4% of debt, a small fraction of the EUR 355m free cash flow reported before lease payments.",
-     "text_blanks": "Free cash flow after lease payments was {{fcf_after_leases@FY2024}} in FY2024, or {{fcf_after_leases_to_debt@FY2024}} of debt, a small fraction of the {{fcf@FY2024}} free cash flow reported before lease payments."
-    },
-    {
-     "facts": [
+       "id": "fcf_after_leases_to_debt@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "fcf_after_leases_to_debt.change@FY2025"
+      },
       {
        "claims": [],
-       "id": "event:funding_and_rating"
+       "id": "net_capex@FY2025"
       }
      ],
-     "text": "The TAV group's guarantee of part of the bank loan financing the initial Antalya concession payment no longer exists at year-end after the refinancing of the previous bank loan.",
-     "text_blanks": "The TAV group's guarantee of part of the bank loan financing the initial Antalya concession payment no longer exists at year-end after the refinancing of the previous bank loan."
+     "text": "Free cash flow after lease payments rose by 209.5% to EUR 130m, but that is only 1.2% of debt, up 0.8 points, as net capex of EUR 1.2bn absorbed most of the cash generated.",
+     "text_blanks": "Free cash flow after lease payments rose by {{fcf_after_leases.change@FY2025}} to {{fcf_after_leases@FY2025}}, but that is only {{fcf_after_leases_to_debt@FY2025}} of debt, up {{fcf_after_leases_to_debt.change@FY2025}}, as net capex of {{net_capex@FY2025}} absorbed most of the cash generated."
     }
    ],
    "status": "passed",
@@ -549,10 +549,16 @@
       {
        "claims": [],
        "id": "cash_liquidity_to_revenue.peer_median@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "cash_liquidity_to_revenue.peer_rank@FY2025"
       }
      ],
-     "text": "Cash liquidity: cash liquidity to revenue fell by 3.9 points to 30.1%, below the peer median of 32.6%.",
-     "text_blanks": "Cash liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2025}}."
+     "text": "Cash liquidity: cash liquidity to revenue fell by 3.9 points to 30.1%, below the peer median of 32.6% and the weakest of the group (3rd of 3).",
+     "text_blanks": "Cash liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2025}} and the weakest of the group ({{cash_liquidity_to_revenue.peer_rank@FY2025}})."
     },
     {
      "facts": [
@@ -569,31 +575,28 @@
       {
        "claims": [],
        "id": "cash_like@FY2025"
-      },
-      {
-       "claims": [
-        "down",
-        "worse"
-       ],
-       "id": "cash_like.change@FY2025"
       }
      ],
-     "text": "Maturities: debt due within one year rose by 4.1% to EUR 1.9bn, against cash and cash-like investments of EUR 2.0bn that fell by 3.8%.",
-     "text_blanks": "Maturities: debt due within one year rose by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, against cash and cash-like investments of {{cash_like@FY2025}} that fell by {{cash_like.change@FY2025}}."
+     "text": "Maturities: debt due within one year rose by 4.1% to EUR 1.9bn, against cash and cash-like investments of EUR 2.0bn, so part of the near-term maturities needs refinancing.",
+     "text_blanks": "Maturities: debt due within one year rose by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, against cash and cash-like investments of {{cash_like@FY2025}}, so part of the near-term maturities needs refinancing."
     },
     {
      "facts": [
       {
        "claims": [],
-       "id": "fcf_after_leases@FY2024"
+       "id": "fcf_after_leases@FY2025"
       },
       {
        "claims": [],
-       "id": "fcf_after_leases_to_debt@FY2024"
+       "id": "fcf_after_leases_to_debt@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "net_capex@FY2025"
       }
      ],
-     "text": "Cash flow after leases: free cash flow after lease payments was EUR 42.0m in FY2024, only 0.4% of debt, so lease payments absorb most of the cash the group generates.",
-     "text_blanks": "Cash flow after leases: free cash flow after lease payments was {{fcf_after_leases@FY2024}} in FY2024, only {{fcf_after_leases_to_debt@FY2024}} of debt, so lease payments absorb most of the cash the group generates."
+     "text": "Cash flow after leases: FCF after leases of EUR 130m is only 1.2% of debt, leaving little headroom while net capex of EUR 1.2bn stays high.",
+     "text_blanks": "Cash flow after leases: FCF after leases of {{fcf_after_leases@FY2025}} is only {{fcf_after_leases_to_debt@FY2025}} of debt, leaving little headroom while net capex of {{net_capex@FY2025}} stays high."
     },
     {
      "facts": [
@@ -615,8 +618,8 @@
        "id": "net_leverage.peer_rank@FY2025"
       }
      ],
-     "text": "Leverage: net leverage of 3.68x is above the peer median of 1.46x, the weakest of the group (3rd of 3).",
-     "text_blanks": "Leverage: net leverage of {{net_leverage@FY2025}} is above the peer median of {{net_leverage.peer_median@FY2025}}, the weakest of the group ({{net_leverage.peer_rank@FY2025}})."
+     "text": "Leverage: net leverage of 3.68x is above the peer median of 1.46x and the highest of the group (3rd of 3), so the ratio remains the main constraint on the credit profile.",
+     "text_blanks": "Leverage: net leverage of {{net_leverage@FY2025}} is above the peer median of {{net_leverage.peer_median@FY2025}} and the highest of the group ({{net_leverage.peer_rank@FY2025}}), so the ratio remains the main constraint on the credit profile."
     }
    ],
    "status": "passed",
@@ -1442,6 +1445,23 @@
     "value": "420000000.000000000000",
     "vs_peers": null
    },
+   "fcf_after_leases.change@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "fcf_after_leases.change@FY2025",
+    "kind": "change",
+    "label": "change in FCF after leases, FY2024 to FY2025",
+    "metric": "fcf_after_leases",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "209.5%",
+    "unit": "relative",
+    "value": "2.095238095238095238095238095",
+    "vs_peers": null
+   },
    "fcf_after_leases@FY2024": {
     "assessment": null,
     "direction": null,
@@ -1459,6 +1479,40 @@
     "value": "42000000.000000000000",
     "vs_peers": null
    },
+   "fcf_after_leases@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "fcf_after_leases@FY2025",
+    "kind": "value",
+    "label": "FCF after leases, FY2025",
+    "metric": "fcf_after_leases",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 130m",
+    "unit": "amount",
+    "value": "130000000.000000000000",
+    "vs_peers": null
+   },
+   "fcf_after_leases_to_debt.change@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "fcf_after_leases_to_debt.change@FY2025",
+    "kind": "change",
+    "label": "change in FCF after leases to debt, FY2024 to FY2025",
+    "metric": "fcf_after_leases_to_debt",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "0.8 points",
+    "unit": "points",
+    "value": "0.008343678118",
+    "vs_peers": null
+   },
    "fcf_after_leases_to_debt@FY2024": {
     "assessment": null,
     "direction": null,
@@ -1474,6 +1528,23 @@
     "rendered": "0.4%",
     "unit": "pct",
     "value": "0.003935532234",
+    "vs_peers": null
+   },
+   "fcf_after_leases_to_debt@FY2025": {
+    "assessment": "better",
+    "direction": "up",
+    "id": "fcf_after_leases_to_debt@FY2025",
+    "kind": "value",
+    "label": "FCF after leases to debt, FY2025",
+    "metric": "fcf_after_leases_to_debt",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "1.2%",
+    "unit": "pct",
+    "value": "0.012279210352",
     "vs_peers": null
    },
    "fcf_to_debt.change@FY2025": {
@@ -1918,6 +1989,23 @@
     "value": "7.891525423729",
     "vs_peers": "below"
    },
+   "net_capex.change@FY2025": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "net_capex.change@FY2025",
+    "kind": "change",
+    "label": "change in Net capex, FY2024 to FY2025",
+    "metric": "net_capex",
+    "note": "printed without a sign: say the direction in words",
+    "peer_assessment": null,
+    "period": "FY2024 to FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "2.3%",
+    "unit": "relative",
+    "value": "0.02335640138408304498269896194",
+    "vs_peers": null
+   },
    "net_capex@FY2024": {
     "assessment": null,
     "direction": null,
@@ -1933,6 +2021,23 @@
     "rendered": "EUR 1.2bn",
     "unit": "amount",
     "value": "1156000000.000000000000",
+    "vs_peers": null
+   },
+   "net_capex@FY2025": {
+    "assessment": "neutral",
+    "direction": "up",
+    "id": "net_capex@FY2025",
+    "kind": "value",
+    "label": "Net capex, FY2025",
+    "metric": "net_capex",
+    "note": "",
+    "peer_assessment": null,
+    "period": "FY2025",
+    "rank": null,
+    "rank_of": null,
+    "rendered": "EUR 1.2bn",
+    "unit": "amount",
+    "value": "1183000000.000000000000",
     "vs_peers": null
    },
    "net_debt.change@FY2025": {
@@ -2410,10 +2515,6 @@
    "contract_liabilities.change@FY2025": "needs both years verified",
    "contract_liabilities@FY2024": "no figure for this year",
    "contract_liabilities@FY2025": "no figure for this year",
-   "fcf_after_leases.change@FY2025": "needs both years verified",
-   "fcf_after_leases@FY2025": "not verified yet: waiting for Imane's review",
-   "fcf_after_leases_to_debt.change@FY2025": "needs both years verified",
-   "fcf_after_leases_to_debt@FY2025": "not verified yet: waiting for Imane's review",
    "fuel_cost.change@FY2025": "needs both years verified",
    "fuel_cost@FY2024": "no figure for this year",
    "fuel_cost@FY2025": "no figure for this year",
@@ -2428,8 +2529,6 @@
    "liquidity_to_revenue.peer_rank@FY2025": "the company's own figure is not available",
    "liquidity_to_revenue@FY2024": "Liquidity: Undrawn committed credit facilities not available for FY2024",
    "liquidity_to_revenue@FY2025": "Liquidity: Undrawn committed credit facilities not available for FY2025",
-   "net_capex.change@FY2025": "needs both years verified",
-   "net_capex@FY2025": "not verified yet: waiting for Imane's review",
    "net_cash.change@FY2025": "needs both years verified",
    "net_cash@FY2024": "the company has net debt, not net cash",
    "net_cash@FY2025": "the company has net debt, not net cash",
@@ -2477,23 +2576,23 @@
   "text": "S&P A- (stable)"
  },
  "run": {
-  "calls": 1,
+  "calls": 2,
   "cost_usd": null,
   "filing_hashes": {
    "969500PJMBSFHYC37989-2024-12-31-ESEF-FR-0": "2f61ed6871fff16505413e92a893967a3bdb71e21a73f3fc3b9a3c9ea9a893d5",
    "969500PJMBSFHYC37989-2024-12-31-manual-pdf": "0d53c1996b5b410934512afa02d2313c2aa52283954fc3652f20466c7add1098",
    "969500PJMBSFHYC37989-2025-12-31-manual-pdf": "54853840da660e7bfcb89b58f985aca183c4c03ad3e9540744d4e23cbbdb439e"
   },
-  "first_try_ok": true,
-  "input_hash": "59af09726dca170a2a3647bd78c066d57208f2aa26ce40a904743956a058e87f",
-  "input_tokens": 58531,
+  "first_try_ok": false,
+  "input_hash": "4c56495fde3f4adbab3bdd6895af2b9dc15c475fafc34d39b249219998ee1df1",
+  "input_tokens": 73271,
   "matches_figures": true,
   "model": "deepseek-flash",
-  "output_tokens": 8845,
+  "output_tokens": 9590,
   "passed": true,
   "prompt_version": "draft-v7 + draft-v8 (liquidity_funding, watch_items)",
   "provider": "deepseek",
-  "recorded_at": "2026-11-11T21:24:28+00:00"
+  "recorded_at": "2026-11-11T21:45:04+00:00"
  },
  "type": "airport"
 }

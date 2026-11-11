@@ -1,0 +1,216 @@
+{
+ "answer": {
+  "sections": {
+   "liquidity_funding": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "cash_like@FY2025"
+      },
+      {
+       "claims": [
+        "flat"
+       ],
+       "id": "cash_like.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      }
+     ],
+     "text": "Cash and cash-like investments were stable at {{cash_like@FY2025}}, a change of {{cash_like.change@FY2025}}, giving cash liquidity to revenue of {{cash_liquidity_to_revenue@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "debt_due_1y.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "debt_due_1y@FY2025"
+      },
+      {
+       "claims": [
+        "down"
+       ],
+       "id": "borrowings_due_2y.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "borrowings_due_2y@FY2025"
+      }
+     ],
+     "text": "Debt due within one year rose by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, while borrowings due within two years fell by {{borrowings_due_2y.change@FY2025}} to {{borrowings_due_2y@FY2025}}, so cash on hand covers the near-term maturities without new funding."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "fcf_after_leases@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases@FY2024"
+      },
+      {
+       "claims": [
+        "up",
+        "better"
+       ],
+       "id": "fcf_after_leases_to_debt.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases_to_debt@FY2025"
+      }
+     ],
+     "text": "Free cash flow after lease payments turned positive at {{fcf_after_leases@FY2025}}, from {{fcf_after_leases@FY2024}} in FY2024, taking FCF after leases to debt up by {{fcf_after_leases_to_debt.change@FY2025}} to {{fcf_after_leases_to_debt@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "contract_liabilities.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "contract_liabilities@FY2025"
+      },
+      {
+       "claims": [
+        "up",
+        "worse",
+        "best_in_group"
+       ],
+       "id": "advance_ticket_cover@FY2025"
+      }
+     ],
+     "text": "Customer prepayments rose, with contract liabilities up by {{contract_liabilities.change@FY2025}} to {{contract_liabilities@FY2025}} and advance ticket cover at {{advance_ticket_cover@FY2025}}, the lowest of the peer group."
+    }
+   ],
+   "watch_items": [
+    {
+     "facts": [
+      {
+       "claims": [
+        "down",
+        "worse"
+       ],
+       "id": "cash_liquidity_to_revenue.change@FY2025"
+      },
+      {
+       "claims": [
+        "below_peers"
+       ],
+       "id": "cash_liquidity_to_revenue@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "cash_liquidity_to_revenue.peer_median@FY2025"
+      }
+     ],
+     "text": "Liquidity: cash liquidity to revenue fell by {{cash_liquidity_to_revenue.change@FY2025}} to {{cash_liquidity_to_revenue@FY2025}}, below the peer median of {{cash_liquidity_to_revenue.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "below_peers",
+        "worse_than_peers"
+       ],
+       "id": "fcf_to_debt@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_to_debt.peer_median@FY2025"
+      },
+      {
+       "claims": [
+        "worst_in_group"
+       ],
+       "id": "fcf_to_debt.peer_rank@FY2025"
+      },
+      {
+       "claims": [
+        "above_peers"
+       ],
+       "id": "capex_intensity@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "capex_intensity.peer_median@FY2025"
+      }
+     ],
+     "text": "Cash generation: FCF to debt of {{fcf_to_debt@FY2025}} is below the peer median of {{fcf_to_debt.peer_median@FY2025}}, the weakest of the group ({{fcf_to_debt.peer_rank@FY2025}}), with capex intensity at {{capex_intensity@FY2025}} above the peer median of {{capex_intensity.peer_median@FY2025}}."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up"
+       ],
+       "id": "debt_due_1y.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "debt_due_1y@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "fcf_after_leases_to_debt@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "event:funding_and_rating"
+      }
+     ],
+     "text": "Maturities: debt due within one year rose by {{debt_due_1y.change@FY2025}} to {{debt_due_1y@FY2025}}, and cash flow after leases covers only {{fcf_after_leases_to_debt@FY2025}} of debt, so refinancing depends on access to the bond market, where the group placed senior unsecured bonds under its EMTN programme."
+    },
+    {
+     "facts": [
+      {
+       "claims": [
+        "up",
+        "worse"
+       ],
+       "id": "advance_ticket_cover.change@FY2025"
+      },
+      {
+       "claims": [],
+       "id": "advance_ticket_cover@FY2025"
+      }
+     ],
+     "text": "Customer prepayments: advance ticket cover rose by {{advance_ticket_cover.change@FY2025}} to {{advance_ticket_cover@FY2025}}, so a larger part of the cash balance is customers' prepayments."
+    }
+   ]
+  }
+ },
+ "label": "afkl_FY2025 attempt 1 draft-v8",
+ "recorded_at": "2026-11-11T21:44:49+00:00",
+ "request": {
+  "job": "drafting",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "draft-v8",
+  "provider": "deepseek",
+  "system_sha256": "759a32520f9ec250c917f926c554cb9f126a9e17ae12fadbbc685d925eceb6df",
+  "tool_sha256": "e68d0267eaea51942182fdaf195ef3d14d80fcacad7a0c2e86ea4b0b1a05daf2",
+  "user_sha256": "06461a5998f9ea9f0c2203d546c8192bcb64f49f5dc5a612a8903795d3c15233"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 14272,
+  "output_tokens": 1351
+ }
+}

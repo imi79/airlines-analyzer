@@ -85,9 +85,15 @@ Company type: airport. Reporting currency: EUR. Peer group: Airports (adp, aena,
 | cash_like@FY2025 | Cash and cash-like investments, FY2025 | EUR 2.0bn | down, worse vs prior year |
 | cash_like@FY2024 | Cash and cash-like investments, FY2024 | EUR 2.1bn |  |
 | cash_like.change@FY2025 | change in Cash and cash-like investments, FY2024 to FY2025 | 3.8% | down, worse vs prior year; printed without a sign: say the direction in words |
+| net_capex@FY2025 | Net capex, FY2025 | EUR 1.2bn | up vs prior year |
 | net_capex@FY2024 | Net capex, FY2024 | EUR 1.2bn |  |
+| net_capex.change@FY2025 | change in Net capex, FY2024 to FY2025 | 2.3% | up vs prior year; printed without a sign: say the direction in words |
+| fcf_after_leases@FY2025 | FCF after leases, FY2025 | EUR 130m | up, better vs prior year |
 | fcf_after_leases@FY2024 | FCF after leases, FY2024 | EUR 42.0m |  |
+| fcf_after_leases.change@FY2025 | change in FCF after leases, FY2024 to FY2025 | 209.5% | up, better vs prior year; printed without a sign: say the direction in words |
+| fcf_after_leases_to_debt@FY2025 | FCF after leases to debt, FY2025 | 1.2% | up, better vs prior year |
 | fcf_after_leases_to_debt@FY2024 | FCF after leases to debt, FY2024 | 0.4% |  |
+| fcf_after_leases_to_debt.change@FY2025 | change in FCF after leases to debt, FY2024 to FY2025 | 0.8 points | up, better vs prior year; printed without a sign: say the direction in words |
 | debt_due_1y@FY2025 | Debt due within one year, FY2025 | EUR 1.9bn | up vs prior year |
 | debt_due_1y@FY2024 | Debt due within one year, FY2024 | EUR 1.8bn |  |
 | debt_due_1y.change@FY2025 | change in Debt due within one year, FY2024 to FY2025 | 4.1% | up vs prior year; printed without a sign: say the direction in words |
@@ -138,9 +144,6 @@ write no number about it, and no direction word unless a figure of the sentence 
 
 These figures are missing, not meaningful or not verified yet. Do not write about them, even without a blank.
 
-- net_capex@FY2025: not verified yet: waiting for Imane's review
-- fcf_after_leases@FY2025: not verified yet: waiting for Imane's review
-- fcf_after_leases_to_debt@FY2025: not verified yet: waiting for Imane's review
 - capex_intensity.peer_rank@FY2025: not ranked: neither higher nor lower is better
 - liquidity@FY2025: Undrawn committed credit facilities not available for FY2025
 - liquidity@FY2024: Undrawn committed credit facilities not available for FY2024

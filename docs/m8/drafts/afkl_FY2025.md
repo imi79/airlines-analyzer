@@ -1,6 +1,6 @@
 # Air France-KLM, FY2025
 
-Fact sheet `851c94ef2841`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
+Fact sheet `3b553c628d82`. Sections marked **draft-v8** were redrafted in M8; the others keep their draft-v7 text (M4).
 
 ## Snapshot (draft-v7, passed)
 
@@ -24,10 +24,10 @@ Fact sheet `851c94ef2841`. Sections marked **draft-v8** were redrafted in M8; th
 
 ## Liquidity and funding (draft-v8, passed)
 
-1. Cash and cash-like investments were stable at EUR 6.9bn, leaving cash liquidity to revenue at 20.8%, below the peer median of 25.0%.
-2. Debt due within one year rose by 3.3% to EUR 2.8bn, so the near-term maturities absorb a large part of the cash balance and leave little headroom without new funding.
-3. The group placed senior unsecured bonds under its EMTN programme and exercised the extension option on its Air France-KLM and Air France credit facility, bringing that maturity to 2029.
-4. Customer prepayments rose, with contract liabilities up 4.1% to EUR 4.3bn and advance ticket cover at 62.2%, so a larger share of the cash balance is refundable if bookings slow.
+1. Cash and cash-like investments were stable at EUR 6.9bn, a change of 1.1%, giving cash liquidity to revenue of 20.8%.
+2. Debt due within one year rose by 3.3% to EUR 2.8bn, while borrowings due within two years fell by 21.5% to EUR 3.1bn, so cash on hand covers the near-term maturities without new funding.
+3. Free cash flow after lease payments turned positive at EUR 367m, from EUR -1.1bn in FY2024, taking FCF after leases to debt up by 10.0 points to 2.4%.
+4. Customer prepayments rose, with contract liabilities up by 4.1% to EUR 4.3bn, and advance ticket cover rose by 3.1 points to 62.2%, so a larger part of the cash balance is customers' prepayments.
 
 ## Peer positioning (draft-v7, passed)
 
@@ -37,7 +37,7 @@ Fact sheet `851c94ef2841`. Sections marked **draft-v8** were redrafted in M8; th
 
 ## Watch items (draft-v8, passed)
 
-1. Cash liquidity: cash liquidity to revenue fell by 1.2 points to 20.8%, the lowest of the network group (3rd of 3).
-2. Maturities: debt due within one year of EUR 2.8bn rose by 3.3% and sits against cash and cash-like investments of EUR 6.9bn, so refinancing is needed to cover the balance.
-3. Cash generation: FCF to debt of 3.9% is the weakest of the group (3rd of 3) against a peer median of 10.8%, with capex intensity of 13.5% above the peer median of 10.4%.
-4. Customer prepayments: advance ticket cover of 62.2% is below the peer median of 67.4%, so a larger share of the cash balance is refundable if bookings slow.
+1. Liquidity: cash liquidity to revenue fell by 1.2 points to 20.8%, below the peer median of 25.0%.
+2. Cash generation: FCF to debt of 3.9% is below the peer median of 10.8%, the weakest of the group (3rd of 3), with capex intensity at 13.5% above the peer median of 10.4%.
+3. Maturities: debt due within one year rose by 3.3% to EUR 2.8bn, and cash flow after leases covers only 2.4% of debt, so refinancing depends on access to the bond market, where the group placed senior unsecured bonds under its EMTN programme.
+4. Customer prepayments: advance ticket cover rose by 3.1 points to 62.2%, so a larger part of the cash balance is customers' prepayments.

@@ -3,11 +3,11 @@
 | Company | Year | Layer | Basis | Tool | Key | Result |
 | --- | --- | --- | --- | --- | --- | --- |
 | adp | FY2024 | borrowings | contractual_cash_flows | 0_1 1,456.0, 1_5 4,917.0, 5_plus 5,316.0 | 0_1 1,456.0, 1_5 4,917.0, 5_plus 5,316.0 | flagged: within one year 1,456.0m (with interest) is not between 1,606.5m and 2,852.2m, from the current borrowings of 1,785.0m |
-| adp | FY2025 | borrowings | carrying_amount | 0_1 1,139.0, 1_5 4,156.0, 5_plus 4,115.0 |  | flagged: within one year 1,139.0m does not agree with the current borrowings of 1,859.0m on the balance sheet; the table total 9,410.0m does not agree with the borrowings of 10,587.0m on the balance sheet; entered by hand, not reviewed yet: waiting for Imane |
+| adp | FY2025 | borrowings | carrying_amount | 0_1 1,139.0, 1_5 4,156.0, 5_plus 4,115.0 |  | flagged: within one year 1,139.0m does not agree with the current borrowings of 1,859.0m on the balance sheet; the table total 9,410.0m does not agree with the borrowings of 10,587.0m on the balance sheet |
 | aena | FY2024 | borrowings | contractual_cash_flows | 0_1 2,131.8, 1_2 956.4, 2_5 2,578.7, 5_plus 3,065.2 |  | flagged: within one year 2,131.8m (with interest) is not between 1,206.5m and 2,072.4m, from the current borrowings of 1,340.6m |
 | aena | FY2025 | borrowings | contractual_cash_flows | 0_1 1,707.9, 1_2 1,116.7, 2_5 2,298.2, 5_plus 3,853.7 |  | flagged: within one year 1,707.9m (with interest) is not between 777.7m and 1,619.7m, from the current borrowings of 864.1m |
 | afkl | FY2024 | borrowings | contractual_cash_flows | 0_1 2,065.0, 1_2 1,848.0, 2_5 3,436.0, 5_plus 3,188.0 | 0_1 2,065.0, 1_2 1,848.0, 2_5 3,436.0, 5_plus 3,188.0 | verified, correct |
-| afkl | FY2025 | borrowings | contractual_cash_flows | 0_1 2,113.0, 1_2 959.0, 2_5 4,256.0, 5_plus 3,176.0 |  | flagged: entered by hand, not reviewed yet: waiting for Imane |
+| afkl | FY2025 | borrowings | contractual_cash_flows | 0_1 2,113.0, 1_2 959.0, 2_5 4,256.0, 5_plus 3,176.0 |  | verified, not in the key: check by hand |
 | easyjet | FY2024 | borrowings | contractual_cash_flows | 0_1 465.0, 1_2 45.0, 2_5 1,115.0, 5_plus 760.0 |  | flagged: row, total: value 2,385 is not printed in the quote |
 | easyjet | FY2025 | leases | contractual_cash_flows | 0_1 299.0, 1_5 727.0, 5_plus 186.0 | 0_1 299.0, 1_5 727.0, 5_plus 186.0 | verified, correct |
 | finnair | FY2024 | borrowings | principal | 0_1 125.5, 1_2 56.7, 2_5 567.1, 5_plus 112.2 | 0_1 125.5, 1_2 56.7, 2_5 567.1, 5_plus 112.2 | verified, correct |
@@ -21,6 +21,6 @@
 | --- | --- |
 | verified_correct | 4 |
 | verified_wrong | 0 |
-| verified_not_in_key | 0 |
-| unverified | 10 |
+| verified_not_in_key | 1 |
+| unverified | 9 |
 | key_tables_without_a_verified_wall | 7 |

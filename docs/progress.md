@@ -155,19 +155,22 @@ Branch: `m8-cash-flow-refinancing`. Plan: `docs/m8/plan.md`. Run: `uv run tearsh
 --offline` (replays the recorded AI answers; `uv run tearsheet extract` reads the maturity
 tables not yet read, `uv run tearsheet draft` redrafts). Results: `docs/m8/`. Walkthrough:
 `docs/m8/walkthrough.md`. Decision 0022. **Status: done; ratings reviewed and merged into
-`main` by Imane's go-ahead (2026-11-11). Still open for her review: four FY2025 hand entries,
-two hand-entered maturity tables, the flagged maturity tables and three flagged snapshots.**
+`main` by Imane's go-ahead (2026-11-11); hand entries reviewed by Imane the same day. Still
+open: the flagged maturity tables (approve in the app if she wishes) and three flagged
+snapshots to edit.**
 
 - [x] Cash flow after leases computed for every issuer and year, or missing with a stated
       reason: net capex, FCF after leases and its ratio to debt for 9 of 9 companies (Vienna's
       ratio n.m. on its very small debt); one unit test per new metric; second-source check
       16 of 16 within tolerance (`docs/m8/cash_flow_check.md`). Air France-KLM and ADP FY2025
-      use four new hand entries waiting for Imane's review (shown as awaiting review)
+      use three new hand entries, reviewed by Imane on 2026-11-11
 - [x] Maturity wall: no wrong value marked verified on the answer key (eight company-years,
       eleven tables, committed before the AI run): 0 wrong; 4 verified and correct; every other
       table flagged with its reasons (`docs/m8/maturity_score.md`). First run with the checks as
       written: 2 verified, both correct; four form fixes and a tighter interest bound after it
-      (decision 0022). Coverage is low: a checked wall on 4 of 18 tearsheets
+      (decision 0022). Coverage is low: a checked wall on 5 of 18 tearsheets (with Air
+      France-KLM FY2025, entered by hand from the PDF and reviewed by Imane; ADP FY2025's hand
+      entries, also reviewed, still disagree with the balance sheet and stay flagged)
 - [x] Ratings box complete: nine entries with agency, rating, outlook, date and source, each
       quote checked against its report by code (`config/ratings.yaml`); reviewed by Imane on
       2026-11-11. A rating is offered to the commentary only in the note of its report's year
@@ -177,7 +180,8 @@ two hand-entered maturity tables, the flagged maturity tables and three flagged 
       row with no number outside a blank, 15 of 18 pass the verifier in full (three kept M4
       snapshots flagged: two after the load factor correction, Aena FY2024 for a rating typed
       in M4, "upgraded to A")
-- Prompt `draft-v8`: about 1,340,000 tokens in and 91,000 out over four rounds (first draft;
-  the figure-name phrases; after the ratings review; ratings limited to their own year), 1.8
+- Prompt `draft-v8`: about 1,420,000 tokens in and 96,000 out over five rounds (first draft;
+  the figure-name phrases; after the ratings review; ratings limited to their own year; after
+  the hand entries' review, two notes), 1.9
   times the plan's estimate; maturity tables `maturity-v1`: about 168,000 tokens. 638 tests
   pass

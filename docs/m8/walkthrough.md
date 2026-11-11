@@ -34,8 +34,8 @@ others are flagged with their reasons. A few examples, each a sound reason to st
 - at Norwegian the AI picked the parent company's table, not the group's;
 - at Aena it took the whole liquidity table, trade payables included.
 
-Coverage is honest but low: 4 of 18 tearsheets show a checked wall (Finnair FY2024 and
-FY2025, Air France-KLM FY2024, easyJet FY2025 for its leases).
+Coverage is honest but low: 5 of 18 tearsheets show a checked wall (Finnair FY2024 and
+FY2025, Air France-KLM FY2024 and FY2025, easyJet FY2025 for its leases).
 
 **3. Ratings.** Nine entries, copied from each company's report with the page and the date;
 code checked that each sentence is in the report and shows the agency, rating and outlook.
@@ -59,18 +59,19 @@ France-KLM's, ADP's and easyJet's dates are more than a year old: flagged.
 ## What you do (about 30 minutes)
 
 1. ~~Review the nine ratings~~: done on 2026-11-11, recorded in `config/ratings.yaml`.
-2. **Review four FY2025 hand entries** in `config/manual_figures.yaml` (`pending_review`): Air
-   France-KLM disposals 1,391 (statements page 8); ADP lease payments 30 and disposals 35 (French
-   statements, page 7). Until then those two tearsheets show FCF after leases as awaiting review.
-3. **Review the two FY2025 maturity tables entered by hand** (`config/maturity_entries.yaml`:
+2. ~~Review three FY2025 hand entries~~ (done on 2026-11-11): Air France-KLM disposals 1,391
+   (statements page 8); ADP lease payments 30 and disposals 35 (French statements, page 7).
+3. ~~Review the two FY2025 maturity tables entered by hand~~ (done on 2026-11-11; Air
+   France-KLM's now shows on the page) (`config/maturity_entries.yaml`:
    Air France-KLM page 75, ADP pages 57 and 64). ADP's will still be flagged after your review:
    its tables do not agree with the balance sheet (the bank-and-bond table leaves out leases and
    other debt).
 4. **Optionally approve flagged maturity tables** in the app (Data and audit), where you judge
    the reason acceptable (for example IAG's convertible bond).
 5. **Read two or three redrafted notes** (`docs/m8/drafts/`, or `docs/m8/pdf/`), and edit the
-   three flagged snapshots (Finnair FY2024, Wizz Air FY2025, Aena FY2024) if you wish. One small wording glitch to fix by hand: Finnair FY2025
-   says "covered 17.39x times".
+   three flagged snapshots (Finnair FY2024, Wizz Air FY2025, Aena FY2024) if you wish. One small
+   wording glitch to fix by hand in Finnair FY2025 and IAG FY2025:
+   "covered ...x times" (the figure already prints with its x).
 6. ~~Say go to merge into `main`~~: merged on 2026-11-11; the public link follows `main`.
 
 ## Results
@@ -82,10 +83,10 @@ France-KLM's, ADP's and easyJet's dates are more than a year old: flagged.
 | Ratings box complete and reviewed by you | 9 entries checked by code, reviewed on 2026-11-11 | ✓ |
 | The tearsheet stays clean | Sources 18 of 18; PDF two pages 18 of 18; Excel 18 of 18; 52 of 52 faulty sentences rejected; 14 notes in a row with no number outside a blank | ✓ |
 
-AI tokens: about 168,000 for the maturity tables; about 1,430,000 for the redraft over four
-rounds, 1.8 times the plan's estimate: recording your ratings review changed the fact sheets,
-and a rating is now offered only to the note of its own year, so the notes concerned were
-redrafted. 638 tests pass.
+AI tokens: about 168,000 for the maturity tables; about 1,520,000 for the redraft over five
+rounds, 1.9 times the plan's estimate: recording your reviews (ratings, then hand entries)
+changed the fact sheets, and a rating is now offered only to the note of its own year, so the
+notes concerned were redrafted. 638 tests pass.
 
 ## Next
 
