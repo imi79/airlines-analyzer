@@ -71,8 +71,8 @@ France-KLM's, ADP's and easyJet's dates are more than a year old: flagged.
 5. **Read two or three redrafted notes** (`docs/m8/drafts/`, or `docs/m8/pdf/`), and edit the
    three flagged snapshots (Finnair FY2024, Wizz Air FY2025, Aena FY2024) if you wish. The
    "covers ...x times" wording in Finnair and IAG FY2025 is fixed (2026-11-11), as saved edits in
-   `notes/` (figures still in blanks): they show in the PDFs, Excel and live mode; the public demo
-   opens without saved notes (decision 0019).
+   `notes/` (figures still in blanks). The public demo now shows your saved edits and analyst
+   views, marked "edited by the analyst"; visitors' own changes are still never saved.
 6. ~~Say go to merge into `main`~~: merged on 2026-11-11; the public link follows `main`.
 
 ## Results

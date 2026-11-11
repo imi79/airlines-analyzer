@@ -126,3 +126,11 @@ new adversarial cases, 52 in all, all rejected).
 - **Final**: 15 of 18 notes pass the verifier in full; 14 in a row with no number outside a
   blank (the checklist asks for ten); three kept M4 snapshots flagged for Imane.
 
+**The demo shows the analyst's saved work** (Imane: "yes, show my edits and views in the
+demo"). Since M5 (decision 0019) the public demo opened each tearsheet without the saved notes.
+It now starts from `notes/`: Imane's analyst views and her edits (the "covers ... x times"
+wording in Finnair and IAG FY2025, fixed at her request) show on the page, marked "edited by
+the analyst". A visitor's own changes still last for the session only; demo mode writes
+nothing (tested). `notes/` is now in the Docker image too. Edited sentences are checked with
+the same rules as the M8 drafts they replace.
+

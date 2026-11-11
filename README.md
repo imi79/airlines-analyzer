@@ -137,8 +137,8 @@ uv sync
 uv run tearsheet app
 ```
 
-The app opens in demo mode from the pre-built tearsheets in [`samples/`](samples/): no key, no
-database, no network. To rebuild everything from the filings (downloads them once):
+The app opens in demo mode from the pre-built tearsheets in [`samples/`](samples/), with the
+analyst's saved edits and views from [`notes/`](notes/): no key, no database, no network. To rebuild everything from the filings (downloads them once):
 
 ```bash
 uv run tearsheet all

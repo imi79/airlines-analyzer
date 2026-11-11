@@ -166,6 +166,18 @@ def test_a_link_opens_the_named_tearsheet(demo):
     )
 
 
+def test_demo_shows_the_analysts_saved_edits_and_view(demo):
+    """Demo mode starts from the analyst's committed notes (M8, at Imane's request)."""
+    at = run(("iag", 2025))
+    assert not at.exception, [e.value for e in at.exception]
+    sentence = [m.value for m in at.markdown if "liquidity covers it" in m.value]
+    assert sentence and "edited by the analyst" in sentence[0]
+    assert "3.59x" in sentence[0] and "times" not in sentence[0]
+    at = run(("easyjet", 2025))
+    note = at.session_state["notes"]["easyjet_FY2025"]
+    assert note["analyst_view"].startswith("The strongest balance sheet")
+
+
 def test_demo_export_includes_the_session_and_saves_nothing(demo):
     """Demo mode: the PDF and Excel carry the visitor's analyst view; no file is written."""
     from tearsheet.render.export import EXPORTS

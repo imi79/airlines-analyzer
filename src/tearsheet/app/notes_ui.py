@@ -19,15 +19,13 @@ def _verifier() -> Verifier:
 
 
 def get_note(ts: dict) -> dict:
-    """The analyst's note for this tearsheet: from the session, else from notes/ (live)."""
+    """The analyst's note for this tearsheet: from the session, else from notes/. In demo mode
+    too, the analyst's saved edits and views are the starting point (Imane, M8); a visitor's
+    changes still last for the session only (`_persist` writes nothing in demo mode)."""
     store = st.session_state.setdefault("notes", {})
     k = f"{ts['issuer']}_FY{ts['fiscal_year']}"
     if k not in store:
-        store[k] = (
-            notes.load(ts["issuer"], ts["fiscal_year"])
-            if state.mode() == state.LIVE
-            else notes.empty(ts["issuer"], ts["fiscal_year"])
-        )
+        store[k] = notes.load(ts["issuer"], ts["fiscal_year"])
     return store[k]
 
 

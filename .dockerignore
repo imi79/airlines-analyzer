@@ -1,9 +1,9 @@
-# Not needed by the app in demo mode (and never secrets)
+# Not needed by the app in demo mode (and never secrets). notes/ stays in: the demo shows
+# the analyst's saved edits and views (M8).
 .git
 .venv
 data/
 exports/
-notes/
 .env
 .streamlit/secrets.toml
 **/__pycache__
