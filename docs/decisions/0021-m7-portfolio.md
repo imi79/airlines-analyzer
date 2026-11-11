@@ -1,7 +1,8 @@
 # 0021 · M7: portfolio packaging, deployment and the public repository
 
 Date: 2026-11-11 · Status: plan approved by Imane with every recommendation ("approved with all
-recommendations, go ahead on m7-portfolio"); deployment and history clean-up pending her steps
+recommendations, go ahead on m7-portfolio"); history rewritten on her go-ahead ("rewrite, keep
+PDFs"); deployment pending her steps
 
 **Choices approved with the plan** (`docs/m7/plan.md`):
 
@@ -53,3 +54,16 @@ recommendations, go ahead on m7-portfolio"); deployment and history clean-up pen
   passing. Gate 2 asks for ten, so it still passes. The checklist line and the README use 11.
 - **README** at the repository root with the architecture as a Mermaid diagram (displayed by
   GitHub, no image to maintain) and every gate result, the misses included.
+- **The history was rewritten once before publishing** (Imane: "rewrite, keep PDFs"). Every
+  commit's author and committer address became the GitHub noreply address
+  (`245598871+imi79@users.noreply.github.com`); names, dates, messages and files are unchanged.
+  Done with git-filter-repo on a separate full copy; before replacing anything on GitHub, each of
+  the 11 branches was checked to hold exactly the same files and number of commits as before.
+  All 11 branches were then replaced on GitHub, and new commits use the noreply address.
+  Side effects: every commit identifier changed, so identifiers quoted in earlier records (the
+  M6 manifests and PDF footers name `6e7ed9559042`, the M6 plan commit, now `31df84e`) no
+  longer resolve; the old commits stay reachable on GitHub by their exact identifier until GitHub's
+  own clean-up, but the repository was private and nobody outside has them.
+- **The two supplied company PDFs stay** in `documents/`: the full rebuild reads them (the
+  recorded AI answers are keyed on their text), and they are public investor documents. Their
+  SHA-256 fingerprints are in `config/report_documents.yaml` and `config/manual_figures.yaml`.

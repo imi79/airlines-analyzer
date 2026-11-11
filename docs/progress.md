@@ -127,3 +127,19 @@ Results: `docs/m6/`. Walkthrough: `docs/m6/walkthrough.md`. Decision 0020. **Sta
 - Also fixed: filing links in the app (relative addresses since M5). 533 tests, 52 new. No AI
   tokens spent
 
+## M7 · Portfolio packaging
+
+Branch: `m7-portfolio`. Plan: `docs/m7/plan.md`. Decision 0021. **Status: in progress**: built
+and tested; waiting for Imane's analyst views, the public repository and the deployment.
+
+- [ ] Public link works in a fresh browser with no key (gate 3): a copy of the hosting setup
+      (Debian 12 and 11) and the Docker image pass the full browser tour with no key and no
+      database; the public link is checked once deployed
+- [ ] Imane can explain every stage of the pipeline without notes: explainer ready
+      (`docs/m7/pipeline_explained.md`), rehearsal to do
+- Done: verifier demo in the app; Dockerfile; checks on GitHub (tests, style, secret scan);
+  README with the architecture diagram; MIT licence; demo script, LinkedIn post and CV line
+  drafts; secret scan of the whole history (no leak); history rewritten to the noreply address
+  (Imane's go-ahead); gate 2 count corrected (11 in a row); the PDF's bundled font fixed
+- To do: three sample PDFs with Imane's analyst views; public repository; deployment; gate 3
+
