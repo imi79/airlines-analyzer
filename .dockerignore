@@ -1,0 +1,16 @@
+# Not needed by the app in demo mode (and never secrets)
+.git
+.venv
+data/
+exports/
+notes/
+.env
+.streamlit/secrets.toml
+**/__pycache__
+.pytest_cache
+.ruff_cache
+documents/
+records/
+spikes/
+docs/
+tests/

@@ -1,0 +1,42 @@
+# Checks on every push and pull request (M7, decision 0021): code style, the test suite, and a
+# scan of the whole history for secrets (spec: security). Unit tests make no network calls.
+name: checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: System libraries (PDF) and LibreOffice (Excel recalculation check)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends $(cat packages.txt) libreoffice-calc-nogui
+      - uses: astral-sh/setup-uv@v6
+      - name: Install
+        run: uv sync --frozen
+      - name: Style
+        run: |
+          uv run ruff check src tests
+          uv run ruff format --check src tests
+      - name: Tests
+        run: uv run pytest -q --durations=5
+
+  secrets:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Scan every commit for secrets (gitleaks)
+        run: |
+          docker run --rm -v "$PWD:/repo" zricethezav/gitleaks:v8.30.1 \
+            git /repo --log-opts="--all" --redact --verbose
