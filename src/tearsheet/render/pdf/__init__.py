@@ -52,6 +52,7 @@ class Rendered:
     pages: int
     anchors: dict[str, int]  # section id -> page number (1-based)
     view_truncated: bool
+    fonts: tuple[str, ...] = ()  # font families embedded (the bundled one: "Tearsheet Inter")
 
 
 @cache
@@ -335,16 +336,25 @@ def render(lib: Library, ts: dict, note: dict | None, manifest: dict,
     import weasyprint
 
     config = config or load_app_config()
-    css = weasyprint.CSS(filename=str(HERE / "tearsheet.css"), base_url=str(HERE))
+    from weasyprint.text.fonts import FontConfiguration
+
+    fonts = FontConfiguration()  # without it, the bundled fonts (@font-face) are ignored
+    css = weasyprint.CSS(
+        filename=str(HERE / "tearsheet.css"), base_url=str(HERE), font_config=fonts
+    )
     found: list[str] = []
     for size in config["pdf"]["font_sizes"]:
         ctx = context(lib, ts, note, manifest, size, config)
-        doc = weasyprint.HTML(string=html_page(ctx), base_url=str(HERE)).render(stylesheets=[css])
+        doc = weasyprint.HTML(string=html_page(ctx), base_url=str(HERE)).render(
+            stylesheets=[css], font_config=fonts
+        )
         found = layout_problems(doc)
         if len(doc.pages) <= PAGES and not found:
             anchors = {a: n for n, page in enumerate(doc.pages, start=1) for a in page.anchors}
             _, cut = _view(note or {}, config, size)
-            return Rendered(doc.write_pdf(), size, len(doc.pages), anchors, cut)
+            data = doc.write_pdf()
+            families = tuple(sorted({str(f.family) for f in doc.fonts.values()}))
+            return Rendered(data, size, len(doc.pages), anchors, cut, families)
     raise Overflow(
         f"{ts['name']} {ts['period_label']}: {len(doc.pages)} pages at {size} point"
         + (f"; {'; '.join(found[:3])}" if found else "")

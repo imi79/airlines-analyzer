@@ -1,11 +1,12 @@
-/* The two-page A4 tearsheet (M6). --fs is the body size; the code steps it down in half
+/* The two-page A4 tearsheet (M6). The bundled Inter is named "Tearsheet Inter" so a copy
+   installed on the machine can never stand in for it unnoticed (decision 0021). --fs is the body size; the code steps it down in half
    points (to 7.5pt) if a tearsheet would run onto a third page (decision 0020). */
 
-@font-face { font-family: "Inter"; src: url("fonts/Inter-Regular.otf"); font-weight: 400; }
-@font-face { font-family: "Inter"; src: url("fonts/Inter-Italic.otf"); font-weight: 400;
+@font-face { font-family: "Tearsheet Inter"; src: url("fonts/Inter-Regular.otf"); font-weight: 400; }
+@font-face { font-family: "Tearsheet Inter"; src: url("fonts/Inter-Italic.otf"); font-weight: 400;
              font-style: italic; }
-@font-face { font-family: "Inter"; src: url("fonts/Inter-SemiBold.otf"); font-weight: 600; }
-@font-face { font-family: "Inter"; src: url("fonts/Inter-Bold.otf"); font-weight: 700; }
+@font-face { font-family: "Tearsheet Inter"; src: url("fonts/Inter-SemiBold.otf"); font-weight: 600; }
+@font-face { font-family: "Tearsheet Inter"; src: url("fonts/Inter-Bold.otf"); font-weight: 700; }
 
 :root { --ink: #1b1f24; --muted: #5b6470; --rule: #c9d1db; --navy: #1f4e79; --tint: #eef3f8; }
 
@@ -13,12 +14,12 @@
   size: A4;
   margin: 11mm 12mm 13mm 12mm;
   @bottom-left { content: string(company) " · " string(period) " · credit tearsheet";
-                 font: 6.5pt "Inter"; color: #5b6470; }
+                 font: 6.5pt "Tearsheet Inter"; color: #5b6470; }
   @bottom-right { content: "Page " counter(page) " of " counter(pages);
-                  font: 6.5pt "Inter"; color: #5b6470; }
+                  font: 6.5pt "Tearsheet Inter"; color: #5b6470; }
 }
 
-html { font-family: "Inter"; font-size: var(--fs); color: var(--ink); line-height: 1.32; }
+html { font-family: "Tearsheet Inter"; font-size: var(--fs); color: var(--ink); line-height: 1.32; }
 td { font-variant-numeric: tabular-nums; }
 body { margin: 0; }
 p { margin: 0 0 0.35em 0; }

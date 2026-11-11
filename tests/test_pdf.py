@@ -49,6 +49,7 @@ def test_two_pages_every_section_in_place(lib, issuer, year):
     assert {a for a, page in r.anchors.items() if page == 2} == PAGE2
     assert r.font_size >= 7.5
     assert r.view_truncated  # the long view was cut, with the note visible in the box
+    assert r.fonts == ("Tearsheet Inter",)  # the bundled font, never a fallback
 
 
 @pytest.mark.parametrize(("issuer", "year"), [("easyjet", 2025), ("adp", 2025)])
