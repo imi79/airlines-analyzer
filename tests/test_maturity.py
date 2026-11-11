@@ -315,3 +315,4 @@ def test_later_starts_where_the_column_before_ends():
     assert spans[4] == Span(D(4), D(5))
     assert spans[5] == Span(D(5), None)
     assert parse_labels(["Later"], DEC) == [None]
+    assert parse_labels(["2030", "Siguientes"], DEC)[1] == Span(D(5), None)

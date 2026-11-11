@@ -179,7 +179,8 @@ def parse_label(label: str, fiscal_year_end: date) -> Span | None:
 
 LATER = re.compile(
     r"^(?:later|thereafter|after|beyond|subsequent(?: years)?|and after|plus tard|au-delà|"
-    r"ultérieurement|posteriores?|más adelante|später|danach|thereafter years)$"
+    r"ultérieurement|posteriores?|más adelante|siguientes|años siguientes|resto|später|danach|"
+    r"thereafter years)$"
 )
 
 
