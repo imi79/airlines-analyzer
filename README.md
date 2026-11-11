@@ -6,7 +6,7 @@
 regulatory filings, where every figure is traced to its source and checked before it reaches
 the page.**
 
-**Live demo:** _link added at deployment_ · no login, no key ·
+**Live demo: [airlines-analyzer.streamlit.app](https://airlines-analyzer.streamlit.app)** · no login, no key ·
 sample PDFs: [Air France-KLM](samples/pdf/afkl_FY2025.pdf),
 [easyJet](samples/pdf/easyjet_FY2025.pdf), [Aena](samples/pdf/aena_FY2025.pdf)
 

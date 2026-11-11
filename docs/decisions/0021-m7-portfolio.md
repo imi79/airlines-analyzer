@@ -2,7 +2,7 @@
 
 Date: 2026-11-11 · Status: plan approved by Imane with every recommendation ("approved with all
 recommendations, go ahead on m7-portfolio"); history rewritten on her go-ahead ("rewrite, keep
-PDFs"); deployment pending her steps
+PDFs"); deployed by Imane at https://airlines-analyzer.streamlit.app, gate 3 passed
 
 **Choices approved with the plan** (`docs/m7/plan.md`):
 

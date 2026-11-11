@@ -129,12 +129,14 @@ Results: `docs/m6/`. Walkthrough: `docs/m6/walkthrough.md`. Decision 0020. **Sta
 
 ## M7 · Portfolio packaging
 
-Branch: `m7-portfolio`. Plan: `docs/m7/plan.md`. Decision 0021. **Status: in progress**: built
-and tested; waiting for Imane's analyst views, the public repository and the deployment.
+Branch: `m7-portfolio`. Plan: `docs/m7/plan.md`. Decision 0021. Live:
+https://airlines-analyzer.streamlit.app. **Status: in progress**: gate 3 passed; the rehearsal
+remains.
 
-- [ ] Public link works in a fresh browser with no key (gate 3): a copy of the hosting setup
-      (Debian 12 and 11) and the Docker image pass the full browser tour with no key and no
-      database; the public link is checked once deployed
+- [x] Public link works in a fresh browser with no key (gate 3): every page, a figure followed
+      down to its source, a two-page PDF download and the verifier demo, from a fresh browser,
+      not signed in (`docs/m7/gate3.md`); the hosting copy (Debian 12 and 11) and the Docker
+      image passed the same tour beforehand
 - [ ] Imane can explain every stage of the pipeline without notes: explainer ready
       (`docs/m7/pipeline_explained.md`), rehearsal to do
 - Done: verifier demo in the app; Dockerfile; checks on GitHub (tests, style, secret scan);
@@ -143,5 +145,6 @@ and tested; waiting for Imane's analyst views, the public repository and the dep
   (Imane's go-ahead); gate 2 count corrected (11 in a row); the PDF's bundled font fixed
 - Three sample PDFs in `samples/pdf/` (Air France-KLM, easyJet, Aena FY2025) with the analyst
   views Imane adopted (`notes/`); two pages at 8.5 point, bundled font
-- To do: public repository; deployment; gate 3; rehearsal
+- Public repository, deployed by Imane
+- To do: rehearsal
 
