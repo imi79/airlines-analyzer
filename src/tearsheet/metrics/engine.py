@@ -49,11 +49,14 @@ def load_settings(issuer: Issuer, path: Path = SETTINGS) -> dict:
 
 
 def labels(catalog: dict[str, dict]) -> dict[str, str]:
+    from tearsheet.extract.maturity import line_labels  # the maturity wall's lines (M8)
+
     lines = yaml.safe_load(CONCEPT_MAP.read_text())["lines"]
     extracted = yaml.safe_load(ITEMS.read_text())["items"]
     return (
         {k: v["label"] for k, v in lines.items()}
         | {k: v["label"] for k, v in extracted.items()}
+        | line_labels()
         | {k: v["label"] for k, v in catalog.items()}
     )
 

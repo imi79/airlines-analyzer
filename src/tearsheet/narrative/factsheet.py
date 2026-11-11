@@ -147,10 +147,20 @@ def load_narrative(path: Path = NARRATIVE) -> dict:
     return yaml.safe_load(path.read_text())
 
 
-def load_specs(narrative: dict | None = None) -> dict[str, Spec]:
-    """Catalog metrics, then the statement lines offered to the AI (config/narrative.yaml)."""
+MILESTONES = ["M2", "M3", "M4", "M5", "M6", "M7", "M8"]
+
+
+def load_specs(narrative: dict | None = None, upto: str | None = None) -> dict[str, Spec]:
+    """Catalog metrics, then the statement lines offered to the AI (config/narrative.yaml).
+    `upto` keeps only the metrics that existed at that milestone (a catalog entry's `since`):
+    the fact sheet of a recorded draft must stay exactly as it was sent (M8, decision 0022)."""
     narrative = narrative or load_narrative()
     catalog = load_catalog()
+    if upto is not None:
+        last = MILESTONES.index(upto)
+        catalog = {
+            k: v for k, v in catalog.items() if MILESTONES.index(v.get("since", "M2")) <= last
+        }
     thresholds = load_flat_thresholds()
     names = labels(catalog)
     specs = {}
@@ -164,6 +174,8 @@ def load_specs(narrative: dict | None = None) -> dict[str, Spec]:
             tuple(spec.get("applies_to") or ()),
         )
     for line, better in narrative["statement_lines"].items():
+        if upto is not None and line in (narrative.get("statement_lines_since_m8") or ()):
+            continue
         specs[line] = Spec(line, names[line], "amount", better, thresholds["amount"])
     if narrative.get("net_cash"):
         net = narrative["net_cash"]
@@ -501,9 +513,13 @@ def add_events(sheet: FactSheet, events) -> None:
 
 def load_figures(con, concepts: set[str]) -> list[Figure]:
     """Every company's primary value per concept and year, plus the reason for each gap."""
+    # A computed metric and a figure read from the report can share a name (load factor: RPK
+    # ÷ ASK, and the company's printed load factor, kept only as a cross-check). The computed
+    # one is the metric: it is put last, so it is the one kept (fixed in M8, decision 0022;
+    # before, the order of equal rows was left to the database).
     rows = con.execute(
         "SELECT issuer, concept, fiscal_year, period_end, value, status FROM facts "
-        "WHERE is_primary ORDER BY issuer, concept, fiscal_year"
+        "WHERE is_primary ORDER BY issuer, concept, fiscal_year, source_type = 'computed'"
     ).fetchall()
     out = [
         Figure(i, c, int(y), end, Decimal(str(v)), s)

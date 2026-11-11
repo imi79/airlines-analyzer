@@ -13,6 +13,7 @@ fiscal_year,line,value,concepts,rule,comparative,restated
 2021,total_assets,18362000000,ifrs-full:Assets,common,True,False
 2021,cfo,757000000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,True,True
 2021,capex,527000000,adp:PurchaseOfIntangibleAssetsPropertyPlantAndEquipmentClassifiedAsInvestingActivities,override:adp,True,False
+2021,disposal_proceeds,11000000,ifrs-full:ProceedsFromDisposalsOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets,common,True,False
 2021,lease_payments,17000000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,True,False
 2021,interest_paid,285000000,ifrs-full:InterestPaidClassifiedAsFinancingActivities,common,True,False
 2021,tax_paid,-56000000,ifrs-full:IncomeTaxesPaidClassifiedAsOperatingActivities,common,True,False
@@ -30,6 +31,7 @@ fiscal_year,line,value,concepts,rule,comparative,restated
 2022,total_assets,18845000000,ifrs-full:Assets,common,False,False
 2022,cfo,1553000000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,False,False
 2022,capex,695000000,adp:PurchaseOfIntangibleAssetsPropertyPlantAndEquipmentClassifiedAsInvestingActivities,override:adp,False,False
+2022,disposal_proceeds,6000000,ifrs-full:ProceedsFromDisposalsOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets,common,False,False
 2022,lease_payments,20000000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,False,False
 2022,interest_paid,258000000,ifrs-full:InterestPaidClassifiedAsFinancingActivities,common,False,False
 2022,tax_paid,31000000,ifrs-full:IncomeTaxesPaidClassifiedAsOperatingActivities,common,False,False
@@ -47,6 +49,8 @@ fiscal_year,line,value,concepts,rule,comparative,restated
 2023,total_assets,19660000000,ifrs-full:Assets,common,True,False
 2023,cfo,1587000000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,True,False
 2023,capex,872000000,adp:InvestissementsCorporelsIncorporelsEtDePlacement + adp:VariationDesDettesEtAvancesSurAcquisitionsDimmobilisations,override:adp,True,False
+2023,disposal_proceeds,7000000,ifrs-full:ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,common,True,False
+2023,lease_payments,18000000,ifrs-full:CashOutflowForLeases,override:adp,True,False
 2023,interest_paid,291000000,adp:InteretsPayesExcluantLesInteretsPayesSurLesLeases,override:adp,True,False
 2023,tax_paid,171000000,ifrs-full:IncomeTaxesPaidClassifiedAsOperatingActivities,common,True,False
 2024,revenue,6158000000,ifrs-full:Revenue,common,False,False
@@ -63,5 +67,7 @@ fiscal_year,line,value,concepts,rule,comparative,restated
 2024,total_assets,20179000000,ifrs-full:Assets,common,False,False
 2024,cfo,1524000000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,False,False
 2024,capex,1169000000,adp:InvestissementsCorporelsIncorporelsEtDePlacement + adp:VariationDesDettesEtAvancesSurAcquisitionsDimmobilisations,override:adp,False,False
+2024,disposal_proceeds,13000000,ifrs-full:ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,common,False,False
+2024,lease_payments,28000000,ifrs-full:CashOutflowForLeases,override:adp,False,False
 2024,interest_paid,298000000,adp:InteretsPayesExcluantLesInteretsPayesSurLesLeases,override:adp,False,False
 2024,tax_paid,283000000,ifrs-full:IncomeTaxesPaidClassifiedAsOperatingActivities,common,False,False

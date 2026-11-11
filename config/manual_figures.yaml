@@ -48,8 +48,11 @@ documents:
       interest_paid: [670, 664, 8, "Interest paid"]
       tax_paid: [136, 20, 8, "Income tax (paid) / reimbursed"]
       other_cash_like: [[988, 1156], [1046, 1057], 77, "Net debt note 32: marketable securities > 3 months + bonds"]
+      disposal_proceeds: [1391, 678, 8, "Proceeds on disposal of property plant and equipment and intangible assets"]
     prior_year_as_fact: [other_cash_like]
     # interest_expense and other_cash_like added in M2, reviewed by Imane on 2026-11-01.
+    # disposal_proceeds added in M8 (cash flow after leases), waiting for Imane's review.
+    pending_review: [disposal_proceeds]
     footnotes:
       dda: Air France-KLM D&A includes provisions, as in the company's own EBITDA definition.
 
@@ -82,8 +85,13 @@ documents:
       interest_paid: [295, 298, 6, "Interest paid"]
       tax_paid: [370, 283, 6, "Tax expenses (cash flow)"]
       other_cash_like: [125, 138, 56, "Net debt note 9.4.2: restricted bank balances"]
+      lease_payments: [30, 28, 7, "Remboursements des dettes de location (French statements, page 7)"]
+      disposal_proceeds: [35, 13, 7, "Cessions d'immobilisations corporelles (French statements, page 7)"]
     prior_year_as_fact: [other_cash_like]
     # share_of_associates and other_cash_like added in M2, reviewed by Imane on 2026-11-01.
+    # lease_payments and disposal_proceeds added in M8, read from the French statements
+    # (documents/, same figures as the English ones), waiting for Imane's review.
+    pending_review: [lease_payments, disposal_proceeds]
 
   # FY2024 statements: only the net debt items that aren't tagged, to cover FY2023.
   - issuer: afkl

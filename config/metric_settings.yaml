@@ -7,9 +7,17 @@
 #   Any other line that isn't reported in a year counts as zero.
 # associates_in_operating_profit: the company's operating profit includes its share of
 #   associates' results, which is taken out of EBITDA (choice 3a).
+# interest_paid_in_financing (M8, decision 0022): where interest paid sits in the cash flow
+#   statement, for the years whose interest paid is not tagged with a standard concept that
+#   says it (a company concept, or a figure entered by hand). FCF after leases takes out
+#   interest paid only where it sits in financing.
 
 issuers:
   afkl:
+    interest_paid_in_financing: true
+    interest_paid_evidence: >-
+      FY2025 statements, page 8: "Interest paid (670)" in the cash flows from financing
+      activities, as tagged in the FY2023 and FY2024 filings.
     cash_like:
       - line: cash
       - line: other_cash_like
@@ -72,6 +80,11 @@ issuers:
     associates_in_operating_profit: false
 
   adp:
+    interest_paid_in_financing: true
+    interest_paid_evidence: >-
+      "Intérêts payés" sits in the cash flows from financing activities ("Flux de trésorerie
+      provenant des activités de financement"): FY2024 report (298, FY2023 291), FY2025
+      statements (295); tagged as a company concept from FY2023.
     cash_like:
       - line: cash
       - line: other_cash_like

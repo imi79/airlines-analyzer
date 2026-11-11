@@ -109,6 +109,34 @@ metrics:
     excel: "fcf / total_debt"
     higher_is_better: true
     definition: Free cash flow ÷ total debt.
+  # M8: cash flow after leases. Under IFRS 16 a lease payment is a debt repayment, so it sits in
+  # financing and never reduces cash from operations: free cash flow flatters companies that
+  # lease their aircraft. These figures take lease payments out, and interest paid where a
+  # company shows it in financing, so every company is measured on the same footing.
+  net_capex:
+    label: Net capex
+    unit: amount
+    excel: "capex - disposal_proceeds?"
+    higher_is_better: null
+    since: M8
+    definition: >-
+      Purchases of PP&E and intangibles − proceeds from disposals (including sale-and-leaseback).
+  fcf_after_leases:
+    label: FCF after leases
+    unit: amount
+    excel: "cfo - net_capex - lease_payments - interest_paid?"
+    higher_is_better: true
+    since: M8
+    definition: >-
+      Cash from operations − net capex − lease principal payments − interest paid where the
+      company shows it in financing cash flows.
+  fcf_after_leases_to_debt:
+    label: FCF after leases to debt
+    unit: pct
+    excel: "fcf_after_leases / total_debt"
+    higher_is_better: true
+    since: M8
+    definition: FCF after leases ÷ total debt.
   capex_intensity:
     label: Capex intensity
     unit: pct
@@ -140,6 +168,40 @@ metrics:
     excel: "liquidity / revenue"
     higher_is_better: true
     definition: Liquidity ÷ revenue.
+  # M8: refinancing. Debt due within a year is on the balance sheet (tagged); the two-year
+  # figures come from the maturity wall, read from the debt note and checked by code.
+  debt_due_1y:
+    label: Debt due within one year
+    unit: amount
+    excel: "borrowings_current + lease_liabilities_current?"
+    higher_is_better: null
+    since: M8
+    definition: >-
+      Current borrowings + current lease liabilities (the current part of total debt on the
+      balance sheet).
+  short_term_debt_cover:
+    label: Short-term debt cover
+    unit: x
+    excel: "liquidity / debt_due_1y"
+    higher_is_better: true
+    since: M8
+    definition: Liquidity ÷ debt due within one year.
+  borrowings_due_2y:
+    label: Borrowings due within two years
+    unit: amount
+    excel: "maturity_borrowings_0_1? + maturity_borrowings_1_2? + maturity_borrowings_0_2?"
+    higher_is_better: null
+    since: M8
+    definition: >-
+      Borrowings (bonds, bank and other loans, without leases) falling due within two years of
+      the year end, from the maturity table of the debt note.
+  liquidity_to_borrowings_due_2y:
+    label: Liquidity to borrowings due within two years
+    unit: x
+    excel: "liquidity / borrowings_due_2y"
+    higher_is_better: true
+    since: M8
+    definition: Liquidity ÷ borrowings due within two years (maturity wall).
   advance_ticket_cover:
     label: Advance ticket cover
     unit: pct

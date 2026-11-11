@@ -1,5 +1,15 @@
 # Groupe ADP: company-specific concepts (French names), tried before the common map.
 lines:
+  lease_payments:
+    rules:
+      - concepts: [ifrs-full:CashOutflowForLeases]
+        reason: >-
+          From FY2023 the cash flow statement has one line, "Remboursements des dettes de
+          location et charges financières associées" (lease principal and the interest on it),
+          tagged as the total cash outflow for leases; ADP's interest paid excludes lease
+          interest, so nothing is counted twice (M8).
+        note: Lease payments include the interest on leases (ADP's interest paid excludes it).
+        checked: FY2024 cash flow statement (28; FY2023 18)
   dda:
     rules:
       - concepts: [ext:DotationsAuxAmortissementsEtDepreciationDactifsCorporelsEtIncorporelsNettesDesReprises]

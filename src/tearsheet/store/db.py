@@ -415,3 +415,33 @@ def _short_row(issuer, doc_id, doc_year, outcome, reason, year=None, item=None, 
     no_value = (None,) * 7  # value, printed, scale, currency, quote, header, location
     reasons = json.dumps([reason], ensure_ascii=False)
     return (issuer, doc_id, doc_year, year, item, outcome, *no_value, scope, reasons, None)
+
+
+def write_maturity(con, issuer: str, runs) -> None:
+    """The AI calls that read the maturity tables (M8), for the run manifest."""
+    calls = []
+    for run in runs:
+        r = run.result
+        if r is None and run.error is None:
+            continue  # entered by hand: no AI call
+        calls.append(
+            (
+                issuer,
+                run.doc.doc_id,
+                "maturity",
+                r.provider if r else None,
+                r.model if r else None,
+                r.prompt_version if r else None,
+                r.request_hash if r else None,
+                r.usage.input_tokens if r else None,
+                r.usage.output_tokens if r else None,
+                r.cost_usd if r else None,
+                r.cached if r else None,
+                None,
+                run.error,
+            )
+        )
+    if calls:
+        con.executemany(
+            "INSERT INTO llm_calls VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", calls
+        )

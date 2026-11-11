@@ -6,8 +6,11 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from tearsheet.config import DB_PATH, Issuer, load_issuers
+from tearsheet.extract.extractor import fiscal_label
 from tearsheet.extract.fx import ecb_month_end
-from tearsheet.extract.run import IssuerExtraction, extract_issuer
+from tearsheet.extract.maturity import MaturityRun
+from tearsheet.extract.maturity import read_issuer as read_maturity
+from tearsheet.extract.run import IssuerExtraction, documents_for, extract_issuer
 from tearsheet.ingest.client import Client
 from tearsheet.ingest.filings import Filing, choose, list_filings
 from tearsheet.ingest.manual import manual_filings
@@ -27,6 +30,7 @@ class IssuerLoad:
     controls: list[Control]
     metrics: list[Result]
     extraction: IssuerExtraction | None = None
+    maturity: list[MaturityRun] | None = None  # the debt maturity wall (M8)
 
 
 def load_issuer(client: Client, issuer: Issuer, llm: LLM | None = None) -> tuple[IssuerLoad, dict]:
@@ -42,12 +46,15 @@ def load_issuer(client: Client, issuer: Issuer, llm: LLM | None = None) -> tuple
     hand_filings, hand_facts, controls = manual_figures(issuer)
     filings, mapped = filings + hand_filings, mapped + hand_facts
     facts, gaps = consolidate(issuer, mapped, filings, mapping)
-    extraction = None
+    extraction, maturity = None, None
     if llm is not None:
         extraction = extract_issuer(issuer, filings, facts, llm, client, ecb_month_end(client))
         facts = facts + extraction.facts
+        docs, _ = documents_for(issuer, filings, client)
+        maturity, wall = read_maturity(issuer, docs, facts, llm, fiscal_label)
+        facts = facts + wall
     metrics = compute(issuer, facts)
-    load = IssuerLoad(issuer, filings, facts, gaps, controls, metrics, extraction)
+    load = IssuerLoad(issuer, filings, facts, gaps, controls, metrics, extraction, maturity)
     return load, reports
 
 
@@ -73,6 +80,8 @@ def load_all(
         db.write_metrics(con, result.metrics, result.issuer.currency, units)
         if result.extraction is not None:
             db.write_extraction(con, result.extraction)
+        if result.maturity is not None:
+            db.write_maturity(con, result.issuer.id, result.maturity)
         results.append(result)
     con.close()
     return results

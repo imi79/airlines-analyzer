@@ -48,15 +48,52 @@ YEARS_DRAFTED = 2
 GATE_RUN = 10  # gate 2: ten consecutive drafts across companies
 
 
+KINDS = ["", "change", "peer_median", "peer_rank"]
+
+
+def in_order(saved: FactSheet, built: FactSheet, specs: list[str]) -> FactSheet:
+    """A saved fact sheet with its entries back in the order the builder makes them (the JSON
+    copy is saved sorted). An entry the builder now files elsewhere (a figure that has become
+    available) goes where the builder's loop would have put it: by metric, then current year,
+    prior year, change, peer median, rank. The year's events are left out: they are added
+    again, in their own order, from the recorded events (add_events)."""
+
+    def rank(key: str) -> tuple:
+        name, _, period = key.partition("@")
+        metric, _, kind = name.partition(".")
+        year = -int(period[2:]) if period.startswith("FY") else 0
+        where = specs.index(metric) if metric in specs else len(specs)
+        return (where, KINDS.index(kind) if kind in KINDS else len(KINDS), year)
+
+    saved.items = {k: v for k, v in saved.items.items() if v.kind != "event"}
+    for name in ("items", "unavailable", "higher_is_better", "labels"):
+        old, ref = getattr(saved, name), getattr(built, name)
+        keys = [k for k in ref if k in old]
+        for extra in sorted((k for k in old if k not in ref), key=rank):
+            at = next((i for i, k in enumerate(keys) if rank(k) > rank(extra)), len(keys))
+            keys.insert(at, extra)
+        setattr(saved, name, {k: old[k] for k in keys})
+    return saved
+
+
 @dataclass
 class Sheets:
     drafted: list[FactSheet]  # in drafting order
     examples: list[FactSheet]  # the years the two example notes are written on
 
 
-def build_sheets(db_path: Path = DB_PATH, years: int = YEARS_DRAFTED) -> Sheets:
+FROZEN = ROOT / "records" / "factsheets" / "draft-v7"
+
+
+def build_sheets(
+    db_path: Path = DB_PATH, years: int = YEARS_DRAFTED, frozen: Path = FROZEN
+) -> Sheets:
+    """The fact sheets of prompt draft-v7 (M4): exactly as they were sent with the recorded
+    drafts, from the frozen copies in records/factsheets/ (decision 0022: the database has
+    moved on since, e.g. a load factor tie broken differently), else built from the database
+    with the metrics of M7."""
     narrative = load_narrative()
-    specs = load_specs(narrative)
+    specs = load_specs(narrative, upto="M7")
     con = duckdb.connect(str(db_path), read_only=True)
     figures = load_figures(con, set(specs))
     con.close()
@@ -65,16 +102,17 @@ def build_sheets(db_path: Path = DB_PATH, years: int = YEARS_DRAFTED) -> Sheets:
         i.id: max(f.fiscal_year for f in figures if f.issuer == i.id and f.value is not None)
         for i in issuers
     }
-    drafted = [
-        build(i, latest[i.id] - back, figures, specs, narrative)
-        for back in range(years)
-        for i in issuers
-    ]
+
+    def sheet(issuer: Issuer, year: int) -> FactSheet:
+        built = build(issuer, year, figures, specs, narrative)
+        path = frozen / f"{issuer.id}_FY{year}.json"
+        if not path.exists():
+            return built
+        return in_order(FactSheet.from_json(path), built, list(specs))
+
+    drafted = [sheet(i, latest[i.id] - back) for back in range(years) for i in issuers]
     by_id: dict[str, Issuer] = {i.id: i for i in issuers}
-    examples = [
-        build(by_id[ex["issuer"]], ex["fiscal_year"], figures, specs, narrative)
-        for ex in load_examples()
-    ]
+    examples = [sheet(by_id[ex["issuer"]], ex["fiscal_year"]) for ex in load_examples()]
     return Sheets(drafted, examples)
 
 

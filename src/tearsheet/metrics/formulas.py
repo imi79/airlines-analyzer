@@ -243,6 +243,54 @@ def fcf_to_debt(c: Context) -> tuple[Decimal, str]:
     return _to_debt(c, "fcf")
 
 
+# --- Cash flow after leases (M8) -------------------------------------------------------------
+
+
+def net_capex(c: Context) -> tuple[Decimal, str]:
+    capex = c.line("capex")
+    if not c.has("disposal_proceeds"):
+        return capex, f"Capex {m(capex)} − disposal proceeds not reported (0) = {m(capex)}"
+    sold = c.line("disposal_proceeds")
+    value = capex - sold
+    return value, f"Capex {m(capex)} − disposal proceeds {m(sold)} = {m(value)}"
+
+
+def interest_paid_in_financing(c: Context) -> bool:
+    """Where the year's interest paid sits in the cash flow statement: read from the tagged
+    concept ("...ClassifiedAsFinancingActivities"); for a company concept or a figure entered
+    by hand, from metric_settings.yaml, with the evidence (decision 0022)."""
+    fact = c.lines.get("interest_paid")
+    concepts = " ".join(fact.concepts) if fact is not None else ""
+    if "FinancingActivities" in concepts:
+        return True
+    if "OperatingActivities" in concepts:
+        return False
+    setting = c.settings.get("interest_paid_in_financing")
+    if setting is None:
+        raise Missing(
+            f"cannot tell whether interest paid sits in operating or financing cash flows for "
+            f"FY{c.fiscal_year}"
+        )
+    return bool(setting)
+
+
+def fcf_after_leases(c: Context) -> tuple[Decimal, str]:
+    """Interest paid is deducted only where the company shows it in financing cash flows:
+    elsewhere it is already inside cash from operations (decision 0022)."""
+    cfo, capex, leases = c.line("cfo"), c.metric("net_capex"), c.line("lease_payments")
+    value = cfo - capex - leases
+    text = f"Cash from operations {m(cfo)} − net capex {m(capex)} − lease payments {m(leases)}"
+    if interest_paid_in_financing(c):
+        interest = c.line("interest_paid")
+        value -= interest
+        text += f" − interest paid (in financing) {m(interest)}"
+    return value, f"{text} = {m(value)}"
+
+
+def fcf_after_leases_to_debt(c: Context) -> tuple[Decimal, str]:
+    return _to_debt(c, "fcf_after_leases")
+
+
 def capex_intensity(c: Context) -> tuple[Decimal, str]:
     capex, rev = c.line("capex"), c.line("revenue")
     value = ratio(capex, rev)
@@ -288,6 +336,33 @@ def liquidity_to_revenue(c: Context) -> tuple[Decimal, str]:
     liq, rev = c.metric("liquidity"), c.line("revenue")
     value = ratio(liq, rev)
     return value, f"Liquidity {m(liq)} ÷ revenue {m(rev)} = {pct(value)}"
+
+
+# --- Refinancing (M8) ------------------------------------------------------------------------
+
+
+def debt_due_1y(c: Context) -> tuple[Decimal, str]:
+    """The current part of total debt, as the balance sheet shows it."""
+    if not c.has("borrowings_current"):
+        raise Missing(f"Current borrowings not reported separately for FY{c.fiscal_year}")
+    borrowings = c.line("borrowings_current")
+    if c.settings.get("leases_in_borrowings"):
+        return borrowings, (
+            f"Current borrowings {m(borrowings)} (lease liabilities included in borrowings)"
+        )
+    if not c.has("lease_liabilities_current"):
+        raise Missing(f"Current lease liabilities not reported separately for FY{c.fiscal_year}")
+    leases = c.line("lease_liabilities_current")
+    value = borrowings + leases
+    return value, (
+        f"Current borrowings {m(borrowings)} + current lease liabilities {m(leases)} = {m(value)}"
+    )
+
+
+def short_term_debt_cover(c: Context) -> tuple[Decimal, str]:
+    liq, due = c.metric("liquidity"), c.metric("debt_due_1y")
+    value = ratio(liq, due)
+    return value, f"Liquidity {m(liq)} ÷ debt due within one year {m(due)} = {x(value)}"
 
 
 # --- Operating metrics (figures read from the report text, M3) ------------------------------
@@ -411,6 +486,9 @@ FORMULAS: dict[str, Callable[[Context], tuple[Decimal, str]]] = {
     "ffo_to_debt": ffo_to_debt,
     "fcf": fcf,
     "fcf_to_debt": fcf_to_debt,
+    "net_capex": net_capex,
+    "fcf_after_leases": fcf_after_leases,
+    "fcf_after_leases_to_debt": fcf_after_leases_to_debt,
     "capex_intensity": capex_intensity,
     "cash_liquidity": cash_liquidity,
     "cash_liquidity_to_revenue": cash_liquidity_to_revenue,
@@ -418,6 +496,8 @@ FORMULAS: dict[str, Callable[[Context], tuple[Decimal, str]]] = {
     "fuel_share_of_costs": fuel_share_of_costs,
     "liquidity": liquidity,
     "liquidity_to_revenue": liquidity_to_revenue,
+    "debt_due_1y": debt_due_1y,
+    "short_term_debt_cover": short_term_debt_cover,
     "passengers": passengers,
     "ask": ask,
     "rpk": rpk,
@@ -434,3 +514,33 @@ FORMULAS: dict[str, Callable[[Context], tuple[Decimal, str]]] = {
     "aero_revenue_per_passenger": aero_revenue_per_passenger,
     "non_aero_share": non_aero_share,
 }
+
+
+# --- From the maturity wall (M8) --------------------------------------------------------------
+
+
+def borrowings_due_2y(c: Context) -> tuple[Decimal, str]:
+    """Borrowings (leases left out) falling due within two years, from the maturity table."""
+    if c.has("maturity_borrowings_0_2"):
+        value = c.line("maturity_borrowings_0_2")
+        return value, f"Borrowings due within 2 years {m(value)}, from the maturity table"
+    if c.has("maturity_borrowings_0_1") and c.has("maturity_borrowings_1_2"):
+        first, second = c.line("maturity_borrowings_0_1"), c.line("maturity_borrowings_1_2")
+        value = first + second
+        return value, (
+            f"Borrowings due within 1 year {m(first)} + in 1 to 2 years {m(second)} = {m(value)},"
+            " from the maturity table"
+        )
+    if any(k.startswith("maturity_borrowings_") for k in c.lines):
+        raise Missing("the maturity table does not show the second year on its own")
+    raise Missing(f"No checked maturity table of borrowings for FY{c.fiscal_year}")
+
+
+def liquidity_to_borrowings_due_2y(c: Context) -> tuple[Decimal, str]:
+    liq, due = c.metric("liquidity"), c.metric("borrowings_due_2y")
+    value = ratio(liq, due)
+    return value, f"Liquidity {m(liq)} ÷ borrowings due within 2 years {m(due)} = {x(value)}"
+
+
+FORMULAS["borrowings_due_2y"] = borrowings_due_2y
+FORMULAS["liquidity_to_borrowings_due_2y"] = liquidity_to_borrowings_due_2y

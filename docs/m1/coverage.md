@@ -48,6 +48,7 @@ Filings: FY2021 (filings.xbrl.org, fr), FY2022 (filings.xbrl.org, fr), FY2024 (p
 | Total assets | ✓ | ✓ | ✓ | ✓ | M |
 | Cash from operations | ✓ | ✓ | ✓ | ✓ | M |
 | Capex (purchases of PP&E and intangibles) | ✓ | ✓ | ✓ | ✓ | M |
+| Proceeds from disposals of fixed assets | ✓ | ✓ | ✓ | ✓ | M |
 | Lease payments (principal) | ✓ | ✓ | ✓ | ✓ | M |
 | Interest paid | ✓ | ✓ | ✓ | ✓ | M |
 | Income tax paid | ✓ | ✓ | ✓ | ✓ | M |
@@ -101,6 +102,7 @@ Filings: FY2021 (filings.xbrl.org, en), FY2022 (filings.xbrl.org, en), FY2023 (f
 | Total assets | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Cash from operations | ✓ | R | R | ✓ | ✓ |
 | Capex (purchases of PP&E and intangibles) | ✓ | ✓ | R | ✓ | ✓ |
+| Proceeds from disposals of fixed assets | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Lease payments (principal) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Interest paid | ✓ | R | ✓ | ✓ | ✓ |
 | Income tax paid | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -157,6 +159,7 @@ Filings: FY2021 (filings.xbrl.org, en), FY2022 (filings.xbrl.org, en), FY2023 (f
 | Total assets | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Cash from operations | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Capex (purchases of PP&E and intangibles) | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Proceeds from disposals of fixed assets | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Lease payments (principal) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Interest paid | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Income tax paid | ✗ | ✗ | ✓ | ✓ | ✓ |
@@ -210,6 +213,7 @@ Filings: FY2022 (filings.xbrl.org, en), FY2023 (filings.xbrl.org, en), FY2024 (f
 | Total assets | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Cash from operations | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Capex (purchases of PP&E and intangibles) | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Proceeds from disposals of fixed assets | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Lease payments (principal) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Interest paid | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Income tax paid | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -260,7 +264,8 @@ Filings: FY2021 (filings.xbrl.org, fr), FY2022 (filings.xbrl.org, fr), FY2024 (p
 | Total assets | ✓ | ✓ | ✓ | ✓ | M |
 | Cash from operations | R | ✓ | ✓ | ✓ | M |
 | Capex (purchases of PP&E and intangibles) | ✓ | ✓ | ✓ | ✓ | M |
-| Lease payments (principal) | ✓ | ✓ | · | · | · |
+| Proceeds from disposals of fixed assets | ✓ | ✓ | ✓ | ✓ | M |
+| Lease payments (principal) | ✓ | ✓ | ✓ | ✓ | M |
 | Interest paid | ✓ | ✓ | ✓ | ✓ | M |
 | Income tax paid | ✓ | ✓ | ✓ | ✓ | M |
 
@@ -273,7 +278,6 @@ Filings: FY2021 (filings.xbrl.org, fr), FY2022 (filings.xbrl.org, fr), FY2024 (p
 - · Lease liabilities, current (FY2021-FY2025): Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).
 - · Lease liabilities, non-current (FY2021-FY2025): Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).
 - · Lease liabilities, total (FY2021-FY2025): Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).
-- · Lease payments (principal) (FY2023-FY2025): Not reported by this issuer.
 - · Other cash-like items (company's net debt definition) (FY2021, FY2022): Not reported by this issuer.
 - · Restricted cash (FY2021-FY2025): Not reported by this issuer.
 - · Short-term deposits (not cash equivalents) (FY2021-FY2025): Not reported by this issuer.
@@ -282,6 +286,8 @@ Filings: FY2021 (filings.xbrl.org, fr), FY2022 (filings.xbrl.org, fr), FY2024 (p
 
 - Capex (purchases of PP&E and intangibles) (FY2021, FY2022): FY2021-FY2022: whether this line includes the change in amounts owed to fixed-asset suppliers is not shown in the filing. To check against the published cash flow statement.
 - Income tax paid (FY2021): ⚠ negative value -56000000 for a line expected positive
+- Proceeds from disposals of fixed assets (FY2023, FY2024): PP&E only; no sales of intangibles tagged.
+- Lease payments (principal) (FY2023, FY2024): Lease payments include the interest on leases (ADP's interest paid excludes it).
 - Interest paid (FY2023, FY2024): Excludes interest paid on leases (small for ADP).
 
 ## Aena
@@ -314,6 +320,7 @@ Filings: FY2021 (filings.xbrl.org, es), FY2022 (filings.xbrl.org, es), FY2023 (f
 | Total assets | R | ✓ | ✓ | R | ✓ |
 | Cash from operations | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Capex (purchases of PP&E and intangibles) | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Proceeds from disposals of fixed assets | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Lease payments (principal) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Interest paid | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Income tax paid | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -334,6 +341,7 @@ Filings: FY2021 (filings.xbrl.org, es), FY2022 (filings.xbrl.org, es), FY2023 (f
 **Notes and warnings**
 
 - Interest expense (FY2021-FY2025): Taken from the cash flow statement (adjustment for interest expense).
+- Proceeds from disposals of fixed assets (FY2021-FY2025): PP&E only; no sales of intangibles tagged.
 - Income tax paid (FY2021): ⚠ negative value -9939000 for a line expected positive
 
 ## Flughafen Wien
@@ -366,6 +374,7 @@ Filings: FY2021 (filings.xbrl.org, de), FY2022 (filings.xbrl.org, de), FY2022 (p
 | Total assets | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Cash from operations | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Capex (purchases of PP&E and intangibles) | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Proceeds from disposals of fixed assets | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Lease payments (principal) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Interest paid | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Income tax paid | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -386,6 +395,7 @@ Filings: FY2021 (filings.xbrl.org, de), FY2022 (filings.xbrl.org, de), FY2022 (p
 **Notes and warnings**
 
 - Capex (purchases of PP&E and intangibles) (FY2021-FY2025): PP&E only; no purchases of intangibles tagged.
+- Proceeds from disposals of fixed assets (FY2021-FY2025): PP&E only; no sales of intangibles tagged.
 - Income tax paid (FY2021): ⚠ negative value -8308600 for a line expected positive
 
 ## Norwegian Air Shuttle
@@ -420,6 +430,7 @@ Filings: FY2021 (filings.xbrl.org, en), FY2022 (filings.xbrl.org, en), FY2023 (f
 | Total assets | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Cash from operations | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Capex (purchases of PP&E and intangibles) | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Proceeds from disposals of fixed assets | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Lease payments (principal) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Interest paid | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Income tax paid | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -473,7 +484,8 @@ Filings: FY2022 (filings.xbrl.org, en), FY2023 (filings.xbrl.org, en), FY2025 (f
 | Total assets | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Cash from operations | ✓ | R | ✓ | ✓ | ✓ | ✓ |
 | Capex (purchases of PP&E and intangibles) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Lease payments (principal) | · | · | · | · | ✓ | ✓ |
+| Proceeds from disposals of fixed assets | ✓ | R | ✓ | ✓ | ✓ | ✓ |
+| Lease payments (principal) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Interest paid | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Income tax paid | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
@@ -486,8 +498,11 @@ Filings: FY2022 (filings.xbrl.org, en), FY2023 (filings.xbrl.org, en), FY2025 (f
 - · Lease liabilities, current (FY2021-FY2026): Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).
 - · Lease liabilities, non-current (FY2021-FY2026): Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).
 - · Lease liabilities, total (FY2021-FY2026): Lease liabilities are included in borrowings on the balance sheet (confirmed in the debt note; see config/issuers.yaml).
-- · Lease payments (principal) (FY2021-FY2024): Not reported by this issuer.
 - · Other cash-like items (company's net debt definition) (FY2021-FY2026): Not reported by this issuer.
 - · Other current financial assets (FY2021-FY2026): Not reported by this issuer.
 - · Share of profit (loss) of associates (FY2021-FY2023): Not reported by this issuer.
+
+**Notes and warnings**
+
+- Proceeds from disposals of fixed assets (FY2021-FY2026): PP&E only; no sales of intangibles tagged.
 

@@ -267,6 +267,20 @@ lines:
       - concepts: [ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities]
         note: PP&E only; no purchases of intangibles tagged.
 
+  disposal_proceeds:
+    label: Proceeds from disposals of fixed assets
+    statement: cash_flow
+    period: duration
+    expect: positive
+    optional: true  # a year without disposals has no line (M8: counted as zero in net capex)
+    rules:
+      # Aircraft sold, including sale-and-leaseback, and other PP&E and intangibles (M8).
+      - concepts: [ifrs-full:ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,
+                   ifrs-full:ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities]
+      - concepts: [ifrs-full:ProceedsFromDisposalsOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets]
+      - concepts: [ifrs-full:ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities]
+        note: PP&E only; no sales of intangibles tagged.
+
   lease_payments:
     label: Lease payments (principal)
     statement: cash_flow

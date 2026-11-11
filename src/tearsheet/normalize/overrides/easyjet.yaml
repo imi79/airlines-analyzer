@@ -1,5 +1,16 @@
 # easyJet: company-specific concepts, tried before the common map.
 lines:
+  disposal_proceeds:
+    rules:
+      - concepts: [ifrs-full:ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities]
+        add_if_tagged: [ext:NetProceedsFromSaleAndLeasebacksClassifiedAsInvestingActivities,
+                        ext:ProceedsFromSaleAndLeasebackOfAircraftClassifiedAsInvestingActivities]
+        reason: >-
+          Sale-and-leaseback proceeds are a company line, next to the sale of other PP&E (M8).
+        checked: FY2024 filing (9 + 114)
+      - concepts: [ext:NetProceedsFromSaleAndLeasebacksClassifiedAsInvestingActivities]
+        reason: Before FY2024 only the sale-and-leaseback line is tagged.
+        checked: FY2023 filing (76)
   contract_liabilities:
     rules:
       - concepts: [ext:CurrentUnearnedRevenue]

@@ -1,0 +1,41 @@
+# The debt maturity wall (M8, decision 0022): what the AI looks for, and the tolerances of the
+# checks in code. Written before the first AI run; changing a tolerance after seeing answers
+# needs a new decision note.
+
+# Words that point the locator at maturity tables, by report language (English always added).
+terms:
+  en: [maturity, maturities, repayable, repayment profile, due within, within one year,
+       less than one year, less than 1 year, within 1 year, more than five years,
+       more than 5 years, after five years, one to two years, 1-2 years, 2-5 years,
+       contractual cash flows, undiscounted]
+  fr: [échéance, échéances, échéancier, moins d'un an, à moins d'un an, plus de cinq ans,
+       plus de 5 ans, de 1 à 5 ans, entre 1 et 5 ans, au-delà de, flux contractuels,
+       non actualisés]
+  es: [vencimiento, vencimientos, menos de un año, menos de 1 año, más de cinco años,
+       más de 5 años, entre uno y dos años, flujos contractuales, sin descontar]
+  de: [Fälligkeit, Fälligkeiten, Restlaufzeit, Restlaufzeiten, bis zu einem Jahr, bis 1 Jahr,
+       unter 1 Jahr, über 5 Jahre, mehr als 5 Jahre, 1 bis 5 Jahre, undiskontiert]
+
+# The standard buckets of the wall, in years from the fiscal year end. Narrower columns are
+# added into them; a column that straddles a boundary merges the buckets it spans (a "1 to 5
+# years" column gives one 1-to-5 bucket).
+boundaries: [0, 1, 2, 5]
+
+# Agreement with the balance sheet (tagged figures of the same fiscal year end).
+cross_check:
+  # Principal or carrying amounts: the first bucket against the current part of the debt, the
+  # total against the whole layer.
+  principal:
+    first_bucket_share_of_current: 0.10   # within 10% of the tagged current debt...
+    first_bucket_share_of_total: 0.02     # ...or within 2% of the tagged layer total
+    total_share: 0.10                     # the table total within 10% of the tagged total
+  # Contractual cash flows include interest: the buckets are larger than the debt, by at most
+  # a plausible amount of interest.
+  contractual:
+    first_bucket_floor: 0.90              # at least 90% of the tagged current debt
+    first_bucket_interest: 0.15           # at most current debt + 15% of the layer total
+    total_floor: 0.90                     # the total at least 90% of the tagged total
+    total_ceiling: 1.60                   # and at most 160% of it
+
+# Most tables the AI may record per report (borrowings and leases, each on one basis or two).
+max_tables: 6

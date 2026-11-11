@@ -17,6 +17,7 @@ fiscal_year,line,value,concepts,rule,comparative,restated
 2021,total_assets,30683000000,ifrs-full:Assets,common,True,False
 2021,cfo,1534000000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,True,False
 2021,capex,2202000000,afklm:InvestissementsCorporelsIncorporels,override:afkl,True,False
+2021,disposal_proceeds,899000000,afklm:ProduitsCessionsImmobilisationsCorporellesIncorporelles,override:afkl,True,False
 2021,lease_payments,862000000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,True,False
 2021,interest_paid,563000000,ifrs-full:InterestPaidClassifiedAsOperatingActivities,common,True,False
 2021,tax_paid,-55000000,ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities,common,True,False
@@ -38,6 +39,7 @@ fiscal_year,line,value,concepts,rule,comparative,restated
 2022,total_assets,32305000000,ifrs-full:Assets,common,False,False
 2022,cfo,4856000000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,False,False
 2022,capex,2972000000,afklm:InvestissementsCorporelsIncorporels,override:afkl,False,False
+2022,disposal_proceeds,880000000,afklm:ProduitsCessionsImmobilisationsCorporellesIncorporelles,override:afkl,False,False
 2022,lease_payments,861000000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,False,False
 2022,interest_paid,586000000,ifrs-full:InterestPaidClassifiedAsOperatingActivities,common,False,False
 2022,tax_paid,41000000,ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities,common,False,False
@@ -59,6 +61,7 @@ fiscal_year,line,value,concepts,rule,comparative,restated
 2023,total_assets,34490000000,ifrs-full:Assets,common,True,False
 2023,cfo,3606000000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,True,False
 2023,capex,3551000000,afklm:InvestissementsCorporelsIncorporels,override:afkl,True,False
+2023,disposal_proceeds,867000000,afklm:ProduitsCessionsImmobilisationsCorporellesIncorporelles,override:afkl,True,False
 2023,lease_payments,833000000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,True,False
 2023,interest_paid,704000000,ifrs-full:InterestPaidClassifiedAsFinancingActivities,common,True,False
 2023,tax_paid,114000000,ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities,common,True,False
@@ -80,6 +83,7 @@ fiscal_year,line,value,concepts,rule,comparative,restated
 2024,total_assets,36155000000,ifrs-full:Assets,common,False,False
 2024,cfo,3496000000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,False,False
 2024,capex,3728000000,afklm:InvestissementsCorporelsIncorporels,override:afkl,False,False
+2024,disposal_proceeds,678000000,afklm:ProduitsCessionsImmobilisationsCorporellesIncorporelles,override:afkl,False,False
 2024,lease_payments,891000000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,False,False
 2024,interest_paid,664000000,ifrs-full:InterestPaidClassifiedAsFinancingActivities,common,False,False
 2024,tax_paid,20000000,ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities,common,False,False

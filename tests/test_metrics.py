@@ -12,6 +12,7 @@ The example airline (FY2024):
 The example airport (FY2024): revenue 1,000, aeronautical revenue 600, passengers 40 (FY2023: 32).
 """
 
+from dataclasses import replace
 from datetime import date
 from decimal import Decimal
 
@@ -42,6 +43,7 @@ AIRPORT = Issuer(
     status="v1",
 )
 SETTINGS = {
+    "interest_paid_in_financing": False,
     "cash_like": [{"line": "cash"}, {"line": "short_term_deposits"}],
     "associates_in_operating_profit": False,
     "leases_in_borrowings": False,
@@ -304,3 +306,93 @@ def test_unreviewed_input_makes_the_metric_unverified():
     results = {r.metric: r for r in compute(AIRLINE, facts, settings=SETTINGS)}
     assert results["net_debt"].status == "unverified"
     assert results["ebitda"].status == "verified"
+
+
+# --- M8: cash flow after leases and refinancing -----------------------------------------------
+# The example airline also has: disposal proceeds 30, lease payments 40.
+M8 = {"disposal_proceeds": 30, "lease_payments": 40}
+
+
+@pytest.mark.parametrize(
+    "metric, expected",
+    [
+        ("net_capex", Decimal(60)),  # 90 - 30
+        ("fcf_after_leases", Decimal(60)),  # 160 - 60 - 40
+        ("fcf_after_leases_to_debt", Decimal("0.1")),  # 60 / 600
+        ("debt_due_1y", Decimal(150)),  # 100 + 50
+        ("short_term_debt_cover", Decimal(400) / Decimal(150)),  # 2.67x
+    ],
+)
+def test_m8_metric_on_the_example_airline(metric, expected):
+    result = run(M8)[metric]
+    assert result.kind == "value", result.reason
+    assert result.value == expected
+    assert result.note
+
+
+def test_net_capex_without_disposals_counts_them_as_zero():
+    results = run({"lease_payments": 40})
+    assert value(results, "net_capex") == Decimal(90)
+    assert "not reported (0)" in results["net_capex"].note
+
+
+def test_fcf_after_leases_takes_out_interest_shown_in_financing():
+    results = run(M8, settings={"interest_paid_in_financing": True})
+    assert value(results, "fcf_after_leases") == Decimal(42)  # 160 - 60 - 40 - 18
+    assert "interest paid (in financing)" in results["fcf_after_leases"].note
+
+
+def test_the_tagged_concept_says_where_interest_paid_sits():
+    facts = [fact(k, v) for k, v in {**FIGURES, **M8}.items() if k != "interest_paid"]
+    paid = fact("interest_paid", 18)
+    financing = ("ifrs-full:InterestPaidClassifiedAsFinancingActivities",)
+    facts.append(replace(paid, concepts=financing))
+    results = {r.metric: r for r in compute(AIRLINE, facts, settings=SETTINGS)}
+    assert results["fcf_after_leases"].value == Decimal(42)
+    operating = ("ifrs-full:InterestPaidClassifiedAsOperatingActivities",)
+    facts[-1] = replace(paid, concepts=operating)
+    settings = {**SETTINGS, "interest_paid_in_financing": True}  # the concept wins
+    results = {r.metric: r for r in compute(AIRLINE, facts, settings=settings)}
+    assert results["fcf_after_leases"].value == Decimal(60)
+
+
+def test_fcf_after_leases_needs_the_lease_payments():
+    results = run({"disposal_proceeds": 30})
+    assert results["fcf_after_leases"].kind == "missing"
+    assert "Lease payments" in results["fcf_after_leases"].reason
+
+
+def test_debt_due_within_a_year_where_leases_sit_in_borrowings():
+    results = run(M8, settings={"leases_in_borrowings": True})
+    assert value(results, "debt_due_1y") == Decimal(100)
+    assert "included in borrowings" in results["debt_due_1y"].note
+
+
+def test_debt_due_within_a_year_needs_the_current_part():
+    results = run({**M8, "borrowings_total": 400}, drop=("borrowings_current",))
+    assert results["debt_due_1y"].kind == "missing"
+
+
+WALL = {"maturity_borrowings_0_1": 100, "maturity_borrowings_1_2": 80,
+        "maturity_borrowings_2_5": 150, "maturity_borrowings_5_plus": 70}  # fmt: skip
+
+
+def test_borrowings_due_within_two_years_from_the_maturity_wall():
+    results = run({**M8, **WALL})
+    assert value(results, "borrowings_due_2y") == Decimal(180)  # 100 + 80
+    assert value(results, "liquidity_to_borrowings_due_2y") == Decimal(400) / Decimal(180)
+
+
+def test_a_wall_without_the_second_year_on_its_own_gives_no_two_year_figure():
+    wall = {"maturity_borrowings_0_1": 100, "maturity_borrowings_1_5": 230,
+            "maturity_borrowings_5_plus": 70}  # fmt: skip
+    results = run({**M8, **wall})
+    assert results["borrowings_due_2y"].kind == "missing"
+    assert "second year" in results["borrowings_due_2y"].reason
+
+
+def test_an_unverified_wall_makes_the_two_year_figure_unverified():
+    facts = [fact(k, v) for k, v in {**FIGURES, **M8}.items()]
+    facts += [fact(k, v, status="unverified") for k, v in WALL.items()]
+    results = {r.metric: r for r in compute(AIRLINE, facts, settings=SETTINGS)}
+    assert results["borrowings_due_2y"].status == "unverified"

@@ -13,6 +13,7 @@ fiscal_year,line,value,concepts,rule,comparative,restated
 2021,total_assets,15874057000,ifrs-full:Assets,common,True,True
 2021,cfo,280472000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,True,False
 2021,capex,671083000,ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities + ifrs-full:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,common,True,False
+2021,disposal_proceeds,0,ifrs-full:ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,common,True,False
 2021,lease_payments,8521000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,True,False
 2021,interest_paid,96177000,ifrs-full:InterestPaidClassifiedAsOperatingActivities,common,True,False
 2021,tax_paid,-9939000,ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities,common,True,False
@@ -30,6 +31,7 @@ fiscal_year,line,value,concepts,rule,comparative,restated
 2022,total_assets,15849198000,ifrs-full:Assets,common,True,False
 2022,cfo,1863166000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,True,False
 2022,capex,727692000,ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities + ifrs-full:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,common,True,False
+2022,disposal_proceeds,1425000,ifrs-full:ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,common,True,False
 2022,lease_payments,9655000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,True,False
 2022,interest_paid,97353000,ifrs-full:InterestPaidClassifiedAsOperatingActivities,common,True,False
 2022,tax_paid,177766000,ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities,common,True,False
@@ -47,6 +49,7 @@ fiscal_year,line,value,concepts,rule,comparative,restated
 2023,total_assets,17556226000,ifrs-full:Assets,common,True,False
 2023,cfo,2219815000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,True,False
 2023,capex,1382938000,ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities + ifrs-full:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,common,True,False
+2023,disposal_proceeds,0,ifrs-full:ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,common,True,False
 2023,lease_payments,9378000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,True,False
 2023,interest_paid,201544000,ifrs-full:InterestPaidClassifiedAsOperatingActivities,common,True,False
 2023,tax_paid,447142000,ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities,common,True,False
@@ -65,6 +68,7 @@ fiscal_year,line,value,concepts,rule,comparative,restated
 2024,total_assets,17263370000,ifrs-full:Assets,common,True,True
 2024,cfo,2746939000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,True,False
 2024,capex,823001000,ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities + ifrs-full:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,common,True,False
+2024,disposal_proceeds,28658000,ifrs-full:ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,common,True,False
 2024,lease_payments,11489000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,True,False
 2024,interest_paid,232485000,ifrs-full:InterestPaidClassifiedAsOperatingActivities,common,True,False
 2024,tax_paid,423151000,ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities,common,True,False
@@ -83,6 +87,7 @@ fiscal_year,line,value,concepts,rule,comparative,restated
 2025,total_assets,18192599000,ifrs-full:Assets,common,False,False
 2025,cfo,2787451000,ifrs-full:CashFlowsFromUsedInOperatingActivities,common,False,False
 2025,capex,1059275000,ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities + ifrs-full:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,common,False,False
+2025,disposal_proceeds,42464000,ifrs-full:ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,common,False,False
 2025,lease_payments,14929000,ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,common,False,False
 2025,interest_paid,174106000,ifrs-full:InterestPaidClassifiedAsOperatingActivities,common,False,False
 2025,tax_paid,618529000,ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities,common,False,False

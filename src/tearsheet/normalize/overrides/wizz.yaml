@@ -1,5 +1,15 @@
 # Wizz Air: company-specific concepts, tried before the common map.
 lines:
+  lease_payments:
+    rules:
+      - concepts: [ifrs-full:RepaymentsOfBorrowingsClassifiedAsFinancingActivities]
+        years: [2021, 2022, 2023, 2024]
+        reason: >-
+          Until FY2025, Wizz Air tagged the repayment of lease liabilities as repayments of
+          borrowings; its other debt repayments are separate company lines (secured and
+          unsecured debt). The FY2026 filing tags the same FY2025 amount, 720.0, as payments of
+          lease liabilities (M8).
+        checked: FY2025 filing (720.0) against the FY2026 filing's FY2025 comparative (720.0)
   contract_liabilities:
     rules:
       - concepts: [ifrs-full:CurrentDeferredIncomeOtherThanCurrentContractLiabilities]

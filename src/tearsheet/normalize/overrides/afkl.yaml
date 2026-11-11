@@ -1,5 +1,12 @@
 # Air France-KLM: company-specific concepts (French names), tried before the common map.
 lines:
+  disposal_proceeds:
+    rules:
+      - concepts: [ext:ProduitsCessionsImmobilisationsCorporellesIncorporelles]
+        reason: >-
+          Proceeds from disposals are one company line, "Produits de cessions d'immobilisations
+          corporelles et incorporelles" (aircraft sold, including sale-and-leaseback) (M8).
+        checked: FY2024 cash flow statement (678)
   dda:
     rules:
       - concepts: [ext:AmortissementsDepreciationsEtProvisions]
