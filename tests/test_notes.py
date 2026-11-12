@@ -85,3 +85,18 @@ def test_review_appended_to_the_file_with_its_explanations(tmp_path):
         assert "already reviewed" in str(exc)
     else:
         raise AssertionError("a second review of the same figure was accepted")
+
+
+def test_a_section_is_cleared_once_its_rejected_sentences_are_edited_cleanly():
+    from tearsheet.render.notes import cleared
+
+    section = {"status": "needs_manual_editing", "notes": [
+        "[rule 4] snapshot, sentence 1: 'lower' needs a 'down' claim",
+        "[rule style] snapshot, sentence 2: repeated figure",
+    ]}  # fmt: skip
+    assert not cleared(section, "snapshot", {})
+    assert not cleared(section, "snapshot", {1: {"text": "x 1.5x", "untraced": ["1.5x"]}})
+    assert cleared(section, "snapshot", {1: {"text": "x", "untraced": []}})
+    whole = {"status": "needs_manual_editing", "notes": ["[rule form] snapshot: section missing"]}
+    assert not cleared(whole, "snapshot", {1: {"text": "x", "untraced": []}})
+    assert cleared({"status": "passed"}, "snapshot", {})

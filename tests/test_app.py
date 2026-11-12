@@ -211,3 +211,12 @@ def test_try_the_verifier_on_the_method_page(demo):
 def test_audit_page_shows_the_rejected_attempts(demo):
     at = run(("easyjet", 2025), "views/audit_page.py")
     assert any(e.label.startswith("Try 1:") and "rejected" in e.label for e in at.expander)
+
+
+def test_the_flagged_snapshots_show_the_analysts_fixes(demo):
+    """Finnair FY2024, Wizz Air FY2025, Aena FY2024: the rejected sentences were rewritten by
+    Imane's edits (M8), so the snapshots no longer carry the verifier's warning."""
+    for pick in (("finnair", 2024), ("wizz", 2025), ("aena", 2024)):
+        at = run(pick)
+        assert not any("failed the verifier" in w.value for w in at.warning), pick
+        assert any("edited by the analyst" in m.value for m in at.markdown), pick

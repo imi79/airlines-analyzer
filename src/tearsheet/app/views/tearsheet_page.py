@@ -14,7 +14,7 @@ from tearsheet.app.notes_ui import analyst_view, edit_section, edited_sentence, 
 from tearsheet.narrative.factsheet import load_narrative
 from tearsheet.narrative.render import PLACEHOLDER
 from tearsheet.ratings import header_text
-from tearsheet.render import export, pdf, tearsheet
+from tearsheet.render import export, notes, pdf, tearsheet
 from tearsheet.render.library import key, small_debt
 from tearsheet.render.sources import ref_of_id, ref_of_key
 
@@ -36,7 +36,10 @@ def show_section(name: str) -> None:
     if section["status"] == "not_drafted":
         st.info("Not drafted for this year: the AI drafts each company's latest two years.")
         return
-    if section["status"] != "passed":
+    edits = (get_note(ts).get("edits") or {}).get(name, {})
+    if section["status"] != "passed" and notes.cleared(section, name, edits):
+        st.caption("The sentences the verifier rejected have been edited by the analyst.")
+    elif section["status"] != "passed":
         st.warning("This section failed the verifier after two retries: edit it before use.")
     if editing:
         edit_section(lib, ts, name, section, rendered)

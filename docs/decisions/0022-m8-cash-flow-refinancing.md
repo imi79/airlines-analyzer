@@ -125,6 +125,16 @@ new adversarial cases, 52 in all, all rejected).
   the plan's estimate of 790,000; the maturity tables about 168,000.
 - **Final**: 15 of 18 notes pass the verifier in full; 14 in a row with no number outside a
   blank (the checklist asks for ten); three kept M4 snapshots flagged for Imane.
+- **A correction to my own record**: the snapshots of Finnair FY2024 and Wizz Air FY2025 were
+  already flagged in M4 (the two of eighteen that failed then), not flagged by the load factor
+  correction, as the walkthrough first said; only easyJet FY2025's load factor sentence came
+  from it.
+- **The three flagged snapshots rewritten** at Imane's request (2026-11-12), as saved edits in
+  `notes/`, each checked against every verifier rule (the app's edit check covers figures
+  only): the direction words with no figure behind them dropped (Finnair, Wizz Air), the typed
+  rating "A" dropped (Aena). A section whose rejected sentences all carry clean edits (figures
+  traced) is no longer flagged in the app or the PDF; an error about a whole section keeps the
+  flag. The drafts and their records are unchanged.
 
 **The demo shows the analyst's saved work** (Imane: "yes, show my edits and views in the
 demo"). Since M5 (decision 0019) the public demo opened each tearsheet without the saved notes.

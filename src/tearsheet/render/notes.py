@@ -95,6 +95,25 @@ def untraced(text_blanks: str, known: set[str], verifier) -> list[str]:
     return problems
 
 
+def cleared(section: dict, name: str, edits: dict) -> bool:
+    """A section the verifier did not clear counts as cleared once the analyst has edited every
+    sentence it rejected, with every figure traced (M8). An error about the section as a whole
+    (no sentence number) keeps it flagged."""
+    if section.get("status") == "passed":
+        return True
+    failing = set()
+    for message in section.get("notes") or []:
+        if not re.match(r"\[rule \w+\]", message) or message.startswith("[rule style]"):
+            continue  # a style note (repetition) rejects nothing
+        m = re.search(rf"{re.escape(name)}, sentence (\d+)", message)
+        if m is None:
+            return False
+        failing.add(int(m.group(1)))
+    if not failing:
+        return False
+    return all(n in edits and not edits[n].get("untraced") for n in failing)
+
+
 def fill(text_blanks: str, rendered: dict[str, str]) -> str:
     return PLACEHOLDER.sub(lambda m: rendered.get(m.group(1), m.group(0)), text_blanks)
 

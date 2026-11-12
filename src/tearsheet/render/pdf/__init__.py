@@ -99,7 +99,7 @@ def _section(ts: dict, name: str, note: dict, rendered: dict, marks: set) -> dic
     draft_note = None
     if sec["status"] == "not_drafted":
         draft_note = "Not drafted for this year."
-    elif sec["status"] != "passed":
+    elif not notes.cleared(sec, name, edits):
         draft_note = "‡ Draft section not cleared by the verifier: edit before use."
         marks.add("draft")
     return {"title": sec["title"], "sentences": out, "note": draft_note}

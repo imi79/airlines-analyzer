@@ -48,9 +48,9 @@ France-KLM's, ADP's and easyJet's dates are more than a year old: flagged.
 - **A correction to M4's fact sheets.** "Load factor" existed twice (the tool's RPK ÷ ASK, and
   the company's printed figure kept as a cross-check); which one the fact sheet took was left
   to chance. It is now always the computed one. Effect: easyJet FY2025's sentence "load factor
-  rose" was removed, because it is flat on the computed basis. The snapshots of Finnair FY2024
-  and Wizz Air FY2025 no longer pass one direction check and are flagged for you to edit (‡ on
-  the PDF). M4's own records are untouched.
+  rose" was removed, because it is flat on the computed basis. M4's own records are untouched.
+  (I first said the flagged snapshots of Finnair FY2024 and Wizz Air FY2025 came from this
+  correction: they did not, they were already flagged in M4.)
 - **I had to change the maturity checks after seeing the first answers**, as in M3: the first
   run, with the checks as written, verified 2 tables (both correct); fixes of form, and one
   tighter bound that caught Aena, gave 4. Because the fixes were judged on the same key, read 4
@@ -68,8 +68,10 @@ France-KLM's, ADP's and easyJet's dates are more than a year old: flagged.
    other debt).
 4. **Optionally approve flagged maturity tables** in the app (Data and audit), where you judge
    the reason acceptable (for example IAG's convertible bond).
-5. **Read two or three redrafted notes** (`docs/m8/drafts/`, or `docs/m8/pdf/`), and edit the
-   three flagged snapshots (Finnair FY2024, Wizz Air FY2025, Aena FY2024) if you wish. The
+5. **Read two or three redrafted notes** (`docs/m8/drafts/`, or `docs/m8/pdf/`). The three
+   flagged snapshots (Finnair FY2024, Wizz Air FY2025, Aena FY2024) were rewritten at your
+   request on 2026-11-12 as saved edits, each checked against every verifier rule; a section
+   whose rejected sentences all have clean edits is no longer flagged. The
    "covers ...x times" wording in Finnair and IAG FY2025 is fixed (2026-11-11), as saved edits in
    `notes/` (figures still in blanks). The public demo now shows your saved edits and analyst
    views, marked "edited by the analyst"; visitors' own changes are still never saved.

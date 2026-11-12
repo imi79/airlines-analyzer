@@ -156,8 +156,8 @@ Branch: `m8-cash-flow-refinancing`. Plan: `docs/m8/plan.md`. Run: `uv run tearsh
 tables not yet read, `uv run tearsheet draft` redrafts). Results: `docs/m8/`. Walkthrough:
 `docs/m8/walkthrough.md`. Decision 0022. **Status: done; ratings reviewed and merged into
 `main` by Imane's go-ahead (2026-11-11); hand entries reviewed by Imane the same day. Still
-open: the flagged maturity tables (approve in the app if she wishes) and three flagged
-snapshots to edit.**
+open: the flagged maturity tables (approve in the app if she wishes). The three flagged
+snapshots were rewritten as Imane's edits on 2026-11-12.**
 
 - [x] Cash flow after leases computed for every issuer and year, or missing with a stated
       reason: net capex, FCF after leases and its ratio to debt for 9 of 9 companies (Vienna's
@@ -178,8 +178,9 @@ snapshots to edit.**
       tests pass on the 18 tearsheets); PDF two pages 18 of 18; Excel recalculated 18 of 18;
       adversarial suite 52 of 52 rejected (5 new: typed ratings and maturities); redraft 14 in a
       row with no number outside a blank, 15 of 18 pass the verifier in full (three kept M4
-      snapshots flagged: two after the load factor correction, Aena FY2024 for a rating typed
-      in M4, "upgraded to A")
+      snapshots flagged: Finnair FY2024 and Wizz Air FY2025, already flagged in M4, and Aena
+      FY2024 for a rating typed in M4, "upgraded to A"; all three rewritten as Imane's edits
+      on 2026-11-12, so no section is left flagged on the page or in the PDFs)
 - Prompt `draft-v8`: about 1,420,000 tokens in and 96,000 out over five rounds (first draft;
   the figure-name phrases; after the ratings review; ratings limited to their own year; after
   the hand entries' review, two notes), 1.9
