@@ -1,7 +1,10 @@
 # M9 plan: a watchlist of credit triggers
 
-Status: **waiting for Imane's approval** (written 2026-11-12). Branch: `m9-watchlist` (renamed if
-another scope is chosen in question 1).
+Status: **approved by Imane** (2026-11-12) with every recommendation: 1. scope A, the
+watchlist; 2. the seven triggers proposed, liquidity to revenue for airlines only, thresholds to
+adjust after the first results; 3. flags on the Watchlist page and a line on each tearsheet and
+PDF; 4. missing or unverified figures shown as "cannot assess"; 5. built in a fresh session,
+starting from this plan. Branch: `m9-watchlist`.
 
 ## What M9 is for
 

@@ -189,3 +189,15 @@ snapshots were rewritten as Imane's edits on 2026-11-12.**
   the hand entries' review, two notes), 1.9
   times the plan's estimate; maturity tables `maturity-v1`: about 168,000 tokens. 638 tests
   pass
+
+## M9 · Watchlist of credit triggers
+
+Branch: `m9-watchlist`. Plan: `docs/m9/plan.md`, approved by Imane on 2026-11-12 with every
+recommendation. **Status: plan approved; to be built in a fresh session.**
+
+- [ ] Every trigger in `config/watchlist.yaml` evaluated for every company and year shown, from
+      verified figures only; missing or unverified figures shown as "cannot assess" with the reason
+- [ ] Every fired trigger traces to the figure behind it on click (test over all 18 tearsheets)
+- [ ] Unit tests for each trigger kind, the edges (exactly at the threshold) and "cannot assess"
+- [ ] The PDF still fits two pages for all 18 tearsheets
+
