@@ -226,3 +226,19 @@ the short-term cover floor.**
   files change (decision 0024). The running copy recovered on 2026-11-13 at the next push to
   `main`, through the guard itself; the public link was then opened from a fresh browser and
   every page checked. 724 tests pass
+
+## M10 · Half-year and last-twelve-months figures
+
+Branch: `m10-half-year-ltm`. Plan: `docs/m10/plan.md`. **Status: plan written on 2026-11-12,
+waiting for Imane's approval; nothing built.**
+
+- [ ] Coverage recorded for all nine companies, go or no-go each; half-year figures loaded for
+      at least seven
+- [ ] No wrong figure marked verified on the answer key (three companies, written before the AI
+      run); every figure that fails a check flagged with its reason
+- [ ] For every loaded company, the report's year-end column matches the database line by line,
+      or the difference is flagged and explained
+- [ ] LTM metrics computed for every loaded company, or missing with a stated reason; unit tests
+      for the LTM arithmetic
+- [ ] Every H1 and LTM figure traces to its source on click; the 18 tearsheets' annual figures
+      and records unchanged; PDF two pages and Excel recalculated, 18 of 18
