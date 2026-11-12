@@ -1,8 +1,8 @@
 # 0023 · M9: a watchlist of credit triggers
 
 Date: 2026-11-12 · Status: plan approved by Imane with every recommendation (recorded in
-`docs/m9/plan.md` and `docs/progress.md`); built on `m9-watchlist`, waiting for her go-ahead to
-merge into `main`
+`docs/m9/plan.md` and `docs/progress.md`); built on `m9-watchlist`; merged into `main` on her go-ahead
+("go, merge into main", 2026-11-12)
 
 **Choices approved with the plan** (`docs/m9/plan.md`):
 

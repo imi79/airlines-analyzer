@@ -194,8 +194,9 @@ snapshots were rewritten as Imane's edits on 2026-11-12.**
 
 Branch: `m9-watchlist`. Plan: `docs/m9/plan.md`, approved by Imane on 2026-11-12 with every
 recommendation. Run: `uv run tearsheet app`, Watchlist page; the triggers are in
-`config/watchlist.yaml`. Walkthrough: `docs/m9/walkthrough.md`. Decision 0023. **Status: built;
-waiting for Imane's reading of the page and her go-ahead to merge into `main`.**
+`config/watchlist.yaml`. Walkthrough: `docs/m9/walkthrough.md`. Decision 0023. **Status: done; merged
+into `main` by Imane's go-ahead (2026-11-12), after she kept the liquidity floor and asked for
+the short-term cover floor.**
 
 - [x] Every trigger in `config/watchlist.yaml` evaluated for every company and year shown, from
       verified figures only; missing or unverified figures shown as "cannot assess" with the reason:
