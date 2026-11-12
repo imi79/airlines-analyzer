@@ -138,6 +138,8 @@ Company type: airline. Reporting currency: EUR. Peer group: Network airlines (af
 | short_term_debt_cover@FY2025 | Short-term debt cover, FY2025 | 3.59x | down, worse vs prior year |
 | short_term_debt_cover@FY2024 | Short-term debt cover, FY2024 | 3.81x |  |
 | short_term_debt_cover.change@FY2025 | change in Short-term debt cover, FY2024 to FY2025 | 0.22x | down, worse vs prior year; printed without a sign: say the direction in words |
+| borrowings_due_2y@FY2025 | Borrowings due within two years, FY2025 | EUR 4.1bn |  |
+| liquidity_to_borrowings_due_2y@FY2025 | Liquidity to borrowings due within two years, FY2025 | 2.68x |  |
 | advance_ticket_cover@FY2025 | Advance ticket cover, FY2025 | 96.6% | up, worse vs prior year; company above peer median, worse |
 | advance_ticket_cover@FY2024 | Advance ticket cover, FY2024 | 84.8% |  |
 | advance_ticket_cover.change@FY2025 | change in Advance ticket cover, FY2024 to FY2025 | 11.8 points | up, worse vs prior year; printed without a sign: say the direction in words |
@@ -202,9 +204,7 @@ These figures are missing, not meaningful or not verified yet. Do not write abou
 - capex_intensity.peer_rank@FY2025: not ranked: neither higher nor lower is better
 - liquidity_to_revenue.peer_median@FY2025: the peer median would use a figure not verified yet (afkl)
 - liquidity_to_revenue.peer_rank@FY2025: the peer median would use a figure not verified yet (afkl)
-- borrowings_due_2y@FY2025: not verified yet: waiting for Imane's review
 - borrowings_due_2y@FY2024: not verified yet: waiting for Imane's review
-- liquidity_to_borrowings_due_2y@FY2025: not verified yet: waiting for Imane's review
 - liquidity_to_borrowings_due_2y@FY2024: not verified yet: waiting for Imane's review
 - fuel_share_of_costs.peer_rank@FY2025: not ranked: neither higher nor lower is better
 - load_factor.peer_median@FY2025: the peer median would use a figure not verified yet (finnair)

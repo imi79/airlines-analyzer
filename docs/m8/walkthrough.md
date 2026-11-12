@@ -34,8 +34,9 @@ others are flagged with their reasons. A few examples, each a sound reason to st
 - at Norwegian the AI picked the parent company's table, not the group's;
 - at Aena it took the whole liquidity table, trade payables included.
 
-Coverage is honest but low: 5 of 18 tearsheets show a checked wall (Finnair FY2024 and
-FY2025, Air France-KLM FY2024 and FY2025, easyJet FY2025 for its leases).
+Coverage is honest but low: 6 of 18 tearsheets show a wall (Finnair FY2024 and FY2025, Air
+France-KLM FY2024 and FY2025, easyJet FY2025 for its leases, and IAG FY2025, which you
+approved on 2026-11-12).
 
 **3. Ratings.** Nine entries, copied from each company's report with the page and the date;
 code checked that each sentence is in the report and shows the agency, rating and outlook.
@@ -66,13 +67,15 @@ France-KLM's, ADP's and easyJet's dates are more than a year old: flagged.
    Air France-KLM page 75, ADP pages 57 and 64). ADP's will still be flagged after your review:
    its tables do not agree with the balance sheet (the bank-and-bond table leaves out leases and
    other debt).
-4. **Optionally approve flagged maturity tables** in the app (Data and audit), where you judge
-   the reason acceptable (for example IAG's convertible bond).
+4. **Optionally approve flagged maturity tables** where you judge the reason acceptable: IAG
+   FY2025 approved on 2026-11-12 (in `config/extraction_reviews.yaml`); the others stay
+   flagged.
 5. **Read two or three redrafted notes** (`docs/m8/drafts/`, or `docs/m8/pdf/`). The three
    flagged snapshots (Finnair FY2024, Wizz Air FY2025, Aena FY2024) were rewritten at your
    request on 2026-11-12 as saved edits, each checked against every verifier rule; a section
    whose rejected sentences all have clean edits is no longer flagged. The
-   "covers ...x times" wording in Finnair and IAG FY2025 is fixed (2026-11-11), as saved edits in
+   "covers ...x times" wording in Finnair FY2025 is fixed (2026-11-11; IAG FY2025's was redrafted
+after your approval and no longer has it), as saved edits in
    `notes/` (figures still in blanks). The public demo now shows your saved edits and analyst
    views, marked "edited by the analyst"; visitors' own changes are still never saved.
 6. ~~Say go to merge into `main`~~: merged on 2026-11-11; the public link follows `main`.

@@ -167,6 +167,10 @@ def _maturity_lines(card: dict, f: dict, src: dict, filing: dict) -> None:
                              "table foots, agreement with the balance sheet")  # fmt: skip
     for why in src.get("checks_failed") or []:
         card["lines"].append(f"Check failed: {why}")
+    review = src.get("review")
+    if review:
+        card["lines"].append(f"Approved by {review['by']} on {review['on']}: "
+                             + " ".join(str(review["reason"]).split()))  # fmt: skip
     if f.get("note"):
         card["lines"].append(f["note"])
     quotes = [] if by_hand else [q.strip() for q in src.get("quotes") or [] if q and q.strip()]

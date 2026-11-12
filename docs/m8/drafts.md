@@ -6,7 +6,7 @@ Longest run of notes with no number outside a blank: **14**, over 9 companies (t
 | Note | Verifier | First try | Numbers outside blanks | Tokens (in / out) |
 | --- | --- | --- | --- | --- |
 | afkl_FY2025 | passed | no | 0 | 44,305 / 2,776 |
-| iag_FY2025 | passed | yes | 0 | 32,229 / 2,375 |
+| iag_FY2025 | passed | yes | 0 | 32,354 / 2,531 |
 | finnair_FY2025 | passed | yes | 0 | 14,908 / 1,760 |
 | easyjet_FY2025 | passed | yes | 0 | 15,603 / 1,393 |
 | adp_FY2025 | passed | no | 0 | 28,489 / 1,863 |

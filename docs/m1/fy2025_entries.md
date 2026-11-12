@@ -18,7 +18,7 @@ holds for that year: a difference means a typing error or a restatement.
 | Cash from operations | FY2025 | 5,055 | 8 | verified | 3,496 | 3,496 | ✓ |
 | Contract liabilities (advance ticket sales) | FY2025 | 4,264 | 6 | verified | 4,097 | 4,097 | ✓ |
 | Depreciation, amortisation and impairment | FY2025 | 3,054 | 3 | verified | 2,643 | 2,643 | ✓ |
-| Proceeds from disposals of fixed assets | FY2025 | 1,391 | 8 | unverified | 678 | 678 | ✓ |
+| Proceeds from disposals of fixed assets | FY2025 | 1,391 | 8 | verified | 678 | 678 | ✓ |
 | Total equity | FY2025 | 2,364 | 6 | verified | 799 | 799 | ✓ |
 | Finance costs | FY2025 | 627 | 3 | verified | 631 | 631 | ✓ |
 | Interest expense | FY2025 | 627 | 3 | verified | 631 | 631 | ✓ |
@@ -47,11 +47,11 @@ holds for that year: a difference means a typing error or a restatement.
 | Cash and cash equivalents | FY2025 | 1,892 | 5 | verified | 1,958 | 1,958 | ✓ |
 | Cash from operations | FY2025 | 1,638 | 6 | verified | 1,524 | 1,524 | ✓ |
 | Depreciation, amortisation and impairment | FY2025 | 1,003 | 4 | verified | 791 | 791 | ✓ |
-| Proceeds from disposals of fixed assets | FY2025 | 35 | 7 | unverified | 13 | 13 | ✓ |
+| Proceeds from disposals of fixed assets | FY2025 | 35 | 7 | verified | 13 | 13 | ✓ |
 | Total equity | FY2025 | 5,407 | 5 | verified | 5,512 | 5,512 | ✓ |
 | Finance costs | FY2025 | 663 | 4 | verified | 595 | 595 | ✓ |
 | Interest paid | FY2025 | 295 | 6 | verified | 298 | 298 | ✓ |
-| Lease payments (principal) | FY2025 | 30 | 7 | unverified | 28 | 28 | ✓ |
+| Lease payments (principal) | FY2025 | 30 | 7 | verified | 28 | 28 | ✓ |
 | Operating profit | FY2025 | 1,160 | 4 | verified | 994 | 994 | ✓ |
 | Other cash-like items (company's net debt definition) | FY2023 | 118 | 60 | verified | – | – | prior-year column, loaded as the figure (nothing tagged to compare) |
 | Other cash-like items (company's net debt definition) | FY2024 | 138 | 56 | verified | – | – | prior-year column, loaded as the figure (nothing tagged to compare) |

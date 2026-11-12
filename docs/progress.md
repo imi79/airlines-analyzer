@@ -156,7 +156,8 @@ Branch: `m8-cash-flow-refinancing`. Plan: `docs/m8/plan.md`. Run: `uv run tearsh
 tables not yet read, `uv run tearsheet draft` redrafts). Results: `docs/m8/`. Walkthrough:
 `docs/m8/walkthrough.md`. Decision 0022. **Status: done; ratings reviewed and merged into
 `main` by Imane's go-ahead (2026-11-11); hand entries reviewed by Imane the same day. Still
-open: the flagged maturity tables (approve in the app if she wishes). The three flagged
+open: the other flagged maturity tables (approve if she wishes; IAG FY2025 approved by her on
+2026-11-12). The three flagged
 snapshots were rewritten as Imane's edits on 2026-11-12.**
 
 - [x] Cash flow after leases computed for every issuer and year, or missing with a stated
@@ -168,7 +169,9 @@ snapshots were rewritten as Imane's edits on 2026-11-12.**
       eleven tables, committed before the AI run): 0 wrong; 4 verified and correct; every other
       table flagged with its reasons (`docs/m8/maturity_score.md`). First run with the checks as
       written: 2 verified, both correct; four form fixes and a tighter interest bound after it
-      (decision 0022). Coverage is low: a checked wall on 5 of 18 tearsheets (with Air
+      (decision 0022). Coverage is low: a wall on 6 of 18 tearsheets, with IAG FY2025
+      approved by Imane (it matches the key; flagged because IAG's convertible bond sits in
+      current debt), and (with Air
       France-KLM FY2025, entered by hand from the PDF and reviewed by Imane; ADP FY2025's hand
       entries, also reviewed, still disagree with the balance sheet and stay flagged)
 - [x] Ratings box complete: nine entries with agency, rating, outlook, date and source, each

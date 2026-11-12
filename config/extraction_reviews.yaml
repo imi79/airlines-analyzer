@@ -21,5 +21,19 @@
 #     reason: Checked on page 165 of the annual report.
 #
 # Then run `uv run tearsheet all --offline` to apply the reviews and rebuild the reports.
+#
+# A flagged debt maturity table (M8) is approved as a whole: item `maturity_borrowings` or
+# `maturity_leases`, action approve (a table cannot be corrected here).
 
-reviews: []
+reviews:
+  - issuer: iag
+    fiscal_year: 2025
+    item: maturity_borrowings
+    action: approve
+    by: Imane
+    'on': '2026-11-12'
+    reason: >-
+      Liquidity risk table, contractual cash flows of the four interest-bearing borrowing rows
+      (asset financing, leases, fixed and floating rate borrowings), matching the answer key.
+      The first year is below the current debt because the convertible bond sits in current
+      debt but falls due later.

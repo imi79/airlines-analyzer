@@ -459,8 +459,8 @@ class CheckedTable:
 
     @property
     def status(self) -> str:
-        if self.review is not None:
-            return "overridden"
+        if self.review is not None and self.total is not None:
+            return "verified"  # approved by the analyst, the failed checks kept on record
         return "verified" if self.verified else "unverified"
 
 
@@ -971,6 +971,29 @@ def read_issuer(
             tagged = tagged_debt(facts, year, issuer.leases_in_borrowings)
             run = read_document(llm, issuer, own[0], end, tagged, fiscal_label(issuer, year),
                                 config)  # fmt: skip
+        apply_reviews(issuer, run)
         runs.append(run)
         out += to_facts(issuer, run, end, manual=year in hand)
     return runs, out
+
+
+def apply_reviews(issuer: Issuer, run: MaturityRun, reviews: list[dict] | None = None) -> None:
+    """The analyst's approvals of flagged tables (config/extraction_reviews.yaml, item
+    `maturity_<layer>`, or any bucket of it as the app writes): the table is shown, with the
+    approval and the checks it failed kept on its record."""
+    from tearsheet.extract.consolidate import load_reviews
+
+    for r in load_reviews() if reviews is None else reviews:
+        item = str(r.get("item", ""))
+        if r["issuer"] != issuer.id or int(r["fiscal_year"]) != run.doc.fiscal_year:
+            continue
+        for layer in LAYERS:
+            if not item.startswith(f"maturity_{layer}"):
+                continue
+            t = run.chosen(layer)
+            if t is None or t.total is None or not t.buckets:
+                continue
+            if r["action"] != "approve":
+                raise ValueError("extraction_reviews.yaml: a maturity table can only be approved")
+            t.review = r
+            t.notes.append(f"approved by {r['by']} on {r['on']}: {r['reason']}")

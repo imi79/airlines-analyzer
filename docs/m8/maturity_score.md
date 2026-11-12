@@ -13,14 +13,14 @@
 | finnair | FY2024 | borrowings | principal | 0_1 125.5, 1_2 56.7, 2_5 567.1, 5_plus 112.2 | 0_1 125.5, 1_2 56.7, 2_5 567.1, 5_plus 112.2 | verified, correct |
 | finnair | FY2025 | borrowings | principal | 0_1 51.5, 1_2 21.0, 2_5 863.8, 5_plus 87.2 | 0_1 51.5, 1_2 21.0, 2_5 863.8, 5_plus 87.2 | verified, correct |
 | iag | FY2024 | borrowings | contractual_cash_flows | 0_1 528.0, 1_2 524.0, 2_5 1,795.0, 5_plus 3,901.0 |  | flagged: within one year 528.0m (with interest) is not between 3,127.5m and 5,209.5m, from the current borrowings of 3,475.0m; the table total 6,748.0m (with interest) is not between 15,610.5m and 27,752.0m, from the borrowings of 17,345.0m |
-| iag | FY2025 | borrowings | contractual_cash_flows | 0_1 2,028.0, 1_2 2,059.0, 2_5 5,879.0, 5_plus 7,854.0 | 0_1 2,028.0, 1_2 2,059.0, 2_5 5,879.0, 5_plus 7,854.0 | flagged: within one year 2,028.0m (with interest) is not between 2,741.4m and 4,472.7m, from the current borrowings of 3,046.0m |
+| iag | FY2025 | borrowings | contractual_cash_flows | 0_1 2,028.0, 1_2 2,059.0, 2_5 5,879.0, 5_plus 7,854.0 | 0_1 2,028.0, 1_2 2,059.0, 2_5 5,879.0, 5_plus 7,854.0 | verified, correct |
 | norwegian | FY2025 | borrowings | principal | 0_1 1,495.0, 1_2 0.0, 2_plus 23.0 | 0_1 2,293.0, 1_2 531.0, 2_5 1,511.0, 5_plus 1,513.0 | flagged: row, total: value 1,518 is not printed in the quote; within one year 1,495.0m does not agree with the current borrowings of 2,065.0m on the balance sheet; the table total 1,518.0m does not agree with the borrowings of 5,847.0m on the balance sheet |
 | vie | FY2024 | leases | contractual_cash_flows | 0_1 1.9, 1_5 8.0, 5_plus 120.0 |  | flagged: the table does not show its scale (thousand); no tagged current and total lease liabilities to check the table against |
 
 | Count | |
 | --- | --- |
-| verified_correct | 4 |
+| verified_correct | 5 |
 | verified_wrong | 0 |
 | verified_not_in_key | 1 |
-| unverified | 9 |
-| key_tables_without_a_verified_wall | 7 |
+| unverified | 8 |
+| key_tables_without_a_verified_wall | 6 |

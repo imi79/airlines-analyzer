@@ -253,15 +253,17 @@ def _show(value: Decimal, unit: str) -> str:
 def load_reviews(path: Path = REVIEWS) -> list[dict]:
     if not path.exists():
         return []
-    return (yaml.safe_load(path.read_text()) or {}).get("reviews") or []
+    reviews = (yaml.safe_load(path.read_text()) or {}).get("reviews") or []
+    # YAML reads the key "on" as the value true: give the date its name back (M8)
+    return [{("on" if k is True else k): v for k, v in r.items()} for r in reviews]
 
 
 def apply_reviews(issuer: Issuer, candidates: list[Candidate], reviews: list[dict]) -> list[str]:
     """Apply Imane's approvals and corrections. Returns reviews that matched nothing."""
     unmatched = []
     for r in reviews:
-        if r["issuer"] != issuer.id:
-            continue
+        if r["issuer"] != issuer.id or str(r.get("item", "")).startswith("maturity_"):
+            continue  # maturity tables are approved in extract/maturity.py (M8)
         target = next(
             (
                 c

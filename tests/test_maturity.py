@@ -317,3 +317,29 @@ def test_later_starts_where_the_column_before_ends():
     assert spans[5] == Span(D(5), None)
     assert parse_labels(["Later"], DEC) == [None]
     assert parse_labels(["2030", "Siguientes"], DEC)[1] == Span(D(5), None)
+
+
+def test_an_approved_table_is_shown_with_its_failed_checks_kept():
+    from tearsheet.extract.maturity import MaturityRun, apply_reviews
+
+    t = check(table(), {"current": D(900_000_000), "total": D(4_050_000_000)})
+    assert not t.verified and t.status == "unverified"
+    run = MaturityRun(DOC, tables=[t])
+    review = {"issuer": "abc", "fiscal_year": 2025, "item": "maturity_borrowings",
+              "action": "approve", "by": "Imane", "on": "2026-11-12",
+              "reason": "checked"}  # fmt: skip
+    apply_reviews(ISSUER, run, [review])
+    assert t.status == "verified" and t.failures  # shown, the failed check still on record
+    assert any("approved by Imane" in n for n in t.notes)
+    other = {**review, "fiscal_year": 2024}
+    t2 = check(table(), {"current": D(900_000_000), "total": D(4_050_000_000)})
+    apply_reviews(ISSUER, MaturityRun(DOC, tables=[t2]), [other])
+    assert t2.status == "unverified"
+
+
+def test_the_review_date_survives_yaml(tmp_path):
+    from tearsheet.extract.consolidate import load_reviews
+
+    path = tmp_path / "reviews.yaml"
+    path.write_text("reviews:\n  - issuer: iag\n    on: 2026-11-12\n    by: Imane\n")
+    assert str(load_reviews(path)[0]["on"]) == "2026-11-12"

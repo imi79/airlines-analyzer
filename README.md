@@ -182,7 +182,7 @@ tests/         unit tests, golden files, the verifier's adversarial suite
   and rating-agency-adjusted figures (no pension or hybrid adjustments).
 - The drafted commentary is a starting point for the analyst (3.78 of 5), not a finished note.
 - Some operating figures await analyst review and show as "pending" until then.
-- The debt maturity wall is checked and shown for 5 of 18 tearsheets; the others show the
+- The debt maturity wall is shown for 6 of 18 tearsheets (one approved by the analyst); the others show the
   debt due within a year from the balance sheet, and their tables wait for analyst review.
 - Ratings are shown as stated in each company's own report (reviewed by the analyst); three
   reports give none.

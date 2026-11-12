@@ -67,18 +67,19 @@ def test_review_appended_to_the_file_with_its_explanations(tmp_path):
     path = tmp_path / "extraction_reviews.yaml"
     shutil.copy(notes.REVIEWS, path)
     before = path.read_text()
+    existing = len(yaml.safe_load(before)["reviews"] or [])
     review = {"issuer": "iag", "fiscal_year": 2025, "item": "load_factor", "action": "correct",
               "value": "0.856", "reason": "Page 32, total network", "by": "Imane",
               "on": "2026-11-09"}  # fmt: skip
     notes.add_review(review, path)
     text = path.read_text()
     assert text.startswith(before.split("reviews:")[0])  # the explanations are kept
-    saved = yaml.safe_load(text)["reviews"]
+    saved = yaml.safe_load(text)["reviews"][existing:]
     assert saved == [{"issuer": "iag", "fiscal_year": 2025, "item": "load_factor",
                       "action": "correct", "value": 0.856, "by": "Imane", "on": "2026-11-09",
                       "reason": "Page 32, total network"}]  # fmt: skip
     notes.add_review(review | {"item": "passengers", "action": "approve"}, path)
-    assert len(yaml.safe_load(path.read_text())["reviews"]) == 2
+    assert len(yaml.safe_load(path.read_text())["reviews"]) == existing + 2
     try:
         notes.add_review(review, path)
     except ValueError as exc:

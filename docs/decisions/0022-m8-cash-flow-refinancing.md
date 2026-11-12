@@ -144,3 +144,14 @@ the analyst". A visitor's own changes still last for the session only; demo mode
 nothing (tested). `notes/` is now in the Docker image too. Edited sentences are checked with
 the same rules as the M8 drafts they replace.
 
+**IAG FY2025's maturity table approved by Imane** (2026-11-12, "approve the IAG maturity
+table"). It matches the answer key; it was flagged because the first year (2,028) is below
+90% of the current debt (3,046), IAG's convertible bond sitting in current debt but falling
+due later. An approval now applies to a whole table (`config/extraction_reviews.yaml`, item
+`maturity_borrowings`): it is shown, with the approval and the failed check kept on its source
+card. IAG FY2024's table (one row of four) stays flagged. Approving changed IAG FY2025's fact
+sheet (borrowings due within two years now available), so its two sections were redrafted
+(about 35,000 tokens); the earlier wording edit on that note no longer applied and was removed.
+YAML reads an unquoted key `on` as "true": the review loader now gives the date its name back.
+Score against the key: 5 verified, all correct, none wrong.
+
