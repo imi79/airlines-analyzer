@@ -169,11 +169,11 @@ snapshots were rewritten as Imane's edits on 2026-11-12.**
       eleven tables, committed before the AI run): 0 wrong; 4 verified and correct; every other
       table flagged with its reasons (`docs/m8/maturity_score.md`). First run with the checks as
       written: 2 verified, both correct; four form fixes and a tighter interest bound after it
-      (decision 0022). Coverage is low: a wall on 6 of 18 tearsheets, with IAG FY2025
-      approved by Imane (it matches the key; flagged because IAG's convertible bond sits in
-      current debt), and (with Air
-      France-KLM FY2025, entered by hand from the PDF and reviewed by Imane; ADP FY2025's hand
-      entries, also reviewed, still disagree with the balance sheet and stay flagged)
+      (decision 0022). Coverage is low: a wall on 6 of 18 tearsheets, including Air France-KLM
+      FY2025 (entered by hand from the PDF, reviewed by Imane) and IAG FY2025 (approved by
+      Imane: it matches the key, flagged only because IAG's convertible bond sits in current
+      debt). ADP FY2025's hand entries, also reviewed, still disagree with the balance sheet and
+      stay flagged
 - [x] Ratings box complete: nine entries with agency, rating, outlook, date and source, each
       quote checked against its report by code (`config/ratings.yaml`); reviewed by Imane on
       2026-11-11. A rating is offered to the commentary only in the note of its report's year
