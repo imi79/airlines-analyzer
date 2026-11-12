@@ -274,3 +274,29 @@ def test_demo_approval_reaches_the_watchlist():
     after = with_session_reviews(lib, {"afkl:undrawn_facilities@FY2025": review})
     now = watchlist.check(after, t, "afkl", 2025)
     assert now.status == "clear" and now.keys == ("afkl:liquidity_to_revenue@FY2025",)
+
+
+def test_a_hot_update_reloads_the_code_in_memory(demo):
+    """The hosting service updates a running app without restarting it (the M9 deploy broke on
+    an old module kept in memory). When the files no longer match what was loaded, the app
+    drops its modules and loads them again before drawing the page."""
+    import sys
+
+    run(("adp", 2025))  # the app has run once: the loaded code is on record
+    before = {
+        n: m for n, m in sys.modules.items() if n == "tearsheet" or n.startswith("tearsheet.")
+    }
+    try:
+        sys.modules["_tearsheet_loaded"].stamp = (0, 0)  # as if a file had changed since
+        at = run(("adp", 2025))
+        assert at.title[0].value == "Groupe ADP"
+        assert sys.modules["tearsheet.render.tearsheet"] is not before["tearsheet.render.tearsheet"]
+        assert sys.modules["tearsheet.app.state"] is not before["tearsheet.app.state"]
+        assert sys.modules["_tearsheet_loaded"].stamp != (0, 0)
+        again = sys.modules["tearsheet.render.tearsheet"]
+        run(("adp", 2025))  # nothing changed since: no second reload
+        assert sys.modules["tearsheet.render.tearsheet"] is again
+    finally:  # the other tests keep the modules they imported
+        for name in [n for n in sys.modules if n == "tearsheet" or n.startswith("tearsheet.")]:
+            del sys.modules[name]
+        sys.modules.update(before)

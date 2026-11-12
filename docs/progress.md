@@ -220,3 +220,8 @@ the short-term cover floor.**
   New catalog ratio: short-term debt cover, cash only (watchlist only, never offered to the
   AI: the recorded drafts are unchanged). Open for Imane: thresholds after the first results.
   723 tests pass (85 new)
+- After the merge, the public link failed on every visit: the hosting service had updated the
+  running app without restarting it, and the new page met a module still in memory from before
+  M9. Reproduced locally and fixed at Imane's request: the app now reloads its code when the
+  files change (decision 0024). The running copy needs one reboot; later updates are covered.
+  724 tests pass
