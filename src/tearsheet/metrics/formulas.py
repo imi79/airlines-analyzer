@@ -365,6 +365,13 @@ def short_term_debt_cover(c: Context) -> tuple[Decimal, str]:
     return value, f"Liquidity {m(liq)} ÷ debt due within one year {m(due)} = {x(value)}"
 
 
+def cash_short_term_debt_cover(c: Context) -> tuple[Decimal, str]:
+    cash, due = c.metric("cash_liquidity"), c.metric("debt_due_1y")
+    value = ratio(cash, due)
+    return value, (f"Cash liquidity {m(cash)} ÷ debt due within one year {m(due)} = {x(value)} "
+                   "(without undrawn lines)")  # fmt: skip
+
+
 # --- Operating metrics (figures read from the report text, M3) ------------------------------
 
 
@@ -498,6 +505,7 @@ FORMULAS: dict[str, Callable[[Context], tuple[Decimal, str]]] = {
     "liquidity_to_revenue": liquidity_to_revenue,
     "debt_due_1y": debt_due_1y,
     "short_term_debt_cover": short_term_debt_cover,
+    "cash_short_term_debt_cover": cash_short_term_debt_cover,
     "passengers": passengers,
     "ask": ask,
     "rpk": rpk,

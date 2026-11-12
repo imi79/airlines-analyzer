@@ -50,6 +50,7 @@ triggers:
     condition: below
     threshold: 1.0x
     applies_to: all
+    floor: cash_short_term_debt_cover
     reason: Liquidity does not cover the debt falling due within a year; refinancing needed.
     set_by: Imane
     set_on: 2026-11-12

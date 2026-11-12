@@ -49,20 +49,29 @@ becomes "3.5x", and the page and the PDFs follow, with no rebuild.
    awaiting your review, the cell says **cannot assess**, with the reason. A watchlist that
    quietly passes what it cannot see is worse than none (your answer to question 4).
 
-**One addition beyond the plan, for you to keep or remove: a floor for liquidity.**
+**Two floors: liquidity, and short-term debt cover** (the first added beyond the plan; you
+kept it and asked for the second on 2026-11-12).
 Liquidity is cash plus the undrawn credit lines. The undrawn lines are often the missing piece
 (not in the report, or awaiting your review). But if cash alone is already 20% of revenue or
 more, liquidity is too: the credit lines can only add to it. In that case the trigger shows
 **clear**, and its card says it was decided on cash alone. Think of it as a lender who sees
 enough cash on deposit to pass the test without looking at the revolver. It can only clear the
 trigger, never fire it, and is not used where liquidity itself is verified. It decides 7 of
-the 12 airline tearsheets (Air France-KLM, easyJet FY2024, Norwegian, Wizz Air). It is one
-line in the triggers file (`floor:`) if you would rather see "cannot assess" there.
+the 12 airline tearsheets (Air France-KLM, easyJet FY2024, Norwegian, Wizz Air).
+
+Short-term debt cover works the same way: a new ratio, **short-term debt cover, cash only**
+(cash and liquid investments ÷ debt due within a year), which can only be lower than the full
+cover. If cash alone already covers the debt due, the trigger is clear. It decides 10 of the 18
+tearsheets. It feeds the watchlist only: it is in the Excel backup but not on the tearsheet's
+table, and it is never shown to the AI, so the commentary you accepted is untouched.
 (Decision 0023.)
+
+On the page, a result decided on cash alone shows with "≥", for example "clear · ≥ 1.08x":
+the full figure is at least that.
 
 ## The findings: what fired
 
-On the 18 tearsheets: **9 triggers fired, 97 clear, 14 cannot assess** (120 checks).
+On the 18 tearsheets: **9 triggers fired, 107 clear, 4 cannot assess** (120 checks).
 
 | Company and year | Trigger | Figure |
 | --- | --- | --- |
@@ -82,21 +91,25 @@ burn after leases and the margin drops at Finnair and Norwegian are in their com
 margin drop is the one "new warning" of 2025; its leverage is net cash, so it is a profitability
 signal, not a solvency one.
 
-**Where the tool cannot tell (14).**
+**Where the tool cannot tell (4), all Flughafen Wien.**
 
-- **Short-term debt cover, 12 of 18**: the undrawn credit lines are not in the report for that
-  year (9) or are awaiting your review (3: Air France-KLM FY2024 and FY2025, easyJet FY2024).
-  Approving those in the Data and audit page lets the trigger use them. A floor like the
-  liquidity one (cash alone against the debt due within a year) would decide most of the rest,
-  but it needs a new ratio in the catalog: **your call** whether to add it.
-- **Interest coverage at Flughafen Wien, 2**: its debt is very small, so the ratio is not
+- **Short-term debt cover, FY2024 and FY2025**: Vienna does not report its current borrowings
+  separately, so the debt due within a year, and both cover ratios, cannot be built. The card
+  gives both reasons.
+- **Interest coverage, FY2024 and FY2025**: its debt is very small, so the ratio is not
   meaningful (the same rule as the peer tables since M4).
+
+**Close calls on short-term cover** (clear, but only just on cash alone): Groupe ADP FY2025,
+cash covers **1.08x** the debt due within a year; Wizz Air FY2025, **1.14x**; ADP FY2024,
+**1.17x**. Their undrawn lines are not in the reports, so the full cover is higher, but these
+are the names to watch if cash falls.
 
 **Your thresholds, after these results** (plan question 2 said you would adjust them). Two
 observations to help: at 3.0x, net leverage flags the two names everyone would flag (ADP, Wizz
 Air) and nothing else; interest coverage below 3.0x and short-term cover below 1.0x fire
 nowhere in 2024-2025 (their lowest are Finnair FY2024 at 4.15x coverage, and IAG FY2025 at 3.59x cover
-among the tearsheets that can be assessed), so they act as tail-risk alarms, not daily signals.
+among the tearsheets with the full ratio), so they act as tail-risk alarms, not daily
+signals.
 
 ## How to try it
 
@@ -115,15 +128,13 @@ among the tearsheets that can be assessed), so they act as tail-risk alarms, not
 
 | Item | Result | |
 | --- | --- | --- |
-| Every trigger evaluated for every company and year shown, from verified figures only; missing or unverified figures "cannot assess" with the reason | Every company and every year in the library (FY2021-FY2026), every trigger that applies: a result, and a reason for each cannot-assess; no fired or clear result rests on an unverified figure (`tests/test_watchlist.py`) | ✓ |
+| Every trigger evaluated for every company and year shown, from verified figures only; missing or unverified figures "cannot assess" with the reason | 120 checks on the 18 tearsheets: 9 fired, 107 clear, 4 cannot assess. Every company and every year in the library (FY2021-FY2026), every trigger that applies: a result, and a reason for each cannot-assess; no fired or clear result rests on an unverified figure (`tests/test_watchlist.py`) | ✓ |
 | Every fired trigger traces to the figure behind it on click | 18 of 18 tearsheets: each fired trigger's card leads down to filing facts, quotes or hand entries, all checkable; also part of the page's figures, so the existing source test and the export manifest cover them | ✓ |
-| Unit tests for each trigger kind, the edges and "cannot assess" | Level above and below, cash flow below zero, moves up and down (in points), exactly at the threshold for each, missing, not meaningful, awaiting review, last year missing, the floor (clears, cannot decide, never overrides) | ✓ |
+| Unit tests for each trigger kind, the edges and "cannot assess" | Level above and below, cash flow below zero, moves up and down (in points), exactly at the threshold for each, missing, not meaningful, awaiting review, last year missing, both floors (clears, exactly at the threshold, cannot decide, never overrides, both reasons when neither ratio exists); the new ratio has its own unit tests, and never exceeds the full cover | ✓ |
 | The PDF still fits two pages for all 18 tearsheets | 18 of 18; the new line changed no text size (11 at 8.5 point, 7 at 8.0, as before M9). Excel recalculated 18 of 18 | ✓ |
 
 ## What I need from you
 
 1. Read the Watchlist page and tell me if a fired trigger surprises you, or a threshold should
    move.
-2. Keep or remove the liquidity floor; and say whether you want the same floor for short-term
-   debt cover (a new ratio in the catalog).
-3. Say go to merge into `main` (the public link follows `main`).
+2. Say go to merge into `main` (the public link follows `main`).

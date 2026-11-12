@@ -147,13 +147,14 @@ def load_narrative(path: Path = NARRATIVE) -> dict:
     return yaml.safe_load(path.read_text())
 
 
-MILESTONES = ["M2", "M3", "M4", "M5", "M6", "M7", "M8"]
+MILESTONES = ["M2", "M3", "M4", "M5", "M6", "M7", "M8", "M9"]
 
 
 def load_specs(narrative: dict | None = None, upto: str | None = None) -> dict[str, Spec]:
     """Catalog metrics, then the statement lines offered to the AI (config/narrative.yaml).
     `upto` keeps only the metrics that existed at that milestone (a catalog entry's `since`):
-    the fact sheet of a recorded draft must stay exactly as it was sent (M8, decision 0022)."""
+    the fact sheet of a recorded draft must stay exactly as it was sent (M8, decision 0022).
+    A metric marked `factsheet: false` is never offered to the AI (M9, decision 0023)."""
     narrative = narrative or load_narrative()
     catalog = load_catalog()
     if upto is not None:
@@ -165,6 +166,8 @@ def load_specs(narrative: dict | None = None, upto: str | None = None) -> dict[s
     names = labels(catalog)
     specs = {}
     for metric, spec in catalog.items():
+        if spec.get("factsheet") is False:  # a watchlist-only figure (M9, decision 0023)
+            continue
         specs[metric] = Spec(
             metric,
             spec["label"],

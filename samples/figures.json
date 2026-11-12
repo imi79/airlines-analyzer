@@ -15,6 +15,7 @@
    "cash_like": "Cash and cash equivalents + the short-term investments the company itself deducts in its net debt (listed per company).",
    "cash_liquidity": "Cash and cash-like investments, without undrawn facilities (see Liquidity).",
    "cash_liquidity_to_revenue": "Cash liquidity ÷ revenue, without undrawn facilities.",
+   "cash_short_term_debt_cover": "Cash and cash-like investments ÷ debt due within one year (short-term debt cover without the undrawn credit lines).",
    "cask": "(Revenue − operating profit) ÷ ASK.",
    "cask_ex_fuel": "(Revenue − operating profit − fuel cost) ÷ ASK.",
    "cfo": "As reported in the cash flow statement (IFRS tag ifrs-full:CashFlowsFromUsedInOperatingActivities).",
@@ -108,6 +109,7 @@
    "cash_like": true,
    "cash_liquidity": true,
    "cash_liquidity_to_revenue": true,
+   "cash_short_term_debt_cover": true,
    "cask": false,
    "cask_ex_fuel": false,
    "debt_due_1y": null,
@@ -157,6 +159,7 @@
    "cash_like": "Cash and cash-like investments",
    "cash_liquidity": "Cash liquidity (partial)",
    "cash_liquidity_to_revenue": "Cash liquidity to revenue (partial)",
+   "cash_short_term_debt_cover": "Short-term debt cover, cash only (partial)",
    "cask": "CASK",
    "cask_ex_fuel": "CASK ex-fuel",
    "cfo": "Cash from operations",
@@ -256,6 +259,7 @@
    "cash_like": "amount",
    "cash_liquidity": "amount",
    "cash_liquidity_to_revenue": "pct",
+   "cash_short_term_debt_cover": "x",
    "cask": "per_km",
    "cask_ex_fuel": "per_km",
    "cfo": "amount",
@@ -1918,6 +1922,126 @@
    "unit": "pct",
    "value": "0.300865155131",
    "value_tagged": "0.300865155131",
+   "warnings": []
+  },
+  "adp:cash_short_term_debt_cover@FY2023": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2023,
+   "footnote": null,
+   "input_keys": [
+    "adp:cash_liquidity@FY2023",
+    "adp:debt_due_1y@FY2023"
+   ],
+   "issuer": "adp",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 2,461 ÷ debt due within one year 1,866 = 1.32x (without undrawn lines)",
+   "period_end": "2023-12-31",
+   "rendered": "1.32x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "2461000000.0"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "1866000000.0"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "1.318863879957",
+   "value_tagged": "1.318863879957",
+   "warnings": []
+  },
+  "adp:cash_short_term_debt_cover@FY2024": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2024,
+   "footnote": null,
+   "input_keys": [
+    "adp:cash_liquidity@FY2024",
+    "adp:debt_due_1y@FY2024"
+   ],
+   "issuer": "adp",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 2,096 ÷ debt due within one year 1,785 = 1.17x (without undrawn lines)",
+   "period_end": "2024-12-31",
+   "rendered": "1.17x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "2096000000.0"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "1785000000.0"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "1.174229691877",
+   "value_tagged": "1.174229691877",
+   "warnings": []
+  },
+  "adp:cash_short_term_debt_cover@FY2025": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2025,
+   "footnote": null,
+   "input_keys": [
+    "adp:cash_liquidity@FY2025",
+    "adp:debt_due_1y@FY2025"
+   ],
+   "issuer": "adp",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 2,017 ÷ debt due within one year 1,859 = 1.08x (without undrawn lines)",
+   "period_end": "2025-12-31",
+   "rendered": "1.08x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "2017000000"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "1859000000"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "1.084991931146",
+   "value_tagged": "1.084991931146",
    "warnings": []
   },
   "adp:cfo@FY2021": {
@@ -9993,6 +10117,206 @@
    "unit": "pct",
    "value": "0.326148309656",
    "value_tagged": "0.326148309656",
+   "warnings": []
+  },
+  "aena:cash_short_term_debt_cover@FY2021": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2021,
+   "footnote": null,
+   "input_keys": [
+    "aena:cash_liquidity@FY2021",
+    "aena:debt_due_1y@FY2021"
+   ],
+   "issuer": "aena",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 1,467 ÷ debt due within one year 1,721 = 0.85x (without undrawn lines)",
+   "period_end": "2021-12-31",
+   "rendered": "0.85x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "1466797000"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "1721196000"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "0.852196379727",
+   "value_tagged": "0.852196379727",
+   "warnings": []
+  },
+  "aena:cash_short_term_debt_cover@FY2022": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2022,
+   "footnote": null,
+   "input_keys": [
+    "aena:cash_liquidity@FY2022",
+    "aena:debt_due_1y@FY2022"
+   ],
+   "issuer": "aena",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 1,574 ÷ debt due within one year 658 = 2.39x (without undrawn lines)",
+   "period_end": "2022-12-31",
+   "rendered": "2.39x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "1573523000"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "658437000"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "2.389785203444",
+   "value_tagged": "2.389785203444",
+   "warnings": []
+  },
+  "aena:cash_short_term_debt_cover@FY2023": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2023,
+   "footnote": null,
+   "input_keys": [
+    "aena:cash_liquidity@FY2023",
+    "aena:debt_due_1y@FY2023"
+   ],
+   "issuer": "aena",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 2,363 ÷ debt due within one year 1,772 = 1.33x (without undrawn lines)",
+   "period_end": "2023-12-31",
+   "rendered": "1.33x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "2363125000.0"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "1771824000.0"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "1.333724455702",
+   "value_tagged": "1.333724455702",
+   "warnings": []
+  },
+  "aena:cash_short_term_debt_cover@FY2024": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2024,
+   "footnote": null,
+   "input_keys": [
+    "aena:cash_liquidity@FY2024",
+    "aena:debt_due_1y@FY2024"
+   ],
+   "issuer": "aena",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 1,821 ÷ debt due within one year 1,341 = 1.36x (without undrawn lines)",
+   "period_end": "2024-12-31",
+   "rendered": "1.36x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "1821283000.0"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "1340561000.0"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "1.358597631887",
+   "value_tagged": "1.358597631887",
+   "warnings": []
+  },
+  "aena:cash_short_term_debt_cover@FY2025": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2025,
+   "footnote": null,
+   "input_keys": [
+    "aena:cash_liquidity@FY2025",
+    "aena:debt_due_1y@FY2025"
+   ],
+   "issuer": "aena",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 2,048 ÷ debt due within one year 864 = 2.37x (without undrawn lines)",
+   "period_end": "2025-12-31",
+   "rendered": "2.37x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "2047669000.0"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "864056000.0"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "2.369833668188",
+   "value_tagged": "2.369833668188",
    "warnings": []
   },
   "aena:cfo@FY2021": {
@@ -18760,6 +19084,126 @@
    "unit": "pct",
    "value": "0.207774108522",
    "value_tagged": "0.207774108522",
+   "warnings": []
+  },
+  "afkl:cash_short_term_debt_cover@FY2023": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2023,
+   "footnote": null,
+   "input_keys": [
+    "afkl:cash_liquidity@FY2023",
+    "afkl:debt_due_1y@FY2023"
+   ],
+   "issuer": "afkl",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 8,257 ÷ debt due within one year 2,512 = 3.29x (without undrawn lines)",
+   "period_end": "2023-12-31",
+   "rendered": "3.29x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "8257000000.0"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "2512000000.0"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "3.287022292994",
+   "value_tagged": "3.287022292994",
+   "warnings": []
+  },
+  "afkl:cash_short_term_debt_cover@FY2024": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2024,
+   "footnote": null,
+   "input_keys": [
+    "afkl:cash_liquidity@FY2024",
+    "afkl:debt_due_1y@FY2024"
+   ],
+   "issuer": "afkl",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 6,932 ÷ debt due within one year 2,674 = 2.59x (without undrawn lines)",
+   "period_end": "2024-12-31",
+   "rendered": "2.59x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "6932000000.0"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "2674000000.0"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "2.592370979806",
+   "value_tagged": "2.592370979806",
+   "warnings": []
+  },
+  "afkl:cash_short_term_debt_cover@FY2025": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2025,
+   "footnote": null,
+   "input_keys": [
+    "afkl:cash_liquidity@FY2025",
+    "afkl:debt_due_1y@FY2025"
+   ],
+   "issuer": "afkl",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 6,858 ÷ debt due within one year 2,761 = 2.48x (without undrawn lines)",
+   "period_end": "2025-12-31",
+   "rendered": "2.48x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "6858000000"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "2761000000"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "2.483882651213",
+   "value_tagged": "2.483882651213",
    "warnings": []
   },
   "afkl:cfo@FY2021": {
@@ -28551,6 +28995,206 @@
    "unit": "pct",
    "value": "0.349099544825",
    "value_tagged": "0.349099544825",
+   "warnings": []
+  },
+  "easyjet:cash_short_term_debt_cover@FY2021": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "GBP",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2021,
+   "footnote": null,
+   "input_keys": [
+    "easyjet:cash_liquidity@FY2021",
+    "easyjet:debt_due_1y@FY2021"
+   ],
+   "issuer": "easyjet",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 3,536 ÷ debt due within one year 489 = 7.23x (without undrawn lines)",
+   "period_end": "2021-09-30",
+   "rendered": "7.23x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "3536000000"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "489000000"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "7.231083844581",
+   "value_tagged": "7.231083844581",
+   "warnings": []
+  },
+  "easyjet:cash_short_term_debt_cover@FY2022": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "GBP",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2022,
+   "footnote": null,
+   "input_keys": [
+    "easyjet:cash_liquidity@FY2022",
+    "easyjet:debt_due_1y@FY2022"
+   ],
+   "issuer": "easyjet",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 3,640 ÷ debt due within one year 684 = 5.32x (without undrawn lines)",
+   "period_end": "2022-09-30",
+   "rendered": "5.32x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "3640000000"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "684000000"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "5.321637426901",
+   "value_tagged": "5.321637426901",
+   "warnings": []
+  },
+  "easyjet:cash_short_term_debt_cover@FY2023": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "GBP",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2023,
+   "footnote": null,
+   "input_keys": [
+    "easyjet:cash_liquidity@FY2023",
+    "easyjet:debt_due_1y@FY2023"
+   ],
+   "issuer": "easyjet",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 2,925 ÷ debt due within one year 650 = 4.50x (without undrawn lines)",
+   "period_end": "2023-09-30",
+   "rendered": "4.50x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "2925000000"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "650000000"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "4.500000000000",
+   "value_tagged": "4.500000000000",
+   "warnings": []
+  },
+  "easyjet:cash_short_term_debt_cover@FY2024": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "GBP",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2024,
+   "footnote": null,
+   "input_keys": [
+    "easyjet:cash_liquidity@FY2024",
+    "easyjet:debt_due_1y@FY2024"
+   ],
+   "issuer": "easyjet",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 3,461 ÷ debt due within one year 643 = 5.38x (without undrawn lines)",
+   "period_end": "2024-09-30",
+   "rendered": "5.38x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "3461000000.0"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "643000000.0"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "5.382581648523",
+   "value_tagged": "5.382581648523",
+   "warnings": []
+  },
+  "easyjet:cash_short_term_debt_cover@FY2025": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "GBP",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2025,
+   "footnote": null,
+   "input_keys": [
+    "easyjet:cash_liquidity@FY2025",
+    "easyjet:debt_due_1y@FY2025"
+   ],
+   "issuer": "easyjet",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 3,528 ÷ debt due within one year 257 = 13.73x (without undrawn lines)",
+   "period_end": "2025-09-30",
+   "rendered": "13.73x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "3528000000.0"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "257000000.0"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "13.727626459144",
+   "value_tagged": "13.727626459144",
    "warnings": []
   },
   "easyjet:cask@FY2021": {
@@ -40556,6 +41200,206 @@
    "unit": "pct",
    "value": "0.341574914687",
    "value_tagged": "0.341574914687",
+   "warnings": []
+  },
+  "finnair:cash_short_term_debt_cover@FY2021": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2021,
+   "footnote": null,
+   "input_keys": [
+    "finnair:cash_liquidity@FY2021",
+    "finnair:debt_due_1y@FY2021"
+   ],
+   "issuer": "finnair",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 1,266 ÷ debt due within one year 619 = 2.05x (without undrawn lines)",
+   "period_end": "2021-12-31",
+   "rendered": "2.05x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "1265700000"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "618600000"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "2.046071774976",
+   "value_tagged": "2.046071774976",
+   "warnings": []
+  },
+  "finnair:cash_short_term_debt_cover@FY2022": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2022,
+   "footnote": null,
+   "input_keys": [
+    "finnair:cash_liquidity@FY2022",
+    "finnair:debt_due_1y@FY2022"
+   ],
+   "issuer": "finnair",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 1,524 ÷ debt due within one year 443 = 3.44x (without undrawn lines)",
+   "period_end": "2022-12-31",
+   "rendered": "3.44x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "1524400000"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "442800000"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "3.442637759711",
+   "value_tagged": "3.442637759711",
+   "warnings": []
+  },
+  "finnair:cash_short_term_debt_cover@FY2023": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2023,
+   "footnote": null,
+   "input_keys": [
+    "finnair:cash_liquidity@FY2023",
+    "finnair:debt_due_1y@FY2023"
+   ],
+   "issuer": "finnair",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 922 ÷ debt due within one year 284 = 3.24x (without undrawn lines)",
+   "period_end": "2023-12-31",
+   "rendered": "3.24x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "921900000.0"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "284300000.0"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "3.242701371790",
+   "value_tagged": "3.242701371790",
+   "warnings": []
+  },
+  "finnair:cash_short_term_debt_cover@FY2024": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2024,
+   "footnote": null,
+   "input_keys": [
+    "finnair:cash_liquidity@FY2024",
+    "finnair:debt_due_1y@FY2024"
+   ],
+   "issuer": "finnair",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 884 ÷ debt due within one year 290 = 3.05x (without undrawn lines)",
+   "period_end": "2024-12-31",
+   "rendered": "3.05x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "884000000.0"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "290000000.0"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "3.048275862069",
+   "value_tagged": "3.048275862069",
+   "warnings": []
+  },
+  "finnair:cash_short_term_debt_cover@FY2025": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2025,
+   "footnote": null,
+   "input_keys": [
+    "finnair:cash_liquidity@FY2025",
+    "finnair:debt_due_1y@FY2025"
+   ],
+   "issuer": "finnair",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 1,061 ÷ debt due within one year 182 = 5.83x (without undrawn lines)",
+   "period_end": "2025-12-31",
+   "rendered": "5.83x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "1061000000.0"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "181900000.0"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "5.832875206157",
+   "value_tagged": "5.832875206157",
    "warnings": []
   },
   "finnair:cask@FY2021": {
@@ -52637,6 +53481,206 @@
    "value_tagged": "0.250474211905",
    "warnings": []
   },
+  "iag:cash_short_term_debt_cover@FY2021": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2021,
+   "footnote": null,
+   "input_keys": [
+    "iag:cash_liquidity@FY2021",
+    "iag:debt_due_1y@FY2021"
+   ],
+   "issuer": "iag",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 7,943 ÷ debt due within one year 2,526 = 3.14x (without undrawn lines)",
+   "period_end": "2021-12-31",
+   "rendered": "3.14x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "7943000000"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "2526000000"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "3.144497228820",
+   "value_tagged": "3.144497228820",
+   "warnings": []
+  },
+  "iag:cash_short_term_debt_cover@FY2022": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2022,
+   "footnote": null,
+   "input_keys": [
+    "iag:cash_liquidity@FY2022",
+    "iag:debt_due_1y@FY2022"
+   ],
+   "issuer": "iag",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 9,599 ÷ debt due within one year 2,843 = 3.38x (without undrawn lines)",
+   "period_end": "2022-12-31",
+   "rendered": "3.38x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "9599000000"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "2843000000"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "3.376362996834",
+   "value_tagged": "3.376362996834",
+   "warnings": []
+  },
+  "iag:cash_short_term_debt_cover@FY2023": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2023,
+   "footnote": null,
+   "input_keys": [
+    "iag:cash_liquidity@FY2023",
+    "iag:debt_due_1y@FY2023"
+   ],
+   "issuer": "iag",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 6,837 ÷ debt due within one year 2,977 = 2.30x (without undrawn lines)",
+   "period_end": "2023-12-31",
+   "rendered": "2.30x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "6837000000.0"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "2977000000.0"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "2.296607322808",
+   "value_tagged": "2.296607322808",
+   "warnings": []
+  },
+  "iag:cash_short_term_debt_cover@FY2024": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2024,
+   "footnote": null,
+   "input_keys": [
+    "iag:cash_liquidity@FY2024",
+    "iag:debt_due_1y@FY2024"
+   ],
+   "issuer": "iag",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 9,828 ÷ debt due within one year 3,475 = 2.83x (without undrawn lines)",
+   "period_end": "2024-12-31",
+   "rendered": "2.83x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "9828000000.0"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "3475000000.0"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "2.828201438849",
+   "value_tagged": "2.828201438849",
+   "warnings": []
+  },
+  "iag:cash_short_term_debt_cover@FY2025": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2025,
+   "footnote": null,
+   "input_keys": [
+    "iag:cash_liquidity@FY2025",
+    "iag:debt_due_1y@FY2025"
+   ],
+   "issuer": "iag",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 8,319 ÷ debt due within one year 3,046 = 2.73x (without undrawn lines)",
+   "period_end": "2025-12-31",
+   "rendered": "2.73x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "8319000000.0"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "3046000000.0"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "2.731122783979",
+   "value_tagged": "2.731122783979",
+   "warnings": []
+  },
   "iag:cask@FY2021": {
    "comparative": false,
    "concept": "cask",
@@ -64055,6 +65099,206 @@
    "unit": "pct",
    "value": "0.267199702492",
    "value_tagged": "0.267199702492",
+   "warnings": []
+  },
+  "norwegian:cash_short_term_debt_cover@FY2021": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "NOK",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2021,
+   "footnote": null,
+   "input_keys": [
+    "norwegian:cash_liquidity@FY2021",
+    "norwegian:debt_due_1y@FY2021"
+   ],
+   "issuer": "norwegian",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 7,695 ÷ debt due within one year 961 = 8.01x (without undrawn lines)",
+   "period_end": "2021-12-31",
+   "rendered": "8.01x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "7694800000"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "961000000"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "8.007075962539",
+   "value_tagged": "8.007075962539",
+   "warnings": []
+  },
+  "norwegian:cash_short_term_debt_cover@FY2022": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "NOK",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2022,
+   "footnote": null,
+   "input_keys": [
+    "norwegian:cash_liquidity@FY2022",
+    "norwegian:debt_due_1y@FY2022"
+   ],
+   "issuer": "norwegian",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 7,759 ÷ debt due within one year 1,389 = 5.59x (without undrawn lines)",
+   "period_end": "2022-12-31",
+   "rendered": "5.59x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "7759000000"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "1389100000"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "5.585630984090",
+   "value_tagged": "5.585630984090",
+   "warnings": []
+  },
+  "norwegian:cash_short_term_debt_cover@FY2023": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "NOK",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2023,
+   "footnote": null,
+   "input_keys": [
+    "norwegian:cash_liquidity@FY2023",
+    "norwegian:debt_due_1y@FY2023"
+   ],
+   "issuer": "norwegian",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 9,478 ÷ debt due within one year 1,713 = 5.53x (without undrawn lines)",
+   "period_end": "2023-12-31",
+   "rendered": "5.53x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "9477900000.0"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "1713300000.0"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "5.531955874628",
+   "value_tagged": "5.531955874628",
+   "warnings": []
+  },
+  "norwegian:cash_short_term_debt_cover@FY2024": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "NOK",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2024,
+   "footnote": null,
+   "input_keys": [
+    "norwegian:cash_liquidity@FY2024",
+    "norwegian:debt_due_1y@FY2024"
+   ],
+   "issuer": "norwegian",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 10,880 ÷ debt due within one year 3,829 = 2.84x (without undrawn lines)",
+   "period_end": "2024-12-31",
+   "rendered": "2.84x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "10880000000.0"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "3829000000.0"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "2.841472969444",
+   "value_tagged": "2.841472969444",
+   "warnings": []
+  },
+  "norwegian:cash_short_term_debt_cover@FY2025": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "NOK",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2025,
+   "footnote": null,
+   "input_keys": [
+    "norwegian:cash_liquidity@FY2025",
+    "norwegian:debt_due_1y@FY2025"
+   ],
+   "issuer": "norwegian",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 10,059 ÷ debt due within one year 3,839 = 2.62x (without undrawn lines)",
+   "period_end": "2025-12-31",
+   "rendered": "2.62x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "10059000000.0"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "3839000000.0"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "2.620213597291",
+   "value_tagged": "2.620213597291",
    "warnings": []
   },
   "norwegian:cask@FY2021": {
@@ -82356,6 +83600,246 @@
    "value_tagged": "0.342973609305",
    "warnings": []
   },
+  "wizz:cash_short_term_debt_cover@FY2021": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2021,
+   "footnote": null,
+   "input_keys": [
+    "wizz:cash_liquidity@FY2021",
+    "wizz:debt_due_1y@FY2021"
+   ],
+   "issuer": "wizz",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 1,617 ÷ debt due within one year 722 = 2.24x (without undrawn lines)",
+   "period_end": "2021-03-31",
+   "rendered": "2.24x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "1616600000"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "722100000"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "2.238748095832",
+   "value_tagged": "2.238748095832",
+   "warnings": []
+  },
+  "wizz:cash_short_term_debt_cover@FY2022": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2022,
+   "footnote": null,
+   "input_keys": [
+    "wizz:cash_liquidity@FY2022",
+    "wizz:debt_due_1y@FY2022"
+   ],
+   "issuer": "wizz",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 1,379 ÷ debt due within one year 413 = 3.34x (without undrawn lines)",
+   "period_end": "2022-03-31",
+   "rendered": "3.34x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "1378800000"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "413100000"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "3.337690631808",
+   "value_tagged": "3.337690631808",
+   "warnings": []
+  },
+  "wizz:cash_short_term_debt_cover@FY2023": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2023,
+   "footnote": null,
+   "input_keys": [
+    "wizz:cash_liquidity@FY2023",
+    "wizz:debt_due_1y@FY2023"
+   ],
+   "issuer": "wizz",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 1,529 ÷ debt due within one year 1,275 = 1.20x (without undrawn lines)",
+   "period_end": "2023-03-31",
+   "rendered": "1.20x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "1529000000"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "1275000000"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "1.199215686275",
+   "value_tagged": "1.199215686275",
+   "warnings": []
+  },
+  "wizz:cash_short_term_debt_cover@FY2024": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2024,
+   "footnote": null,
+   "input_keys": [
+    "wizz:cash_liquidity@FY2024",
+    "wizz:debt_due_1y@FY2024"
+   ],
+   "issuer": "wizz",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 1,589 ÷ debt due within one year 1,084 = 1.47x (without undrawn lines)",
+   "period_end": "2024-03-31",
+   "rendered": "1.47x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "1588900000.0"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "1084300000.0"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "1.465369362722",
+   "value_tagged": "1.465369362722",
+   "warnings": []
+  },
+  "wizz:cash_short_term_debt_cover@FY2025": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2025,
+   "footnote": null,
+   "input_keys": [
+    "wizz:cash_liquidity@FY2025",
+    "wizz:debt_due_1y@FY2025"
+   ],
+   "issuer": "wizz",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 1,736 ÷ debt due within one year 1,518 = 1.14x (without undrawn lines)",
+   "period_end": "2025-03-31",
+   "rendered": "1.14x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "1736000000.0"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "1517900000.0"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "1.143685354766",
+   "value_tagged": "1.143685354766",
+   "warnings": []
+  },
+  "wizz:cash_short_term_debt_cover@FY2026": {
+   "comparative": false,
+   "concept": "cash_short_term_debt_cover",
+   "currency": "EUR",
+   "decimals": null,
+   "filing_id": null,
+   "fiscal_year": 2026,
+   "footnote": null,
+   "input_keys": [
+    "wizz:cash_liquidity@FY2026",
+    "wizz:debt_due_1y@FY2026"
+   ],
+   "issuer": "wizz",
+   "label": "Short-term debt cover, cash only (partial)",
+   "note": "Cash liquidity 1,952 ÷ debt due within one year 816 = 2.39x (without undrawn lines)",
+   "period_end": "2026-03-31",
+   "rendered": "2.39x",
+   "restated": false,
+   "source": {
+    "formula": "cash_short_term_debt_cover",
+    "inputs": [
+     {
+      "name": "cash_liquidity",
+      "source": "metric",
+      "value": "1952000000.0"
+     },
+     {
+      "name": "debt_due_1y",
+      "source": "metric",
+      "value": "815900000.0"
+     }
+    ]
+   },
+   "source_type": "computed",
+   "status": "verified",
+   "unit": "x",
+   "value": "2.392450055154",
+   "value_tagged": "2.392450055154",
+   "warnings": []
+  },
   "wizz:cask@FY2021": {
    "comparative": false,
    "concept": "cask",
@@ -92901,6 +94385,8 @@
   "adp:cash_liquidity@FY2022": "Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022",
   "adp:cash_liquidity_to_revenue@FY2021": "Cash liquidity (partial): Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021",
   "adp:cash_liquidity_to_revenue@FY2022": "Cash liquidity (partial): Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022",
+  "adp:cash_short_term_debt_cover@FY2021": "Cash liquidity (partial): Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021",
+  "adp:cash_short_term_debt_cover@FY2022": "Cash liquidity (partial): Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022",
   "adp:current_investments@FY2021": "Not reported by this issuer.",
   "adp:current_investments@FY2022": "Not reported by this issuer.",
   "adp:current_investments@FY2023": "Not reported by this issuer.",
@@ -93071,6 +94557,8 @@
   "afkl:cash_liquidity@FY2022": "Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022",
   "afkl:cash_liquidity_to_revenue@FY2021": "Cash liquidity (partial): Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021",
   "afkl:cash_liquidity_to_revenue@FY2022": "Cash liquidity (partial): Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022",
+  "afkl:cash_short_term_debt_cover@FY2021": "Cash liquidity (partial): Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2021",
+  "afkl:cash_short_term_debt_cover@FY2022": "Cash liquidity (partial): Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for FY2022",
   "afkl:cask@FY2021": "ASK not available for FY2021",
   "afkl:cask@FY2022": "ASK not available for FY2022",
   "afkl:cask@FY2023": "ASK not available for FY2023",
@@ -93482,6 +94970,11 @@
   "vie:borrowings_total@FY2023": "Borrowings and lease liabilities are reported on one combined line (see \"Borrowings and lease liabilities on one line\").",
   "vie:borrowings_total@FY2024": "Borrowings and lease liabilities are reported on one combined line (see \"Borrowings and lease liabilities on one line\").",
   "vie:borrowings_total@FY2025": "Borrowings and lease liabilities are reported on one combined line (see \"Borrowings and lease liabilities on one line\").",
+  "vie:cash_short_term_debt_cover@FY2021": "Debt due within one year: Current borrowings not reported separately for FY2021",
+  "vie:cash_short_term_debt_cover@FY2022": "Debt due within one year: Current borrowings not reported separately for FY2022",
+  "vie:cash_short_term_debt_cover@FY2023": "Debt due within one year: Current borrowings not reported separately for FY2023",
+  "vie:cash_short_term_debt_cover@FY2024": "Debt due within one year: Current borrowings not reported separately for FY2024",
+  "vie:cash_short_term_debt_cover@FY2025": "Debt due within one year: Current borrowings not reported separately for FY2025",
   "vie:current_investments@FY2021": "Not reported by this issuer.",
   "vie:current_investments@FY2022": "Not reported by this issuer.",
   "vie:current_investments@FY2023": "Not reported by this issuer.",

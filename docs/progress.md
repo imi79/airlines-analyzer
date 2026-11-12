@@ -200,19 +200,22 @@ waiting for Imane's reading of the page and her go-ahead to merge into `main`.**
 - [x] Every trigger in `config/watchlist.yaml` evaluated for every company and year shown, from
       verified figures only; missing or unverified figures shown as "cannot assess" with the reason:
       every company and year in the library (FY2021-FY2026), seven triggers (liquidity to
-      revenue for airlines only); on the 18 tearsheets 120 checks: 9 fired, 97 clear, 14 cannot
-      assess, each with its reason. Liquidity decided on cash alone where cash already clears
-      20% (a floor, decision 0023: 7 airline tearsheets)
+      revenue for airlines only); on the 18 tearsheets 120 checks: 9 fired, 107 clear, 4 cannot
+      assess (all Flughafen Wien), each with its reason. Liquidity and short-term cover decided
+      on cash alone where cash already clears the threshold (floors kept and added by Imane on
+      2026-11-12, decision 0023: 7 and 10 tearsheets)
 - [x] Every fired trigger traces to the figure behind it on click (test over all 18 tearsheets):
       9 of 9 fired triggers lead down to filing facts, quotes or hand entries; they are part of
       the page's figures, so the source test and the export manifest cover them
 - [x] Unit tests for each trigger kind, the edges (exactly at the threshold) and "cannot assess":
       levels above and below, below zero, moves up and down, each exactly at the threshold;
-      missing, not meaningful, awaiting review, last year missing; the floor (`tests/test_watchlist.py`)
+      missing, not meaningful, awaiting review, last year missing; both floors
+      (`tests/test_watchlist.py`); the new ratio `cash_short_term_debt_cover` has its unit tests
 - [x] The PDF still fits two pages for all 18 tearsheets: 18 of 18, with the watchlist line
       under the ratings; no text size changed (11 at 8.5 point, 7 at 8.0, as before M9). Excel
       recalculated 18 of 18
 - Watchlist page (filters for fired and new warnings, source cards), a line on each tearsheet
   and PDF, a paragraph on the Method page. No AI tokens; the commentary is not redrafted.
-  Open for Imane: thresholds after the first results; keep the liquidity floor; a similar
-  floor for short-term debt cover would need a new ratio in the catalog. 715 tests pass (77 new)
+  New catalog ratio: short-term debt cover, cash only (watchlist only, never offered to the
+  AI: the recorded drafts are unchanged). Open for Imane: thresholds after the first results.
+  723 tests pass (85 new)

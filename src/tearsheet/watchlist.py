@@ -195,9 +195,7 @@ def _level(lib: Library, t: Trigger, issuer: str, year: int) -> Check:
     label = lib.label.get(t.metric, t.metric)
     if value is None:
         if t.floor:
-            floored = _floor(lib, t, issuer, year, label, why or "")
-            if floored is not None:
-                return floored
+            return _floor(lib, t, issuer, year, label, why or "")
         keys = (k,) if k in lib.figures else ()
         return Check(t.id, issuer, year, CANNOT, "n.a.", f"{label}: {why}", keys)
     f = lib.figures[k]
@@ -211,21 +209,25 @@ def _level(lib: Library, t: Trigger, issuer: str, year: int) -> Check:
 
 
 def _floor(lib: Library, t: Trigger, issuer: str, year: int, label: str,
-           why: str) -> Check | None:  # fmt: skip
+           why: str) -> Check:  # fmt: skip
     """A 'below' trigger whose figure is not available, decided from a verified figure that can
-    only be lower (decision 0023): cash liquidity leaves out the undrawn credit lines, so if it
-    is already at or above the threshold, liquidity is too. Below it, nothing can be said."""
+    only be lower (decision 0023): the cash-only ratios leave out the undrawn credit lines, so if
+    one is already at or above the threshold, the full ratio is too. Below it, nothing can be
+    said; without it, both reasons are shown."""
     fk = key(issuer, t.floor or "", year)
-    floor, _ = standing(lib, fk)
-    if floor is None:
-        return None
+    floor, floor_why = standing(lib, fk)
+    if floor is None:  # the floor is not available either: say so with the main reason
+        floor_label = lib.label.get(t.floor or "", t.floor or "")
+        k = key(issuer, t.metric, year)
+        detail = f"{label}: {why}. {floor_label}: {floor_why}"
+        return Check(t.id, issuer, year, CANNOT, "n.a.", detail, (k,) if k in lib.figures else ())
     f = lib.figures[fk]
     floor_label = lib.label.get(t.floor or "", t.floor or "")
     if floor >= t.threshold:
-        detail = (f"{label}: {why}. {floor_label} alone is {f['rendered']}, already at or above "
+        detail = (f"{label}: {why}. {floor_label} is {f["rendered"]}, already at or above "
                   f"{t.written}; the undrawn credit lines can only add to it")  # fmt: skip
         return Check(t.id, issuer, year, CLEAR, f"≥ {f['rendered']}", detail, (fk,))
-    detail = (f"{label}: {why}. {floor_label} alone is {f['rendered']}, below {t.written}, so "
+    detail = (f"{label}: {why}. {floor_label} is {f["rendered"]}, below {t.written}, so "
               "the undrawn credit lines decide")  # fmt: skip
     k = key(issuer, t.metric, year)
     keys = ((k,) if k in lib.figures else ()) + (fk,)

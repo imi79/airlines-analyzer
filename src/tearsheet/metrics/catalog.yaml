@@ -186,6 +186,19 @@ metrics:
     higher_is_better: true
     since: M8
     definition: Liquidity ÷ debt due within one year.
+  # M9 (decision 0023): a floor for the watchlist's short-term cover trigger. Without the
+  # undrawn lines it can only be lower than short-term debt cover. Watchlist only: kept out of
+  # the commentary's fact sheet (factsheet: false), so the drafted notes stay as recorded.
+  cash_short_term_debt_cover:
+    label: Short-term debt cover, cash only (partial)
+    unit: x
+    excel: "cash_liquidity / debt_due_1y"
+    higher_is_better: true
+    since: M9
+    factsheet: false
+    definition: >-
+      Cash and cash-like investments ÷ debt due within one year (short-term debt cover without
+      the undrawn credit lines).
   borrowings_due_2y:
     label: Borrowings due within two years
     unit: amount

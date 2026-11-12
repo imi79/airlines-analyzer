@@ -327,3 +327,45 @@ def test_some_triggers_fire_on_the_tearsheets(lib):
     fired = [c for i, y in TEARSHEETS for c in tearsheet.watch_checks(lib, tearsheet.read(i, y))
              if c.status == "fired"]  # fmt: skip
     assert len(fired) >= 5
+
+
+# --- The short-term cover floor (M9, at Imane's request) ----------------------------------------
+
+UNITS["cash_short_term_debt_cover"] = "x"
+
+
+def test_cash_only_cover_clears_the_short_term_trigger():
+    lib = make_lib(
+        fig("co", "cash_short_term_debt_cover", 2025, "1.08"),
+        gaps={"co:short_term_debt_cover@FY2025": "undrawn lines not available"},
+    )
+    c = w.check(lib, trig("short_term_cover_low"), "co", 2025)
+    assert c.status == "clear" and c.keys == ("co:cash_short_term_debt_cover@FY2025",)
+
+
+@pytest.mark.parametrize(("value", "status"), [("1.0", "clear"), ("0.99", "cannot_assess")])
+def test_cash_only_cover_at_the_edge(value, status):
+    """Exactly 1.0x on cash alone: full cover is at least 1.0x, so not below it (clear)."""
+    lib = make_lib(
+        fig("co", "cash_short_term_debt_cover", 2025, value),
+        gaps={"co:short_term_debt_cover@FY2025": "undrawn lines not available"},
+    )
+    assert w.check(lib, trig("short_term_cover_low"), "co", 2025).status == status
+
+
+def test_without_the_floor_both_reasons_are_shown():
+    gaps = {
+        "co:short_term_debt_cover@FY2025": "undrawn lines not available",
+        "co:cash_short_term_debt_cover@FY2025": "current borrowings not reported separately",
+    }
+    c = w.check(make_lib(gaps=gaps), trig("short_term_cover_low"), "co", 2025)
+    assert c.status == "cannot_assess"
+    assert "undrawn lines" in c.detail and "current borrowings" in c.detail
+
+
+def test_the_floor_metric_is_kept_out_of_the_commentary():
+    """The cash-only cover is for the watchlist: the drafted notes' fact sheet is unchanged."""
+    from tearsheet.narrative.factsheet import load_specs
+
+    assert "cash_short_term_debt_cover" not in load_specs()
+    assert "short_term_debt_cover" in load_specs()

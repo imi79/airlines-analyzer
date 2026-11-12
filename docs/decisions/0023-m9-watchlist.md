@@ -44,10 +44,18 @@ too: the undrawn lines can only add. The trigger is then **clear**, and its card
 decided on cash alone. If cash liquidity is below 20%, the undrawn lines decide, and the
 trigger stays "cannot assess". The floor can only clear a "below" trigger, never fire one, and
 is never used when liquidity itself is verified. It is written in the triggers file
-(`floor: cash_liquidity_to_revenue`), so Imane can remove it. Without it, 7 of the 12 airline
-tearsheets could not be assessed on liquidity although the answer is not in doubt. The same
-reasoning would work for short-term debt cover (cash ÷ debt due within a year), but that ratio
-is not in the catalog; adding it is a new metric, left for Imane to decide.
+(`floor: cash_liquidity_to_revenue`). Without it, 7 of the 12 airline tearsheets could not be
+assessed on liquidity although the answer is not in doubt. **Kept by Imane** (2026-11-12).
+
+**The same floor for short-term debt cover, at Imane's request** (2026-11-12: "keep the floor,
+add the short-term cover floor too"). A new catalog metric, `cash_short_term_debt_cover`: cash
+and cash-like investments ÷ debt due within one year, short-term debt cover without the
+undrawn lines, so never above it (unit tests). It is marked `factsheet: false` and `since: M9`:
+it is never offered to the AI, so the fact sheets of the recorded drafts, and their
+fingerprints, are unchanged (the 18 tearsheet records rebuild byte for byte; no "figures have
+changed" warning). It appears in the Excel backup's Metrics sheet (recalculated 18 of 18) and
+in `docs/m2`, not on the tearsheet's table. Where neither ratio is available, the card gives
+both reasons. The golden metric files gained its rows only (46 added, none changed).
 
 **"New warning".** A trigger that fired this year and did not fire the year before (clear, or
 not assessable then). Shown with the prior year's state, so "new, cannot assess the year
@@ -69,7 +77,10 @@ before" is not mistaken for a fresh deterioration.
   followed down to the filing fact, quote or hand entry. The fired triggers are part of the
   page's figures, so the export manifest lists their sources too.
 
-**Results at M9** (18 tearsheets, 120 checks): 9 fired, 97 clear, 14 cannot assess (12 of them
-short-term debt cover, where the undrawn lines are missing or awaiting review; 2 interest
-coverage at Flughafen Wien, whose debt is very small). PDF: 18 of 18 on two pages; the line
+**Results at M9** (18 tearsheets, 120 checks): 9 fired, 107 clear, 4 cannot assess, all at
+Flughafen Wien (interest coverage on a very small debt; short-term cover, as its current
+borrowings are not reported separately). Before the short-term floor: 97 clear, 14 cannot
+assess. The floors decide 7 liquidity and 10 short-term cover results; the closest calls are
+ADP FY2025 (cash alone covers 1.08x the debt due within a year), Wizz Air FY2025 (1.14x) and
+ADP FY2024 (1.17x). PDF: 18 of 18 on two pages; the line
 changes no tearsheet's text size (11 at 8.5 point, 7 at 8.0, as before M9).

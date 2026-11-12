@@ -321,6 +321,7 @@ M8 = {"disposal_proceeds": 30, "lease_payments": 40}
         ("fcf_after_leases_to_debt", Decimal("0.1")),  # 60 / 600
         ("debt_due_1y", Decimal(150)),  # 100 + 50
         ("short_term_debt_cover", Decimal(400) / Decimal(150)),  # 2.67x
+        ("cash_short_term_debt_cover", Decimal(250) / Decimal(150)),  # M9: 1.67x, cash only
     ],
 )
 def test_m8_metric_on_the_example_airline(metric, expected):
@@ -396,3 +397,15 @@ def test_an_unverified_wall_makes_the_two_year_figure_unverified():
     facts += [fact(k, v, status="unverified") for k, v in WALL.items()]
     results = {r.metric: r for r in compute(AIRLINE, facts, settings=SETTINGS)}
     assert results["borrowings_due_2y"].status == "unverified"
+
+
+def test_cash_only_cover_is_never_above_the_full_cover():
+    """M9: the watchlist floor (decision 0023) is sound only if it can never exceed the ratio
+    it stands in for: the undrawn lines can only add."""
+    results = run(M8)
+    assert value(results, "cash_short_term_debt_cover") <= value(results, "short_term_debt_cover")
+
+
+def test_cash_only_cover_on_no_debt_due_is_not_meaningful():
+    results = run({**M8, "borrowings_current": 0, "lease_liabilities_current": 0})
+    assert results["cash_short_term_debt_cover"].kind != "value"
