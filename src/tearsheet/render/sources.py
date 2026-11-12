@@ -10,6 +10,7 @@ Figures on the page are referred to in two ways:
     library key    afkl:net_leverage@FY2025         a stored figure (any company, any year)
     fact sheet id  net_leverage.change@FY2025       a figure of the commentary: a level, a change,
                                                     a peer median or rank, or an event
+    watchlist      {"watch": trigger, "issuer", "year"}   a trigger's result (M9)
 """
 
 from __future__ import annotations
@@ -340,6 +341,10 @@ def ref_of_peer_median(group: str, peer_year: int, metric: str) -> dict:
 def card(lib: Library, ts: dict | None, ref: dict) -> dict:
     if "key" in ref:
         return figure_card(lib, ref["key"])
+    if "watch" in ref:  # a watchlist trigger (M9): its result, then the figures behind it
+        from tearsheet import watchlist
+
+        return watchlist.card(lib, ref)
     if "peer" in ref:
         from tearsheet.render.library import peer_table
 

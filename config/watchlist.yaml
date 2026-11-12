@@ -1,0 +1,102 @@
+# The watchlist (M9, decision 0023): credit triggers set by the analyst, checked by code for
+# every company and year from verified figures only.
+#
+# Each trigger:
+#   label       how the trigger is named on the Watchlist page and the tearsheet line
+#   kind        level: the year's figure against the threshold
+#               move:  the change on the prior year against the threshold
+#   metric      a metric id from src/tearsheet/metrics/catalog.yaml
+#   condition   level: above | below      move: up | down
+#   threshold   written as on the page: "3.0x", "20%", "3 points", or 0 for an amount
+#               (strict: a figure exactly at the threshold does not fire)
+#   applies_to  all | airline | airport
+#   floor       (optional, "below" triggers only) a verified figure that can only be lower
+#               than the metric: when the metric itself is awaiting review or missing and the
+#               floor is already at or above the threshold, the trigger is clear (decision 0023)
+#   reason      one line: why the trigger matters
+#   set_by, set_on   who set the threshold, and when
+#
+# A trigger whose figure is missing, not meaningful or awaiting review shows as "cannot
+# assess", with the reason, never as clear (plan question 4). Thresholds are to be adjusted
+# by Imane after the first results (plan question 2).
+
+triggers:
+  net_leverage_high:
+    label: Net leverage above 3.0x
+    kind: level
+    metric: net_leverage
+    condition: above
+    threshold: 3.0x
+    applies_to: all
+    reason: Debt high against earnings; the level where a crossover credit starts to look stretched.
+    set_by: Imane
+    set_on: 2026-11-12
+
+  interest_coverage_low:
+    label: Interest coverage below 3.0x
+    kind: level
+    metric: interest_coverage
+    condition: below
+    threshold: 3.0x
+    applies_to: all
+    reason: Thin cushion of earnings over interest, lease interest included.
+    set_by: Imane
+    set_on: 2026-11-12
+
+  short_term_cover_low:
+    label: Short-term debt cover below 1.0x
+    kind: level
+    metric: short_term_debt_cover
+    condition: below
+    threshold: 1.0x
+    applies_to: all
+    reason: Liquidity does not cover the debt falling due within a year; refinancing needed.
+    set_by: Imane
+    set_on: 2026-11-12
+
+  fcf_after_leases_negative:
+    label: Cash flow after leases negative
+    kind: level
+    metric: fcf_after_leases
+    condition: below
+    threshold: 0
+    applies_to: all
+    reason: The business did not fund its investment and lease payments from its own cash.
+    set_by: Imane
+    set_on: 2026-11-12
+
+  liquidity_low:
+    label: Liquidity to revenue below 20%
+    kind: level
+    metric: liquidity_to_revenue
+    condition: below
+    threshold: 20%
+    applies_to: airline
+    floor: cash_liquidity_to_revenue
+    reason: >-
+      Airlines need a liquidity buffer against shocks; airports carry less by design, so
+      airlines only.
+    set_by: Imane
+    set_on: 2026-11-12
+
+  net_leverage_up:
+    label: Net leverage up more than 0.5x
+    kind: move
+    metric: net_leverage
+    condition: up
+    threshold: 0.5x
+    applies_to: all
+    reason: A fast rise in leverage within one year, whatever the level.
+    set_by: Imane
+    set_on: 2026-11-12
+
+  ebitda_margin_down:
+    label: EBITDA margin down more than 3 points
+    kind: move
+    metric: ebitda_margin
+    condition: down
+    threshold: 3 points
+    applies_to: all
+    reason: Earnings power eroding; often the first sign before leverage moves.
+    set_by: Imane
+    set_on: 2026-11-12

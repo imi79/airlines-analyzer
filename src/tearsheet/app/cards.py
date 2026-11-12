@@ -21,6 +21,7 @@ KIND_BADGE = {
     "event": ":orange-badge[Event of the year]",
     "derived": ":violet-badge[Computed]",
     "missing": ":red-badge[Not available]",
+    "watch": ":orange-badge[Watchlist trigger]",
 }
 STATUS_BADGE = {
     "verified": ":green-badge[Verified]",
@@ -43,6 +44,8 @@ def open_sources(refs: list[dict], title: str) -> None:
 def _ref_label(ref: dict) -> str:
     if "peer" in ref:
         return f"{ref['peer']}-{ref['year']}-{ref['metric']}"
+    if "watch" in ref:
+        return f"{ref['watch']}-{ref['issuer']}-{ref['year']}"
     return ref.get("key") or ref.get("fid") or "?"
 
 

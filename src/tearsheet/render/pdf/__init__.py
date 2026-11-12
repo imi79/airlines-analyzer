@@ -1,7 +1,8 @@
 """The two-page A4 PDF tearsheet (M6): an HTML page laid out for print, made into a PDF by
 WeasyPrint, with the charts drawn by Altair (vl-convert) in the bundled Inter font.
 
-Page 1: header, snapshot, key figures, the two charts, credit metrics.
+Page 1: header (with the ratings and the watchlist line, M8 and M9), snapshot, key figures,
+the two charts, credit metrics.
 Page 2: operating metrics, peers, liquidity and funding, watch items, the analyst view,
 footnotes (definitions, filings, manifest line, disclaimer).
 
@@ -34,6 +35,7 @@ from tearsheet.render.tearsheet import (
     kpi_table,
     load_app_config,
     peer_table_for,
+    watch_line,
 )
 
 HERE = Path(__file__).parent
@@ -273,6 +275,7 @@ def context(lib: Library, ts: dict, note: dict | None, manifest: dict, font_size
         "currency": ts["currency"],
         "peer_group": ts["peer_group"],
         "rating": header_text(ts.get("rating")),
+        "watchlist": watch_line(lib, ts),  # M9: the triggers fired, from the same figures
         "exported": f"{exported:%d %b %Y}",
         "prepared_by": config.get("analyst") if (note.get("analyst_view") or "").strip() else None,
         "snapshot": sections["snapshot"],

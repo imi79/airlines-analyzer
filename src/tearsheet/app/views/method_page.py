@@ -37,6 +37,12 @@ number written outside a blank, any blank that is not a checked figure, and any 
 ("improved", "fell") that contradicts the computed change. A rejected section goes back to
 the AI up to two times; a sentence still failing is removed.
 
+**Watchlist.** Credit triggers set by the analyst (config/watchlist.yaml), such as net
+leverage above 3.0x or EBITDA margin down more than 3 points on the year, checked by code for
+every company and year from verified figures only. A trigger whose figure is missing, not
+meaningful or awaiting review shows as "cannot assess" with the reason, never as clear
+(decision 0023).
+
 **Peers.** Network airlines, low-cost airlines and airports are compared separately, plus an
 all-airlines view. Each company's fiscal year is placed in the peer year whose 31 December
 falls within six months of its year end. Medians and ranks use verified figures only.

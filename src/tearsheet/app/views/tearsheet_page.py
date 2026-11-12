@@ -78,6 +78,16 @@ st.markdown(
 rating_line = header_text(ts.get("rating"))
 if rating_line:
     st.caption(safe(rating_line))  # M8: the ratings box, from the company's own report
+# M9: the watchlist line, with the fired triggers' cards and a link to the page
+watch = tearsheet.watch_checks(lib, ts)
+fired_refs = [c.ref for c in watch if c.status == "fired"]
+w_text, w_button, w_link = st.columns([9, 1, 3], vertical_alignment="center")
+with w_text:
+    st.caption(safe(tearsheet.watch_line(lib, ts)))
+with w_button:
+    sources_button(fired_refs, f"Watchlist, {ts['name']} {ts['period_label']}", key="watch-line")
+with w_link:
+    st.page_link("views/watchlist_page.py", label="Watchlist page", icon=":material/flag:")
 run = ts.get("run")
 if run is not None and run.get("matches_figures") is False:
     st.warning(

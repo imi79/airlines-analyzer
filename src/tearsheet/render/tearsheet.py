@@ -374,8 +374,23 @@ def page_refs(lib: Library, ts: dict, config: dict | None = None) -> list[dict]:
     for row in peer_table_for(lib, ts)["rows"]:
         refs += [{"key": c["key"]} for c in row["cells"].values() if c.get("key")]
     refs += [{"fid": fid} for fid in commentary_ids(ts)]
+    refs += [c.ref for c in watch_checks(lib, ts) if c.status == "fired"]  # M9: the line
     unique = {repr(sorted(r.items())): r for r in refs}
     return list(unique.values())
+
+
+def watch_checks(lib: Library, ts: dict) -> list:
+    """The watchlist's checks for the tearsheet's company and year (M9)."""
+    from tearsheet import watchlist
+
+    return watchlist.checks_for(lib, ts["issuer"], ts["fiscal_year"])
+
+
+def watch_line(lib: Library, ts: dict) -> str:
+    """The line under the ratings: "Watchlist: 1 trigger fired (...); 5 clear" (M9)."""
+    from tearsheet import watchlist
+
+    return watchlist.summary(watch_checks(lib, ts))
 
 
 def live_record(db_path: Path, issuer_id: str, fiscal_year: int) -> dict:

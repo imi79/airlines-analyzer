@@ -17,7 +17,10 @@ from tearsheet.llm.settings import load_settings
 from tearsheet.render import tearsheet
 
 APP = str(ROOT / "src" / "tearsheet" / "app" / "main.py")
-PAGES = ["views/peers_page.py", "views/audit_page.py", "views/method_page.py"]
+PAGES = [
+    "views/peers_page.py", "views/watchlist_page.py", "views/audit_page.py",
+    "views/method_page.py",
+]  # fmt: skip
 TEARSHEETS = tearsheet.available()
 
 
@@ -75,7 +78,7 @@ def test_every_tearsheet_opens_in_demo_mode(demo, pick):
 @pytest.mark.parametrize("page", PAGES)
 def test_other_pages_open_in_demo_mode(demo, page):
     at = run(("easyjet", 2025), page)
-    assert at.title[0].value in ("Peers", "Data and audit", "Method")
+    assert at.title[0].value in ("Peers", "Watchlist", "Data and audit", "Method")
     assert not at.error
 
 
@@ -220,3 +223,54 @@ def test_the_flagged_snapshots_show_the_analysts_fixes(demo):
         at = run(pick)
         assert not any("failed the verifier" in w.value for w in at.warning), pick
         assert any("edited by the analyst" in m.value for m in at.markdown), pick
+
+
+# --- The watchlist (M9) ----------------------------------------------------------------------
+
+
+def test_tearsheet_shows_the_watchlist_line(demo):
+    at = run(("adp", 2025))
+    captions = [c.value for c in at.caption]
+    assert any(c.startswith("Watchlist: 1 trigger fired (net leverage above 3.0x)")
+               for c in captions), captions  # fmt: skip
+    at.button(key="watch-line").click().run()
+    assert not at.exception
+    text = " ".join(m.value for m in at.markdown)
+    assert "Watchlist trigger" in text and "Built from" in text and "3.68x" in text
+
+
+def test_watchlist_page_lists_fired_triggers_with_their_sources(demo):
+    at = run(("adp", 2025), "views/watchlist_page.py")
+    assert at.title[0].value == "Watchlist"
+    text = " ".join(m.value for m in at.markdown)
+    assert "Groupe ADP FY2025** · Net leverage above 3.0x" in text
+    at.button(key="watch-adp-net_leverage_high").click().run()
+    assert not at.exception
+    text = " ".join(m.value for m in at.markdown)
+    assert "Why it matters" in text and "Built from" in text
+
+
+def test_watchlist_page_filters_new_warnings(demo):
+    at = run(("adp", 2025), "views/watchlist_page.py")
+    at.radio(key="watch-filter").set_value("With a new warning").run()
+    assert not at.exception
+    text = " ".join(m.value for m in at.markdown)
+    assert "new: clear the year before" in text  # Vienna FY2025, EBITDA margin
+    assert "Groupe ADP" not in text  # fired in FY2024 too: not new
+
+
+def test_demo_approval_reaches_the_watchlist():
+    """Approving Air France-KLM's undrawn lines (session only) lets the liquidity trigger use
+    liquidity itself instead of the cash floor."""
+    from tearsheet import watchlist
+    from tearsheet.app.state import with_session_reviews
+    from tearsheet.render.library import Library
+
+    lib = Library.read()
+    t = watchlist.by_id()["liquidity_low"]
+    before = watchlist.check(lib, t, "afkl", 2025)
+    assert before.keys == ("afkl:cash_liquidity_to_revenue@FY2025",)
+    review = {"action": "approve", "reason": "page 15", "by": "Imane"}
+    after = with_session_reviews(lib, {"afkl:undrawn_facilities@FY2025": review})
+    now = watchlist.check(after, t, "afkl", 2025)
+    assert now.status == "clear" and now.keys == ("afkl:liquidity_to_revenue@FY2025",)

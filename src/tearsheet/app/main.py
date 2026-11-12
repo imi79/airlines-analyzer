@@ -1,7 +1,8 @@
 """Airline Credit Tearsheet: the web app (M5).
 
 Run it with `uv run tearsheet app` (or `uv run streamlit run src/tearsheet/app/main.py`).
-Four pages: Tearsheet, Peers, Data and audit, Method. Demo mode needs no key and no database.
+Five pages: Tearsheet, Peers, Watchlist (M9), Data and audit, Method. Demo mode needs no key
+and no database.
 """
 
 from __future__ import annotations
@@ -25,6 +26,12 @@ pages = [
         default=True,
     ),  # fmt: skip
     st.Page(str(HERE / "views" / "peers_page.py"), title="Peers", icon=":material/groups:"),
+    st.Page(
+        str(HERE / "views" / "watchlist_page.py"),
+        title="Watchlist",
+        icon=":material/flag:",
+        url_path="watchlist",
+    ),
     st.Page(
         str(HERE / "views" / "audit_page.py"), title="Data and audit", icon=":material/fact_check:"
     ),  # fmt: skip
