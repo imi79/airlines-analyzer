@@ -223,5 +223,6 @@ the short-term cover floor.**
 - After the merge, the public link failed on every visit: the hosting service had updated the
   running app without restarting it, and the new page met a module still in memory from before
   M9. Reproduced locally and fixed at Imane's request: the app now reloads its code when the
-  files change (decision 0024). The running copy needs one reboot; later updates are covered.
-  724 tests pass
+  files change (decision 0024). The running copy recovered on 2026-11-13 at the next push to
+  `main`, through the guard itself; the public link was then opened from a fresh browser and
+  every page checked. 724 tests pass

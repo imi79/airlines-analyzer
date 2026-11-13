@@ -27,8 +27,14 @@ function's output, no error. A test covers the reload (`tests/test_app.py`).
 **Limits.**
 
 - The copy already running on the public link when this fix arrived had no record of what it
-  loaded, so it could not heal itself: it needed one **reboot** (Streamlit Cloud, "Manage app",
-  "Reboot app"). Every later update is covered.
+  had loaded, so the first version of the guard could not heal it: it took note of the files
+  and waited. On 2026-11-13, after Imane's reboot, the Tearsheet page still failed on the same
+  line while the other pages opened, which means that copy had not restarted. The next change
+  pushed to `main` (a line in the hosting log whenever the guard reloads) was then seen by the
+  guard as "files changed", it loaded everything again, and the public link recovered within a
+  minute: Tearsheet with its watchlist line, Watchlist, Peers, Data and audit and Method all
+  opened from a fresh browser. So the guard is now proven on the hosting service itself, not
+  only locally.
 - A change to the installed packages (`uv.lock`) is handled by the hosting service itself,
   which reinstalls and restarts.
 - After each merge into `main`, open the public link once. A reboot remains the fallback for
