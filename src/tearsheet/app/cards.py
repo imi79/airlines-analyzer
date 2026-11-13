@@ -35,9 +35,11 @@ def safe(text: str) -> str:
     return str(text).replace("$", "\\$")
 
 
-def open_sources(refs: list[dict], title: str) -> None:
-    """Call from a button handler: opens the window on these figures."""
+def open_sources(refs: list[dict], title: str, ltm: bool = False) -> None:
+    """Call from a button handler: opens the window on these figures. `ltm`: the figures
+    include last-twelve-months ones (M10), read from the library's LTM view."""
     st.session_state["card_trail"] = [{"refs": refs, "title": title}]
+    st.session_state["card_ltm"] = ltm
     source_window()
 
 
@@ -51,9 +53,9 @@ def _ref_label(ref: dict) -> str:
 
 @st.dialog("Where the figures come from", width="large")
 def source_window() -> None:
-    from tearsheet.app.state import get_library
+    from tearsheet.app.state import get_library, get_ltm_library
 
-    lib: Library = get_library()
+    lib: Library = get_ltm_library() if st.session_state.get("card_ltm") else get_library()
     ts = st.session_state.get("card_tearsheet")
     trail = st.session_state.get("card_trail") or []
     if not trail:
@@ -101,16 +103,18 @@ def show_card(lib: Library, ts: dict | None, ref: dict, slot: str) -> None:
                     st.rerun(scope="fragment")
 
 
-def sources_button(refs: list[dict], title: str, key: str, label: str = "") -> None:
+def sources_button(
+    refs: list[dict], title: str, key: str, label: str = "", ltm: bool = False
+) -> None:
     """A small button that opens the source window on these figures."""
     if not refs:
         return
     if st.button(label or "", key=key, icon=":material/info:", help="Where these figures come from",
                  type="tertiary"):  # fmt: skip
-        open_sources(refs, title)
+        open_sources(refs, title, ltm)
 
 
-def selection_opens(widget_key: str, refs_for, title_for) -> None:
+def selection_opens(widget_key: str, refs_for, title_for, ltm: bool = False) -> None:
     """Open the window when a table row or chart point is newly selected. `refs_for(selection)`
     gives the figures, `title_for(selection)` the window's title."""
     state = st.session_state.get(widget_key)
@@ -127,4 +131,4 @@ def selection_opens(widget_key: str, refs_for, title_for) -> None:
     st.session_state[f"{widget_key}-handled"] = marker
     refs = refs_for(selection)
     if refs:
-        open_sources(refs, title_for(selection))
+        open_sources(refs, title_for(selection), ltm)

@@ -2,6 +2,7 @@
 
     samples/figures.json                    every figure of the nine companies, with its source
     samples/tearsheets/<company>_FY<y>.json one per drafted tearsheet (latest two years)
+    samples/interim.json                    the half-year and LTM figures (M10)
 
 Built from the facts database, so `uv run tearsheet all` must have run first. The files are
 text (JSON) and committed: any change to a figure shows in the history.
@@ -12,7 +13,7 @@ from __future__ import annotations
 from pathlib import Path
 
 from tearsheet.config import DB_PATH
-from tearsheet.render import library, tearsheet
+from tearsheet.render import interim, library, tearsheet
 from tearsheet.render.library import Library
 
 
@@ -31,6 +32,9 @@ def write_samples(
         raise SystemExit(f"no database at {db_path}: run `uv run tearsheet all` first")
     lib = library.from_database(db_path)
     lib.write(figures_file)
+    if figures_file == library.FIGURES_FILE:
+        # M10: the half-year and LTM figures, in a file of their own beside the fiscal years.
+        interim.from_database(db_path).write()
     folder.mkdir(parents=True, exist_ok=True)
     for old in folder.glob("*.json"):
         old.unlink()

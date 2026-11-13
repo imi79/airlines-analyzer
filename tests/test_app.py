@@ -300,3 +300,47 @@ def test_a_hot_update_reloads_the_code_in_memory(demo):
         for name in [n for n in sys.modules if n == "tearsheet" or n.startswith("tearsheet.")]:
             del sys.modules[name]
         sys.modules.update(before)
+
+
+# --- M10: half-year and LTM ---------------------------------------------------------------------
+
+
+def test_tearsheet_shows_the_ltm_column_after_the_last_fiscal_year(demo):
+    at = run(("finnair", 2025))
+    frame = at.dataframe[0].value
+    assert list(frame.columns)[-1] == "LTM Jun 2026 (unaudited)"
+    row = frame[frame["Metric"] == "Net leverage"].iloc[0]
+    assert row["LTM Jun 2026 (unaudited)"] == "0.87x"
+    assert any("the last twelve months" in c.value for c in at.caption)
+
+
+def test_an_older_tearsheet_has_no_ltm_column(demo):
+    at = run(("finnair", 2024))
+    assert not any("LTM" in c for c in at.dataframe[0].value.columns)
+
+
+def test_ltm_figures_awaiting_review_stay_off_the_page(demo):
+    at = run(("afkl", 2025))
+    frame = at.dataframe[0].value
+    column = "LTM Jun 2026 (unaudited)"
+    assert frame[frame["Metric"] == "EBITDA"].iloc[0][column] == "awaiting review"
+
+
+def test_watchlist_at_ltm(demo):
+    at = run(("wizz", 2026), "views/watchlist_page.py")
+    at.selectbox(key="watch-year").set_value("Latest (LTM)").run()
+    assert not at.exception
+    text = " ".join(m.value for m in at.markdown)
+    assert "Wizz Air Holdings LTM Sep 2026 (unaudited)** · Net leverage above 3.0x" in text
+    at.button(key="watch-wizz-net_leverage_high").click().run()
+    assert not at.exception
+    text = " ".join(m.value for m in at.markdown)
+    assert "Built from" in text and "4.03x" in text
+
+
+def test_audit_page_lists_the_half_year_lines(demo):
+    at = run(("adp", 2025), "views/audit_page.py")
+    heads = [s.value for s in at.subheader]
+    assert "Half-year report: H1 to Jun 2026 (unaudited)" in heads
+    text = " ".join(m.value for m in at.markdown)
+    assert "awaiting your review" in text

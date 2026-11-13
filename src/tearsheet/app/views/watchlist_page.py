@@ -20,6 +20,7 @@ from tearsheet.config import load_issuers
 from tearsheet.metrics.peers import peer_year
 from tearsheet.render import library
 
+LATEST = "Latest (LTM)"
 lib = state.get_library()
 issuer, year = state.current()
 st.session_state["card_tearsheet"] = None
@@ -38,10 +39,19 @@ left, right = st.columns([1, 2])
 with left:
     years = [y for y in library.peer_years(lib) if y >= 2021]
     own = peer_year(date.fromisoformat(lib.period_end(issuer, year)))
-    py = st.selectbox("Year", years, index=years.index(own) if own in years else len(years) - 1,
+    view = state.get_ltm_library()
+    options = years + ([LATEST] if view.ltm else [])
+    py = st.selectbox("Year", options,
+                      index=years.index(own) if own in years else len(years) - 1,
                       key="watch-year",
                       help="Each company's fiscal year whose 31 December falls within six "
-                      "months of its year end (decision 0008).")  # fmt: skip
+                      "months of its year end (decision 0008). Latest (LTM): the last twelve "
+                      "months to each company's latest half-year date, from its unaudited "
+                      "half-year report; moves are measured against the last fiscal "
+                      "year.")  # fmt: skip
+ltm = py == LATEST
+if ltm:
+    lib = view
 with right:
     show = st.radio(
         "Show",
@@ -51,7 +61,15 @@ with right:
         help="New warning: a trigger fired this year that did not fire the year before.",
     )
 
-rows = watchlist.board(lib, py, order)
+if ltm:
+    rows = watchlist.board(lib, None, order, {i: v["year"] for i, v in view.ltm.items()})
+    st.caption("Last twelve months, from unaudited half-year reports: each company at its own "
+               "half-year date (shown beside its name). Undrawn credit lines and maturity tables "
+               "are not in half-year reports: liquidity and short-term cover are decided on "
+               "cash alone where cash already clears the threshold, else cannot be "
+               "assessed.")  # fmt: skip
+else:
+    rows = watchlist.board(lib, py, order)
 if show == "With a trigger fired":
     rows = [r for r in rows if any(c and c.status == watchlist.FIRED for c in r["cells"].values())]
 elif show == "With a new warning":
@@ -101,7 +119,7 @@ else:
         r = rows[selection["rows"][0]]
         return f"Watchlist: {state.name_of(lib, r['issuer'])} {r['period_label']}"
 
-    selection_opens("watch_table", _row_refs, _row_title)
+    selection_opens("watch_table", _row_refs, _row_title, ltm=ltm)
 
 # --- The fired triggers, one line each, then what could not be assessed -------------------------
 st.subheader("Fired")
@@ -120,7 +138,7 @@ for r, t, c in fired:
                     f"{safe(t.label)}: {safe(c.detail)}{new}")  # fmt: skip
     with button_col:
         sources_button([c.ref], f"{t.label}, {state.name_of(lib, r['issuer'])}",
-                       key=f"watch-{r['issuer']}-{t.id}")  # fmt: skip
+                       key=f"watch-{r['issuer']}-{t.id}", ltm=ltm)  # fmt: skip
 
 cannot = [(r, t, r["cells"][t.id]) for r in rows for t in triggers
           if r["cells"][t.id] and r["cells"][t.id].status == watchlist.CANNOT]  # fmt: skip

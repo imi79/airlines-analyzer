@@ -15,7 +15,7 @@ from tearsheet.app import state
 from tearsheet.app.cards import open_sources, safe, selection_opens
 from tearsheet.config import ROOT
 from tearsheet.llm.settings import load_settings
-from tearsheet.render import notes, tearsheet, verifier_demo
+from tearsheet.render import library, notes, tearsheet, verifier_demo
 from tearsheet.render.sources import SOURCE_WORDS, STATUS_WORDS, figure_card, ref_of_key
 
 lib = state.get_library()
@@ -122,6 +122,41 @@ if not live and mine_reviewed:
         if cols[1].button("Undo", key=f"undo-{k}"):
             reviewed.pop(k)
             st.rerun()
+
+# --- Half-year report (M10) -------------------------------------------------------------------
+view = state.get_ltm_library()
+if view.ltm_year(issuer) == year + 1:
+    info = view.ltm[issuer]
+    st.subheader(f"Half-year report: {info['h1_label']} (unaudited)")
+    halves = [f for f in view.figures.values()
+              if f["issuer"] == issuer and f["fiscal_year"] == year + 1
+              and f["concept"].endswith(".h1")]  # fmt: skip
+    flagged = [f for f in halves if f["status"] == "unverified"]
+    st.markdown(
+        f"{len(halves)} lines read from the half-year report, {len(halves) - len(flagged)} "
+        f"confirmed against the FY{info['base']} figures, **{len(flagged)} awaiting your "
+        "review**. A line awaiting review keeps the LTM figures built on it off the page."
+    )
+    half_frame = pd.DataFrame(
+        [[f["label"], f["rendered"],
+          "awaiting review" if f["status"] == "unverified" else STATUS_WORDS[f["status"]],
+          f["source"].get("control") or "; ".join(f["source"].get("checks_failed") or [])]
+         for f in sorted(halves, key=lambda f: f["status"] != "unverified")],
+        columns=["Line", "First half", "Status", "Control passed, or why it waits"],
+    )  # fmt: skip
+    st.dataframe(half_frame, hide_index=True, on_select="rerun", selection_mode="single-row",
+                 key="half_year_table", width="stretch")  # fmt: skip
+    st.caption("Click a line to see the row and the page of the report. To approve or correct "
+               "a line, add an entry to config/half_year_reviews.yaml with your reason, then "
+               "rebuild (`uv run tearsheet all --offline`).")  # fmt: skip
+    _halves = sorted(halves, key=lambda f: f["status"] != "unverified")
+    selection_opens(
+        "half_year_table",
+        lambda s: [ref_of_key(library.key(issuer, _halves[s["rows"][0]]["concept"], year + 1))]
+        if s.get("rows") else [],
+        lambda s: _halves[s["rows"][0]]["label"],
+        ltm=True,
+    )  # fmt: skip
 
 # --- Filings ----------------------------------------------------------------------------------
 st.subheader("Filings used")

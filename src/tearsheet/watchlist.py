@@ -285,13 +285,17 @@ def summary(checks: list[Check]) -> str:
 # --- The Watchlist page -----------------------------------------------------------------------
 
 
-def board(lib: Library, peer_year: int, order: list[str]) -> list[dict]:
+def board(
+    lib: Library, peer_year: int | None, order: list[str], latest: dict[str, int] | None = None
+) -> list[dict]:
     """One row per company for a peer year (its fiscal year falling in it, decision 0008):
     the check of every trigger (None where the trigger does not apply), and which fired
-    triggers are new (not fired the year before)."""
+    triggers are new (not fired the year before). `latest` (M10): instead of a peer year, the
+    column to check per company: its last twelve months in the library's LTM view, compared
+    with its last full fiscal year."""
     rows = []
     for issuer in order:
-        fy = members_year(lib, issuer, peer_year)
+        fy = latest.get(issuer) if latest is not None else members_year(lib, issuer, peer_year)
         if fy is None:
             continue
         company_type = lib.issuers[issuer]["type"]

@@ -132,16 +132,31 @@ for col, kpi in zip(cols, cards, strict=True):
 # --- Four-year table ------------------------------------------------------------------------------
 table = tearsheet.kpi_table(lib, ts, config)
 st.subheader("Key figures")
+# M10: the last twelve months, after the latest fiscal year, from the half-year report.
+view = state.get_ltm_library()
+ltm_year = view.ltm_year(issuer)
+ltm = ltm_year is not None and year == ltm_year - 1
+ltm_keys = [key(issuer, r["metric"], ltm_year) for r in table["rows"]] if ltm else []
+ltm_cells = [tearsheet.cell(view, k) for k in ltm_keys]
 frame = pd.DataFrame(
     [[r["label"]] + [c.rendered for c in r["cells"]] for r in table["rows"]],
     columns=["Metric"] + table["labels"],
 )
+if ltm:
+    frame[f"{view.ltm[issuer]['label']} (unaudited)"] = [c.rendered for c in ltm_cells]
 st.dataframe(frame, hide_index=True, on_select="rerun", selection_mode="single-row",
              height=36 * (len(frame) + 1) + 4,
              key="kpi_table", width="stretch")  # fmt: skip
 st.caption("Click a row to see where its figures come from. \"Awaiting review\": a figure read "
            "from the report that has not passed every check, kept off the tearsheet. \"n.m.\": "
            "not meaningful, for example a ratio to a very small debt.")  # fmt: skip
+if ltm:
+    st.caption(
+        f"{view.ltm[issuer]['label']}: the last twelve months, from the unaudited half-year "
+        f"report to {view.ltm[issuer]['period_end']}. Earnings and cash flows = FY"
+        f"{view.ltm[issuer]['base']} + this first half − last year's first half; debt and cash "
+        "at the half-year date. Not in the commentary or the PDF."
+    )
 
 
 def _row_refs(selection) -> list[dict]:
@@ -149,14 +164,15 @@ def _row_refs(selection) -> list[dict]:
     if not rows:
         return []
     r = table["rows"][rows[0]]
-    return [ref_of_key(c.key) for c in r["cells"] if c.key]
+    refs = [ref_of_key(c.key) for c in r["cells"] if c.key]
+    return refs + ([ref_of_key(ltm_keys[rows[0]])] if ltm else [])
 
 
 def _row_title(selection) -> str:
     return table["rows"][selection["rows"][0]]["label"]
 
 
-selection_opens("kpi_table", _row_refs, _row_title)
+selection_opens("kpi_table", _row_refs, _row_title, ltm=ltm)
 
 # --- Charts ------------------------------------------------------------------------------------
 left, right = st.columns(2)

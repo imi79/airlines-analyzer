@@ -43,6 +43,13 @@ every company and year from verified figures only. A trigger whose figure is mis
 meaningful or awaiting review shows as "cannot assess" with the reason, never as clear
 (decision 0023).
 
+**Half-year and LTM (last twelve months).** For the latest view of a company, the tool reads
+its half-year report: LTM earnings and cash flows = last full year + this first half − last
+year's first half; debt and cash are taken at the half-year date. The AI only points to the
+rows of the half-year statements; code reads the amounts and checks each row against the last
+annual figures. Half-year statements are **unaudited**, and they give no undrawn credit lines
+or maturity table, so some figures are missing at LTM, with the reason (decision 0025).
+
 **Peers.** Network airlines, low-cost airlines and airports are compared separately, plus an
 all-airlines view. Each company's fiscal year is placed in the peer year whose 31 December
 falls within six months of its year end. Medians and ranks use verified figures only.

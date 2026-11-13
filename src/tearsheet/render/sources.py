@@ -41,6 +41,14 @@ STATUS_WORDS = {
 ENDPOINTS = ("tagged", "extracted", "manual")
 
 
+def _period(lib: Library, issuer: str, year: int) -> str:
+    """ "FY2025", or the LTM column's own label in the view that carries one (M10)."""
+    ltm_year = getattr(lib, "ltm_year", None)
+    if ltm_year is not None and ltm_year(issuer) == year:
+        return lib.period_label(issuer, year)
+    return f"FY{year}"
+
+
 def ref_of_key(figure_key: str) -> dict:
     return {"key": figure_key}
 
@@ -59,7 +67,7 @@ def figure_card(lib: Library, figure_key: str) -> dict:
     if f is None:
         return {
             "kind": "missing",
-            "title": f"{lib.label.get(concept, concept)}, {name} FY{year}",
+            "title": f"{lib.label.get(concept, concept)}, {name} {_period(lib, issuer, year)}",
             "rendered": "n.a.",
             "lines": [f"No figure: {lib.why_missing(figure_key)}"],
             "inputs": [],
@@ -99,9 +107,15 @@ def figure_card(lib: Library, figure_key: str) -> dict:
         card["lines"] += [
             f"Document: {filing.get('choice_reason') or f['filing_id']}",
             f"Line: “{label}”, {page}",
-            f"Entered on {filing.get('date_added', 'n.a.')}; prior-year column checked against "
-            "the database (decision 0007)",
         ]
+        if "audit" in src:  # a half-year report (M10)
+            _half_year_lines(card, src)
+            card["link"] = filing.get("report_url")
+        else:
+            card["lines"].append(
+                f"Entered on {filing.get('date_added', 'n.a.')}; prior-year column checked "
+                "against the database (decision 0007)"
+            )
     elif f["source_type"] == "extracted":
         quotes = src.get("quotes") or []
         locations = src.get("locations") or []
@@ -117,8 +131,11 @@ def figure_card(lib: Library, figure_key: str) -> dict:
                 f"Read by {src.get('provider', '')} {src['model']}, prompt "
                 f"{src.get('prompt_version', '')}"
             )
-        for why in src.get("checks_failed") or []:
-            card["lines"].append(f"Check failed: {why}")
+        if "audit" in src:  # a half-year report (M10)
+            _half_year_lines(card, src)
+        else:
+            for why in src.get("checks_failed") or []:
+                card["lines"].append(f"Check failed: {why}")
         review = src.get("review")
         if review:
             card["lines"].append(f"Review: {review}")
@@ -142,6 +159,20 @@ def figure_card(lib: Library, figure_key: str) -> dict:
     if f.get("comparative"):
         card["lines"].append("Read from the prior-year column of the next year's filing")
     return card
+
+
+def _half_year_lines(card: dict, src: dict) -> None:
+    """A line read from a half-year report (M10): how its columns were named, the control that
+    confirmed the row, or the checks it failed."""
+    for how in src.get("column_method") or []:
+        card["lines"].append(f"Columns: {how}")
+    if src.get("control"):
+        card["lines"].append(f"Control passed: {src['control']}")
+    for why in src.get("checks_failed") or []:
+        card["lines"].append(f"Check failed: {why}")
+    for note in src.get("notes") or []:
+        card["lines"].append(f"Note: {note}")
+    card["lines"].append("Unaudited: half-year statements are not audited")
 
 
 def _maturity_lines(card: dict, f: dict, src: dict, filing: dict) -> None:

@@ -16,7 +16,7 @@ import streamlit as st
 
 from tearsheet.config import DB_PATH, load_issuers
 from tearsheet.narrative import render
-from tearsheet.render import library, tearsheet
+from tearsheet.render import interim, library, tearsheet
 from tearsheet.render.library import Library
 
 DEMO, LIVE = "Demo", "Live"
@@ -71,6 +71,28 @@ def get_library() -> Library:
     if mode() == DEMO and reviews:
         return with_session_reviews(lib, reviews)
     return lib
+
+
+@st.cache_resource(show_spinner=False)
+def _demo_interim(stamp: float) -> interim.Interim:
+    return interim.Interim.read()
+
+
+@st.cache_resource(show_spinner=False)
+def _live_interim(stamp: float) -> interim.Interim:
+    return interim.from_database(DB_PATH)
+
+
+def get_interim() -> interim.Interim:
+    """The half-year and LTM figures (M10): from the database, or the pre-built file."""
+    if mode() == LIVE:
+        return _live_interim(_mtime(DB_PATH))
+    return _demo_interim(_mtime(interim.INTERIM_FILE))
+
+
+def get_ltm_library() -> interim.LtmLibrary:
+    """The library with each company's LTM column laid over it (never saved)."""
+    return interim.ltm_view(get_library(), get_interim())
 
 
 def get_tearsheet(issuer: str, year: int) -> dict:
