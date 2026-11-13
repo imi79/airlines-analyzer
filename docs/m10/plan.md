@@ -1,7 +1,12 @@
 # M10 plan: half-year and last-twelve-months figures
 
-Status: **waiting for Imane's approval** (written 2026-11-12, after M9). Nothing is built yet.
-Branch: `m10-half-year-ltm`.
+Status: **approved by Imane** (2026-11-13, "approved with all recommendations, go ahead with
+M10") with every recommendation: 1. scope A, half-year and LTM credit figures for the nine
+companies, with at least seven loaded as the pass mark; 2. the AI reads the statements and code
+checks every figure, hand entry as the fallback; 3. I fetch the public reports, Imane supplies
+the others; 4. LTM on the tearsheet's key figures table and the watchlist, the PDF later;
+5. labelled "unaudited half-year figures"; 6. built in a fresh session, starting from this
+plan. Branch: `m10-half-year-ltm`.
 
 ## What M10 is for
 

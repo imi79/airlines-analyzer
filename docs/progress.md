@@ -229,8 +229,8 @@ the short-term cover floor.**
 
 ## M10 · Half-year and last-twelve-months figures
 
-Branch: `m10-half-year-ltm`. Plan: `docs/m10/plan.md`. **Status: plan written on 2026-11-12,
-waiting for Imane's approval; nothing built.**
+Branch: `m10-half-year-ltm`. Plan: `docs/m10/plan.md`. **Status: plan approved by
+Imane on 2026-11-13 with every recommendation; to be built in a fresh session.**
 
 - [ ] Coverage recorded for all nine companies, go or no-go each; half-year figures loaded for
       at least seven
