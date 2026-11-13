@@ -1,0 +1,255 @@
+{
+ "answer": {
+  "lines": [
+   {
+    "components": [
+     {
+      "label": "Chiffre d'affaires",
+      "operation": "add",
+      "quote": "Chiffre d'affaires   4   3 215   3 163"
+     }
+    ],
+    "line": "revenue"
+   },
+   {
+    "components": [
+     {
+      "label": "Dotations aux amortissements et dépréciation d'actifs corporels et incorporels nettes des reprises",
+      "operation": "add",
+      "quote": "Dotations aux amortissements et dépréciation d'actifs corporels et incorporels nettes des\nreprises   6   (494)   (474)"
+     }
+    ],
+    "line": "dda"
+   },
+   {
+    "components": [
+     {
+      "label": "Résultat opérationnel",
+      "operation": "add",
+      "quote": "Résultat opérationnel   743   444"
+     }
+    ],
+    "line": "operating_profit"
+   },
+   {
+    "components": [
+     {
+      "label": "Charges financières",
+      "operation": "add",
+      "quote": "Charges financières   (439)   (422)"
+     }
+    ],
+    "line": "finance_costs"
+   },
+   {
+    "components": [
+     {
+      "label": "Quote-part de résultat des entreprises mises en équivalence",
+      "operation": "add",
+      "quote": "Quote-part de résultat des entreprises mises en équivalence   4   222   (110)"
+     }
+    ],
+    "line": "share_of_associates"
+   },
+   {
+    "components": [
+     {
+      "label": "Résultat net",
+      "operation": "add",
+      "quote": "Résultat net   312   71"
+     }
+    ],
+    "line": "profit"
+   },
+   {
+    "components": [
+     {
+      "label": "Trésorerie et équivalents de trésorerie",
+      "operation": "add",
+      "quote": "Trésorerie et équivalents de trésorerie   12   2 531   1 892"
+     }
+    ],
+    "line": "cash"
+   },
+   {
+    "components": [
+     {
+      "label": "Autres actifs financiers courants",
+      "operation": "add",
+      "quote": "Autres actifs financiers courants   9   153   151"
+     }
+    ],
+    "line": "other_current_financial_assets"
+   },
+   {
+    "components": [
+     {
+      "label": "Emprunts et dettes financières à court terme",
+      "operation": "add",
+      "quote": "Emprunts et dettes financières à court terme   9   2 026   1 859"
+     }
+    ],
+    "line": "borrowings_current"
+   },
+   {
+    "components": [
+     {
+      "label": "Emprunts et dettes financières à long terme",
+      "operation": "add",
+      "quote": "Emprunts et dettes financières à long terme   9   9 603   8 728"
+     }
+    ],
+    "line": "borrowings_noncurrent"
+   },
+   {
+    "components": [
+     {
+      "label": "Total des capitaux propres",
+      "operation": "add",
+      "quote": "Total des capitaux propres   7   5 325   5 407"
+     }
+    ],
+    "line": "equity"
+   },
+   {
+    "components": [
+     {
+      "label": "TOTAL DES ACTIFS",
+      "operation": "add",
+      "quote": "TOTAL DES ACTIFS   21 276   20 267"
+     }
+    ],
+    "line": "total_assets"
+   },
+   {
+    "components": [
+     {
+      "label": "Flux de trésorerie provenant des activités opérationnelles",
+      "operation": "add",
+      "quote": "Flux de trésorerie provenant des activités opérationnelles   693   774"
+     }
+    ],
+    "line": "cfo"
+   },
+   {
+    "components": [
+     {
+      "label": "Investissements corporels, incorporels et de placement",
+      "operation": "add",
+      "quote": "Investissements corporels, incorporels et de placement   12   (548)   (478)"
+     }
+    ],
+    "line": "capex"
+   },
+   {
+    "components": [
+     {
+      "label": "Cessions d'immobilisations corporelles",
+      "operation": "add",
+      "quote": "Cessions d'immobilisations corporelles   6   1"
+     }
+    ],
+    "line": "disposal_proceeds"
+   },
+   {
+    "components": [
+     {
+      "label": "Remboursements des dettes de location",
+      "operation": "add",
+      "quote": "Remboursements des dettes de location   (12)   (16)"
+     }
+    ],
+    "line": "lease_payments"
+   },
+   {
+    "components": [
+     {
+      "label": "Intérêts payés",
+      "operation": "add",
+      "quote": "Intérêts payés   (205)   (178)"
+     }
+    ],
+    "line": "interest_paid"
+   },
+   {
+    "components": [
+     {
+      "label": "Impôts sur le résultat payés",
+      "operation": "add",
+      "quote": "Impôts sur le résultat payés   (190)   (138)"
+     }
+    ],
+    "line": "tax_paid"
+   },
+   {
+    "components": [
+     {
+      "label": "TOTAL DES CAPITAUX PROPRES ET PASSIFS",
+      "operation": "add",
+      "quote": "TOTAL DES CAPITAUX PROPRES ET PASSIFS   21 276   20 267"
+     }
+    ],
+    "line": "control_total_equity_and_liabilities"
+   },
+   {
+    "components": [
+     {
+      "label": "Trésorerie et équivalents de trésorerie à l'ouverture de la période",
+      "operation": "add",
+      "quote": "Trésorerie et équivalents de trésorerie à l'ouverture de la période   1 888   1 955"
+     }
+    ],
+    "line": "control_cash_start"
+   },
+   {
+    "comment": "Net change plus separate FX and method-change effects",
+    "components": [
+     {
+      "label": "Incidences des variations de cours des devises",
+      "operation": "add",
+      "quote": "Incidences des variations de cours des devises   8   (31)"
+     },
+     {
+      "label": "Incidences des variations relatives à des changements de méthodes",
+      "operation": "add",
+      "quote": "Incidences des variations relatives à des changements de méthodes   1   -"
+     },
+     {
+      "label": "VARIATION DE TRÉSORERIE ET D'ÉQUIVALENTS DE TRÉSORERIE",
+      "operation": "add",
+      "quote": "VARIATION DE TRÉSORERIE ET D'ÉQUIVALENTS DE TRÉSORERIE   636   (223)"
+     }
+    ],
+    "line": "control_cash_movements"
+   },
+   {
+    "components": [
+     {
+      "label": "Trésorerie et équivalents de trésorerie à la clôture de la période",
+      "operation": "add",
+      "quote": "Trésorerie et équivalents de trésorerie à la clôture de la période   12   2 524   1 732"
+     }
+    ],
+    "line": "control_cash_end"
+   }
+  ],
+  "scale": "million"
+ },
+ "label": "adp half year adp-h1-2026-06-30",
+ "recorded_at": "2026-11-13T15:11:34+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "halfyear-v1",
+  "provider": "deepseek",
+  "system_sha256": "cc1f7c3d48e266d3721cf5eabb27c8910ac36c3fe734ee345ae15b1e2d29a46c",
+  "tool_sha256": "ab08c8f966b194e4bd17e01d78e05b44d0d5326b94e97b627a238e929f84f756",
+  "user_sha256": "5cce432ffa9cbe94601e5ac0bbb738f1a764ce368fb461cdad0a0c2662c206b2"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 5913,
+  "output_tokens": 1493
+ }
+}

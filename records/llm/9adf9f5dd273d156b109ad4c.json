@@ -1,0 +1,284 @@
+{
+ "answer": {
+  "lines": [
+   {
+    "components": [
+     {
+      "label": "Revenue",
+      "operation": "add",
+      "quote": "Revenue   4   916.7   787.7   1,694.8   1,481.9   3,106.2"
+     }
+    ],
+    "line": "revenue"
+   },
+   {
+    "components": [
+     {
+      "label": "Fuel costs",
+      "operation": "add",
+      "quote": "Fuel costs   -236.7   -227.4   -463.9   -441.1   -879.0"
+     }
+    ],
+    "line": "fuel_cost"
+   },
+   {
+    "components": [
+     {
+      "label": "Depreciation and impairment",
+      "operation": "add",
+      "quote": "Depreciation and impairment   7   -83.7   -87.0   -170.1   -172.8   -343.7"
+     }
+    ],
+    "line": "dda"
+   },
+   {
+    "components": [
+     {
+      "label": "Operating result",
+      "operation": "add",
+      "quote": "Operating result   86.6   19.2   90.2   -34.2   64.2"
+     }
+    ],
+    "line": "operating_profit"
+   },
+   {
+    "components": [
+     {
+      "label": "Financial expenses",
+      "operation": "add",
+      "quote": "Financial expenses   -20.8   -21.4   -41.1   -44.8   -81.9"
+     }
+    ],
+    "line": "finance_costs"
+   },
+   {
+    "components": [
+     {
+      "label": "Result for the period",
+      "operation": "add",
+      "quote": "Result for the period   58.4   12.5   49.2   -38.4   18.4"
+     }
+    ],
+    "line": "profit"
+   },
+   {
+    "components": [
+     {
+      "label": "Cash and cash equivalents",
+      "operation": "add",
+      "quote": "Cash and cash equivalents   234.2   174.7   529.6"
+     }
+    ],
+    "line": "cash"
+   },
+   {
+    "components": [
+     {
+      "label": "Other financial assets",
+      "operation": "add",
+      "quote": "Other financial assets   10   1,017.8   592.7   531.4"
+     }
+    ],
+    "line": "other_current_financial_assets"
+   },
+   {
+    "components": [
+     {
+      "label": "Deferred income and advances received",
+      "operation": "add",
+      "quote": "Deferred income and advances received   16   918.3   826.6   714.8"
+     }
+    ],
+    "line": "contract_liabilities"
+   },
+   {
+    "components": [
+     {
+      "label": "Other interest-bearing liabilities",
+      "operation": "add",
+      "quote": "Other interest-bearing liabilities   14   21.2   56.9   51.5"
+     }
+    ],
+    "line": "borrowings_current"
+   },
+   {
+    "components": [
+     {
+      "label": "Other interest-bearing liabilities",
+      "operation": "add",
+      "quote": "Other interest-bearing liabilities   14   958.3   684.5   968.6"
+     }
+    ],
+    "line": "borrowings_noncurrent"
+   },
+   {
+    "components": [
+     {
+      "label": "Lease liabilities",
+      "operation": "add",
+      "quote": "Lease liabilities   14   127.0   138.4   130.4"
+     }
+    ],
+    "line": "lease_liabilities_current"
+   },
+   {
+    "components": [
+     {
+      "label": "Lease liabilities",
+      "operation": "add",
+      "quote": "Lease liabilities   14   604.4   701.7   632.3"
+     }
+    ],
+    "line": "lease_liabilities_noncurrent"
+   },
+   {
+    "components": [
+     {
+      "label": "Equity total",
+      "operation": "add",
+      "quote": "Equity total   810.0   550.6   636.7"
+     }
+    ],
+    "line": "equity"
+   },
+   {
+    "components": [
+     {
+      "label": "Assets total",
+      "operation": "add",
+      "quote": "Assets total   4,043.5   3,534.3   3,686.9"
+     }
+    ],
+    "line": "total_assets"
+   },
+   {
+    "components": [
+     {
+      "label": "Net cash flow from operating activities",
+      "operation": "add",
+      "quote": "Net cash flow from operating activities   182.6   43.7   456.5   235.8   401.9"
+     }
+    ],
+    "line": "cfo"
+   },
+   {
+    "comment": "Two rows together equal capex (193.3 + 15.7 = 209.0)",
+    "components": [
+     {
+      "label": "Investments in fleet",
+      "operation": "add",
+      "quote": "Investments in fleet   -66.4   -68.6   -164.4   -118.2   -193.3"
+     },
+     {
+      "label": "Investments in other fixed assets",
+      "operation": "add",
+      "quote": "Investments in other fixed assets   -5.2   -3.6   -8.9   -6.2   -15.7"
+     }
+    ],
+    "line": "capex"
+   },
+   {
+    "components": [
+     {
+      "label": "Divestments of fleet, other fixed assets and shares",
+      "operation": "add",
+      "quote": "Divestments of fleet, other fixed assets and shares   5.0   0.4   11.1   0.4   8.3"
+     }
+    ],
+    "line": "disposal_proceeds"
+   },
+   {
+    "components": [
+     {
+      "label": "Repayments of lease liabilities",
+      "operation": "add",
+      "quote": "Repayments of lease liabilities   -33.6   -37.2   -66.3   -78.3   -150.4"
+     }
+    ],
+    "line": "lease_payments"
+   },
+   {
+    "comment": "Printed net of financial income",
+    "components": [
+     {
+      "label": "Financial expenses paid, net",
+      "operation": "add",
+      "quote": "Financial expenses paid, net   -25.4   -32.2   -30.3   -62.7   -87.4"
+     }
+    ],
+    "line": "interest_paid"
+   },
+   {
+    "components": [
+     {
+      "label": "Income taxes paid",
+      "operation": "add",
+      "quote": "Income taxes paid   -0.0   -0.0   -0.0   -0.1   -0.1"
+     }
+    ],
+    "line": "tax_paid"
+   },
+   {
+    "components": [
+     {
+      "label": "Equity and liabilities total",
+      "operation": "add",
+      "quote": "Equity and liabilities total   4,043.5   3,534.3   3,686.9"
+     }
+    ],
+    "line": "control_total_equity_and_liabilities"
+   },
+   {
+    "comment": "Opening row is liquid funds, not cash and cash equivalents alone",
+    "components": [
+     {
+      "label": "Liquid funds, at beginning",
+      "operation": "add",
+      "quote": "Liquid funds, at beginning   807.2   681.4   826.7   643.8   643.8"
+     }
+    ],
+    "line": "control_cash_start"
+   },
+   {
+    "comment": "Only one movement row printed; no separate FX effect row",
+    "components": [
+     {
+      "label": "Change in cash flows",
+      "operation": "add",
+      "quote": "Change in cash flows   -122.2   -155.5   -141.6   -117.9   182.8"
+     }
+    ],
+    "line": "control_cash_movements"
+   },
+   {
+    "comment": "Closing row is liquid funds, not cash and cash equivalents alone",
+    "components": [
+     {
+      "label": "Liquid funds, at end *",
+      "operation": "add",
+      "quote": "Liquid funds, at end *   685.0   525.9   685.0   525.9   826.7"
+     }
+    ],
+    "line": "control_cash_end"
+   }
+  ],
+  "scale": "million"
+ },
+ "label": "finnair half year finnair-h1-2026-06-30",
+ "recorded_at": "2026-11-13T15:11:20+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "halfyear-v1",
+  "provider": "deepseek",
+  "system_sha256": "cc1f7c3d48e266d3721cf5eabb27c8910ac36c3fe734ee345ae15b1e2d29a46c",
+  "tool_sha256": "c68e238deac9ada57ef0803e3fcd99177488ed680e8bcc4a08032a832cf8a718",
+  "user_sha256": "834c5b63241cb71c6325040e5048fd0d435f94c6fc65a980939088faba81878a"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 5482,
+  "output_tokens": 1655
+ }
+}

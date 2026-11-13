@@ -1,0 +1,15 @@
+# Imane's reviews of half-year lines that failed a check (M10, decision 0025).
+#
+#   - report: adp-h1-2026-06-30      # id from config/half_year_reports.yaml
+#     line: capex
+#     action: approve                # the line is right as read; or `correct`, with the
+#     current: 646                   # values to use instead, in the report's printed unit
+#     prior: 540
+#     by: Imane
+#     on: 2026-11-14
+#     reason: the row plus the change in payables on asset purchases, as in the annual figure
+#
+# An approved line is shown with the checks it failed kept on its record; a corrected one is
+# marked "overridden", with the reason.
+
+reviews: []

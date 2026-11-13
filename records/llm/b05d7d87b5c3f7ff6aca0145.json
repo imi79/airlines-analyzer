@@ -1,0 +1,320 @@
+{
+ "answer": {
+  "lines": [
+   {
+    "components": [
+     {
+      "label": "Total revenue",
+      "operation": "add",
+      "quote": "Total revenue   3,954   -   3,954   3,534   -   3,534"
+     }
+    ],
+    "line": "revenue"
+   },
+   {
+    "components": [
+     {
+      "label": "Fuel",
+      "operation": "add",
+      "quote": "Fuel   (982)   -   (982)   (949)   -   (949)"
+     }
+    ],
+    "line": "fuel_cost"
+   },
+   {
+    "comment": "Depreciation and amortisation rows; no separate impairment line in the income statement",
+    "components": [
+     {
+      "label": "Depreciation",
+      "operation": "add",
+      "quote": "Depreciation   8,9   (360)   -   (360)   (335)   -   (335)"
+     },
+     {
+      "label": "Amortisation of intangible assets",
+      "operation": "add",
+      "quote": "Amortisation of intangible   (39)   -   (39)   (29)   -   (29)"
+     }
+    ],
+    "line": "dda"
+   },
+   {
+    "components": [
+     {
+      "label": "Operating loss",
+      "operation": "add",
+      "quote": "Operating loss   (533)   -   (533)   (369)   (7)   (376)"
+     }
+    ],
+    "line": "operating_profit"
+   },
+   {
+    "comment": "Row printed garbled in the PDF; it is the interest and other financing charges line",
+    "components": [
+     {
+      "label": "Interest  incomeand other   financingexchange",
+      "operation": "add",
+      "quote": "Interest  incomeand other   (68)   -   (68)   (82)   -   (82)"
+     }
+    ],
+    "line": "finance_costs"
+   },
+   {
+    "comment": "Income statement shows only combined interest and other financing charges",
+    "components": [
+     {
+      "label": "Interest  incomeand other   financingexchange",
+      "operation": "add",
+      "quote": "Interest  incomeand other   (68)   -   (68)   (82)   -   (82)"
+     }
+    ],
+    "line": "interest_expense"
+   },
+   {
+    "components": [
+     {
+      "label": "Loss for the period",
+      "operation": "add",
+      "quote": "Loss for the period   (377)   -   (377)   (292)   (5)   (297)"
+     }
+    ],
+    "line": "profit"
+   },
+   {
+    "components": [
+     {
+      "label": "Cash and cash equivalents",
+      "operation": "add",
+      "quote": "Cash and cash equivalents   2,288   1,504"
+     }
+    ],
+    "line": "cash"
+   },
+   {
+    "components": [
+     {
+      "label": "Other investments",
+      "operation": "add",
+      "quote": "Other investments   1,158   2,024"
+     }
+    ],
+    "line": "current_investments"
+   },
+   {
+    "comment": "Current unearned revenue row",
+    "components": [
+     {
+      "label": "Unearned revenue   (3,048)   (1,945)",
+      "operation": "add",
+      "quote": "Unearned revenue   (3,048)   (1,945)"
+     }
+    ],
+    "line": "contract_liabilities"
+   },
+   {
+    "components": [
+     {
+      "label": "Borrowings",
+      "operation": "add",
+      "quote": "Borrowings   10   (16)   (6)"
+     }
+    ],
+    "line": "borrowings_current"
+   },
+   {
+    "components": [
+     {
+      "label": "Borrowings",
+      "operation": "add",
+      "quote": "Borrowings   10   (2,001)   (1,875)"
+     }
+    ],
+    "line": "borrowings_noncurrent"
+   },
+   {
+    "components": [
+     {
+      "label": "Lease liabilities",
+      "operation": "add",
+      "quote": "Lease liabilities   9   (256)   (251)"
+     }
+    ],
+    "line": "lease_liabilities_current"
+   },
+   {
+    "components": [
+     {
+      "label": "Lease liabilities",
+      "operation": "add",
+      "quote": "Lease liabilities   9   (739)   (794)"
+     }
+    ],
+    "line": "lease_liabilities_noncurrent"
+   },
+   {
+    "components": [
+     {
+      "label": "Total equity",
+      "operation": "add",
+      "quote": "Total equity   3,657   3,498"
+     }
+    ],
+    "line": "equity"
+   },
+   {
+    "comment": "Balance sheet prints no total assets line; sum of the two subtotals",
+    "components": [
+     {
+      "label": "Non-current assets subtotal",
+      "operation": "add",
+      "quote": "   7,084   6,882"
+     },
+     {
+      "label": "Current assets subtotal",
+      "operation": "add",
+      "quote": "   5,653   4,625"
+     }
+    ],
+    "line": "total_assets"
+   },
+   {
+    "components": [
+     {
+      "label": "Net cash generated from operating activities",
+      "operation": "add",
+      "quote": "Net cash generated from operating activities   458   790"
+     }
+    ],
+    "line": "cfo"
+   },
+   {
+    "components": [
+     {
+      "label": "Purchase of property, plant and equipment",
+      "operation": "add",
+      "quote": "Purchase of property, plant and equipment   (532)   (484)"
+     },
+     {
+      "label": "Purchase of non-current other intangible assets",
+      "operation": "add",
+      "quote": "Purchase of non-current other intangible assets   (45)   (45)"
+     }
+    ],
+    "line": "capex"
+   },
+   {
+    "components": [
+     {
+      "label": "Proceeds from sale of property, plant and equipment",
+      "operation": "add",
+      "quote": "Proceeds from sale of property, plant and equipment   -   1"
+     }
+    ],
+    "line": "disposal_proceeds"
+   },
+   {
+    "components": [
+     {
+      "label": "Repayment of capital element of leases",
+      "operation": "add",
+      "quote": "Repayment of capital element of leases   (113)   (116)"
+     }
+    ],
+    "line": "lease_payments"
+   },
+   {
+    "components": [
+     {
+      "label": "Interest and other financing charges paid",
+      "operation": "add",
+      "quote": "Interest and other financing charges paid   (77)   (82)"
+     }
+    ],
+    "line": "interest_paid"
+   },
+   {
+    "components": [
+     {
+      "label": "Tax paid",
+      "operation": "add",
+      "quote": "Tax paid   (9)   (8)"
+     }
+    ],
+    "line": "tax_paid"
+   },
+   {
+    "comment": "No total equity and liabilities line printed; net assets plus both liability subtotals",
+    "components": [
+     {
+      "label": "Net assets",
+      "operation": "add",
+      "quote": "Net assets   3,657   3,498"
+     },
+     {
+      "label": "Current liabilities subtotal",
+      "operation": "add",
+      "quote": "   (5,128)   (4,152)"
+     },
+     {
+      "label": "Non-current liabilities subtotal",
+      "operation": "add",
+      "quote": "   (3,952)   (3,857)"
+     }
+    ],
+    "line": "control_total_equity_and_liabilities"
+   },
+   {
+    "components": [
+     {
+      "label": "Cash and cash equivalents at beginning of period",
+      "operation": "add",
+      "quote": "Cash and cash equivalents at beginning of period   1,504   1,343"
+     }
+    ],
+    "line": "control_cash_start"
+   },
+   {
+    "components": [
+     {
+      "label": "Effect of exchange rate movements",
+      "operation": "add",
+      "quote": "Effect of exchange rate movements   8   49"
+     },
+     {
+      "label": "Net increase in cash and cash equivalents",
+      "operation": "add",
+      "quote": "Net increase in cash and cash equivalents   784   669"
+     }
+    ],
+    "line": "control_cash_movements"
+   },
+   {
+    "components": [
+     {
+      "label": "Cash and cash equivalents at end of period",
+      "operation": "add",
+      "quote": "Cash and cash equivalents at end of period   2,288   2,012"
+     }
+    ],
+    "line": "control_cash_end"
+   }
+  ],
+  "scale": "million"
+ },
+ "label": "easyjet half year easyjet-h1-2026-03-31",
+ "recorded_at": "2026-11-13T15:12:57+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "halfyear-v1",
+  "provider": "deepseek",
+  "system_sha256": "cc1f7c3d48e266d3721cf5eabb27c8910ac36c3fe734ee345ae15b1e2d29a46c",
+  "tool_sha256": "7e2ace1ff35e1c5e7d5af0188f0a93cd8b2bfd8ec22e5c35b8ab2a924f96e7c8",
+  "user_sha256": "6cde1534147c0dbd1cb3554a4871d423476db08fad3f735044b4f4e1861ffbd7"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 4170,
+  "output_tokens": 1678
+ }
+}

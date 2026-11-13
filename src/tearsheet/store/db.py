@@ -173,6 +173,59 @@ CREATE TABLE events (
 """
 SCHEMA += DRAFT_TABLES
 
+# Half-year and last-twelve-months figures (M10, decision 0025). Kept in tables of their own:
+# the fiscal-year figures, their keys and everything built from them stay exactly as they are.
+INTERIM_TABLES = """
+CREATE TABLE interim_reports (
+    issuer           VARCHAR NOT NULL,
+    report_id        VARCHAR NOT NULL,
+    period_end       DATE NOT NULL,     -- the half-year date
+    base_fiscal_year INTEGER NOT NULL,  -- the last full fiscal year LTM is built on
+    h1_label         VARCHAR NOT NULL,
+    ltm_label        VARCHAR NOT NULL,
+    document         VARCHAR NOT NULL,
+    file             VARCHAR NOT NULL,
+    sha256           VARCHAR NOT NULL,
+    url              VARCHAR,
+    language         VARCHAR,
+    audit            VARCHAR,           -- unaudited
+    read_by          VARCHAR,           -- ai | hand
+    provider         VARCHAR,
+    model            VARCHAR,
+    prompt_version   VARCHAR,
+    request_hash     VARCHAR,
+    input_tokens     INTEGER,
+    output_tokens    INTEGER,
+    from_record      BOOLEAN,
+    error            VARCHAR,
+    columns          VARCHAR            -- JSON: per statement, how the columns were named
+);
+
+CREATE TABLE interim_facts (
+    issuer       VARCHAR NOT NULL,
+    period       VARCHAR NOT NULL,     -- H1 | H1_prior | LTM
+    period_end   DATE NOT NULL,
+    concept      VARCHAR NOT NULL,     -- statement line, or metric id for LTM metrics
+    value        DECIMAL(38, 12) NOT NULL,
+    decimals     INTEGER,
+    currency     VARCHAR NOT NULL,
+    source_type  VARCHAR NOT NULL,     -- extracted | manual | computed
+    source_ref   VARCHAR NOT NULL,     -- JSON: rows and checks, or the parts of the LTM sum
+    status       VARCHAR NOT NULL,     -- verified | unverified | overridden
+    note         VARCHAR,
+    warnings     VARCHAR
+);
+
+-- Lines and metrics with no half-year or LTM value, and why.
+CREATE TABLE interim_gaps (
+    issuer   VARCHAR NOT NULL,
+    period   VARCHAR NOT NULL,
+    concept  VARCHAR NOT NULL,
+    reason   VARCHAR NOT NULL
+);
+"""
+SCHEMA += INTERIM_TABLES
+
 
 def ensure_draft_tables(con) -> None:
     """The M4 tables, in a database built before they existed."""
@@ -445,3 +498,61 @@ def write_maturity(con, issuer: str, runs) -> None:
         con.executemany(
             "INSERT INTO llm_calls VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", calls
         )
+
+
+def write_interim(con, load, currency: str, units: dict[str, str]) -> None:
+    """One company's half-year report, its H1 lines, LTM lines and LTM metrics (an
+    InterimLoad of metrics/ltm.py)."""
+    report, run = load.report, load.run
+    r = run.result
+    columns = {
+        kind: {"count": c.count, "labels": c.labels, "how": c.how, "failures": c.failures}
+        for kind, c in run.columns.items()
+    }
+    con.execute(
+        f"INSERT INTO interim_reports VALUES ({', '.join('?' * 22)})",
+        (
+            report.issuer, report.id, report.period_end, report.base_fiscal_year,
+            report.h1_label, report.ltm_label, report.document, report.file, report.sha256,
+            report.url, report.language, report.audit, report.read_by,
+            r.provider if r else None, r.model if r else None,
+            r.prompt_version if r else None, r.request_hash if r else None,
+            r.usage.input_tokens if r else None, r.usage.output_tokens if r else None,
+            r.cached if r else None, run.error, json.dumps(columns, ensure_ascii=False),
+        ),
+    )  # fmt: skip
+    rows, gaps = [], []
+    for f in load.h1 + load.ltm:
+        rows.append(
+            (
+                f.issuer, f.rule_source, f.period_end, f.line, f.value, f.decimals, f.currency,
+                f.source_type, json.dumps(f.ref, ensure_ascii=False, default=str), f.status,
+                f.note, json.dumps(list(f.warnings), ensure_ascii=False) if f.warnings else None,
+            )
+        )  # fmt: skip
+    for res in load.metrics:
+        if res.value is None:
+            gaps.append((res.issuer, "LTM", res.metric, res.reason))
+            continue
+        ref = json.dumps(
+            {
+                "formula": res.metric,
+                "inputs": [
+                    {"name": i.name, "value": str(i.value), "source": i.source} for i in res.inputs
+                ],
+            },
+            ensure_ascii=False,
+        )
+        unit = currency if units[res.metric] == "amount" else units[res.metric]
+        rows.append(
+            (res.issuer, "LTM", res.period_end, res.metric, res.value, None, unit, "computed",
+             ref, res.status, res.note, None)
+        )  # fmt: skip
+    for line, why in run.not_found.items():
+        gaps.append((report.issuer, "H1", line, why))
+    for line, why in load.gaps.items():
+        gaps.append((report.issuer, "LTM", line, why))
+    if rows:
+        con.executemany(f"INSERT INTO interim_facts VALUES ({', '.join('?' * 12)})", rows)
+    if gaps:
+        con.executemany("INSERT INTO interim_gaps VALUES (?, ?, ?, ?)", gaps)

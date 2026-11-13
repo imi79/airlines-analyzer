@@ -1,0 +1,290 @@
+{
+ "answer": {
+  "lines": [
+   {
+    "components": [
+     {
+      "label": "Revenues",
+      "operation": "add",
+      "quote": "Revenues   7.1   16,756   15,608"
+     }
+    ],
+    "line": "revenue"
+   },
+   {
+    "components": [
+     {
+      "label": "Amortization",
+      "operation": "add",
+      "quote": "Amortization   11   (1,641)   (1,564)"
+     }
+    ],
+    "line": "dda"
+   },
+   {
+    "components": [
+     {
+      "label": "Operating profit or loss",
+      "operation": "add",
+      "quote": "Operating profit or loss   343   944"
+     }
+    ],
+    "line": "operating_profit"
+   },
+   {
+    "components": [
+     {
+      "label": "Interests expenses on financial liabilities",
+      "operation": "add",
+      "quote": "Interests expenses on financial liabilities   15   (175)   (161)"
+     },
+     {
+      "label": "Interests expenses of lease debt",
+      "operation": "add",
+      "quote": "Interests expenses of lease debt   (169)   (159)"
+     },
+     {
+      "label": "Undiscounting of provisions",
+      "operation": "add",
+      "quote": "Undiscounting of provisions   16   (174)   (173)"
+     }
+    ],
+    "line": "finance_costs"
+   },
+   {
+    "components": [
+     {
+      "label": "Interests expenses on financial liabilities",
+      "operation": "add",
+      "quote": "Interests expenses on financial liabilities   15   (175)   (161)"
+     },
+     {
+      "label": "Interests expenses of lease debt",
+      "operation": "add",
+      "quote": "Interests expenses of lease debt   (169)   (159)"
+     }
+    ],
+    "line": "interest_expense"
+   },
+   {
+    "components": [
+     {
+      "label": "Profit or loss",
+      "operation": "add",
+      "quote": "Profit or loss   (61)   401"
+     }
+    ],
+    "line": "profit"
+   },
+   {
+    "components": [
+     {
+      "label": "Cash and cash equivalents",
+      "operation": "add",
+      "quote": "Cash and cash equivalents   23   5,091   4,714"
+     }
+    ],
+    "line": "cash"
+   },
+   {
+    "components": [
+     {
+      "label": "Other current financial assets",
+      "operation": "add",
+      "quote": "Other current financial assets   872   1,360"
+     }
+    ],
+    "line": "other_current_financial_assets"
+   },
+   {
+    "components": [
+     {
+      "label": "Deferred revenue on ticket sales",
+      "operation": "add",
+      "quote": "Deferred revenue on ticket sales   5,838   4,264"
+     }
+    ],
+    "line": "contract_liabilities"
+   },
+   {
+    "components": [
+     {
+      "label": "Current financial liabilities",
+      "operation": "add",
+      "quote": "Current financial liabilities   27   937   1,803"
+     }
+    ],
+    "line": "borrowings_current"
+   },
+   {
+    "components": [
+     {
+      "label": "Non-current financial liabilities",
+      "operation": "add",
+      "quote": "Non-current financial liabilities   27   7,911   7,265"
+     }
+    ],
+    "line": "borrowings_noncurrent"
+   },
+   {
+    "components": [
+     {
+      "label": "Current lease debt",
+      "operation": "add",
+      "quote": "Current lease debt   22   977   958"
+     }
+    ],
+    "line": "lease_liabilities_current"
+   },
+   {
+    "components": [
+     {
+      "label": "Non-current lease debt",
+      "operation": "add",
+      "quote": "Non-current lease debt   22   5,548   5,487"
+     }
+    ],
+    "line": "lease_liabilities_noncurrent"
+   },
+   {
+    "components": [
+     {
+      "label": "EQUITY",
+      "operation": "add",
+      "quote": "EQUITY   2,787   2,364"
+     }
+    ],
+    "line": "equity"
+   },
+   {
+    "components": [
+     {
+      "label": "TOTAL ASSETS",
+      "operation": "add",
+      "quote": "TOTAL ASSETS   41,607   39,445"
+     }
+    ],
+    "line": "total_assets"
+   },
+   {
+    "components": [
+     {
+      "label": "CASH FLOW FROM OPERATING ACTIVITIES",
+      "operation": "add",
+      "quote": "CASH FLOW FROM OPERATING ACTIVITIES   2,618   3,095"
+     }
+    ],
+    "line": "cfo"
+   },
+   {
+    "components": [
+     {
+      "label": "Purchase of property plant and equipment and intangible assets",
+      "operation": "add",
+      "quote": "Purchase of property plant and equipment and intangible assets   21   (1,910)   (2,315)"
+     }
+    ],
+    "line": "capex"
+   },
+   {
+    "components": [
+     {
+      "label": "Proceeds on disposal of property plant and equipment and intangible assets",
+      "operation": "add",
+      "quote": "Proceeds on disposal of property plant and equipment and intangible assets   13 & 28   465   573"
+     }
+    ],
+    "line": "disposal_proceeds"
+   },
+   {
+    "components": [
+     {
+      "label": "Payments on lease debts",
+      "operation": "add",
+      "quote": "Payments on lease debts   (479)   (487)"
+     }
+    ],
+    "line": "lease_payments"
+   },
+   {
+    "components": [
+     {
+      "label": "Interest paid",
+      "operation": "add",
+      "quote": "Interest paid   (469)   (418)"
+     }
+    ],
+    "line": "interest_paid"
+   },
+   {
+    "components": [
+     {
+      "label": "TOTAL EQUITY AND LIABILITIES",
+      "operation": "add",
+      "quote": "TOTAL EQUITY AND LIABILITIES   41,607   39,445"
+     }
+    ],
+    "line": "control_total_equity_and_liabilities"
+   },
+   {
+    "components": [
+     {
+      "label": "Cash and cash equivalents and bank overdrafts at beginning of period",
+      "operation": "add",
+      "quote": "Cash and cash equivalents and bank overdrafts at beginning of period   23   4,714   4,829"
+     }
+    ],
+    "line": "control_cash_start"
+   },
+   {
+    "components": [
+     {
+      "label": "Effect of exchange rate on cash and cash equivalents and bank overdrafts",
+      "operation": "add",
+      "quote": "Effect of exchange rate on cash and cash equivalents and bank overdrafts   30   (30)"
+     },
+     {
+      "label": "Change in cash and cash equivalents and bank overdrafts",
+      "operation": "add",
+      "quote": "Change in cash and cash equivalents and bank overdrafts   376   (9)"
+     }
+    ],
+    "line": "control_cash_movements"
+   },
+   {
+    "components": [
+     {
+      "label": "Cash and cash equivalents and bank overdrafts at end of period",
+      "operation": "add",
+      "quote": "Cash and cash equivalents and bank overdrafts at end of period   23   5,090   4,820"
+     }
+    ],
+    "line": "control_cash_end"
+   }
+  ],
+  "not_found": [
+   {
+    "line": "tax_paid",
+    "reason": "No income tax paid line in the cash flow statement; only 'Current income taxes' within operating cash flow before working capital change"
+   }
+  ],
+  "scale": "million"
+ },
+ "label": "afkl half year afkl-h1-2026-06-30",
+ "recorded_at": "2026-11-13T15:15:56+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "halfyear-v1",
+  "provider": "deepseek",
+  "system_sha256": "cc1f7c3d48e266d3721cf5eabb27c8910ac36c3fe734ee345ae15b1e2d29a46c",
+  "tool_sha256": "d6d15a0ec63da027490a18b300a0f1cdacc2697fabac6dbbcfc530aee0c1ce79",
+  "user_sha256": "61381fd2b7becc1947ad35783432fa86baf8c160d5d5aa5d45cdc97c28292fec"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 4566,
+  "output_tokens": 1475
+ }
+}

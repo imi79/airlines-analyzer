@@ -4,7 +4,8 @@
     report       write the reports: docs/m1 (figures), docs/m2 (metrics, peers, reconciliation)
                  and docs/m3 (figures read from the report text, answer key score)
     all          load, then report
-    extract      ask the AI to read operating figures from each report not read before
+    extract      ask the AI to read operating figures from each report not read before, and
+                 the statements of each half-year report (M10)
                  (costs tokens; answers are recorded, so `load` replays them for free).
                  --issuer afkl,easyjet limits the AI calls to those companies
     draft        ask the AI to draft the commentary of each company's latest two years (M4),
@@ -156,6 +157,17 @@ def main() -> None:
                 f"fourth {f.counts['verified_correct']}/{f.total}), "
                 f"{a.counts['verified_wrong']} verified but wrong (docs/m3/answer_key_score.md)"
             )
+    if args.command in ("report", "all", "extract"):
+        from tearsheet.extract import half_year_report
+
+        hy = half_year_report.write_all()
+        line = (f"half-year reports: {hy['loaded']}/{hy['reports']} loaded, {hy['verified']} lines "
+                f"verified, {hy['flagged']} awaiting review (docs/m10/half_year.md)")  # fmt: skip
+        if hy["score"]:
+            c = hy["score"]["counts"]
+            line += (f"; answer key: {c['verified_correct']}/{hy['score']['total']} verified and "
+                     f"correct, {c['verified_wrong']} verified but wrong")  # fmt: skip
+        print(line)
     if args.command in ("report", "all", "extract", "draft"):
         from tearsheet.llm import LLM
         from tearsheet.narrative import run as drafting

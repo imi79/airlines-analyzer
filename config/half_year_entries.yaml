@@ -1,0 +1,38 @@
+# Half-year figures entered by hand (M10, decision 0025), where the PDF shows its figures but
+# does not give them as text (Flughafen Wien: the tables' digits use a font without text).
+#
+# Amounts as printed, in the unit given by `scale` (1000 = thousands), costs and cash
+# outflows as positive amounts. Each line:
+#   [first half, same half a year before, year-end or full-year column, printed page, row label]
+# The third value is a control: for balance sheet lines it is the 31 December column, compared
+# with the figure the database holds. A value written as a list is the sum of the rows listed.
+# `reviewed_by` stays empty until Imane has checked the entries against the pages; until then
+# every line is "unverified" and stays off the page.
+
+entries:
+  - report: vie-h1-2026-06-30
+    entered_by: AI assistant, from the page images of the PDF
+    entered_on: 2026-11-13
+    reviewed_by:
+    scale: 1000
+    printed_unit: 0.1
+    lines:
+      revenue: [529349.8, 524442.5, null, 28, "Revenue"]
+      dda: [67650.0, 65520.9, null, 28, "Depreciation and amortisation"]
+      operating_profit: [159401.3, 146129.4, null, 28, "Earnings before interest and taxes (EBIT)"]
+      finance_costs: [1123.0, 1179.8, null, 28, "Interest expense"]
+      share_of_associates: [431.2, 148.8, null, 28, "Pro rata results of companies recorded at equity"]
+      profit: [123217.0, 115147.8, null, 28, "Net profit for the period"]
+      cash: [16326.3, null, 29777.2, 30, "Cash and cash equivalents"]
+      other_current_financial_assets: [82156.0, null, 80530.0, 30, "Securities"]
+      debt_including_leases: [[57118.8, 85.2], null, [55804.9, 85.0], 30, "Financial and lease liabilities (non-current + current)"]
+      equity: [1700555.7, null, 1726892.6, 30, "Equity (total)"]
+      total_assets: [2350079.1, null, 2413590.6, 30, "Total assets"]
+      cfo: [146974.1, 157084.1, null, 31, "Net cash flow from operating activities"]
+      capex: [149788.2, 124977.8, null, 31, "Payments made for the purchase of assets (not including financial assets)"]
+      disposal_proceeds: [490.2, 454.3, null, 31, "Payments received on the disposal of assets (not including financial assets)"]
+      lease_payments: [39.1, 36.5, null, 31, "Payments made for the repayment of lease liabilities"]
+      interest_paid: [943.4, 995.7, null, 31, "Interest paid"]
+      tax_paid: [39331.3, 22409.1, null, 31, "Income taxes paid"]
+    not_found:
+      other_cash_like: time deposits and investments are in the notes of the annual report, not on the face of the half-year balance sheet

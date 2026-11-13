@@ -43,14 +43,25 @@ class Context:
     results: dict = field(default_factory=dict)  # metric id -> Result, filled as computed
     used: list[Input] = field(default_factory=list)
     prior: dict = field(default_factory=dict)  # line id -> MappedFact for the year before
+    period_label: str | None = None  # "LTM Jun 2026" for last-twelve-months figures (M10)
+    reasons: dict = field(default_factory=dict)  # line id -> why it is missing (M10)
+
+    @property
+    def period(self) -> str:
+        return self.period_label or f"FY{self.fiscal_year}"
 
     def has(self, line: str) -> bool:
+        if line not in self.lines and self.period_label and line in self.prior:
+            # Last twelve months (M10): a line the full year holds but the half-year report
+            # does not give must not be counted as "not reported, zero": the metric is missing.
+            self.line(line)
         return line in self.lines
 
     def line(self, line: str) -> Decimal:
         fact = self.lines.get(line)
         if fact is None:
-            raise Missing(f"{self.labels[line]} not available for FY{self.fiscal_year}")
+            why = f": {self.reasons[line]}" if line in self.reasons else ""
+            raise Missing(f"{self.labels[line]} not available for {self.period}{why}")
         self.used.append(Input(line, self.labels[line], fact.value, fact.filing_id, fact.status))
         return fact.value
 
@@ -139,7 +150,7 @@ def total_debt(c: Context) -> tuple[Decimal, str]:
         borrowings = c.line("borrowings_total")
         parts.append(f"borrowings {m(borrowings)}")
     else:
-        raise Missing(f"Borrowings not available for FY{c.fiscal_year}")
+        raise Missing(f"Borrowings not available for {c.period}")
 
     leases = ZERO
     if c.settings.get("leases_in_borrowings"):
@@ -156,7 +167,7 @@ def total_debt(c: Context) -> tuple[Decimal, str]:
         parts.append(f"lease liabilities {m(leases)}")
         note = None
     else:
-        raise Missing(f"Lease liabilities not available for FY{c.fiscal_year}")
+        raise Missing(f"Lease liabilities not available for {c.period}")
     value = borrowings + leases
     text = " + ".join(parts) + f" = {m(value)}"
     return value, text[0].upper() + text[1:] + (f" ({note})" if note else "")
@@ -171,7 +182,7 @@ def cash_like(c: Context) -> tuple[Decimal, str]:
             total += v
             parts.append(f"{c.labels[line].lower()} {m(v)}")
         elif line == "cash" or c.fiscal_year < item.get("unavailable_before", 0):
-            raise Missing(f"{c.labels[line]} not available for FY{c.fiscal_year}")
+            raise Missing(f"{c.labels[line]} not available for {c.period}")
         else:
             parts.append(f"{c.labels[line].lower()} not reported (0)")
     text = " + ".join(parts) + f" = {m(total)}"
@@ -344,14 +355,14 @@ def liquidity_to_revenue(c: Context) -> tuple[Decimal, str]:
 def debt_due_1y(c: Context) -> tuple[Decimal, str]:
     """The current part of total debt, as the balance sheet shows it."""
     if not c.has("borrowings_current"):
-        raise Missing(f"Current borrowings not reported separately for FY{c.fiscal_year}")
+        raise Missing(f"Current borrowings not reported separately for {c.period}")
     borrowings = c.line("borrowings_current")
     if c.settings.get("leases_in_borrowings"):
         return borrowings, (
             f"Current borrowings {m(borrowings)} (lease liabilities included in borrowings)"
         )
     if not c.has("lease_liabilities_current"):
-        raise Missing(f"Current lease liabilities not reported separately for FY{c.fiscal_year}")
+        raise Missing(f"Current lease liabilities not reported separately for {c.period}")
     leases = c.line("lease_liabilities_current")
     value = borrowings + leases
     return value, (
@@ -541,7 +552,7 @@ def borrowings_due_2y(c: Context) -> tuple[Decimal, str]:
         )
     if any(k.startswith("maturity_borrowings_") for k in c.lines):
         raise Missing("the maturity table does not show the second year on its own")
-    raise Missing(f"No checked maturity table of borrowings for FY{c.fiscal_year}")
+    raise Missing(f"No checked maturity table of borrowings for {c.period}")
 
 
 def liquidity_to_borrowings_due_2y(c: Context) -> tuple[Decimal, str]:

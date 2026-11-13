@@ -1,0 +1,263 @@
+{
+ "answer": {
+  "lines": [
+   {
+    "components": [
+     {
+      "label": "Total revenue",
+      "operation": "add",
+      "quote": "Total revenue   16,064   15,906"
+     }
+    ],
+    "line": "revenue"
+   },
+   {
+    "components": [
+     {
+      "label": "Fuel costs and emissions charges",
+      "operation": "add",
+      "quote": "Fuel costs and emissions charges   3,956   3,523"
+     }
+    ],
+    "line": "fuel_cost"
+   },
+   {
+    "components": [
+     {
+      "label": "Depreciation, amortisation and impairment",
+      "operation": "add",
+      "quote": "Depreciation, amortisation and impairment   1,366   1,257"
+     }
+    ],
+    "line": "dda"
+   },
+   {
+    "components": [
+     {
+      "label": "Operating profit",
+      "operation": "add",
+      "quote": "Operating profit   1,608   1,878"
+     }
+    ],
+    "line": "operating_profit"
+   },
+   {
+    "components": [
+     {
+      "label": "Finance costs",
+      "operation": "add",
+      "quote": "Finance costs   (400)   (431)"
+     }
+    ],
+    "line": "finance_costs"
+   },
+   {
+    "components": [
+     {
+      "label": "Profit after tax for the period",
+      "operation": "add",
+      "quote": "Profit after tax for the period   1,033   1,301"
+     }
+    ],
+    "line": "profit"
+   },
+   {
+    "components": [
+     {
+      "label": "Cash and cash equivalents",
+      "operation": "add",
+      "quote": "Cash and cash equivalents   8,747   7,421"
+     }
+    ],
+    "line": "cash"
+   },
+   {
+    "components": [
+     {
+      "label": "Current interest-bearing deposits",
+      "operation": "add",
+      "quote": "Current interest-bearing deposits   428   898"
+     }
+    ],
+    "line": "short_term_deposits"
+   },
+   {
+    "comment": "Current liabilities row; non-current Deferred revenue (684/707) is separate",
+    "components": [
+     {
+      "label": "Deferred revenue",
+      "operation": "add",
+      "quote": "Deferred revenue   10,098   8,032"
+     }
+    ],
+    "line": "contract_liabilities"
+   },
+   {
+    "comment": "Current liabilities Borrowings row",
+    "components": [
+     {
+      "label": "Borrowings",
+      "operation": "add",
+      "quote": "Borrowings   1,928   3,046"
+     }
+    ],
+    "line": "borrowings_current"
+   },
+   {
+    "comment": "Non-current liabilities Borrowings row",
+    "components": [
+     {
+      "label": "Borrowings",
+      "operation": "add",
+      "quote": "Borrowings   11,939   11,221"
+     }
+    ],
+    "line": "borrowings_noncurrent"
+   },
+   {
+    "components": [
+     {
+      "label": "Total equity",
+      "operation": "add",
+      "quote": "Total equity   8,631   7,594"
+     }
+    ],
+    "line": "equity"
+   },
+   {
+    "components": [
+     {
+      "label": "Total assets",
+      "operation": "add",
+      "quote": "Total assets   46,113   42,849"
+     }
+    ],
+    "line": "total_assets"
+   },
+   {
+    "components": [
+     {
+      "label": "Net cash flows from operating activities",
+      "operation": "add",
+      "quote": "Net cash flows from operating activities   4,196   3,787"
+     }
+    ],
+    "line": "cfo"
+   },
+   {
+    "components": [
+     {
+      "label": "Acquisition of property, plant and equipment and intangible assets",
+      "operation": "add",
+      "quote": "Acquisition of property, plant and equipment and intangible assets   (1,291)   (1,690)"
+     }
+    ],
+    "line": "capex"
+   },
+   {
+    "components": [
+     {
+      "label": "Sale of property, plant and equipment and intangible assets",
+      "operation": "add",
+      "quote": "Sale of property, plant and equipment and intangible assets   7   17"
+     }
+    ],
+    "line": "disposal_proceeds"
+   },
+   {
+    "components": [
+     {
+      "label": "Repayment of lease liabilities",
+      "operation": "add",
+      "quote": "Repayment of lease liabilities   (722)   (682)"
+     }
+    ],
+    "line": "lease_payments"
+   },
+   {
+    "components": [
+     {
+      "label": "Interest paid",
+      "operation": "add",
+      "quote": "Interest paid   (288)   (371)"
+     }
+    ],
+    "line": "interest_paid"
+   },
+   {
+    "components": [
+     {
+      "label": "Tax paid",
+      "operation": "add",
+      "quote": "Tax paid   (116)   (156)"
+     }
+    ],
+    "line": "tax_paid"
+   },
+   {
+    "components": [
+     {
+      "label": "Total equity and liabilities",
+      "operation": "add",
+      "quote": "Total equity and liabilities   46,113   42,849"
+     }
+    ],
+    "line": "control_total_equity_and_liabilities"
+   },
+   {
+    "components": [
+     {
+      "label": "Cash and cash equivalents at 1 January",
+      "operation": "add",
+      "quote": "Cash and cash equivalents at 1 January   7,421   8,189"
+     }
+    ],
+    "line": "control_cash_start"
+   },
+   {
+    "components": [
+     {
+      "label": "Net increase/(decrease) in cash and cash equivalents",
+      "operation": "add",
+      "quote": "Net increase/(decrease) in cash and cash equivalents   1,275   (469)"
+     },
+     {
+      "label": "Net foreign exchange differences",
+      "operation": "add",
+      "quote": "Net foreign exchange differences   51   3"
+     }
+    ],
+    "line": "control_cash_movements"
+   },
+   {
+    "comment": "First occurrence, in the main statement; repeated in the reconciliation",
+    "components": [
+     {
+      "label": "Cash and cash equivalents at period end",
+      "operation": "add",
+      "quote": "Cash and cash equivalents at period end   8,747   7,723"
+     }
+    ],
+    "line": "control_cash_end"
+   }
+  ],
+  "scale": "million"
+ },
+ "label": "iag half year iag-h1-2026-06-30",
+ "recorded_at": "2026-11-13T15:12:31+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "halfyear-v1",
+  "provider": "deepseek",
+  "system_sha256": "cc1f7c3d48e266d3721cf5eabb27c8910ac36c3fe734ee345ae15b1e2d29a46c",
+  "tool_sha256": "b4394e54d80287e570019ea64fcd4f500325e4b27524dc31a59447bdfd966965",
+  "user_sha256": "7ddba0e5302926a7aa7da5f9aecd7e4c016b82599574bf40ec82204e68a9e65d"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 4004,
+  "output_tokens": 1231
+ }
+}

@@ -1,0 +1,278 @@
+{
+ "answer": {
+  "lines": [
+   {
+    "components": [
+     {
+      "label": "Total operating revenue",
+      "operation": "add",
+      "quote": "Total operating revenue   3   10,408   10,289   17,312   16,871   37,646"
+     }
+    ],
+    "line": "revenue"
+   },
+   {
+    "components": [
+     {
+      "label": "Aviation fuel",
+      "operation": "add",
+      "quote": "Aviation fuel   3,434   2,576   4,967   4,544   9,573"
+     }
+    ],
+    "line": "fuel_cost"
+   },
+   {
+    "comment": "Income statement combines aircraft lease with depreciation/amortisation; cash flow shows D&A and impairment of 4,231 for FY2025",
+    "components": [
+     {
+      "label": "Aircraft lease, depreciation and amortisation",
+      "operation": "add",
+      "quote": "Aircraft lease, depreciation and amortisation   8   1,156   1,359   2,281   2,031   4,155"
+     }
+    ],
+    "line": "dda"
+   },
+   {
+    "components": [
+     {
+      "label": "Operating profit (EBIT)",
+      "operation": "add",
+      "quote": "Operating profit (EBIT)   (603)   1,250   (824)   639   3,732"
+     }
+    ],
+    "line": "operating_profit"
+   },
+   {
+    "comment": "Only interest expense shown; no separate gross finance costs line",
+    "components": [
+     {
+      "label": "Interest expense",
+      "operation": "add",
+      "quote": "Interest expense   315   293   641   585   1,271"
+     }
+    ],
+    "line": "finance_costs"
+   },
+   {
+    "components": [
+     {
+      "label": "Interest expense",
+      "operation": "add",
+      "quote": "Interest expense   315   293   641   585   1,271"
+     }
+    ],
+    "line": "interest_expense"
+   },
+   {
+    "components": [
+     {
+      "label": "Net profit (loss)",
+      "operation": "add",
+      "quote": "Net profit (loss)   (555)   932   (916)   175   2,708"
+     }
+    ],
+    "line": "profit"
+   },
+   {
+    "components": [
+     {
+      "label": "Cash and cash equivalents",
+      "operation": "add",
+      "quote": "Cash and cash equivalents   11,041   12,738   7,434"
+     }
+    ],
+    "line": "cash"
+   },
+   {
+    "components": [
+     {
+      "label": "Financial investments",
+      "operation": "add",
+      "quote": "Financial investments   2,659   1,052   2,625"
+     }
+    ],
+    "line": "current_investments"
+   },
+   {
+    "components": [
+     {
+      "label": "Air traffic settlement liabilities",
+      "operation": "add",
+      "quote": "Air traffic settlement liabilities   8,621   8,563   4,396"
+     }
+    ],
+    "line": "contract_liabilities"
+   },
+   {
+    "comment": "Current debt includes lease liabilities; not shown separately",
+    "components": [
+     {
+      "label": "Current debt",
+      "operation": "add",
+      "quote": "Current debt   9   3,941   3,439   3,839"
+     }
+    ],
+    "line": "borrowings_current"
+   },
+   {
+    "comment": "Non-current debt includes lease liabilities; not shown separately",
+    "components": [
+     {
+      "label": "Non-current debt",
+      "operation": "add",
+      "quote": "Non-current debt   9   15,024   15,248   15,712"
+     }
+    ],
+    "line": "borrowings_noncurrent"
+   },
+   {
+    "components": [
+     {
+      "label": "Total equity",
+      "operation": "add",
+      "quote": "Total equity   6,660   5,914   7,668"
+     }
+    ],
+    "line": "equity"
+   },
+   {
+    "components": [
+     {
+      "label": "Total assets",
+      "operation": "add",
+      "quote": "Total assets   46,973   44,190   42,031"
+     }
+    ],
+    "line": "total_assets"
+   },
+   {
+    "components": [
+     {
+      "label": "Net cash flows from operating activities",
+      "operation": "add",
+      "quote": "Net cash flows from operating activities   1,537   3,184   6,968   6,446   7,840"
+     }
+    ],
+    "line": "cfo"
+   },
+   {
+    "comment": "Single combined row; FY2025 4,880 vs database 4,986",
+    "components": [
+     {
+      "label": "Purchases, proceeds and prepayment of tangible assets",
+      "operation": "add",
+      "quote": "Purchases, proceeds and prepayment of tangible assets   (967)   (222)   (1,344)   (3,217)   (4,880)"
+     }
+    ],
+    "line": "capex"
+   },
+   {
+    "line": "disposal_proceeds",
+    "not_found": true
+   },
+   {
+    "line": "lease_payments",
+    "not_found": true
+   },
+   {
+    "line": "interest_paid",
+    "not_found": true
+   },
+   {
+    "components": [
+     {
+      "label": "Paid taxes",
+      "operation": "add",
+      "quote": "Paid taxes   –   –   (28)   (79)   (35)"
+     }
+    ],
+    "line": "tax_paid"
+   },
+   {
+    "components": [
+     {
+      "label": "Total equity and liabilities",
+      "operation": "add",
+      "quote": "Total equity and liabilities   46,973   44,190   42,031"
+     }
+    ],
+    "line": "control_total_equity_and_liabilities"
+   },
+   {
+    "components": [
+     {
+      "label": "Cash and cash equivalents at beginning of period",
+      "operation": "add",
+      "quote": "Cash and cash equivalents at beginning of period   11,590   9,421   7,434   9,868   9,868"
+     }
+    ],
+    "line": "control_cash_start"
+   },
+   {
+    "components": [
+     {
+      "label": "Net change in cash and cash equivalents",
+      "operation": "add",
+      "quote": "Net change in cash and cash equivalents   (535)   3,338   3,644   2,917   (2,366)"
+     },
+     {
+      "label": "Foreign exchange effect on cash",
+      "operation": "add",
+      "quote": "Foreign exchange effect on cash   (14)   (21)   (37)   (48)   (68)"
+     }
+    ],
+    "line": "control_cash_movements"
+   },
+   {
+    "components": [
+     {
+      "label": "Cash and cash equivalents at end of period",
+      "operation": "add",
+      "quote": "Cash and cash equivalents at end of period   11,041   12,738   11,041   12,738   7,434"
+     }
+    ],
+    "line": "control_cash_end"
+   }
+  ],
+  "not_found": [
+   {
+    "line": "lease_liabilities_current",
+    "reason": "Balance sheet shows only 'Current debt'; lease liabilities not presented separately"
+   },
+   {
+    "line": "lease_liabilities_noncurrent",
+    "reason": "Balance sheet shows only 'Non-current debt'; lease liabilities not presented separately"
+   },
+   {
+    "line": "disposal_proceeds",
+    "reason": "No separate proceeds row; combined in 'Purchases, proceeds and prepayment of tangible assets'"
+   },
+   {
+    "line": "lease_payments",
+    "reason": "No separate lease repayment row; included in 'Principal repayments'"
+   },
+   {
+    "line": "interest_paid",
+    "reason": "No 'interest paid' row; only 'Financing costs paid' (1,062 FY2025)"
+   }
+  ],
+  "scale": "million"
+ },
+ "label": "norwegian half year norwegian-h1-2026-06-30",
+ "recorded_at": "2026-11-13T15:14:46+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "halfyear-v1",
+  "provider": "deepseek",
+  "system_sha256": "cc1f7c3d48e266d3721cf5eabb27c8910ac36c3fe734ee345ae15b1e2d29a46c",
+  "tool_sha256": "7e2ace1ff35e1c5e7d5af0188f0a93cd8b2bfd8ec22e5c35b8ab2a924f96e7c8",
+  "user_sha256": "fb75e8bf99cc93a8f3a79f6b542016baf5e294e20f583e60bd915c690d7faa3e"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 4844,
+  "output_tokens": 1573
+ }
+}

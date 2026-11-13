@@ -6,6 +6,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from tearsheet.config import DB_PATH, Issuer, load_issuers
+from tearsheet.extract import half_year
 from tearsheet.extract.extractor import fiscal_label
 from tearsheet.extract.fx import ecb_month_end
 from tearsheet.extract.maturity import MaturityRun
@@ -17,6 +18,8 @@ from tearsheet.ingest.manual import manual_filings
 from tearsheet.ingest.manual_figures import Control, manual_figures
 from tearsheet.llm import LLM
 from tearsheet.metrics.engine import Result, compute, load_catalog
+from tearsheet.metrics.ltm import InterimLoad
+from tearsheet.metrics.ltm import build as build_ltm
 from tearsheet.normalize.mapper import Gap, MappedFact, consolidate, load_mapping, map_report
 from tearsheet.store import db
 
@@ -31,6 +34,7 @@ class IssuerLoad:
     metrics: list[Result]
     extraction: IssuerExtraction | None = None
     maturity: list[MaturityRun] | None = None  # the debt maturity wall (M8)
+    interim: InterimLoad | None = None  # half-year and LTM figures (M10)
 
 
 def load_issuer(client: Client, issuer: Issuer, llm: LLM | None = None) -> tuple[IssuerLoad, dict]:
@@ -54,7 +58,15 @@ def load_issuer(client: Client, issuer: Issuer, llm: LLM | None = None) -> tuple
         maturity, wall = read_maturity(issuer, docs, facts, llm, fiscal_label)
         facts = facts + wall
     metrics = compute(issuer, facts)
-    load = IssuerLoad(issuer, filings, facts, gaps, controls, metrics, extraction, maturity)
+    interim = None
+    report = half_year.report_for(issuer.id)
+    if llm is not None and report is not None:
+        # M10: the latest half-year report, read beside the fiscal years (never into them).
+        run = half_year.read_report(llm, issuer, report, facts, docs)
+        interim = build_ltm(issuer, run, facts)
+    load = IssuerLoad(
+        issuer, filings, facts, gaps, controls, metrics, extraction, maturity, interim
+    )
     return load, reports
 
 
@@ -82,6 +94,8 @@ def load_all(
             db.write_extraction(con, result.extraction)
         if result.maturity is not None:
             db.write_maturity(con, result.issuer.id, result.maturity)
+        if result.interim is not None:
+            db.write_interim(con, result.interim, result.issuer.currency, units)
         results.append(result)
     con.close()
     return results

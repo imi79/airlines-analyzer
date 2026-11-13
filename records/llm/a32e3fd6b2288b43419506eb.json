@@ -1,0 +1,277 @@
+{
+ "answer": {
+  "lines": [
+   {
+    "components": [
+     {
+      "label": "Ingresos ordinarios",
+      "operation": "add",
+      "quote": "Ingresos ordinarios   4   5.2   3.272.675   2.953.723"
+     }
+    ],
+    "line": "revenue"
+   },
+   {
+    "components": [
+     {
+      "label": "Amortización del inmovilizado",
+      "operation": "add",
+      "quote": "Amortización del inmovilizado   (412.157)   (417.203)"
+     },
+     {
+      "label": "Deterioro del valor de los activos intangibles, inmov. material e inver. inmobiliarias",
+      "operation": "add",
+      "quote": "Deterioro del valor de los activos intangibles, inmov. 7   (191)   28"
+     }
+    ],
+    "line": "dda"
+   },
+   {
+    "components": [
+     {
+      "label": "Resultado de explotación",
+      "operation": "add",
+      "quote": "Resultado de explotación   1.386.772   1.275.131"
+     }
+    ],
+    "line": "operating_profit"
+   },
+   {
+    "components": [
+     {
+      "label": "Gastos financieros",
+      "operation": "add",
+      "quote": "Gastos financieros   (139.265)   (117.486)"
+     }
+    ],
+    "line": "finance_costs"
+   },
+   {
+    "comment": "Income statement shows only gross finance costs; no separate interest on borrowings/leases line",
+    "components": [
+     {
+      "label": "Gastos financieros",
+      "operation": "add",
+      "quote": "Gastos financieros   (139.265)   (117.486)"
+     }
+    ],
+    "line": "interest_expense"
+   },
+   {
+    "components": [
+     {
+      "label": "Resultado de entidades valoradas por el método de la participación",
+      "operation": "add",
+      "quote": "Resultado de entidades valoradas por el método de la 8.4   15.955   22.306"
+     }
+    ],
+    "line": "share_of_associates"
+   },
+   {
+    "components": [
+     {
+      "label": "Resultado del período consolidado",
+      "operation": "add",
+      "quote": "Resultado del período consolidado   1.011.418   921.080"
+     }
+    ],
+    "line": "profit"
+   },
+   {
+    "components": [
+     {
+      "label": "Efectivo y equivalentes al efectivo",
+      "operation": "add",
+      "quote": "Efectivo y equivalentes al efectivo   8.1   1.389.239   2.047.669"
+     }
+    ],
+    "line": "cash"
+   },
+   {
+    "components": [
+     {
+      "label": "Otros activos financieros",
+      "operation": "add",
+      "quote": "Otros activos financieros   8.1   412.421   405.088"
+     }
+    ],
+    "line": "other_current_financial_assets"
+   },
+   {
+    "comment": "Current financial debt row; lease liabilities not shown separately on balance sheet",
+    "components": [
+     {
+      "label": "Deuda financiera",
+      "operation": "add",
+      "quote": "Deuda financiera   8.1   10   1.285.917   864.056"
+     }
+    ],
+    "line": "borrowings_current"
+   },
+   {
+    "comment": "Non-current financial debt row; lease liabilities not shown separately",
+    "components": [
+     {
+      "label": "Deuda financiera",
+      "operation": "add",
+      "quote": "Deuda financiera   8.1   10   6.827.498   6.692.640"
+     }
+    ],
+    "line": "borrowings_noncurrent"
+   },
+   {
+    "components": [
+     {
+      "label": "Total Patrimonio Neto",
+      "operation": "add",
+      "quote": "Total Patrimonio Neto   8.859.408   9.154.577"
+     }
+    ],
+    "line": "equity"
+   },
+   {
+    "components": [
+     {
+      "label": "Total Activos",
+      "operation": "add",
+      "quote": "Total Activos   18.801.186   18.192.599"
+     }
+    ],
+    "line": "total_assets"
+   },
+   {
+    "components": [
+     {
+      "label": "Efectivo neto generado por actividades de explotación",
+      "operation": "add",
+      "quote": "Efectivo neto generado por actividades de explotación   1.598.466   1.479.507"
+     }
+    ],
+    "line": "cfo"
+   },
+   {
+    "components": [
+     {
+      "label": "Adquisiciones de inmovilizado material",
+      "operation": "add",
+      "quote": "Adquisiciones de inmovilizado material   (365.807)   (359.659)"
+     },
+     {
+      "label": "Adquisiciones de activos intangibles",
+      "operation": "add",
+      "quote": "Adquisiciones de activos intangibles   (206.576)   (130.390)"
+     },
+     {
+      "label": "Adquisiciones de inversiones inmobiliarias",
+      "operation": "add",
+      "quote": "Adquisiciones de inversiones inmobiliarias   (3.884)   (199)"
+     }
+    ],
+    "line": "capex"
+   },
+   {
+    "components": [
+     {
+      "label": "Cobros por operaciones relacionadas con el inmovilizado material",
+      "operation": "add",
+      "quote": "Cobros por operaciones relacionadas con el inmovilizado   2.725   11.872"
+     }
+    ],
+    "line": "disposal_proceeds"
+   },
+   {
+    "components": [
+     {
+      "label": "Pagos de pasivos por arrendamientos",
+      "operation": "add",
+      "quote": "Pagos de pasivos por arrendamientos   10   (6.771)   (6.383)"
+     }
+    ],
+    "line": "lease_payments"
+   },
+   {
+    "components": [
+     {
+      "label": "Intereses pagados",
+      "operation": "add",
+      "quote": "Intereses pagados   (147.184)   (90.384)"
+     }
+    ],
+    "line": "interest_paid"
+   },
+   {
+    "components": [
+     {
+      "label": "Impuestos pagados",
+      "operation": "add",
+      "quote": "Impuestos pagados   (147.935)   (105.116)"
+     }
+    ],
+    "line": "tax_paid"
+   },
+   {
+    "components": [
+     {
+      "label": "Total patrimonio neto y pasivos",
+      "operation": "add",
+      "quote": "Total patrimonio neto y pasivos   18.801.186   18.192.599"
+     }
+    ],
+    "line": "control_total_equity_and_liabilities"
+   },
+   {
+    "components": [
+     {
+      "label": "Efectivo y equivalentes al efectivo al inicio del ejercicio",
+      "operation": "add",
+      "quote": "Efectivo y equivalentes al efectivo al inicio del ejercicio   2.047.669   1.821.283"
+     }
+    ],
+    "line": "control_cash_start"
+   },
+   {
+    "components": [
+     {
+      "label": "Efecto de las variaciones de los tipos de cambio",
+      "operation": "add",
+      "quote": "Efecto de las variaciones de los tipos de cambio   12.164   (1.399)"
+     },
+     {
+      "label": "(Disminución)/aumento neto de efectivo y equivalentes al efectivo",
+      "operation": "add",
+      "quote": " (Disminución)/aumento neto de efectivo y equivalentes al   (658.430)   (870.949)"
+     }
+    ],
+    "line": "control_cash_movements"
+   },
+   {
+    "components": [
+     {
+      "label": "Efectivo y equivalentes al efectivo al final del ejercicio",
+      "operation": "add",
+      "quote": "Efectivo y equivalentes al efectivo al final del ejercicio   1.389.239   950.334"
+     }
+    ],
+    "line": "control_cash_end"
+   }
+  ],
+  "scale": "thousand"
+ },
+ "label": "aena half year aena-h1-2026-06-30",
+ "recorded_at": "2026-11-13T15:13:36+00:00",
+ "request": {
+  "job": "extraction",
+  "kind": "openai_compatible",
+  "model": "deepseek-chat",
+  "prompt_version": "halfyear-v1",
+  "provider": "deepseek",
+  "system_sha256": "cc1f7c3d48e266d3721cf5eabb27c8910ac36c3fe734ee345ae15b1e2d29a46c",
+  "tool_sha256": "755b8a74c5eb11df5924868fc48b6776c7450f80477eb0059e0ad463cee762e1",
+  "user_sha256": "b5cf9a930685b663025a921545bda1c2b6189d1c9d4584aa70307721b3e8dcc5"
+ },
+ "served_model": "deepseek-flash",
+ "usage": {
+  "input_tokens": 6277,
+  "output_tokens": 1663
+ }
+}

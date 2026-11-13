@@ -1,0 +1,58 @@
+# Half-year statements (M10, decision 0025): what the AI is asked to find, and how code reads it.
+#
+# lines: the statement lines of the annual load (normalize/concept_map.yaml) that a half-year
+#   report can carry, with the words shown to the AI. Only the lines the database holds for the
+#   company's last full fiscal year are asked for: without the full-year figure there is no
+#   control and no last-twelve-months figure.
+#   signed: the value keeps the sign printed (a loss is negative). Every other line is stored
+#   as a positive amount, like the annual figures (costs, cash outflows, debt).
+# controls: rows read only to check that the statements add up.
+# tolerance: a control passes when the difference is at most this many printed units per row
+#   added (rounding of the printed figures).
+
+lines:
+  revenue: {statement: income, signed: true, ask: "Total revenue (sales) of the period."}
+  fuel_cost: {statement: income, ask: "Aircraft fuel cost (with emissions charges only if the same row includes them)."}
+  dda: {statement: income, ask: "Depreciation, amortisation and impairment of the period."}
+  operating_profit: {statement: income, signed: true, ask: "Operating profit or loss (EBIT), as the income statement names it."}
+  finance_costs: {statement: income, ask: "Finance costs (financial expenses), gross, not net of finance income."}
+  interest_expense: {statement: income, ask: "Interest expense on borrowings and lease liabilities, where the income statement shows it."}
+  share_of_associates: {statement: income, signed: true, ask: "Share of results of associates and joint ventures (equity method)."}
+  profit: {statement: income, signed: true, ask: "Profit or loss for the period, total (before the split between owners and non-controlling interests)."}
+  cash: {statement: balance, ask: "Cash and cash equivalents on the balance sheet."}
+  short_term_deposits: {statement: balance, ask: "Current interest-bearing deposits (short-term cash deposits), a balance sheet row."}
+  current_investments: {statement: balance, ask: "Current financial investments (money market funds, other investments), a balance sheet row."}
+  other_current_financial_assets: {statement: balance, ask: "Other current financial assets, a balance sheet row."}
+  restricted_cash: {statement: balance, ask: "Restricted cash, current and non-current rows."}
+  contract_liabilities: {statement: balance, ask: "Advance ticket sales: unearned or deferred revenue from tickets sold, as the balance sheet names it."}
+  borrowings_current: {statement: balance, ask: "Current borrowings (financial liabilities due within one year), without lease liabilities where the balance sheet shows those apart."}
+  borrowings_noncurrent: {statement: balance, ask: "Non-current borrowings, without lease liabilities where the balance sheet shows those apart."}
+  lease_liabilities_current: {statement: balance, ask: "Current lease liabilities, where the balance sheet shows them apart."}
+  lease_liabilities_noncurrent: {statement: balance, ask: "Non-current lease liabilities, where the balance sheet shows them apart."}
+  debt_including_leases: {statement: balance, ask: "Financial and lease liabilities shown as one row, current and non-current rows together."}
+  equity: {statement: balance, signed: true, ask: "Total equity, non-controlling interests included."}
+  total_assets: {statement: balance, ask: "Total assets (if the balance sheet prints no total, the rows that add up to it)."}
+  cfo: {statement: cash_flow, signed: true, ask: "Net cash flow from operating activities."}
+  capex: {statement: cash_flow, ask: "Cash paid to purchase property, plant and equipment and intangible assets."}
+  disposal_proceeds: {statement: cash_flow, ask: "Cash received from the sale of property, plant and equipment and intangible assets."}
+  lease_payments: {statement: cash_flow, ask: "Repayment of lease liabilities (the principal part), in financing activities."}
+  interest_paid: {statement: cash_flow, ask: "Interest paid."}
+  tax_paid: {statement: cash_flow, ask: "Income tax paid."}
+
+controls:
+  control_total_equity_and_liabilities: {statement: balance, ask: "Total equity and liabilities (the balance sheet's second total)."}
+  control_cash_start: {statement: cash_flow, ask: "Cash and cash equivalents at the beginning of the period, the cash flow statement's opening row."}
+  control_cash_movements: {statement: cash_flow, ask: "Every row between the opening and the closing cash of the cash flow statement: the net change in cash, and the effect of exchange rates or other adjustments printed apart from it."}
+  control_cash_end: {statement: cash_flow, ask: "Cash and cash equivalents at the end of the period, the cash flow statement's closing row."}
+
+tolerance:
+  units_per_row: 1        # printed units per row added, for a match with the database
+  anchor_share: 0.6       # share of balance sheet lines that must match one column to call it the year-end column
+  anchor_minimum: 3
+  column_share: 0.6       # share of rows that must have at least K value cells
+  label_window: 120       # characters after a row label in the annual report searched for the database's figure
+  label_amounts: 2        # the figure must be one of the first amounts after the label (a note number may precede it)
+
+pages:
+  rows_minimum: 12        # value rows a page needs to count as a statement page
+  max_chars: 60000
