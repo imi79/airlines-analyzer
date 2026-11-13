@@ -35,10 +35,14 @@ def fresh_code() -> bool:
     if loaded.stamp == stamp:
         return False
     loaded.stamp = stamp
-    for name in [n for n in sys.modules if n == "tearsheet" or n.startswith("tearsheet.")]:
+    stale = [n for n in sys.modules if n == "tearsheet" or n.startswith("tearsheet.")]
+    for name in stale:
         del sys.modules[name]
     st.cache_resource.clear()
     st.cache_data.clear()
+    # one line in the hosting log, so an update can be seen to have taken effect
+    print(f"tearsheet: the files changed on disk; {len(stale)} modules loaded again",
+          file=sys.stderr, flush=True)  # fmt: skip
     return True
 
 
