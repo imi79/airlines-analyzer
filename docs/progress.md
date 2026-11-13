@@ -229,16 +229,36 @@ the short-term cover floor.**
 
 ## M10 · Half-year and last-twelve-months figures
 
-Branch: `m10-half-year-ltm`. Plan: `docs/m10/plan.md`. **Status: plan approved by
-Imane on 2026-11-13 with every recommendation; to be built in a fresh session.**
+Branch: `m10-half-year-ltm`. Plan: `docs/m10/plan.md`, approved by Imane on 2026-11-13 with every
+recommendation. Run: `uv run tearsheet app` (Tearsheet: the LTM column; Watchlist: "Latest
+(LTM)"; Data and audit: the half-year section). Walkthrough: `docs/m10/walkthrough.md`. Decision
+0025. **Status: built and tested; waiting for Imane's review of the flagged lines and her
+go-ahead to merge into `main`.**
 
-- [ ] Coverage recorded for all nine companies, go or no-go each; half-year figures loaded for
-      at least seven
-- [ ] No wrong figure marked verified on the answer key (three companies, written before the AI
-      run); every figure that fails a check flagged with its reason
-- [ ] For every loaded company, the report's year-end column matches the database line by line,
-      or the difference is flagged and explained
-- [ ] LTM metrics computed for every loaded company, or missing with a stated reason; unit tests
-      for the LTM arithmetic
-- [ ] Every H1 and LTM figure traces to its source on click; the 18 tearsheets' annual figures
-      and records unchanged; PDF two pages and Excel recalculated, 18 of 18
+- [x] Coverage recorded for all nine companies, go or no-go each; half-year figures loaded for
+      at least seven: **nine of nine** (`docs/m10/coverage.md`): eight read by the AI with code
+      checks, Flughafen Wien entered by hand (its PDF gives no text for its figures), waiting
+      for Imane's check. No PDF needed from Imane
+- [x] No wrong figure marked verified on the answer key (three companies, written before the AI
+      run); every figure that fails a check flagged with its reason: 58 lines (Finnair, IAG,
+      ADP), **56 verified and correct, 0 verified but wrong**, 2 flagged (ADP capex, wrong and
+      caught; ADP lease payments, right) (`docs/m10/answer_key_score.md`); 42 of 173 lines
+      awaiting review, each with its reason (`docs/m10/half_year.md`)
+- [x] For every loaded company, the report's year-end column matches the database line by line,
+      or the difference is flagged and explained: all nine tie at 31 December (6 to 9 lines
+      each; Norwegian's two debt rows, printed with leases inside, tie as a total). Full-year
+      columns, where printed: Finnair all equal; Norwegian D&A (the AI took another row) and
+      capex (printed net of proceeds) flagged and explained in the walkthrough
+- [x] LTM metrics computed for every loaded company, or missing with a stated reason; unit tests
+      for the LTM arithmetic (`tests/test_ltm.py`: earnings added and subtracted, balance sheet
+      at the date, a non-December year end, a line missing at the half year never counted as
+      zero, statuses)
+- [x] Every H1 and LTM figure traces to its source on click (335 LTM figures, test); the 18
+      tearsheets' annual figures and records unchanged (byte for byte, no "figures have
+      changed" warning); PDF two pages and Excel recalculated, 18 of 18 (11 at 8.5 point, 7 at
+      8.0, as before)
+- AI tokens: about 60,000 for reading (prompt `halfyear-v1`), against 200,000 to 400,000
+  planned; no drafting tokens; no new software; no catalog metric added (golden files and fact
+  sheets unchanged). 804 tests pass (80 new)
+- Open for Imane: Flughafen Wien's hand entries; the flagged lines (suggestions in the
+  walkthrough); Air France-KLM's new income statement format (IFRS 18), an M11 candidate
