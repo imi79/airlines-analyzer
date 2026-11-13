@@ -18,7 +18,7 @@ their half-year reports this time.
 | Norwegian | 30 Jun 2026 | Q2 and first half report (34 pages) | English | p.12, 14, 15 | Q2 and H1 2026 and 2025, full year 2025; three balance sheet dates | yes | **go** (condensed cash flow: capex is net of sale proceeds) |
 | Wizz Air | 30 Sep 2026 | Half-year results, published 12 Nov 2026 (45 pages) | English | p.11-14 | H1 FY2027, H1 FY2026; 31 Mar 2026 | yes | **go** |
 | Groupe ADP | 30 Jun 2026 | Rapport financier semestriel (99 pages) | French | p.36, 38, 39 | S1 2026, S1 2025; 31 Dec 2025 | yes | **go** |
-| Aena | 30 Jun 2026 | Interim statements with the limited review report (125 pages) | English | p.7, 8, 11-12 | H1 2026, H1 2025; 31 Dec 2025 | yes (thousands of euros) | **go** |
+| Aena | 30 Jun 2026 | Estados financieros intermedios, with the limited review report (127 pages) | Spanish (as its annual filing, so row labels compare) | p.7, 8, 11-12 | H1 2026, H1 2025; 31 Dec 2025 | yes (thousands of euros) | **go** |
 | Flughafen Wien | 30 Jun 2026 | Quarterly report 2/2026 (54 pages) | English | p.28, 30, 31 | H1 2026, H1 2025, Q2; 31 Dec 2025 | **no**: the digits of the tables are drawn with a font that carries no text, in the English and the German version alike | **go by hand entry** (plan question 2, fallback b): entered from the pages, unverified until Imane reviews |
 
 All nine are unaudited (Aena's and ADP's carry an auditor's limited review, which is less than
