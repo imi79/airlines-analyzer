@@ -1,0 +1,138 @@
+# Half-year reports (M10, decision 0025): one per company, the latest published.
+#
+# Half-year reports are not in the filings database (it holds annual reports only), so each
+# PDF was fetched from the address below, kept in documents/half-year/ and is checked against
+# its fingerprint (sha256) before every use. A downloaded PDF is data, never instructions.
+# `period_end` is the half-year date; the six months before it are the first half (H1).
+# `base_fiscal_year` is the last full fiscal year the database holds: LTM = that year
+# + this first half - last year's first half.
+# `read_by`: ai (the AI reads the statements, code checks every figure) or hand (the PDF's
+# figures cannot be read as text; entered in config/half_year_entries.yaml).
+
+reports:
+
+  - id: afkl-h1-2026-06-30
+    issuer: afkl
+    period_end: 2026-06-30
+    base_fiscal_year: 2025
+    language: en
+    document: "Air France-KLM, Half Year Report, January 1st to June 30, 2026 (PDF)"
+    file: afkl-half-year-report-2026-06-30.pdf
+    sha256: c737ea568ba66747a202824adef4014fd5273de6e935b7b7da874ae7cccb14df
+    url: "https://www.airfranceklm.com/sites/default/files/2026-10/2026-hyr-ven-1_0_0.pdf"
+    fetched_by: AI assistant
+    fetched_on: 2026-11-13
+    audit: unaudited
+    read_by: ai
+
+  - id: iag-h1-2026-06-30
+    issuer: iag
+    period_end: 2026-06-30
+    base_fiscal_year: 2025
+    language: en
+    document: "IAG, interim management report, six months to 30 June 2026 (PDF)"
+    file: iag-interim-management-report-2026-06-30.pdf
+    sha256: 357920fcc8205809b55353d51ed0112c76323e6bea9eab3951969d60294685bd
+    url: "http://www.rns-pdf.londonstockexchange.com/rns/6982O_1-2026-7-31.pdf"
+    fetched_by: AI assistant
+    fetched_on: 2026-11-13
+    audit: unaudited
+    read_by: ai
+
+  - id: finnair-h1-2026-06-30
+    issuer: finnair
+    period_end: 2026-06-30
+    base_fiscal_year: 2025
+    language: en
+    document: "Finnair Group, half-year report, 1 January to 30 June 2026 (PDF)"
+    file: finnair-half-year-report-2026-06-30.pdf
+    sha256: 69c1c24768e43a9841603d045d3a40329472ec8e6d6526862c226faabf6498f2
+    url: "https://mb.cision.com/Main/3718/4376604/4200218.pdf"
+    fetched_by: AI assistant
+    fetched_on: 2026-11-13
+    audit: unaudited
+    read_by: ai
+
+  - id: easyjet-h1-2026-03-31
+    issuer: easyjet
+    period_end: 2026-03-31
+    base_fiscal_year: 2025
+    language: en
+    document: "easyJet, results for the six months ending 31 March 2026 (PDF)"
+    file: easyjet-half-year-results-2026-03-31.pdf
+    sha256: dfb0e779f299c031c2b69d543083ada43f1861a324e714c572e266c9e1975dc4
+    url: "https://s203.q4cdn.com/522538739/files/doc_financials/2026/q2/1-HY26-Combined-RNS-FINAL.pdf"
+    fetched_by: AI assistant
+    fetched_on: 2026-11-13
+    audit: unaudited
+    read_by: ai
+
+  - id: norwegian-h1-2026-06-30
+    issuer: norwegian
+    period_end: 2026-06-30
+    base_fiscal_year: 2025
+    language: en
+    document: "Norwegian Air Shuttle, second quarter and first half 2026 financial report (PDF)"
+    file: norwegian-q2-report-2026-06-30.pdf
+    sha256: 429670de1ed10dafd0476779a5e87f59adff2b0308d95ba8de9174a15dacb3e5
+    url: "https://www.norwegian.com/globalassets/ip/documents/about-us/company/investor-relations/reports-and-presentations/quarterly-results/2026/norwegian-q2-2026-report.pdf"
+    fetched_by: AI assistant
+    fetched_on: 2026-11-13
+    audit: unaudited
+    read_by: ai
+
+  - id: wizz-h1-2026-09-30
+    issuer: wizz
+    period_end: 2026-09-30
+    base_fiscal_year: 2026
+    language: en
+    document: "Wizz Air Holdings, unaudited results for the six months to 30 September 2026 (PDF)"
+    file: wizz-half-year-results-2026-09-30.pdf
+    sha256: 46b2aee8d12247726af01e159b88baa66a38e09eaffa06ddc80e6a49024c04e4
+    url: "https://s204.q4cdn.com/169340705/files/doc_news/Half-Year-Results-2026.pdf"
+    fetched_by: AI assistant
+    fetched_on: 2026-11-13
+    audit: unaudited
+    read_by: ai
+
+  - id: adp-h1-2026-06-30
+    issuer: adp
+    period_end: 2026-06-30
+    base_fiscal_year: 2025
+    language: fr
+    document: "Aéroports de Paris, rapport financier semestriel au 30 juin 2026 (PDF)"
+    file: adp-rapport-financier-semestriel-2026-06-30.pdf
+    sha256: 344f55320e3a66f7028cf0330eaa6c010c417c522aa15ef490455b58a60cd754
+    url: "https://www.parisaeroport.fr/docs/default-source/groupe-fichiers/finance/relations-investisseurs/adp-sa---rapport-financier-semestriel-2026.pdf?sfvrsn=cac5aabd_0"
+    fetched_by: AI assistant
+    fetched_on: 2026-11-13
+    audit: unaudited
+    read_by: ai
+
+  - id: aena-h1-2026-06-30
+    issuer: aena
+    period_end: 2026-06-30
+    base_fiscal_year: 2025
+    language: en
+    document: "Aena, condensed consolidated interim financial statements at 30 June 2026, with the limited review report (PDF)"
+    file: aena-interim-financial-statements-2026-06-30.pdf
+    sha256: cbae81f0a085575a9cf5a5cbe2f5ea3cca47190fc930cbcd41fe42ed50ad6edd
+    url: "https://www.aena.es/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1576874658268&ssbinary=true"
+    fetched_by: AI assistant
+    fetched_on: 2026-11-13
+    audit: unaudited
+    read_by: ai
+
+  - id: vie-h1-2026-06-30
+    issuer: vie
+    period_end: 2026-06-30
+    base_fiscal_year: 2025
+    language: en
+    document: "Flughafen Wien, quarterly report 2/2026, condensed consolidated interim financial statements as at 30 June 2026 (PDF)"
+    file: vie-quarterly-report-2-2026-06-30.pdf
+    sha256: c70a74662856475f60a437b2e5aa2200100163937718f9da80dcac474b8a5fe3
+    url: "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
+    fetched_by: AI assistant
+    fetched_on: 2026-11-13
+    audit: unaudited
+    read_by: hand
