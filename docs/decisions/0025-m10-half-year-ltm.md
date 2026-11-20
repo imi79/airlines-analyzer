@@ -101,6 +101,29 @@ improved), against 200,000 to 400,000 planned. No drafting tokens. No new softwa
 **Not in M10** (as planned): the commentary, the PDF, traffic figures for the half year, the
 companies' own LTM figures.
 
+**The reviews (2026-11-20).** Imane asked the assistant to apply the recommendations of the
+walkthrough. Each line was first checked against its page and against the composition of the
+database's annual figure; that check turned two approvals into corrections (Aena D&A and capex:
+the AI had added an impairment row and investment property, which the annual figures leave
+out). Applied: 4 corrections (ADP capex, Norwegian D&A, Aena D&A and capex) and 11 approvals
+(ADP lease payments, six easyJet lines, Aena disposals, three Wizz Air lines). Left waiting:
+Norwegian capex, Air France-KLM's nine lines and Flughafen Wien's hand entries (Imane's own
+check). Two rules came out of it:
+
+- *A correction is checked by code too.* A review may name the statement rows that hold the
+  line (`rows`, and `statement` when it is another statement than the line's own, as for
+  Norwegian's D&A, taken from the cash flow). Code reads those rows from the page, refuses the
+  correction if they do not give the values written in it, and runs the control against the
+  database again. The source card then shows the right row, not the one the AI took.
+- *The answer key scores the machine, not the review.* Each reviewed line keeps its status and
+  values as read before the review (`before_review`); the score is computed on those, and the
+  lines as they stand after review are counted apart: 56 of 58 verified and correct and 0
+  verified but wrong before review; 58 of 58 on the page and correct after.
+
+Effect on the watchlist at "Latest (LTM)": three triggers fire, two new against the last
+fiscal year (ADP cash flow after leases −75m; Norwegian EBITDA margin down 3.1 points), and
+Wizz Air's net leverage (4.03x).
+
 **Open for later (M11 candidates).** Air France-KLM adopted IFRS 18 in 2026 and restated its
 first half of 2025: its income and cash flow lines fail the label control and wait for review,
 because FY2025 (old format) + H1 2026 − H1 2025 (new format) would mix two definitions; the

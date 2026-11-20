@@ -165,8 +165,11 @@ def main() -> None:
                 f"verified, {hy['flagged']} awaiting review (docs/m10/half_year.md)")  # fmt: skip
         if hy["score"]:
             c = hy["score"]["counts"]
+            after = hy["score"]["after_review"]
             line += (f"; answer key: {c['verified_correct']}/{hy['score']['total']} verified and "
-                     f"correct, {c['verified_wrong']} verified but wrong")  # fmt: skip
+                     f"correct, {c['verified_wrong']} verified but wrong; after review "
+                     f"{after['shown_correct']} on the page and correct, {after['shown_wrong']} "
+                     "wrong")  # fmt: skip
         print(line)
     if args.command in ("report", "all", "extract", "draft"):
         from tearsheet.llm import LLM

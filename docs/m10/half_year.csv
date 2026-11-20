@@ -3,10 +3,10 @@ adp,H1,2026-06-30,borrowings_current,"Borrowings, current",2026000000.0000000000
 adp,LTM,2026-06-30,borrowings_current,"Borrowings, current",2026000000.000000000000,EUR,computed,verified,"At 2026-06-30: 2,026 (half-year balance sheet)"
 adp,H1,2026-06-30,borrowings_noncurrent,"Borrowings, non-current",9603000000.000000000000,EUR,extracted,verified,the report's year-end column equals the database's FY2025 figure
 adp,LTM,2026-06-30,borrowings_noncurrent,"Borrowings, non-current",9603000000.000000000000,EUR,computed,verified,"At 2026-06-30: 9,603 (half-year balance sheet)"
-adp,H1,2026-06-30,capex,Capex (purchases of PP&E and intangibles),548000000.000000000000,EUR,extracted,unverified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (1,218) under this row label: the row cannot be confirmed"
-adp,H1_prior,2025-06-30,capex,Capex (purchases of PP&E and intangibles),478000000.000000000000,EUR,extracted,unverified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (1,218) under this row label: the row cannot be confirmed"
-adp,LTM,2026-06-30,capex,Capex (purchases of PP&E and intangibles),1288000000.000000000000,EUR,computed,unverified,"FY2025 1,218 + first half to 2026-06-30 548 − first half to 2025-06-30 478 = 1,288"
-adp,LTM,2026-06-30,capex_intensity,Capex intensity,0.190645352279,pct,computed,unverified,"Capex 1,288 ÷ revenue 6,756 = 19.1%"
+adp,H1,2026-06-30,capex,Capex (purchases of PP&E and intangibles),646000000.000000000000,EUR,extracted,overridden,"the report prints no full year, and the FY2025 annual report does not print the database's figure (1,218) under this row label: the row cannot be confirmed"
+adp,H1_prior,2025-06-30,capex,Capex (purchases of PP&E and intangibles),540000000.000000000000,EUR,extracted,overridden,"the report prints no full year, and the FY2025 annual report does not print the database's figure (1,218) under this row label: the row cannot be confirmed"
+adp,LTM,2026-06-30,capex,Capex (purchases of PP&E and intangibles),1324000000.000000000000,EUR,computed,verified,"FY2025 1,218 + first half to 2026-06-30 646 − first half to 2025-06-30 540 = 1,324"
+adp,LTM,2026-06-30,capex_intensity,Capex intensity,0.195973949082,pct,computed,verified,"Capex 1,324 ÷ revenue 6,756 = 19.6%"
 adp,H1,2026-06-30,cash,Cash and cash equivalents,2531000000.000000000000,EUR,extracted,verified,the report's year-end column equals the database's FY2025 figure
 adp,LTM,2026-06-30,cash,Cash and cash equivalents,2531000000.000000000000,EUR,computed,verified,"At 2026-06-30: 2,531 (half-year balance sheet)"
 adp,H1,2026-06-30,cfo,Cash from operations,693000000.000000000000,EUR,extracted,verified,"the FY2025 annual report prints the database's figure (1,638) under the same row label"
@@ -23,10 +23,10 @@ adp,LTM,2026-06-30,ebitda,EBITDA,2315000000.000000000000,EUR,computed,verified,"
 adp,LTM,2026-06-30,ebitda_margin,EBITDA margin,0.342658377738,pct,computed,verified,"EBITDA 2,315 ÷ revenue 6,756 = 34.3%"
 adp,H1,2026-06-30,equity,Total equity,5325000000.000000000000,EUR,extracted,verified,the report's year-end column equals the database's FY2025 figure
 adp,LTM,2026-06-30,equity,Total equity,5325000000.000000000000,EUR,computed,verified,"At 2026-06-30: 5,325 (half-year balance sheet)"
-adp,LTM,2026-06-30,fcf,Free cash flow,269000000.000000000000,EUR,computed,unverified,"Cash from operations 1,557 − capex 1,288 = 269"
-adp,LTM,2026-06-30,fcf_after_leases,FCF after leases,-39000000.000000000000,EUR,computed,unverified,"Cash from operations 1,557 − net capex 1,248 − lease payments 26.0 − interest paid (in financing) 322 = -39.0"
-adp,LTM,2026-06-30,fcf_after_leases_to_debt,FCF after leases to debt,-0.003353684754,pct,computed,unverified,"FCF after leases -39.0 ÷ total debt 11,629 = -0.3%"
-adp,LTM,2026-06-30,fcf_to_debt,FCF to debt,0.023131825608,pct,computed,unverified,"Free cash flow 269 ÷ total debt 11,629 = 2.3%"
+adp,LTM,2026-06-30,fcf,Free cash flow,233000000.000000000000,EUR,computed,verified,"Cash from operations 1,557 − capex 1,324 = 233"
+adp,LTM,2026-06-30,fcf_after_leases,FCF after leases,-75000000.000000000000,EUR,computed,verified,"Cash from operations 1,557 − net capex 1,284 − lease payments 26.0 − interest paid (in financing) 322 = -75.0"
+adp,LTM,2026-06-30,fcf_after_leases_to_debt,FCF after leases to debt,-0.006449393757,pct,computed,verified,"FCF after leases -75.0 ÷ total debt 11,629 = -0.6%"
+adp,LTM,2026-06-30,fcf_to_debt,FCF to debt,0.020036116605,pct,computed,verified,"Free cash flow 233 ÷ total debt 11,629 = 2.0%"
 adp,LTM,2026-06-30,ffo,FFO,1571000000.000000000000,EUR,computed,verified,"EBITDA 2,315 − interest paid 322 − tax paid 422 = 1,571"
 adp,LTM,2026-06-30,ffo_to_debt,FFO to debt,0.135093301230,pct,computed,verified,"FFO 1,571 ÷ total debt 11,629 = 13.5%"
 adp,H1,2026-06-30,finance_costs,Finance costs,439000000.000000000000,EUR,extracted,verified,the FY2025 annual report prints the database's figure (663) under the same row label
@@ -37,10 +37,10 @@ adp,LTM,2026-06-30,interest_coverage,Interest coverage,7.189440993789,x,computed
 adp,H1,2026-06-30,interest_paid,Interest paid,205000000.000000000000,EUR,extracted,verified,the FY2025 annual report prints the database's figure (295) under the same row label
 adp,H1_prior,2025-06-30,interest_paid,Interest paid,178000000.000000000000,EUR,extracted,verified,the FY2025 annual report prints the database's figure (295) under the same row label
 adp,LTM,2026-06-30,interest_paid,Interest paid,322000000.000000000000,EUR,computed,verified,FY2025 295 + first half to 2026-06-30 205 − first half to 2025-06-30 178 = 322
-adp,H1,2026-06-30,lease_payments,Lease payments (principal),12000000.000000000000,EUR,extracted,unverified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (30) under this row label: the row cannot be confirmed"
-adp,H1_prior,2025-06-30,lease_payments,Lease payments (principal),16000000.000000000000,EUR,extracted,unverified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (30) under this row label: the row cannot be confirmed"
-adp,LTM,2026-06-30,lease_payments,Lease payments (principal),26000000.000000000000,EUR,computed,unverified,FY2025 30.0 + first half to 2026-06-30 12.0 − first half to 2025-06-30 16.0 = 26.0
-adp,LTM,2026-06-30,net_capex,Net capex,1248000000.000000000000,EUR,computed,unverified,"Capex 1,288 − disposal proceeds 40.0 = 1,248"
+adp,H1,2026-06-30,lease_payments,Lease payments (principal),12000000.000000000000,EUR,extracted,verified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (30) under this row label: the row cannot be confirmed"
+adp,H1_prior,2025-06-30,lease_payments,Lease payments (principal),16000000.000000000000,EUR,extracted,verified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (30) under this row label: the row cannot be confirmed"
+adp,LTM,2026-06-30,lease_payments,Lease payments (principal),26000000.000000000000,EUR,computed,verified,FY2025 30.0 + first half to 2026-06-30 12.0 − first half to 2025-06-30 16.0 = 26.0
+adp,LTM,2026-06-30,net_capex,Net capex,1284000000.000000000000,EUR,computed,verified,"Capex 1,324 − disposal proceeds 40.0 = 1,284"
 adp,H1,2026-06-30,operating_profit,Operating profit,743000000.000000000000,EUR,extracted,verified,"the FY2025 annual report prints the database's figure (1,160) under the same row label"
 adp,H1_prior,2025-06-30,operating_profit,Operating profit,444000000.000000000000,EUR,extracted,verified,"the FY2025 annual report prints the database's figure (1,160) under the same row label"
 adp,LTM,2026-06-30,operating_profit,Operating profit,1459000000.000000000000,EUR,computed,verified,"FY2025 1,160 + first half to 2026-06-30 743 − first half to 2025-06-30 444 = 1,459"
@@ -65,10 +65,10 @@ aena,H1,2026-06-30,borrowings_current,"Borrowings, current",1285917000.000000000
 aena,LTM,2026-06-30,borrowings_current,"Borrowings, current",1285917000.000000000000,EUR,computed,verified,"At 2026-06-30: 1,286 (half-year balance sheet)"
 aena,H1,2026-06-30,borrowings_noncurrent,"Borrowings, non-current",6827498000.000000000000,EUR,extracted,verified,the report's year-end column equals the database's FY2025 figure
 aena,LTM,2026-06-30,borrowings_noncurrent,"Borrowings, non-current",6827498000.000000000000,EUR,computed,verified,"At 2026-06-30: 6,827 (half-year balance sheet)"
-aena,H1,2026-06-30,capex,Capex (purchases of PP&E and intangibles),576267000.000000000000,EUR,extracted,unverified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (1,059,275) under this row label: the row cannot be confirmed"
-aena,H1_prior,2025-06-30,capex,Capex (purchases of PP&E and intangibles),490248000.000000000000,EUR,extracted,unverified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (1,059,275) under this row label: the row cannot be confirmed"
-aena,LTM,2026-06-30,capex,Capex (purchases of PP&E and intangibles),1145294000.000000000000,EUR,computed,unverified,"FY2025 1,059 + first half to 2026-06-30 576 − first half to 2025-06-30 490 = 1,145"
-aena,LTM,2026-06-30,capex_intensity,Capex intensity,0.173600701743,pct,computed,unverified,"Capex 1,145 ÷ revenue 6,597 = 17.4%"
+aena,H1,2026-06-30,capex,Capex (purchases of PP&E and intangibles),572383000.000000000000,EUR,extracted,overridden,"the FY2025 annual report prints the database's figure (1,059,275) under the same row label"
+aena,H1_prior,2025-06-30,capex,Capex (purchases of PP&E and intangibles),490049000.000000000000,EUR,extracted,overridden,"the FY2025 annual report prints the database's figure (1,059,275) under the same row label"
+aena,LTM,2026-06-30,capex,Capex (purchases of PP&E and intangibles),1141609000.000000000000,EUR,computed,verified,"FY2025 1,059 + first half to 2026-06-30 572 − first half to 2025-06-30 490 = 1,142"
+aena,LTM,2026-06-30,capex_intensity,Capex intensity,0.173042138976,pct,computed,verified,"Capex 1,142 ÷ revenue 6,597 = 17.3%"
 aena,H1,2026-06-30,cash,Cash and cash equivalents,1389239000.000000000000,EUR,extracted,verified,the report's year-end column equals the database's FY2025 figure
 aena,LTM,2026-06-30,cash,Cash and cash equivalents,1389239000.000000000000,EUR,computed,verified,"At 2026-06-30: 1,389 (half-year balance sheet)"
 aena,LTM,2026-06-30,cash_like,Cash and cash-like investments,1389239000.000000000000,EUR,computed,verified,"Cash and cash equivalents 1,389 = 1,389"
@@ -78,28 +78,28 @@ aena,LTM,2026-06-30,cash_short_term_debt_cover,"Short-term debt cover, cash only
 aena,H1,2026-06-30,cfo,Cash from operations,1598466000.000000000000,EUR,extracted,verified,"the FY2025 annual report prints the database's figure (2,787,451) under the same row label"
 aena,H1_prior,2025-06-30,cfo,Cash from operations,1479507000.000000000000,EUR,extracted,verified,"the FY2025 annual report prints the database's figure (2,787,451) under the same row label"
 aena,LTM,2026-06-30,cfo,Cash from operations,2906410000.000000000000,EUR,computed,verified,"FY2025 2,787 + first half to 2026-06-30 1,598 − first half to 2025-06-30 1,480 = 2,906"
-aena,H1,2026-06-30,dda,"Depreciation, amortisation and impairment",412348000.000000000000,EUR,extracted,unverified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (796,897) under this row label: the row cannot be confirmed"
-aena,H1_prior,2025-06-30,dda,"Depreciation, amortisation and impairment",417175000.000000000000,EUR,extracted,unverified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (796,897) under this row label: the row cannot be confirmed"
-aena,LTM,2026-06-30,dda,"Depreciation, amortisation and impairment",792070000.000000000000,EUR,computed,unverified,FY2025 797 + first half to 2026-06-30 412 − first half to 2025-06-30 417 = 792
+aena,H1,2026-06-30,dda,"Depreciation, amortisation and impairment",412157000.000000000000,EUR,extracted,overridden,"the FY2025 annual report prints the database's figure (796,897) under the same row label"
+aena,H1_prior,2025-06-30,dda,"Depreciation, amortisation and impairment",417203000.000000000000,EUR,extracted,overridden,"the FY2025 annual report prints the database's figure (796,897) under the same row label"
+aena,LTM,2026-06-30,dda,"Depreciation, amortisation and impairment",791851000.000000000000,EUR,computed,verified,FY2025 797 + first half to 2026-06-30 412 − first half to 2025-06-30 417 = 792
 aena,LTM,2026-06-30,debt_due_1y,Debt due within one year,1285917000.000000000000,EUR,computed,verified,"Current borrowings 1,286 (lease liabilities included in borrowings)"
-aena,H1,2026-06-30,disposal_proceeds,Proceeds from disposals of fixed assets,2725000.000000000000,EUR,extracted,unverified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (42,464) under this row label: the row cannot be confirmed"
-aena,H1_prior,2025-06-30,disposal_proceeds,Proceeds from disposals of fixed assets,11872000.000000000000,EUR,extracted,unverified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (42,464) under this row label: the row cannot be confirmed"
-aena,LTM,2026-06-30,disposal_proceeds,Proceeds from disposals of fixed assets,33317000.000000000000,EUR,computed,unverified,FY2025 42.5 + first half to 2026-06-30 2.7 − first half to 2025-06-30 11.9 = 33.3
-aena,LTM,2026-06-30,ebitda,EBITDA,3891846000.000000000000,EUR,computed,unverified,"Operating profit 3,100 + D&A 792 = 3,892"
-aena,LTM,2026-06-30,ebitda_margin,EBITDA margin,0.589915948809,pct,computed,unverified,"EBITDA 3,892 ÷ revenue 6,597 = 59.0%"
+aena,H1,2026-06-30,disposal_proceeds,Proceeds from disposals of fixed assets,2725000.000000000000,EUR,extracted,verified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (42,464) under this row label: the row cannot be confirmed"
+aena,H1_prior,2025-06-30,disposal_proceeds,Proceeds from disposals of fixed assets,11872000.000000000000,EUR,extracted,verified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (42,464) under this row label: the row cannot be confirmed"
+aena,LTM,2026-06-30,disposal_proceeds,Proceeds from disposals of fixed assets,33317000.000000000000,EUR,computed,verified,FY2025 42.5 + first half to 2026-06-30 2.7 − first half to 2025-06-30 11.9 = 33.3
+aena,LTM,2026-06-30,ebitda,EBITDA,3891627000.000000000000,EUR,computed,verified,"Operating profit 3,100 + D&A 792 = 3,892"
+aena,LTM,2026-06-30,ebitda_margin,EBITDA margin,0.589882753355,pct,computed,verified,"EBITDA 3,892 ÷ revenue 6,597 = 59.0%"
 aena,H1,2026-06-30,equity,Total equity,8859408000.000000000000,EUR,extracted,verified,the report's year-end column equals the database's FY2025 figure
 aena,LTM,2026-06-30,equity,Total equity,8859408000.000000000000,EUR,computed,verified,"At 2026-06-30: 8,859 (half-year balance sheet)"
-aena,LTM,2026-06-30,fcf,Free cash flow,1761116000.000000000000,EUR,computed,unverified,"Cash from operations 2,906 − capex 1,145 = 1,761"
-aena,LTM,2026-06-30,fcf_after_leases,FCF after leases,1779116000.000000000000,EUR,computed,unverified,"Cash from operations 2,906 − net capex 1,112 − lease payments 15.3 = 1,779"
-aena,LTM,2026-06-30,fcf_after_leases_to_debt,FCF after leases to debt,0.219280783739,pct,computed,unverified,"FCF after leases 1,779 ÷ total debt 8,113 = 21.9%"
-aena,LTM,2026-06-30,fcf_to_debt,FCF to debt,0.217062235816,pct,computed,unverified,"Free cash flow 1,761 ÷ total debt 8,113 = 21.7%"
-aena,LTM,2026-06-30,ffo,FFO,2999592000.000000000000,EUR,computed,unverified,"EBITDA 3,892 − interest paid 231 − tax paid 661 = 3,000"
-aena,LTM,2026-06-30,ffo_to_debt,FFO to debt,0.369707700148,pct,computed,unverified,"FFO 3,000 ÷ total debt 8,113 = 37.0%"
+aena,LTM,2026-06-30,fcf,Free cash flow,1764801000.000000000000,EUR,computed,verified,"Cash from operations 2,906 − capex 1,142 = 1,765"
+aena,LTM,2026-06-30,fcf_after_leases,FCF after leases,1782801000.000000000000,EUR,computed,verified,"Cash from operations 2,906 − net capex 1,108 − lease payments 15.3 = 1,783"
+aena,LTM,2026-06-30,fcf_after_leases_to_debt,FCF after leases to debt,0.219734969800,pct,computed,verified,"FCF after leases 1,783 ÷ total debt 8,113 = 22.0%"
+aena,LTM,2026-06-30,fcf_to_debt,FCF to debt,0.217516421877,pct,computed,verified,"Free cash flow 1,765 ÷ total debt 8,113 = 21.8%"
+aena,LTM,2026-06-30,ffo,FFO,2999373000.000000000000,EUR,computed,verified,"EBITDA 3,892 − interest paid 231 − tax paid 661 = 2,999"
+aena,LTM,2026-06-30,ffo_to_debt,FFO to debt,0.369680707815,pct,computed,verified,"FFO 2,999 ÷ total debt 8,113 = 37.0%"
 aena,H1,2026-06-30,finance_costs,Finance costs,139265000.000000000000,EUR,extracted,verified,"the FY2025 annual report prints the database's figure (242,354) under the same row label"
 aena,H1_prior,2025-06-30,finance_costs,Finance costs,117486000.000000000000,EUR,extracted,verified,"the FY2025 annual report prints the database's figure (242,354) under the same row label"
 aena,LTM,2026-06-30,finance_costs,Finance costs,264133000.000000000000,EUR,computed,verified,FY2025 242 + first half to 2026-06-30 139 − first half to 2025-06-30 117 = 264
-aena,LTM,2026-06-30,gross_leverage,Gross leverage,2.084721492063,x,computed,unverified,"Total debt 8,113 ÷ EBITDA 3,892 = 2.08x"
-aena,LTM,2026-06-30,interest_coverage,Interest coverage,13.954220314735,x,computed,unverified,"EBITDA 3,892 ÷ interest expense 279 = 13.95x"
+aena,LTM,2026-06-30,gross_leverage,Gross leverage,2.084838809064,x,computed,verified,"Total debt 8,113 ÷ EBITDA 3,892 = 2.08x"
+aena,LTM,2026-06-30,interest_coverage,Interest coverage,13.953435089871,x,computed,verified,"EBITDA 3,892 ÷ interest expense 279 = 13.95x"
 aena,H1,2026-06-30,interest_expense,Interest expense,139265000.000000000000,EUR,extracted,verified,"the FY2025 annual report prints the database's figure (257,122) under the same row label"
 aena,H1_prior,2025-06-30,interest_expense,Interest expense,117486000.000000000000,EUR,extracted,verified,"the FY2025 annual report prints the database's figure (257,122) under the same row label"
 aena,LTM,2026-06-30,interest_expense,Interest expense,278901000.000000000000,EUR,computed,verified,FY2025 257 + first half to 2026-06-30 139 − first half to 2025-06-30 117 = 279
@@ -109,9 +109,9 @@ aena,LTM,2026-06-30,interest_paid,Interest paid,230906000.000000000000,EUR,compu
 aena,H1,2026-06-30,lease_payments,Lease payments (principal),6771000.000000000000,EUR,extracted,verified,"the FY2025 annual report prints the database's figure (14,929) under the same row label"
 aena,H1_prior,2025-06-30,lease_payments,Lease payments (principal),6383000.000000000000,EUR,extracted,verified,"the FY2025 annual report prints the database's figure (14,929) under the same row label"
 aena,LTM,2026-06-30,lease_payments,Lease payments (principal),15317000.000000000000,EUR,computed,verified,FY2025 14.9 + first half to 2026-06-30 6.8 − first half to 2025-06-30 6.4 = 15.3
-aena,LTM,2026-06-30,net_capex,Net capex,1111977000.000000000000,EUR,computed,unverified,"Capex 1,145 − disposal proceeds 33.3 = 1,112"
+aena,LTM,2026-06-30,net_capex,Net capex,1108292000.000000000000,EUR,computed,verified,"Capex 1,142 − disposal proceeds 33.3 = 1,108"
 aena,LTM,2026-06-30,net_debt,Net debt,6724176000.000000000000,EUR,computed,verified,"Total debt 8,113 − cash and cash-like 1,389 = 6,724"
-aena,LTM,2026-06-30,net_leverage,Net leverage,1.727760039837,x,computed,unverified,"Net debt 6,724 ÷ EBITDA 3,892 = 1.73x"
+aena,LTM,2026-06-30,net_leverage,Net leverage,1.727857268952,x,computed,verified,"Net debt 6,724 ÷ EBITDA 3,892 = 1.73x"
 aena,H1,2026-06-30,operating_profit,Operating profit,1386772000.000000000000,EUR,extracted,verified,"the FY2025 annual report prints the database's figure (2,988,135) under the same row label"
 aena,H1_prior,2025-06-30,operating_profit,Operating profit,1275131000.000000000000,EUR,extracted,verified,"the FY2025 annual report prints the database's figure (2,988,135) under the same row label"
 aena,LTM,2026-06-30,operating_profit,Operating profit,3099776000.000000000000,EUR,computed,verified,"FY2025 2,988 + first half to 2026-06-30 1,387 − first half to 2025-06-30 1,275 = 3,100"
@@ -200,19 +200,19 @@ easyjet,H1,2026-03-31,borrowings_current,"Borrowings, current",16000000.00000000
 easyjet,LTM,2026-03-31,borrowings_current,"Borrowings, current",16000000.000000000000,GBP,computed,verified,At 2026-03-31: 16.0 (half-year balance sheet)
 easyjet,H1,2026-03-31,borrowings_noncurrent,"Borrowings, non-current",2001000000.000000000000,GBP,extracted,verified,the report's year-end column equals the database's FY2025 figure
 easyjet,LTM,2026-03-31,borrowings_noncurrent,"Borrowings, non-current",2001000000.000000000000,GBP,computed,verified,"At 2026-03-31: 2,001 (half-year balance sheet)"
-easyjet,H1,2026-03-31,capex,Capex (purchases of PP&E and intangibles),577000000.000000000000,GBP,extracted,unverified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (1,001) under this row label: the row cannot be confirmed"
-easyjet,H1_prior,2025-03-31,capex,Capex (purchases of PP&E and intangibles),529000000.000000000000,GBP,extracted,unverified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (1,001) under this row label: the row cannot be confirmed"
-easyjet,LTM,2026-03-31,capex,Capex (purchases of PP&E and intangibles),1049000000.000000000000,GBP,computed,unverified,"FY2025 1,001 + first half to 2026-03-31 577 − first half to 2025-03-31 529 = 1,049"
-easyjet,LTM,2026-03-31,capex_intensity,Capex intensity,0.099657989740,pct,computed,unverified,"Capex 1,049 ÷ revenue 10,526 = 10.0%"
+easyjet,H1,2026-03-31,capex,Capex (purchases of PP&E and intangibles),577000000.000000000000,GBP,extracted,verified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (1,001) under this row label: the row cannot be confirmed"
+easyjet,H1_prior,2025-03-31,capex,Capex (purchases of PP&E and intangibles),529000000.000000000000,GBP,extracted,verified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (1,001) under this row label: the row cannot be confirmed"
+easyjet,LTM,2026-03-31,capex,Capex (purchases of PP&E and intangibles),1049000000.000000000000,GBP,computed,verified,"FY2025 1,001 + first half to 2026-03-31 577 − first half to 2025-03-31 529 = 1,049"
+easyjet,LTM,2026-03-31,capex_intensity,Capex intensity,0.099657989740,pct,computed,verified,"Capex 1,049 ÷ revenue 10,526 = 10.0%"
 easyjet,H1,2026-03-31,cash,Cash and cash equivalents,2288000000.000000000000,GBP,extracted,verified,the report's year-end column equals the database's FY2025 figure
 easyjet,LTM,2026-03-31,cash,Cash and cash equivalents,2288000000.000000000000,GBP,computed,verified,"At 2026-03-31: 2,288 (half-year balance sheet)"
 easyjet,LTM,2026-03-31,cash_like,Cash and cash-like investments,3446000000.000000000000,GBP,computed,verified,"Cash and cash equivalents 2,288 + current investments 1,158 = 3,446"
 easyjet,LTM,2026-03-31,cash_liquidity,Cash liquidity (partial),3446000000.000000000000,GBP,computed,verified,"Cash and cash-like 3,446 (without undrawn facilities)"
 easyjet,LTM,2026-03-31,cash_liquidity_to_revenue,Cash liquidity to revenue (partial),0.327379821395,pct,computed,verified,"Cash liquidity 3,446 ÷ revenue 10,526 = 32.7%"
 easyjet,LTM,2026-03-31,cash_short_term_debt_cover,"Short-term debt cover, cash only (partial)",12.669117647059,x,computed,verified,"Cash liquidity 3,446 ÷ debt due within one year 272 = 12.67x (without undrawn lines)"
-easyjet,H1,2026-03-31,cfo,Cash from operations,458000000.000000000000,GBP,extracted,unverified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (1,625) under this row label: the row cannot be confirmed"
-easyjet,H1_prior,2025-03-31,cfo,Cash from operations,790000000.000000000000,GBP,extracted,unverified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (1,625) under this row label: the row cannot be confirmed"
-easyjet,LTM,2026-03-31,cfo,Cash from operations,1293000000.000000000000,GBP,computed,unverified,"FY2025 1,625 + first half to 2026-03-31 458 − first half to 2025-03-31 790 = 1,293"
+easyjet,H1,2026-03-31,cfo,Cash from operations,458000000.000000000000,GBP,extracted,verified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (1,625) under this row label: the row cannot be confirmed"
+easyjet,H1_prior,2025-03-31,cfo,Cash from operations,790000000.000000000000,GBP,extracted,verified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (1,625) under this row label: the row cannot be confirmed"
+easyjet,LTM,2026-03-31,cfo,Cash from operations,1293000000.000000000000,GBP,computed,verified,"FY2025 1,625 + first half to 2026-03-31 458 − first half to 2025-03-31 790 = 1,293"
 easyjet,H1,2026-03-31,contract_liabilities,Contract liabilities (advance ticket sales),3048000000.000000000000,GBP,extracted,verified,the report's year-end column equals the database's FY2025 figure
 easyjet,LTM,2026-03-31,contract_liabilities,Contract liabilities (advance ticket sales),3048000000.000000000000,GBP,computed,verified,"At 2026-03-31: 3,048 (half-year balance sheet)"
 easyjet,H1,2026-03-31,current_investments,Current investments,1158000000.000000000000,GBP,extracted,verified,the report's year-end column equals the database's FY2025 figure
@@ -228,35 +228,35 @@ easyjet,LTM,2026-03-31,ebitda,EBITDA,1317000000.000000000000,GBP,computed,verifi
 easyjet,LTM,2026-03-31,ebitda_margin,EBITDA margin,0.125118753563,pct,computed,verified,"EBITDA 1,317 ÷ revenue 10,526 = 12.5%"
 easyjet,H1,2026-03-31,equity,Total equity,3657000000.000000000000,GBP,extracted,verified,the report's year-end column equals the database's FY2025 figure
 easyjet,LTM,2026-03-31,equity,Total equity,3657000000.000000000000,GBP,computed,verified,"At 2026-03-31: 3,657 (half-year balance sheet)"
-easyjet,LTM,2026-03-31,fcf,Free cash flow,244000000.000000000000,GBP,computed,unverified,"Cash from operations 1,293 − capex 1,049 = 244"
-easyjet,LTM,2026-03-31,fcf_after_leases,FCF after leases,24000000.000000000000,GBP,computed,unverified,"Cash from operations 1,293 − net capex 1,046 − lease payments 223 = 24.0"
-easyjet,LTM,2026-03-31,fcf_after_leases_to_debt,FCF after leases to debt,0.007968127490,pct,computed,unverified,"FCF after leases 24.0 ÷ total debt 3,012 = 0.8%"
-easyjet,LTM,2026-03-31,fcf_to_debt,FCF to debt,0.081009296149,pct,computed,unverified,"Free cash flow 244 ÷ total debt 3,012 = 8.1%"
-easyjet,LTM,2026-03-31,ffo,FFO,1169000000.000000000000,GBP,computed,unverified,"EBITDA 1,317 − interest paid 135 − tax paid 13.0 = 1,169"
-easyjet,LTM,2026-03-31,ffo_to_debt,FFO to debt,0.388114209827,pct,computed,unverified,"FFO 1,169 ÷ total debt 3,012 = 38.8%"
-easyjet,H1,2026-03-31,finance_costs,Finance costs,68000000.000000000000,GBP,extracted,unverified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (156) under this row label: the row cannot be confirmed"
-easyjet,H1_prior,2025-03-31,finance_costs,Finance costs,82000000.000000000000,GBP,extracted,unverified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (156) under this row label: the row cannot be confirmed"
-easyjet,LTM,2026-03-31,finance_costs,Finance costs,142000000.000000000000,GBP,computed,unverified,FY2025 156 + first half to 2026-03-31 68.0 − first half to 2025-03-31 82.0 = 142
+easyjet,LTM,2026-03-31,fcf,Free cash flow,244000000.000000000000,GBP,computed,verified,"Cash from operations 1,293 − capex 1,049 = 244"
+easyjet,LTM,2026-03-31,fcf_after_leases,FCF after leases,24000000.000000000000,GBP,computed,verified,"Cash from operations 1,293 − net capex 1,046 − lease payments 223 = 24.0"
+easyjet,LTM,2026-03-31,fcf_after_leases_to_debt,FCF after leases to debt,0.007968127490,pct,computed,verified,"FCF after leases 24.0 ÷ total debt 3,012 = 0.8%"
+easyjet,LTM,2026-03-31,fcf_to_debt,FCF to debt,0.081009296149,pct,computed,verified,"Free cash flow 244 ÷ total debt 3,012 = 8.1%"
+easyjet,LTM,2026-03-31,ffo,FFO,1169000000.000000000000,GBP,computed,verified,"EBITDA 1,317 − interest paid 135 − tax paid 13.0 = 1,169"
+easyjet,LTM,2026-03-31,ffo_to_debt,FFO to debt,0.388114209827,pct,computed,verified,"FFO 1,169 ÷ total debt 3,012 = 38.8%"
+easyjet,H1,2026-03-31,finance_costs,Finance costs,68000000.000000000000,GBP,extracted,verified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (156) under this row label: the row cannot be confirmed"
+easyjet,H1_prior,2025-03-31,finance_costs,Finance costs,82000000.000000000000,GBP,extracted,verified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (156) under this row label: the row cannot be confirmed"
+easyjet,LTM,2026-03-31,finance_costs,Finance costs,142000000.000000000000,GBP,computed,verified,FY2025 156 + first half to 2026-03-31 68.0 − first half to 2025-03-31 82.0 = 142
 easyjet,H1,2026-03-31,fuel_cost,Fuel cost,982000000.000000000000,GBP,extracted,verified,"the FY2025 annual report prints the database's figure (2,253) under the same row label"
 easyjet,H1_prior,2025-03-31,fuel_cost,Fuel cost,949000000.000000000000,GBP,extracted,verified,"the FY2025 annual report prints the database's figure (2,253) under the same row label"
 easyjet,LTM,2026-03-31,fuel_cost,Fuel cost,2286000000.000000000000,GBP,computed,verified,"FY2025 2,253 + first half to 2026-03-31 982 − first half to 2025-03-31 949 = 2,286"
 easyjet,LTM,2026-03-31,fuel_share_of_costs,Fuel share of costs,0.228897566837,pct,computed,verified,"Fuel 2,286 ÷ operating costs 9,987 (revenue 10,526 − operating profit 539) = 22.9%"
 easyjet,LTM,2026-03-31,gross_leverage,Gross leverage,2.287015945330,x,computed,verified,"Total debt 3,012 ÷ EBITDA 1,317 = 2.29x"
-easyjet,LTM,2026-03-31,interest_coverage,Interest coverage,9.274647887324,x,computed,unverified,"EBITDA 1,317 ÷ interest expense 142 = 9.27x"
-easyjet,H1,2026-03-31,interest_expense,Interest expense,68000000.000000000000,GBP,extracted,unverified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (156) under this row label: the row cannot be confirmed"
-easyjet,H1_prior,2025-03-31,interest_expense,Interest expense,82000000.000000000000,GBP,extracted,unverified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (156) under this row label: the row cannot be confirmed"
-easyjet,LTM,2026-03-31,interest_expense,Interest expense,142000000.000000000000,GBP,computed,unverified,FY2025 156 + first half to 2026-03-31 68.0 − first half to 2025-03-31 82.0 = 142
-easyjet,H1,2026-03-31,interest_paid,Interest paid,77000000.000000000000,GBP,extracted,unverified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (140) under this row label: the row cannot be confirmed"
-easyjet,H1_prior,2025-03-31,interest_paid,Interest paid,82000000.000000000000,GBP,extracted,unverified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (140) under this row label: the row cannot be confirmed"
-easyjet,LTM,2026-03-31,interest_paid,Interest paid,135000000.000000000000,GBP,computed,unverified,FY2025 140 + first half to 2026-03-31 77.0 − first half to 2025-03-31 82.0 = 135
+easyjet,LTM,2026-03-31,interest_coverage,Interest coverage,9.274647887324,x,computed,verified,"EBITDA 1,317 ÷ interest expense 142 = 9.27x"
+easyjet,H1,2026-03-31,interest_expense,Interest expense,68000000.000000000000,GBP,extracted,verified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (156) under this row label: the row cannot be confirmed"
+easyjet,H1_prior,2025-03-31,interest_expense,Interest expense,82000000.000000000000,GBP,extracted,verified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (156) under this row label: the row cannot be confirmed"
+easyjet,LTM,2026-03-31,interest_expense,Interest expense,142000000.000000000000,GBP,computed,verified,FY2025 156 + first half to 2026-03-31 68.0 − first half to 2025-03-31 82.0 = 142
+easyjet,H1,2026-03-31,interest_paid,Interest paid,77000000.000000000000,GBP,extracted,verified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (140) under this row label: the row cannot be confirmed"
+easyjet,H1_prior,2025-03-31,interest_paid,Interest paid,82000000.000000000000,GBP,extracted,verified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (140) under this row label: the row cannot be confirmed"
+easyjet,LTM,2026-03-31,interest_paid,Interest paid,135000000.000000000000,GBP,computed,verified,FY2025 140 + first half to 2026-03-31 77.0 − first half to 2025-03-31 82.0 = 135
 easyjet,H1,2026-03-31,lease_liabilities_current,"Lease liabilities, current",256000000.000000000000,GBP,extracted,verified,the report's year-end column equals the database's FY2025 figure
 easyjet,LTM,2026-03-31,lease_liabilities_current,"Lease liabilities, current",256000000.000000000000,GBP,computed,verified,At 2026-03-31: 256 (half-year balance sheet)
 easyjet,H1,2026-03-31,lease_liabilities_noncurrent,"Lease liabilities, non-current",739000000.000000000000,GBP,extracted,verified,the report's year-end column equals the database's FY2025 figure
 easyjet,LTM,2026-03-31,lease_liabilities_noncurrent,"Lease liabilities, non-current",739000000.000000000000,GBP,computed,verified,At 2026-03-31: 739 (half-year balance sheet)
-easyjet,H1,2026-03-31,lease_payments,Lease payments (principal),113000000.000000000000,GBP,extracted,unverified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (226) under this row label: the row cannot be confirmed"
-easyjet,H1_prior,2025-03-31,lease_payments,Lease payments (principal),116000000.000000000000,GBP,extracted,unverified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (226) under this row label: the row cannot be confirmed"
-easyjet,LTM,2026-03-31,lease_payments,Lease payments (principal),223000000.000000000000,GBP,computed,unverified,FY2025 226 + first half to 2026-03-31 113 − first half to 2025-03-31 116 = 223
-easyjet,LTM,2026-03-31,net_capex,Net capex,1046000000.000000000000,GBP,computed,unverified,"Capex 1,049 − disposal proceeds 3.0 = 1,046"
+easyjet,H1,2026-03-31,lease_payments,Lease payments (principal),113000000.000000000000,GBP,extracted,verified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (226) under this row label: the row cannot be confirmed"
+easyjet,H1_prior,2025-03-31,lease_payments,Lease payments (principal),116000000.000000000000,GBP,extracted,verified,"the report prints no full year, and the FY2025 annual report does not print the database's figure (226) under this row label: the row cannot be confirmed"
+easyjet,LTM,2026-03-31,lease_payments,Lease payments (principal),223000000.000000000000,GBP,computed,verified,FY2025 226 + first half to 2026-03-31 113 − first half to 2025-03-31 116 = 223
+easyjet,LTM,2026-03-31,net_capex,Net capex,1046000000.000000000000,GBP,computed,verified,"Capex 1,049 − disposal proceeds 3.0 = 1,046"
 easyjet,LTM,2026-03-31,net_debt,Net debt,-434000000.000000000000,GBP,computed,verified,"Total debt 3,012 − cash and cash-like 3,446 = -434"
 easyjet,LTM,2026-03-31,net_leverage,Net leverage,-0.329536826120,x,computed,verified,"Net debt -434 ÷ EBITDA 1,317 = -0.33x"
 easyjet,H1,2026-03-31,operating_profit,Operating profit,-533000000.000000000000,GBP,extracted,verified,the FY2025 annual report prints the database's figure (696) under the same row label
@@ -439,13 +439,13 @@ norwegian,H1,2026-06-30,contract_liabilities,Contract liabilities (advance ticke
 norwegian,LTM,2026-06-30,contract_liabilities,Contract liabilities (advance ticket sales),8621000000.000000000000,NOK,computed,verified,"At 2026-06-30: 8,621 (half-year balance sheet)"
 norwegian,H1,2026-06-30,current_investments,Current investments,2659000000.000000000000,NOK,extracted,verified,the report's year-end column equals the database's FY2025 figure
 norwegian,LTM,2026-06-30,current_investments,Current investments,2659000000.000000000000,NOK,computed,verified,"At 2026-06-30: 2,659 (half-year balance sheet)"
-norwegian,H1,2026-06-30,dda,"Depreciation, amortisation and impairment",2281000000.000000000000,NOK,extracted,unverified,"the report's full-year column gives 4,155, the database holds 4,231 for FY2025: another row, or a restated figure"
-norwegian,H1_prior,2025-06-30,dda,"Depreciation, amortisation and impairment",2031000000.000000000000,NOK,extracted,unverified,"the report's full-year column gives 4,155, the database holds 4,231 for FY2025: another row, or a restated figure"
-norwegian,LTM,2026-06-30,dda,"Depreciation, amortisation and impairment",4481000000.000000000000,NOK,computed,unverified,"FY2025 4,231 + first half to 2026-06-30 2,281 − first half to 2025-06-30 2,031 = 4,481"
+norwegian,H1,2026-06-30,dda,"Depreciation, amortisation and impairment",2333000000.000000000000,NOK,extracted,overridden,the report's full-year column equals the database's FY2025 figure
+norwegian,H1_prior,2025-06-30,dda,"Depreciation, amortisation and impairment",1931000000.000000000000,NOK,extracted,overridden,the report's full-year column equals the database's FY2025 figure
+norwegian,LTM,2026-06-30,dda,"Depreciation, amortisation and impairment",4633000000.000000000000,NOK,computed,verified,"FY2025 4,231 + first half to 2026-06-30 2,333 − first half to 2025-06-30 1,931 = 4,633"
 norwegian,H1,2026-06-30,debt_including_leases,Borrowings and lease liabilities on one line,18965000000.000000000000,NOK,extracted,verified,the two debt rows together equal the database's borrowings and lease liabilities at year end
 norwegian,LTM,2026-06-30,debt_including_leases,Borrowings and lease liabilities on one line,18965000000.000000000000,NOK,computed,verified,"At 2026-06-30: 18,965 (half-year balance sheet)"
-norwegian,LTM,2026-06-30,ebitda,EBITDA,6750000000.000000000000,NOK,computed,unverified,"Operating profit 2,269 + D&A 4,481 = 6,750"
-norwegian,LTM,2026-06-30,ebitda_margin,EBITDA margin,0.177225825085,pct,computed,unverified,"EBITDA 6,750 ÷ revenue 38,087 = 17.7%"
+norwegian,LTM,2026-06-30,ebitda,EBITDA,6902000000.000000000000,NOK,computed,verified,"Operating profit 2,269 + D&A 4,633 = 6,902"
+norwegian,LTM,2026-06-30,ebitda_margin,EBITDA margin,0.181216688109,pct,computed,verified,"EBITDA 6,902 ÷ revenue 38,087 = 18.1%"
 norwegian,H1,2026-06-30,equity,Total equity,6660000000.000000000000,NOK,extracted,verified,the report's year-end column equals the database's FY2025 figure
 norwegian,LTM,2026-06-30,equity,Total equity,6660000000.000000000000,NOK,computed,verified,"At 2026-06-30: 6,660 (half-year balance sheet)"
 norwegian,LTM,2026-06-30,fcf,Free cash flow,5249000000.000000000000,NOK,computed,unverified,"Cash from operations 8,362 − capex 3,113 = 5,249"
@@ -457,13 +457,13 @@ norwegian,H1,2026-06-30,fuel_cost,Fuel cost,4967000000.000000000000,NOK,extracte
 norwegian,H1_prior,2025-06-30,fuel_cost,Fuel cost,4544000000.000000000000,NOK,extracted,verified,the report's full-year column equals the database's FY2025 figure
 norwegian,LTM,2026-06-30,fuel_cost,Fuel cost,9996000000.000000000000,NOK,computed,verified,"FY2025 9,573 + first half to 2026-06-30 4,967 − first half to 2025-06-30 4,544 = 9,996"
 norwegian,LTM,2026-06-30,fuel_share_of_costs,Fuel share of costs,0.279077558769,pct,computed,verified,"Fuel 9,996 ÷ operating costs 35,818 (revenue 38,087 − operating profit 2,269) = 27.9%"
-norwegian,LTM,2026-06-30,gross_leverage,Gross leverage,2.809629629630,x,computed,unverified,"Total debt 18,965 ÷ EBITDA 6,750 = 2.81x"
-norwegian,LTM,2026-06-30,interest_coverage,Interest coverage,5.086661642803,x,computed,unverified,"EBITDA 6,750 ÷ interest expense 1,327 = 5.09x"
+norwegian,LTM,2026-06-30,gross_leverage,Gross leverage,2.747754274123,x,computed,verified,"Total debt 18,965 ÷ EBITDA 6,902 = 2.75x"
+norwegian,LTM,2026-06-30,interest_coverage,Interest coverage,5.201205727204,x,computed,verified,"EBITDA 6,902 ÷ interest expense 1,327 = 5.20x"
 norwegian,H1,2026-06-30,interest_expense,Interest expense,641000000.000000000000,NOK,extracted,verified,the report's full-year column equals the database's FY2025 figure
 norwegian,H1_prior,2025-06-30,interest_expense,Interest expense,585000000.000000000000,NOK,extracted,verified,the report's full-year column equals the database's FY2025 figure
 norwegian,LTM,2026-06-30,interest_expense,Interest expense,1327000000.000000000000,NOK,computed,verified,"FY2025 1,271 + first half to 2026-06-30 641 − first half to 2025-06-30 585 = 1,327"
 norwegian,LTM,2026-06-30,net_debt,Net debt,5265000000.000000000000,NOK,computed,verified,"Total debt 18,965 − cash and cash-like 13,700 = 5,265"
-norwegian,LTM,2026-06-30,net_leverage,Net leverage,0.780000000000,x,computed,unverified,"Net debt 5,265 ÷ EBITDA 6,750 = 0.78x"
+norwegian,LTM,2026-06-30,net_leverage,Net leverage,0.762822370327,x,computed,verified,"Net debt 5,265 ÷ EBITDA 6,902 = 0.76x"
 norwegian,H1,2026-06-30,operating_profit,Operating profit,-824000000.000000000000,NOK,extracted,verified,the report's full-year column equals the database's FY2025 figure
 norwegian,H1_prior,2025-06-30,operating_profit,Operating profit,639000000.000000000000,NOK,extracted,verified,the report's full-year column equals the database's FY2025 figure
 norwegian,LTM,2026-06-30,operating_profit,Operating profit,2269000000.000000000000,NOK,computed,verified,"FY2025 3,732 + first half to 2026-06-30 -824 − first half to 2025-06-30 639 = 2,269"
@@ -570,11 +570,11 @@ wizz,LTM,2026-09-30,ebitda_margin,EBITDA margin,0.204743866951,pct,computed,veri
 wizz,H1,2026-09-30,equity,Total equity,1073500000.000000000000,EUR,extracted,verified,the report's year-end column equals the database's FY2026 figure
 wizz,LTM,2026-09-30,equity,Total equity,1073500000.000000000000,EUR,computed,verified,"At 2026-09-30: 1,074 (half-year balance sheet)"
 wizz,LTM,2026-09-30,fcf,Free cash flow,643600000.000000000000,EUR,computed,verified,"Cash from operations 1,067 − capex 423 = 644"
-wizz,LTM,2026-09-30,fcf_after_leases,FCF after leases,480600000.000000000000,EUR,computed,unverified,"Cash from operations 1,067 − net capex -506 − lease payments 811 − interest paid (in financing) 281 = 481"
-wizz,LTM,2026-09-30,fcf_after_leases_to_debt,FCF after leases to debt,0.064564665422,pct,computed,unverified,"FCF after leases 481 ÷ total debt 7,444 = 6.5%"
+wizz,LTM,2026-09-30,fcf_after_leases,FCF after leases,480600000.000000000000,EUR,computed,verified,"Cash from operations 1,067 − net capex -506 − lease payments 811 − interest paid (in financing) 281 = 481"
+wizz,LTM,2026-09-30,fcf_after_leases_to_debt,FCF after leases to debt,0.064564665422,pct,computed,verified,"FCF after leases 481 ÷ total debt 7,444 = 6.5%"
 wizz,LTM,2026-09-30,fcf_to_debt,FCF to debt,0.086462377581,pct,computed,verified,"Free cash flow 644 ÷ total debt 7,444 = 8.6%"
-wizz,LTM,2026-09-30,ffo,FFO,954900000.000000000000,EUR,computed,unverified,"EBITDA 1,259 − interest paid 281 − tax paid 23.5 = 955"
-wizz,LTM,2026-09-30,ffo_to_debt,FFO to debt,0.128282977551,pct,computed,unverified,"FFO 955 ÷ total debt 7,444 = 12.8%"
+wizz,LTM,2026-09-30,ffo,FFO,954900000.000000000000,EUR,computed,verified,"EBITDA 1,259 − interest paid 281 − tax paid 23.5 = 955"
+wizz,LTM,2026-09-30,ffo_to_debt,FFO to debt,0.128282977551,pct,computed,verified,"FFO 955 ÷ total debt 7,444 = 12.8%"
 wizz,H1,2026-09-30,finance_costs,Finance costs,156900000.000000000000,EUR,extracted,verified,the FY2026 annual report prints the database's figure (267.8) under the same row label
 wizz,H1_prior,2025-09-30,finance_costs,Finance costs,127400000.000000000000,EUR,extracted,verified,the FY2026 annual report prints the database's figure (267.8) under the same row label
 wizz,LTM,2026-09-30,finance_costs,Finance costs,297300000.000000000000,EUR,computed,verified,FY2026 268 + first half to 2026-09-30 157 − first half to 2025-09-30 127 = 297
@@ -583,10 +583,10 @@ wizz,H1_prior,2025-09-30,fuel_cost,Fuel cost,928300000.000000000000,EUR,extracte
 wizz,LTM,2026-09-30,fuel_cost,Fuel cost,2077100000.000000000000,EUR,computed,verified,"FY2026 1,764 + first half to 2026-09-30 1,241 − first half to 2025-09-30 928 = 2,077"
 wizz,LTM,2026-09-30,fuel_share_of_costs,Fuel share of costs,0.335768901246,pct,computed,verified,"Fuel 2,077 ÷ operating costs 6,186 (revenue 6,151 − operating profit -35.0) = 33.6%"
 wizz,LTM,2026-09-30,gross_leverage,Gross leverage,5.910512942671,x,computed,verified,"Total debt 7,444 ÷ EBITDA 1,259 = 5.91x"
-wizz,LTM,2026-09-30,interest_coverage,Interest coverage,4.481850533808,x,computed,unverified,"EBITDA 1,259 ÷ interest paid (interest expense not tagged) 281 = 4.48x"
-wizz,H1,2026-09-30,interest_paid,Interest paid,148700000.000000000000,EUR,extracted,unverified,"the report prints no full year, and the FY2026 annual report does not print the database's figure (244.5) under this row label: the row cannot be confirmed"
-wizz,H1_prior,2025-09-30,interest_paid,Interest paid,112200000.000000000000,EUR,extracted,unverified,"the report prints no full year, and the FY2026 annual report does not print the database's figure (244.5) under this row label: the row cannot be confirmed"
-wizz,LTM,2026-09-30,interest_paid,Interest paid,281000000.000000000000,EUR,computed,unverified,FY2026 244 + first half to 2026-09-30 149 − first half to 2025-09-30 112 = 281
+wizz,LTM,2026-09-30,interest_coverage,Interest coverage,4.481850533808,x,computed,verified,"EBITDA 1,259 ÷ interest paid (interest expense not tagged) 281 = 4.48x"
+wizz,H1,2026-09-30,interest_paid,Interest paid,148700000.000000000000,EUR,extracted,verified,"the report prints no full year, and the FY2026 annual report does not print the database's figure (244.5) under this row label: the row cannot be confirmed"
+wizz,H1_prior,2025-09-30,interest_paid,Interest paid,112200000.000000000000,EUR,extracted,verified,"the report prints no full year, and the FY2026 annual report does not print the database's figure (244.5) under this row label: the row cannot be confirmed"
+wizz,LTM,2026-09-30,interest_paid,Interest paid,281000000.000000000000,EUR,computed,verified,FY2026 244 + first half to 2026-09-30 149 − first half to 2025-09-30 112 = 281
 wizz,H1,2026-09-30,lease_payments,Lease payments (principal),405600000.000000000000,EUR,extracted,verified,the FY2026 annual report prints the database's figure (791.4) under the same row label
 wizz,H1_prior,2025-09-30,lease_payments,Lease payments (principal),386000000.000000000000,EUR,extracted,verified,the FY2026 annual report prints the database's figure (791.4) under the same row label
 wizz,LTM,2026-09-30,lease_payments,Lease payments (principal),811000000.000000000000,EUR,computed,verified,FY2026 791 + first half to 2026-09-30 406 − first half to 2025-09-30 386 = 811
@@ -596,17 +596,17 @@ wizz,LTM,2026-09-30,net_leverage,Net leverage,4.030411306972,x,computed,verified
 wizz,H1,2026-09-30,operating_profit,Operating profit,264500000.000000000000,EUR,extracted,verified,the FY2026 annual report prints the database's figure (139.7) under the same row label
 wizz,H1_prior,2025-09-30,operating_profit,Operating profit,439200000.000000000000,EUR,extracted,verified,the FY2026 annual report prints the database's figure (139.7) under the same row label
 wizz,LTM,2026-09-30,operating_profit,Operating profit,-35000000.000000000000,EUR,computed,verified,FY2026 140 + first half to 2026-09-30 264 − first half to 2025-09-30 439 = -35.0
-wizz,H1,2026-09-30,profit,Profit for the year,108100000.000000000000,EUR,extracted,unverified,"the report prints no full year, and the FY2026 annual report does not print the database's figure (1.3) under this row label: the row cannot be confirmed"
-wizz,H1_prior,2025-09-30,profit,Profit for the year,323500000.000000000000,EUR,extracted,unverified,"the report prints no full year, and the FY2026 annual report does not print the database's figure (1.3) under this row label: the row cannot be confirmed"
-wizz,LTM,2026-09-30,profit,Profit for the year,-214100000.000000000000,EUR,computed,unverified,FY2026 1.3 + first half to 2026-09-30 108 − first half to 2025-09-30 324 = -214
+wizz,H1,2026-09-30,profit,Profit for the year,108100000.000000000000,EUR,extracted,verified,"the report prints no full year, and the FY2026 annual report does not print the database's figure (1.3) under this row label: the row cannot be confirmed"
+wizz,H1_prior,2025-09-30,profit,Profit for the year,323500000.000000000000,EUR,extracted,verified,"the report prints no full year, and the FY2026 annual report does not print the database's figure (1.3) under this row label: the row cannot be confirmed"
+wizz,LTM,2026-09-30,profit,Profit for the year,-214100000.000000000000,EUR,computed,verified,FY2026 1.3 + first half to 2026-09-30 108 − first half to 2025-09-30 324 = -214
 wizz,H1,2026-09-30,restricted_cash,Restricted cash,82700000.000000000000,EUR,extracted,verified,the report's year-end column equals the database's FY2026 figure
 wizz,LTM,2026-09-30,restricted_cash,Restricted cash,82700000.000000000000,EUR,computed,verified,At 2026-09-30: 82.7 (half-year balance sheet)
 wizz,H1,2026-09-30,revenue,Revenue,3801800000.000000000000,EUR,extracted,verified,"the FY2026 annual report prints the database's figure (5,691.4) under the same row label"
 wizz,H1_prior,2025-09-30,revenue,Revenue,3342100000.000000000000,EUR,extracted,verified,"the FY2026 annual report prints the database's figure (5,691.4) under the same row label"
 wizz,LTM,2026-09-30,revenue,Revenue,6151100000.000000000000,EUR,computed,verified,"FY2026 5,691 + first half to 2026-09-30 3,802 − first half to 2025-09-30 3,342 = 6,151"
-wizz,H1,2026-09-30,share_of_associates,Share of profit (loss) of associates,0.000000000000,EUR,extracted,unverified,"the report prints no full year, and the FY2026 annual report does not print the database's figure (0) under this row label: the row cannot be confirmed"
-wizz,H1_prior,2025-09-30,share_of_associates,Share of profit (loss) of associates,0.000000000000,EUR,extracted,unverified,"the report prints no full year, and the FY2026 annual report does not print the database's figure (0) under this row label: the row cannot be confirmed"
-wizz,LTM,2026-09-30,share_of_associates,Share of profit (loss) of associates,0.000000000000,EUR,computed,unverified,FY2026 0.0 + first half to 2026-09-30 0.0 − first half to 2025-09-30 0.0 = 0.0
+wizz,H1,2026-09-30,share_of_associates,Share of profit (loss) of associates,0.000000000000,EUR,extracted,verified,"the report prints no full year, and the FY2026 annual report does not print the database's figure (0) under this row label: the row cannot be confirmed"
+wizz,H1_prior,2025-09-30,share_of_associates,Share of profit (loss) of associates,0.000000000000,EUR,extracted,verified,"the report prints no full year, and the FY2026 annual report does not print the database's figure (0) under this row label: the row cannot be confirmed"
+wizz,LTM,2026-09-30,share_of_associates,Share of profit (loss) of associates,0.000000000000,EUR,computed,verified,FY2026 0.0 + first half to 2026-09-30 0.0 − first half to 2025-09-30 0.0 = 0.0
 wizz,H1,2026-09-30,short_term_deposits,Short-term deposits (not cash equivalents),455000000.000000000000,EUR,extracted,verified,the report's year-end column equals the database's FY2026 figure
 wizz,LTM,2026-09-30,short_term_deposits,Short-term deposits (not cash equivalents),455000000.000000000000,EUR,computed,verified,At 2026-09-30: 455 (half-year balance sheet)
 wizz,H1,2026-09-30,tax_paid,Income tax paid,20100000.000000000000,EUR,extracted,verified,the FY2026 annual report prints the database's figure (19.6) under the same row label

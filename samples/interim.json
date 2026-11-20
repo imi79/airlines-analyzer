@@ -10,6 +10,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 6 of 6 lines equal the database's figures",
@@ -83,6 +84,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 6 of 6 lines equal the database's figures",
@@ -156,6 +158,11 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "548000000",
+     "prior": "478000000",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,218) under this row label: the row cannot be confirmed"
     ],
@@ -175,28 +182,56 @@
      "page 39"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "before the correction: the report prints no full year, and the FY2025 annual report does not print the database's figure (1,218) under this row label: the row cannot be confirmed",
+     "correctd by Imane, checked by AI assistant on 2026-11-20: The FY2025 capex in the database (1,218) is purchases (1,265) less the change in payables on asset purchases (+47). The same two rows at the half year, page 39: 548 + 98 = 646 and 478 + 62 = 540; the report's own note under the table gives 646 \"y compris fournisseurs d'immobilisations\". The AI had taken the purchases row alone (answer key: 646)."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
-     "Investissements corporels, incorporels et de placement 12 (548) (478)"
+     "Investissements corporels, incorporels et de placement 12 (548) (478)",
+     "Variation des dettes et avances sur acquisitions d'immobilisations (98) (62)"
     ],
     "report_base_column": null,
     "request_hash": "a2c1f85526e88387a131329e0371f3d0567f17b21bf033de70e9f360946a4917",
-    "review": null,
+    "review": {
+     "action": "correct",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "current": 646,
+     "line": "capex",
+     "on": "2026-11-20",
+     "prior": 540,
+     "reason": "The FY2025 capex in the database (1,218) is purchases (1,265) less the change in payables on asset purchases (+47). The same two rows at the half year, page 39: 548 + 98 = 646 and 478 + 62 = 540; the report's own note under the table gives 646 \"y compris fournisseurs d'immobilisations\". The AI had taken the purchases row alone (answer key: 646).",
+     "report": "adp-h1-2026-06-30",
+     "rows": [
+      {
+       "label": "Investissements corporels, incorporels et de placement"
+      },
+      {
+       "label": "Variation des dettes et avances sur acquisitions d'immobilisations"
+      }
+     ],
+     "statement": "cash_flow"
+    },
     "rows": [
      {
       "label": "Investissements corporels, incorporels et de placement",
       "operation": "add",
       "text": "Investissements corporels, incorporels et de placement                                          12            (548)            (478)"
+     },
+     {
+      "label": "Variation des dettes et avances sur acquisitions d'immobilisations",
+      "operation": "add",
+      "text": "Variation des dettes et avances sur acquisitions d'immobilisations                                             (98)             (62)"
      }
     ],
     "source": "adp-rapport-financier-semestriel-2026-06-30.pdf",
     "url": "https://www.parisaeroport.fr/docs/default-source/groupe-fichiers/finance/relations-investisseurs/adp-sa---rapport-financier-semestriel-2026.pdf?sfvrsn=cac5aabd_0"
    },
    "source_type": "extracted",
-   "status": "unverified",
-   "value": "548000000.000000000000",
+   "status": "overridden",
+   "value": "646000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,218) under this row label: the row cannot be confirmed"
    ]
@@ -211,6 +246,11 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "548000000",
+     "prior": "478000000",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,218) under this row label: the row cannot be confirmed"
     ],
@@ -230,28 +270,56 @@
      "page 39"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "before the correction: the report prints no full year, and the FY2025 annual report does not print the database's figure (1,218) under this row label: the row cannot be confirmed",
+     "correctd by Imane, checked by AI assistant on 2026-11-20: The FY2025 capex in the database (1,218) is purchases (1,265) less the change in payables on asset purchases (+47). The same two rows at the half year, page 39: 548 + 98 = 646 and 478 + 62 = 540; the report's own note under the table gives 646 \"y compris fournisseurs d'immobilisations\". The AI had taken the purchases row alone (answer key: 646)."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
-     "Investissements corporels, incorporels et de placement 12 (548) (478)"
+     "Investissements corporels, incorporels et de placement 12 (548) (478)",
+     "Variation des dettes et avances sur acquisitions d'immobilisations (98) (62)"
     ],
     "report_base_column": null,
     "request_hash": "a2c1f85526e88387a131329e0371f3d0567f17b21bf033de70e9f360946a4917",
-    "review": null,
+    "review": {
+     "action": "correct",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "current": 646,
+     "line": "capex",
+     "on": "2026-11-20",
+     "prior": 540,
+     "reason": "The FY2025 capex in the database (1,218) is purchases (1,265) less the change in payables on asset purchases (+47). The same two rows at the half year, page 39: 548 + 98 = 646 and 478 + 62 = 540; the report's own note under the table gives 646 \"y compris fournisseurs d'immobilisations\". The AI had taken the purchases row alone (answer key: 646).",
+     "report": "adp-h1-2026-06-30",
+     "rows": [
+      {
+       "label": "Investissements corporels, incorporels et de placement"
+      },
+      {
+       "label": "Variation des dettes et avances sur acquisitions d'immobilisations"
+      }
+     ],
+     "statement": "cash_flow"
+    },
     "rows": [
      {
       "label": "Investissements corporels, incorporels et de placement",
       "operation": "add",
       "text": "Investissements corporels, incorporels et de placement                                          12            (548)            (478)"
+     },
+     {
+      "label": "Variation des dettes et avances sur acquisitions d'immobilisations",
+      "operation": "add",
+      "text": "Variation des dettes et avances sur acquisitions d'immobilisations                                             (98)             (62)"
      }
     ],
     "source": "adp-rapport-financier-semestriel-2026-06-30.pdf",
     "url": "https://www.parisaeroport.fr/docs/default-source/groupe-fichiers/finance/relations-investisseurs/adp-sa---rapport-financier-semestriel-2026.pdf?sfvrsn=cac5aabd_0"
    },
    "source_type": "extracted",
-   "status": "unverified",
-   "value": "478000000.000000000000",
+   "status": "overridden",
+   "value": "540000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,218) under this row label: the row cannot be confirmed"
    ]
@@ -261,7 +329,7 @@
    "currency": "EUR",
    "decimals": -6,
    "issuer": "adp",
-   "note": "FY2025 1,218 + first half to 2026-06-30 548 − first half to 2025-06-30 478 = 1,288",
+   "note": "FY2025 1,218 + first half to 2026-06-30 646 − first half to 2025-06-30 540 = 1,324",
    "period": "LTM",
    "period_end": "2026-06-30",
    "source": {
@@ -278,19 +346,19 @@
       "line": "capex",
       "period": "H1",
       "sign": "+",
-      "value": "548000000"
+      "value": "646000000"
      },
      {
       "line": "capex",
       "period": "H1_prior",
       "sign": "-",
-      "value": "478000000"
+      "value": "540000000"
      }
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "1288000000.000000000000",
+   "status": "verified",
+   "value": "1324000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,218) under this row label: the row cannot be confirmed"
    ]
@@ -300,7 +368,7 @@
    "currency": "pct",
    "decimals": null,
    "issuer": "adp",
-   "note": "Capex 1,288 ÷ revenue 6,756 = 19.1%",
+   "note": "Capex 1,324 ÷ revenue 6,756 = 19.6%",
    "period": "LTM",
    "period_end": "2026-06-30",
    "source": {
@@ -309,7 +377,7 @@
      {
       "name": "capex",
       "source": "adp-h1-2026-06-30",
-      "value": "1288000000"
+      "value": "1324000000"
      },
      {
       "name": "revenue",
@@ -319,8 +387,8 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "0.190645352279",
+   "status": "verified",
+   "value": "0.195973949082",
    "warnings": []
   },
   "adp:cash@H1": {
@@ -333,6 +401,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 6 of 6 lines equal the database's figures",
@@ -406,6 +475,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -457,6 +527,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -545,6 +616,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -596,6 +668,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -707,6 +780,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -758,6 +832,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -907,6 +982,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 6 of 6 lines equal the database's figures",
@@ -975,7 +1051,7 @@
    "currency": "EUR",
    "decimals": null,
    "issuer": "adp",
-   "note": "Cash from operations 1,557 − capex 1,288 = 269",
+   "note": "Cash from operations 1,557 − capex 1,324 = 233",
    "period": "LTM",
    "period_end": "2026-06-30",
    "source": {
@@ -989,13 +1065,13 @@
      {
       "name": "capex",
       "source": "adp-h1-2026-06-30",
-      "value": "1288000000"
+      "value": "1324000000"
      }
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "269000000.000000000000",
+   "status": "verified",
+   "value": "233000000.000000000000",
    "warnings": []
   },
   "adp:fcf_after_leases@LTM": {
@@ -1003,7 +1079,7 @@
    "currency": "EUR",
    "decimals": null,
    "issuer": "adp",
-   "note": "Cash from operations 1,557 − net capex 1,248 − lease payments 26.0 − interest paid (in financing) 322 = -39.0",
+   "note": "Cash from operations 1,557 − net capex 1,284 − lease payments 26.0 − interest paid (in financing) 322 = -75.0",
    "period": "LTM",
    "period_end": "2026-06-30",
    "source": {
@@ -1017,7 +1093,7 @@
      {
       "name": "net_capex",
       "source": "metric",
-      "value": "1248000000"
+      "value": "1284000000"
      },
      {
       "name": "lease_payments",
@@ -1032,8 +1108,8 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "-39000000.000000000000",
+   "status": "verified",
+   "value": "-75000000.000000000000",
    "warnings": []
   },
   "adp:fcf_after_leases_to_debt@LTM": {
@@ -1041,7 +1117,7 @@
    "currency": "pct",
    "decimals": null,
    "issuer": "adp",
-   "note": "FCF after leases -39.0 ÷ total debt 11,629 = -0.3%",
+   "note": "FCF after leases -75.0 ÷ total debt 11,629 = -0.6%",
    "period": "LTM",
    "period_end": "2026-06-30",
    "source": {
@@ -1050,7 +1126,7 @@
      {
       "name": "fcf_after_leases",
       "source": "metric",
-      "value": "-39000000"
+      "value": "-75000000"
      },
      {
       "name": "total_debt",
@@ -1060,8 +1136,8 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "-0.003353684754",
+   "status": "verified",
+   "value": "-0.006449393757",
    "warnings": []
   },
   "adp:fcf_to_debt@LTM": {
@@ -1069,7 +1145,7 @@
    "currency": "pct",
    "decimals": null,
    "issuer": "adp",
-   "note": "Free cash flow 269 ÷ total debt 11,629 = 2.3%",
+   "note": "Free cash flow 233 ÷ total debt 11,629 = 2.0%",
    "period": "LTM",
    "period_end": "2026-06-30",
    "source": {
@@ -1078,7 +1154,7 @@
      {
       "name": "fcf",
       "source": "metric",
-      "value": "269000000"
+      "value": "233000000"
      },
      {
       "name": "total_debt",
@@ -1088,8 +1164,8 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "0.023131825608",
+   "status": "verified",
+   "value": "0.020036116605",
    "warnings": []
   },
   "adp:ffo@LTM": {
@@ -1163,6 +1239,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -1214,6 +1291,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -1358,6 +1436,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -1409,6 +1488,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -1497,6 +1577,11 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "12000000",
+     "prior": "16000000",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (30) under this row label: the row cannot be confirmed"
     ],
@@ -1516,7 +1601,9 @@
      "page 39"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "approved by Imane, checked by AI assistant on 2026-11-20: \"Remboursements des dettes de location\", page 39: 12 and 16, the same row as the FY2025 figure (30, French statements page 7). Matches the answer key."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
@@ -1524,7 +1611,15 @@
     ],
     "report_base_column": null,
     "request_hash": "a2c1f85526e88387a131329e0371f3d0567f17b21bf033de70e9f360946a4917",
-    "review": null,
+    "review": {
+     "action": "approve",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "line": "lease_payments",
+     "on": "2026-11-20",
+     "reason": "\"Remboursements des dettes de location\", page 39: 12 and 16, the same row as the FY2025 figure (30, French statements page 7). Matches the answer key.",
+     "report": "adp-h1-2026-06-30"
+    },
     "rows": [
      {
       "label": "Remboursements des dettes de location",
@@ -1536,7 +1631,7 @@
     "url": "https://www.parisaeroport.fr/docs/default-source/groupe-fichiers/finance/relations-investisseurs/adp-sa---rapport-financier-semestriel-2026.pdf?sfvrsn=cac5aabd_0"
    },
    "source_type": "extracted",
-   "status": "unverified",
+   "status": "verified",
    "value": "12000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (30) under this row label: the row cannot be confirmed"
@@ -1552,6 +1647,11 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "12000000",
+     "prior": "16000000",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (30) under this row label: the row cannot be confirmed"
     ],
@@ -1571,7 +1671,9 @@
      "page 39"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "approved by Imane, checked by AI assistant on 2026-11-20: \"Remboursements des dettes de location\", page 39: 12 and 16, the same row as the FY2025 figure (30, French statements page 7). Matches the answer key."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
@@ -1579,7 +1681,15 @@
     ],
     "report_base_column": null,
     "request_hash": "a2c1f85526e88387a131329e0371f3d0567f17b21bf033de70e9f360946a4917",
-    "review": null,
+    "review": {
+     "action": "approve",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "line": "lease_payments",
+     "on": "2026-11-20",
+     "reason": "\"Remboursements des dettes de location\", page 39: 12 and 16, the same row as the FY2025 figure (30, French statements page 7). Matches the answer key.",
+     "report": "adp-h1-2026-06-30"
+    },
     "rows": [
      {
       "label": "Remboursements des dettes de location",
@@ -1591,7 +1701,7 @@
     "url": "https://www.parisaeroport.fr/docs/default-source/groupe-fichiers/finance/relations-investisseurs/adp-sa---rapport-financier-semestriel-2026.pdf?sfvrsn=cac5aabd_0"
    },
    "source_type": "extracted",
-   "status": "unverified",
+   "status": "verified",
    "value": "16000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (30) under this row label: the row cannot be confirmed"
@@ -1630,7 +1740,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "26000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (30) under this row label: the row cannot be confirmed"
@@ -1641,7 +1751,7 @@
    "currency": "EUR",
    "decimals": null,
    "issuer": "adp",
-   "note": "Capex 1,288 − disposal proceeds 40.0 = 1,248",
+   "note": "Capex 1,324 − disposal proceeds 40.0 = 1,284",
    "period": "LTM",
    "period_end": "2026-06-30",
    "source": {
@@ -1650,7 +1760,7 @@
      {
       "name": "capex",
       "source": "adp-h1-2026-06-30",
-      "value": "1288000000"
+      "value": "1324000000"
      },
      {
       "name": "disposal_proceeds",
@@ -1660,8 +1770,8 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "1248000000.000000000000",
+   "status": "verified",
+   "value": "1284000000.000000000000",
    "warnings": []
   },
   "adp:operating_profit@H1": {
@@ -1674,6 +1784,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -1725,6 +1836,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -1813,6 +1925,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 6 of 6 lines equal the database's figures",
@@ -1886,6 +1999,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -1937,6 +2051,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -2025,6 +2140,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -2076,6 +2192,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -2164,6 +2281,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -2215,6 +2333,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -2303,6 +2422,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -2354,6 +2474,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -2442,6 +2563,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 6 of 6 lines equal the database's figures",
@@ -2543,6 +2665,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 6 of 6 lines equal the database's figures",
@@ -2616,6 +2739,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 6 of 6 lines equal the database's figures",
@@ -2689,9 +2813,12 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
-    "checks_failed": [
-     "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,059,275) under this row label: the row cannot be confirmed"
-    ],
+    "before_review": {
+     "current": "576267000",
+     "prior": "490248000",
+     "status": "unverified"
+    },
+    "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
     ],
@@ -2699,7 +2826,7 @@
      "current": "Notas 2026",
      "prior": "2025"
     },
-    "control": null,
+    "control": "the FY2025 annual report prints the database's figure (1,059,275) under the same row label",
     "database_base_figure": "1059275000.0",
     "document": "aena-h1-2026-06-30",
     "document_sha256": "996c147c8d720b6250206e8b16257d0d5e1cbb1281df782c0e24ebf10f9efae3",
@@ -2708,17 +2835,37 @@
      "page 12"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "before the correction: the report prints no full year, and the FY2025 annual report does not print the database's figure (1,059,275) under this row label: the row cannot be confirmed",
+     "correctd by Imane, checked by AI assistant on 2026-11-20: The database's FY2025 capex (1,059,275 thousand) is purchases of property, plant and equipment and of intangible assets. The AI had added purchases of investment property (3,884 and 199 thousand, page 12), which the annual figure leaves out."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
      "Adquisiciones de inmovilizado material (365.807) (359.659)",
-     "Adquisiciones de activos intangibles (206.576) (130.390)",
-     "Adquisiciones de inversiones inmobiliarias (3.884) (199)"
+     "Adquisiciones de activos intangibles (206.576) (130.390)"
     ],
     "report_base_column": null,
     "request_hash": "a32e3fd6b2288b43419506ebd31bd607545e31db845ac1c2f72967f86798f1b9",
-    "review": null,
+    "review": {
+     "action": "correct",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "current": 572383,
+     "line": "capex",
+     "on": "2026-11-20",
+     "prior": 490049,
+     "reason": "The database's FY2025 capex (1,059,275 thousand) is purchases of property, plant and equipment and of intangible assets. The AI had added purchases of investment property (3,884 and 199 thousand, page 12), which the annual figure leaves out.",
+     "report": "aena-h1-2026-06-30",
+     "rows": [
+      {
+       "label": "Adquisiciones de inmovilizado material"
+      },
+      {
+       "label": "Adquisiciones de activos intangibles"
+      }
+     ]
+    },
     "rows": [
      {
       "label": "Adquisiciones de inmovilizado material",
@@ -2729,22 +2876,15 @@
       "label": "Adquisiciones de activos intangibles",
       "operation": "add",
       "text": "   Adquisiciones de activos intangibles                                                                          (206.576)             (130.390)"
-     },
-     {
-      "label": "Adquisiciones de inversiones inmobiliarias",
-      "operation": "add",
-      "text": "   Adquisiciones de inversiones inmobiliarias                                                                      (3.884)                 (199)"
      }
     ],
     "source": "aena-estados-financieros-intermedios-2026-06-30.pdf",
     "url": "https://www.aena.es/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1576874657892&ssbinary=true"
    },
    "source_type": "extracted",
-   "status": "unverified",
-   "value": "576267000.000000000000",
-   "warnings": [
-    "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,059,275) under this row label: the row cannot be confirmed"
-   ]
+   "status": "overridden",
+   "value": "572383000.000000000000",
+   "warnings": []
   },
   "aena:capex@H1_prior": {
    "concept": "capex",
@@ -2756,9 +2896,12 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
-    "checks_failed": [
-     "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,059,275) under this row label: the row cannot be confirmed"
-    ],
+    "before_review": {
+     "current": "576267000",
+     "prior": "490248000",
+     "status": "unverified"
+    },
+    "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
     ],
@@ -2766,7 +2909,7 @@
      "current": "Notas 2026",
      "prior": "2025"
     },
-    "control": null,
+    "control": "the FY2025 annual report prints the database's figure (1,059,275) under the same row label",
     "database_base_figure": "1059275000.0",
     "document": "aena-h1-2026-06-30",
     "document_sha256": "996c147c8d720b6250206e8b16257d0d5e1cbb1281df782c0e24ebf10f9efae3",
@@ -2775,17 +2918,37 @@
      "page 12"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "before the correction: the report prints no full year, and the FY2025 annual report does not print the database's figure (1,059,275) under this row label: the row cannot be confirmed",
+     "correctd by Imane, checked by AI assistant on 2026-11-20: The database's FY2025 capex (1,059,275 thousand) is purchases of property, plant and equipment and of intangible assets. The AI had added purchases of investment property (3,884 and 199 thousand, page 12), which the annual figure leaves out."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
      "Adquisiciones de inmovilizado material (365.807) (359.659)",
-     "Adquisiciones de activos intangibles (206.576) (130.390)",
-     "Adquisiciones de inversiones inmobiliarias (3.884) (199)"
+     "Adquisiciones de activos intangibles (206.576) (130.390)"
     ],
     "report_base_column": null,
     "request_hash": "a32e3fd6b2288b43419506ebd31bd607545e31db845ac1c2f72967f86798f1b9",
-    "review": null,
+    "review": {
+     "action": "correct",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "current": 572383,
+     "line": "capex",
+     "on": "2026-11-20",
+     "prior": 490049,
+     "reason": "The database's FY2025 capex (1,059,275 thousand) is purchases of property, plant and equipment and of intangible assets. The AI had added purchases of investment property (3,884 and 199 thousand, page 12), which the annual figure leaves out.",
+     "report": "aena-h1-2026-06-30",
+     "rows": [
+      {
+       "label": "Adquisiciones de inmovilizado material"
+      },
+      {
+       "label": "Adquisiciones de activos intangibles"
+      }
+     ]
+    },
     "rows": [
      {
       "label": "Adquisiciones de inmovilizado material",
@@ -2796,29 +2959,22 @@
       "label": "Adquisiciones de activos intangibles",
       "operation": "add",
       "text": "   Adquisiciones de activos intangibles                                                                          (206.576)             (130.390)"
-     },
-     {
-      "label": "Adquisiciones de inversiones inmobiliarias",
-      "operation": "add",
-      "text": "   Adquisiciones de inversiones inmobiliarias                                                                      (3.884)                 (199)"
      }
     ],
     "source": "aena-estados-financieros-intermedios-2026-06-30.pdf",
     "url": "https://www.aena.es/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1576874657892&ssbinary=true"
    },
    "source_type": "extracted",
-   "status": "unverified",
-   "value": "490248000.000000000000",
-   "warnings": [
-    "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,059,275) under this row label: the row cannot be confirmed"
-   ]
+   "status": "overridden",
+   "value": "490049000.000000000000",
+   "warnings": []
   },
   "aena:capex@LTM": {
    "concept": "capex",
    "currency": "EUR",
    "decimals": -3,
    "issuer": "aena",
-   "note": "FY2025 1,059 + first half to 2026-06-30 576 − first half to 2025-06-30 490 = 1,145",
+   "note": "FY2025 1,059 + first half to 2026-06-30 572 − first half to 2025-06-30 490 = 1,142",
    "period": "LTM",
    "period_end": "2026-06-30",
    "source": {
@@ -2835,29 +2991,27 @@
       "line": "capex",
       "period": "H1",
       "sign": "+",
-      "value": "576267000"
+      "value": "572383000"
      },
      {
       "line": "capex",
       "period": "H1_prior",
       "sign": "-",
-      "value": "490248000"
+      "value": "490049000"
      }
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "1145294000.000000000000",
-   "warnings": [
-    "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,059,275) under this row label: the row cannot be confirmed"
-   ]
+   "status": "verified",
+   "value": "1141609000.000000000000",
+   "warnings": []
   },
   "aena:capex_intensity@LTM": {
    "concept": "capex_intensity",
    "currency": "pct",
    "decimals": null,
    "issuer": "aena",
-   "note": "Capex 1,145 ÷ revenue 6,597 = 17.4%",
+   "note": "Capex 1,142 ÷ revenue 6,597 = 17.3%",
    "period": "LTM",
    "period_end": "2026-06-30",
    "source": {
@@ -2866,7 +3020,7 @@
      {
       "name": "capex",
       "source": "aena-h1-2026-06-30",
-      "value": "1145294000.0"
+      "value": "1141609000.0"
      },
      {
       "name": "revenue",
@@ -2876,8 +3030,8 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "0.173600701743",
+   "status": "verified",
+   "value": "0.173042138976",
    "warnings": []
   },
   "aena:cash@H1": {
@@ -2890,6 +3044,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 6 of 6 lines equal the database's figures",
@@ -3065,6 +3220,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -3116,6 +3272,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -3204,9 +3361,12 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
-    "checks_failed": [
-     "the report prints no full year, and the FY2025 annual report does not print the database's figure (796,897) under this row label: the row cannot be confirmed"
-    ],
+    "before_review": {
+     "current": "412348000",
+     "prior": "417175000",
+     "status": "unverified"
+    },
+    "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
     ],
@@ -3214,7 +3374,7 @@
      "current": "Notas 2026",
      "prior": "2025"
     },
-    "control": null,
+    "control": "the FY2025 annual report prints the database's figure (796,897) under the same row label",
     "database_base_figure": "796897000.0",
     "document": "aena-h1-2026-06-30",
     "document_sha256": "996c147c8d720b6250206e8b16257d0d5e1cbb1281df782c0e24ebf10f9efae3",
@@ -3223,37 +3383,47 @@
      "page 8"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "before the correction: the report prints no full year, and the FY2025 annual report does not print the database's figure (796,897) under this row label: the row cannot be confirmed",
+     "correctd by Imane, checked by AI assistant on 2026-11-20: The database's FY2025 D&A (796,897 thousand) is the amortisation row alone (DepreciationAndAmortisationExpense). The AI had added the impairment row (191 and -28 thousand, page 8), which the annual figure leaves out."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
-     "Amortización del inmovilizado (412.157) (417.203)",
-     "Deterioro del valor de los activos intangibles, inmov. 7 (191) 28"
+     "Amortización del inmovilizado (412.157) (417.203)"
     ],
     "report_base_column": null,
     "request_hash": "a32e3fd6b2288b43419506ebd31bd607545e31db845ac1c2f72967f86798f1b9",
-    "review": null,
+    "review": {
+     "action": "correct",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "current": 412157,
+     "line": "dda",
+     "on": "2026-11-20",
+     "prior": 417203,
+     "reason": "The database's FY2025 D&A (796,897 thousand) is the amortisation row alone (DepreciationAndAmortisationExpense). The AI had added the impairment row (191 and -28 thousand, page 8), which the annual figure leaves out.",
+     "report": "aena-h1-2026-06-30",
+     "rows": [
+      {
+       "label": "Amortización del inmovilizado"
+      }
+     ]
+    },
     "rows": [
      {
       "label": "Amortización del inmovilizado",
       "operation": "add",
       "text": "   Amortización del inmovilizado                                                                         (412.157)                (417.203)"
-     },
-     {
-      "label": "Deterioro del valor de los activos intangibles, inmov. material e inver. inmobiliarias",
-      "operation": "add",
-      "text": "   Deterioro del valor de los activos intangibles, inmov. 7                                                    (191)                        28"
      }
     ],
     "source": "aena-estados-financieros-intermedios-2026-06-30.pdf",
     "url": "https://www.aena.es/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1576874657892&ssbinary=true"
    },
    "source_type": "extracted",
-   "status": "unverified",
-   "value": "412348000.000000000000",
-   "warnings": [
-    "the report prints no full year, and the FY2025 annual report does not print the database's figure (796,897) under this row label: the row cannot be confirmed"
-   ]
+   "status": "overridden",
+   "value": "412157000.000000000000",
+   "warnings": []
   },
   "aena:dda@H1_prior": {
    "concept": "dda",
@@ -3265,9 +3435,12 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
-    "checks_failed": [
-     "the report prints no full year, and the FY2025 annual report does not print the database's figure (796,897) under this row label: the row cannot be confirmed"
-    ],
+    "before_review": {
+     "current": "412348000",
+     "prior": "417175000",
+     "status": "unverified"
+    },
+    "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
     ],
@@ -3275,7 +3448,7 @@
      "current": "Notas 2026",
      "prior": "2025"
     },
-    "control": null,
+    "control": "the FY2025 annual report prints the database's figure (796,897) under the same row label",
     "database_base_figure": "796897000.0",
     "document": "aena-h1-2026-06-30",
     "document_sha256": "996c147c8d720b6250206e8b16257d0d5e1cbb1281df782c0e24ebf10f9efae3",
@@ -3284,37 +3457,47 @@
      "page 8"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "before the correction: the report prints no full year, and the FY2025 annual report does not print the database's figure (796,897) under this row label: the row cannot be confirmed",
+     "correctd by Imane, checked by AI assistant on 2026-11-20: The database's FY2025 D&A (796,897 thousand) is the amortisation row alone (DepreciationAndAmortisationExpense). The AI had added the impairment row (191 and -28 thousand, page 8), which the annual figure leaves out."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
-     "Amortización del inmovilizado (412.157) (417.203)",
-     "Deterioro del valor de los activos intangibles, inmov. 7 (191) 28"
+     "Amortización del inmovilizado (412.157) (417.203)"
     ],
     "report_base_column": null,
     "request_hash": "a32e3fd6b2288b43419506ebd31bd607545e31db845ac1c2f72967f86798f1b9",
-    "review": null,
+    "review": {
+     "action": "correct",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "current": 412157,
+     "line": "dda",
+     "on": "2026-11-20",
+     "prior": 417203,
+     "reason": "The database's FY2025 D&A (796,897 thousand) is the amortisation row alone (DepreciationAndAmortisationExpense). The AI had added the impairment row (191 and -28 thousand, page 8), which the annual figure leaves out.",
+     "report": "aena-h1-2026-06-30",
+     "rows": [
+      {
+       "label": "Amortización del inmovilizado"
+      }
+     ]
+    },
     "rows": [
      {
       "label": "Amortización del inmovilizado",
       "operation": "add",
       "text": "   Amortización del inmovilizado                                                                         (412.157)                (417.203)"
-     },
-     {
-      "label": "Deterioro del valor de los activos intangibles, inmov. material e inver. inmobiliarias",
-      "operation": "add",
-      "text": "   Deterioro del valor de los activos intangibles, inmov. 7                                                    (191)                        28"
      }
     ],
     "source": "aena-estados-financieros-intermedios-2026-06-30.pdf",
     "url": "https://www.aena.es/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1576874657892&ssbinary=true"
    },
    "source_type": "extracted",
-   "status": "unverified",
-   "value": "417175000.000000000000",
-   "warnings": [
-    "the report prints no full year, and the FY2025 annual report does not print the database's figure (796,897) under this row label: the row cannot be confirmed"
-   ]
+   "status": "overridden",
+   "value": "417203000.000000000000",
+   "warnings": []
   },
   "aena:dda@LTM": {
    "concept": "dda",
@@ -3338,22 +3521,20 @@
       "line": "dda",
       "period": "H1",
       "sign": "+",
-      "value": "412348000"
+      "value": "412157000"
      },
      {
       "line": "dda",
       "period": "H1_prior",
       "sign": "-",
-      "value": "417175000"
+      "value": "417203000"
      }
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "792070000.000000000000",
-   "warnings": [
-    "the report prints no full year, and the FY2025 annual report does not print the database's figure (796,897) under this row label: the row cannot be confirmed"
-   ]
+   "status": "verified",
+   "value": "791851000.000000000000",
+   "warnings": []
   },
   "aena:debt_due_1y@LTM": {
    "concept": "debt_due_1y",
@@ -3388,6 +3569,11 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "2725000",
+     "prior": "11872000",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (42,464) under this row label: the row cannot be confirmed"
     ],
@@ -3407,7 +3593,9 @@
      "page 12"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "approved by Imane, checked by AI assistant on 2026-11-20: \"Cobros por operaciones relacionadas con el inmovilizado material\" (the last word on the next line), page 12: 2,725 and 11,872 thousand; property, plant and equipment only, as the FY2025 figure (42,464 thousand)."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
@@ -3415,7 +3603,15 @@
     ],
     "report_base_column": null,
     "request_hash": "a32e3fd6b2288b43419506ebd31bd607545e31db845ac1c2f72967f86798f1b9",
-    "review": null,
+    "review": {
+     "action": "approve",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "line": "disposal_proceeds",
+     "on": "2026-11-20",
+     "reason": "\"Cobros por operaciones relacionadas con el inmovilizado material\" (the last word on the next line), page 12: 2,725 and 11,872 thousand; property, plant and equipment only, as the FY2025 figure (42,464 thousand).",
+     "report": "aena-h1-2026-06-30"
+    },
     "rows": [
      {
       "label": "Cobros por operaciones relacionadas con el inmovilizado material",
@@ -3427,7 +3623,7 @@
     "url": "https://www.aena.es/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1576874657892&ssbinary=true"
    },
    "source_type": "extracted",
-   "status": "unverified",
+   "status": "verified",
    "value": "2725000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (42,464) under this row label: the row cannot be confirmed"
@@ -3443,6 +3639,11 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "2725000",
+     "prior": "11872000",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (42,464) under this row label: the row cannot be confirmed"
     ],
@@ -3462,7 +3663,9 @@
      "page 12"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "approved by Imane, checked by AI assistant on 2026-11-20: \"Cobros por operaciones relacionadas con el inmovilizado material\" (the last word on the next line), page 12: 2,725 and 11,872 thousand; property, plant and equipment only, as the FY2025 figure (42,464 thousand)."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
@@ -3470,7 +3673,15 @@
     ],
     "report_base_column": null,
     "request_hash": "a32e3fd6b2288b43419506ebd31bd607545e31db845ac1c2f72967f86798f1b9",
-    "review": null,
+    "review": {
+     "action": "approve",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "line": "disposal_proceeds",
+     "on": "2026-11-20",
+     "reason": "\"Cobros por operaciones relacionadas con el inmovilizado material\" (the last word on the next line), page 12: 2,725 and 11,872 thousand; property, plant and equipment only, as the FY2025 figure (42,464 thousand).",
+     "report": "aena-h1-2026-06-30"
+    },
     "rows": [
      {
       "label": "Cobros por operaciones relacionadas con el inmovilizado material",
@@ -3482,7 +3693,7 @@
     "url": "https://www.aena.es/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1576874657892&ssbinary=true"
    },
    "source_type": "extracted",
-   "status": "unverified",
+   "status": "verified",
    "value": "11872000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (42,464) under this row label: the row cannot be confirmed"
@@ -3521,7 +3732,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "33317000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (42,464) under this row label: the row cannot be confirmed"
@@ -3546,13 +3757,13 @@
      {
       "name": "dda",
       "source": "aena-h1-2026-06-30",
-      "value": "792070000.0"
+      "value": "791851000.0"
      }
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "3891846000.000000000000",
+   "status": "verified",
+   "value": "3891627000.000000000000",
    "warnings": []
   },
   "aena:ebitda_margin@LTM": {
@@ -3569,7 +3780,7 @@
      {
       "name": "ebitda",
       "source": "metric",
-      "value": "3891846000.0"
+      "value": "3891627000.0"
      },
      {
       "name": "revenue",
@@ -3579,8 +3790,8 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "0.589915948809",
+   "status": "verified",
+   "value": "0.589882753355",
    "warnings": []
   },
   "aena:equity@H1": {
@@ -3593,6 +3804,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 6 of 6 lines equal the database's figures",
@@ -3661,7 +3873,7 @@
    "currency": "EUR",
    "decimals": null,
    "issuer": "aena",
-   "note": "Cash from operations 2,906 − capex 1,145 = 1,761",
+   "note": "Cash from operations 2,906 − capex 1,142 = 1,765",
    "period": "LTM",
    "period_end": "2026-06-30",
    "source": {
@@ -3675,13 +3887,13 @@
      {
       "name": "capex",
       "source": "aena-h1-2026-06-30",
-      "value": "1145294000.0"
+      "value": "1141609000.0"
      }
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "1761116000.000000000000",
+   "status": "verified",
+   "value": "1764801000.000000000000",
    "warnings": []
   },
   "aena:fcf_after_leases@LTM": {
@@ -3689,7 +3901,7 @@
    "currency": "EUR",
    "decimals": null,
    "issuer": "aena",
-   "note": "Cash from operations 2,906 − net capex 1,112 − lease payments 15.3 = 1,779",
+   "note": "Cash from operations 2,906 − net capex 1,108 − lease payments 15.3 = 1,783",
    "period": "LTM",
    "period_end": "2026-06-30",
    "source": {
@@ -3703,7 +3915,7 @@
      {
       "name": "net_capex",
       "source": "metric",
-      "value": "1111977000.0"
+      "value": "1108292000.0"
      },
      {
       "name": "lease_payments",
@@ -3713,8 +3925,8 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "1779116000.000000000000",
+   "status": "verified",
+   "value": "1782801000.000000000000",
    "warnings": []
   },
   "aena:fcf_after_leases_to_debt@LTM": {
@@ -3722,7 +3934,7 @@
    "currency": "pct",
    "decimals": null,
    "issuer": "aena",
-   "note": "FCF after leases 1,779 ÷ total debt 8,113 = 21.9%",
+   "note": "FCF after leases 1,783 ÷ total debt 8,113 = 22.0%",
    "period": "LTM",
    "period_end": "2026-06-30",
    "source": {
@@ -3731,7 +3943,7 @@
      {
       "name": "fcf_after_leases",
       "source": "metric",
-      "value": "1779116000.0"
+      "value": "1782801000.0"
      },
      {
       "name": "total_debt",
@@ -3741,8 +3953,8 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "0.219280783739",
+   "status": "verified",
+   "value": "0.219734969800",
    "warnings": []
   },
   "aena:fcf_to_debt@LTM": {
@@ -3750,7 +3962,7 @@
    "currency": "pct",
    "decimals": null,
    "issuer": "aena",
-   "note": "Free cash flow 1,761 ÷ total debt 8,113 = 21.7%",
+   "note": "Free cash flow 1,765 ÷ total debt 8,113 = 21.8%",
    "period": "LTM",
    "period_end": "2026-06-30",
    "source": {
@@ -3759,7 +3971,7 @@
      {
       "name": "fcf",
       "source": "metric",
-      "value": "1761116000.0"
+      "value": "1764801000.0"
      },
      {
       "name": "total_debt",
@@ -3769,8 +3981,8 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "0.217062235816",
+   "status": "verified",
+   "value": "0.217516421877",
    "warnings": []
   },
   "aena:ffo@LTM": {
@@ -3778,7 +3990,7 @@
    "currency": "EUR",
    "decimals": null,
    "issuer": "aena",
-   "note": "EBITDA 3,892 − interest paid 231 − tax paid 661 = 3,000",
+   "note": "EBITDA 3,892 − interest paid 231 − tax paid 661 = 2,999",
    "period": "LTM",
    "period_end": "2026-06-30",
    "source": {
@@ -3787,7 +3999,7 @@
      {
       "name": "ebitda",
       "source": "metric",
-      "value": "3891846000.0"
+      "value": "3891627000.0"
      },
      {
       "name": "interest_paid",
@@ -3802,8 +4014,8 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "2999592000.000000000000",
+   "status": "verified",
+   "value": "2999373000.000000000000",
    "warnings": []
   },
   "aena:ffo_to_debt@LTM": {
@@ -3811,7 +4023,7 @@
    "currency": "pct",
    "decimals": null,
    "issuer": "aena",
-   "note": "FFO 3,000 ÷ total debt 8,113 = 37.0%",
+   "note": "FFO 2,999 ÷ total debt 8,113 = 37.0%",
    "period": "LTM",
    "period_end": "2026-06-30",
    "source": {
@@ -3820,7 +4032,7 @@
      {
       "name": "ffo",
       "source": "metric",
-      "value": "2999592000.0"
+      "value": "2999373000.0"
      },
      {
       "name": "total_debt",
@@ -3830,8 +4042,8 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "0.369707700148",
+   "status": "verified",
+   "value": "0.369680707815",
    "warnings": []
   },
   "aena:finance_costs@H1": {
@@ -3844,6 +4056,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -3895,6 +4108,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -3992,13 +4206,13 @@
      {
       "name": "ebitda",
       "source": "metric",
-      "value": "3891846000.0"
+      "value": "3891627000.0"
      }
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "2.084721492063",
+   "status": "verified",
+   "value": "2.084838809064",
    "warnings": []
   },
   "aena:interest_coverage@LTM": {
@@ -4015,7 +4229,7 @@
      {
       "name": "ebitda",
       "source": "metric",
-      "value": "3891846000.0"
+      "value": "3891627000.0"
      },
      {
       "name": "interest_expense",
@@ -4025,8 +4239,8 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "13.954220314735",
+   "status": "verified",
+   "value": "13.953435089871",
    "warnings": []
   },
   "aena:interest_expense@H1": {
@@ -4039,6 +4253,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -4090,6 +4305,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -4178,6 +4394,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -4229,6 +4446,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -4317,6 +4535,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -4368,6 +4587,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -4451,7 +4671,7 @@
    "currency": "EUR",
    "decimals": null,
    "issuer": "aena",
-   "note": "Capex 1,145 − disposal proceeds 33.3 = 1,112",
+   "note": "Capex 1,142 − disposal proceeds 33.3 = 1,108",
    "period": "LTM",
    "period_end": "2026-06-30",
    "source": {
@@ -4460,7 +4680,7 @@
      {
       "name": "capex",
       "source": "aena-h1-2026-06-30",
-      "value": "1145294000.0"
+      "value": "1141609000.0"
      },
      {
       "name": "disposal_proceeds",
@@ -4470,8 +4690,8 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "1111977000.000000000000",
+   "status": "verified",
+   "value": "1108292000.000000000000",
    "warnings": []
   },
   "aena:net_debt@LTM": {
@@ -4521,13 +4741,13 @@
      {
       "name": "ebitda",
       "source": "metric",
-      "value": "3891846000.0"
+      "value": "3891627000.0"
      }
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "1.727760039837",
+   "status": "verified",
+   "value": "1.727857268952",
    "warnings": []
   },
   "aena:operating_profit@H1": {
@@ -4540,6 +4760,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -4591,6 +4812,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -4679,6 +4901,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 6 of 6 lines equal the database's figures",
@@ -4752,6 +4975,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -4803,6 +5027,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -4891,6 +5116,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -4942,6 +5168,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -5030,6 +5257,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -5081,6 +5309,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -5169,6 +5398,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -5220,6 +5450,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -5308,6 +5539,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 6 of 6 lines equal the database's figures",
@@ -5409,6 +5641,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -5482,6 +5715,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -5555,6 +5789,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (4,449) under this row label: the row cannot be confirmed"
     ],
@@ -5610,6 +5845,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (4,449) under this row label: the row cannot be confirmed"
     ],
@@ -5732,6 +5968,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -5805,6 +6042,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (5,055) under this row label: the row cannot be confirmed"
     ],
@@ -5860,6 +6098,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (5,055) under this row label: the row cannot be confirmed"
     ],
@@ -5954,6 +6193,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -6027,6 +6267,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (3,054) under this row label: the row cannot be confirmed"
     ],
@@ -6082,6 +6323,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (3,054) under this row label: the row cannot be confirmed"
     ],
@@ -6204,6 +6446,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,391) under this row label: the row cannot be confirmed"
     ],
@@ -6259,6 +6502,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,391) under this row label: the row cannot be confirmed"
     ],
@@ -6409,6 +6653,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -6604,6 +6849,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (627) under this row label: the row cannot be confirmed"
     ],
@@ -6671,6 +6917,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (627) under this row label: the row cannot be confirmed"
     ],
@@ -6833,6 +7080,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (627) under this row label: the row cannot be confirmed"
     ],
@@ -6894,6 +7142,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (627) under this row label: the row cannot be confirmed"
     ],
@@ -6994,6 +7243,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -7045,6 +7295,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -7133,6 +7384,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -7206,6 +7458,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -7279,6 +7532,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -7330,6 +7584,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -7446,6 +7701,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (2,002) under this row label: the row cannot be confirmed"
     ],
@@ -7501,6 +7757,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (2,002) under this row label: the row cannot be confirmed"
     ],
@@ -7595,6 +7852,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -7668,6 +7926,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,754) under this row label: the row cannot be confirmed"
     ],
@@ -7723,6 +7982,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,754) under this row label: the row cannot be confirmed"
     ],
@@ -7817,6 +8077,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (33,007) under this row label: the row cannot be confirmed"
     ],
@@ -7872,6 +8133,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (33,007) under this row label: the row cannot be confirmed"
     ],
@@ -7966,6 +8228,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -8105,6 +8368,7 @@
    "period_end": "2026-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -8178,6 +8442,7 @@
    "period_end": "2026-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -8251,6 +8516,11 @@
    "period_end": "2026-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "577000000",
+     "prior": "529000000",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,001) under this row label: the row cannot be confirmed"
     ],
@@ -8270,7 +8540,9 @@
      "page 24"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "approved by Imane, checked by AI assistant on 2026-11-20: Page 24: purchase of property, plant and equipment (532, 484) + purchase of non-current other intangible assets (45, 45) = 577 and 529, the same two items as the FY2025 figure."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
@@ -8279,7 +8551,15 @@
     ],
     "report_base_column": null,
     "request_hash": "b05d7d87b5c3f7ff6aca01450d8f54fbc3962fcdb932d219db7dfee6a1a26471",
-    "review": null,
+    "review": {
+     "action": "approve",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "line": "capex",
+     "on": "2026-11-20",
+     "reason": "Page 24: purchase of property, plant and equipment (532, 484) + purchase of non-current other intangible assets (45, 45) = 577 and 529, the same two items as the FY2025 figure.",
+     "report": "easyjet-h1-2026-03-31"
+    },
     "rows": [
      {
       "label": "Purchase of property, plant and equipment",
@@ -8296,7 +8576,7 @@
     "url": "https://s203.q4cdn.com/522538739/files/doc_financials/2026/q2/1-HY26-Combined-RNS-FINAL.pdf"
    },
    "source_type": "extracted",
-   "status": "unverified",
+   "status": "verified",
    "value": "577000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,001) under this row label: the row cannot be confirmed"
@@ -8312,6 +8592,11 @@
    "period_end": "2025-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "577000000",
+     "prior": "529000000",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,001) under this row label: the row cannot be confirmed"
     ],
@@ -8331,7 +8616,9 @@
      "page 24"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "approved by Imane, checked by AI assistant on 2026-11-20: Page 24: purchase of property, plant and equipment (532, 484) + purchase of non-current other intangible assets (45, 45) = 577 and 529, the same two items as the FY2025 figure."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
@@ -8340,7 +8627,15 @@
     ],
     "report_base_column": null,
     "request_hash": "b05d7d87b5c3f7ff6aca01450d8f54fbc3962fcdb932d219db7dfee6a1a26471",
-    "review": null,
+    "review": {
+     "action": "approve",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "line": "capex",
+     "on": "2026-11-20",
+     "reason": "Page 24: purchase of property, plant and equipment (532, 484) + purchase of non-current other intangible assets (45, 45) = 577 and 529, the same two items as the FY2025 figure.",
+     "report": "easyjet-h1-2026-03-31"
+    },
     "rows": [
      {
       "label": "Purchase of property, plant and equipment",
@@ -8357,7 +8652,7 @@
     "url": "https://s203.q4cdn.com/522538739/files/doc_financials/2026/q2/1-HY26-Combined-RNS-FINAL.pdf"
    },
    "source_type": "extracted",
-   "status": "unverified",
+   "status": "verified",
    "value": "529000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,001) under this row label: the row cannot be confirmed"
@@ -8396,7 +8691,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "1049000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,001) under this row label: the row cannot be confirmed"
@@ -8426,7 +8721,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "0.099657989740",
    "warnings": []
   },
@@ -8440,6 +8735,7 @@
    "period_end": "2026-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -8620,6 +8916,11 @@
    "period_end": "2026-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "458000000",
+     "prior": "790000000",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,625) under this row label: the row cannot be confirmed"
     ],
@@ -8639,7 +8940,9 @@
      "page 24"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "approved by Imane, checked by AI assistant on 2026-11-20: \"Net cash generated from operating activities\", page 24: 458 and 790. It includes the dividends paid, which easyJet classifies in operating activities in its annual statement too (91 in FY2025), so the definition matches the FY2025 figure (1,625)."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
@@ -8647,7 +8950,15 @@
     ],
     "report_base_column": null,
     "request_hash": "b05d7d87b5c3f7ff6aca01450d8f54fbc3962fcdb932d219db7dfee6a1a26471",
-    "review": null,
+    "review": {
+     "action": "approve",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "line": "cfo",
+     "on": "2026-11-20",
+     "reason": "\"Net cash generated from operating activities\", page 24: 458 and 790. It includes the dividends paid, which easyJet classifies in operating activities in its annual statement too (91 in FY2025), so the definition matches the FY2025 figure (1,625).",
+     "report": "easyjet-h1-2026-03-31"
+    },
     "rows": [
      {
       "label": "Net cash generated from operating activities",
@@ -8659,7 +8970,7 @@
     "url": "https://s203.q4cdn.com/522538739/files/doc_financials/2026/q2/1-HY26-Combined-RNS-FINAL.pdf"
    },
    "source_type": "extracted",
-   "status": "unverified",
+   "status": "verified",
    "value": "458000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,625) under this row label: the row cannot be confirmed"
@@ -8675,6 +8986,11 @@
    "period_end": "2025-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "458000000",
+     "prior": "790000000",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,625) under this row label: the row cannot be confirmed"
     ],
@@ -8694,7 +9010,9 @@
      "page 24"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "approved by Imane, checked by AI assistant on 2026-11-20: \"Net cash generated from operating activities\", page 24: 458 and 790. It includes the dividends paid, which easyJet classifies in operating activities in its annual statement too (91 in FY2025), so the definition matches the FY2025 figure (1,625)."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
@@ -8702,7 +9020,15 @@
     ],
     "report_base_column": null,
     "request_hash": "b05d7d87b5c3f7ff6aca01450d8f54fbc3962fcdb932d219db7dfee6a1a26471",
-    "review": null,
+    "review": {
+     "action": "approve",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "line": "cfo",
+     "on": "2026-11-20",
+     "reason": "\"Net cash generated from operating activities\", page 24: 458 and 790. It includes the dividends paid, which easyJet classifies in operating activities in its annual statement too (91 in FY2025), so the definition matches the FY2025 figure (1,625).",
+     "report": "easyjet-h1-2026-03-31"
+    },
     "rows": [
      {
       "label": "Net cash generated from operating activities",
@@ -8714,7 +9040,7 @@
     "url": "https://s203.q4cdn.com/522538739/files/doc_financials/2026/q2/1-HY26-Combined-RNS-FINAL.pdf"
    },
    "source_type": "extracted",
-   "status": "unverified",
+   "status": "verified",
    "value": "790000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,625) under this row label: the row cannot be confirmed"
@@ -8753,7 +9079,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "1293000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (1,625) under this row label: the row cannot be confirmed"
@@ -8769,6 +9095,7 @@
    "period_end": "2026-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -8842,6 +9169,7 @@
    "period_end": "2026-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -8915,6 +9243,7 @@
    "period_end": "2026-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "3 columns under each year: the 'Total' column is read",
@@ -8973,6 +9302,7 @@
    "period_end": "2025-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "3 columns under each year: the 'Total' column is read",
@@ -9096,6 +9426,7 @@
    "period_end": "2026-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -9147,6 +9478,7 @@
    "period_end": "2025-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -9291,6 +9623,7 @@
    "period_end": "2026-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -9378,7 +9711,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "244000000.000000000000",
    "warnings": []
   },
@@ -9411,7 +9744,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "24000000.000000000000",
    "warnings": []
   },
@@ -9439,7 +9772,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "0.007968127490",
    "warnings": []
   },
@@ -9467,7 +9800,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "0.081009296149",
    "warnings": []
   },
@@ -9500,7 +9833,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "1169000000.000000000000",
    "warnings": []
   },
@@ -9528,7 +9861,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "0.388114209827",
    "warnings": []
   },
@@ -9542,6 +9875,11 @@
    "period_end": "2026-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "68000000",
+     "prior": "82000000",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (156) under this row label: the row cannot be confirmed"
     ],
@@ -9562,7 +9900,9 @@
      "page 20"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "approved by Imane, checked by AI assistant on 2026-11-20: Page 20 (image checked, the PDF's text garbles this label): \"Interest payable and other financing charges\", Total columns, 68 and 82; the FY2025 figure (156, InterestExpense) is the same row of the annual income statement."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
@@ -9570,7 +9910,15 @@
     ],
     "report_base_column": null,
     "request_hash": "b05d7d87b5c3f7ff6aca01450d8f54fbc3962fcdb932d219db7dfee6a1a26471",
-    "review": null,
+    "review": {
+     "action": "approve",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "line": "finance_costs",
+     "on": "2026-11-20",
+     "reason": "Page 20 (image checked, the PDF's text garbles this label): \"Interest payable and other financing charges\", Total columns, 68 and 82; the FY2025 figure (156, InterestExpense) is the same row of the annual income statement.",
+     "report": "easyjet-h1-2026-03-31"
+    },
     "rows": [
      {
       "label": "Interest  incomeand other   financingexchange",
@@ -9582,7 +9930,7 @@
     "url": "https://s203.q4cdn.com/522538739/files/doc_financials/2026/q2/1-HY26-Combined-RNS-FINAL.pdf"
    },
    "source_type": "extracted",
-   "status": "unverified",
+   "status": "verified",
    "value": "68000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (156) under this row label: the row cannot be confirmed"
@@ -9598,6 +9946,11 @@
    "period_end": "2025-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "68000000",
+     "prior": "82000000",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (156) under this row label: the row cannot be confirmed"
     ],
@@ -9618,7 +9971,9 @@
      "page 20"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "approved by Imane, checked by AI assistant on 2026-11-20: Page 20 (image checked, the PDF's text garbles this label): \"Interest payable and other financing charges\", Total columns, 68 and 82; the FY2025 figure (156, InterestExpense) is the same row of the annual income statement."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
@@ -9626,7 +9981,15 @@
     ],
     "report_base_column": null,
     "request_hash": "b05d7d87b5c3f7ff6aca01450d8f54fbc3962fcdb932d219db7dfee6a1a26471",
-    "review": null,
+    "review": {
+     "action": "approve",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "line": "finance_costs",
+     "on": "2026-11-20",
+     "reason": "Page 20 (image checked, the PDF's text garbles this label): \"Interest payable and other financing charges\", Total columns, 68 and 82; the FY2025 figure (156, InterestExpense) is the same row of the annual income statement.",
+     "report": "easyjet-h1-2026-03-31"
+    },
     "rows": [
      {
       "label": "Interest  incomeand other   financingexchange",
@@ -9638,7 +10001,7 @@
     "url": "https://s203.q4cdn.com/522538739/files/doc_financials/2026/q2/1-HY26-Combined-RNS-FINAL.pdf"
    },
    "source_type": "extracted",
-   "status": "unverified",
+   "status": "verified",
    "value": "82000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (156) under this row label: the row cannot be confirmed"
@@ -9677,7 +10040,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "142000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (156) under this row label: the row cannot be confirmed"
@@ -9693,6 +10056,7 @@
    "period_end": "2026-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "3 columns under each year: the 'Total' column is read",
@@ -9745,6 +10109,7 @@
    "period_end": "2025-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "3 columns under each year: the 'Total' column is read",
@@ -9909,7 +10274,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "9.274647887324",
    "warnings": []
   },
@@ -9923,6 +10288,11 @@
    "period_end": "2026-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "68000000",
+     "prior": "82000000",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (156) under this row label: the row cannot be confirmed"
     ],
@@ -9943,7 +10313,9 @@
      "page 20"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "approved by Imane, checked by AI assistant on 2026-11-20: Same row as finance costs (page 20, 68 and 82), as in the FY2025 figure (156)."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
@@ -9951,7 +10323,15 @@
     ],
     "report_base_column": null,
     "request_hash": "b05d7d87b5c3f7ff6aca01450d8f54fbc3962fcdb932d219db7dfee6a1a26471",
-    "review": null,
+    "review": {
+     "action": "approve",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "line": "interest_expense",
+     "on": "2026-11-20",
+     "reason": "Same row as finance costs (page 20, 68 and 82), as in the FY2025 figure (156).",
+     "report": "easyjet-h1-2026-03-31"
+    },
     "rows": [
      {
       "label": "Interest  incomeand other   financingexchange",
@@ -9963,7 +10343,7 @@
     "url": "https://s203.q4cdn.com/522538739/files/doc_financials/2026/q2/1-HY26-Combined-RNS-FINAL.pdf"
    },
    "source_type": "extracted",
-   "status": "unverified",
+   "status": "verified",
    "value": "68000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (156) under this row label: the row cannot be confirmed"
@@ -9979,6 +10359,11 @@
    "period_end": "2025-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "68000000",
+     "prior": "82000000",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (156) under this row label: the row cannot be confirmed"
     ],
@@ -9999,7 +10384,9 @@
      "page 20"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "approved by Imane, checked by AI assistant on 2026-11-20: Same row as finance costs (page 20, 68 and 82), as in the FY2025 figure (156)."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
@@ -10007,7 +10394,15 @@
     ],
     "report_base_column": null,
     "request_hash": "b05d7d87b5c3f7ff6aca01450d8f54fbc3962fcdb932d219db7dfee6a1a26471",
-    "review": null,
+    "review": {
+     "action": "approve",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "line": "interest_expense",
+     "on": "2026-11-20",
+     "reason": "Same row as finance costs (page 20, 68 and 82), as in the FY2025 figure (156).",
+     "report": "easyjet-h1-2026-03-31"
+    },
     "rows": [
      {
       "label": "Interest  incomeand other   financingexchange",
@@ -10019,7 +10414,7 @@
     "url": "https://s203.q4cdn.com/522538739/files/doc_financials/2026/q2/1-HY26-Combined-RNS-FINAL.pdf"
    },
    "source_type": "extracted",
-   "status": "unverified",
+   "status": "verified",
    "value": "82000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (156) under this row label: the row cannot be confirmed"
@@ -10058,7 +10453,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "142000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (156) under this row label: the row cannot be confirmed"
@@ -10074,6 +10469,11 @@
    "period_end": "2026-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "77000000",
+     "prior": "82000000",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (140) under this row label: the row cannot be confirmed"
     ],
@@ -10093,7 +10493,9 @@
      "page 24"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "approved by Imane, checked by AI assistant on 2026-11-20: \"Interest and other financing charges paid\", page 24: 77 and 82, in operating activities as in FY2025 (140)."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
@@ -10101,7 +10503,15 @@
     ],
     "report_base_column": null,
     "request_hash": "b05d7d87b5c3f7ff6aca01450d8f54fbc3962fcdb932d219db7dfee6a1a26471",
-    "review": null,
+    "review": {
+     "action": "approve",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "line": "interest_paid",
+     "on": "2026-11-20",
+     "reason": "\"Interest and other financing charges paid\", page 24: 77 and 82, in operating activities as in FY2025 (140).",
+     "report": "easyjet-h1-2026-03-31"
+    },
     "rows": [
      {
       "label": "Interest and other financing charges paid",
@@ -10113,7 +10523,7 @@
     "url": "https://s203.q4cdn.com/522538739/files/doc_financials/2026/q2/1-HY26-Combined-RNS-FINAL.pdf"
    },
    "source_type": "extracted",
-   "status": "unverified",
+   "status": "verified",
    "value": "77000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (140) under this row label: the row cannot be confirmed"
@@ -10129,6 +10539,11 @@
    "period_end": "2025-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "77000000",
+     "prior": "82000000",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (140) under this row label: the row cannot be confirmed"
     ],
@@ -10148,7 +10563,9 @@
      "page 24"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "approved by Imane, checked by AI assistant on 2026-11-20: \"Interest and other financing charges paid\", page 24: 77 and 82, in operating activities as in FY2025 (140)."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
@@ -10156,7 +10573,15 @@
     ],
     "report_base_column": null,
     "request_hash": "b05d7d87b5c3f7ff6aca01450d8f54fbc3962fcdb932d219db7dfee6a1a26471",
-    "review": null,
+    "review": {
+     "action": "approve",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "line": "interest_paid",
+     "on": "2026-11-20",
+     "reason": "\"Interest and other financing charges paid\", page 24: 77 and 82, in operating activities as in FY2025 (140).",
+     "report": "easyjet-h1-2026-03-31"
+    },
     "rows": [
      {
       "label": "Interest and other financing charges paid",
@@ -10168,7 +10593,7 @@
     "url": "https://s203.q4cdn.com/522538739/files/doc_financials/2026/q2/1-HY26-Combined-RNS-FINAL.pdf"
    },
    "source_type": "extracted",
-   "status": "unverified",
+   "status": "verified",
    "value": "82000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (140) under this row label: the row cannot be confirmed"
@@ -10207,7 +10632,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "135000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (140) under this row label: the row cannot be confirmed"
@@ -10223,6 +10648,7 @@
    "period_end": "2026-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -10296,6 +10722,7 @@
    "period_end": "2026-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -10369,6 +10796,11 @@
    "period_end": "2026-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "113000000",
+     "prior": "116000000",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (226) under this row label: the row cannot be confirmed"
     ],
@@ -10388,7 +10820,9 @@
      "page 24"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "approved by Imane, checked by AI assistant on 2026-11-20: \"Repayment of capital element of leases\", page 24: 113 and 116, as in FY2025 (226)."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
@@ -10396,7 +10830,15 @@
     ],
     "report_base_column": null,
     "request_hash": "b05d7d87b5c3f7ff6aca01450d8f54fbc3962fcdb932d219db7dfee6a1a26471",
-    "review": null,
+    "review": {
+     "action": "approve",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "line": "lease_payments",
+     "on": "2026-11-20",
+     "reason": "\"Repayment of capital element of leases\", page 24: 113 and 116, as in FY2025 (226).",
+     "report": "easyjet-h1-2026-03-31"
+    },
     "rows": [
      {
       "label": "Repayment of capital element of leases",
@@ -10408,7 +10850,7 @@
     "url": "https://s203.q4cdn.com/522538739/files/doc_financials/2026/q2/1-HY26-Combined-RNS-FINAL.pdf"
    },
    "source_type": "extracted",
-   "status": "unverified",
+   "status": "verified",
    "value": "113000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (226) under this row label: the row cannot be confirmed"
@@ -10424,6 +10866,11 @@
    "period_end": "2025-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "113000000",
+     "prior": "116000000",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2025 annual report does not print the database's figure (226) under this row label: the row cannot be confirmed"
     ],
@@ -10443,7 +10890,9 @@
      "page 24"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "approved by Imane, checked by AI assistant on 2026-11-20: \"Repayment of capital element of leases\", page 24: 113 and 116, as in FY2025 (226)."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
@@ -10451,7 +10900,15 @@
     ],
     "report_base_column": null,
     "request_hash": "b05d7d87b5c3f7ff6aca01450d8f54fbc3962fcdb932d219db7dfee6a1a26471",
-    "review": null,
+    "review": {
+     "action": "approve",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "line": "lease_payments",
+     "on": "2026-11-20",
+     "reason": "\"Repayment of capital element of leases\", page 24: 113 and 116, as in FY2025 (226).",
+     "report": "easyjet-h1-2026-03-31"
+    },
     "rows": [
      {
       "label": "Repayment of capital element of leases",
@@ -10463,7 +10920,7 @@
     "url": "https://s203.q4cdn.com/522538739/files/doc_financials/2026/q2/1-HY26-Combined-RNS-FINAL.pdf"
    },
    "source_type": "extracted",
-   "status": "unverified",
+   "status": "verified",
    "value": "116000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (226) under this row label: the row cannot be confirmed"
@@ -10502,7 +10959,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "223000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2025 annual report does not print the database's figure (226) under this row label: the row cannot be confirmed"
@@ -10532,7 +10989,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "1046000000.000000000000",
    "warnings": []
   },
@@ -10602,6 +11059,7 @@
    "period_end": "2026-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "3 columns under each year: the 'Total' column is read",
@@ -10654,6 +11112,7 @@
    "period_end": "2025-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "3 columns under each year: the 'Total' column is read",
@@ -10743,6 +11202,7 @@
    "period_end": "2026-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "3 columns under each year: the 'Total' column is read",
@@ -10795,6 +11255,7 @@
    "period_end": "2025-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "3 columns under each year: the 'Total' column is read",
@@ -10884,6 +11345,7 @@
    "period_end": "2026-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "3 columns under each year: the 'Total' column is read",
@@ -10936,6 +11398,7 @@
    "period_end": "2025-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "3 columns under each year: the 'Total' column is read",
@@ -11025,6 +11488,7 @@
    "period_end": "2026-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -11076,6 +11540,7 @@
    "period_end": "2025-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -11164,6 +11629,7 @@
    "period_end": "2026-03-31",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -11309,6 +11775,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -11382,6 +11849,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -11455,6 +11923,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -11513,6 +11982,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -11636,6 +12106,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -11816,6 +12287,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -11868,6 +12340,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -11957,6 +12430,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -12030,6 +12504,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -12082,6 +12557,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -12199,6 +12675,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -12251,6 +12728,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -12396,6 +12874,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -12647,6 +13126,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -12699,6 +13179,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -12788,6 +13269,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -12840,6 +13322,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -13018,6 +13501,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -13070,6 +13554,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -13159,6 +13644,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -13232,6 +13718,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -13305,6 +13792,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -13357,6 +13845,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -13530,6 +14019,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -13582,6 +14072,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -13671,6 +14162,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -13744,6 +14236,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -13796,6 +14289,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -13885,6 +14379,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -13937,6 +14432,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -14026,6 +14522,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -14078,6 +14575,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -14167,6 +14665,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 9 of 9 lines equal the database's figures",
@@ -14306,6 +14805,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 7 of 7 lines equal the database's figures",
@@ -14379,6 +14879,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 7 of 7 lines equal the database's figures",
@@ -14452,6 +14953,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -14503,6 +15005,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -14619,6 +15122,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 7 of 7 lines equal the database's figures",
@@ -14799,6 +15303,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -14850,6 +15355,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -14938,6 +15444,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 7 of 7 lines equal the database's figures",
@@ -15011,6 +15518,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -15062,6 +15570,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -15173,6 +15682,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -15224,6 +15734,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -15368,6 +15879,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 7 of 7 lines equal the database's figures",
@@ -15619,6 +16131,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -15670,6 +16183,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -15758,6 +16272,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -15809,6 +16324,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -15986,6 +16502,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -16037,6 +16554,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -16125,6 +16643,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -16176,6 +16695,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -16348,6 +16868,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -16399,6 +16920,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -16487,6 +17009,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -16538,6 +17061,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -16626,6 +17150,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -16677,6 +17202,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -16765,6 +17291,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 7 of 7 lines equal the database's figures",
@@ -16838,6 +17365,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -16889,6 +17417,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -16977,6 +17506,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 7 of 7 lines equal the database's figures",
@@ -17106,6 +17636,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "the report's full-year column gives 4,880, the database holds 4,986 for FY2025: another row, or a restated figure"
     ],
@@ -17162,6 +17693,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "the report's full-year column gives 4,880, the database holds 4,986 for FY2025: another row, or a restated figure"
     ],
@@ -17285,6 +17817,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 5 of 7 lines equal the database's figures",
@@ -17437,6 +17970,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -17489,6 +18023,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -17578,6 +18113,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 5 of 7 lines equal the database's figures",
@@ -17651,6 +18187,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 5 of 7 lines equal the database's figures",
@@ -17719,14 +18256,17 @@
    "currency": "NOK",
    "decimals": -6,
    "issuer": "norwegian",
-   "note": "Six months to 2026-06-30, read from the unaudited half-year report (page 12)",
+   "note": "Six months to 2026-06-30, read from the unaudited half-year report (page 15)",
    "period": "H1",
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
-    "checks_failed": [
-     "the report's full-year column gives 4,155, the database holds 4,231 for FY2025: another row, or a restated figure"
-    ],
+    "before_review": {
+     "current": "2281000000",
+     "prior": "2031000000",
+     "status": "unverified"
+    },
+    "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
     ],
@@ -17735,54 +18275,74 @@
      "current": "H1 2026",
      "prior": "H1 2025"
     },
-    "control": null,
+    "control": "the report's full-year column equals the database's FY2025 figure",
     "database_base_figure": "4231000000.0",
     "document": "norwegian-h1-2026-06-30",
     "document_sha256": "429670de1ed10dafd0476779a5e87f59adff2b0308d95ba8de9174a15dacb3e5",
     "document_title": "Norwegian Air Shuttle, second quarter and first half 2026 financial report (PDF)",
     "locations": [
-     "page 12"
+     "page 15"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "before the correction: the report's full-year column gives 4,155, the database holds 4,231 for FY2025: another row, or a restated figure",
+     "correctd by Imane, checked by AI assistant on 2026-11-20: The database's FY2025 D&A (4,231) comes from the cash flow statement. The AI had taken the income statement row \"Aircraft lease, depreciation and amortisation\" (full year 4,155); the cash flow row on page 15 gives 2,333 and 1,931, and its full-year column is 4,231."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
-     "Aircraft lease, depreciation and amortisation 8 1,156 1,359 2,281 2,031 4,155"
+     "Depreciation, amortisation and impairment 1,176 1,303 2,333 1,931 4,231"
     ],
-    "report_base_column": "4155000000",
+    "report_base_column": "4231000000",
     "request_hash": "021fab746e227e155871c7346c46513f296a2ecd780db9de64c39803addc72b7",
-    "review": null,
+    "review": {
+     "action": "correct",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "current": 2333,
+     "line": "dda",
+     "on": "2026-11-20",
+     "prior": 1931,
+     "reason": "The database's FY2025 D&A (4,231) comes from the cash flow statement. The AI had taken the income statement row \"Aircraft lease, depreciation and amortisation\" (full year 4,155); the cash flow row on page 15 gives 2,333 and 1,931, and its full-year column is 4,231.",
+     "report": "norwegian-h1-2026-06-30",
+     "rows": [
+      {
+       "label": "Depreciation, amortisation and impairment"
+      }
+     ],
+     "statement": "cash_flow"
+    },
     "rows": [
      {
-      "label": "Aircraft lease, depreciation and amortisation",
+      "label": "Depreciation, amortisation and impairment",
       "operation": "add",
-      "text": "Aircraft lease, depreciation and amortisation                            8            1,156             1,359         2,281         2,031               4,155"
+      "text": "Depreciation, amortisation and impairment                                              1,176            1,303         2,333           1,931               4,231"
      }
     ],
     "source": "norwegian-q2-report-2026-06-30.pdf",
     "url": "https://www.norwegian.com/globalassets/ip/documents/about-us/company/investor-relations/reports-and-presentations/quarterly-results/2026/norwegian-q2-2026-report.pdf"
    },
    "source_type": "extracted",
-   "status": "unverified",
-   "value": "2281000000.000000000000",
-   "warnings": [
-    "the report's full-year column gives 4,155, the database holds 4,231 for FY2025: another row, or a restated figure"
-   ]
+   "status": "overridden",
+   "value": "2333000000.000000000000",
+   "warnings": []
   },
   "norwegian:dda@H1_prior": {
    "concept": "dda",
    "currency": "NOK",
    "decimals": -6,
    "issuer": "norwegian",
-   "note": "Six months to 2025-06-30, read from the unaudited half-year report (page 12)",
+   "note": "Six months to 2025-06-30, read from the unaudited half-year report (page 15)",
    "period": "H1_prior",
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
-    "checks_failed": [
-     "the report's full-year column gives 4,155, the database holds 4,231 for FY2025: another row, or a restated figure"
-    ],
+    "before_review": {
+     "current": "2281000000",
+     "prior": "2031000000",
+     "status": "unverified"
+    },
+    "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
     ],
@@ -17791,47 +18351,64 @@
      "current": "H1 2026",
      "prior": "H1 2025"
     },
-    "control": null,
+    "control": "the report's full-year column equals the database's FY2025 figure",
     "database_base_figure": "4231000000.0",
     "document": "norwegian-h1-2026-06-30",
     "document_sha256": "429670de1ed10dafd0476779a5e87f59adff2b0308d95ba8de9174a15dacb3e5",
     "document_title": "Norwegian Air Shuttle, second quarter and first half 2026 financial report (PDF)",
     "locations": [
-     "page 12"
+     "page 15"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "before the correction: the report's full-year column gives 4,155, the database holds 4,231 for FY2025: another row, or a restated figure",
+     "correctd by Imane, checked by AI assistant on 2026-11-20: The database's FY2025 D&A (4,231) comes from the cash flow statement. The AI had taken the income statement row \"Aircraft lease, depreciation and amortisation\" (full year 4,155); the cash flow row on page 15 gives 2,333 and 1,931, and its full-year column is 4,231."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
-     "Aircraft lease, depreciation and amortisation 8 1,156 1,359 2,281 2,031 4,155"
+     "Depreciation, amortisation and impairment 1,176 1,303 2,333 1,931 4,231"
     ],
-    "report_base_column": "4155000000",
+    "report_base_column": "4231000000",
     "request_hash": "021fab746e227e155871c7346c46513f296a2ecd780db9de64c39803addc72b7",
-    "review": null,
+    "review": {
+     "action": "correct",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "current": 2333,
+     "line": "dda",
+     "on": "2026-11-20",
+     "prior": 1931,
+     "reason": "The database's FY2025 D&A (4,231) comes from the cash flow statement. The AI had taken the income statement row \"Aircraft lease, depreciation and amortisation\" (full year 4,155); the cash flow row on page 15 gives 2,333 and 1,931, and its full-year column is 4,231.",
+     "report": "norwegian-h1-2026-06-30",
+     "rows": [
+      {
+       "label": "Depreciation, amortisation and impairment"
+      }
+     ],
+     "statement": "cash_flow"
+    },
     "rows": [
      {
-      "label": "Aircraft lease, depreciation and amortisation",
+      "label": "Depreciation, amortisation and impairment",
       "operation": "add",
-      "text": "Aircraft lease, depreciation and amortisation                            8            1,156             1,359         2,281         2,031               4,155"
+      "text": "Depreciation, amortisation and impairment                                              1,176            1,303         2,333           1,931               4,231"
      }
     ],
     "source": "norwegian-q2-report-2026-06-30.pdf",
     "url": "https://www.norwegian.com/globalassets/ip/documents/about-us/company/investor-relations/reports-and-presentations/quarterly-results/2026/norwegian-q2-2026-report.pdf"
    },
    "source_type": "extracted",
-   "status": "unverified",
-   "value": "2031000000.000000000000",
-   "warnings": [
-    "the report's full-year column gives 4,155, the database holds 4,231 for FY2025: another row, or a restated figure"
-   ]
+   "status": "overridden",
+   "value": "1931000000.000000000000",
+   "warnings": []
   },
   "norwegian:dda@LTM": {
    "concept": "dda",
    "currency": "NOK",
    "decimals": -6,
    "issuer": "norwegian",
-   "note": "FY2025 4,231 + first half to 2026-06-30 2,281 − first half to 2025-06-30 2,031 = 4,481",
+   "note": "FY2025 4,231 + first half to 2026-06-30 2,333 − first half to 2025-06-30 1,931 = 4,633",
    "period": "LTM",
    "period_end": "2026-06-30",
    "source": {
@@ -17848,22 +18425,20 @@
       "line": "dda",
       "period": "H1",
       "sign": "+",
-      "value": "2281000000"
+      "value": "2333000000"
      },
      {
       "line": "dda",
       "period": "H1_prior",
       "sign": "-",
-      "value": "2031000000"
+      "value": "1931000000"
      }
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "4481000000.000000000000",
-   "warnings": [
-    "the report's full-year column gives 4,155, the database holds 4,231 for FY2025: another row, or a restated figure"
-   ]
+   "status": "verified",
+   "value": "4633000000.000000000000",
+   "warnings": []
   },
   "norwegian:debt_including_leases@H1": {
    "concept": "debt_including_leases",
@@ -17875,6 +18450,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 5 of 7 lines equal the database's figures",
@@ -17951,7 +18527,7 @@
    "currency": "NOK",
    "decimals": null,
    "issuer": "norwegian",
-   "note": "Operating profit 2,269 + D&A 4,481 = 6,750",
+   "note": "Operating profit 2,269 + D&A 4,633 = 6,902",
    "period": "LTM",
    "period_end": "2026-06-30",
    "source": {
@@ -17965,13 +18541,13 @@
      {
       "name": "dda",
       "source": "norwegian-h1-2026-06-30",
-      "value": "4481000000.0"
+      "value": "4633000000.0"
      }
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "6750000000.000000000000",
+   "status": "verified",
+   "value": "6902000000.000000000000",
    "warnings": []
   },
   "norwegian:ebitda_margin@LTM": {
@@ -17979,7 +18555,7 @@
    "currency": "pct",
    "decimals": null,
    "issuer": "norwegian",
-   "note": "EBITDA 6,750 ÷ revenue 38,087 = 17.7%",
+   "note": "EBITDA 6,902 ÷ revenue 38,087 = 18.1%",
    "period": "LTM",
    "period_end": "2026-06-30",
    "source": {
@@ -17988,7 +18564,7 @@
      {
       "name": "ebitda",
       "source": "metric",
-      "value": "6750000000.0"
+      "value": "6902000000.0"
      },
      {
       "name": "revenue",
@@ -17998,8 +18574,8 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "0.177225825085",
+   "status": "verified",
+   "value": "0.181216688109",
    "warnings": []
   },
   "norwegian:equity@H1": {
@@ -18012,6 +18588,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 5 of 7 lines equal the database's figures",
@@ -18141,6 +18718,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -18193,6 +18771,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -18282,6 +18861,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -18334,6 +18914,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -18451,7 +19032,7 @@
    "currency": "x",
    "decimals": null,
    "issuer": "norwegian",
-   "note": "Total debt 18,965 ÷ EBITDA 6,750 = 2.81x",
+   "note": "Total debt 18,965 ÷ EBITDA 6,902 = 2.75x",
    "period": "LTM",
    "period_end": "2026-06-30",
    "source": {
@@ -18465,13 +19046,13 @@
      {
       "name": "ebitda",
       "source": "metric",
-      "value": "6750000000.0"
+      "value": "6902000000.0"
      }
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "2.809629629630",
+   "status": "verified",
+   "value": "2.747754274123",
    "warnings": []
   },
   "norwegian:interest_coverage@LTM": {
@@ -18479,7 +19060,7 @@
    "currency": "x",
    "decimals": null,
    "issuer": "norwegian",
-   "note": "EBITDA 6,750 ÷ interest expense 1,327 = 5.09x",
+   "note": "EBITDA 6,902 ÷ interest expense 1,327 = 5.20x",
    "period": "LTM",
    "period_end": "2026-06-30",
    "source": {
@@ -18488,7 +19069,7 @@
      {
       "name": "ebitda",
       "source": "metric",
-      "value": "6750000000.0"
+      "value": "6902000000.0"
      },
      {
       "name": "interest_expense",
@@ -18498,8 +19079,8 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "5.086661642803",
+   "status": "verified",
+   "value": "5.201205727204",
    "warnings": []
   },
   "norwegian:interest_expense@H1": {
@@ -18512,6 +19093,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -18564,6 +19146,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -18676,7 +19259,7 @@
    "currency": "x",
    "decimals": null,
    "issuer": "norwegian",
-   "note": "Net debt 5,265 ÷ EBITDA 6,750 = 0.78x",
+   "note": "Net debt 5,265 ÷ EBITDA 6,902 = 0.76x",
    "period": "LTM",
    "period_end": "2026-06-30",
    "source": {
@@ -18690,13 +19273,13 @@
      {
       "name": "ebitda",
       "source": "metric",
-      "value": "6750000000.0"
+      "value": "6902000000.0"
      }
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
-   "value": "0.780000000000",
+   "status": "verified",
+   "value": "0.762822370327",
    "warnings": []
   },
   "norwegian:operating_profit@H1": {
@@ -18709,6 +19292,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -18761,6 +19345,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -18850,6 +19435,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -18902,6 +19488,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -18991,6 +19578,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -19043,6 +19631,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -19132,6 +19721,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -19184,6 +19774,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -19273,6 +19864,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 5 of 7 lines equal the database's figures",
@@ -19369,6 +19961,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -19415,6 +20008,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -19528,6 +20122,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -19598,6 +20193,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -19644,6 +20240,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -19729,6 +20326,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -19775,6 +20373,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -19860,6 +20459,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -19930,6 +20530,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -19976,6 +20577,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -20117,6 +20719,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -20365,6 +20968,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -20411,6 +21015,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -20552,6 +21157,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -20598,6 +21204,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -20683,6 +21290,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -20729,6 +21337,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -20842,6 +21451,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -20888,6 +21498,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -20973,6 +21584,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -21043,6 +21655,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -21089,6 +21702,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -21174,6 +21788,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -21220,6 +21835,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -21305,6 +21921,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -21351,6 +21968,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -21436,6 +22054,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -21482,6 +22101,7 @@
    "period_end": "2025-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -21567,6 +22187,7 @@
    "period_end": "2026-06-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [
      "entered by hand, not reviewed yet: waiting for Imane"
     ],
@@ -21688,6 +22309,7 @@
    "period_end": "2026-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 8 of 8 lines equal the database's figures",
@@ -21761,6 +22383,7 @@
    "period_end": "2026-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 8 of 8 lines equal the database's figures",
@@ -21834,6 +22457,7 @@
    "period_end": "2026-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -21891,6 +22515,7 @@
    "period_end": "2025-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -22013,6 +22638,7 @@
    "period_end": "2026-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 8 of 8 lines equal the database's figures",
@@ -22198,6 +22824,7 @@
    "period_end": "2026-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -22249,6 +22876,7 @@
    "period_end": "2025-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -22337,6 +22965,7 @@
    "period_end": "2026-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 8 of 8 lines equal the database's figures",
@@ -22410,6 +23039,7 @@
    "period_end": "2026-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -22461,6 +23091,7 @@
    "period_end": "2025-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -22572,6 +23203,7 @@
    "period_end": "2026-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -22623,6 +23255,7 @@
    "period_end": "2025-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -22767,6 +23400,7 @@
    "period_end": "2026-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 8 of 8 lines equal the database's figures",
@@ -22892,7 +23526,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "480600000.000000000000",
    "warnings": []
   },
@@ -22920,7 +23554,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "0.064564665422",
    "warnings": []
   },
@@ -22981,7 +23615,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "954900000.000000000000",
    "warnings": []
   },
@@ -23009,7 +23643,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "0.128282977551",
    "warnings": []
   },
@@ -23023,6 +23657,7 @@
    "period_end": "2026-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -23074,6 +23709,7 @@
    "period_end": "2025-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -23162,6 +23798,7 @@
    "period_end": "2026-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -23213,6 +23850,7 @@
    "period_end": "2025-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -23376,7 +24014,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "4.481850533808",
    "warnings": []
   },
@@ -23390,6 +24028,11 @@
    "period_end": "2026-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "148700000.0",
+     "prior": "112200000.0",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2026 annual report does not print the database's figure (244.5) under this row label: the row cannot be confirmed"
     ],
@@ -23409,7 +24052,9 @@
      "page 15"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "approved by Imane, checked by AI assistant on 2026-11-20: Page 15: interest paid on loans (144.0, 110.3) + on secured debt (0.7, 0.7) + other (4.0, 1.2) = 148.7 and 112.2. The FY2026 figure (244.5) also holds interest on unsecured debt (5.0, the EUR 500m note, repaid in FY2026, its coupon paid in the second half): no such row at the half year, so the three rows are complete."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
@@ -23419,7 +24064,15 @@
     ],
     "report_base_column": null,
     "request_hash": "abf9cdec4bc5373fa795765f8fe98210cd1879041dfa22e4619867cebee4b05e",
-    "review": null,
+    "review": {
+     "action": "approve",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "line": "interest_paid",
+     "on": "2026-11-20",
+     "reason": "Page 15: interest paid on loans (144.0, 110.3) + on secured debt (0.7, 0.7) + other (4.0, 1.2) = 148.7 and 112.2. The FY2026 figure (244.5) also holds interest on unsecured debt (5.0, the EUR 500m note, repaid in FY2026, its coupon paid in the second half): no such row at the half year, so the three rows are complete.",
+     "report": "wizz-h1-2026-09-30"
+    },
     "rows": [
      {
       "label": "Interest paid on loans*",
@@ -23441,7 +24094,7 @@
     "url": "https://s204.q4cdn.com/169340705/files/doc_news/Half-Year-Results-2026.pdf"
    },
    "source_type": "extracted",
-   "status": "unverified",
+   "status": "verified",
    "value": "148700000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2026 annual report does not print the database's figure (244.5) under this row label: the row cannot be confirmed"
@@ -23457,6 +24110,11 @@
    "period_end": "2025-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "148700000.0",
+     "prior": "112200000.0",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2026 annual report does not print the database's figure (244.5) under this row label: the row cannot be confirmed"
     ],
@@ -23476,7 +24134,9 @@
      "page 15"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "approved by Imane, checked by AI assistant on 2026-11-20: Page 15: interest paid on loans (144.0, 110.3) + on secured debt (0.7, 0.7) + other (4.0, 1.2) = 148.7 and 112.2. The FY2026 figure (244.5) also holds interest on unsecured debt (5.0, the EUR 500m note, repaid in FY2026, its coupon paid in the second half): no such row at the half year, so the three rows are complete."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
@@ -23486,7 +24146,15 @@
     ],
     "report_base_column": null,
     "request_hash": "abf9cdec4bc5373fa795765f8fe98210cd1879041dfa22e4619867cebee4b05e",
-    "review": null,
+    "review": {
+     "action": "approve",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "line": "interest_paid",
+     "on": "2026-11-20",
+     "reason": "Page 15: interest paid on loans (144.0, 110.3) + on secured debt (0.7, 0.7) + other (4.0, 1.2) = 148.7 and 112.2. The FY2026 figure (244.5) also holds interest on unsecured debt (5.0, the EUR 500m note, repaid in FY2026, its coupon paid in the second half): no such row at the half year, so the three rows are complete.",
+     "report": "wizz-h1-2026-09-30"
+    },
     "rows": [
      {
       "label": "Interest paid on loans*",
@@ -23508,7 +24176,7 @@
     "url": "https://s204.q4cdn.com/169340705/files/doc_news/Half-Year-Results-2026.pdf"
    },
    "source_type": "extracted",
-   "status": "unverified",
+   "status": "verified",
    "value": "112200000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2026 annual report does not print the database's figure (244.5) under this row label: the row cannot be confirmed"
@@ -23547,7 +24215,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "281000000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2026 annual report does not print the database's figure (244.5) under this row label: the row cannot be confirmed"
@@ -23563,6 +24231,7 @@
    "period_end": "2026-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -23614,6 +24283,7 @@
    "period_end": "2025-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -23786,6 +24456,7 @@
    "period_end": "2026-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -23837,6 +24508,7 @@
    "period_end": "2025-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -23925,6 +24597,11 @@
    "period_end": "2026-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "108100000.0",
+     "prior": "323500000.0",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2026 annual report does not print the database's figure (1.3) under this row label: the row cannot be confirmed"
     ],
@@ -23944,7 +24621,9 @@
      "page 11"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "approved by Imane, checked by AI assistant on 2026-11-20: \"Net profit for the period\", page 11: 108.1 and 323.5."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
@@ -23952,7 +24631,15 @@
     ],
     "report_base_column": null,
     "request_hash": "abf9cdec4bc5373fa795765f8fe98210cd1879041dfa22e4619867cebee4b05e",
-    "review": null,
+    "review": {
+     "action": "approve",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "line": "profit",
+     "on": "2026-11-20",
+     "reason": "\"Net profit for the period\", page 11: 108.1 and 323.5.",
+     "report": "wizz-h1-2026-09-30"
+    },
     "rows": [
      {
       "label": "Net profit for the period",
@@ -23964,7 +24651,7 @@
     "url": "https://s204.q4cdn.com/169340705/files/doc_news/Half-Year-Results-2026.pdf"
    },
    "source_type": "extracted",
-   "status": "unverified",
+   "status": "verified",
    "value": "108100000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2026 annual report does not print the database's figure (1.3) under this row label: the row cannot be confirmed"
@@ -23980,6 +24667,11 @@
    "period_end": "2025-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "108100000.0",
+     "prior": "323500000.0",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2026 annual report does not print the database's figure (1.3) under this row label: the row cannot be confirmed"
     ],
@@ -23999,7 +24691,9 @@
      "page 11"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "approved by Imane, checked by AI assistant on 2026-11-20: \"Net profit for the period\", page 11: 108.1 and 323.5."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
@@ -24007,7 +24701,15 @@
     ],
     "report_base_column": null,
     "request_hash": "abf9cdec4bc5373fa795765f8fe98210cd1879041dfa22e4619867cebee4b05e",
-    "review": null,
+    "review": {
+     "action": "approve",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "line": "profit",
+     "on": "2026-11-20",
+     "reason": "\"Net profit for the period\", page 11: 108.1 and 323.5.",
+     "report": "wizz-h1-2026-09-30"
+    },
     "rows": [
      {
       "label": "Net profit for the period",
@@ -24019,7 +24721,7 @@
     "url": "https://s204.q4cdn.com/169340705/files/doc_news/Half-Year-Results-2026.pdf"
    },
    "source_type": "extracted",
-   "status": "unverified",
+   "status": "verified",
    "value": "323500000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2026 annual report does not print the database's figure (1.3) under this row label: the row cannot be confirmed"
@@ -24058,7 +24760,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "-214100000.000000000000",
    "warnings": [
     "the report prints no full year, and the FY2026 annual report does not print the database's figure (1.3) under this row label: the row cannot be confirmed"
@@ -24074,6 +24776,7 @@
    "period_end": "2026-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 8 of 8 lines equal the database's figures",
@@ -24153,6 +24856,7 @@
    "period_end": "2026-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -24204,6 +24908,7 @@
    "period_end": "2025-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -24292,6 +24997,11 @@
    "period_end": "2026-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "0",
+     "prior": "0",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2026 annual report does not print the database's figure (0) under this row label: the row cannot be confirmed"
     ],
@@ -24311,7 +25021,9 @@
      "page 11"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "approved by Imane, checked by AI assistant on 2026-11-20: \"Share of net profit of associates\", page 11: nil in both halves, as in FY2026."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
@@ -24319,7 +25031,15 @@
     ],
     "report_base_column": null,
     "request_hash": "abf9cdec4bc5373fa795765f8fe98210cd1879041dfa22e4619867cebee4b05e",
-    "review": null,
+    "review": {
+     "action": "approve",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "line": "share_of_associates",
+     "on": "2026-11-20",
+     "reason": "\"Share of net profit of associates\", page 11: nil in both halves, as in FY2026.",
+     "report": "wizz-h1-2026-09-30"
+    },
     "rows": [
      {
       "label": "Share of net profit of associates",
@@ -24331,7 +25051,7 @@
     "url": "https://s204.q4cdn.com/169340705/files/doc_news/Half-Year-Results-2026.pdf"
    },
    "source_type": "extracted",
-   "status": "unverified",
+   "status": "verified",
    "value": "0E-12",
    "warnings": [
     "the report prints no full year, and the FY2026 annual report does not print the database's figure (0) under this row label: the row cannot be confirmed"
@@ -24347,6 +25067,11 @@
    "period_end": "2025-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": {
+     "current": "0",
+     "prior": "0",
+     "status": "unverified"
+    },
     "checks_failed": [
      "the report prints no full year, and the FY2026 annual report does not print the database's figure (0) under this row label: the row cannot be confirmed"
     ],
@@ -24366,7 +25091,9 @@
      "page 11"
     ],
     "model": "deepseek-flash",
-    "notes": [],
+    "notes": [
+     "approved by Imane, checked by AI assistant on 2026-11-20: \"Share of net profit of associates\", page 11: nil in both halves, as in FY2026."
+    ],
     "prompt_version": "halfyear-v1",
     "provider": "deepseek",
     "quotes": [
@@ -24374,7 +25101,15 @@
     ],
     "report_base_column": null,
     "request_hash": "abf9cdec4bc5373fa795765f8fe98210cd1879041dfa22e4619867cebee4b05e",
-    "review": null,
+    "review": {
+     "action": "approve",
+     "by": "Imane",
+     "checked_by": "AI assistant",
+     "line": "share_of_associates",
+     "on": "2026-11-20",
+     "reason": "\"Share of net profit of associates\", page 11: nil in both halves, as in FY2026.",
+     "report": "wizz-h1-2026-09-30"
+    },
     "rows": [
      {
       "label": "Share of net profit of associates",
@@ -24386,7 +25121,7 @@
     "url": "https://s204.q4cdn.com/169340705/files/doc_news/Half-Year-Results-2026.pdf"
    },
    "source_type": "extracted",
-   "status": "unverified",
+   "status": "verified",
    "value": "0E-12",
    "warnings": [
     "the report prints no full year, and the FY2026 annual report does not print the database's figure (0) under this row label: the row cannot be confirmed"
@@ -24425,7 +25160,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "0E-12",
    "warnings": [
     "the report prints no full year, and the FY2026 annual report does not print the database's figure (0) under this row label: the row cannot be confirmed"
@@ -24441,6 +25176,7 @@
    "period_end": "2026-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 8 of 8 lines equal the database's figures",
@@ -24514,6 +25250,7 @@
    "period_end": "2026-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -24565,6 +25302,7 @@
    "period_end": "2025-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "columns named by the header's years"
@@ -24653,6 +25391,7 @@
    "period_end": "2026-09-30",
    "source": {
     "audit": "unaudited",
+    "before_review": null,
     "checks_failed": [],
     "column_method": [
      "year-end column: 8 of 8 lines equal the database's figures",

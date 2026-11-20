@@ -49,43 +49,47 @@ def _fmt(value, unit: str = "amount") -> str:
 
 
 def score(con, key_path: Path = KEY) -> dict:
-    """Each line of the answer key against what was loaded: verified and correct, verified but
-    wrong (must be zero), flagged and correct, flagged and wrong, or not read."""
-    facts = {
-        (i, p, c): (v, s)
-        for i, p, c, v, s in con.execute(
-            "SELECT issuer, period, concept, value, status FROM interim_facts"
-        ).fetchall()
-    }
-    counts = {
-        k: 0
-        for k in (
-            "verified_correct",
-            "verified_wrong",
-            "flagged_correct",
-            "flagged_wrong",
-            "not_read",
-        )
-    }
+    """Each line of the answer key against what the machine read and checked, before any
+    review: verified and correct, verified but wrong (must be zero), flagged and correct,
+    flagged and wrong, or not read. Then, apart, the lines as they stand after Imane's reviews
+    (`after_review`: on the page and correct, on the page and wrong, kept off the page)."""
+    facts = {}
+    for i, p, c, v, s, ref in con.execute(
+        "SELECT issuer, period, concept, value, status, source_ref FROM interim_facts"
+    ).fetchall():
+        before = (json.loads(ref) if ref else {}).get("before_review")
+        column = "current" if p == "H1" else "prior"
+        read = (before[column], before["status"]) if before else (v, s)
+        facts[(i, p, c)] = {"read": read, "final": (v, s)}
+    counts = {k: 0 for k in ("verified_correct", "verified_wrong", "flagged_correct",
+                             "flagged_wrong", "not_read")}  # fmt: skip
+    after = {"shown_correct": 0, "shown_wrong": 0, "kept_off": 0}
     rows = []
     with key_path.open() as handle:
         for r in csv.DictReader(handle):
             wanted = [("H1", r["current"])] + ([("H1_prior", r["prior"])] if r["prior"] else [])
             got = [facts.get((r["issuer"], p, r["line"])) for p, _ in wanted]
             if any(g is None for g in got):
-                outcome = "not_read"
-            else:
+                counts["not_read"] += 1
+                after["kept_off"] += 1
+                rows.append((r["issuer"], r["line"], "not_read", "kept_off"))
+                continue
+            outcome, final = [], []
+            for stage in ("read", "final"):
                 right = all(
-                    Decimal(str(g[0])) == Decimal(w) * MILLION
+                    g[stage][0] is not None and Decimal(str(g[stage][0])) == Decimal(w) * MILLION
                     for g, (_, w) in zip(got, wanted, strict=True)
                 )
-                verified = all(g[1] in ("verified", "overridden") for g in got)
-                outcome = (
-                    f"{'verified' if verified else 'flagged'}_{'correct' if right else 'wrong'}"
-                )
-            counts[outcome] += 1
-            rows.append((r["issuer"], r["line"], outcome))
-    return {"counts": counts, "rows": rows, "total": len(rows)}
+                shown = all(g[stage][1] in ("verified", "overridden") for g in got)
+                (outcome if stage == "read" else final).append((shown, right))
+            shown, right = outcome[0]
+            auto = f"{'verified' if shown else 'flagged'}_{'correct' if right else 'wrong'}"
+            shown, right = final[0]
+            now = "kept_off" if not shown else ("shown_correct" if right else "shown_wrong")
+            counts[auto] += 1
+            after[now] += 1
+            rows.append((r["issuer"], r["line"], auto, now))
+    return {"counts": counts, "after_review": after, "rows": rows, "total": len(rows)}
 
 
 def write_all(db_path: Path = DB_PATH, out: Path = OUT) -> dict:
@@ -214,10 +218,13 @@ def write_all(db_path: Path = DB_PATH, out: Path = OUT) -> dict:
         result["score"] = s
         c = s["counts"]
         flagged = [
-            f"- {i}, {names.get(x, x)}: {o.replace('_', ' and ')}"
-            for i, x, o in s["rows"]
+            f"- {i}, {names.get(x, x)}: {o.replace('_', ' and ')}; after review: "
+            + {"shown_correct": "on the page, correct", "shown_wrong": "on the page, WRONG",
+               "kept_off": "kept off the page"}[now]
+            for i, x, o, now in s["rows"]
             if o != "verified_correct"
-        ]
+        ]  # fmt: skip
+        a = s["after_review"]
         (out / "answer_key_score.md").write_text(
             "\n".join(
                 [
@@ -234,6 +241,11 @@ def write_all(db_path: Path = DB_PATH, out: Path = OUT) -> dict:
                     f"| Flagged for review, figure wrong | {c['flagged_wrong']} |",
                     f"| Not read | {c['not_read']} |",
                     f"| Total | {s['total']} |",
+                    "",
+                    "These counts are the machine's own reading and checks, before any review. "
+                    f"After Imane's reviews: {a['shown_correct']} on the page and correct, "
+                    f"**{a['shown_wrong']} on the page and wrong**, {a['kept_off']} kept off the "
+                    "page.",
                     "",
                     "Lines not verified automatically:",
                     "",

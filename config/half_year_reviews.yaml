@@ -5,11 +5,194 @@
 #     action: approve                # the line is right as read; or `correct`, with the
 #     current: 646                   # values to use instead, in the report's printed unit
 #     prior: 540
-#     by: Imane
-#     on: 2026-11-14
-#     reason: the row plus the change in payables on asset purchases, as in the annual figure
+#     rows:                          # optional, with `correct`: the statement rows that hold
+#       - label: Investissements ... # the line; code reads them from the page, refuses the
+#     statement: cash_flow           # correction if they do not give the values above, and
+#     by: Imane                      # checks them against the database again. `statement`
+#     'on': '2026-11-14'             # only if not the line's own statement
+#     reason: why
 #
-# An approved line is shown with the checks it failed kept on its record; a corrected one is
-# marked "overridden", with the reason.
+# Quote 'on' (unquoted, YAML reads it as "true"). An approved line is shown with the checks it
+# failed kept on its record; a corrected one is marked "overridden", with the reason.
+#
+# 2026-11-20: Imane asked the assistant to apply its recommendations from the M10 walkthrough.
+# The assistant checked each line against its page and against what the database's annual
+# figure is made of; where that showed another reading, the line is corrected, not approved.
+# Left waiting, as recommended: Norwegian capex (the condensed cash flow prints no gross capex),
+# Air France-KLM (new income statement format, IFRS 18) and Flughafen Wien's hand entries
+# (Imane's own check of the entries against the report's pages).
 
-reviews: []
+reviews:
+  # --- Corrections: the rows that match the annual figure's definition -----------------------
+  - report: adp-h1-2026-06-30
+    line: capex
+    action: correct
+    statement: cash_flow
+    rows:
+      - label: Investissements corporels, incorporels et de placement
+      - label: Variation des dettes et avances sur acquisitions d'immobilisations
+    current: 646
+    prior: 540
+    by: Imane
+    checked_by: AI assistant
+    'on': '2026-11-20'
+    reason: >-
+      The FY2025 capex in the database (1,218) is purchases (1,265) less the change in payables
+      on asset purchases (+47). The same two rows at the half year, page 39: 548 + 98 = 646 and
+      478 + 62 = 540; the report's own note under the table gives 646 "y compris fournisseurs
+      d'immobilisations". The AI had taken the purchases row alone (answer key: 646).
+
+  - report: norwegian-h1-2026-06-30
+    line: dda
+    action: correct
+    statement: cash_flow
+    rows:
+      - label: Depreciation, amortisation and impairment
+    current: 2333
+    prior: 1931
+    by: Imane
+    checked_by: AI assistant
+    'on': '2026-11-20'
+    reason: >-
+      The database's FY2025 D&A (4,231) comes from the cash flow statement. The AI had taken the
+      income statement row "Aircraft lease, depreciation and amortisation" (full year 4,155);
+      the cash flow row on page 15 gives 2,333 and 1,931, and its full-year column is 4,231.
+
+  - report: aena-h1-2026-06-30
+    line: dda
+    action: correct
+    rows:
+      - label: Amortización del inmovilizado
+    current: 412157
+    prior: 417203
+    by: Imane
+    checked_by: AI assistant
+    'on': '2026-11-20'
+    reason: >-
+      The database's FY2025 D&A (796,897 thousand) is the amortisation row alone
+      (DepreciationAndAmortisationExpense). The AI had added the impairment row (191 and -28
+      thousand, page 8), which the annual figure leaves out.
+
+  - report: aena-h1-2026-06-30
+    line: capex
+    action: correct
+    rows:
+      - label: Adquisiciones de inmovilizado material
+      - label: Adquisiciones de activos intangibles
+    current: 572383
+    prior: 490049
+    by: Imane
+    checked_by: AI assistant
+    'on': '2026-11-20'
+    reason: >-
+      The database's FY2025 capex (1,059,275 thousand) is purchases of property, plant and
+      equipment and of intangible assets. The AI had added purchases of investment property
+      (3,884 and 199 thousand, page 12), which the annual figure leaves out.
+
+  # --- Approvals: the row read is the right one -------------------------------------------------
+  - report: adp-h1-2026-06-30
+    line: lease_payments
+    action: approve
+    by: Imane
+    checked_by: AI assistant
+    'on': '2026-11-20'
+    reason: >-
+      "Remboursements des dettes de location", page 39: 12 and 16, the same row as the FY2025
+      figure (30, French statements page 7). Matches the answer key.
+
+  - report: easyjet-h1-2026-03-31
+    line: finance_costs
+    action: approve
+    by: Imane
+    checked_by: AI assistant
+    'on': '2026-11-20'
+    reason: >-
+      Page 20 (image checked, the PDF's text garbles this label): "Interest payable and other
+      financing charges", Total columns, 68 and 82; the FY2025 figure (156, InterestExpense) is
+      the same row of the annual income statement.
+
+  - report: easyjet-h1-2026-03-31
+    line: interest_expense
+    action: approve
+    by: Imane
+    checked_by: AI assistant
+    'on': '2026-11-20'
+    reason: Same row as finance costs (page 20, 68 and 82), as in the FY2025 figure (156).
+
+  - report: easyjet-h1-2026-03-31
+    line: cfo
+    action: approve
+    by: Imane
+    checked_by: AI assistant
+    'on': '2026-11-20'
+    reason: >-
+      "Net cash generated from operating activities", page 24: 458 and 790. It includes the
+      dividends paid, which easyJet classifies in operating activities in its annual statement
+      too (91 in FY2025), so the definition matches the FY2025 figure (1,625).
+
+  - report: easyjet-h1-2026-03-31
+    line: capex
+    action: approve
+    by: Imane
+    checked_by: AI assistant
+    'on': '2026-11-20'
+    reason: >-
+      Page 24: purchase of property, plant and equipment (532, 484) + purchase of non-current
+      other intangible assets (45, 45) = 577 and 529, the same two items as the FY2025 figure.
+
+  - report: easyjet-h1-2026-03-31
+    line: lease_payments
+    action: approve
+    by: Imane
+    checked_by: AI assistant
+    'on': '2026-11-20'
+    reason: '"Repayment of capital element of leases", page 24: 113 and 116, as in FY2025 (226).'
+
+  - report: easyjet-h1-2026-03-31
+    line: interest_paid
+    action: approve
+    by: Imane
+    checked_by: AI assistant
+    'on': '2026-11-20'
+    reason: >-
+      "Interest and other financing charges paid", page 24: 77 and 82, in operating
+      activities as in FY2025 (140).
+
+  - report: aena-h1-2026-06-30
+    line: disposal_proceeds
+    action: approve
+    by: Imane
+    checked_by: AI assistant
+    'on': '2026-11-20'
+    reason: >-
+      "Cobros por operaciones relacionadas con el inmovilizado material" (the last word on the
+      next line), page 12: 2,725 and 11,872 thousand; property, plant and equipment only, as the
+      FY2025 figure (42,464 thousand).
+
+  - report: wizz-h1-2026-09-30
+    line: profit
+    action: approve
+    by: Imane
+    checked_by: AI assistant
+    'on': '2026-11-20'
+    reason: '"Net profit for the period", page 11: 108.1 and 323.5.'
+
+  - report: wizz-h1-2026-09-30
+    line: share_of_associates
+    action: approve
+    by: Imane
+    checked_by: AI assistant
+    'on': '2026-11-20'
+    reason: '"Share of net profit of associates", page 11: nil in both halves, as in FY2026.'
+
+  - report: wizz-h1-2026-09-30
+    line: interest_paid
+    action: approve
+    by: Imane
+    checked_by: AI assistant
+    'on': '2026-11-20'
+    reason: >-
+      Page 15: interest paid on loans (144.0, 110.3) + on secured debt (0.7, 0.7) + other (4.0,
+      1.2) = 148.7 and 112.2. The FY2026 figure (244.5) also holds interest on unsecured debt
+      (5.0, the EUR 500m note, repaid in FY2026, its coupon paid in the second half): no such
+      row at the half year, so the three rows are complete.

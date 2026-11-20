@@ -156,8 +156,8 @@ Report: easyJet, results for the six months ending 31 March 2026 (PDF). Half yea
 | Fuel cost | 982.0 | 949.0 | 2,286.0 | verified | the FY2025 annual report prints the database's figure (2,253) under the same row label |
 | Depreciation, amortisation and impairment | 399.0 | 364.0 | 778.0 | verified | the FY2025 annual report prints the database's figure (743) under the same row label |
 | Operating profit | -533.0 | -376.0 | 539.0 | verified | the FY2025 annual report prints the database's figure (696) under the same row label |
-| Finance costs | 68.0 | 82.0 | 142.0 | **awaiting review** | the report prints no full year, and the FY2025 annual report does not print the database's figure (156) under this row label: the row cannot be confirmed |
-| Interest expense | 68.0 | 82.0 | 142.0 | **awaiting review** | the report prints no full year, and the FY2025 annual report does not print the database's figure (156) under this row label: the row cannot be confirmed |
+| Finance costs | 68.0 | 82.0 | 142.0 | verified | the report prints no full year, and the FY2025 annual report does not print the database's figure (156) under this row label: the row cannot be confirmed |
+| Interest expense | 68.0 | 82.0 | 142.0 | verified | the report prints no full year, and the FY2025 annual report does not print the database's figure (156) under this row label: the row cannot be confirmed |
 | Profit for the year | -377.0 | -297.0 | 414.0 | verified | the FY2025 annual report prints the database's figure (494) under the same row label |
 | Cash and cash equivalents | 2,288.0 |  | 2,288.0 | verified | the report's year-end column equals the database's FY2025 figure |
 | Current investments | 1,158.0 |  | 1,158.0 | verified | the report's year-end column equals the database's FY2025 figure |
@@ -168,11 +168,11 @@ Report: easyJet, results for the six months ending 31 March 2026 (PDF). Half yea
 | Lease liabilities, non-current | 739.0 |  | 739.0 | verified | the report's year-end column equals the database's FY2025 figure |
 | Total equity | 3,657.0 |  | 3,657.0 | verified | the report's year-end column equals the database's FY2025 figure |
 | Total assets | 12,737.0 |  | 12,737.0 | verified | the report's year-end column equals the database's FY2025 figure |
-| Cash from operations | 458.0 | 790.0 | 1,293.0 | **awaiting review** | the report prints no full year, and the FY2025 annual report does not print the database's figure (1,625) under this row label: the row cannot be confirmed |
-| Capex (purchases of PP&E and intangibles) | 577.0 | 529.0 | 1,049.0 | **awaiting review** | the report prints no full year, and the FY2025 annual report does not print the database's figure (1,001) under this row label: the row cannot be confirmed |
+| Cash from operations | 458.0 | 790.0 | 1,293.0 | verified | the report prints no full year, and the FY2025 annual report does not print the database's figure (1,625) under this row label: the row cannot be confirmed |
+| Capex (purchases of PP&E and intangibles) | 577.0 | 529.0 | 1,049.0 | verified | the report prints no full year, and the FY2025 annual report does not print the database's figure (1,001) under this row label: the row cannot be confirmed |
 | Proceeds from disposals of fixed assets | 0.0 | 1.0 | 3.0 | verified | the FY2025 annual report prints the database's figure (4) under the same row label |
-| Lease payments (principal) | 113.0 | 116.0 | 223.0 | **awaiting review** | the report prints no full year, and the FY2025 annual report does not print the database's figure (226) under this row label: the row cannot be confirmed |
-| Interest paid | 77.0 | 82.0 | 135.0 | **awaiting review** | the report prints no full year, and the FY2025 annual report does not print the database's figure (140) under this row label: the row cannot be confirmed |
+| Lease payments (principal) | 113.0 | 116.0 | 223.0 | verified | the report prints no full year, and the FY2025 annual report does not print the database's figure (226) under this row label: the row cannot be confirmed |
+| Interest paid | 77.0 | 82.0 | 135.0 | verified | the report prints no full year, and the FY2025 annual report does not print the database's figure (140) under this row label: the row cannot be confirmed |
 | Income tax paid | 9.0 | 8.0 | 13.0 | verified | the FY2025 annual report prints the database's figure (12) under the same row label |
 
 | Metric at LTM Mar 2026 | Value | Status | How, or why missing |
@@ -183,10 +183,10 @@ Report: easyJet, results for the six months ending 31 March 2026 (PDF). Half yea
 | Net debt | -434.0 | verified | Total debt 3,012 − cash and cash-like 3,446 = -434 |
 | Net leverage | -0.33x | verified | Net debt -434 ÷ EBITDA 1,317 = -0.33x |
 | Gross leverage | 2.29x | verified | Total debt 3,012 ÷ EBITDA 1,317 = 2.29x |
-| Interest coverage | 9.27x | awaiting review | EBITDA 1,317 ÷ interest expense 142 = 9.27x |
-| FFO to debt | 38.8% | awaiting review | FFO 1,169 ÷ total debt 3,012 = 38.8% |
-| Free cash flow | 244.0 | awaiting review | Cash from operations 1,293 − capex 1,049 = 244 |
-| FCF after leases | 24.0 | awaiting review | Cash from operations 1,293 − net capex 1,046 − lease payments 223 = 24.0 |
+| Interest coverage | 9.27x | verified | EBITDA 1,317 ÷ interest expense 142 = 9.27x |
+| FFO to debt | 38.8% | verified | FFO 1,169 ÷ total debt 3,012 = 38.8% |
+| Free cash flow | 244.0 | verified | Cash from operations 1,293 − capex 1,049 = 244 |
+| FCF after leases | 24.0 | verified | Cash from operations 1,293 − net capex 1,046 − lease payments 223 = 24.0 |
 | Cash liquidity (partial) | 3,446.0 | verified | Cash and cash-like 3,446 (without undrawn facilities) |
 | Short-term debt cover, cash only (partial) | 12.67x | verified | Cash liquidity 3,446 ÷ debt due within one year 272 = 12.67x (without undrawn lines) |
 
@@ -213,9 +213,9 @@ Report: Aéroports de Paris, rapport financier semestriel au 30 juin 2026 (PDF).
 | Total equity | 5,325.0 |  | 5,325.0 | verified | the report's year-end column equals the database's FY2025 figure |
 | Total assets | 21,276.0 |  | 21,276.0 | verified | the report's year-end column equals the database's FY2025 figure |
 | Cash from operations | 693.0 | 774.0 | 1,557.0 | verified | the FY2025 annual report prints the database's figure (1,638) under the same row label |
-| Capex (purchases of PP&E and intangibles) | 548.0 | 478.0 | 1,288.0 | **awaiting review** | the report prints no full year, and the FY2025 annual report does not print the database's figure (1,218) under this row label: the row cannot be confirmed |
+| Capex (purchases of PP&E and intangibles) | 646.0 | 540.0 | 1,324.0 | overridden | the report prints no full year, and the FY2025 annual report does not print the database's figure (1,218) under this row label: the row cannot be confirmed |
 | Proceeds from disposals of fixed assets | 6.0 | 1.0 | 40.0 | verified | the FY2025 annual report prints the database's figure (35) under the same row label |
-| Lease payments (principal) | 12.0 | 16.0 | 26.0 | **awaiting review** | the report prints no full year, and the FY2025 annual report does not print the database's figure (30) under this row label: the row cannot be confirmed |
+| Lease payments (principal) | 12.0 | 16.0 | 26.0 | verified | the report prints no full year, and the FY2025 annual report does not print the database's figure (30) under this row label: the row cannot be confirmed |
 | Interest paid | 205.0 | 178.0 | 322.0 | verified | the FY2025 annual report prints the database's figure (295) under the same row label |
 | Income tax paid | 190.0 | 138.0 | 422.0 | verified | the FY2025 annual report prints the database's figure (370) under the same row label |
 
@@ -229,8 +229,8 @@ Report: Aéroports de Paris, rapport financier semestriel au 30 juin 2026 (PDF).
 | Gross leverage | 5.02x | verified | Total debt 11,629 ÷ EBITDA 2,315 = 5.02x |
 | Interest coverage | 7.19x | verified | EBITDA 2,315 ÷ interest paid (interest expense not tagged) 322 = 7.19x |
 | FFO to debt | 13.5% | verified | FFO 1,571 ÷ total debt 11,629 = 13.5% |
-| Free cash flow | 269.0 | awaiting review | Cash from operations 1,557 − capex 1,288 = 269 |
-| FCF after leases | -39.0 | awaiting review | Cash from operations 1,557 − net capex 1,248 − lease payments 26.0 − interest paid (in financing) 322 = -39.0 |
+| Free cash flow | 233.0 | verified | Cash from operations 1,557 − capex 1,324 = 233 |
+| FCF after leases | -75.0 | verified | Cash from operations 1,557 − net capex 1,284 − lease payments 26.0 − interest paid (in financing) 322 = -75.0 |
 | Cash liquidity (partial) | missing | | Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for LTM Jun 2026: half-year reports are condensed and do not give it |
 | Short-term debt cover, cash only (partial) | missing | | Cash liquidity (partial): Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for LTM Jun 2026: half-year reports are condensed and do not give it |
 
@@ -245,7 +245,7 @@ Report: Aena, estados financieros intermedios resumidos consolidados a 30 de jun
 | Line | H1 to Jun 2026 | Same half a year before | LTM Jun 2026 | Status | Control, or why it waits |
 | --- | ---: | ---: | ---: | --- | --- |
 | Revenue | 3,272.7 | 2,953.7 | 6,597.3 | verified | the FY2025 annual report prints the database's figure (6,278,337) under the same row label |
-| Depreciation, amortisation and impairment | 412.3 | 417.2 | 792.1 | **awaiting review** | the report prints no full year, and the FY2025 annual report does not print the database's figure (796,897) under this row label: the row cannot be confirmed |
+| Depreciation, amortisation and impairment | 412.2 | 417.2 | 791.9 | overridden | the FY2025 annual report prints the database's figure (796,897) under the same row label |
 | Operating profit | 1,386.8 | 1,275.1 | 3,099.8 | verified | the FY2025 annual report prints the database's figure (2,988,135) under the same row label |
 | Finance costs | 139.3 | 117.5 | 264.1 | verified | the FY2025 annual report prints the database's figure (242,354) under the same row label |
 | Interest expense | 139.3 | 117.5 | 278.9 | verified | the FY2025 annual report prints the database's figure (257,122) under the same row label |
@@ -258,24 +258,24 @@ Report: Aena, estados financieros intermedios resumidos consolidados a 30 de jun
 | Total equity | 8,859.4 |  | 8,859.4 | verified | the report's year-end column equals the database's FY2025 figure |
 | Total assets | 18,801.2 |  | 18,801.2 | verified | the report's year-end column equals the database's FY2025 figure |
 | Cash from operations | 1,598.5 | 1,479.5 | 2,906.4 | verified | the FY2025 annual report prints the database's figure (2,787,451) under the same row label |
-| Capex (purchases of PP&E and intangibles) | 576.3 | 490.2 | 1,145.3 | **awaiting review** | the report prints no full year, and the FY2025 annual report does not print the database's figure (1,059,275) under this row label: the row cannot be confirmed |
-| Proceeds from disposals of fixed assets | 2.7 | 11.9 | 33.3 | **awaiting review** | the report prints no full year, and the FY2025 annual report does not print the database's figure (42,464) under this row label: the row cannot be confirmed |
+| Capex (purchases of PP&E and intangibles) | 572.4 | 490.0 | 1,141.6 | overridden | the FY2025 annual report prints the database's figure (1,059,275) under the same row label |
+| Proceeds from disposals of fixed assets | 2.7 | 11.9 | 33.3 | verified | the report prints no full year, and the FY2025 annual report does not print the database's figure (42,464) under this row label: the row cannot be confirmed |
 | Lease payments (principal) | 6.8 | 6.4 | 15.3 | verified | the FY2025 annual report prints the database's figure (14,929) under the same row label |
 | Interest paid | 147.2 | 90.4 | 230.9 | verified | the FY2025 annual report prints the database's figure (174,106) under the same row label |
 | Income tax paid | 147.9 | 105.1 | 661.3 | verified | the FY2025 annual report prints the database's figure (618,529) under the same row label |
 
 | Metric at LTM Jun 2026 | Value | Status | How, or why missing |
 | --- | ---: | --- | --- |
-| EBITDA | 3,891.8 | awaiting review | Operating profit 3,100 + D&A 792 = 3,892 |
-| EBITDA margin | 59.0% | awaiting review | EBITDA 3,892 ÷ revenue 6,597 = 59.0% |
+| EBITDA | 3,891.6 | verified | Operating profit 3,100 + D&A 792 = 3,892 |
+| EBITDA margin | 59.0% | verified | EBITDA 3,892 ÷ revenue 6,597 = 59.0% |
 | Total debt | 8,113.4 | verified | Borrowings, non-current 6,827 + borrowings, current 1,286 = 8,113 (lease liabilities included in borrowings) |
 | Net debt | 6,724.2 | verified | Total debt 8,113 − cash and cash-like 1,389 = 6,724 |
-| Net leverage | 1.73x | awaiting review | Net debt 6,724 ÷ EBITDA 3,892 = 1.73x |
-| Gross leverage | 2.08x | awaiting review | Total debt 8,113 ÷ EBITDA 3,892 = 2.08x |
-| Interest coverage | 13.95x | awaiting review | EBITDA 3,892 ÷ interest expense 279 = 13.95x |
-| FFO to debt | 37.0% | awaiting review | FFO 3,000 ÷ total debt 8,113 = 37.0% |
-| Free cash flow | 1,761.1 | awaiting review | Cash from operations 2,906 − capex 1,145 = 1,761 |
-| FCF after leases | 1,779.1 | awaiting review | Cash from operations 2,906 − net capex 1,112 − lease payments 15.3 = 1,779 |
+| Net leverage | 1.73x | verified | Net debt 6,724 ÷ EBITDA 3,892 = 1.73x |
+| Gross leverage | 2.08x | verified | Total debt 8,113 ÷ EBITDA 3,892 = 2.08x |
+| Interest coverage | 13.95x | verified | EBITDA 3,892 ÷ interest expense 279 = 13.95x |
+| FFO to debt | 37.0% | verified | FFO 2,999 ÷ total debt 8,113 = 37.0% |
+| Free cash flow | 1,764.8 | verified | Cash from operations 2,906 − capex 1,142 = 1,765 |
+| FCF after leases | 1,782.8 | verified | Cash from operations 2,906 − net capex 1,108 − lease payments 15.3 = 1,783 |
 | Cash liquidity (partial) | 1,389.2 | verified | Cash and cash-like 1,389 (without undrawn facilities) |
 | Short-term debt cover, cash only (partial) | 1.08x | verified | Cash liquidity 1,389 ÷ debt due within one year 1,286 = 1.08x (without undrawn lines) |
 
@@ -331,7 +331,7 @@ Report: Norwegian Air Shuttle, second quarter and first half 2026 financial repo
 | --- | ---: | ---: | ---: | --- | --- |
 | Revenue | 17,312.0 | 16,871.0 | 38,087.0 | verified | the report's full-year column equals the database's FY2025 figure |
 | Fuel cost | 4,967.0 | 4,544.0 | 9,996.0 | verified | the report's full-year column equals the database's FY2025 figure |
-| Depreciation, amortisation and impairment | 2,281.0 | 2,031.0 | 4,481.0 | **awaiting review** | the report's full-year column gives 4,155, the database holds 4,231 for FY2025: another row, or a restated figure |
+| Depreciation, amortisation and impairment | 2,333.0 | 1,931.0 | 4,633.0 | overridden | the report's full-year column equals the database's FY2025 figure |
 | Operating profit | -824.0 | 639.0 | 2,269.0 | verified | the report's full-year column equals the database's FY2025 figure |
 | Finance costs | 641.0 | 585.0 | 1,327.0 | verified | the report's full-year column equals the database's FY2025 figure |
 | Interest expense | 641.0 | 585.0 | 1,327.0 | verified | the report's full-year column equals the database's FY2025 figure |
@@ -350,13 +350,13 @@ Not in the half-year statements: Borrowings, current (shown together with the ot
 
 | Metric at LTM Jun 2026 | Value | Status | How, or why missing |
 | --- | ---: | --- | --- |
-| EBITDA | 6,750.0 | awaiting review | Operating profit 2,269 + D&A 4,481 = 6,750 |
-| EBITDA margin | 17.7% | awaiting review | EBITDA 6,750 ÷ revenue 38,087 = 17.7% |
+| EBITDA | 6,902.0 | verified | Operating profit 2,269 + D&A 4,633 = 6,902 |
+| EBITDA margin | 18.1% | verified | EBITDA 6,902 ÷ revenue 38,087 = 18.1% |
 | Total debt | 18,965.0 | verified | Borrowings and lease liabilities (one line) 18,965 |
 | Net debt | 5,265.0 | verified | Total debt 18,965 − cash and cash-like 13,700 = 5,265 |
-| Net leverage | 0.78x | awaiting review | Net debt 5,265 ÷ EBITDA 6,750 = 0.78x |
-| Gross leverage | 2.81x | awaiting review | Total debt 18,965 ÷ EBITDA 6,750 = 2.81x |
-| Interest coverage | 5.09x | awaiting review | EBITDA 6,750 ÷ interest expense 1,327 = 5.09x |
+| Net leverage | 0.76x | verified | Net debt 5,265 ÷ EBITDA 6,902 = 0.76x |
+| Gross leverage | 2.75x | verified | Total debt 18,965 ÷ EBITDA 6,902 = 2.75x |
+| Interest coverage | 5.20x | verified | EBITDA 6,902 ÷ interest expense 1,327 = 5.20x |
 | FFO to debt | missing | | FFO: Interest paid not available for LTM Jun 2026: not in the half-year statements (No 'interest paid' row; only 'Financing costs paid' (1,062 FY2025)) |
 | Free cash flow | 5,249.0 | awaiting review | Cash from operations 8,362 − capex 3,113 = 5,249 |
 | FCF after leases | missing | | Net capex: Proceeds from disposals of fixed assets not available for LTM Jun 2026: not in the half-year statements (No separate proceeds row; combined in 'Purchases, proceeds and prepayment of tangible assets') |
@@ -378,8 +378,8 @@ Report: Wizz Air Holdings, unaudited results for the six months to 30 September 
 | Depreciation, amortisation and impairment | 657.9 | 542.1 | 1,294.4 | verified | the FY2026 annual report prints the database's figure (1,178.6) under the same row label |
 | Operating profit | 264.5 | 439.2 | -35.0 | verified | the FY2026 annual report prints the database's figure (139.7) under the same row label |
 | Finance costs | 156.9 | 127.4 | 297.3 | verified | the FY2026 annual report prints the database's figure (267.8) under the same row label |
-| Share of profit (loss) of associates | 0.0 | 0.0 | 0.0 | **awaiting review** | the report prints no full year, and the FY2026 annual report does not print the database's figure (0) under this row label: the row cannot be confirmed |
-| Profit for the year | 108.1 | 323.5 | -214.1 | **awaiting review** | the report prints no full year, and the FY2026 annual report does not print the database's figure (1.3) under this row label: the row cannot be confirmed |
+| Share of profit (loss) of associates | 0.0 | 0.0 | 0.0 | verified | the report prints no full year, and the FY2026 annual report does not print the database's figure (0) under this row label: the row cannot be confirmed |
+| Profit for the year | 108.1 | 323.5 | -214.1 | verified | the report prints no full year, and the FY2026 annual report does not print the database's figure (1.3) under this row label: the row cannot be confirmed |
 | Cash and cash equivalents | 1,830.1 |  | 1,830.1 | verified | the report's year-end column equals the database's FY2026 figure |
 | Short-term deposits (not cash equivalents) | 455.0 |  | 455.0 | verified | the report's year-end column equals the database's FY2026 figure |
 | Restricted cash | 82.7 |  | 82.7 | verified | the report's year-end column equals the database's FY2026 figure |
@@ -392,7 +392,7 @@ Report: Wizz Air Holdings, unaudited results for the six months to 30 September 
 | Capex (purchases of PP&E and intangibles) | 145.7 | 130.5 | 423.3 | verified | the FY2026 annual report prints the database's figure (408.1) under the same row label |
 | Proceeds from disposals of fixed assets | 265.6 | 139.2 | 929.0 | verified | the FY2026 annual report prints the database's figure (802.6) under the same row label |
 | Lease payments (principal) | 405.6 | 386.0 | 811.0 | verified | the FY2026 annual report prints the database's figure (791.4) under the same row label |
-| Interest paid | 148.7 | 112.2 | 281.0 | **awaiting review** | the report prints no full year, and the FY2026 annual report does not print the database's figure (244.5) under this row label: the row cannot be confirmed |
+| Interest paid | 148.7 | 112.2 | 281.0 | verified | the report prints no full year, and the FY2026 annual report does not print the database's figure (244.5) under this row label: the row cannot be confirmed |
 | Income tax paid | 20.1 | 16.2 | 23.5 | verified | the FY2026 annual report prints the database's figure (19.6) under the same row label |
 
 | Metric at LTM Sep 2026 | Value | Status | How, or why missing |
@@ -403,9 +403,9 @@ Report: Wizz Air Holdings, unaudited results for the six months to 30 September 
 | Net debt | 5,075.9 | verified | Total debt 7,444 − cash and cash-like 2,368 = 5,076 |
 | Net leverage | 4.03x | verified | Net debt 5,076 ÷ EBITDA 1,259 = 4.03x |
 | Gross leverage | 5.91x | verified | Total debt 7,444 ÷ EBITDA 1,259 = 5.91x |
-| Interest coverage | 4.48x | awaiting review | EBITDA 1,259 ÷ interest paid (interest expense not tagged) 281 = 4.48x |
-| FFO to debt | 12.8% | awaiting review | FFO 955 ÷ total debt 7,444 = 12.8% |
+| Interest coverage | 4.48x | verified | EBITDA 1,259 ÷ interest paid (interest expense not tagged) 281 = 4.48x |
+| FFO to debt | 12.8% | verified | FFO 955 ÷ total debt 7,444 = 12.8% |
 | Free cash flow | 643.6 | verified | Cash from operations 1,067 − capex 423 = 644 |
-| FCF after leases | 480.6 | awaiting review | Cash from operations 1,067 − net capex -506 − lease payments 811 − interest paid (in financing) 281 = 481 |
+| FCF after leases | 480.6 | verified | Cash from operations 1,067 − net capex -506 − lease payments 811 − interest paid (in financing) 281 = 481 |
 | Cash liquidity (partial) | 2,367.8 | verified | Cash and cash-like 2,368 (without undrawn facilities) |
 | Short-term debt cover, cash only (partial) | 1.96x | verified | Cash liquidity 2,368 ÷ debt due within one year 1,209 = 1.96x (without undrawn lines) |

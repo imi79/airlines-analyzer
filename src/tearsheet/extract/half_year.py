@@ -692,6 +692,7 @@ class LineRead:
     notes: list[str] = field(default_factory=list)
     review: dict | None = None
     manual: bool = False
+    before_review: dict | None = None  # status and values as read, before Imane's review
 
     @property
     def is_flow(self) -> bool:
@@ -727,6 +728,7 @@ class HalfYearRun:
     invalid: list[str] = field(default_factory=list)
     result: ToolResult | None = None
     error: str | None = None
+    regions: dict[str, Region] = field(default_factory=dict)  # where each statement sits
 
     def get(self, line: str) -> LineRead | None:
         return next((x for x in self.lines if x.line == line), None)
@@ -895,7 +897,7 @@ def check(
     scale: Decimal,
     settings: dict,
 ) -> HalfYearRun:
-    run = HalfYearRun(report, doc, scale=scale)
+    run = HalfYearRun(report, doc, scale=scale, regions=dict(regions))
     tol = settings["tolerance"]
     by_statement: dict[str, list[LineRead]] = {k: [] for k in TITLES}
     for raw in raw_lines:
@@ -1158,7 +1160,7 @@ def read_report(
     for line in held:
         if line not in seen and line not in run.not_found:
             run.not_found[line] = "not given by the AI"
-    apply_reviews(run)
+    apply_reviews(run, annual_docs=annual, settings=settings)
     return run
 
 
@@ -1231,24 +1233,82 @@ def load_reviews(path: Path = REVIEWS) -> list[dict]:
     return (yaml.safe_load(path.read_text()) or {}).get("reviews") or []
 
 
-def apply_reviews(run: HalfYearRun, reviews: list[dict] | None = None) -> None:
-    """Approvals and corrections of flagged lines: `approve` shows the line as read, with the
-    failed checks kept on record; `correct` replaces its values (in the report's printed
-    unit) and marks it overridden. Each carries who, when and why."""
+def apply_reviews(
+    run: HalfYearRun,
+    reviews: list[dict] | None = None,
+    annual_docs: list[Document] = (),
+    settings: dict | None = None,
+) -> None:
+    """Approvals and corrections of flagged lines. `approve` shows the line as read, with the
+    failed checks kept on record. `correct` replaces its values (in the report's printed unit)
+    and marks it overridden. A correction may name the statement rows that hold the line
+    (`rows`, and `statement` if another statement than the line's own): code then reads those
+    rows from the page, in the columns it named, refuses the correction if they do not give
+    the values written in it, and runs the control against the database again. Each review
+    carries who decided, when and why."""
     for r in load_reviews() if reviews is None else reviews:
         if r["report"] != run.report.id:
             continue
         x = run.get(r["line"])
         if x is None:
             continue
+        if x.before_review is None:  # what the machine read, kept for the answer key score
+            x.before_review = {
+                "status": x.status,
+                "current": None if x.current is None else str(x.current),
+                "prior": None if x.prior is None else str(x.prior),
+            }
         if r["action"] == "correct":
+            if r.get("rows"):
+                _reread(run, x, r, list(annual_docs), settings or load_settings())
             for column in ("current", "prior"):
                 if r.get(column) is not None:
                     setattr(x, column, Decimal(str(r[column])) * run.scale)
         elif r["action"] != "approve":
             raise ValueError("half_year_reviews.yaml: action must be approve or correct")
         x.review = r
-        x.notes.append(f"{r['action']}d by {r['by']} on {r['on']}: {r['reason']}")
+        who = r["by"] + (f", checked by {r['checked_by']}" if r.get("checked_by") else "")
+        x.notes.append(f"{r['action']}d by {who} on {r['on']}: {r['reason']}")
+
+
+def _reread(run: HalfYearRun, x: LineRead, r: dict, annual_docs: list[Document], settings) -> None:
+    """A correction that names its rows: read them from the page like any other line."""
+    where = f"half_year_reviews.yaml, {run.report.id} {x.line}"
+    statement = r.get("statement", x.statement)
+    region, cols = run.regions.get(statement), run.columns.get(statement)
+    if region is None or cols is None or cols.current is None or run.doc is None:
+        raise ValueError(f"{where}: the {statement} statement was not read in this report")
+    rows = []
+    for spec in r["rows"]:
+        label = spec["label"] if isinstance(spec, dict) else str(spec)
+        operation = spec.get("operation", "add") if isinstance(spec, dict) else "add"
+        component = RawComponent(label=label, quote=label, operation=operation)
+        row = locate_row(region, component, run.report.language)
+        if row.text is None or len(row.cells) < cols.count:
+            raise ValueError(f"{where}: row '{label}' not found once, with every column")
+        rows.append(row)
+    signed = _signed(settings, x.line)
+    read = {
+        "current": _column_value(rows, cols, cols.current, signed, run.scale),
+        "prior": None
+        if statement == "balance" or cols.prior is None
+        else _column_value(rows, cols, cols.prior, signed, run.scale),
+    }
+    for column, value in read.items():
+        if r.get(column) is not None and Decimal(str(r[column])) * run.scale != value:
+            raise ValueError(
+                f"{where}: the rows named give {_money(value, run.scale)} for the {column} "
+                f"column, the review says {r[column]}"
+            )
+    if x.failures:
+        x.notes.append("before the correction: " + "; ".join(x.failures))
+    x.rows, x.statement, x.failures, x.control = rows, statement, [], None
+    x.current, x.prior = read["current"], read["prior"]
+    x.base = None if cols.base is None else _column_value(rows, cols, cols.base, signed, run.scale)
+    cells = [row.cells for row in rows]
+    x.decimals = -int(run.scale.log10()) + (-_unit(cells).as_tuple().exponent)
+    _compare_with_database(x, run.report, cells, run.scale, annual_docs, settings,
+                           settings["tolerance"])  # fmt: skip
 
 
 # --- Facts -------------------------------------------------------------------------------------
@@ -1289,6 +1349,7 @@ def to_facts(issuer: Issuer, run: HalfYearRun) -> list[MappedFact]:
             "checks_failed": list(x.failures),
             "notes": list(x.notes),
             "review": x.review,
+            "before_review": x.before_review,
             **models,
         }
         periods = [("H1", report.period_end, x.current)]

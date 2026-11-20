@@ -51,19 +51,28 @@ the two was a real mistake that the test caught (below).
 
 ## Results by company
 
-| Company | Half year to | Lines read | Confirmed | Waiting for you | LTM net leverage |
+After your reviews of 2026-11-20 (next section):
+
+| Company | Half year to | Lines read | On the page | Waiting for you | LTM net leverage |
 | --- | --- | ---: | ---: | ---: | --- |
 | IAG | 30 Jun 2026 | 19 | 19 | 0 | 0.63x (FY2025: 0.78x) |
 | Finnair | 30 Jun 2026 | 21 | 21 | 0 | 0.87x (FY2025: 1.77x) |
-| Wizz Air | 30 Sep 2026 | 21 | 18 | 3 | **4.03x** (FY2026: 3.79x), fires your 3.0x trigger |
-| Groupe ADP | 30 Jun 2026 | 18 | 16 | 2 | missing: the items of ADP's own net debt definition are not in a half-year balance sheet |
-| Aena | 30 Jun 2026 | 19 | 16 | 3 | 1.73x, awaiting review (net debt 6,724m, as Aena itself reported) |
-| easyJet | 31 Mar 2026 | 22 | 16 | 6 | −0.33x, net cash (FY2025: −0.42x) |
-| Norwegian | 30 Jun 2026 | 16 | 14 | 2 | 0.78x, awaiting review |
-| Air France-KLM | 30 Jun 2026 | 20 | 11 | 9 | missing (as for ADP), and income lines wait for you |
+| Wizz Air | 30 Sep 2026 | 21 | 21 | 0 | **4.03x** (FY2026: 3.79x), fires your 3.0x trigger |
+| Groupe ADP | 30 Jun 2026 | 18 | 18 | 0 | missing: the items of ADP's own net debt definition are not in a half-year balance sheet |
+| Aena | 30 Jun 2026 | 19 | 19 | 0 | 1.73x (FY2025: 1.46x; net debt 6,724m, as Aena itself reported) |
+| easyJet | 31 Mar 2026 | 22 | 22 | 0 | −0.33x, net cash (FY2025: −0.42x) |
+| Norwegian | 30 Jun 2026 | 16 | 15 | 1 | 0.76x (FY2025: 1.19x) |
+| Air France-KLM | 30 Jun 2026 | 20 | 11 | 9 | missing (as for ADP), and income lines wait (finding 2 below) |
 | Flughafen Wien | 30 Jun 2026 | 17 | 0 | 17 | entered by hand, waiting for your check |
 
-Nine of nine loaded (the pass mark was seven).
+Nine of nine loaded (the pass mark was seven). **The watchlist at "Latest (LTM)" fires three
+triggers**, two of them new against the last fiscal year:
+
+- **Groupe ADP, cash flow after leases negative**: −75m on the last twelve months (FY2025:
+  +130m). Investment at 646m in the first half, against 540m a year before.
+- **Norwegian, EBITDA margin down more than 3 points**: 18.1% against 21.2% for FY2025, after a
+  loss-making first half (the EU emissions charge and fuel).
+- **Wizz Air, net leverage above 3.0x**: 4.03x, already above at FY2026 (3.79x).
 
 ## Two findings worth a credit analyst's attention
 
@@ -80,42 +89,55 @@ its first half of 2025. Its "operating profit" is now defined differently from t
 figure in our database. LTM = FY2025 (old definition) + H1 2026 − H1 2025 (new definition)
 would mix the two, so these lines wait for you rather than going on the page.
 
-## What I need from you
+## Your reviews (applied on 2026-11-20, at your request)
+
+You asked me to apply my recommendations. Before approving, I checked each line against its
+page and against what the database's annual figure is made of. That check turned two
+"approve" into "correct" (Aena) and confirmed the rest. All 15 are in
+`config/half_year_reviews.yaml`, each with your name as the decision, mine as the checker, and
+the reason.
+
+| Company, line | Applied | Why |
+| --- | --- | --- |
+| ADP, capex | **Corrected** to 646 and 540 | Purchases (548, 478) + change in payables on asset purchases (98, 62), page 39: the definition of the annual 1,218 |
+| Norwegian, D&A | **Corrected** to 2,333 and 1,931 | The cash flow row (page 15), whose full-year column equals our 4,231 |
+| Aena, D&A | **Corrected** to 412.2m and 417.2m | Our annual figure is amortisation alone; the AI had added an impairment row (0.2m) |
+| Aena, capex | **Corrected** to 572.4m and 490.0m | Our annual figure is property, plant and equipment plus intangibles; the AI had added investment property (3.9m) |
+| ADP, lease payments | Approved | The right row (12, 16) |
+| easyJet, 6 lines | Approved | Page 20 checked on the image (the PDF's text garbles the interest label) and page 24; the dividends paid sit in operating cash flow in the annual report too, so cash from operations has the same definition |
+| Aena, disposals | Approved | Property, plant and equipment only, as the annual figure |
+| Wizz Air, profit, associates, interest paid | Approved | The annual interest paid also held 5.0m on the EUR 500m note, repaid in FY2026: no such row at the half year, so the three rows read are complete |
+| Norwegian, capex | Left waiting | The condensed cash flow prints no gross capex |
+| Air France-KLM, 9 lines | Left waiting | New income statement format (finding 2) |
+
+A correction is itself checked by code: the review names the rows of the page, code reads them
+and refuses the correction if they do not give the values written, then runs the control
+against the database again (it passed for Norwegian and both Aena lines; ADP's annual figure is
+a difference of two rows, which the label control cannot recognise, and its card says so).
+
+The answer key score still measures the machine on its own: 56 of 58 verified and correct, 0
+verified but wrong. After your reviews: 58 of 58 on the page and correct.
+
+## What I still need from you
 
 **1. Check Flughafen Wien's 17 hand entries** (`config/half_year_entries.yaml`, against pages
 28, 30 and 31 of its report). Its PDF shows the figures but does not hold them as text, so I
-typed them from the page images. Their 31 December column already equals our database on all
-five balance sheet lines. If they are right, put your name and the date in `reviewed_by`.
+typed them from the page images; this one has to be your own check, not mine. Their 31
+December column already equals our database on all five balance sheet lines. If they are
+right, put your name and the date in `reviewed_by`, or tell me and I will.
 
-**2. Look at the lines waiting for review.** Each has its reason on the Data and audit page.
-My suggestion for each:
-
-| Company, line | What the tool saw | My suggestion |
-| --- | --- | --- |
-| ADP, capex | The AI took purchases (548) alone; our annual capex also counts the change in payables on asset purchases | **Correct** to 646 and 540 (548 + 98, 478 + 62, page 39), the same definition as the annual 1,218 |
-| ADP, lease payments | 12 and 16, the right row (page 39); the label test did not find the annual row | **Approve** |
-| Norwegian, D&A | The AI took "Aircraft lease, depreciation and amortisation" (full year 4,155); our figure is the cash flow row (4,231) | **Correct** to 2,333 and 1,931 (page 15, whose full-year column is 4,231) |
-| Norwegian, capex | The condensed cash flow prints one net row "Purchases, proceeds and prepayment" (4,880), not gross capex (4,986) | **Leave it waiting**: there is no correct figure in the half-year report |
-| Air France-KLM, 9 income and cash flow lines | New income statement format (finding 2) | **Leave waiting** for now; M11 can rebase on the restated FY2025 in its note 4 |
-| easyJet, 6 lines (finance costs, interest, cash from operations, capex, lease payments, interest paid) | Half-year labels differ from the annual ones; the values match pages 20 and 24 as I read them | Approve after a look at pages 20 and 24 |
-| Aena, D&A, capex, disposals | Labels differ from the annual report; D&A includes a 0.2m impairment row | Approve after a look at pages 8 and 12 |
-| Wizz Air, profit, share of associates, interest paid | Labels differ from the annual report | Approve after a look at pages 11 and 15 |
-
-To approve or correct, add a few lines to `config/half_year_reviews.yaml` (an example is at the
-top of the file) with your reason, or tell me what you decided and I will write them.
-
-**3. Read the LTM column and the watchlist at "Latest (LTM)"**, and tell me if a number
+**2. Read the LTM column and the watchlist at "Latest (LTM)"**, and tell me if a number
 surprises you.
 
-**4. Say go to merge into `main`.** The public link follows `main`; after the merge I open it
+**3. Say go to merge into `main`.** The public link follows `main`; after the merge I open it
 myself in a fresh browser and check every page before telling you it is live.
 
 ## For the record
 
 - AI tokens: about 60,000 for reading the eight reports (planned 200,000 to 400,000). No
   drafting tokens. No new software.
-- Tests: 804 pass (80 new: reading rows and columns, the controls, the LTM arithmetic, the
-  pages). Every one of the 335 LTM figures traces down to a filing fact, a report row or a
+- Tests: all pass (reading rows and columns, the controls, the reviews, the LTM arithmetic,
+  the pages). Every one of the 335 LTM figures traces down to a filing fact, a report row or a
   hand entry. PDF still two pages for all 18 tearsheets, Excel recalculated 18 of 18.
 - Files: `docs/m10/coverage.md` (the coverage check), `docs/m10/half_year.md` (every line, its
   control or its reason, and the LTM metrics, per company), `docs/m10/answer_key_score.md`,

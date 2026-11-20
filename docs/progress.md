@@ -232,8 +232,8 @@ the short-term cover floor.**
 Branch: `m10-half-year-ltm`. Plan: `docs/m10/plan.md`, approved by Imane on 2026-11-13 with every
 recommendation. Run: `uv run tearsheet app` (Tearsheet: the LTM column; Watchlist: "Latest
 (LTM)"; Data and audit: the half-year section). Walkthrough: `docs/m10/walkthrough.md`. Decision
-0025. **Status: built and tested; waiting for Imane's review of the flagged lines and her
-go-ahead to merge into `main`.**
+0025. **Status: built and tested; flagged lines reviewed at Imane's request (2026-11-20);
+waiting for her check of Flughafen Wien's hand entries and her go-ahead to merge into `main`.**
 
 - [x] Coverage recorded for all nine companies, go or no-go each; half-year figures loaded for
       at least seven: **nine of nine** (`docs/m10/coverage.md`): eight read by the AI with code
@@ -242,8 +242,12 @@ go-ahead to merge into `main`.**
 - [x] No wrong figure marked verified on the answer key (three companies, written before the AI
       run); every figure that fails a check flagged with its reason: 58 lines (Finnair, IAG,
       ADP), **56 verified and correct, 0 verified but wrong**, 2 flagged (ADP capex, wrong and
-      caught; ADP lease payments, right) (`docs/m10/answer_key_score.md`); 42 of 173 lines
-      awaiting review, each with its reason (`docs/m10/half_year.md`)
+      caught; ADP lease payments, right) (`docs/m10/answer_key_score.md`), scored on the
+      machine's reading before review; 42 of 173 lines flagged, each with its reason
+      (`docs/m10/half_year.md`). Reviewed on 2026-11-20 at Imane's request: 4 corrected (each
+      correction re-read from the page and re-checked by code), 11 approved; 27 still waiting
+      (Flughafen Wien 17, Air France-KLM 9, Norwegian capex 1). After review, 58 of 58 key
+      lines on the page and correct
 - [x] For every loaded company, the report's year-end column matches the database line by line,
       or the difference is flagged and explained: all nine tie at 31 December (6 to 9 lines
       each; Norwegian's two debt rows, printed with leases inside, tie as a total). Full-year
@@ -259,6 +263,8 @@ go-ahead to merge into `main`.**
       8.0, as before)
 - AI tokens: about 60,000 for reading (prompt `halfyear-v1`), against 200,000 to 400,000
   planned; no drafting tokens; no new software; no catalog metric added (golden files and fact
-  sheets unchanged). 804 tests pass (80 new)
-- Open for Imane: Flughafen Wien's hand entries; the flagged lines (suggestions in the
-  walkthrough); Air France-KLM's new income statement format (IFRS 18), an M11 candidate
+  sheets unchanged). 808 tests pass (84 new)
+- Watchlist at "Latest (LTM)" after the reviews: 3 triggers fired (ADP cash flow after leases
+  −75m, new; Norwegian EBITDA margin down 3.1 points, new; Wizz Air net leverage 4.03x)
+- Open for Imane: Flughafen Wien's hand entries; Air France-KLM's new income statement format
+  (IFRS 18), an M11 candidate

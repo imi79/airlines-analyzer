@@ -602,3 +602,91 @@ def test_period_labels():
 def test_the_prompt_of_the_version_in_use_exists():
     assert "code reads the" in h.system_prompt()
     assert h.PROMPT_VERSION == "halfyear-v1"
+
+
+def test_a_correction_that_names_its_rows_is_read_and_checked_by_code():
+    lines = [x for x in FINNAIR_LINES if x.line != "revenue"] + [row("revenue", "Operating result")]
+    r = run(lines)
+    assert r.get("revenue").status == "unverified"
+    review = {
+        "report": "x-h1",
+        "line": "revenue",
+        "action": "correct",
+        "rows": ["Revenue"],
+        "current": "1694.8",
+        "prior": "1481.9",
+        "by": "Imane",
+        "on": "2026-11-20",
+        "reason": "wrong row",
+    }
+    h.apply_reviews(r, [review], settings=SETTINGS)
+    revenue = r.get("revenue")
+    assert revenue.status == "overridden"
+    assert revenue.current == Decimal("1694.8") * M and revenue.prior == Decimal("1481.9") * M
+    assert revenue.rows[0].text.strip().startswith("Revenue")
+    assert "full-year column" in revenue.control  # the database control ran again
+    assert not revenue.failures and any("before the correction" in n for n in revenue.notes)
+
+
+def test_a_correction_whose_rows_do_not_give_its_values_is_refused():
+    r = run(FINNAIR_LINES)
+    review = {
+        "report": "x-h1",
+        "line": "capex",
+        "action": "correct",
+        "rows": ["Investments in fleet"],
+        "current": "173.3",
+        "prior": "124.4",
+        "by": "Imane",
+        "on": "2026-11-20",
+        "reason": "x",
+    }
+    with pytest.raises(ValueError, match="the rows named give 164.4"):
+        h.apply_reviews(r, [review], settings=SETTINGS)
+
+
+def test_a_correction_can_take_its_row_from_another_statement():
+    lines = FINNAIR_LINES + [row("dda", "Fuel costs")]
+    r = run(lines)
+    review = {
+        "report": "x-h1",
+        "line": "lease_payments",
+        "action": "correct",
+        "statement": "cash_flow",
+        "rows": [{"label": "Repayments of lease liabilities"}],
+        "current": "66.3",
+        "prior": "78.3",
+        "by": "Imane",
+        "on": "2026-11-20",
+        "reason": "x",
+    }
+    r.lines.append(h.LineRead("lease_payments", "income", held=HELD["lease_payments"]))
+    h.apply_reviews(r, [review], settings=SETTINGS)
+    lease = r.get("lease_payments")
+    assert lease.statement == "cash_flow" and lease.current == Decimal("66.3") * M
+    assert lease.status == "overridden" and "full-year column" in lease.control
+
+
+def test_the_answer_key_is_scored_on_the_machines_reading_not_on_the_review(tmp_path):
+    import json
+
+    import duckdb
+
+    from tearsheet.extract import half_year_report
+    from tearsheet.store.db import INTERIM_TABLES
+
+    con = duckdb.connect(str(tmp_path / "t.duckdb"))
+    con.execute(INTERIM_TABLES)
+    before = {"status": "unverified", "current": str(548 * M), "prior": str(478 * M)}
+    ref = json.dumps({"before_review": before})
+    for period, value in (("H1", 646), ("H1_prior", 540)):
+        con.execute(
+            "INSERT INTO interim_facts VALUES (?, ?, '2026-06-30', 'capex', ?, -6, 'EUR', "
+            "'extracted', ?, 'overridden', NULL, NULL)",
+            ["adp", period, value * M, ref],
+        )
+    key = tmp_path / "key.csv"
+    key.write_text("issuer,line,current,prior,base,page,row\nadp,capex,646,540,,39,x\n")
+    s = half_year_report.score(con, key)
+    assert s["counts"]["flagged_wrong"] == 1 and s["counts"]["verified_correct"] == 0
+    assert s["after_review"] == {"shown_correct": 1, "shown_wrong": 0, "kept_off": 0}
