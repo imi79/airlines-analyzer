@@ -51,7 +51,8 @@ the two was a real mistake that the test caught (below).
 
 ## Results by company
 
-After your reviews of 2026-11-20 (next section):
+After your reviews of 2026-11-20 (next section) and your check of Vienna's entries on
+2026-11-24:
 
 | Company | Half year to | Lines read | On the page | Waiting for you | LTM net leverage |
 | --- | --- | ---: | ---: | ---: | --- |
@@ -63,7 +64,7 @@ After your reviews of 2026-11-20 (next section):
 | easyJet | 31 Mar 2026 | 22 | 22 | 0 | −0.33x, net cash (FY2025: −0.42x) |
 | Norwegian | 30 Jun 2026 | 16 | 15 | 1 | 0.76x (FY2025: 1.19x) |
 | Air France-KLM | 30 Jun 2026 | 20 | 11 | 9 | missing (as for ADP), and income lines wait (finding 2 below) |
-| Flughafen Wien | 30 Jun 2026 | 17 | 0 | 17 | entered by hand, waiting for your check |
+| Flughafen Wien | 30 Jun 2026 | 17 | 17 | 0 | missing: Vienna's net debt counts term deposits that only the annual notes give (entries checked by you on 2026-11-24) |
 
 Nine of nine loaded (the pass mark was seven). **The watchlist at "Latest (LTM)" fires three
 triggers**, two of them new against the last fiscal year:
@@ -118,19 +119,16 @@ a difference of two rows, which the label control cannot recognise, and its card
 The answer key score still measures the machine on its own: 56 of 58 verified and correct, 0
 verified but wrong. After your reviews: 58 of 58 on the page and correct.
 
-## What I still need from you
+## Done since
 
-**1. Check Flughafen Wien's 17 hand entries** (`config/half_year_entries.yaml`, against pages
-28, 30 and 31 of its report). Its PDF shows the figures but does not hold them as text, so I
-typed them from the page images; this one has to be your own check, not mine. Their 31
-December column already equals our database on all five balance sheet lines. If they are
-right, put your name and the date in `reviewed_by`, or tell me and I will.
+- **Flughafen Wien's 17 hand entries**: checked by you against pages 28, 30 and 31 and marked
+  reviewed on 2026-11-24 (`config/half_year_entries.yaml`). Its LTM figures are now on the
+  page: EBITDA EUR 428m (FY2025: 412m), margin 37.7%, cash flow after leases EUR 28m.
+- **Merged into `main`** on your go-ahead (2026-11-24); the public link was checked page by
+  page from a fresh browser.
 
-**2. Read the LTM column and the watchlist at "Latest (LTM)"**, and tell me if a number
-surprises you.
-
-**3. Say go to merge into `main`.** The public link follows `main`; after the merge I open it
-myself in a fresh browser and check every page before telling you it is live.
+Still waiting, as recommended: Norwegian capex and Air France-KLM's nine lines (an M11
+candidate: rebase its LTM on the restated FY2025 in its note 4).
 
 ## For the record
 

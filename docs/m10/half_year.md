@@ -286,36 +286,36 @@ Report: Flughafen Wien, quarterly report 2/2026, condensed consolidated interim 
 
 | Line | H1 to Jun 2026 | Same half a year before | LTM Jun 2026 | Status | Control, or why it waits |
 | --- | ---: | ---: | ---: | --- | --- |
-| Revenue | 529.3 | 524.4 | 1,133.9 | **awaiting review** | entered by hand, not reviewed yet: waiting for Imane |
-| Depreciation, amortisation and impairment | 67.6 | 65.5 | 135.0 | **awaiting review** | entered by hand, not reviewed yet: waiting for Imane |
-| Operating profit | 159.4 | 146.1 | 292.8 | **awaiting review** | entered by hand, not reviewed yet: waiting for Imane |
-| Finance costs | 1.1 | 1.2 | 4.3 | **awaiting review** | entered by hand, not reviewed yet: waiting for Imane |
-| Share of profit (loss) of associates | 0.4 | 0.1 | 0.2 | **awaiting review** | entered by hand, not reviewed yet: waiting for Imane |
-| Profit for the year | 123.2 | 115.1 | 218.2 | **awaiting review** | entered by hand, not reviewed yet: waiting for Imane |
-| Cash and cash equivalents | 16.3 |  | 16.3 | **awaiting review** | the report's year-end column equals the database's FY2025 figure |
-| Other current financial assets | 82.2 |  | 82.2 | **awaiting review** | the report's year-end column equals the database's FY2025 figure |
-| Borrowings and lease liabilities on one line | 57.2 |  | 57.2 | **awaiting review** | the report's year-end column equals the database's FY2025 figure |
-| Total equity | 1,700.6 |  | 1,700.6 | **awaiting review** | the report's year-end column equals the database's FY2025 figure |
-| Total assets | 2,350.1 |  | 2,350.1 | **awaiting review** | the report's year-end column equals the database's FY2025 figure |
-| Cash from operations | 147.0 | 157.1 | 323.2 | **awaiting review** | entered by hand, not reviewed yet: waiting for Imane |
-| Capex (purchases of PP&E and intangibles) | 149.8 | 125.0 | 296.4 | **awaiting review** | entered by hand, not reviewed yet: waiting for Imane |
-| Proceeds from disposals of fixed assets | 0.5 | 0.5 | 1.3 | **awaiting review** | entered by hand, not reviewed yet: waiting for Imane |
-| Lease payments (principal) | 0.0 | 0.0 | 0.1 | **awaiting review** | entered by hand, not reviewed yet: waiting for Imane |
-| Interest paid | 0.9 | 1.0 | 1.9 | **awaiting review** | entered by hand, not reviewed yet: waiting for Imane |
-| Income tax paid | 39.3 | 22.4 | 180.4 | **awaiting review** | entered by hand, not reviewed yet: waiting for Imane |
+| Revenue | 529.3 | 524.4 | 1,133.9 | verified |  |
+| Depreciation, amortisation and impairment | 67.6 | 65.5 | 135.0 | verified |  |
+| Operating profit | 159.4 | 146.1 | 292.8 | verified |  |
+| Finance costs | 1.1 | 1.2 | 4.3 | verified |  |
+| Share of profit (loss) of associates | 0.4 | 0.1 | 0.2 | verified |  |
+| Profit for the year | 123.2 | 115.1 | 218.2 | verified |  |
+| Cash and cash equivalents | 16.3 |  | 16.3 | verified | the report's year-end column equals the database's FY2025 figure |
+| Other current financial assets | 82.2 |  | 82.2 | verified | the report's year-end column equals the database's FY2025 figure |
+| Borrowings and lease liabilities on one line | 57.2 |  | 57.2 | verified | the report's year-end column equals the database's FY2025 figure |
+| Total equity | 1,700.6 |  | 1,700.6 | verified | the report's year-end column equals the database's FY2025 figure |
+| Total assets | 2,350.1 |  | 2,350.1 | verified | the report's year-end column equals the database's FY2025 figure |
+| Cash from operations | 147.0 | 157.1 | 323.2 | verified |  |
+| Capex (purchases of PP&E and intangibles) | 149.8 | 125.0 | 296.4 | verified |  |
+| Proceeds from disposals of fixed assets | 0.5 | 0.5 | 1.3 | verified |  |
+| Lease payments (principal) | 0.0 | 0.0 | 0.1 | verified |  |
+| Interest paid | 0.9 | 1.0 | 1.9 | verified |  |
+| Income tax paid | 39.3 | 22.4 | 180.4 | verified |  |
 
 | Metric at LTM Jun 2026 | Value | Status | How, or why missing |
 | --- | ---: | --- | --- |
-| EBITDA | 427.8 | awaiting review | Operating profit 293 + D&A 135 = 428 |
-| EBITDA margin | 37.7% | awaiting review | EBITDA 428 ÷ revenue 1,134 = 37.7% |
-| Total debt | 57.2 | awaiting review | Borrowings and lease liabilities (one line) 57.2 |
+| EBITDA | 427.8 | verified | Operating profit 293 + D&A 135 = 428 |
+| EBITDA margin | 37.7% | verified | EBITDA 428 ÷ revenue 1,134 = 37.7% |
+| Total debt | 57.2 | verified | Borrowings and lease liabilities (one line) 57.2 |
 | Net debt | missing | | Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for LTM Jun 2026: half-year reports are condensed and do not give it |
 | Net leverage | missing | | Net debt: Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for LTM Jun 2026: half-year reports are condensed and do not give it |
-| Gross leverage | 0.13x | awaiting review | Total debt 57.2 ÷ EBITDA 428 = 0.13x |
-| Interest coverage | 222.19x | awaiting review | EBITDA 428 ÷ interest paid (interest expense not tagged) 1.9 = 222.19x |
-| FFO to debt | 429.2% | awaiting review | FFO 246 ÷ total debt 57.2 = 429.2% |
-| Free cash flow | 26.8 | awaiting review | Cash from operations 323 − capex 296 = 26.8 |
-| FCF after leases | 28.1 | awaiting review | Cash from operations 323 − net capex 295 − lease payments 0.1 = 28.1 |
+| Gross leverage | 0.13x | verified | Total debt 57.2 ÷ EBITDA 428 = 0.13x |
+| Interest coverage | 222.19x | verified | EBITDA 428 ÷ interest paid (interest expense not tagged) 1.9 = 222.19x |
+| FFO to debt | 429.2% | verified | FFO 246 ÷ total debt 57.2 = 429.2% |
+| Free cash flow | 26.8 | verified | Cash from operations 323 − capex 296 = 26.8 |
+| FCF after leases | 28.1 | verified | Cash from operations 323 − net capex 295 − lease payments 0.1 = 28.1 |
 | Cash liquidity (partial) | missing | | Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for LTM Jun 2026: half-year reports are condensed and do not give it |
 | Short-term debt cover, cash only (partial) | missing | | Cash liquidity (partial): Cash and cash-like investments: Other cash-like items (company's net debt definition) not available for LTM Jun 2026: half-year reports are condensed and do not give it |
 

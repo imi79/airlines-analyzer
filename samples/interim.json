@@ -19962,9 +19962,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -19976,7 +19974,8 @@
      "page 31"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -19992,11 +19991,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "149788200.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:capex@H1_prior": {
    "concept": "capex",
@@ -20009,9 +20006,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -20023,7 +20018,8 @@
      "page 31"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -20039,11 +20035,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "124977800.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:capex@LTM": {
    "concept": "capex",
@@ -20078,11 +20072,9 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "296416700.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:capex_intensity@LTM": {
    "concept": "capex_intensity",
@@ -20108,7 +20100,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "0.261423469372",
    "warnings": []
   },
@@ -20123,9 +20115,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": "the report's year-end column equals the database's FY2025 figure",
@@ -20136,7 +20126,9 @@
     "locations": [
      "page 30"
     ],
-    "notes": [],
+    "notes": [
+     "entered by hand, reviewed by Imane (2026-11-24)"
+    ],
     "quotes": [],
     "report_base_column": "29777200.0",
     "review": null,
@@ -20151,11 +20143,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "16326300.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:cash@LTM": {
    "concept": "cash",
@@ -20177,11 +20167,9 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "16326300.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:cfo@H1": {
    "concept": "cfo",
@@ -20194,9 +20182,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -20208,7 +20194,8 @@
      "page 31"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -20224,11 +20211,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "146974100.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:cfo@H1_prior": {
    "concept": "cfo",
@@ -20241,9 +20226,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -20255,7 +20238,8 @@
      "page 31"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -20271,11 +20255,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "157084100.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:cfo@LTM": {
    "concept": "cfo",
@@ -20310,11 +20292,9 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "323211000.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:dda@H1": {
    "concept": "dda",
@@ -20327,9 +20307,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -20341,7 +20319,8 @@
      "page 28"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -20357,11 +20336,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "67650000.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:dda@H1_prior": {
    "concept": "dda",
@@ -20374,9 +20351,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -20388,7 +20363,8 @@
      "page 28"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -20404,11 +20380,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "65520900.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:dda@LTM": {
    "concept": "dda",
@@ -20443,11 +20417,9 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "135011400.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:debt_including_leases@H1": {
    "concept": "debt_including_leases",
@@ -20460,9 +20432,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": "the report's year-end column equals the database's FY2025 figure",
@@ -20473,7 +20443,9 @@
     "locations": [
      "page 30"
     ],
-    "notes": [],
+    "notes": [
+     "entered by hand, reviewed by Imane (2026-11-24)"
+    ],
     "quotes": [],
     "report_base_column": "55889900.0",
     "review": null,
@@ -20488,11 +20460,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "57204000.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:debt_including_leases@LTM": {
    "concept": "debt_including_leases",
@@ -20514,11 +20484,9 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "57204000.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:disposal_proceeds@H1": {
    "concept": "disposal_proceeds",
@@ -20531,9 +20499,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -20545,7 +20511,8 @@
      "page 31"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -20561,11 +20528,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "490200.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:disposal_proceeds@H1_prior": {
    "concept": "disposal_proceeds",
@@ -20578,9 +20543,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -20592,7 +20555,8 @@
      "page 31"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -20608,11 +20572,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "454300.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:disposal_proceeds@LTM": {
    "concept": "disposal_proceeds",
@@ -20647,11 +20609,9 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "1336400.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:ebitda@LTM": {
    "concept": "ebitda",
@@ -20677,7 +20637,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "427823900.000000000000",
    "warnings": []
   },
@@ -20705,7 +20665,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "0.377317500054",
    "warnings": []
   },
@@ -20720,9 +20680,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": "the report's year-end column equals the database's FY2025 figure",
@@ -20733,7 +20691,9 @@
     "locations": [
      "page 30"
     ],
-    "notes": [],
+    "notes": [
+     "entered by hand, reviewed by Imane (2026-11-24)"
+    ],
     "quotes": [],
     "report_base_column": "1726892600.0",
     "review": null,
@@ -20748,11 +20708,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "1700555700.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:equity@LTM": {
    "concept": "equity",
@@ -20774,11 +20732,9 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "1700555700.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:fcf@LTM": {
    "concept": "fcf",
@@ -20804,7 +20760,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "26794300.000000000000",
    "warnings": []
   },
@@ -20837,7 +20793,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "28053900.000000000000",
    "warnings": []
   },
@@ -20865,7 +20821,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "0.490418502203",
    "warnings": []
   },
@@ -20893,7 +20849,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "0.468399063003",
    "warnings": []
   },
@@ -20926,7 +20882,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "245524800.000000000000",
    "warnings": []
   },
@@ -20954,7 +20910,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "4.292091462136",
    "warnings": []
   },
@@ -20969,9 +20925,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -20983,7 +20937,8 @@
      "page 28"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -20999,11 +20954,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "1123000.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:finance_costs@H1_prior": {
    "concept": "finance_costs",
@@ -21016,9 +20969,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -21030,7 +20981,8 @@
      "page 28"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -21046,11 +20998,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "1179800.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:finance_costs@LTM": {
    "concept": "finance_costs",
@@ -21085,11 +21035,9 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "4292500.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:gross_leverage@LTM": {
    "concept": "gross_leverage",
@@ -21115,7 +21063,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "0.133709220079",
    "warnings": []
   },
@@ -21143,7 +21091,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "222.188470527136",
    "warnings": []
   },
@@ -21158,9 +21106,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -21172,7 +21118,8 @@
      "page 31"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -21188,11 +21135,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "943400.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:interest_paid@H1_prior": {
    "concept": "interest_paid",
@@ -21205,9 +21150,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -21219,7 +21162,8 @@
      "page 31"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -21235,11 +21179,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "995700.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:interest_paid@LTM": {
    "concept": "interest_paid",
@@ -21274,11 +21216,9 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "1925500.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:lease_payments@H1": {
    "concept": "lease_payments",
@@ -21291,9 +21231,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -21305,7 +21243,8 @@
      "page 31"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -21321,11 +21260,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "39100.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:lease_payments@H1_prior": {
    "concept": "lease_payments",
@@ -21338,9 +21275,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -21352,7 +21287,8 @@
      "page 31"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -21368,11 +21304,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "36500.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:lease_payments@LTM": {
    "concept": "lease_payments",
@@ -21407,11 +21341,9 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "76800.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:net_capex@LTM": {
    "concept": "net_capex",
@@ -21437,7 +21369,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "295080300.000000000000",
    "warnings": []
   },
@@ -21452,9 +21384,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -21466,7 +21396,8 @@
      "page 28"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -21482,11 +21413,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "159401300.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:operating_profit@H1_prior": {
    "concept": "operating_profit",
@@ -21499,9 +21428,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -21513,7 +21440,8 @@
      "page 28"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -21529,11 +21457,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "146129400.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:operating_profit@LTM": {
    "concept": "operating_profit",
@@ -21568,11 +21494,9 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "292812500.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:other_current_financial_assets@H1": {
    "concept": "other_current_financial_assets",
@@ -21585,9 +21509,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": "the report's year-end column equals the database's FY2025 figure",
@@ -21598,7 +21520,9 @@
     "locations": [
      "page 30"
     ],
-    "notes": [],
+    "notes": [
+     "entered by hand, reviewed by Imane (2026-11-24)"
+    ],
     "quotes": [],
     "report_base_column": "80530000.0",
     "review": null,
@@ -21613,11 +21537,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "82156000.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:other_current_financial_assets@LTM": {
    "concept": "other_current_financial_assets",
@@ -21639,11 +21561,9 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "82156000.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:profit@H1": {
    "concept": "profit",
@@ -21656,9 +21576,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -21670,7 +21588,8 @@
      "page 28"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -21686,11 +21605,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "123217000.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:profit@H1_prior": {
    "concept": "profit",
@@ -21703,9 +21620,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -21717,7 +21632,8 @@
      "page 28"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -21733,11 +21649,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "115147800.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:profit@LTM": {
    "concept": "profit",
@@ -21772,11 +21686,9 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "218159500.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:revenue@H1": {
    "concept": "revenue",
@@ -21789,9 +21701,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -21803,7 +21713,8 @@
      "page 28"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -21819,11 +21730,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "529349800.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:revenue@H1_prior": {
    "concept": "revenue",
@@ -21836,9 +21745,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -21850,7 +21757,8 @@
      "page 28"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -21866,11 +21774,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "524442500.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:revenue@LTM": {
    "concept": "revenue",
@@ -21905,11 +21811,9 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "1133856500.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:share_of_associates@H1": {
    "concept": "share_of_associates",
@@ -21922,9 +21826,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -21936,7 +21838,8 @@
      "page 28"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -21952,11 +21855,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "431200.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:share_of_associates@H1_prior": {
    "concept": "share_of_associates",
@@ -21969,9 +21870,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -21983,7 +21882,8 @@
      "page 28"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -21999,11 +21899,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "148800.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:share_of_associates@LTM": {
    "concept": "share_of_associates",
@@ -22038,11 +21936,9 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "235900.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:tax_paid@H1": {
    "concept": "tax_paid",
@@ -22055,9 +21951,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -22069,7 +21963,8 @@
      "page 31"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -22085,11 +21980,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "39331300.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:tax_paid@H1_prior": {
    "concept": "tax_paid",
@@ -22102,9 +21995,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": null,
@@ -22116,7 +22007,8 @@
      "page 31"
     ],
     "notes": [
-     "the report prints no full-year column for this row"
+     "the report prints no full-year column for this row",
+     "entered by hand, reviewed by Imane (2026-11-24)"
     ],
     "quotes": [],
     "report_base_column": null,
@@ -22132,11 +22024,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "22409100.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:tax_paid@LTM": {
    "concept": "tax_paid",
@@ -22171,11 +22061,9 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "180373600.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:total_assets@H1": {
    "concept": "total_assets",
@@ -22188,9 +22076,7 @@
    "source": {
     "audit": "unaudited",
     "before_review": null,
-    "checks_failed": [
-     "entered by hand, not reviewed yet: waiting for Imane"
-    ],
+    "checks_failed": [],
     "column_method": [],
     "columns": {},
     "control": "the report's year-end column equals the database's FY2025 figure",
@@ -22201,7 +22087,9 @@
     "locations": [
      "page 30"
     ],
-    "notes": [],
+    "notes": [
+     "entered by hand, reviewed by Imane (2026-11-24)"
+    ],
     "quotes": [],
     "report_base_column": "2413590600.0",
     "review": null,
@@ -22216,11 +22104,9 @@
     "url": "https://viennaairport.com/jart/prj3/va/uploads/data-uploads/IR/2026/Q2/VIE_H12026_en.pdf"
    },
    "source_type": "manual",
-   "status": "unverified",
+   "status": "verified",
    "value": "2350079100.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:total_assets@LTM": {
    "concept": "total_assets",
@@ -22242,11 +22128,9 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "2350079100.000000000000",
-   "warnings": [
-    "entered by hand, not reviewed yet: waiting for Imane"
-   ]
+   "warnings": []
   },
   "vie:total_debt@LTM": {
    "concept": "total_debt",
@@ -22267,7 +22151,7 @@
     ]
    },
    "source_type": "computed",
-   "status": "unverified",
+   "status": "verified",
    "value": "57204000.000000000000",
    "warnings": []
   },

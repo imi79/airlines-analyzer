@@ -479,65 +479,65 @@ norwegian,LTM,2026-06-30,tax_paid,Income tax paid,-16000000.000000000000,NOK,com
 norwegian,H1,2026-06-30,total_assets,Total assets,46973000000.000000000000,NOK,extracted,verified,the report's year-end column equals the database's FY2025 figure
 norwegian,LTM,2026-06-30,total_assets,Total assets,46973000000.000000000000,NOK,computed,verified,"At 2026-06-30: 46,973 (half-year balance sheet)"
 norwegian,LTM,2026-06-30,total_debt,Total debt,18965000000.000000000000,NOK,computed,verified,"Borrowings and lease liabilities (one line) 18,965"
-vie,H1,2026-06-30,capex,Capex (purchases of PP&E and intangibles),149788200.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,H1_prior,2025-06-30,capex,Capex (purchases of PP&E and intangibles),124977800.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,LTM,2026-06-30,capex,Capex (purchases of PP&E and intangibles),296416700.000000000000,EUR,computed,unverified,FY2025 272 + first half to 2026-06-30 150 − first half to 2025-06-30 125 = 296
-vie,LTM,2026-06-30,capex_intensity,Capex intensity,0.261423469372,pct,computed,unverified,"Capex 296 ÷ revenue 1,134 = 26.1%"
-vie,H1,2026-06-30,cash,Cash and cash equivalents,16326300.000000000000,EUR,manual,unverified,the report's year-end column equals the database's FY2025 figure
-vie,LTM,2026-06-30,cash,Cash and cash equivalents,16326300.000000000000,EUR,computed,unverified,At 2026-06-30: 16.3 (half-year balance sheet)
-vie,H1,2026-06-30,cfo,Cash from operations,146974100.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,H1_prior,2025-06-30,cfo,Cash from operations,157084100.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,LTM,2026-06-30,cfo,Cash from operations,323211000.000000000000,EUR,computed,unverified,FY2025 333 + first half to 2026-06-30 147 − first half to 2025-06-30 157 = 323
-vie,H1,2026-06-30,dda,"Depreciation, amortisation and impairment",67650000.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,H1_prior,2025-06-30,dda,"Depreciation, amortisation and impairment",65520900.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,LTM,2026-06-30,dda,"Depreciation, amortisation and impairment",135011400.000000000000,EUR,computed,unverified,FY2025 133 + first half to 2026-06-30 67.6 − first half to 2025-06-30 65.5 = 135
-vie,H1,2026-06-30,debt_including_leases,Borrowings and lease liabilities on one line,57204000.000000000000,EUR,manual,unverified,the report's year-end column equals the database's FY2025 figure
-vie,LTM,2026-06-30,debt_including_leases,Borrowings and lease liabilities on one line,57204000.000000000000,EUR,computed,unverified,At 2026-06-30: 57.2 (half-year balance sheet)
-vie,H1,2026-06-30,disposal_proceeds,Proceeds from disposals of fixed assets,490200.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,H1_prior,2025-06-30,disposal_proceeds,Proceeds from disposals of fixed assets,454300.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,LTM,2026-06-30,disposal_proceeds,Proceeds from disposals of fixed assets,1336400.000000000000,EUR,computed,unverified,FY2025 1.3 + first half to 2026-06-30 0.5 − first half to 2025-06-30 0.5 = 1.3
-vie,LTM,2026-06-30,ebitda,EBITDA,427823900.000000000000,EUR,computed,unverified,Operating profit 293 + D&A 135 = 428
-vie,LTM,2026-06-30,ebitda_margin,EBITDA margin,0.377317500054,pct,computed,unverified,"EBITDA 428 ÷ revenue 1,134 = 37.7%"
-vie,H1,2026-06-30,equity,Total equity,1700555700.000000000000,EUR,manual,unverified,the report's year-end column equals the database's FY2025 figure
-vie,LTM,2026-06-30,equity,Total equity,1700555700.000000000000,EUR,computed,unverified,"At 2026-06-30: 1,701 (half-year balance sheet)"
-vie,LTM,2026-06-30,fcf,Free cash flow,26794300.000000000000,EUR,computed,unverified,Cash from operations 323 − capex 296 = 26.8
-vie,LTM,2026-06-30,fcf_after_leases,FCF after leases,28053900.000000000000,EUR,computed,unverified,Cash from operations 323 − net capex 295 − lease payments 0.1 = 28.1
-vie,LTM,2026-06-30,fcf_after_leases_to_debt,FCF after leases to debt,0.490418502203,pct,computed,unverified,FCF after leases 28.1 ÷ total debt 57.2 = 49.0%
-vie,LTM,2026-06-30,fcf_to_debt,FCF to debt,0.468399063003,pct,computed,unverified,Free cash flow 26.8 ÷ total debt 57.2 = 46.8%
-vie,LTM,2026-06-30,ffo,FFO,245524800.000000000000,EUR,computed,unverified,EBITDA 428 − interest paid 1.9 − tax paid 180 = 246
-vie,LTM,2026-06-30,ffo_to_debt,FFO to debt,4.292091462136,pct,computed,unverified,FFO 246 ÷ total debt 57.2 = 429.2%
-vie,H1,2026-06-30,finance_costs,Finance costs,1123000.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,H1_prior,2025-06-30,finance_costs,Finance costs,1179800.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,LTM,2026-06-30,finance_costs,Finance costs,4292500.000000000000,EUR,computed,unverified,FY2025 4.3 + first half to 2026-06-30 1.1 − first half to 2025-06-30 1.2 = 4.3
-vie,LTM,2026-06-30,gross_leverage,Gross leverage,0.133709220079,x,computed,unverified,Total debt 57.2 ÷ EBITDA 428 = 0.13x
-vie,LTM,2026-06-30,interest_coverage,Interest coverage,222.188470527136,x,computed,unverified,EBITDA 428 ÷ interest paid (interest expense not tagged) 1.9 = 222.19x
-vie,H1,2026-06-30,interest_paid,Interest paid,943400.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,H1_prior,2025-06-30,interest_paid,Interest paid,995700.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,LTM,2026-06-30,interest_paid,Interest paid,1925500.000000000000,EUR,computed,unverified,FY2025 2.0 + first half to 2026-06-30 0.9 − first half to 2025-06-30 1.0 = 1.9
-vie,H1,2026-06-30,lease_payments,Lease payments (principal),39100.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,H1_prior,2025-06-30,lease_payments,Lease payments (principal),36500.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,LTM,2026-06-30,lease_payments,Lease payments (principal),76800.000000000000,EUR,computed,unverified,FY2025 0.1 + first half to 2026-06-30 0.0 − first half to 2025-06-30 0.0 = 0.1
-vie,LTM,2026-06-30,net_capex,Net capex,295080300.000000000000,EUR,computed,unverified,Capex 296 − disposal proceeds 1.3 = 295
-vie,H1,2026-06-30,operating_profit,Operating profit,159401300.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,H1_prior,2025-06-30,operating_profit,Operating profit,146129400.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,LTM,2026-06-30,operating_profit,Operating profit,292812500.000000000000,EUR,computed,unverified,FY2025 280 + first half to 2026-06-30 159 − first half to 2025-06-30 146 = 293
-vie,H1,2026-06-30,other_current_financial_assets,Other current financial assets,82156000.000000000000,EUR,manual,unverified,the report's year-end column equals the database's FY2025 figure
-vie,LTM,2026-06-30,other_current_financial_assets,Other current financial assets,82156000.000000000000,EUR,computed,unverified,At 2026-06-30: 82.2 (half-year balance sheet)
-vie,H1,2026-06-30,profit,Profit for the year,123217000.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,H1_prior,2025-06-30,profit,Profit for the year,115147800.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,LTM,2026-06-30,profit,Profit for the year,218159500.000000000000,EUR,computed,unverified,FY2025 210 + first half to 2026-06-30 123 − first half to 2025-06-30 115 = 218
-vie,H1,2026-06-30,revenue,Revenue,529349800.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,H1_prior,2025-06-30,revenue,Revenue,524442500.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,LTM,2026-06-30,revenue,Revenue,1133856500.000000000000,EUR,computed,unverified,"FY2025 1,129 + first half to 2026-06-30 529 − first half to 2025-06-30 524 = 1,134"
-vie,H1,2026-06-30,share_of_associates,Share of profit (loss) of associates,431200.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,H1_prior,2025-06-30,share_of_associates,Share of profit (loss) of associates,148800.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,LTM,2026-06-30,share_of_associates,Share of profit (loss) of associates,235900.000000000000,EUR,computed,unverified,FY2025 -0.0 + first half to 2026-06-30 0.4 − first half to 2025-06-30 0.1 = 0.2
-vie,H1,2026-06-30,tax_paid,Income tax paid,39331300.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,H1_prior,2025-06-30,tax_paid,Income tax paid,22409100.000000000000,EUR,manual,unverified,"entered by hand, not reviewed yet: waiting for Imane"
-vie,LTM,2026-06-30,tax_paid,Income tax paid,180373600.000000000000,EUR,computed,unverified,FY2025 163 + first half to 2026-06-30 39.3 − first half to 2025-06-30 22.4 = 180
-vie,H1,2026-06-30,total_assets,Total assets,2350079100.000000000000,EUR,manual,unverified,the report's year-end column equals the database's FY2025 figure
-vie,LTM,2026-06-30,total_assets,Total assets,2350079100.000000000000,EUR,computed,unverified,"At 2026-06-30: 2,350 (half-year balance sheet)"
-vie,LTM,2026-06-30,total_debt,Total debt,57204000.000000000000,EUR,computed,unverified,Borrowings and lease liabilities (one line) 57.2
+vie,H1,2026-06-30,capex,Capex (purchases of PP&E and intangibles),149788200.000000000000,EUR,manual,verified,"Six months to 2026-06-30, entered by hand from the unaudited half-year report (page 31)"
+vie,H1_prior,2025-06-30,capex,Capex (purchases of PP&E and intangibles),124977800.000000000000,EUR,manual,verified,"Six months to 2025-06-30, entered by hand from the unaudited half-year report (page 31)"
+vie,LTM,2026-06-30,capex,Capex (purchases of PP&E and intangibles),296416700.000000000000,EUR,computed,verified,FY2025 272 + first half to 2026-06-30 150 − first half to 2025-06-30 125 = 296
+vie,LTM,2026-06-30,capex_intensity,Capex intensity,0.261423469372,pct,computed,verified,"Capex 296 ÷ revenue 1,134 = 26.1%"
+vie,H1,2026-06-30,cash,Cash and cash equivalents,16326300.000000000000,EUR,manual,verified,the report's year-end column equals the database's FY2025 figure
+vie,LTM,2026-06-30,cash,Cash and cash equivalents,16326300.000000000000,EUR,computed,verified,At 2026-06-30: 16.3 (half-year balance sheet)
+vie,H1,2026-06-30,cfo,Cash from operations,146974100.000000000000,EUR,manual,verified,"Six months to 2026-06-30, entered by hand from the unaudited half-year report (page 31)"
+vie,H1_prior,2025-06-30,cfo,Cash from operations,157084100.000000000000,EUR,manual,verified,"Six months to 2025-06-30, entered by hand from the unaudited half-year report (page 31)"
+vie,LTM,2026-06-30,cfo,Cash from operations,323211000.000000000000,EUR,computed,verified,FY2025 333 + first half to 2026-06-30 147 − first half to 2025-06-30 157 = 323
+vie,H1,2026-06-30,dda,"Depreciation, amortisation and impairment",67650000.000000000000,EUR,manual,verified,"Six months to 2026-06-30, entered by hand from the unaudited half-year report (page 28)"
+vie,H1_prior,2025-06-30,dda,"Depreciation, amortisation and impairment",65520900.000000000000,EUR,manual,verified,"Six months to 2025-06-30, entered by hand from the unaudited half-year report (page 28)"
+vie,LTM,2026-06-30,dda,"Depreciation, amortisation and impairment",135011400.000000000000,EUR,computed,verified,FY2025 133 + first half to 2026-06-30 67.6 − first half to 2025-06-30 65.5 = 135
+vie,H1,2026-06-30,debt_including_leases,Borrowings and lease liabilities on one line,57204000.000000000000,EUR,manual,verified,the report's year-end column equals the database's FY2025 figure
+vie,LTM,2026-06-30,debt_including_leases,Borrowings and lease liabilities on one line,57204000.000000000000,EUR,computed,verified,At 2026-06-30: 57.2 (half-year balance sheet)
+vie,H1,2026-06-30,disposal_proceeds,Proceeds from disposals of fixed assets,490200.000000000000,EUR,manual,verified,"Six months to 2026-06-30, entered by hand from the unaudited half-year report (page 31)"
+vie,H1_prior,2025-06-30,disposal_proceeds,Proceeds from disposals of fixed assets,454300.000000000000,EUR,manual,verified,"Six months to 2025-06-30, entered by hand from the unaudited half-year report (page 31)"
+vie,LTM,2026-06-30,disposal_proceeds,Proceeds from disposals of fixed assets,1336400.000000000000,EUR,computed,verified,FY2025 1.3 + first half to 2026-06-30 0.5 − first half to 2025-06-30 0.5 = 1.3
+vie,LTM,2026-06-30,ebitda,EBITDA,427823900.000000000000,EUR,computed,verified,Operating profit 293 + D&A 135 = 428
+vie,LTM,2026-06-30,ebitda_margin,EBITDA margin,0.377317500054,pct,computed,verified,"EBITDA 428 ÷ revenue 1,134 = 37.7%"
+vie,H1,2026-06-30,equity,Total equity,1700555700.000000000000,EUR,manual,verified,the report's year-end column equals the database's FY2025 figure
+vie,LTM,2026-06-30,equity,Total equity,1700555700.000000000000,EUR,computed,verified,"At 2026-06-30: 1,701 (half-year balance sheet)"
+vie,LTM,2026-06-30,fcf,Free cash flow,26794300.000000000000,EUR,computed,verified,Cash from operations 323 − capex 296 = 26.8
+vie,LTM,2026-06-30,fcf_after_leases,FCF after leases,28053900.000000000000,EUR,computed,verified,Cash from operations 323 − net capex 295 − lease payments 0.1 = 28.1
+vie,LTM,2026-06-30,fcf_after_leases_to_debt,FCF after leases to debt,0.490418502203,pct,computed,verified,FCF after leases 28.1 ÷ total debt 57.2 = 49.0%
+vie,LTM,2026-06-30,fcf_to_debt,FCF to debt,0.468399063003,pct,computed,verified,Free cash flow 26.8 ÷ total debt 57.2 = 46.8%
+vie,LTM,2026-06-30,ffo,FFO,245524800.000000000000,EUR,computed,verified,EBITDA 428 − interest paid 1.9 − tax paid 180 = 246
+vie,LTM,2026-06-30,ffo_to_debt,FFO to debt,4.292091462136,pct,computed,verified,FFO 246 ÷ total debt 57.2 = 429.2%
+vie,H1,2026-06-30,finance_costs,Finance costs,1123000.000000000000,EUR,manual,verified,"Six months to 2026-06-30, entered by hand from the unaudited half-year report (page 28)"
+vie,H1_prior,2025-06-30,finance_costs,Finance costs,1179800.000000000000,EUR,manual,verified,"Six months to 2025-06-30, entered by hand from the unaudited half-year report (page 28)"
+vie,LTM,2026-06-30,finance_costs,Finance costs,4292500.000000000000,EUR,computed,verified,FY2025 4.3 + first half to 2026-06-30 1.1 − first half to 2025-06-30 1.2 = 4.3
+vie,LTM,2026-06-30,gross_leverage,Gross leverage,0.133709220079,x,computed,verified,Total debt 57.2 ÷ EBITDA 428 = 0.13x
+vie,LTM,2026-06-30,interest_coverage,Interest coverage,222.188470527136,x,computed,verified,EBITDA 428 ÷ interest paid (interest expense not tagged) 1.9 = 222.19x
+vie,H1,2026-06-30,interest_paid,Interest paid,943400.000000000000,EUR,manual,verified,"Six months to 2026-06-30, entered by hand from the unaudited half-year report (page 31)"
+vie,H1_prior,2025-06-30,interest_paid,Interest paid,995700.000000000000,EUR,manual,verified,"Six months to 2025-06-30, entered by hand from the unaudited half-year report (page 31)"
+vie,LTM,2026-06-30,interest_paid,Interest paid,1925500.000000000000,EUR,computed,verified,FY2025 2.0 + first half to 2026-06-30 0.9 − first half to 2025-06-30 1.0 = 1.9
+vie,H1,2026-06-30,lease_payments,Lease payments (principal),39100.000000000000,EUR,manual,verified,"Six months to 2026-06-30, entered by hand from the unaudited half-year report (page 31)"
+vie,H1_prior,2025-06-30,lease_payments,Lease payments (principal),36500.000000000000,EUR,manual,verified,"Six months to 2025-06-30, entered by hand from the unaudited half-year report (page 31)"
+vie,LTM,2026-06-30,lease_payments,Lease payments (principal),76800.000000000000,EUR,computed,verified,FY2025 0.1 + first half to 2026-06-30 0.0 − first half to 2025-06-30 0.0 = 0.1
+vie,LTM,2026-06-30,net_capex,Net capex,295080300.000000000000,EUR,computed,verified,Capex 296 − disposal proceeds 1.3 = 295
+vie,H1,2026-06-30,operating_profit,Operating profit,159401300.000000000000,EUR,manual,verified,"Six months to 2026-06-30, entered by hand from the unaudited half-year report (page 28)"
+vie,H1_prior,2025-06-30,operating_profit,Operating profit,146129400.000000000000,EUR,manual,verified,"Six months to 2025-06-30, entered by hand from the unaudited half-year report (page 28)"
+vie,LTM,2026-06-30,operating_profit,Operating profit,292812500.000000000000,EUR,computed,verified,FY2025 280 + first half to 2026-06-30 159 − first half to 2025-06-30 146 = 293
+vie,H1,2026-06-30,other_current_financial_assets,Other current financial assets,82156000.000000000000,EUR,manual,verified,the report's year-end column equals the database's FY2025 figure
+vie,LTM,2026-06-30,other_current_financial_assets,Other current financial assets,82156000.000000000000,EUR,computed,verified,At 2026-06-30: 82.2 (half-year balance sheet)
+vie,H1,2026-06-30,profit,Profit for the year,123217000.000000000000,EUR,manual,verified,"Six months to 2026-06-30, entered by hand from the unaudited half-year report (page 28)"
+vie,H1_prior,2025-06-30,profit,Profit for the year,115147800.000000000000,EUR,manual,verified,"Six months to 2025-06-30, entered by hand from the unaudited half-year report (page 28)"
+vie,LTM,2026-06-30,profit,Profit for the year,218159500.000000000000,EUR,computed,verified,FY2025 210 + first half to 2026-06-30 123 − first half to 2025-06-30 115 = 218
+vie,H1,2026-06-30,revenue,Revenue,529349800.000000000000,EUR,manual,verified,"Six months to 2026-06-30, entered by hand from the unaudited half-year report (page 28)"
+vie,H1_prior,2025-06-30,revenue,Revenue,524442500.000000000000,EUR,manual,verified,"Six months to 2025-06-30, entered by hand from the unaudited half-year report (page 28)"
+vie,LTM,2026-06-30,revenue,Revenue,1133856500.000000000000,EUR,computed,verified,"FY2025 1,129 + first half to 2026-06-30 529 − first half to 2025-06-30 524 = 1,134"
+vie,H1,2026-06-30,share_of_associates,Share of profit (loss) of associates,431200.000000000000,EUR,manual,verified,"Six months to 2026-06-30, entered by hand from the unaudited half-year report (page 28)"
+vie,H1_prior,2025-06-30,share_of_associates,Share of profit (loss) of associates,148800.000000000000,EUR,manual,verified,"Six months to 2025-06-30, entered by hand from the unaudited half-year report (page 28)"
+vie,LTM,2026-06-30,share_of_associates,Share of profit (loss) of associates,235900.000000000000,EUR,computed,verified,FY2025 -0.0 + first half to 2026-06-30 0.4 − first half to 2025-06-30 0.1 = 0.2
+vie,H1,2026-06-30,tax_paid,Income tax paid,39331300.000000000000,EUR,manual,verified,"Six months to 2026-06-30, entered by hand from the unaudited half-year report (page 31)"
+vie,H1_prior,2025-06-30,tax_paid,Income tax paid,22409100.000000000000,EUR,manual,verified,"Six months to 2025-06-30, entered by hand from the unaudited half-year report (page 31)"
+vie,LTM,2026-06-30,tax_paid,Income tax paid,180373600.000000000000,EUR,computed,verified,FY2025 163 + first half to 2026-06-30 39.3 − first half to 2025-06-30 22.4 = 180
+vie,H1,2026-06-30,total_assets,Total assets,2350079100.000000000000,EUR,manual,verified,the report's year-end column equals the database's FY2025 figure
+vie,LTM,2026-06-30,total_assets,Total assets,2350079100.000000000000,EUR,computed,verified,"At 2026-06-30: 2,350 (half-year balance sheet)"
+vie,LTM,2026-06-30,total_debt,Total debt,57204000.000000000000,EUR,computed,verified,Borrowings and lease liabilities (one line) 57.2
 wizz,LTM,2026-09-30,advance_ticket_cover,Advance ticket cover,0.369625812991,pct,computed,verified,"Advance ticket sales 875 ÷ cash and cash-like 2,368 = 37.0%"
 wizz,H1,2026-09-30,borrowings_current,"Borrowings, current",1209200000.000000000000,EUR,extracted,verified,the report's year-end column equals the database's FY2026 figure
 wizz,LTM,2026-09-30,borrowings_current,"Borrowings, current",1209200000.000000000000,EUR,computed,verified,"At 2026-09-30: 1,209 (half-year balance sheet)"

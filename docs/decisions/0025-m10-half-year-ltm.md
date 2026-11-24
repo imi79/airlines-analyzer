@@ -93,7 +93,9 @@ half-year report gives no undrawn lines.
 **Flughafen Wien by hand.** Its PDF draws the tables' digits with a font that carries no text
 (English and German versions alike). 17 lines typed from the page images into
 `config/half_year_entries.yaml`, with the 31 December column as a control: all five balance
-sheet lines equal the database. Unverified until Imane reviews them.
+sheet lines equal the database. Checked by Imane against the pages on 2026-11-24
+(`reviewed_by`), so shown since then. Net debt stays missing at LTM: Vienna's own net debt
+definition counts term deposits that only the annual notes give.
 
 **Cost.** About 60,000 AI tokens (eight reports; the recorded answers hold 54,000; one answer
 came back malformed and was asked again, one was replaced after the statement finder
@@ -109,7 +111,7 @@ the AI had added an impairment row and investment property, which the annual fig
 out). Applied: 4 corrections (ADP capex, Norwegian D&A, Aena D&A and capex) and 11 approvals
 (ADP lease payments, six easyJet lines, Aena disposals, three Wizz Air lines). Left waiting:
 Norwegian capex, Air France-KLM's nine lines and Flughafen Wien's hand entries (Imane's own
-check). Two rules came out of it:
+check, done on 2026-11-24). Two rules came out of it:
 
 - *A correction is checked by code too.* A review may name the statement rows that hold the
   line (`rows`, and `statement` when it is another statement than the line's own, as for
