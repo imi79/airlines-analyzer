@@ -1,8 +1,9 @@
 # 0025 · M10: half-year and last-twelve-months figures
 
 Date: 2026-11-13 · Status: plan approved by Imane with every recommendation (recorded in
-`docs/m10/plan.md` and `docs/progress.md`); built on `m10-half-year-ltm`; waiting for her
-go-ahead to merge into `main`
+`docs/m10/plan.md` and `docs/progress.md`); built on `m10-half-year-ltm`; flagged lines
+reviewed at her request (2026-11-20); merged into `main` on her go-ahead ("go, fusionne dans
+main", 2026-11-24)
 
 **Choices approved with the plan** (`docs/m10/plan.md`):
 

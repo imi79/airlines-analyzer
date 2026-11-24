@@ -232,8 +232,9 @@ the short-term cover floor.**
 Branch: `m10-half-year-ltm`. Plan: `docs/m10/plan.md`, approved by Imane on 2026-11-13 with every
 recommendation. Run: `uv run tearsheet app` (Tearsheet: the LTM column; Watchlist: "Latest
 (LTM)"; Data and audit: the half-year section). Walkthrough: `docs/m10/walkthrough.md`. Decision
-0025. **Status: built and tested; flagged lines reviewed at Imane's request (2026-11-20);
-waiting for her check of Flughafen Wien's hand entries and her go-ahead to merge into `main`.**
+0025. **Status: done; flagged lines reviewed at Imane's request (2026-11-20); merged into
+`main` by Imane's go-ahead (2026-11-24). Still open: her check of Flughafen Wien's hand entries,
+which stay off the page until then.**
 
 - [x] Coverage recorded for all nine companies, go or no-go each; half-year figures loaded for
       at least seven: **nine of nine** (`docs/m10/coverage.md`): eight read by the AI with code
